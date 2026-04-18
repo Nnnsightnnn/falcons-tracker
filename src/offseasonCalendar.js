@@ -1,0 +1,96 @@
+// Offseason + season milestones, in chronological order.
+// Used by the calendar mini-card and by the phase engine indirectly.
+
+export const OFFSEASON_CALENDAR = [
+  {
+    id: "offseason-program-start",
+    date: "2026-04-20T09:00:00-04:00",
+    label: "Offseason program opens (Phase 1)",
+    detail: "First day of strength & conditioning under Stefanski.",
+    phase: "draft-week",
+  },
+  {
+    id: "draft-r1",
+    date: "2026-04-23T20:00:00-04:00",
+    label: "NFL Draft — Round 1",
+    detail: "Falcons have NO R1 pick. Still required watching for trade-up/trade-down scenarios.",
+    phase: "draft-week",
+  },
+  {
+    id: "draft-r2",
+    date: "2026-04-24T19:00:00-04:00",
+    label: "NFL Draft — Rounds 2-3",
+    detail: "Falcons' first pick at #48. Third-round pick at #79.",
+    phase: "draft-week",
+  },
+  {
+    id: "draft-r4",
+    date: "2026-04-25T12:00:00-04:00",
+    label: "NFL Draft — Rounds 4-7",
+    detail: "Falcons picks: #122 (R4), #215 (R6), #231 (R7).",
+    phase: "draft-week",
+  },
+  {
+    id: "rookie-minicamp-early",
+    date: "2026-05-01",
+    label: "Rookie Minicamp window opens",
+    detail: "Teams pick one of two weekends (May 1-4 or May 8-11).",
+    phase: "rookie-class",
+  },
+  {
+    id: "phase-2-starts",
+    date: "2026-05-04",
+    label: "Offseason Phase 2 begins",
+    detail: "Non-contact walkthroughs + individual drills.",
+    phase: "offseason-lull",
+  },
+  {
+    id: "schedule-release",
+    date: "2026-05-14",
+    label: "2026 NFL Schedule Release",
+    detail: "Week 1 matchup + full calendar drop. Prime-time slate revealed.",
+    phase: "offseason-lull",
+  },
+  {
+    id: "otas-start",
+    date: "2026-05-19",
+    label: "OTAs begin",
+    detail: "Voluntary organized team activities.",
+    phase: "otas-minicamp",
+  },
+  {
+    id: "mandatory-minicamp",
+    date: "2026-06-09",
+    label: "Mandatory Veteran Minicamp",
+    detail: "Attendance required. First look at real competition reps.",
+    phase: "otas-minicamp",
+  },
+  {
+    id: "training-camp-open",
+    date: "2026-07-22",
+    label: "Training Camp opens",
+    detail: "Full-team reporting day. Flowery Branch welcomes pads back.",
+    phase: "training-camp",
+  },
+  {
+    id: "preseason-wk1",
+    date: "2026-08-14",
+    label: "Preseason Game 1",
+    detail: "First live action of the Stefanski era.",
+    phase: "preseason",
+  },
+  {
+    id: "roster-cuts",
+    date: "2026-08-26",
+    label: "53-man roster cutdown",
+    detail: "Teams must reach 53 by 4:00 PM ET.",
+    phase: "preseason",
+  },
+  {
+    id: "week-1",
+    date: "2026-09-10",
+    label: "Week 1 (approx kickoff)",
+    detail: "Regular season opens. Exact date pending schedule release.",
+    phase: "regular-season",
+  },
+];
