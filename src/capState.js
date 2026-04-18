@@ -63,9 +63,13 @@ export const CAP_STATE = {
     },
   ],
   recentMoves: [
-    { date: "2026-03-08", description: "Restructured Jake Matthews — cleared $10.5M" },
-    { date: "2026-03-11", description: "Released Kirk Cousins (league year start)" },
-    { date: "2026-03-14", description: "Placed franchise tag on Kyle Pitts ($14.1M)" },
+    { date: "2026-04-17", description: "Traded DT Ruke Orhorhoro to JAX for DT Maason Smith (player-for-player)" },
+    { date: "2026-04-12", description: "Exercised Bijan Robinson's 5th-year option ($11.32M in 2027)" },
+    { date: "2026-04-09", description: "Signed OT Jawaan Taylor (1yr/$5M + $1M incentives) as McGary replacement" },
+    { date: "2026-04-08", description: "RT Kaleb McGary retires — frees ~$14M across 2026–2027" },
     { date: "2026-03-20", description: "Traded picks 114 + 197 to PHI for S Sydney Brown + picks 122 + 215" },
+    { date: "2026-03-14", description: "Placed franchise tag on Kyle Pitts ($14.1M)" },
+    { date: "2026-03-11", description: "Released Kirk Cousins (league year start)" },
+    { date: "2026-03-08", description: "Restructured Jake Matthews — cleared $10.5M" },
   ],
 };

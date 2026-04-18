@@ -477,7 +477,7 @@ function PhaseHero({ phase }) {
 }
 
 // ─── STAR CARDS ROW ─────────────────────────────────────────────────────────
-const STAR_IDS = ["penix-jr", "tua", "bijan", "drake-london", "pitts", "bates", "terrell", "walker", "dorlus"];
+const STAR_IDS = ["penix-jr", "tua", "bijan", "drake-london", "pitts", "bates", "terrell", "jalon-walker", "dorlus"];
 
 function StarCard({ player }) {
   const statVals = getStarStatLine(player);
