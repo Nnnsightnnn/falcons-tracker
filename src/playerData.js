@@ -28,7 +28,7 @@ export const PLAYERS = [
     form: 0,
     status: "pup",
     injuryNote: "ACL rehab · torn Week 11 2025 · expected back for camp",
-    image: "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ar7k3eifyw9qrny7w6lt",
+    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
     contract: { years: 4, total: 22080000, guaranteed: 22080000, apy: 5520000, throughYear: 2027, cap2026: 5900000 },
     career: [
       { years: "2024–", team: "Atlanta Falcons", type: "NFL" },
@@ -49,7 +49,7 @@ export const PLAYERS = [
     form: 0,
     status: "active",
     injuryNote: null,
-    image: "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ievyhd8nwczutrgixs6j",
+    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4241479.png",
     contract: { years: 1, total: 1300000, guaranteed: 1300000, apy: 1300000, throughYear: 2026, cap2026: 1300000 },
     career: [
       { years: "2026–", team: "Atlanta Falcons", type: "NFL" },
@@ -96,7 +96,7 @@ export const PLAYERS = [
     form: 9.2,
     status: "active",
     injuryNote: "5th-year option exercised 4/12 — $11.32M in 2027",
-    image: "https://static.www.nfl.com/image/private/f_auto,q_auto/league/w54hnu4asmuwpwdgfztv",
+    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4430807.png",
     contract: { years: 5, total: 33220000, guaranteed: 21900000, apy: 6644000, throughYear: 2027, cap2026: 6820000 },
     career: [
       { years: "2023–", team: "Atlanta Falcons", type: "NFL · 2x Pro Bowl" },
@@ -162,7 +162,7 @@ export const PLAYERS = [
     form: 9.0,
     status: "active",
     injuryNote: null,
-    image: "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qvdivepxbddfrvjpf7tj",
+    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4426502.png",
     contract: { years: 4, total: 21000000, guaranteed: 15000000, apy: 5250000, throughYear: 2026, cap2026: 16800000 },
     career: [
       { years: "2022–", team: "Atlanta Falcons", type: "NFL · on 5th-year option" },
@@ -271,7 +271,7 @@ export const PLAYERS = [
     form: 7.3,
     status: "active",
     injuryNote: "Franchise tagged for 2026 · $14.1M",
-    image: "https://static.www.nfl.com/image/private/f_auto,q_auto/league/plw5rfnw9waxvurvpi5n",
+    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4360248.png",
     contract: { years: 1, total: 14124000, guaranteed: 14124000, apy: 14124000, throughYear: 2026, cap2026: 14124000 },
     career: [
       { years: "2021–", team: "Atlanta Falcons", type: "NFL · franchise-tagged" },
