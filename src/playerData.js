@@ -124,26 +124,6 @@ export const PLAYERS = [
       { years: "2022–2025", team: "Washington Commanders", type: "NFL" },
     ],
   },
-  {
-    id: "allgeier",
-    name: "Tyler Allgeier",
-    number: 25,
-    position: "RB",
-    positionGroup: "offense",
-    depthRank: 3,
-    height: 71, weight: 224, age: 26, experience: 5,
-    college: "BYU",
-    acquired: "draft-2022-R5",
-    stats: { rushYds: 625, rushTDs: 5, rushAttempts: 128 },
-    form: 7.6,
-    status: "active",
-    injuryNote: null,
-    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4373626.png",
-    contract: { years: 1, total: 3500000, guaranteed: 500000, apy: 3500000, throughYear: 2026, cap2026: 3500000 },
-    career: [
-      { years: "2022–", team: "Atlanta Falcons", type: "NFL · 1,035 rush yds rookie year" },
-    ],
-  },
 
   // =========================================
   // WIDE RECEIVERS
@@ -192,27 +172,6 @@ export const PLAYERS = [
     ],
   },
   {
-    id: "mooney",
-    name: "Darnell Mooney",
-    number: 14,
-    position: "WR",
-    positionGroup: "offense",
-    depthRank: 2,
-    height: 71, weight: 173, age: 28, experience: 7,
-    college: "Tulane",
-    acquired: "fa-2024",
-    stats: { receptions: 58, recYds: 745, recTDs: 5, targets: 103 },
-    form: 7.2,
-    status: "active",
-    injuryNote: null,
-    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4040655.png",
-    contract: { years: 3, total: 39000000, guaranteed: 26000000, apy: 13000000, throughYear: 2026, cap2026: 14000000 },
-    career: [
-      { years: "2024–", team: "Atlanta Falcons", type: "NFL" },
-      { years: "2020–2023", team: "Chicago Bears", type: "NFL" },
-    ],
-  },
-  {
     id: "mccloud",
     name: "Ray-Ray McCloud III",
     number: 88,
@@ -231,26 +190,6 @@ export const PLAYERS = [
     career: [
       { years: "2024–", team: "Atlanta Falcons", type: "NFL" },
       { years: "2021–2023", team: "San Francisco 49ers", type: "NFL" },
-    ],
-  },
-  {
-    id: "hodge",
-    name: "KhaDarel Hodge",
-    number: 12,
-    position: "WR",
-    positionGroup: "offense",
-    depthRank: 3,
-    height: 74, weight: 205, age: 30, experience: 8,
-    college: "Prairie View A&M",
-    acquired: "fa-2023",
-    stats: { receptions: 21, recYds: 239, recTDs: 2 },
-    form: 6.0,
-    status: "active",
-    injuryNote: null,
-    image: null,
-    contract: { years: 2, total: 7500000, guaranteed: 3500000, apy: 3750000, throughYear: 2026, cap2026: 3300000 },
-    career: [
-      { years: "2023–", team: "Atlanta Falcons", type: "NFL · core special teams" },
     ],
   },
 
@@ -635,27 +574,6 @@ export const PLAYERS = [
       { years: "2022–2025", team: "Los Angeles Chargers", type: "NFL" },
     ],
   },
-  {
-    id: "onyemata",
-    name: "David Onyemata",
-    number: 90,
-    position: "DT",
-    positionGroup: "defense",
-    depthRank: 2,
-    height: 76, weight: 300, age: 33, experience: 11,
-    college: "Manitoba",
-    acquired: "fa-2023",
-    stats: { tackles: 35, sacks: 2.5 },
-    form: 7.0,
-    status: "active",
-    injuryNote: "Pending free agent 2027",
-    image: null,
-    contract: { years: 3, total: 35000000, guaranteed: 20000000, apy: 11660000, throughYear: 2026, cap2026: 13770000 },
-    career: [
-      { years: "2023–", team: "Atlanta Falcons", type: "NFL" },
-      { years: "2016–2022", team: "New Orleans Saints", type: "NFL" },
-    ],
-  },
 
   // =========================================
   // EDGE / OLB
@@ -742,27 +660,6 @@ export const PLAYERS = [
   // =========================================
   // LINEBACKERS
   // =========================================
-  {
-    id: "elliss",
-    name: "Kaden Elliss",
-    number: 54,
-    position: "LB",
-    positionGroup: "defense",
-    depthRank: 1,
-    height: 74, weight: 240, age: 28, experience: 7,
-    college: "Idaho",
-    acquired: "fa-2023",
-    stats: { tackles: 118, sacks: 4, tfl: 11, ff: 1 },
-    form: 8.4,
-    status: "active",
-    injuryNote: "Contract year · pending free agent 2027",
-    image: "https://a.espncdn.com/i/headshots/nfl/players/full/3124890.png",
-    contract: { years: 3, total: 21500000, guaranteed: 12000000, apy: 7160000, throughYear: 2026, cap2026: 7800000 },
-    career: [
-      { years: "2023–", team: "Atlanta Falcons", type: "NFL" },
-      { years: "2019–2022", team: "New Orleans Saints", type: "NFL" },
-    ],
-  },
   {
     id: "christian-harris",
     name: "Christian Harris",

@@ -8,9 +8,10 @@ export const CAP_STATE = {
   totalLiabilities: 295_650_548,
   totalAllocations: 268_323_031,
   deadMoney: {
-    total: 14_200_000,
+    total: 25_200_000,
     breakdown: [
       { name: "Kirk Cousins", amount: 8_700_000, note: "Released; Raiders' new deal structured to keep cap hit in Atlanta" },
+      { name: "Darnell Mooney", amount: 11_000_000, note: "Released Mar 9 (pre-June 1); $7.42M cap savings" },
       { name: "Various pre-2026 cuts", amount: 5_500_000, note: "Aggregated" },
     ],
   },
@@ -20,9 +21,7 @@ export const CAP_STATE = {
     { playerId: "bates", amount: 16800000 },
     { playerId: "drake-london", amount: 16800000 },
     { playerId: "matthews", amount: 15500000 },
-    { playerId: "mooney", amount: 14000000 },
     { playerId: "pitts", amount: 14124000 },
-    { playerId: "onyemata", amount: 13770000 },
   ],
   pendingExtensions: [
     {
@@ -42,12 +41,6 @@ export const CAP_STATE = {
       status: "tagged",
       priority: 3,
       rationale: "Franchise tag applied for 2026 ($14.1M). Long-term deal deferred.",
-    },
-    {
-      playerId: "elliss",
-      status: "contract-year",
-      priority: 4,
-      rationale: "Final year of deal. Likely walks in 2027 given London / Bijan / Pitts extensions ahead of him.",
     },
   ],
   restructureCandidates: [
@@ -69,7 +62,12 @@ export const CAP_STATE = {
     { date: "2026-04-08", description: "RT Kaleb McGary retires — frees ~$14M across 2026–2027" },
     { date: "2026-03-20", description: "Traded picks 114 + 197 to PHI for S Sydney Brown + picks 122 + 215" },
     { date: "2026-03-14", description: "Placed franchise tag on Kyle Pitts ($14.1M)" },
+    { date: "2026-03-11", description: "LB Kaden Elliss signs 3yr/$33M ($23M gtd) with New Orleans Saints" },
     { date: "2026-03-11", description: "Released Kirk Cousins (league year start)" },
+    { date: "2026-03-10", description: "DT David Onyemata signs with New York Jets in free agency" },
+    { date: "2026-03-10", description: "RB Tyler Allgeier signs with Arizona Cardinals in free agency" },
+    { date: "2026-03-09", description: "Released WR Darnell Mooney ($7.42M cap savings, ~$11M dead money)" },
+    { date: "2026-03-09", description: "Released WR KhaDarel Hodge ($3.3M cap savings)" },
     { date: "2026-03-08", description: "Restructured Jake Matthews — cleared $10.5M" },
   ],
 };

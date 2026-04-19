@@ -109,7 +109,7 @@ export const DRAFT_DATA = {
       age: 23,
       fortyTime: 4.58,
       projection: "Round 2 · #48 range",
-      fit: "Complete off-ball LB. Swept 2025 major defensive awards (Bednarik, Butkus, Lombardi, Nagurski). Immediate starter if Elliss walks in 2027.",
+      fit: "Complete off-ball LB. Swept 2025 major defensive awards (Bednarik, Butkus, Lombardi, Nagurski). Immediate ILB need with Kaden Elliss gone to New Orleans in FA.",
       strengths: ["All-around production", "Instincts + vs-pass coverage", "Culture captain"],
       concerns: ["Average length", "Non-elite top-end speed"],
       mockProjections: [
