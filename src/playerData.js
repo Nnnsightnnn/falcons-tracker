@@ -1181,77 +1181,83 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-04-18T18:30:00Z",
+  generatedAt: "2026-04-19T14:00:00Z",
   sources: [
     "ESPN", "NFL.com", "Bleacher Report", "The Falcoholic",
     "Atlanta Falcons Official", "Pro Football Rumors",
     "SI Falcons", "NBC Sports", "Yahoo Sports", "Spotrac",
+    "Clutch Points", "Heavy.com", "Yardbarker",
   ],
   topics: [
     {
-      title: "Falcons swap Ruke Orhorhoro for Jags' Maason Smith",
-      detail: "Friday (Apr 17) — rare player-for-player deal six days before the draft. Orhorhoro (2024 R2 #35) heads to Jacksonville for DT Maason Smith (2024 R2 #48). ESPN graded the Jaguars slight winners; Falcons bet on Smith's traits and upside.",
-      category: "free-agency",
+      title: "Draft week is HERE — 4 days to Falcons on the clock at #48",
+      detail: "Round 1 goes Thursday Apr 23 (Falcons watching from the sideline), Rounds 2–3 Friday night in Pittsburgh. Atlanta's first selection comes at #48 — the most valuable slot on Day 2 — followed by #79, #122, #215, #231. No first-rounder (sent to Rams in the 2025 James Pearce Jr. trade-up).",
+      category: "draft",
     },
     {
-      title: "Voluntary minicamp opens Tuesday, Apr 21",
-      detail: "Stefanski's first on-field Falcons session runs Apr 21–23 — bookending into draft night. No pads, but the staff gets its first live look at the 90-man roster before draft picks arrive.",
+      title: "Voluntary minicamp opens Tuesday — Stefanski's first on-field session",
+      detail: "Apr 21–23, right into draft night. One of 10 new-coach teams holding a pre-draft voluntary camp under the CBA. No pads, but the Stefanski staff finally gets a live look at the 90-man before picks arrive.",
       category: "coaching",
     },
     {
-      title: "Draft kicks off Thursday — 5 picks, Falcons on clock at #48",
-      detail: "Round 1 Thu Apr 23, Rounds 2–3 Fri, Rounds 4–7 Sat in Pittsburgh. Atlanta has no first; picks R2 #48, R3 #79, R4 #122, R6 #215, R7 #231. Cunningham has been vocal about wanting to trade down — he took the Bears from 5 picks to 10 his first year in Chicago.",
+      title: "Orhorhoro-for-Maason Smith trade still reshaping the DT board",
+      detail: "Friday Apr 17 — rare player-for-player deal six days pre-draft. Ruke Orhorhoro (2024 R2 #35) to Jacksonville for DT Maason Smith (2024 R2 #48). ESPN graded the Jags slight winners; Falcons are betting on Smith's traits. Move reshuffles how urgently Atlanta needs DT at 48.",
+      category: "free-agency",
+    },
+    {
+      title: "Kiper's final mock: Lee Hunter, DT to Falcons at 48",
+      detail: "Mel Kiper's two-round final mock (Apr 17) has Atlanta beefing up the trenches with Hunter — 52 run stops and 33.5 TFL over three years. Fits the 'fix the 25th-ranked run defense' narrative after Atlanta gave up 4.6 YPC in 2025. Branch went to Pittsburgh at 53 in Kiper's board.",
+      category: "draft",
+    },
+    {
+      title: "Cunningham telegraphing trade-down interest",
+      detail: "ESPN and PFT report the GM is telling teams he wants to slide from #48 to collect Day 2/3 capital. He took Chicago from 5 picks to 10 his first year running their board. Patriots, Steelers, and Packers floated as potential partners; a player-for-picks move also remains in play.",
+      category: "draft",
+    },
+    {
+      title: "Mock board crystallizes around DT / WR / LB at #48",
+      detail: "Pre-draft consensus spread: Christen Miller (DT, Georgia — ESPN Matt Miller), Lee Hunter (DT — Kiper), Jacob Rodriguez (LB, Texas Tech — Falcoholic), Bryce Lance (WR, NDSU — PFN), T.J. Parker (EDGE, Clemson — CBS Renner), Zachariah Branch (WR, Georgia). All three top needs — LB, WR, DT — in play.",
       category: "draft",
     },
     {
       title: "Michael Turner to announce Falcons' R2 pick",
-      detail: "NFL announced the team legends tapped for Day 2. Former Falcons RB Michael Turner will walk on stage for Atlanta on Friday night.",
+      detail: "NFL confirmed team legends tapped for Day 2. Former Falcons RB Michael Turner will walk on stage for Atlanta on Friday night in Pittsburgh — first pick of the Cunningham-Stefanski era.",
       category: "draft",
     },
     {
       title: "Bijan Robinson's 5th-year option picked up",
-      detail: "Apr 12 — no surprise after a 1,478-rush-yard, league-leading-2,298-scrimmage-yard 2025. Robinson is now locked in through 2027 at $11.32M on the option. Long-term extension talks held until after the draft.",
+      detail: "Apr 12 — no surprise after a 1,478-rush-yard, league-leading-2,298-scrimmage-yard 2025. Robinson locked in through 2027 at $11.32M on the option. Schefter reports an extension is on the way this offseason; Cunningham says focus turns to it post-draft.",
       category: "contracts",
-    },
-    {
-      title: "Kaleb McGary retires; Falcons sign Jawaan Taylor",
-      detail: "Apr 8–9 — McGary (31) calls it after a 2025 season lost to a leg injury, freeing ~$14M over '26–'27. Same day, Atlanta inks ex-Chiefs RT Jawaan Taylor to a 1-yr / $5M + $1M incentives deal to plug the hole opposite Matthews.",
-      category: "free-agency",
-    },
-    {
-      title: "Penix 'where he needs to be' in ACL rehab",
-      detail: "Stefanski on Apr 8: no firm timetable, but the Nov 16 ACL tear is trending well. Penix remains QB1 on paper; Tua Tagovailoa's 1-yr deal means the battle is real if the rehab lingers into camp.",
-      category: "injuries",
     },
     {
       title: "Drake London extension paused until after draft",
-      detail: "Cunningham: extension 'top of mind' but won't dig in until picks are signed. Gap in valuations — London wants $30M+ APY after the JSN $168.6M deal reset the WR market; Falcons targeting closer to $25M. Projection: 4yr / $128M.",
+      detail: "Cunningham (league meetings + Apr 15): extension 'top of mind' but the Falcons 'don't want outside factors to push us' before picks sign. Gap in valuations — London wants $30M+ APY after the JSN $168.6M deal reset the WR market. Projection: 4yr / $128M.",
       category: "contracts",
     },
     {
-      title: "Mock board tilts defense at #48",
-      detail: "Latest mock spread: Christen Miller (DT, Georgia — ESPN Matt Miller), Bryce Lance (WR, NDSU — Falcoholic), Zachariah Branch (WR, Georgia), T.J. Parker (EDGE, Clemson — CBS), Lee Hunter (DT, UCF — Kiper Final Mock). Three of the top needs — LB, WR, DT — in play.",
-      category: "draft",
+      title: "Penix 'maybe a little ahead' on ACL rehab, eyeing Week 1",
+      detail: "Penix told reporters in early April: 'Absolutely' targeting a Week 1 green light. Stefanski on Apr 8: 'right where he needs to be,' no firm timetable. Surgery was Nov 25 — the 9–12 month window lands right at kickoff. Tua's 1-yr deal is insurance if rehab drags.",
+      category: "injuries",
     },
     {
-      title: "Top three needs: LB, WR, DT",
-      detail: "Stefanski and new football president Matt Ryan have telegraphed a run-it / stop-it identity. Atlanta must replace Kaden Elliss' role eventually and the interior DL lost David Onyemata-level snaps. WR2 is filled by Dotson but more speed is welcome.",
-      category: "draft",
-    },
-    {
-      title: "Cunningham hunting for more Day 3 capital",
-      detail: "PFT / Pro Football Rumors: the GM is telling teams he's willing to slide from #48 to collect picks. Several mocks float a Patriots trade (Falcons get #63, #95, #131 for #48). A Falcons player-for-picks move remains in play too.",
-      category: "draft",
+      title: "Kaleb McGary retires; Jawaan Taylor plugs RT",
+      detail: "Apr 8–9 — McGary (31) calls it after a 2025 season lost to a leg injury, freeing ~$14M over 2026–27. Same day, Atlanta inks ex-Chiefs RT Jawaan Taylor to 1-yr / $5M + $1M incentives. Taylor now projected to start across from Jake Matthews.",
+      category: "free-agency",
     },
     {
       title: "Kyle Pitts on the $14.1M franchise tag",
-      detail: "Long-term deal shelved; the tag keeps Pitts in Atlanta for 2026 while London and Bijan move ahead on the extension queue. Pitts reports to minicamp without drama.",
+      detail: "Long-term deal shelved; the tag keeps Pitts in Atlanta for 2026 while London and Bijan move ahead on the extension queue. Pitts expected at minicamp Tuesday without drama.",
       category: "contracts",
     },
     {
       title: "Kirk Cousins chapter officially closed",
-      detail: "The $180M experiment is done. Cousins is in Vegas; Falcons carry $8.7M in dead money on the 2026 books as the last trace of the Fontenot era.",
+      detail: "The $180M experiment ends. Cousins released Mar 11 (post-June 1 designation), now in Vegas. Falcons carry $8.7M in dead money on the 2026 books as the last trace of the Fontenot era.",
       category: "contracts",
+    },
+    {
+      title: "Schedule release looms — Falcons waiting on May 14",
+      detail: "2026 NFL schedule drops May 14. With Penix's Week 1 status the league-office storyline, Atlanta is a candidate for a prime-time opener. Mandatory veteran minicamp June 9; training camp opens July 22 at Flowery Branch.",
+      category: "general",
     },
   ],
 };
