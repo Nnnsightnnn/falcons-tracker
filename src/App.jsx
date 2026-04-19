@@ -479,15 +479,25 @@ function PhaseHero({ phase }) {
 // ─── STAR CARDS ROW ─────────────────────────────────────────────────────────
 const STAR_IDS = ["penix-jr", "tua", "bijan", "drake-london", "pitts", "bates", "terrell", "jalon-walker", "dorlus"];
 
-function StarCard({ player }) {
+function StarCard({ player, onClick }) {
   const statVals = getStarStatLine(player);
   return (
-    <div style={{
-      background: FALCONS_CARD, borderRadius: 14, padding: "14px 16px",
-      borderTop: `3px solid ${POS_COLORS[player.position] || FALCONS_RED}`,
-      minWidth: 220, display: "flex", flexDirection: "column", gap: 10,
-      boxShadow: "0 2px 12px #0005",
-    }}>
+    <div
+      onClick={onClick ? () => onClick(player) : undefined}
+      role={onClick ? "button" : undefined}
+      tabIndex={onClick ? 0 : undefined}
+      onKeyDown={onClick ? (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onClick(player); } } : undefined}
+      style={{
+        background: FALCONS_CARD, borderRadius: 14, padding: "14px 16px",
+        borderTop: `3px solid ${POS_COLORS[player.position] || FALCONS_RED}`,
+        minWidth: 220, display: "flex", flexDirection: "column", gap: 10,
+        boxShadow: "0 2px 12px #0005",
+        cursor: onClick ? "pointer" : "default",
+        transition: "transform 0.15s, box-shadow 0.15s",
+      }}
+      onMouseEnter={onClick ? (e) => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 6px 20px #0008"; } : undefined}
+      onMouseLeave={onClick ? (e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "0 2px 12px #0005"; } : undefined}
+    >
       <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
         <PlayerAvatar player={player} size={52} />
         <div style={{ minWidth: 0, flex: 1 }}>
@@ -575,17 +585,17 @@ function getStarStatLine(player) {
   }
 }
 
-function StarCardsRow({ players }) {
+function StarCardsRow({ players, onPlayerClick }) {
   const stars = STAR_IDS.map((id) => players.find((p) => p.id === id)).filter(Boolean);
   return (
     <div style={{ marginBottom: 20 }}>
       <div style={{ fontSize: 11, color: FALCONS_SILVER, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1.5, marginBottom: 8 }}>
-        Stars to Watch — 2025 stats
+        Stars to Watch — 2025 stats · tap a card for details
       </div>
       <div style={{
         display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 10,
       }}>
-        {stars.map((p) => <StarCard key={p.id} player={p} />)}
+        {stars.map((p) => <StarCard key={p.id} player={p} onClick={onPlayerClick} />)}
       </div>
     </div>
   );
@@ -1125,10 +1135,274 @@ function RSSSourcesPanel() {
   );
 }
 
+// ─── PLAYER DETAIL MODAL ────────────────────────────────────────────────────
+function formatHeight(inches) {
+  if (!inches) return "—";
+  return `${Math.floor(inches / 12)}'${inches % 12}"`;
+}
+
+function formatDollars(n) {
+  if (n == null) return "—";
+  if (n >= 1_000_000) return "$" + (n / 1_000_000).toFixed(1) + "M";
+  if (n >= 1_000) return "$" + (n / 1_000).toFixed(0) + "K";
+  return "$" + n.toLocaleString();
+}
+
+function formatAcquired(a) {
+  if (!a) return "—";
+  // draft-2022-R1-P8 → "2022 Draft · R1 P8"
+  const draftMatch = a.match(/^draft-(\d{4})-R(\d+)(?:-P(\d+))?/);
+  if (draftMatch) {
+    const [, year, round, pick] = draftMatch;
+    return `${year} Draft · Round ${round}${pick ? " · Pick " + pick : ""}`;
+  }
+  // fa-2026-2yr → "FA · 2026 · 2yr"
+  const faMatch = a.match(/^fa-(\d{4})(?:-(\d+)yr)?/);
+  if (faMatch) {
+    const [, year, yrs] = faMatch;
+    return `Free Agent · ${year}${yrs ? " · " + yrs + "yr" : ""}`;
+  }
+  if (a.startsWith("trade-")) {
+    return "Trade · " + a.replace("trade-", "");
+  }
+  if (a.startsWith("udfa-")) return "UDFA · " + a.replace("udfa-", "");
+  return a;
+}
+
+function formColor(form) {
+  if (form >= 8.5) return "#28a745";
+  if (form >= 7.5) return "#5cb85c";
+  if (form >= 7.0) return "#ffc107";
+  if (form >= 6.5) return "#fd7e14";
+  if (form > 0) return "#dc3545";
+  return "#6c757d";
+}
+
+// All stat keys for a player's position — powers the "Form basis" section
+function formBasisStats(player) {
+  const s = player.stats || {};
+  const entries = Object.entries(s).filter(([, v]) => v != null);
+  // Human-readable labels
+  const LABELS = {
+    passYds: "Passing yards", passTDs: "Passing TDs", ints: "Interceptions",
+    qbRating: "QB rating", completions: "Completions", attempts: "Attempts",
+    rushYds: "Rushing yards", rushTDs: "Rushing TDs", rushAttempts: "Carries", ypc: "Yards/carry",
+    receptions: "Receptions", recYds: "Receiving yards", recTDs: "Receiving TDs", targets: "Targets",
+    tackles: "Tackles", sacks: "Sacks", tfl: "TFL", ff: "Forced fumbles",
+    int_def: "INTs (def)", pass_def: "Passes defended", passDef: "Passes defended", ints_def: "INTs (def)",
+    fgMade: "FG made", fgAttempted: "FG att", longFG: "Long FG",
+    puntAvg: "Punt avg", netPuntAvg: "Net punt avg",
+  };
+  return entries.map(([k, v]) => ({
+    label: LABELS[k] || k,
+    value: typeof v === "number" && !Number.isInteger(v) ? v.toFixed(1) : v.toLocaleString?.() ?? String(v),
+  }));
+}
+
+function PlayerDetailModal({ player, onClose }) {
+  useEffect(() => {
+    if (!player) return;
+    const onKey = (e) => { if (e.key === "Escape") onClose(); };
+    window.addEventListener("keydown", onKey);
+    // Lock scroll on body while modal is open
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [player, onClose]);
+
+  if (!player) return null;
+
+  const accent = POS_COLORS[player.position] || FALCONS_RED;
+  const fc = formColor(player.form);
+  const basis = formBasisStats(player);
+  const c = player.contract;
+
+  return (
+    <div
+      onClick={onClose}
+      style={{
+        position: "fixed", inset: 0, background: "#000000cc",
+        zIndex: 1000, display: "flex", alignItems: "flex-start", justifyContent: "center",
+        padding: "40px 16px", overflowY: "auto", backdropFilter: "blur(4px)",
+      }}
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        style={{
+          background: FALCONS_CARD, borderRadius: 16, maxWidth: 640, width: "100%",
+          boxShadow: "0 20px 60px #000c", border: `1px solid ${accent}55`,
+          overflow: "hidden", color: "#fff",
+        }}
+      >
+        {/* Header strip */}
+        <div style={{
+          background: `linear-gradient(135deg, ${accent}33 0%, #0000 60%), ${FALCONS_PANEL}`,
+          padding: "20px 22px 18px", display: "flex", alignItems: "center", gap: 16,
+          borderBottom: `2px solid ${accent}66`, position: "relative",
+        }}>
+          <PlayerAvatar player={player} size={86} />
+          <div style={{ flex: 1, minWidth: 0 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
+              <PositionTag position={player.position} />
+              <span style={{ color: FALCONS_SILVER, fontSize: 13, fontWeight: 700 }}>#{player.number ?? "—"}</span>
+              <StatusBadge status={player.status} />
+            </div>
+            <div style={{ fontSize: 22, fontWeight: 800, marginTop: 4, letterSpacing: -0.3 }}>
+              {player.name}
+            </div>
+            <div style={{ fontSize: 11, color: "#888", marginTop: 2 }}>
+              {player.college ?? "—"} · {player.experience != null ? `${player.experience} yr${player.experience === 1 ? "" : "s"} NFL` : ""}
+            </div>
+          </div>
+          <button
+            onClick={onClose}
+            aria-label="Close"
+            style={{
+              position: "absolute", top: 12, right: 12,
+              background: "#00000055", border: "1px solid #ffffff22",
+              color: "#fff", width: 30, height: 30, borderRadius: 8,
+              cursor: "pointer", fontSize: 16, fontWeight: 700, lineHeight: 1,
+            }}
+          >×</button>
+        </div>
+
+        {/* Body */}
+        <div style={{ padding: "18px 22px 22px", display: "flex", flexDirection: "column", gap: 16 }}>
+          {/* Bio strip */}
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(90px, 1fr))", gap: 8 }}>
+            {[
+              { label: "Height", value: formatHeight(player.height) },
+              { label: "Weight", value: player.weight ? `${player.weight} lbs` : "—" },
+              { label: "Age", value: player.age ?? "—" },
+              { label: "Exp", value: player.experience != null ? player.experience + " yrs" : "—" },
+            ].map((b) => (
+              <div key={b.label} style={{ background: "#252530", borderRadius: 8, padding: "8px 10px", textAlign: "center" }}>
+                <div style={{ color: "#fff", fontWeight: 800, fontSize: 14 }}>{b.value}</div>
+                <div style={{ color: "#777", fontSize: 9, textTransform: "uppercase", letterSpacing: 1, marginTop: 3 }}>{b.label}</div>
+              </div>
+            ))}
+          </div>
+
+          {/* Acquired */}
+          <div style={{ background: "#252530", borderRadius: 8, padding: "10px 12px" }}>
+            <div style={{ color: "#777", fontSize: 9, textTransform: "uppercase", letterSpacing: 1 }}>Acquired</div>
+            <div style={{ color: "#fff", fontSize: 13, fontWeight: 600, marginTop: 2 }}>{formatAcquired(player.acquired)}</div>
+          </div>
+
+          {/* Injury note */}
+          {player.injuryNote && (
+            <div style={{
+              background: "#fd7e1418", borderRadius: 8, padding: "10px 12px",
+              borderLeft: "3px solid #fd7e14",
+            }}>
+              <div style={{ color: "#ffa94d", fontSize: 9, textTransform: "uppercase", letterSpacing: 1, fontWeight: 700 }}>
+                {player.status === "active" ? "Note" : "Injury / Status"}
+              </div>
+              <div style={{ color: "#fff", fontSize: 12, marginTop: 3, lineHeight: 1.5 }}>{player.injuryNote}</div>
+            </div>
+          )}
+
+          {/* Form basis */}
+          {player.form > 0 && (
+            <div>
+              <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 8 }}>
+                <div style={{
+                  width: 42, height: 42, borderRadius: "50%", background: fc,
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  color: "#fff", fontWeight: 800, fontSize: 14, flexShrink: 0,
+                  boxShadow: `0 0 10px ${fc}66`,
+                }}>
+                  {player.form.toFixed(1)}
+                </div>
+                <div>
+                  <div style={{ fontSize: 10, color: FALCONS_SILVER, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1.5 }}>
+                    Form rating
+                  </div>
+                  <div style={{ fontSize: 11, color: "#888", marginTop: 2 }}>
+                    Based on 2025 stats + injury status
+                  </div>
+                </div>
+              </div>
+              {basis.length > 0 ? (
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))", gap: 6 }}>
+                  {basis.map((s) => (
+                    <div key={s.label} style={{
+                      background: "#252530", borderRadius: 8, padding: "7px 10px",
+                      display: "flex", justifyContent: "space-between", alignItems: "center",
+                    }}>
+                      <span style={{ color: "#888", fontSize: 10, textTransform: "uppercase", letterSpacing: 0.5 }}>{s.label}</span>
+                      <span style={{ color: "#fff", fontSize: 12, fontWeight: 800, fontFamily: "monospace" }}>{s.value}</span>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div style={{ color: "#666", fontSize: 11, fontStyle: "italic" }}>No 2025 stat line on record.</div>
+              )}
+            </div>
+          )}
+
+          {/* Contract */}
+          {c && (
+            <div>
+              <div style={{ fontSize: 10, color: "#C9A227", fontWeight: 700, textTransform: "uppercase", letterSpacing: 1.5, marginBottom: 6 }}>
+                Contract
+              </div>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(110px, 1fr))", gap: 6 }}>
+                {[
+                  { label: "Years", value: c.years ?? "—" },
+                  { label: "Total", value: formatDollars(c.total) },
+                  { label: "Gtd", value: formatDollars(c.guaranteed) },
+                  { label: "APY", value: formatDollars(c.apy) },
+                  { label: "2026 cap", value: formatDollars(c.cap2026) },
+                  { label: "Through", value: c.throughYear ?? "—" },
+                ].map((b) => (
+                  <div key={b.label} style={{ background: "#252530", borderRadius: 8, padding: "7px 10px", textAlign: "center" }}>
+                    <div style={{ color: "#fff", fontWeight: 700, fontSize: 12, fontFamily: "monospace" }}>{b.value}</div>
+                    <div style={{ color: "#777", fontSize: 9, textTransform: "uppercase", letterSpacing: 1, marginTop: 2 }}>{b.label}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Career */}
+          {player.career && player.career.length > 0 && (
+            <div>
+              <div style={{ fontSize: 10, color: FALCONS_SILVER, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1.5, marginBottom: 6 }}>
+                Career
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", gap: 5 }}>
+                {player.career.map((entry, i) => (
+                  <div key={i} style={{
+                    background: "#252530", borderRadius: 8, padding: "7px 10px",
+                    display: "flex", gap: 10, alignItems: "baseline",
+                  }}>
+                    <span style={{ color: "#888", fontSize: 11, fontFamily: "monospace", minWidth: 78 }}>{entry.years}</span>
+                    <span style={{ color: "#fff", fontSize: 12, fontWeight: 600 }}>{entry.team}</span>
+                    {entry.type && (
+                      <span style={{ color: "#666", fontSize: 10, marginLeft: "auto", textAlign: "right" }}>
+                        {entry.type}
+                      </span>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // ─── MAIN APP ───────────────────────────────────────────────────────────────
 export default function FalconsTracker() {
   const [view, setView] = useState("dashboard"); // dashboard | depth-chart | news
   const [newsFilter, setNewsFilter] = useState("all");
+  const [selectedPlayer, setSelectedPlayer] = useState(null);
 
   const today = new Date();
   const currentPhase = getCurrentPhase(today);
@@ -1230,7 +1504,7 @@ export default function FalconsTracker() {
             </div>
 
             {/* Composites — order shifts per phase, but draft-week we lead with stars + contracts + calendar */}
-            <StarCardsRow players={PLAYERS} />
+            <StarCardsRow players={PLAYERS} onPlayerClick={setSelectedPlayer} />
 
             <div style={{ display: "grid", gridTemplateColumns: "minmax(0,1fr) minmax(0,1fr)", gap: 16 }}>
               <div>
@@ -1248,7 +1522,7 @@ export default function FalconsTracker() {
         )}
 
         {view === "depth-chart" && (
-          <DepthChartView players={PLAYERS} currentPhase={currentPhase} />
+          <DepthChartView players={PLAYERS} currentPhase={currentPhase} onPlayerClick={setSelectedPlayer} />
         )}
 
         {view === "news" && (
@@ -1287,6 +1561,8 @@ export default function FalconsTracker() {
           <span style={{ color: "#333" }}>Rise Up</span>
         </div>
       </div>
+
+      <PlayerDetailModal player={selectedPlayer} onClose={() => setSelectedPlayer(null)} />
     </div>
   );
 }

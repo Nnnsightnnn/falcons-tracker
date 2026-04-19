@@ -120,8 +120,9 @@ function positionStatLine(p) {
   }
 }
 
-function PlayerRow({ player, depthRank }) {
+function PlayerRow({ player, depthRank, onClick }) {
   const [imgFailed, setImgFailed] = useState(false);
+  const [hover, setHover] = useState(false);
   const accent = POS_COLORS[player.position] || "#888";
   const initials = player.name.split(" ").map((w) => w[0]).join("").slice(0, 2);
   const fc = formColor(player.form);
@@ -129,12 +130,21 @@ function PlayerRow({ player, depthRank }) {
   const sb = statusBadge(player.status);
 
   return (
-    <div style={{
-      display: "flex", alignItems: "center", gap: 10,
-      background: isStarter ? "#252530" : "#1e1e28",
-      borderRadius: 8, padding: "8px 10px",
-      borderLeft: `3px solid ${isStarter ? FALCONS_RED : accent}`,
-    }}>
+    <div
+      onClick={onClick ? () => onClick(player) : undefined}
+      role={onClick ? "button" : undefined}
+      tabIndex={onClick ? 0 : undefined}
+      onKeyDown={onClick ? (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onClick(player); } } : undefined}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      style={{
+        display: "flex", alignItems: "center", gap: 10,
+        background: hover && onClick ? "#2f2f3c" : (isStarter ? "#252530" : "#1e1e28"),
+        borderRadius: 8, padding: "8px 10px",
+        borderLeft: `3px solid ${isStarter ? FALCONS_RED : accent}`,
+        cursor: onClick ? "pointer" : "default",
+        transition: "background 0.15s",
+      }}>
       {/* Depth # badge */}
       <div style={{
         width: 20, height: 20, borderRadius: 4, flexShrink: 0,
@@ -209,7 +219,7 @@ function PlayerRow({ player, depthRank }) {
   );
 }
 
-function PositionBlock({ position, players }) {
+function PositionBlock({ position, players, onPlayerClick }) {
   const color = POS_COLORS[position] || "#888";
   if (players.length === 0) return null;
 
@@ -232,14 +242,14 @@ function PositionBlock({ position, players }) {
       </div>
       <div style={{ display: "flex", flexDirection: "column", gap: 5 }}>
         {sorted.map((p) => (
-          <PlayerRow key={p.id} player={p} depthRank={p.depthRank} />
+          <PlayerRow key={p.id} player={p} depthRank={p.depthRank} onClick={onPlayerClick} />
         ))}
       </div>
     </div>
   );
 }
 
-function GroupColumn({ group, players }) {
+function GroupColumn({ group, players, onPlayerClick }) {
   const byPos = useMemo(() => {
     const map = {};
     group.positions.forEach((pos) => { map[pos] = []; });
@@ -273,13 +283,13 @@ function GroupColumn({ group, players }) {
         </span>
       </div>
       {group.positions.map((pos) => (
-        <PositionBlock key={pos} position={pos} players={byPos[pos] || []} />
+        <PositionBlock key={pos} position={pos} players={byPos[pos] || []} onPlayerClick={onPlayerClick} />
       ))}
     </div>
   );
 }
 
-export default function DepthChartView({ players, currentPhase }) {
+export default function DepthChartView({ players, currentPhase, onPlayerClick }) {
   const byGroup = useMemo(() => {
     const map = { offense: [], defense: [], special: [] };
     players.forEach((p) => {
@@ -338,6 +348,7 @@ export default function DepthChartView({ players, currentPhase }) {
             key={g.id}
             group={g}
             players={byGroup[g.id] || []}
+            onPlayerClick={onPlayerClick}
           />
         ))}
       </div>
