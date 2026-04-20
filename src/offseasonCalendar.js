@@ -10,6 +10,13 @@ export const OFFSEASON_CALENDAR = [
     phase: "draft-week",
   },
   {
+    id: "voluntary-minicamp",
+    date: "2026-04-21T09:00:00-04:00",
+    label: "Voluntary minicamp (new-coach window)",
+    detail: "Apr 21–23 at Flowery Branch. One of 10 new-coach teams with a pre-draft voluntary camp. First on-field session under Stefanski.",
+    phase: "draft-week",
+  },
+  {
     id: "draft-r1",
     date: "2026-04-23T20:00:00-04:00",
     label: "NFL Draft — Round 1",
