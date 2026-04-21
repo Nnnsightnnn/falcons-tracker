@@ -1022,47 +1022,52 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-04-20T14:00:00Z",
+  generatedAt: "2026-04-21T14:00:00Z",
   sources: [
     "ESPN", "NFL.com", "Bleacher Report", "The Falcoholic",
     "Atlanta Falcons Official", "Pro Football Rumors",
     "SI Falcons", "NBC Sports", "Yahoo Sports", "Spotrac",
-    "Clutch Points", "Heavy.com", "Yardbarker", "CBS Sports",
-    "The Athletic", "NFL Trade Rumors",
+    "Heavy.com", "Yardbarker", "CBS Sports",
+    "The Athletic", "NFL Trade Rumors", "Yahoo Sports · The Falcoholic",
   ],
   topics: [
     {
-      title: "Draft week tips tonight — Falcons on the clock Friday at #48",
-      detail: "The 2026 NFL Draft opens Thursday Apr 23 at Acrisure Stadium in Pittsburgh. Atlanta has no Round 1 pick (sent to the Rams in the 2025 James Pearce Jr. trade-up) and watches Night 1 as spectators. Their five-pick haul starts Friday night at #48 — the most valuable slot on Day 2 — then #79 (R3), #122 (R4), #215 (R6), #231 (R7).",
-      category: "draft",
-    },
-    {
-      title: "Voluntary minicamp opens TUESDAY — Stefanski's first on-field reps",
-      detail: "Apr 21–23 at Flowery Branch, collision course with draft night. Atlanta is one of 10 new-coach teams granted a pre-draft voluntary camp under the CBA. No pads, but the Stefanski staff finally gets a live look at the 90-man before picks roll in. Penix on-site continuing ACL rehab; Tua's Falcons debut starts here.",
+      title: "Voluntary minicamp opens TODAY — Tua takes the spring reps, Penix on-site rehabbing",
+      detail: "Apr 21 at Flowery Branch: first on-field session of the Stefanski era kicks off this morning. Tua Tagovailoa and Trevor Siemian split first-team reps — Michael Penix Jr. is on-site continuing ACL rehab, held out of 7-on-7. Jahan Dotson's Falcons debut comes in this window. No pads; tempo is teaching-install, not competition. Runs through Apr 23, overlapping the draft opener.",
       category: "coaching",
     },
     {
-      title: "Cunningham openly shopping #48 — trade-down is the GM's stated plan",
-      detail: "Pro Football Rumors and ESPN (Apr 19–20) confirm the GM is actively telling teams he wants to slide from #48 to collect Day 2/3 capital. Quote of the week: 'That's the hand that we were dealt' — a thinly-veiled signal this won't stay a five-pick draft. He took Chicago from 5 picks to 10 his first year running their board. Any team craving QB or elite WR in Round 2 is a fit.",
+      title: "48 hours until Round 1 — Falcons watch Thursday as spectators, on the clock Friday at #48",
+      detail: "The 2026 NFL Draft opens Thursday Apr 23, 8pm ET at Acrisure Stadium in Pittsburgh. Atlanta has no Round 1 pick (sent to the Rams in the 2025 James Pearce Jr. trade-up). Five-pick haul starts Friday night at #48 — the most valuable slot on Day 2 — then #79 (R3), #122 (R4), #215 (R6), #231 (R7).",
       category: "draft",
     },
     {
-      title: "Kiper's final mock: DT Lee Hunter (UCF) to Atlanta at 48",
-      detail: "Mel Kiper's last two-round mock (Apr 17) beefs up the Falcons' trenches with Hunter — 52 run stops and 33.5 TFL over three years. Addresses the 25th-ranked run defense that gave up 4.6 YPC in 2025. Kiper also flagged Zachariah Branch (WR, Georgia) as Atlanta's 'Plan B' if the board breaks their way.",
+      title: "Cunningham pre-draft presser: trade-down is the stated plan, 'manufacture more picks'",
+      detail: "At Monday's pre-draft podium (Apr 20), GM Ian Cunningham said the Falcons are 'already looking at different ways to potentially manufacture some more' picks. He took Chicago from 5 to 10 picks his first year running their board. Quote of the week: 'That's the hand that we were dealt.' Any team craving QB or elite WR in Round 2 is a fit to slide up from #48.",
       category: "draft",
     },
     {
-      title: "Brugler / The Athletic projects Christen Miller, Bryce Lance, Jimmy Rolder",
-      detail: "Dane Brugler's final Falcons class (Apr 19): Christen Miller (DT, Georgia) at 48, Bryce Lance (WR, NDSU — Trey Lance's younger brother) at 79, Jimmy Rolder (LB, Michigan) at 122. Miller took a Flowery Branch 30-visit; Rolder also visited. Hits all three top needs — DT, WR, LB — with picks Atlanta actually has.",
+      title: "Kiper's final mock: DT Lee Hunter (Texas Tech) to Atlanta at 48",
+      detail: "Mel Kiper's last two-round mock (Apr 20) beefs up the Falcons' trenches with Hunter — 34 tackles, 8.5 TFL anchoring the nation's #1 rush defense in 2025. Addresses the 25th-ranked Atlanta run defense that gave up 4.6 YPC. Kiper flagged Zachariah Branch (WR, Georgia) and Avieon Terrell (CB, Clemson) as Atlanta's Plan B options.",
       category: "draft",
     },
     {
-      title: "30-visit board skews heavy to WR — Kevin Coleman Jr. latest to visit",
-      detail: "Missouri WR Kevin Coleman Jr. in Flowery Branch this week (NFL Trade Rumors). Falcons' confirmed top-30 WR list also includes Zachariah Branch (Georgia), Germie Bernard (Alabama), Cyrus Allen (Cincinnati), Josh Cameron (Baylor), and Ted Hurst (Georgia State). Signal: if Cunningham can't get a DT/LB he loves at 48, WR is the fallback.",
+      title: "Brugler / The Athletic final Falcons class: Miller, Lance, Rolder, Willis, Nowakowski",
+      detail: "Dane Brugler's final 7-round mock (Apr 20): Christen Miller (DT, Georgia) at 48, Bryce Lance (WR, NDSU — Trey Lance's younger brother) at 79, Jimmy Rolder (LB, Michigan) at 122, Carver Willis (OL, Washington) at 215, Riley Nowakowski (TE, Indiana) at 231. Brugler also expects Atlanta to trade down at least once for late-round capital.",
       category: "draft",
     },
     {
-      title: "Orhorhoro-for-Maason Smith trade still reshapes DT urgency",
+      title: "30-visit board heavy on WR — Kevin Coleman Jr. latest in, Ted Hurst the sleeper",
+      detail: "Missouri WR Kevin Coleman Jr. wrapped his Flowery Branch visit this past week. Confirmed Falcons WR 30-visit list also includes Zachariah Branch (Georgia), Germie Bernard (Alabama), Cyrus Allen (Cincinnati), and Georgia State's Ted Hurst — who ESPN's Jordan Reid slotted to Atlanta at #48 as an under-radar pick. Signal: WR is Cunningham's fallback if the DT/LB board breaks wrong.",
+      category: "draft",
+    },
+    {
+      title: "Uniform numbers assigned to the free-agency class — Tua to #1, Brian Robinson Jr. to #28, Dotson takes the field",
+      detail: "Apr 20: Atlanta released jersey numbers for the 2026 free-agent additions. Tua takes #1 (his number from his six-year Dolphins run), Brian Robinson Jr. and Jahan Dotson also assigned. Formality, but sets the visuals for minicamp this week and the broadcast-graphics package for Week 1.",
+      category: "general",
+    },
+    {
+      title: "Orhorhoro-for-Maason Smith trade still reshapes DT urgency at 48",
       detail: "Apr 17's player-for-player deal with Jacksonville — Ruke Orhorhoro (2024 R2 #35) out, DT Maason Smith (2024 R2 #48) in — shifts how hard Atlanta presses DT at 48. Smith pairs with Dorlus on the interior. ESPN graded Jacksonville slight winners; Falcons are betting on Smith's traits and age.",
       category: "free-agency",
     },
@@ -1072,29 +1077,24 @@ export const NEWS_DIGEST = {
       category: "draft",
     },
     {
-      title: "London & Bijan extensions parked until after the draft",
-      detail: "Cunningham at league meetings + Apr 15 presser: both deals are 'top of mind' but won't be finalized before picks sign — 'don't want outside factors to push us.' London market-maker after Jaxon Smith-Njigba's 4yr/$168.6M Seattle deal; projections land London near 4yr/$128M ($32M APY). Bijan's 5th-year option picked up Apr 12; long-term deal to follow.",
+      title: "London & Bijan extensions officially parked until after the draft",
+      detail: "Cunningham at Monday's presser: both deals are 'top of mind' but won't be finalized before picks sign — 'don't want outside factors to push us.' London is now the market-maker after Jaxon Smith-Njigba's 4yr/$168.6M Seattle deal; projections land London near 4yr/$128M ($32M APY / $82-90M gtd). Bijan's 5th-year option picked up Apr 12 at $11.32M for 2027; long-term deal to follow.",
       category: "contracts",
     },
     {
-      title: "Penix 'maybe a little ahead' on ACL rehab, eyeing Week 1",
-      detail: "Penix reiterated in early April he is 'absolutely' targeting a Week 1 green light. Stefanski on Apr 8: 'right where he needs to be,' no firm timetable. Surgery was Nov 25 — the 9–12 month window lands right at kickoff. Tua's 1-yr deal is insurance if rehab slips.",
+      title: "Penix 'a little bit ahead' on ACL rehab, still targeting Week 1",
+      detail: "Penix reiterated in early April his recovery is 'a little bit' ahead of schedule, 'absolutely' targeting a Week 1 green light. Stefanski on Apr 8: 'right where he needs to be,' no firm timetable. Surgery was Nov 25 — the 9–12 month window lands right at kickoff. Tua's 1-yr deal is insurance if rehab slips.",
       category: "injuries",
     },
     {
       title: "Kyle Pitts on the $14.1M franchise tag; no long-term talks imminent",
-      detail: "Long-term deal shelved; the tag keeps Pitts in Atlanta for 2026 while London and Bijan move ahead on the extension queue. Pitts expected at Tuesday's minicamp without drama.",
+      detail: "Long-term deal shelved; the tag keeps Pitts in Atlanta for 2026 while London and Bijan move ahead on the extension queue. Pitts expected to report to voluntary minicamp this week without drama.",
       category: "contracts",
     },
     {
       title: "Kaleb McGary retires; Jawaan Taylor plugs RT on 1-yr deal",
       detail: "Apr 8–9: McGary (31) retires after a 2025 season lost to a leg injury, freeing ~$14M over 2026–27. Same day, Atlanta inks ex-Chiefs RT Jawaan Taylor to 1-yr / $5M + $1M incentives. Taylor now penciled in opposite Jake Matthews.",
       category: "free-agency",
-    },
-    {
-      title: "Kirk Cousins chapter officially closed — $8.7M dead-money echo on 2026 books",
-      detail: "The $180M experiment is over. Cousins released Mar 11 (post-June 1 designation), now in Vegas. Falcons carry $8.7M in dead money on 2026 as the last Fontenot-era line item.",
-      category: "contracts",
     },
     {
       title: "Schedule release May 14 — prime-time opener in play",
