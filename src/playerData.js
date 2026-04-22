@@ -1022,83 +1022,83 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-04-21T14:00:00Z",
+  generatedAt: "2026-04-22T12:30:00Z",
   sources: [
     "ESPN", "NFL.com", "Bleacher Report", "The Falcoholic",
     "Atlanta Falcons Official", "Pro Football Rumors",
     "SI Falcons", "NBC Sports", "Yahoo Sports", "Spotrac",
-    "Heavy.com", "Yardbarker", "CBS Sports",
-    "The Athletic", "NFL Trade Rumors", "Yahoo Sports · The Falcoholic",
+    "Heavy.com", "Yardbarker", "CBS Sports", "AJC",
+    "The Athletic", "NFL Trade Rumors", "On3", "CBS Pittsburgh",
   ],
   topics: [
     {
-      title: "Voluntary minicamp opens TODAY — Tua takes the spring reps, Penix on-site rehabbing",
-      detail: "Apr 21 at Flowery Branch: first on-field session of the Stefanski era kicks off this morning. Tua Tagovailoa and Trevor Siemian split first-team reps — Michael Penix Jr. is on-site continuing ACL rehab, held out of 7-on-7. Jahan Dotson's Falcons debut comes in this window. No pads; tempo is teaching-install, not competition. Runs through Apr 23, overlapping the draft opener.",
+      title: "24 hours to kickoff — Round 1 opens Thursday night in Pittsburgh, Falcons on the clock Friday",
+      detail: "The 2026 NFL Draft opens tomorrow (Thursday Apr 23) at 8pm ET at Acrisure Stadium. Atlanta watches Round 1 as spectators — the pick went to the Rams in the 2025 James Pearce Jr. trade-up — then steps to the podium Friday night at #48 overall, the most valuable slot on Day 2. Wiz Khalifa and Bret Michaels headline the Friday concert before Rounds 2-3; Kane Brown follows Saturday. Atlanta's five-pick haul: #48, #79, #122, #215, #231.",
+      category: "draft",
+    },
+    {
+      title: "Jordan Reid's FINAL ESPN 7-round Falcons class: Lawson, Hurst, Benny",
+      detail: "ESPN's Jordan Reid released his full 257-pick final mock (Apr 21) with a Falcons board of Deontae Lawson (LB, Alabama) at #48, Ted Hurst (WR, Georgia State) at #79, and Rayshaun Benny (DT, Michigan) later on Day 3. Reid's read: Atlanta's top 3 needs are LB, WR, DT in that order — Kaden Elliss's March exit to New Orleans left the biggest hole on defense.",
+      category: "draft",
+    },
+    {
+      title: "Cunningham formally off a trade-UP — but trade-DOWN still live at 48 and 79",
+      detail: "Updated reporting Tuesday (Apr 21) per Locked On Atlanta: Cunningham has shifted strategy away from packaging picks to move up — 'no trade-up' is now the stated posture. Trade-DOWN remains very much on the table; GM said Monday the plan is to 'manufacture more picks.' Any QB-needy contender eyeing a Round-2 arm or a slide-up for a falling WR is a live partner at #48.",
+      category: "draft",
+    },
+    {
+      title: "Stefanski & Cunningham: this class 'isn't top-heavy but is deep at CB, safety, and DE'",
+      detail: "From Monday's pre-draft presser transcript (AJC, atlantafalcons.com): 'Receivers are deep' was the money quote from Stefanski, but Cunningham flagged cornerback, safety, and edge as the three deepest groups — which aligns with why trade-down makes sense. The Falcons can wait on CB/S depth into Day 3 and push the premium picks at DT/LB/WR.",
+      category: "draft",
+    },
+    {
+      title: "30-visit final list crystallizes: WR-heavy board, Georgia DT Miller the pre-draft favorite at 48",
+      detail: "Confirmed Flowery Branch visits wrapped Monday: Christen Miller (DT, Georgia), Zachariah Branch (WR, Georgia), Kevin Coleman Jr. (WR, Missouri), Germie Bernard (WR, Alabama), Cyrus Allen (WR, Cincinnati), Ted Hurst (WR, Georgia State), Joe Royer (TE, Cincinnati), Caleb Banks (DT, Florida), Devin Moore (CB, Florida), Daylen Everette (CB, Georgia), Zion Young (DE, Missouri), Chase Bisontis (OL, Texas A&M). Eight of those had 10+ team visits — reflects premium board capital.",
+      category: "draft",
+    },
+    {
+      title: "Minicamp Day 2 — Tua takes 1s, Penix rehabbing on-site, Dotson gets his first Atlanta reps",
+      detail: "Voluntary veteran minicamp (Apr 21-23) is halfway through. Tua Tagovailoa split first-team reps with Trevor Siemian again Tuesday; Penix on-site for ACL rehab, held out of 7-on-7. Jahan Dotson took his first reps in red and black. No pads — tempo is teaching-install under new OC. Session 3 runs tomorrow morning, overlapping the draft opener.",
       category: "coaching",
     },
     {
-      title: "48 hours until Round 1 — Falcons watch Thursday as spectators, on the clock Friday at #48",
-      detail: "The 2026 NFL Draft opens Thursday Apr 23, 8pm ET at Acrisure Stadium in Pittsburgh. Atlanta has no Round 1 pick (sent to the Rams in the 2025 James Pearce Jr. trade-up). Five-pick haul starts Friday night at #48 — the most valuable slot on Day 2 — then #79 (R3), #122 (R4), #215 (R6), #231 (R7).",
-      category: "draft",
-    },
-    {
-      title: "Cunningham pre-draft presser: trade-down is the stated plan, 'manufacture more picks'",
-      detail: "At Monday's pre-draft podium (Apr 20), GM Ian Cunningham said the Falcons are 'already looking at different ways to potentially manufacture some more' picks. He took Chicago from 5 to 10 picks his first year running their board. Quote of the week: 'That's the hand that we were dealt.' Any team craving QB or elite WR in Round 2 is a fit to slide up from #48.",
-      category: "draft",
-    },
-    {
-      title: "Kiper's final mock: DT Lee Hunter (Texas Tech) to Atlanta at 48",
-      detail: "Mel Kiper's last two-round mock (Apr 20) beefs up the Falcons' trenches with Hunter — 34 tackles, 8.5 TFL anchoring the nation's #1 rush defense in 2025. Addresses the 25th-ranked Atlanta run defense that gave up 4.6 YPC. Kiper flagged Zachariah Branch (WR, Georgia) and Avieon Terrell (CB, Clemson) as Atlanta's Plan B options.",
-      category: "draft",
-    },
-    {
-      title: "Brugler / The Athletic final Falcons class: Miller, Lance, Rolder, Willis, Nowakowski",
-      detail: "Dane Brugler's final 7-round mock (Apr 20): Christen Miller (DT, Georgia) at 48, Bryce Lance (WR, NDSU — Trey Lance's younger brother) at 79, Jimmy Rolder (LB, Michigan) at 122, Carver Willis (OL, Washington) at 215, Riley Nowakowski (TE, Indiana) at 231. Brugler also expects Atlanta to trade down at least once for late-round capital.",
-      category: "draft",
-    },
-    {
-      title: "30-visit board heavy on WR — Kevin Coleman Jr. latest in, Ted Hurst the sleeper",
-      detail: "Missouri WR Kevin Coleman Jr. wrapped his Flowery Branch visit this past week. Confirmed Falcons WR 30-visit list also includes Zachariah Branch (Georgia), Germie Bernard (Alabama), Cyrus Allen (Cincinnati), and Georgia State's Ted Hurst — who ESPN's Jordan Reid slotted to Atlanta at #48 as an under-radar pick. Signal: WR is Cunningham's fallback if the DT/LB board breaks wrong.",
-      category: "draft",
-    },
-    {
-      title: "Uniform numbers assigned to the free-agency class — Tua to #1, Brian Robinson Jr. to #28, Dotson takes the field",
-      detail: "Apr 20: Atlanta released jersey numbers for the 2026 free-agent additions. Tua takes #1 (his number from his six-year Dolphins run), Brian Robinson Jr. and Jahan Dotson also assigned. Formality, but sets the visuals for minicamp this week and the broadcast-graphics package for Week 1.",
-      category: "general",
-    },
-    {
-      title: "Orhorhoro-for-Maason Smith trade still reshapes DT urgency at 48",
-      detail: "Apr 17's player-for-player deal with Jacksonville — Ruke Orhorhoro (2024 R2 #35) out, DT Maason Smith (2024 R2 #48) in — shifts how hard Atlanta presses DT at 48. Smith pairs with Dorlus on the interior. ESPN graded Jacksonville slight winners; Falcons are betting on Smith's traits and age.",
-      category: "free-agency",
-    },
-    {
-      title: "Michael Turner will announce the Falcons' Round 2 pick",
-      detail: "NFL confirmed team legends for Day 2. Former Falcons RB Michael Turner walks on stage Friday night in Pittsburgh to call Atlanta's first pick of the Cunningham-Stefanski era.",
-      category: "draft",
-    },
-    {
-      title: "London & Bijan extensions officially parked until after the draft",
-      detail: "Cunningham at Monday's presser: both deals are 'top of mind' but won't be finalized before picks sign — 'don't want outside factors to push us.' London is now the market-maker after Jaxon Smith-Njigba's 4yr/$168.6M Seattle deal; projections land London near 4yr/$128M ($32M APY / $82-90M gtd). Bijan's 5th-year option picked up Apr 12 at $11.32M for 2027; long-term deal to follow.",
-      category: "contracts",
-    },
-    {
-      title: "Penix 'a little bit ahead' on ACL rehab, still targeting Week 1",
-      detail: "Penix reiterated in early April his recovery is 'a little bit' ahead of schedule, 'absolutely' targeting a Week 1 green light. Stefanski on Apr 8: 'right where he needs to be,' no firm timetable. Surgery was Nov 25 — the 9–12 month window lands right at kickoff. Tua's 1-yr deal is insurance if rehab slips.",
+      title: "Penix 'a little bit ahead' on ACL rehab, still tracking Week 1",
+      detail: "Penix reiterated in early April his recovery is 'a little bit' ahead of schedule, 'absolutely' targeting a Week 1 green light. Stefanski on Apr 8: 'right where he needs to be,' no firm timetable. Surgery was Nov 25 — the 9-12 month window lands right at kickoff. Tua's 1-yr deal remains the insurance policy.",
       category: "injuries",
     },
     {
+      title: "Michael Turner announces Falcons' first pick of the Cunningham-Stefanski era Friday",
+      detail: "NFL confirmed team legends for Day 2. Former Falcons RB Michael Turner walks on stage Friday night in Pittsburgh to call Atlanta's pick at #48 — the first pick of the new regime. Atmosphere: concert-stage Draft Village on the North Shore, 250K+ fans expected in the city across the three days.",
+      category: "draft",
+    },
+    {
+      title: "London & Bijan extensions officially parked until after the draft weekend",
+      detail: "Cunningham at Monday's presser: both deals are 'top of mind' but won't be finalized before picks sign — 'don't want outside factors to push us.' London is now the market-maker after Jaxon Smith-Njigba's 4yr/$168.6M Seattle deal; projections land London near 4yr/$128M ($32M APY / $82-90M gtd). Bijan's 5th-year option picked up Apr 10 at $11.32M for 2027; long-term deal queued.",
+      category: "contracts",
+    },
+    {
+      title: "Orhorhoro-for-Maason Smith trade reshaped DT urgency at 48",
+      detail: "Apr 17's player-for-player deal with Jacksonville — Ruke Orhorhoro (2024 R2 #35) out, DT Maason Smith (2024 R2 #48) in — adds a former first-day talent to pair with Dorlus on the interior. ESPN graded Jacksonville slight winners; Falcons are betting on Smith's age and traits. Cunningham/Stefanski confirmed on their Monday availability the trade reduces — but doesn't eliminate — the need for a DT at 48.",
+      category: "free-agency",
+    },
+    {
       title: "Kyle Pitts on the $14.1M franchise tag; no long-term talks imminent",
-      detail: "Long-term deal shelved; the tag keeps Pitts in Atlanta for 2026 while London and Bijan move ahead on the extension queue. Pitts expected to report to voluntary minicamp this week without drama.",
+      detail: "Long-term deal shelved; the tag keeps Pitts in Atlanta for 2026 while London and Bijan move ahead on the extension queue. Pitts reported to voluntary minicamp on schedule Tuesday without drama.",
       category: "contracts",
     },
     {
       title: "Kaleb McGary retires; Jawaan Taylor plugs RT on 1-yr deal",
-      detail: "Apr 8–9: McGary (31) retires after a 2025 season lost to a leg injury, freeing ~$14M over 2026–27. Same day, Atlanta inks ex-Chiefs RT Jawaan Taylor to 1-yr / $5M + $1M incentives. Taylor now penciled in opposite Jake Matthews.",
+      detail: "Apr 8-9: McGary (31) retires after a 2025 season lost to a leg injury, freeing ~$14M over 2026-27. Same day, Atlanta inks ex-Chiefs RT Jawaan Taylor to 1-yr / $5M + $1M incentives. Taylor is penciled in opposite Jake Matthews; Day 3 OT still a soft need for depth.",
       category: "free-agency",
     },
     {
-      title: "Schedule release May 14 — prime-time opener in play",
-      detail: "2026 NFL schedule drops May 14. With Penix's Week 1 status the league-office storyline, Atlanta is a candidate for a prime-time opener. Mandatory veteran minicamp June 9; training camp opens July 22 at Flowery Branch.",
+      title: "Uniform numbers assigned — Tua to #1, Brian Robinson Jr., Dotson in the broadcast graphics",
+      detail: "Apr 20: Atlanta released jersey numbers for the 2026 free-agent additions. Tua takes #1 (his number from his six-year Dolphins run), Brian Robinson Jr. and Jahan Dotson also locked in. Formality, but sets the visuals for the draft broadcast package and the Week 1 rollout.",
+      category: "general",
+    },
+    {
+      title: "Post-draft: schedule drops May 14, OTAs start May 18, mandatory minicamp June 16-18",
+      detail: "2026 NFL schedule release is May 14. With Penix's Week 1 status the league-office storyline, Atlanta is a candidate for a prime-time opener. OTAs: May 18-19, 21, 26-27, 29, June 8-9, 11. Mandatory veteran minicamp June 16-18. Training camp opens July 22 at Flowery Branch.",
       category: "general",
     },
   ],

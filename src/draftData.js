@@ -7,7 +7,7 @@ export const DRAFT_DATA = {
   location: "Acrisure Stadium · Pittsburgh",
   tvChannels: ["NFL Network", "ESPN", "ABC", "NFL+"],
   generalNote:
-    "Falcons have no first-rounder (2026 R1 sent to Rams via the 2025 James Pearce Jr. trade-up). Cunningham is openly shopping #48 for additional Day 2/3 picks — he took Chicago from 5 picks to 10 his first year running their board. Former Falcons RB Michael Turner will announce Atlanta's R2 pick Friday night in Pittsburgh.",
+    "24 hours to Round 1. Falcons have no first-rounder (2026 R1 sent to Rams via the 2025 James Pearce Jr. trade-up). Cunningham has now formally ruled out a trade-up but remains open to trade-DOWN from #48 and/or #79 to manufacture more picks — he took Chicago from 5 to 10 picks his first year running their board. Pre-draft presser (Apr 20): this class 'isn't top-heavy but is deep at CB, safety, and DE.' Former Falcons RB Michael Turner will announce Atlanta's R2 pick Friday night in Pittsburgh.",
 
   // The Falcons' 5 picks
   falconsPicks: [
@@ -116,6 +116,24 @@ export const DRAFT_DATA = {
       mockProjections: [
         { source: "Falcoholic mock", pick: 48 },
         { source: "ESPN Reid", pick: 50 },
+      ],
+      headshot: null,
+    },
+    {
+      id: "lawson-lb",
+      name: "Deontae Lawson",
+      position: "LB",
+      college: "Alabama",
+      heightIn: 74,
+      weight: 235,
+      age: 23,
+      fortyTime: 4.62,
+      projection: "Round 2 · #48",
+      fit: "Jordan Reid's final ESPN mock (Apr 21) sent Lawson to Atlanta at #48 — fills the Elliss-shaped hole with a three-down SEC-tested MIKE. Pro-ready processor; Stefanski values MIKE quarterbacks who can get the defense lined up.",
+      strengths: ["Instincts / pre-snap recognition", "Tackling form and finish", "SEC captain pedigree"],
+      concerns: ["Athletic ceiling not elite", "Coverage range vs NFL TEs"],
+      mockProjections: [
+        { source: "ESPN Reid final", pick: 48 },
       ],
       headshot: null,
     },
