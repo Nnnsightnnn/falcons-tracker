@@ -7,7 +7,7 @@ export const DRAFT_DATA = {
   location: "Acrisure Stadium · Pittsburgh",
   tvChannels: ["NFL Network", "ESPN", "ABC", "NFL+"],
   generalNote:
-    "Day 3 today — Rounds 4-7 begin at 12:00 PM ET in Pittsburgh. Atlanta is 2-for-2 through Day 2: Avieon Terrell (CB, Clemson) at #48 reunites the Terrell brothers for the first known starting-CB sibling tandem in NFL history (A+ grade across CBS, SI, Falcoholic, 247Sports); Zachariah Branch (WR, Georgia) at #79 lands a slot/returner with elite YAC (B/B+ from analysts split on size). Three picks remain: #122 (R4, from PHI/Sydney Brown trade), #215 (R6, from PHI), #231 (R7). Cunningham still has trade-down levers; expect LB/DT/edge-flavored Day 3 board with a developmental OT flyer behind Matthews/Taylor and a UDFA scramble tonight.",
+    "DAY 3 — Round 4 opens at 12:00 PM ET in Pittsburgh (≈3 hrs from now). Atlanta is 2-for-2 through Day 2: Avieon Terrell (CB, Clemson) at #48 reunites the Terrell brothers for the first known starting-CB sibling tandem in NFL history (PFSN A+ / 88.5 prospect score; A or A+ across CBS, SI, The Falcoholic, 247Sports); Zachariah Branch (WR, Georgia) at #79 lands a slot/returner with elite YAC (B/B+ from analysts split on size). Three picks remain: #122 (R4, from PHI/Sydney Brown trade), #215 (R6, from PHI), #231 (R7). CBS's Saturday best-available board points Atlanta toward LB (Kaden Elliss left for NO), interior DT behind newly-acquired Maason Smith, edge rotation behind Walker/Pearce/Ojulari, and developmental OT behind Matthews/Taylor. Cunningham still has trade-down levers — he turned five Bears picks into ten his first year in Chicago. UDFA scramble starts the second the final pick lands tonight; rookie minicamp opens May 1-4 or May 8-11.",
 
   // The Falcons' 5 picks
   falconsPicks: [
@@ -60,28 +60,9 @@ export const DRAFT_DATA = {
     },
   ],
 
-  // Top Falcons-fit prospects — pre-draft board.
-  // Mapped against the 5 picks as best-case scenarios.
+  // Top Falcons-fit prospects — Day 3 board.
+  // Branch was drafted by Atlanta at #79; pre-draft cards now scoped to remaining picks.
   topTargets: [
-    {
-      id: "branch",
-      name: "Zachariah Branch",
-      position: "WR",
-      college: "Georgia",
-      heightIn: 68.6,
-      weight: 177,
-      age: 21,
-      fortyTime: 4.35,
-      projection: "Round 2 · #48 range",
-      fit: "Elite YAC + returner value. Drafts like a slot WR1 who immediately upgrades Falcons special teams. Local (UGA) tie appeals to Stefanski's culture reset.",
-      strengths: ["Top-end speed", "YAC generation", "Punt/kick return upside (Jet Award 2023)"],
-      concerns: ["5'8⅝, 177 lbs — sub-ideal outside frame", "Route tree needs polish"],
-      mockProjections: [
-        { source: "Kiper ESPN", pick: 48 },
-        { source: "The Falcoholic", pick: 48 },
-      ],
-      headshot: null,
-    },
     {
       id: "bryce-lance",
       name: "Bryce Lance",

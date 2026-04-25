@@ -60,16 +60,16 @@ export const OFFSEASON_CALENDAR = [
   },
   {
     id: "otas-start",
-    date: "2026-05-19",
+    date: "2026-05-18",
     label: "OTAs begin",
-    detail: "Voluntary organized team activities.",
+    detail: "Atlanta's official OTA dates: May 18-19, 21, 26-27, 29, June 8-9, 11. Stefanski's first OTA program.",
     phase: "otas-minicamp",
   },
   {
     id: "mandatory-minicamp",
-    date: "2026-06-09",
+    date: "2026-06-16",
     label: "Mandatory Veteran Minicamp",
-    detail: "Attendance required. First look at real competition reps.",
+    detail: "June 16-18 at Flowery Branch. Attendance required. First look at real competition reps.",
     phase: "otas-minicamp",
   },
   {

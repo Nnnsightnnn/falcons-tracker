@@ -1022,7 +1022,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-04-25T08:26:31Z",
+  generatedAt: "2026-04-25T09:15:00Z",
   sources: [
     "ESPN", "NFL.com", "Bleacher Report", "The Falcoholic",
     "Atlanta Falcons Official", "Pro Football Rumors",
@@ -1031,41 +1031,42 @@ export const NEWS_DIGEST = {
     "The Athletic", "Pro Football Network", "On3", "Locked On Atlanta",
     "NFL Draft Buzz", "Atlanta News First", "Sharp Football",
     "247Sports", "DraftKings Network", "Saturday Down South",
+    "Pro Football Talk", "FootballScoop", "PFF",
   ],
   topics: [
     {
-      title: "Day 3 in Pittsburgh — Falcons on the clock at #122, #215, #231 starting noon ET",
-      detail: "Rounds 4-7 kick off at 12:00 PM ET. Atlanta has three picks left after Avieon Terrell (#48) and Zachariah Branch (#79) banked the corner and slot needs Friday. The Day 3 board now tilts to LB (Elliss-shaped hole), interior DT depth behind Maason Smith, edge rotation depth, and a developmental OT behind Jake Matthews / Jawaan Taylor. Cunningham hinted Friday he still has trade-down levers if the right swap presents itself.",
+      title: "Day 3 begins at noon ET — Falcons on the clock at #122, #215, #231",
+      detail: "Rounds 4-7 kick off Saturday at 12:00 PM ET in Pittsburgh. Atlanta sits with three picks remaining after banking corner and slot needs Friday with Avieon Terrell (#48) and Zachariah Branch (#79). The Day 3 board now tilts toward LB (Kaden Elliss left for New Orleans), interior DT depth behind newly-acquired Maason Smith, edge rotation depth, and a developmental OT behind Jake Matthews and Jawaan Taylor. Cunningham again telegraphed Friday night that Atlanta still has trade-down levers if the right value swap presents itself — he turned five Bears picks into ten his first year in Chicago.",
+      category: "draft",
+    },
+    {
+      title: "CBS Day 3 best-available board points the Falcons at LB Jermod McCoy and DT depth",
+      detail: "CBS Sports' Saturday-morning best-available ranks Tennessee CB Jermod McCoy, Washington WR Denzel Boston, and a flurry of Day-2-grade DTs as the headliners still on the board. With Atlanta's first Day 3 pick at #122, an LB (Elliss-shaped hole) or interior DT flyer remains the most-mocked outcome. Yardbarker's Day 3 fits also flagged Mizzou WR Kevin Coleman Jr. as a #122 dot-mock; The Falcoholic's seven-rounder still has Tennessee TE Jaheim Bell as the R4 dart at TE2 behind Pitts/Hooper.",
       category: "draft",
     },
     {
       title: "Day 2 grade card: Terrell A+ across the board, Branch a polarizing B/B+",
-      detail: "CBS, SI, The Falcoholic, and 247Sports all pinned A or A+ on Avieon Terrell at #48 — value-plus-fit unanimity. The Branch pick at #79 split the room: Falcoholic and atlantafalcons.com loved the YAC + returner profile, while Yahoo's Round 2-3 grade column flagged the size (5'8⅝, 177 lbs) as a Round 4 floor on a Round 3 cap. Net Day 2 average sits in the A-/B+ band.",
+      detail: "PFSN gave Terrell at #48 an A+ with an 88.5 prospect score; CBS, SI, The Falcoholic, and 247Sports all pinned A or A+ — value-plus-fit unanimity. The Branch pick at #79 split the room: Falcoholic and atlantafalcons.com loved the YAC + returner profile, while Yahoo's Round 2-3 grade column flagged the 5'8⅝ / 177-lb size as a Round 4 floor on a Round 3 cap. Net Day 2 average lands in the A-/B+ band.",
       category: "draft",
     },
     {
       title: "Terrell Bros confirmed — first known starting-CB sibling tandem in NFL history",
-      detail: "Friday night in Pittsburgh, Michael Turner walked on stage and the Falcons turned in the card on Clemson CB Avieon Terrell — A.J. Terrell's younger brother and Westlake (Atlanta) HS alum. Brugler called him 'a fluid, easy mover with read-and-drive reactions.' He was a Round 1 grade pre-combine; a re-aggravated hamstring at a private pro day pushed him to Day 2. Daniel Jeremiah: 'Tremendous quickness and instincts.' Emotional Terrell-family broadcast moment lit up NFL Twitter.",
+      detail: "Friday night in Pittsburgh, Michael Turner walked on stage and Atlanta turned in the card on Clemson CB Avieon Terrell — A.J. Terrell's younger brother and Westlake (Atlanta) HS alum. Brugler: 'A fluid, easy mover with light footwork in his pedal and read-and-drive reactions; he crowds receivers up and down the field.' Robert Mays called the moment 'one of my favorite draft moments of all time.' Terrell carried a Round-1 grade pre-combine; a re-aggravated hamstring at a private pro day pushed him to Day 2.",
       category: "draft",
     },
     {
-      title: "Falcons land Zachariah Branch at #79 — slot WR with elite YAC and a returner profile",
-      detail: "Atlanta took Georgia WR Zachariah Branch with the second Day 2 pick. 6 TDs as a UGA junior, 4.35 forty, 2023 Jet Award winner, and 78% of career yards came after the catch. Slots in as WR3 / dual-threat returner; gives Tommy Rees a YAC weapon next to London and Pitts. The Dotson + Zaccheaus FA additions plus Branch flips the WR room from a need to a strength behind Drake London.",
-      category: "draft",
-    },
-    {
-      title: "Cunningham's 'dry run' Round 1: war-room reps without picks",
-      detail: "Without a first-rounder, Cunningham used Thursday night's eight-minute clock as practice — stress-testing the war-room process for years they DO pick in R1. Atlanta entertained late-round trade-up scenarios but stayed put. The new GM called the night 'process reps' Friday morning before Round 2 kicked off.",
+      title: "Zachariah Branch at #79 — slot WR1 athleticism, elite YAC, returner value baked in",
+      detail: "Atlanta's second Day 2 pick: Georgia WR Zachariah Branch. Six TDs as a UGA junior, 4.35 forty, 2023 Jet Award winner, and 78% of career yards came after the catch. Slots in as WR3 / dual-threat returner; gives Tommy Rees a YAC weapon between London and Pitts. The Dotson + Zaccheaus FA additions plus Branch flips the WR room from a need to a strength behind Drake London.",
       category: "draft",
     },
     {
       title: "Pre-draft mock board went 0-for-Atlanta: nobody had Avieon Terrell at 48",
-      detail: "Big-board recap: Kiper had Lee Hunter (DT) at 48; Brugler/Matt Miller had Christen Miller (DT); Reid's final had Deontae Lawson (LB); Falcoholic dot-mocked Branch but at 48 not 79. The Terrell pick caught the analyst class flat-footed and validates Cunningham's stated preference for board-best-available over need.",
+      detail: "Big-board recap: Kiper had Lee Hunter (DT) at 48; Brugler/Matt Miller had Christen Miller (DT); Reid's final had Deontae Lawson (LB); Falcoholic dot-mocked Branch but at 48 not 79. The Terrell pick caught the analyst class flat-footed and validated Cunningham's stated preference for board-best-available over need. Falcoholic Saturday morning: 'Fans adamant Atlanta was wise to avoid trading into Round 1.'",
       category: "draft",
     },
     {
-      title: "Round 1-3 league pulse: 8-minute clock held; Steelers traded up for QB Drew Allar at 76",
-      detail: "League-wide: the new 8-minute Round 1 clock (down from 10) compressed trade activity to just two intra-round trades vs a recent average of 5+. Day 2 highlight outside Atlanta: Pittsburgh moved up for Penn State QB Drew Allar at #76 (potential Aaron Rodgers insurance). Cardinals took QB Carson Beck. The faster cadence telegraphed: teams that wanted to move had to be pre-wired.",
+      title: "Cunningham's 'dry run' Round 1: war-room reps without picks",
+      detail: "Without a first-rounder (sent to LA Rams in 2025 for the package that became the #48 + #79 picks), Cunningham used Thursday night's eight-minute clock as practice — stress-testing the war-room process for years Atlanta DOES pick in R1. The new GM called the night 'process reps' Friday morning before Round 2 kicked off.",
       category: "draft",
     },
     {
@@ -1074,23 +1075,23 @@ export const NEWS_DIGEST = {
       category: "coaching",
     },
     {
-      title: "Penix 'where he needs to be' on ACL rehab; Week 1 still the target",
-      detail: "Stefanski on Apr 8: Penix is 'right where he needs to be,' no firm timetable. Penix himself said he feels 'a little bit ahead' and is 'absolutely' aiming for a Week 1 green light. Surgery was Nov 25 — the 9-12 month window lands right at kickoff. Tua's 1-yr / $1.3M deal is the insurance policy through camp.",
+      title: "Penix 'where he needs to be' on ACL rehab; Week 1 still the stated target",
+      detail: "Stefanski on Apr 8: Penix is 'right where he needs to be,' no firm timetable. Penix himself said he feels 'a little bit ahead' and is 'absolutely' aiming for a Week 1 green light. Nov 25 surgery means the 9-12 month window lands right at kickoff. Tua's 1-yr / $1.3M deal is the insurance policy through camp; Stefanski has refused to publicly anoint a starter.",
       category: "injuries",
     },
     {
-      title: "Drake London extension expected to launch Monday once draft signs picks",
-      detail: "Cunningham at the pre-draft presser said both London and Bijan extensions were 'top of mind' but parked until after the weekend so 'outside factors' (i.e., draft results and rookie deals) didn't pollute the talks. London is now the WR market-maker after Jaxon Smith-Njigba's Mar 25 4yr/$168.6M Seattle deal; projections land London near 4yr/$128M ($32M APY / $82-90M gtd).",
+      title: "Drake London extension talks open Monday — projected near 4yr / $128M",
+      detail: "Cunningham at the pre-draft presser said both London and Bijan extensions were 'top of mind' but parked until after the weekend so 'outside factors' (i.e., draft results and rookie deals) didn't pollute the talks. London is now the WR market-maker after Jaxon Smith-Njigba's Mar 25 4yr/$168.6M Seattle deal; projections land London near 4yr/$128M ($32M APY / $82-90M gtd). SI's pre-draft column called the deal 'overdue.'",
       category: "contracts",
     },
     {
       title: "Bijan Robinson 5th-year option locked in at $11.32M for 2027",
-      detail: "Atlanta exercised Bijan's 5th-year option Apr 12 at $11.32M for 2027 — a procedural lock that buys a year of cost certainty before the multi-year extension. Long-term deal expected this summer; Saquon's $20.6M-APY Eagles deal is the floor.",
+      detail: "Atlanta exercised Bijan's 5th-year option Apr 12 at $11.32M for 2027. Per Jonathan Jones, the option was always viewed as a formality while both sides keep working toward a long-term extension expected before kickoff. Saquon's $20.6M-APY Eagles deal is the floor; Bijan was 4th in rushing yards and 1st in scrimmage yards in 2025 (1,478 / 2,298) and earned All-Pro honors.",
       category: "contracts",
     },
     {
       title: "Orhorhoro-for-Maason Smith trade reshaped DT board going into draft",
-      detail: "The Apr 17 player-for-player swap with Jacksonville — Ruke Orhorhoro out, Maason Smith in — added nose-tackle capability to pair with Zach Harrison. Cunningham/Stefanski confirmed pre-draft the trade reduced — but didn't eliminate — the DT need; a Day 3 interior-DL flyer is still the expectation.",
+      detail: "The Apr 17 player-for-player swap with Jacksonville sent Ruke Orhorhoro out and brought Maason Smith in — both 2024 second-rounders. Smith's nose-tackle frame pairs with Zach Harrison on the interior. Cunningham/Stefanski confirmed pre-draft the trade reduced — but didn't eliminate — the DT need; a Day 3 interior-DL flyer remains in the cards.",
       category: "free-agency",
     },
     {
@@ -1104,8 +1105,8 @@ export const NEWS_DIGEST = {
       category: "free-agency",
     },
     {
-      title: "Post-draft calendar: UDFA scramble tonight, rookie minicamp May 1-4 or 8-11, schedule release May 14",
-      detail: "Once Day 3 wraps tonight, Atlanta's pro scouts and Cunningham's group hit the phones for the UDFA priority list — typically 8-12 signings within hours of the final pick. Rookie minicamp opens either May 1-4 or May 8-11 (team hasn't formally selected the window). Schedule release Thu May 14 — Atlanta a candidate for a primetime opener with Penix's Week 1 status as the league-office storyline. OTAs May 19, mandatory veteran minicamp June 9-11, training camp opens July 22 at Flowery Branch.",
+      title: "Post-draft calendar locks in: UDFA scramble tonight, OTAs May 18, mandatory minicamp Jun 16-18",
+      detail: "Once Day 3 wraps tonight, Atlanta's pro scouts and Cunningham's group hit the phones for the UDFA priority list — typically 8-12 signings within hours of the final pick. Rookie minicamp opens May 1-4 or May 8-11 (team hasn't formally selected the window). Stefanski's first official OTA dates per the team: May 18-19, 21, 26-27, 29, June 8-9, 11. Mandatory veteran minicamp June 16-18. Schedule release Thu May 14; training camp opens July 22 at Flowery Branch.",
       category: "general",
     },
   ],
