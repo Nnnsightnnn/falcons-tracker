@@ -7,7 +7,7 @@ export const DRAFT_DATA = {
   location: "Acrisure Stadium · Pittsburgh",
   tvChannels: ["NFL Network", "ESPN", "ABC", "NFL+"],
   generalNote:
-    "Day 3 — Rounds 4-7 today. Atlanta is 2-for-2 through Day 2: Avieon Terrell (CB, Clemson) at #48 reunites the Terrell brothers for the first known starting-CB sibling tandem in NFL history (A+ grade across most outlets); Zachariah Branch (WR, Georgia) at #79 lands a slot/returner with elite YAC. Three picks remain: #122 (R4, from PHI/Sydney Brown trade), #215 (R6, from PHI), #231 (R7). Cunningham still has trade-down levers; expect WR/DT/LB-flavored Day 3 board with developmental edge as a flyer in R7.",
+    "Day 3 today — Rounds 4-7 begin at 12:00 PM ET in Pittsburgh. Atlanta is 2-for-2 through Day 2: Avieon Terrell (CB, Clemson) at #48 reunites the Terrell brothers for the first known starting-CB sibling tandem in NFL history (A+ grade across CBS, SI, Falcoholic, 247Sports); Zachariah Branch (WR, Georgia) at #79 lands a slot/returner with elite YAC (B/B+ from analysts split on size). Three picks remain: #122 (R4, from PHI/Sydney Brown trade), #215 (R6, from PHI), #231 (R7). Cunningham still has trade-down levers; expect LB/DT/edge-flavored Day 3 board with a developmental OT flyer behind Matthews/Taylor and a UDFA scramble tonight.",
 
   // The Falcons' 5 picks
   falconsPicks: [
