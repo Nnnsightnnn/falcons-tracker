@@ -7,26 +7,28 @@ export const DRAFT_DATA = {
   location: "Acrisure Stadium · Pittsburgh",
   tvChannels: ["NFL Network", "ESPN", "ABC", "NFL+"],
   generalNote:
-    "24 hours to Round 1. Falcons have no first-rounder (2026 R1 sent to Rams via the 2025 James Pearce Jr. trade-up). Cunningham has now formally ruled out a trade-up but remains open to trade-DOWN from #48 and/or #79 to manufacture more picks — he took Chicago from 5 to 10 picks his first year running their board. Pre-draft presser (Apr 20): this class 'isn't top-heavy but is deep at CB, safety, and DE.' Former Falcons RB Michael Turner will announce Atlanta's R2 pick Friday night in Pittsburgh.",
+    "Day 3 — Rounds 4-7 today. Atlanta is 2-for-2 through Day 2: Avieon Terrell (CB, Clemson) at #48 reunites the Terrell brothers for the first known starting-CB sibling tandem in NFL history (A+ grade across most outlets); Zachariah Branch (WR, Georgia) at #79 lands a slot/returner with elite YAC. Three picks remain: #122 (R4, from PHI/Sydney Brown trade), #215 (R6, from PHI), #231 (R7). Cunningham still has trade-down levers; expect WR/DT/LB-flavored Day 3 board with developmental edge as a flyer in R7.",
 
   // The Falcons' 5 picks
   falconsPicks: [
     {
       round: 2,
       overallPick: 48,
-      status: "scheduled", // scheduled | on-clock | made | traded
+      status: "made", // scheduled | on-clock | made | traded
       slotEstTime: "2026-04-24T19:20:00-04:00",
       valueChart: "most-valuable-slot", // narrative label
-      selection: null,
+      selection: "Avieon Terrell · CB · Clemson",
+      selectionNote: "Brother of A.J. Terrell — first known starting-CB sibling tandem in NFL history. A+ grades across most outlets; slid out of R1 after re-aggravating a hamstring at his pro day.",
       tradeNote: null,
     },
     {
       round: 3,
       overallPick: 79,
-      status: "scheduled",
+      status: "made",
       slotEstTime: "2026-04-24T22:00:00-04:00",
       valueChart: "value-territory",
-      selection: null,
+      selection: "Zachariah Branch · WR · Georgia",
+      selectionNote: "Slot receiver / dual-threat returner. 6 TDs as a UGA junior; 78% of career yards came after the catch. Local Bulldog pick fits Stefanski's culture reset.",
       tradeNote: null,
     },
     {
