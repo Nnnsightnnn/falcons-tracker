@@ -786,17 +786,44 @@ function SeasonRecap2025Card() {
           </div>
         </div>
       </div>
-      <div style={{ marginTop: 12, display: "flex", gap: 4, overflowX: "auto", paddingBottom: 4 }}>
-        {RESULTS_2025.map((g, i) => (
-          <div key={i} title={`${g.home ? "vs" : "@"} ${g.opp} ${g.atlScore}-${g.oppScore}`} style={{
-            flex: "0 0 auto", width: 28, height: 28, borderRadius: 6,
-            background: g.result === "W" ? "#28a745" : "#dc3545",
-            color: "#fff", fontWeight: 800, fontSize: 11,
-            display: "flex", alignItems: "center", justifyContent: "center",
-          }}>
-            {g.result}
-          </div>
-        ))}
+      <div style={{ marginTop: 14 }}>
+        <div style={{ fontSize: 10, color: FALCONS_SILVER, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1, marginBottom: 8 }}>
+          Game-by-Game
+        </div>
+        <div style={{ display: "flex", gap: 6, overflowX: "auto", paddingBottom: 4 }}>
+          {RESULTS_2025.map((g, i) => {
+            const isWin = g.result === "W";
+            const accent = isWin ? "#2ecc71" : "#e74c3c";
+            return (
+              <div
+                key={i}
+                title={`${g.home ? "vs" : "@"} ${g.opp} · ${g.atlScore}-${g.oppScore} (${g.result})`}
+                style={{
+                  flex: "0 0 auto",
+                  background: "#252530",
+                  borderRadius: 10,
+                  borderTop: `3px solid ${accent}`,
+                  padding: "6px 8px 7px",
+                  minWidth: 56,
+                  textAlign: "center",
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: 2,
+                }}
+              >
+                <div style={{ fontSize: 8, color: "#666", textTransform: "uppercase", letterSpacing: 1, fontWeight: 700 }}>
+                  {g.home ? "vs" : "@"} {g.opp}
+                </div>
+                <div style={{ fontSize: 13, color: "#fff", fontWeight: 800, fontFamily: "monospace", lineHeight: 1.1 }}>
+                  {g.atlScore}-{g.oppScore}
+                </div>
+                <div style={{ fontSize: 9, color: accent, fontWeight: 800, letterSpacing: 0.5 }}>
+                  {g.result}
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
