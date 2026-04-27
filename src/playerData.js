@@ -968,7 +968,7 @@ export const PLAYERS = [
     form: 0,
     status: "active",
     injuryNote: null,
-    image: null,
+    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4683194.png",
     contract: { years: 4, total: 4150000, guaranteed: 80000, apy: 1037500, throughYear: 2029, cap2026: 800000 },
     career: [
       { years: "2026–", team: "Atlanta Falcons", type: "NFL" },
@@ -1155,7 +1155,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-04-26T07:30:00Z",
+  generatedAt: "2026-04-27T11:30:00Z",
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "The Falcoholic",
     "Bleacher Report", "Pro Football Rumors", "SI Falcons", "NBC Sports",
@@ -1163,82 +1163,82 @@ export const NEWS_DIGEST = {
     "The Athletic", "Pro Football Network", "On3", "247Sports",
     "Eleven Warriors", "Saturday Down South", "Pro Football Talk",
     "Yardbarker", "PFF", "BVM Sports", "BloggingDirty", "Locked On Atlanta",
-    "Ohio State Buckeyes", "NOLA.com", "Roundtable",
+    "Ohio State Buckeyes", "NOLA.com", "Roundtable", "FanSided", "RotoBaller",
   ],
   topics: [
     {
-      title: "Draft complete — 6-player class wrapped late Saturday; rookie minicamp + UDFA wave on deck",
-      detail: "Atlanta closed the 2026 NFL Draft late Saturday with six picks: CB Avieon Terrell (R2 #48), WR Zachariah Branch (R3 #79), LB Kendal Daniels (R4 #134, after Cunningham traded back from #122 to bank an extra pick), DT Anterio Thompson (R6 #208 from LV), LB Harold Perkins Jr. (R6 #215 from PHI), and OT Ethan Onianwa (R7 #231). Six rookies plus the UDFA wave will land in Flowery Branch for rookie minicamp May 1-4 or May 8-11.",
+      title: "Post-draft Monday: rookie class settled, UDFA wave firmed up overnight, focus shifts to extensions + minicamp",
+      detail: "Two days removed from pick #231, Atlanta's six-player class is the smallest in the NFC South — but the noise has shifted. Reported priority UDFA signings hardened overnight: DT Carlos Allen (FBS-leading 80 tackles among interior DLs), C James Brockermeyer (All-ACC 3rd team, Senior Bowl standout), RB Cash Jones (Georgia, third-down profile), OL Kam Dewberry (Alabama LG), OT Riley Mahlman, plus pass-catchers Vinny Anthony II, Malik Rutherford, and Keelan Marion. Cunningham now turns to the London / Bijan / Pitts contract queue with rookie minicamp on the runway.",
       category: "draft",
     },
     {
-      title: "Cunningham's first Atlanta trade-back: #122 → #134 + #208 with Las Vegas",
-      detail: "On the clock with #122 in Round 4, Cunningham swapped down 12 spots with the Raiders to add a sixth-rounder. The #134 became Oklahoma LB Kendal Daniels; the #208 became Washington DT Anterio Thompson. The new GM telegraphed trade-down levers all week and finally pulled one — a callback to his Bears tenure where he turned five picks into ten in 2024.",
+      title: "NFL.com slams class with B-, CBS gives B+ — Atlanta's edge-rusher gap is the headline critique",
+      detail: "NFL.com's Chad Reuter delivered the harshest grade of any major outlet (B-), citing the 'gambled' 2026 R1 traded last spring for James Pearce Jr. and zero edge selections in this class as the chief concern. CBS's Carter Bahns went the other direction with a B+, refusing to penalize the no-R1 reality. Day 2 (Terrell + Branch) was universally A/A-; Day 3 (the LB double-dip + Onianwa) is what split the rooms. Net consensus: B / B+.",
       category: "draft",
     },
     {
-      title: "Kendal Daniels (R4 #134) — 6'4 'Cheetah' fills the Elliss-shaped hole at LB",
-      detail: "Oklahoma LB Kendal Daniels lands at 134 after a year as OU's hybrid Cheetah — 13 starts, 53 tackles, 9 TFLs, 3 PBUs. Three years as an Oklahoma State safety before transferring to OU for his senior year on or near the line. 97th-percentile LB height. The kind of sub-package SAM/STs profile that fills the Kaden Elliss-shaped hole left when Elliss signed in New Orleans.",
-      category: "draft",
+      title: "Atlanta locks the May 8–11 window for rookie minicamp; UDFAs + tryout invites included",
+      detail: "Per multiple Falcoholic / SI Falcons reports, Atlanta is taking the second post-draft weekend (May 8–11) for its three-day rookie minicamp at Flowery Branch — same window as several other coach-transition teams. Six drafted rookies, the priority UDFAs, and a wave of tryout invites (including Georgia Tech DB Clayton Powell-Lee) headline the workload. First on-field exposure to Stefanski-Rees-Ulbrich install language for the rookie group.",
+      category: "general",
     },
     {
-      title: "Harold Perkins Jr. (R6 #215) — bet-on-talent swing on a former projected R1",
-      detail: "LSU LB Harold Perkins Jr., once a freshman All-American projected as a 2024 first-rounder, slid to #215 after a torn right ACL in 2024 and a 2025 production dip. Still ran 4.45 (96th-percentile LB). 4-yr / $4.45M rookie deal per Spotrac. Hybrid Star/EDGE rotation piece — NOLA.com framed the pick as 'Atlanta's biggest upside swing of the weekend.'",
-      category: "draft",
-    },
-    {
-      title: "Anterio Thompson (R6 #208) — 4.73 forty at 306, three blocked punts in 2025",
-      detail: "Washington DT Anterio Thompson is the under-the-radar pick: 6'2 / 306 with a 4.73 pro-day forty and three blocked punts in 2025. Modest college production (30 tackles, 1.5 sacks starting only 3 games), but the disruptive burst and ST tape are exactly what Ulbrich's attack-style front rotates on third downs. Acquired from Las Vegas in the same trade that produced Daniels.",
-      category: "draft",
-    },
-    {
-      title: "Ethan Onianwa (R7 #231) — pure size/length OT depth flyer to close the class",
-      detail: "Atlanta closed the class with Ohio State OT Ethan Onianwa, 6'6 / 333 with 34 college starts at Rice before transferring to OSU for 2025 (where he never won a starting job). Eleven Warriors framed it as a pure size/length flyer; PS-ready depth behind Jake Matthews and 1-yr signee Jawaan Taylor. McGary's retirement opens the OT2-of-the-future runway.",
-      category: "draft",
-    },
-    {
-      title: "Class grade card: Terrell A+ unanimity, full draft lands B+/A- across major outlets",
-      detail: "PFSN gave Terrell at #48 an A+ (88.5 prospect score); CBS, SI, The Falcoholic, and 247Sports all pinned A or A+. Branch at #79 split rooms (B/B+ on size). Yahoo's Day 3 grader dipped Atlanta's class to a B+ on the Daniels pick (citing position-transition risk) but bumped it back up after Perkins. Net class grade across major outlets lands B+/A-.",
-      category: "draft",
-    },
-    {
-      title: "UDFA wave underway — Jack Strand (OT, MSU-Moorhead), Keelan Marion (WR, BYU) among first signings",
-      detail: "Within hours of pick #257 landing, Atlanta's pro scouts started firing UDFA contracts. Reported priority signings include Jack Strand (6'8 / 320 OT from MSU-Moorhead, who took a pre-draft visit), Keelan Marion (BYU WR / First-Team All-American returner via Miami), and an interior DL named Allen who led FBS in run stops at the position. Falcoholic's UDFA tracker is updating live; team is expected to formally announce the priority class Sunday.",
-      category: "free-agency",
-    },
-    {
-      title: "Drake London extension talks open this week — projected near 4yr / $128M",
-      detail: "With the draft in the books, Cunningham now turns to the bigger contracts. London plays 2026 on his $16.8M 5th-year option; an extension is 'top of mind' per Cunningham. After Jaxon Smith-Njigba's Mar 25 4yr/$168.6M Seattle deal reset the WR market, projections land London near 4yr/$128M ($32M APY / $82–90M guaranteed). SI: 'It's overdue, and the WR market is only going to get more costly.'",
-      category: "contracts",
-    },
-    {
-      title: "Bijan Robinson — 5th-year option locked in, long-term extension 'expected this offseason'",
-      detail: "Atlanta picked up Bijan's 5th-year option Apr 12-13 at $11.32M for 2027. Schefter and the team have framed a long-term deal as 'expected this offseason' with talks opening post-draft. Saquon's $20.6M APY Eagles deal sets the RB ceiling; Bijan was 1st in NFL scrimmage yards (2,298) and an All-Pro in 2025.",
-      category: "contracts",
-    },
-    {
-      title: "Penix 'where he needs to be' on ACL rehab — Week 1 still the public target",
-      detail: "Stefanski on Apr 8 said Penix is 'right where he needs to be' in rehab from his Nov 16 ACL tear (surgery Nov 25). No firm timetable, but Penix himself said he's 'absolutely' targeting Week 1. The 9–12 month recovery window lands at kickoff. Tua's 1-yr / $1.3M deal is the bridge; Stefanski has refused to publicly anoint a starter heading into OTAs.",
-      category: "injuries",
-    },
-    {
-      title: "Voluntary minicamp wrap (Apr 21-23) — Tua led the 1s all three days",
-      detail: "The new-coach voluntary minicamp ended hours before Round 1. Tua took every first-team rep with Siemian splitting backup work; Penix was on-site for ACL rehab but held out of 7-on-7. Jahan Dotson logged his first Atlanta reps. Stefanski and Rees called the offensive install 'further along than expected.'",
+      title: "Stefanski's Day 3 framing: 'we emphasized fit' — class profiled as scheme + culture pieces",
+      detail: "In post-draft pressers Saturday night and Sunday, Stefanski and Cunningham repeatedly returned to one word: fit. The Falcoholic and AJC both led their Sunday post-draft features on the theme. Branch (Georgia, Stefanski-style versatility), Daniels (Cheetah role analog to Cleveland LB usage), and Perkins (third-down sub-package gambit) read as a class built around how the new staff wants to deploy bodies, not on best-available boards.",
       category: "coaching",
     },
     {
-      title: "Kyle Pitts on the $14.1M franchise tag — no long-term talks imminent",
-      detail: "Pitts plays 2026 under the tag; the long-term extension is parked behind London and Bijan in the queue. Pitts attended all three voluntary minicamp sessions and was a regular in Rees's TE install — a positive signal after a year of trade chatter.",
+      title: "Falcoholic's projected 2026 starting lineup: Tua opens at QB1, Branch starts in 11 personnel, Avieon Terrell in nickel mix",
+      detail: "Sunday's 'projecting the 2026 starting lineup' piece from The Falcoholic landed three rookie-or-new-acquisition starters: Tua at QB through at least Penix's ACL ramp, Avieon Terrell as the slot/nickel competition for Mike Hughes, and Zachariah Branch in 3WR sets ahead of Olamide Zaccheaus. OL stays Matthews–Bergeron–Neuzil–Lindstrom–Taylor; Walker + Pearce keep the EDGE pairing.",
+      category: "general",
+    },
+    {
+      title: "Drake London extension is now the top of the contract queue — talks expected to open this week",
+      detail: "With the draft closed, Cunningham confirmed at his Saturday-night presser that London is 'top of mind.' London plays 2026 on his $16.8M 5th-year option; market context is Jaxon Smith-Njigba's Mar 25 reset (4yr / $168.6M Seattle, $42.15M APY). twsn.net + SI projections converge near 4yr / $128M ($32M APY, $82–90M guaranteed) — the Falcons want it done before camp.",
       category: "contracts",
     },
     {
-      title: "Orhorhoro-for-Maason Smith swap reshaped the DT board pre-draft",
-      detail: "The Apr 17 player-for-player trade with Jacksonville sent Ruke Orhorhoro out and brought Maason Smith in. Smith's nose-tackle frame pairs with Zach Harrison and Dorlus on the interior. The trade reduced — but didn't eliminate — the DT need, which Atlanta addressed with the Anterio Thompson pick at #208.",
+      title: "Bijan Robinson long-term talks active — Gibbs/Detroit lurking as the comp",
+      detail: "Bijan's 5th-year option was picked up Apr 10–13 at $11.32M for 2027. Heavy.com and Schefter peg long-term talks as 'expected this offseason' with a 4yr / $80M ballpark. The wrinkle: Detroit is also pushing on Jahmyr Gibbs ($20M+ APY range), so RB market reset risk is real. Bijan led the NFL in scrimmage yards (2,298) in 2025 and made All-Pro.",
+      category: "contracts",
+    },
+    {
+      title: "Avieon Terrell on landing in Atlanta with A.J.: 'the dream came true'",
+      detail: "Sunday's atlantafalcons.com feature captured the Terrell brothers in their first joint media availability. Despite playing the same Atlanta-area HS and at Clemson back-to-back, they never overlapped on a roster. Avieon (5'11 / 180, 5 forced fumbles in 2025 — Clemson DB record) projects as the immediate nickel competition; A.J. stays at outside CB1 on his $81M extension. First known starting-CB sibling tandem in NFL history.",
+      category: "draft",
+    },
+    {
+      title: "Zachariah Branch arrest: Falcons say it 'did not affect' the evaluation, citizens-arrest details emerge",
+      detail: "Friday-night reporting (SI Falcons, AJC) confirmed Branch's pre-draft arrest did not change Atlanta's eval — Cunningham said the team had visited with him post-incident and was 'comfortable.' Branch on his Sunday Zoom: 'I'm all about winning,' praising Stefanski and the Smart-coached UGA prep. Local-Georgia narrative reads as a Stefanski culture-fit pick more than a board-best one.",
+      category: "draft",
+    },
+    {
+      title: "Penix 'where he needs to be' on ACL rehab — Week 1 still the public target, Tua holds the bridge",
+      detail: "Latest (Apr 8 + post-draft confirmations) has Stefanski staying with 'right where he needs to be' on Penix's recovery from his Nov 16 ACL tear (surgery Nov 25). Penix himself stays publicly on the Week 1 target — the 9–12mo window lands at kickoff. Tua's 1yr / $1.3M deal is the bridge; Stefanski has not anointed a starter and won't until OTAs at the earliest.",
+      category: "injuries",
+    },
+    {
+      title: "Kyle Pitts ($15.045M franchise tag signed) — long-term deal possible by July 15 deadline",
+      detail: "Pitts signed his non-exclusive tag Apr 7, ending the rumor cycle, and reported to voluntary minicamp Apr 21–23. Heavy's insider piece pegs a long-term resolution as a $68M-range commitment from Cunningham — but only if it's signed by July 15. Otherwise it's a 1yr / $15M season with another tag-or-walk decision in 2027. Pitts is 3rd in the contract queue behind London and Bijan.",
+      category: "contracts",
+    },
+    {
+      title: "Voluntary minicamp wrap (Apr 21–23): Tua led the 1s all three days, Penix on-site for rehab",
+      detail: "The pre-draft new-coach voluntary minicamp closed hours before Round 1 with Tua taking every first-team rep, Siemian splitting backup work, and Penix limited to rehab work / install observation. Jahan Dotson logged his first Atlanta reps. Stefanski + Rees called the offensive install 'further along than expected.' Phase 2 walkthroughs open May 4.",
+      category: "coaching",
+    },
+    {
+      title: "Schedule release Thursday May 14 — Week 1 opponent + prime-time slate to drop",
+      detail: "Multiple sources (CBS Sports, FBSchedules) now point to Thursday May 14 for the 2026 NFL Schedule release — the sixth straight May drop. Atlanta's home opponents (NO, TB, CAR, SF, SEA, BUF, NYJ, IND, MIN) and road set are locked; only the dates and prime-time count are unknown. Schedule-release window will rotate the dashboard hero into 'offseason-lull / countdown' mode May 5.",
+      category: "general",
+    },
+    {
+      title: "Orhorhoro-for-Maason Smith swap (Apr 17) still reshaping the DT room post-draft",
+      detail: "The Apr 17 player-for-player trade with Jacksonville sent Ruke Orhorhoro out and brought Maason Smith in. Smith's nose-tackle frame now pairs with Zach Harrison and Dorlus on the interior. The trade reduced — but didn't eliminate — the DT need, which Atlanta addressed with the Anterio Thompson pick at #208 and reportedly UDFA Carlos Allen out of the SEC.",
       category: "free-agency",
     },
     {
-      title: "Calendar from here: rookie minicamp May 1-4 or May 8-11, schedule release Thu May 14, OTAs May 18",
-      detail: "With the draft closed: rookie minicamp (May 1-4 or May 8-11 — team hasn't formally announced the window), schedule release Thursday May 14, Phase 3 OTAs May 18-19 / 21 / 26-27 / 29 / June 8-9 / 11, mandatory veteran minicamp June 16-18, training camp opens July 22 at Flowery Branch.",
+      title: "Calendar ahead: Phase 2 May 4, schedule release May 14, rookie minicamp May 8–11, OTAs May 18",
+      detail: "Locked dates from here: Phase 2 walkthroughs open May 4; rookie minicamp May 8–11 at Flowery Branch; schedule release Thursday May 14; Phase 3 OTAs May 18–19 / 21 / 26–27 / 29 / June 8–9 / 11; mandatory veteran minicamp June 16–18; training camp opens July 22.",
       category: "general",
     },
   ],
