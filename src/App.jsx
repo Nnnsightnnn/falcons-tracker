@@ -1226,6 +1226,168 @@ function formBasisStats(player) {
   }));
 }
 
+// ─── DRAFT CLASS ────────────────────────────────────────────────────────────
+function DraftPickBadge({ round, overallPick, size = "md" }) {
+  const isLg = size === "lg";
+  return (
+    <span style={{
+      display: "inline-flex", alignItems: "baseline", gap: 4,
+      background: `linear-gradient(135deg, ${FALCONS_RED} 0%, #5a0f1b 100%)`,
+      color: "#fff", padding: isLg ? "4px 10px" : "3px 8px",
+      borderRadius: 8, fontWeight: 800,
+      boxShadow: "0 2px 6px #0006",
+      fontFamily: "monospace",
+      lineHeight: 1,
+    }}>
+      <span style={{ fontSize: isLg ? 10 : 9, opacity: 0.88, letterSpacing: 0.5 }}>
+        R{round}
+      </span>
+      <span style={{ fontSize: isLg ? 14 : 12, letterSpacing: -0.3 }}>
+        #{overallPick}
+      </span>
+    </span>
+  );
+}
+
+function DraftClassView({ players, onPlayerClick }) {
+  const cards = useMemo(() => {
+    const made = DRAFT_DATA.falconsPicks.filter((p) => p.status === "made" && p.selection);
+    return made.map((pick) => {
+      const acquiredStr = `draft-${DRAFT_DATA.draftYear}-R${pick.round}-P${pick.overallPick}`;
+      const player = players.find((p) => p.acquired === acquiredStr);
+      return { pick, player };
+    });
+  }, [players]);
+
+  const offenseCount = cards.filter((c) => c.player?.positionGroup === "offense").length;
+  const defenseCount = cards.filter((c) => c.player?.positionGroup === "defense").length;
+
+  return (
+    <>
+      {/* Class header */}
+      <div style={{
+        background: `linear-gradient(135deg, ${FALCONS_RED}33 0%, ${FALCONS_PANEL} 70%)`,
+        borderRadius: 16, padding: "20px 22px", marginBottom: 16,
+        border: `1px solid ${FALCONS_RED}44`,
+      }}>
+        <div style={{ fontSize: 10, color: "#ffffffaa", fontWeight: 700, textTransform: "uppercase", letterSpacing: 2 }}>
+          {DRAFT_DATA.draftYear} Draft Class · {DRAFT_DATA.location}
+        </div>
+        <div style={{ fontSize: 24, fontWeight: 900, color: "#fff", marginTop: 4, letterSpacing: -0.5 }}>
+          Meet the new Falcons
+        </div>
+        <div style={{ fontSize: 12, color: "#ffffffcc", marginTop: 8, lineHeight: 1.55, maxWidth: 920 }}>
+          {DRAFT_DATA.generalNote}
+        </div>
+        <div style={{ display: "flex", gap: 10, marginTop: 14, flexWrap: "wrap" }}>
+          {[
+            { label: "Picks made", value: cards.length },
+            { label: "Offense", value: offenseCount },
+            { label: "Defense", value: defenseCount },
+          ].map((s) => (
+            <div key={s.label} style={{ background: "#00000044", borderRadius: 10, padding: "7px 14px" }}>
+              <div style={{ fontSize: 9, color: "#ffffff99", textTransform: "uppercase", letterSpacing: 1.2, fontWeight: 700 }}>{s.label}</div>
+              <div style={{ fontSize: 16, color: "#fff", fontWeight: 800, marginTop: 2 }}>{s.value}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Helper line */}
+      <div style={{ fontSize: 11, color: FALCONS_SILVER, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1.5, marginBottom: 8 }}>
+        Click any rookie to open the full profile
+      </div>
+
+      {/* Rookie cards */}
+      <div style={{
+        display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+        gap: 14, marginBottom: 24,
+      }}>
+        {cards.map(({ pick, player }) => {
+          if (!player) {
+            return (
+              <div key={pick.overallPick} style={{
+                background: FALCONS_CARD, borderRadius: 14, padding: "14px 16px",
+                border: "1px dashed #444", color: "#888", fontSize: 12,
+              }}>
+                <DraftPickBadge round={pick.round} overallPick={pick.overallPick} size="lg" />
+                <div style={{ marginTop: 8 }}>{pick.selection}</div>
+                <div style={{ fontStyle: "italic", marginTop: 4, fontSize: 11 }}>
+                  Profile not yet wired into the roster.
+                </div>
+              </div>
+            );
+          }
+          const accentP = POS_COLORS[player.position] || FALCONS_RED;
+          return (
+            <button
+              key={pick.overallPick}
+              onClick={() => onPlayerClick(player)}
+              style={{
+                background: FALCONS_CARD, borderRadius: 14, padding: 0,
+                border: "none", cursor: "pointer", textAlign: "left",
+                boxShadow: "0 4px 18px #0007",
+                overflow: "hidden", color: "#fff",
+                display: "flex", flexDirection: "column",
+                transition: "transform 0.15s, box-shadow 0.15s",
+                outline: "none",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = "translateY(-2px)";
+                e.currentTarget.style.boxShadow = "0 8px 24px #000a";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = "";
+                e.currentTarget.style.boxShadow = "0 4px 18px #0007";
+              }}
+            >
+              {/* Header row: avatar + badges + name */}
+              <div style={{
+                background: `linear-gradient(135deg, ${accentP}33 0%, transparent 70%)`,
+                padding: "14px 14px 12px", display: "flex", alignItems: "center", gap: 12,
+                borderBottom: `2px solid ${accentP}55`,
+              }}>
+                <PlayerAvatar player={player} size={68} />
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ display: "flex", gap: 6, alignItems: "center", marginBottom: 5, flexWrap: "wrap" }}>
+                    <DraftPickBadge round={pick.round} overallPick={pick.overallPick} size="lg" />
+                    <PositionTag position={player.position} />
+                  </div>
+                  <div style={{ fontSize: 17, fontWeight: 800, lineHeight: 1.15, letterSpacing: -0.3 }}>
+                    {player.name}
+                  </div>
+                  <div style={{ fontSize: 11, color: "#888", marginTop: 3 }}>
+                    {player.college} · {formatHeight(player.height)} · {player.weight ? player.weight + " lbs" : "—"}
+                  </div>
+                </div>
+              </div>
+
+              {/* Scout note */}
+              <div style={{ padding: "12px 14px 14px", flex: 1, display: "flex", flexDirection: "column", gap: 8 }}>
+                <div style={{ fontSize: 12, color: "#ddd", lineHeight: 1.55 }}>
+                  {pick.selectionNote}
+                </div>
+                {pick.tradeNote && (
+                  <div style={{ fontSize: 10, color: "#9b59b6", fontWeight: 600, fontStyle: "italic" }}>
+                    ↔ {pick.tradeNote}
+                  </div>
+                )}
+                <div style={{
+                  marginTop: "auto", paddingTop: 6,
+                  fontSize: 10, color: accentP, fontWeight: 700,
+                  textTransform: "uppercase", letterSpacing: 1.2,
+                }}>
+                  Open full profile →
+                </div>
+              </div>
+            </button>
+          );
+        })}
+      </div>
+    </>
+  );
+}
+
 function PlayerDetailModal({ player, onClose }) {
   useEffect(() => {
     if (!player) return;
@@ -1427,7 +1589,7 @@ function PlayerDetailModal({ player, onClose }) {
 
 // ─── MAIN APP ───────────────────────────────────────────────────────────────
 export default function FalconsTracker() {
-  const [view, setView] = useState("dashboard"); // dashboard | depth-chart | news
+  const [view, setView] = useState("dashboard"); // dashboard | depth-chart | draft-class | news
   const [newsFilter, setNewsFilter] = useState("all");
   const [selectedPlayer, setSelectedPlayer] = useState(null);
 
@@ -1486,6 +1648,7 @@ export default function FalconsTracker() {
             {[
               { key: "dashboard", label: "Dashboard" },
               { key: "depth-chart", label: "Depth Chart" },
+              { key: "draft-class", label: "Draft Class" },
               { key: "news", label: "News Feed" },
             ].map((v) => (
               <button key={v.key} onClick={() => setView(v.key)}
@@ -1550,6 +1713,10 @@ export default function FalconsTracker() {
 
         {view === "depth-chart" && (
           <DepthChartView players={PLAYERS} currentPhase={currentPhase} onPlayerClick={setSelectedPlayer} />
+        )}
+
+        {view === "draft-class" && (
+          <DraftClassView players={PLAYERS} onPlayerClick={setSelectedPlayer} />
         )}
 
         {view === "news" && (
