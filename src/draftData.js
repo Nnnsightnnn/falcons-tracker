@@ -100,6 +100,16 @@ export const DRAFT_DATA = {
       concerns: ["Frame", "Hamstring history into camp"],
       mockProjections: [{ source: "Atlanta · #48 actual", pick: 48 }],
       headshot: null,
+      combine: {
+        source: "combine", // 2026 NFL Scouting Combine, Indianapolis
+        fortyYd: 4.39,
+        verticalIn: 34.0,
+        broadJumpIn: 123, // 10'3"
+        benchReps: 17,
+        threeConeSec: null,
+        shuttleSec: null,
+        note: "Re-aggravated hamstring on first 40 attempt at private workout Mar 30 (4.64); skipped Clemson Pro Day Mar 12.",
+      },
     },
     {
       id: "zachariah-branch",
@@ -116,6 +126,16 @@ export const DRAFT_DATA = {
       concerns: ["Sub-180 frame", "Routes vs press still developing"],
       mockProjections: [{ source: "Atlanta · #79 actual", pick: 79 }],
       headshot: null,
+      combine: {
+        source: "combine",
+        fortyYd: 4.35,
+        verticalIn: 38.0,
+        broadJumpIn: 125, // 10'5"
+        benchReps: 20,
+        threeConeSec: null,
+        shuttleSec: null,
+        note: "Measured 5'8 5/8\" / 177 lb with 29 3/8\" arms. 1.50 10-yard split. Verified the YAC speed.",
+      },
     },
     {
       id: "kendal-daniels",
@@ -132,6 +152,16 @@ export const DRAFT_DATA = {
       concerns: ["New to off-ball role", "Run fits"],
       mockProjections: [{ source: "Atlanta · #134 actual", pick: 134 }],
       headshot: null,
+      combine: {
+        source: "pro-day", // Oklahoma Pro Day, Everest Indoor Training Center, Mar 12
+        fortyYd: 4.75,
+        verticalIn: 29.5,
+        broadJumpIn: null,
+        benchReps: null,
+        threeConeSec: null,
+        shuttleSec: null,
+        note: "Measured 6'5 / 242 at OU Pro Day. Plays faster than the timed speed; tape outruns the stopwatch.",
+      },
     },
     {
       id: "anterio-thompson",
@@ -148,6 +178,16 @@ export const DRAFT_DATA = {
       concerns: ["Modest college production", "Anchor vs NFL doubles"],
       mockProjections: [{ source: "Atlanta · #208 actual", pick: 208 }],
       headshot: null,
+      combine: {
+        source: "combine", // 2026 NFL Combine; Pro Day vertical jumped to 34"
+        fortyYd: 4.73,
+        verticalIn: 29.5, // Pro Day later posted 34" in front of Husky scouts
+        broadJumpIn: 114, // 9'6"
+        benchReps: 30,
+        threeConeSec: null,
+        shuttleSec: null,
+        note: "30-rep bench was the standout. 1.74 10-yard split. Pro Day vertical bumped to 34\" in March.",
+      },
     },
     {
       id: "harold-perkins",
@@ -164,6 +204,16 @@ export const DRAFT_DATA = {
       concerns: ["ACL recovery", "2025 regression / weight"],
       mockProjections: [{ source: "Atlanta · #215 actual", pick: 215 }],
       headshot: null,
+      combine: {
+        source: "pro-day", // LSU Pro Day, Mar 23 — Perkins skipped combine workouts post-ACL
+        fortyYd: 4.40,
+        verticalIn: 35.0,
+        broadJumpIn: 124, // 10'4"
+        benchReps: 20,
+        threeConeSec: null,
+        shuttleSec: null,
+        note: "Measured 6'0 5/8\" / 220 lb / 31 1/4\" arms. Testing day silenced post-ACL health doubts.",
+      },
     },
     {
       id: "ethan-onianwa",
@@ -180,6 +230,16 @@ export const DRAFT_DATA = {
       concerns: ["Lost OSU job battle", "Foot speed"],
       mockProjections: [{ source: "Atlanta · #231 actual", pick: 231 }],
       headshot: null,
+      combine: {
+        source: "pro-day", // Ohio State Pro Day, Woody Hayes Athletic Center, Mar 16 — unofficial stopwatch numbers (OSU did not release official results)
+        fortyYd: 5.11,
+        verticalIn: null,
+        broadJumpIn: null,
+        benchReps: null,
+        threeConeSec: null,
+        shuttleSec: 4.79,
+        note: "OSU did not release official Pro Day numbers; 5.11 / 4.79 are unofficial stopwatch from media in attendance.",
+      },
     },
   ],
 };

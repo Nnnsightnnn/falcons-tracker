@@ -347,6 +347,57 @@ function ProspectCard({ prospect }) {
               ))}
             </div>
           </div>
+          {prospect.combine && (
+            <div>
+              <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 4 }}>
+                <div style={{ fontSize: 9, color: FALCONS_SILVER, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1 }}>
+                  Testing
+                </div>
+                <span style={{
+                  fontSize: 8, padding: "1px 6px", borderRadius: 6, fontWeight: 700,
+                  textTransform: "uppercase", letterSpacing: 0.5,
+                  background: prospect.combine.source === "combine" ? "#1a3a1a" : "#3a2a1a",
+                  color: prospect.combine.source === "combine" ? "#7fd47f" : "#e8b97f",
+                  border: `1px solid ${prospect.combine.source === "combine" ? "#2ecc7155" : "#e67e2255"}`,
+                }}>
+                  {prospect.combine.source === "combine" ? "Combine" : "Pro Day"}
+                </span>
+              </div>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 4 }}>
+                <div style={{ background: "#252530", borderRadius: 6, padding: "4px 6px", textAlign: "center" }}>
+                  <div style={{ fontSize: 12, color: "#fff", fontWeight: 800 }}>
+                    {prospect.combine.fortyYd != null ? prospect.combine.fortyYd.toFixed(2) : "—"}
+                  </div>
+                  <div style={{ fontSize: 7, color: "#666", textTransform: "uppercase", letterSpacing: 1 }}>40</div>
+                </div>
+                <div style={{ background: "#252530", borderRadius: 6, padding: "4px 6px", textAlign: "center" }}>
+                  <div style={{ fontSize: 12, color: "#fff", fontWeight: 800 }}>
+                    {prospect.combine.verticalIn != null ? `${prospect.combine.verticalIn}"` : "—"}
+                  </div>
+                  <div style={{ fontSize: 7, color: "#666", textTransform: "uppercase", letterSpacing: 1 }}>Vert</div>
+                </div>
+                <div style={{ background: "#252530", borderRadius: 6, padding: "4px 6px", textAlign: "center" }}>
+                  <div style={{ fontSize: 12, color: "#fff", fontWeight: 800 }}>
+                    {prospect.combine.broadJumpIn != null
+                      ? `${Math.floor(prospect.combine.broadJumpIn / 12)}'${prospect.combine.broadJumpIn % 12}"`
+                      : "—"}
+                  </div>
+                  <div style={{ fontSize: 7, color: "#666", textTransform: "uppercase", letterSpacing: 1 }}>Broad</div>
+                </div>
+                <div style={{ background: "#252530", borderRadius: 6, padding: "4px 6px", textAlign: "center" }}>
+                  <div style={{ fontSize: 12, color: "#fff", fontWeight: 800 }}>
+                    {prospect.combine.benchReps != null ? prospect.combine.benchReps : "—"}
+                  </div>
+                  <div style={{ fontSize: 7, color: "#666", textTransform: "uppercase", letterSpacing: 1 }}>Bench</div>
+                </div>
+              </div>
+              {prospect.combine.note && (
+                <div style={{ fontSize: 10, color: "#888", marginTop: 4, fontStyle: "italic", lineHeight: 1.4 }}>
+                  {prospect.combine.note}
+                </div>
+              )}
+            </div>
+          )}
           {prospect.mockProjections?.length > 0 && (
             <div>
               <div style={{ fontSize: 9, color: FALCONS_SILVER, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1, marginBottom: 4 }}>
