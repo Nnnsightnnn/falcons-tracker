@@ -1155,7 +1155,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-04-29T13:00:00Z",
+  generatedAt: "2026-04-29T18:30:00Z",
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "The Falcoholic",
     "Bleacher Report", "Pro Football Rumors", "SI Falcons", "NBC Sports",
@@ -1164,52 +1164,58 @@ export const NEWS_DIGEST = {
     "Saturday Down South", "Pro Football Talk", "Yardbarker", "PFF",
     "Locked On Atlanta", "FanSided", "ClutchPoints", "TWSN", "Over The Cap",
     "National Today", "Freedom 96.9", "Athlon Sports", "Audacy 92.9 The Game",
+    "Kicks 99", "BetMGM", "Wikipedia",
   ],
   topics: [
     {
-      title: "Rookie jersey numbers revealed — Branch grabs No. 17, Avieon Terrell takes No. 12, Perkins Jr. lands No. 56",
-      detail: "Tuesday's headline drop from atlantafalcons.com: the six 2026 picks have their numbers in time for rookie minicamp. CB Avieon Terrell — No. 12; WR Zachariah Branch — No. 17; LB Kendal Daniels — No. 53; LB Harold Perkins Jr. — No. 56; OT Ethan Onianwa — No. 75; DT Anterio Thompson — No. 98. None of the six is carrying his college number into the league. First on-field reps in those jerseys come at the May 8–11 rookie minicamp at Flowery Branch.",
-      category: "general",
-    },
-    {
-      title: "Rookie-minicamp roster locks Wed: 6 picks + 14 UDFAs + 4 tryout invites at Flowery Branch May 8–11",
-      detail: "atlantafalcons.com posted the official rookie-camp roster Tuesday/Wednesday: the six drafted rookies, the 14-man UDFA class (DT Carlos Allen, C James Brockermeyer, RB Cash Jones, RB Trent Battle, OL Kam Dewberry, OT Riley Mahlman, WRs Vinny Anthony II / Malik Rutherford, TEs Brendan Frazier / Jack Velling, returner Keelan Marion, QB Jack Strand, CB Malcolm DeWalt), plus a tryout-invite quartet led by Georgia Tech S Clayton Powell-Lee. First on-field rep of the Stefanski-Rees-Ulbrich install for the rookie group.",
-      category: "general",
-    },
-    {
-      title: "Madrid opponent intrigue: Chiefs reportedly 'pushing hard' to be Atlanta's Bernabéu road foe",
-      detail: "CBS Sports and FBSchedules confirmed this week that the Madrid (Bernabéu) game is locked in as one of Atlanta's nine 2026 home dates, but the opponent has not been finalized. Per CBS, Kansas City has been 'pushing hard' to be the matchup — Mahomes-in-Madrid is the league's marketing dream pairing. Atlanta's home slate (NO, TB, CAR, SF, SEA, BUF, NYJ, IND, MIN) means the Chiefs would not be a 'home' game; the league still has to slot the international assignments before the May 13–14 release.",
-      category: "general",
-    },
-    {
-      title: "Pitts trade rumors resurface despite signed franchise tag — Heavy: 'extension or move' is the July 15 binary",
-      detail: "Heavy.com's Wednesday insider read on the Pitts situation reframes the math: with the non-exclusive tag signed Apr 7 ($15.045M fully guaranteed) and Pitts at voluntary workouts, both sides can talk to July 15. Insider projection still 4yr / $68M / $35M gtd — behind only Kittle and McBride at the position. Failure to close before the deadline shifts the conversation toward a tag-and-trade or a 2027 walk year, with Stefanski publicly saying he wants Pitts in the system.",
+      title: "Schefter raising eyebrows: Pitts trade chatter persists despite signed franchise tag",
+      detail: "Wednesday's biggest local rumor wave: ClutchPoints, Yahoo and Heavy all flagged that Adam Schefter has now mentioned a Kyle Pitts trade multiple times since the draft closed. Cunningham reportedly remains 'willing to listen' even after Pitts signed the $15.045M tag and showed for voluntary workouts. The trigger is acknowledged in print — Atlanta's draft-capital crunch from the Pearce Jr. trade-up plus a possible R1 conduct-policy suspension on Pearce makes a tag-and-trade more rationalizable than it looked two weeks ago. Heavy floated a Chiefs-as-Kelce-successor scenario as the cleanest fit.",
       category: "contracts",
+    },
+    {
+      title: "Pearce Jr. legal path: charges drop if pretrial diversion completes — but NFL 6-game suspension still on the table",
+      detail: "PFR/PFT/Falcoholic confirmed Apr 23–28 that Pearce Jr.'s multiple felony charges (battery, stalking, fleeing) plus traffic citations will be dismissed if he completes a Florida pretrial diversion program — therapy plus six clean months, no admission of guilt, with the program landing in Week 7 of the NFL season. The legal track is the easy part: NFL discipline does not require a conviction, and the personal-conduct-policy floor for a first offense is a six-game suspension. Cunningham has not commented publicly; the team is bracing for a partial-season Pearce.",
+      category: "general",
+    },
+    {
+      title: "Home/away matchups OFFICIAL — schedule release moved up to May 12–14 window",
+      detail: "Falcons.com and BetMGM/Falcoholic posted the finalized matchup list this week. HOME (9): Carolina, New Orleans, Tampa Bay, Baltimore, Chicago, Cincinnati, Detroit, Kansas City, San Francisco. AWAY (8): Carolina, New Orleans, Tampa Bay, Cleveland, Green Bay, Minnesota, Pittsburgh, Washington. KC's appearance as a home opponent makes the Mahomes-at-Bernabéu Madrid scenario suddenly clean — Atlanta is the designated home team. Dates and primetime slot count are still gated on the May 12–14 release.",
+      category: "general",
+    },
+    {
+      title: "Rookie minicamp roster locked: 6 picks + 16 UDFAs + tryout invites report to Flowery Branch May 8–11",
+      detail: "Atlanta announced the official rookie-camp roster this week. Six drafted rookies plus a 16-UDFA class — DT Carlos Allen (Houston, FBS-leading 80 tackles among interior DLs), C James Brockermeyer (Miami, All-ACC 3rd team / Senior Bowl), QB Jack Strand (Minnesota-Moorhead), OT Riley Mahlman (Wisconsin), WR Vinny Anthony II (Wisconsin), CB Malcolm DeWalt IV (Akron), G Kam Dewberry (Alabama), TEs Frazier/Velling, returner Keelan Marion and more — headline the field group. First on-field reps of the Stefanski / Rees / Ulbrich install for the rookie set.",
+      category: "general",
+    },
+    {
+      title: "Avieon arrives in Flowery Branch — 'first known starting-CB sibling tandem' photo set drops",
+      detail: "atlantafalcons.com published the Avieon-Terrell-arrives photo gallery and a sit-down with both Terrells this week. A.J.: 'I had to wait three picks before I could even show some type of love to him.' Avieon stays at No. 12 (his Clemson number was 4); A.J. keeps 24. The team is openly leaning into the brothers angle as the marketing centerpiece of the rookie class.",
+      category: "general",
+    },
+    {
+      title: "Rookie jersey numbers revealed: Branch No. 17, Avieon Terrell No. 12, Perkins Jr. No. 56",
+      detail: "Tuesday's number drop from atlantafalcons.com. CB Avieon Terrell — No. 12; WR Zachariah Branch — No. 17; LB Kendal Daniels — No. 53; LB Harold Perkins Jr. — No. 56; OT Ethan Onianwa — No. 75; DT Anterio Thompson — No. 98. None of the six carries his college number. First on-field reps in those jerseys come at the May 8–11 rookie minicamp.",
+      category: "general",
     },
     {
       title: "Drake London extension still 'top of mind' — JSN's $42.15M APY is the new ceiling Cunningham must respect",
-      detail: "Cunningham's post-draft Saturday line that London is 'top of mind' is now the most-cited offseason quote in town. London plays 2026 on the $16.8M 5th-year option. The market keeps moving: Jaxon Smith-Njigba's 4yr / $168.6M ($42.15M APY) deal from Mar 25 reset the WR ceiling; Garrett Wilson's $131M Jets number is the floor for top-15 production. Heavy/TWSN/SI projections cluster at 4yr / $128M ($32M APY, $82–90M gtd). Stated org goal: lock it before camp opens July 22.",
+      detail: "Cunningham's post-draft Saturday line that London is 'top of mind' is now the most-cited offseason quote in town. London plays 2026 on the $16.8M 5th-year option. The market keeps moving: Jaxon Smith-Njigba's 4yr / $168.6M ($42.15M APY) deal reset the WR ceiling; Garrett Wilson's $131M Jets number is the floor for top-15 production. Heavy / TWSN / SI projections cluster at 4yr / $128M ($32M APY, $82–90M gtd). Stated org goal: lock it before camp opens July 22.",
       category: "contracts",
     },
     {
-      title: "Bijan extension talks confirmed active — Gibbs/Detroit timing is still the chief market-reset risk",
-      detail: "B/R and Yardbarker confirmed late this week that Cunningham said extensions for Bijan and London 'won't come until after the draft,' which is now. Bijan's 5th-year option was exercised Apr 10–13 at $11.32M for 2027. ESPN's contract-prediction piece pegs $20M+ APY; the open question is whether Detroit closes Jahmyr Gibbs first — same negotiating window, identical resumes. Bijan's case (NFL-leading 2,298 scrimmage yards, 11 TDs, All-Pro 2025) is at least Gibbs-equal on tape.",
+      title: "Bijan extension queue is open — Gibbs/Detroit timing remains the chief market-reset risk",
+      detail: "B/R and Yardbarker confirmed Cunningham said extensions for Bijan and London 'won't come until after the draft,' which is now. Bijan's 5th-year option was exercised Apr 10–13 at $11.32M for 2027. ESPN's contract-prediction piece pegs $20M+ APY; the open question is whether Detroit closes Jahmyr Gibbs first — same negotiating window, identical resumes. Bijan's 2025 case (1,478 rushing, 820 receiving, 16 total TDs, All-Pro) is at least Gibbs-equal on tape.",
       category: "contracts",
     },
     {
       title: "Penix ACL update: Stefanski holds 'right where he needs to be,' Tua-vs-Penix QB battle frame stays open",
-      detail: "Pro Football Network and NBC's PFT both ran Stefanski's most recent rehab line this week — 'right where he needs to be' on Penix's Nov 16 ACL tear (surgery Nov 25). No timetable confirmed publicly. Stefanski has explicitly framed the season-opening QB call as a Penix-vs-Tua competition once Penix is cleared; Tua's 1yr / $1.3M bridge deal preserves the option. Voluntary minicamp Apr 21–23 had Tua at every 1st-team rep with Penix in rehab/install observation.",
+      detail: "PFN, NBC PFT and SI all ran Stefanski's most recent rehab line this week — 'right where he needs to be' on Penix's Nov 16 ACL tear (surgery Nov 25). Penix continues to target a Week 1 return; AJC reports him back at the facility, mentally locked in, physically clean. Tua's 1yr / $1.3M bridge deal preserves the QB1 option, and Stefanski's mantra to both QBs at voluntary minicamp Apr 21–23 was 'be where your feet are.'",
       category: "injuries",
     },
     {
       title: "Class grades land B- to B+: Day 2 universally praised, Day 3 LB double-dip is the lightning rod",
-      detail: "Final report cards converged Mon–Tue: NFL.com's Chad Reuter at B- (penalty for the 2026 R1 traded for Pearce Jr. + zero edge picks); CBS's Carter Bahns at B+ (no penalty for the no-R1 reality); ESPN A/A- on Day 2 (Terrell at #48, Branch at #79). Day 3 split the rooms — Mel Kiper and PFN praised the Daniels/Perkins LB pairing as Cheetah-and-Star types; Edwards called Daniels 'a player without a position.' Consensus: solid B / B+ given the starting point.",
+      detail: "Final report cards converged Mon–Tue: NFL.com's Chad Reuter at B- (penalty for the 2026 R1 traded for Pearce Jr. + zero edge picks); CBS's Carter Bahns at B+ (no penalty for the no-R1 reality); ESPN A/A- on Day 2 (Terrell at #48, Branch at #79). Day 3 split the rooms — Kiper and PFN praised the Daniels/Perkins LB pairing as Cheetah-and-Star types; Edwards called Daniels 'a player without a position.' Consensus: solid B / B+ given the starting point.",
       category: "draft",
-    },
-    {
-      title: "Schedule release locked May 13–14 — Atlanta's nine opponents known, dates + prime-time count still TBD",
-      detail: "CBS, Yahoo, and FBSchedules all converged this week on a May 13 (Wed) or May 14 (Thu) release. Atlanta's opponent list is set — home: NO, TB, CAR, SF, SEA, BUF, NYJ, IND, MIN; road: NO, TB, CAR, ARI, LAR, NE, MIA, CIN. Unknowns: prime-time count, bye week, and which slot becomes the Madrid game. The release will rotate the dashboard hero from rookie-class through offseason-lull/schedule-release countdown.",
-      category: "general",
     },
     {
       title: "Phase 2 walkthroughs open Monday May 4 — first on-field reps for the veteran offense under Stefanski-Rees",
@@ -1218,17 +1224,17 @@ export const NEWS_DIGEST = {
     },
     {
       title: "UDFA OL pile is the sleeper story — Bill Callahan inherits real developmental depth at G/C/T",
-      detail: "Falcoholic / SI / NFL.com cross-checks finalized Monday confirm Atlanta signed four offensive linemen as UDFAs: C James Brockermeyer (Miami, All-ACC 3rd team, Senior Bowl), G Kam Dewberry (Alabama LG starter), OT Riley Mahlman, plus pass-catching depth via TEs Velling/Frazier. With Lindstrom/Matthews locked in and Taylor on a 1yr / $5M McGary-replacement deal, the UDFA group is genuine swing-tackle and interior depth competition under new OL coach Bill Callahan.",
+      detail: "Falcoholic / SI / NFL.com cross-checks confirm Atlanta signed multiple offensive linemen as UDFAs: C James Brockermeyer (Miami, All-ACC 3rd team, Senior Bowl), G Kam Dewberry (Alabama LG starter), OT Riley Mahlman (Wisconsin), plus pass-catching depth via TEs Velling/Frazier. With Lindstrom/Matthews locked in and Taylor on a 1yr / $5M McGary-replacement deal, the UDFA group is genuine swing-tackle and interior depth competition under new OL coach Bill Callahan.",
       category: "draft",
     },
     {
       title: "DT room post-draft: Smith + Harrison + Dorlus + rookie Thompson + UDFA Allen — finally back to full numbers",
-      detail: "The Apr 17 player-for-player swap with Jacksonville sent Ruke Orhorhoro out and brought Maason Smith in. The Apr 25–26 draft added 6th-rounder Anterio Thompson at #208 (4.73 forty at 306, 3 blocked punts), and the priority UDFA signing of Houston's Carlos Allen (FBS-leading 80 tackles among interior DLs in 2025) gives the interior DL: Smith (NT frame), Harrison (3-tech), Dorlus (rotation 3-tech), Thompson (developmental), Allen (camp-stay flier). Reduced from the Onyemata era — not eliminated.",
+      detail: "The Apr 17 player-for-player swap with Jacksonville sent Ruke Orhorhoro out and brought Maason Smith in. The Apr 25–26 draft added 6th-rounder Anterio Thompson at #208 (4.73 forty at 306, 3 blocked punts). The priority UDFA signing of Houston's Carlos Allen (FBS-leading 80 tackles among interior DLs in 2025) rounds out the interior: Smith (NT), Harrison (3-tech), Dorlus (rotation), Thompson (developmental), Allen (camp-stay flier). Reduced from the Onyemata era — not eliminated.",
       category: "free-agency",
     },
     {
-      title: "Calendar in motion: Phase 2 May 4 → rookie camp May 8–11 → schedule release May 13–14 → OTAs May 18",
-      detail: "Five days from the next milestone. Phase 2 walkthroughs open Monday May 4; rookie minicamp at Flowery Branch May 8–11 (the second of two NFL-allowed post-draft windows); 2026 NFL schedule release Wed/Thu May 13–14; Phase 3 OTAs begin May 18. Then mandatory veteran minicamp June 16–18, dead period through July 21, training camp opens July 22 in Flowery Branch. The dashboard hero rotates out of 'rookie-class' on May 5.",
+      title: "Calendar in motion: Phase 2 May 4 → rookie camp May 8–11 → schedule release May 12–14 → OTAs May 18",
+      detail: "Five days from the next milestone. Phase 2 walkthroughs open Monday May 4; rookie minicamp at Flowery Branch May 8–11 (the second of two NFL-allowed post-draft windows); 2026 NFL schedule release tracking to the May 12–14 window; Phase 3 OTAs begin May 18. Then mandatory veteran minicamp June 16–18, dead period through July 21, training camp opens July 22 in Flowery Branch. The dashboard hero rotates out of 'rookie-class' on May 5.",
       category: "general",
     },
   ],
