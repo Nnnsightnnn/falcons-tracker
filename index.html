@@ -3,17 +3,120 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Atlanta Falcons Tracker</title>
+    <title>Falcons Tracker — Broadcast Feed 01</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Stardos+Stencil:wght@400;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://nnnsightnnn.github.io/tracker-shared/live-scores.css" />
     <style>
+      :root {
+        --void: #08080A;
+        --carbon: #14161A;
+        --carbon-2: #1A1C21;
+        --steel: #2A2D33;
+        --steel-2: #3A3E46;
+        --silver: #A5ACAF;
+        --ivory: #EDEDED;
+        --red: #A71930;
+        --hot: #FF2D3D;
+        --hot-glow: 0 0 18px #FF2D3D55, 0 0 2px #FF2D3D;
+        --gold: #C9A227;
+        --green: #2ECC71;
+        --display: "Oswald", "Barlow Condensed", "Arial Narrow", sans-serif;
+        --stencil: "Stardos Stencil", "Oswald", sans-serif;
+        --body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+        --mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
+      }
       * { margin: 0; padding: 0; box-sizing: border-box; }
-      body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
-      ::-webkit-scrollbar { width: 8px; }
-      ::-webkit-scrollbar-track { background: #121212; }
-      ::-webkit-scrollbar-thumb { background: #A7193055; border-radius: 4px; }
-      ::-webkit-scrollbar-thumb:hover { background: #A7193088; }
+      html, body {
+        background: var(--void);
+        color: var(--ivory);
+        font-family: var(--body);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.4;
+        -webkit-font-smoothing: antialiased;
+        font-variant-numeric: tabular-nums lining-nums;
+      }
+      button { font-family: inherit; }
+      a { color: inherit; text-decoration: none; }
+
+      .display { font-family: var(--display); font-weight: 700; letter-spacing: -0.01em; text-transform: uppercase; }
+      .stencil { font-family: var(--stencil); font-weight: 700; text-transform: uppercase; letter-spacing: 0.01em; }
+      .mono { font-family: var(--mono); }
+      .label { font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--silver); font-weight: 500; }
+      .num { font-variant-numeric: tabular-nums lining-nums; }
+
+      .panel { background: var(--carbon); border: 1px solid #ffffff10; position: relative; }
+      .panel::before {
+        content: "";
+        position: absolute; inset: 0;
+        background-image:
+          linear-gradient(45deg, #ffffff03 25%, transparent 25%, transparent 75%, #ffffff03 75%),
+          linear-gradient(45deg, #ffffff03 25%, transparent 25%, transparent 75%, #ffffff03 75%);
+        background-size: 4px 4px;
+        background-position: 0 0, 2px 2px;
+        pointer-events: none;
+      }
+      .panel-title {
+        display: flex; align-items: center; gap: 10px;
+        padding: 10px 14px;
+        border-bottom: 1px solid #ffffff10;
+        background: linear-gradient(180deg, #ffffff04, transparent);
+        position: relative;
+      }
+      .panel-title .bug { width: 4px; height: 14px; background: var(--hot); box-shadow: var(--hot-glow); }
+      .panel-title .name {
+        font-family: var(--display); font-size: 12px; font-weight: 700;
+        letter-spacing: 0.18em; text-transform: uppercase; color: var(--ivory);
+      }
+      .panel-title .meta {
+        margin-left: auto; font-family: var(--mono); font-size: 10px;
+        color: var(--silver); letter-spacing: 0.12em; text-transform: uppercase;
+      }
+
+      .diag-cut { position: relative; overflow: hidden; }
+      .diag-cut::after {
+        content: "";
+        position: absolute; right: -20px; bottom: -1px;
+        width: 90px; height: 4px;
+        background: var(--hot);
+        transform: rotate(-35deg);
+        transform-origin: right bottom;
+        box-shadow: var(--hot-glow);
+      }
+
+      @keyframes growLeft { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+      .bar-grow { transform-origin: left center; animation: growLeft 0.6s cubic-bezier(.2,.9,.2,1) both; }
+
+      @keyframes flick {
+        0%,100% { opacity: 0; }
+        10% { opacity: 0.012; }
+        43% { opacity: 0.018; }
+        70% { opacity: 0.008; }
+        84% { opacity: 0.02; }
+      }
+      .flicker {
+        position: absolute; inset: 0;
+        pointer-events: none;
+        background: repeating-linear-gradient(0deg, #ffffff08 0, #ffffff08 1px, transparent 1px, transparent 3px);
+        mix-blend-mode: screen;
+        animation: flick 4.5s steps(8) infinite;
+      }
+
+      @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.2; } }
+      .blink { animation: blink 1.2s steps(2) infinite; }
+
+      ::-webkit-scrollbar { width: 10px; height: 10px; }
+      ::-webkit-scrollbar-track { background: var(--void); }
+      ::-webkit-scrollbar-thumb { background: var(--steel); border: 2px solid var(--void); }
+      ::-webkit-scrollbar-thumb:hover { background: var(--steel-2); }
+
+      .hot-glow { box-shadow: var(--hot-glow); }
+      .hot-text { color: var(--hot); text-shadow: 0 0 8px #FF2D3D44; }
+      .red-bar { background: var(--red); }
+      .hot-bar { background: var(--hot); box-shadow: var(--hot-glow); }
     </style>
   </head>
   <body>

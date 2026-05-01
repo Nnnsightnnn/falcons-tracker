@@ -1,13 +1,10 @@
 import { useState, useMemo, useEffect } from "react";
-import _ from "lodash";
 import {
   PLAYERS,
   RSS_FEEDS,
-  NEXT_GAME,
   TEAM_LOGOS,
   NEWS_DIGEST,
   SEASON_RECAP_2025,
-  RESULTS_2025,
   NFC_SOUTH_STANDINGS_2025,
 } from "./playerData.js";
 import { DRAFT_DATA } from "./draftData.js";
@@ -16,260 +13,477 @@ import { CAP_STATE } from "./capState.js";
 import { getCurrentPhase, PHASES } from "./phases.js";
 import DepthChartView from "./DepthChartView.jsx";
 
-// ─── Atlanta Falcons Tracker ────────────────────────────────────────────────
-// Phase-aware year-round dashboard. Hero auto-rotates by date.
-// Today (Apr 18 2026) → draft-week → DraftCentral hero.
+// ─── BROADCAST FEED 01 ──────────────────────────────────────────────────────
+// Sunday Night Football, cold open. Carbon weave, hot-red glow, stencil
+// chyrons, telemetry cards. Phase-aware year-round dashboard.
 
-const FALCONS_RED = "#A71930";
-const FALCONS_BLACK = "#000000";
-const FALCONS_SILVER = "#A5ACAF";
-const FALCONS_DARK = "#121212";
-const FALCONS_CARD = "#1a1a1f";
-const FALCONS_PANEL = "#1e1e26";
+const BROADCAST_CHAPTERS = [
+  { id: "01", name: "OFFSEASON", window: "JAN — APR", phaseIds: ["pre-season-build", "draft-week", "rookie-class", "offseason-lull"] },
+  { id: "02", name: "OTAS",      window: "MAY — JUN", phaseIds: ["otas-minicamp"] },
+  { id: "03", name: "CAMP",      window: "JUL — AUG", phaseIds: ["dead-period", "training-camp"] },
+  { id: "04", name: "PRESEASON", window: "AUG — SEP", phaseIds: ["preseason"] },
+  { id: "05", name: "REGULAR",   window: "SEP — JAN", phaseIds: ["regular-season", "postseason"] },
+];
 
-const POS_COLORS = {
-  QB: "#C9A227", RB: "#2ecc71", WR: "#3498db", TE: "#9b59b6",
-  OT: "#95a5a6", OG: "#7f8c8d", C: "#bdc3c7",
-  DE: "#e74c3c", EDGE: "#e67e22", DT: "#c0392b",
-  LB: "#d35400", CB: "#1abc9c", S: "#16a085",
-  K: "#f39c12", P: "#d68910", LS: "#b9770e",
-};
-
-// NFL status taxonomy: active | ir | pup | nfi | suspended | questionable | holdout
-function statusUIConfig(status) {
-  switch (status) {
-    case "active":       return { borderColor: FALCONS_RED, icon: null, iconBg: null };
-    case "questionable": return { borderColor: "#ffc107", icon: "?", iconBg: "#ffc107" };
-    case "pup":          return { borderColor: "#fd7e14", icon: "+", iconBg: "#fd7e14" };
-    case "nfi":          return { borderColor: "#fd7e14", icon: "+", iconBg: "#fd7e14" };
-    case "ir":           return { borderColor: "#dc3545", icon: "+", iconBg: "#dc3545" };
-    case "suspended":    return { borderColor: "#6c757d", icon: "!", iconBg: "#6c757d" };
-    case "holdout":      return { borderColor: "#8e44ad", icon: "$", iconBg: "#8e44ad" };
-    default:             return { borderColor: FALCONS_RED, icon: null, iconBg: null };
-  }
-}
-
-// ─── Shared: PlayerAvatar ───────────────────────────────────────────────────
-function PlayerAvatar({ player, size = 64 }) {
-  const [imgFailed, setImgFailed] = useState(false);
-  const accent = POS_COLORS[player.position] || "#888";
-  const initials = player.name.split(" ").map((w) => w[0]).join("").slice(0, 2);
-  const ui = statusUIConfig(player.status);
+// ─── ANGULAR FALCON GLYPH ───────────────────────────────────────────────────
+// Original geometric mark — sharp angular bird silhouette.
+function FalconGlyph({ size = 36, color = "#FF2D3D" }) {
   return (
-    <div style={{ position: "relative", flexShrink: 0, width: size, height: size }}>
-      <div style={{
-        width: size, height: size, borderRadius: "50%", overflow: "hidden",
-        border: `3px solid ${ui.borderColor}`, background: "#2a2a3a",
-        display: "flex", alignItems: "center", justifyContent: "center",
-      }}>
-        {player.image && !imgFailed ? (
-          <img
-            src={player.image} alt={player.name}
-            style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }}
-            onError={() => setImgFailed(true)}
-          />
-        ) : (
-          <div style={{
-            width: "100%", height: "100%",
-            background: `linear-gradient(135deg, ${accent}55, ${FALCONS_RED}88)`,
-            display: "flex", flexDirection: "column",
-            alignItems: "center", justifyContent: "center", gap: 1,
-          }}>
-            <span style={{ color: "#fff", fontWeight: 800, fontSize: size * 0.3, lineHeight: 1 }}>{initials}</span>
-            <span style={{ color: "#ffffffaa", fontWeight: 700, fontSize: size * 0.17 }}>#{player.number}</span>
-          </div>
-        )}
-      </div>
-      {ui.icon && (
-        <div style={{
-          position: "absolute", bottom: -1, right: -1,
-          width: size * 0.32, height: size * 0.32, borderRadius: "50%",
-          background: ui.iconBg, display: "flex",
-          alignItems: "center", justifyContent: "center",
-          fontSize: size * 0.2, fontWeight: 900, color: "#fff",
-          border: "2px solid #1e1e28", lineHeight: 1,
-        }}>
-          {ui.icon}
-        </div>
-      )}
-    </div>
+    <svg width={size} height={size} viewBox="0 0 100 100" style={{ display: "block" }}>
+      <g fill={color}>
+        <polygon points="6,38 28,50 16,52 8,46" />
+        <polygon points="22,42 50,52 80,30 92,32 70,52 52,68 38,60" />
+        <polygon points="40,60 60,68 50,76" />
+      </g>
+      <polygon points="20,52 28,52 24,58" fill="#08080A" />
+    </svg>
   );
 }
 
-function PositionTag({ position }) {
-  return (
-    <span style={{
-      background: POS_COLORS[position] || "#888", color: "#fff", fontSize: 10,
-      padding: "2px 8px", borderRadius: 10, fontWeight: 700, letterSpacing: 1,
-    }}>
-      {position}
-    </span>
-  );
-}
-
-function StatusBadge({ status }) {
-  if (status === "active") return null;
-  const cfg = {
-    questionable: { bg: "#ffc10722", border: "#ffc107", color: "#ffe066", label: "QUESTIONABLE" },
-    pup:          { bg: "#fd7e1422", border: "#fd7e14", color: "#ffa94d", label: "PUP" },
-    nfi:          { bg: "#fd7e1422", border: "#fd7e14", color: "#ffa94d", label: "NFI" },
-    ir:           { bg: "#dc354522", border: "#dc3545", color: "#ff6b6b", label: "IR" },
-    suspended:    { bg: "#6c757d22", border: "#6c757d", color: "#adb5bd", label: "SUSPENDED" },
-    holdout:      { bg: "#8e44ad22", border: "#8e44ad", color: "#c792ea", label: "HOLDOUT" },
-  };
-  const c = cfg[status] || cfg.ir;
-  return (
-    <span style={{
-      background: c.bg, border: `1px solid ${c.border}`, color: c.color,
-      fontSize: 9, padding: "2px 8px", borderRadius: 10, fontWeight: 700, letterSpacing: 1.2,
-    }}>
-      {c.label}
-    </span>
-  );
-}
-
-// ─── Countdown hook ─────────────────────────────────────────────────────────
+// ─── COUNTDOWN ──────────────────────────────────────────────────────────────
 function useCountdown(targetISO) {
   const [now, setNow] = useState(() => Date.now());
   useEffect(() => {
-    const t = setInterval(() => setNow(Date.now()), 60_000);
+    if (!targetISO) return;
+    const t = setInterval(() => setNow(Date.now()), 1000);
     return () => clearInterval(t);
-  }, []);
-  const target = new Date(targetISO).getTime();
-  const ms = Math.max(0, target - now);
-  const days = Math.floor(ms / 86_400_000);
-  const hours = Math.floor((ms % 86_400_000) / 3_600_000);
-  const minutes = Math.floor((ms % 3_600_000) / 60_000);
-  return { days, hours, minutes, reached: ms === 0 };
+  }, [targetISO]);
+  if (!targetISO) return { d: 0, h: 0, m: 0, s: 0, expired: true };
+  const diff = Math.max(0, new Date(targetISO).getTime() - now);
+  return {
+    d: Math.floor(diff / 86400000),
+    h: Math.floor((diff % 86400000) / 3600000),
+    m: Math.floor((diff % 3600000) / 60000),
+    s: Math.floor((diff % 60000) / 1000),
+    expired: diff === 0,
+  };
 }
 
-// ─── DRAFT HERO — the centerpiece for draft-week phase ──────────────────────
-function DraftCountdown() {
-  const { days, hours, minutes, reached } = useCountdown(DRAFT_DATA.startTime);
+// ─── NEXT-UP STRIP (post-draft milestone runway) ────────────────────────────
+function NextUpStrip({ milestones }) {
+  const today = new Date();
+  return (
+    <div style={{ display: "flex", gap: 0, marginTop: 8, flexWrap: "wrap" }}>
+      {milestones.map((m, i) => {
+        const date = new Date(m.date);
+        const days = Math.max(0, Math.ceil((date.getTime() - today.getTime()) / 86400000));
+        const dateLabel = date.toLocaleDateString("en-US", { month: "short", day: "2-digit" }).toUpperCase();
+        const isLead = i === 0;
+        const shortLabel = m.label.replace(/^.*— ?/, "").replace(/ \(.*\)$/, "");
+        return (
+          <div key={m.id} style={{
+            padding: "10px 18px 12px",
+            borderTop: `2px solid ${isLead ? "#FF2D3D" : "#ffffff20"}`,
+            borderBottom: "1px solid #ffffff15",
+            background: isLead ? "#170509" : "#0B0C0F",
+            borderLeft: i === 0 ? "1px solid #ffffff15" : "none",
+            borderRight: "1px solid #ffffff15",
+            minWidth: 168,
+            position: "relative",
+            boxShadow: isLead ? "var(--hot-glow)" : "none",
+          }}>
+            <div className="mono" style={{
+              fontSize: 9, letterSpacing: "0.28em",
+              color: isLead ? "var(--hot)" : "var(--silver)",
+            }}>
+              {isLead ? "▶ NEXT" : `+${i}`}  ·  {dateLabel}
+            </div>
+            <div className="stencil" style={{
+              fontSize: 18, lineHeight: 1.05, color: "var(--ivory)",
+              letterSpacing: "0.02em", marginTop: 8,
+              textShadow: isLead ? "0 0 12px #FF2D3D44" : "none",
+            }}>
+              {shortLabel.toUpperCase()}
+            </div>
+            <div className="mono" style={{
+              fontSize: 10, letterSpacing: "0.18em", color: "var(--steel-2)", marginTop: 6,
+            }}>
+              {days === 0 ? "TODAY" : `T-${days}D`}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+// ─── TOP BAR ────────────────────────────────────────────────────────────────
+function liveTagForPhase(phase) {
+  switch (phase.id) {
+    case "draft-week":     return "ON THE CLOCK";
+    case "rookie-class":   return "ROOKIE FEED";
+    case "offseason-lull": return "OTA PREP";
+    case "otas-minicamp":  return "OTAS LIVE";
+    case "dead-period":    return "DEAD PERIOD";
+    case "training-camp":  return "CAMP LIVE";
+    case "preseason":      return "PRESEASON";
+    case "regular-season": return "GAME WEEK";
+    case "postseason":     return "OFFSEASON";
+    default:               return "LIVE FEED";
+  }
+}
+
+function TopBar({ view, setView, currentPhase }) {
+  const tabs = [
+    { k: "dashboard",   label: "DASHBOARD" },
+    { k: "depth-chart", label: "DEPTH CHART" },
+    { k: "draft",       label: "DRAFT BOARD" },
+    { k: "wire",        label: "WIRE / DISPATCH" },
+  ];
+  const [time, setTime] = useState(new Date());
+  useEffect(() => {
+    const t = setInterval(() => setTime(new Date()), 1000);
+    return () => clearInterval(t);
+  }, []);
+  const hms = time.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false });
   return (
     <div style={{
-      background: `linear-gradient(135deg, ${FALCONS_RED} 0%, #5a0f1b 100%)`,
-      borderRadius: 16, padding: "22px 24px", marginBottom: 16,
-      boxShadow: "0 8px 32px #0006",
+      display: "flex", alignItems: "stretch",
+      background: "#0B0C0F",
+      borderBottom: "1px solid #ffffff10",
+      flexWrap: "wrap",
     }}>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 20 }}>
+      <div style={{
+        display: "flex", alignItems: "center", gap: 14,
+        padding: "12px 18px",
+        borderRight: "1px solid #ffffff10",
+        minWidth: 280,
+      }}>
+        <FalconGlyph size={32} color="#FF2D3D" />
         <div>
-          <div style={{ fontSize: 10, color: "#ffffffaa", fontWeight: 700, textTransform: "uppercase", letterSpacing: 2 }}>
-            2026 NFL Draft · Round 1
+          <div className="display" style={{ fontSize: 19, letterSpacing: "0.04em", lineHeight: 1 }}>
+            ATLANTA <span style={{ color: "#FF2D3D" }}>/</span> TRACKER
           </div>
-          <div style={{ fontSize: 26, fontWeight: 900, color: "#fff", marginTop: 4, letterSpacing: -0.5 }}>
-            {reached ? "Draft is LIVE" : "Draft kicks off in"}
-          </div>
-          <div style={{ fontSize: 13, color: "#ffffffcc", marginTop: 4 }}>
-            {DRAFT_DATA.location} · {DRAFT_DATA.tvChannels.join(" · ")}
+          <div className="mono" style={{ fontSize: 9, letterSpacing: "0.22em", color: "var(--silver)", marginTop: 4 }}>
+            FEED 01 · STEFANSKI ERA · 26 SEASON
           </div>
         </div>
-        {!reached && (
-          <div style={{ display: "flex", gap: 10 }}>
-            {[
-              { value: days, label: "Days" },
-              { value: hours, label: "Hrs" },
-              { value: minutes, label: "Min" },
-            ].map((u) => (
-              <div key={u.label} style={{
-                background: "#ffffff18", borderRadius: 12, padding: "10px 14px",
-                minWidth: 68, textAlign: "center", backdropFilter: "blur(4px)",
-              }}>
-                <div style={{ fontSize: 30, fontWeight: 900, color: "#fff", lineHeight: 1 }}>
-                  {String(u.value).padStart(2, "0")}
-                </div>
-                <div style={{ fontSize: 9, color: "#ffffffaa", fontWeight: 700, textTransform: "uppercase", letterSpacing: 1.5, marginTop: 4 }}>
-                  {u.label}
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
       </div>
+
+      <div style={{ display: "flex", alignItems: "stretch", flex: 1, minWidth: 0 }}>
+        {tabs.map((t) => {
+          const active = view === t.k;
+          return (
+            <button key={t.k} onClick={() => setView(t.k)} style={{
+              border: "none", background: active ? "#160407" : "transparent",
+              color: active ? "var(--ivory)" : "var(--silver)",
+              padding: "0 22px", cursor: "pointer",
+              fontFamily: "var(--display)", fontWeight: 700,
+              fontSize: 13, letterSpacing: "0.16em",
+              borderRight: "1px solid #ffffff08",
+              position: "relative",
+              whiteSpace: "nowrap",
+            }}>
+              {active && (
+                <div className="hot-bar bar-grow" style={{
+                  position: "absolute", top: 0, left: 0, right: 0, height: 2,
+                }} />
+              )}
+              {t.label}
+            </button>
+          );
+        })}
+      </div>
+
       <div style={{
-        marginTop: 18, padding: "10px 14px", background: "#00000033",
-        borderRadius: 10, fontSize: 12, color: "#ffffffcc", lineHeight: 1.5,
+        display: "flex", alignItems: "center", gap: 14,
+        padding: "12px 22px",
+        borderLeft: "1px solid #ffffff10",
       }}>
-        {DRAFT_DATA.generalNote}
+        <div style={{ display: "flex", alignItems: "center", gap: 7 }}>
+          <span className="hot-bar blink" style={{ width: 8, height: 8 }} />
+          <span className="display hot-text" style={{ fontSize: 12, letterSpacing: "0.22em" }}>
+            {liveTagForPhase(currentPhase)}
+          </span>
+        </div>
+        <span className="mono" style={{ fontSize: 12, color: "var(--ivory)", letterSpacing: "0.1em" }}>
+          {hms} ET
+        </span>
       </div>
     </div>
   );
 }
 
-function DraftPickSlotBoard() {
-  const statusColor = {
-    scheduled: "#6B7B8E",
-    "on-clock": "#C9A227",
-    made: "#2ecc71",
-    traded: "#9b59b6",
-  };
-  const statusLabel = {
-    scheduled: "SCHEDULED",
-    "on-clock": "ON THE CLOCK",
-    made: "MADE",
-    traded: "TRADED",
-  };
-  const formatSlotTime = (iso) => {
-    const d = new Date(iso);
-    return d.toLocaleString("en-US", {
-      weekday: "short", month: "short", day: "numeric",
-      hour: "numeric", minute: "2-digit", timeZoneName: "short",
-    });
-  };
+// ─── CHAPTER RAIL ───────────────────────────────────────────────────────────
+function ChapterRail({ currentPhase }) {
+  const currentIdx = useMemo(() => {
+    const idx = BROADCAST_CHAPTERS.findIndex((c) => c.phaseIds.includes(currentPhase.id));
+    return idx === -1 ? 0 : idx;
+  }, [currentPhase.id]);
   return (
-    <div style={{ marginBottom: 20 }}>
-      <div style={{ fontSize: 11, color: FALCONS_SILVER, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1.5, marginBottom: 8 }}>
-        Falcons' 5 Picks
+    <div style={{
+      borderTop: "1px solid #ffffff10",
+      borderBottom: "1px solid #ffffff10",
+      background: "#0B0C0F",
+      display: "grid",
+      gridTemplateColumns: `repeat(${BROADCAST_CHAPTERS.length}, 1fr)`,
+    }}>
+      {BROADCAST_CHAPTERS.map((p, i) => {
+        const active = i === currentIdx;
+        const passed = i < currentIdx;
+        return (
+          <div key={p.id} style={{
+            position: "relative",
+            padding: "14px 18px 12px",
+            borderRight: i < BROADCAST_CHAPTERS.length - 1 ? "1px solid #ffffff08" : "none",
+            background: active ? "#160407" : "transparent",
+            opacity: passed ? 0.45 : 1,
+          }}>
+            {active && (
+              <div className="hot-bar bar-grow" style={{
+                position: "absolute", top: 0, left: 0, right: 0, height: 2,
+              }} />
+            )}
+            <div style={{ display: "flex", alignItems: "baseline", gap: 10 }}>
+              <span className="mono" style={{
+                fontSize: 11, color: active ? "#FF2D3D" : "var(--steel-2)", fontWeight: 700,
+              }}>{p.id}</span>
+              <span className="display" style={{
+                fontSize: 17, color: active ? "var(--ivory)" : "var(--silver)",
+                letterSpacing: "0.04em",
+                textShadow: active ? "0 0 12px #FF2D3D44" : "none",
+              }}>{p.name}</span>
+            </div>
+            <div className="mono" style={{
+              fontSize: 9, color: "var(--steel-2)",
+              letterSpacing: "0.18em", marginTop: 3,
+            }}>{p.window}</div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+// ─── HERO: PHASE-AWARE BROADCAST OPENER ─────────────────────────────────────
+// Pre-draft: countdown clock to draft. Post-draft: rookie class headline +
+// horizontal "next-up" milestone strip aimed at OTAs.
+function HeroBroadcast({ currentPhase }) {
+  const today = new Date();
+  const draftStart = new Date(DRAFT_DATA.startTime);
+  const draftPast = today.getTime() > draftStart.getTime() + 3 * 86400000; // ended Apr 25
+  const upcoming = useMemo(() => {
+    return OFFSEASON_CALENDAR
+      .filter((c) => new Date(c.date).getTime() >= today.getTime() - 86400000)
+      .slice(0, 4);
+  }, []);
+  const nextMilestone = upcoming[0] || OFFSEASON_CALENDAR[OFFSEASON_CALENDAR.length - 1];
+  const c = useCountdown(draftPast ? null : DRAFT_DATA.startTime);
+
+  const headline = draftPast
+    ? { line1: "SIX ROOKIES.", line2: "ROAD TO OTAS.", sub: "TERRELL · BRANCH · DANIELS · THOMPSON · PERKINS · ONIANWA. CLASS GRADE: B / B-. PHASE 2 OPENS MAY 4 — FIRST ON-FIELD VETERAN INSTALL UNDER STEFANSKI / REES." }
+    : { line1: "FIVE PICKS.", line2: "NO FIRST.", sub: "CUNNINGHAM ON THE BOARD AT #48. BIGGEST NEEDS — WR / OT / CB. KNIFE FIGHT IN ROUND TWO." };
+
+  const stripLabel = draftPast
+    ? "ATL · 2026 OFFSEASON · ROAD TO OTAS"
+    : `ATL · 2026 NFL DRAFT · ${draftStart.toLocaleDateString("en-US", { weekday: "short" }).toUpperCase()} 8:00 ET`;
+
+  const stripMeta = draftPast
+    ? `FLOWERY BRANCH · ${nextMilestone.label.toUpperCase()}`
+    : `${DRAFT_DATA.location.toUpperCase()} · ${DRAFT_DATA.tvChannels.slice(0, 3).join(" / ").toUpperCase()}`;
+
+  return (
+    <div className="diag-cut" style={{
+      position: "relative", overflow: "hidden",
+      background: "var(--void)",
+      border: "1px solid #ffffff10",
+      minHeight: 360,
+    }}>
+      <div style={{
+        position: "absolute", inset: 0,
+        background: `
+          radial-gradient(ellipse 90% 60% at 18% 110%, #A7193044 0%, transparent 55%),
+          radial-gradient(ellipse 60% 80% at 85% 30%, #FF2D3D22 0%, transparent 60%),
+          linear-gradient(180deg, transparent 30%, #08080A 100%)
+        `,
+      }} />
+      <svg viewBox="0 0 800 400" preserveAspectRatio="xMaxYMid slice"
+        style={{ position: "absolute", right: 0, top: 0, height: "100%", width: "75%", opacity: 0.55 }}>
+        <defs>
+          <linearGradient id="hero-shine" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stopColor="#FF2D3D" stopOpacity="0.0" />
+            <stop offset="0.4" stopColor="#FF2D3D" stopOpacity="0.55" />
+            <stop offset="0.7" stopColor="#A71930" stopOpacity="0.3" />
+            <stop offset="1" stopColor="#08080A" stopOpacity="0" />
+          </linearGradient>
+        </defs>
+        <polygon points="120,260 320,300 380,200 600,80 800,40 800,400 120,400" fill="url(#hero-shine)" />
+        <polygon points="380,200 460,210 440,240" fill="#FF2D3D" opacity="0.25" />
+        <polygon points="500,150 620,140 720,90 600,170 540,200" fill="#A71930" opacity="0.4" />
+      </svg>
+
+      <div className="flicker" />
+
+      <div className="diag-cut" style={{
+        position: "absolute", top: 28, left: 0, right: 0,
+        padding: "8px 32px",
+        background: "linear-gradient(90deg, #A71930 0%, #6B0F1E 80%, transparent 100%)",
+        borderBottom: "1px solid #FF2D3D55",
+        display: "flex", alignItems: "center", gap: 18, flexWrap: "wrap",
+      }}>
+        <span className="display" style={{ fontSize: 12, letterSpacing: "0.28em" }}>
+          {stripLabel}
+        </span>
+        <span className="mono" style={{ fontSize: 10, color: "#ffffffaa", letterSpacing: "0.18em", marginLeft: "auto" }}>
+          {stripMeta}
+        </span>
+      </div>
+
+      <div style={{ position: "relative", padding: "100px 32px 36px", display: "flex", flexDirection: "column", gap: 18 }}>
+        <div>
+          <div className="mono" style={{ fontSize: 11, letterSpacing: "0.32em", color: "var(--silver)" }}>
+            ▎ HOUR ZERO BROADCAST · {currentPhase.name.toUpperCase()}
+          </div>
+          <h1 className="stencil" style={{
+            fontSize: 96, lineHeight: 0.88, margin: "8px 0 4px",
+            letterSpacing: "-0.015em",
+            color: "var(--ivory)",
+            textShadow: "0 0 32px #FF2D3D33",
+          }}>
+            {headline.line1}<span style={{ color: "#FF2D3D" }}>.</span>
+          </h1>
+          <h1 className="stencil" style={{
+            fontSize: 96, lineHeight: 0.88, margin: "0",
+            letterSpacing: "-0.015em",
+            color: "var(--silver)",
+          }}>
+            {headline.line2}<span style={{ color: "#FF2D3D" }}>.</span>
+          </h1>
+          <div className="mono" style={{
+            marginTop: 16, fontSize: 13, color: "var(--silver)",
+            letterSpacing: "0.06em", maxWidth: 640, lineHeight: 1.55,
+          }}>
+            {headline.sub}
+          </div>
+        </div>
+
+        {draftPast ? (
+          <NextUpStrip milestones={upcoming} />
+        ) : (
+          <div style={{ display: "flex", gap: 0, marginTop: 8, flexWrap: "wrap" }}>
+            {[
+              { v: c.d, l: "DAYS" },
+              { v: c.h, l: "HRS" },
+              { v: c.m, l: "MIN" },
+              { v: c.s, l: "SEC" },
+            ].map((u, i) => (
+              <div key={u.l} style={{
+                padding: "10px 22px",
+                borderTop: "2px solid #FF2D3D",
+                borderBottom: "1px solid #ffffff15",
+                background: "#0B0C0F",
+                borderLeft: i === 0 ? "1px solid #ffffff15" : "none",
+                borderRight: "1px solid #ffffff15",
+                minWidth: 92,
+              }}>
+                <div className="stencil" style={{
+                  fontSize: 42, lineHeight: 1, color: "var(--ivory)",
+                  fontVariantNumeric: "tabular-nums",
+                }}>
+                  {String(u.v).padStart(2, "0")}
+                </div>
+                <div className="mono" style={{
+                  fontSize: 9, letterSpacing: "0.32em", color: "var(--silver)", marginTop: 6,
+                }}>{u.l}</div>
+              </div>
+            ))}
+            <div style={{
+              display: "flex", alignItems: "center", padding: "0 22px",
+              borderTop: "2px solid #ffffff10",
+              borderBottom: "1px solid #ffffff15",
+              borderRight: "1px solid #ffffff15",
+              background: "#0B0C0F",
+            }}>
+              <div>
+                <div className="mono" style={{ fontSize: 9, letterSpacing: "0.28em", color: "var(--silver)" }}>
+                  / STATUS
+                </div>
+                <div className="display hot-text" style={{ fontSize: 18, letterSpacing: "0.16em", marginTop: 4 }}>
+                  STANDBY
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+
+      <svg viewBox="0 0 1000 30" preserveAspectRatio="none" style={{
+        position: "absolute", left: 0, right: 0, bottom: -1, height: 30, width: "100%", display: "block",
+      }}>
+        <polygon points="0,30 0,18 1000,2 1000,30" fill="#A71930" />
+        <polygon points="0,30 0,22 1000,8 1000,12 1000,30" fill="#FF2D3D" opacity="0.85" />
+      </svg>
+    </div>
+  );
+}
+
+// ─── PICK SLOT BOARD ────────────────────────────────────────────────────────
+function PickSlotBoard() {
+  const picks = DRAFT_DATA.falconsPicks;
+  return (
+    <div className="panel" style={{ marginTop: 20 }}>
+      <div className="panel-title">
+        <span className="bug" />
+        <span className="name">FALCONS BOARD · {picks.length} SLOTS</span>
+        <span className="meta">CLASS OF '26</span>
       </div>
       <div style={{
-        display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 10,
+        display: "grid",
+        gridTemplateColumns: `repeat(${picks.length}, minmax(0, 1fr))`,
+        gap: 1, background: "#ffffff08",
       }}>
-        {DRAFT_DATA.falconsPicks.map((pick) => {
-          const color = statusColor[pick.status] || "#6B7B8E";
+        {picks.map((p, i) => {
+          const isMade = p.status === "made";
+          const isTraded = p.status === "traded";
+          const isOnClock = p.status === "on-clock";
+          const accent = isOnClock ? "var(--hot)" : isMade ? "var(--red)" : isTraded ? "var(--steel)" : "transparent";
+          const slotName = p.selection ? p.selection.split("·")[0].trim() : (isTraded ? "TRADED" : "SCHEDULED");
+          const slotPos = p.selection ? p.selection.split("·")[1]?.trim() : null;
           return (
-            <div key={pick.overallPick} style={{
-              background: FALCONS_CARD, borderRadius: 14, padding: "14px 16px",
-              borderLeft: `4px solid ${color}`,
-              display: "flex", flexDirection: "column", gap: 8,
-              boxShadow: "0 2px 12px #0005",
+            <div key={p.overallPick} style={{
+              background: isOnClock ? "#170509" : "var(--carbon)",
+              padding: "16px 14px 14px",
+              position: "relative",
+              borderTop: `2px solid ${accent}`,
+              opacity: isTraded ? 0.55 : 1,
+              minWidth: 0,
             }}>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <div>
-                  <div style={{ color: "#fff", fontWeight: 900, fontSize: 22, lineHeight: 1 }}>
-                    #{pick.overallPick}
-                  </div>
-                  <div style={{ color: FALCONS_SILVER, fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1, marginTop: 3 }}>
-                    Round {pick.round}
-                  </div>
-                </div>
-                <span style={{
-                  fontSize: 9, padding: "3px 8px", borderRadius: 8,
-                  background: `${color}22`, border: `1px solid ${color}`, color,
-                  fontWeight: 700, textTransform: "uppercase", letterSpacing: 1,
-                }}>
-                  {statusLabel[pick.status]}
-                </span>
-              </div>
-              <div style={{ fontSize: 11, color: "#888", fontFamily: "monospace" }}>
-                {formatSlotTime(pick.slotEstTime)}
-              </div>
-              {pick.selection ? (
-                <div style={{
-                  background: "#00000033", padding: "8px 10px", borderRadius: 8,
-                  fontSize: 13, color: "#fff", fontWeight: 700,
-                }}>
-                  {pick.selection}
-                </div>
-              ) : (
-                <div style={{ fontSize: 11, color: "#666", fontStyle: "italic" }}>
-                  On the board
-                </div>
+              {isOnClock && (
+                <div className="hot-bar bar-grow" style={{
+                  position: "absolute", top: 0, left: 0, right: 0, height: 2,
+                }} />
               )}
-              {pick.tradeNote && (
-                <div style={{ fontSize: 10, color: "#9b59b6", fontWeight: 600 }}>
-                  ↔ {pick.tradeNote}
-                </div>
-              )}
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
+                <span className="mono" style={{
+                  fontSize: 10, letterSpacing: "0.22em", color: "var(--silver)",
+                }}>R{p.round} / SLOT {String(i + 1).padStart(2, "0")}</span>
+                {isOnClock && <span className="mono hot-text" style={{ fontSize: 9, letterSpacing: "0.22em" }}>● LIVE</span>}
+                {isMade && <span className="mono" style={{ fontSize: 9, letterSpacing: "0.22em", color: "var(--green)" }}>● MADE</span>}
+                {isTraded && <span className="mono" style={{ fontSize: 9, letterSpacing: "0.22em", color: "var(--steel-2)" }}>↪ TRADED</span>}
+              </div>
+              <div className="stencil" style={{
+                fontSize: 48, lineHeight: 1, marginTop: 10,
+                color: isOnClock || isMade ? "var(--ivory)" : "var(--silver)",
+                textShadow: isOnClock ? "0 0 18px #FF2D3D55" : "none",
+                whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
+              }}>
+                <span style={{ fontSize: 22, color: "var(--steel-2)", verticalAlign: "top" }}>#</span>
+                {p.overallPick}
+              </div>
+              <div className="display" style={{
+                fontFamily: "var(--stencil)",
+                fontSize: 13, letterSpacing: "0.04em", marginTop: 8,
+                color: "var(--ivory)",
+                whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
+              }}>
+                {slotName}
+              </div>
+              <div className="mono" style={{
+                fontSize: 9, letterSpacing: "0.18em", color: "var(--steel-2)", marginTop: 4,
+                whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
+              }}>
+                {slotPos ? `${slotPos}` : (p.tradeNote ? p.tradeNote.split(".")[0] : "")}
+              </div>
             </div>
           );
         })}
@@ -278,464 +492,219 @@ function DraftPickSlotBoard() {
   );
 }
 
-function ProspectCard({ prospect }) {
-  const [expanded, setExpanded] = useState(false);
-  const posColor = POS_COLORS[prospect.position] || "#888";
-  const ft = Math.floor(prospect.heightIn / 12);
-  const inRem = Math.round(prospect.heightIn % 12);
+// ─── STAT RIBBON ────────────────────────────────────────────────────────────
+function StatRibbon({ rosterCounts }) {
+  const stats = [
+    { l: "ROSTER",   v: String(rosterCounts.total), sub: "POST-DRAFT" },
+    { l: "ACTIVE",   v: String(rosterCounts.active), sub: "" },
+    { l: "PUP / IR", v: String(rosterCounts.unavailable).padStart(2, "0"), sub: "PENIX, ETC." },
+    { l: "PICKS",    v: String(DRAFT_DATA.falconsPicks.filter((p) => p.status === "made").length), sub: "RD 2 → RD 7" },
+    { l: "CAP",      v: `$${(CAP_STATE.capSpaceSpotrac / 1_000_000).toFixed(1)}M`, sub: `RANK ${CAP_STATE.leagueRank}` },
+    { l: "DEAD $",   v: `$${(CAP_STATE.deadMoney.total / 1_000_000).toFixed(1)}M`, sub: "COUSINS / MOONEY" },
+    { l: "2025",     v: SEASON_RECAP_2025.record.replace("-", " — "), sub: "MISSED PLAYOFFS" },
+  ];
   return (
     <div style={{
-      background: FALCONS_CARD, borderRadius: 14, padding: "14px 16px",
-      borderTop: `3px solid ${posColor}`,
-      cursor: "pointer", transition: "all 0.2s",
-      boxShadow: "0 2px 12px #0005",
-    }} onClick={() => setExpanded((v) => !v)}>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 10 }}>
-        <div style={{ minWidth: 0, flex: 1 }}>
-          <div style={{ color: "#fff", fontWeight: 800, fontSize: 15, lineHeight: 1.2 }}>
-            {prospect.name}
-          </div>
-          <div style={{ fontSize: 11, color: "#999", marginTop: 3 }}>
-            {prospect.college} · Age {prospect.age}
-          </div>
-        </div>
-        <PositionTag position={prospect.position} />
-      </div>
-      <div style={{
-        display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 6, marginTop: 10,
-      }}>
-        <div style={{ background: "#252530", borderRadius: 8, padding: "6px 8px", textAlign: "center" }}>
-          <div style={{ fontSize: 13, color: "#fff", fontWeight: 800 }}>{ft}'{inRem}"</div>
-          <div style={{ fontSize: 8, color: "#666", textTransform: "uppercase", letterSpacing: 1 }}>Ht</div>
-        </div>
-        <div style={{ background: "#252530", borderRadius: 8, padding: "6px 8px", textAlign: "center" }}>
-          <div style={{ fontSize: 13, color: "#fff", fontWeight: 800 }}>{prospect.weight}</div>
-          <div style={{ fontSize: 8, color: "#666", textTransform: "uppercase", letterSpacing: 1 }}>Wt</div>
-        </div>
-        <div style={{ background: "#252530", borderRadius: 8, padding: "6px 8px", textAlign: "center" }}>
-          <div style={{ fontSize: 13, color: "#fff", fontWeight: 800 }}>{prospect.fortyTime?.toFixed(2) ?? "—"}</div>
-          <div style={{ fontSize: 8, color: "#666", textTransform: "uppercase", letterSpacing: 1 }}>40</div>
-        </div>
-      </div>
-      <div style={{
-        marginTop: 10, padding: "6px 10px", borderRadius: 8,
-        background: `${FALCONS_RED}18`, border: `1px solid ${FALCONS_RED}44`,
-        fontSize: 11, color: "#ffbbc2", fontWeight: 600,
-      }}>
-        {prospect.projection}
-      </div>
-      {expanded && (
-        <div style={{ marginTop: 12, display: "flex", flexDirection: "column", gap: 8 }}>
-          <div style={{ fontSize: 12, color: "#ccc", lineHeight: 1.5 }}>
-            {prospect.fit}
-          </div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8 }}>
-            <div>
-              <div style={{ fontSize: 9, color: "#2ecc71", fontWeight: 700, textTransform: "uppercase", letterSpacing: 1, marginBottom: 4 }}>
-                Strengths
-              </div>
-              {prospect.strengths.map((s, i) => (
-                <div key={i} style={{ fontSize: 11, color: "#ccc", marginBottom: 2 }}>• {s}</div>
-              ))}
-            </div>
-            <div>
-              <div style={{ fontSize: 9, color: "#e74c3c", fontWeight: 700, textTransform: "uppercase", letterSpacing: 1, marginBottom: 4 }}>
-                Concerns
-              </div>
-              {prospect.concerns.map((s, i) => (
-                <div key={i} style={{ fontSize: 11, color: "#ccc", marginBottom: 2 }}>• {s}</div>
-              ))}
-            </div>
-          </div>
-          {prospect.combine && (
-            <div>
-              <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 4 }}>
-                <div style={{ fontSize: 9, color: FALCONS_SILVER, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1 }}>
-                  Testing
-                </div>
-                <span style={{
-                  fontSize: 8, padding: "1px 6px", borderRadius: 6, fontWeight: 700,
-                  textTransform: "uppercase", letterSpacing: 0.5,
-                  background: prospect.combine.source === "combine" ? "#1a3a1a" : "#3a2a1a",
-                  color: prospect.combine.source === "combine" ? "#7fd47f" : "#e8b97f",
-                  border: `1px solid ${prospect.combine.source === "combine" ? "#2ecc7155" : "#e67e2255"}`,
-                }}>
-                  {prospect.combine.source === "combine" ? "Combine" : "Pro Day"}
-                </span>
-              </div>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 4 }}>
-                <div style={{ background: "#252530", borderRadius: 6, padding: "4px 6px", textAlign: "center" }}>
-                  <div style={{ fontSize: 12, color: "#fff", fontWeight: 800 }}>
-                    {prospect.combine.fortyYd != null ? prospect.combine.fortyYd.toFixed(2) : "—"}
-                  </div>
-                  <div style={{ fontSize: 7, color: "#666", textTransform: "uppercase", letterSpacing: 1 }}>40</div>
-                </div>
-                <div style={{ background: "#252530", borderRadius: 6, padding: "4px 6px", textAlign: "center" }}>
-                  <div style={{ fontSize: 12, color: "#fff", fontWeight: 800 }}>
-                    {prospect.combine.verticalIn != null ? `${prospect.combine.verticalIn}"` : "—"}
-                  </div>
-                  <div style={{ fontSize: 7, color: "#666", textTransform: "uppercase", letterSpacing: 1 }}>Vert</div>
-                </div>
-                <div style={{ background: "#252530", borderRadius: 6, padding: "4px 6px", textAlign: "center" }}>
-                  <div style={{ fontSize: 12, color: "#fff", fontWeight: 800 }}>
-                    {prospect.combine.broadJumpIn != null
-                      ? `${Math.floor(prospect.combine.broadJumpIn / 12)}'${prospect.combine.broadJumpIn % 12}"`
-                      : "—"}
-                  </div>
-                  <div style={{ fontSize: 7, color: "#666", textTransform: "uppercase", letterSpacing: 1 }}>Broad</div>
-                </div>
-                <div style={{ background: "#252530", borderRadius: 6, padding: "4px 6px", textAlign: "center" }}>
-                  <div style={{ fontSize: 12, color: "#fff", fontWeight: 800 }}>
-                    {prospect.combine.benchReps != null ? prospect.combine.benchReps : "—"}
-                  </div>
-                  <div style={{ fontSize: 7, color: "#666", textTransform: "uppercase", letterSpacing: 1 }}>Bench</div>
-                </div>
-              </div>
-              {prospect.combine.note && (
-                <div style={{ fontSize: 10, color: "#888", marginTop: 4, fontStyle: "italic", lineHeight: 1.4 }}>
-                  {prospect.combine.note}
-                </div>
-              )}
-            </div>
-          )}
-          {prospect.mockProjections?.length > 0 && (
-            <div>
-              <div style={{ fontSize: 9, color: FALCONS_SILVER, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1, marginBottom: 4 }}>
-                Mock Board
-              </div>
-              <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-                {prospect.mockProjections.map((m, i) => (
-                  <span key={i} style={{
-                    fontSize: 10, padding: "3px 8px", borderRadius: 8,
-                    background: "#252530", color: "#aaa", fontWeight: 600,
-                  }}>
-                    {m.source}: #{m.pick}
-                  </span>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
-      )}
-    </div>
-  );
-}
-
-function DraftProspectGrid() {
-  return (
-    <div style={{ marginBottom: 20 }}>
-      <div style={{ fontSize: 11, color: FALCONS_SILVER, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1.5, marginBottom: 8 }}>
-        Top Falcons Targets — click to expand
-      </div>
-      <div style={{
-        display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: 10,
-      }}>
-        {DRAFT_DATA.topTargets.map((p) => (
-          <ProspectCard key={p.id} prospect={p} />
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function DraftCentral() {
-  return (
-    <>
-      <DraftCountdown />
-      <DraftPickSlotBoard />
-      <DraftProspectGrid />
-    </>
-  );
-}
-
-// ─── Simple Hero stubs for other phases (active heroes live here) ───────────
-function PhaseStubHero({ phase, detail }) {
-  return (
-    <div style={{
-      background: `linear-gradient(135deg, ${phase.accentColor} 0%, #1a1a1f 100%)`,
-      borderRadius: 16, padding: "28px 24px", marginBottom: 16,
-      boxShadow: "0 8px 32px #0006",
+      marginTop: 16,
+      display: "grid",
+      gridTemplateColumns: `repeat(${stats.length}, minmax(0, 1fr))`,
+      gap: 1, background: "#ffffff08",
+      border: "1px solid #ffffff10",
     }}>
-      <div style={{ fontSize: 10, color: "#ffffffaa", fontWeight: 700, textTransform: "uppercase", letterSpacing: 2 }}>
-        Current Phase
-      </div>
-      <div style={{ fontSize: 26, fontWeight: 900, color: "#fff", marginTop: 4, letterSpacing: -0.5 }}>
-        {phase.name}
-      </div>
-      <div style={{ fontSize: 13, color: "#ffffffcc", marginTop: 8, lineHeight: 1.5 }}>
-        {detail || phase.description}
-      </div>
-    </div>
-  );
-}
-
-function NextMilestoneHero({ phase }) {
-  const today = new Date().toISOString().slice(0, 10);
-  const next = OFFSEASON_CALENDAR.find((m) => m.date.slice(0, 10) >= today);
-  // Always call the hook (rules of hooks) — fall back to today if no milestone.
-  const { days } = useCountdown(next?.date || new Date().toISOString());
-  if (!next) return <PhaseStubHero phase={phase} />;
-  return (
-    <div style={{
-      background: `linear-gradient(135deg, ${phase.accentColor} 0%, #1a1a1f 100%)`,
-      borderRadius: 16, padding: "22px 24px", marginBottom: 16,
-      boxShadow: "0 8px 32px #0006",
-    }}>
-      <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 20 }}>
-        <div>
-          <div style={{ fontSize: 10, color: "#ffffffaa", fontWeight: 700, textTransform: "uppercase", letterSpacing: 2 }}>
-            {phase.name} · Next up
-          </div>
-          <div style={{ fontSize: 24, fontWeight: 900, color: "#fff", marginTop: 4, letterSpacing: -0.5 }}>
-            {next.label}
-          </div>
-          <div style={{ fontSize: 13, color: "#ffffffcc", marginTop: 8, lineHeight: 1.5, maxWidth: 600 }}>
-            {next.detail}
-          </div>
-        </div>
-        <div style={{
-          background: "#ffffff18", borderRadius: 12, padding: "14px 20px",
-          minWidth: 110, textAlign: "center",
+      {stats.map((s, i) => (
+        <div key={s.l} style={{
+          background: "var(--carbon)",
+          padding: "12px 14px",
+          position: "relative",
+          minWidth: 0,
         }}>
-          <div style={{ fontSize: 36, fontWeight: 900, color: "#fff", lineHeight: 1 }}>{days}</div>
-          <div style={{ fontSize: 10, color: "#ffffffcc", fontWeight: 700, textTransform: "uppercase", letterSpacing: 1.5, marginTop: 4 }}>
-            {days === 1 ? "Day" : "Days"} to go
+          {i === 4 && (
+            <div className="hot-bar bar-grow" style={{
+              position: "absolute", top: 0, left: 0, right: 0, height: 2,
+            }} />
+          )}
+          <div className="mono" style={{ fontSize: 9, letterSpacing: "0.24em", color: "var(--silver)" }}>
+            / {s.l}
           </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function PhaseHero({ phase }) {
-  // Today's active hero. draft-week (Apr 18-25) is the big one — everything else
-  // is a graceful degradation until those phases arrive and get richer components.
-  switch (phase.hero) {
-    case "DraftCentral":
-      return <DraftCentral />;
-    case "RookieClass":
-    case "ScheduleReleaseCountdown":
-    case "OTAStorylines":
-    case "CampCountdown":
-    case "CampBattles":
-    case "PreseasonResults":
-    case "NextGameBanner":
-    case "SeasonWrap":
-      return <NextMilestoneHero phase={phase} />;
-    default:
-      return <PhaseStubHero phase={phase} />;
-  }
-}
-
-// ─── STAR CARDS ROW ─────────────────────────────────────────────────────────
-const STAR_IDS = ["penix-jr", "tua", "bijan", "drake-london", "pitts", "bates", "terrell", "jalon-walker", "dorlus"];
-
-function StarCard({ player, onClick }) {
-  const statVals = getStarStatLine(player);
-  return (
-    <div
-      onClick={onClick ? () => onClick(player) : undefined}
-      role={onClick ? "button" : undefined}
-      tabIndex={onClick ? 0 : undefined}
-      onKeyDown={onClick ? (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onClick(player); } } : undefined}
-      style={{
-        background: FALCONS_CARD, borderRadius: 14, padding: "14px 16px",
-        borderTop: `3px solid ${POS_COLORS[player.position] || FALCONS_RED}`,
-        minWidth: 220, display: "flex", flexDirection: "column", gap: 10,
-        boxShadow: "0 2px 12px #0005",
-        cursor: onClick ? "pointer" : "default",
-        transition: "transform 0.15s, box-shadow 0.15s",
-      }}
-      onMouseEnter={onClick ? (e) => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 6px 20px #0008"; } : undefined}
-      onMouseLeave={onClick ? (e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "0 2px 12px #0005"; } : undefined}
-    >
-      <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-        <PlayerAvatar player={player} size={52} />
-        <div style={{ minWidth: 0, flex: 1 }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-            <PositionTag position={player.position} />
-            <span style={{ fontSize: 10, color: "#666", fontWeight: 700 }}>#{player.number}</span>
+          <div className="stencil" style={{ fontSize: 26, color: "var(--ivory)", lineHeight: 1, marginTop: 6, whiteSpace: "nowrap" }}>
+            {s.v}
           </div>
-          <div style={{ color: "#fff", fontWeight: 800, fontSize: 14, marginTop: 3, lineHeight: 1.2 }}>
-            {player.name}
-          </div>
-          {player.status !== "active" && (
-            <div style={{ marginTop: 4 }}><StatusBadge status={player.status} /></div>
+          {s.sub && (
+            <div className="mono" style={{ fontSize: 8, color: "var(--steel-2)", letterSpacing: "0.18em", marginTop: 4, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+              {s.sub}
+            </div>
           )}
         </div>
-      </div>
-      {statVals.length > 0 && (
-        <div style={{ display: "grid", gridTemplateColumns: `repeat(${statVals.length}, 1fr)`, gap: 6 }}>
-          {statVals.map((s, i) => (
-            <div key={i} style={{ background: "#252530", borderRadius: 8, padding: "6px 4px", textAlign: "center" }}>
-              <div style={{ fontSize: 14, color: "#fff", fontWeight: 800 }}>{s.value}</div>
-              <div style={{ fontSize: 8, color: "#666", textTransform: "uppercase", letterSpacing: 1 }}>{s.label}</div>
-            </div>
-          ))}
-        </div>
-      )}
-      {player.injuryNote && (
-        <div style={{ fontSize: 10, color: "#ffa94d", lineHeight: 1.4 }}>
-          {player.injuryNote}
-        </div>
-      )}
+      ))}
     </div>
   );
 }
 
-function getStarStatLine(player) {
-  const s = player.stats || {};
-  switch (player.position) {
-    case "QB":
-      return [
-        { label: "YDS", value: s.passYds ?? 0 },
-        { label: "TD", value: s.passTDs ?? 0 },
-        { label: "INT", value: s.ints ?? 0 },
-      ];
-    case "RB":
-      return [
-        { label: "YDS", value: s.rushYds ?? 0 },
-        { label: "TD", value: s.rushTDs ?? 0 },
-        { label: "YPC", value: (s.ypc ?? 0).toFixed(1) },
-      ];
-    case "WR":
-      return [
-        { label: "REC", value: s.receptions ?? 0 },
-        { label: "YDS", value: s.recYds ?? 0 },
-        { label: "TD", value: s.recTDs ?? 0 },
-      ];
-    case "TE":
-      return [
-        { label: "REC", value: s.receptions ?? 0 },
-        { label: "YDS", value: s.recYds ?? 0 },
-        { label: "TD", value: s.recTDs ?? 0 },
-      ];
-    case "EDGE":
-    case "DE":
-    case "DT":
-      return [
-        { label: "TKL", value: s.tackles ?? 0 },
-        { label: "SACK", value: (s.sacks ?? 0).toFixed(1) },
-        { label: "TFL", value: s.tfl ?? 0 },
-      ];
-    case "LB":
-      return [
-        { label: "TKL", value: s.tackles ?? 0 },
-        { label: "SACK", value: (s.sacks ?? 0).toFixed(1) },
-        { label: "INT", value: s.ints ?? 0 },
-      ];
-    case "CB":
-    case "S":
-      return [
-        { label: "TKL", value: s.tackles ?? 0 },
-        { label: "INT", value: s.ints ?? 0 },
-        { label: "PD", value: s.passDef ?? 0 },
-      ];
-    default:
-      return [];
-  }
-}
-
-function StarCardsRow({ players, onPlayerClick }) {
-  const stars = STAR_IDS.map((id) => players.find((p) => p.id === id)).filter(Boolean);
+// ─── SECTION TITLE ──────────────────────────────────────────────────────────
+function SectionTitle({ children, bug, meta }) {
   return (
-    <div style={{ marginBottom: 20 }}>
-      <div style={{ fontSize: 11, color: FALCONS_SILVER, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1.5, marginBottom: 8 }}>
-        Stars to Watch — 2025 stats · tap a card for details
-      </div>
-      <div style={{
-        display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 10,
-      }}>
-        {stars.map((p) => <StarCard key={p.id} player={p} onClick={onPlayerClick} />)}
-      </div>
+    <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+      {bug && <div className="hot-bar" style={{ width: 6, height: 18 }} />}
+      <h3 className="display" style={{
+        margin: 0, fontSize: 16, letterSpacing: "0.18em", color: "var(--ivory)",
+      }}>{children}</h3>
+      {meta && <span className="mono" style={{ fontSize: 10, letterSpacing: "0.2em", color: "var(--silver)", marginLeft: "auto" }}>{meta}</span>}
     </div>
   );
 }
 
-// ─── CONTRACT WATCH ─────────────────────────────────────────────────────────
-function ContractWatchCard({ players }) {
-  const fmt = (n) => "$" + (n / 1_000_000).toFixed(1) + "M";
-  const extensions = CAP_STATE.pendingExtensions.map((e) => ({
-    ...e,
-    player: players.find((p) => p.id === e.playerId),
-  })).filter((e) => e.player);
-  const topHits = CAP_STATE.topCapHits2026.map((h) => ({
-    ...h,
-    player: players.find((p) => p.id === h.playerId),
-  })).filter((h) => h.player);
-
+// ─── FORM DIAL ──────────────────────────────────────────────────────────────
+function FormDial({ value }) {
+  const SIZE = 44, CENTER = SIZE / 2, segments = 10;
   return (
-    <div style={{
-      background: FALCONS_CARD, borderRadius: 14, padding: 18,
-      boxShadow: "0 2px 12px #0005", marginBottom: 20,
+    <svg width={SIZE} height={SIZE} viewBox={`0 0 ${SIZE} ${SIZE}`}>
+      <circle cx={CENTER} cy={CENTER} r={CENTER - 1} fill="none" stroke="#ffffff10" strokeWidth="1" />
+      {Array.from({ length: segments }).map((_, i) => {
+        const angle = (i / segments) * 270 - 135;
+        const rad = (angle * Math.PI) / 180;
+        const r1 = CENTER - 4, r2 = CENTER - 9;
+        const x1 = CENTER + Math.cos(rad) * r1;
+        const y1 = CENTER + Math.sin(rad) * r1;
+        const x2 = CENTER + Math.cos(rad) * r2;
+        const y2 = CENTER + Math.sin(rad) * r2;
+        const lit = i < Math.round(value);
+        return (
+          <line key={i} x1={x1} y1={y1} x2={x2} y2={y2}
+            stroke={lit ? (i > 7 ? "#FF2D3D" : "#A71930") : "#2A2D33"}
+            strokeWidth="2"
+            style={lit && i > 7 ? { filter: "drop-shadow(0 0 3px #FF2D3D)" } : undefined}
+          />
+        );
+      })}
+      <text x={CENTER} y={CENTER + 4} textAnchor="middle"
+        fontSize="11" fontFamily="var(--stencil)" fill="#EDEDED" fontWeight="700">
+        {value > 0 ? value.toFixed(1) : "—"}
+      </text>
+    </svg>
+  );
+}
+
+// ─── PLAYER TELEMETRY CARD ──────────────────────────────────────────────────
+function PlayerTelemetryCard({ p, onClick }) {
+  const isUnavail = ["pup", "ir", "nfi", "suspended"].includes(p.status);
+  const lastName = p.name.split(" ").slice(-1)[0].toUpperCase();
+  const tag = p.tag;
+  return (
+    <div onClick={() => onClick && onClick(p)} className="panel diag-cut" style={{
+      position: "relative", overflow: "hidden",
+      minHeight: 240,
+      display: "flex", flexDirection: "column",
+      cursor: onClick ? "pointer" : "default",
     }}>
-      <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 10, marginBottom: 14 }}>
-        <div>
-          <div style={{ fontSize: 11, color: FALCONS_SILVER, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1.5 }}>
-            Contract Watch · 2026 Cap
-          </div>
-          <div style={{ color: "#fff", fontSize: 18, fontWeight: 800, marginTop: 4 }}>
-            {fmt(CAP_STATE.capSpaceSpotrac)} cap space <span style={{ color: "#666", fontSize: 12, fontWeight: 600 }}>· {CAP_STATE.leagueRank}th NFL</span>
-          </div>
-        </div>
-        <div style={{ display: "flex", gap: 8 }}>
-          <div style={{ background: "#252530", borderRadius: 10, padding: "8px 12px", textAlign: "center" }}>
-            <div style={{ fontSize: 15, color: "#ffa94d", fontWeight: 800 }}>{fmt(CAP_STATE.deadMoney.total)}</div>
-            <div style={{ fontSize: 8, color: "#666", textTransform: "uppercase", letterSpacing: 1, marginTop: 2 }}>Dead Money</div>
-          </div>
-          <div style={{ background: "#252530", borderRadius: 10, padding: "8px 12px", textAlign: "center" }}>
-            <div style={{ fontSize: 15, color: "#2ecc71", fontWeight: 800 }}>{fmt(_.sumBy(CAP_STATE.restructureCandidates, "maxSavings"))}</div>
-            <div style={{ fontSize: 8, color: "#666", textTransform: "uppercase", letterSpacing: 1, marginTop: 2 }}>Restruc Room</div>
-          </div>
-        </div>
+      <div style={{
+        position: "absolute", top: 0, left: 0,
+        background: isUnavail ? "var(--steel)" : "var(--red)",
+        padding: "4px 10px", zIndex: 2,
+      }}>
+        <span className="mono" style={{ fontSize: 9, letterSpacing: "0.24em", color: "#fff" }}>
+          {tag}
+        </span>
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
-        <div>
-          <div style={{ fontSize: 10, color: "#C9A227", fontWeight: 700, textTransform: "uppercase", letterSpacing: 1, marginBottom: 6 }}>
-            Pending Extensions
+      <svg viewBox="0 0 60 60" style={{
+        position: "absolute", top: 0, right: 0, width: 60, height: 60, zIndex: 1,
+      }}>
+        <polygon points="60,0 60,30 30,0" fill="#A71930" />
+        <polygon points="60,0 60,16 44,0" fill="#FF2D3D" />
+      </svg>
+
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 0, flex: 1 }}>
+        <div style={{
+          position: "relative",
+          background: `
+            radial-gradient(ellipse at 30% 40%, #A7193055 0%, transparent 60%),
+            linear-gradient(135deg, #1A0508 0%, #0B0C0F 70%)
+          `,
+          minHeight: 240,
+          overflow: "hidden",
+          borderRight: "1px solid #ffffff10",
+        }}>
+          <svg viewBox="0 0 200 240" preserveAspectRatio="xMidYMid slice"
+            style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}>
+            <polygon points="0,240 0,140 60,80 130,60 200,90 200,240" fill="#A7193033" />
+            <polygon points="0,240 30,180 110,150 200,170 200,240" fill="#FF2D3D22" />
+            <text x="100" y="195" textAnchor="middle"
+              fontFamily="Stardos Stencil, Oswald, sans-serif" fontWeight="700"
+              fontSize="180" fill="#FF2D3D" opacity="0.18">
+              {p.number}
+            </text>
+          </svg>
+          {p.image && (
+            <img src={p.image} alt={p.name}
+              style={{
+                position: "absolute", bottom: 56, left: "50%",
+                transform: "translateX(-50%)",
+                width: "90%", maxHeight: 170,
+                objectFit: "contain", objectPosition: "top",
+                opacity: 1, zIndex: 1,
+                filter: "drop-shadow(0 4px 18px #FF2D3D33)",
+              }}
+              onError={(e) => { e.currentTarget.style.display = "none"; }}
+            />
+          )}
+          <div style={{ position: "absolute", bottom: 14, left: 14, right: 14, zIndex: 2 }}>
+            <div className="mono" style={{ fontSize: 9, color: "var(--silver)", letterSpacing: "0.22em" }}>
+              #{p.number} / {p.position}
+            </div>
+            <div className="stencil" style={{ fontSize: 22, lineHeight: 1, color: "var(--ivory)", marginTop: 4, letterSpacing: "-0.005em" }}>
+              {lastName}
+            </div>
           </div>
+        </div>
+
+        <div style={{ padding: "14px 16px", display: "flex", flexDirection: "column", gap: 14 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+            <FormDial value={p.form || 0} />
+            <div>
+              <div className="mono" style={{ fontSize: 9, color: "var(--silver)", letterSpacing: "0.22em" }}>FORM</div>
+              <div className="stencil" style={{ fontSize: 22, lineHeight: 1, color: "var(--ivory)" }}>
+                {p.form > 0 ? p.form.toFixed(1) : "—"}
+              </div>
+            </div>
+          </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 6 }}>
+            {p.statLine.map((s) => (
+              <div key={s.k} style={{
+                background: "#0B0C0F", padding: "8px 6px", textAlign: "center",
+                borderTop: "1px solid #ffffff10",
+              }}>
+                <div className="stencil" style={{ fontSize: 18, lineHeight: 1, color: "var(--ivory)" }}>
+                  {s.v}
+                </div>
+                <div className="mono" style={{ fontSize: 8, color: "var(--silver)", letterSpacing: "0.22em", marginTop: 4 }}>
+                  {s.k}
+                </div>
+              </div>
+            ))}
+          </div>
+
           <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-            {extensions.map((e) => (
-              <div key={e.playerId} style={{
-                background: "#252530", borderRadius: 8, padding: "8px 10px",
-                borderLeft: `3px solid ${e.priority === 1 ? "#C9A227" : "#555"}`,
-              }}>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 3 }}>
-                  <div style={{ fontSize: 13, color: "#fff", fontWeight: 700 }}>
-                    {e.player.name}
-                  </div>
-                  <span style={{
-                    fontSize: 8, padding: "2px 6px", borderRadius: 6, fontWeight: 700, textTransform: "uppercase",
-                    background: "#1a1a1f", color: "#999", letterSpacing: 0.5,
-                  }}>
-                    {e.status}
-                  </span>
+            {p.ranks.map((r) => (
+              <div key={r.k}>
+                <div style={{ display: "flex", justifyContent: "space-between" }}>
+                  <span className="mono" style={{ fontSize: 8, letterSpacing: "0.2em", color: "var(--silver)" }}>{r.k}</span>
+                  <span className="mono" style={{ fontSize: 8, letterSpacing: "0.16em", color: "var(--ivory)" }}>{r.v}</span>
                 </div>
-                <div style={{ fontSize: 10, color: "#999", lineHeight: 1.4 }}>{e.rationale}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div>
-          <div style={{ fontSize: 10, color: "#e74c3c", fontWeight: 700, textTransform: "uppercase", letterSpacing: 1, marginBottom: 6 }}>
-            Top 2026 Cap Hits
-          </div>
-          <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
-            {topHits.map((h) => (
-              <div key={h.playerId} style={{
-                display: "flex", justifyContent: "space-between", alignItems: "center",
-                background: "#252530", borderRadius: 8, padding: "6px 10px",
-              }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 6, minWidth: 0 }}>
-                  <PositionTag position={h.player.position} />
-                  <span style={{ fontSize: 12, color: "#fff", fontWeight: 600, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-                    {h.player.name}
-                  </span>
+                <div style={{ height: 3, background: "#ffffff08", marginTop: 3, position: "relative" }}>
+                  <div className="bar-grow" style={{
+                    height: "100%",
+                    width: `${(r.v / 100) * 100}%`,
+                    background: r.v > 80 ? "var(--hot)" : r.v > 0 ? "var(--red)" : "var(--steel-2)",
+                    boxShadow: r.v > 80 ? "0 0 8px #FF2D3D88" : "none",
+                  }} />
+                  {[25, 50, 75].map((t) => (
+                    <div key={t} style={{
+                      position: "absolute", top: -1, bottom: -1, left: `${t}%`,
+                      width: 1, background: "#ffffff15",
+                    }} />
+                  ))}
                 </div>
-                <span style={{ fontSize: 12, color: "#fff", fontWeight: 800, fontFamily: "monospace" }}>
-                  {fmt(h.amount)}
-                </span>
               </div>
             ))}
           </div>
@@ -743,134 +712,266 @@ function ContractWatchCard({ players }) {
       </div>
 
       <div style={{
-        marginTop: 14, paddingTop: 12, borderTop: "1px solid #ffffff0a",
+        padding: "6px 12px",
+        background: isUnavail ? "var(--steel)" : "#0B0C0F",
+        borderTop: "1px solid #ffffff10",
+        display: "flex", justifyContent: "space-between", alignItems: "center",
       }}>
-        <div style={{ fontSize: 10, color: FALCONS_SILVER, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1, marginBottom: 6 }}>
-          Recent moves
-        </div>
-        <div style={{ display: "flex", flexDirection: "column", gap: 3 }}>
-          {CAP_STATE.recentMoves.map((m, i) => (
-            <div key={i} style={{ display: "flex", gap: 10, fontSize: 11 }}>
-              <span style={{ color: "#666", minWidth: 80, fontFamily: "monospace" }}>{m.date}</span>
-              <span style={{ color: "#ccc" }}>{m.description}</span>
-            </div>
-          ))}
-        </div>
+        <span className="mono" style={{ fontSize: 9, color: isUnavail ? "var(--ivory)" : "var(--silver)", letterSpacing: "0.22em" }}>
+          {p.statusLabel}
+        </span>
       </div>
     </div>
   );
 }
 
-// ─── SEASON RECAP 2025 ──────────────────────────────────────────────────────
-function SeasonRecap2025Card() {
-  const r = SEASON_RECAP_2025;
+// ─── STAR TELEMETRY ─────────────────────────────────────────────────────────
+const STAR_PROFILES = {
+  "drake-london": {
+    tag: "PRIMARY",
+    statusLabel: "EXTENSION PENDING",
+    statLine: (p) => [
+      { k: "REC", v: p.stats.receptions || 0 },
+      { k: "YDS", v: p.stats.recYds || 0 },
+      { k: "TD", v: p.stats.recTDs || 0 },
+    ],
+    ranks: [
+      { k: "TGT SHARE", v: 32 },
+      { k: "AIR YDS", v: 78 },
+      { k: "YAC", v: 64 },
+    ],
+  },
+  "bijan": {
+    tag: "WORKHORSE",
+    statusLabel: "ACTIVE · 5TH-YR OPTION",
+    statLine: (p) => [
+      { k: "RUSH", v: p.stats.rushYds || 0 },
+      { k: "TD", v: (p.stats.rushTDs || 0) + (p.stats.recTDs || 0) },
+      { k: "YPC", v: p.stats.rushYds && p.stats.rushAttempts ? (p.stats.rushYds / p.stats.rushAttempts).toFixed(1) : "—" },
+    ],
+    ranks: [
+      { k: "BREAK %", v: 88 },
+      { k: "EPA/TCH", v: 91 },
+      { k: "RECV", v: 72 },
+    ],
+  },
+  "pitts": {
+    tag: "TAG '26",
+    statusLabel: "FRANCHISE TAGGED · $14.1M",
+    statLine: (p) => [
+      { k: "REC", v: p.stats.receptions || 0 },
+      { k: "YDS", v: p.stats.recYds || 0 },
+      { k: "TD", v: p.stats.recTDs || 0 },
+    ],
+    ranks: [
+      { k: "AVG SEP", v: 61 },
+      { k: "CONTESTED", v: 70 },
+      { k: "SNAP %", v: 84 },
+    ],
+  },
+  "bates": {
+    tag: "ANCHOR",
+    statusLabel: "ACTIVE · ALL-PRO",
+    statLine: (p) => [
+      { k: "TKL", v: p.stats.tackles || 0 },
+      { k: "INT", v: p.stats.int_def || 0 },
+      { k: "PD", v: p.stats.pass_def || 0 },
+    ],
+    ranks: [
+      { k: "COVERAGE", v: 89 },
+      { k: "RUN STOP", v: 74 },
+      { k: "TACKLE %", v: 86 },
+    ],
+  },
+  "penix-jr": {
+    tag: "QB1 (PROJ.)",
+    statusLabel: "PUP · ACL REHAB",
+    statLine: (p) => [
+      { k: "YDS", v: p.stats.passYds || 0 },
+      { k: "TD", v: p.stats.passTDs || 0 },
+      { k: "INT", v: p.stats.ints || 0 },
+    ],
+    ranks: [
+      { k: "REHAB", v: 72 },
+      { k: "ACCURACY", v: 0 },
+      { k: "MOBILITY", v: 0 },
+    ],
+  },
+  "jalon-walker": {
+    tag: "RISING",
+    statusLabel: "ACTIVE · YEAR 2",
+    statLine: (p) => [
+      { k: "TKL", v: p.stats.tackles || 0 },
+      { k: "SACK", v: p.stats.sacks || 0 },
+      { k: "TFL", v: p.stats.tfl || 0 },
+    ],
+    ranks: [
+      { k: "PASS RUSH", v: 84 },
+      { k: "RUN STOP", v: 78 },
+      { k: "PRESS %", v: 81 },
+    ],
+  },
+};
+
+function StarRoster({ onPlayerClick }) {
+  const stars = useMemo(() => {
+    return Object.keys(STAR_PROFILES).map((id) => {
+      const player = PLAYERS.find((p) => p.id === id);
+      if (!player) return null;
+      const profile = STAR_PROFILES[id];
+      return {
+        ...player,
+        tag: profile.tag,
+        statusLabel: profile.statusLabel,
+        statLine: profile.statLine(player),
+        ranks: profile.ranks,
+      };
+    }).filter(Boolean);
+  }, []);
   return (
-    <div style={{
-      background: FALCONS_CARD, borderRadius: 14, padding: 18,
-      boxShadow: "0 2px 12px #0005", marginBottom: 20,
-    }}>
-      <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 10, marginBottom: 14 }}>
-        <div>
-          <div style={{ fontSize: 11, color: FALCONS_SILVER, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1.5 }}>
-            2025 Season Recap
-          </div>
-          <div style={{ color: "#fff", fontSize: 22, fontWeight: 900, marginTop: 4 }}>
-            {r.record} <span style={{ color: "#999", fontSize: 12, fontWeight: 600 }}>· {r.divisionFinish}</span>
-          </div>
-          <div style={{ fontSize: 12, color: "#e74c3c", fontWeight: 600, marginTop: 3 }}>
-            {r.playoffsResult}
-          </div>
-        </div>
-        <div style={{ display: "flex", gap: 8 }}>
-          <div style={{ background: "#252530", borderRadius: 10, padding: "8px 12px", textAlign: "center" }}>
-            <div style={{ fontSize: 16, color: "#fff", fontWeight: 800 }}>{r.pointsFor}</div>
-            <div style={{ fontSize: 8, color: "#666", textTransform: "uppercase", letterSpacing: 1, marginTop: 2 }}>PF</div>
-          </div>
-          <div style={{ background: "#252530", borderRadius: 10, padding: "8px 12px", textAlign: "center" }}>
-            <div style={{ fontSize: 16, color: "#fff", fontWeight: 800 }}>{r.pointsAgainst}</div>
-            <div style={{ fontSize: 8, color: "#666", textTransform: "uppercase", letterSpacing: 1, marginTop: 2 }}>PA</div>
-          </div>
-          <div style={{ background: "#252530", borderRadius: 10, padding: "8px 12px", textAlign: "center" }}>
-            <div style={{ fontSize: 16, color: r.netDifferential >= 0 ? "#2ecc71" : "#e74c3c", fontWeight: 800 }}>
-              {r.netDifferential >= 0 ? "+" : ""}{r.netDifferential}
-            </div>
-            <div style={{ fontSize: 8, color: "#666", textTransform: "uppercase", letterSpacing: 1, marginTop: 2 }}>Diff</div>
-          </div>
-        </div>
+    <div style={{ marginTop: 20 }}>
+      <SectionTitle bug meta="2025 TELEMETRY">STARS TO WATCH</SectionTitle>
+      <div style={{
+        display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))",
+        gap: 14, marginTop: 12,
+      }}>
+        {stars.map((p) => <PlayerTelemetryCard key={p.id} p={p} onClick={onPlayerClick} />)}
       </div>
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
-        <div>
-          <div style={{ fontSize: 10, color: FALCONS_SILVER, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1, marginBottom: 6 }}>
-            Storylines
-          </div>
-          {r.storylines.map((s, i) => (
-            <div key={i} style={{ fontSize: 12, color: "#ccc", lineHeight: 1.5, marginBottom: 3 }}>
-              • {s}
-            </div>
-          ))}
-        </div>
-        <div>
-          <div style={{ fontSize: 10, color: FALCONS_SILVER, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1, marginBottom: 6 }}>
-            Leaders
-          </div>
-          <div style={{ display: "flex", flexDirection: "column", gap: 4, fontSize: 12 }}>
-            <div style={{ display: "flex", justifyContent: "space-between" }}>
-              <span style={{ color: "#999" }}>Bijan rush yds</span>
-              <span style={{ color: "#fff", fontWeight: 700 }}>{r.keyStats.bijanRushYds}</span>
-            </div>
-            <div style={{ display: "flex", justifyContent: "space-between" }}>
-              <span style={{ color: "#999" }}>Bijan TDs</span>
-              <span style={{ color: "#fff", fontWeight: 700 }}>{r.keyStats.bijanTDs}</span>
-            </div>
-            <div style={{ display: "flex", justifyContent: "space-between" }}>
-              <span style={{ color: "#999" }}>London rec yds</span>
-              <span style={{ color: "#fff", fontWeight: 700 }}>{r.keyStats.londonRecYds}</span>
-            </div>
-            <div style={{ display: "flex", justifyContent: "space-between" }}>
-              <span style={{ color: "#999" }}>Bates tackles</span>
-              <span style={{ color: "#fff", fontWeight: 700 }}>{r.keyStats.batesTackles}</span>
-            </div>
-            <div style={{ display: "flex", justifyContent: "space-between" }}>
-              <span style={{ color: "#999" }}>Dorlus sacks</span>
-              <span style={{ color: "#fff", fontWeight: 700 }}>{r.keyStats.dorlusSacks}</span>
-            </div>
-          </div>
-        </div>
+    </div>
+  );
+}
+
+// ─── CAP FUEL GAUGE ─────────────────────────────────────────────────────────
+function CapFuelGauge() {
+  const space = CAP_STATE.capSpaceSpotrac;
+  const spaceMax = 80_000_000;
+  const dead = CAP_STATE.deadMoney.total;
+  const pct = Math.min(1, space / spaceMax);
+  const ticks = [0, 10, 20, 30, 40, 50, 60, 70, 80];
+  const milestones = [
+    { v: dead / 1_000_000, label: "DEAD $" },
+    { v: 14.1, label: "PITTS TAG" },
+    { v: 32,   label: "LONDON EXT" },
+  ];
+  const extensionLabels = {
+    "drake-london": { tag: "PRIMARY",  hit: "$32M APY (PROJ.)", name: "DRAKE LONDON" },
+    "bijan":        { tag: "ELIGIBLE", hit: "MARKET RESET",     name: "BIJAN ROBINSON" },
+    "pitts":        { tag: "TAGGED",   hit: "$14.1M / 1YR",     name: "KYLE PITTS" },
+  };
+  return (
+    <div className="panel">
+      <div className="panel-title">
+        <span className="bug" />
+        <span className="name">CAP TELEMETRY · 2026</span>
+        <span className="meta">RANK {CAP_STATE.leagueRank} / 32</span>
       </div>
-      <div style={{ marginTop: 14 }}>
-        <div style={{ fontSize: 10, color: FALCONS_SILVER, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1, marginBottom: 8 }}>
-          Game-by-Game
+      <div style={{ padding: "18px 18px 16px", position: "relative" }}>
+        <div style={{ display: "flex", alignItems: "baseline", gap: 16, marginBottom: 14, flexWrap: "wrap" }}>
+          <div>
+            <div className="mono" style={{ fontSize: 9, letterSpacing: "0.24em", color: "var(--silver)" }}>
+              CAP SPACE / SPOTRAC
+            </div>
+            <div className="stencil" style={{ fontSize: 56, lineHeight: 1, color: "var(--ivory)", marginTop: 4 }}>
+              <span style={{ color: "var(--steel-2)", fontSize: 30, verticalAlign: "top" }}>$</span>
+              {(space / 1_000_000).toFixed(1)}
+              <span style={{ color: "var(--silver)", fontSize: 22, marginLeft: 4 }}>M</span>
+            </div>
+          </div>
+          <div style={{ marginLeft: "auto", textAlign: "right" }}>
+            <div className="mono" style={{ fontSize: 9, letterSpacing: "0.24em", color: "var(--silver)" }}>
+              DEAD MONEY
+            </div>
+            <div className="stencil" style={{ fontSize: 26, lineHeight: 1, color: "var(--hot)", textShadow: "0 0 12px #FF2D3D55", marginTop: 4 }}>
+              ${(dead / 1_000_000).toFixed(1)}M
+            </div>
+          </div>
         </div>
-        <div style={{ display: "flex", gap: 6, overflowX: "auto", paddingBottom: 4 }}>
-          {RESULTS_2025.map((g, i) => {
-            const isWin = g.result === "W";
-            const accent = isWin ? "#2ecc71" : "#e74c3c";
+
+        <div style={{ position: "relative", marginTop: 14 }}>
+          <div style={{ position: "relative", height: 14, marginBottom: 4 }}>
+            {ticks.map((t) => (
+              <div key={t} style={{
+                position: "absolute", left: `${(t / 80) * 100}%`,
+                top: 0, transform: "translateX(-50%)",
+                fontFamily: "var(--mono)", fontSize: 8,
+                color: "var(--steel-2)", letterSpacing: "0.1em",
+              }}>${t}M</div>
+            ))}
+          </div>
+
+          <div style={{ position: "relative", height: 22, background: "#0B0C0F", border: "1px solid #ffffff10" }}>
+            <div style={{
+              position: "absolute", inset: 0,
+              background: "linear-gradient(90deg, #2ECC71 0%, #C9A227 55%, #FF2D3D 100%)",
+              opacity: 0.18,
+            }} />
+            {ticks.map((t) => (
+              <div key={t} style={{
+                position: "absolute", top: 0, bottom: 0,
+                left: `${(t / 80) * 100}%`,
+                width: 1, background: "#ffffff15",
+              }} />
+            ))}
+            {milestones.map((m) => (
+              <div key={m.label} style={{
+                position: "absolute", top: -2, bottom: -2,
+                left: `${Math.min(100, (m.v / 80) * 100)}%`,
+                width: 2, background: "#A71930",
+              }} />
+            ))}
+            <div className="bar-grow" style={{
+              position: "absolute", top: 0, bottom: 0, left: 0,
+              width: `${pct * 100}%`,
+              background: "linear-gradient(90deg, #2ECC71, #C9A227)",
+              borderRight: "2px solid var(--hot)",
+              boxShadow: "var(--hot-glow)",
+            }} />
+            <div style={{
+              position: "absolute", top: -8, left: `calc(${pct * 100}% - 6px)`,
+              width: 0, height: 0,
+              borderLeft: "6px solid transparent",
+              borderRight: "6px solid transparent",
+              borderTop: "8px solid #FF2D3D",
+              filter: "drop-shadow(0 0 4px #FF2D3D)",
+            }} />
+          </div>
+
+          <div style={{ position: "relative", marginTop: 6, height: 22 }}>
+            {milestones.map((m, i) => (
+              <div key={m.label} style={{
+                position: "absolute",
+                left: `${Math.min(100, (m.v / 80) * 100)}%`,
+                transform: i === 0 ? "translateX(0)" : "translateX(-50%)",
+                fontFamily: "var(--mono)", fontSize: 8,
+                color: "var(--silver)", letterSpacing: "0.16em",
+                whiteSpace: "nowrap",
+              }}>
+                ▼ {m.label}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div style={{ marginTop: 22, display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr))", gap: 10 }}>
+          {CAP_STATE.pendingExtensions.map((e) => {
+            const info = extensionLabels[e.playerId];
+            if (!info) return null;
             return (
-              <div
-                key={i}
-                title={`${g.home ? "vs" : "@"} ${g.opp} · ${g.atlScore}-${g.oppScore} (${g.result})`}
-                style={{
-                  flex: "0 0 auto",
-                  background: "#252530",
-                  borderRadius: 10,
-                  borderTop: `3px solid ${accent}`,
-                  padding: "6px 8px 7px",
-                  minWidth: 56,
-                  textAlign: "center",
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: 2,
-                }}
-              >
-                <div style={{ fontSize: 8, color: "#666", textTransform: "uppercase", letterSpacing: 1, fontWeight: 700 }}>
-                  {g.home ? "vs" : "@"} {g.opp}
-                </div>
-                <div style={{ fontSize: 13, color: "#fff", fontWeight: 800, fontFamily: "monospace", lineHeight: 1.1 }}>
-                  {g.atlScore}-{g.oppScore}
-                </div>
-                <div style={{ fontSize: 9, color: accent, fontWeight: 800, letterSpacing: 0.5 }}>
-                  {g.result}
-                </div>
+              <div key={e.playerId} style={{
+                background: "#0B0C0F", padding: "10px 12px",
+                borderTop: "2px solid var(--red)",
+                display: "flex", flexDirection: "column", gap: 4,
+                minWidth: 0,
+              }}>
+                <span className="mono hot-text" style={{ fontSize: 8, letterSpacing: "0.24em" }}>
+                  {info.tag}
+                </span>
+                <span className="stencil" style={{ fontSize: 16, color: "var(--ivory)", letterSpacing: "0.02em" }}>
+                  {info.name}
+                </span>
+                <span className="mono" style={{ fontSize: 9, letterSpacing: "0.16em", color: "var(--silver)" }}>
+                  {info.hit}
+                </span>
               </div>
             );
           })}
@@ -880,172 +981,160 @@ function SeasonRecap2025Card() {
   );
 }
 
-// ─── OFFSEASON CALENDAR MINI ────────────────────────────────────────────────
-function OffseasonCalendarMini() {
-  const today = new Date().toISOString().slice(0, 10);
-  const upcoming = OFFSEASON_CALENDAR
-    .filter((m) => m.date.slice(0, 10) >= today)
-    .slice(0, 8);
-  const past = OFFSEASON_CALENDAR
-    .filter((m) => m.date.slice(0, 10) < today)
-    .slice(-2);
-  const all = [...past, ...upcoming];
-  const phaseColor = (phaseId) => {
-    const p = PHASES.find((ph) => ph.id === phaseId);
-    return p?.accentColor || "#555";
-  };
-  const formatDate = (iso) => {
-    const d = new Date(iso);
-    return d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
-  };
-  return (
-    <div style={{
-      background: FALCONS_CARD, borderRadius: 14, padding: 18,
-      boxShadow: "0 2px 12px #0005", marginBottom: 20,
-    }}>
-      <div style={{ fontSize: 11, color: FALCONS_SILVER, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1.5, marginBottom: 10 }}>
-        Offseason Calendar
-      </div>
-      <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-        {all.map((m) => {
-          const isPast = m.date.slice(0, 10) < today;
-          return (
-            <div key={m.id} style={{
-              display: "flex", gap: 10, alignItems: "center",
-              padding: "8px 10px", borderRadius: 8,
-              background: isPast ? "#1a1a1f" : "#252530",
-              opacity: isPast ? 0.55 : 1,
-              borderLeft: `3px solid ${phaseColor(m.phase)}`,
-            }}>
-              <div style={{
-                minWidth: 54, fontSize: 11, color: "#999", fontWeight: 700,
-                fontFamily: "monospace",
-              }}>
-                {formatDate(m.date)}
-              </div>
-              <div style={{ flex: 1, minWidth: 0 }}>
-                <div style={{ fontSize: 12, color: "#fff", fontWeight: 600, lineHeight: 1.3 }}>
-                  {m.label}
-                </div>
-                <div style={{ fontSize: 10, color: "#888", marginTop: 2, lineHeight: 1.4 }}>
-                  {m.detail}
-                </div>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  );
-}
-
-// ─── NFC SOUTH STANDINGS ────────────────────────────────────────────────────
-function NFCSouthStandingsCard() {
-  return (
-    <div style={{
-      background: FALCONS_CARD, borderRadius: 14, padding: 18,
-      boxShadow: "0 2px 12px #0005", marginBottom: 20,
-    }}>
-      <div style={{ fontSize: 11, color: FALCONS_SILVER, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1.5, marginBottom: 10 }}>
-        NFC South — 2025 Final
-      </div>
-      <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
-        {NFC_SOUTH_STANDINGS_2025.map((t) => (
-          <div key={t.code} style={{
-            display: "flex", alignItems: "center", gap: 10,
-            padding: "8px 10px", borderRadius: 8,
-            background: t.isFalcons ? `${FALCONS_RED}22` : "#252530",
-            borderLeft: t.isFalcons ? `3px solid ${FALCONS_RED}` : "3px solid transparent",
-          }}>
-            <div style={{
-              width: 22, textAlign: "center", fontWeight: 800, fontSize: 12,
-              color: t.divisionFinish === 1 ? "#C9A227" : "#666",
-            }}>
-              {t.divisionFinish}
-            </div>
-            {TEAM_LOGOS[t.code] && (
-              <img src={TEAM_LOGOS[t.code]} alt={t.code} style={{ width: 22, height: 22, objectFit: "contain" }} />
-            )}
-            <div style={{ flex: 1, color: "#fff", fontSize: 13, fontWeight: t.isFalcons ? 800 : 600 }}>
-              {t.team}
-            </div>
-            <div style={{ color: "#fff", fontWeight: 800, fontSize: 13, fontFamily: "monospace", minWidth: 44, textAlign: "right" }}>
-              {t.wins}-{t.losses}
-            </div>
-            <div style={{ color: "#888", fontSize: 11, fontFamily: "monospace", minWidth: 40, textAlign: "right" }}>
-              {(t.pct * 100).toFixed(1)}%
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-// ─── NEWS DIGEST SECTION (AI summary) ───────────────────────────────────────
-const CATEGORY_COLORS = {
-  draft:        { bg: "#A7193022", border: FALCONS_RED, color: "#ff8c99" },
-  "free-agency":{ bg: "#3498db22", border: "#3498db", color: "#74b9ff" },
-  injuries:     { bg: "#e67e2222", border: "#e67e22", color: "#ffa94d" },
-  contracts:    { bg: "#C9A22722", border: "#C9A227", color: "#ffe066" },
-  coaching:     { bg: "#9b59b622", border: "#9b59b6", color: "#c792ea" },
-  games:        { bg: "#2ecc7122", border: "#2ecc71", color: "#69db7c" },
-  general:      { bg: "#6c757d22", border: "#6c757d", color: "#adb5bd" },
+// ─── LOWER THIRD (NEWS) ─────────────────────────────────────────────────────
+const CAT_COLORS = {
+  draft: "#FF2D3D",
+  injuries: "#E67E22",
+  contracts: "#C9A227",
+  coaching: "#9B59B6",
+  general: "#3498DB",
+};
+const CAT_LABELS = {
+  draft: "DRAFT", injuries: "INJURY", contracts: "CAP", coaching: "COACHING", general: "DISPATCH",
 };
 
-function NewsDigestSection() {
-  const [expanded, setExpanded] = useState(false);
-  const topics = NEWS_DIGEST?.topics || [];
-  const shown = expanded ? topics : topics.slice(0, 6);
-  if (topics.length === 0) return null;
-  const updated = new Date(NEWS_DIGEST.generatedAt).toLocaleDateString("en-US", {
-    month: "short", day: "numeric", year: "numeric",
-  });
+function timeAgoFromGenerated(generatedAt) {
+  const ms = Date.now() - new Date(generatedAt).getTime();
+  if (ms < 3600_000) return `${Math.max(1, Math.floor(ms / 60000))}M`;
+  if (ms < 86400_000) return `${Math.floor(ms / 3600_000)}H`;
+  return `${Math.floor(ms / 86400_000)}D`;
+}
+
+function LowerThird({ item, onClick }) {
+  const c = CAT_COLORS[item.category] || "#A5ACAF";
+  const label = CAT_LABELS[item.category] || "DISPATCH";
   return (
-    <div style={{
-      background: FALCONS_CARD, borderRadius: 14, padding: 18,
-      boxShadow: "0 2px 12px #0005", marginBottom: 20,
-      border: `1px solid ${FALCONS_RED}22`,
+    <div onClick={onClick} style={{
+      display: "flex", alignItems: "stretch",
+      background: "var(--carbon)",
+      borderLeft: `4px solid ${c}`,
+      cursor: onClick ? "pointer" : "default",
     }}>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 10, marginBottom: 12 }}>
-        <div>
-          <div style={{ fontSize: 11, color: FALCONS_SILVER, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1.5 }}>
-            AI News Digest
-          </div>
-          <div style={{ fontSize: 10, color: "#666", marginTop: 3 }}>
-            Updated {updated} · {NEWS_DIGEST.sources.join(" · ")}
-          </div>
-        </div>
-        <button onClick={() => setExpanded((v) => !v)} style={{
-          padding: "5px 12px", borderRadius: 8, border: "none", cursor: "pointer",
-          background: "#252530", color: "#ccc", fontSize: 11, fontWeight: 600,
+      <div style={{
+        background: "var(--red)",
+        padding: "10px 12px",
+        display: "flex", alignItems: "center",
+        position: "relative",
+        minWidth: 78,
+        boxShadow: item.category === "draft" ? "inset -2px 0 8px #FF2D3D" : "none",
+      }}>
+        <span className="stencil" style={{
+          fontSize: 13, color: "#fff", letterSpacing: "0.18em",
+        }}>{label}</span>
+        <div style={{
+          position: "absolute", right: -10, top: 0, bottom: 0, width: 12,
+          background: "var(--red)",
+          clipPath: "polygon(0 0, 100% 50%, 0 100%)",
+        }} />
+      </div>
+      <div style={{ flex: 1, padding: "9px 16px 9px 22px", minWidth: 0 }}>
+        <div className="stencil" style={{
+          fontSize: 14, letterSpacing: "0.04em", color: "var(--ivory)",
+          lineHeight: 1.2,
         }}>
-          {expanded ? "Show less" : `Show all ${topics.length}`}
-        </button>
+          {item.title}
+        </div>
+        <div className="mono" style={{
+          marginTop: 3, fontSize: 9, color: "var(--silver)", letterSpacing: "0.18em",
+        }}>
+          DIGEST <span style={{ color: c }}>/</span> {item.timeAgo}
+        </div>
       </div>
       <div style={{
-        display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 10,
+        background: "#0B0C0F", padding: "0 14px",
+        display: "flex", alignItems: "center",
+        borderLeft: "1px solid #ffffff10",
       }}>
-        {shown.map((t, i) => {
-          const c = CATEGORY_COLORS[t.category] || CATEGORY_COLORS.general;
-          return (
-            <div key={i} style={{
-              background: c.bg, borderLeft: `3px solid ${c.border}`,
-              borderRadius: 10, padding: "10px 12px",
-            }}>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 8 }}>
-                <div style={{ color: "#fff", fontSize: 13, fontWeight: 700, lineHeight: 1.3 }}>
-                  {t.title}
-                </div>
-                <span style={{
-                  fontSize: 8, padding: "2px 6px", borderRadius: 6, fontWeight: 700, textTransform: "uppercase",
-                  background: c.border, color: "#000", letterSpacing: 0.5, flexShrink: 0,
-                }}>
-                  {t.category}
-                </span>
+        <span className="mono" style={{ fontSize: 10, color: c, letterSpacing: "0.18em" }}>▸</span>
+      </div>
+    </div>
+  );
+}
+
+function NewsWire({ expanded }) {
+  const ago = timeAgoFromGenerated(NEWS_DIGEST.generatedAt);
+  const [open, setOpen] = useState(null);
+  const items = (expanded ? NEWS_DIGEST.topics : NEWS_DIGEST.topics.slice(0, 6))
+    .map((t, i) => ({ ...t, timeAgo: i === 0 ? ago : `${i}H` }));
+  return (
+    <div className="panel">
+      <div className="panel-title">
+        <span className="bug" />
+        <span className="name">WIRE FEED · LOWER THIRDS</span>
+        <span className="meta">LIVE · {NEWS_DIGEST.topics.length} ITEMS</span>
+      </div>
+      <div style={{ display: "flex", flexDirection: "column", gap: 1, background: "#ffffff05" }}>
+        {items.map((n, i) => (
+          <div key={i}>
+            <LowerThird item={n} onClick={() => setOpen(open === i ? null : i)} />
+            {open === i && (
+              <div style={{
+                background: "#0B0C0F",
+                padding: "12px 22px 14px",
+                borderLeft: `4px solid ${CAT_COLORS[n.category] || "#A5ACAF"}`,
+                color: "var(--silver)",
+                fontSize: 12, lineHeight: 1.6,
+              }}>
+                {n.detail}
               </div>
-              <div style={{ fontSize: 11, color: "#ccc", marginTop: 6, lineHeight: 1.5 }}>
-                {t.detail}
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ─── CALENDAR RAIL ──────────────────────────────────────────────────────────
+function CalendarRail() {
+  const today = new Date();
+  const upcoming = OFFSEASON_CALENDAR
+    .filter((c) => new Date(c.date).getTime() >= today.getTime() - 86400000)
+    .slice(0, 8);
+  return (
+    <div className="panel">
+      <div className="panel-title">
+        <span className="bug" />
+        <span className="name">RUNNING ORDER · OFFSEASON</span>
+        <span className="meta">NEXT MILESTONES</span>
+      </div>
+      <div style={{ display: "flex", flexDirection: "column" }}>
+        {upcoming.map((c, i) => {
+          const date = new Date(c.date);
+          const dateLabel = date.toLocaleDateString("en-US", { month: "short", day: "2-digit" }).toUpperCase();
+          const hot = i === 0;
+          const phaseLabel = (PHASES.find((p) => p.id === c.phase)?.name || c.phase).toUpperCase();
+          return (
+            <div key={c.id} style={{
+              display: "grid",
+              gridTemplateColumns: "70px 100px 1fr",
+              gap: 0,
+              padding: "10px 14px",
+              borderBottom: i === upcoming.length - 1 ? "none" : "1px solid #ffffff08",
+              background: hot ? "#170509" : "transparent",
+              position: "relative",
+            }}>
+              {hot && (
+                <div style={{
+                  position: "absolute", left: 0, top: 0, bottom: 0,
+                  width: 2, background: "var(--hot)", boxShadow: "var(--hot-glow)",
+                }} />
+              )}
+              <span className="mono" style={{
+                fontSize: 11,
+                color: hot ? "var(--hot)" : "var(--silver)",
+                letterSpacing: "0.16em", fontWeight: 600,
+              }}>{dateLabel}</span>
+              <span className="mono" style={{
+                fontSize: 9, color: "var(--steel-2)", letterSpacing: "0.18em",
+              }}>{phaseLabel}</span>
+              <div>
+                <div className="stencil" style={{
+                  fontSize: 13, color: "var(--ivory)", letterSpacing: "0.04em",
+                }}>{c.label}</div>
+                <div className="mono" style={{ fontSize: 9, color: "var(--silver)", letterSpacing: "0.12em", marginTop: 2 }}>
+                  {c.detail}
+                </div>
               </div>
             </div>
           );
@@ -1055,578 +1144,289 @@ function NewsDigestSection() {
   );
 }
 
-// ─── LIVE RSS NEWS FEED ─────────────────────────────────────────────────────
-function timeAgo(dateStr) {
-  const diff = Date.now() - new Date(dateStr).getTime();
-  const mins = Math.floor(diff / 60000);
-  if (mins < 60) return `${mins}m ago`;
-  const hrs = Math.floor(mins / 60);
-  if (hrs < 24) return `${hrs}h ago`;
-  const days = Math.floor(hrs / 24);
-  if (days < 7) return `${days}d ago`;
-  const weeks = Math.floor(days / 7);
-  return `${weeks}w ago`;
-}
-
-function parseRSSItems(xmlText, feedMeta) {
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(xmlText, "text/xml");
-  const items = doc.querySelectorAll("item");
-  return Array.from(items).map((item) => ({
-    title: item.querySelector("title")?.textContent || "",
-    link: item.querySelector("link")?.textContent || "",
-    pubDate: item.querySelector("pubDate")?.textContent || "",
-    source: feedMeta.name,
-    color: feedMeta.color,
-  }));
-}
-
-function LiveNewsFeed({ filter }) {
-  const [articles, setArticles] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    let cancelled = false;
-    setLoading(true);
-    setError(null);
-
-    const isDev = window.location.hostname === "localhost";
-    Promise.allSettled(
-      RSS_FEEDS.map((feed) => {
-        if (isDev) {
-          return fetch("/api/rss?url=" + encodeURIComponent(feed.url))
-            .then((r) => { if (!r.ok) throw new Error(r.status); return r.text(); })
-            .then((xml) => parseRSSItems(xml, feed));
-        }
-        return fetch("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(feed.url))
-          .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
-          .then((data) => (data.items || []).map((item) => ({
-            title: item.title || "",
-            link: item.link || "",
-            pubDate: item.pubDate || "",
-            source: feed.name,
-            color: feed.color,
-          })));
-      })
-    ).then((results) => {
-      if (cancelled) return;
-      const all = results
-        .filter((r) => r.status === "fulfilled")
-        .flatMap((r) => r.value)
-        .filter((a) => a.title && a.pubDate)
-        .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
-      if (all.length === 0) {
-        setError("Could not load any feeds. CORS proxy may be unavailable.");
-      }
-      setArticles(all);
-      setLoading(false);
+// ─── TOP CAP HITS LIST ──────────────────────────────────────────────────────
+function TopHitsList() {
+  const hits = useMemo(() => {
+    return CAP_STATE.topCapHits2026.map((h) => {
+      const player = PLAYERS.find((p) => p.id === h.playerId);
+      return {
+        name: player ? player.name.toUpperCase() : h.playerId.toUpperCase(),
+        pos: player ? player.position : "—",
+        amount: h.amount / 1_000_000,
+      };
     });
-
-    return () => { cancelled = true; };
   }, []);
-
-  const filtered = filter === "all" ? articles : articles.filter((a) => a.source === filter);
-
-  if (loading) {
-    return (
-      <div style={{ textAlign: "center", padding: 40, color: "#888" }}>
-        Loading live news feeds...
-      </div>
-    );
-  }
-  if (error && articles.length === 0) {
-    return (
-      <div style={{ textAlign: "center", padding: 40, color: "#ff6b6b" }}>
-        {error}
-      </div>
-    );
-  }
-  const isWide = (i, title) => i === 0 || title.length > 70 || i % 5 === 0;
+  const max = Math.max(...hits.map((h) => h.amount));
   return (
-    <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: 10 }}>
-      {filtered.slice(0, 30).map((item, i) => {
-        const wide = isWide(i, item.title);
-        return (
-          <a key={i} href={item.link} target="_blank" rel="noopener noreferrer"
-            style={{
-              gridColumn: wide ? "span 2" : "span 1",
-              padding: wide ? "16px 20px" : "14px 16px",
-              borderRadius: 12, background: FALCONS_CARD,
-              borderTop: `3px solid ${item.color || FALCONS_RED}`,
-              transition: "all 0.2s", cursor: "pointer", textDecoration: "none",
-              boxShadow: "0 2px 8px #0003",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background = "#252530";
-              e.currentTarget.style.transform = "translateY(-2px)";
-              e.currentTarget.style.boxShadow = "0 6px 20px #0005";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background = FALCONS_CARD;
-              e.currentTarget.style.transform = "translateY(0)";
-              e.currentTarget.style.boxShadow = "0 2px 8px #0003";
-            }}>
-            <div style={{ color: "#fff", fontSize: wide ? 15 : 13, fontWeight: 600, lineHeight: 1.4 }}>
-              {item.title}
+    <div className="panel">
+      <div className="panel-title">
+        <span className="bug" />
+        <span className="name">TOP CAP HITS · 2026</span>
+        <span className="meta">TOP {hits.length}</span>
+      </div>
+      <div>
+        {hits.map((h, i) => (
+          <div key={h.name} style={{
+            display: "grid",
+            gridTemplateColumns: "26px 50px 1fr 70px",
+            alignItems: "center", padding: "10px 14px",
+            borderBottom: i === hits.length - 1 ? "none" : "1px solid #ffffff08",
+          }}>
+            <span className="mono" style={{ fontSize: 10, color: "var(--steel-2)", letterSpacing: "0.16em" }}>
+              {String(i + 1).padStart(2, "0")}
+            </span>
+            <span className="mono" style={{
+              fontSize: 10, padding: "2px 6px", background: "var(--steel)",
+              color: "var(--ivory)", letterSpacing: "0.18em", textAlign: "center",
+            }}>{h.pos}</span>
+            <div style={{ minWidth: 0 }}>
+              <div className="stencil" style={{ fontSize: 13, color: "var(--ivory)", letterSpacing: "0.02em", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+                {h.name}
+              </div>
+              <div style={{ position: "relative", height: 2, background: "#ffffff08", marginTop: 5, marginRight: 12 }}>
+                <div className="bar-grow" style={{
+                  position: "absolute", inset: 0,
+                  width: `${(h.amount / max) * 100}%`,
+                  background: "var(--red)",
+                }} />
+              </div>
             </div>
-            <div style={{ display: "flex", gap: 8, marginTop: 8, alignItems: "center" }}>
-              <span style={{ width: 6, height: 6, borderRadius: "50%", background: item.color || FALCONS_RED, flexShrink: 0 }} />
-              <span style={{ fontSize: 10, color: item.color || FALCONS_RED, fontWeight: 600 }}>{item.source}</span>
-              <span style={{ fontSize: 10, color: "#555" }}>{timeAgo(item.pubDate)}</span>
-            </div>
-          </a>
-        );
-      })}
-      {filtered.length === 0 && (
-        <div style={{ textAlign: "center", padding: 40, color: "#666", gridColumn: "1 / -1" }}>
-          No articles found for this filter.
-        </div>
-      )}
+            <span className="stencil" style={{ fontSize: 16, color: "var(--ivory)", textAlign: "right" }}>
+              ${h.amount.toFixed(1)}M
+            </span>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
 
-function RSSSourcesPanel() {
+// ─── DIVISION STANDINGS ─────────────────────────────────────────────────────
+function StandingsPanel() {
   return (
-    <div style={{
-      background: FALCONS_CARD, borderRadius: 14, padding: 16, marginBottom: 16,
-      border: `1px solid ${FALCONS_RED}22`,
-    }}>
-      <div style={{ fontSize: 11, color: FALCONS_SILVER, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1.5, marginBottom: 10 }}>
-        Live Feeds
+    <div className="panel">
+      <div className="panel-title">
+        <span className="bug" />
+        <span className="name">NFC SOUTH · 2025 FINAL</span>
+        <span className="meta">DIVISION</span>
       </div>
-      <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-        {RSS_FEEDS.map((f) => (
-          <a key={f.name} href={f.url} target="_blank" rel="noopener noreferrer"
-            style={{
-              padding: "6px 12px", borderRadius: 8, background: "#252530",
-              borderLeft: `3px solid ${f.color}`,
-              fontSize: 11, color: "#ddd", fontWeight: 600,
-              textDecoration: "none",
+      <div>
+        {NFC_SOUTH_STANDINGS_2025.map((t, i) => {
+          const pct = t.wins / (t.wins + t.losses);
+          return (
+            <div key={t.code} style={{
+              display: "grid",
+              gridTemplateColumns: "30px 50px 1fr 70px 80px",
+              alignItems: "center", padding: "12px 14px",
+              borderBottom: i === NFC_SOUTH_STANDINGS_2025.length - 1 ? "none" : "1px solid #ffffff08",
+              background: t.isFalcons ? "#170509" : "transparent",
+              position: "relative",
             }}>
-            {f.name}
-          </a>
-        ))}
+              {t.isFalcons && (
+                <div style={{
+                  position: "absolute", left: 0, top: 0, bottom: 0, width: 2,
+                  background: "var(--hot)", boxShadow: "var(--hot-glow)",
+                }} />
+              )}
+              <span className="stencil" style={{
+                fontSize: 18, color: i === 0 ? "var(--gold)" : "var(--steel-2)",
+              }}>0{i + 1}</span>
+              <span className="mono" style={{
+                fontSize: 12, letterSpacing: "0.18em",
+                color: t.isFalcons ? "var(--hot)" : "var(--silver)",
+                fontWeight: 700,
+              }}>{t.code}</span>
+              <span className="stencil" style={{
+                fontSize: 14, color: t.isFalcons ? "var(--ivory)" : "var(--silver)",
+                letterSpacing: "0.04em", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
+              }}>{t.team.toUpperCase()}</span>
+              <span className="stencil" style={{ fontSize: 18, color: "var(--ivory)" }}>
+                {t.wins}–{t.losses}
+              </span>
+              <div style={{ position: "relative", height: 4, background: "#ffffff08" }}>
+                <div className="bar-grow" style={{
+                  position: "absolute", inset: 0,
+                  width: `${pct * 100}%`,
+                  background: t.isFalcons ? "var(--hot)" : "var(--steel-2)",
+                  boxShadow: t.isFalcons ? "0 0 6px #FF2D3D88" : "none",
+                }} />
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+// ─── PROSPECT BOARD (rookie class card grid) ────────────────────────────────
+function ProspectBoard() {
+  const [pos, setPos] = useState("ALL");
+  const targets = DRAFT_DATA.topTargets || [];
+  const filtered = pos === "ALL" ? targets : targets.filter((p) => p.position === pos);
+  const allPositions = Array.from(new Set(targets.map((t) => t.position)));
+  const tabs = ["ALL", ...allPositions];
+  return (
+    <div className="panel">
+      <div className="panel-title">
+        <span className="bug" />
+        <span className="name">PROSPECT INTEL · BIG BOARD</span>
+        <span className="meta">{filtered.length} TARGETS</span>
+      </div>
+      <div style={{
+        display: "flex", borderBottom: "1px solid #ffffff10",
+        background: "#0B0C0F", flexWrap: "wrap",
+      }}>
+        {tabs.map((t) => {
+          const active = pos === t;
+          return (
+            <button key={t} onClick={() => setPos(t)} style={{
+              border: "none",
+              background: active ? "var(--red)" : "transparent",
+              color: active ? "#fff" : "var(--silver)",
+              fontFamily: "var(--display)", fontWeight: 700,
+              fontSize: 11, letterSpacing: "0.22em",
+              padding: "8px 16px", cursor: "pointer",
+              borderRight: "1px solid #ffffff10",
+            }}>{t}</button>
+          );
+        })}
+      </div>
+      <div>
+        {filtered.map((p, i) => {
+          const fit = p.fortyTime ? Math.max(40, Math.min(99, Math.round(100 - (p.fortyTime - 4.3) * 30))) : 75;
+          const ftIn = Math.floor(p.heightIn / 12);
+          const inn = p.heightIn % 12;
+          return (
+            <div key={p.id} style={{
+              display: "grid",
+              gridTemplateColumns: "32px 1.4fr 60px 0.8fr 70px 60px 1fr",
+              alignItems: "center",
+              padding: "10px 14px",
+              borderBottom: i === filtered.length - 1 ? "none" : "1px solid #ffffff08",
+              gap: 8,
+            }}>
+              <span className="mono" style={{ fontSize: 11, color: "var(--steel-2)", letterSpacing: "0.16em" }}>
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <div style={{ minWidth: 0 }}>
+                <div className="stencil" style={{ fontSize: 15, color: "var(--ivory)", letterSpacing: "0.01em", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+                  {p.name.toUpperCase()}
+                </div>
+                <div className="mono" style={{ fontSize: 9, color: "var(--silver)", letterSpacing: "0.16em", marginTop: 2, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+                  {p.college.toUpperCase()} · {ftIn}'{inn}" · {p.weight} LBS
+                </div>
+              </div>
+              <span className="display" style={{
+                fontSize: 11, letterSpacing: "0.18em",
+                padding: "3px 8px", background: "var(--red)", color: "#fff", textAlign: "center",
+              }}>{p.position}</span>
+              <div className="mono" style={{ fontSize: 11, color: "var(--silver)", letterSpacing: "0.12em" }}>
+                40 / <span style={{ color: "var(--ivory)" }}>{p.fortyTime ? p.fortyTime.toFixed(2) : "—"}</span>
+              </div>
+              <div className="mono" style={{ fontSize: 11, color: "var(--silver)", letterSpacing: "0.12em", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+                {p.projection ? p.projection.split(" ")[0].toUpperCase() : "—"}
+              </div>
+              <div className="stencil" style={{ fontSize: 18, color: fit > 85 ? "var(--hot)" : "var(--ivory)", textShadow: fit > 85 ? "0 0 8px #FF2D3D55" : "none" }}>
+                {fit}
+              </div>
+              <div style={{ position: "relative", height: 6, background: "#ffffff08" }}>
+                <div className="bar-grow" style={{
+                  position: "absolute", inset: 0,
+                  width: `${fit}%`,
+                  background: fit > 85 ? "var(--hot)" : "var(--red)",
+                  boxShadow: fit > 85 ? "0 0 6px #FF2D3D88" : "none",
+                }} />
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
 }
 
 // ─── PLAYER DETAIL MODAL ────────────────────────────────────────────────────
-function formatHeight(inches) {
-  if (!inches) return "—";
-  return `${Math.floor(inches / 12)}'${inches % 12}"`;
-}
-
-function formatDollars(n) {
-  if (n == null) return "—";
-  if (n >= 1_000_000) return "$" + (n / 1_000_000).toFixed(1) + "M";
-  if (n >= 1_000) return "$" + (n / 1_000).toFixed(0) + "K";
-  return "$" + n.toLocaleString();
-}
-
-function formatAcquired(a) {
-  if (!a) return "—";
-  // draft-2022-R1-P8 → "2022 Draft · R1 P8"
-  const draftMatch = a.match(/^draft-(\d{4})-R(\d+)(?:-P(\d+))?/);
-  if (draftMatch) {
-    const [, year, round, pick] = draftMatch;
-    return `${year} Draft · Round ${round}${pick ? " · Pick " + pick : ""}`;
-  }
-  // fa-2026-2yr → "FA · 2026 · 2yr"
-  const faMatch = a.match(/^fa-(\d{4})(?:-(\d+)yr)?/);
-  if (faMatch) {
-    const [, year, yrs] = faMatch;
-    return `Free Agent · ${year}${yrs ? " · " + yrs + "yr" : ""}`;
-  }
-  if (a.startsWith("trade-")) {
-    return "Trade · " + a.replace("trade-", "");
-  }
-  if (a.startsWith("udfa-")) return "UDFA · " + a.replace("udfa-", "");
-  return a;
-}
-
-function formColor(form) {
-  if (form >= 8.5) return "#28a745";
-  if (form >= 7.5) return "#5cb85c";
-  if (form >= 7.0) return "#ffc107";
-  if (form >= 6.5) return "#fd7e14";
-  if (form > 0) return "#dc3545";
-  return "#6c757d";
-}
-
-// All stat keys for a player's position — powers the "Form basis" section
-function formBasisStats(player) {
-  const s = player.stats || {};
-  const entries = Object.entries(s).filter(([, v]) => v != null);
-  // Human-readable labels
-  const LABELS = {
-    passYds: "Passing yards", passTDs: "Passing TDs", ints: "Interceptions",
-    qbRating: "QB rating", completions: "Completions", attempts: "Attempts",
-    rushYds: "Rushing yards", rushTDs: "Rushing TDs", rushAttempts: "Carries", ypc: "Yards/carry",
-    receptions: "Receptions", recYds: "Receiving yards", recTDs: "Receiving TDs", targets: "Targets",
-    tackles: "Tackles", sacks: "Sacks", tfl: "TFL", ff: "Forced fumbles",
-    int_def: "INTs (def)", pass_def: "Passes defended", passDef: "Passes defended", ints_def: "INTs (def)",
-    fgMade: "FG made", fgAttempted: "FG att", longFG: "Long FG",
-    puntAvg: "Punt avg", netPuntAvg: "Net punt avg",
-  };
-  return entries.map(([k, v]) => ({
-    label: LABELS[k] || k,
-    value: typeof v === "number" && !Number.isInteger(v) ? v.toFixed(1) : v.toLocaleString?.() ?? String(v),
-  }));
-}
-
-// ─── DRAFT CLASS ────────────────────────────────────────────────────────────
-function DraftPickBadge({ round, overallPick, size = "md" }) {
-  const isLg = size === "lg";
-  return (
-    <span style={{
-      display: "inline-flex", alignItems: "baseline", gap: 4,
-      background: `linear-gradient(135deg, ${FALCONS_RED} 0%, #5a0f1b 100%)`,
-      color: "#fff", padding: isLg ? "4px 10px" : "3px 8px",
-      borderRadius: 8, fontWeight: 800,
-      boxShadow: "0 2px 6px #0006",
-      fontFamily: "monospace",
-      lineHeight: 1,
-    }}>
-      <span style={{ fontSize: isLg ? 10 : 9, opacity: 0.88, letterSpacing: 0.5 }}>
-        R{round}
-      </span>
-      <span style={{ fontSize: isLg ? 14 : 12, letterSpacing: -0.3 }}>
-        #{overallPick}
-      </span>
-    </span>
-  );
-}
-
-function DraftClassView({ players, onPlayerClick }) {
-  const cards = useMemo(() => {
-    const made = DRAFT_DATA.falconsPicks.filter((p) => p.status === "made" && p.selection);
-    return made.map((pick) => {
-      const acquiredStr = `draft-${DRAFT_DATA.draftYear}-R${pick.round}-P${pick.overallPick}`;
-      const player = players.find((p) => p.acquired === acquiredStr);
-      return { pick, player };
-    });
-  }, [players]);
-
-  const offenseCount = cards.filter((c) => c.player?.positionGroup === "offense").length;
-  const defenseCount = cards.filter((c) => c.player?.positionGroup === "defense").length;
-
-  return (
-    <>
-      {/* Class header */}
-      <div style={{
-        background: `linear-gradient(135deg, ${FALCONS_RED}33 0%, ${FALCONS_PANEL} 70%)`,
-        borderRadius: 16, padding: "20px 22px", marginBottom: 16,
-        border: `1px solid ${FALCONS_RED}44`,
-      }}>
-        <div style={{ fontSize: 10, color: "#ffffffaa", fontWeight: 700, textTransform: "uppercase", letterSpacing: 2 }}>
-          {DRAFT_DATA.draftYear} Draft Class · {DRAFT_DATA.location}
-        </div>
-        <div style={{ fontSize: 24, fontWeight: 900, color: "#fff", marginTop: 4, letterSpacing: -0.5 }}>
-          Meet the new Falcons
-        </div>
-        <div style={{ fontSize: 12, color: "#ffffffcc", marginTop: 8, lineHeight: 1.55, maxWidth: 920 }}>
-          {DRAFT_DATA.generalNote}
-        </div>
-        <div style={{ display: "flex", gap: 10, marginTop: 14, flexWrap: "wrap" }}>
-          {[
-            { label: "Picks made", value: cards.length },
-            { label: "Offense", value: offenseCount },
-            { label: "Defense", value: defenseCount },
-          ].map((s) => (
-            <div key={s.label} style={{ background: "#00000044", borderRadius: 10, padding: "7px 14px" }}>
-              <div style={{ fontSize: 9, color: "#ffffff99", textTransform: "uppercase", letterSpacing: 1.2, fontWeight: 700 }}>{s.label}</div>
-              <div style={{ fontSize: 16, color: "#fff", fontWeight: 800, marginTop: 2 }}>{s.value}</div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Helper line */}
-      <div style={{ fontSize: 11, color: FALCONS_SILVER, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1.5, marginBottom: 8 }}>
-        Click any rookie to open the full profile
-      </div>
-
-      {/* Rookie cards */}
-      <div style={{
-        display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-        gap: 14, marginBottom: 24,
-      }}>
-        {cards.map(({ pick, player }) => {
-          if (!player) {
-            return (
-              <div key={pick.overallPick} style={{
-                background: FALCONS_CARD, borderRadius: 14, padding: "14px 16px",
-                border: "1px dashed #444", color: "#888", fontSize: 12,
-              }}>
-                <DraftPickBadge round={pick.round} overallPick={pick.overallPick} size="lg" />
-                <div style={{ marginTop: 8 }}>{pick.selection}</div>
-                <div style={{ fontStyle: "italic", marginTop: 4, fontSize: 11 }}>
-                  Profile not yet wired into the roster.
-                </div>
-              </div>
-            );
-          }
-          const accentP = POS_COLORS[player.position] || FALCONS_RED;
-          return (
-            <button
-              key={pick.overallPick}
-              onClick={() => onPlayerClick(player)}
-              style={{
-                background: FALCONS_CARD, borderRadius: 14, padding: 0,
-                border: "none", cursor: "pointer", textAlign: "left",
-                boxShadow: "0 4px 18px #0007",
-                overflow: "hidden", color: "#fff",
-                display: "flex", flexDirection: "column",
-                transition: "transform 0.15s, box-shadow 0.15s",
-                outline: "none",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = "translateY(-2px)";
-                e.currentTarget.style.boxShadow = "0 8px 24px #000a";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = "";
-                e.currentTarget.style.boxShadow = "0 4px 18px #0007";
-              }}
-            >
-              {/* Header row: avatar + badges + name */}
-              <div style={{
-                background: `linear-gradient(135deg, ${accentP}33 0%, transparent 70%)`,
-                padding: "14px 14px 12px", display: "flex", alignItems: "center", gap: 12,
-                borderBottom: `2px solid ${accentP}55`,
-              }}>
-                <PlayerAvatar player={player} size={68} />
-                <div style={{ flex: 1, minWidth: 0 }}>
-                  <div style={{ display: "flex", gap: 6, alignItems: "center", marginBottom: 5, flexWrap: "wrap" }}>
-                    <DraftPickBadge round={pick.round} overallPick={pick.overallPick} size="lg" />
-                    <PositionTag position={player.position} />
-                  </div>
-                  <div style={{ fontSize: 17, fontWeight: 800, lineHeight: 1.15, letterSpacing: -0.3 }}>
-                    {player.name}
-                  </div>
-                  <div style={{ fontSize: 11, color: "#888", marginTop: 3 }}>
-                    {player.college} · {formatHeight(player.height)} · {player.weight ? player.weight + " lbs" : "—"}
-                  </div>
-                </div>
-              </div>
-
-              {/* Scout note */}
-              <div style={{ padding: "12px 14px 14px", flex: 1, display: "flex", flexDirection: "column", gap: 8 }}>
-                <div style={{ fontSize: 12, color: "#ddd", lineHeight: 1.55 }}>
-                  {pick.selectionNote}
-                </div>
-                {pick.tradeNote && (
-                  <div style={{ fontSize: 10, color: "#9b59b6", fontWeight: 600, fontStyle: "italic" }}>
-                    ↔ {pick.tradeNote}
-                  </div>
-                )}
-                <div style={{
-                  marginTop: "auto", paddingTop: 6,
-                  fontSize: 10, color: accentP, fontWeight: 700,
-                  textTransform: "uppercase", letterSpacing: 1.2,
-                }}>
-                  Open full profile →
-                </div>
-              </div>
-            </button>
-          );
-        })}
-      </div>
-    </>
-  );
-}
-
 function PlayerDetailModal({ player, onClose }) {
-  useEffect(() => {
-    if (!player) return;
-    const onKey = (e) => { if (e.key === "Escape") onClose(); };
-    window.addEventListener("keydown", onKey);
-    // Lock scroll on body while modal is open
-    const prevOverflow = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    return () => {
-      window.removeEventListener("keydown", onKey);
-      document.body.style.overflow = prevOverflow;
-    };
-  }, [player, onClose]);
-
   if (!player) return null;
-
-  const accent = POS_COLORS[player.position] || FALCONS_RED;
-  const fc = formColor(player.form);
-  const basis = formBasisStats(player);
-  const c = player.contract;
-
+  const cap = player.contract?.cap2026;
   return (
-    <div
-      onClick={onClose}
-      style={{
-        position: "fixed", inset: 0, background: "#000000cc",
-        zIndex: 1000, display: "flex", alignItems: "flex-start", justifyContent: "center",
-        padding: "40px 16px", overflowY: "auto", backdropFilter: "blur(4px)",
-      }}
-    >
-      <div
-        onClick={(e) => e.stopPropagation()}
-        style={{
-          background: FALCONS_CARD, borderRadius: 16, maxWidth: 640, width: "100%",
-          boxShadow: "0 20px 60px #000c", border: `1px solid ${accent}55`,
-          overflow: "hidden", color: "#fff",
-        }}
-      >
-        {/* Header strip */}
-        <div style={{
-          background: `linear-gradient(135deg, ${accent}33 0%, #0000 60%), ${FALCONS_PANEL}`,
-          padding: "20px 22px 18px", display: "flex", alignItems: "center", gap: 16,
-          borderBottom: `2px solid ${accent}66`, position: "relative",
-        }}>
-          <PlayerAvatar player={player} size={86} />
-          <div style={{ flex: 1, minWidth: 0 }}>
-            <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
-              <PositionTag position={player.position} />
-              <span style={{ color: FALCONS_SILVER, fontSize: 13, fontWeight: 700 }}>#{player.number ?? "—"}</span>
-              <StatusBadge status={player.status} />
-            </div>
-            <div style={{ fontSize: 22, fontWeight: 800, marginTop: 4, letterSpacing: -0.3 }}>
-              {player.name}
-            </div>
-            <div style={{ fontSize: 11, color: "#888", marginTop: 2 }}>
-              {player.college ?? "—"} · {player.experience != null ? `${player.experience} yr${player.experience === 1 ? "" : "s"} NFL` : ""}
-            </div>
-          </div>
-          <button
-            onClick={onClose}
-            aria-label="Close"
-            style={{
-              position: "absolute", top: 12, right: 12,
-              background: "#00000055", border: "1px solid #ffffff22",
-              color: "#fff", width: 30, height: 30, borderRadius: 8,
-              cursor: "pointer", fontSize: 16, fontWeight: 700, lineHeight: 1,
-            }}
-          >×</button>
+    <div onClick={onClose} style={{
+      position: "fixed", inset: 0, background: "#000000d0", zIndex: 1000,
+      display: "flex", alignItems: "center", justifyContent: "center", padding: 20,
+    }}>
+      <div onClick={(e) => e.stopPropagation()} className="panel" style={{
+        maxWidth: 720, width: "100%", maxHeight: "85vh", overflowY: "auto",
+      }}>
+        <div className="panel-title">
+          <span className="bug" />
+          <span className="name">PLAYER DOSSIER</span>
+          <span className="meta" style={{ cursor: "pointer" }} onClick={onClose}>CLOSE ✕</span>
         </div>
-
-        {/* Body */}
-        <div style={{ padding: "18px 22px 22px", display: "flex", flexDirection: "column", gap: 16 }}>
-          {/* Bio strip */}
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(90px, 1fr))", gap: 8 }}>
-            {[
-              { label: "Height", value: formatHeight(player.height) },
-              { label: "Weight", value: player.weight ? `${player.weight} lbs` : "—" },
-              { label: "Age", value: player.age ?? "—" },
-              { label: "Exp", value: player.experience != null ? player.experience + " yrs" : "—" },
-            ].map((b) => (
-              <div key={b.label} style={{ background: "#252530", borderRadius: 8, padding: "8px 10px", textAlign: "center" }}>
-                <div style={{ color: "#fff", fontWeight: 800, fontSize: 14 }}>{b.value}</div>
-                <div style={{ color: "#777", fontSize: 9, textTransform: "uppercase", letterSpacing: 1, marginTop: 3 }}>{b.label}</div>
-              </div>
-            ))}
-          </div>
-
-          {/* Acquired */}
-          <div style={{ background: "#252530", borderRadius: 8, padding: "10px 12px" }}>
-            <div style={{ color: "#777", fontSize: 9, textTransform: "uppercase", letterSpacing: 1 }}>Acquired</div>
-            <div style={{ color: "#fff", fontSize: 13, fontWeight: 600, marginTop: 2 }}>{formatAcquired(player.acquired)}</div>
-          </div>
-
-          {/* Injury note */}
-          {player.injuryNote && (
+        <div style={{ padding: 20, position: "relative" }}>
+          <div style={{ display: "flex", gap: 18, alignItems: "flex-start", flexWrap: "wrap" }}>
             <div style={{
-              background: "#fd7e1418", borderRadius: 8, padding: "10px 12px",
-              borderLeft: "3px solid #fd7e14",
+              position: "relative", flexShrink: 0, width: 110, height: 110,
+              background: "linear-gradient(135deg, #1A0508 0%, #0B0C0F 70%)",
+              border: "1px solid #ffffff10",
+              display: "flex", alignItems: "center", justifyContent: "center",
+              overflow: "hidden",
             }}>
-              <div style={{ color: "#ffa94d", fontSize: 9, textTransform: "uppercase", letterSpacing: 1, fontWeight: 700 }}>
-                {player.status === "active" ? "Note" : "Injury / Status"}
-              </div>
-              <div style={{ color: "#fff", fontSize: 12, marginTop: 3, lineHeight: 1.5 }}>{player.injuryNote}</div>
-            </div>
-          )}
-
-          {/* Form basis */}
-          {player.form > 0 && (
-            <div>
-              <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 8 }}>
-                <div style={{
-                  width: 42, height: 42, borderRadius: "50%", background: fc,
-                  display: "flex", alignItems: "center", justifyContent: "center",
-                  color: "#fff", fontWeight: 800, fontSize: 14, flexShrink: 0,
-                  boxShadow: `0 0 10px ${fc}66`,
-                }}>
-                  {player.form.toFixed(1)}
-                </div>
-                <div>
-                  <div style={{ fontSize: 10, color: FALCONS_SILVER, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1.5 }}>
-                    Form rating
-                  </div>
-                  <div style={{ fontSize: 11, color: "#888", marginTop: 2 }}>
-                    Based on 2025 stats + injury status
-                  </div>
-                </div>
-              </div>
-              {basis.length > 0 ? (
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))", gap: 6 }}>
-                  {basis.map((s) => (
-                    <div key={s.label} style={{
-                      background: "#252530", borderRadius: 8, padding: "7px 10px",
-                      display: "flex", justifyContent: "space-between", alignItems: "center",
-                    }}>
-                      <span style={{ color: "#888", fontSize: 10, textTransform: "uppercase", letterSpacing: 0.5 }}>{s.label}</span>
-                      <span style={{ color: "#fff", fontSize: 12, fontWeight: 800, fontFamily: "monospace" }}>{s.value}</span>
-                    </div>
-                  ))}
-                </div>
+              {player.image ? (
+                <img src={player.image} alt={player.name}
+                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }}
+                  onError={(e) => { e.currentTarget.style.display = "none"; }}
+                />
               ) : (
-                <div style={{ color: "#666", fontSize: 11, fontStyle: "italic" }}>No 2025 stat line on record.</div>
+                <span className="stencil" style={{ fontSize: 48, color: "var(--hot)" }}>{player.number}</span>
               )}
             </div>
-          )}
+            <div style={{ minWidth: 0, flex: 1 }}>
+              <div className="mono" style={{ fontSize: 9, letterSpacing: "0.24em", color: "var(--silver)" }}>
+                #{player.number} / {player.position} / {player.college.toUpperCase()}
+              </div>
+              <div className="stencil" style={{ fontSize: 28, color: "var(--ivory)", letterSpacing: "0.02em", marginTop: 4 }}>
+                {player.name.toUpperCase()}
+              </div>
+              <div className="mono" style={{ fontSize: 11, color: "var(--silver)", letterSpacing: "0.12em", marginTop: 8 }}>
+                AGE {player.age} · {Math.floor(player.height / 12)}'{player.height % 12}" · {player.weight} LBS · YR {player.experience}
+              </div>
+              {player.injuryNote && (
+                <div className="mono" style={{ fontSize: 10, color: "var(--hot)", letterSpacing: "0.18em", marginTop: 8 }}>
+                  ▌ {player.injuryNote}
+                </div>
+              )}
+            </div>
+          </div>
 
-          {/* Contract */}
-          {c && (
-            <div>
-              <div style={{ fontSize: 10, color: "#C9A227", fontWeight: 700, textTransform: "uppercase", letterSpacing: 1.5, marginBottom: 6 }}>
-                Contract
-              </div>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(110px, 1fr))", gap: 6 }}>
-                {[
-                  { label: "Years", value: c.years ?? "—" },
-                  { label: "Total", value: formatDollars(c.total) },
-                  { label: "Gtd", value: formatDollars(c.guaranteed) },
-                  { label: "APY", value: formatDollars(c.apy) },
-                  { label: "2026 cap", value: formatDollars(c.cap2026) },
-                  { label: "Through", value: c.throughYear ?? "—" },
-                ].map((b) => (
-                  <div key={b.label} style={{ background: "#252530", borderRadius: 8, padding: "7px 10px", textAlign: "center" }}>
-                    <div style={{ color: "#fff", fontWeight: 700, fontSize: 12, fontFamily: "monospace" }}>{b.value}</div>
-                    <div style={{ color: "#777", fontSize: 9, textTransform: "uppercase", letterSpacing: 1, marginTop: 2 }}>{b.label}</div>
-                  </div>
-                ))}
-              </div>
+          {cap && (
+            <div style={{ marginTop: 22, display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))", gap: 10 }}>
+              {[
+                { l: "2026 CAP", v: `$${(cap / 1_000_000).toFixed(2)}M` },
+                { l: "DEAL", v: `${player.contract.years}Y / $${(player.contract.total / 1_000_000).toFixed(1)}M` },
+                { l: "GTD", v: `$${(player.contract.guaranteed / 1_000_000).toFixed(1)}M` },
+                { l: "THRU", v: String(player.contract.throughYear) },
+              ].map((s) => (
+                <div key={s.l} style={{ background: "#0B0C0F", padding: "10px 12px", borderTop: "2px solid var(--red)" }}>
+                  <div className="mono" style={{ fontSize: 8, letterSpacing: "0.24em", color: "var(--silver)" }}>{s.l}</div>
+                  <div className="stencil" style={{ fontSize: 18, color: "var(--ivory)", marginTop: 4 }}>{s.v}</div>
+                </div>
+              ))}
             </div>
           )}
 
-          {/* Career */}
           {player.career && player.career.length > 0 && (
-            <div>
-              <div style={{ fontSize: 10, color: FALCONS_SILVER, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1.5, marginBottom: 6 }}>
-                Career
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: 5 }}>
-                {player.career.map((entry, i) => (
+            <div style={{ marginTop: 22 }}>
+              <SectionTitle bug>CAREER</SectionTitle>
+              <div style={{ marginTop: 10 }}>
+                {player.career.map((row, i) => (
                   <div key={i} style={{
-                    background: "#252530", borderRadius: 8, padding: "7px 10px",
-                    display: "flex", gap: 10, alignItems: "baseline",
+                    display: "grid", gridTemplateColumns: "100px 1fr 1fr",
+                    gap: 10, padding: "8px 0", borderBottom: "1px solid #ffffff08",
                   }}>
-                    <span style={{ color: "#888", fontSize: 11, fontFamily: "monospace", minWidth: 78 }}>{entry.years}</span>
-                    <span style={{ color: "#fff", fontSize: 12, fontWeight: 600 }}>{entry.team}</span>
-                    {entry.type && (
-                      <span style={{ color: "#666", fontSize: 10, marginLeft: "auto", textAlign: "right" }}>
-                        {entry.type}
-                      </span>
-                    )}
+                    <span className="mono" style={{ fontSize: 10, color: "var(--silver)", letterSpacing: "0.16em" }}>{row.years}</span>
+                    <span className="stencil" style={{ fontSize: 13, color: "var(--ivory)", letterSpacing: "0.02em" }}>{row.team}</span>
+                    <span className="mono" style={{ fontSize: 10, color: "var(--steel-2)", letterSpacing: "0.12em" }}>{row.type}</span>
                   </div>
                 ))}
               </div>
@@ -1638,10 +1438,113 @@ function PlayerDetailModal({ player, onClose }) {
   );
 }
 
+// ─── VIEWS ──────────────────────────────────────────────────────────────────
+function DashboardView({ rosterCounts, currentPhase, onPlayerClick }) {
+  return (
+    <>
+      <HeroBroadcast currentPhase={currentPhase} />
+      <PickSlotBoard />
+      <StatRibbon rosterCounts={rosterCounts} />
+      <StarRoster onPlayerClick={onPlayerClick} />
+      <div style={{
+        marginTop: 20, display: "grid",
+        gridTemplateColumns: "minmax(0, 1.7fr) minmax(0, 1fr)",
+        gap: 16,
+      }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+          <CapFuelGauge />
+          <NewsWire />
+        </div>
+        <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+          <CalendarRail />
+          <TopHitsList />
+          <StandingsPanel />
+        </div>
+      </div>
+    </>
+  );
+}
+
+function DraftView({ currentPhase }) {
+  return (
+    <>
+      <HeroBroadcast currentPhase={currentPhase} />
+      <div style={{ marginTop: 20, display: "grid", gridTemplateColumns: "minmax(0, 1fr) minmax(0, 1fr)", gap: 16 }}>
+        <PickSlotBoard />
+        <ProspectBoard />
+      </div>
+    </>
+  );
+}
+
+function WireView() {
+  return (
+    <div style={{ display: "grid", gridTemplateColumns: "minmax(0, 2fr) minmax(0, 1fr)", gap: 16 }}>
+      <NewsWire expanded />
+      <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+        <CalendarRail />
+        <RSSSourcesPanel />
+      </div>
+    </div>
+  );
+}
+
+function RSSSourcesPanel() {
+  return (
+    <div className="panel">
+      <div className="panel-title">
+        <span className="bug" />
+        <span className="name">DISPATCH SOURCES</span>
+        <span className="meta">{RSS_FEEDS.length} WIRES</span>
+      </div>
+      <div style={{ padding: "12px 14px", display: "flex", flexDirection: "column", gap: 8 }}>
+        {RSS_FEEDS.map((f) => (
+          <a key={f.name} href={f.url} target="_blank" rel="noreferrer"
+            style={{
+              display: "flex", alignItems: "center", gap: 10,
+              padding: "8px 10px",
+              borderLeft: `3px solid ${f.color || "var(--red)"}`,
+              background: "#0B0C0F",
+            }}>
+            <span className="stencil" style={{ fontSize: 12, color: "var(--ivory)", letterSpacing: "0.04em" }}>
+              {f.name.toUpperCase()}
+            </span>
+            <span className="mono" style={{ fontSize: 9, color: "var(--steel-2)", letterSpacing: "0.16em", marginLeft: "auto" }}>
+              ↗
+            </span>
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ─── FOOTER ─────────────────────────────────────────────────────────────────
+function Footer() {
+  return (
+    <div style={{
+      borderTop: "1px solid #ffffff10",
+      background: "#0B0C0F",
+      padding: "16px 24px",
+      display: "flex", justifyContent: "space-between", alignItems: "center",
+      flexWrap: "wrap", gap: 12,
+    }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+        <FalconGlyph size={20} color="#FF2D3D" />
+        <span className="mono" style={{ fontSize: 10, letterSpacing: "0.22em", color: "var(--silver)" }}>
+          FALCONS TRACKER · BROADCAST FEED 01 · 26 SEASON
+        </span>
+      </div>
+      <span className="mono" style={{ fontSize: 9, letterSpacing: "0.22em", color: "var(--steel-2)" }}>
+        DATA · NFL.COM / SPOTRAC / OVER THE CAP / TEAM REPORTING
+      </span>
+    </div>
+  );
+}
+
 // ─── MAIN APP ───────────────────────────────────────────────────────────────
 export default function FalconsTracker() {
-  const [view, setView] = useState("dashboard"); // dashboard | depth-chart | draft-class | news
-  const [newsFilter, setNewsFilter] = useState("all");
+  const [view, setView] = useState("dashboard");
   const [selectedPlayer, setSelectedPlayer] = useState(null);
 
   const today = new Date();
@@ -1651,161 +1554,25 @@ export default function FalconsTracker() {
     total: PLAYERS.length,
     active: PLAYERS.filter((p) => p.status === "active").length,
     unavailable: PLAYERS.filter((p) => ["ir", "pup", "nfi", "suspended"].includes(p.status)).length,
-    offense: PLAYERS.filter((p) => p.positionGroup === "offense").length,
-    defense: PLAYERS.filter((p) => p.positionGroup === "defense").length,
-    special: PLAYERS.filter((p) => p.positionGroup === "special").length,
   }), []);
 
   return (
-    <div style={{ minHeight: "100vh", background: FALCONS_DARK, color: "#fff", fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif" }}>
-      {/* Header */}
-      <div style={{
-        background: `linear-gradient(135deg, ${FALCONS_RED} 0%, #5a0f1b 100%)`,
-        padding: "24px 24px 20px", boxShadow: "0 4px 24px #0008",
-      }}>
-        <div style={{ maxWidth: 1400, margin: "0 auto" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 12, flexWrap: "wrap" }}>
-            <div style={{
-              width: 48, height: 48, borderRadius: "50%", background: "#fff",
-              display: "flex", alignItems: "center", justifyContent: "center",
-              boxShadow: "0 2px 12px #0003", overflow: "hidden",
-            }}>
-              <img src={TEAM_LOGOS.ATL} alt="ATL" style={{ width: 36, height: 36, objectFit: "contain" }} />
-            </div>
-            <div style={{ flex: 1, minWidth: 220 }}>
-              <h1 style={{ margin: 0, fontSize: 22, fontWeight: 800, letterSpacing: -0.5 }}>Atlanta Falcons Tracker</h1>
-              <p style={{ margin: 0, fontSize: 12, opacity: 0.85 }}>2026 Offseason · Stefanski Era · Year-Round Dashboard</p>
-            </div>
-            <div style={{
-              display: "flex", alignItems: "center", gap: 8,
-              background: "#00000033", borderRadius: 10, padding: "6px 12px",
-            }}>
-              <div style={{
-                width: 8, height: 8, borderRadius: "50%", background: currentPhase.accentColor,
-                boxShadow: `0 0 8px ${currentPhase.accentColor}`,
-              }} />
-              <div>
-                <div style={{ fontSize: 9, color: "#ffffffaa", fontWeight: 700, textTransform: "uppercase", letterSpacing: 1.2 }}>
-                  Phase
-                </div>
-                <div style={{ fontSize: 13, fontWeight: 800, color: "#fff" }}>
-                  {currentPhase.name}
-                </div>
-              </div>
-            </div>
-          </div>
+    <div style={{ minHeight: "100vh", background: "var(--void)" }}>
+      <TopBar view={view} setView={setView} currentPhase={currentPhase} />
+      <ChapterRail currentPhase={currentPhase} />
 
-          <div style={{ display: "flex", gap: 4, background: "#ffffff15", borderRadius: 10, padding: 3, width: "fit-content" }}>
-            {[
-              { key: "dashboard", label: "Dashboard" },
-              { key: "depth-chart", label: "Depth Chart" },
-              { key: "draft-class", label: "Draft Class" },
-              { key: "news", label: "News Feed" },
-            ].map((v) => (
-              <button key={v.key} onClick={() => setView(v.key)}
-                style={{
-                  padding: "8px 20px", borderRadius: 8, border: "none", cursor: "pointer",
-                  fontWeight: 700, fontSize: 13, textTransform: "uppercase", letterSpacing: 1,
-                  background: view === v.key ? "#fff" : "transparent",
-                  color: view === v.key ? FALCONS_RED : "#fffc",
-                  transition: "all 0.2s",
-                }}>
-                {v.label}
-              </button>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <div style={{ maxWidth: 1400, margin: "0 auto", padding: "20px 16px 40px" }}>
+      <div style={{ maxWidth: 1480, margin: "0 auto", padding: "20px 20px 40px" }}>
         {view === "dashboard" && (
-          <>
-            {/* PHASE-AWARE HERO */}
-            <PhaseHero phase={currentPhase} />
-
-            {/* Quick roster + calendar tiles */}
-            <div style={{
-              display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(110px, 1fr))",
-              gap: 10, marginBottom: 20,
-            }}>
-              {[
-                { label: "Roster", value: rosterCounts.total, color: "#fff" },
-                { label: "Active", value: rosterCounts.active, color: "#2ecc71" },
-                { label: "PUP/IR", value: rosterCounts.unavailable, color: "#fd7e14" },
-                { label: "Draft Picks", value: DRAFT_DATA.falconsPicks.length, color: FALCONS_RED },
-                { label: "Cap $", value: "$" + (CAP_STATE.capSpaceSpotrac / 1_000_000).toFixed(0) + "M", color: "#C9A227" },
-                { label: "Dead $", value: "$" + (CAP_STATE.deadMoney.total / 1_000_000).toFixed(1) + "M", color: "#ff6b6b" },
-                { label: "2025 W-L", value: SEASON_RECAP_2025.record, color: "#888" },
-              ].map((s) => (
-                <div key={s.label} style={{ background: FALCONS_CARD, borderRadius: 12, padding: "12px 10px", textAlign: "center" }}>
-                  <div style={{ color: s.color, fontWeight: 800, fontSize: 18 }}>{s.value}</div>
-                  <div style={{ color: "#777", fontSize: 9, textTransform: "uppercase", letterSpacing: 1, marginTop: 2 }}>{s.label}</div>
-                </div>
-              ))}
-            </div>
-
-            {/* Composites — order shifts per phase, but draft-week we lead with stars + contracts + calendar */}
-            <StarCardsRow players={PLAYERS} onPlayerClick={setSelectedPlayer} />
-
-            <div style={{ display: "grid", gridTemplateColumns: "minmax(0,1fr) minmax(0,1fr)", gap: 16 }}>
-              <div>
-                <ContractWatchCard players={PLAYERS} />
-                <NFCSouthStandingsCard />
-              </div>
-              <div>
-                <OffseasonCalendarMini />
-                <SeasonRecap2025Card />
-              </div>
-            </div>
-
-            <NewsDigestSection />
-          </>
+          <DashboardView rosterCounts={rosterCounts} currentPhase={currentPhase} onPlayerClick={setSelectedPlayer} />
         )}
-
         {view === "depth-chart" && (
           <DepthChartView players={PLAYERS} currentPhase={currentPhase} onPlayerClick={setSelectedPlayer} />
         )}
-
-        {view === "draft-class" && (
-          <DraftClassView players={PLAYERS} onPlayerClick={setSelectedPlayer} />
-        )}
-
-        {view === "news" && (
-          <>
-            <RSSSourcesPanel />
-            <NewsDigestSection />
-            <div style={{ display: "flex", gap: 8, marginBottom: 16, flexWrap: "wrap", alignItems: "center" }}>
-              <span style={{ fontSize: 11, color: "#888", fontWeight: 600, textTransform: "uppercase", letterSpacing: 1 }}>Filter:</span>
-              {[
-                { key: "all", label: "All News", color: FALCONS_RED },
-                ...RSS_FEEDS.map((f) => ({ key: f.name, label: f.name, color: f.color })),
-              ].map((f) => (
-                <button key={f.key} onClick={() => setNewsFilter(f.key)}
-                  style={{
-                    padding: "6px 14px", borderRadius: 8, border: "none", cursor: "pointer",
-                    fontWeight: 700, fontSize: 11,
-                    background: newsFilter === f.key ? f.color : FALCONS_CARD,
-                    color: newsFilter === f.key ? "#fff" : "#999",
-                    transition: "all 0.2s",
-                  }}>
-                  {f.label}
-                </button>
-              ))}
-            </div>
-            <LiveNewsFeed filter={newsFilter} />
-          </>
-        )}
-
-        {/* Footer */}
-        <div style={{
-          marginTop: 32, textAlign: "center", padding: "16px 0",
-          borderTop: "1px solid #ffffff08", color: "#444", fontSize: 11,
-        }}>
-          Atlanta Falcons Tracker — 2026 offseason · Data via NFL.com, Spotrac, Over The Cap & team reporting
-          <br />
-          <span style={{ color: "#333" }}>Rise Up</span>
-        </div>
+        {view === "draft" && <DraftView currentPhase={currentPhase} />}
+        {view === "wire" && <WireView />}
       </div>
+
+      <Footer />
 
       <PlayerDetailModal player={selectedPlayer} onClose={() => setSelectedPlayer(null)} />
     </div>
