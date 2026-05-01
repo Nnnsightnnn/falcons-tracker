@@ -150,6 +150,67 @@ function TopBar({ view, setView, currentPhase }) {
   }, []);
   const hms = time.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false });
   const isMobile = useIsMobile();
+
+  const navButtons = tabs.map((t) => {
+    const active = view === t.k;
+    return (
+      <button key={t.k} onClick={() => setView(t.k)} style={{
+        border: "none", background: active ? "#160407" : "transparent",
+        color: active ? "var(--ivory)" : "var(--silver)",
+        padding: isMobile ? "12px 14px" : "0 22px", cursor: "pointer",
+        fontFamily: "var(--display)", fontWeight: 700,
+        fontSize: isMobile ? 12 : 13, letterSpacing: isMobile ? "0.14em" : "0.16em",
+        borderRight: "1px solid #ffffff10",
+        position: "relative",
+        whiteSpace: "nowrap",
+        flexShrink: 0,
+        flex: isMobile ? 1 : "0 0 auto",
+        minHeight: isMobile ? 44 : undefined,
+      }}>
+        {active && (
+          <div className="hot-bar bar-grow" style={{
+            position: "absolute", top: 0, left: 0, right: 0, height: 2,
+          }} />
+        )}
+        {t.label}
+      </button>
+    );
+  });
+
+  if (isMobile) {
+    return (
+      <div style={{ background: "#0B0C0F", borderBottom: "1px solid #ffffff10" }}>
+        <div style={{
+          display: "flex", alignItems: "center", gap: 10,
+          padding: "10px 14px",
+        }}>
+          <FalconGlyph size={26} color="#FF2D3D" />
+          <div style={{ minWidth: 0, flex: 1 }}>
+            <div className="display" style={{ fontSize: 16, letterSpacing: "0.04em", lineHeight: 1 }}>
+              ATLANTA <span style={{ color: "#FF2D3D" }}>/</span> TRACKER
+            </div>
+            <div className="mono" style={{ fontSize: 9, letterSpacing: "0.22em", color: "var(--silver)", marginTop: 4 }}>
+              FEED 01 · 26 SEASON
+            </div>
+          </div>
+          <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+            <span className="hot-bar blink" style={{ width: 7, height: 7 }} />
+            <span className="display hot-text" style={{ fontSize: 10, letterSpacing: "0.18em", whiteSpace: "nowrap" }}>
+              {liveTagForPhase(currentPhase)}
+            </span>
+          </div>
+        </div>
+        <div style={{
+          display: "flex", alignItems: "stretch",
+          borderTop: "1px solid #ffffff10",
+          width: "100%",
+        }}>
+          {navButtons}
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div style={{
       display: "flex", alignItems: "stretch",
@@ -158,79 +219,41 @@ function TopBar({ view, setView, currentPhase }) {
       flexWrap: "wrap",
     }}>
       <div style={{
-        display: "flex", alignItems: "center", gap: isMobile ? 10 : 14,
-        padding: isMobile ? "10px 14px" : "12px 18px",
+        display: "flex", alignItems: "center", gap: 14,
+        padding: "12px 18px",
         borderRight: "1px solid #ffffff10",
-        minWidth: isMobile ? 0 : 280,
-        flex: isMobile ? "1 1 100%" : "0 0 auto",
+        minWidth: 280,
       }}>
-        <FalconGlyph size={isMobile ? 26 : 32} color="#FF2D3D" />
-        <div style={{ minWidth: 0, flex: 1 }}>
-          <div className="display" style={{ fontSize: isMobile ? 16 : 19, letterSpacing: "0.04em", lineHeight: 1 }}>
+        <FalconGlyph size={32} color="#FF2D3D" />
+        <div>
+          <div className="display" style={{ fontSize: 19, letterSpacing: "0.04em", lineHeight: 1 }}>
             ATLANTA <span style={{ color: "#FF2D3D" }}>/</span> TRACKER
           </div>
           <div className="mono" style={{ fontSize: 9, letterSpacing: "0.22em", color: "var(--silver)", marginTop: 4 }}>
-            {isMobile ? "FEED 01 · 26 SEASON" : "FEED 01 · STEFANSKI ERA · 26 SEASON"}
+            FEED 01 · STEFANSKI ERA · 26 SEASON
           </div>
         </div>
-        {isMobile && (
-          <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-            <span className="hot-bar blink" style={{ width: 7, height: 7 }} />
-            <span className="display hot-text" style={{ fontSize: 10, letterSpacing: "0.18em", whiteSpace: "nowrap" }}>
-              {liveTagForPhase(currentPhase)}
-            </span>
-          </div>
-        )}
+      </div>
+
+      <div style={{ display: "flex", alignItems: "stretch", flex: 1, minWidth: 0 }}>
+        {navButtons}
       </div>
 
       <div style={{
-        display: "flex", alignItems: "stretch",
-        flex: 1, minWidth: 0,
-        overflowX: isMobile ? "auto" : "visible",
-        WebkitOverflowScrolling: "touch",
+        display: "flex", alignItems: "center", gap: 14,
+        padding: "12px 22px",
+        borderLeft: "1px solid #ffffff10",
       }}>
-        {tabs.map((t) => {
-          const active = view === t.k;
-          return (
-            <button key={t.k} onClick={() => setView(t.k)} style={{
-              border: "none", background: active ? "#160407" : "transparent",
-              color: active ? "var(--ivory)" : "var(--silver)",
-              padding: isMobile ? "12px 14px" : "0 22px", cursor: "pointer",
-              fontFamily: "var(--display)", fontWeight: 700,
-              fontSize: isMobile ? 11 : 13, letterSpacing: isMobile ? "0.12em" : "0.16em",
-              borderRight: "1px solid #ffffff08",
-              position: "relative",
-              whiteSpace: "nowrap",
-              flexShrink: 0,
-            }}>
-              {active && (
-                <div className="hot-bar bar-grow" style={{
-                  position: "absolute", top: 0, left: 0, right: 0, height: 2,
-                }} />
-              )}
-              {t.label}
-            </button>
-          );
-        })}
-      </div>
-
-      {!isMobile && (
-        <div style={{
-          display: "flex", alignItems: "center", gap: 14,
-          padding: "12px 22px",
-          borderLeft: "1px solid #ffffff10",
-        }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 7 }}>
-            <span className="hot-bar blink" style={{ width: 8, height: 8 }} />
-            <span className="display hot-text" style={{ fontSize: 12, letterSpacing: "0.22em" }}>
-              {liveTagForPhase(currentPhase)}
-            </span>
-          </div>
-          <span className="mono" style={{ fontSize: 12, color: "var(--ivory)", letterSpacing: "0.1em" }}>
-            {hms} ET
+        <div style={{ display: "flex", alignItems: "center", gap: 7 }}>
+          <span className="hot-bar blink" style={{ width: 8, height: 8 }} />
+          <span className="display hot-text" style={{ fontSize: 12, letterSpacing: "0.22em" }}>
+            {liveTagForPhase(currentPhase)}
           </span>
         </div>
-      )}
+        <span className="mono" style={{ fontSize: 12, color: "var(--ivory)", letterSpacing: "0.1em" }}>
+          {hms} ET
+        </span>
+      </div>
     </div>
   );
 }
