@@ -55,6 +55,15 @@ function PlayerPhoto({ player, size = 48 }) {
   );
 }
 
+const ROOKIE_COLOR = "#00E5FF";
+
+function rookieRound(player) {
+  if (!player.acquired?.startsWith("draft-2026")) return null;
+  const m = player.acquired.match(/-R(\d+)-P(\d+)/);
+  if (!m) return null;
+  return { round: Number(m[1]), pick: Number(m[2]) };
+}
+
 function statusTag(player) {
   if (player.status === "pup") return { label: "PUP", color: "#E67E22" };
   if (player.status === "ir") return { label: "IR", color: "#E74C3C" };
@@ -62,6 +71,8 @@ function statusTag(player) {
   if (player.status === "suspended") return { label: "SUS", color: "#8B0000" };
   if (player.status === "questionable") return { label: "Q", color: "#FFC107" };
   if (player.status === "holdout") return { label: "$", color: "#8E44AD" };
+  const rook = rookieRound(player);
+  if (rook) return { label: `R'26 · R${rook.round}`, color: ROOKIE_COLOR };
   if (player.id === "drake-london") return { label: "PRIMARY", color: "#FF2D3D" };
   if (player.id === "bijan") return { label: "WORKHORSE", color: "#FF2D3D" };
   if (player.id === "bates") return { label: "ANCHOR", color: "#FF2D3D" };
@@ -71,7 +82,7 @@ function statusTag(player) {
   return null;
 }
 
-function DepthSlot({ position, players, slotNum, onPlayerClick }) {
+function DepthSlot({ position, players, rookies, slotNum, onPlayerClick }) {
   const [s1, s2, s3] = players;
   if (!s1) return null;
   return (
@@ -174,6 +185,31 @@ function DepthSlot({ position, players, slotNum, onPlayerClick }) {
           <span className="mono" style={{ fontSize: 8, color: "var(--steel-2)", letterSpacing: "0.22em" }}>3RD</span>
         </div>
       )}
+      {rookies && rookies.length > 0 && rookies.map((r) => {
+        const meta = rookieRound(r);
+        return (
+          <div key={r.id} onClick={() => onPlayerClick && onPlayerClick(r)}
+            style={{
+              padding: "8px 14px", display: "flex", alignItems: "center", gap: 10,
+              borderTop: `1px solid ${ROOKIE_COLOR}25`,
+              background: `linear-gradient(90deg, ${ROOKIE_COLOR}10 0%, transparent 60%)`,
+              cursor: onPlayerClick ? "pointer" : "default",
+            }}>
+            <span className="mono" style={{ fontSize: 11, color: ROOKIE_COLOR, letterSpacing: "0.12em", minWidth: 24 }}>
+              #{r.number ?? "—"}
+            </span>
+            <span className="mono" style={{ fontSize: 11, color: "var(--ivory)", letterSpacing: "0.06em", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", minWidth: 0, flex: 1 }}>
+              {r.name.toUpperCase()}
+            </span>
+            <span className="mono" style={{
+              fontSize: 8, color: "#000", background: ROOKIE_COLOR,
+              padding: "2px 6px", letterSpacing: "0.2em", fontWeight: 700,
+            }}>
+              {meta ? `R'26·R${meta.round}` : "ROOKIE"}
+            </span>
+          </div>
+        );
+      })}
     </div>
   );
 }
@@ -208,9 +244,12 @@ export default function DepthChartView({ players, currentPhase, onPlayerClick })
         const inPos = groupPlayers
           .filter((p) => p.position === pos)
           .sort((a, b) => a.depthRank - b.depthRank);
-        return { position: pos, players: inPos.slice(0, 3) };
+        const top = inPos.slice(0, 3);
+        const topIds = new Set(top.map((p) => p.id));
+        const rookies = inPos.filter((p) => rookieRound(p) && !topIds.has(p.id));
+        return { position: pos, players: top, rookies };
       })
-      .filter((s) => s.players.length > 0);
+      .filter((s) => s.players.length > 0 || (s.rookies && s.rookies.length > 0));
   }, [groupPlayers, positionsForGroup]);
 
   return (
@@ -271,6 +310,7 @@ export default function DepthChartView({ players, currentPhase, onPlayerClick })
             key={s.position + idx}
             position={s.position}
             players={s.players}
+            rookies={s.rookies}
             slotNum={idx + 1}
             onPlayerClick={onPlayerClick}
           />
@@ -282,6 +322,7 @@ export default function DepthChartView({ players, currentPhase, onPlayerClick })
         <Legend swatch="#FF2D3D">STAR · APY $15M+</Legend>
         <Legend swatch="#C9A227">TAG / EXTENSION</Legend>
         <Legend swatch="#3498DB">RISING</Legend>
+        <Legend swatch={ROOKIE_COLOR}>ROOKIE '26</Legend>
         <Legend swatch="#E67E22">PUP / IR</Legend>
         <Legend swatch="#3A3E46">DEAD MONEY</Legend>
         <span className="mono" style={{ fontSize: 9, color: "var(--steel-2)", letterSpacing: "0.16em", marginLeft: "auto" }}>
