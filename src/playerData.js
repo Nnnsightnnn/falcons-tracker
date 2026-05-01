@@ -1155,7 +1155,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-04-30T16:00:00Z",
+  generatedAt: "2026-05-01T14:00:00Z",
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "The Falcoholic",
     "Bleacher Report", "Pro Football Rumors", "SI Falcons", "NBC Sports",
@@ -1165,77 +1165,78 @@ export const NEWS_DIGEST = {
     "Locked On Atlanta", "FanSided", "ClutchPoints", "TWSN", "Over The Cap",
     "National Today", "Freedom 96.9", "Athlon Sports", "Audacy 92.9 The Game",
     "Kicks 99", "BetMGM", "Wikipedia", "Bleeding Green Nation",
-    "Sporting News", "RAS.football", "NFL Trade Rumors",
+    "Sporting News", "RAS.football", "NFL Trade Rumors", "WalterFootball",
+    "Pro Football Network",
   ],
   topics: [
     {
-      title: "Bryce Johnston hired from Eagles as SVP Football Admin — Chris Olsen out after 18 seasons",
-      detail: "Atlanta's biggest move of the post-draft week, broken Mon Apr 27 and confirmed across atlantafalcons.com, AJC, NBC PFT and Pro Football Rumors. Bryce Johnston spent 10 years in Philadelphia (the last five overlapping with Cunningham) and now runs salary-cap strategy and lead contract negotiations under Matt Ryan and Cunningham. Pelissero confirmed the team parted ways with senior director of football administration Chris Olsen after 18 seasons. The hire firms up the off-field side of Cunningham's first front office and lands four days before extension talks with London and Bijan get serious.",
+      title: "Rookie jersey numbers locked: Avieon at 12, Branch at 17, Daniels 53, Thompson 98, Perkins 56, Onianwa 75",
+      detail: "atlantafalcons.com (corroborated by PFN's full league tracker and Evan Birchfield's roster post) published the 2026 rookie class numbers Thu Apr 30. Avieon Terrell takes No. 12 — A.J. keeps 24, so the brothers don't share the secondary; Avieon's Clemson number was 4. Zachariah Branch lands at 17 (his Georgia number was 1). Day 3 picks: LB Kendal Daniels 53, DT Anterio Thompson 98, LB Harold Perkins Jr. 56 (his LSU 4 was unavailable), OT Ethan Onianwa 75. The numbers are the official welcome — six rookies report to Flowery Branch in eight days.",
+      category: "general",
+    },
+    {
+      title: "Phase 2 opens Monday May 4 — first on-field veteran reps under the Stefanski/Rees install",
+      detail: "Three days from the calendar's next pivot. Atlanta wraps Phase 1 strength/conditioning Friday and rotates into Phase 2 walkthroughs Monday May 4 per NFL Football Operations and Falcons.com — the first window the full veteran skill group gets on-field installation reps (still non-contact). Stefanski's mantra inside the Branch this week, per atlantafalcons.com's Tori McElhaney piece, is 'building a strong foundation … X's and O's, techniques, fundamentals, identity.' First real look at how Tommy Rees plans to deploy Bijan + London + Pitts together.",
       category: "coaching",
     },
     {
-      title: "RAS scores drop: class averages 7.84 (26th in NFL) — Thompson 9.38 leads, Terrell 4.94 lags",
-      detail: "Yahoo / RAS.football published the full athletic-testing breakdown Wednesday Apr 29. Anterio Thompson (DT, 9.38) and Zachariah Branch (WR, 9.12) topped the class on the Kent Lee Platte scale. Avieon Terrell came in at 4.94 — poor size and speed grades — the kind of athletic profile NFL coverage shoppers downgrade despite the bloodlines and tape. Atlanta's 7.84 team average ranks 26th of 32, the trade-off Cunningham accepted by skipping athletic-testing pre-reqs in favor of producers.",
-      category: "draft",
-    },
-    {
-      title: "Sporting News Iyer drops B- on the class — edge gap and no-R1 reality cited",
-      detail: "Vinnie Iyer's Sporting News post-draft card hit the wire Wed Apr 29 with a B-. The grade tracks NFL.com's Chad Reuter (also B-) more than CBS's Bahns (B+). The pattern: Day 2 (Terrell #48, Branch #79) gets near-universal praise; Day 3 LB double-dip (Daniels #134 + Perkins #215) splits the room; the missing 2026 first-round pick (sent to LAR for the 2025 Pearce Jr. trade-up) plus zero edge selections form the consistent demerit. Falcoholic's Tuesday Takes panel (Knight / Diaz) called it 'a defensible B' given the starting point.",
-      category: "draft",
-    },
-    {
-      title: "Schefter live again: Pitts trade window stays open through Day 1 of camp — Chiefs the most-cited fit",
-      detail: "Wednesday's biggest local rumor wave: ClutchPoints, Yahoo and Heavy all flagged Schefter has now mentioned a Kyle Pitts trade multiple times since the draft closed, with NFL Trade Rumors reporting KC has actively called. Cunningham reportedly remains 'willing to listen' even after Pitts signed the $15.045M tag and showed for voluntary workouts. CBS / Heavy floated the Chiefs-as-Kelce-successor scenario as the cleanest fit; the trade window stays open until camp roster cuts. Atlanta's draft-capital crunch from the Pearce Jr. trade-up plus a possible R1 conduct-policy suspension on Pearce makes a tag-and-trade more rationalizable than it looked two weeks ago.",
+      title: "Pitts trade speculation officially quiets — no TE drafted, voluntary attendance, tag in hand",
+      detail: "Blogging Dirty's Apr 28 'officially put trade speculation to rest' read is now the consensus take across Yardbarker, ClutchPoints and Heavy: Atlanta did not draft a tight end, Pitts cashed the $15.045M tag and showed for voluntary minicamp, and Cunningham's post-draft posture has shifted from 'willing to listen' to using Pitts as the centerpiece of Rees' 12-personnel install. Schefter's pre-draft 'multiple-mention' chatter has gone dark this week. The trade window technically remains open through final cuts; the practical window has closed.",
       category: "contracts",
     },
     {
-      title: "Rookie minicamp roster firms: 6 picks + 16 UDFAs + 4 tryout invites for May 8–11 at Flowery Branch",
-      detail: "Atlanta's rookie-minicamp guest list is fully baked as of Wed Apr 29. Six drafted rookies; sixteen UDFAs incl. DT Carlos Allen (Houston), C James Brockermeyer (Miami), QB Jack Strand (Minnesota-Moorhead), G Kam Dewberry (Alabama), OT Riley Mahlman (Wisconsin), TEs Brendan Frazier / Jack Velling, RBs Trent Battle / Cash Jones, WRs Vinny Anthony II / Malik Rutherford / Andrel Anthony (Duke) / Le'Meke Brockington (Minnesota) / returner Keelan Marion (Miami). Plus four tryout invites: CB Nyland Green (Arizona State), CB Clayton Powell-Lee (Georgia Tech), WR Jonathan Brady (Indiana), RB Devontae Houston (ETSU). First on-field reps May 8.",
+      title: "Rookie minicamp guest list final — 6 picks, 16 UDFAs, 4 tryout invites report May 8 to Flowery Branch",
+      detail: "Atlanta picked the second of the two NFL-allowed weekends (May 8–11) and the roster is locked. Drafted six. UDFAs include DT Carlos Allen (Houston), C James Brockermeyer (Miami), QB Jack Strand (Minnesota-Moorhead), G Kam Dewberry (Alabama), OT Riley Mahlman (Wisconsin), RBs Trent Battle / Cash Jones (Georgia), WRs Vinny Anthony II / Malik Rutherford / Andrel Anthony / returner Keelan Marion (BYU First-Team All-American 2024), TEs Brendan Frazier / Jack Velling. Tryouts: CB Nyland Green (ASU), CB Clayton Powell-Lee (Georgia Tech), WR Jonathan Brady (Indiana), RB Devontae Houston (ETSU). Falcoholic's Knight has Strand and Marion as the two with realest 53-man paths.",
       category: "general",
     },
     {
-      title: "Pearce Jr. legal path: charges drop if pretrial diversion completes — but NFL 6-game suspension still on the table",
-      detail: "PFR/PFT/Falcoholic confirmed Apr 23–28 that Pearce Jr.'s multiple felony charges (battery, stalking, fleeing) plus traffic citations will be dismissed if he completes a Florida pretrial diversion program — therapy plus six clean months, no admission of guilt, with the program landing in Week 7 of the NFL season. The legal track is the easy part: NFL discipline does not require a conviction, and the personal-conduct-policy floor for a first offense is a six-game suspension. Cunningham has not commented publicly; the team is bracing for a partial-season Pearce.",
-      category: "general",
-    },
-    {
-      title: "Home/away matchups OFFICIAL — full schedule release tracking to Wed May 13 / Thu May 14",
-      detail: "FBSchedules, CBS and SI now align on the May 13–14 window for the 2026 NFL schedule release; the league has not yet stamped the day. HOME (9): Carolina, New Orleans, Tampa Bay, Baltimore, Chicago, Cincinnati, Detroit, Kansas City, San Francisco. AWAY (8): Carolina, New Orleans, Tampa Bay, Cleveland, Green Bay, Minnesota, Pittsburgh, Washington. KC's home appearance keeps the Mahomes-at-Bernabéu Madrid scenario clean — Atlanta is the designated home team. Dates and primetime slot count are gated on the release.",
-      category: "general",
-    },
-    {
-      title: "Drake London extension still 'top of mind' — JSN's $42.15M APY is the new ceiling Cunningham must respect",
-      detail: "Cunningham's post-draft Saturday line that London is 'top of mind' is now the most-cited offseason quote in town. London plays 2026 on the $16.8M 5th-year option. The market keeps moving: Jaxon Smith-Njigba's 4yr / $168.6M ($42.15M APY) deal reset the WR ceiling; Garrett Wilson's $131M Jets number is the floor for top-15 production. Heavy / TWSN / SI / NationalToday projections cluster at 4yr / $128M ($32M APY, $82–90M gtd). Stated org goal: lock it before camp opens July 22.",
+      title: "Drake London extension is the next domino — JSN's $42.15M APY pulled the ceiling up",
+      detail: "Cunningham's 'top of mind' line on London (post-draft presser) remains the most-cited org quote in town heading into May. London plays 2026 on the $16.8M 5th-year option. The reset-comp keeps moving: Jaxon Smith-Njigba 4yr / $168.6M ($42.15M APY) is the new WR ceiling; Garrett Wilson's $131M Jets deal is the floor for top-15 production. Heavy / TWSN / SI / NationalToday projections still cluster at 4yr / $128M ($32M APY, $82–90M gtd). Stated org goal: signed before training camp opens July 22.",
       category: "contracts",
     },
     {
-      title: "Bijan market projects to $20M+ APY — McCaffrey's $19M and Barkley's $20.6M are the targets",
-      detail: "Pro Football Rumors and Yardbarker locked in the Bijan market frame this week: 'should surpass Derrick Henry's $15M APY and approach, if not eclipse, Christian McCaffrey's $19M APY,' potentially pushing past Saquon Barkley's $20.6M to become the highest-paid back in the league. Bijan's 5th-year option was exercised Apr 10–13 at $11.32M for 2027 — explicitly viewed as a placeholder. Detroit closing Jahmyr Gibbs first remains the chief market-reset risk; Bijan's 2025 case (1,478 rushing, 820 receiving, 16 total TDs, All-Pro) is at least Gibbs-equal on tape.",
+      title: "Bijan market: 'should surpass McCaffrey, may eclipse Barkley' — top-3 RB money inbound",
+      detail: "PFR's Wed Apr 29 update sharpened the Bijan range to 'top-3 RB money,' calling out Christian McCaffrey's $19M APY as the floor and Saquon Barkley's $20.6M as the realistic target. The Apr 12 fifth-year option ($11.32M for 2027) is openly framed as a placeholder. 2025 résumé: 1,478 rushing / 820 receiving / 16 total TDs / All-Pro / scrimmage-yard leader. Detroit closing Jahmyr Gibbs first is the lone market-reset risk; Bijan's tape is at least Gibbs-equal.",
       category: "contracts",
     },
     {
-      title: "Penix ACL update: Stefanski holds 'right where he needs to be,' Tua-vs-Penix QB battle frame stays open",
-      detail: "PFN, NBC PFT, ESPN and SI all ran Stefanski's most recent rehab line this week — 'right where he needs to be' on Penix's Nov 16 ACL tear (surgery Nov 25). No definitive Week 1 timeline from the staff yet, but Penix continues to target opening day. AJC reports him back at the facility, mentally locked in, physically clean. Tua's 1yr / $1.3M bridge deal preserves the QB1 option, and Stefanski's mantra to both QBs at voluntary minicamp Apr 21–23 was 'be where your feet are.'",
+      title: "Penix ACL: Stefanski again says 'right where he needs to be' — Week 1 still the soft target",
+      detail: "Stefanski's late-April reaffirmation (NBC PFT, PFN, SI Falcons) lands roughly 23 weeks post-Nov 25 surgery. Standard ACL window is 9–12 months; Week 1 is at the front of that range. AJC and atlantafalcons.com have him at the facility daily, mentally locked in. Tua's 1yr / $1.3M bridge keeps the QB1 chair warm; the Stefanski mantra to both QBs at the Apr 21–23 voluntary minicamp was 'be where your feet are.' First competitive look comes at OTAs May 18.",
       category: "injuries",
     },
     {
-      title: "Avieon arrives in Flowery Branch — 'first known starting-CB sibling tandem' photo set drops",
-      detail: "atlantafalcons.com published the Avieon-Terrell-arrives photo gallery and a sit-down with both Terrells this week. A.J.: 'I had to wait three picks before I could even show some type of love to him.' Avieon stays at No. 12 (his Clemson number was 4); A.J. keeps 24. The team is openly leaning into the brothers angle as the marketing centerpiece of the rookie class.",
+      title: "Pearce Jr. — pretrial diversion accepted; NFL 6-game suspension floor still very much in play",
+      detail: "PFR / PFT / Falcoholic confirmed Apr 23–28 that James Pearce Jr.'s felony charges (battery, stalking, fleeing) and traffic citations will be dismissed if he completes a Florida pretrial diversion program — therapy plus six clean months, no admission of guilt, completion lands in Week 7 of the NFL season. League discipline doesn't require a conviction; the personal-conduct floor for a first offense is six games. Cunningham still hasn't publicly commented. Atlanta is planning for a partial-season Pearce — and an edge group already short on proven snaps.",
       category: "general",
     },
     {
-      title: "Phase 2 walkthroughs open Monday May 4 — first on-field reps for the veteran offense under Stefanski-Rees",
-      detail: "Per the NFL Football Operations release and Falcons.com, Atlanta's offseason program is in Phase 1 strength/conditioning now and rotates into Phase 2 walkthroughs on May 4 — the first window where the full veteran skill group gets on-field installation reps with no contact. Phase 3 OTAs (May 18–19 / 21 / 26–27 / 29 / June 8–9 / 11) follow; mandatory veteran minicamp June 16–18 closes the program before camp opens July 22.",
-      category: "coaching",
-    },
-    {
-      title: "UDFA OL pile is the sleeper story — Bill Callahan inherits real developmental depth at G/C/T",
-      detail: "Falcoholic / SI / NFL.com cross-checks confirm Atlanta signed multiple offensive linemen as UDFAs: C James Brockermeyer (Miami, All-ACC 3rd team, Senior Bowl), G Kam Dewberry (Alabama LG starter), OT Riley Mahlman (Wisconsin), plus pass-catching depth via TEs Velling/Frazier. With Lindstrom/Matthews locked in and Taylor on a 1yr / $5M McGary-replacement deal, the UDFA group is genuine swing-tackle and interior depth competition under new OL coach Bill Callahan.",
+      title: "RAS scorecard: class average 7.84 ranks 26th — Thompson 9.38 leads, Terrell 4.94 lags",
+      detail: "Yahoo / RAS.football's Apr 29 breakdown showed DT Anterio Thompson (9.38) and WR Zachariah Branch (9.12) topping the class on the Kent Lee Platte scale. Avieon Terrell came in at 4.94 — poor size and speed grades — the kind of athletic profile NFL coverage shoppers downgrade despite the bloodlines and tape. Atlanta's 7.84 class average is 26th of 32, the trade-off Cunningham accepted by chasing producers over testers.",
       category: "draft",
     },
     {
-      title: "Calendar in motion: Phase 2 May 4 → rookie camp May 8–11 → schedule release May 13–14 → OTAs May 18",
-      detail: "Four days from the next milestone. Phase 2 walkthroughs open Monday May 4; rookie minicamp at Flowery Branch May 8–11 (the second of two NFL-allowed post-draft windows); 2026 NFL schedule release tracking to Wed May 13 / Thu May 14; Phase 3 OTAs begin May 18. Then mandatory veteran minicamp June 16–18, dead period through July 21, training camp opens July 22 in Flowery Branch. The dashboard hero rotates out of 'rookie-class' on May 5.",
+      title: "Final draft grades trickle in: B / B- consensus — edge-rusher gap and missing R1 still the chief gripes",
+      detail: "Sporting News (Iyer): B-. NFL.com (Reuter): B-. CBS (Bahns): B+. Falcoholic Tuesday Takes: 'a defensible B.' The pattern across grades: Day 2 (Terrell #48, Branch #79) draws near-universal praise; Day 3 LB double-dip (Daniels #134 / Perkins #215) splits the room; the missing 2026 first-round pick (sent to LAR for the 2025 Pearce Jr. trade-up) plus zero edge selections form the through-line of the negative reviews.",
+      category: "draft",
+    },
+    {
+      title: "Bryce Johnston in, Chris Olsen out — Cunningham's cap-strategy seat now filled by ex-Eagle",
+      detail: "Atlanta's biggest off-field move of the post-draft week, broken Mon Apr 27 across atlantafalcons.com, AJC, NBC PFT and PFR. Bryce Johnston joins from Philadelphia (10 years, last five overlapping Cunningham) as SVP, Football Administration — running cap strategy and lead contract negotiations under Matt Ryan and Cunningham. Pelissero confirmed Chris Olsen is out after 18 seasons. The hire firms up the off-field side of Cunningham's first front office four days before the London/Bijan extension push really opens.",
+      category: "coaching",
+    },
+    {
+      title: "Schedule release officially tracking to Wed May 13 or Thu May 14 — home/away matchups already public",
+      detail: "FBSchedules, CBS and Front Office Sports all align on a May 13–14 window for the 2026 NFL schedule reveal; the league has not yet stamped the day. Atlanta's matchups are already known. HOME (9): Carolina, New Orleans, Tampa Bay, Baltimore, Chicago, Cincinnati, Detroit, Kansas City, San Francisco. AWAY (8): Carolina, New Orleans, Tampa Bay, Cleveland, Green Bay, Minnesota, Pittsburgh, Washington. KC home keeps the Mahomes-at-Bernabéu Madrid scenario clean (Atlanta = designated home). Primetime slot count and dates are gated on the release.",
+      category: "general",
+    },
+    {
+      title: "Bill Callahan's UDFA OL pile is the sleeper roster story — real swing-tackle and interior depth on offer",
+      detail: "Falcoholic / SI / NFL.com cross-checks: Atlanta's UDFA class is unusually OL-heavy — C James Brockermeyer (Miami, All-ACC 3rd team, Senior Bowl), G Kam Dewberry (Alabama LG starter), OT Riley Mahlman (Wisconsin), plus depth via TEs Velling / Frazier. With Lindstrom and Matthews locked, Jawaan Taylor on the 1yr / $5M McGary-replacement deal, and Onianwa added in R7, the UDFA group is genuine swing-tackle and interior competition under new OL coach Bill Callahan. Watch Brockermeyer; multiple beat writers have him as the highest 53-man-odds UDFA in the room.",
+      category: "draft",
+    },
+    {
+      title: "Calendar — rookie-class hero rotates out May 5 → Phase 2 May 4 → rookie camp May 8–11 → schedule May 13/14 → OTAs May 18",
+      detail: "Three days from the next milestone. Phase 2 walkthroughs open Monday May 4 (overlapping the dashboard's hero rotation into 'offseason-lull'); rookie minicamp at Flowery Branch May 8–11 (Atlanta picked the second NFL-allowed post-draft weekend); 2026 NFL schedule release tracking to Wed May 13 / Thu May 14; Phase 3 OTAs begin Monday May 18 (Atlanta's full slate: May 18–19, 21, 26–27, 29, June 8–9, 11). Mandatory veteran minicamp June 16–18, dead period through Jul 21, camp opens Jul 22.",
       category: "general",
     },
   ],

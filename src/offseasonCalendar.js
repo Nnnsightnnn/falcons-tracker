@@ -41,8 +41,15 @@ export const OFFSEASON_CALENDAR = [
     id: "rookie-minicamp-early",
     date: "2026-05-01",
     label: "Rookie Minicamp window opens",
-    detail: "Teams pick one of two weekends (May 1-4 or May 8-11).",
+    detail: "League-wide window opens. Atlanta picked the second weekend — six rookies, 16 UDFAs, four tryouts report May 8 to Flowery Branch.",
     phase: "rookie-class",
+  },
+  {
+    id: "rookie-minicamp-falcons",
+    date: "2026-05-08",
+    label: "Falcons Rookie Minicamp",
+    detail: "May 8-11 at Flowery Branch. First on-field reps for Terrell, Branch, Daniels, Thompson, Perkins Jr. and Onianwa plus the UDFA pile.",
+    phase: "offseason-lull",
   },
   {
     id: "phase-2-starts",
