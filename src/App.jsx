@@ -40,6 +40,19 @@ function FalconGlyph({ size = 36, color = "#FF2D3D" }) {
   );
 }
 
+// ─── VIEWPORT ───────────────────────────────────────────────────────────────
+function useIsMobile(breakpoint = 768) {
+  const [isMobile, setIsMobile] = useState(() =>
+    typeof window !== "undefined" && window.innerWidth < breakpoint
+  );
+  useEffect(() => {
+    const handler = () => setIsMobile(window.innerWidth < breakpoint);
+    window.addEventListener("resize", handler);
+    return () => window.removeEventListener("resize", handler);
+  }, [breakpoint]);
+  return isMobile;
+}
+
 // ─── COUNTDOWN ──────────────────────────────────────────────────────────────
 function useCountdown(targetISO) {
   const [now, setNow] = useState(() => Date.now());
@@ -136,6 +149,7 @@ function TopBar({ view, setView, currentPhase }) {
     return () => clearInterval(t);
   }, []);
   const hms = time.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false });
+  const isMobile = useIsMobile();
   return (
     <div style={{
       display: "flex", alignItems: "stretch",
@@ -144,35 +158,50 @@ function TopBar({ view, setView, currentPhase }) {
       flexWrap: "wrap",
     }}>
       <div style={{
-        display: "flex", alignItems: "center", gap: 14,
-        padding: "12px 18px",
+        display: "flex", alignItems: "center", gap: isMobile ? 10 : 14,
+        padding: isMobile ? "10px 14px" : "12px 18px",
         borderRight: "1px solid #ffffff10",
-        minWidth: 280,
+        minWidth: isMobile ? 0 : 280,
+        flex: isMobile ? "1 1 100%" : "0 0 auto",
       }}>
-        <FalconGlyph size={32} color="#FF2D3D" />
-        <div>
-          <div className="display" style={{ fontSize: 19, letterSpacing: "0.04em", lineHeight: 1 }}>
+        <FalconGlyph size={isMobile ? 26 : 32} color="#FF2D3D" />
+        <div style={{ minWidth: 0, flex: 1 }}>
+          <div className="display" style={{ fontSize: isMobile ? 16 : 19, letterSpacing: "0.04em", lineHeight: 1 }}>
             ATLANTA <span style={{ color: "#FF2D3D" }}>/</span> TRACKER
           </div>
           <div className="mono" style={{ fontSize: 9, letterSpacing: "0.22em", color: "var(--silver)", marginTop: 4 }}>
-            FEED 01 · STEFANSKI ERA · 26 SEASON
+            {isMobile ? "FEED 01 · 26 SEASON" : "FEED 01 · STEFANSKI ERA · 26 SEASON"}
           </div>
         </div>
+        {isMobile && (
+          <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+            <span className="hot-bar blink" style={{ width: 7, height: 7 }} />
+            <span className="display hot-text" style={{ fontSize: 10, letterSpacing: "0.18em", whiteSpace: "nowrap" }}>
+              {liveTagForPhase(currentPhase)}
+            </span>
+          </div>
+        )}
       </div>
 
-      <div style={{ display: "flex", alignItems: "stretch", flex: 1, minWidth: 0 }}>
+      <div style={{
+        display: "flex", alignItems: "stretch",
+        flex: 1, minWidth: 0,
+        overflowX: isMobile ? "auto" : "visible",
+        WebkitOverflowScrolling: "touch",
+      }}>
         {tabs.map((t) => {
           const active = view === t.k;
           return (
             <button key={t.k} onClick={() => setView(t.k)} style={{
               border: "none", background: active ? "#160407" : "transparent",
               color: active ? "var(--ivory)" : "var(--silver)",
-              padding: "0 22px", cursor: "pointer",
+              padding: isMobile ? "12px 14px" : "0 22px", cursor: "pointer",
               fontFamily: "var(--display)", fontWeight: 700,
-              fontSize: 13, letterSpacing: "0.16em",
+              fontSize: isMobile ? 11 : 13, letterSpacing: isMobile ? "0.12em" : "0.16em",
               borderRight: "1px solid #ffffff08",
               position: "relative",
               whiteSpace: "nowrap",
+              flexShrink: 0,
             }}>
               {active && (
                 <div className="hot-bar bar-grow" style={{
@@ -185,27 +214,30 @@ function TopBar({ view, setView, currentPhase }) {
         })}
       </div>
 
-      <div style={{
-        display: "flex", alignItems: "center", gap: 14,
-        padding: "12px 22px",
-        borderLeft: "1px solid #ffffff10",
-      }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 7 }}>
-          <span className="hot-bar blink" style={{ width: 8, height: 8 }} />
-          <span className="display hot-text" style={{ fontSize: 12, letterSpacing: "0.22em" }}>
-            {liveTagForPhase(currentPhase)}
+      {!isMobile && (
+        <div style={{
+          display: "flex", alignItems: "center", gap: 14,
+          padding: "12px 22px",
+          borderLeft: "1px solid #ffffff10",
+        }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 7 }}>
+            <span className="hot-bar blink" style={{ width: 8, height: 8 }} />
+            <span className="display hot-text" style={{ fontSize: 12, letterSpacing: "0.22em" }}>
+              {liveTagForPhase(currentPhase)}
+            </span>
+          </div>
+          <span className="mono" style={{ fontSize: 12, color: "var(--ivory)", letterSpacing: "0.1em" }}>
+            {hms} ET
           </span>
         </div>
-        <span className="mono" style={{ fontSize: 12, color: "var(--ivory)", letterSpacing: "0.1em" }}>
-          {hms} ET
-        </span>
-      </div>
+      )}
     </div>
   );
 }
 
 // ─── CHAPTER RAIL ───────────────────────────────────────────────────────────
 function ChapterRail({ currentPhase }) {
+  const isMobile = useIsMobile();
   const currentIdx = useMemo(() => {
     const idx = BROADCAST_CHAPTERS.findIndex((c) => c.phaseIds.includes(currentPhase.id));
     return idx === -1 ? 0 : idx;
@@ -215,8 +247,10 @@ function ChapterRail({ currentPhase }) {
       borderTop: "1px solid #ffffff10",
       borderBottom: "1px solid #ffffff10",
       background: "#0B0C0F",
-      display: "grid",
-      gridTemplateColumns: `repeat(${BROADCAST_CHAPTERS.length}, 1fr)`,
+      display: isMobile ? "flex" : "grid",
+      overflowX: isMobile ? "auto" : "visible",
+      WebkitOverflowScrolling: "touch",
+      gridTemplateColumns: isMobile ? undefined : `repeat(${BROADCAST_CHAPTERS.length}, 1fr)`,
     }}>
       {BROADCAST_CHAPTERS.map((p, i) => {
         const active = i === currentIdx;
@@ -224,28 +258,30 @@ function ChapterRail({ currentPhase }) {
         return (
           <div key={p.id} style={{
             position: "relative",
-            padding: "14px 18px 12px",
+            padding: isMobile ? "10px 14px 9px" : "14px 18px 12px",
             borderRight: i < BROADCAST_CHAPTERS.length - 1 ? "1px solid #ffffff08" : "none",
             background: active ? "#160407" : "transparent",
             opacity: passed ? 0.45 : 1,
+            flex: isMobile ? "0 0 auto" : undefined,
+            minWidth: isMobile ? 110 : undefined,
           }}>
             {active && (
               <div className="hot-bar bar-grow" style={{
                 position: "absolute", top: 0, left: 0, right: 0, height: 2,
               }} />
             )}
-            <div style={{ display: "flex", alignItems: "baseline", gap: 10 }}>
+            <div style={{ display: "flex", alignItems: "baseline", gap: isMobile ? 6 : 10 }}>
               <span className="mono" style={{
-                fontSize: 11, color: active ? "#FF2D3D" : "var(--steel-2)", fontWeight: 700,
+                fontSize: isMobile ? 9 : 11, color: active ? "#FF2D3D" : "var(--steel-2)", fontWeight: 700,
               }}>{p.id}</span>
               <span className="display" style={{
-                fontSize: 17, color: active ? "var(--ivory)" : "var(--silver)",
+                fontSize: isMobile ? 13 : 17, color: active ? "var(--ivory)" : "var(--silver)",
                 letterSpacing: "0.04em",
                 textShadow: active ? "0 0 12px #FF2D3D44" : "none",
               }}>{p.name}</span>
             </div>
             <div className="mono" style={{
-              fontSize: 9, color: "var(--steel-2)",
+              fontSize: isMobile ? 8 : 9, color: "var(--steel-2)",
               letterSpacing: "0.18em", marginTop: 3,
             }}>{p.window}</div>
           </div>
@@ -259,6 +295,7 @@ function ChapterRail({ currentPhase }) {
 // Pre-draft: countdown clock to draft. Post-draft: rookie class headline +
 // horizontal "next-up" milestone strip aimed at OTAs.
 function HeroBroadcast({ currentPhase }) {
+  const isMobile = useIsMobile();
   const today = new Date();
   const draftStart = new Date(DRAFT_DATA.startTime);
   const draftPast = today.getTime() > draftStart.getTime() + 3 * 86400000; // ended Apr 25
@@ -287,7 +324,7 @@ function HeroBroadcast({ currentPhase }) {
       position: "relative", overflow: "hidden",
       background: "var(--void)",
       border: "1px solid #ffffff10",
-      minHeight: 360,
+      minHeight: isMobile ? 280 : 360,
     }}>
       <div style={{
         position: "absolute", inset: 0,
@@ -315,27 +352,31 @@ function HeroBroadcast({ currentPhase }) {
       <div className="flicker" />
 
       <div className="diag-cut" style={{
-        position: "absolute", top: 28, left: 0, right: 0,
-        padding: "8px 32px",
+        position: "absolute", top: isMobile ? 18 : 28, left: 0, right: 0,
+        padding: isMobile ? "6px 16px" : "8px 32px",
         background: "linear-gradient(90deg, #A71930 0%, #6B0F1E 80%, transparent 100%)",
         borderBottom: "1px solid #FF2D3D55",
-        display: "flex", alignItems: "center", gap: 18, flexWrap: "wrap",
+        display: "flex", alignItems: "center", gap: isMobile ? 8 : 18, flexWrap: "wrap",
       }}>
-        <span className="display" style={{ fontSize: 12, letterSpacing: "0.28em" }}>
+        <span className="display" style={{ fontSize: isMobile ? 10 : 12, letterSpacing: isMobile ? "0.18em" : "0.28em" }}>
           {stripLabel}
         </span>
-        <span className="mono" style={{ fontSize: 10, color: "#ffffffaa", letterSpacing: "0.18em", marginLeft: "auto" }}>
+        <span className="mono" style={{ fontSize: isMobile ? 9 : 10, color: "#ffffffaa", letterSpacing: "0.18em", marginLeft: "auto" }}>
           {stripMeta}
         </span>
       </div>
 
-      <div style={{ position: "relative", padding: "100px 32px 36px", display: "flex", flexDirection: "column", gap: 18 }}>
+      <div style={{
+        position: "relative",
+        padding: isMobile ? "70px 16px 28px" : "100px 32px 36px",
+        display: "flex", flexDirection: "column", gap: isMobile ? 12 : 18,
+      }}>
         <div>
-          <div className="mono" style={{ fontSize: 11, letterSpacing: "0.32em", color: "var(--silver)" }}>
-            ▎ HOUR ZERO BROADCAST · {currentPhase.name.toUpperCase()}
+          <div className="mono" style={{ fontSize: isMobile ? 10 : 11, letterSpacing: isMobile ? "0.22em" : "0.32em", color: "var(--silver)" }}>
+            ▎ HOUR ZERO · {currentPhase.name.toUpperCase()}
           </div>
           <h1 className="stencil" style={{
-            fontSize: 96, lineHeight: 0.88, margin: "8px 0 4px",
+            fontSize: isMobile ? 48 : 96, lineHeight: 0.88, margin: "8px 0 4px",
             letterSpacing: "-0.015em",
             color: "var(--ivory)",
             textShadow: "0 0 32px #FF2D3D33",
@@ -343,14 +384,14 @@ function HeroBroadcast({ currentPhase }) {
             {headline.line1}<span style={{ color: "#FF2D3D" }}>.</span>
           </h1>
           <h1 className="stencil" style={{
-            fontSize: 96, lineHeight: 0.88, margin: "0",
+            fontSize: isMobile ? 48 : 96, lineHeight: 0.88, margin: "0",
             letterSpacing: "-0.015em",
             color: "var(--silver)",
           }}>
             {headline.line2}<span style={{ color: "#FF2D3D" }}>.</span>
           </h1>
           <div className="mono" style={{
-            marginTop: 16, fontSize: 13, color: "var(--silver)",
+            marginTop: isMobile ? 12 : 16, fontSize: isMobile ? 11 : 13, color: "var(--silver)",
             letterSpacing: "0.06em", maxWidth: 640, lineHeight: 1.55,
           }}>
             {headline.sub}
@@ -419,6 +460,7 @@ function HeroBroadcast({ currentPhase }) {
 
 // ─── PICK SLOT BOARD ────────────────────────────────────────────────────────
 function PickSlotBoard() {
+  const isMobile = useIsMobile();
   const picks = DRAFT_DATA.falconsPicks;
   return (
     <div className="panel" style={{ marginTop: 20 }}>
@@ -429,7 +471,9 @@ function PickSlotBoard() {
       </div>
       <div style={{
         display: "grid",
-        gridTemplateColumns: `repeat(${picks.length}, minmax(0, 1fr))`,
+        gridTemplateColumns: isMobile
+          ? "repeat(2, minmax(0, 1fr))"
+          : `repeat(${picks.length}, minmax(0, 1fr))`,
         gap: 1, background: "#ffffff08",
       }}>
         {picks.map((p, i) => {
@@ -442,7 +486,7 @@ function PickSlotBoard() {
           return (
             <div key={p.overallPick} style={{
               background: isOnClock ? "#170509" : "var(--carbon)",
-              padding: "16px 14px 14px",
+              padding: isMobile ? "12px 10px 10px" : "16px 14px 14px",
               position: "relative",
               borderTop: `2px solid ${accent}`,
               opacity: isTraded ? 0.55 : 1,
@@ -453,21 +497,21 @@ function PickSlotBoard() {
                   position: "absolute", top: 0, left: 0, right: 0, height: 2,
                 }} />
               )}
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: 4 }}>
                 <span className="mono" style={{
-                  fontSize: 10, letterSpacing: "0.22em", color: "var(--silver)",
-                }}>R{p.round} / SLOT {String(i + 1).padStart(2, "0")}</span>
+                  fontSize: isMobile ? 9 : 10, letterSpacing: "0.18em", color: "var(--silver)",
+                }}>R{p.round}/{String(i + 1).padStart(2, "0")}</span>
                 {isOnClock && <span className="mono hot-text" style={{ fontSize: 9, letterSpacing: "0.22em" }}>● LIVE</span>}
                 {isMade && <span className="mono" style={{ fontSize: 9, letterSpacing: "0.22em", color: "var(--green)" }}>● MADE</span>}
                 {isTraded && <span className="mono" style={{ fontSize: 9, letterSpacing: "0.22em", color: "var(--steel-2)" }}>↪ TRADED</span>}
               </div>
               <div className="stencil" style={{
-                fontSize: 48, lineHeight: 1, marginTop: 10,
+                fontSize: isMobile ? 34 : 48, lineHeight: 1, marginTop: isMobile ? 8 : 10,
                 color: isOnClock || isMade ? "var(--ivory)" : "var(--silver)",
                 textShadow: isOnClock ? "0 0 18px #FF2D3D55" : "none",
                 whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
               }}>
-                <span style={{ fontSize: 22, color: "var(--steel-2)", verticalAlign: "top" }}>#</span>
+                <span style={{ fontSize: isMobile ? 16 : 22, color: "var(--steel-2)", verticalAlign: "top" }}>#</span>
                 {p.overallPick}
               </div>
               <div className="display" style={{
@@ -494,6 +538,7 @@ function PickSlotBoard() {
 
 // ─── STAT RIBBON ────────────────────────────────────────────────────────────
 function StatRibbon({ rosterCounts }) {
+  const isMobile = useIsMobile();
   const stats = [
     { l: "ROSTER",   v: String(rosterCounts.total), sub: "POST-DRAFT" },
     { l: "ACTIVE",   v: String(rosterCounts.active), sub: "" },
@@ -507,14 +552,16 @@ function StatRibbon({ rosterCounts }) {
     <div style={{
       marginTop: 16,
       display: "grid",
-      gridTemplateColumns: `repeat(${stats.length}, minmax(0, 1fr))`,
+      gridTemplateColumns: isMobile
+        ? "repeat(3, minmax(0, 1fr))"
+        : `repeat(${stats.length}, minmax(0, 1fr))`,
       gap: 1, background: "#ffffff08",
       border: "1px solid #ffffff10",
     }}>
       {stats.map((s, i) => (
         <div key={s.l} style={{
           background: "var(--carbon)",
-          padding: "12px 14px",
+          padding: isMobile ? "10px 10px" : "12px 14px",
           position: "relative",
           minWidth: 0,
         }}>
@@ -526,7 +573,7 @@ function StatRibbon({ rosterCounts }) {
           <div className="mono" style={{ fontSize: 9, letterSpacing: "0.24em", color: "var(--silver)" }}>
             / {s.l}
           </div>
-          <div className="stencil" style={{ fontSize: 26, color: "var(--ivory)", lineHeight: 1, marginTop: 6, whiteSpace: "nowrap" }}>
+          <div className="stencil" style={{ fontSize: isMobile ? 20 : 26, color: "var(--ivory)", lineHeight: 1, marginTop: 6, whiteSpace: "nowrap" }}>
             {s.v}
           </div>
           {s.sub && (
@@ -814,6 +861,7 @@ const STAR_PROFILES = {
 };
 
 function StarRoster({ onPlayerClick }) {
+  const isMobile = useIsMobile();
   const stars = useMemo(() => {
     return Object.keys(STAR_PROFILES).map((id) => {
       const player = PLAYERS.find((p) => p.id === id);
@@ -832,7 +880,10 @@ function StarRoster({ onPlayerClick }) {
     <div style={{ marginTop: 20 }}>
       <SectionTitle bug meta="2025 TELEMETRY">STARS TO WATCH</SectionTitle>
       <div style={{
-        display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))",
+        display: "grid",
+        gridTemplateColumns: isMobile
+          ? "minmax(0, 1fr)"
+          : "repeat(auto-fill, minmax(340px, 1fr))",
         gap: 14, marginTop: 12,
       }}>
         {stars.map((p) => <PlayerTelemetryCard key={p.id} p={p} onClick={onPlayerClick} />)}
@@ -843,6 +894,7 @@ function StarRoster({ onPlayerClick }) {
 
 // ─── CAP FUEL GAUGE ─────────────────────────────────────────────────────────
 function CapFuelGauge() {
+  const isMobile = useIsMobile();
   const space = CAP_STATE.capSpaceSpotrac;
   const spaceMax = 80_000_000;
   const dead = CAP_STATE.deadMoney.total;
@@ -865,23 +917,23 @@ function CapFuelGauge() {
         <span className="name">CAP TELEMETRY · 2026</span>
         <span className="meta">RANK {CAP_STATE.leagueRank} / 32</span>
       </div>
-      <div style={{ padding: "18px 18px 16px", position: "relative" }}>
+      <div style={{ padding: isMobile ? "14px 14px 12px" : "18px 18px 16px", position: "relative" }}>
         <div style={{ display: "flex", alignItems: "baseline", gap: 16, marginBottom: 14, flexWrap: "wrap" }}>
           <div>
             <div className="mono" style={{ fontSize: 9, letterSpacing: "0.24em", color: "var(--silver)" }}>
               CAP SPACE / SPOTRAC
             </div>
-            <div className="stencil" style={{ fontSize: 56, lineHeight: 1, color: "var(--ivory)", marginTop: 4 }}>
-              <span style={{ color: "var(--steel-2)", fontSize: 30, verticalAlign: "top" }}>$</span>
+            <div className="stencil" style={{ fontSize: isMobile ? 38 : 56, lineHeight: 1, color: "var(--ivory)", marginTop: 4 }}>
+              <span style={{ color: "var(--steel-2)", fontSize: isMobile ? 22 : 30, verticalAlign: "top" }}>$</span>
               {(space / 1_000_000).toFixed(1)}
-              <span style={{ color: "var(--silver)", fontSize: 22, marginLeft: 4 }}>M</span>
+              <span style={{ color: "var(--silver)", fontSize: isMobile ? 16 : 22, marginLeft: 4 }}>M</span>
             </div>
           </div>
           <div style={{ marginLeft: "auto", textAlign: "right" }}>
             <div className="mono" style={{ fontSize: 9, letterSpacing: "0.24em", color: "var(--silver)" }}>
               DEAD MONEY
             </div>
-            <div className="stencil" style={{ fontSize: 26, lineHeight: 1, color: "var(--hot)", textShadow: "0 0 12px #FF2D3D55", marginTop: 4 }}>
+            <div className="stencil" style={{ fontSize: isMobile ? 22 : 26, lineHeight: 1, color: "var(--hot)", textShadow: "0 0 12px #FF2D3D55", marginTop: 4 }}>
               ${(dead / 1_000_000).toFixed(1)}M
             </div>
           </div>
@@ -952,7 +1004,11 @@ function CapFuelGauge() {
           </div>
         </div>
 
-        <div style={{ marginTop: 22, display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr))", gap: 10 }}>
+        <div style={{
+          marginTop: 22, display: "grid",
+          gridTemplateColumns: isMobile ? "minmax(0, 1fr)" : "repeat(3, minmax(0, 1fr))",
+          gap: 10,
+        }}>
           {CAP_STATE.pendingExtensions.map((e) => {
             const info = extensionLabels[e.playerId];
             if (!info) return null;
@@ -1087,6 +1143,7 @@ function NewsWire({ expanded }) {
 
 // ─── CALENDAR RAIL ──────────────────────────────────────────────────────────
 function CalendarRail() {
+  const isMobile = useIsMobile();
   const today = new Date();
   const upcoming = OFFSEASON_CALENDAR
     .filter((c) => new Date(c.date).getTime() >= today.getTime() - 86400000)
@@ -1107,8 +1164,8 @@ function CalendarRail() {
           return (
             <div key={c.id} style={{
               display: "grid",
-              gridTemplateColumns: "70px 100px 1fr",
-              gap: 0,
+              gridTemplateColumns: isMobile ? "60px 1fr" : "70px 100px 1fr",
+              gap: isMobile ? 8 : 0,
               padding: "10px 14px",
               borderBottom: i === upcoming.length - 1 ? "none" : "1px solid #ffffff08",
               background: hot ? "#170509" : "transparent",
@@ -1125,15 +1182,17 @@ function CalendarRail() {
                 color: hot ? "var(--hot)" : "var(--silver)",
                 letterSpacing: "0.16em", fontWeight: 600,
               }}>{dateLabel}</span>
-              <span className="mono" style={{
-                fontSize: 9, color: "var(--steel-2)", letterSpacing: "0.18em",
-              }}>{phaseLabel}</span>
+              {!isMobile && (
+                <span className="mono" style={{
+                  fontSize: 9, color: "var(--steel-2)", letterSpacing: "0.18em",
+                }}>{phaseLabel}</span>
+              )}
               <div>
                 <div className="stencil" style={{
                   fontSize: 13, color: "var(--ivory)", letterSpacing: "0.04em",
                 }}>{c.label}</div>
                 <div className="mono" style={{ fontSize: 9, color: "var(--silver)", letterSpacing: "0.12em", marginTop: 2 }}>
-                  {c.detail}
+                  {isMobile ? `${phaseLabel} · ${c.detail}` : c.detail}
                 </div>
               </div>
             </div>
@@ -1203,6 +1262,7 @@ function TopHitsList() {
 
 // ─── DIVISION STANDINGS ─────────────────────────────────────────────────────
 function StandingsPanel() {
+  const isMobile = useIsMobile();
   return (
     <div className="panel">
       <div className="panel-title">
@@ -1216,7 +1276,7 @@ function StandingsPanel() {
           return (
             <div key={t.code} style={{
               display: "grid",
-              gridTemplateColumns: "30px 50px 1fr 70px 80px",
+              gridTemplateColumns: isMobile ? "26px 46px 1fr 60px" : "30px 50px 1fr 70px 80px",
               alignItems: "center", padding: "12px 14px",
               borderBottom: i === NFC_SOUTH_STANDINGS_2025.length - 1 ? "none" : "1px solid #ffffff08",
               background: t.isFalcons ? "#170509" : "transparent",
@@ -1240,17 +1300,19 @@ function StandingsPanel() {
                 fontSize: 14, color: t.isFalcons ? "var(--ivory)" : "var(--silver)",
                 letterSpacing: "0.04em", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
               }}>{t.team.toUpperCase()}</span>
-              <span className="stencil" style={{ fontSize: 18, color: "var(--ivory)" }}>
+              <span className="stencil" style={{ fontSize: 18, color: "var(--ivory)", textAlign: "right" }}>
                 {t.wins}–{t.losses}
               </span>
-              <div style={{ position: "relative", height: 4, background: "#ffffff08" }}>
-                <div className="bar-grow" style={{
-                  position: "absolute", inset: 0,
-                  width: `${pct * 100}%`,
-                  background: t.isFalcons ? "var(--hot)" : "var(--steel-2)",
-                  boxShadow: t.isFalcons ? "0 0 6px #FF2D3D88" : "none",
-                }} />
-              </div>
+              {!isMobile && (
+                <div style={{ position: "relative", height: 4, background: "#ffffff08" }}>
+                  <div className="bar-grow" style={{
+                    position: "absolute", inset: 0,
+                    width: `${pct * 100}%`,
+                    background: t.isFalcons ? "var(--hot)" : "var(--steel-2)",
+                    boxShadow: t.isFalcons ? "0 0 6px #FF2D3D88" : "none",
+                  }} />
+                </div>
+              )}
             </div>
           );
         })}
@@ -1261,6 +1323,7 @@ function StandingsPanel() {
 
 // ─── PROSPECT BOARD (rookie class card grid) ────────────────────────────────
 function ProspectBoard() {
+  const isMobile = useIsMobile();
   const [pos, setPos] = useState("ALL");
   const targets = DRAFT_DATA.topTargets || [];
   const filtered = pos === "ALL" ? targets : targets.filter((p) => p.position === pos);
@@ -1300,7 +1363,9 @@ function ProspectBoard() {
           return (
             <div key={p.id} style={{
               display: "grid",
-              gridTemplateColumns: "32px 1.4fr 60px 0.8fr 70px 60px 1fr",
+              gridTemplateColumns: isMobile
+                ? "28px 1fr 44px 40px"
+                : "32px 1.4fr 60px 0.8fr 70px 60px 1fr",
               alignItems: "center",
               padding: "10px 14px",
               borderBottom: i === filtered.length - 1 ? "none" : "1px solid #ffffff08",
@@ -1310,34 +1375,42 @@ function ProspectBoard() {
                 {String(i + 1).padStart(2, "0")}
               </span>
               <div style={{ minWidth: 0 }}>
-                <div className="stencil" style={{ fontSize: 15, color: "var(--ivory)", letterSpacing: "0.01em", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+                <div className="stencil" style={{ fontSize: isMobile ? 13 : 15, color: "var(--ivory)", letterSpacing: "0.01em", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
                   {p.name.toUpperCase()}
                 </div>
-                <div className="mono" style={{ fontSize: 9, color: "var(--silver)", letterSpacing: "0.16em", marginTop: 2, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-                  {p.college.toUpperCase()} · {ftIn}'{inn}" · {p.weight} LBS
+                <div className="mono" style={{ fontSize: 9, color: "var(--silver)", letterSpacing: "0.14em", marginTop: 2, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+                  {isMobile
+                    ? `${p.college.toUpperCase()} · 40 ${p.fortyTime ? p.fortyTime.toFixed(2) : "—"}`
+                    : `${p.college.toUpperCase()} · ${ftIn}'${inn}" · ${p.weight} LBS`}
                 </div>
               </div>
               <span className="display" style={{
                 fontSize: 11, letterSpacing: "0.18em",
                 padding: "3px 8px", background: "var(--red)", color: "#fff", textAlign: "center",
               }}>{p.position}</span>
-              <div className="mono" style={{ fontSize: 11, color: "var(--silver)", letterSpacing: "0.12em" }}>
-                40 / <span style={{ color: "var(--ivory)" }}>{p.fortyTime ? p.fortyTime.toFixed(2) : "—"}</span>
-              </div>
-              <div className="mono" style={{ fontSize: 11, color: "var(--silver)", letterSpacing: "0.12em", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-                {p.projection ? p.projection.split(" ")[0].toUpperCase() : "—"}
-              </div>
-              <div className="stencil" style={{ fontSize: 18, color: fit > 85 ? "var(--hot)" : "var(--ivory)", textShadow: fit > 85 ? "0 0 8px #FF2D3D55" : "none" }}>
+              {!isMobile && (
+                <div className="mono" style={{ fontSize: 11, color: "var(--silver)", letterSpacing: "0.12em" }}>
+                  40 / <span style={{ color: "var(--ivory)" }}>{p.fortyTime ? p.fortyTime.toFixed(2) : "—"}</span>
+                </div>
+              )}
+              {!isMobile && (
+                <div className="mono" style={{ fontSize: 11, color: "var(--silver)", letterSpacing: "0.12em", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+                  {p.projection ? p.projection.split(" ")[0].toUpperCase() : "—"}
+                </div>
+              )}
+              <div className="stencil" style={{ fontSize: isMobile ? 16 : 18, color: fit > 85 ? "var(--hot)" : "var(--ivory)", textShadow: fit > 85 ? "0 0 8px #FF2D3D55" : "none", textAlign: "center" }}>
                 {fit}
               </div>
-              <div style={{ position: "relative", height: 6, background: "#ffffff08" }}>
-                <div className="bar-grow" style={{
-                  position: "absolute", inset: 0,
-                  width: `${fit}%`,
-                  background: fit > 85 ? "var(--hot)" : "var(--red)",
-                  boxShadow: fit > 85 ? "0 0 6px #FF2D3D88" : "none",
-                }} />
-              </div>
+              {!isMobile && (
+                <div style={{ position: "relative", height: 6, background: "#ffffff08" }}>
+                  <div className="bar-grow" style={{
+                    position: "absolute", inset: 0,
+                    width: `${fit}%`,
+                    background: fit > 85 ? "var(--hot)" : "var(--red)",
+                    boxShadow: fit > 85 ? "0 0 6px #FF2D3D88" : "none",
+                  }} />
+                </div>
+              )}
             </div>
           );
         })}
@@ -1348,25 +1421,28 @@ function ProspectBoard() {
 
 // ─── PLAYER DETAIL MODAL ────────────────────────────────────────────────────
 function PlayerDetailModal({ player, onClose }) {
+  const isMobile = useIsMobile();
   if (!player) return null;
   const cap = player.contract?.cap2026;
   return (
     <div onClick={onClose} style={{
       position: "fixed", inset: 0, background: "#000000d0", zIndex: 1000,
-      display: "flex", alignItems: "center", justifyContent: "center", padding: 20,
+      display: "flex", alignItems: "center", justifyContent: "center",
+      padding: isMobile ? 8 : 20,
     }}>
       <div onClick={(e) => e.stopPropagation()} className="panel" style={{
-        maxWidth: 720, width: "100%", maxHeight: "85vh", overflowY: "auto",
+        maxWidth: 720, width: "100%", maxHeight: isMobile ? "92vh" : "85vh", overflowY: "auto",
       }}>
         <div className="panel-title">
           <span className="bug" />
           <span className="name">PLAYER DOSSIER</span>
           <span className="meta" style={{ cursor: "pointer" }} onClick={onClose}>CLOSE ✕</span>
         </div>
-        <div style={{ padding: 20, position: "relative" }}>
-          <div style={{ display: "flex", gap: 18, alignItems: "flex-start", flexWrap: "wrap" }}>
+        <div style={{ padding: isMobile ? 14 : 20, position: "relative" }}>
+          <div style={{ display: "flex", gap: isMobile ? 12 : 18, alignItems: "flex-start", flexWrap: "wrap" }}>
             <div style={{
-              position: "relative", flexShrink: 0, width: 110, height: 110,
+              position: "relative", flexShrink: 0,
+              width: isMobile ? 84 : 110, height: isMobile ? 84 : 110,
               background: "linear-gradient(135deg, #1A0508 0%, #0B0C0F 70%)",
               border: "1px solid #ffffff10",
               display: "flex", alignItems: "center", justifyContent: "center",
@@ -1378,14 +1454,14 @@ function PlayerDetailModal({ player, onClose }) {
                   onError={(e) => { e.currentTarget.style.display = "none"; }}
                 />
               ) : (
-                <span className="stencil" style={{ fontSize: 48, color: "var(--hot)" }}>{player.number}</span>
+                <span className="stencil" style={{ fontSize: isMobile ? 36 : 48, color: "var(--hot)" }}>{player.number}</span>
               )}
             </div>
             <div style={{ minWidth: 0, flex: 1 }}>
               <div className="mono" style={{ fontSize: 9, letterSpacing: "0.24em", color: "var(--silver)" }}>
                 #{player.number} / {player.position} / {player.college.toUpperCase()}
               </div>
-              <div className="stencil" style={{ fontSize: 28, color: "var(--ivory)", letterSpacing: "0.02em", marginTop: 4 }}>
+              <div className="stencil" style={{ fontSize: isMobile ? 22 : 28, color: "var(--ivory)", letterSpacing: "0.02em", marginTop: 4 }}>
                 {player.name.toUpperCase()}
               </div>
               <div className="mono" style={{ fontSize: 11, color: "var(--silver)", letterSpacing: "0.12em", marginTop: 8 }}>
@@ -1440,6 +1516,7 @@ function PlayerDetailModal({ player, onClose }) {
 
 // ─── VIEWS ──────────────────────────────────────────────────────────────────
 function DashboardView({ rosterCounts, currentPhase, onPlayerClick }) {
+  const isMobile = useIsMobile();
   return (
     <>
       <HeroBroadcast currentPhase={currentPhase} />
@@ -1448,7 +1525,7 @@ function DashboardView({ rosterCounts, currentPhase, onPlayerClick }) {
       <StarRoster onPlayerClick={onPlayerClick} />
       <div style={{
         marginTop: 20, display: "grid",
-        gridTemplateColumns: "minmax(0, 1.7fr) minmax(0, 1fr)",
+        gridTemplateColumns: isMobile ? "minmax(0, 1fr)" : "minmax(0, 1.7fr) minmax(0, 1fr)",
         gap: 16,
       }}>
         <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
@@ -1466,10 +1543,15 @@ function DashboardView({ rosterCounts, currentPhase, onPlayerClick }) {
 }
 
 function DraftView({ currentPhase }) {
+  const isMobile = useIsMobile();
   return (
     <>
       <HeroBroadcast currentPhase={currentPhase} />
-      <div style={{ marginTop: 20, display: "grid", gridTemplateColumns: "minmax(0, 1fr) minmax(0, 1fr)", gap: 16 }}>
+      <div style={{
+        marginTop: 20, display: "grid",
+        gridTemplateColumns: isMobile ? "minmax(0, 1fr)" : "minmax(0, 1fr) minmax(0, 1fr)",
+        gap: 16,
+      }}>
         <PickSlotBoard />
         <ProspectBoard />
       </div>
@@ -1478,8 +1560,13 @@ function DraftView({ currentPhase }) {
 }
 
 function WireView() {
+  const isMobile = useIsMobile();
   return (
-    <div style={{ display: "grid", gridTemplateColumns: "minmax(0, 2fr) minmax(0, 1fr)", gap: 16 }}>
+    <div style={{
+      display: "grid",
+      gridTemplateColumns: isMobile ? "minmax(0, 1fr)" : "minmax(0, 2fr) minmax(0, 1fr)",
+      gap: 16,
+    }}>
       <NewsWire expanded />
       <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
         <CalendarRail />
@@ -1546,6 +1633,7 @@ function Footer() {
 export default function FalconsTracker() {
   const [view, setView] = useState("dashboard");
   const [selectedPlayer, setSelectedPlayer] = useState(null);
+  const isMobile = useIsMobile();
 
   const today = new Date();
   const currentPhase = getCurrentPhase(today);
@@ -1557,11 +1645,14 @@ export default function FalconsTracker() {
   }), []);
 
   return (
-    <div style={{ minHeight: "100vh", background: "var(--void)" }}>
+    <div style={{ minHeight: "100vh", background: "var(--void)", overflowX: "hidden" }}>
       <TopBar view={view} setView={setView} currentPhase={currentPhase} />
       <ChapterRail currentPhase={currentPhase} />
 
-      <div style={{ maxWidth: 1480, margin: "0 auto", padding: "20px 20px 40px" }}>
+      <div style={{
+        maxWidth: 1480, margin: "0 auto",
+        padding: isMobile ? "14px 12px 32px" : "20px 20px 40px",
+      }}>
         {view === "dashboard" && (
           <DashboardView rosterCounts={rosterCounts} currentPhase={currentPhase} onPlayerClick={setSelectedPlayer} />
         )}

@@ -1,4 +1,16 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+
+function useIsMobile(breakpoint = 768) {
+  const [isMobile, setIsMobile] = useState(() =>
+    typeof window !== "undefined" && window.innerWidth < breakpoint
+  );
+  useEffect(() => {
+    const handler = () => setIsMobile(window.innerWidth < breakpoint);
+    window.addEventListener("resize", handler);
+    return () => window.removeEventListener("resize", handler);
+  }, [breakpoint]);
+  return isMobile;
+}
 
 // ─── Atlanta Falcons Depth Chart ────────────────────────────────────────────
 // Broadcast lineup: starting-22 chyron. Angular position pills, stencil jersey
@@ -177,6 +189,7 @@ function Legend({ swatch, children }) {
 
 export default function DepthChartView({ players, currentPhase, onPlayerClick }) {
   const [side, setSide] = useState("offense");
+  const isMobile = useIsMobile();
 
   const byGroup = useMemo(() => {
     const map = { offense: [], defense: [], special: [] };
@@ -203,11 +216,15 @@ export default function DepthChartView({ players, currentPhase, onPlayerClick })
   return (
     <div>
       <div className="panel" style={{ display: "flex", padding: 0, alignItems: "stretch", flexWrap: "wrap" }}>
-        <div style={{ padding: "16px 22px", borderRight: "1px solid #ffffff10" }}>
+        <div style={{
+          padding: isMobile ? "12px 14px" : "16px 22px",
+          borderRight: "1px solid #ffffff10",
+          flex: isMobile ? "1 1 100%" : "0 0 auto",
+        }}>
           <div className="mono" style={{ fontSize: 9, letterSpacing: "0.28em", color: "var(--silver)" }}>
             ▎ STARTING UNIT
           </div>
-          <div className="stencil" style={{ fontSize: 28, color: "var(--ivory)", marginTop: 4, lineHeight: 1 }}>
+          <div className="stencil" style={{ fontSize: isMobile ? 22 : 28, color: "var(--ivory)", marginTop: 4, lineHeight: 1 }}>
             DEPTH CHART
           </div>
           <div className="mono" style={{ fontSize: 9, letterSpacing: "0.18em", color: "var(--steel-2)", marginTop: 6 }}>
@@ -222,9 +239,10 @@ export default function DepthChartView({ players, currentPhase, onPlayerClick })
               background: active ? "#160407" : "transparent",
               cursor: "pointer",
               fontFamily: "var(--display)", fontWeight: 700,
-              fontSize: 16, letterSpacing: "0.22em",
+              fontSize: isMobile ? 12 : 16,
+              letterSpacing: isMobile ? "0.16em" : "0.22em",
               color: active ? "var(--ivory)" : "var(--silver)",
-              padding: "16px 18px",
+              padding: isMobile ? "12px 8px" : "16px 18px",
               position: "relative",
             }}>
               {active && (
@@ -241,7 +259,9 @@ export default function DepthChartView({ players, currentPhase, onPlayerClick })
       <div style={{
         marginTop: 16,
         display: "grid",
-        gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))",
+        gridTemplateColumns: isMobile
+          ? "minmax(0, 1fr)"
+          : "repeat(auto-fill, minmax(220px, 1fr))",
         gap: 1,
         background: "#ffffff08",
         border: "1px solid #ffffff10",
