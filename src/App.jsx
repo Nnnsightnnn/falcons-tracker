@@ -482,80 +482,250 @@ function HeroBroadcast({ currentPhase }) {
 }
 
 // ─── PICK SLOT BOARD ────────────────────────────────────────────────────────
+const PICK_POS_COLORS = {
+  QB: "#C9A227", RB: "#2ECC71", WR: "#3498DB", TE: "#9B59B6",
+  OT: "#95A5A6", OG: "#7F8C8D", C: "#BDC3C7",
+  DE: "#E74C3C", EDGE: "#E67E22", DT: "#C0392B",
+  LB: "#D35400", CB: "#1ABC9C", S: "#16A085",
+  K: "#F39C12", P: "#D68910", LS: "#B9770E",
+};
+
+function matchPickProspect(pick, targets) {
+  if (!pick.selection) return null;
+  const selName = pick.selection.split("·")[0].trim().toLowerCase();
+  return targets.find((t) => {
+    const norm = t.name.toLowerCase().replace(/\s+jr\.?$/, "");
+    return selName === t.name.toLowerCase() || selName.startsWith(norm);
+  }) || null;
+}
+
+// Vertical "draft ledger" — one horizontal ticket row per pick. Reads at any
+// width; the rich dossier lives in the adjacent ROOKIE CLASS panel.
 function PickSlotBoard() {
   const isMobile = useIsMobile();
   const picks = DRAFT_DATA.falconsPicks;
+  const targets = DRAFT_DATA.topTargets || [];
+  const [openId, setOpenId] = useState(null);
+  const openProspect = openId ? targets.find((t) => t.id === openId) : null;
+  const madeCount = picks.filter((p) => p.status === "made").length;
+
   return (
     <div className="panel" style={{ marginTop: 20 }}>
       <div className="panel-title">
         <span className="bug" />
         <span className="name">FALCONS BOARD · {picks.length} SLOTS</span>
-        <span className="meta">CLASS OF '26</span>
+        <span className="meta">{madeCount} MADE · CLASS '26</span>
       </div>
-      <div style={{
+      <div role="list" style={{ display: "flex", flexDirection: "column" }}>
+        {picks.map((p, i) => (
+          <PickTicket
+            key={p.overallPick}
+            pick={p}
+            prospect={matchPickProspect(p, targets)}
+            isMobile={isMobile}
+            isLast={i === picks.length - 1}
+            onOpen={(id) => setOpenId(id)}
+          />
+        ))}
+      </div>
+      {openProspect && (
+        <RookieDetailModal prospect={openProspect} onClose={() => setOpenId(null)} />
+      )}
+    </div>
+  );
+}
+
+function PickTicket({ pick: p, prospect, isMobile, isLast, onOpen }) {
+  const isMade = p.status === "made";
+  const isTraded = p.status === "traded";
+  const isOnClock = p.status === "on-clock";
+  const accent = isOnClock ? "var(--hot)" : isMade ? "var(--green)" : isTraded ? "var(--steel-2)" : "var(--steel)";
+  const posColor = prospect ? (PICK_POS_COLORS[prospect.position] || "#A71930") : null;
+  const initials = prospect
+    ? prospect.name.split(/\s+/).slice(0, 2).map((s) => s[0]).join("").toUpperCase()
+    : null;
+  const clickable = !!prospect;
+  const baseBg = isOnClock ? "#170509" : "transparent";
+  const hoverBg = "#1a1c22";
+  const tradeSummary = p.tradeNote ? p.tradeNote.split(".")[0] : "";
+
+  return (
+    <div
+      role="listitem"
+      onClick={clickable ? () => onOpen(prospect.id) : undefined}
+      tabIndex={clickable ? 0 : undefined}
+      onKeyDown={clickable ? (e) => {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onOpen(prospect.id); }
+      } : undefined}
+      onMouseEnter={clickable ? (e) => { e.currentTarget.style.background = hoverBg; } : undefined}
+      onMouseLeave={clickable ? (e) => { e.currentTarget.style.background = baseBg; } : undefined}
+      style={{
         display: "grid",
         gridTemplateColumns: isMobile
-          ? "repeat(2, minmax(0, 1fr))"
-          : `repeat(${picks.length}, minmax(0, 1fr))`,
-        gap: 1, background: "#ffffff08",
+          ? "3px 64px minmax(0, 1fr) auto"
+          : "3px 92px 44px minmax(0, 1fr) auto",
+        alignItems: "center",
+        gap: isMobile ? 10 : 14,
+        padding: isMobile ? "12px 12px 12px 0" : "14px 16px 14px 0",
+        background: baseBg,
+        borderBottom: isLast ? "none" : "1px solid #ffffff08",
+        opacity: isTraded ? 0.62 : 1,
+        cursor: clickable ? "pointer" : "default",
+        transition: "background 120ms ease",
+        position: "relative",
+        minHeight: isMobile ? 60 : 72,
+      }}
+    >
+      <div style={{
+        alignSelf: "stretch",
+        background: accent,
+        boxShadow: isOnClock ? "var(--hot-glow)" : "none",
+      }} />
+
+      <div style={{
+        display: "flex", flexDirection: "column",
+        paddingLeft: isMobile ? 6 : 12,
+        paddingRight: isMobile ? 8 : 14,
+        alignSelf: "stretch", justifyContent: "center",
+        borderRight: "1px solid #ffffff08",
       }}>
-        {picks.map((p, i) => {
-          const isMade = p.status === "made";
-          const isTraded = p.status === "traded";
-          const isOnClock = p.status === "on-clock";
-          const accent = isOnClock ? "var(--hot)" : isMade ? "var(--red)" : isTraded ? "var(--steel)" : "transparent";
-          const slotName = p.selection ? p.selection.split("·")[0].trim() : (isTraded ? "TRADED" : "SCHEDULED");
-          const slotPos = p.selection ? p.selection.split("·")[1]?.trim() : null;
-          return (
-            <div key={p.overallPick} style={{
-              background: isOnClock ? "#170509" : "var(--carbon)",
-              padding: isMobile ? "12px 10px 10px" : "16px 14px 14px",
-              position: "relative",
-              borderTop: `2px solid ${accent}`,
-              opacity: isTraded ? 0.55 : 1,
-              minWidth: 0,
-            }}>
-              {isOnClock && (
-                <div className="hot-bar bar-grow" style={{
-                  position: "absolute", top: 0, left: 0, right: 0, height: 2,
-                }} />
-              )}
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: 4 }}>
-                <span className="mono" style={{
-                  fontSize: isMobile ? 9 : 10, letterSpacing: "0.18em", color: "var(--silver)",
-                }}>R{p.round}/{String(i + 1).padStart(2, "0")}</span>
-                {isOnClock && <span className="mono hot-text" style={{ fontSize: 9, letterSpacing: "0.22em" }}>● LIVE</span>}
-                {isMade && <span className="mono" style={{ fontSize: 9, letterSpacing: "0.22em", color: "var(--green)" }}>● MADE</span>}
-                {isTraded && <span className="mono" style={{ fontSize: 9, letterSpacing: "0.22em", color: "var(--steel-2)" }}>↪ TRADED</span>}
-              </div>
-              <div className="stencil" style={{
-                fontSize: isMobile ? 34 : 48, lineHeight: 1, marginTop: isMobile ? 8 : 10,
-                color: isOnClock || isMade ? "var(--ivory)" : "var(--silver)",
-                textShadow: isOnClock ? "0 0 18px #FF2D3D55" : "none",
-                whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
-              }}>
-                <span style={{ fontSize: isMobile ? 16 : 22, color: "var(--steel-2)", verticalAlign: "top" }}>#</span>
-                {p.overallPick}
-              </div>
-              <div className="display" style={{
-                fontFamily: "var(--stencil)",
-                fontSize: 13, letterSpacing: "0.04em", marginTop: 8,
-                color: "var(--ivory)",
-                whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
-              }}>
-                {slotName}
-              </div>
-              <div className="mono" style={{
-                fontSize: 9, letterSpacing: "0.18em", color: "var(--steel-2)", marginTop: 4,
-                whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
-              }}>
-                {slotPos ? `${slotPos}` : (p.tradeNote ? p.tradeNote.split(".")[0] : "")}
-              </div>
-            </div>
-          );
-        })}
+        <span className="mono" style={{
+          fontSize: 9, letterSpacing: "0.24em", color: "var(--steel-2)", lineHeight: 1,
+        }}>
+          ROUND {p.round}
+        </span>
+        <span className="stencil" style={{
+          fontSize: isMobile ? 22 : 26, lineHeight: 1, marginTop: 6,
+          color: isOnClock ? "var(--hot)" : "var(--ivory)",
+          textShadow: isOnClock ? "0 0 12px #FF2D3D55" : "none",
+        }}>
+          <span style={{ fontSize: isMobile ? 12 : 14, color: "var(--steel-2)", verticalAlign: "top", marginRight: 1 }}>#</span>
+          {p.overallPick}
+        </span>
       </div>
+
+      {!isMobile && (
+        <div style={{
+          width: 44, height: 44,
+          background: prospect
+            ? `linear-gradient(140deg, ${posColor}3a 0%, ${posColor}12 60%, #0B0C0F 100%)`
+            : "linear-gradient(140deg, #1A0508 0%, #0B0C0F 80%)",
+          border: `1px solid ${prospect ? posColor + "40" : "#ffffff10"}`,
+          display: "flex", alignItems: "center", justifyContent: "center",
+          overflow: "hidden", flexShrink: 0,
+        }}>
+          {prospect?.headshot ? (
+            <img src={prospect.headshot} alt={prospect.name}
+              style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }}
+              onError={(e) => { e.currentTarget.style.display = "none"; }}
+            />
+          ) : prospect ? (
+            <span className="stencil" style={{
+              fontSize: 14, color: posColor, letterSpacing: "0.04em",
+              textShadow: `0 0 10px ${posColor}66`,
+            }}>
+              {initials}
+            </span>
+          ) : (
+            <span className="mono" style={{ fontSize: 12, color: "var(--steel-2)", letterSpacing: "0.18em" }}>
+              {isTraded ? "↪" : "—"}
+            </span>
+          )}
+        </div>
+      )}
+
+      <div style={{ minWidth: 0 }}>
+        {prospect ? (
+          <>
+            <div className="stencil" style={{
+              fontSize: isMobile ? 14 : 16, lineHeight: 1.1,
+              color: "var(--ivory)", letterSpacing: "0.02em",
+              whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
+            }}>
+              {prospect.name.toUpperCase()}
+            </div>
+            <div className="mono" style={{
+              fontSize: isMobile ? 9 : 10, letterSpacing: "0.16em",
+              color: "var(--silver)", marginTop: 4,
+              whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
+            }}>
+              {prospect.college.toUpperCase()}
+              {p.tradeNote && <span style={{ color: "var(--steel-2)", marginLeft: 8 }}>↪ VIA TRADE</span>}
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="display" style={{
+              fontSize: isMobile ? 12 : 13, letterSpacing: "0.18em",
+              color: "var(--silver)", lineHeight: 1.1,
+            }}>
+              {isTraded ? "TRADED" : "ON DECK"}
+            </div>
+            {tradeSummary && (
+              <div className="mono" style={{
+                fontSize: isMobile ? 9 : 10, color: "var(--steel-2)", marginTop: 4,
+                letterSpacing: "0.04em", lineHeight: 1.35,
+                whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
+              }}>
+                {tradeSummary}
+              </div>
+            )}
+          </>
+        )}
+      </div>
+
+      <div style={{
+        display: "flex", alignItems: "center", gap: isMobile ? 6 : 10, flexShrink: 0,
+      }}>
+        {prospect && <PosChip pos={prospect.position} color={posColor} compact={isMobile} />}
+        <StatusBadge status={p.status} compact={isMobile} />
+        {clickable && !isMobile && (
+          <span aria-hidden="true" style={{
+            fontSize: 14, color: "var(--steel-2)", paddingLeft: 4, lineHeight: 1,
+          }}>
+            ›
+          </span>
+        )}
+      </div>
+
+      {isOnClock && (
+        <div className="hot-bar bar-grow" style={{
+          position: "absolute", left: 0, right: 0, bottom: -1, height: 1,
+        }} />
+      )}
     </div>
+  );
+}
+
+function PosChip({ pos, color, compact }) {
+  return (
+    <span className="display" style={{
+      fontSize: compact ? 9 : 10, letterSpacing: "0.20em",
+      padding: compact ? "3px 6px" : "4px 8px",
+      background: color, color: "#0B0C0F", fontWeight: 800,
+      lineHeight: 1, whiteSpace: "nowrap",
+    }}>
+      {pos}
+    </span>
+  );
+}
+
+function StatusBadge({ status, compact }) {
+  const map = {
+    made:       { label: "MADE",    color: "var(--green)",   dot: "●", glow: false },
+    "on-clock": { label: "LIVE",    color: "var(--hot)",     dot: "●", glow: true  },
+    traded:     { label: "TRADED",  color: "var(--steel-2)", dot: "↪", glow: false },
+    scheduled:  { label: "ON DECK", color: "var(--silver)",  dot: "○", glow: false },
+  };
+  const cfg = map[status] || map.scheduled;
+  return (
+    <span className="mono" style={{
+      fontSize: compact ? 9 : 10, letterSpacing: "0.22em", color: cfg.color,
+      lineHeight: 1, fontWeight: 600, whiteSpace: "nowrap",
+      textShadow: cfg.glow ? "0 0 8px #FF2D3D55" : "none",
+    }}>
+      {cfg.dot} {cfg.label}
+    </span>
   );
 }
 
@@ -1871,15 +2041,10 @@ function DashboardView({ rosterCounts, currentPhase, onPlayerClick }) {
 }
 
 function DraftView({ currentPhase }) {
-  const isMobile = useIsMobile();
   return (
     <>
       <HeroBroadcast currentPhase={currentPhase} />
-      <div style={{
-        marginTop: 20, display: "grid",
-        gridTemplateColumns: isMobile ? "minmax(0, 1fr)" : "minmax(0, 1fr) minmax(0, 1fr)",
-        gap: 16,
-      }}>
+      <div style={{ marginTop: 20, display: "flex", flexDirection: "column", gap: 16 }}>
         <PickSlotBoard />
         <ProspectBoard />
       </div>
