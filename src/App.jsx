@@ -1348,16 +1348,18 @@ function StandingsPanel() {
 function ProspectBoard() {
   const isMobile = useIsMobile();
   const [pos, setPos] = useState("ALL");
+  const [openId, setOpenId] = useState(null);
   const targets = DRAFT_DATA.topTargets || [];
   const filtered = pos === "ALL" ? targets : targets.filter((p) => p.position === pos);
   const allPositions = Array.from(new Set(targets.map((t) => t.position)));
   const tabs = ["ALL", ...allPositions];
+  const openProspect = filtered.find((p) => p.id === openId) || targets.find((p) => p.id === openId);
   return (
     <div className="panel">
       <div className="panel-title">
         <span className="bug" />
-        <span className="name">PROSPECT INTEL · BIG BOARD</span>
-        <span className="meta">{filtered.length} TARGETS</span>
+        <span className="name">ROOKIE CLASS · DOSSIERS</span>
+        <span className="meta">{filtered.length} ROOKIES · TAP CARD</span>
       </div>
       <div style={{
         display: "flex", borderBottom: "1px solid #ffffff10",
@@ -1379,64 +1381,367 @@ function ProspectBoard() {
         })}
       </div>
       <div>
-        {filtered.map((p, i) => {
-          const fit = p.fortyTime ? Math.max(40, Math.min(99, Math.round(100 - (p.fortyTime - 4.3) * 30))) : 75;
-          const ftIn = Math.floor(p.heightIn / 12);
-          const inn = p.heightIn % 12;
-          return (
-            <div key={p.id} style={{
-              display: "grid",
-              gridTemplateColumns: isMobile
-                ? "28px 1fr 44px 40px"
-                : "32px 1.4fr 60px 0.8fr 70px 60px 1fr",
-              alignItems: "center",
-              padding: "10px 14px",
-              borderBottom: i === filtered.length - 1 ? "none" : "1px solid #ffffff08",
-              gap: 8,
-            }}>
-              <span className="mono" style={{ fontSize: 11, color: "var(--steel-2)", letterSpacing: "0.16em" }}>
-                {String(i + 1).padStart(2, "0")}
+        {filtered.map((p, i) => (
+          <ProspectCard
+            key={p.id}
+            prospect={p}
+            rank={i + 1}
+            isLast={i === filtered.length - 1}
+            isMobile={isMobile}
+            onOpen={() => setOpenId(p.id)}
+          />
+        ))}
+      </div>
+      {openProspect && (
+        <RookieDetailModal prospect={openProspect} onClose={() => setOpenId(null)} />
+      )}
+    </div>
+  );
+}
+
+// ─── PROSPECT CARD (inline row with rich combine + scouting summary) ─────────
+function ProspectCard({ prospect: p, rank, isLast, isMobile, onOpen }) {
+  const fit = p.fortyTime ? Math.max(40, Math.min(99, Math.round(100 - (p.fortyTime - 4.3) * 30))) : 75;
+  const ftIn = Math.floor(p.heightIn / 12);
+  const inn = p.heightIn % 12;
+  const c = p.combine || {};
+  // Build inline combine line with only present values.
+  const combineBits = [
+    c.fortyYd != null ? `40 ${Number(c.fortyYd).toFixed(2)}` : (p.fortyTime ? `40 ${Number(p.fortyTime).toFixed(2)}` : null),
+    c.verticalIn != null ? `VERT ${c.verticalIn}"` : null,
+    c.broadJumpIn != null ? `BROAD ${Math.floor(c.broadJumpIn / 12)}'${c.broadJumpIn % 12}"` : null,
+    c.benchReps != null ? `BENCH ${c.benchReps}` : null,
+    c.threeConeSec != null ? `3-CONE ${Number(c.threeConeSec).toFixed(2)}` : null,
+    c.shuttleSec != null ? `SHUTTLE ${Number(c.shuttleSec).toFixed(2)}` : null,
+  ].filter(Boolean);
+  const combineSrc = c.source === "pro-day" ? "PRO DAY" : c.source === "combine" ? "COMBINE" : null;
+  return (
+    <div
+      onClick={onOpen}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onOpen(); } }}
+      style={{
+        padding: isMobile ? "12px 14px" : "14px 16px",
+        borderBottom: isLast ? "none" : "1px solid #ffffff08",
+        cursor: "pointer",
+        transition: "background 120ms ease",
+      }}
+      onMouseEnter={(e) => { e.currentTarget.style.background = "#ffffff04"; }}
+      onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; }}
+    >
+      {/* Header: rank, name, position, fit grade */}
+      <div style={{
+        display: "grid",
+        gridTemplateColumns: isMobile ? "28px 1fr auto 44px" : "32px 1fr 70px 56px 70px",
+        alignItems: "center",
+        gap: 10,
+      }}>
+        <span className="mono" style={{ fontSize: 11, color: "var(--steel-2)", letterSpacing: "0.16em" }}>
+          {String(rank).padStart(2, "0")}
+        </span>
+        <div style={{ minWidth: 0 }}>
+          <div className="stencil" style={{ fontSize: isMobile ? 14 : 16, color: "var(--ivory)", letterSpacing: "0.01em", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+            {p.name.toUpperCase()}
+          </div>
+          <div className="mono" style={{ fontSize: 9, color: "var(--silver)", letterSpacing: "0.14em", marginTop: 2, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+            {p.college.toUpperCase()} · {ftIn}'{inn}" · {p.weight} LBS · AGE {p.age}
+          </div>
+        </div>
+        <span className="display" style={{
+          fontSize: 11, letterSpacing: "0.18em",
+          padding: "3px 8px", background: "var(--red)", color: "#fff", textAlign: "center",
+        }}>{p.position}</span>
+        {!isMobile && (
+          <div className="mono" style={{ fontSize: 9, color: "var(--silver)", letterSpacing: "0.14em", textAlign: "right", whiteSpace: "nowrap" }}>
+            {p.projection ? p.projection.toUpperCase() : "—"}
+          </div>
+        )}
+        <div style={{ textAlign: "center" }}>
+          <div className="stencil" style={{ fontSize: isMobile ? 18 : 22, color: fit > 85 ? "var(--hot)" : "var(--ivory)", textShadow: fit > 85 ? "0 0 8px #FF2D3D55" : "none" }}>
+            {fit}
+          </div>
+          <div className="mono" style={{ fontSize: 7, color: "var(--steel-2)", letterSpacing: "0.18em", marginTop: 1 }}>
+            FIT
+          </div>
+        </div>
+      </div>
+
+      {isMobile && p.projection && (
+        <div className="mono" style={{ fontSize: 9, color: "var(--silver)", letterSpacing: "0.14em", marginTop: 6 }}>
+          {p.projection.toUpperCase()}
+        </div>
+      )}
+
+      {/* Combine strip */}
+      {combineBits.length > 0 && (
+        <div style={{
+          marginTop: 10,
+          padding: "8px 10px",
+          background: "#0B0C0F",
+          borderLeft: "2px solid var(--red)",
+          display: "flex",
+          flexWrap: "wrap",
+          gap: isMobile ? 8 : 14,
+          alignItems: "center",
+        }}>
+          {combineSrc && (
+            <span className="mono" style={{ fontSize: 8, color: "var(--steel-2)", letterSpacing: "0.22em" }}>
+              {combineSrc}
+            </span>
+          )}
+          {combineBits.map((bit, k) => {
+            const [label, ...rest] = bit.split(" ");
+            const val = rest.join(" ");
+            return (
+              <span key={k} className="mono" style={{ fontSize: isMobile ? 10 : 11, color: "var(--silver)", letterSpacing: "0.10em", whiteSpace: "nowrap" }}>
+                {label} <span style={{ color: "var(--ivory)" }}>{val}</span>
               </span>
-              <div style={{ minWidth: 0 }}>
-                <div className="stencil" style={{ fontSize: isMobile ? 13 : 15, color: "var(--ivory)", letterSpacing: "0.01em", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-                  {p.name.toUpperCase()}
-                </div>
-                <div className="mono" style={{ fontSize: 9, color: "var(--silver)", letterSpacing: "0.14em", marginTop: 2, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-                  {isMobile
-                    ? `${p.college.toUpperCase()} · 40 ${p.fortyTime ? p.fortyTime.toFixed(2) : "—"}`
-                    : `${p.college.toUpperCase()} · ${ftIn}'${inn}" · ${p.weight} LBS`}
-                </div>
-              </div>
-              <span className="display" style={{
-                fontSize: 11, letterSpacing: "0.18em",
-                padding: "3px 8px", background: "var(--red)", color: "#fff", textAlign: "center",
-              }}>{p.position}</span>
-              {!isMobile && (
-                <div className="mono" style={{ fontSize: 11, color: "var(--silver)", letterSpacing: "0.12em" }}>
-                  40 / <span style={{ color: "var(--ivory)" }}>{p.fortyTime ? p.fortyTime.toFixed(2) : "—"}</span>
-                </div>
+            );
+          })}
+        </div>
+      )}
+
+      {/* Fit / scouting blurb */}
+      {p.fit && (
+        <div className="mono" style={{
+          marginTop: 10,
+          fontSize: isMobile ? 11 : 12,
+          color: "var(--ivory)",
+          lineHeight: 1.55,
+          letterSpacing: "0.02em",
+        }}>
+          {p.fit}
+        </div>
+      )}
+
+      {/* Strengths + concerns chips */}
+      {(p.strengths?.length > 0 || p.concerns?.length > 0) && (
+        <div style={{ marginTop: 10, display: "flex", flexWrap: "wrap", gap: 12 }}>
+          {p.strengths?.length > 0 && (
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 6, alignItems: "center" }}>
+              <span className="mono" style={{ fontSize: 8, color: "#2ecc71", letterSpacing: "0.22em" }}>+</span>
+              {p.strengths.map((s, k) => (
+                <span key={k} className="mono" style={{
+                  fontSize: 9, color: "var(--ivory)", letterSpacing: "0.10em",
+                  padding: "3px 7px",
+                  background: "#1a3a2a",
+                  border: "1px solid #2ecc7140",
+                }}>{s.toUpperCase()}</span>
+              ))}
+            </div>
+          )}
+          {p.concerns?.length > 0 && (
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 6, alignItems: "center" }}>
+              <span className="mono" style={{ fontSize: 8, color: "var(--hot)", letterSpacing: "0.22em" }}>−</span>
+              {p.concerns.map((s, k) => (
+                <span key={k} className="mono" style={{
+                  fontSize: 9, color: "var(--ivory)", letterSpacing: "0.10em",
+                  padding: "3px 7px",
+                  background: "#3a1a1a",
+                  border: "1px solid #FF2D3D40",
+                }}>{s.toUpperCase()}</span>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Click hint + fit bar */}
+      <div style={{ marginTop: 10, display: "flex", alignItems: "center", gap: 12 }}>
+        <span className="mono" style={{ fontSize: 8, color: "var(--steel-2)", letterSpacing: "0.22em" }}>
+          TAP FOR FULL DOSSIER →
+        </span>
+        <div style={{ position: "relative", height: 4, background: "#ffffff08", flex: 1 }}>
+          <div className="bar-grow" style={{
+            position: "absolute", inset: 0,
+            width: `${fit}%`,
+            background: fit > 85 ? "var(--hot)" : "var(--red)",
+            boxShadow: fit > 85 ? "0 0 6px #FF2D3D88" : "none",
+          }} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── ROOKIE DETAIL MODAL ─────────────────────────────────────────────────────
+function RookieDetailModal({ prospect: p, onClose }) {
+  const isMobile = useIsMobile();
+  if (!p) return null;
+  const ftIn = Math.floor(p.heightIn / 12);
+  const inn = p.heightIn % 12;
+  const c = p.combine || {};
+  // Comprehensive combine grid — show every measurable, mark missing as —
+  const measurables = [
+    { l: "40-YARD", v: c.fortyYd != null ? Number(c.fortyYd).toFixed(2) : (p.fortyTime ? Number(p.fortyTime).toFixed(2) : null) },
+    { l: "VERTICAL", v: c.verticalIn != null ? `${c.verticalIn}"` : null },
+    { l: "BROAD JUMP", v: c.broadJumpIn != null ? `${Math.floor(c.broadJumpIn / 12)}'${c.broadJumpIn % 12}"` : null },
+    { l: "BENCH (225)", v: c.benchReps != null ? c.benchReps : null },
+    { l: "3-CONE", v: c.threeConeSec != null ? Number(c.threeConeSec).toFixed(2) : null },
+    { l: "SHUTTLE", v: c.shuttleSec != null ? Number(c.shuttleSec).toFixed(2) : null },
+  ];
+  const sourceLabel = c.source === "pro-day" ? "PRO DAY" : c.source === "combine" ? "NFL COMBINE" : null;
+  return (
+    <div onClick={onClose} style={{
+      position: "fixed", inset: 0, background: "#000000d0", zIndex: 1000,
+      display: "flex", alignItems: "center", justifyContent: "center",
+      padding: isMobile ? 8 : 20,
+    }}>
+      <div onClick={(e) => e.stopPropagation()} className="panel" style={{
+        maxWidth: 720, width: "100%", maxHeight: isMobile ? "92vh" : "85vh", overflowY: "auto",
+      }}>
+        <div className="panel-title">
+          <span className="bug" />
+          <span className="name">ROOKIE DOSSIER</span>
+          <span className="meta" style={{ cursor: "pointer" }} onClick={onClose}>CLOSE ✕</span>
+        </div>
+        <div style={{ padding: isMobile ? 14 : 20 }}>
+          {/* Identity block */}
+          <div style={{ display: "flex", gap: isMobile ? 12 : 18, alignItems: "flex-start", flexWrap: "wrap" }}>
+            <div style={{
+              flexShrink: 0,
+              width: isMobile ? 84 : 110, height: isMobile ? 84 : 110,
+              background: "linear-gradient(135deg, #1A0508 0%, #0B0C0F 70%)",
+              border: "1px solid #ffffff10",
+              display: "flex", alignItems: "center", justifyContent: "center",
+              overflow: "hidden",
+            }}>
+              {p.headshot ? (
+                <img src={p.headshot} alt={p.name}
+                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }}
+                  onError={(e) => { e.currentTarget.style.display = "none"; }}
+                />
+              ) : (
+                <span className="display" style={{ fontSize: isMobile ? 28 : 36, color: "var(--hot)", letterSpacing: "0.18em" }}>
+                  {p.position}
+                </span>
               )}
-              {!isMobile && (
-                <div className="mono" style={{ fontSize: 11, color: "var(--silver)", letterSpacing: "0.12em", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-                  {p.projection ? p.projection.split(" ")[0].toUpperCase() : "—"}
-                </div>
-              )}
-              <div className="stencil" style={{ fontSize: isMobile ? 16 : 18, color: fit > 85 ? "var(--hot)" : "var(--ivory)", textShadow: fit > 85 ? "0 0 8px #FF2D3D55" : "none", textAlign: "center" }}>
-                {fit}
+            </div>
+            <div style={{ minWidth: 0, flex: 1 }}>
+              <div className="mono" style={{ fontSize: 9, letterSpacing: "0.24em", color: "var(--silver)" }}>
+                {p.position} / {p.college.toUpperCase()}
               </div>
-              {!isMobile && (
-                <div style={{ position: "relative", height: 6, background: "#ffffff08" }}>
-                  <div className="bar-grow" style={{
-                    position: "absolute", inset: 0,
-                    width: `${fit}%`,
-                    background: fit > 85 ? "var(--hot)" : "var(--red)",
-                    boxShadow: fit > 85 ? "0 0 6px #FF2D3D88" : "none",
-                  }} />
+              <div className="stencil" style={{ fontSize: isMobile ? 22 : 28, color: "var(--ivory)", letterSpacing: "0.02em", marginTop: 4 }}>
+                {p.name.toUpperCase()}
+              </div>
+              <div className="mono" style={{ fontSize: 11, color: "var(--silver)", letterSpacing: "0.12em", marginTop: 8 }}>
+                AGE {p.age} · {ftIn}'{inn}" · {p.weight} LBS
+              </div>
+              {p.projection && (
+                <div className="mono" style={{ fontSize: 10, color: "var(--hot)", letterSpacing: "0.18em", marginTop: 8 }}>
+                  ▌ {p.projection.toUpperCase()}
                 </div>
               )}
             </div>
-          );
-        })}
+          </div>
+
+          {/* Measurables grid */}
+          <div style={{ marginTop: 22 }}>
+            <SectionTitle bug>
+              MEASURABLES{sourceLabel ? ` · ${sourceLabel}` : ""}
+            </SectionTitle>
+            <div style={{
+              marginTop: 10,
+              display: "grid",
+              gridTemplateColumns: isMobile ? "repeat(2, 1fr)" : "repeat(3, 1fr)",
+              gap: 8,
+            }}>
+              {measurables.map((m) => (
+                <div key={m.l} style={{
+                  background: "#0B0C0F",
+                  padding: "10px 12px",
+                  borderTop: "2px solid var(--red)",
+                }}>
+                  <div className="mono" style={{ fontSize: 8, letterSpacing: "0.24em", color: "var(--silver)" }}>{m.l}</div>
+                  <div className="stencil" style={{ fontSize: 18, color: m.v != null ? "var(--ivory)" : "var(--steel-2)", marginTop: 4 }}>
+                    {m.v != null ? m.v : "—"}
+                  </div>
+                </div>
+              ))}
+            </div>
+            {c.note && (
+              <div className="mono" style={{ marginTop: 10, fontSize: 11, color: "var(--silver)", letterSpacing: "0.04em", lineHeight: 1.55 }}>
+                {c.note}
+              </div>
+            )}
+          </div>
+
+          {/* Scouting fit */}
+          {p.fit && (
+            <div style={{ marginTop: 22 }}>
+              <SectionTitle bug>SCOUTING FIT</SectionTitle>
+              <div className="mono" style={{ marginTop: 10, fontSize: 12, color: "var(--ivory)", letterSpacing: "0.02em", lineHeight: 1.6 }}>
+                {p.fit}
+              </div>
+            </div>
+          )}
+
+          {/* Strengths + concerns */}
+          {(p.strengths?.length > 0 || p.concerns?.length > 0) && (
+            <div style={{
+              marginTop: 22,
+              display: "grid",
+              gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
+              gap: 14,
+            }}>
+              {p.strengths?.length > 0 && (
+                <div>
+                  <SectionTitle bug>STRENGTHS</SectionTitle>
+                  <div style={{ marginTop: 10, display: "flex", flexDirection: "column", gap: 6 }}>
+                    {p.strengths.map((s, i) => (
+                      <div key={i} className="mono" style={{
+                        fontSize: 11, color: "var(--ivory)", letterSpacing: "0.04em",
+                        padding: "8px 10px",
+                        background: "#1a3a2a",
+                        borderLeft: "2px solid #2ecc71",
+                      }}>+ {s}</div>
+                    ))}
+                  </div>
+                </div>
+              )}
+              {p.concerns?.length > 0 && (
+                <div>
+                  <SectionTitle bug>CONCERNS</SectionTitle>
+                  <div style={{ marginTop: 10, display: "flex", flexDirection: "column", gap: 6 }}>
+                    {p.concerns.map((s, i) => (
+                      <div key={i} className="mono" style={{
+                        fontSize: 11, color: "var(--ivory)", letterSpacing: "0.04em",
+                        padding: "8px 10px",
+                        background: "#3a1a1a",
+                        borderLeft: "2px solid var(--hot)",
+                      }}>− {s}</div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Mock projections */}
+          {p.mockProjections?.length > 0 && (
+            <div style={{ marginTop: 22 }}>
+              <SectionTitle bug>MOCK / DRAFT TRACK</SectionTitle>
+              <div style={{ marginTop: 10 }}>
+                {p.mockProjections.map((m, i) => (
+                  <div key={i} style={{
+                    display: "grid",
+                    gridTemplateColumns: "1fr auto",
+                    gap: 10, padding: "8px 0",
+                    borderBottom: i === p.mockProjections.length - 1 ? "none" : "1px solid #ffffff08",
+                  }}>
+                    <span className="mono" style={{ fontSize: 11, color: "var(--silver)", letterSpacing: "0.06em" }}>
+                      {m.source}
+                    </span>
+                    <span className="stencil" style={{ fontSize: 13, color: "var(--ivory)", letterSpacing: "0.04em" }}>
+                      #{m.pick}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
