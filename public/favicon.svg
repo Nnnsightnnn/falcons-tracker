@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <circle cx="50" cy="50" r="48" fill="#A71930"/>
-  <text x="50" y="62" text-anchor="middle" font-family="Arial" font-weight="900" font-size="30" fill="white">ATL</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Falcons">
+  <rect width="64" height="64" rx="6" fill="#08080A"/>
+  <rect x="0" y="0" width="64" height="6" fill="#A71930"/>
+  <rect x="0" y="58" width="64" height="6" fill="#A71930"/>
+  <path d="M169 1493H1104V1202H516V924H1069V633H516V0H169Z" fill="#EDEDED" transform="translate(32 33) scale(0.029470864032150032 -0.029470864032150032) translate(-637.0 -746.5)"/>
 </svg>
