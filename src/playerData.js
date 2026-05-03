@@ -138,7 +138,7 @@ export const PLAYERS = [
     form: 6.4,
     status: "active",
     injuryNote: "Change-of-pace + 3rd-down back · ex-Colts",
-    image: null,
+    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4429676.png",
     contract: { years: 1, total: 1300000, guaranteed: 200000, apy: 1300000, throughYear: 2026, cap2026: 1300000 },
     career: [
       { years: "2026–", team: "Atlanta Falcons", type: "NFL" },
@@ -242,7 +242,7 @@ export const PLAYERS = [
     form: 6.6,
     status: "active",
     injuryNote: "Slot return · drafted by ATL 2019, back from CHI",
-    image: null,
+    image: "https://a.espncdn.com/i/headshots/nfl/players/full/3917914.png",
     contract: { years: 1, total: 2400000, guaranteed: 1000000, apy: 2400000, throughYear: 2026, cap2026: 2400000 },
     career: [
       { years: "2026–", team: "Atlanta Falcons", type: "NFL · 2nd stint" },
@@ -266,7 +266,7 @@ export const PLAYERS = [
     form: 6.2,
     status: "active",
     injuryNote: null,
-    image: null,
+    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4428796.png",
     contract: { years: 4, total: 4250000, guaranteed: 240000, apy: 1062500, throughYear: 2027, cap2026: 950000 },
     career: [{ years: "2024–", team: "Atlanta Falcons", type: "NFL" }],
   },
@@ -881,7 +881,7 @@ export const PLAYERS = [
     form: 0,
     status: "active",
     injuryNote: "Returning from 2024 ACL · clean rookie tape pending",
-    image: null,
+    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4428713.png",
     contract: { years: 4, total: 5800000, guaranteed: 1300000, apy: 1450000, throughYear: 2027, cap2026: 1180000 },
     career: [{ years: "2024–", team: "Atlanta Falcons", type: "NFL" }],
   },
@@ -899,7 +899,7 @@ export const PLAYERS = [
     form: 0,
     status: "active",
     injuryNote: "Rotational rusher · ex-Titans",
-    image: null,
+    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4243457.png",
     contract: { years: 1, total: 1300000, guaranteed: 100000, apy: 1300000, throughYear: 2026, cap2026: 1300000 },
     career: [
       { years: "2025–", team: "Atlanta Falcons", type: "NFL" },
@@ -924,7 +924,7 @@ export const PLAYERS = [
     form: 8.0,
     status: "active",
     injuryNote: "MIKE · 3yr/$30M FA splash from LV",
-    image: null,
+    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4037626.png",
     contract: { years: 3, total: 30000000, guaranteed: 18000000, apy: 10000000, throughYear: 2028, cap2026: 8500000 },
     career: [
       { years: "2026–", team: "Atlanta Falcons", type: "NFL" },
@@ -1005,7 +1005,7 @@ export const PLAYERS = [
     form: 6.2,
     status: "active",
     injuryNote: "Special teams ace",
-    image: null,
+    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4428872.png",
     contract: { years: 4, total: 4400000, guaranteed: 200000, apy: 1100000, throughYear: 2027, cap2026: 970000 },
     career: [{ years: "2024–", team: "Atlanta Falcons", type: "NFL" }],
   },
@@ -1117,7 +1117,7 @@ export const PLAYERS = [
     form: 6.6,
     status: "active",
     injuryNote: "Reclamation · ex-#9 overall (2020 JAX)",
-    image: null,
+    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4240596.png",
     contract: { years: 1, total: 2200000, guaranteed: 750000, apy: 2200000, throughYear: 2026, cap2026: 2200000 },
     career: [
       { years: "2026–", team: "Atlanta Falcons", type: "NFL" },
@@ -1633,7 +1633,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-05-02T15:30:00Z",
+  generatedAt: "2026-05-03T13:00:00Z",
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "The Falcoholic",
     "Bleacher Report", "Pro Football Rumors", "SI Falcons", "NBC Sports",
@@ -1654,18 +1654,18 @@ export const NEWS_DIGEST = {
       category: "general",
     },
     {
-      title: "Phase 2 opens Monday May 4 — first on-field veteran reps under the Stefanski/Rees install",
-      detail: "Two days from the calendar's next pivot. Atlanta wraps Phase 1 strength/conditioning Friday and rotates into Phase 2 walkthroughs Monday May 4 per NFL Football Operations and atlantafalcons.com — the first window the full veteran skill group gets on-field installation reps (still non-contact, no offense-vs-defense team work). Stefanski's mantra inside the Branch this week, per atlantafalcons.com's Tori McElhaney piece, is 'building a strong foundation … X's and O's, techniques, fundamentals, identity.' First real look at how Tommy Rees plans to deploy Bijan + London + Pitts together.",
+      title: "Phase 2 opens TOMORROW — first on-field veteran reps under the Stefanski/Rees install",
+      detail: "One day out. Atlanta wraps Phase 1 strength/conditioning Friday and rotates into Phase 2 walkthroughs Monday May 4 per NFL Football Operations and atlantafalcons.com — the first window the full veteran skill group gets on-field installation reps (still non-contact, no offense-vs-defense team work). Stefanski's mantra inside the Branch this week, per atlantafalcons.com's Tori McElhaney piece, is 'building a strong foundation … X's and O's, techniques, fundamentals, identity.' First real look at how Tommy Rees plans to deploy Bijan + London + Pitts together — and the dashboard hero rotates from rookie-class to offseason-lull two days later on May 5.",
       category: "coaching",
     },
     {
-      title: "Rookie minicamp T-minus 6 days — 6 picks, 16 UDFAs, 4 tryout invites report May 8 to Flowery Branch",
-      detail: "Atlanta picked the second of the two NFL-allowed weekends (May 8–11) and the roster is locked. Drafted six. UDFAs include DT Carlos Allen (Houston), C James Brockermeyer (Miami), QB Jack Strand (Minnesota-Moorhead), G Kam Dewberry (Alabama), OT Riley Mahlman (Wisconsin), RBs Trent Battle / Cash Jones (Georgia), WRs Vinny Anthony II / Malik Rutherford / Andrel Anthony / returner Keelan Marion (BYU First-Team All-American 2024), TEs Brendan Frazier / Jack Velling. Tryouts: CB Nyland Green (ASU), CB Clayton Powell-Lee (Georgia Tech), WR Jonathan Brady (Indiana), RB Devontae Houston (ETSU). Falcoholic's Knight has Strand and Marion with the realest 53-man paths.",
+      title: "Rookie minicamp T-minus 5 days — 6 picks, 16 UDFAs, 4 tryout invites report Friday May 8 to Flowery Branch",
+      detail: "Five days out. Atlanta picked the second of the two NFL-allowed weekends (May 8–11) and the roster is locked. Drafted six. UDFAs include DT Carlos Allen (Houston), C James Brockermeyer (Miami), QB Jack Strand (Minnesota-Moorhead), G Kam Dewberry (Alabama), OT Riley Mahlman (Wisconsin), RBs Trent Battle / Cash Jones (Georgia), WRs Vinny Anthony II / Malik Rutherford / Andrel Anthony / returner Keelan Marion (BYU First-Team All-American 2024), TEs Brendan Frazier / Jack Velling. Tryouts: CB Nyland Green (ASU), CB Clayton Powell-Lee (Georgia Tech), WR Jonathan Brady (Indiana), RB Devontae Houston (ETSU). Falcoholic's Knight has Strand and Marion with the realest 53-man paths; Bleeding Green has Brockermeyer as the highest 53-man-odds UDFA in the room.",
       category: "general",
     },
     {
       title: "Avieon's No. 12 carries a 'hidden message' — Branch at 17, Daniels 53, Thompson 98, Perkins 56, Onianwa 75",
-      detail: "atlantafalcons.com locked the rookie numbers Thu Apr 30; Blogging Dirty's Fri May 1 follow-up surfaced that Avieon Terrell's choice of No. 12 nods to the family's late mother (his Clemson number was 4; A.J. keeps 24). Cunningham publicly credited the Terrell parents for the pick fit on a Falcons.com sit-down. Other numbers: Branch 17 (UGA 1 unavailable), LB Kendal Daniels 53, DT Anterio Thompson 98, LB Harold Perkins Jr. 56 (LSU 4 unavailable), OT Ethan Onianwa 75. Six rookies report to Flowery Branch in six days.",
+      detail: "atlantafalcons.com locked the rookie numbers Thu Apr 30; Blogging Dirty's Fri May 1 follow-up surfaced that Avieon Terrell's choice of No. 12 nods to the family's late mother (his Clemson number was 4; A.J. keeps 24). Cunningham publicly credited the Terrell parents for the pick fit on a Falcons.com sit-down. Other numbers: Branch 17 (UGA 1 unavailable), LB Kendal Daniels 53, DT Anterio Thompson 98, LB Harold Perkins Jr. 56 (LSU 4 unavailable), OT Ethan Onianwa 75. Six rookies report to Flowery Branch in five days.",
       category: "general",
     },
     {
@@ -1719,8 +1719,8 @@ export const NEWS_DIGEST = {
       category: "draft",
     },
     {
-      title: "Calendar — rookie-class hero rotates out May 5 → Phase 2 May 4 → rookie camp May 8–11 → schedule May 13/14 → OTAs May 18",
-      detail: "Two days from the next milestone. Phase 2 walkthroughs open Monday May 4 (the same week the dashboard hero rotates from 'rookie-class' to 'offseason-lull' on May 5); rookie minicamp at Flowery Branch May 8–11 (Atlanta picked the second NFL-allowed post-draft weekend); Branch flies to LA for NFLPA Rookie Premiere May 14–17; 2026 NFL schedule release tracking to Wed May 13 / Thu May 14; Phase 3 OTAs begin Monday May 18 (Atlanta's full slate: May 18–19, 21, 26–27, 29, June 8–9, 11). Mandatory veteran minicamp June 16–18, dead period through Jul 21, camp opens Jul 22.",
+      title: "Calendar — Phase 2 opens TOMORROW · rookie-class hero rotates out Tue May 5 · rookie camp Fri May 8–11 · schedule May 13/14 · OTAs May 18",
+      detail: "One day from the next milestone. Phase 2 walkthroughs open Monday May 4 (the dashboard hero then rotates from 'rookie-class' to 'offseason-lull' on Tuesday May 5); rookie minicamp at Flowery Branch May 8–11 (Atlanta picked the second NFL-allowed post-draft weekend); Branch flies to LA for NFLPA Rookie Premiere May 14–17; 2026 NFL schedule release tracking to Wed May 13 / Thu May 14 per FBSchedules / CBS / Front Office Sports; Phase 3 OTAs begin Monday May 18 (Atlanta's full slate: May 18–19, 21, 26–27, 29, June 8–9, 11). Mandatory veteran minicamp June 16–18, dead period through Jul 21, camp opens Jul 22.",
       category: "general",
     },
   ],
