@@ -1633,7 +1633,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-05-06T13:30:00Z",
+  generatedAt: "2026-05-07T14:00:00Z",
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "The Falcoholic",
     "Bleacher Report", "Pro Football Rumors", "SI Falcons", "NBC Sports",
@@ -1649,28 +1649,28 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "Schedule release T-7 — North's window of Tue/Wed/Thu May 12–14 narrowing, slip to week of May 18 still possible",
-      detail: "Mike North's broadcast-planning window of May 12–13–14 is the working target heading into the back half of the week. Awful Announcing's May 5 piece keeps a one-week slip to the week of May 18 in play if the negotiated slate isn't locked. Atlanta's 17 opponents are already settled. HOME (9): Carolina, New Orleans, Tampa Bay, Baltimore, Chicago, Cincinnati, Detroit, Kansas City, San Francisco. AWAY (8): Carolina, New Orleans, Tampa Bay, Cleveland, Green Bay, Minnesota, Pittsburgh, Washington. KC-at-Bernabéu Madrid scenario stays clean — Atlanta is the designated home team. Primetime slot count, kickoff times, bye week, and the Madrid opponent all unlock on the reveal.",
+      title: "Schedule release T-6/T-7 — Wed May 13 / Thu May 14 still the working window, slip to week of May 18 alive",
+      detail: "Mike North's broadcast-planning target of May 13–14 holds going into Thursday. Awful Announcing and CBS Sports both keep a one-week slip to the week of May 18 (potentially May 20–21) on the table if the negotiated slate isn't fully locked. Atlanta's 17 opponents are already set. HOME (9): Carolina, New Orleans, Tampa Bay, Baltimore, Chicago, Cincinnati, Detroit, Kansas City, San Francisco. AWAY (8): Carolina, New Orleans, Tampa Bay, Cleveland, Green Bay, Minnesota, Pittsburgh, Washington. KC-at-Bernabéu Madrid scenario stays clean — Atlanta is the designated home team. Primetime slot count, kickoff times, bye week, and the Madrid opponent all unlock on the reveal.",
       category: "general",
     },
     {
-      title: "Pearce Jr. pretrial diversion finalizes TOMORROW May 7 in Doral — NFL 6-game suspension floor still in play",
-      detail: "NBC Miami / NFL.com / The Falcoholic / Yardbarker have James Pearce Jr.'s pretrial diversion paperwork finalizing tomorrow (Thu May 7) in Doral, FL: six clean months of therapy plus a stay-away order from WNBA's Rickea Jackson, no jail time, no admission of guilt, all three felony counts (battery, stalking, fleeing) dismissed on completion. League discipline doesn't require a conviction; the personal-conduct floor for a first offense is six games and Goodell's unilateral powers are intact. The NFL confirmed in February it will rule independently of the legal outcome. Cunningham still hasn't publicly commented. Atlanta is planning for a partial-season Pearce — and an edge group already short on proven snaps.",
+      title: "Pearce Jr. pretrial diversion finalizing TODAY in Doral — six-game NFL suspension floor still the live exposure",
+      detail: "NBC Miami / NFL.com / The Falcoholic / On3 / Yahoo Sports have James Pearce Jr.'s pretrial diversion paperwork finalizing today (Thu May 7) in Doral, FL: six clean months of therapy plus a stay-away order from WNBA's Rickea Jackson, no jail time, no admission of guilt, all three felony counts (battery, stalking, fleeing) dismissed on completion. League discipline doesn't require a conviction; the personal-conduct floor for a first offense is six games and Goodell's unilateral powers are intact. The NFL confirmed in February it will rule independently of the legal outcome. Cunningham still hasn't publicly commented. Atlanta is planning for a partial-season Pearce — and an edge group already short on proven snaps.",
       category: "general",
     },
     {
-      title: "Rookie minicamp T-2 — 6 picks, 16 UDFAs, 4 tryout invites report Friday May 8 to Flowery Branch",
-      detail: "Two days out. Atlanta picked the second NFL-allowed weekend (May 8–10) and the roster is locked. Drafted six. UDFAs include DT Carlos Allen (Houston), C James Brockermeyer (Miami), QB Jack Strand (Minnesota-Moorhead), G Kam Dewberry (Alabama), OT Riley Mahlman (Wisconsin), RBs Trent Battle / Cash Jones (Georgia), WRs Vinny Anthony II / Malik Rutherford / Andrel Anthony / returner Keelan Marion (BYU First-Team All-American 2024), TEs Brendan Frazier / Jack Velling. Tryouts: CB Nyland Green (ASU), CB Clayton Powell-Lee (Georgia Tech), WR Jonathan Brady (Indiana), RB Devontae Houston (ETSU). Falcoholic's Knight has Strand and Marion with the realest 53-man paths; Bleeding Green has Brockermeyer as the highest 53-man-odds UDFA in the room.",
+      title: "Rookie minicamp T-1 — 6 picks, 16 UDFAs, 4 tryout invites report TOMORROW (Fri May 8) to Flowery Branch",
+      detail: "One day out. Atlanta picked the second NFL-allowed post-draft weekend (May 8–10) and the rookie-camp roster is locked. Drafted six. UDFAs include DT Carlos Allen (Houston), C James Brockermeyer (Miami / Senior Bowl, All-ACC 3rd team), QB Jack Strand (Minnesota State-Moorhead, D-II All-American + Campbell Trophy finalist), G Kam Dewberry (Alabama), OT Riley Mahlman (Wisconsin), RBs Trent Battle / Cash Jones (Georgia), WRs Vinny Anthony II / Malik Rutherford / Andrel Anthony / returner Keelan Marion (Miami via BYU, First-Team All-American as a returner 2024), TEs Brendan Frazier / Jack Velling. Tryouts: CB Nyland Green (ASU), CB Clayton Powell-Lee (Georgia Tech), WR Jonathan Brady (Indiana), RB Devontae Houston (ETSU). Falcoholic's Knight has Strand and Marion with the realest 53-man paths; Bleeding Green has Brockermeyer as the highest 53-man-odds UDFA in the room.",
       category: "general",
     },
     {
-      title: "Phase 2 walkthroughs Day 3 — first on-field veteran reps under the Stefanski/Rees install",
-      detail: "Phase 2 opened Monday May 4 per NFL Football Operations and atlantafalcons.com — the three-week window the full veteran skill group gets on-field installation reps (still non-contact, no offense-vs-defense team work). Today is Day 3. Stefanski's mantra inside the Branch, per atlantafalcons.com's Tori McElhaney piece, is 'building a strong foundation … X's and O's, techniques, fundamentals, identity.' First real look at how Tommy Rees plans to deploy Bijan + London + Pitts together; first competitive period (against the defense) waits for OTAs May 18.",
+      title: "Phase 2 walkthroughs Day 4 — Stefanski's 'identity' install with veterans, no offense-vs-defense periods yet",
+      detail: "Phase 2 opened Monday May 4 per NFL Football Operations and atlantafalcons.com — the three-week window the full veteran skill group gets on-field installation reps (still non-contact, no offense-vs-defense team work). Today (Thu May 7) is Day 4. Stefanski's Day-1 mantra inside the Branch — 'choose your identity or someone else will choose it for you,' per FootballScoop — is the through-line, with Tori McElhaney citing 'X's and O's, techniques, fundamentals, identity.' First real look at how Tommy Rees plans to deploy Bijan + London + Pitts together; first competitive period (against the defense) waits for OTAs May 18.",
       category: "coaching",
     },
     {
-      title: "Branch flies T-8 — Atlanta's lone NFLPA Rookie Premiere invite, LA, May 14–17",
-      detail: "Yahoo Sports broke Fri May 1 that R3 WR Zachariah Branch is the only Falcons rookie on the 42-name 2026 NFLPA Rookie Premiere invite list. The annual brand-and-photo summit runs May 14–17 in Los Angeles, slotting between rookie minicamp and OTAs. Twenty of forty-two invites are wide receivers — confirmation the league sees Branch as a Day-1 producer despite slipping to #79. UGA junior line: 81/811/6 with 4.35 speed; he leaves Flowery Branch for Hollywood the day after rookie camp wraps.",
+      title: "Branch flies T-7 — Atlanta's lone NFLPA Rookie Premiere invite, LA, May 14–16",
+      detail: "Per the NFLPA's official release and Yahoo Sports, R3 WR Zachariah Branch is the only Falcons rookie on the 42-name 2026 NFLPA Rookie Premiere invite list. The annual brand-and-photo summit runs May 14–16 in Los Angeles (trading-card photoshoots, autograph signings, jersey unveilings, business-orientation sessions on group licensing and personal brand). Twenty of forty-two invites are wide receivers — confirmation the league sees Branch as a Day-1 producer despite slipping to #79. UGA junior line: 81/811/6 with 4.35 speed; he leaves Flowery Branch for Hollywood the day after rookie camp wraps.",
       category: "general",
     },
     {
@@ -1719,8 +1719,8 @@ export const NEWS_DIGEST = {
       category: "draft",
     },
     {
-      title: "Calendar — Pearce diversion T-1 · rookie camp T-2 · schedule reveal T-7/T-8 · OTAs T-12 · mandatory mini June 16–18",
-      detail: "Day-of: Phase 2 walkthroughs Day 3, dashboard hero is the schedule-release countdown. Pearce pretrial diversion finalizes tomorrow (Thu May 7) in Doral. Rookie minicamp at Flowery Branch May 8–10 (Atlanta picked the second NFL-allowed post-draft weekend). Schedule release tracking Wed May 13 / Thu May 14 (Awful Announcing leaves a May 18+ fallback window open). Branch flies to LA for NFLPA Rookie Premiere May 14–17. Phase 3 OTAs begin Monday May 18 (Atlanta's full slate: May 18–19, 21, 26–27, 29, June 8–9, 11). Mandatory veteran minicamp June 16–18, dead period through Jul 21, camp opens Jul 22.",
+      title: "Calendar — Pearce diversion TODAY · rookie camp T-1 · schedule reveal T-6/T-7 · OTAs T-11 · mandatory mini June 16–18",
+      detail: "Day-of (Thu May 7): Phase 2 walkthroughs Day 4, dashboard hero is the schedule-release countdown. Pearce pretrial diversion finalizes today in Doral. Rookie minicamp opens at Flowery Branch tomorrow (May 8–10). Schedule release tracking Wed May 13 / Thu May 14 with Awful Announcing's May 18+ fallback window still open. Branch flies to LA for the NFLPA Rookie Premiere May 14–16. Phase 3 OTAs begin Monday May 18 (Atlanta's full slate: May 18–19, 21, 26–27, 29, June 8–9, 11). Mandatory veteran minicamp June 16–18, dead period through Jul 21, training camp opens Jul 22.",
       category: "general",
     },
   ],
