@@ -48,7 +48,7 @@ export const OFFSEASON_CALENDAR = [
     id: "rookie-minicamp-falcons",
     date: "2026-05-08",
     label: "Falcons Rookie Minicamp",
-    detail: "May 8-11 at Flowery Branch. First on-field reps for Terrell, Branch, Daniels, Thompson, Perkins Jr. and Onianwa plus the UDFA pile.",
+    detail: "May 8-10 at Flowery Branch. First on-field reps for Terrell, Branch, Daniels, Thompson, Perkins Jr. and Onianwa plus the UDFA pile.",
     phase: "offseason-lull",
   },
   {
