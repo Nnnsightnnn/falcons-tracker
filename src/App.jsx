@@ -136,19 +136,13 @@ function liveTagForPhase(phase) {
   }
 }
 
-function TopBar({ view, setView, currentPhase }) {
+function TopBar({ view, setView }) {
   const tabs = [
     { k: "dashboard",   label: "DASHBOARD" },
     { k: "depth-chart", label: "DEPTH CHART" },
     { k: "draft",       label: "DRAFT BOARD" },
     { k: "wire",        label: "WIRE / DISPATCH" },
   ];
-  const [time, setTime] = useState(new Date());
-  useEffect(() => {
-    const t = setInterval(() => setTime(new Date()), 1000);
-    return () => clearInterval(t);
-  }, []);
-  const hms = time.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false });
   const isMobile = useIsMobile();
 
   const navButtons = tabs.map((t) => {
@@ -193,12 +187,6 @@ function TopBar({ view, setView, currentPhase }) {
               FEED 01 · 26 SEASON
             </div>
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-            <span className="hot-bar blink" style={{ width: 7, height: 7 }} />
-            <span className="display hot-text" style={{ fontSize: 10, letterSpacing: "0.18em", whiteSpace: "nowrap" }}>
-              {liveTagForPhase(currentPhase)}
-            </span>
-          </div>
         </div>
         <div style={{
           display: "flex", alignItems: "stretch",
@@ -237,22 +225,6 @@ function TopBar({ view, setView, currentPhase }) {
 
       <div style={{ display: "flex", alignItems: "stretch", flex: 1, minWidth: 0 }}>
         {navButtons}
-      </div>
-
-      <div style={{
-        display: "flex", alignItems: "center", gap: 14,
-        padding: "12px 22px",
-        borderLeft: "1px solid #ffffff10",
-      }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 7 }}>
-          <span className="hot-bar blink" style={{ width: 8, height: 8 }} />
-          <span className="display hot-text" style={{ fontSize: 12, letterSpacing: "0.22em" }}>
-            {liveTagForPhase(currentPhase)}
-          </span>
-        </div>
-        <span className="mono" style={{ fontSize: 12, color: "var(--ivory)", letterSpacing: "0.1em" }}>
-          {hms} ET
-        </span>
       </div>
     </div>
   );
@@ -2181,7 +2153,6 @@ function DashboardView({ rosterCounts, currentPhase, onPlayerClick }) {
   return (
     <>
       <HeroBroadcast currentPhase={currentPhase} />
-      <PickSlotBoard />
       <RookieClassPanel onPlayerClick={onPlayerClick} />
       <StatRibbon rosterCounts={rosterCounts} />
       <StarRoster onPlayerClick={onPlayerClick} />
@@ -2303,7 +2274,7 @@ export default function FalconsTracker() {
 
   return (
     <div style={{ minHeight: "100vh", background: "var(--void)", overflowX: "hidden" }}>
-      <TopBar view={view} setView={setView} currentPhase={currentPhase} />
+      <TopBar view={view} setView={setView} />
       <ChapterRail currentPhase={currentPhase} />
 
       <div style={{
