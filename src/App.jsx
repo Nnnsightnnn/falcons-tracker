@@ -499,6 +499,18 @@ function matchPickProspect(pick, targets) {
   }) || null;
 }
 
+// Match a draft selection string to the actual player on the roster — used to
+// pull live ESPN headshots into the pick board since prospect.headshot is null.
+function matchPickPlayer(pick, players) {
+  if (!pick.selection) return null;
+  const selName = pick.selection.split("·")[0].trim().toLowerCase();
+  return players.find((p) => {
+    const pn = p.name.toLowerCase();
+    const norm = pn.replace(/\s+jr\.?$/, "").replace(/\s+sr\.?$/, "").replace(/\s+iv$|\s+iii$|\s+ii$/, "");
+    return selName === pn || selName.startsWith(norm) || pn.startsWith(selName);
+  }) || null;
+}
+
 // Vertical "draft ledger" — one horizontal ticket row per pick. Reads at any
 // width; the rich dossier lives in the adjacent ROOKIE CLASS panel.
 function PickSlotBoard() {
@@ -522,6 +534,7 @@ function PickSlotBoard() {
             key={p.overallPick}
             pick={p}
             prospect={matchPickProspect(p, targets)}
+            player={matchPickPlayer(p, PLAYERS)}
             isMobile={isMobile}
             isLast={i === picks.length - 1}
             onOpen={(id) => setOpenId(id)}
@@ -535,7 +548,9 @@ function PickSlotBoard() {
   );
 }
 
-function PickTicket({ pick: p, prospect, isMobile, isLast, onOpen }) {
+function PickTicket({ pick: p, prospect, player, isMobile, isLast, onOpen }) {
+  // Prefer the live roster headshot (ESPN CDN) when the pick has been made.
+  const headshotUrl = prospect?.headshot || player?.image || null;
   const isMade = p.status === "made";
   const isTraded = p.status === "traded";
   const isOnClock = p.status === "on-clock";
@@ -614,8 +629,8 @@ function PickTicket({ pick: p, prospect, isMobile, isLast, onOpen }) {
           display: "flex", alignItems: "center", justifyContent: "center",
           overflow: "hidden", flexShrink: 0,
         }}>
-          {prospect?.headshot ? (
-            <img src={prospect.headshot} alt={prospect.name}
+          {headshotUrl ? (
+            <img src={headshotUrl} alt={prospect?.name || player?.name || "rookie"}
               style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }}
               onError={(e) => { e.currentTarget.style.display = "none"; }}
             />
@@ -1052,6 +1067,154 @@ const STAR_PROFILES = {
     ],
   },
 };
+
+// ─── ROOKIE CLASS PANEL (Dashboard) ─────────────────────────────────────────
+// Big photo cards for the 2026 draft class. Mirrors the depth-chart rookie
+// row but tuned for the home dashboard — bigger headshots, more profile data.
+const ROOKIE_ACCENT = "#00E5FF";
+
+function formatHt(inches) {
+  if (!inches || typeof inches !== "number") return null;
+  return `${Math.floor(inches / 12)}'${inches % 12}`;
+}
+
+function pickMeta(acquired) {
+  const m = (acquired || "").match(/draft-2026-R(\d+)-P(\d+)/);
+  if (!m) return null;
+  return { round: Number(m[1]), pick: Number(m[2]) };
+}
+
+function RookieClassPanel({ onPlayerClick }) {
+  const isMobile = useIsMobile();
+  const rookies = useMemo(() => {
+    return PLAYERS
+      .filter((p) => (p.acquired || "").startsWith("draft-2026"))
+      .map((p) => ({ ...p, _meta: pickMeta(p.acquired) }))
+      .sort((a, b) => (a._meta?.pick ?? 999) - (b._meta?.pick ?? 999));
+  }, []);
+
+  if (rookies.length === 0) return null;
+
+  return (
+    <div style={{ marginTop: 20 }}>
+      <SectionTitle bug meta={`${rookies.length} DRAFTED · CLASS GRADE B / B-`}>ROOKIE CLASS '26</SectionTitle>
+      <div style={{
+        marginTop: 10,
+        display: "grid",
+        gridTemplateColumns: isMobile
+          ? "repeat(2, minmax(0, 1fr))"
+          : "repeat(auto-fill, minmax(220px, 1fr))",
+        gap: 1,
+        background: "#ffffff08",
+        border: "1px solid #ffffff10",
+        borderTop: `2px solid ${ROOKIE_ACCENT}`,
+      }}>
+        {rookies.map((r) => {
+          const meta = r._meta;
+          const ht = formatHt(r.height);
+          const profile = [ht, r.weight && `${r.weight}`, r.age && `${r.age}YO`].filter(Boolean).join(" · ");
+          const clickable = typeof onPlayerClick === "function";
+          return (
+            <div key={r.id}
+              onClick={clickable ? () => onPlayerClick(r) : undefined}
+              tabIndex={clickable ? 0 : undefined}
+              onKeyDown={clickable ? (e) => {
+                if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onPlayerClick(r); }
+              } : undefined}
+              style={{
+                background: "#0B0C0F",
+                padding: isMobile ? "12px 12px" : "14px 14px",
+                cursor: clickable ? "pointer" : "default",
+                display: "flex", flexDirection: "column", gap: 10,
+                borderLeft: `2px solid ${ROOKIE_ACCENT}`,
+                position: "relative",
+                minHeight: 130,
+              }}>
+              {/* Pick badge */}
+              {meta && (
+                <div style={{
+                  position: "absolute", top: 0, right: 0,
+                  background: ROOKIE_ACCENT,
+                  padding: "3px 7px",
+                }}>
+                  <span className="mono" style={{
+                    fontSize: 9, color: "#000", letterSpacing: "0.18em", fontWeight: 700,
+                  }}>R{meta.round} · #{meta.pick}</span>
+                </div>
+              )}
+
+              {/* Photo + name */}
+              <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                <div style={{
+                  width: 64, height: 64, flexShrink: 0,
+                  background: "linear-gradient(135deg, #1A0508 0%, #0B0C0F 70%)",
+                  border: `1px solid ${ROOKIE_ACCENT}40`,
+                  overflow: "hidden",
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                }}>
+                  {r.image ? (
+                    <img src={r.image} alt={r.name}
+                      style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }}
+                      onError={(e) => { e.currentTarget.style.display = "none"; }}
+                    />
+                  ) : (
+                    <span className="stencil" style={{ fontSize: 22, color: ROOKIE_ACCENT, letterSpacing: "0.04em" }}>
+                      {r.name.split(" ").map((w) => w[0]).join("").slice(0, 2).toUpperCase()}
+                    </span>
+                  )}
+                </div>
+                <div style={{ minWidth: 0, flex: 1 }}>
+                  <div style={{ display: "flex", alignItems: "baseline", gap: 6 }}>
+                    <span className="stencil" style={{
+                      fontSize: 22, color: "var(--ivory)", letterSpacing: "0.02em", lineHeight: 1,
+                    }}>{r.number ?? "—"}</span>
+                    <span className="mono" style={{
+                      fontSize: 9, color: ROOKIE_ACCENT, letterSpacing: "0.16em", fontWeight: 700,
+                    }}>{r.position}</span>
+                  </div>
+                  <div className="stencil" style={{
+                    fontSize: 13, color: "var(--ivory)", letterSpacing: "0.04em",
+                    lineHeight: 1.15, marginTop: 4,
+                    whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
+                  }}>
+                    {r.name.toUpperCase()}
+                  </div>
+                </div>
+              </div>
+
+              {/* Stats line */}
+              <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                {profile && (
+                  <div className="mono" style={{
+                    fontSize: 10, color: "var(--silver)", letterSpacing: "0.1em",
+                  }}>{profile}</div>
+                )}
+                {r.college && (
+                  <div className="mono" style={{
+                    fontSize: 9, color: "var(--steel-2)", letterSpacing: "0.16em",
+                    whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
+                  }}>{r.college.toUpperCase()}</div>
+                )}
+              </div>
+
+              {/* Status flag if injured / PUP / NFI */}
+              {r.injuryNote && (
+                <div className="mono" style={{
+                  fontSize: 8, color: "#E67E22", letterSpacing: "0.14em",
+                  lineHeight: 1.35,
+                  borderTop: "1px solid #ffffff10", paddingTop: 6,
+                  whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
+                }}>
+                  ⚠ {r.injuryNote.length > 60 ? r.injuryNote.slice(0, 60) + "…" : r.injuryNote}
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
 
 function StarRoster({ onPlayerClick }) {
   const isMobile = useIsMobile();
@@ -2019,6 +2182,7 @@ function DashboardView({ rosterCounts, currentPhase, onPlayerClick }) {
     <>
       <HeroBroadcast currentPhase={currentPhase} />
       <PickSlotBoard />
+      <RookieClassPanel onPlayerClick={onPlayerClick} />
       <StatRibbon rosterCounts={rosterCounts} />
       <StarRoster onPlayerClick={onPlayerClick} />
       <div style={{
