@@ -208,18 +208,41 @@ function StrengthStrip({ positionsForGroup, byPos, isMobile }) {
   );
 }
 
+// ─── Physical-profile helpers ───────────────────────────────────────────────
+function formatHeight(inches) {
+  if (!inches || typeof inches !== "number") return null;
+  const ft = Math.floor(inches / 12);
+  const inch = inches % 12;
+  return `${ft}'${inch}`;
+}
+
+function profileLine(p) {
+  const parts = [];
+  const ht = formatHeight(p.height);
+  if (ht) parts.push(ht);
+  if (p.weight) parts.push(`${p.weight}`);
+  if (p.age) parts.push(`${p.age}YO`);
+  if (typeof p.experience === "number") {
+    parts.push(p.experience === 0 ? "ROOK" : `Y${p.experience}`);
+  }
+  return parts.join(" · ");
+}
+
 // ─── 2. DEPTH MATRIX ────────────────────────────────────────────────────────
 // Desktop: table with sticky header. Mobile: stacked position cards.
-// Cell shows: jersey #, last name, tiny tier dot, status glyph.
+// Each cell is a full mini player card: photo + jersey # + name + HT/WT/AGE/EXP.
+// No click required to see the basics; click still opens the full modal.
 
-function DepthCell({ player, slotLabel, onPlayerClick }) {
+function DepthCell({ player, onPlayerClick, dense = false }) {
   if (!player) {
     return (
       <div style={{
-        padding: "10px 10px",
+        padding: "12px 10px",
         background: "#0B0C0F",
         borderLeft: "1px solid #ffffff08",
         opacity: 0.4,
+        minHeight: dense ? 60 : 78,
+        display: "flex", alignItems: "center",
       }}>
         <span className="mono" style={{ fontSize: 9, color: "var(--steel-2)", letterSpacing: "0.2em" }}>—</span>
       </div>
@@ -228,51 +251,80 @@ function DepthCell({ player, slotLabel, onPlayerClick }) {
   const tier = tierFor(player);
   const glyph = statusGlyph(player);
   const rook = rookieRound(player);
+  const photoSize = dense ? 40 : 48;
 
   return (
     <div onClick={() => onPlayerClick && onPlayerClick(player)}
       style={{
-        padding: "10px 10px",
+        padding: dense ? "8px 10px" : "10px 10px",
         background: "#0B0C0F",
         borderLeft: "1px solid #ffffff08",
         cursor: onPlayerClick ? "pointer" : "default",
         position: "relative",
-        display: "flex", alignItems: "center", gap: 8,
+        display: "flex", alignItems: "center", gap: 10,
         minWidth: 0,
+        minHeight: dense ? 60 : 78,
       }}>
-      {/* Quality tier dot */}
+      {/* Quality tier accent bar */}
       <div style={{
-        width: 8, height: 8, flexShrink: 0,
+        position: "absolute", left: 0, top: 0, bottom: 0, width: 3,
         background: TIER[tier].color,
-        boxShadow: tier === "STAR" ? `0 0 8px ${TIER[tier].color}88` : "none",
+        boxShadow: tier === "STAR" ? `0 0 10px ${TIER[tier].color}aa` : "none",
       }} />
-      {/* Jersey # */}
-      <span className="stencil" style={{
-        fontSize: 14, color: "var(--ivory)", letterSpacing: "0.04em",
-        minWidth: 22, textAlign: "right",
-      }}>
-        {player.number ?? "—"}
-      </span>
-      {/* Last name */}
-      <span className="mono" style={{
-        fontSize: 11, color: "var(--ivory)", letterSpacing: "0.04em",
-        whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
-        minWidth: 0, flex: 1,
-      }}>
-        {lastName(player.name)}
-      </span>
-      {/* Right rail: rookie pill / status glyph */}
-      {rook && (
-        <span className="mono" style={{
-          fontSize: 8, color: "#000", background: TIER.ROOKIE.color,
-          padding: "2px 5px", letterSpacing: "0.18em", fontWeight: 700, flexShrink: 0,
-        }}>R{rook.round}</span>
-      )}
-      {glyph && (
-        <span className="mono" style={{
-          fontSize: 8, color: "#fff", background: glyph.color,
-          padding: "2px 5px", letterSpacing: "0.18em", fontWeight: 700, flexShrink: 0,
-        }}>{glyph.label}</span>
+
+      {/* Photo */}
+      <PlayerPhoto player={player} size={photoSize} />
+
+      {/* Jersey # + name + profile */}
+      <div style={{ minWidth: 0, flex: 1, display: "flex", flexDirection: "column", gap: 2 }}>
+        <div style={{ display: "flex", alignItems: "baseline", gap: 8, minWidth: 0 }}>
+          <span className="stencil" style={{
+            fontSize: dense ? 18 : 22, color: "var(--ivory)", letterSpacing: "0.02em",
+            lineHeight: 1, flexShrink: 0,
+            textShadow: tier === "STAR" ? `0 0 10px ${TIER[tier].color}66` : "none",
+          }}>
+            {player.number ?? "—"}
+          </span>
+          <span className="stencil" style={{
+            fontSize: dense ? 12 : 13, color: "var(--ivory)", letterSpacing: "0.04em",
+            lineHeight: 1.1, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
+            minWidth: 0, flex: 1,
+          }}>
+            {lastName(player.name)}
+          </span>
+        </div>
+        <div className="mono" style={{
+          fontSize: dense ? 8.5 : 9, color: "var(--silver)", letterSpacing: "0.1em",
+          whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
+        }}>
+          {profileLine(player) || "—"}
+        </div>
+        {player.college && (
+          <div className="mono" style={{
+            fontSize: 8, color: "var(--steel-2)", letterSpacing: "0.14em",
+            whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
+          }}>
+            {player.college.toUpperCase()}
+          </div>
+        )}
+      </div>
+
+      {/* Right rail: rookie pill / status glyph (stacked) */}
+      {(rook || glyph) && (
+        <div style={{ display: "flex", flexDirection: "column", gap: 3, flexShrink: 0, alignItems: "flex-end" }}>
+          {rook && (
+            <span className="mono" style={{
+              fontSize: 8, color: "#000", background: TIER.ROOKIE.color,
+              padding: "2px 5px", letterSpacing: "0.18em", fontWeight: 700,
+            }}>R{rook.round}</span>
+          )}
+          {glyph && (
+            <span className="mono" style={{
+              fontSize: 8, color: "#fff", background: glyph.color,
+              padding: "2px 5px", letterSpacing: "0.18em", fontWeight: 700,
+            }}>{glyph.label}</span>
+          )}
+        </div>
       )}
     </div>
   );
@@ -342,12 +394,13 @@ function DepthMatrix({ positionsForGroup, byPos, onPlayerClick, isMobile }) {
       marginTop: 16,
       background: "var(--carbon)",
       border: "1px solid #ffffff10",
-      overflow: "hidden",
+      overflow: "auto",
     }}>
       {/* Header row */}
       <div style={{
         display: "grid",
-        gridTemplateColumns: "minmax(120px, 0.6fr) repeat(4, minmax(0, 1fr))",
+        gridTemplateColumns: "minmax(110px, 0.5fr) repeat(4, minmax(190px, 1fr))",
+        minWidth: 870,
         background: "#160407",
         borderBottom: "1px solid #ffffff15",
       }}>
@@ -379,7 +432,8 @@ function DepthMatrix({ positionsForGroup, byPos, onPlayerClick, isMobile }) {
         return (
           <div key={pos} style={{
             display: "grid",
-            gridTemplateColumns: "minmax(120px, 0.6fr) repeat(4, minmax(0, 1fr))",
+            gridTemplateColumns: "minmax(110px, 0.5fr) repeat(4, minmax(190px, 1fr))",
+            minWidth: 870,
             borderBottom: "1px solid #ffffff08",
           }}>
             {/* Position label */}
@@ -427,15 +481,17 @@ function DepthMatrix({ positionsForGroup, byPos, onPlayerClick, isMobile }) {
 
 // ─── 3. ROOKIE CLASS ROW ────────────────────────────────────────────────────
 // Drafted rookies as photo cards; UDFA/2026 rookies as chips below.
-function RookieClassRow({ groupPlayers, onPlayerClick, isMobile }) {
-  const drafted = groupPlayers
+// Always shows the FULL '26 class — not filtered by side toggle — because the
+// class is a fixed cohort, not a side-specific view.
+function RookieClassRow({ allPlayers, side, onPlayerClick, isMobile }) {
+  const drafted = allPlayers
     .filter((p) => (p.acquired || "").startsWith("draft-2026"))
     .sort((a, b) => {
       const ra = rookieRound(a)?.pick ?? 999;
       const rb = rookieRound(b)?.pick ?? 999;
       return ra - rb;
     });
-  const udfa = groupPlayers
+  const udfa = allPlayers
     .filter((p) => /fa-2026-UDFA/.test(p.acquired || ""))
     .sort((a, b) => a.name.localeCompare(b.name));
 
@@ -449,12 +505,12 @@ function RookieClassRow({ groupPlayers, onPlayerClick, isMobile }) {
       borderTop: `2px solid ${TIER.ROOKIE.color}`,
       padding: isMobile ? "14px 12px" : "18px 18px",
     }}>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 12 }}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 12, flexWrap: "wrap", gap: 6 }}>
         <span className="mono" style={{ fontSize: 10, letterSpacing: "0.26em", color: TIER.ROOKIE.color, fontWeight: 700 }}>
-          ▎ ROOKIE CLASS '26
+          ▎ ROOKIE CLASS '26 · FULL TEAM
         </span>
         <span className="mono" style={{ fontSize: 9, letterSpacing: "0.16em", color: "var(--steel-2)" }}>
-          {drafted.length} DRAFTED · {udfa.length} UDFA
+          {drafted.length} DRAFTED · {udfa.length} UDFA · INDEPENDENT OF {side?.toUpperCase()} TOGGLE
         </span>
       </div>
 
@@ -668,7 +724,8 @@ export default function DepthChartView({ players, currentPhase, onPlayerClick })
       />
 
       <RookieClassRow
-        groupPlayers={groupPlayers}
+        allPlayers={players}
+        side={side}
         onPlayerClick={onPlayerClick}
         isMobile={isMobile}
       />
