@@ -91,7 +91,59 @@ const POS_FULL = {
   DE: "DEFENSIVE END", EDGE: "EDGE RUSHER", DT: "DEFENSIVE TACKLE",
   LB: "LINEBACKER", CB: "CORNERBACK", S: "SAFETY",
   K: "KICKER", P: "PUNTER", LS: "LONG SNAPPER",
+  // Special-teams synthetic units (used only in the ST view)
+  PK: "PLACEKICKER", KO: "KICKOFF SPECIALIST", H: "HOLDER",
+  KR: "KICK RETURNER", PR: "PUNT RETURNER",
+  GUNNER: "GUNNER (PUNT COVER)", PP: "PERSONAL PROTECTOR",
 };
+
+// Synthetic ST units rendered when the Special Teams tab is active.
+// Each unit lists the players who fill that role, drawn from across the
+// roster (returners are usually WRs/RBs, gunners are CBs, etc.).
+// resolver(player) returns true if the player fills the unit.
+// rankKey(player) returns a sort key (lower = higher on the unit's depth).
+const ST_UNITS = [
+  {
+    id: "PK", label: "PK",
+    resolver: (p) => p.position === "K",
+    rankKey: (p) => p.depthRank ?? 99,
+  },
+  {
+    id: "P", label: "P",
+    resolver: (p) => p.position === "P",
+    rankKey: (p) => p.depthRank ?? 99,
+  },
+  {
+    id: "H", label: "H",
+    resolver: (p) => (p.stRoles || []).includes("H"),
+    rankKey: (p) => p.stRank?.H ?? 99,
+  },
+  {
+    id: "LS", label: "LS",
+    resolver: (p) => p.position === "LS",
+    rankKey: (p) => p.depthRank ?? 99,
+  },
+  {
+    id: "KR", label: "KR",
+    resolver: (p) => (p.stRoles || []).includes("KR"),
+    rankKey: (p) => p.stRank?.KR ?? 99,
+  },
+  {
+    id: "PR", label: "PR",
+    resolver: (p) => (p.stRoles || []).includes("PR"),
+    rankKey: (p) => p.stRank?.PR ?? 99,
+  },
+  {
+    id: "GUNNER", label: "GUNNER",
+    resolver: (p) => (p.stRoles || []).includes("GUNNER"),
+    rankKey: (p) => p.stRank?.GUNNER ?? 99,
+  },
+  {
+    id: "PP", label: "PP",
+    resolver: (p) => (p.stRoles || []).includes("PP"),
+    rankKey: (p) => p.stRank?.PP ?? 99,
+  },
+];
 
 // Resolve a player's slot within a split position. Falls back to the first
 // configured slot when the player has no posSlot or a value not in the list.
@@ -718,17 +770,37 @@ export default function DepthChartView({ players, currentPhase, onPlayerClick })
   }, [players]);
 
   const groupPlayers = byGroup[side] || [];
-  const positionsForGroup = GROUPS.find((g) => g.id === side)?.positions || [];
 
-  // Index by position for quick lookups
-  const byPos = useMemo(() => {
+  // For offense/defense, use the canonical position list. For special teams,
+  // build synthetic units (PK, P, H, LS, KR, PR, GUNNER, PP) that draw
+  // players from across the WHOLE roster (returners are usually WRs/RBs,
+  // gunners are CBs, etc.), not just positionGroup === "special".
+  const { positionsForGroup, byPos, viewPlayers } = useMemo(() => {
+    if (side !== "special") {
+      const pos = GROUPS.find((g) => g.id === side)?.positions || [];
+      const map = {};
+      groupPlayers.forEach((p) => {
+        if (!map[p.position]) map[p.position] = [];
+        map[p.position].push(p);
+      });
+      return { positionsForGroup: pos, byPos: map, viewPlayers: groupPlayers };
+    }
+    // Special-teams synthetic view
     const map = {};
-    groupPlayers.forEach((p) => {
-      if (!map[p.position]) map[p.position] = [];
-      map[p.position].push(p);
+    const unitIds = ST_UNITS.map((u) => u.id);
+    const seen = new Set();
+    ST_UNITS.forEach((unit) => {
+      const matches = players
+        .filter(unit.resolver)
+        .slice()
+        .sort((a, b) => unit.rankKey(a) - unit.rankKey(b));
+      map[unit.id] = matches;
+      matches.forEach((p) => seen.add(p.id));
     });
-    return map;
-  }, [groupPlayers]);
+    // Unique-player count for the legend
+    const uniqueViewPlayers = Array.from(seen).map((id) => players.find((p) => p.id === id)).filter(Boolean);
+    return { positionsForGroup: unitIds, byPos: map, viewPlayers: uniqueViewPlayers };
+  }, [side, players, groupPlayers]);
 
   const slotsCount = positionsForGroup.filter((pos) => (byPos[pos] || []).length > 0).length;
 
@@ -802,7 +874,7 @@ export default function DepthChartView({ players, currentPhase, onPlayerClick })
         isMobile={isMobile}
       />
 
-      <LegendRow groupPlayers={groupPlayers} slotsCount={slotsCount} />
+      <LegendRow groupPlayers={viewPlayers} slotsCount={slotsCount} />
     </div>
   );
 }
