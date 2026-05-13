@@ -58,8 +58,8 @@ const GROUPS = [
 // page never silently drops a body — unassigned shows in the first slot.
 // Slot order = row order in the depth matrix.
 const POSITION_SPLITS = {
-  // Offense — explicit L/R rows
-  WR: ["LWR", "RWR"],
+  // Offense — WR uses X / Z / slot terminology, OL uses L/R
+  WR: ["X", "Z", "SLOT"],
   OG: ["LG", "RG"],
   OT: ["LT", "RT"],
   // Defense — more granular roles
@@ -73,7 +73,7 @@ const POSITION_SPLITS = {
 
 // Human-readable slot labels, shown next to the position pill.
 const SLOT_FULL = {
-  LWR: "LEFT WR (X)", RWR: "RIGHT WR (Z / SLOT)",
+  X: "X · SPLIT END", Z: "Z · FLANKER", SLOT: "SLOT",
   LG: "LEFT GUARD",  RG: "RIGHT GUARD",
   LT: "LEFT TACKLE", RT: "RIGHT TACKLE",
   LDE: "LEFT DE",    RDE: "RIGHT DE",
