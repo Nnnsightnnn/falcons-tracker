@@ -6,6 +6,7 @@ import {
   NEWS_DIGEST,
   SEASON_RECAP_2025,
   NFC_SOUTH_STANDINGS_2025,
+  FRONT_OFFICE,
 } from "./playerData.js";
 import { DRAFT_DATA } from "./draftData.js";
 import { OFFSEASON_CALENDAR } from "./offseasonCalendar.js";
@@ -138,10 +139,11 @@ function liveTagForPhase(phase) {
 
 function TopBar({ view, setView }) {
   const tabs = [
-    { k: "dashboard",   label: "DASHBOARD" },
-    { k: "depth-chart", label: "DEPTH CHART" },
-    { k: "draft",       label: "DRAFT BOARD" },
-    { k: "wire",        label: "WIRE / DISPATCH" },
+    { k: "dashboard",    label: "DASHBOARD" },
+    { k: "depth-chart",  label: "DEPTH CHART" },
+    { k: "draft",        label: "DRAFT BOARD" },
+    { k: "front-office", label: "FRONT OFFICE" },
+    { k: "wire",         label: "WIRE / DISPATCH" },
   ];
   const isMobile = useIsMobile();
 
@@ -2234,6 +2236,139 @@ function RSSSourcesPanel() {
   );
 }
 
+// ─── FRONT OFFICE VIEW ──────────────────────────────────────────────────────
+// Tiered card grid: OWNERSHIP → FOOTBALL OPS → BUSINESS → COACHING →
+// COORDINATORS → POSITION COACHES. Photo + title + bio per person.
+function FrontOfficeCard({ person }) {
+  const [failed, setFailed] = useState(false);
+  const initials = person.name.split(" ").map((w) => w[0]).join("").slice(0, 2).toUpperCase();
+  return (
+    <div style={{
+      background: "#0B0C0F",
+      border: "1px solid #ffffff10",
+      borderLeft: "3px solid var(--hot)",
+      padding: 0,
+      display: "flex",
+      flexDirection: "column",
+      minHeight: 0,
+    }}>
+      <div style={{
+        width: "100%",
+        aspectRatio: "1 / 1",
+        background: "linear-gradient(135deg, #1A0508 0%, #0B0C0F 70%)",
+        display: "flex", alignItems: "center", justifyContent: "center",
+        overflow: "hidden", position: "relative",
+      }}>
+        {person.image && !failed ? (
+          <img src={person.image} alt={person.name}
+            onError={() => setFailed(true)}
+            style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
+        ) : (
+          <span className="stencil" style={{
+            fontSize: 56, color: "var(--hot)", letterSpacing: "0.04em",
+          }}>{initials}</span>
+        )}
+        {/* Since-year stencil overlay */}
+        {person.since && (
+          <div style={{
+            position: "absolute", top: 10, right: 10,
+            background: "rgba(11,12,15,0.85)",
+            border: "1px solid #ffffff15",
+            padding: "3px 7px",
+          }}>
+            <span className="mono" style={{
+              fontSize: 9, letterSpacing: "0.2em", color: "var(--silver)", fontWeight: 700,
+            }}>SINCE {person.since}</span>
+          </div>
+        )}
+      </div>
+      <div style={{ padding: "12px 14px 14px", display: "flex", flexDirection: "column", gap: 6 }}>
+        <span className="mono" style={{
+          fontSize: 9, color: "var(--hot)", letterSpacing: "0.18em", fontWeight: 700,
+        }}>{person.title.toUpperCase()}</span>
+        <span className="stencil" style={{
+          fontSize: 17, color: "var(--ivory)", letterSpacing: "0.03em", lineHeight: 1.1,
+        }}>{person.name.toUpperCase()}</span>
+        <span className="mono" style={{
+          fontSize: 10, color: "var(--silver)", letterSpacing: "0.04em",
+          lineHeight: 1.45, marginTop: 4,
+        }}>{person.bio}</span>
+      </div>
+    </div>
+  );
+}
+
+function FrontOfficeView() {
+  const isMobile = useIsMobile();
+  // Group by tier in the order they're declared
+  const tiers = [];
+  const tierIndex = {};
+  FRONT_OFFICE.forEach((p) => {
+    if (tierIndex[p.tier] === undefined) {
+      tierIndex[p.tier] = tiers.length;
+      tiers.push({ id: p.tier, people: [] });
+    }
+    tiers[tierIndex[p.tier]].people.push(p);
+  });
+
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
+      {/* Header strip */}
+      <div className="panel" style={{ padding: 0 }}>
+        <div style={{ padding: isMobile ? "14px 14px 12px" : "18px 22px" }}>
+          <div className="mono" style={{ fontSize: 9, letterSpacing: "0.28em", color: "var(--silver)" }}>
+            ▎ ORG · DECISION MAKERS
+          </div>
+          <div className="stencil" style={{
+            fontSize: isMobile ? 22 : 28, color: "var(--ivory)", marginTop: 4, lineHeight: 1,
+          }}>
+            FRONT OFFICE
+          </div>
+          <div className="mono" style={{
+            fontSize: 10, color: "var(--steel-2)", letterSpacing: "0.16em",
+            marginTop: 8, lineHeight: 1.5,
+          }}>
+            2026 ORG · BLANK ON TOP · RYAN PRESIDENT OF FOOTBALL · CUNNINGHAM GM · STEFANSKI HC · {FRONT_OFFICE.length} TOTAL
+          </div>
+        </div>
+      </div>
+
+      {/* Tier sections */}
+      {tiers.map((tier) => (
+        <div key={tier.id}>
+          <div style={{
+            display: "flex", alignItems: "center", gap: 12,
+            marginBottom: 10,
+          }}>
+            <div style={{
+              height: 2, background: "var(--hot)",
+              width: isMobile ? 22 : 42, flexShrink: 0,
+            }} />
+            <span className="mono" style={{
+              fontSize: 10, letterSpacing: "0.28em", color: "var(--hot)", fontWeight: 700,
+            }}>{tier.id}</span>
+            <span className="mono" style={{
+              fontSize: 9, letterSpacing: "0.18em", color: "var(--steel-2)",
+            }}>{tier.people.length} {tier.people.length === 1 ? "SEAT" : "SEATS"}</span>
+            <div style={{ flex: 1, height: 1, background: "#ffffff10" }} />
+          </div>
+          <div style={{
+            display: "grid",
+            gridTemplateColumns: isMobile
+              ? "repeat(1, minmax(0, 1fr))"
+              : "repeat(auto-fill, minmax(240px, 1fr))",
+            gap: 12,
+          }}>
+            {tier.people.map((p) => (
+              <FrontOfficeCard key={p.id} person={p} />
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 // ─── FOOTER ─────────────────────────────────────────────────────────────────
 function Footer() {
   return (
@@ -2288,6 +2423,7 @@ export default function FalconsTracker() {
           <DepthChartView players={PLAYERS} currentPhase={currentPhase} onPlayerClick={setSelectedPlayer} />
         )}
         {view === "draft" && <DraftView currentPhase={currentPhase} />}
+        {view === "front-office" && <FrontOfficeView />}
         {view === "wire" && <WireView />}
       </div>
 

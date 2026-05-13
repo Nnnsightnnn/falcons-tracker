@@ -1603,6 +1603,114 @@ export const PLAYERS = [
 ];
 
 // =========================================
+// FRONT OFFICE + COACHING STAFF
+// =========================================
+// Tiered roster of decision-makers. Photos sourced from atlantafalcons.com's
+// Cloudinary CDN (HEAD-verified 200 OK). If a photo URL ever 404s, leave the
+// image field null — the view falls back to initials.
+//
+// 2026 org structure (per Blank's Jan 2026 letter to fans):
+//   • OWNERSHIP — Arthur Blank
+//   • FOOTBALL OPS — Matt Ryan (President), Ian Cunningham (GM)
+//   • BUSINESS — Greg Beadles (President & CEO)
+//   • COACHING — Stefanski + coordinators
+
+export const FRONT_OFFICE = [
+  // ─── OWNERSHIP ────────────────────────────────────────────────────────────
+  {
+    id: "arthur-blank",
+    name: "Arthur M. Blank",
+    title: "Owner & Chairman",
+    tier: "OWNERSHIP",
+    since: 2002,
+    bio: "Home Depot co-founder. Bought the Falcons in 2002 for $545M. Built Mercedes-Benz Stadium; owns Atlanta United FC and AMBSE.",
+    image: "https://static.clubs.nfl.com/image/upload/f_auto/falcons/lijqsh3vasfinxnmhhxe.jpg",
+  },
+
+  // ─── FOOTBALL OPERATIONS ──────────────────────────────────────────────────
+  {
+    id: "matt-ryan-fo",
+    name: "Matt Ryan",
+    title: "President of Football Operations",
+    tier: "FOOTBALL OPS",
+    since: 2026,
+    bio: "Falcons' all-time franchise QB (2008–2021, '16 MVP). Holds final football authority — HC and GM report to him.",
+    image: "https://static.clubs.nfl.com/image/upload/f_auto/falcons/qzp3if8letihdg2hol1f.jpg",
+  },
+  {
+    id: "ian-cunningham",
+    name: "Ian Cunningham",
+    title: "General Manager",
+    tier: "FOOTBALL OPS",
+    since: 2026,
+    bio: "Hired from Chicago (Assistant GM, 2022–25). 'Build through the trenches' mandate. First draft: Branch, A. Terrell, Onianwa.",
+    image: "https://static.clubs.nfl.com/image/upload/f_auto/falcons/epnbjquga4z6wlfi7gro.png",
+  },
+
+  // ─── BUSINESS / CLUB ──────────────────────────────────────────────────────
+  {
+    id: "greg-beadles",
+    name: "Greg Beadles",
+    title: "President & CEO",
+    tier: "BUSINESS",
+    since: 2026,
+    bio: "Promoted Jan 2026, replacing Rich McKay. 23-year Falcons veteran on the business side. Hosts the Madrid game at Bernabéu Nov 8.",
+    image: "https://static.clubs.nfl.com/image/upload/f_auto/falcons/ced4kse7xkadcrkamylm.jpg",
+  },
+
+  // ─── HEAD COACH ───────────────────────────────────────────────────────────
+  {
+    id: "kevin-stefanski",
+    name: "Kevin Stefanski",
+    title: "Head Coach",
+    tier: "COACHING",
+    since: 2026,
+    bio: "Hired Jan 2026 after 6 seasons in Cleveland (2x AP Coach of the Year). Installs play-action, under-center, wide-zone DNA.",
+    image: "https://static.clubs.nfl.com/image/upload/f_auto/falcons/liausetnt2rma91emlfy.jpg",
+  },
+
+  // ─── COORDINATORS ─────────────────────────────────────────────────────────
+  {
+    id: "tommy-rees",
+    name: "Tommy Rees",
+    title: "Offensive Coordinator · Play Caller",
+    tier: "COORDINATORS",
+    since: 2026,
+    bio: "33 yrs old. Was Browns TEs coach '24 → OC mid-'25. Notre Dame QB pedigree. Stefanski: 'very comfortable' with him calling plays.",
+    image: "https://static.clubs.nfl.com/image/upload/f_auto/falcons/fcevqfof9amqkjeo60pz.jpg",
+  },
+  {
+    id: "jeff-ulbrich",
+    name: "Jeff Ulbrich",
+    title: "Defensive Coordinator",
+    tier: "COORDINATORS",
+    since: 2024,
+    bio: "Retained from the previous staff. 4-3 / hybrid front. Ex-NFL LB (SF '00–'09). Drives the Walker/Pearce edge package.",
+    image: "https://static.clubs.nfl.com/image/upload/f_auto/falcons/lsbimbddujis4at4mzzp.jpg",
+  },
+  {
+    id: "craig-aukerman",
+    name: "Craig Aukerman",
+    title: "Special Teams Coordinator",
+    tier: "COORDINATORS",
+    since: 2026,
+    bio: "New hire alongside Stefanski. Inherits Folk/Bailey/McCullough specialist trio plus Branch return package.",
+    image: "https://static.clubs.nfl.com/image/upload/f_auto/falcons/e9snvay0ojf5awficdwp.jpg",
+  },
+
+  // ─── KEY POSITION COACHES ─────────────────────────────────────────────────
+  {
+    id: "bill-callahan",
+    name: "Bill Callahan",
+    title: "Offensive Line Coach",
+    tier: "POSITION COACHES",
+    since: 2026,
+    bio: "Long-tenured OL guru (ex-Cowboys, Browns, Raiders HC). Reunited with Stefanski. Tasked with the Matthews / Taylor tackle build.",
+    image: "https://static.clubs.nfl.com/image/upload/f_auto/falcons/w8eo7bazirbaauv79qat.jpg",
+  },
+];
+
+// =========================================
 // TEAM LOGOS
 // =========================================
 export const TEAM_LOGOS = {
