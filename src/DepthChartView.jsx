@@ -53,6 +53,37 @@ const GROUPS = [
   { id: "special", label: "SPECIAL TEAMS", positions: ["K", "P", "LS"] },
 ];
 
+// Positions that split into multiple rows. The first slot is the default
+// bucket for any player at this position without a `posSlot` value, so the
+// page never silently drops a body — unassigned shows in the first slot.
+// Slot order = row order in the depth matrix.
+const POSITION_SPLITS = {
+  // Offense — explicit L/R rows
+  WR: ["LWR", "RWR"],
+  OG: ["LG", "RG"],
+  OT: ["LT", "RT"],
+  // Defense — more granular roles
+  DE:   ["LDE", "RDE"],
+  EDGE: ["LEDGE", "REDGE"],
+  DT:   ["1T", "3T"],
+  LB:   ["MIKE", "WILL"],
+  CB:   ["LCB", "RCB", "NICKEL"],
+  S:    ["FS", "SS"],
+};
+
+// Human-readable slot labels, shown next to the position pill.
+const SLOT_FULL = {
+  LWR: "LEFT WR (X)", RWR: "RIGHT WR (Z / SLOT)",
+  LG: "LEFT GUARD",  RG: "RIGHT GUARD",
+  LT: "LEFT TACKLE", RT: "RIGHT TACKLE",
+  LDE: "LEFT DE",    RDE: "RIGHT DE",
+  LEDGE: "LEFT EDGE", REDGE: "RIGHT EDGE",
+  "1T": "1-TECH / NT", "3T": "3-TECH",
+  MIKE: "MIKE (MLB)", WILL: "WILL (WLB)", SAM: "SAM (SLB)",
+  LCB: "LEFT CB", RCB: "RIGHT CB", NICKEL: "NICKEL / SLOT",
+  FS: "FREE SAFETY", SS: "STRONG SAFETY",
+};
+
 const POS_FULL = {
   QB: "QUARTERBACK", RB: "RUNNING BACK", FB: "FULLBACK",
   WR: "WIDE RECEIVER", TE: "TIGHT END",
@@ -61,6 +92,14 @@ const POS_FULL = {
   LB: "LINEBACKER", CB: "CORNERBACK", S: "SAFETY",
   K: "KICKER", P: "PUNTER", LS: "LONG SNAPPER",
 };
+
+// Resolve a player's slot within a split position. Falls back to the first
+// configured slot when the player has no posSlot or a value not in the list.
+function resolveSlot(player, slots) {
+  if (!slots) return null;
+  if (player.posSlot && slots.includes(player.posSlot)) return player.posSlot;
+  return slots[0];
+}
 
 function lastName(name) {
   if (!name) return "";
@@ -332,27 +371,54 @@ function DepthCell({ player, onPlayerClick, dense = false }) {
 
 function DepthMatrix({ positionsForGroup, byPos, onPlayerClick, isMobile }) {
   const SLOT_LABELS = ["STARTER", "2ND", "3RD", "DEPTH"];
-  // Filter to positions that have at least one player
-  const rows = positionsForGroup
-    .map((pos) => ({
-      pos,
-      players: (byPos[pos] || []).slice().sort((a, b) => {
-        if (a.depthRank !== b.depthRank) return a.depthRank - b.depthRank;
-        return (b.experience ?? 0) - (a.experience ?? 0);
-      }),
-    }))
-    .filter((r) => r.players.length > 0);
+
+  // Build rows. If a position has a split config, emit one row per sub-slot.
+  // Otherwise emit a single row for the position. Empty rows are filtered out.
+  const rows = [];
+  positionsForGroup.forEach((pos) => {
+    const sortFn = (a, b) => {
+      if (a.depthRank !== b.depthRank) return a.depthRank - b.depthRank;
+      return (b.experience ?? 0) - (a.experience ?? 0);
+    };
+    const allAtPos = (byPos[pos] || []).slice().sort(sortFn);
+    if (allAtPos.length === 0) return;
+
+    const splits = POSITION_SPLITS[pos];
+    if (!splits) {
+      rows.push({ pos, slotLabel: null, slotFull: null, players: allAtPos });
+      return;
+    }
+
+    // Bucket players by posSlot (with fallback to first slot)
+    const buckets = Object.fromEntries(splits.map((s) => [s, []]));
+    allAtPos.forEach((p) => {
+      const slot = resolveSlot(p, splits);
+      buckets[slot].push(p);
+    });
+    splits.forEach((slot) => {
+      const slotPlayers = buckets[slot].slice().sort(sortFn);
+      if (slotPlayers.length === 0) return;
+      rows.push({
+        pos,
+        slotLabel: slot,
+        slotFull: SLOT_FULL[slot] || slot,
+        players: slotPlayers,
+      });
+    });
+  });
 
   if (isMobile) {
-    // Mobile: each position becomes its own card with name chips
+    // Mobile: each row (position or sub-slot) becomes its own card with name chips
     return (
       <div style={{ marginTop: 16, display: "flex", flexDirection: "column", gap: 1, background: "#ffffff08", border: "1px solid #ffffff10" }}>
-        {rows.map(({ pos, players }) => (
-          <div key={pos} style={{ background: "var(--carbon)", padding: "12px 14px" }}>
+        {rows.map(({ pos, slotLabel, slotFull, players }, idx) => (
+          <div key={(slotLabel || pos) + "-" + idx} style={{ background: "var(--carbon)", padding: "12px 14px" }}>
             <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginBottom: 8 }}>
-              <span className="stencil" style={{ fontSize: 16, color: "var(--ivory)", letterSpacing: "0.12em" }}>{pos}</span>
+              <span className="stencil" style={{ fontSize: 16, color: "var(--ivory)", letterSpacing: "0.12em" }}>
+                {slotLabel ? `${pos} · ${slotLabel}` : pos}
+              </span>
               <span className="mono" style={{ fontSize: 9, color: "var(--steel-2)", letterSpacing: "0.16em" }}>
-                {POS_FULL[pos]} · {players.length} DEEP
+                {slotFull || POS_FULL[pos]} · {players.length} DEEP
               </span>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 1, background: "#ffffff08" }}>
@@ -421,7 +487,7 @@ function DepthMatrix({ positionsForGroup, byPos, onPlayerClick, isMobile }) {
       </div>
 
       {/* Body rows */}
-      {rows.map(({ pos, players }) => {
+      {rows.map(({ pos, slotLabel, slotFull, players }, idx) => {
         const starter = players[0];
         const slot2 = players[1];
         const slot3 = players[2];
@@ -430,7 +496,7 @@ function DepthMatrix({ positionsForGroup, byPos, onPlayerClick, isMobile }) {
         const extra = slot4Plus.length - 1;
 
         return (
-          <div key={pos} style={{
+          <div key={(slotLabel || pos) + "-" + idx} style={{
             display: "grid",
             gridTemplateColumns: "minmax(110px, 0.5fr) repeat(4, minmax(190px, 1fr))",
             minWidth: 870,
@@ -446,6 +512,12 @@ function DepthMatrix({ positionsForGroup, byPos, onPlayerClick, isMobile }) {
               <span className="stencil" style={{
                 fontSize: 16, color: "var(--ivory)", letterSpacing: "0.08em", lineHeight: 1,
               }}>{pos}</span>
+              {slotLabel && (
+                <span className="mono" style={{
+                  fontSize: 10, color: "var(--hot)", letterSpacing: "0.16em",
+                  marginTop: 4, fontWeight: 700,
+                }}>{slotLabel}</span>
+              )}
               <span className="mono" style={{
                 fontSize: 8, color: "var(--steel-2)", letterSpacing: "0.16em", marginTop: 4,
               }}>{players.length} DEEP</span>
