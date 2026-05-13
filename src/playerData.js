@@ -1633,7 +1633,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-05-12T13:00:00Z",
+  generatedAt: "2026-05-13T14:30:00Z",
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "The Falcoholic",
     "Bleacher Report", "Pro Football Rumors", "SI Falcons", "NBC Sports",
@@ -1652,11 +1652,17 @@ export const NEWS_DIGEST = {
     "Sportskeeda", "Sharp Football", "Draft Sharks", "Ourlads",
     "Schedule2026", "NFL Analysis Network", "Real Madrid",
     "Sports Brackets", "The Sun", "Breezy Scroll",
+    "Bengals.com", "FOX19", "On Location", "Southern Sports Today",
   ],
   topics: [
     {
-      title: "International slate T-1 (Wed May 13, 9 AM ET GMFB) · Full schedule T-2 (Thu May 14, 8 PM ET) — Madrid opponent unlocks TOMORROW",
-      detail: "NBC PFT / NFL.com / Yahoo / CBS Sports / FBSchedules / Sports Brackets (May 10–12 sweep) confirm the NFL's two-step rollout: the international package — including Atlanta's home game at Real Madrid's Santiago Bernabéu — drops Wed May 13 at 9 AM ET on NFL Network's Good Morning Football (T-1 from today), with the full 2026 calendar following Thu May 14 at 8 PM ET on NFL Network / ESPN2 / NFL+ (T-2). CBS Sports working prediction: Kansas City as Atlanta's Madrid opponent (Chiefs have been publicly lobbying). The Sun reports last year's Spain game was November and that timing window is likely again. The other three internationals: SF in Mexico City, DET in Munich, NO in Paris (NFL's first), plus three London games. Falcons' 17 opponents locked — HOME (9): CAR, NO, TB, BAL, CHI, CIN, DET, KC, SF · AWAY (8): CAR, NO, TB, CLE, GB, MIN, PIT, WAS. Bye week, primetime slots, and Atlanta's Madrid opponent + date all unlock Wed–Thu.",
+      title: "MADRID OPPONENT REVEALED — Bengals at Falcons, Sunday Nov 8 (Week 9), 9:30 AM ET kickoff at Real Madrid's Bernabéu",
+      detail: "ESPN / NFL.com / Bengals.com / Atlantafalcons.com / Yahoo / NBC PFT (Wed May 13, 9 AM ET): the NFL's international slate dropped this morning on GMFB and confirmed Atlanta will HOST the Cincinnati Bengals (Joe Burrow, Ja'Marr Chase, Tee Higgins) in Madrid on Sunday Nov 8 — a 9:30 AM ET kickoff at Santiago Bernabéu, the 70-year home of Real Madrid CF, airing on NFL Network. It's the Bengals' first Madrid trip and their first international game in seven years. President & CEO Greg Beadles: 'We are truly honored and deeply grateful for the opportunity to host the Cincinnati Bengals at the Bernabéu.' Atlanta now has six prior international games (Toronto '13, London '14/'21/'23, Berlin '25). On Location ticket/travel packages already live. The Bijan vs. Burrow Madrid showcase is officially on the calendar.",
+      category: "games",
+    },
+    {
+      title: "Full 2026 schedule TONIGHT (Thu May 14, 8 PM ET, NFL Network / ESPN2 / NFL+) — bye week, primetime slate, Week 1 opener still unlocked",
+      detail: "NFL.com / CBS Sports / ESPN / The Falcoholic (May 12–13): the international half is now public; the full 2026 calendar drops tomorrow night, May 14 at 8 PM ET. Falcons' 17 opponents are locked — HOME (9): CAR, NO, TB, BAL, CHI, CIN, DET, KC, SF · AWAY (8): CAR, NO, TB, CLE, GB, MIN, PIT, WAS — but bye week, primetime slots and Atlanta's Week 1 opener (rumored vs. CAR per early SI tracker but unconfirmed) all hit Thursday night. With Madrid locked at Week 9, the surrounding mini-bye/travel pattern is the biggest curiosity for the rest of the schedule build. Broncos-at-Chiefs is the confirmed Week 1 MNF opener; Cowboys-Giants on Sunday night Week 1.",
       category: "general",
     },
     {
@@ -1665,13 +1671,13 @@ export const NEWS_DIGEST = {
       category: "free-agency",
     },
     {
-      title: "Rookie minicamp wrap — three-day camp closed Sun May 10, Stefanski 'goal was to learn our system,' OTAs flip switch in 6 days",
-      detail: "atlantafalcons.com / AJC / SI Falcons / Yardbarker / Atlanta News First (Fri May 8 → Sun May 10): the three-day rookie minicamp closed Sunday at Flowery Branch after running with 46 bodies on field — six draftees, 14 UDFAs, 23 tryout invites, two NFL-vet tryouts (Blacklock + Walton confirmed Mon), three returning Falcons. Stefanski's AJC line: 'Goal is to learn our system' — system install and facility orientation, not depth-chart sorting. Stefanski also confirmed he's not afraid to play rookies: 'If a rookie earns a role and Week 1 he's ready to go, then he'll be out there.' UGA UDFA RB Cash Jones repped at slot WR all weekend — confirmed by Branch — pointing to a Cordarrelle-style positionless role. R6 LB Harold Perkins Jr. went through a full slate Saturday despite his ACL-recovery flag. Phase 3 OTAs (first competitive 11-on-11 reps) open Mon May 18 — T-6.",
+      title: "Rookie minicamp wrap — three-day camp closed Sun May 10, Stefanski 'goal was to learn our system,' OTAs T-5 from today",
+      detail: "atlantafalcons.com / AJC / SI Falcons / Yardbarker / Atlanta News First (Fri May 8 → Sun May 10): the three-day rookie minicamp closed Sunday at Flowery Branch after running with 46 bodies on field — six draftees, 14 UDFAs, 23 tryout invites, two NFL-vet tryouts (Blacklock + Walton confirmed Mon), three returning Falcons. Stefanski's AJC line: 'Goal is to learn our system' — system install and facility orientation, not depth-chart sorting. Stefanski also confirmed he's not afraid to play rookies: 'If a rookie earns a role and Week 1 he's ready to go, then he'll be out there.' UGA UDFA RB Cash Jones repped at slot WR all weekend — confirmed by Branch — pointing to a Cordarrelle-style positionless role. R6 LB Harold Perkins Jr. went through a full slate Saturday despite his ACL-recovery flag. Phase 3 OTAs (first competitive 11-on-11 reps) open Mon May 18 — T-5.",
       category: "coaching",
     },
     {
-      title: "Branch headed to LA Thu–Sat for NFLPA Rookie Premiere — Atlanta's lone invite, returns in time for OTAs May 18",
-      detail: "NFLPA / Yahoo Sports / SI Falcons / ClutchPoints (May 8–11): R3 WR Zachariah Branch is the only Falcons rookie on the 42-name 2026 NFLPA Rookie Premiere invite list. The annual brand-and-photo summit runs May 14–16 in Los Angeles (trading-card photoshoots, autograph signings, jersey unveilings, group-licensing orientation) — overlaps the full schedule reveal Thursday night. 20 of 42 invites are wide receivers — confirmation the league sees Branch as a Day-1 producer despite slipping to #79. UGA junior line: 81/811/6 with 4.35 speed. Branch also drew rookie-camp raves: showing speed in route-breaks Day 1, and was praised for stopping to shake every media member's hand post-practice. Returns for Phase 3 OTAs Mon May 18.",
+      title: "Branch flies to LA tomorrow for NFLPA Rookie Premiere — Atlanta's lone invite, returns in time for OTAs Mon May 18",
+      detail: "NFLPA / Yahoo Sports / SI Falcons / ClutchPoints (May 8–13): R3 WR Zachariah Branch is the only Falcons rookie on the 42-name 2026 NFLPA Rookie Premiere invite list. The annual brand-and-photo summit runs May 14–16 in Los Angeles (trading-card photoshoots, autograph signings, jersey unveilings, group-licensing orientation) — neatly overlaps the full schedule reveal Thursday night. 20 of 42 invites are wide receivers — confirmation the league sees Branch as a Day-1 producer despite slipping to #79. UGA junior line: 81/811/6 with 4.35 speed. Branch also drew rookie-camp raves: showing speed in route-breaks Day 1, praised for stopping to shake every media member's hand post-practice, and even revealed Cash Jones is making the position switch to slot WR. Returns for Phase 3 OTAs Mon May 18.",
       category: "general",
     },
     {
@@ -1685,8 +1691,8 @@ export const NEWS_DIGEST = {
       category: "injuries",
     },
     {
-      title: "Penix throwing at rookie-camp Saturday — Stefanski 'right where he needs to be'; Matt Ryan: 'Mike's in a good spot,' Tua still takes early OTA reps T-6",
-      detail: "Yahoo Sports / SI Falcons / NBC Sports / NFL.com / Heavy / atlantafalcons.com (May 9–11 sweep): Michael Penix Jr. was spotted throwing the football during Saturday's rookie-camp session at Flowery Branch — a visible step forward in his ACL rehab from the Nov 16 reconstruction. Stefanski's repeat line: Penix is 'right where he needs to be' nearly six months post-op. President of Football Matt Ryan publicly added 'Mike's in a good spot right now' but cautioned 'we don't really know what to expect at the beginning of training camp.' Team posture remains publicly cautious — no firm Week-1 commit despite Penix's own 'aiming for Week 1' BR quote. Tua's 1yr/$1.3M bridge still takes the early OTA reps when Phase 3 opens Mon May 18 (T-6). Standard ACL window is 9–12 months; the real competition lives in training camp.",
+      title: "Penix throwing at rookie-camp Saturday — Stefanski 'right where he needs to be'; Matt Ryan: 'Mike's in a good spot,' Tua still takes early OTA reps T-5",
+      detail: "Yahoo Sports / SI Falcons / NBC Sports / NFL.com / Heavy / atlantafalcons.com (May 9–11 sweep): Michael Penix Jr. was spotted throwing the football during Saturday's rookie-camp session at Flowery Branch — a visible step forward in his ACL rehab from the Nov 16 reconstruction. Stefanski's repeat line: Penix is 'right where he needs to be' nearly six months post-op. President of Football Matt Ryan publicly added 'Mike's in a good spot right now' but cautioned 'we don't really know what to expect at the beginning of training camp.' Team posture remains publicly cautious — no firm Week-1 commit despite Penix's own 'aiming for Week 1' BR quote. Tua's 1yr/$1.3M bridge still takes the early OTA reps when Phase 3 opens Mon May 18 (T-5). Standard ACL window is 9–12 months; the real competition lives in training camp.",
       category: "injuries",
     },
     {
@@ -1701,7 +1707,7 @@ export const NEWS_DIGEST = {
     },
     {
       title: "Phase 2 Week 2 — Stefanski's 'identity' install; Tommy Rees calling plays, Browns coaching tree reunited",
-      detail: "atlantafalcons.com / FootballScoop / CBS Atlanta / SI Falcons / Blogging Dirty / NBC PFT: Phase 2 opened Mon May 4 — non-contact walkthroughs and individual drills, no offense-vs-defense team periods. Today (Tue May 12) is Phase 2 Week 2. Tori McElhaney's through-line for Stefanski's program: 'X's and O's, techniques, fundamentals, identity.' Stefanski confirmed publicly he's 'very comfortable' with OC Tommy Rees calling plays in 2026. Rees was Browns TEs coach 2024 → OC mid-2025 — three Browns assistants reunited (Rees, OL Bill Callahan, QB coach Alex Van Pelt). System DNA: play-action, under-center, wide-zone foundation blended with gap concepts (suits Bijan's Texas pedigree). Penix-Rees adjustment: less pistol/shotgun than Penix has run his whole career. First competitive 11-on-11 reps wait for OTAs Mon May 18.",
+      detail: "atlantafalcons.com / FootballScoop / CBS Atlanta / SI Falcons / Blogging Dirty / NBC PFT: Phase 2 opened Mon May 4 — non-contact walkthroughs and individual drills, no offense-vs-defense team periods. Today (Wed May 13) is mid-Phase 2 Week 2. Tori McElhaney's through-line for Stefanski's program: 'X's and O's, techniques, fundamentals, identity.' Stefanski confirmed publicly he's 'very comfortable' with OC Tommy Rees calling plays in 2026. Rees was Browns TEs coach 2024 → OC mid-2025 — three Browns assistants reunited (Rees, OL Bill Callahan, QB coach Alex Van Pelt). System DNA: play-action, under-center, wide-zone foundation blended with gap concepts (suits Bijan's Texas pedigree). Penix-Rees adjustment: less pistol/shotgun than Penix has run his whole career. First competitive 11-on-11 reps wait for OTAs Mon May 18.",
       category: "coaching",
     },
     {
@@ -1720,8 +1726,8 @@ export const NEWS_DIGEST = {
       category: "contracts",
     },
     {
-      title: "Calendar — International slate TOMORROW (Wed 9 AM ET GMFB) · Full schedule reveal Thu 8 PM ET · Branch to LA Thu–Sat · OTAs T-6",
-      detail: "Day-of (Tue May 12): rookie camp wrapped Sunday; building is in Phase 2 Week 2 classroom mode this week. Dashboard hero is the schedule-release countdown. International schedule (incl. Atlanta's Madrid game opponent + date) reveals Wed May 13 9 AM ET on Good Morning Football. Full schedule reveal Thu May 14 8 PM ET on NFL Network / ESPN2 / NFL+. Branch flies to LA Thu for NFLPA Rookie Premiere May 14–16. Phase 3 OTAs begin Mon May 18 (Atlanta's full slate: May 18–19, 21, 26–27, 29, June 8–9, 11). Mandatory veteran minicamp June 16–18; dead period through Jul 21; training camp opens Jul 22.",
+      title: "Calendar — International slate DROPPED (Bengals in Madrid Nov 8) · Full schedule reveal TONIGHT (Thu 8 PM ET) · OTAs Monday T-5",
+      detail: "Day-of (Wed May 13): international half of the 2026 schedule revealed at 9 AM ET — Falcons HOST Bengals at Bernabéu Nov 8 (Week 9, 9:30 AM ET, NFL Network). Full schedule reveal Thu May 14 8 PM ET on NFL Network / ESPN2 / NFL+ unlocks bye week, primetime slate and Week 1 opener. Branch flies to LA Thu for NFLPA Rookie Premiere May 14–16. Phase 2 Week 2 classroom install continues at Flowery Branch this week. Phase 3 OTAs open Mon May 18 (Atlanta's full slate: May 18–19, 21, 26–27, 29, June 8–9, 11) — first competitive 11-on-11 reps. Mandatory veteran minicamp June 16–18; dead period through Jul 21; training camp opens Jul 22.",
       category: "general",
     },
   ],

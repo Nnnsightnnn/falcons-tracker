@@ -59,10 +59,17 @@ export const OFFSEASON_CALENDAR = [
     phase: "offseason-lull",
   },
   {
+    id: "international-slate-release",
+    date: "2026-05-13",
+    label: "International Slate Released — Falcons host Bengals in Madrid Nov 8",
+    detail: "International half of the schedule revealed 9 AM ET on GMFB. Falcons-Bengals locked Sunday Nov 8 (Week 9), 9:30 AM ET at Bernabéu, on NFL Network.",
+    phase: "offseason-lull",
+  },
+  {
     id: "schedule-release",
     date: "2026-05-14",
-    label: "2026 NFL Schedule Release",
-    detail: "Week 1 matchup + full calendar drop. Prime-time slate revealed.",
+    label: "2026 NFL Schedule Release (full)",
+    detail: "Full calendar drop, 8 PM ET on NFL Network / ESPN2 / NFL+. Bye week, primetime slate, Week 1 opener.",
     phase: "offseason-lull",
   },
   {
@@ -105,6 +112,13 @@ export const OFFSEASON_CALENDAR = [
     date: "2026-09-10",
     label: "Week 1 (approx kickoff)",
     detail: "Regular season opens. Exact date pending schedule release.",
+    phase: "regular-season",
+  },
+  {
+    id: "madrid-game",
+    date: "2026-11-08",
+    label: "Madrid Game — Falcons HOST Bengals at Bernabéu",
+    detail: "Week 9 international. 9:30 AM ET kickoff at Real Madrid's Santiago Bernabéu, on NFL Network. Bijan vs. Burrow/Chase.",
     phase: "regular-season",
   },
 ];

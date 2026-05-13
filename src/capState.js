@@ -56,6 +56,7 @@ export const CAP_STATE = {
     },
   ],
   recentMoves: [
+    { date: "2026-05-12", description: "Signed DT Ross Blacklock, OL Brandon Walton, G Layden Robinson, LB Daveren Rayner off rookie-minicamp tryouts; released DL Ben Stille, RB Carlos Washington Jr., WR Deven Thompkins, TE Brandon Frazier" },
     { date: "2026-05-07", description: "Signed 14 UDFAs (QB Strand, C Brockermeyer, DT Allen, OT Mahlman, G Dewberry, WRs Marion / Rutherford / V. Anthony / A. Anthony / Brockington, RB Cash Jones, TE Velling, DL Nunnally IV, CB Dewalt IV)" },
     { date: "2026-04-17", description: "Traded DT Ruke Orhorhoro to JAX for DT Maason Smith (player-for-player)" },
     { date: "2026-04-12", description: "Exercised Bijan Robinson's 5th-year option ($11.32M in 2027)" },
