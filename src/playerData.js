@@ -1700,6 +1700,75 @@ export const RSS_FEEDS = [
 export const NEXT_GAME = null;
 
 // =========================================
+// 2026 SCHEDULE
+// =========================================
+// Status of the full schedule release. Update once tonight's reveal lands.
+//   "pre-reveal"  — before 8 PM ET Thu May 14 (only locked games shown)
+//   "revealed"    — full schedule public, populate week-by-week
+//   "in-season"   — games being played
+export const SCHEDULE_2026_STATUS = "pre-reveal";
+
+// Reveal moment so the countdown can tick down to 0.
+export const SCHEDULE_2026_REVEAL_AT = "2026-05-14T20:00:00-04:00";
+
+// 17 opponents are locked even pre-reveal. Each entry: { code, side, repeat }
+// `side` = home | away, `repeat` = the rematch's side (since divisional opponents
+// hit twice — one home, one away).
+export const SCHEDULE_2026_OPPONENTS = {
+  // NFC South — home + away
+  divisional: [
+    { code: "CAR", name: "Carolina Panthers", sides: ["home", "away"] },
+    { code: "NO",  name: "New Orleans Saints", sides: ["home", "away"] },
+    { code: "TB",  name: "Tampa Bay Buccaneers", sides: ["home", "away"] },
+  ],
+  homeOnly: [
+    { code: "BAL", name: "Baltimore Ravens" },
+    { code: "CHI", name: "Chicago Bears" },
+    { code: "CIN", name: "Cincinnati Bengals", note: "Madrid · Bernabéu" },
+    { code: "DET", name: "Detroit Lions" },
+    { code: "KC",  name: "Kansas City Chiefs" },
+    { code: "SF",  name: "San Francisco 49ers" },
+  ],
+  awayOnly: [
+    { code: "CLE", name: "Cleveland Browns" },
+    { code: "GB",  name: "Green Bay Packers" },
+    { code: "MIN", name: "Minnesota Vikings" },
+    { code: "PIT", name: "Pittsburgh Steelers" },
+    { code: "WAS", name: "Washington Commanders" },
+  ],
+};
+
+// 18 entries (17 games + bye). status: "confirmed" | "leaked" | "tbd" | "bye"
+// Pre-reveal: only the 2 locked games carry firm data; the rest are TBD slots.
+// After tonight's reveal, fill in all `tbd` rows with week/opponent/date/time.
+export const SCHEDULE_2026 = [
+  {
+    week: 1,
+    status: "leaked",
+    opponent: "PIT",
+    opponentName: "Pittsburgh Steelers",
+    side: "away",
+    date: "2026-09-13",
+    kickoffET: "1:00 PM ET",
+    tv: "TBD",
+    venue: "Acrisure Stadium, Pittsburgh",
+    note: "Leak · Steelers Week 1 host per multiple national reports. Awaiting 8 PM ET confirmation.",
+  },
+  {
+    week: 9,
+    status: "confirmed",
+    opponent: "CIN",
+    opponentName: "Cincinnati Bengals",
+    side: "home",
+    date: "2026-11-08",
+    kickoffET: "9:30 AM ET",
+    tv: "NFL Network",
+    venue: "Santiago Bernabéu, Madrid",
+    note: "International · Falcons HOST Bengals at Real Madrid's Bernabéu. Bijan vs. Burrow / Chase.",
+  },
+];
+
+// =========================================
 // 2025 SEASON RECAP
 // =========================================
 export const SEASON_RECAP_2025 = {

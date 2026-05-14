@@ -13,6 +13,7 @@ import { OFFSEASON_CALENDAR } from "./offseasonCalendar.js";
 import { CAP_STATE } from "./capState.js";
 import { getCurrentPhase, PHASES } from "./phases.js";
 import DepthChartView from "./DepthChartView.jsx";
+import ScheduleView from "./ScheduleView.jsx";
 
 // ─── BROADCAST FEED 01 ──────────────────────────────────────────────────────
 // Sunday Night Football, cold open. Carbon weave, hot-red glow, stencil
@@ -140,6 +141,7 @@ function liveTagForPhase(phase) {
 function TopBar({ view, setView }) {
   const tabs = [
     { k: "dashboard",    label: "DASHBOARD" },
+    { k: "schedule",     label: "SCHEDULE" },
     { k: "depth-chart",  label: "DEPTH CHART" },
     { k: "draft",        label: "DRAFT BOARD" },
     { k: "front-office", label: "FRONT OFFICE" },
@@ -2419,6 +2421,7 @@ export default function FalconsTracker() {
         {view === "dashboard" && (
           <DashboardView rosterCounts={rosterCounts} currentPhase={currentPhase} onPlayerClick={setSelectedPlayer} />
         )}
+        {view === "schedule" && <ScheduleView />}
         {view === "depth-chart" && (
           <DepthChartView players={PLAYERS} currentPhase={currentPhase} onPlayerClick={setSelectedPlayer} />
         )}
