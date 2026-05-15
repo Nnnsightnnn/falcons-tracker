@@ -848,7 +848,7 @@ export default function DepthChartView({ players, currentPhase, onPlayerClick })
               <div className="mono" style={{
                 fontSize: 9, color: active ? "var(--hot)" : "var(--steel-2)",
                 letterSpacing: "0.18em", marginTop: 4, fontWeight: 400,
-              }}>{count} BODIES</div>
+              }}>{count} PLAYERS</div>
             </button>
           );
         })}
