@@ -77,21 +77,33 @@ function ScheduleHeader() {
               fontSize: 10, letterSpacing: "0.22em", color: "var(--hot)",
               fontWeight: 700, marginBottom: 8,
             }}>
-              FULL CALENDAR REVEAL · THU MAY 14 · 8 PM ET
+              {isPreReveal
+                ? "FULL CALENDAR REVEAL · THU MAY 14 · 8 PM ET"
+                : "FULL 2026 CALENDAR · REVEALED THU MAY 14"}
             </div>
             <div className="display" style={{
               fontSize: isMobile ? 24 : 34, lineHeight: 1.05, color: "var(--ivory)",
               letterSpacing: "-0.005em",
             }}>
-              17 OPPONENTS LOCKED.<br />
-              <span style={{ color: "var(--hot)" }}>BYE WEEK + PRIMETIME</span> UNLOCK TONIGHT.
+              {isPreReveal ? (
+                <>
+                  17 OPPONENTS LOCKED.<br />
+                  <span style={{ color: "var(--hot)" }}>BYE WEEK + PRIMETIME</span> UNLOCK TONIGHT.
+                </>
+              ) : (
+                <>
+                  18 WEEKS LOCKED.<br />
+                  <span style={{ color: "var(--hot)" }}>OPEN AT PITTSBURGH</span> · MADRID WEEK 9.
+                </>
+              )}
             </div>
             <div className="mono" style={{
               fontSize: 11, color: "var(--silver)", letterSpacing: "0.04em",
               marginTop: 10, lineHeight: 1.5,
             }}>
-              NFL Network · ESPN2 · NFL+ at 8:00 PM ET. Week 1 (AT Steelers, Sun Sep 13)
-              and Madrid Week 9 (vs Bengals, Sun Nov 8) are the only public locks.
+              {isPreReveal
+                ? "NFL Network · ESPN2 · NFL+ at 8:00 PM ET. Week 1 (AT Steelers, Sun Sep 13) and Madrid Week 9 (vs Bengals, Sun Nov 8) are the only public locks."
+                : "3 primetime games W3–5 (TNF at GB, MNF at NO, SNF vs BAL). Bye week 11. Week 16 vs TB and Week 18 at CAR remain flex-eligible (TBD)."}
             </div>
           </div>
 
