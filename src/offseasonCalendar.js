@@ -109,9 +109,9 @@ export const OFFSEASON_CALENDAR = [
   },
   {
     id: "week-1",
-    date: "2026-09-10",
-    label: "Week 1 (approx kickoff)",
-    detail: "Regular season opens. Exact date pending schedule release.",
+    date: "2026-09-13T13:00:00-04:00",
+    label: "Week 1 — Falcons at Pittsburgh",
+    detail: "Regular season opens at Pittsburgh, Sun Sep 13, 1 PM ET on FOX. Stefanski era kickoff.",
     phase: "regular-season",
   },
   {
