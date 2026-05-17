@@ -2029,7 +2029,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-05-16T18:00:00Z",
+  generatedAt: "2026-05-17T18:00:00Z",
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "The Falcoholic",
     "Bleacher Report", "Pro Football Rumors", "SI Falcons", "NBC Sports",
@@ -2051,11 +2051,13 @@ export const NEWS_DIGEST = {
     "Bengals.com", "FOX19", "On Location", "Southern Sports Today",
     "Behind The Steel Curtain", "Steelers Depot", "The Big Lead",
     "Sportsbook Review", "DAZN", "Sports Media Watch",
+    "FOX Sports", "WSAV", "Sharp Football Analysis",
+    "Pro Football Network",
   ],
   topics: [
     {
-      title: "OTAs T-2 — Phase 3 opens Mon May 18; first competitive 11-on-11 reps of Stefanski era; media availability begins Tue May 19",
-      detail: "Atlantafalcons.com / ESPN / NFL.com / SI Falcons / BVM Sports (May 14–16): Phase 3 OTAs open at Flowery Branch Monday — 10 total OTAs over three weeks, with Atlanta's confirmed slate at May 18–19, 21, 26–27, 29, plus June 8–9, 11. First on-field 7-on-7, 9-on-7 and 11-on-11 reps of the Stefanski era (no live contact). Coaches and players become available to the media periodically beginning Tuesday May 19. Penix ran Phase 2 throwing drills to London at the rookie-minicamp window; Monday is his first OTA team-period rep window. Tua's 1yr/$1.3M bridge takes the early OTA QB1 reps. Mandatory veteran minicamp June 16–18.",
+      title: "OTAs T-1 — Phase 3 opens TOMORROW (Mon May 18); first competitive 11-on-11 reps of Stefanski era; media availability begins Tue May 19",
+      detail: "Atlantafalcons.com / ESPN / NFL.com / SI Falcons / BVM Sports (May 14–17): Phase 3 OTAs open at Flowery Branch tomorrow — 10 total OTAs over three weeks, with Atlanta's confirmed slate at May 18–19, 21, 26–27, 29, plus June 8–9, 11. First on-field 7-on-7, 9-on-7 and 11-on-11 reps of the Stefanski era (no live contact, no pads, no live tackling). Coaches and players become available to the media periodically beginning Tuesday May 19 — first availability window for Stefanski, Cunningham, Tua, London, Bates. Penix ran Phase 2 throwing drills to London at the rookie-minicamp window; Monday is his first OTA team-period rep window. Tua's 1yr/$1.3M bridge takes the early OTA QB1 reps with Penix continuing to ramp. Mandatory veteran minicamp June 16–18.",
       category: "coaching",
     },
     {
@@ -2069,8 +2071,8 @@ export const NEWS_DIGEST = {
       category: "general",
     },
     {
-      title: "Branch wraps NFLPA Rookie Premiere in LA tonight — only Falcons rookie invited; back at Flowery Branch for Phase 3 Monday",
-      detail: "NFLPA / Yahoo Sports / Athlon Sports / atlantafalcons.com (May 14–16): R3 WR Zachariah Branch is finishing the 32nd annual NFLPA Rookie Premiere in Los Angeles tonight — the only Falcons rookie on the 42-name invite list. Three-day brand-and-photo summit (trading-card shoots, autograph signings, jersey unveilings, group-licensing orientation) ran May 14–16. 20 of 42 invites were WRs — confirmation the league sees Branch as a Day-1 producer despite slipping to #79. Drew rookie-camp raves earlier: speed in route-breaks Day 1, shook every media member's hand post-practice, and confirmed UDFA Cash Jones is making the position switch to slot WR. Back at Flowery Branch for Phase 3 reps Monday.",
+      title: "Branch wraps NFLPA Rookie Premiere in LA — only Falcons rookie invited; reports to Flowery Branch for Phase 3 reps tomorrow",
+      detail: "NFLPA / Yahoo Sports / Athlon Sports / atlantafalcons.com (May 14–17): R3 WR Zachariah Branch closed the 32nd annual NFLPA Rookie Premiere in Los Angeles last night — the only Falcons rookie on the 42-name invite list. Three-day brand-and-photo summit (trading-card shoots, autograph signings, jersey unveilings, group-licensing orientation) ran May 14–16. 20 of 42 invites were WRs — confirmation the league sees Branch as a Day-1 producer despite slipping to #79. Drew rookie-camp raves earlier: speed in route-breaks Day 1, shook every media member's hand post-practice, and confirmed UDFA Cash Jones is making the position switch to slot WR. Reports to Flowery Branch for Phase 3 reps tomorrow.",
       category: "general",
     },
     {
@@ -2096,11 +2098,6 @@ export const NEWS_DIGEST = {
     {
       title: "Penix throwing through Phase 2 — Stefanski 'right where he needs to be,' no timetable; Tua opens as -136 betting favorite for Week 1",
       detail: "ESPN / NFL.com / NBC PFT / The Falcoholic / Atlantafalcons.com / SI Falcons / CBS Sports (May 9–16 sweep): Michael Penix Jr. is throwing through Phase 2 at Flowery Branch, including the headline rookie-minicamp session to Drake London — visible six-month-post-op step for his Nov 16 ACL reconstruction. Stefanski's repeat line: 'right where he needs to be,' with 'not so focused on timetables just yet.' President of Football Matt Ryan: 'Mike's in a good spot right now' but cautioned 'we don't really know what to expect at the beginning of training camp.' Penix has publicly aimed at Week 1 vs. Pittsburgh on FOX. SI Betting has Tua opening as the -136 favorite (57.6% implied) to start Week 1 with Penix at +102 — the market reading Tua's 1yr/$1.3M bridge as more than insurance. Real competition lives in training camp.",
-      category: "injuries",
-    },
-    {
-      title: "Penix throwing through Phase 2 — Stefanski 'right where he needs to be,' no timetable; QB battle officially opens Monday with first 11-on-11s",
-      detail: "ESPN / NFL.com / NBC PFT / The Falcoholic / Atlantafalcons.com / SI Falcons (May 9–14 sweep): Michael Penix Jr. is throwing through Phase 2 at Flowery Branch, including the headline rookie-minicamp session to Drake London — visible six-month-post-op step for his Nov 16 ACL reconstruction. Stefanski's repeat line: 'right where he needs to be.' Asked for a timetable: 'not so focused on timetables just yet,' with more clarity expected near camp. President of Football Matt Ryan added 'Mike's in a good spot right now' but cautioned 'we don't really know what to expect at the beginning of training camp.' Penix has publicly aimed at Week 1 vs. Pittsburgh on FOX; the team hasn't endorsed that target. Tua's 1yr/$1.3M bridge takes the early OTA QB1 reps Monday. Standard ACL window is 9–12 months; real competition lives in training camp.",
       category: "injuries",
     },
     {
@@ -2164,9 +2161,19 @@ export const NEWS_DIGEST = {
       category: "games",
     },
     {
-      title: "Calendar — Schedule REVEALED · OTAs T-2 Mon · Mandatory minicamp Jun 16–18 · Camp opens Jul 22 · Season opener Sep 13 at Pittsburgh",
-      detail: "Day-of (Sat May 16): the full 272-game 2026 schedule dropped Thursday night at 8 PM ET on NFL Network / ESPN2 / NFL+. SCHEDULE_2026_STATUS sits at 'revealed' — all 18 weeks populated, with W16 and W18 still date/time TBD by flex rules. OTAs Phase 3 opens at Flowery Branch Mon May 18 (Atlanta's slate: May 18–19, 21, 26–27, 29, June 8–9, 11) — first competitive 11-on-11 reps of the Stefanski era. Branch wraps NFLPA Rookie Premiere in LA tonight; back at Flowery Branch for Phase 3 Monday. Mandatory veteran minicamp Jun 16–18; dead period through Jul 21; training camp opens Jul 22; preseason opens at home vs. Denver Aug 14; regular season opens at Pittsburgh Sun Sep 13, 1 PM ET FOX.",
+      title: "Calendar — Schedule REVEALED · OTAs OPEN TOMORROW · Mandatory minicamp Jun 16–18 · Camp opens Jul 22 · Season opener Sep 13 at Pittsburgh",
+      detail: "Day-of (Sun May 17): the full 272-game 2026 schedule dropped Thursday night at 8 PM ET on NFL Network / ESPN2 / NFL+. SCHEDULE_2026_STATUS sits at 'revealed' — all 18 weeks populated, with W16 and W18 still date/time TBD by flex rules. OTAs Phase 3 opens at Flowery Branch tomorrow (Atlanta's slate: May 18–19, 21, 26–27, 29, June 8–9, 11) — first competitive 11-on-11 reps of the Stefanski era. Branch returns from NFLPA Rookie Premiere (LA, May 14–16) and reports to Flowery Branch tomorrow. Mandatory veteran minicamp Jun 16–18; dead period through Jul 21; training camp opens Jul 22; preseason opens at home vs. Denver Aug 14; regular season opens at Pittsburgh Sun Sep 13, 1 PM ET FOX.",
       category: "general",
+    },
+    {
+      title: "Vegas win total opens 7.5 — BetMGM has UNDER as chalk (-115); NFC South odds put Falcons at +333 behind TB (+155) for the division",
+      detail: "BetMGM / Sharp Football Analysis / Pro Football Network / BloggingDirty / Bleacher Report (May 14–17 post-schedule sweep): Atlanta's 2026 win total opens at 7.5 with the under hooked at -115. Bleacher Report's Kris Knox calls 9-8 a 'realistic' Stefanski Year 1 floor and a fringe wild-card path. NFC South division odds: Bucs +155 (38.5% implied), Falcons +333, Panthers +400, Saints +500. Pro Football Network's full-season sim has Atlanta winning the division at 9-8. Sharp Football tags ATL's 5th-easiest SoS (.465) as the biggest swing factor — opponents' combined 2025 win pct trails only CLE, NO, CIN, IND. Public market split: Vegas is bearish (under chalk), models are bullish (division-favorite-or-close).",
+      category: "games",
+    },
+    {
+      title: "QB1 favorite watch — Tua opens betting markets as -136 chalk; analysts call OTA-and-minicamp reps Tua's window before Penix gets healthy",
+      detail: "SI Falcons / CBS Sports / Yardbarker / Yahoo / NBC PFT / ClutchPoints / atlantafalcons.com (May 12–17): SI Betting opens Tua as the -136 favorite (57.6% implied) to start Week 1 vs. Pittsburgh; Penix sits at +102. CBS's Tyler Sullivan and the Yardbarker desk both read the Tagovailoa pursuit as a deliberate slow-play for Penix's ACL — Tua banks spring reps with the WR/RB/TE rotation while Penix continues to ramp on individual drills. Stefanski's public posture: 'real competition,' no early endorsement. Multiple analysts: if Penix isn't a full participant by mandatory minicamp Jun 16–18, the betting line drifts further toward Tua. Penix has publicly aimed at Week 1; team has not endorsed that target.",
+      category: "injuries",
     },
   ],
 };
