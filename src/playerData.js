@@ -2029,7 +2029,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-05-17T18:00:00Z",
+  generatedAt: "2026-05-18T13:00:00Z",
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "The Falcoholic",
     "Bleacher Report", "Pro Football Rumors", "SI Falcons", "NBC Sports",
@@ -2056,8 +2056,8 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "OTAs T-1 — Phase 3 opens TOMORROW (Mon May 18); first competitive 11-on-11 reps of Stefanski era; media availability begins Tue May 19",
-      detail: "Atlantafalcons.com / ESPN / NFL.com / SI Falcons / BVM Sports (May 14–17): Phase 3 OTAs open at Flowery Branch tomorrow — 10 total OTAs over three weeks, with Atlanta's confirmed slate at May 18–19, 21, 26–27, 29, plus June 8–9, 11. First on-field 7-on-7, 9-on-7 and 11-on-11 reps of the Stefanski era (no live contact, no pads, no live tackling). Coaches and players become available to the media periodically beginning Tuesday May 19 — first availability window for Stefanski, Cunningham, Tua, London, Bates. Penix ran Phase 2 throwing drills to London at the rookie-minicamp window; Monday is his first OTA team-period rep window. Tua's 1yr/$1.3M bridge takes the early OTA QB1 reps with Penix continuing to ramp. Mandatory veteran minicamp June 16–18.",
+      title: "OTAs OPEN TODAY — Stefanski-era Phase 3 begins at Flowery Branch; first on-field 11-on-11 reps; media availability opens TOMORROW (Tue May 19)",
+      detail: "Atlantafalcons.com / ESPN / NFL.com / SI Falcons / CBS Sports (May 14–18): Phase 3 OTAs open at Flowery Branch today — 10 total OTAs over three weeks, with Atlanta's confirmed slate at May 18–19, 21, 26–27, 29, plus June 8–9, 11. First on-field 7-on-7, 9-on-7 and 11-on-11 reps of the Stefanski era (no live contact, no pads, no live tackling). Coaches and players become available to the media periodically beginning Tuesday May 19 — first availability window for Stefanski, Cunningham, Tua, London, Bates. Penix ran Phase 2 throwing drills to London; today is his first OTA team-period rep window though Stefanski 'not focused on timetables.' Tua's 1yr/$1.3M bridge takes the early OTA QB1 reps with Penix continuing to ramp. Mandatory veteran minicamp June 16–18.",
       category: "coaching",
     },
     {
@@ -2071,8 +2071,8 @@ export const NEWS_DIGEST = {
       category: "general",
     },
     {
-      title: "Branch wraps NFLPA Rookie Premiere in LA — only Falcons rookie invited; reports to Flowery Branch for Phase 3 reps tomorrow",
-      detail: "NFLPA / Yahoo Sports / Athlon Sports / atlantafalcons.com (May 14–17): R3 WR Zachariah Branch closed the 32nd annual NFLPA Rookie Premiere in Los Angeles last night — the only Falcons rookie on the 42-name invite list. Three-day brand-and-photo summit (trading-card shoots, autograph signings, jersey unveilings, group-licensing orientation) ran May 14–16. 20 of 42 invites were WRs — confirmation the league sees Branch as a Day-1 producer despite slipping to #79. Drew rookie-camp raves earlier: speed in route-breaks Day 1, shook every media member's hand post-practice, and confirmed UDFA Cash Jones is making the position switch to slot WR. Reports to Flowery Branch for Phase 3 reps tomorrow.",
+      title: "Branch reports to Flowery Branch for Phase 3 — closed NFLPA Rookie Premiere in LA Saturday night; on field for Stefanski-era OTAs today",
+      detail: "NFLPA / Yahoo Sports / Athlon Sports / atlantafalcons.com (May 14–17): R3 WR Zachariah Branch closed the 32nd annual NFLPA Rookie Premiere in Los Angeles Saturday night — the only Falcons rookie on the 42-name invite list. Three-day brand-and-photo summit (trading-card shoots, autograph signings, jersey unveilings, group-licensing orientation) ran May 14–16. 20 of 42 invites were WRs — confirmation the league sees Branch as a Day-1 producer despite slipping to #79. Drew rookie-camp raves earlier: speed in route-breaks Day 1, shook every media member's hand post-practice, and confirmed UDFA Cash Jones is making the position switch to slot WR. Reports to Flowery Branch and joins the veteran-rookie OTA mix on Phase 3 Day 1.",
       category: "general",
     },
     {
@@ -2116,13 +2116,13 @@ export const NEWS_DIGEST = {
       category: "general",
     },
     {
-      title: "Avieon Terrell limited at rookie camp — aunt Giselle Perry killed Wed in Decatur Kroger lot; CB2 reps pushed to OTAs",
-      detail: "WSB-TV / Atlanta News First / atlantafalcons.com / ESPN / TigerNet (May 8–10) report aunt Giselle Perry was killed Wed May 6 around 3:20 PM at the Wesley Chapel Rd. Kroger when a driver suffering a medical emergency crashed into her parked car at high speed. A.J. and Avieon Terrell are family. Stefanski opened Friday's rookie-camp presser dedicating his thoughts to the Terrell family and confirmed Avieon plus R6 DT Anterio Thompson would be held out of drills due to injury but kept in the facility. Per ESPN's Marc Raimondi, Avieon told him he's 'feeling 100 percent.' He did limited work Day 1 and stayed in installs/meetings the rest of the weekend. CB2 competition with Mike Hughes officially pushes to OTAs May 18.",
+      title: "Avieon Terrell CB2 watch — hamstring 'feels 100%' per Raimondi; first OTA reps today are first real competition snaps vs. Mike Hughes",
+      detail: "AJC / WSB-TV / Atlanta News First / atlantafalcons.com / ESPN / Yahoo / SI Falcons (May 8–17): the rookie CB returned to the field at rookie minicamp Saturday after Friday's hold-out, and told ESPN's Marc Raimondi he's 'feeling 100 percent' after the hamstring that lingered from his March 30 private pro day. SI's Schultz: Avieon has 'a very real chance' of beating out Mike Hughes for CB2 opposite his brother A.J. once the regular season opens. Phase 3 OTA reps starting today are the first real competition snaps for that battle. Family backdrop: aunt Giselle Perry was killed Wed May 6 at the Wesley Chapel Rd. Kroger in Decatur when a driver suffering a medical emergency crashed into her parked car; Stefanski opened Friday's rookie-camp presser dedicating his thoughts to the Terrell family.",
       category: "injuries",
     },
     {
       title: "Phase 2 closed Friday — Stefanski's 'identity' install logs; Tommy Rees calling plays, three-man Browns coaching reunion locked",
-      detail: "Atlantafalcons.com / FootballScoop / CBS Atlanta / SI Falcons / Blogging Dirty / NBC PFT (May 4–15): Phase 2 ran Mon May 4 – Fri May 15 at Flowery Branch — non-contact walkthroughs and individual drills only, no team periods. Tori McElhaney's through-line for Stefanski's program: 'X's and O's, techniques, fundamentals, identity.' Stefanski confirmed publicly he's 'very comfortable' with OC Tommy Rees calling plays in 2026. Rees was Browns TEs coach 2024 → OC mid-2025 — three Browns assistants reunited (Rees, OL Bill Callahan, QB coach Alex Van Pelt). System DNA: play-action, under-center, wide-zone foundation blended with gap concepts (suits Bijan's Texas pedigree). Penix–Rees adjustment: less pistol/shotgun than Penix has run his whole career. Phase 3 OTAs open Monday May 18.",
+      detail: "Atlantafalcons.com / FootballScoop / CBS Atlanta / SI Falcons / Blogging Dirty / NBC PFT (May 4–15): Phase 2 ran Mon May 4 – Fri May 15 at Flowery Branch — non-contact walkthroughs and individual drills only, no team periods. Tori McElhaney's through-line for Stefanski's program: 'X's and O's, techniques, fundamentals, identity.' Stefanski confirmed publicly he's 'very comfortable' with OC Tommy Rees calling plays in 2026. Rees was Browns TEs coach 2024 → OC mid-2025 — three Browns assistants reunited (Rees, OL Bill Callahan, QB coach Alex Van Pelt). System DNA: play-action, under-center, wide-zone foundation blended with gap concepts (suits Bijan's Texas pedigree). Penix–Rees adjustment: less pistol/shotgun than Penix has run his whole career. Phase 3 OTAs open today.",
       category: "coaching",
     },
     {
@@ -2161,8 +2161,8 @@ export const NEWS_DIGEST = {
       category: "games",
     },
     {
-      title: "Calendar — Schedule REVEALED · OTAs OPEN TOMORROW · Mandatory minicamp Jun 16–18 · Camp opens Jul 22 · Season opener Sep 13 at Pittsburgh",
-      detail: "Day-of (Sun May 17): the full 272-game 2026 schedule dropped Thursday night at 8 PM ET on NFL Network / ESPN2 / NFL+. SCHEDULE_2026_STATUS sits at 'revealed' — all 18 weeks populated, with W16 and W18 still date/time TBD by flex rules. OTAs Phase 3 opens at Flowery Branch tomorrow (Atlanta's slate: May 18–19, 21, 26–27, 29, June 8–9, 11) — first competitive 11-on-11 reps of the Stefanski era. Branch returns from NFLPA Rookie Premiere (LA, May 14–16) and reports to Flowery Branch tomorrow. Mandatory veteran minicamp Jun 16–18; dead period through Jul 21; training camp opens Jul 22; preseason opens at home vs. Denver Aug 14; regular season opens at Pittsburgh Sun Sep 13, 1 PM ET FOX.",
+      title: "Calendar — Schedule REVEALED · OTAs OPEN TODAY · Mandatory minicamp Jun 16–18 · Camp opens Jul 22 · Season opener Sep 13 at Pittsburgh",
+      detail: "Day-of (Mon May 18): the full 272-game 2026 schedule dropped Thursday night at 8 PM ET on NFL Network / ESPN2 / NFL+. SCHEDULE_2026_STATUS sits at 'revealed' — all 18 weeks populated, with W16 and W18 still date/time TBD by flex rules. OTAs Phase 3 opens at Flowery Branch TODAY (Atlanta's slate: May 18–19, 21, 26–27, 29, June 8–9, 11) — first competitive 11-on-11 reps of the Stefanski era. Branch back from NFLPA Rookie Premiere (LA, May 14–16) and on field at Flowery Branch today. Media availability for Stefanski + players opens TOMORROW (Tue May 19). Mandatory veteran minicamp Jun 16–18; dead period through Jul 21; training camp opens Jul 22; preseason opens at home vs. Denver Aug 14; regular season opens at Pittsburgh Sun Sep 13, 1 PM ET FOX.",
       category: "general",
     },
     {
