@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { SCHEDULE_2026, TEAM_LOGOS } from "./playerData.js";
 import { MagazineShell } from "./MagazineView.jsx";
+import bullFightingPhoto from "./assets/bull-fighting.jpeg";
 
 const PRIMETIME_KICK = /8:|9:30/;
 const PRIMETIME_TV = /PRIME|ESPN|NBC|AMAZON|NFL NETWORK/i;
@@ -108,6 +109,8 @@ export default function MagazineSlate({ setView }) {
         </div>
 
         <div className="postcard">
+          <img className="photo" src={bullFightingPhoto} alt="Bullfight at sunset — Madrid" />
+          <div className="photo-tint"></div>
           <div className="halftone"></div>
           <div className="frame"></div>
           <div className="corner-tl"></div>
