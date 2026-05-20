@@ -216,9 +216,18 @@ export default function MagazineRoster({ setView }) {
                     tabIndex={0}
                     onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") open(p); }}
                   >
-                    <div className="jn">#{p.number} · {college}</div>
-                    <div className="snm">{shortName(p.name)}</div>
-                    {note && <div className="snote">{note}</div>}
+                    <div className="slot-row">
+                      <div className="ladder-photo">
+                        <div className="bg"></div>
+                        {p.image && <img src={p.image} alt="" />}
+                        <div className="halftone"></div>
+                      </div>
+                      <div className="slot-text">
+                        <div className="jn">#{p.number} · {college}</div>
+                        <div className="snm">{shortName(p.name)}</div>
+                        {note && <div className="snote">{note}</div>}
+                      </div>
+                    </div>
                   </div>
                 );
               })}

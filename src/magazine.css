@@ -1382,6 +1382,30 @@
 .mag-root .ladder .lrow .slot.clickable:focus-visible { outline: 2px solid var(--oxblood); outline-offset: -2px; }
 .mag-root .ladder .lrow .slot.starter.clickable:hover { background: var(--paper-deep); }
 
+/* Ladder slot headshot — small magazine-cropped photo per body */
+.mag-root .ladder .lrow .slot .slot-row { display: flex; align-items: stretch; gap: 10px; }
+.mag-root .ladder .lrow .slot .slot-text { min-width: 0; flex: 1; display: flex; flex-direction: column; justify-content: center; }
+.mag-root .ladder .lrow .slot .ladder-photo {
+  position: relative; flex: 0 0 auto; width: 44px; height: 56px; overflow: hidden;
+  background: linear-gradient(180deg, #3a261a, #0b0704);
+  border: 1px solid var(--rule);
+}
+.mag-root .ladder .lrow .slot .ladder-photo .bg { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(216,178,100,0.06), rgba(11,7,4,0.0)); }
+.mag-root .ladder .lrow .slot .ladder-photo img {
+  position: absolute; bottom: -8%; left: 50%; transform: translateX(-50%);
+  height: 122%; width: auto;
+  filter: sepia(0.3) saturate(0.7) contrast(1.05); mix-blend-mode: lighten;
+}
+.mag-root .ladder .lrow .slot .ladder-photo .halftone {
+  position: absolute; inset: 0;
+  background-image: radial-gradient(rgba(20,12,5,0.45) 1px, transparent 1.2px);
+  background-size: 3px 3px; mix-blend-mode: multiply; opacity: 0.35;
+  pointer-events: none;
+}
+.mag-root .ladder .lrow .slot.starter .ladder-photo { border-color: var(--oxblood); }
+.mag-root .ladder .lrow .slot.rookie .ladder-photo { border-color: var(--m-gold); }
+.mag-root .ladder .lrow .slot.injured .ladder-photo { filter: grayscale(0.5); }
+
 .mag-root .roomrow.clickable { cursor: pointer; transition: background 120ms ease; }
 .mag-root .roomrow.clickable:hover { background: rgba(20, 12, 5, 0.04); }
 .mag-root .roomrow.clickable:focus-visible { outline: 2px solid var(--oxblood); outline-offset: -2px; }
@@ -1906,7 +1930,10 @@
   /* LADDER — keep the column structure, scroll horizontally on phones */
   .mag-root .ladder { padding: 22px 0 28px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
   .mag-root .ladder .heads,
-  .mag-root .ladder .lrow { min-width: 640px; }
+  .mag-root .ladder .lrow { min-width: 720px; }
+  .mag-root .ladder .lrow .slot .ladder-photo { width: 38px; height: 48px; }
+  .mag-root .ladder .lrow .slot .snm { font-size: 14px; }
+  .mag-root .ladder .lrow .slot .snote { font-size: 10px; }
 
   /* FRONT-OFFICE cover */
   .mag-root .fo-cover { grid-template-columns: 1fr; }

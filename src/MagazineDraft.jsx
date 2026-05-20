@@ -1,5 +1,15 @@
 import { DRAFT_DATA } from "./draftData.js";
-import { MagazineShell, formatRoman, POS_CLASS, jerseyByName, viaFrom } from "./MagazineView.jsx";
+import { MagazineShell, formatRoman, POS_CLASS, jerseyByName, viaFrom, playerById } from "./MagazineView.jsx";
+
+// Pick # → rookie player id (in PLAYERS) for headshot lookup
+const PICK_TO_PLAYER_ID = {
+  48:  "avieon-terrell",
+  79:  "zachariah-branch",
+  134: "kendal-daniels",
+  208: "anterio-thompson",
+  215: "harold-perkins",
+  231: "ethan-onianwa",
+};
 
 const GRADES = {
   48:  { letter: "A", plus: "+", note: "unanimous" },
@@ -103,6 +113,65 @@ export default function MagazineDraft({ setView }) {
         <div className="rule"></div>
       </div>
 
+      {/* CLASS HERO — six headshots, oxblood gallery wall */}
+      <section style={{
+        padding: "20px 40px 8px", borderBottom: "1px solid var(--rule)",
+        background: "var(--paper-soft)",
+      }}>
+        <div style={{
+          display: "grid", gridTemplateColumns: "repeat(6, 1fr)", gap: 10,
+        }}>
+          {picks.map((pick) => {
+            const p = playerById(PICK_TO_PLAYER_ID[pick.overallPick]);
+            const playerName = (pick.selection || "").split(" · ")[0] || "—";
+            const lastNm = playerName.replace(/\s+Jr\.?$|\s+Sr\.?$|\s+II$|\s+III$|\s+IV$/, "").split(" ").slice(-1)[0].toUpperCase();
+            return (
+              <div key={pick.overallPick} style={{
+                position: "relative", aspectRatio: "3 / 4", overflow: "hidden",
+                background: "linear-gradient(180deg, #3a261a, #0b0704)",
+                border: "5px solid var(--paper)",
+                boxShadow: "0 6px 14px rgba(0,0,0,0.35)",
+              }}>
+                {p?.image && (
+                  <img src={p.image} alt={playerName}
+                    style={{
+                      position: "absolute", bottom: 0, left: "50%",
+                      transform: "translateX(-50%)", height: "112%", width: "auto",
+                      filter: "sepia(0.35) saturate(0.7) contrast(1.05)",
+                      mixBlendMode: "lighten",
+                    }} />
+                )}
+                <div style={{
+                  position: "absolute", inset: 0,
+                  backgroundImage: "radial-gradient(rgba(20,12,5,0.45) 1px, transparent 1.2px)",
+                  backgroundSize: "4px 4px", mixBlendMode: "multiply", opacity: 0.45,
+                  pointerEvents: "none",
+                }} />
+                <div style={{
+                  position: "absolute", top: 6, left: 6,
+                  background: "var(--oxblood)", color: "var(--paper)",
+                  padding: "3px 6px 2px",
+                  fontFamily: "var(--m-cond)", fontSize: 9, letterSpacing: "0.18em",
+                }}>R{pick.round} · #{pick.overallPick}</div>
+                <div style={{
+                  position: "absolute", left: 0, right: 0, bottom: 0,
+                  background: "linear-gradient(180deg, transparent, rgba(15,8,4,0.85))",
+                  padding: "16px 8px 6px",
+                  color: "var(--paper)",
+                  fontFamily: "var(--m-cond)", fontSize: 11, letterSpacing: "0.18em",
+                  textAlign: "center",
+                }}>{lastNm}</div>
+              </div>
+            );
+          })}
+        </div>
+        <div style={{
+          marginTop: 10, fontFamily: "var(--m-cond)", fontSize: 10,
+          letterSpacing: "0.24em", textTransform: "uppercase", color: "var(--ink-mute)",
+          textAlign: "center",
+        }}>— THE CLASS · SIX FACES · ROOKIE MINICAMP MAY 9 —</div>
+      </section>
+
       <section className="scout-cards">
         <div className="scout-grid">
           {picks.map((pick) => {
@@ -115,9 +184,31 @@ export default function MagazineDraft({ setView }) {
             const isVia = !!pick.tradeNote && pick.tradeNote.startsWith("Acquired");
             const jersey = jerseyByName(playerName);
             const combine = target?.combine;
+            const p = playerById(PICK_TO_PLAYER_ID[pick.overallPick]);
             return (
               <article key={pick.overallPick} className={`scout${isFeature ? " feature" : ""}`}>
                 <div className="stamp">{isVia ? `VIA ${viaFrom(pick.tradeNote)}` : "ORIG. ATL"}</div>
+                {p?.image && (
+                  <div style={{
+                    position: "relative", width: "100%", aspectRatio: "16 / 10",
+                    overflow: "hidden", marginBottom: 14,
+                    background: "linear-gradient(180deg, #3a261a, #0b0704)",
+                    border: "1px solid var(--rule)",
+                  }}>
+                    <img src={p.image} alt={playerName}
+                      style={{
+                        position: "absolute", bottom: "-6%", left: "50%",
+                        transform: "translateX(-50%)", height: "118%", width: "auto",
+                        filter: "sepia(0.3) saturate(0.75) contrast(1.04)",
+                        mixBlendMode: "lighten",
+                      }} />
+                    <div style={{
+                      position: "absolute", inset: 0,
+                      backgroundImage: "radial-gradient(rgba(20,12,5,0.45) 1px, transparent 1.2px)",
+                      backgroundSize: "4px 4px", mixBlendMode: "multiply", opacity: 0.4,
+                    }} />
+                  </div>
+                )}
                 <div className="pk"><span className="em">#</span>{pick.overallPick}</div>
                 <div className="rd">Round {formatRoman(pick.round)} · {pos}</div>
                 <div className="nm">{playerName}{jersey ? ` · #${jersey}` : ""}</div>
