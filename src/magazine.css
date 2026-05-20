@@ -1595,8 +1595,468 @@
 .mag-root .ledger .what .em { color: var(--ink); font-weight: 600; }
 .mag-root .ledger .got { font-family: var(--m-cond); font-size: 12px; letter-spacing: 0.10em; color: var(--ink); text-transform: uppercase; }
 
-/* ── responsive collapse — below 1280 the magazine page just scrolls horizontally
-       so the editorial proportions stay intact. The page wrapper handles the rest. */
+/* ──────────────────────────────────────────────────────────────────────
+   RESPONSIVE — three regimes:
+     >  1320px : full editorial layout, no overrides
+     901–1320  : the page is slightly wider than viewport; allow h-scroll
+                 so desktop-zoom / small laptops keep the editorial feel
+     ≤  900px  : the magazine reflows for phones/tablets — grids collapse,
+                 display type scales via clamp(), padding tightens, and the
+                 flipnav becomes a swipeable strip.
+   ────────────────────────────────────────────────────────────────────── */
 @media (max-width: 1320px) {
   .mag-root { padding: 16px 0 32px; overflow-x: auto; }
+}
+
+@media (max-width: 900px) {
+  .mag-root { padding: 0; overflow-x: hidden; }
+  .mag-root .page { width: 100%; max-width: 100%; box-shadow: none; }
+
+  /* masthead — stack runners under wordmark, scale wordmark */
+  .mag-root .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 14px 16px 12px;
+    text-align: center;
+  }
+  .mag-root .masthead .runner-l,
+  .mag-root .masthead .runner-r { text-align: center; font-size: 9px; letter-spacing: 0.18em; }
+  .mag-root .masthead .wordmark .kicker { font-size: 9px; letter-spacing: 0.28em; }
+  .mag-root .masthead .wordmark .title { font-size: clamp(40px, 13vw, 68px); }
+  .mag-root .masthead .wordmark .sub { font-size: 11px; line-height: 1.3; padding: 0 4px; }
+
+  /* flipnav — swipeable horizontal strip instead of fixed grid */
+  .mag-root .flipnav {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .mag-root .flipnav::-webkit-scrollbar { display: none; }
+  .mag-root .flipnav .l,
+  .mag-root .flipnav .r { display: none; }
+  .mag-root .flipnav button.fp {
+    flex: 0 0 auto;
+    padding: 12px 14px;
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    min-height: 44px;
+    gap: 6px;
+  }
+  .mag-root .flipnav button.fp:first-of-type { border-left: none; }
+  .mag-root .flipnav .pg { font-size: 9px; }
+
+  /* TOC — 2-col chapters, full-width label + dateline */
+  .mag-root .toc { grid-template-columns: 1fr 1fr; }
+  .mag-root .toc .label {
+    grid-column: 1 / -1;
+    padding: 8px 14px;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+  }
+  .mag-root .toc .ch { padding: 9px 12px; }
+  .mag-root .toc .ch .name { font-size: 12px; letter-spacing: 0.08em; }
+  .mag-root .toc .ch .win { font-size: 8px; }
+  .mag-root .toc .dateline {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 8px 14px;
+    border-left: none;
+    border-top: 1px solid var(--rule-soft);
+  }
+  .mag-root .toc .dateline .live { justify-content: center; }
+
+  /* COVER */
+  .mag-root .cover { grid-template-columns: 1fr; }
+  .mag-root .cover .lede {
+    padding: 24px 18px 22px;
+    border-right: none;
+    border-bottom: 1px solid var(--rule);
+  }
+  .mag-root .cover h1.head { font-size: clamp(44px, 13vw, 76px); line-height: 0.92; }
+  .mag-root .cover .deck { font-size: 16px; margin-top: 16px; max-width: none; }
+  .mag-root .cover .drop {
+    column-count: 1;
+    column-rule: none;
+    font-size: 14.5px;
+    max-width: none;
+    margin-top: 22px;
+  }
+  .mag-root .cover .drop p:first-child::first-letter { font-size: 52px; padding: 4px 8px 0 0; }
+  .mag-root .cover .image { min-height: 380px; }
+  .mag-root .cover .image .photo img { width: 84%; }
+  .mag-root .cover .image .number { font-size: 280px; bottom: -40px; left: -20px; }
+  .mag-root .cover .image .corner { padding: 12px 14px 10px; }
+  .mag-root .cover .image .corner .v { font-size: 26px; }
+  .mag-root .cover .image .stamp { bottom: 20px; left: 20px; padding: 8px 12px; }
+  .mag-root .cover .image .stamp .name { font-size: 18px; }
+  .mag-root .cover .image .caption { display: none; }
+
+  /* AGATE STRIP — wrap into a 2-col grid */
+  .mag-root .agate-strip { grid-template-columns: 1fr 1fr; }
+  .mag-root .agate-strip .label {
+    grid-column: 1 / -1;
+    padding: 12px 16px;
+    border-right: none;
+    border-bottom: 1px solid var(--rule);
+  }
+  .mag-root .agate-strip .label .v { font-size: 22px; }
+  .mag-root .agate-strip .cell {
+    padding: 12px 10px 10px;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .mag-root .agate-strip .cell:nth-child(2n + 1) { border-right: 1px solid var(--rule-soft); }
+  .mag-root .agate-strip .cell:nth-child(2n) { border-right: none; }
+  .mag-root .agate-strip .cell .v { font-size: 26px; margin-top: 4px; }
+
+  /* SECTION HEAD */
+  .mag-root .section-head { padding: 22px 18px 12px; gap: 12px; }
+  .mag-root .section-head .title { font-size: 28px; }
+
+  /* DOSSIERS */
+  .mag-root .dossiers { grid-template-columns: 1fr; padding: 0 16px 22px; }
+  .mag-root .dossier { margin-right: 0; }
+  .mag-root .dossier .portrait .num { font-size: 180px; }
+  .mag-root .dossier .portrait .nameplate .nm { font-size: 24px; }
+  .mag-root .dossier .statline .v { font-size: 22px; }
+
+  /* PULL QUOTE */
+  .mag-root .pullquote { padding: 22px 18px 24px; }
+  .mag-root .pullquote q { font-size: 22px; line-height: 1.22; }
+
+  /* SPREAD (wire + cap) — stack */
+  .mag-root .spread { grid-template-columns: 1fr; }
+  .mag-root .spread > .col { padding: 22px 18px 24px; }
+  .mag-root .spread > .col.left {
+    border-right: none;
+    border-bottom: 1px solid var(--rule);
+  }
+  .mag-root .colhead { flex-wrap: wrap; gap: 8px; }
+  .mag-root .colhead .t { font-size: 22px; }
+  .mag-root .colhead .m { margin-left: 0; flex-basis: 100%; }
+  .mag-root .wire .item h3 { font-size: 17px; }
+  .mag-root .wire .item.lead h3 { font-size: 22px; }
+  .mag-root .cap-fig .gauge .vv .big { font-size: 42px; }
+  .mag-root .cap-fig .gauge .vv .suf { font-size: 12px; }
+  .mag-root .cap-fig .deadbox .v { font-size: 34px; }
+
+  /* DRAFT CLASS TABLE → card layout */
+  .mag-root .draftclass { padding: 22px 16px 28px; }
+  .mag-root .draftclass .tr.head { display: none; }
+  .mag-root .draftclass .tr {
+    grid-template-columns: auto 1fr;
+    gap: 6px 14px;
+    padding: 14px 4px;
+    align-items: start;
+  }
+  .mag-root .draftclass .pk { font-size: 30px; grid-row: span 2; }
+  .mag-root .draftclass .rd { grid-column: 2; }
+  .mag-root .draftclass .name { grid-column: 1 / -1; font-size: 19px; }
+  .mag-root .draftclass .pos { grid-column: 1; justify-self: start; }
+  .mag-root .draftclass .grade { grid-column: 2; text-align: right; }
+  .mag-root .draftclass .grade .b { display: inline; font-size: 18px; margin-right: 4px; }
+  .mag-root .draftclass .note { grid-column: 1 / -1; }
+  .mag-root .draftclass .status { grid-column: 1 / -1; text-align: left; }
+
+  /* SCHEDULE STRIP — 3 cols on phones */
+  .mag-root .schedule { padding: 22px 16px 24px; }
+  .mag-root .schedule .grid { grid-template-columns: repeat(3, 1fr); }
+  .mag-root .schedule .wk { min-height: 92px; padding: 6px 6px 8px; }
+  .mag-root .schedule .wk .opp { font-size: 15px; }
+  .mag-root .schedule .wk .opp-logo { width: 22px; height: 22px; }
+
+  /* FOLIO */
+  .mag-root .folio {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 14px 16px 18px;
+    text-align: center;
+    font-size: 9px;
+    letter-spacing: 0.20em;
+  }
+  .mag-root .folio .c,
+  .mag-root .folio .r { text-align: center; }
+
+  /* SLATE / MADRID */
+  .mag-root .madrid { grid-template-columns: 1fr; }
+  .mag-root .madrid .text {
+    padding: 24px 18px 22px;
+    border-right: none;
+    border-bottom: 1px solid var(--rule);
+  }
+  .mag-root .madrid h1 { font-size: clamp(44px, 13vw, 72px); }
+  .mag-root .madrid .deck { font-size: 16px; max-width: none; }
+  .mag-root .madrid .stats { grid-template-columns: repeat(2, 1fr); margin-top: 22px; }
+  .mag-root .madrid .stats .b .v { font-size: 22px; }
+  .mag-root .madrid .postcard { min-height: 360px; }
+  .mag-root .madrid .postcard .frame { inset: 16px; }
+  .mag-root .madrid .postcard .corner-tl { top: 10px; left: 10px; }
+  .mag-root .madrid .postcard .corner-tr { top: 10px; right: 10px; }
+  .mag-root .madrid .postcard .corner-bl { bottom: 10px; left: 10px; }
+  .mag-root .madrid .postcard .corner-br { bottom: 10px; right: 10px; }
+  .mag-root .madrid .postcard .city { top: 50px; left: 30px; right: 30px; }
+  .mag-root .madrid .postcard .city h2 { font-size: clamp(56px, 17vw, 88px); }
+  .mag-root .madrid .postcard .city .sub { font-size: 13px; }
+  .mag-root .madrid .postcard .stamp {
+    top: 30px; right: 24px;
+    width: 76px; height: 92px;
+    padding: 8px 6px 6px;
+  }
+  .mag-root .madrid .postcard .stamp .h { font-size: 22px; }
+  .mag-root .madrid .postcard .stamp .d { font-size: 9px; }
+  .mag-root .madrid .postcard .matchup {
+    bottom: 36px; left: 24px; right: 24px;
+    gap: 10px;
+  }
+  .mag-root .madrid .postcard .matchup .t .c { font-size: 38px; }
+  .mag-root .madrid .postcard .matchup .vs { font-size: 24px; }
+
+  /* SOS strip */
+  .mag-root .sos { grid-template-columns: repeat(2, 1fr); }
+  .mag-root .sos .label {
+    grid-column: 1 / -1;
+    padding: 12px 16px;
+    border-right: none;
+    border-bottom: 1px solid var(--rule);
+  }
+  .mag-root .sos .label .v { font-size: 22px; }
+  .mag-root .sos .cell { padding: 12px 10px; border-bottom: 1px solid var(--rule-soft); }
+  .mag-root .sos .cell:nth-child(2n + 1) { border-right: 1px solid var(--rule-soft); }
+  .mag-root .sos .cell:nth-child(2n) { border-right: none; }
+  .mag-root .sos .cell .v { font-size: 24px; }
+
+  /* SLATE grid */
+  .mag-root .slate-block { padding: 22px 16px 24px; }
+  .mag-root .slate-block .block-head {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .mag-root .slate-block .block-head .actno { font-size: 44px; }
+  .mag-root .slate-block .block-head .ttl { align-items: center; }
+  .mag-root .slate-block .block-head .ttl .nm { font-size: 24px; }
+  .mag-root .slate-block .block-head .meta { text-align: center; }
+  .mag-root .slate-grid { grid-template-columns: 1fr; }
+  .mag-root .week { min-height: 0; padding: 14px 16px 16px; margin-right: 0; }
+  .mag-root .week .opp { font-size: 36px; margin-top: 8px; }
+  .mag-root .week.bye .opp { font-size: 32px; }
+  .mag-root .week .matchup-row .opp-logo { width: 34px; height: 34px; }
+  .mag-root .week .week-num { font-size: 110px; }
+  .mag-root .week .watermark-logo { width: 60px; height: 60px; }
+
+  /* FEATURED MATCHUPS */
+  .mag-root .featured-matchups { padding: 22px 16px 28px; }
+  .mag-root .featured-matchups .row { grid-template-columns: 1fr; }
+  .mag-root .featured-matchups .card { margin-right: 0; margin-bottom: -1px; }
+  .mag-root .featured-matchups .card h3 { font-size: 22px; }
+
+  /* ROSTER cover */
+  .mag-root .roster-cover { grid-template-columns: 1fr; }
+  .mag-root .roster-cover .lede {
+    padding: 24px 18px 22px;
+    border-right: none;
+    border-bottom: 1px solid var(--rule);
+  }
+  .mag-root .roster-cover h1 { font-size: clamp(56px, 18vw, 104px); }
+  .mag-root .roster-cover .deck { font-size: 16px; max-width: none; }
+  .mag-root .roster-cover .anatomy { grid-template-columns: repeat(2, 1fr); margin-top: 22px; }
+  .mag-root .roster-cover .anatomy .b .v { font-size: 24px; }
+  .mag-root .roster-cover .collage { min-height: 360px; }
+  .mag-root .roster-cover .collage .tile.t1,
+  .mag-root .roster-cover .collage .tile.t2,
+  .mag-root .roster-cover .collage .tile.t3,
+  .mag-root .roster-cover .collage .tile.t4 { width: 130px; height: 160px; }
+  .mag-root .roster-cover .collage .tile.t1 { top: 20px; left: 14px; }
+  .mag-root .roster-cover .collage .tile.t2 { top: 30px; right: 14px; }
+  .mag-root .roster-cover .collage .tile.t3 { bottom: 28px; left: 28px; }
+  .mag-root .roster-cover .collage .tile.t4 { bottom: 40px; right: 24px; }
+  .mag-root .roster-cover .collage .num { font-size: 200px; }
+  .mag-root .roster-cover .collage .center .h { font-size: 36px; }
+
+  /* ROOMS */
+  .mag-root .rooms { grid-template-columns: 1fr; }
+  .mag-root .room {
+    padding: 22px 16px 22px;
+    border-right: none;
+    border-bottom: 1px solid var(--rule);
+  }
+  .mag-root .room:last-child { border-bottom: none; }
+  .mag-root .room .head { gap: 10px; flex-wrap: wrap; }
+  .mag-root .room .head .num { font-size: 40px; }
+  .mag-root .room .head .nm { font-size: 22px; }
+  .mag-root .room .head .meta {
+    margin-left: 0;
+    text-align: left;
+    flex-basis: 100%;
+  }
+  .mag-root .roomrow {
+    grid-template-columns: 78px 1fr auto;
+    gap: 12px;
+  }
+  .mag-root .roomrow.starter { grid-template-columns: 92px 1fr auto; }
+  .mag-root .roomrow .photo { height: 80px; }
+  .mag-root .roomrow.starter .photo { height: 104px; }
+  .mag-root .roomrow .info .nm { font-size: 18px; }
+  .mag-root .roomrow.starter .info .nm { font-size: 22px; }
+  .mag-root .roomrow .info .quote { display: none; }
+  .mag-root .roomrow .right .stat .v { font-size: 18px; }
+  .mag-root .roomrow.starter .right .stat .v { font-size: 22px; }
+
+  /* LADDER — keep the column structure, scroll horizontally on phones */
+  .mag-root .ladder { padding: 22px 0 28px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .mag-root .ladder .heads,
+  .mag-root .ladder .lrow { min-width: 640px; }
+
+  /* FRONT-OFFICE cover */
+  .mag-root .fo-cover { grid-template-columns: 1fr; }
+  .mag-root .fo-cover .lede {
+    padding: 24px 18px 22px;
+    border-right: none;
+    border-bottom: 1px solid var(--rule);
+  }
+  .mag-root .fo-cover h1 { font-size: clamp(44px, 13vw, 72px); }
+  .mag-root .fo-cover .deck { font-size: 16px; max-width: none; }
+  .mag-root .fo-cover .drop { max-width: none; }
+  .mag-root .fo-cover .drop p:first-child::first-letter { font-size: 52px; padding: 4px 8px 0 0; }
+  .mag-root .org { min-height: 480px; }
+  .mag-root .org .frame { inset: 16px; }
+  .mag-root .org .top-strip {
+    top: 16px; left: 16px; right: 16px;
+    padding: 10px 12px 9px;
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .mag-root .org .chart { padding: 68px 14px 50px; }
+  .mag-root .org .tier { gap: 12px; margin-bottom: 28px; }
+  .mag-root .org .tier::after { bottom: -16px; height: 16px; }
+  .mag-root .org .node .pic { width: 58px; height: 70px; }
+  .mag-root .org .node.lg .pic { width: 78px; height: 94px; }
+  .mag-root .org .node .nnm { font-size: 12px; }
+  .mag-root .org .node.lg .nnm { font-size: 14px; }
+  .mag-root .org .node .ntitle { font-size: 8px; letter-spacing: 0.16em; }
+  .mag-root .org .node .since { font-size: 8px; }
+
+  /* LEADS */
+  .mag-root .leads { padding: 22px 16px 22px; }
+  .mag-root .leads-grid { grid-template-columns: 1fr; }
+  .mag-root .lead { margin-right: 0; margin-bottom: -1px; }
+
+  /* STAFF */
+  .mag-root .staff { padding: 22px 16px 26px; }
+  .mag-root .staff-grid { grid-template-columns: 1fr; }
+  .mag-root .staff-card { grid-template-columns: 70px 1fr; padding: 14px 14px 16px; }
+  .mag-root .staff-card .pic { width: 70px; height: 88px; }
+
+  /* REUNION */
+  .mag-root .reunion { padding: 22px 16px 28px; }
+  .mag-root .reunion-card { grid-template-columns: 1fr; }
+  .mag-root .reunion-card .icon { padding: 18px 22px; }
+  .mag-root .reunion-card .icon .v { font-size: 44px; }
+  .mag-root .reunion-card .rbody {
+    padding: 20px 18px;
+    border-right: none;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .mag-root .reunion-card .rroster { padding: 18px 18px; }
+
+  /* LEAD FEATURE (wire page) */
+  .mag-root .lead-feature {
+    grid-template-columns: 1fr;
+    padding: 24px 16px 22px;
+    gap: 18px;
+  }
+  .mag-root .lead-feature h1 { font-size: clamp(36px, 10vw, 52px); }
+  .mag-root .lead-feature .deck { font-size: 16px; max-width: none; }
+  .mag-root .lead-feature .lf-body { column-count: 1; column-rule: none; }
+  .mag-root .lead-feature .lf-body p:first-child::first-letter { font-size: 48px; padding: 4px 8px 0 0; }
+
+  /* TICKER */
+  .mag-root .ticker {
+    padding: 10px 16px;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    gap: 16px;
+  }
+
+  /* COLUMNS — stack to a single feed */
+  .mag-root .columns { padding: 22px 16px 26px; }
+  .mag-root .columns .heads { grid-template-columns: 1fr; }
+  .mag-root .columns .heads .ch {
+    border-right: none;
+    border-bottom: 1px solid var(--rule-soft);
+    padding: 8px 14px;
+  }
+  .mag-root .columns .heads .ch:last-child { border-bottom: none; }
+  .mag-root .columns .cgrid { grid-template-columns: 1fr; }
+  .mag-root .columns .col {
+    padding: 0 0 14px;
+    border-right: none;
+    border-bottom: 1px solid var(--rule-soft);
+    margin-bottom: 14px;
+  }
+  .mag-root .columns .col:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .mag-root .columns .item.top { margin: 0 0 8px; padding: 12px 14px 14px; }
+
+  /* SOURCES */
+  .mag-root .sources { padding: 22px 16px 28px; }
+  .mag-root .sources-box { padding: 14px 16px 16px; }
+  .mag-root .sources-box .top { flex-wrap: wrap; gap: 6px; }
+  .mag-root .sources-box .top .meta { margin-left: 0; flex-basis: 100%; }
+  .mag-root .sources-box ul { columns: 2; column-gap: 16px; }
+
+  /* GRADE COVER (draft class) */
+  .mag-root .grade-cover { grid-template-columns: 1fr; }
+  .mag-root .grade-cover .lede {
+    padding: 24px 18px 22px;
+    border-right: none;
+    border-bottom: 1px solid var(--rule);
+  }
+  .mag-root .grade-cover .gradepanel { min-height: 360px; }
+  .mag-root .grade-cover .gradepanel .frame { inset: 16px; }
+  .mag-root .grade-cover .gradepanel .big { font-size: clamp(160px, 50vw, 240px); margin: 6px 0; }
+  .mag-root .grade-cover .gradepanel .sub { font-size: 14px; max-width: 280px; padding: 0 16px; }
+
+  /* SCOUT cards */
+  .mag-root .scout-cards { padding: 22px 16px 26px; }
+  .mag-root .scout-grid { grid-template-columns: 1fr; }
+  .mag-root .scout { margin-right: 0; margin-bottom: -1px; }
+
+  /* LEDGER */
+  .mag-root .ledger { padding: 22px 16px 28px; }
+  .mag-root .ledger .row {
+    grid-template-columns: 56px 1fr;
+    gap: 8px 14px;
+    padding: 12px 0;
+    align-items: start;
+  }
+  .mag-root .ledger .row.head { display: none; }
+  .mag-root .ledger .pos { font-size: 24px; }
+  .mag-root .ledger .got { grid-column: 2; }
+}
+
+@media (max-width: 480px) {
+  .mag-root .masthead .wordmark .title { font-size: clamp(34px, 12vw, 52px); }
+  .mag-root .cover h1.head { font-size: clamp(36px, 12vw, 60px); }
+  .mag-root .agate-strip .cell .v { font-size: 22px; }
+  .mag-root .agate-strip .cell .s { font-size: 8px; }
+  .mag-root .schedule .grid { grid-template-columns: repeat(2, 1fr); }
+  .mag-root .madrid .stats { grid-template-columns: 1fr 1fr; }
+  .mag-root .roster-cover h1 { font-size: clamp(48px, 16vw, 84px); }
+  .mag-root .roster-cover .collage .tile.t1,
+  .mag-root .roster-cover .collage .tile.t2,
+  .mag-root .roster-cover .collage .tile.t3,
+  .mag-root .roster-cover .collage .tile.t4 { width: 110px; height: 134px; }
+  .mag-root .fo-cover h1 { font-size: clamp(36px, 12vw, 60px); }
+  .mag-root .lead-feature h1 { font-size: clamp(30px, 9vw, 44px); }
+  .mag-root .pullquote q { font-size: 19px; }
+  .mag-root .section-head .title { font-size: 24px; }
+  .mag-root .draftclass .pk { font-size: 26px; }
+  .mag-root .draftclass .name { font-size: 17px; }
 }
