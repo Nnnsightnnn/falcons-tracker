@@ -27,7 +27,7 @@ export const PLAYERS = [
     stats: { completions: 166, attempts: 276, passYds: 1982, passTDs: 9, ints: 3, qbRating: 88.5 },
     form: 0,
     status: "pup",
-    injuryNote: "ACL rehab · torn Week 11 2025 · expected back for camp",
+    injuryNote: "ACL rehab · torn Week 11 2025 · cleared for individual + 7-on-7 at OTAs (May 19), team periods later",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
     contract: { years: 4, total: 22080000, guaranteed: 22080000, apy: 5520000, throughYear: 2027, cap2026: 5900000 },
     career: [
@@ -1177,7 +1177,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "pup",
-    injuryNote: "Achilles rehab · torn late Nov 2025 · in weight room during voluntary OTAs",
+    injuryNote: "Achilles rehab · torn late Nov 2025 · cleared for walkthroughs at OTAs (May 19)",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4431194.png",
     contract: { years: 4, total: 5200000, guaranteed: 950000, apy: 1300000, throughYear: 2028, cap2026: 1100000 },
     career: [{ years: "2025–", team: "Atlanta Falcons", type: "NFL" }],
@@ -2029,7 +2029,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-05-19T13:00:00Z",
+  generatedAt: "2026-05-20T13:00:00Z",
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "The Falcoholic",
     "Bleacher Report", "Pro Football Rumors", "SI Falcons", "NBC Sports",
@@ -2056,8 +2056,8 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "MEDIA DAY 1 — Stefanski / Cunningham / Tua / London open the OTA media window TODAY; OTA Day 2 on the field at Flowery Branch",
-      detail: "Atlantafalcons.com / ESPN / Yahoo Sports / SI Falcons / NFL.com (Mon May 18–Tue May 19): Phase 3 opened on the field at Flowery Branch yesterday (Mon May 18) and rolls into Day 2 today. Tua, Drake London, Bijan Robinson and Brandon Dorlus were all spotted in Day 1 drills per Yahoo's on-site coverage — Tua taking the QB1 reps with Penix continuing to ramp. First periodic media availability for Stefanski, Cunningham, Tua, London and Bates opens TODAY (Tue May 19), with more windows scheduled through the three-week block (May 21, 26–27, 29, June 8–9, 11). No live contact, no pads, no live tackling. Mandatory veteran minicamp June 16–18.",
+      title: "STEFANSKI: REPS SPLIT 'VERY INTENTIONALLY' — Penix cleared for individual + 7-on-7 only, no team periods yet; OTA Day 3 Thursday May 21",
+      detail: "NFL.com / Atlantafalcons.com / ESPN / SI Falcons / Heavy / The Falcoholic (Tue May 19 presser, day-after Wed May 20 reaction): Stefanski's first OTA media availability — held yesterday after the second Phase 3 practice — formalized the QB rotation: 'One guy will be up first one period and then switch with the next period and rotate every single day in really almost every drill.' Penix is officially cleared for individual drills and 7-on-7 work but NOT for team-period 11-on-11 — that clearance 'will come later.' Tua took the team-period QB1 reps Tuesday with Penix ramping alongside. Rees enforces the period cadence. No public timeline on full clearance and no Week-1 declaration. Field returns Thursday May 21 for OTA Day 3 with another media window the same day.",
       category: "coaching",
     },
     {
@@ -2096,8 +2096,8 @@ export const NEWS_DIGEST = {
       category: "games",
     },
     {
-      title: "Penix throwing — 6 months post-op, ESPN drop of the Phase 2 video to Drake London headlines AJC's 'four questions' entering OTAs",
-      detail: "ESPN / AJC / NFL.com / Heavy / NBC PFT / Atlantafalcons.com / SI Falcons (May 14–19): Penix's health tops AJC's four questions entering OTAs — he's six months removed from the Nov 16 ACL tear and the team posted a clean Phase 2 throwing rep to Drake London at Flowery Branch. Stefanski's repeat line: 'right where he needs to be,' with 'not so focused on timetables just yet.' Matt Ryan (President of Football): 'Mike's in a good spot right now' but 'we don't really know what to expect at the beginning of training camp.' Penix has publicly aimed at Week 1 vs. Pittsburgh on FOX. SI Betting opens Tua as the -136 favorite (57.6% implied) to start Week 1; Penix at +102. Today's media window is the first chance to ask Stefanski directly whether Penix is cleared for any team-period work.",
+      title: "PENIX PODIUM DEBUT — 'I'm running my own race' — Week 1 still the personal goal, declined to publicly commit; looked 'comfortable' in OTA Day 2 drills",
+      detail: "NBC PFT / NFL.com / Atlantafalcons.com / AJC / SI Falcons (Tue May 19 player availability, Wed May 20 reaction): Penix's first OTA podium since the November ACL was measured and explicitly allergic to a public timeline. Pull quote: 'I'm running my own race. I can't look into another lane. But we are working together.' AJC's Will McFadden: 'Penix looked comfortable moving around and doing everything asked of him' Tuesday — six months removed from the third ACL surgery of his career. Targeting Week 1 vs. Pittsburgh as the personal goal but declined to commit publicly. SI Betting still has Tua as the -136 Week-1 favorite (57.6% implied) over Penix (+102). Stefanski's repeat line stays: 'right where he needs to be.'",
       category: "injuries",
     },
     {
@@ -2116,8 +2116,8 @@ export const NEWS_DIGEST = {
       category: "general",
     },
     {
-      title: "Avieon Terrell vs. Mike Hughes CB2 battle live NOW — first OTA reps on the field yesterday; Bowman Jr. (Achilles) rehabbing in weight room",
-      detail: "BloggingDirty / SI Falcons / The Falcoholic / AJC / ESPN (May 17–19): Phase 3 has the CB2 competition opposite A.J. Terrell unfolding in real time. Avieon Terrell told ESPN's Raimondi his hamstring 'feels 100 percent' and was on the field in Day 1. SI's Schultz: Avieon has 'a very real chance' of winning the job. Mike Hughes still gets the projected starter's reps while the rookie ramps. Wild card: Billy Bowman Jr. (torn Achilles, late Nov 2025) was seen rehabbing in the weight room during voluntary OTAs — encouraging but no training-camp lock. Until Bowman returns, Avieon may slide into nickel snaps with Dee Alford and Hughes also rotating. First real competition snaps of the position battle started yesterday.",
+      title: "BOWMAN UPGRADED — cleared for walkthroughs at OTAs (up from weight-room only); Andersen / Trice / Bowman 'all on a good timeline' per Stefanski",
+      detail: "Atlantafalcons.com / The Falcoholic / SI Falcons / BloggingDirty (Tue May 19 / Wed May 20): Stefanski volunteered an injury update yesterday — Billy Bowman Jr. (torn Achilles, late Nov 2025) is now cleared for walkthroughs with the team after spending voluntary OTAs in the weight room. Stefanski: 'He's going to be out there going through walk-throughs right now. He's going to be working off to the side, but he's doing really well.' Same upbeat read on Troy Andersen (2024 knee, missed all of 2025) and Bralen Trice (2024 ACL, missed all of 2025): 'Everybody is doing really well. Everybody is on a good timeline. I'm very pleased with how they're working.' Bowman's walkthrough designation is the most concrete progress signal of OTAs so far — he was a question mark for camp four weeks ago.",
       category: "injuries",
     },
     {
@@ -2161,8 +2161,8 @@ export const NEWS_DIGEST = {
       category: "games",
     },
     {
-      title: "Calendar — OTA Day 2 TODAY (May 19) · Media window opens · Mandatory minicamp Jun 16–18 · Camp opens Jul 22 · Season opener Sep 13 at Pittsburgh",
-      detail: "Day-of (Tue May 19): OTA Day 2 underway at Flowery Branch and the first periodic media-availability window opens — Stefanski, Cunningham, Tua, London and Bates all expected. Atlanta's full Phase 3 slate: May 18–19, 21, 26–27, 29, June 8–9, 11 (10 OTAs over three weeks). SCHEDULE_2026_STATUS sits at 'revealed' — all 18 weeks populated, W16 and W18 still date/time TBD by flex rules. Mandatory veteran minicamp Jun 16–18; dead period through Jul 21; training camp opens Jul 22; preseason opens at home vs. Denver Aug 14; regular season opens at Pittsburgh Sun Sep 13, 1 PM ET FOX.",
+      title: "Calendar — OTA Day 3 Thu May 21 (next on-field session) · Phase 3 rolls through Jun 11 · Mandatory minicamp Jun 16–18 · Camp opens Jul 22",
+      detail: "Day-after (Wed May 20): 2 of 10 OTAs in the books at Flowery Branch. Off-day today. Next on-field session is OTA Day 3 on Thursday May 21 with another scheduled media availability window. Full Phase 3 slate: May 18–19, 21, 26–27, 29, June 8–9, 11. SCHEDULE_2026_STATUS sits at 'revealed' — all 18 weeks populated, W16 (vs TB Dec 27) and W18 (at CAR Jan 10) still date/time TBD by flex rules. Mandatory veteran minicamp Jun 16–18; dead period Jun 21 → Jul 21; training camp opens Jul 22; preseason home opener vs. Denver Aug 14; regular season opener at Pittsburgh Sun Sep 13, 1 PM ET FOX.",
       category: "general",
     },
     {
@@ -2171,9 +2171,14 @@ export const NEWS_DIGEST = {
       category: "games",
     },
     {
-      title: "Tua 'embraces the competition' — first Atlanta presser quote bank; takes QB1 reps Day 1, betting markets still -136 chalk for Week 1",
-      detail: "Atlantafalcons.com / NFL.com / FOX Sports / Yardbarker (Tua's intro presser + May 18–19 OTA notes): Tua's first Atlanta-media session set the tone — 'You either love competition, you're a competitor or you're not. I embrace the competition.' On mentoring Penix: 'Whatever I can do to help Mike's game will help me — vice versa, we're then helping the team get better.' On his health: 'Everything came out good. Some things are looking way better than the guys might have thought.' Yahoo confirmed Tua taking the early QB1 reps on Day 1 with London and Bijan in the rotation. SI Betting opens Tua as -136 favorite (57.6% implied) over Penix (+102) for Week 1 vs. Pittsburgh. Cunningham: Tua 'knows he's coming in here to compete.'",
+      title: "AVIEON TERRELL ramped slowly — individual drills with the secondary on Day 2, NO 7-on-7 or 11-on-11 yet; Hughes still gets projected CB2 reps",
+      detail: "Atlantafalcons.com / SI Falcons / The Falcoholic / BloggingDirty (Tue May 19 practice report, Wed May 20 reaction): The CB2 competition opposite A.J. Terrell is officially live but R2 rookie Avieon Terrell is on a deliberate ramp — he 'worked with the secondary early during individual drills but did not participate in 7-on-7 or 11-on-11 work' on Day 2. Mike Hughes continues to take the projected starter's reps while the rookie installs the playbook. SI's Schultz: Avieon still has 'a very real chance' of winning the outside CB2 job by camp. Bowman's walkthrough upgrade complicates the picture by Week 1 — once Bowman returns to team work, Avieon may slide to nickel reps with Dee Alford and Hughes rotating outside.",
       category: "coaching",
+    },
+    {
+      title: "Center room — Ryan Neuzil holding starter reps as expected; UDFA James Brockermeyer winning reserve-center work in early OTA rotation",
+      detail: "Atlantafalcons.com / SI Falcons (Tue May 19 OL notes): the OL2 picture firmed up on Day 2 — incumbent C Ryan Neuzil continues to hold the first-team center spot 'as expected,' and UDFA C James Brockermeyer appears to have handled most of the reserve-center reps in rotation. SI: 'If he performs well throughout OTAs and training camp, Brockermeyer could carve out a path to either the 53-man roster or the practice squad.' Day 2 individual drills emphasized quarterback-to-receiver touch and ball placement, particularly red-zone work. No injuries reported among the OL group through two days.",
+      category: "general",
     },
   ],
 };
@@ -2185,7 +2190,7 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-05-19T14:00:00Z",
+  generatedAt: "2026-05-20T13:00:00Z",
   windowLabel: "OTA Media Window · May 19 → Jun 18",
   sessions: [
     {
