@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { NEWS_DIGEST } from "./playerData.js";
+import { NEWS_DIGEST, INTERVIEWS } from "./playerData.js";
 import { MagazineShell } from "./MagazineView.jsx";
 
 const CALENDAR = [
@@ -43,6 +43,12 @@ function timestamp(detail) {
   // look for date or month in detail
   const m = /\b(May|Apr|Mar|Jun)\s?\d{1,2}/i.exec(detail || "");
   return m ? m[0].toUpperCase() : "—";
+}
+
+function formatPressDate(iso) {
+  if (!iso) return "—";
+  const d = new Date(iso + "T12:00:00Z");
+  return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }).toUpperCase();
 }
 
 function titleSplit(title) {
@@ -145,6 +151,48 @@ export default function MagazineWire({ setView }) {
           <BeatColumn items={byBeat.football} />
           <BeatColumn items={byBeat.slate} />
         </div>
+      </section>
+
+      {/* PRESS ROOM — interview dispatches */}
+      <div className="section-head">
+        <div className="rule"></div>
+        <div>
+          <div className="title">The <span className="em">Press Room</span></div>
+          <div className="meta">{INTERVIEWS?.windowLabel || "Media availabilities"} · {(INTERVIEWS?.sessions || []).length} sessions on file</div>
+        </div>
+        <div className="rule"></div>
+      </div>
+
+      <section className="pressroom">
+        {(INTERVIEWS?.sessions || []).slice(0, 4).map((s) => (
+          <article key={s.id} className="podium">
+            <div className="podium-mast">
+              <span className="role">{s.role.toUpperCase()}</span>
+              <span className="sep">◆</span>
+              <span className="date">{formatPressDate(s.date)}</span>
+            </div>
+            <h3 className="speaker">{s.speaker}</h3>
+            <div className="session">
+              <span className="em">{s.session}</span> · {s.venue}
+            </div>
+
+            <blockquote className="podium-quote">
+              <q>{s.pullQuote}</q>
+            </blockquote>
+
+            <p className="podium-summary">{s.summary}</p>
+
+            <ul className="podium-bullets">
+              {(s.bullets || []).map((b, i) => (
+                <li key={i}>{b}</li>
+              ))}
+            </ul>
+
+            <div className="podium-src">
+              <a href={s.sourceUrl} target="_blank" rel="noopener noreferrer">↗ Primary source</a>
+            </div>
+          </article>
+        ))}
       </section>
 
       {/* PULL QUOTE */}

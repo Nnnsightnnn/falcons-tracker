@@ -2087,3 +2087,132 @@
   .mag-root .draftclass .pk { font-size: 26px; }
   .mag-root .draftclass .name { font-size: 17px; }
 }
+
+/* ── PRESS ROOM (Wire page) ───────────────────────────────────────────── */
+.mag-root .pressroom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 32px;
+  padding: 6px 0 24px;
+}
+.mag-root .pressroom .podium {
+  border-top: 3px double var(--rule);
+  border-bottom: 1px solid var(--rule-soft);
+  padding: 16px 4px 18px;
+  position: relative;
+}
+.mag-root .pressroom .podium::before {
+  content: "§";
+  position: absolute;
+  top: -14px;
+  left: 0;
+  background: var(--paper);
+  color: var(--oxblood);
+  font-family: var(--m-display);
+  font-size: 22px;
+  line-height: 1;
+  padding: 0 8px 0 0;
+}
+.mag-root .pressroom .podium-mast {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--m-cond);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+}
+.mag-root .pressroom .podium-mast .role { color: var(--oxblood); font-weight: 600; }
+.mag-root .pressroom .podium-mast .sep { color: var(--rule-soft); }
+.mag-root .pressroom .speaker {
+  font-family: var(--m-display);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.05;
+  margin: 6px 0 2px;
+  letter-spacing: -0.005em;
+}
+.mag-root .pressroom .session {
+  font-family: var(--m-cond);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--ink-2);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.mag-root .pressroom .session .em { color: var(--oxblood); font-style: italic; text-transform: none; letter-spacing: 0; font-family: var(--m-serif); font-size: 14px; }
+.mag-root .pressroom .podium-quote {
+  border-left: 3px solid var(--oxblood);
+  padding: 4px 0 4px 14px;
+  margin: 0 0 12px;
+}
+.mag-root .pressroom .podium-quote q {
+  font-family: var(--m-serif);
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.35;
+  color: var(--ink);
+  quotes: "\201C" "\201D";
+}
+.mag-root .pressroom .podium-quote q::before,
+.mag-root .pressroom .podium-quote q::after {
+  color: var(--oxblood);
+  font-style: normal;
+  font-size: 22px;
+}
+.mag-root .pressroom .podium-summary {
+  font-family: var(--m-serif);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ink-2);
+  margin: 0 0 12px;
+}
+.mag-root .pressroom .podium-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px;
+}
+.mag-root .pressroom .podium-bullets li {
+  font-family: var(--m-serif);
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--ink);
+  padding: 4px 0 4px 14px;
+  position: relative;
+  border-top: 1px dotted var(--rule-soft);
+}
+.mag-root .pressroom .podium-bullets li:first-child { border-top: 0; }
+.mag-root .pressroom .podium-bullets li::before {
+  content: "·";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  color: var(--oxblood);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+}
+.mag-root .pressroom .podium-src {
+  font-family: var(--m-cond);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.mag-root .pressroom .podium-src a {
+  color: var(--oxblood);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule-soft);
+  padding-bottom: 1px;
+}
+.mag-root .pressroom .podium-src a:hover {
+  color: var(--oxblood-deep);
+  border-bottom-color: var(--oxblood);
+}
+
+@media (max-width: 720px) {
+  .mag-root .pressroom { grid-template-columns: 1fr; gap: 22px; }
+  .mag-root .pressroom .speaker { font-size: 26px; }
+  .mag-root .pressroom .podium-quote q { font-size: 16px; }
+}

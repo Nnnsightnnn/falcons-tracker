@@ -2177,3 +2177,88 @@ export const NEWS_DIGEST = {
     },
   ],
 };
+
+// ─── INTERVIEWS — press conference & podium dispatches ────────────────────
+// Refreshed by the falcons-tracker-update skill. Each session is a structured
+// summary of a real press availability: speaker, role, date, venue, a single
+// pullQuote, 3–5 bullets of substantive content, and a sourceUrl pointing
+// back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
+// reverse-chronological — newest session first.
+export const INTERVIEWS = {
+  generatedAt: "2026-05-19T14:00:00Z",
+  windowLabel: "OTA Media Window · May 19 → Jun 18",
+  sessions: [
+    {
+      id: "stefanski-2026-05-19",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-05-19",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "OTA Day 2 · Media Availability",
+      sourceUrl: "https://www.atlantafalcons.com/video/atlanta-falcons-head-coach-kevin-stefanski-ota-media-availability-may-19-2026-press-conference",
+      summary: "Stefanski opened the periodic media window by formalizing the QB plan: intentional rep rotation between Tua and Penix in everything except 11-on-11 team periods, with Penix still held out of full team work as he ramps from his November ACL. The first words from the new head coach about his quarterbacks were structural, not promotional — a coach refusing to crown either, scripting the competition instead.",
+      pullQuote: "It's our job to be very intentional about it. One quarterback gets first-team reps this period, the next period it switches. Every drill, every day.",
+      bullets: [
+        "QB1 reps to be split intentionally between Tua and Penix every period, every drill — Rees enforces the cadence",
+        "Penix limited to individual and 7-on-7 — no team-period work yet, 'that time is coming'",
+        "Health room: 'everybody is doing really well, all in different stages of what they can do and when'",
+        "Refused to confirm a Week-1 starter, declined a public timeline for Penix's full clearance",
+      ],
+      topics: ["qb-competition", "penix-acl", "rees-install"],
+    },
+    {
+      id: "penix-jr-2026-05-19",
+      speaker: "Michael Penix Jr.",
+      role: "Quarterback",
+      date: "2026-05-19",
+      venue: "Flowery Branch · QB Podium",
+      session: "OTA Day 2 · Player Availability",
+      sourceUrl: "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/michael-penix-im-running-my-own-race-cant-look-into-another-lane",
+      summary: "Penix's first OTA podium since the November ACL was measured and explicitly allergic to a public timeline. He framed Tua's arrival not as a competition but as a parallel race, six months out from surgery and pointing at Pittsburgh Week 1 — without ever using the words.",
+      pullQuote: "I'm running my own race. I can't look into another lane. But we are working together. That's what it's all about.",
+      bullets: [
+        "Six months post-op from the November ACL — 'taking it one day at a time' on the rehab",
+        "Targeting Week 1 vs. Pittsburgh as the personal goal, declined to publicly commit",
+        "On Tua: 'we are working together' — explicitly frames the room as parallel, not zero-sum",
+        "Feels 'like himself' in throwing reps; trusts the training staff on what comes next",
+      ],
+      topics: ["qb-competition", "penix-acl", "week-1"],
+    },
+    {
+      id: "tua-2026-03-24",
+      speaker: "Tua Tagovailoa",
+      role: "Quarterback",
+      date: "2026-03-24",
+      venue: "Flowery Branch · Auditorium",
+      session: "Introductory Press Conference",
+      sourceUrl: "https://www.atlantafalcons.com/news/tua-tagovailoa-competition-michael-penix-jr-falcons-quarterbacks",
+      summary: "Tua's first Atlanta presser set the tone for a competition narrative he refused to soften. He used the word 'compete' five times, framed his role as a force-multiplier for Penix's development, and described his post-trade physicals as 'looking way better than the guys might have thought' — a clear shot across the bow of the Dolphins exit.",
+      pullQuote: "You're either a competitor or you're not. And so I embrace the competition.",
+      bullets: [
+        "Embraced the QB1 competition head-on — 'I'm excited to work alongside Mike'",
+        "Team-first framing: 'the collection of what's best for the team, not just the individual'",
+        "On health: 'Everything came out good. Some things are looking way better than the guys might have thought'",
+        "On the move: 'I knew I needed to play better — this is a great opportunity to get a good reset'",
+      ],
+      topics: ["qb-competition", "tua-signing", "health"],
+    },
+    {
+      id: "cunningham-2026-03-24",
+      speaker: "Ian Cunningham",
+      role: "General Manager",
+      date: "2026-03-24",
+      venue: "Flowery Branch · Auditorium",
+      session: "Tua Signing · GM Availability",
+      sourceUrl: "https://www.foxsports.com/stories/nfl/falcons-tua-tagovailoa-michael-penix-jr-qb-competition",
+      summary: "Cunningham's tone at the Tua signing presser closed the door on any 'mentor-only' framing of the deal. The first-year GM said the move was about competition, not insurance — and reaffirmed his trenches-first roster build with the IDL room still flagged as the open second-wave window heading into June.",
+      pullQuote: "He knows he's coming in here to compete. We don't apologize for adding good football players who push the room.",
+      bullets: [
+        "Tua signing framed as competition, not a mentorship — 'coming in here to compete'",
+        "Repeated the trenches-first build philosophy: 'smart, tough, physical'",
+        "Acknowledged the IDL room is still the active second-wave need post-draft",
+        "On picks as capital: 'I love picks. You use those as currency — trade up, trade for proven players, more swings at the plate'",
+      ],
+      topics: ["qb-competition", "roster-build", "front-office"],
+    },
+  ],
+};
