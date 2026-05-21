@@ -1667,7 +1667,7 @@ export const TEAM_LOGOS = {
   PHI: "https://static.www.nfl.com/image/private/f_auto/league/puhrqgj71gobgdkdo6uq",
   KC: "https://static.www.nfl.com/image/private/f_auto/league/ujshjqvmnxce8m4obmvs",
   SF: "https://static.www.nfl.com/image/private/f_auto/league/dxibuyxbk0b9ua5ih9hn",
-  WAS: "https://static.www.nfl.com/image/private/f_auto/league/xymxwrl1zp4xzcfsbvuf",
+  WAS: "https://static.www.nfl.com/image/private/f_auto/league/tcck1wghs3bhoy0c3q3c",
   DET: "https://static.www.nfl.com/image/private/f_auto/league/ocvxwnapdvwevupe4tpr",
   GB: "https://static.www.nfl.com/image/private/f_auto/league/gppfvr7n8gljgjaqux2x",
   CHI: "https://static.www.nfl.com/image/private/f_auto/league/ra0poq2ivwyahbaq86d2",
