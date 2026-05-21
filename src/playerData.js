@@ -2029,36 +2029,52 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-05-20T13:00:00Z",
+  generatedAt: "2026-05-21T09:00:00Z",
   sources: [
-    "Atlanta Falcons Official", "ESPN", "NFL.com", "The Falcoholic",
-    "Bleacher Report", "Pro Football Rumors", "SI Falcons", "NBC Sports",
-    "Yahoo Sports", "Spotrac", "Heavy.com", "CBS Sports", "AJC",
-    "The Athletic", "Pro Football Network", "FBSchedules", "BloggingDirty",
-    "Saturday Down South", "Pro Football Talk", "Yardbarker", "PFF",
-    "Locked On Atlanta", "FanSided", "ClutchPoints", "TWSN", "Over The Cap",
-    "National Today", "Freedom 96.9", "Athlon Sports", "Audacy 92.9 The Game",
-    "Kicks 99", "BetMGM", "Wikipedia", "Bleeding Green Nation",
-    "Sporting News", "RAS.football", "NFL Trade Rumors", "WalterFootball",
-    "Front Office Sports", "AtlAllDay", "FootballScoop", "NFLPA", "KNBR",
-    "NBC Miami", "Today in Miami", "Awful Announcing", "On3",
-    "Rolling Out", "BVM Sports", "WHEC", "ABC7 Chicago", "FieldLevelMedia",
-    "WSB-TV", "Atlanta News First", "TigerNet", "MadameNoire",
-    "College Football Network", "AOL", "The Spun", "Business Upturn",
-    "Sportskeeda", "Sharp Football", "Draft Sharks", "Ourlads",
-    "Schedule2026", "NFL Analysis Network", "Real Madrid",
-    "Sports Brackets", "The Sun", "Breezy Scroll",
-    "Bengals.com", "FOX19", "On Location", "Southern Sports Today",
-    "Behind The Steel Curtain", "Steelers Depot", "The Big Lead",
-    "Sportsbook Review", "DAZN", "Sports Media Watch",
-    "FOX Sports", "WSAV", "Sharp Football Analysis",
-    "Pro Football Network",
+    "Atlanta Falcons Official", "ESPN", "NFL.com", "NBC Sports",
+    "Pro Football Talk", "The Falcoholic", "SI Falcons", "Heavy.com",
+    "Yahoo Sports", "AJC", "Bleacher Report", "Yardbarker", "BloggingDirty",
+    "ClutchPoints", "CBS Sports", "The Athletic", "TWSN", "Spotrac",
+    "Over The Cap", "NFLPA", "Athlon Sports", "Pro Football Rumors",
+    "NFL Trade Rumors", "BVM Sports", "Bengals.com", "FOX 5 Atlanta",
+    "11Alive", "BetMGM", "Sharp Football Analysis", "Pro Football Network",
+    "The Big Lead", "NFL Analysis Network", "National Today",
   ],
   topics: [
     {
-      title: "STEFANSKI: REPS SPLIT 'VERY INTENTIONALLY' — Penix cleared for individual + 7-on-7 only, no team periods yet; OTA Day 3 Thursday May 21",
-      detail: "NFL.com / Atlantafalcons.com / ESPN / SI Falcons / Heavy / The Falcoholic (Tue May 19 presser, day-after Wed May 20 reaction): Stefanski's first OTA media availability — held yesterday after the second Phase 3 practice — formalized the QB rotation: 'One guy will be up first one period and then switch with the next period and rotate every single day in really almost every drill.' Penix is officially cleared for individual drills and 7-on-7 work but NOT for team-period 11-on-11 — that clearance 'will come later.' Tua took the team-period QB1 reps Tuesday with Penix ramping alongside. Rees enforces the period cadence. No public timeline on full clearance and no Week-1 declaration. Field returns Thursday May 21 for OTA Day 3 with another media window the same day.",
+      title: "OTA DAY 3 IS TODAY (Thu May 21) — Stefanski splitting QB1 reps 'very intentionally' between Tua and Penix; Penix held to individual + 7-on-7, no 11-on-11 yet",
+      detail: "Atlantafalcons.com / NFL.com / NBC PFT / ESPN / SI Falcons / Bleacher Report (Tue May 19 presser → Thu May 21 OTA Day 3): Stefanski's OTA media availability formalized the QB rotation — 'One guy will be up first for one period and then switch for the next period, and rotate every single day and almost every single drill.' Penix is cleared for individual drills and 7-on-7 work but NOT for team-period 11-on-11 — that clearance 'will come later.' Tua took the team-period QB1 reps Tuesday with Penix ramping alongside; OC Tommy Rees enforces the period cadence. Stefanski also called QB coach Alex Van Pelt's stewardship of the room 'non-negotiable.' The field returns today for OTA Day 3 with another media window expected; Phase 3 rolls on May 26–27, 29 and June 8–9, 11, with mandatory minicamp Jun 16–18.",
       category: "coaching",
+    },
+    {
+      title: "PENIX: 'I'm running my own race' — Week 1 vs. Pittsburgh still the personal goal, declined to commit publicly; teammates say he 'looks great'",
+      detail: "NBC PFT / NFL.com / Atlantafalcons.com / AJC / SI Falcons (Tue May 19 player availability): Penix's first OTA podium since the November ACL was measured and explicitly allergic to a public timeline. Pull quote: 'I'm running my own race. I can't look into another lane. But at the same time, we are working together.' Six months removed from the third ACL surgery of his career, Penix said his goal has 'always been' Week 1 but that he won't rush the process — and that he 'feels like himself' throwing the football, while admitting he can't take hits to the left leg yet. Chris Lindstrom on Penix's return: 'I'm really happy for him. He's really worked hard. He looks great.' SI Betting still has Tua as the Week-1 starting favorite over Penix.",
+      category: "injuries",
+    },
+    {
+      title: "First OTA player + coordinator podiums — Bijan on Stefanski's offense: 'He's fire, bro'; offense installs its screen-game package",
+      detail: "Atlantafalcons.com / NBC PFT / Heavy / SI Falcons (Tue May 19 availabilities): the first OTA player podium produced a glowing review of the new staff. Bijan Robinson on Stefanski: 'Kevin Stefanski, he's fire, bro. I like him a lot, and his offensive scheme.' Robinson said the offense takes 'a lot of pride' in the run game and praised new OL coach Bill Callahan's wide-zone install. Tuesday's practice marked the offense's first run through its screen-play packages — Stefanski walked over mid-drill to coach Robinson on the landmarks and pacing. OC Tommy Rees, passing-game coordinator Tanner Engstrand and special-teams coordinator Craig Aukerman also met the media on the team's growth through the first two OTAs.",
+      category: "coaching",
+    },
+    {
+      title: "BOWMAN UPGRADED — cleared for walkthroughs at OTAs (up from weight-room only); Andersen / Trice / Bowman 'all on a good timeline' per Stefanski",
+      detail: "Atlantafalcons.com / The Falcoholic / SI Falcons / BloggingDirty (Tue May 19 / Wed May 20): Stefanski volunteered an injury update — Billy Bowman Jr. (torn Achilles, late Nov 2025) is now cleared for walkthroughs with the team after spending voluntary OTAs in the weight room. Stefanski: 'He's going to be out there going through walk-throughs right now. He's going to be working off to the side, but he's doing really well.' Same upbeat read on Troy Andersen (2024 knee, missed all of 2025) and Bralen Trice (2024 ACL, missed all of 2025) — and Trice was active rotating off the edge in 7-on-7 and team periods Tuesday. 'Everybody is on a good timeline. I'm very pleased with how they're working.'",
+      category: "injuries",
+    },
+    {
+      title: "AVIEON TERRELL ramped slowly — individual drills with the secondary on Day 2, NO 7-on-7 or 11-on-11 yet; Hughes still gets projected CB2 reps",
+      detail: "Atlantafalcons.com / SI Falcons / The Falcoholic / BloggingDirty (Tue May 19 practice report): the CB2 competition opposite A.J. Terrell is officially live but R2 rookie Avieon Terrell is on a deliberate ramp — he 'worked with the secondary early during individual drills but did not participate in 7-on-7 or 11-on-11 work' on Day 2. Mike Hughes continues to take the projected starter's reps lined up opposite A.J. Terrell while the rookie installs the playbook. SI's Schultz: Avieon still has 'a very real chance' of winning the outside CB2 job by camp. Bowman's walkthrough upgrade complicates the picture — once Bowman returns to team work, Avieon may slide to nickel reps with Dee Alford and Hughes rotating outside.",
+      category: "general",
+    },
+    {
+      title: "DC Jeff Ulbrich missed OTA Day 2 for the NFL's Accelerator Program in Orlando — one of 16 coaches selected; rejoined practice Wednesday",
+      detail: "Atlantafalcons.com (Tue May 19 practice report): Falcons defensive coordinator Jeff Ulbrich was absent from Tuesday's OTA practice to take part in the NFL's 'Accelerator Program' in Orlando — a league initiative that pairs coaches and front-office executives with owners and decision-makers to expand head-coach and GM hiring pipelines. Ulbrich was one of 16 coaches selected for this year's cohort and was expected back at Flowery Branch on Wednesday. Stefanski: 'I think the world of Brich and I think he is more than deserving of that opportunity when it comes. ... I think it is important he's there so he can let people know who he is and what he's about.' Christian Harris and Channing Tindall took extended LB reps in the interim.",
+      category: "coaching",
+    },
+    {
+      title: "Center room — Ryan Neuzil holding starter reps as expected; UDFA James Brockermeyer winning reserve-center work in early OTA rotation",
+      detail: "Atlantafalcons.com / SI Falcons (Tue May 19 OL notes): the OL2 picture firmed up on Day 2 — incumbent C Ryan Neuzil continues to hold the first-team center spot 'as expected,' and UDFA C James Brockermeyer appeared to handle most of the reserve-center reps in rotation. SI: 'If he performs well throughout OTAs and training camp, Brockermeyer could carve out a path to either the 53-man roster or the practice squad.' Offensive linemen worked during 7-on-7 periods to help establish pocket timing for the quarterbacks; Day 2 individual drills emphasized quarterback-to-receiver touch and ball placement, particularly red-zone work. No injuries reported among the OL group through two days.",
+      category: "general",
     },
     {
       title: "CB Darren Hall back at Flowery Branch — Atlanta re-signs the 2021 R4 pick, releases S Tysheem Johnson in corresponding move",
@@ -2066,119 +2082,34 @@ export const NEWS_DIGEST = {
       category: "free-agency",
     },
     {
-      title: "Rookie jersey numbers locked — Avieon Terrell #12, Branch #17, Daniels #53, Perkins Jr. #56, Onianwa #75, Thompson #98",
-      detail: "Atlantafalcons.com / SI / Big News Network / Yahoo Sports (May 14–15): the team officially issued numbers to the 2026 draft class — CB Avieon Terrell #12 (one off brother A.J.'s #24), WR Zachariah Branch #17 (the receiver number despite slot/return profile), LB Kendal Daniels #53, LB Harold Perkins Jr. #56, OT Ethan Onianwa #75, DT Anterio Thompson #98. Terrell-and-Terrell becomes the first Falcons CB sibling pairing in franchise history. Numbers post-bump from Phase 2 drills means the team is publishing roster cards before media-availability Tuesday — small but real sign the rookie class is being prepped for OTA team reps, not held back as install-only.",
-      category: "general",
-    },
-    {
-      title: "Branch reports to Flowery Branch for Phase 3 — closed NFLPA Rookie Premiere in LA Saturday night; on field for Stefanski-era OTAs today",
-      detail: "NFLPA / Yahoo Sports / Athlon Sports / atlantafalcons.com (May 14–17): R3 WR Zachariah Branch closed the 32nd annual NFLPA Rookie Premiere in Los Angeles Saturday night — the only Falcons rookie on the 42-name invite list. Three-day brand-and-photo summit (trading-card shoots, autograph signings, jersey unveilings, group-licensing orientation) ran May 14–16. 20 of 42 invites were WRs — confirmation the league sees Branch as a Day-1 producer despite slipping to #79. Drew rookie-camp raves earlier: speed in route-breaks Day 1, shook every media member's hand post-practice, and confirmed UDFA Cash Jones is making the position switch to slot WR. Reports to Flowery Branch and joins the veteran-rookie OTA mix on Phase 3 Day 1.",
-      category: "general",
-    },
-    {
-      title: "SCHEDULE IS OUT — Falcons land 5th-easiest SoS (.465); 3 straight primetime (TNF @ GB W3, MNF @ NO W4, SNF vs BAL W5); Week 11 bye; flex-eligible W16 vs TB + W18 @ CAR",
-      detail: "AJC / Atlantafalcons.com / Bleacher Report / Yahoo / ESPN / FOX 5 Atlanta (Thu May 14, 8 PM ET reveal): full 18-week slate is public. Stefanski era opens at Pittsburgh Sun Sep 13, 1 PM ET on FOX, then home opener vs. Carolina Sep 20. Three straight primetime games W3–5 — TNF at Green Bay Sep 24 (Amazon), MNF at New Orleans Oct 5 (ESPN), SNF vs. Baltimore Oct 11 (NBC). Bye is Week 11 (Nov 22), perfectly placed after Madrid + KC home stand. The closing stretch is brutal — 3 of last 4 are divisional (W16 vs TB, W17 vs NO Jan 3, W18 at CAR), with W16 and W18 still TBD and flex-eligible. Opponents' combined 2025 win pct of .465 is the 5th-easiest schedule in the league behind CLE, NO, CIN, IND.",
-      category: "games",
-    },
-    {
-      title: "Falcons schedule-release video leans into ESPN's 'This Is SportsCenter' — cameos from Ryan, Freddie, Stefanski, London, Bates, Bijan",
-      detail: "Yahoo Sports / ESPN / Atlantafalcons.com / 11Alive (Thu May 14): Atlanta's social team pegged the schedule-release video to the classic ESPN 'This Is SportsCenter' commercial — Matt Ryan (now President of Football), mascot Freddie Falcon, HC Kevin Stefanski, Drake London, Jessie Bates III and Bijan Robinson all cameo through Bristol-style office chaos with subtle nods to every opponent. Schedule-release videos have become a Super Bowl for league social teams; ESPN listed the Falcons' entry among the day's most-shared. Locked On Atlanta and 11Alive ran live reaction segments Wednesday night and Thursday morning.",
-      category: "general",
-    },
-    {
-      title: "Three primetime games (down from 5 in '25) — TNF at Lambeau, MNF at the Superdome, SNF vs. Lamar in Atlanta; more possible via flex",
-      detail: "AJC / Bleacher Report / NFL.com / The Falcoholic (Thu May 14): Atlanta drops from 5 primetime appearances in 2025 to 3 confirmed in 2026 — all in a row. Week 3: Thursday Night Football at Green Bay (Sep 24, 8:15 PM ET, Amazon Prime). Week 4: Monday Night Football at New Orleans (Oct 5, 8:15 PM ET, ESPN). Week 5: Sunday Night Football vs. Baltimore Ravens at MBS (Oct 11, 8:20 PM ET, NBC). Two more slots could flex in late — both NFC South rematches (Bucs W16, Panthers W18) are listed TBD for date/time. The early-season primetime cluster sets up the QB battle winner — Penix or Tua — for a national stage by Week 3.",
-      category: "games",
-    },
-    {
-      title: "Madrid Week 9 confirmed at the reveal — Falcons HOST Bengals Nov 8, 9:30 AM ET at the Bernabéu (NFL Network)",
-      detail: "NFL.com / Atlantafalcons.com / Bengals.com / Yahoo / NBC PFT (May 13–14): the international slate dropped Wednesday morning on GMFB and was reconfirmed at the reveal — Atlanta hosts Cincinnati (Burrow, Chase, Higgins) in Madrid Sun Nov 8, 9:30 AM ET kickoff at Santiago Bernabéu, the 70-year home of Real Madrid CF. NFL Network exclusive broadcast. Bengals' first Madrid trip and first international game in 7 years. CEO Greg Beadles: 'We are truly honored and deeply grateful for the opportunity to host the Cincinnati Bengals at the Bernabéu.' Atlanta's 6th international game (Toronto '13, London '14/'21/'23, Berlin '25) and 5th trip to Europe in 6 seasons. On Location travel packages already live.",
-      category: "games",
-    },
-    {
-      title: "PENIX PODIUM DEBUT — 'I'm running my own race' — Week 1 still the personal goal, declined to publicly commit; looked 'comfortable' in OTA Day 2 drills",
-      detail: "NBC PFT / NFL.com / Atlantafalcons.com / AJC / SI Falcons (Tue May 19 player availability, Wed May 20 reaction): Penix's first OTA podium since the November ACL was measured and explicitly allergic to a public timeline. Pull quote: 'I'm running my own race. I can't look into another lane. But we are working together.' AJC's Will McFadden: 'Penix looked comfortable moving around and doing everything asked of him' Tuesday — six months removed from the third ACL surgery of his career. Targeting Week 1 vs. Pittsburgh as the personal goal but declined to commit publicly. SI Betting still has Tua as the -136 Week-1 favorite (57.6% implied) over Penix (+102). Stefanski's repeat line stays: 'right where he needs to be.'",
-      category: "injuries",
-    },
-    {
-      title: "8 post-minicamp roster moves earlier this week — Blacklock, Walton, Robinson, Rayner signed off tryouts; Stille, Thompkins, Washington, Frazier released",
-      detail: "Atlantafalcons.com / Yahoo Sports / SI Falcons / NFL Trade Rumors / Yardbarker / NBC PFT / The Falcoholic / BVM Sports (Mon May 11–Tue May 12): four tryout invites earned NFL contracts after a strong rookie minicamp — DT Ross Blacklock (27, 2020 R2 TCU, vet stops w/ HOU/MIN/JAX/TEN/IND/NYG; unsigned in 2025), OL Brandon Walton (28, FAU 2020 UDFA, 5 years experience), G Layden Robinson, and LB Daveren Rayner. Four corresponding releases: DL Ben Stille, RB Carlos Washington Jr., WR Deven Thompkins, and rookie TE Brandon Frazier. Blacklock reunites with Stefanski (their Minnesota OC overlap) and gives Cunningham veteran insurance for the IDL room. Pairs with the later Darren Hall signing / Tysheem Johnson release on May 14.",
+      title: "8 post-minicamp roster moves — Blacklock, Walton, Robinson, Rayner signed off tryouts; Stille, Thompkins, Washington, Frazier released",
+      detail: "Atlantafalcons.com / Yahoo Sports / SI Falcons / NFL Trade Rumors / Yardbarker / NBC PFT / The Falcoholic / BVM Sports (Mon May 11–Tue May 12): four tryout invites earned NFL contracts after a strong rookie minicamp — DT Ross Blacklock (27, 2020 R2 TCU, vet stops w/ HOU/MIN/JAX/TEN/IND/NYG; unsigned in 2025), OL Brandon Walton (28, FAU 2020 UDFA, 5 years experience), G Layden Robinson, and LB Daveren Rayner. Four corresponding releases: DL Ben Stille, RB Carlos Washington Jr., WR Deven Thompkins, and rookie TE Brandon Frazier. Blacklock reunites with Stefanski (their Minnesota OC overlap) and gives Cunningham veteran insurance for an interior D-line room that still lacks a proven 1-technique.",
       category: "free-agency",
     },
     {
-      title: "Rookie minicamp wrap — three-day camp closed Sun May 10, Stefanski 'goal was to learn our system,' Branch / Perkins headlined on-field",
-      detail: "Atlantafalcons.com / AJC / SI Falcons / The Falcoholic / Yardbarker / Atlanta News First (Fri May 8 → Sun May 10): the three-day rookie minicamp closed Sunday at Flowery Branch after running with 46 players on field — six draftees, 14 UDFAs, 23 tryout invites, two NFL-vet tryouts (Blacklock + Walton confirmed Mon), three returning Falcons. Stefanski's AJC line: 'Goal is to learn our system' — system install and facility orientation, not depth-chart sorting. Stefanski also confirmed he's not afraid to play rookies: 'If a rookie earns a role and Week 1 he's ready to go, then he'll be out there.' UGA UDFA RB Cash Jones repped at slot WR all weekend — confirmed by Branch — pointing to a Cordarrelle-style positionless role. R6 LB Harold Perkins Jr. went through a full slate Saturday despite his ACL-recovery flag.",
-      category: "coaching",
-    },
-    {
-      title: "Pearce diversion finalized last week — six-month program; NFL discipline expected 'in the fairly near future' per Rapoport",
-      detail: "NFL.com / NBC PFT / The Falcoholic / Heavy / CBS Sports / Rolling Out / SI Falcons / PFR (May 7–11) confirm James Pearce Jr.'s pretrial intervention agreement was finalized Thursday in Miami-Dade Court: six months of therapy, drug testing, and a stay-away order from WNBA's Rickea Jackson. All three felony counts (aggravated battery w/ deadly weapon, fleeing, resisting) plus the misdemeanor stalking count dismiss on clean completion. League discipline runs separately — Rapoport: 'the league will likely act with this resolution in the fairly near future.' Baseline for personal-conduct domestic violence is six games and NFL discipline does not require a criminal conviction. With Ebiketie gone to PHI, the edge room behind Walker / Ojulari / Ebukam / Thomas / Trice / Malone is thin on proven snaps.",
-      category: "general",
-    },
-    {
-      title: "BOWMAN UPGRADED — cleared for walkthroughs at OTAs (up from weight-room only); Andersen / Trice / Bowman 'all on a good timeline' per Stefanski",
-      detail: "Atlantafalcons.com / The Falcoholic / SI Falcons / BloggingDirty (Tue May 19 / Wed May 20): Stefanski volunteered an injury update yesterday — Billy Bowman Jr. (torn Achilles, late Nov 2025) is now cleared for walkthroughs with the team after spending voluntary OTAs in the weight room. Stefanski: 'He's going to be out there going through walk-throughs right now. He's going to be working off to the side, but he's doing really well.' Same upbeat read on Troy Andersen (2024 knee, missed all of 2025) and Bralen Trice (2024 ACL, missed all of 2025): 'Everybody is doing really well. Everybody is on a good timeline. I'm very pleased with how they're working.' Bowman's walkthrough designation is the most concrete progress signal of OTAs so far — he was a question mark for camp four weeks ago.",
-      category: "injuries",
-    },
-    {
-      title: "Phase 2 closed Friday — Stefanski's 'identity' install logs; Tommy Rees calling plays, three-man Browns coaching reunion locked",
-      detail: "Atlantafalcons.com / FootballScoop / CBS Atlanta / SI Falcons / Blogging Dirty / NBC PFT (May 4–15): Phase 2 ran Mon May 4 – Fri May 15 at Flowery Branch — non-contact walkthroughs and individual drills only, no team periods. Tori McElhaney's through-line for Stefanski's program: 'X's and O's, techniques, fundamentals, identity.' Stefanski confirmed publicly he's 'very comfortable' with OC Tommy Rees calling plays in 2026. Rees was Browns TEs coach 2024 → OC mid-2025 — three Browns assistants reunited (Rees, OL Bill Callahan, QB coach Alex Van Pelt). System DNA: play-action, under-center, wide-zone foundation blended with gap concepts (suits Bijan's Texas pedigree). Penix–Rees adjustment: less pistol/shotgun than Penix has run his whole career. Phase 3 OTAs open today.",
-      category: "coaching",
-    },
-    {
-      title: "Drake London extension still 'top of mind' — Athletic's Kendall projects 4yr/$135M ($33M+ APY), Garrett Wilson comp",
-      detail: "Heavy / ClutchPoints / Yahoo / SI Falcons / NBC PFT / The Athletic (via TWSN) / atlantafalcons.com (May 7–11 sweep): Cunningham's post-draft 'top of mind' line on London is unchanged but no signed deal yet. London is on the $16.8M fifth-year option for 2026 — final year of the rookie deal. The Athletic's Josh Kendall this week: 'echo Garrett Wilson at 4 years/$130M, could project at 4yr/$135M.' Kendall's market read pushes London into upper-tier WR money — $33M+ APY — just behind JSN ($42.15M), Chase, Jefferson, and CeeDee Lamb. ClutchPoints' insider demand also lands at 4yr/$135M. Org-stated goal: signed before training camp opens July 22. No reported momentum into schedule-release week.",
+      title: "Drake London extension still 'top of mind' — The Athletic's Kendall projects 4yr/$135M ($33M+ APY), Garrett Wilson comp",
+      detail: "Heavy / ClutchPoints / Yahoo / SI Falcons / NBC PFT / The Athletic (via TWSN) / atlantafalcons.com (May 7–15 sweep): Cunningham's post-draft 'top of mind' line on London is unchanged but no signed deal yet. London is on the $16.8M fifth-year option for 2026 — final year of the rookie deal. The Athletic's Josh Kendall: London's next deal 'could echo Garrett Wilson at 4 years/$130M, could project at 4yr/$135M.' That pushes London into upper-tier WR money — $33M+ APY — just behind JSN ($42.15M), Chase, Jefferson and CeeDee Lamb. ClutchPoints' insider demand also lands at 4yr/$135M. Org-stated goal: signed before training camp opens July 22. No reported momentum through schedule-release week.",
       category: "contracts",
     },
     {
       title: "Bijan extension on the way — Schefter 'this offseason'; National Today / BloggingDirty cluster at 3yr/$69–75M ($23–25M APY)",
-      detail: "Schefter (via The Falcoholic) plus PFR / National Today / NFL Analysis Network / DraftSharks / Yardbarker (May 7–11): Bijan extension is expected to land this offseason — Schefter on his podcast: 'Between Gibbs, Bijan, and Achane, they're about to completely reset the RB market.' National Today's working framework lands at 3yr/$69M ($23M APY) floor / 3yr/$75M ($25M AAV) ceiling, making him the highest-paid RB in NFL history. Apr 12 fifth-year option ($11.32M for 2027) is openly a placeholder per beat writers — cheapest fifth-year option in his entire R1 class given the All-Pro résumé (1,478 rush / 820 rec / 16 TDs / scrimmage-yard leader). Detroit closing Jahmyr Gibbs first is the only realistic market-reset risk.",
+      detail: "Schefter (via The Falcoholic) plus PFR / National Today / NFL Analysis Network / Yardbarker (May 7–11): Bijan extension is expected to land this offseason — Schefter on his podcast: 'Between Gibbs, Bijan, and Achane, they're about to completely reset the RB market.' National Today's working framework lands at 3yr/$69M ($23M APY) floor / 3yr/$75M ($25M AAV) ceiling, making him the highest-paid RB in NFL history. The Apr 12 fifth-year option ($11.32M for 2027) is openly a placeholder per beat writers — cheapest fifth-year option in his entire R1 class given the All-Pro résumé (1,478 rush / 820 rec / 16 TDs / scrimmage-yard leader). Detroit closing Jahmyr Gibbs first is the only realistic market-reset risk.",
       category: "contracts",
     },
     {
       title: "Bates wants to retire a Falcon, no extension talks yet — final year of his $64M deal, void in 2027",
-      detail: "PFR / Yardbarker / Over The Cap / SI Falcons (Apr–May): All-Pro safety Jessie Bates publicly said he wants to spend the rest of his career in Atlanta — but the team has not engaged in extension talks as of April 2026. Bates is entering the final year of his 4yr/$64.02M deal (2026, $24.8M cap hit, $16M AAV — 8th-highest among safeties). Contract has a void year in 2027, marking him as an extension candidate this offseason. Three picks last season pushed his career INT total to 27, his third 2nd-team All-Pro nod. With London and Bijan stacked ahead of him in Cunningham's 'wave' contract queue, a Bates deal is more likely a fall conversation than a summer one.",
+      detail: "PFR / Yardbarker / Over The Cap / SI Falcons (Apr–May): All-Pro safety Jessie Bates publicly said he wants to spend the rest of his career in Atlanta — but the team has not engaged in extension talks as of May 2026. Bates is entering the final year of his 4yr/$64.02M deal (2026, $16.8M cap hit, $16M AAV). The contract carries a void year in 2027, marking him as an extension candidate this offseason. Three picks last season pushed his career INT total to 27, his third 2nd-team All-Pro nod. With London and Bijan stacked ahead of him in Cunningham's 'wave' contract queue, a Bates deal is more likely a fall conversation than a summer one.",
       category: "contracts",
     },
     {
-      title: "IDL still Cunningham's open need — Blacklock joins room off Mon tryout, Smith / Hand / Williams / Thompson still no proven 1-tech",
-      detail: "Falcoholic / SI Falcons / ESPN beat trackers / atlantafalcons.com (May 7–12): interior defensive line remains the biggest remaining roster hole heading into OTAs even after Mon's Ross Blacklock signing off the tryout. Cunningham flagged the 'second wave' window weeks ago. Onyemata to NYJ and Orhorhoro to JAX (for Maason Smith) thinned the room. The 2026 rotation — Maason Smith, Da'Shawn Hand (1yr/$3M), Chris Williams (Cleveland holdover), R6 #208 Anterio Thompson, plus UDFA DT Carlos Allen and now vet Blacklock — still lacks a proven 1-technique. Another veteran depth signing remains a live transaction window.",
-      category: "free-agency",
-    },
-    {
-      title: "Pitts trade chatter fully dead — no TE drafted, voluntary attendance, $15M tag cashed, Rees building 12-personnel around him",
-      detail: "Blogging Dirty / Yardbarker / ClutchPoints / Heavy / SI Falcons / AJC: Atlanta did not draft a tight end, Pitts cashed the $15.045M franchise tag and showed for voluntary minicamp, and Cunningham's posture has shifted from 'willing to listen' to using Pitts as the centerpiece of Rees' 12-personnel install. Stefanski's known affinity for the TE position locks the read: Pitts isn't moving. Schefter's pre-draft 'multiple-mention' chatter has gone dark for three-plus weeks. The trade window technically reopens through final cuts; the practical window has closed.",
-      category: "contracts",
-    },
-    {
-      title: "Stefanski faces his old team in Week 14 — Falcons travel to Cleveland Dec 13, 1 PM ET on CBS",
-      detail: "AJC / The Falcoholic / Bleacher Report (Thu May 14 reveal): the schedule release dropped Stefanski's homecoming square in Week 14 — Falcons at Cleveland Browns, Sun Dec 13, 1 PM ET on CBS at Huntington Bank Field. Stefanski coached Cleveland from 2020 through midseason 2025, won two Coach of the Year awards there, and was fired after the Browns' 2-15 collapse. The Browns side of the schedule release video reportedly featured zero references to Stefanski's tenure. The other Cleveland connection: OC Tommy Rees was Browns TE coach in 2024 and OC mid-2025 before following Stefanski to Atlanta. Both will be back inside the Dawg Pound on the visitors' sideline.",
-      category: "coaching",
-    },
-    {
-      title: "Closing stretch is brutal — 3 of last 4 are NFC South games, W16 vs TB + W18 at CAR still flex-eligible (TBD)",
-      detail: "Atlantafalcons.com / The Falcoholic / AJC (Thu May 14): Atlanta closes the regular season with a divisional gauntlet — Week 16 vs. Tampa Bay (Dec 27, TBD/TBD), Week 17 vs. New Orleans (Jan 3, 1 PM ET FOX), Week 18 at Carolina (Jan 10, TBD/TBD). Both bookend games (W16, W18) are listed TBD because the NFL holds flex rights on the date and time. Likely outcome: if the NFC South title is alive, one or both move to Saturday or Sunday Night Football. Pre-Christmas stretch is also tough — at Cleveland W14, at Washington W15. Two divisional sweeps within the last three weeks means the South could once again be decided at the buzzer.",
+      title: "2026 schedule is out — opener at Pittsburgh Sep 13; 3 straight primetime (W3–5); Week 11 bye; 5th-easiest SoS (.465)",
+      detail: "AJC / Atlantafalcons.com / Bleacher Report / Yahoo / ESPN / FOX 5 Atlanta (Thu May 14 reveal): the full 18-week slate is public. The Stefanski era opens at Pittsburgh Sun Sep 13, 1 PM ET on FOX, then home vs. Carolina Sep 20. Three straight primetime games W3–5 — TNF at Green Bay Sep 24 (Amazon), MNF at New Orleans Oct 5 (ESPN), SNF vs. Baltimore Oct 11 (NBC) — down from five primetime games in 2025. Bye is Week 11 (Nov 22). The closing stretch is brutal: 3 of the last 4 are divisional, with W16 vs. TB (Dec 27) and W18 at CAR (Jan 10) still date/time TBD and flex-eligible. Opponents' combined 2025 win pct of .465 is the 5th-easiest schedule in the league. Stefanski's Cleveland homecoming lands in Week 14 (at the Browns, Dec 13).",
       category: "games",
     },
     {
-      title: "Calendar — OTA Day 3 Thu May 21 (next on-field session) · Phase 3 rolls through Jun 11 · Mandatory minicamp Jun 16–18 · Camp opens Jul 22",
-      detail: "Day-after (Wed May 20): 2 of 10 OTAs in the books at Flowery Branch. Off-day today. Next on-field session is OTA Day 3 on Thursday May 21 with another scheduled media availability window. Full Phase 3 slate: May 18–19, 21, 26–27, 29, June 8–9, 11. SCHEDULE_2026_STATUS sits at 'revealed' — all 18 weeks populated, W16 (vs TB Dec 27) and W18 (at CAR Jan 10) still date/time TBD by flex rules. Mandatory veteran minicamp Jun 16–18; dead period Jun 21 → Jul 21; training camp opens Jul 22; preseason home opener vs. Denver Aug 14; regular season opener at Pittsburgh Sun Sep 13, 1 PM ET FOX.",
-      category: "general",
-    },
-    {
-      title: "Vegas win total opens 7.5 — BetMGM has UNDER as chalk (-115); NFC South odds put Falcons at +333 behind TB (+155) for the division",
-      detail: "BetMGM / Sharp Football Analysis / Pro Football Network / BloggingDirty / Bleacher Report (May 14–17 post-schedule sweep): Atlanta's 2026 win total opens at 7.5 with the under hooked at -115. Bleacher Report's Kris Knox calls 9-8 a 'realistic' Stefanski Year 1 floor and a fringe wild-card path. NFC South division odds: Bucs +155 (38.5% implied), Falcons +333, Panthers +400, Saints +500. Pro Football Network's full-season sim has Atlanta winning the division at 9-8. Sharp Football tags ATL's 5th-easiest SoS (.465) as the biggest swing factor — opponents' combined 2025 win pct trails only CLE, NO, CIN, IND. Public market split: Vegas is bearish (under chalk), models are bullish (division-favorite-or-close).",
+      title: "Madrid Week 9 — Falcons HOST the Bengals Nov 8, 9:30 AM ET at the Bernabéu (NFL Network)",
+      detail: "NFL.com / Atlantafalcons.com / Bengals.com / Yahoo / NBC PFT (May 13–14): the international slate has Atlanta hosting Cincinnati (Burrow, Chase, Higgins) in Madrid Sun Nov 8, 9:30 AM ET at Santiago Bernabéu, the 70-year home of Real Madrid CF. NFL Network exclusive broadcast. It is the Bengals' first Madrid trip and first international game in seven years. CEO Greg Beadles: 'We are truly honored and deeply grateful for the opportunity to host the Cincinnati Bengals at the Bernabéu.' The game is Atlanta's 6th international appearance (Toronto '13, London '14/'21/'23, Berlin '25) and 5th trip to Europe in six seasons. It falls one week before the Week 11 bye — a clean travel runway.",
       category: "games",
-    },
-    {
-      title: "AVIEON TERRELL ramped slowly — individual drills with the secondary on Day 2, NO 7-on-7 or 11-on-11 yet; Hughes still gets projected CB2 reps",
-      detail: "Atlantafalcons.com / SI Falcons / The Falcoholic / BloggingDirty (Tue May 19 practice report, Wed May 20 reaction): The CB2 competition opposite A.J. Terrell is officially live but R2 rookie Avieon Terrell is on a deliberate ramp — he 'worked with the secondary early during individual drills but did not participate in 7-on-7 or 11-on-11 work' on Day 2. Mike Hughes continues to take the projected starter's reps while the rookie installs the playbook. SI's Schultz: Avieon still has 'a very real chance' of winning the outside CB2 job by camp. Bowman's walkthrough upgrade complicates the picture by Week 1 — once Bowman returns to team work, Avieon may slide to nickel reps with Dee Alford and Hughes rotating outside.",
-      category: "coaching",
-    },
-    {
-      title: "Center room — Ryan Neuzil holding starter reps as expected; UDFA James Brockermeyer winning reserve-center work in early OTA rotation",
-      detail: "Atlantafalcons.com / SI Falcons (Tue May 19 OL notes): the OL2 picture firmed up on Day 2 — incumbent C Ryan Neuzil continues to hold the first-team center spot 'as expected,' and UDFA C James Brockermeyer appears to have handled most of the reserve-center reps in rotation. SI: 'If he performs well throughout OTAs and training camp, Brockermeyer could carve out a path to either the 53-man roster or the practice squad.' Day 2 individual drills emphasized quarterback-to-receiver touch and ball placement, particularly red-zone work. No injuries reported among the OL group through two days.",
-      category: "general",
     },
   ],
 };
@@ -2190,7 +2121,7 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-05-20T13:00:00Z",
+  generatedAt: "2026-05-21T09:00:00Z",
   windowLabel: "OTA Media Window · May 19 → Jun 18",
   sessions: [
     {
@@ -2228,6 +2159,25 @@ export const INTERVIEWS = {
         "Feels 'like himself' in throwing reps; trusts the training staff on what comes next",
       ],
       topics: ["qb-competition", "penix-acl", "week-1"],
+    },
+    {
+      id: "bijan-robinson-2026-05-19",
+      speaker: "Bijan Robinson",
+      role: "Running Back",
+      date: "2026-05-19",
+      venue: "Flowery Branch · Player Podium",
+      session: "OTA Day 2 · Player Availability",
+      sourceUrl: "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/bijan-robinson-excited-to-play-in-kevin-stefanski-tommy-rees-offense",
+      summary: "Robinson's first OTA podium of the new era was an unqualified endorsement of the coaching change. The All-Pro back framed Stefanski's wide-zone, run-first identity as a natural fit, singled out the screen game and Bill Callahan's line install as early bright spots, and made clear the offense intends to make the run game its backbone.",
+      pullQuote: "Kevin Stefanski, he's fire, bro. I like him a lot, and his offensive scheme.",
+      bullets: [
+        "Endorsed new HC Kevin Stefanski and his offensive scheme without reservation",
+        "Said the offense takes 'a lot of pride' in the run game — 'it helps everybody'",
+        "Praised new OL coach Bill Callahan's wide-zone install during early OTA work",
+        "Day 2 featured the offense's first screen-play package; Stefanski coached Robinson on the landmarks mid-drill",
+        "Spoke on the first OTA player podium alongside A.J. Terrell and Chris Lindstrom",
+      ],
+      topics: ["stefanski-offense", "run-game", "rees-install"],
     },
     {
       id: "tua-2026-03-24",
