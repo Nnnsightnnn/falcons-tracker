@@ -96,6 +96,13 @@ export function MagazineShell({ activeKey, setView, pageInfo, children }) {
           <div className="r">Vol. XXVI · No. 18 · {today.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}</div>
         </footer>
 
+        {/* COLOPHON */}
+        <div className="colophon">
+          <a href="https://github.com/nnnsightnnn" target="_blank" rel="noopener noreferrer">
+            Built by nnnsightnnn
+          </a>
+        </div>
+
       </div>
     </div>
   );

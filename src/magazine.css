@@ -966,6 +966,25 @@
 .mag-root .folio .c { text-align: center; }
 .mag-root .folio .r { text-align: right; }
 
+/* ── colophon (brand credit, below the folio on every page) ──────────── */
+.mag-root .colophon {
+  border-top: 1px solid var(--rule);
+  padding: 10px 40px 16px;
+  text-align: center;
+  font-family: var(--m-cond);
+  font-size: 9px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.mag-root .colophon a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor;
+  padding-bottom: 1px;
+}
+.mag-root .colophon a:hover { color: var(--ink); }
+
 /* ── flipnav (page index across the top of every magazine page) ──────── */
 .mag-root .flipnav {
   display: grid;
