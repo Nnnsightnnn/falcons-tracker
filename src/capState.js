@@ -28,7 +28,7 @@ export const CAP_STATE = {
       playerId: "drake-london",
       status: "extension-candidate",
       priority: 1,
-      rationale: "5th-year option. Projected ~4yr/$128M / $32M APY / $82-90M gtd. Cunningham wants done before draft weekend.",
+      rationale: "5th-year option ($16.8M for 2026). Projected 4yr/$128-135M, $32-33M+ APY, Garrett Wilson comp. Org goal: signed before training camp opens July 22.",
     },
     {
       playerId: "bijan",
