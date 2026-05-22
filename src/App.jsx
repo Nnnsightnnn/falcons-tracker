@@ -1,3 +1,4 @@
+// built by nnnsightnnn — signal from noise
 import { useState } from "react";
 import MagazineCover from "./MagazineView.jsx";
 import MagazineSlate from "./MagazineSlate.jsx";
