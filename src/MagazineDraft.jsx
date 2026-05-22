@@ -113,65 +113,6 @@ export default function MagazineDraft({ setView }) {
         <div className="rule"></div>
       </div>
 
-      {/* CLASS HERO — six headshots, oxblood gallery wall */}
-      <section style={{
-        padding: "20px 40px 8px", borderBottom: "1px solid var(--rule)",
-        background: "var(--paper-soft)",
-      }}>
-        <div style={{
-          display: "grid", gridTemplateColumns: "repeat(6, 1fr)", gap: 10,
-        }}>
-          {picks.map((pick) => {
-            const p = playerById(PICK_TO_PLAYER_ID[pick.overallPick]);
-            const playerName = (pick.selection || "").split(" · ")[0] || "—";
-            const lastNm = playerName.replace(/\s+Jr\.?$|\s+Sr\.?$|\s+II$|\s+III$|\s+IV$/, "").split(" ").slice(-1)[0].toUpperCase();
-            return (
-              <div key={pick.overallPick} style={{
-                position: "relative", aspectRatio: "3 / 4", overflow: "hidden",
-                background: "linear-gradient(180deg, #3a261a, #0b0704)",
-                border: "5px solid var(--paper)",
-                boxShadow: "0 6px 14px rgba(0,0,0,0.35)",
-              }}>
-                {p?.image && (
-                  <img src={p.image} alt={playerName}
-                    style={{
-                      position: "absolute", bottom: 0, left: "50%",
-                      transform: "translateX(-50%)", height: "112%", width: "auto",
-                      filter: "sepia(0.35) saturate(0.7) contrast(1.05)",
-                      mixBlendMode: "lighten",
-                    }} />
-                )}
-                <div style={{
-                  position: "absolute", inset: 0,
-                  backgroundImage: "radial-gradient(rgba(20,12,5,0.45) 1px, transparent 1.2px)",
-                  backgroundSize: "4px 4px", mixBlendMode: "multiply", opacity: 0.45,
-                  pointerEvents: "none",
-                }} />
-                <div style={{
-                  position: "absolute", top: 6, left: 6,
-                  background: "var(--oxblood)", color: "var(--paper)",
-                  padding: "3px 6px 2px",
-                  fontFamily: "var(--m-cond)", fontSize: 9, letterSpacing: "0.18em",
-                }}>R{pick.round} · #{pick.overallPick}</div>
-                <div style={{
-                  position: "absolute", left: 0, right: 0, bottom: 0,
-                  background: "linear-gradient(180deg, transparent, rgba(15,8,4,0.85))",
-                  padding: "16px 8px 6px",
-                  color: "var(--paper)",
-                  fontFamily: "var(--m-cond)", fontSize: 11, letterSpacing: "0.18em",
-                  textAlign: "center",
-                }}>{lastNm}</div>
-              </div>
-            );
-          })}
-        </div>
-        <div style={{
-          marginTop: 10, fontFamily: "var(--m-cond)", fontSize: 10,
-          letterSpacing: "0.24em", textTransform: "uppercase", color: "var(--ink-mute)",
-          textAlign: "center",
-        }}>— THE CLASS · SIX FACES · ROOKIE MINICAMP MAY 9 —</div>
-      </section>
-
       <section className="scout-cards">
         <div className="scout-grid">
           {picks.map((pick) => {
@@ -214,13 +155,70 @@ export default function MagazineDraft({ setView }) {
                 <div className="nm">{playerName}{jersey ? ` · #${jersey}` : ""}</div>
                 <div className="col">{college}</div>
                 <div className="grade">{grade.letter}{grade.plus} <span style={{ fontStyle: "normal", fontFamily: "var(--m-cond)", fontSize: 11, letterSpacing: "0.18em", color: "var(--ink-mute)", marginLeft: 6 }}>{grade.note}</span></div>
-                <div className="blurb">{shortenBlurb(pick.selectionNote || target?.fit || "")}</div>
-                {combine && (
-                  <div className="testing">
-                    <div className="t"><div className="k">FORTY</div><div className="v">{combine.fortyYd || "—"}</div></div>
-                    <div className="t"><div className="k">VERT</div><div className="v">{combine.verticalIn ? `${combine.verticalIn}"` : "—"}</div></div>
-                    <div className="t"><div className="k">BENCH</div><div className="v">{combine.benchReps ?? "—"}</div></div>
+
+                {target && (
+                  <div className="measurables">
+                    <div className="t"><div className="k">HT</div><div className="v">{formatHeight(target.heightIn)}</div></div>
+                    <div className="t"><div className="k">WT</div><div className="v">{target.weight ?? "—"}</div></div>
+                    <div className="t"><div className="k">AGE</div><div className="v">{target.age ?? "—"}</div></div>
+                    <div className="t"><div className="k">40</div><div className="v">{combine?.fortyYd || target.fortyTime || "—"}</div></div>
                   </div>
+                )}
+
+                <div className="blurb">{target?.fit || pick.selectionNote || ""}</div>
+
+                {(target?.strengths?.length || target?.concerns?.length) && (
+                  <div className="swot">
+                    <div className="col-s">
+                      <h6>Strengths</h6>
+                      <ul>
+                        {(target.strengths || []).map((s) => (
+                          <li key={s}><span className="plus">+</span> {s}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="col-s">
+                      <h6>Concerns</h6>
+                      <ul>
+                        {(target.concerns || []).map((c) => (
+                          <li key={c}><span className="minus">−</span> {c}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                )}
+
+                {target?.playerComp && (
+                  <div className="comp">
+                    <span className="lbl">NFL comp: </span>
+                    <em>{target.playerComp}</em>
+                    {target.playerCompSource && <span className="src"> · {target.playerCompSource}</span>}
+                  </div>
+                )}
+
+                {target?.collegeProduction && (
+                  <div className="prod">{target.collegeProduction}</div>
+                )}
+
+                {target?.otaStatus && (
+                  <div className="ota-pill">OTA Week 1 · {target.otaStatus}</div>
+                )}
+
+                {combine && (
+                  <>
+                    <div className="testing">
+                      <div className="t"><div className="k">FORTY</div><div className="v">{combine.fortyYd || "—"}</div></div>
+                      <div className="t"><div className="k">VERT</div><div className="v">{combine.verticalIn ? `${combine.verticalIn}"` : "—"}</div></div>
+                      <div className="t"><div className="k">BENCH</div><div className="v">{combine.benchReps ?? "—"}</div></div>
+                    </div>
+                    {combine.note && (
+                      <div className="testing-note">{combine.source === "combine" ? "Combine · Indianapolis" : "Pro Day"} — {combine.note}</div>
+                    )}
+                  </>
+                )}
+
+                {target?.proProjection && (
+                  <div className="projection">{target.proProjection}</div>
                 )}
               </article>
             );
@@ -295,7 +293,9 @@ export default function MagazineDraft({ setView }) {
   );
 }
 
-function shortenBlurb(s) {
-  const first = s.split(/\. /)[0];
-  return first.length > 240 ? first.slice(0, 237) + "…" : first + (first.endsWith(".") ? "" : ".");
+function formatHeight(inches) {
+  if (!inches) return "—";
+  const ft = Math.floor(inches / 12);
+  const inch = inches % 12;
+  return `${ft}'${inch}"`;
 }
