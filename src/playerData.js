@@ -2029,14 +2029,14 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-05-22T13:30:00Z",
+  generatedAt: "2026-05-23T08:35:00Z",
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "NBC Sports",
-    "Pro Football Talk", "The Falcoholic", "SI Falcons", "Heavy.com",
-    "Yahoo Sports", "AJC", "Bleacher Report", "Yardbarker", "BloggingDirty",
-    "ClutchPoints", "CBS Sports", "The Athletic", "TWSN", "Spotrac",
-    "Over The Cap", "National Today", "atlALLday", "FOX Sports",
-    "Bengals.com", "FOX 5 Atlanta",
+    "Pro Football Talk", "Pro Football Rumors", "The Falcoholic", "SI Falcons",
+    "Heavy.com", "Yahoo Sports", "AJC", "Bleacher Report", "Yardbarker",
+    "BloggingDirty", "ClutchPoints", "CBS Sports", "The Athletic", "TWSN",
+    "Spotrac", "Over The Cap", "National Today", "atlALLday", "FOX Sports",
+    "RotoWire", "Bengals.com", "FOX 5 Atlanta",
   ],
   topics: [
     {
@@ -2076,7 +2076,7 @@ export const NEWS_DIGEST = {
     },
     {
       title: "AVIEON TERRELL ramped slowly — individual drills with the secondary, no 7-on-7 or 11-on-11 yet; Hughes still gets projected CB2 reps",
-      detail: "Atlantafalcons.com / SI Falcons / The Falcoholic / BloggingDirty (OTA Week 1 practice reports): the CB2 competition opposite A.J. Terrell is officially live but R2 rookie Avieon Terrell is on a deliberate ramp — he worked with the secondary early during individual drills but did not participate in 7-on-7 or 11-on-11 work through the open practice. Mike Hughes continues to take the projected starter's reps lined up opposite A.J. Terrell while the rookie installs the playbook. SI's Schultz: Avieon still has 'a very real chance' of winning the outside CB2 job by camp. Bowman's walkthrough upgrade complicates the picture — once Bowman returns to team work, Avieon may slide to nickel reps with Dee Alford and Hughes rotating outside.",
+      detail: "Atlantafalcons.com / SI Falcons / The Falcoholic / BloggingDirty (OTA Week 1 practice reports): the CB2 competition opposite A.J. Terrell is officially live but R2 rookie Avieon Terrell is on a deliberate ramp — he worked with the secondary early during individual drills but did not participate in 7-on-7 or 11-on-11 work through the open practice. Mike Hughes continues to take the projected starter's reps lined up opposite A.J. Terrell while the rookie installs the playbook. SI's Schultz: Avieon still has 'a very real chance' of winning the outside CB2 job by camp. Bowman's walkthrough upgrade complicates the picture — once Bowman returns to team work, the secondary rotation tightens, with Avieon and Hughes both candidates for nickel and outside reps after Dee Alford left for Buffalo in free agency.",
       category: "general",
     },
     {
@@ -2090,8 +2090,8 @@ export const NEWS_DIGEST = {
       category: "contracts",
     },
     {
-      title: "Bijan extension on the way — Schefter 'this offseason'; Spotrac market value $18.9M/yr, National Today cluster at 3yr/$69-75M",
-      detail: "Schefter (via The Falcoholic) plus PFR / National Today / NFL Analysis Network / Yardbarker / atlALLday (May 7-21): the Bijan extension is expected to land this offseason — Schefter on his podcast: 'Between Gibbs, Bijan, and Achane, they're about to completely reset the RB market.' National Today's working framework lands at 3yr/$69M ($23M APY) floor / 3yr/$75M ($25M AAV) ceiling, making him the highest-paid RB in NFL history; Spotrac currently pegs his market value at $18.9M per year, well above the $11.32M fifth-year option Atlanta exercised Apr 12. That option — cheapest in his entire R1 class given the All-Pro résumé (1,478 rush / 820 rec / 16 TDs / scrimmage-yard leader) — is openly a placeholder per beat writers. Detroit closing Jahmyr Gibbs first is the only realistic market-reset risk.",
+      title: "Bijan extension watch — the RB market is moving without him: Achane signed 4yr/$68M (May 13), Breece Hall extended; Schefter still expects an Atlanta deal 'this offseason'",
+      detail: "PFR / RotoWire / Bleacher Report / CBS Sports / Schefter (via The Falcoholic) / National Today / atlALLday (May 13-22): the running-back market is resetting in real time around Bijan. Miami signed De'Von Achane to a four-year extension worth up to $68M with $32M guaranteed (reported May 13) — at $16M APY the highest AAV and guarantee ever for a back coming off his rookie deal — and the Jets extended Breece Hall, giving Atlanta two fresh comps that sit below the number Bijan will command. Schefter still expects a Bijan deal 'this offseason'; he previously framed Gibbs, Bijan and Achane as the trio about to 'completely reset' the RB market — Achane is now off the board. National Today's working framework lands at 3yr/$69M ($23M APY) floor / 3yr/$75M ($25M AAV) ceiling, which would make Bijan the highest-paid RB in NFL history; Spotrac pegs his market value at $18.9M/yr, well above the $11.32M fifth-year option Atlanta exercised Apr 12. That option — cheapest in his entire R1 class given the All-Pro résumé (1,478 rush / 820 rec / 16 TDs / scrimmage-yard leader) — is openly a placeholder per beat writers. Detroit closing Jahmyr Gibbs first remains the only realistic ceiling-reset risk.",
       category: "contracts",
     },
     {
