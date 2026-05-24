@@ -2029,7 +2029,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-05-23T08:35:00Z",
+  generatedAt: "2026-05-24T08:40:00Z",
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "NBC Sports",
     "Pro Football Talk", "Pro Football Rumors", "The Falcoholic", "SI Falcons",
@@ -2091,7 +2091,7 @@ export const NEWS_DIGEST = {
     },
     {
       title: "Bijan extension watch — the RB market is moving without him: Achane signed 4yr/$68M (May 13), Breece Hall extended; Schefter still expects an Atlanta deal 'this offseason'",
-      detail: "PFR / RotoWire / Bleacher Report / CBS Sports / Schefter (via The Falcoholic) / National Today / atlALLday (May 13-22): the running-back market is resetting in real time around Bijan. Miami signed De'Von Achane to a four-year extension worth up to $68M with $32M guaranteed (reported May 13) — at $16M APY the highest AAV and guarantee ever for a back coming off his rookie deal — and the Jets extended Breece Hall, giving Atlanta two fresh comps that sit below the number Bijan will command. Schefter still expects a Bijan deal 'this offseason'; he previously framed Gibbs, Bijan and Achane as the trio about to 'completely reset' the RB market — Achane is now off the board. National Today's working framework lands at 3yr/$69M ($23M APY) floor / 3yr/$75M ($25M AAV) ceiling, which would make Bijan the highest-paid RB in NFL history; Spotrac pegs his market value at $18.9M/yr, well above the $11.32M fifth-year option Atlanta exercised Apr 12. That option — cheapest in his entire R1 class given the All-Pro résumé (1,478 rush / 820 rec / 16 TDs / scrimmage-yard leader) — is openly a placeholder per beat writers. Detroit closing Jahmyr Gibbs first remains the only realistic ceiling-reset risk.",
+      detail: "PFR / RotoWire / Bleacher Report / CBS Sports / Schefter (via The Falcoholic) / National Today / atlALLday (May 13-22): the running-back market is resetting in real time around Bijan. Miami signed De'Von Achane to a four-year extension worth up to $68M with $32M guaranteed (reported May 13) — at $16M APY the highest AAV and guarantee ever for a back coming off his rookie deal — and the Jets extended Breece Hall (3yr/$45.75M, $15.25M APY), giving Atlanta two fresh comps that sit below the number Bijan will command. Schefter still expects a Bijan deal 'this offseason'; he previously framed Gibbs, Bijan and Achane as the trio about to 'completely reset' the RB market — Achane is now off the board. National Today's working framework lands at 3yr/$69M ($23M APY) floor / 3yr/$75M ($25M AAV) ceiling, which would make Bijan the highest-paid RB in NFL history; Spotrac pegs his market value at $18.9M/yr, well above the $11.32M fifth-year option Atlanta exercised Apr 12. That option — cheapest in his entire R1 class given the All-Pro résumé (1,478 rush / 820 rec / 16 TDs / scrimmage-yard leader) — is openly a placeholder per beat writers. Detroit closing Jahmyr Gibbs first remains the only realistic ceiling-reset risk.",
       category: "contracts",
     },
     {
