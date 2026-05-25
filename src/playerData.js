@@ -2029,24 +2029,34 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-05-24T08:40:00Z",
+  generatedAt: "2026-05-25T08:35:00Z",
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "NBC Sports",
     "Pro Football Talk", "Pro Football Rumors", "The Falcoholic", "SI Falcons",
     "Heavy.com", "Yahoo Sports", "AJC", "Bleacher Report", "Yardbarker",
     "BloggingDirty", "ClutchPoints", "CBS Sports", "The Athletic", "TWSN",
-    "Spotrac", "Over The Cap", "National Today", "atlALLday", "FOX Sports",
-    "RotoWire", "Bengals.com", "FOX 5 Atlanta",
+    "Spotrac", "Over The Cap", "National Today", "RotoWire", "FOX Sports",
+    "Bengals.com", "FOX 5 Atlanta",
   ],
   topics: [
     {
+      title: "OTA WEEK 2 OPENS TUESDAY — Falcons back on the grass May 26 after the opening week of Phase 3; mandatory minicamp still locked for June 16-18",
+      detail: "AJC / Atlantafalcons.com / Yardbarker / SI Falcons (looking ahead from Memorial Day, Mon May 25): Atlanta returns to the practice field Tuesday May 26 to start the second of three OTA weeks, with the next open-to-media session expected midweek — practices run Tuesday/Wednesday/Friday (May 26, 27 and 29). The voluntary block totals 10 OTAs and builds toward the lone mandatory event of the spring, minicamp June 16-18, before the team breaks until training camp opens July 22. Week 2 watch list: whether Michael Penix Jr. is cleared for any 11-on-11 team work (he was individual and 7-on-7 only through Week 1), the continued 50/50 QB rep rotation, the CB2 ramp for R2 rookie Avieon Terrell, and which roster-bubble names build on a strong opening week.",
+      category: "general",
+    },
+    {
       title: "OTA WEEK 1 IN THE BOOKS — rookie WR Zachariah Branch is the breakout of the first three practices; 'fast and sudden' with an explosive catch-and-run in team drills",
-      detail: "AJC / BloggingDirty / atlantafalcons.com / ESPN / Yahoo Sports / SI Falcons (Falcons' first OTA week — Days 1-3 on May 18, 19 and 21): Atlanta closed the opening week of Phase 3 OTAs and the clearest takeaway was the R3 pick. Senior reporter Will McFadden and the AJC both flagged Zachariah Branch (Georgia, No. 79) as the standout — 'fast and sudden,' with an explosive catch-and-run during an offense-vs-defense period. The 5'8 / 177 returner-gadget weapon was also invited to the NFLPA Rookie Premiere. Branch is expected to play a real role right away as a returner and slot/gadget piece in Tommy Rees's offense between Drake London and Kyle Pitts. OTAs resume Tue May 26-27 and 29, with mandatory minicamp June 16-18.",
+      detail: "AJC / BloggingDirty / atlantafalcons.com / ESPN / Yahoo Sports / SI Falcons (Falcons' first OTA week — Days 1-3 on May 18, 19 and 21): Atlanta closed the opening week of Phase 3 OTAs and the clearest takeaway was the R3 pick. Senior reporter Will McFadden and the AJC both flagged Zachariah Branch (Georgia, No. 79) as the standout — 'fast and sudden,' with an explosive catch-and-run during an offense-vs-defense period. The 5'8 / 177 returner-gadget weapon was also invited to the NFLPA Rookie Premiere. Branch is expected to play a real role right away as a returner and slot/gadget piece in Tommy Rees's offense between Drake London and Kyle Pitts. OTAs resume Tue May 26 with mandatory minicamp June 16-18.",
+      category: "general",
+    },
+    {
+      title: "UDFA CASH JONES IS THE OTA SLEEPER — Stefanski calls the rookie 'a very, very smart football player,' floats a multi-spot gadget role",
+      detail: "SI Falcons / BloggingDirty / AJC (OTA Week 1, May 19-21): undrafted rookie Cash Jones forced his way into roster-bubble conversation after the first week of OTAs. Head coach Kevin Stefanski went out of his way to praise him — 'I think this is a very, very smart football player ... I'm so impressed with who he is as a person' — and said the staff will 'continue to work him in different spots, including special teams.' Listed as a running back, Jones worked frequently with the wide receivers through the offseason program; Stefanski sees him as a multi-position gadget piece who can 'line up in multiple spots.' Jones was one of 14 undrafted free agents Atlanta signed May 7.",
       category: "general",
     },
     {
       title: "QB REPS SPLIT 50/50 'until the tape says otherwise' — Stefanski rotated Tua and Penix every period through OTA Week 1; Penix still 7-on-7 only, no team work",
-      detail: "NFL.com / NBC PFT / atlantafalcons.com / SI Falcons / Bleacher Report (OTA Week 1, May 19 presser → May 21 Day 3): Stefanski formalized the QB plan on Day 2 and held to it across all three practices — 'One guy will be up first for one period and then switch for the next period, and rotate every single day and almost every single drill.' Beat writers summarized the staff stance as splitting first-team reps 50/50 'until the tape says otherwise.' Penix is cleared for individual drills and 7-on-7 but NOT for 11-on-11 team periods — that clearance 'will come later.' OC Tommy Rees enforces the period cadence; Stefanski called QB coach Alex Van Pelt's stewardship of the room 'non-negotiable.' SI Betting still lists Tua as the slight Week-1 favorite.",
+      detail: "NFL.com / NBC PFT / atlantafalcons.com / SI Falcons / Bleacher Report (OTA Week 1, May 19 presser through May 21 Day 3): Stefanski formalized the QB plan on Day 2 and held to it across all three practices — 'One guy will be up first for one period and then switch for the next period, and rotate every single day and almost every single drill.' Beat writers summarized the staff stance as splitting first-team reps 50/50 'until the tape says otherwise.' Penix is cleared for individual drills and 7-on-7 but NOT for 11-on-11 team periods — that clearance 'will come later.' OC Tommy Rees enforces the period cadence; Stefanski called QB coach Alex Van Pelt's stewardship of the room 'non-negotiable.' SI Betting still lists Tua as the slight Week-1 favorite.",
       category: "coaching",
     },
     {
@@ -2055,24 +2065,19 @@ export const NEWS_DIGEST = {
       category: "injuries",
     },
     {
+      title: "BOWMAN UPGRADED — cleared for walkthroughs at OTAs (up from weight-room only); Andersen / Trice / Bowman 'all on a good timeline' per Stefanski",
+      detail: "Atlantafalcons.com / The Falcoholic / SI Falcons / BloggingDirty (Tue May 19 / Wed May 20): Stefanski volunteered an injury update — Billy Bowman Jr. (torn Achilles, late Nov 2025) is now cleared for walkthroughs with the team after spending voluntary OTAs in the weight room. Stefanski: 'He's going to be out there going through walk-throughs right now. He's going to be working off to the side, but he's doing really well.' Same upbeat read on Troy Andersen (2024 knee, missed all of 2025) and Bralen Trice (2024 ACL re-aggravated in 2025, still without a regular-season snap) — and Trice was active rotating off the edge in 7-on-7 and team periods. 'Everybody is on a good timeline. I'm very pleased with how they're working.'",
+      category: "injuries",
+    },
+    {
       title: "'DELIBERATE APPROACH' WITH JALON WALKER — Atlanta keeping the 2025 No. 8 pick on the edge through OTAs before unlocking his off-ball versatility",
       detail: "Atlantafalcons.com / SI Falcons (OTA Week 1): the Falcons are taking what the team site called a 'deliberate approach' to Jalon Walker's role — through the open OTA practice he worked individual drills with the edge rushers and lined up exclusively off the edge in team periods. DC Jeff Ulbrich wants Walker to master the edge first: 'The vision for him is so much clearer in year two. ... He's going to make huge strides this year in every way, from a pass-rush perspective and a pure end perspective. But then also we're going to start to also utilize his versatility off the ball and all the stuff he can do.' SI's read: a healthy, confident Walker 'looks ready to take off in Year 2' after a rookie season that only flashed the Georgia versatility.",
       category: "general",
     },
     {
-      title: "ROOKIE LB KENDAL DANIELS DRAWING EARLY PRAISE — the 6'5 hybrid 'Cheetah' is the next safety-to-linebacker convert in Ulbrich's lineage",
+      title: "ROOKIE LB KENDAL DANIELS DRAWING EARLY PRAISE — the 6'4 hybrid 'Cheetah' is the next safety-to-linebacker convert in Ulbrich's lineage",
       detail: "Atlantafalcons.com (OTA Week 1 feature): the R4 pick (No. 134, Oklahoma) is already being singled out by Falcons decision-makers for the position flexibility that drew them to him. Daniels began at Oklahoma State as a safety, then played a 'Cheetah' hybrid linebacker-safety-edge role at Oklahoma under Brent Venables — hand in the dirt on one play and 15 yards deep in a safety role the next. He ranks in the 97th percentile for height among combine linebackers. Atlanta sees him as the next man up in a safety-to-LB pipeline Jeff Ulbrich has built defenses around — from Foye Oluokun to Divine Deablo — and a candidate for the sub-package SAM snaps left open by Kaden Elliss's departure.",
       category: "general",
-    },
-    {
-      title: "Bijan on Stefanski's offense: 'He's fire, bro' — first OTA player podium; offense installs its screen-game package",
-      detail: "Atlantafalcons.com / NBC PFT / Heavy / SI Falcons (Tue May 19 availabilities): the first OTA player podium produced a glowing review of the new staff. Bijan Robinson on Stefanski: 'Kevin Stefanski, he's fire, bro. I like him a lot, and his offensive scheme.' Robinson said the offense takes 'a lot of pride' in the run game and praised new OL coach Bill Callahan's wide-zone install. Tuesday's practice marked the offense's first run through its screen-play packages — Stefanski walked over mid-drill to coach Robinson on the landmarks and pacing. OC Tommy Rees, passing-game coordinator Tanner Engstrand and special-teams coordinator Craig Aukerman also met the media on the team's growth through the first OTAs.",
-      category: "coaching",
-    },
-    {
-      title: "BOWMAN UPGRADED — cleared for walkthroughs at OTAs (up from weight-room only); Andersen / Trice / Bowman 'all on a good timeline' per Stefanski",
-      detail: "Atlantafalcons.com / The Falcoholic / SI Falcons / BloggingDirty (Tue May 19 / Wed May 20): Stefanski volunteered an injury update — Billy Bowman Jr. (torn Achilles, late Nov 2025) is now cleared for walkthroughs with the team after spending voluntary OTAs in the weight room. Stefanski: 'He's going to be out there going through walk-throughs right now. He's going to be working off to the side, but he's doing really well.' Same upbeat read on Troy Andersen (2024 knee, missed all of 2025) and Bralen Trice (2024 ACL, missed all of 2025) — and Trice was active rotating off the edge in 7-on-7 and team periods. 'Everybody is on a good timeline. I'm very pleased with how they're working.'",
-      category: "injuries",
     },
     {
       title: "AVIEON TERRELL ramped slowly — individual drills with the secondary, no 7-on-7 or 11-on-11 yet; Hughes still gets projected CB2 reps",
@@ -2080,23 +2085,18 @@ export const NEWS_DIGEST = {
       category: "general",
     },
     {
-      title: "Center room — Ryan Neuzil holding starter reps as expected; UDFA James Brockermeyer winning reserve-center work in early OTA rotation",
-      detail: "Atlantafalcons.com / SI Falcons (OTA Week 1 OL notes): the OL2 picture firmed up early — incumbent C Ryan Neuzil continues to hold the first-team center spot 'as expected,' and UDFA C James Brockermeyer appeared to handle most of the reserve-center reps in rotation. SI: 'If he performs well throughout OTAs and training camp, Brockermeyer could carve out a path to either the 53-man roster or the practice squad.' Offensive linemen worked during 7-on-7 periods to help establish pocket timing for the quarterbacks; individual drills emphasized quarterback-to-receiver touch and ball placement, particularly red-zone work. No injuries reported among the OL group through the first week.",
-      category: "general",
-    },
-    {
-      title: "Drake London extension still 'top of mind' — The Athletic's Kendall projects 4yr/$135M ($33M+ APY), Garrett Wilson comp",
-      detail: "Heavy / ClutchPoints / Yahoo / SI Falcons / NBC PFT / The Athletic (via TWSN) / atlantafalcons.com (May 7-21 sweep): Cunningham's 'top of mind' line on London is unchanged but no signed deal yet. London is on the $16.8M fifth-year option for 2026 — final year of the rookie deal. The Athletic's Josh Kendall: London's next deal 'could echo Garrett Wilson at 4 years/$130M, could project at 4yr/$135M.' That pushes London into upper-tier WR money — $33M+ APY — just behind JSN ($42.15M), Chase, Jefferson and CeeDee Lamb. ClutchPoints' insider demand also lands at 4yr/$135M; a more conservative read sits at 4yr/$128M ($32M APY, $82-90M gtd). Org-stated goal: signed before training camp opens July 22. No reported momentum through OTA Week 1.",
+      title: "Bijan extension watch — the RB market keeps resetting without him; Schefter says Detroit's Gibbs is 'next in line,' and whoever signs first sets the ceiling",
+      detail: "PFR / RotoWire / Bleacher Report / CBS Sports / ESPN / Heavy / Schefter (via The Falcoholic) / National Today / Yardbarker (May 13-24): the running-back market is resetting in real time while Atlanta watches. Miami signed De'Von Achane to a four-year extension worth up to $68M with $32M guaranteed (reported May 13) and the Jets extended Breece Hall (3yr/$45.75M, $15.25M APY) — two fresh comps that sit below the number Bijan will command. The live ceiling-reset threat is Detroit: Schefter says Jahmyr Gibbs is 'next in line' after the Lions extended LB Jack Campbell, and Detroit wants Gibbs done before training camp — whichever back signs first sets the precedent the other must beat. Atlanta exercised Bijan's $11.32M fifth-year option Apr 12 as an openly acknowledged placeholder; Spotrac pegs his market value near $18.9M/yr and National Today's framework lands at 3yr/$69-75M ($23-25M APY), which would make him the highest-paid running back in NFL history. Schefter still expects an Atlanta deal 'this offseason.'",
       category: "contracts",
     },
     {
-      title: "Bijan extension watch — the RB market is moving without him: Achane signed 4yr/$68M (May 13), Breece Hall extended; Schefter still expects an Atlanta deal 'this offseason'",
-      detail: "PFR / RotoWire / Bleacher Report / CBS Sports / Schefter (via The Falcoholic) / National Today / atlALLday (May 13-22): the running-back market is resetting in real time around Bijan. Miami signed De'Von Achane to a four-year extension worth up to $68M with $32M guaranteed (reported May 13) — at $16M APY the highest AAV and guarantee ever for a back coming off his rookie deal — and the Jets extended Breece Hall (3yr/$45.75M, $15.25M APY), giving Atlanta two fresh comps that sit below the number Bijan will command. Schefter still expects a Bijan deal 'this offseason'; he previously framed Gibbs, Bijan and Achane as the trio about to 'completely reset' the RB market — Achane is now off the board. National Today's working framework lands at 3yr/$69M ($23M APY) floor / 3yr/$75M ($25M AAV) ceiling, which would make Bijan the highest-paid RB in NFL history; Spotrac pegs his market value at $18.9M/yr, well above the $11.32M fifth-year option Atlanta exercised Apr 12. That option — cheapest in his entire R1 class given the All-Pro résumé (1,478 rush / 820 rec / 16 TDs / scrimmage-yard leader) — is openly a placeholder per beat writers. Detroit closing Jahmyr Gibbs first remains the only realistic ceiling-reset risk.",
+      title: "Drake London extension still 'top of mind' — The Athletic's Kendall projects 4yr/$135M ($33M+ APY), Garrett Wilson comp",
+      detail: "Heavy / ClutchPoints / Yahoo / SI Falcons / NBC PFT / The Athletic (via TWSN) / atlantafalcons.com (May 7-24 sweep): Cunningham's 'top of mind' line on London is unchanged but no signed deal yet. London is on the $16.8M fifth-year option for 2026 — final year of the rookie deal. The Athletic's Josh Kendall: London's next deal 'could echo Garrett Wilson at 4 years/$130M, could project at 4yr/$135M.' That pushes London into upper-tier WR money — $33M+ APY — just behind JSN ($42.15M), Chase, Jefferson and CeeDee Lamb. ClutchPoints' insider demand also lands at 4yr/$135M; a more conservative read sits at 4yr/$128M ($32M APY, $82-90M gtd). Org-stated goal: signed before training camp opens July 22. Still no reported momentum as OTA Week 2 opens — Cunningham: 'We don't want outside factors to push us into feeling like we have to make a decision right now.'",
       category: "contracts",
     },
     {
       title: "Bates wants to retire a Falcon, no extension talks yet — final year of his $64M deal, void in 2027",
-      detail: "PFR / Yardbarker / Over The Cap / SI Falcons (Apr-May): All-Pro safety Jessie Bates publicly said he wants to spend the rest of his career in Atlanta — but the team has not engaged in extension talks as of May 2026. Bates is entering the final year of his 4yr/$64.02M deal (2026, $16.8M cap hit, $16M AAV). The contract carries a void year in 2027, marking him as an extension candidate this offseason. Three picks last season pushed his career INT total to 27, his third 2nd-team All-Pro nod. With London and Bijan stacked ahead of him in Cunningham's 'wave' contract queue, a Bates deal is more likely a fall conversation than a summer one.",
+      detail: "PFR / Yardbarker / Over The Cap / SI Falcons (Apr-May): All-Pro safety Jessie Bates publicly said he wants to spend the rest of his career in Atlanta — but the team has not engaged in extension talks as of late May 2026. Bates is entering the final year of his 4yr/$64.02M deal (2026, $16.8M cap hit, $16M AAV). The contract carries a void year in 2027, marking him as an extension candidate this offseason. Three picks last season pushed his career INT total to 27, his third 2nd-team All-Pro nod. With London and Bijan stacked ahead of him in Cunningham's 'wave' contract queue, a Bates deal is more likely a fall conversation than a summer one.",
       category: "contracts",
     },
     {
