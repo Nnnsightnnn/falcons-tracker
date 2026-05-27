@@ -2029,40 +2029,46 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-05-25T08:35:00Z",
+  generatedAt: "2026-05-27T13:00:00Z",
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "NBC Sports",
     "Pro Football Talk", "Pro Football Rumors", "The Falcoholic", "SI Falcons",
     "Heavy.com", "Yahoo Sports", "AJC", "Bleacher Report", "Yardbarker",
     "BloggingDirty", "ClutchPoints", "CBS Sports", "The Athletic", "TWSN",
     "Spotrac", "Over The Cap", "National Today", "RotoWire", "FOX Sports",
-    "Bengals.com", "FOX 5 Atlanta",
+    "Bengals.com", "FOX 5 Atlanta", "Last Word On Sports", "DawgNation",
+    "Roundtable", "Detroit Football Journal", "BVM Sports",
   ],
   topics: [
     {
-      title: "OTA WEEK 2 OPENS TUESDAY — Falcons back on the grass May 26 after the opening week of Phase 3; mandatory minicamp still locked for June 16-18",
-      detail: "AJC / Atlantafalcons.com / Yardbarker / SI Falcons (looking ahead from Memorial Day, Mon May 25): Atlanta returns to the practice field Tuesday May 26 to start the second of three OTA weeks, with the next open-to-media session expected midweek — practices run Tuesday/Wednesday/Friday (May 26, 27 and 29). The voluntary block totals 10 OTAs and builds toward the lone mandatory event of the spring, minicamp June 16-18, before the team breaks until training camp opens July 22. Week 2 watch list: whether Michael Penix Jr. is cleared for any 11-on-11 team work (he was individual and 7-on-7 only through Week 1), the continued 50/50 QB rep rotation, the CB2 ramp for R2 rookie Avieon Terrell, and which roster-bubble names build on a strong opening week.",
+      title: "PENIX TAKES HIS BIGGEST STEP — Tue May 26 OTA Week 2 opener: Penix worked the 'majority of practice,' held out only of 11-on-11 team periods; Stefanski says he's 'right where he needs to be'",
+      detail: "Atlantafalcons.com / ProFootballRumors / NFL.com / Yardbarker / Heavy (OTA Week 2 Day 1, Tue May 26 practice report): in the clearest forward-step yet, Michael Penix Jr. participated in the majority of Tuesday's OTA Week 2 opener — fully involved in individual position drills AND 7-on-7 work, with the only carve-out the full 11-on-11 team periods. Stefanski's read: 'He's right where he needs to be.' Penix: 'I feel like myself.' May practices are no-contact and run at less than full speed, which made the expanded 7-on-7 workload a manageable next checkpoint six months removed from the November ACL. Stefanski reiterated that the green light for team-period work 'is coming' but offered no public timeline. Tua continues to take the 11-on-11 first-team reps while the rotation stays 50/50 in every period Penix is cleared for.",
+      category: "injuries",
+    },
+    {
+      title: "REES/AUKERMAN/ENGSTRAND TAKE THE PODIUM — first coordinator availability of the spring drops Tue May 26 after OTA Week 2 Day 1; Rees details the wide-zone-plus-gap-scheme install",
+      detail: "Atlantafalcons.com / SI Falcons / NFL.com (Tue May 26 coordinator media availability, immediately following the Falcons' second open OTA practice): OC Tommy Rees, passing-game coordinator Tanner Engstrand and special-teams coordinator Craig Aukerman held their first joint podium of the offseason. Rees framed the install as Stefanski's wide-zone foundation blended with more gap-scheme concepts, with play-action and under-center elements 'long-time staples' of what he and Stefanski run. He pointed at the Robinson-led backfield and an experienced OL under Bill Callahan as the natural starting point. Rees on the dual-QB room: 'We're going to coach both of those guys hard, and the room is going to be better for it.' Aukerman flagged R3 WR Zachariah Branch as a real return-game weapon already showing the burst on tape.",
+      category: "coaching",
+    },
+    {
+      title: "DAY 1 OF WEEK 2: who was OUT — Troy Andersen and rookie LB Kendal Daniels both sidelined Tuesday; Brandon Dorlus appears fully back from the hamstring",
+      detail: "ProFootballRumors / Heavy / SI Falcons / atlantafalcons.com (Tue May 26 practice notes): two LBs were held out of OTA Week 2 Day 1 — Troy Andersen (ramping back from the 2024 knee, missed all of 2025) and R4 rookie Kendal Daniels (Oklahoma, the 'Cheetah' hybrid drawing early praise from the staff in Week 1) — though the team gave no further detail on the rookie's absence. The flip side was the trench update: DL Brandon Dorlus, who had been managing a hamstring, was 'participating fully' in OTAs and 'appears to be fully healthy again,' slated for a real interior role in 2026. Bowman's walkthrough upgrade still holds; Avieon Terrell continues to work the secondary in individual periods only, no 7-on-7 or 11-on-11 yet.",
+      category: "injuries",
+    },
+    {
+      title: "BRANCH STAYS LATE — rookie WR putting in extra reps with the JUGS after OTA Week 2 Day 1 alongside Zaccheaus; Stefanski wants him as a true slot",
+      detail: "Atlantafalcons.com / AJC / DawgNation / Roundtable (after Tue May 26 OTA Week 2 Day 1): after the second open OTA practice the cameras caught R3 WR Zachariah Branch among a small group of receivers — Olamide Zaccheaus the most visible vet — staying behind to work with the JUGS throwing machine. Stefanski's stated vision: a true slot receiver who can also align on the perimeter; Branch carried over 75% of his career snaps from the slot at USC and then Georgia. Zaccheaus, on the rookie: 'He's so eager to learn ... athletically very gifted ... wants to learn the little details, make sure he's doing everything right.' The Branch-Zaccheaus dynamic locks in the slot rotation behind Drake London and Jahan Dotson on the perimeter.",
       category: "general",
     },
     {
-      title: "OTA WEEK 1 IN THE BOOKS — rookie WR Zachariah Branch is the breakout of the first three practices; 'fast and sudden' with an explosive catch-and-run in team drills",
-      detail: "AJC / BloggingDirty / atlantafalcons.com / ESPN / Yahoo Sports / SI Falcons (Falcons' first OTA week — Days 1-3 on May 18, 19 and 21): Atlanta closed the opening week of Phase 3 OTAs and the clearest takeaway was the R3 pick. Senior reporter Will McFadden and the AJC both flagged Zachariah Branch (Georgia, No. 79) as the standout — 'fast and sudden,' with an explosive catch-and-run during an offense-vs-defense period. The 5'8 / 177 returner-gadget weapon was also invited to the NFLPA Rookie Premiere. Branch is expected to play a real role right away as a returner and slot/gadget piece in Tommy Rees's offense between Drake London and Kyle Pitts. OTAs resume Tue May 26 with mandatory minicamp June 16-18.",
+      title: "OTA WEEK 1 IN THE BOOKS — Branch was the breakout of the first three practices; 'fast and sudden' with an explosive catch-and-run in team drills",
+      detail: "AJC / BloggingDirty / atlantafalcons.com / ESPN / Yahoo Sports / SI Falcons (Falcons' first OTA week — Days 1-3 on May 18, 19 and 21): Atlanta closed the opening week of Phase 3 OTAs and the clearest takeaway was the R3 pick. Senior reporter Will McFadden and the AJC both flagged Branch (Georgia, No. 79) as the standout — 'fast and sudden,' with an explosive catch-and-run during an offense-vs-defense period. The 5'8 / 177 returner-gadget weapon was also invited to the NFLPA Rookie Premiere. Branch is expected to play a real role right away as a returner and slot/gadget piece in Tommy Rees's offense between Drake London and Kyle Pitts.",
       category: "general",
     },
     {
       title: "UDFA CASH JONES IS THE OTA SLEEPER — Stefanski calls the rookie 'a very, very smart football player,' floats a multi-spot gadget role",
       detail: "SI Falcons / BloggingDirty / AJC (OTA Week 1, May 19-21): undrafted rookie Cash Jones forced his way into roster-bubble conversation after the first week of OTAs. Head coach Kevin Stefanski went out of his way to praise him — 'I think this is a very, very smart football player ... I'm so impressed with who he is as a person' — and said the staff will 'continue to work him in different spots, including special teams.' Listed as a running back, Jones worked frequently with the wide receivers through the offseason program; Stefanski sees him as a multi-position gadget piece who can 'line up in multiple spots.' Jones was one of 14 undrafted free agents Atlanta signed May 7.",
       category: "general",
-    },
-    {
-      title: "QB REPS SPLIT 50/50 'until the tape says otherwise' — Stefanski rotated Tua and Penix every period through OTA Week 1; Penix still 7-on-7 only, no team work",
-      detail: "NFL.com / NBC PFT / atlantafalcons.com / SI Falcons / Bleacher Report (OTA Week 1, May 19 presser through May 21 Day 3): Stefanski formalized the QB plan on Day 2 and held to it across all three practices — 'One guy will be up first for one period and then switch for the next period, and rotate every single day and almost every single drill.' Beat writers summarized the staff stance as splitting first-team reps 50/50 'until the tape says otherwise.' Penix is cleared for individual drills and 7-on-7 but NOT for 11-on-11 team periods — that clearance 'will come later.' OC Tommy Rees enforces the period cadence; Stefanski called QB coach Alex Van Pelt's stewardship of the room 'non-negotiable.' SI Betting still lists Tua as the slight Week-1 favorite.",
-      category: "coaching",
-    },
-    {
-      title: "PENIX: 'I'm running my own race' — six months post-ACL, Week 1 vs. Pittsburgh stays the private goal; Lindstrom says he 'looks great'",
-      detail: "NBC PFT / NFL.com / Atlantafalcons.com / AJC / SI Falcons / Bleacher Report (Tue May 19 player availability, holding through OTA Week 1): Penix's first OTA podium since the November ACL was measured and explicitly allergic to a public timeline. Pull quote: 'I'm running my own race. I can't look into another lane. But at the same time, we are working together.' Six months removed from the third ACL surgery of his career, Penix said his goal has 'always been' Week 1 but that he won't rush the process — he 'feels like himself' throwing the football, while admitting he can't take hits to the left leg yet. Chris Lindstrom on Penix's return: 'I'm really happy for him. He's really worked hard. He looks great.' SI Betting still has Tua as the Week-1 starting favorite over Penix.",
-      category: "injuries",
     },
     {
       title: "BOWMAN UPGRADED — cleared for walkthroughs at OTAs (up from weight-room only); Andersen / Trice / Bowman 'all on a good timeline' per Stefanski",
@@ -2072,11 +2078,6 @@ export const NEWS_DIGEST = {
     {
       title: "'DELIBERATE APPROACH' WITH JALON WALKER — Atlanta keeping the 2025 No. 8 pick on the edge through OTAs before unlocking his off-ball versatility",
       detail: "Atlantafalcons.com / SI Falcons (OTA Week 1): the Falcons are taking what the team site called a 'deliberate approach' to Jalon Walker's role — through the open OTA practice he worked individual drills with the edge rushers and lined up exclusively off the edge in team periods. DC Jeff Ulbrich wants Walker to master the edge first: 'The vision for him is so much clearer in year two. ... He's going to make huge strides this year in every way, from a pass-rush perspective and a pure end perspective. But then also we're going to start to also utilize his versatility off the ball and all the stuff he can do.' SI's read: a healthy, confident Walker 'looks ready to take off in Year 2' after a rookie season that only flashed the Georgia versatility.",
-      category: "general",
-    },
-    {
-      title: "ROOKIE LB KENDAL DANIELS DRAWING EARLY PRAISE — the 6'4 hybrid 'Cheetah' is the next safety-to-linebacker convert in Ulbrich's lineage",
-      detail: "Atlantafalcons.com (OTA Week 1 feature): the R4 pick (No. 134, Oklahoma) is already being singled out by Falcons decision-makers for the position flexibility that drew them to him. Daniels began at Oklahoma State as a safety, then played a 'Cheetah' hybrid linebacker-safety-edge role at Oklahoma under Brent Venables — hand in the dirt on one play and 15 yards deep in a safety role the next. He ranks in the 97th percentile for height among combine linebackers. Atlanta sees him as the next man up in a safety-to-LB pipeline Jeff Ulbrich has built defenses around — from Foye Oluokun to Divine Deablo — and a candidate for the sub-package SAM snaps left open by Kaden Elliss's departure.",
       category: "general",
     },
     {
@@ -2119,9 +2120,27 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-05-21T09:00:00Z",
+  generatedAt: "2026-05-27T13:00:00Z",
   windowLabel: "OTA Media Window · May 19 → Jun 18",
   sessions: [
+    {
+      id: "rees-2026-05-26",
+      speaker: "Tommy Rees",
+      role: "Offensive Coordinator",
+      date: "2026-05-26",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "OTA Week 2 Day 1 · Coordinator Availability",
+      sourceUrl: "https://www.atlantafalcons.com/video/tommy-rees-craig-aukerman-tanner-engstrand-speak-on-team-growth-through-otas-press-conference",
+      summary: "Rees took his first coordinator podium of the spring alongside passing-game coordinator Tanner Engstrand and special-teams coordinator Craig Aukerman, on the heels of OTA Week 2 Day 1. He walked through the install — Stefanski's wide-zone foundation blended with more gap-scheme concepts and play-action / under-center elements he called 'long-time staples' of what he and Stefanski run together — and framed the dual-QB room as a feature, not a problem to manage.",
+      pullQuote: "We're going to coach both of those guys hard, and the room is going to be better for it.",
+      bullets: [
+        "Install is Stefanski's wide zone blended with more gap-scheme concepts; play-action and under-center are 'long-time staples'",
+        "Starting point of the offense is the Robinson-led run game behind an experienced OL under Bill Callahan",
+        "On the QB room: both quarterbacks get coached hard — the rotation makes the room better, not weaker",
+        "Aukerman flagged R3 WR Zachariah Branch as a real return-game weapon already showing the burst on tape",
+      ],
+      topics: ["rees-install", "wide-zone", "qb-competition"],
+    },
     {
       id: "stefanski-2026-05-19",
       speaker: "Kevin Stefanski",
