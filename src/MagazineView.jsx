@@ -113,7 +113,8 @@ export default function MagazineCover({ setView }) {
   const today = new Date();
   const currentPhase = getCurrentPhase(today);
 
-  const cover = playerById("bijan");
+  const coverFeature = NEWS_DIGEST?.cover || null;
+  const cover = playerById(coverFeature?.photoId || "bijan");
   const penix = playerById("penix-jr");
   const bijan = playerById("bijan");
   const tua   = playerById("tua");
@@ -186,25 +187,24 @@ export default function MagazineCover({ setView }) {
         <div className="lede">
           <div className="kicker-row">
             <span className="feature-badge">Cover Story</span>
-            <span className="kicker">The Knee, The Camp &amp; The Cunningham Era</span>
+            <span className="kicker">{coverFeature?.kicker || "The Knee, The Camp & The Cunningham Era"}</span>
             <span className="kicker-rule"></span>
           </div>
 
           <h1 className="head">
-            Six rookies.<br/>
-            <span className="em">One knee.</span><br/>
-            <span className="amp">&amp;</span> a road to OTAs.
+            {coverFeature?.headLine1 || "Six rookies."}<br/>
+            <span className="em">{coverFeature?.headEm || "One knee."}</span><br/>
+            <span className="amp">&amp;</span> {coverFeature?.headLine3 || "a road to OTAs."}
           </h1>
 
           <p className="deck">
-            Phase III opens on the grass at Flowery Branch. Tua takes QB1 reps. Penix throws a clean rep
-            to London six months removed. Stefanski says the words "right where he needs to be" — for the
-            fourth time this month.
+            {coverFeature?.deck ||
+              "Phase III opens on the grass at Flowery Branch. Tua takes QB1 reps. Penix throws a clean rep to London six months removed. Stefanski says the words \"right where he needs to be\" — for the fourth time this month."}
           </p>
 
           <div className="byline">
-            <span className="by">By</span><span className="author">The Tracker Desk</span>
-            &nbsp;·&nbsp; <span className="m-mute">Filed from Flowery Branch · {todayShort(today)}</span>
+            <span className="by">By</span><span className="author">{coverFeature?.byline || "The Tracker Desk"}</span>
+            &nbsp;·&nbsp; <span className="m-mute">Filed from {coverFeature?.filedFrom || "Flowery Branch"} · {todayShort(today)}</span>
           </div>
 
           <div className="drop">
@@ -225,11 +225,11 @@ export default function MagazineCover({ setView }) {
             <div className="s">OF 10 · {todayShort(today)}</div>
           </div>
           <div className="stamp">
-            <div className="k">PRIMARY · WORKHORSE</div>
+            <div className="k">{coverFeature?.stampLabel || "PRIMARY · WORKHORSE"}</div>
             <div className="name">{cover ? `${cover.name.split(" ")[0][0]}. ${cover.name.split(" ").slice(-1)}` : "B. Robinson"}</div>
-            <div className="pos">#{cover?.number} · {cover?.position} · {(cover?.college || "TEX").slice(0, 4).toUpperCase()}</div>
+            <div className="pos">#{cover?.number} · {cover?.position} · {(cover?.college || "TEXAS").toUpperCase()}</div>
           </div>
-          <div className="caption">PHOTOGRAPH — BIJAN AT BRANCH, OTAS · {todayShort(today)}</div>
+          <div className="caption">PHOTOGRAPH — {(cover?.name?.split(" ").slice(-1)[0] || "BIJAN").toUpperCase()} AT BRANCH, {currentPhase.name.toUpperCase()} · {todayShort(today)}</div>
         </div>
       </section>
 

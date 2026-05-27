@@ -2030,6 +2030,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // =========================================
 export const NEWS_DIGEST = {
   generatedAt: "2026-05-27T13:00:00Z",
+  cover: {
+    kicker: "Penix Cleared for 7-on-7 — Tua Still QB1",
+    headLine1: "One knee.",
+    headEm: "Two arms.",
+    headLine3: "A QB room finds its rhythm.",
+    deck:
+      "OTA Week 2 opens at Flowery Branch. Penix works the majority of practice — full individuals, full 7-on-7, held out only of 11-on-11. Tua keeps the QB1 reps. Stefanski says the words 'right where he needs to be.'",
+    byline: "The Tracker Desk",
+    filedFrom: "Flowery Branch",
+    photoId: "penix-jr",
+    stampLabel: "QB · ON A RAMP",
+  },
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "NBC Sports",
     "Pro Football Talk", "Pro Football Rumors", "The Falcoholic", "SI Falcons",
