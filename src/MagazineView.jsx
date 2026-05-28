@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useState, useEffect } from "react";
 import {
   PLAYERS,
   NEWS_DIGEST,
@@ -24,6 +24,29 @@ export const todayLong = (d) =>
   d.toLocaleDateString("en-US", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
 export const todayShort = (d) =>
   d.toLocaleDateString("en-US", { month: "short", day: "numeric" }).toUpperCase();
+
+// CoverImage — prefers a custom cover image when present, gracefully
+// falls back to the player-headshot if the custom asset 404s (e.g. when
+// the file hasn't been produced yet from a queued image-request).
+function CoverImage({ customSrc, fallbackSrc }) {
+  const initial = customSrc || fallbackSrc || null;
+  const [src, setSrc] = useState(initial);
+  // Re-sync when either source changes (e.g. on page navigation w/ memo)
+  useEffect(() => { setSrc(customSrc || fallbackSrc || null); }, [customSrc, fallbackSrc]);
+  if (!src) return null;
+  return (
+    <img
+      src={src}
+      alt=""
+      onError={() => {
+        // If the custom URL failed and a fallback exists, swap to it.
+        if (src === customSrc && fallbackSrc && fallbackSrc !== customSrc) {
+          setSrc(fallbackSrc);
+        }
+      }}
+    />
+  );
+}
 
 // ─── PAGES INDEX (also acts as router/flipnav config) ────────────────────
 export const MAG_PAGES = [
@@ -215,7 +238,7 @@ export default function MagazineCover({ setView }) {
         </div>
 
         <div className="image">
-          <div className="photo">{cover?.image && <img src={cover.image} alt="" />}</div>
+          <div className="photo"><CoverImage customSrc={coverFeature?.coverImageUrl} fallbackSrc={cover?.image} /></div>
           <div className="duo"></div>
           <div className="halftone"></div>
           <div className="number">{cover?.number ?? 7}</div>

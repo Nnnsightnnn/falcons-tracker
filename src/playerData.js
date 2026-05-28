@@ -2154,6 +2154,10 @@ export const NEWS_DIGEST = {
     filedFrom: "Flowery Branch",
     photoId: "tua",
     stampLabel: "QB · DIALED IN",
+    // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
+    // CoverImage component gracefully falls back to the photoId headshot.
+    // Path is queued in ~/Vault/Notes/image-requests.md; see entry dated 2026-05-28.
+    coverImageUrl: "/falcons-tracker/assets/cover/2026-05-28-tua-accuracy.jpg",
   },
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "NBC Sports",
