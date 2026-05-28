@@ -245,6 +245,13 @@ function BeatColumn({ items }) {
             </div>
             <h3>{head}{tail && " — "}<span className="em">{tail}</span></h3>
             <p>{shortDetail(t.detail, i === 0 ? 280 : 220)}</p>
+            {t.sourceUrl && (
+              <div className="item-src">
+                <a href={t.sourceUrl} target="_blank" rel="noopener noreferrer">
+                  ↗ {t.sourceLabel || "Primary source"}
+                </a>
+              </div>
+            )}
           </article>
         );
       })}

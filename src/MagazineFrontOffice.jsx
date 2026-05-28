@@ -14,6 +14,20 @@ export default function MagazineFrontOffice({ setView }) {
   const aukerman   = get("craig-aukerman");
   const callahan   = get("bill-callahan");
 
+  // Engstrand, Toney + position-coach room + advisory tier
+  const engstrand  = get("tanner-engstrand");
+  const toney      = get("patrick-toney");
+  const vanPelt    = get("alex-van-pelt");
+  const pitre      = get("michael-pitre");
+  const prince     = get("robert-prince");
+  const koger      = get("kevin-koger");
+  const ollie      = get("nate-ollie");
+  const ruud       = get("barrett-ruud");
+  const timu       = get("john-timu");
+  const hood       = get("justin-hood");
+  const quinn      = get("bob-quinn");
+  const mckay      = get("rich-mckay");
+
   return (
     <MagazineShell activeKey="front-office" setView={setView}>
 
@@ -38,7 +52,7 @@ export default function MagazineFrontOffice({ setView }) {
           </div>
 
           <div className="drop">
-            <p>The lights at Flowery Branch are on a different timer this year. Morris and Fontenot are gone — fired Week-18 night, January. McKay slid sideways to vice chairman; Greg Beadles took the CEO seat after twenty-three quiet years on the business side.</p>
+            <p>The lights at Flowery Branch are on a different timer this year. Morris and Fontenot are gone — fired Week-18 night, January. <span className="em">McKay moved off the football side entirely</span> to run AMB Sports &amp; Entertainment (the World Cup, the '28 Super Bowl, the United room). Greg Beadles took the CEO seat after twenty-three quiet years on the business side.</p>
             <p>Atop the football pyramid, Arthur Blank planted a face the city knows. Matt Ryan, MVP in '16, framed photo on the way to the cafeteria, came back from a year of broadcast booths to take a title nobody in the building had held before: <em>President of Football Operations</em>. Stefanski and Cunningham report up to him. He runs the room.</p>
             <p>Cunningham comes from Chicago. Stefanski comes from Cleveland — and brought two assistants with him. The phrase <em>"build through the trenches"</em> appears in Cunningham's first press conference twice. The phrase <em>"X's and O's, techniques, fundamentals, identity"</em> appears in every Stefanski availability since.</p>
           </div>
@@ -65,10 +79,11 @@ export default function MagazineFrontOffice({ setView }) {
               <OrgNode p={beadles}    title="PRESIDENT · CEO" since="SINCE JAN '26" />
             </div>
             <div className="tier">
-              <OrgNode p={rees}     title="OFF. COORDINATOR" since="PLAY-CALLER" />
-              <OrgNode p={ulbrich}  title="DEF. COORDINATOR" since="RETAINED · '24" />
-              <OrgNode p={aukerman} title="ST COORDINATOR"   since="NEW · 2026" />
-              <OrgNode p={callahan} title="OFFENSIVE LINE"   since="EX-CLE · 2026" />
+              <OrgNode p={rees}      title="OFF. COORDINATOR" since="PLAY-CALLER" />
+              <OrgNode p={engstrand} title="PASSING GAME"     since="EX-NYJ · 2026" />
+              <OrgNode p={ulbrich}   title="DEF. COORDINATOR" since="RETAINED · '24" />
+              <OrgNode p={aukerman}  title="ST COORDINATOR"   since="NEW · 2026" />
+              <OrgNode p={callahan}  title="OFFENSIVE LINE"   since="EX-CLE · 2026" />
             </div>
           </div>
 
@@ -142,9 +157,51 @@ export default function MagazineFrontOffice({ setView }) {
           <StaffCard p={blank}      tier="OWNERSHIP" />
           <StaffCard p={beadles}    tier="BUSINESS" />
           <StaffCard p={rees}       tier="COORDINATORS" />
+          <StaffCard p={engstrand}  tier="COORDINATORS" />
           <StaffCard p={ulbrich}    tier="COORDINATORS" />
           <StaffCard p={aukerman}   tier="COORDINATORS" />
+          <StaffCard p={toney}      tier="COORDINATORS" />
           <StaffCard p={callahan}   tier="POSITION COACH" />
+        </div>
+      </section>
+
+      {/* POSITION ROOM — full pyramid of position coaches */}
+      <div className="section-head">
+        <div className="rule"></div>
+        <div>
+          <div className="title">The <span className="em">Position Room</span></div>
+          <div className="meta">Offense · Defense · the rooms that actually run the install</div>
+        </div>
+        <div className="rule"></div>
+      </div>
+
+      <section className="staff">
+        <div className="staff-grid">
+          <StaffCard p={vanPelt}  tier="QB ROOM" />
+          <StaffCard p={pitre}    tier="RB ROOM" />
+          <StaffCard p={prince}   tier="WR ROOM" />
+          <StaffCard p={koger}    tier="TE ROOM" />
+          <StaffCard p={ollie}    tier="DL ROOM" />
+          <StaffCard p={ruud}     tier="ILB ROOM" />
+          <StaffCard p={timu}     tier="EDGE ROOM" />
+          <StaffCard p={hood}     tier="SECONDARY" />
+        </div>
+      </section>
+
+      {/* ADVISORY / AMBSE */}
+      <div className="section-head">
+        <div className="rule"></div>
+        <div>
+          <div className="title">The <span className="em">Advisory Tier</span></div>
+          <div className="meta">Stefanski's senior counsel · the AMBSE link upstairs</div>
+        </div>
+        <div className="rule"></div>
+      </div>
+
+      <section className="staff">
+        <div className="staff-grid">
+          <StaffCard p={quinn}  tier="ADVISORY" />
+          <StaffCard p={mckay}  tier="AMBSE" />
         </div>
       </section>
 
@@ -153,7 +210,7 @@ export default function MagazineFrontOffice({ setView }) {
         <div className="rule"></div>
         <div>
           <div className="title">The <span className="em">Cleveland Reunion</span></div>
-          <div className="meta">Three voices from one staff · Page 18 · Sidebar</div>
+          <div className="meta">Four voices from one staff · Page 18 · Sidebar</div>
         </div>
         <div className="rule"></div>
       </div>
@@ -162,18 +219,19 @@ export default function MagazineFrontOffice({ setView }) {
         <div className="reunion-card">
           <div className="icon">
             <div className="k">— FROM CLEVELAND —</div>
-            <div className="v">×3</div>
-            <div className="s">three voices, one install plan</div>
+            <div className="v">×4</div>
+            <div className="s">four voices, one install plan</div>
           </div>
           <div className="rbody">
             <h3>The <span className="em">Cleveland</span> install plan.</h3>
             <p>
-              Three Browns assistants reunited inside one offensive staff:{" "}
+              Four Browns voices reunited inside one offensive staff:{" "}
               <span className="em">Stefanski</span> at the top of the program,{" "}
               <span className="em">Rees</span> at the headset,{" "}
+              <span className="em">Van Pelt</span> in the QB room,{" "}
               <span className="em">Callahan</span> at the line. The system DNA:{" "}
               <span className="em">play-action, under-center, wide-zone</span> as the foundation, blended with gap concepts. Suits Bijan's Texas pedigree. The Penix–Rees adjustment is real —{" "}
-              <span className="em">less pistol and shotgun</span> than Penix has run his whole career.
+              <span className="em">less pistol and shotgun</span> than Penix has run his whole career, and now Van Pelt — Stefanski's Cleveland OC '20–'23 — runs Penix's QB room day to day.
             </p>
           </div>
           <div className="rroster">
@@ -186,6 +244,11 @@ export default function MagazineFrontOffice({ setView }) {
               <div className="k">— THE PLAY-CALLER —</div>
               <div className="nnm">Tommy Rees</div>
               <div className="role">OC · Browns TEs '24, OC mid-'25</div>
+            </div>
+            <div className="r">
+              <div className="k">— THE QB ROOM —</div>
+              <div className="nnm">Alex Van Pelt</div>
+              <div className="role">QB · Browns OC '20–'23, QB '24</div>
             </div>
             <div className="r">
               <div className="k">— THE LINE —</div>
