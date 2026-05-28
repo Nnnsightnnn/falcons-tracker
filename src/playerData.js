@@ -1651,7 +1651,7 @@ export const FRONT_OFFICE = [
     tier: "COORDINATORS",
     since: 2026,
     bio: "Hired Feb 1 from the Jets (OC, 2025). Detroit assistant 2020–24, last two years as Ben Johnson's PGC. Ex-SDSU QB. Effectively the de facto No. 2 voice on the Rees offense.",
-    image: null,
+    image: "https://static.clubs.nfl.com/image/upload/t_editorial_landscape_mobile/f_png/falcons/uod4wljnullspbjl83sj.png",
   },
   {
     id: "patrick-toney",
