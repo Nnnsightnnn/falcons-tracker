@@ -170,6 +170,25 @@ export default function MagazineWire({ setView }) {
               <span className="role">{s.role.toUpperCase()}</span>
               <span className="sep">◆</span>
               <span className="date">{formatPressDate(s.date)}</span>
+              {s.verified && (
+                <span
+                  className="verified-badge"
+                  title="Pull quote verified verbatim against the press-conference transcript"
+                  style={{
+                    marginLeft: "auto",
+                    fontSize: "9px",
+                    letterSpacing: "0.08em",
+                    fontWeight: 700,
+                    color: "#1a7f37",
+                    border: "1px solid #1a7f37",
+                    borderRadius: "3px",
+                    padding: "1px 5px",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  ✓ Transcript-verified
+                </span>
+              )}
             </div>
             <h3 className="speaker">{s.speaker}</h3>
             <div className="session">
@@ -190,6 +209,12 @@ export default function MagazineWire({ setView }) {
 
             <div className="podium-src">
               <a href={s.sourceUrl} target="_blank" rel="noopener noreferrer">↗ Primary source</a>
+              {s.transcriptUrl && (
+                <>
+                  {" · "}
+                  <a href={s.transcriptUrl} target="_blank" rel="noopener noreferrer">▶ Full transcript</a>
+                </>
+              )}
             </div>
           </article>
         ))}
