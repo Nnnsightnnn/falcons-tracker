@@ -1660,7 +1660,7 @@ export const FRONT_OFFICE = [
     tier: "COORDINATORS",
     since: 2026,
     bio: "New hire under Ulbrich. Inherits the Bates/Brown safety pairing and the A.J. Terrell / Mike Hughes / Avieon Terrell corner room.",
-    image: null,
+    image: "https://static.clubs.nfl.com/image/upload/t_editorial_landscape_mobile/f_png/falcons/unp7r8vynonk9rs2nl1r.png",
   },
 
   // ─── POSITION COACHES (OFFENSE) ───────────────────────────────────────────
@@ -1680,7 +1680,7 @@ export const FRONT_OFFICE = [
     tier: "POSITION COACHES",
     since: 2026,
     bio: "Hired Jan 31. Stefanski's OC in Cleveland 2020–23, then QB coach in '24. Charged with developing Penix through the ACL rehab while Tua runs the team.",
-    image: null,
+    image: "https://static.clubs.nfl.com/image/upload/t_editorial_landscape_mobile/f_png/falcons/r9seuy1op4mbdaufm7pb.png",
   },
   {
     id: "michael-pitre",
@@ -1689,7 +1689,7 @@ export const FRONT_OFFICE = [
     tier: "POSITION COACHES",
     since: 2024,
     bio: "Retained from the previous staff. Coached Bijan's 1,400-yard breakout in 2025 and the Allgeier 1A/1B platoon. Now reset around Bijan + Brian Robinson Jr.",
-    image: null,
+    image: "https://static.clubs.nfl.com/image/upload/f_auto/falcons/pyiiqk0dagdlr0bcc9ev.jpg",
   },
   {
     id: "robert-prince",
@@ -1698,7 +1698,7 @@ export const FRONT_OFFICE = [
     tier: "POSITION COACHES",
     since: 2026,
     bio: "20-year NFL assistant. Inherits the Drake London / Jahan Dotson / Zaccheaus / Branch / Mooney-replacement room.",
-    image: null,
+    image: "https://static.clubs.nfl.com/image/upload/f_auto/falcons/xjamdd88wajfarvrtrzi.jpg",
   },
   {
     id: "kevin-koger",
@@ -1707,7 +1707,7 @@ export const FRONT_OFFICE = [
     tier: "POSITION COACHES",
     since: 2026,
     bio: "Reunites with Stefanski/Rees from the Browns. Tasked with the Pitts franchise-tag year and the Charlie Woerner blocking complement.",
-    image: null,
+    image: "https://static.clubs.nfl.com/image/upload/f_auto/falcons/ao6vpq3uhvxwniaicbll.jpg",
   },
 
   // ─── POSITION COACHES (DEFENSE) ───────────────────────────────────────────
@@ -1718,7 +1718,7 @@ export const FRONT_OFFICE = [
     tier: "POSITION COACHES",
     since: 2025,
     bio: "Retained. Architect of the attack-front that took the 2025 defense from 31st in sacks (2024) to 2nd overall — a franchise record. Now installs around Dorlus + Maason Smith.",
-    image: null,
+    image: "https://static.clubs.nfl.com/image/upload/f_auto/falcons/omw2t2n59lqyimdwpgw5.jpg",
   },
   {
     id: "barrett-ruud",
@@ -1727,7 +1727,7 @@ export const FRONT_OFFICE = [
     tier: "POSITION COACHES",
     since: 2024,
     bio: "Retained. Two-year run coaching the inside LB room; helped Elliss post a 100-tackle / 10-TFL / 3.5-sack / 1-INT line in 2025. Now installs around Deablo + Harris.",
-    image: null,
+    image: "https://static.clubs.nfl.com/image/upload/f_auto/falcons/wph0xhlwcmuwhxviabxh.jpg",
   },
   {
     id: "john-timu",
@@ -1736,7 +1736,7 @@ export const FRONT_OFFICE = [
     tier: "POSITION COACHES",
     since: 2026,
     bio: "New hire. Runs the Jalon Walker / James Pearce / Bralen Trice edge room — the position group most central to Ulbrich's 2026 jump.",
-    image: null,
+    image: "https://static.clubs.nfl.com/image/upload/f_auto/falcons/xi51kjyig4wokjmzpvtd.jpg",
   },
   {
     id: "justin-hood",
@@ -1745,7 +1745,7 @@ export const FRONT_OFFICE = [
     tier: "POSITION COACHES",
     since: 2026,
     bio: "New hire. Inherits an A.J. Terrell-anchored room with an open CB2 competition between Mike Hughes and rookie Avieon Terrell.",
-    image: null,
+    image: "https://static.clubs.nfl.com/image/upload/f_auto/falcons/y5lv1ttvynatjj1ahrpt.jpg",
   },
 
   // ─── ADVISORY / AMBSE ─────────────────────────────────────────────────────
@@ -1756,7 +1756,7 @@ export const FRONT_OFFICE = [
     tier: "ADVISORY",
     since: 2026,
     bio: "Hired Jan 26 alongside Stefanski. Stefanski's senior personnel/coaching exec in Cleveland 2021–25. Ex-Lions GM (2016–20).",
-    image: null,
+    image: "https://static.clubs.nfl.com/image/upload/f_auto/falcons/eeeakdt6zrbp2qmdyo36.jpg",
   },
   {
     id: "rich-mckay",
