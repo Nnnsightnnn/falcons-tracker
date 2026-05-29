@@ -2142,7 +2142,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-05-28T13:00:00Z",
+  generatedAt: "2026-05-29T08:32:57Z",
   cover: {
     kicker: "TUA HITS THE TARGET — Stefanski Calls It 'God-Given'",
     headLine1: "Back-shoulder.",
@@ -2203,6 +2203,13 @@ export const NEWS_DIGEST = {
       category: "general",
       sourceUrl: "https://www.dawgnation.com/football/much-like-he-did-georgia-zachariah-branch-making-immediate-impact-atlanta-falcons/L6JEDGNGGFFC5NPIX72TI3G5ZM/",
       sourceLabel: "DawgNation",
+    },
+    {
+      title: "PITTS PRIMED UNDER STEFANSKI — franchise-tagged TE 'engaged in all the voluntary work,' making plays at OTAs; Rees praises his 'level of commitment' as the play-action era opens",
+      detail: "Atlantafalcons.com / SI Falcons / Roundtable / NFL.com (OTA Week 2, May 26-27 player chemistry presser + coverage): Kyle Pitts, on the $14.1M franchise tag for 2026, is making an early impression on the new staff — the team site notes he has been 'engaged in all of the team's voluntary work and making his share of plays' through OTAs after his first All-Pro season in 2025. OC Tommy Rees, asked about him: 'Kyle's been a really good player in this league for a number of years now, and he's coming off a great season where he's shown where his talent is and what his level of commitment is, and he's a great veteran for us right now.' The fit is the story: Stefanski's play-action, run-first system in Cleveland routinely inflated tight-end target share, and analysts (Roundtable, SI) project Pitts for a possible career year — the tag buys Atlanta a one-year audition before a long-term call. Tua's accuracy reps have repeatedly weaponized Pitts' and London's length down the seam.",
+      category: "general",
+      sourceUrl: "https://www.atlantafalcons.com/video/drake-london-kyle-pitts-sr-other-falcons-on-growing-team-chemistry-in-otas-press-conference",
+      sourceLabel: "atlantafalcons.com",
     },
     {
       title: "UDFA WATCH — Cash Jones the OTA sleeper, with Aukerman pumping his special-teams versatility; Keelan Marion and Vinny Anthony II getting consistent returner reps",
@@ -2277,7 +2284,7 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-05-28T13:00:00Z",
+  generatedAt: "2026-05-29T08:32:57Z",
   windowLabel: "OTA Media Window · May 19 → Jun 18",
   sessions: [
     {
