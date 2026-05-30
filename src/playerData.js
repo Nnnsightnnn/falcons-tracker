@@ -2142,7 +2142,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-05-29T08:32:57Z",
+  generatedAt: "2026-05-30T08:32:07Z",
   cover: {
     kicker: "TUA HITS THE TARGET — Stefanski Calls It 'God-Given'",
     headLine1: "Back-shoulder.",
@@ -2166,7 +2166,7 @@ export const NEWS_DIGEST = {
     "BloggingDirty", "ClutchPoints", "CBS Sports", "The Athletic", "TWSN",
     "Spotrac", "Over The Cap", "National Today", "RotoWire", "FOX Sports",
     "Bengals.com", "FOX 5 Atlanta", "Last Word On Sports", "DawgNation",
-    "Roundtable", "Detroit Football Journal", "BVM Sports",
+    "Roundtable", "Detroit Football Journal", "BVM Sports", "Stampede Blue", "AOL",
   ],
   topics: [
     {
@@ -2175,6 +2175,13 @@ export const NEWS_DIGEST = {
       category: "general",
       sourceUrl: "https://www.atlantafalcons.com/news/falcons-practice-report-tua-tagovailoa-accuracy-drake-london",
       sourceLabel: "atlantafalcons.com",
+    },
+    {
+      title: "FALCONS–COLTS JOINT PRACTICES SET — Atlanta and Indianapolis agree to two joint sessions in Westfield, IN the week of the Aug 22 preseason game at Lucas Oil Stadium; 6th straight year Atlanta runs joint work",
+      detail: "AJC / The Falcoholic / SI Falcons / Stampede Blue / Yahoo / AOL (Thu May 28 report): the Falcons and Colts have agreed to a pair of joint practices at the Grand Park Sports Campus in Westfield, Indiana in the days before their Saturday Aug 22 preseason Week 2 exhibition at Lucas Oil Stadium (1 PM ET). It marks the sixth straight year Atlanta has run joint practices with an outside club — a Stefanski-era staple for stress-testing the install against a foreign opponent. Indianapolis is also slotting joint work with New England; this is the Colts' last summer in Westfield before camp moves downtown. For Atlanta the dates give the new staff a controlled live look at the Tua/Penix rotation, the young CB2 race and the roster bubble before the late-August cuts — and a real measuring stick after a month of no-contact spring work.",
+      category: "general",
+      sourceUrl: "https://www.ajc.com/sports/2026/05/falcons-and-colts-agree-to-joint-practices-ahead-of-aug-22-preseason-game/",
+      sourceLabel: "AJC",
     },
     {
       title: "OTA WEEK 2 DAY 2 SNAP NOTES — Christian Harris worked as the starter next to Divine Deablo with Kendal Daniels AND JD Bertrand both sitting out injured; UDFA C James Brockermeyer took every first-team OL snap with Ryan Neuzil also out",
@@ -2254,13 +2261,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com",
     },
     {
-      title: "Bates wants to retire a Falcon, no extension talks yet — final year of his $64M deal, void in 2027",
-      detail: "PFR / Yardbarker / Over The Cap / SI Falcons (Apr-May): All-Pro safety Jessie Bates publicly said he wants to spend the rest of his career in Atlanta — but the team has not engaged in extension talks as of late May 2026. Bates is entering the final year of his 4yr/$64.02M deal (2026, $16.8M cap hit, $16M AAV). The contract carries a void year in 2027, marking him as an extension candidate this offseason. Three picks last season pushed his career INT total to 27, his third 2nd-team All-Pro nod. With London and Bijan stacked ahead of him in Cunningham's 'wave' contract queue, a Bates deal is more likely a fall conversation than a summer one.",
-      category: "contracts",
-      sourceUrl: "https://www.si.com/nfl/falcons/onsi/news/jessie-bates-iii-addresses-uncertain-future-with-the-falcons",
-      sourceLabel: "SI Falcons",
-    },
-    {
       title: "2026 schedule is out — opener at Pittsburgh Sep 13; 3 straight primetime (W3-5); Week 11 bye; 5th-easiest SoS (.465)",
       detail: "AJC / Atlantafalcons.com / Bleacher Report / Yahoo / ESPN / FOX 5 Atlanta / CBS Sports (Thu May 14 reveal): the full 18-week slate is public. The Stefanski era opens at Pittsburgh Sun Sep 13, 1 PM ET on FOX, then home vs. Carolina Sep 20. Three straight primetime games W3-5 — TNF at Green Bay Sep 24 (Amazon), MNF at New Orleans Oct 5 (ESPN), SNF vs. Baltimore Oct 11 (NBC) — down from five primetime games in 2025. Bye is Week 11 (Nov 22). The closing stretch is brutal: 3 of the last 4 are divisional, with W16 vs. TB (Dec 27) and W18 at CAR (Jan 10) still date/time TBD and flex-eligible. Opponents' combined 2025 win pct of .465 is the 5th-easiest schedule in the league. Stefanski's Cleveland homecoming lands in Week 14 (at the Browns, Dec 13).",
       category: "games",
@@ -2284,7 +2284,7 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-05-29T08:32:57Z",
+  generatedAt: "2026-05-30T08:32:07Z",
   windowLabel: "OTA Media Window · May 19 → Jun 18",
   sessions: [
     {
