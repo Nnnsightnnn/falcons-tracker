@@ -2142,7 +2142,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-05-30T08:32:07Z",
+  generatedAt: "2026-05-31T08:32:19Z",
   cover: {
     kicker: "TUA HITS THE TARGET — Stefanski Calls It 'God-Given'",
     headLine1: "Back-shoulder.",
@@ -2284,7 +2284,7 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-05-30T08:32:07Z",
+  generatedAt: "2026-05-31T08:32:19Z",
   windowLabel: "OTA Media Window · May 19 → Jun 18",
   sessions: [
     {
