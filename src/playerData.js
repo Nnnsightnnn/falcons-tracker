@@ -2142,18 +2142,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-05-31T08:32:19Z",
+  generatedAt: "2026-06-01T08:33:22Z",
   cover: {
-    kicker: "TUA HITS THE TARGET — Stefanski Calls It 'God-Given'",
-    headLine1: "Back-shoulder.",
-    headEm: "Jump-ball.",
-    headLine3: "An offense calibrates to Tua.",
+    kicker: "THE RACE TIGHTENS — Tua Takes the First-Team Reps as Penix Closes",
+    headLine1: "Two lefties.",
+    headEm: "One job.",
+    headLine3: "And the verdict's coming sooner than planned.",
     deck:
-      "OTA Week 2 Day 2 at Flowery Branch. Tua drops a back-shoulder fade only Drake London could touch, then jump-balls a TD to close practice. Stefanski's read: 'innate, God-given ability.' Penix is still running his own race in 7-on-7 work. QB1 reps remain a 50/50 rotation by design.",
+      "Through two weeks of OTAs, Tua Tagovailoa has handled the bulk of the first-team snaps while Michael Penix Jr. — six months off ACL surgery — works individual and 7-on-7 only. Tua on the passer he's racing: 'Shoot, I'm impressed by what he's shown out there.' The next checkpoint is Penix's team-period clearance at the June 16–18 minicamp.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "tua",
-    stampLabel: "QB · DIALED IN",
+    stampLabel: "QB · THE RACE",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // Path is queued in ~/Vault/Notes/image-requests.md; see entry dated 2026-05-28.
@@ -2169,6 +2169,27 @@ export const NEWS_DIGEST = {
     "Roundtable", "Detroit Football Journal", "BVM Sports", "Stampede Blue", "AOL",
   ],
   topics: [
+    {
+      title: "QB RACE COULD TIGHTEN EARLY — Tua taking the bulk of first-team snaps through two weeks of OTAs while Penix (individual + 7-on-7 only) keeps closing; AP: 'the competition may come sooner than expected'",
+      detail: "Associated Press / Atlanta News First / NFL.com (filed Sun May 31, updated Mon Jun 1): with Michael Penix Jr.'s rehab already allowing him to work individual drills and 7-on-7s, the starting battle between the two left-handers may arrive sooner than the Falcons planned. Tua Tagovailoa has taken the majority of the first-team reps through two weeks — and came away impressed by the man he's racing: 'Shoot, I'm impressed by what he's shown out there ... it's been good fun to go out there and compete with him. I'm trying to help him as much as I can.' Stefanski: 'What Mike's able to do right now in terms of individual and the seven-on-sevens is outstanding ... He's not 100%, but he's exactly where he needs to be.' The number that frames it all: Tua is on a one-year, $1.3M Falcons deal after Miami released him — eating an NFL-record $99M dead-cap charge and the $54M it still owed him for 2026. GM Ian Cunningham has said Tua gets a real shot at QB1 once Penix is fully healthy. Penix, unmoved: 'I'm running my own race. I can't look into another lane.' Next benchmark — team-period clearance at the June 16–18 mandatory minicamp.",
+      category: "general",
+      sourceUrl: "https://www.atlantanewsfirst.com/2026/06/01/falcons-qb-competition-between-penix-tagovailoa-could-come-sooner-than-expected/",
+      sourceLabel: "Atlanta News First / AP",
+    },
+    {
+      title: "MATT RYAN BRINGS 'THROWBACK ENERGY' — the franchise passing king, now president of football, has been at every OTA practice: throwing to the receivers, advising Stefanski and Rees, addressing rookies at 'Falcons U'",
+      detail: "AJC (Daniel Flick, filed Sat May 30): five months into his job as Falcons president of football, Matt Ryan has attended every spring practice — talking technique with Stefanski and OC Tommy Rees, serving as a sounding board for GM Ian Cunningham, and spinning passes to the wideouts in warmups. He addressed the rookie class at 'Falcons U' from a chair no one else in the building has sat in. Chris Lindstrom, who grew up idolizing Ryan and later protected him: 'I think Matt is probably the greatest Falcon ever ... his eyes, opinion, everything is always a value.' Kyle Pitts: 'He can still spin it like he can still play.' Drake London: 'For our president to be down here throwing a ball ... I think that's the dopest thing in the world.' Tua says he sees Ryan every day. Ryan — 59,735 yards, 367 TDs, a league MVP and Ring of Honor member — won't throw his hat in the QB ring, but London joked the itch 'never leaves your body.'",
+      category: "general",
+      sourceUrl: "https://www.ajc.com/sports/2026/05/a-great-resource-how-matt-ryan-is-impacting-falcons-in-new-role/",
+      sourceLabel: "AJC",
+    },
+    {
+      title: "PEARCE LEGAL UPDATE — edge rusher accepts a Miami-Dade pretrial intervention program; all charges drop if he completes the 12-month term, his attorney tells the AJC",
+      detail: "AJC (reported Tue May 26): James Pearce Jr.'s attorney, Yale Sanford, told the paper that Pearce has accepted an offer to enter a Miami-Dade County state intervention program. If he completes the 12-month program, all charges from his case — initially three felonies and a misdemeanor tied to an alleged incident with his ex-girlfriend, WNBA player Rickea Jackson — will be dropped. Pearce has not attended the Falcons' voluntary offseason program while navigating the case. Stefanski, asked Wednesday: 'In constant communication with all parties, but continuing to wait for more information to come out.' The team otherwise declined comment.",
+      category: "general",
+      sourceUrl: "https://www.ajc.com/sports/2026/05/5-things-we-learned-from-falcons-second-week-of-otas/",
+      sourceLabel: "AJC",
+    },
     {
       title: "TUA'S ACCURACY POPS — Wed May 27 OTA Week 2 Day 2: back-shoulder fade to Drake London, jump-ball TD to close; Stefanski calls it 'innate, God-given ability'",
       detail: "Atlantafalcons.com / Bleacher Report / Yahoo / ClutchPoints / NFL.com / SI Falcons (Wed May 27 OTA Week 2 Day 2 practice report and presser): Tua Tagovailoa's accuracy was the storyline of the day. On the left sideline Tua dropped a back-shoulder fade that 'required every bit of Drake London's length to corral but was virtually indefensible,' then closed practice with a jump-ball TD over the top — both throws designed to weaponize London and Kyle Pitts' length. Stefanski, asked about it afterward: 'I think Tua, just in his career, as you've seen, has that innate, God-given ability.' Stefanski framed accuracy as the most important QB trait, and Tua's pace in shorts is already meeting that bar. The offense leaned into the screen game throughout the session — a Stefanski staple (the 2025 Browns ranked 11th in screen usage rate). Practice ended with Tyler Goodson squirming into the end zone for the day's last touchdown.",
@@ -2189,13 +2210,6 @@ export const NEWS_DIGEST = {
       category: "injuries",
       sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-news/93761/atlanta-falcons-ota-roundup-may-27-edition-tua-tagovailoa-matt-ryan",
       sourceLabel: "The Falcoholic",
-    },
-    {
-      title: "PENIX TAKES HIS BIGGEST STEP — Tue May 26 OTA Week 2 opener: Penix worked the 'majority of practice,' held out only of 11-on-11 team periods; Stefanski says he's 'right where he needs to be'",
-      detail: "Atlantafalcons.com / ProFootballRumors / NFL.com / Yardbarker / Heavy (OTA Week 2 Day 1, Tue May 26 practice report): in the clearest forward-step yet, Michael Penix Jr. participated in the majority of Tuesday's OTA Week 2 opener — fully involved in individual position drills AND 7-on-7 work, with the only carve-out the full 11-on-11 team periods. Stefanski's read: 'He's right where he needs to be.' Penix: 'I feel like myself.' May practices are no-contact and run at less than full speed, which made the expanded 7-on-7 workload a manageable next checkpoint six months removed from the November ACL. Stefanski reiterated that the green light for team-period work 'is coming' but offered no public timeline. Tua continues to take the 11-on-11 first-team reps while the rotation stays 50/50 in every period Penix is cleared for.",
-      category: "injuries",
-      sourceUrl: "https://www.atlantafalcons.com/news/practice-report-michael-penix-health-status-tua-tagovailoa-kevin-stefanski",
-      sourceLabel: "atlantafalcons.com",
     },
     {
       title: "REES/AUKERMAN/ENGSTRAND TAKE THE PODIUM — first coordinator availability of the spring drops Tue May 26 after OTA Week 2 Day 1; Rees details the wide-zone-plus-gap-scheme install",
@@ -2226,24 +2240,10 @@ export const NEWS_DIGEST = {
       sourceLabel: "SI Falcons",
     },
     {
-      title: "BOWMAN UPGRADED — cleared for walkthroughs at OTAs (up from weight-room only); Andersen / Trice / Bowman 'all on a good timeline' per Stefanski",
-      detail: "Atlantafalcons.com / The Falcoholic / SI Falcons / BloggingDirty (Tue May 19 / Wed May 20): Stefanski volunteered an injury update — Billy Bowman Jr. (torn Achilles, late Nov 2025) is now cleared for walkthroughs with the team after spending voluntary OTAs in the weight room. Stefanski: 'He's going to be out there going through walk-throughs right now. He's going to be working off to the side, but he's doing really well.' Same upbeat read on Troy Andersen (2024 knee, missed all of 2025) and Bralen Trice (2024 ACL re-aggravated in 2025, still without a regular-season snap) — and Trice was active rotating off the edge in 7-on-7 and team periods. 'Everybody is on a good timeline. I'm very pleased with how they're working.'",
+      title: "OTA INJURY LEDGER (May 27) — R4 LB Kendal Daniels out of the walking boot and 'good to go' but not yet practicing; Andersen, Bowman and S Xavier Watts held out this week; Trice active off the edge",
+      detail: "AJC / atlantafalcons.com / The Falcoholic (Wed May 27 + Week 1): R4 LB Kendal Daniels, who watched the May 20 session in a boot on his right foot, is now out of it — Stefanski: 'He's good to go' — though Daniels still watched Wednesday's practice in shorts rather than participating. No substantial change for S Billy Bowman Jr. (Achilles, Nov 2025) or LB Troy Andersen (knee): Stefanski said neither will practice this week, but both are present, working off to the side and 'doing a terrific job' in rehab — 'Billy is right there ... not missing out on any mental reps.' S Xavier Watts was present but not actively involved in drills Wednesday. Earlier in Week 1, Bralen Trice (2024 ACL, re-aggravated in 2025) was active rotating off the edge in 7-on-7 and team periods — a real step for a player still chasing his first regular-season snap. A majority of starters on both sides participated in individual and team drills.",
       category: "injuries",
-      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-training-camp/93694/falcons-otas-kick-off-with-michael-penix-jr-billy-bowman-jr-making-progress",
-      sourceLabel: "The Falcoholic",
-    },
-    {
-      title: "'DELIBERATE APPROACH' WITH JALON WALKER — Atlanta keeping the 2025 No. 8 pick on the edge through OTAs before unlocking his off-ball versatility",
-      detail: "Atlantafalcons.com / SI Falcons (OTA Week 1): the Falcons are taking what the team site called a 'deliberate approach' to Jalon Walker's role — through the open OTA practice he worked individual drills with the edge rushers and lined up exclusively off the edge in team periods. DC Jeff Ulbrich wants Walker to master the edge first: 'The vision for him is so much clearer in year two. ... He's going to make huge strides this year in every way, from a pass-rush perspective and a pure end perspective. But then also we're going to start to also utilize his versatility off the ball and all the stuff he can do.' SI's read: a healthy, confident Walker 'looks ready to take off in Year 2' after a rookie season that only flashed the Georgia versatility.",
-      category: "general",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-deliberate-approach-jalon-walker-versatility-edge-rusher",
-      sourceLabel: "atlantafalcons.com",
-    },
-    {
-      title: "AVIEON TERRELL ramped slowly — individual drills with the secondary, no 7-on-7 or 11-on-11 yet; Hughes still gets projected CB2 reps",
-      detail: "Atlantafalcons.com / SI Falcons / The Falcoholic / BloggingDirty (OTA Week 1 practice reports): the CB2 competition opposite A.J. Terrell is officially live but R2 rookie Avieon Terrell is on a deliberate ramp — he worked with the secondary early during individual drills but did not participate in 7-on-7 or 11-on-11 work through the open practice. Mike Hughes continues to take the projected starter's reps lined up opposite A.J. Terrell while the rookie installs the playbook. SI's Schultz: Avieon still has 'a very real chance' of winning the outside CB2 job by camp. Bowman's walkthrough upgrade complicates the picture — once Bowman returns to team work, the secondary rotation tightens, with Avieon and Hughes both candidates for nickel and outside reps after Dee Alford left for Buffalo in free agency.",
-      category: "general",
-      sourceUrl: "https://www.ajc.com/sports/2026/05/4-things-we-learned-during-falcons-first-week-of-otas/",
+      sourceUrl: "https://www.ajc.com/sports/2026/05/5-things-we-learned-from-falcons-second-week-of-otas/",
       sourceLabel: "AJC",
     },
     {
@@ -2284,7 +2284,7 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-05-31T08:32:19Z",
+  generatedAt: "2026-06-01T08:33:22Z",
   windowLabel: "OTA Media Window · May 19 → Jun 18",
   sessions: [
     {
