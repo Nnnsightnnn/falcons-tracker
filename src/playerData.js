@@ -2142,7 +2142,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-01T08:33:22Z",
+  generatedAt: "2026-06-02T08:35:00Z",
   cover: {
     kicker: "THE RACE TIGHTENS — Tua Takes the First-Team Reps as Penix Closes",
     headLine1: "Two lefties.",
@@ -2169,6 +2169,13 @@ export const NEWS_DIGEST = {
     "Roundtable", "Detroit Football Journal", "BVM Sports", "Stampede Blue", "AOL",
   ],
   topics: [
+    {
+      title: "COUSINS CAP SAVINGS HIT THE BOOKS — the post-June-1 designation officially clears +$2.1M in 2026 and +$45M in 2027; Atlanta now sits ~$19.3M under, ~$125M projected for 2027 (Over The Cap)",
+      detail: "The Falcoholic / Yahoo Sports / Over The Cap (filed Mon Jun 1): the second half of the Kirk Cousins divorce came due. Atlanta cut Cousins back in the spring with a post-June-1 designation, and as of June 1 the rest of the savings officially hit the books — an additional $2.1M of 2026 cap space and a far larger $45M in 2027 relief, per Over The Cap. The flip side is the dead-money tail: Cousins counts $22.5M in dead money in 2026 and another $12.5M in 2027. The net effect leaves the Falcons roughly $19.3M under the 2026 cap (OTC) with about $125M projected for 2027 — real ammunition for the Drake London extension the front office has called 'top of mind' and the market-setting Bijan Robinson deal Schefter still expects 'this offseason.' GM Ian Cunningham now has the room; the question is the timing.",
+      category: "contracts",
+      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-news/93857/falcons-officially-gain-2026-2027-cap-space-on-june-1-from-kirk-cousins-cut",
+      sourceLabel: "The Falcoholic / Over The Cap",
+    },
     {
       title: "QB RACE COULD TIGHTEN EARLY — Tua taking the bulk of first-team snaps through two weeks of OTAs while Penix (individual + 7-on-7 only) keeps closing; AP: 'the competition may come sooner than expected'",
       detail: "Associated Press / Atlanta News First / NFL.com (filed Sun May 31, updated Mon Jun 1): with Michael Penix Jr.'s rehab already allowing him to work individual drills and 7-on-7s, the starting battle between the two left-handers may arrive sooner than the Falcons planned. Tua Tagovailoa has taken the majority of the first-team reps through two weeks — and came away impressed by the man he's racing: 'Shoot, I'm impressed by what he's shown out there ... it's been good fun to go out there and compete with him. I'm trying to help him as much as I can.' Stefanski: 'What Mike's able to do right now in terms of individual and the seven-on-sevens is outstanding ... He's not 100%, but he's exactly where he needs to be.' The number that frames it all: Tua is on a one-year, $1.3M Falcons deal after Miami released him — eating an NFL-record $99M dead-cap charge and the $54M it still owed him for 2026. GM Ian Cunningham has said Tua gets a real shot at QB1 once Penix is fully healthy. Penix, unmoved: 'I'm running my own race. I can't look into another lane.' Next benchmark — team-period clearance at the June 16–18 mandatory minicamp.",
@@ -2284,7 +2291,7 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-06-01T08:33:22Z",
+  generatedAt: "2026-06-02T08:35:00Z",
   windowLabel: "OTA Media Window · May 19 → Jun 18",
   sessions: [
     {

@@ -2,15 +2,15 @@
 
 export const CAP_STATE = {
   year: 2026,
-  capSpaceOTC: 24_022_655,      // Over The Cap
+  capSpaceOTC: 19_300_000,      // Over The Cap (post-June-1 Cousins designation, Jun 1 2026)
   capSpaceSpotrac: 16_020_000,  // Spotrac (post-signings)
   leagueRank: 21,
   totalLiabilities: 295_650_548,
   totalAllocations: 268_323_031,
   deadMoney: {
-    total: 25_200_000,
+    total: 39_000_000,
     breakdown: [
-      { name: "Kirk Cousins", amount: 8_700_000, note: "Released; Raiders' new deal structured to keep cap hit in Atlanta" },
+      { name: "Kirk Cousins", amount: 22_500_000, note: "Released w/ post-June-1 designation; $12.5M more dead in 2027" },
       { name: "Darnell Mooney", amount: 11_000_000, note: "Released Mar 9 (pre-June 1); $7.42M cap savings" },
       { name: "Various pre-2026 cuts", amount: 5_500_000, note: "Aggregated" },
     ],
@@ -56,6 +56,7 @@ export const CAP_STATE = {
     },
   ],
   recentMoves: [
+    { date: "2026-06-01", description: "Kirk Cousins post-June-1 designation officially clears +$2.1M in 2026 and +$45M in 2027 cap space (OTC); dead money tail is $22.5M in 2026, $12.5M in 2027" },
     { date: "2026-05-14", description: "Signed CB Darren Hall (2021 R4 reunion, vet stops IND/ARI); released S Tysheem Johnson in corresponding move" },
     { date: "2026-05-12", description: "Signed DT Ross Blacklock, OL Brandon Walton, G Layden Robinson, LB Daveren Rayner off rookie-minicamp tryouts; released DL Ben Stille, RB Carlos Washington Jr., WR Deven Thompkins, TE Brandon Frazier" },
     { date: "2026-05-07", description: "Signed 14 UDFAs (QB Strand, C Brockermeyer, DT Allen, OT Mahlman, G Dewberry, WRs Marion / Rutherford / V. Anthony / A. Anthony / Brockington, RB Cash Jones, TE Velling, DL Nunnally IV, CB Dewalt IV)" },
