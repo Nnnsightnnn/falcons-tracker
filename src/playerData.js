@@ -1765,7 +1765,7 @@ export const FRONT_OFFICE = [
     tier: "AMBSE",
     since: 2026,
     bio: "Moved off the football side in January when Beadles took the CEO seat. Now leads the parent holding company — Mercedes-Benz Stadium, Atlanta United, the 2026 World Cup, the 2028 Super Bowl. Still co-chair of the NFL Competition Committee.",
-    image: null,
+    image: "https://images.mlssoccer.com/image/private/f_auto/mls-atl/gkffzvvcnnavfcwtwyi0.jpg",
   },
 ];
 
