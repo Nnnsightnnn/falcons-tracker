@@ -25,21 +25,15 @@ export const CAP_STATE = {
   ],
   pendingExtensions: [
     {
-      playerId: "drake-london",
-      status: "extension-candidate",
-      priority: 1,
-      rationale: "5th-year option ($16.8M for 2026). Projected 4yr/$128-135M, $32-33M+ APY, Garrett Wilson comp. Org goal: signed before training camp opens July 22.",
-    },
-    {
       playerId: "bijan",
       status: "extension-eligible",
-      priority: 2,
-      rationale: "Eligible after 3 accrued seasons. Market-setting RB deal incoming.",
+      priority: 1,
+      rationale: "Eligible after 3 accrued seasons; $11.32M 5th-yr option exercised for 2027. Now the front office's top priority after the London deal. Projected to clear Derrick Henry ($15M AAV) and chase Saquon's $20.6M ceiling. Schefter expects a deal 'this offseason.'",
     },
     {
       playerId: "pitts",
       status: "tagged",
-      priority: 3,
+      priority: 2,
       rationale: "Franchise tag applied for 2026 ($14.1M). Long-term deal deferred.",
     },
   ],
@@ -56,6 +50,7 @@ export const CAP_STATE = {
     },
   ],
   recentMoves: [
+    { date: "2026-06-02", description: "Signed WR Drake London to a 4yr/$141M extension (up to $150M w/ incentives, $100M gtd, $35.25M APY — 3rd-highest WR); runs through 2030, 2026 still on $16.82M 5th-yr option. First major deal of the Cunningham/Ryan front office" },
     { date: "2026-06-01", description: "Kirk Cousins post-June-1 designation officially clears +$2.1M in 2026 and +$45M in 2027 cap space (OTC); dead money tail is $22.5M in 2026, $12.5M in 2027" },
     { date: "2026-05-14", description: "Signed CB Darren Hall (2021 R4 reunion, vet stops IND/ARI); released S Tysheem Johnson in corresponding move" },
     { date: "2026-05-12", description: "Signed DT Ross Blacklock, OL Brandon Walton, G Layden Robinson, LB Daveren Rayner off rookie-minicamp tryouts; released DL Ben Stille, RB Carlos Washington Jr., WR Deven Thompkins, TE Brandon Frazier" },

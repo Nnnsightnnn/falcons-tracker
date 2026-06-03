@@ -185,9 +185,9 @@ export const PLAYERS = [
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4426502.png",
-    contract: { years: 4, total: 21000000, guaranteed: 15000000, apy: 5250000, throughYear: 2026, cap2026: 16800000 },
+    contract: { years: 4, total: 141000000, guaranteed: 100000000, apy: 35250000, throughYear: 2030, cap2026: 16800000, note: "4yr/$141M extension signed Jun 2, 2026 (up to $150M w/ incentives, $100M gtd); plays 2026 on $16.82M 5th-yr option, extension runs 2027–2030" },
     career: [
-      { years: "2022–", team: "Atlanta Falcons", type: "NFL · on 5th-year option" },
+      { years: "2022–", team: "Atlanta Falcons", type: "NFL · signed through 2030" },
       { years: "2019–2021", team: "USC", type: "College" },
     ],
   },
@@ -2142,7 +2142,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-02T08:35:00Z",
+  generatedAt: "2026-06-03T08:35:00Z",
   cover: {
     kicker: "THE RACE TIGHTENS — Tua Takes the First-Team Reps as Penix Closes",
     headLine1: "Two lefties.",
@@ -2167,11 +2167,19 @@ export const NEWS_DIGEST = {
     "Spotrac", "Over The Cap", "National Today", "RotoWire", "FOX Sports",
     "Bengals.com", "FOX 5 Atlanta", "Last Word On Sports", "DawgNation",
     "Roundtable", "Detroit Football Journal", "BVM Sports", "Stampede Blue", "AOL",
+    "Washington Post", "FantasyPros",
   ],
   topics: [
     {
+      title: "DRAKE LONDON GETS PAID — Falcons and their WR1 agree to a 4-year, $141M extension (up to $150M w/ incentives, $100M guaranteed); $35.25M APY is the 3rd-richest WR deal in the NFL, signed Tue Jun 2",
+      detail: "ESPN / NFL.com / CBS Sports / FOX Sports / Yahoo / Washington Post (filed Tue Jun 2): the new front office made its first marquee move. Atlanta and Drake London agreed to a four-year, $141M extension that can reach $150M through incentives and carries $100M guaranteed, locking the 24-year-old in through 2030. The $35.25M average annual value makes London the NFL's third-highest-paid receiver — behind only Seattle's Jaxon Smith-Njigba ($42.15M) and Cincinnati's Ja'Marr Chase ($40.25M). London still plays 2026 on his $16.82M fifth-year option; the new money kicks in 2027. It's the first major deal authored by GM Ian Cunningham and president of football Matt Ryan, and it answers the 'top of mind' refrain Cunningham had repeated all spring. London's reaction on X: 'RISE UP!!!' The signing flips the front office's offseason to-do list — with the WR1 done, Bijan Robinson's market-resetting extension moves to the front of the queue.",
+      category: "contracts",
+      sourceUrl: "https://www.nfl.com/news/nfl-network-falcons-wr-drake-london-agree-to-four-year-141-million-extension",
+      sourceLabel: "NFL.com / ESPN",
+    },
+    {
       title: "COUSINS CAP SAVINGS HIT THE BOOKS — the post-June-1 designation officially clears +$2.1M in 2026 and +$45M in 2027; Atlanta now sits ~$19.3M under, ~$125M projected for 2027 (Over The Cap)",
-      detail: "The Falcoholic / Yahoo Sports / Over The Cap (filed Mon Jun 1): the second half of the Kirk Cousins divorce came due. Atlanta cut Cousins back in the spring with a post-June-1 designation, and as of June 1 the rest of the savings officially hit the books — an additional $2.1M of 2026 cap space and a far larger $45M in 2027 relief, per Over The Cap. The flip side is the dead-money tail: Cousins counts $22.5M in dead money in 2026 and another $12.5M in 2027. The net effect leaves the Falcons roughly $19.3M under the 2026 cap (OTC) with about $125M projected for 2027 — real ammunition for the Drake London extension the front office has called 'top of mind' and the market-setting Bijan Robinson deal Schefter still expects 'this offseason.' GM Ian Cunningham now has the room; the question is the timing.",
+      detail: "The Falcoholic / Yahoo Sports / Over The Cap (filed Mon Jun 1): the second half of the Kirk Cousins divorce came due. Atlanta cut Cousins back in the spring with a post-June-1 designation, and as of June 1 the rest of the savings officially hit the books — an additional $2.1M of 2026 cap space and a far larger $45M in 2027 relief, per Over The Cap. The flip side is the dead-money tail: Cousins counts $22.5M in dead money in 2026 and another $12.5M in 2027. The net effect leaves the Falcons roughly $19.3M under the 2026 cap (OTC) with about $125M projected for 2027 — real ammunition that the front office promptly deployed on the Drake London extension (signed Jun 2) — with the market-setting Bijan Robinson deal Schefter still expects 'this offseason' up next. GM Ian Cunningham had the room; London was the first to cash in.",
       category: "contracts",
       sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-news/93857/falcons-officially-gain-2026-2027-cap-space-on-june-1-from-kirk-cousins-cut",
       sourceLabel: "The Falcoholic / Over The Cap",
@@ -2261,11 +2269,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "Heavy",
     },
     {
-      title: "Drake London extension still 'top of mind' — The Athletic's Kendall projects 4yr/$135M ($33M+ APY), Garrett Wilson comp",
-      detail: "Heavy / ClutchPoints / Yahoo / SI Falcons / NBC PFT / The Athletic (via TWSN) / atlantafalcons.com (May 7-24 sweep): Cunningham's 'top of mind' line on London is unchanged but no signed deal yet. London is on the $16.8M fifth-year option for 2026 — final year of the rookie deal. The Athletic's Josh Kendall: London's next deal 'could echo Garrett Wilson at 4 years/$130M, could project at 4yr/$135M.' That pushes London into upper-tier WR money — $33M+ APY — just behind JSN ($42.15M), Chase, Jefferson and CeeDee Lamb. ClutchPoints' insider demand also lands at 4yr/$135M; a more conservative read sits at 4yr/$128M ($32M APY, $82-90M gtd). Org-stated goal: signed before training camp opens July 22. Still no reported momentum as OTA Week 2 opens — Cunningham: 'We don't want outside factors to push us into feeling like we have to make a decision right now.'",
+      title: "BIJAN IS NEXT IN LINE — with London locked up, the market-resetting Robinson extension moves to the front of Atlanta's queue; PFR/BR peg him to clear Derrick Henry ($15M) and chase Saquon's $20.6M AAV ceiling",
+      detail: "Bleacher Report / Pro Football Rumors / FantasyPros / SI Falcons (filed Tue Jun 2, hours after the London deal): the receiver done, the running back is up. With Drake London's $141M extension off the board, the front office's next big-ticket item is Bijan Robinson, and the projections only point up. Robinson — two straight 1,400+ rushing seasons, 21 rushing TDs over that span, 79 catches for 820 yards in 2025, a 2025 first-team All-Pro — is expected to break into the upper echelon of the RB market: past Derrick Henry's $15M AAV, approaching or eclipsing Christian McCaffrey's $19M, and potentially pushing toward Saquon Barkley's league-leading $20.6M/yr. Atlanta already exercised his $11.32M fifth-year option for 2027 as a placeholder; Schefter has said an Atlanta deal is coming 'this offseason.' SI flags one roadblock: Atlanta has no urgency with Bijan under team control through 2027, so the deal could still wait. London first, Bijan next — the sequence the front office telegraphed all spring is now playing out.",
       category: "contracts",
-      sourceUrl: "https://www.atlantafalcons.com/news/drake-london-ian-cunningham-league-meetings-extension-fifth-year-option",
-      sourceLabel: "atlantafalcons.com",
+      sourceUrl: "https://bleacherreport.com/articles/25433278-new-nfl-rumors-bijan-robinson-contract-extension-falcons-after-drake-london-deal",
+      sourceLabel: "Bleacher Report / PFR",
     },
     {
       title: "2026 schedule is out — opener at Pittsburgh Sep 13; 3 straight primetime (W3-5); Week 11 bye; 5th-easiest SoS (.465)",
@@ -2291,7 +2299,7 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-06-02T08:35:00Z",
+  generatedAt: "2026-06-03T08:35:00Z",
   windowLabel: "OTA Media Window · May 19 → Jun 18",
   sessions: [
     {
