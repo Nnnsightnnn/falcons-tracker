@@ -3,7 +3,7 @@
 export const CAP_STATE = {
   year: 2026,
   capSpaceOTC: 19_300_000,      // Over The Cap (post-June-1 Cousins designation, Jun 1 2026)
-  capSpaceSpotrac: 16_020_000,  // Spotrac (post-signings)
+  capSpaceSpotrac: 19_700_000,  // Spotrac top-51 (post-London extension, per BR/Spotrac Jun 3 2026)
   leagueRank: 21,
   totalLiabilities: 295_650_548,
   totalAllocations: 268_323_031,

@@ -2142,14 +2142,14 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-03T08:35:00Z",
+  generatedAt: "2026-06-04T08:35:00Z",
   cover: {
     kicker: "THE RACE TIGHTENS — Tua Takes the First-Team Reps as Penix Closes",
     headLine1: "Two lefties.",
     headEm: "One job.",
     headLine3: "And the verdict's coming sooner than planned.",
     deck:
-      "Through two weeks of OTAs, Tua Tagovailoa has handled the bulk of the first-team snaps while Michael Penix Jr. — six months off ACL surgery — works individual and 7-on-7 only. Tua on the passer he's racing: 'Shoot, I'm impressed by what he's shown out there.' The next checkpoint is Penix's team-period clearance at the June 16–18 minicamp.",
+      "Through three weeks of OTAs, Tua Tagovailoa has handled the bulk of the first-team snaps while Michael Penix Jr. — six months off ACL surgery — works individual and 7-on-7 only. Tua on the passer he's racing: 'Shoot, I'm impressed by what he's shown out there.' The final OTA block runs June 8–9 and 11; the next checkpoint is Penix's team-period clearance at the June 16–18 mandatory minicamp.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "tua",
@@ -2171,11 +2171,39 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
+      title: "MINICAMP ON THE HORIZON — the final OTA block runs June 8–9 and 11, then the first mandatory minicamp of the Stefanski era hits Flowery Branch June 16–18; Penix's team-period clearance is the checkpoint everyone's circling",
+      detail: "Atlantafalcons.com / ESPN offseason calendar (current, Thu Jun 4): the voluntary portion of the offseason is nearly over. Atlanta's last OTA sessions are slotted for June 8–9 and 11, and the June 16–18 mandatory veteran minicamp — attendance required — is the first full-squad checkpoint of Kevin Stefanski's first year. The watch items: whether Michael Penix Jr. gets cleared for team periods (he has been individual + 7-on-7 only since OTAs opened), the LB rotation with Kendal Daniels and JD Bertrand working back, and first looks at how the Tua/Penix rep split changes when everything counts. After June 18 the building goes quiet until training camp opens July 22.",
+      category: "general",
+      sourceUrl: "https://www.espn.com/nfl/story/_/id/48387060/nfl-offseason-2026-every-32-team-otas-minicamp-key-dates",
+      sourceLabel: "ESPN / atlantafalcons.com",
+    },
+    {
+      title: "UFL TRYOUT WEEK — Falcons working out DT Jayden Peevy and WR Tay Martin, two spring-league standouts fresh off UFL stints, as the 90-man bubble churns",
+      detail: "The Falcoholic / SI Falcons / Yardbarker (filed Wed Jun 3): Atlanta is bringing in a pair of United Football League players for workouts this week. DT Jayden Peevy (6'5, 308) played five seasons at Texas A&M and has appeared in six NFL games with 1.5 sacks while bouncing between practice squads; he'd add interior depth behind a DT room that's already churned this spring. WR Tay Martin, an NFL journeyman since 2022 who was productive in the UFL this year, has 3 catches for 72 yards and a TD in seven NFL games plus special-teams experience — the profile of a camp-body flier in a receiver room that's deep on top but muddled at the back end. No signings yet; both are tryouts.",
+      category: "general",
+      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-news/93920/falcons-working-out-pair-of-ufl-players-this-week-jayden-peevy-tay-martin",
+      sourceLabel: "The Falcoholic / SI Falcons",
+    },
+    {
+      title: "PITTS' 'SIXTH-YEAR OPTION' — the franchise-tagged TE steps into 2026 with a mantra, a matured body and a new staff that sees him as 'a big piece of this thing'",
+      detail: "Atlantafalcons.com (Tori McElhaney feature, filed Tue Jun 2): Kyle Pitts revealed the mantra behind his career-best 2025 — 'You have the opportunity to do something. Just do it. It's up to you.' — a season of 88 catches, 928 yards and five TDs (career highs in receptions and scores) that convinced the new regime to keep him on the $14.1M tag. Pitts calls the tag 'Ian taking a chance ... kind of like my fifth-year option, but it's a sixth-year option,' and says the new offense is 'adding more tools to my tool box' in route running and scheme. OC Tommy Rees: 'He's a great veteran for us right now ... the buy-in being at an extremely high level.' Pass-game coordinator Tanner Engstrand: 'I think Kyle is going to be a big piece of this thing.' Stefanski began his NFL career coaching tight ends, and his offenses have historically fed the position — the one-year audition is set up for both sides to win.",
+      category: "contracts",
+      sourceUrl: "https://www.atlantafalcons.com/news/matured-confident-kyle-pitts-franchise-tag-year",
+      sourceLabel: "atlantafalcons.com",
+    },
+    {
       title: "DRAKE LONDON GETS PAID — Falcons and their WR1 agree to a 4-year, $141M extension (up to $150M w/ incentives, $100M guaranteed); $35.25M APY is the 3rd-richest WR deal in the NFL, signed Tue Jun 2",
       detail: "ESPN / NFL.com / CBS Sports / FOX Sports / Yahoo / Washington Post (filed Tue Jun 2): the new front office made its first marquee move. Atlanta and Drake London agreed to a four-year, $141M extension that can reach $150M through incentives and carries $100M guaranteed, locking the 24-year-old in through 2030. The $35.25M average annual value makes London the NFL's third-highest-paid receiver — behind only Seattle's Jaxon Smith-Njigba ($42.15M) and Cincinnati's Ja'Marr Chase ($40.25M). London still plays 2026 on his $16.82M fifth-year option; the new money kicks in 2027. It's the first major deal authored by GM Ian Cunningham and president of football Matt Ryan, and it answers the 'top of mind' refrain Cunningham had repeated all spring. London's reaction on X: 'RISE UP!!!' The signing flips the front office's offseason to-do list — with the WR1 done, Bijan Robinson's market-resetting extension moves to the front of the queue.",
       category: "contracts",
       sourceUrl: "https://www.nfl.com/news/nfl-network-falcons-wr-drake-london-agree-to-four-year-141-million-extension",
       sourceLabel: "NFL.com / ESPN",
+    },
+    {
+      title: "BIJAN IS NEXT IN LINE — with London locked up, the market-resetting Robinson extension moves to the front of Atlanta's queue; PFR/BR peg him to clear Derrick Henry ($15M) and chase Saquon's $20.6M AAV ceiling",
+      detail: "Bleacher Report / Pro Football Rumors / FantasyPros / SI Falcons (filed Tue Jun 2, hours after the London deal): the receiver done, the running back is up. With Drake London's $141M extension off the board, the front office's next big-ticket item is Bijan Robinson, and the projections only point up. Robinson — two straight 1,400+ rushing seasons, 21 rushing TDs over that span, 79 catches for 820 yards in 2025, a 2025 first-team All-Pro — is expected to break into the upper echelon of the RB market: past Derrick Henry's $15M AAV, approaching or eclipsing Christian McCaffrey's $19M, and potentially pushing toward Saquon Barkley's league-leading $20.6M/yr. Atlanta already exercised his $11.32M fifth-year option for 2027 as a placeholder; Schefter has said an Atlanta deal is coming 'this offseason.' SI flags one roadblock: Atlanta has no urgency with Bijan under team control through 2027, so the deal could still wait. London first, Bijan next — the sequence the front office telegraphed all spring is now playing out.",
+      category: "contracts",
+      sourceUrl: "https://bleacherreport.com/articles/25433278-new-nfl-rumors-bijan-robinson-contract-extension-falcons-after-drake-london-deal",
+      sourceLabel: "Bleacher Report / PFR",
     },
     {
       title: "COUSINS CAP SAVINGS HIT THE BOOKS — the post-June-1 designation officially clears +$2.1M in 2026 and +$45M in 2027; Atlanta now sits ~$19.3M under, ~$125M projected for 2027 (Over The Cap)",
@@ -2199,39 +2227,25 @@ export const NEWS_DIGEST = {
       sourceLabel: "AJC",
     },
     {
+      title: "DEABLO TAKES THE GREEN DOT — with Kaden Elliss in New Orleans, Divine Deablo steps into command of the Falcons defense as the play-call relay",
+      detail: "Atlantafalcons.com (OTA-week feature): the green-dot helmet — the defender wired to the sideline who relays the call and sets the front — belonged to Kaden Elliss until he signed with the Saints in March. The team site's 'Divine intervention' feature says it now belongs to Divine Deablo, who has been running the huddle through OTAs alongside free-agent addition Christian Harris while the young LBs (R4 Kendal Daniels, JD Bertrand) work back from injury. The added command responsibility is a bet on Deablo's processing in the post-Elliss structure — and with mandatory minicamp June 16–18 the next full-squad checkpoint, the defensive communication chain is one of the new staff's most-watched installs.",
+      category: "coaching",
+      sourceUrl: "https://www.atlantafalcons.com/news/divine-deablo-green-dot-jeff-ulbrich",
+      sourceLabel: "atlantafalcons.com",
+    },
+    {
+      title: "CALLAHAN'S FIRST IMPRESSION — the veteran OL guru likes what he inherited; Lindstrom takes the changes (and life without McGary) in stride",
+      detail: "Atlantafalcons.com (OTA features): longtime NFL offensive line coach Bill Callahan says he has real respect for what Atlanta's line has already accomplished — and that he's in Flowery Branch to build on it, not tear it down. The room he inherited: first-round pedigree in Chris Lindstrom and Jake Matthews, Matthew Bergeron ascending, Jawaan Taylor stepping in at right tackle after Kaleb McGary's April retirement, and UDFA James Brockermeyer logging first-team center reps while Ryan Neuzil works back. In a separate team-site piece, four-time Pro Bowler Lindstrom says he's taking the changes in stride — new line coach, new RT, new scheme blend. The unit is the quiet foundation of the Stefanski offense, whoever wins the QB job.",
+      category: "coaching",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-offensive-line-first-impression-bill-callahan",
+      sourceLabel: "atlantafalcons.com",
+    },
+    {
       title: "PEARCE LEGAL UPDATE — edge rusher accepts a Miami-Dade pretrial intervention program; all charges drop if he completes the 12-month term, his attorney tells the AJC",
       detail: "AJC (reported Tue May 26): James Pearce Jr.'s attorney, Yale Sanford, told the paper that Pearce has accepted an offer to enter a Miami-Dade County state intervention program. If he completes the 12-month program, all charges from his case — initially three felonies and a misdemeanor tied to an alleged incident with his ex-girlfriend, WNBA player Rickea Jackson — will be dropped. Pearce has not attended the Falcons' voluntary offseason program while navigating the case. Stefanski, asked Wednesday: 'In constant communication with all parties, but continuing to wait for more information to come out.' The team otherwise declined comment.",
       category: "general",
       sourceUrl: "https://www.ajc.com/sports/2026/05/5-things-we-learned-from-falcons-second-week-of-otas/",
       sourceLabel: "AJC",
-    },
-    {
-      title: "TUA'S ACCURACY POPS — Wed May 27 OTA Week 2 Day 2: back-shoulder fade to Drake London, jump-ball TD to close; Stefanski calls it 'innate, God-given ability'",
-      detail: "Atlantafalcons.com / Bleacher Report / Yahoo / ClutchPoints / NFL.com / SI Falcons (Wed May 27 OTA Week 2 Day 2 practice report and presser): Tua Tagovailoa's accuracy was the storyline of the day. On the left sideline Tua dropped a back-shoulder fade that 'required every bit of Drake London's length to corral but was virtually indefensible,' then closed practice with a jump-ball TD over the top — both throws designed to weaponize London and Kyle Pitts' length. Stefanski, asked about it afterward: 'I think Tua, just in his career, as you've seen, has that innate, God-given ability.' Stefanski framed accuracy as the most important QB trait, and Tua's pace in shorts is already meeting that bar. The offense leaned into the screen game throughout the session — a Stefanski staple (the 2025 Browns ranked 11th in screen usage rate). Practice ended with Tyler Goodson squirming into the end zone for the day's last touchdown.",
-      category: "general",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-practice-report-tua-tagovailoa-accuracy-drake-london",
-      sourceLabel: "atlantafalcons.com",
-    },
-    {
-      title: "FALCONS–COLTS JOINT PRACTICES SET — Atlanta and Indianapolis agree to two joint sessions in Westfield, IN the week of the Aug 22 preseason game at Lucas Oil Stadium; 6th straight year Atlanta runs joint work",
-      detail: "AJC / The Falcoholic / SI Falcons / Stampede Blue / Yahoo / AOL (Thu May 28 report): the Falcons and Colts have agreed to a pair of joint practices at the Grand Park Sports Campus in Westfield, Indiana in the days before their Saturday Aug 22 preseason Week 2 exhibition at Lucas Oil Stadium (1 PM ET). It marks the sixth straight year Atlanta has run joint practices with an outside club — a Stefanski-era staple for stress-testing the install against a foreign opponent. Indianapolis is also slotting joint work with New England; this is the Colts' last summer in Westfield before camp moves downtown. For Atlanta the dates give the new staff a controlled live look at the Tua/Penix rotation, the young CB2 race and the roster bubble before the late-August cuts — and a real measuring stick after a month of no-contact spring work.",
-      category: "general",
-      sourceUrl: "https://www.ajc.com/sports/2026/05/falcons-and-colts-agree-to-joint-practices-ahead-of-aug-22-preseason-game/",
-      sourceLabel: "AJC",
-    },
-    {
-      title: "OTA WEEK 2 DAY 2 SNAP NOTES — Christian Harris worked as the starter next to Divine Deablo with Kendal Daniels AND JD Bertrand both sitting out injured; UDFA C James Brockermeyer took every first-team OL snap with Ryan Neuzil also out",
-      detail: "The Falcoholic / AJC / atlantafalcons.com / SI Falcons (Wed May 27 OTA Week 2 Day 2 practice notes): the LB rotation thinned out fast — R4 rookie Kendal Daniels was out again (now back-to-back absences in Week 2) and special-teams stalwart JD Bertrand was sidelined alongside him, leaving Christian Harris paired with Divine Deablo as the starting LB duo. On the OL, Ryan Neuzil was absent and UDFA center James Brockermeyer (TCU) took every first-team rep — an unexpected on-ramp for a player who entered camp on the roster bubble. Stefanski's 'no collisions' command was audible all afternoon after a couple of helmet-to-helmet hits took players down; there was even a short verbal exchange between an offensive and defensive lineman, the day's tempo cresting higher than usual for May.",
-      category: "injuries",
-      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-news/93761/atlanta-falcons-ota-roundup-may-27-edition-tua-tagovailoa-matt-ryan",
-      sourceLabel: "The Falcoholic",
-    },
-    {
-      title: "REES/AUKERMAN/ENGSTRAND TAKE THE PODIUM — first coordinator availability of the spring drops Tue May 26 after OTA Week 2 Day 1; Rees details the wide-zone-plus-gap-scheme install",
-      detail: "Atlantafalcons.com / SI Falcons / NFL.com (Tue May 26 coordinator media availability, immediately following the Falcons' second open OTA practice): OC Tommy Rees, passing-game coordinator Tanner Engstrand and special-teams coordinator Craig Aukerman held their first joint podium of the offseason. Rees framed the install as Stefanski's wide-zone foundation blended with more gap-scheme concepts, with play-action and under-center elements 'long-time staples' of what he and Stefanski run. He pointed at the Robinson-led backfield and an experienced OL under Bill Callahan as the natural starting point. Rees on the dual-QB room: 'We're going to coach both of those guys hard, and the room is going to be better for it.' Aukerman flagged R3 WR Zachariah Branch as a real return-game weapon already showing the burst on tape.",
-      category: "coaching",
-      sourceUrl: "https://www.atlantafalcons.com/video/tommy-rees-craig-aukerman-tanner-engstrand-speak-on-team-growth-through-otas-press-conference",
-      sourceLabel: "atlantafalcons.com",
     },
     {
       title: "BRANCH'S BREAKOUT WEEK — 'fast and sudden' in Week 1, then back at the JUGS late with Zaccheaus after Day 1 of Week 2; Stefanski wants him as a true slot",
@@ -2241,46 +2255,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "DawgNation",
     },
     {
-      title: "PITTS PRIMED UNDER STEFANSKI — franchise-tagged TE 'engaged in all the voluntary work,' making plays at OTAs; Rees praises his 'level of commitment' as the play-action era opens",
-      detail: "Atlantafalcons.com / SI Falcons / Roundtable / NFL.com (OTA Week 2, May 26-27 player chemistry presser + coverage): Kyle Pitts, on the $14.1M franchise tag for 2026, is making an early impression on the new staff — the team site notes he has been 'engaged in all of the team's voluntary work and making his share of plays' through OTAs after his first All-Pro season in 2025. OC Tommy Rees, asked about him: 'Kyle's been a really good player in this league for a number of years now, and he's coming off a great season where he's shown where his talent is and what his level of commitment is, and he's a great veteran for us right now.' The fit is the story: Stefanski's play-action, run-first system in Cleveland routinely inflated tight-end target share, and analysts (Roundtable, SI) project Pitts for a possible career year — the tag buys Atlanta a one-year audition before a long-term call. Tua's accuracy reps have repeatedly weaponized Pitts' and London's length down the seam.",
-      category: "general",
-      sourceUrl: "https://www.atlantafalcons.com/video/drake-london-kyle-pitts-sr-other-falcons-on-growing-team-chemistry-in-otas-press-conference",
-      sourceLabel: "atlantafalcons.com",
-    },
-    {
-      title: "UDFA WATCH — Cash Jones the OTA sleeper, with Aukerman pumping his special-teams versatility; Keelan Marion and Vinny Anthony II getting consistent returner reps",
-      detail: "SI Falcons / BloggingDirty / AJC / atlantafalcons.com (OTA Week 1-2, May 19-27): UDFA Cash Jones has forced his way into the 53-man bubble conversation. Stefanski went out of his way to praise him — 'I think this is a very, very smart football player ... I'm so impressed with who he is as a person' — and said the staff will 'continue to work him in different spots, including special teams.' Aukerman doubled down on May 26, calling Jones 'a smart and instinctual football player' who showed 'a bunch of really good things' at Georgia on special teams; the staff is rotating him at RB, slot, and ST. Two more UDFAs — Keelan Marion and Vinny Anthony II — have been the consistent returners through ST periods in Week 2. Jones is one of 14 UDFAs Atlanta signed May 7.",
-      category: "general",
-      sourceUrl: "https://www.si.com/nfl/falcons/onsi/falcons-udfa-is-suddenly-emerging-on-the-roster-bubble-at-otas",
-      sourceLabel: "SI Falcons",
-    },
-    {
       title: "OTA INJURY LEDGER (May 27) — R4 LB Kendal Daniels out of the walking boot and 'good to go' but not yet practicing; Andersen, Bowman and S Xavier Watts held out this week; Trice active off the edge",
       detail: "AJC / atlantafalcons.com / The Falcoholic (Wed May 27 + Week 1): R4 LB Kendal Daniels, who watched the May 20 session in a boot on his right foot, is now out of it — Stefanski: 'He's good to go' — though Daniels still watched Wednesday's practice in shorts rather than participating. No substantial change for S Billy Bowman Jr. (Achilles, Nov 2025) or LB Troy Andersen (knee): Stefanski said neither will practice this week, but both are present, working off to the side and 'doing a terrific job' in rehab — 'Billy is right there ... not missing out on any mental reps.' S Xavier Watts was present but not actively involved in drills Wednesday. Earlier in Week 1, Bralen Trice (2024 ACL, re-aggravated in 2025) was active rotating off the edge in 7-on-7 and team periods — a real step for a player still chasing his first regular-season snap. A majority of starters on both sides participated in individual and team drills.",
       category: "injuries",
       sourceUrl: "https://www.ajc.com/sports/2026/05/5-things-we-learned-from-falcons-second-week-of-otas/",
       sourceLabel: "AJC",
-    },
-    {
-      title: "Bijan extension watch — the RB market keeps resetting without him; Schefter says Detroit's Gibbs is 'next in line,' and whoever signs first sets the ceiling",
-      detail: "PFR / RotoWire / Bleacher Report / CBS Sports / ESPN / Heavy / Schefter (via The Falcoholic) / National Today / Yardbarker (May 13-24): the running-back market is resetting in real time while Atlanta watches. Miami signed De'Von Achane to a four-year extension worth up to $68M with $32M guaranteed (reported May 13) and the Jets extended Breece Hall (3yr/$45.75M, $15.25M APY) — two fresh comps that sit below the number Bijan will command. The live ceiling-reset threat is Detroit: Schefter says Jahmyr Gibbs is 'next in line' after the Lions extended LB Jack Campbell, and Detroit wants Gibbs done before training camp — whichever back signs first sets the precedent the other must beat. Atlanta exercised Bijan's $11.32M fifth-year option Apr 12 as an openly acknowledged placeholder; Spotrac pegs his market value near $18.9M/yr and National Today's framework lands at 3yr/$69-75M ($23-25M APY), which would make him the highest-paid running back in NFL history. Schefter still expects an Atlanta deal 'this offseason.'",
-      category: "contracts",
-      sourceUrl: "https://heavy.com/sports/nfl/atlanta-falcons/bijan-robinson-contract-update-falcons-espn-adam-schefter/",
-      sourceLabel: "Heavy",
-    },
-    {
-      title: "BIJAN IS NEXT IN LINE — with London locked up, the market-resetting Robinson extension moves to the front of Atlanta's queue; PFR/BR peg him to clear Derrick Henry ($15M) and chase Saquon's $20.6M AAV ceiling",
-      detail: "Bleacher Report / Pro Football Rumors / FantasyPros / SI Falcons (filed Tue Jun 2, hours after the London deal): the receiver done, the running back is up. With Drake London's $141M extension off the board, the front office's next big-ticket item is Bijan Robinson, and the projections only point up. Robinson — two straight 1,400+ rushing seasons, 21 rushing TDs over that span, 79 catches for 820 yards in 2025, a 2025 first-team All-Pro — is expected to break into the upper echelon of the RB market: past Derrick Henry's $15M AAV, approaching or eclipsing Christian McCaffrey's $19M, and potentially pushing toward Saquon Barkley's league-leading $20.6M/yr. Atlanta already exercised his $11.32M fifth-year option for 2027 as a placeholder; Schefter has said an Atlanta deal is coming 'this offseason.' SI flags one roadblock: Atlanta has no urgency with Bijan under team control through 2027, so the deal could still wait. London first, Bijan next — the sequence the front office telegraphed all spring is now playing out.",
-      category: "contracts",
-      sourceUrl: "https://bleacherreport.com/articles/25433278-new-nfl-rumors-bijan-robinson-contract-extension-falcons-after-drake-london-deal",
-      sourceLabel: "Bleacher Report / PFR",
-    },
-    {
-      title: "2026 schedule is out — opener at Pittsburgh Sep 13; 3 straight primetime (W3-5); Week 11 bye; 5th-easiest SoS (.465)",
-      detail: "AJC / Atlantafalcons.com / Bleacher Report / Yahoo / ESPN / FOX 5 Atlanta / CBS Sports (Thu May 14 reveal): the full 18-week slate is public. The Stefanski era opens at Pittsburgh Sun Sep 13, 1 PM ET on FOX, then home vs. Carolina Sep 20. Three straight primetime games W3-5 — TNF at Green Bay Sep 24 (Amazon), MNF at New Orleans Oct 5 (ESPN), SNF vs. Baltimore Oct 11 (NBC) — down from five primetime games in 2025. Bye is Week 11 (Nov 22). The closing stretch is brutal: 3 of the last 4 are divisional, with W16 vs. TB (Dec 27) and W18 at CAR (Jan 10) still date/time TBD and flex-eligible. Opponents' combined 2025 win pct of .465 is the 5th-easiest schedule in the league. Stefanski's Cleveland homecoming lands in Week 14 (at the Browns, Dec 13).",
-      category: "games",
-      sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-2026-schedule-key-dates-matchups-storylines",
-      sourceLabel: "atlantafalcons.com",
     },
     {
       title: "Madrid Week 9 — Falcons HOST the Bengals Nov 8, 9:30 AM ET at the Bernabéu (NFL Network)",
@@ -2299,9 +2278,30 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-06-03T08:35:00Z",
+  generatedAt: "2026-06-04T08:35:00Z",
   windowLabel: "OTA Media Window · May 19 → Jun 18",
   sessions: [
+    {
+      id: "pitts-2026-05-27",
+      speaker: "Kyle Pitts Sr.",
+      role: "Tight End",
+      date: "2026-05-27",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "OTA Week 2 Day 2 · Player Availability",
+      sourceUrl: "https://www.atlantafalcons.com/news/matured-confident-kyle-pitts-franchise-tag-year",
+      transcriptUrl: "https://www.atlantafalcons.com/video/drake-london-kyle-pitts-sr-other-falcons-on-growing-team-chemistry-in-otas-press-conference",
+      verified: true,
+      summary: "Speaking at the OTA Week 2 player podium (quotes published in Tori McElhaney's June 2 team-site feature), Pitts pulled back the curtain on the mantra behind his career-best 2025 — 88 catches, 928 yards, five touchdowns — and reframed the $14.1M franchise tag as a vote of confidence rather than a stall: his own 'sixth-year option.' He talked through the physical maturation behind the leap and what the new Stefanski/Rees system is adding to his game.",
+      pullQuote: "You have the opportunity to do something. Just do it. It's up to you.",
+      bullets: [
+        "Recited the daily mantra he set before the 2025 season — the mindset he credits for career highs in catches (88) and TDs (5)",
+        "On the franchise tag: '(It's) Ian taking a chance. It's kind of like my fifth-year option, but it's a sixth-year option ... They trusted that they see something in (me)'",
+        "Says he's 'definitely matured more, coming into my maturer body' — nutrition and recovery are now central to his regimen; he turns 26 in October",
+        "The new offense is 'adding more tools to my tool box ... route running, schematically. Being an asset in this offense'",
+        "OC Tommy Rees, separately: 'He's a great veteran for us right now ... the buy-in being at an extremely high level' — and Tanner Engstrand calls him 'a big piece of this thing'",
+      ],
+      topics: ["pitts-franchise-tag", "tight-ends", "stefanski-offense"],
+    },
     {
       id: "stefanski-2026-05-27",
       speaker: "Kevin Stefanski",
@@ -2400,24 +2400,6 @@ export const INTERVIEWS = {
         "Spoke on the first OTA player podium alongside A.J. Terrell and Chris Lindstrom",
       ],
       topics: ["stefanski-offense", "run-game", "rees-install"],
-    },
-    {
-      id: "tua-2026-03-24",
-      speaker: "Tua Tagovailoa",
-      role: "Quarterback",
-      date: "2026-03-24",
-      venue: "Flowery Branch · Auditorium",
-      session: "Introductory Press Conference",
-      sourceUrl: "https://www.atlantafalcons.com/news/tua-tagovailoa-competition-michael-penix-jr-falcons-quarterbacks",
-      summary: "Tua's first Atlanta presser set the tone for a competition narrative he refused to soften. He used the word 'compete' five times, framed his role as a force-multiplier for Penix's development, and described his post-trade physicals as 'looking way better than the guys might have thought' — a clear shot across the bow of the Dolphins exit.",
-      pullQuote: "You're either a competitor or you're not. And so I embrace the competition.",
-      bullets: [
-        "Embraced the QB1 competition head-on — 'I'm excited to work alongside Mike'",
-        "Team-first framing: 'the collection of what's best for the team, not just the individual'",
-        "On health: 'Everything came out good. Some things are looking way better than the guys might have thought'",
-        "On the move: 'I knew I needed to play better — this is a great opportunity to get a good reset'",
-      ],
-      topics: ["qb-competition", "tua-signing", "health"],
     },
   ],
 };
