@@ -2142,7 +2142,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-04T08:35:00Z",
+  generatedAt: "2026-06-05T08:33:00Z",
   cover: {
     kicker: "THE RACE TIGHTENS — Tua Takes the First-Team Reps as Penix Closes",
     headLine1: "Two lefties.",
@@ -2172,10 +2172,17 @@ export const NEWS_DIGEST = {
   topics: [
     {
       title: "MINICAMP ON THE HORIZON — the final OTA block runs June 8–9 and 11, then the first mandatory minicamp of the Stefanski era hits Flowery Branch June 16–18; Penix's team-period clearance is the checkpoint everyone's circling",
-      detail: "Atlantafalcons.com / ESPN offseason calendar (current, Thu Jun 4): the voluntary portion of the offseason is nearly over. Atlanta's last OTA sessions are slotted for June 8–9 and 11, and the June 16–18 mandatory veteran minicamp — attendance required — is the first full-squad checkpoint of Kevin Stefanski's first year. The watch items: whether Michael Penix Jr. gets cleared for team periods (he has been individual + 7-on-7 only since OTAs opened), the LB rotation with Kendal Daniels and JD Bertrand working back, and first looks at how the Tua/Penix rep split changes when everything counts. After June 18 the building goes quiet until training camp opens July 22.",
+      detail: "Atlantafalcons.com / ESPN offseason calendar (current, Fri Jun 5): the voluntary portion of the offseason is nearly over. Atlanta's last OTA sessions are slotted for June 8–9 and 11, and the June 16–18 mandatory veteran minicamp — attendance required — is the first full-squad checkpoint of Kevin Stefanski's first year. The watch items: whether Michael Penix Jr. gets cleared for team periods (he has been individual + 7-on-7 only since OTAs opened), the LB rotation with Kendal Daniels and JD Bertrand working back, and first looks at how the Tua/Penix rep split changes when everything counts. After June 18 the building goes quiet until training camp opens July 22.",
       category: "general",
       sourceUrl: "https://www.espn.com/nfl/story/_/id/48387060/nfl-offseason-2026-every-32-team-otas-minicamp-key-dates",
       sourceLabel: "ESPN / atlantafalcons.com",
+    },
+    {
+      title: "FELLOWSHIP CLASS NAMED — Falcons launch the Ollie Wilson Coaching Fellowship (inaugural fellow: Michael Bearden) and announce four 2026 Bill Walsh Diversity Fellows, including Jessie Tuggle's son Justin",
+      detail: "Atlantafalcons.com / AJC / The Falcoholic / SI Falcons (filed Thu Jun 4): the team announced a new year-long Ollie Wilson Coaching Fellowship — named for the longtime Falcons/Chargers RB coach who in 1989 was the first-ever recipient of a Bill Walsh fellowship (then with the Oilers) — with offensive assistant Michael Bearden, fresh off a 2025 Bill Willis fellowship in Cleveland under Stefanski's old organization, as the inaugural fellow. The 2026 Bill Walsh Diversity Coaching Fellows: Khalid Blount, Clint Sintim, Justin Tuggle and Anthony Walker Jr. Tuggle is a former NFL linebacker and the son of franchise legend Jessie Tuggle; Walker spent eight seasons at LB in the league. Five extra sets of hands arrive just as the staff preps the June 16–18 minicamp install.",
+      category: "coaching",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-ollie-wilson-coaching-fellowship-bill-walsh-diversity",
+      sourceLabel: "atlantafalcons.com / AJC",
     },
     {
       title: "UFL TRYOUT WEEK — Falcons working out DT Jayden Peevy and WR Tay Martin, two spring-league standouts fresh off UFL stints, as the 90-man bubble churns",
