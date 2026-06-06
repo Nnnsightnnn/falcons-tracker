@@ -2152,12 +2152,12 @@ export const NEWS_DIGEST = {
       "Through three weeks of OTAs, Tua Tagovailoa has handled the bulk of the first-team snaps while Michael Penix Jr. — six months off ACL surgery — works individual and 7-on-7 only. Tua on the passer he's racing: 'Shoot, I'm impressed by what he's shown out there.' The final OTA block runs June 8–9 and 11; the next checkpoint is Penix's team-period clearance at the June 16–18 mandatory minicamp.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
-    photoId: "tua",
-    stampLabel: "QB · THE RACE",
+    photoId: "penix-jr",
+    stampLabel: "QB · ON THE RAMP",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
-    // Path is queued in ~/Vault/Notes/image-requests.md; see entry dated 2026-05-28.
-    coverImageUrl: "/falcons-tracker/assets/cover/2026-05-28-tua-accuracy.jpg",
+    // Path is queued in ~/Vault/Notes/image-requests.md; see entry dated 2026-06-06.
+    coverImageUrl: "/falcons-tracker/assets/cover/2026-06-06-penix-live.jpg",
   },
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "NBC Sports",
