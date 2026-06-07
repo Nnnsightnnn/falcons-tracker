@@ -2142,7 +2142,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-06T08:30:00Z",
+  generatedAt: "2026-06-07T08:30:00Z",
   cover: {
     kicker: "THE RACE TIGHTENS — Tua Takes the First-Team Reps as Penix Closes",
     headLine1: "Two lefties.",
@@ -2172,7 +2172,7 @@ export const NEWS_DIGEST = {
   topics: [
     {
       title: "MINICAMP ON THE HORIZON — the final OTA block runs June 8–9 and 11, then the first mandatory minicamp of the Stefanski era hits Flowery Branch June 16–18; Penix's team-period clearance is the checkpoint everyone's circling",
-      detail: "Atlantafalcons.com / ESPN offseason calendar (current, Sat Jun 6): the voluntary portion of the offseason is nearly over. With no weekend work, Atlanta's last OTA block resumes June 8–9 and 11, and the June 16–18 mandatory veteran minicamp — attendance required — is the first full-squad checkpoint of Kevin Stefanski's first year. The watch items: whether Michael Penix Jr. gets cleared for team periods (he has been individual + 7-on-7 only since OTAs opened), the LB rotation with Kendal Daniels and JD Bertrand working back, and first looks at how the Tua/Penix rep split changes when everything counts. After June 18 the building goes quiet until training camp opens July 22.",
+      detail: "Atlantafalcons.com / ESPN offseason calendar (current, Sun Jun 7): the voluntary portion of the offseason is nearly over. With no weekend work, Atlanta's last OTA block resumes tomorrow June 8–9 and 11, and the June 16–18 mandatory veteran minicamp — attendance required — is the first full-squad checkpoint of Kevin Stefanski's first year. The watch items: whether Michael Penix Jr. gets cleared for team periods (he has been individual + 7-on-7 only since OTAs opened), the LB rotation with Kendal Daniels and JD Bertrand working back, and first looks at how the Tua/Penix rep split changes when everything counts. After June 18 the building goes quiet until training camp opens July 22.",
       category: "general",
       sourceUrl: "https://www.espn.com/nfl/story/_/id/48387060/nfl-offseason-2026-every-32-team-otas-minicamp-key-dates",
       sourceLabel: "ESPN / atlantafalcons.com",
