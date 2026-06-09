@@ -27,7 +27,7 @@ export const PLAYERS = [
     stats: { completions: 166, attempts: 276, passYds: 1982, passTDs: 9, ints: 3, qbRating: 88.5 },
     form: 0,
     status: "pup",
-    injuryNote: "ACL rehab · torn Week 11 2025 · cleared for individual + 7-on-7 at OTAs (May 19), team periods later",
+    injuryNote: "ACL rehab · torn Week 11 2025 · individual + 7-on-7 only through OTAs; Stefanski (Jun 8) says he's 'hit every milestone' but 'we'll see' on 11-on-11 clearance by minicamp",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
     contract: { years: 4, total: 22080000, guaranteed: 22080000, apy: 5520000, throughYear: 2027, cap2026: 5900000 },
     career: [
@@ -1177,7 +1177,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "pup",
-    injuryNote: "Achilles rehab · torn late Nov 2025 · cleared for walkthroughs at OTAs (May 19)",
+    injuryNote: "Achilles rehab · torn late Nov 2025 · progressing but not practicing; cleared for walkthroughs only as of Jun 8",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4431194.png",
     contract: { years: 4, total: 5200000, guaranteed: 950000, apy: 1300000, throughYear: 2028, cap2026: 1100000 },
     career: [{ years: "2025–", team: "Atlanta Falcons", type: "NFL" }],
@@ -2142,14 +2142,14 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-08T08:48:00Z",
+  generatedAt: "2026-06-09T13:30:00Z",
   cover: {
     kicker: "THE RACE TIGHTENS — Tua Takes the First-Team Reps as Penix Closes",
     headLine1: "Two lefties.",
     headEm: "One job.",
     headLine3: "And the verdict's coming sooner than planned.",
     deck:
-      "Through three weeks of OTAs, Tua Tagovailoa has handled the bulk of the first-team snaps while Michael Penix Jr. — six months off ACL surgery — works individual and 7-on-7 only. Tua on the passer he's racing: 'Shoot, I'm impressed by what he's shown out there.' The final OTA block runs June 8–9 and 11; the next checkpoint is Penix's team-period clearance at the June 16–18 mandatory minicamp.",
+      "Through the OTA block, Tua Tagovailoa handled the bulk of the first-team snaps while Michael Penix Jr. — six-plus months off ACL surgery — worked individual and 7-on-7 only. Tua on the passer he's racing: 'Shoot, I'm impressed by what he's shown out there.' Atlanta's last media-open OTA practice came Monday, June 8; the next checkpoint is whether Penix gets cleared for team periods at the June 16–18 mandatory minicamp — Stefanski's answer Monday was a measured 'we'll see.'",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
@@ -2171,25 +2171,25 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "FINAL OTA BLOCK OPENS TODAY — Atlanta's last voluntary on-field work runs June 8–9 and 11, then the first mandatory minicamp of the Stefanski era hits Flowery Branch June 16–18; Penix's team-period clearance is the checkpoint everyone's circling",
-      detail: "Atlantafalcons.com / ESPN offseason calendar (current, Mon Jun 8): the voluntary portion of the offseason closes this week. The last OTA block opens today and runs June 8–9 and 11, and the June 16–18 mandatory veteran minicamp — attendance required — is the first full-squad checkpoint of Kevin Stefanski's first year. The watch items: whether Michael Penix Jr. (six-plus months off November ACL surgery, individual + 7-on-7 only since OTAs opened) gets cleared for team periods, the LB rotation with Kendal Daniels and JD Bertrand working back, and first looks at how the Tua/Penix rep split changes when everything counts. After June 18 the building goes quiet until training camp opens July 22.",
+      title: "'WE'LL SEE' ON PENIX — at Monday's final media-open OTA, Stefanski says Penix has hit every rehab milestone but stops short of guaranteeing 11-on-11 clearance before the offseason ends; the QB took a scheduled rest day",
+      detail: "Atlantafalcons.com / NBC Sports PFT / Pro Football Rumors / SI Falcons / BloggingDirty (filed Mon Jun 8, the spring's last practice open to cameras): Kevin Stefanski offered a measured update on Michael Penix Jr., saying the third-year QB has 'hit every milestone' in his rehab from the November ACL but answering 'we'll see' when asked if Penix will be cleared for 11-on-11 work before voluntary OTAs close. Penix — cleared for individual and 7-on-7 since OTAs opened, still held out of team periods — took a scheduled rest day Monday. Whether he reaches full team work at the June 16–18 mandatory minicamp, or Atlanta keeps proceeding with caution into training camp, is now the offseason's defining QB question. S Billy Bowman Jr. (Achilles) is progressing but still not practicing.",
+      category: "injuries",
+      sourceUrl: "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kevin-stefanski-well-see-if-michael-penix-is-cleared-for-11-on-11-work-at-minicamp",
+      sourceLabel: "NBC Sports PFT / atlantafalcons.com",
+    },
+    {
+      title: "BIJAN ON LONDON'S BAG — 'so happy' for his best friend's $141M deal, and on his own next-in-line extension: 'We'll see, man'; teammates say the London payday 'brings people together'",
+      detail: "Atlantafalcons.com / SI Falcons / BloggingDirty (filed Mon Jun 8, final media-open OTA): at the same podium where the QB race dominated, Bijan Robinson said he called Drake London to celebrate the receiver's new four-year, $141M extension — 'I was so happy for him ... he deserves everything he gets,' calling London one of his favorite teammates and his best friend. Asked about his own market-resetting extension — widely reported as the front office's next big-ticket item — Robinson smiled and said only, 'We'll see, man.' Matthew Bergeron framed London's deal as a locker-room lift: it 'brings people together' and 'gets the offense and team going.' The sequence the front office telegraphed all spring — London first, Bijan next — is now the public storyline.",
+      category: "contracts",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-practice-report-drake-london-extension-bijan-robinson",
+      sourceLabel: "atlantafalcons.com / SI Falcons",
+    },
+    {
+      title: "MINICAMP ON DECK — after Monday's final media-open OTA, the building's next full-squad checkpoint is the June 16–18 mandatory veteran minicamp, the first of the Stefanski era; then it goes quiet until camp opens July 22",
+      detail: "Atlantafalcons.com / ESPN offseason calendar (current, as of Tue Jun 9): the voluntary portion of the offseason is essentially done — Monday, June 8 was Atlanta's last OTA practice open to the media. The June 16–18 mandatory veteran minicamp — attendance required — is the first full-squad checkpoint of Kevin Stefanski's first year. The watch items: whether Michael Penix Jr. gets cleared for team periods, the LB rotation with Kendal Daniels and JD Bertrand working back, and first looks at how the Tua/Penix rep split changes when everything counts. After June 18 the building goes quiet until training camp opens July 22.",
       category: "general",
       sourceUrl: "https://www.espn.com/nfl/story/_/id/48387060/nfl-offseason-2026-every-32-team-otas-minicamp-key-dates",
       sourceLabel: "ESPN / atlantafalcons.com",
-    },
-    {
-      title: "FELLOWSHIP CLASS NAMED — Falcons launch the Ollie Wilson Coaching Fellowship (inaugural fellow: Michael Bearden) and announce four 2026 Bill Walsh Diversity Fellows, including Jessie Tuggle's son Justin",
-      detail: "Atlantafalcons.com / AJC / The Falcoholic / SI Falcons (filed Thu Jun 4): the team announced a new year-long Ollie Wilson Coaching Fellowship — named for the longtime Falcons/Chargers RB coach who in 1989 was the first-ever recipient of a Bill Walsh fellowship (then with the Oilers) — with offensive assistant Michael Bearden, fresh off a 2025 Bill Willis fellowship in Cleveland under Stefanski's old organization, as the inaugural fellow. The 2026 Bill Walsh Diversity Coaching Fellows: Khalid Blount, Clint Sintim, Justin Tuggle and Anthony Walker Jr. Tuggle is a former NFL linebacker and the son of franchise legend Jessie Tuggle; Walker spent eight seasons at LB in the league. Five extra sets of hands arrive just as the staff preps the June 16–18 minicamp install.",
-      category: "coaching",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-ollie-wilson-coaching-fellowship-bill-walsh-diversity",
-      sourceLabel: "atlantafalcons.com / AJC",
-    },
-    {
-      title: "UFL TRYOUT WEEK — Falcons working out DT Jayden Peevy and WR Tay Martin, two spring-league standouts fresh off UFL stints, as the 90-man bubble churns",
-      detail: "The Falcoholic / SI Falcons / Yardbarker (filed Wed Jun 3): Atlanta is bringing in a pair of United Football League players for workouts this week. DT Jayden Peevy (6'5, 308) played five seasons at Texas A&M and has appeared in six NFL games with 1.5 sacks while bouncing between practice squads; he'd add interior depth behind a DT room that's already churned this spring. WR Tay Martin, an NFL journeyman since 2022 who was productive in the UFL this year, has 3 catches for 72 yards and a TD in seven NFL games plus special-teams experience — the profile of a camp-body flier in a receiver room that's deep on top but muddled at the back end. No signings yet; both are tryouts.",
-      category: "general",
-      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-news/93920/falcons-working-out-pair-of-ufl-players-this-week-jayden-peevy-tay-martin",
-      sourceLabel: "The Falcoholic / SI Falcons",
     },
     {
       title: "PITTS' 'SIXTH-YEAR OPTION' — the franchise-tagged TE steps into 2026 with a mantra, a matured body and a new staff that sees him as 'a big piece of this thing'",
@@ -2218,13 +2218,6 @@ export const NEWS_DIGEST = {
       category: "contracts",
       sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-news/93857/falcons-officially-gain-2026-2027-cap-space-on-june-1-from-kirk-cousins-cut",
       sourceLabel: "The Falcoholic / Over The Cap",
-    },
-    {
-      title: "QB RACE COULD TIGHTEN EARLY — Tua taking the bulk of first-team snaps through two weeks of OTAs while Penix (individual + 7-on-7 only) keeps closing; AP: 'the competition may come sooner than expected'",
-      detail: "Associated Press / Atlanta News First / NFL.com (filed Sun May 31, updated Mon Jun 1): with Michael Penix Jr.'s rehab already allowing him to work individual drills and 7-on-7s, the starting battle between the two left-handers may arrive sooner than the Falcons planned. Tua Tagovailoa has taken the majority of the first-team reps through two weeks — and came away impressed by the man he's racing: 'Shoot, I'm impressed by what he's shown out there ... it's been good fun to go out there and compete with him. I'm trying to help him as much as I can.' Stefanski: 'What Mike's able to do right now in terms of individual and the seven-on-sevens is outstanding ... He's not 100%, but he's exactly where he needs to be.' The number that frames it all: Tua is on a one-year, $1.3M Falcons deal after Miami released him — eating an NFL-record $99M dead-cap charge and the $54M it still owed him for 2026. GM Ian Cunningham has said Tua gets a real shot at QB1 once Penix is fully healthy. Penix, unmoved: 'I'm running my own race. I can't look into another lane.' Next benchmark — team-period clearance at the June 16–18 mandatory minicamp.",
-      category: "general",
-      sourceUrl: "https://www.atlantanewsfirst.com/2026/06/01/falcons-qb-competition-between-penix-tagovailoa-could-come-sooner-than-expected/",
-      sourceLabel: "Atlanta News First / AP",
     },
     {
       title: "MATT RYAN BRINGS 'THROWBACK ENERGY' — the franchise passing king, now president of football, has been at every OTA practice: throwing to the receivers, advising Stefanski and Rees, addressing rookies at 'Falcons U'",
@@ -2285,9 +2278,30 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-06-06T08:30:00Z",
-  windowLabel: "OTA Media Window · May 19 → Jun 18",
+  generatedAt: "2026-06-09T13:30:00Z",
+  windowLabel: "OTA → Minicamp Window · May 19 → Jun 18",
   sessions: [
+    {
+      id: "bijan-robinson-2026-06-08",
+      speaker: "Bijan Robinson",
+      role: "Running Back",
+      date: "2026-06-08",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Final Media-Open OTA · Player Availability",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-practice-report-drake-london-extension-bijan-robinson",
+      transcriptUrl: "https://www.atlantafalcons.com/video/bijan-robinson-matthew-bergeron-others-on-the-team-s-development-through-otas-press-conference",
+      verified: true,
+      summary: "At Atlanta's final OTA practice open to the media, the day belonged to Drake London's freshly signed four-year, $141M extension — and Bijan Robinson, widely reported as the front office's next big-ticket item, used his podium to celebrate his teammate rather than lobby for himself. He recounted calling London the moment the news broke, and when asked about his own extension offered only a smiling 'We'll see, man.' LG Matthew Bergeron, at the same availability, framed the London deal as a locker-room lift.",
+      pullQuote: "Right when I saw it, I called him. I was so happy for him. He deserves it. He deserves everything that he gets.",
+      bullets: [
+        "On London's extension: 'Obviously, he's one of my favorite teammates, probably my top teammate of all time. That's my best friend. That's my brother'",
+        "Deflected his own contract question — reported as Atlanta's next major extension — with a smiling 'We'll see, man'",
+        "Spoke at the final OTA practice open to media members; the building's next checkpoint is the June 16–18 mandatory minicamp",
+        "Bergeron on the London deal: 'It just brings people together. It gets us going as an offense and as a team'",
+        "Bergeron added: 'He brings everybody along with him, so I'm just happy for Drake'",
+      ],
+      topics: ["drake-london-extension", "bijan-extension", "locker-room"],
+    },
     {
       id: "pitts-2026-05-27",
       speaker: "Kyle Pitts Sr.",
@@ -2388,25 +2402,6 @@ export const INTERVIEWS = {
         "Feels 'like himself' in throwing reps; trusts the training staff on what comes next",
       ],
       topics: ["qb-competition", "penix-acl", "week-1"],
-    },
-    {
-      id: "bijan-robinson-2026-05-19",
-      speaker: "Bijan Robinson",
-      role: "Running Back",
-      date: "2026-05-19",
-      venue: "Flowery Branch · Player Podium",
-      session: "OTA Day 2 · Player Availability",
-      sourceUrl: "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/bijan-robinson-excited-to-play-in-kevin-stefanski-tommy-rees-offense",
-      summary: "Robinson's first OTA podium of the new era was an unqualified endorsement of the coaching change. The All-Pro back framed Stefanski's wide-zone, run-first identity as a natural fit, singled out the screen game and Bill Callahan's line install as early bright spots, and made clear the offense intends to make the run game its backbone.",
-      pullQuote: "Kevin Stefanski, he's fire, bro. I like him a lot, and his offensive scheme.",
-      bullets: [
-        "Endorsed new HC Kevin Stefanski and his offensive scheme without reservation",
-        "Said the offense takes 'a lot of pride' in the run game — 'it helps everybody'",
-        "Praised new OL coach Bill Callahan's wide-zone install during early OTA work",
-        "Day 2 featured the offense's first screen-play package; Stefanski coached Robinson on the landmarks mid-drill",
-        "Spoke on the first OTA player podium alongside A.J. Terrell and Chris Lindstrom",
-      ],
-      topics: ["stefanski-offense", "run-game", "rees-install"],
     },
   ],
 };
