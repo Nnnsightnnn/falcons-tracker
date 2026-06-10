@@ -185,7 +185,7 @@ export const PLAYERS = [
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4426502.png",
-    contract: { years: 4, total: 141000000, guaranteed: 100000000, apy: 35250000, throughYear: 2030, cap2026: 16800000, note: "4yr/$141M extension signed Jun 2, 2026 (up to $150M w/ incentives, $100M gtd); plays 2026 on $16.82M 5th-yr option, extension runs 2027–2030" },
+    contract: { years: 4, total: 141000000, guaranteed: 100000000, apy: 35250000, throughYear: 2030, cap2026: 16800000, note: "4yr/$141M extension agreed Jun 2, officially signed Jun 9, 2026 (up to $150M w/ incentives, $100M gtd); plays 2026 on $16.82M 5th-yr option, extension runs 2027–2030" },
     career: [
       { years: "2022–", team: "Atlanta Falcons", type: "NFL · signed through 2030" },
       { years: "2019–2021", team: "USC", type: "College" },
@@ -2142,22 +2142,22 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-09T13:30:00Z",
+  generatedAt: "2026-06-10T13:30:00Z",
   cover: {
-    kicker: "THE RACE TIGHTENS — Tua Takes the First-Team Reps as Penix Closes",
-    headLine1: "Two lefties.",
-    headEm: "One job.",
-    headLine3: "And the verdict's coming sooner than planned.",
+    kicker: "PEN TO PAPER — The $141M Handshake Becomes Official in Flowery Branch",
+    headLine1: "Signed.",
+    headEm: "Sealed.",
+    headLine3: "Now London says he has to prove it.",
     deck:
-      "Through the OTA block, Tua Tagovailoa handled the bulk of the first-team snaps while Michael Penix Jr. — six-plus months off ACL surgery — worked individual and 7-on-7 only. Tua on the passer he's racing: 'Shoot, I'm impressed by what he's shown out there.' Atlanta's last media-open OTA practice came Monday, June 8; the next checkpoint is whether Penix gets cleared for team periods at the June 16–18 mandatory minicamp — Stefanski's answer Monday was a measured 'we'll see.'",
+      "One week after the agreement leaked, Drake London sat at a Flowery Branch podium Tuesday and made the four-year, $141M extension official, then immediately turned the page: 'I know it's a lot of money, and I've got to prove it still. That's what my mindset is right now.' GM Ian Cunningham called him 'exactly what we're building here.' The other clock still ticking: whether Michael Penix Jr. is cleared for 11-on-11 at next week's June 16-18 mandatory minicamp. Stefanski's Monday answer was still 'we'll see.'",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
-    photoId: "penix-jr",
-    stampLabel: "QB · ON THE RAMP",
+    photoId: "drake-london",
+    stampLabel: "WR · SIGNED THROUGH 2030",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
-    // Path is queued in ~/Vault/Notes/image-requests.md; see entry dated 2026-06-06.
-    coverImageUrl: "/falcons-tracker/assets/cover/2026-06-06-penix-live.jpg",
+    // Path is queued in ~/Vault/Notes/image-requests.md; see entry dated 2026-06-10.
+    coverImageUrl: "/falcons-tracker/assets/cover/2026-06-10-london-signed.jpg",
   },
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "NBC Sports",
@@ -2170,6 +2170,13 @@ export const NEWS_DIGEST = {
     "Washington Post", "FantasyPros",
   ],
   topics: [
+    {
+      title: "LONDON MAKES IT OFFICIAL — one week after the agreement, the WR1 signs the 4-year, $141M extension at a Flowery Branch podium Tuesday and vows to earn it: 'I know it's a lot of money, and I've got to prove it still'",
+      detail: "Atlantafalcons.com / AP (Washington Post, Atlanta News First) / CBS Sports (filed Tue Jun 9): Drake London put pen to paper on the extension agreed June 2 (4 years, $141M, up to $150M with incentives, $100M guaranteed, $35.25M APY, third-richest WR deal) and used his signing presser to reset expectations rather than celebrate: 'Raising my standard in every single category there is, becoming a player who's more consistent, and just trying to lead the team in any way possible. Leveling up in all ways.' He also said the honor he covets most is a captain's C, and name-checked the franchise wall: 10th in team receiving yards, chasing Julio ('he's tough to catch'). GM Ian Cunningham: 'Drake London represents exactly what we're building here ... This aligns with our philosophy of drafting, developing, and retaining our own.' London plays 2026 on his $16.82M fifth-year option; the new money runs 2027 through 2030.",
+      category: "contracts",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-sign-drake-london-contract-extension",
+      sourceLabel: "atlantafalcons.com / AP",
+    },
     {
       title: "'WE'LL SEE' ON PENIX — at Monday's final media-open OTA, Stefanski says Penix has hit every rehab milestone but stops short of guaranteeing 11-on-11 clearance before the offseason ends; the QB took a scheduled rest day",
       detail: "Atlantafalcons.com / NBC Sports PFT / Pro Football Rumors / SI Falcons / BloggingDirty (filed Mon Jun 8, the spring's last practice open to cameras): Kevin Stefanski offered a measured update on Michael Penix Jr., saying the third-year QB has 'hit every milestone' in his rehab from the November ACL but answering 'we'll see' when asked if Penix will be cleared for 11-on-11 work before voluntary OTAs close. Penix — cleared for individual and 7-on-7 since OTAs opened, still held out of team periods — took a scheduled rest day Monday. Whether he reaches full team work at the June 16–18 mandatory minicamp, or Atlanta keeps proceeding with caution into training camp, is now the offseason's defining QB question. S Billy Bowman Jr. (Achilles) is progressing but still not practicing.",
@@ -2192,18 +2199,18 @@ export const NEWS_DIGEST = {
       sourceLabel: "ESPN / atlantafalcons.com",
     },
     {
+      title: "DANIELS TRACKING FOR MINICAMP — the R4 LB has 'progressed quickly' from the foot injury that had him in a walking boot in May; a return to the practice field at next week's mandatory minicamp is now realistic",
+      detail: "The Falcoholic (OTA wrap, filed this week): rookie linebacker Kendal Daniels, spotted in a walking boot during initial workouts in May, has progressed quickly through rehab, working off to the side including stationary-bike sessions, and his return to the field could come as soon as mandatory minicamp June 16-18. The rest of the ledger holds: S Billy Bowman Jr. (Achilles, Nov 2025) is 'recovering well' per Stefanski and will be available for walkthroughs but still is not healthy enough for full participation, and Penix remains in throwing drills and 7-on-7s awaiting 11-on-11 clearance. The LB rotation (Deablo, Harris, Bertrand, Daniels) is one of minicamp's top watch items.",
+      category: "injuries",
+      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-news/94040/falcons-ota-news-injury-updates-michael-penix-billy-bowman-drake-london",
+      sourceLabel: "The Falcoholic",
+    },
+    {
       title: "PITTS' 'SIXTH-YEAR OPTION' — the franchise-tagged TE steps into 2026 with a mantra, a matured body and a new staff that sees him as 'a big piece of this thing'",
       detail: "Atlantafalcons.com (Tori McElhaney feature, filed Tue Jun 2): Kyle Pitts revealed the mantra behind his career-best 2025 — 'You have the opportunity to do something. Just do it. It's up to you.' — a season of 88 catches, 928 yards and five TDs (career highs in receptions and scores) that convinced the new regime to keep him on the $14.1M tag. Pitts calls the tag 'Ian taking a chance ... kind of like my fifth-year option, but it's a sixth-year option,' and says the new offense is 'adding more tools to my tool box' in route running and scheme. OC Tommy Rees: 'He's a great veteran for us right now ... the buy-in being at an extremely high level.' Pass-game coordinator Tanner Engstrand: 'I think Kyle is going to be a big piece of this thing.' Stefanski began his NFL career coaching tight ends, and his offenses have historically fed the position — the one-year audition is set up for both sides to win.",
       category: "contracts",
       sourceUrl: "https://www.atlantafalcons.com/news/matured-confident-kyle-pitts-franchise-tag-year",
       sourceLabel: "atlantafalcons.com",
-    },
-    {
-      title: "DRAKE LONDON GETS PAID — Falcons and their WR1 agree to a 4-year, $141M extension (up to $150M w/ incentives, $100M guaranteed); $35.25M APY is the 3rd-richest WR deal in the NFL, signed Tue Jun 2",
-      detail: "ESPN / NFL.com / CBS Sports / FOX Sports / Yahoo / Washington Post (filed Tue Jun 2): the new front office made its first marquee move. Atlanta and Drake London agreed to a four-year, $141M extension that can reach $150M through incentives and carries $100M guaranteed, locking the 24-year-old in through 2030. The $35.25M average annual value makes London the NFL's third-highest-paid receiver — behind only Seattle's Jaxon Smith-Njigba ($42.15M) and Cincinnati's Ja'Marr Chase ($40.25M). London still plays 2026 on his $16.82M fifth-year option; the new money kicks in 2027. It's the first major deal authored by GM Ian Cunningham and president of football Matt Ryan, and it answers the 'top of mind' refrain Cunningham had repeated all spring. London's reaction on X: 'RISE UP!!!' The signing flips the front office's offseason to-do list — with the WR1 done, Bijan Robinson's market-resetting extension moves to the front of the queue.",
-      category: "contracts",
-      sourceUrl: "https://www.nfl.com/news/nfl-network-falcons-wr-drake-london-agree-to-four-year-141-million-extension",
-      sourceLabel: "NFL.com / ESPN",
     },
     {
       title: "BIJAN IS NEXT IN LINE — with London locked up, the market-resetting Robinson extension moves to the front of Atlanta's queue; PFR/BR peg him to clear Derrick Henry ($15M) and chase Saquon's $20.6M AAV ceiling",
@@ -2255,13 +2262,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "DawgNation",
     },
     {
-      title: "OTA INJURY LEDGER (May 27) — R4 LB Kendal Daniels out of the walking boot and 'good to go' but not yet practicing; Andersen, Bowman and S Xavier Watts held out this week; Trice active off the edge",
-      detail: "AJC / atlantafalcons.com / The Falcoholic (Wed May 27 + Week 1): R4 LB Kendal Daniels, who watched the May 20 session in a boot on his right foot, is now out of it — Stefanski: 'He's good to go' — though Daniels still watched Wednesday's practice in shorts rather than participating. No substantial change for S Billy Bowman Jr. (Achilles, Nov 2025) or LB Troy Andersen (knee): Stefanski said neither will practice this week, but both are present, working off to the side and 'doing a terrific job' in rehab — 'Billy is right there ... not missing out on any mental reps.' S Xavier Watts was present but not actively involved in drills Wednesday. Earlier in Week 1, Bralen Trice (2024 ACL, re-aggravated in 2025) was active rotating off the edge in 7-on-7 and team periods — a real step for a player still chasing his first regular-season snap. A majority of starters on both sides participated in individual and team drills.",
-      category: "injuries",
-      sourceUrl: "https://www.ajc.com/sports/2026/05/5-things-we-learned-from-falcons-second-week-of-otas/",
-      sourceLabel: "AJC",
-    },
-    {
       title: "Madrid Week 9 — Falcons HOST the Bengals Nov 8, 9:30 AM ET at the Bernabéu (NFL Network)",
       detail: "NFL.com / Atlantafalcons.com / Bengals.com / Yahoo / NBC PFT (May 13-14): the international slate has Atlanta hosting Cincinnati (Burrow, Chase, Higgins) in Madrid Sun Nov 8, 9:30 AM ET at Santiago Bernabéu, the 70-year home of Real Madrid CF. NFL Network exclusive broadcast. It is the Bengals' first Madrid trip and first international game in seven years. CEO Greg Beadles: 'We are truly honored and deeply grateful for the opportunity to host the Cincinnati Bengals at the Bernabéu.' The game is Atlanta's 6th international appearance (Toronto '13, London '14/'21/'23, Berlin '25) and 5th trip to Europe in six seasons. It falls one week before the Week 11 bye — a clean travel runway.",
       category: "games",
@@ -2278,9 +2278,30 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-06-09T13:30:00Z",
+  generatedAt: "2026-06-10T13:30:00Z",
   windowLabel: "OTA → Minicamp Window · May 19 → Jun 18",
   sessions: [
+    {
+      id: "drake-london-2026-06-09",
+      speaker: "Drake London",
+      role: "Wide Receiver",
+      date: "2026-06-09",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Contract Extension Signing · Press Conference",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-sign-drake-london-contract-extension",
+      transcriptUrl: "https://www.atlantafalcons.com/video/drake-london-speaks-to-the-media-on-atlanta-falcons-contract-extension-press-conference",
+      verified: true,
+      summary: "One week after the agreement was reported, London formally signed his four-year, $141M extension and met the media. The session was striking for its lack of victory lap: London framed the deal as a debt to repay, said the honor he covets most is a captain's C, and measured himself against the franchise wall, where he sits 10th in receiving yards chasing Julio Jones. GM Ian Cunningham's accompanying statement cast the deal as proof of a draft-develop-retain philosophy.",
+      pullQuote: "I know it's a lot of money, and I've got to prove it still. That's what my mindset is right now.",
+      bullets: [
+        "On what comes next: 'Raising my standard in every single category there is, becoming a player who's more consistent, and just trying to lead the team in any way possible. Leveling up in all ways'",
+        "On staying through three regimes: 'I couldn't be happier to be here in Atlanta and staying here, even though its been different coaches, different teammates, different regimes ... I am glad to still be representing the Falcons'",
+        "On legacy: 'One of my reasons is to be legendary, to be remembered ... my name might be up on a wall somewhere' — currently 10th in franchise receiving yards, and on Julio: 'he's tough to catch'",
+        "Cunningham's statement: 'Drake London represents exactly what we're building here ... This aligns with our philosophy of drafting, developing, and retaining our own'",
+        "Deal mechanics: 4 years, $141M ($35.25M APY, $100M guaranteed, up to $150M with incentives), through 2030; 2026 still on the $16.82M fifth-year option",
+      ],
+      topics: ["drake-london-extension", "contracts", "leadership"],
+    },
     {
       id: "bijan-robinson-2026-06-08",
       speaker: "Bijan Robinson",
@@ -2384,24 +2405,6 @@ export const INTERVIEWS = {
         "Refused to confirm a Week-1 starter, declined a public timeline for Penix's full clearance",
       ],
       topics: ["qb-competition", "penix-acl", "rees-install"],
-    },
-    {
-      id: "penix-jr-2026-05-19",
-      speaker: "Michael Penix Jr.",
-      role: "Quarterback",
-      date: "2026-05-19",
-      venue: "Flowery Branch · QB Podium",
-      session: "OTA Day 2 · Player Availability",
-      sourceUrl: "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/michael-penix-im-running-my-own-race-cant-look-into-another-lane",
-      summary: "Penix's first OTA podium since the November ACL was measured and explicitly allergic to a public timeline. He framed Tua's arrival not as a competition but as a parallel race, six months out from surgery and pointing at Pittsburgh Week 1 — without ever using the words.",
-      pullQuote: "I'm running my own race. I can't look into another lane. But we are working together. That's what it's all about.",
-      bullets: [
-        "Six months post-op from the November ACL — 'taking it one day at a time' on the rehab",
-        "Targeting Week 1 vs. Pittsburgh as the personal goal, declined to publicly commit",
-        "On Tua: 'we are working together' — explicitly frames the room as parallel, not zero-sum",
-        "Feels 'like himself' in throwing reps; trusts the training staff on what comes next",
-      ],
-      topics: ["qb-competition", "penix-acl", "week-1"],
     },
   ],
 };

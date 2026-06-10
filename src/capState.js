@@ -50,6 +50,7 @@ export const CAP_STATE = {
     },
   ],
   recentMoves: [
+    { date: "2026-06-09", description: "WR Drake London officially signs the 4yr/$141M extension (agreed Jun 2) at a Flowery Branch press conference; 'I know it's a lot of money, and I've got to prove it still'" },
     { date: "2026-06-02", description: "Signed WR Drake London to a 4yr/$141M extension (up to $150M w/ incentives, $100M gtd, $35.25M APY — 3rd-highest WR); runs through 2030, 2026 still on $16.82M 5th-yr option. First major deal of the Cunningham/Ryan front office" },
     { date: "2026-06-01", description: "Kirk Cousins post-June-1 designation officially clears +$2.1M in 2026 and +$45M in 2027 cap space (OTC); dead money tail is $22.5M in 2026, $12.5M in 2027" },
     { date: "2026-05-14", description: "Signed CB Darren Hall (2021 R4 reunion, vet stops IND/ARI); released S Tysheem Johnson in corresponding move" },
