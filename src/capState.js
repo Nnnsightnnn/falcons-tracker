@@ -28,7 +28,7 @@ export const CAP_STATE = {
       playerId: "bijan",
       status: "extension-eligible",
       priority: 1,
-      rationale: "Eligible after 3 accrued seasons; $11.32M 5th-yr option exercised for 2027. Now the front office's top priority after the London deal. Projected to clear Derrick Henry ($15M AAV) and chase Saquon's $20.6M ceiling. Schefter expects a deal 'this offseason.'",
+      rationale: "Eligible after 3 accrued seasons; $11.32M 5th-yr option exercised for 2027. Talks now underway per ESPN's Graziano (Jun 8), who projects 3yr/$60M with $25M fully guaranteed (just behind Saquon's league-leading $20.6M AAV). No urgency with team control through 2027, but a pre-camp strike would surprise no one.",
     },
     {
       playerId: "pitts",

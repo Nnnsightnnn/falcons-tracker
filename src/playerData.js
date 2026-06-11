@@ -816,7 +816,7 @@ export const PLAYERS = [
     stats: { tackles: 31, sacks: 4.5 },
     form: 7.6,
     status: "active",
-    injuryNote: "Rookie contributor · high-upside",
+    injuryNote: "Away from team during Miami-Dade pretrial program · not expected at June 16-18 minicamp (Rapoport)",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/5081394.png",
     contract: { years: 4, total: 14500000, guaranteed: 14500000, apy: 3625000, throughYear: 2028, cap2026: 3350000 },
     career: [{ years: "2025–", team: "Atlanta Falcons", type: "NFL" }],
@@ -1404,7 +1404,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "active",
-    injuryNote: null,
+    injuryNote: "Foot (walking boot in May) · out of the boot and 'good to go' per Stefanski · expected on field at minicamp",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4595343.png",
     contract: { years: 4, total: 4750000, guaranteed: 700000, apy: 1187500, throughYear: 2029, cap2026: 900000 },
     career: [
@@ -2142,7 +2142,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-10T13:30:00Z",
+  generatedAt: "2026-06-11T09:45:00Z",
   cover: {
     kicker: "PEN TO PAPER — The $141M Handshake Becomes Official in Flowery Branch",
     headLine1: "Signed.",
@@ -2160,16 +2160,35 @@ export const NEWS_DIGEST = {
     coverImageUrl: "/falcons-tracker/assets/cover/2026-06-10-london-signed.jpg",
   },
   sources: [
-    "Atlanta Falcons Official", "ESPN", "NFL.com", "NBC Sports",
-    "Pro Football Talk", "Pro Football Rumors", "The Falcoholic", "SI Falcons",
-    "Heavy.com", "Yahoo Sports", "AJC", "Bleacher Report", "Yardbarker",
-    "BloggingDirty", "ClutchPoints", "CBS Sports", "The Athletic", "TWSN",
-    "Spotrac", "Over The Cap", "National Today", "RotoWire", "FOX Sports",
-    "Bengals.com", "FOX 5 Atlanta", "Last Word On Sports", "DawgNation",
-    "Roundtable", "Detroit Football Journal", "BVM Sports", "Stampede Blue", "AOL",
-    "Washington Post", "FantasyPros",
+    "Atlanta Falcons Official", "ESPN", "NFL.com", "NFL Network",
+    "NBC Sports / Pro Football Talk", "Pro Football Rumors", "The Falcoholic",
+    "SI Falcons", "AJC", "Bleacher Report", "ClutchPoints", "Heavy.com",
+    "Yahoo Sports", "CBS Sports", "Washington Post", "BloggingDirty",
+    "Audacy 92.9 The Game", "Yardbarker", "Over The Cap", "Spotrac",
+    "Bengals.com", "FantasyPros",
   ],
   topics: [
+    {
+      title: "VAN PELT CALLS IT STRAIGHT: NO QB BATTLE YET. 'There's no competition until we can actually evaluate him equally,' the QB coach says of Tua vs. Penix, conceding the rep count 'gets a little lopsided toward Tua'",
+      detail: "ESPN (Marc Raimondi) / NBC Sports PFT / NFL.com / Bleacher Report (published Mon Jun 8 evening, the storyline driving QB coverage into minicamp week): quarterbacks coach Alex Van Pelt put the plainest frame yet on Atlanta's QB room: 'It's tough to have a competition when both guys aren't competing at the same level right now. So, it's hard, and it'll come. It'll happen at some point. Mike's done a great job of getting himself to where he is right now. Really impressive to take 7-on-7 reps and go out and compete ... But really, there's no competition until we can actually evaluate him equally.' Tua Tagovailoa is taking all first-team snaps while Penix stays limited to individual and 7-on-7 work; the staff splits reps 'as evenly as we can without Mike taking team reps,' with Penix loading up on extra 7-on-7 reps to compensate. The minicamp-week takeaway: until Penix is cleared, Tua's lead in the rep book compounds by the practice.",
+      category: "coaching",
+      sourceUrl: "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/alex-van-pelt-falcons-qb-battle-wont-begin-until-michael-penix-is-cleared",
+      sourceLabel: "ESPN / NBC Sports PFT",
+    },
+    {
+      title: "PEARCE NOT EXPECTED AT MINICAMP, per NFL Network's Rapoport; asked when the team will address his edge rusher's status, Stefanski offered only: 'I'll deal with next week next week'",
+      detail: "NFL Network (Ian Rapoport) / ClutchPoints / Audacy 92.9 The Game / SI (reported in recent days, ahead of the Jun 16-18 camp): James Pearce Jr. is not expected to attend mandatory minicamp as he continues to navigate his Miami-Dade legal process. Pearce accepted a pretrial intervention program in late May (12 months; all charges dropped on completion, per his attorney) and has stayed away from the entire voluntary offseason program. Minicamp is the offseason's first mandatory checkpoint, which makes any absence a fineable event unless the club excuses it. Stefanski declined to engage at his final OTA availability: 'I'll deal with next week next week.' The football stakes ride along: Atlanta posted the NFL's second-most sacks in 2025 and returns its top five sackers, Pearce among them.",
+      category: "general",
+      sourceUrl: "https://clutchpoints.com/nfl/atlanta-falcons/falcons-news-kevin-stefanski-james-pearce-jr-question-mandatory-minicamp",
+      sourceLabel: "NFL Network / ClutchPoints",
+    },
+    {
+      title: "BIJAN TALKS ARE LIVE — Falcons have 'engaged in talks' on a Robinson extension per ESPN's Graziano, who projects a three-year, $60M deal with $25M fully guaranteed; PFR notes the exercised 2027 option means Atlanta can move fast or wait",
+      detail: "Pro Football Rumors / ESPN (Dan Graziano), posted Mon Jun 8: the next domino after Drake London is officially in motion. Atlanta has engaged in extension talks with Bijan Robinson, per Graziano, who projects a three-year, $60M extension with $25M fully guaranteed. At $20M per year that would slot Robinson just behind Saquon Barkley's league-leading $20.6M AAV and ahead of Christian McCaffrey ($19M) and De'Von Achane ($16M). PFR notes the leverage picture: Robinson's 2027 fifth-year option is already exercised, so the team faces no urgency, though neither side would be surprised by a quick strike before camp. The Jahmyr Gibbs subplot looms over the market: some around the league expect the Lions back to land the richer deal, and neither RB's camp wants to set the ceiling first.",
+      category: "contracts",
+      sourceUrl: "https://www.profootballrumors.com/2026/06/falcons-discussing-extension-with-rb-bijan-robinson",
+      sourceLabel: "Pro Football Rumors / ESPN",
+    },
     {
       title: "LONDON MAKES IT OFFICIAL — one week after the agreement, the WR1 signs the 4-year, $141M extension at a Flowery Branch podium Tuesday and vows to earn it: 'I know it's a lot of money, and I've got to prove it still'",
       detail: "Atlantafalcons.com / AP (Washington Post, Atlanta News First) / CBS Sports (filed Tue Jun 9): Drake London put pen to paper on the extension agreed June 2 (4 years, $141M, up to $150M with incentives, $100M guaranteed, $35.25M APY, third-richest WR deal) and used his signing presser to reset expectations rather than celebrate: 'Raising my standard in every single category there is, becoming a player who's more consistent, and just trying to lead the team in any way possible. Leveling up in all ways.' He also said the honor he covets most is a captain's C, and name-checked the franchise wall: 10th in team receiving yards, chasing Julio ('he's tough to catch'). GM Ian Cunningham: 'Drake London represents exactly what we're building here ... This aligns with our philosophy of drafting, developing, and retaining our own.' London plays 2026 on his $16.82M fifth-year option; the new money runs 2027 through 2030.",
@@ -2200,24 +2219,17 @@ export const NEWS_DIGEST = {
     },
     {
       title: "DANIELS TRACKING FOR MINICAMP — the R4 LB has 'progressed quickly' from the foot injury that had him in a walking boot in May; a return to the practice field at next week's mandatory minicamp is now realistic",
-      detail: "The Falcoholic (OTA wrap, filed this week): rookie linebacker Kendal Daniels, spotted in a walking boot during initial workouts in May, has progressed quickly through rehab, working off to the side including stationary-bike sessions, and his return to the field could come as soon as mandatory minicamp June 16-18. The rest of the ledger holds: S Billy Bowman Jr. (Achilles, Nov 2025) is 'recovering well' per Stefanski and will be available for walkthroughs but still is not healthy enough for full participation, and Penix remains in throwing drills and 7-on-7s awaiting 11-on-11 clearance. The LB rotation (Deablo, Harris, Bertrand, Daniels) is one of minicamp's top watch items.",
+      detail: "The Falcoholic (OTA wrap, filed this week): rookie linebacker Kendal Daniels, spotted in a walking boot during initial workouts in May, has progressed quickly through rehab, working off to the side including stationary-bike sessions, and his return to the field could come as soon as mandatory minicamp June 16-18. Stefanski has since confirmed the trajectory: 'Not going to get into all specifics, but he's good to go. He's out of the boot.' The rest of the ledger holds: S Billy Bowman Jr. (Achilles, Nov 2025) is 'recovering well' per Stefanski and will be available for walkthroughs but still is not healthy enough for full participation, and Penix remains in throwing drills and 7-on-7s awaiting 11-on-11 clearance. The LB rotation (Deablo, Harris, Bertrand, Daniels) is one of minicamp's top watch items.",
       category: "injuries",
       sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-news/94040/falcons-ota-news-injury-updates-michael-penix-billy-bowman-drake-london",
       sourceLabel: "The Falcoholic",
     },
     {
       title: "PITTS' 'SIXTH-YEAR OPTION' — the franchise-tagged TE steps into 2026 with a mantra, a matured body and a new staff that sees him as 'a big piece of this thing'",
-      detail: "Atlantafalcons.com (Tori McElhaney feature, filed Tue Jun 2): Kyle Pitts revealed the mantra behind his career-best 2025 — 'You have the opportunity to do something. Just do it. It's up to you.' — a season of 88 catches, 928 yards and five TDs (career highs in receptions and scores) that convinced the new regime to keep him on the $14.1M tag. Pitts calls the tag 'Ian taking a chance ... kind of like my fifth-year option, but it's a sixth-year option,' and says the new offense is 'adding more tools to my tool box' in route running and scheme. OC Tommy Rees: 'He's a great veteran for us right now ... the buy-in being at an extremely high level.' Pass-game coordinator Tanner Engstrand: 'I think Kyle is going to be a big piece of this thing.' Stefanski began his NFL career coaching tight ends, and his offenses have historically fed the position — the one-year audition is set up for both sides to win.",
+      detail: "Atlantafalcons.com (Tori McElhaney feature, filed Tue Jun 2): Kyle Pitts revealed the mantra behind his career-best 2025 — 'You have the opportunity to do something. Just do it. It's up to you.' — a season of 88 catches, 928 yards and five TDs (career highs in receptions and scores) that convinced the new regime to keep him on the $14.1M tag. Pitts calls the tag 'Ian taking a chance ... kind of like my fifth-year option, but it's a sixth-year option,' and says the new offense is 'adding more tools to my tool box' in route running and scheme. OC Tommy Rees: 'He's a great veteran for us right now ... the buy-in being at an extremely high level.' Pass-game coordinator Tanner Engstrand: 'I think Kyle is going to be a big piece of this thing.' Stefanski began his NFL career coaching tight ends, and his offenses have historically fed the position — the one-year audition is set up for both sides to win. The calendar adds a wrinkle: July 15 is the league deadline for tagged players to sign multi-year deals; absent an agreement by then, Pitts plays 2026 on the one-year tag.",
       category: "contracts",
       sourceUrl: "https://www.atlantafalcons.com/news/matured-confident-kyle-pitts-franchise-tag-year",
       sourceLabel: "atlantafalcons.com",
-    },
-    {
-      title: "BIJAN IS NEXT IN LINE — with London locked up, the market-resetting Robinson extension moves to the front of Atlanta's queue; PFR/BR peg him to clear Derrick Henry ($15M) and chase Saquon's $20.6M AAV ceiling",
-      detail: "Bleacher Report / Pro Football Rumors / FantasyPros / SI Falcons (filed Tue Jun 2, hours after the London deal): the receiver done, the running back is up. With Drake London's $141M extension off the board, the front office's next big-ticket item is Bijan Robinson, and the projections only point up. Robinson — two straight 1,400+ rushing seasons, 21 rushing TDs over that span, 79 catches for 820 yards in 2025, a 2025 first-team All-Pro — is expected to break into the upper echelon of the RB market: past Derrick Henry's $15M AAV, approaching or eclipsing Christian McCaffrey's $19M, and potentially pushing toward Saquon Barkley's league-leading $20.6M/yr. Atlanta already exercised his $11.32M fifth-year option for 2027 as a placeholder; Schefter has said an Atlanta deal is coming 'this offseason.' SI flags one roadblock: Atlanta has no urgency with Bijan under team control through 2027, so the deal could still wait. London first, Bijan next — the sequence the front office telegraphed all spring is now playing out.",
-      category: "contracts",
-      sourceUrl: "https://bleacherreport.com/articles/25433278-new-nfl-rumors-bijan-robinson-contract-extension-falcons-after-drake-london-deal",
-      sourceLabel: "Bleacher Report / PFR",
     },
     {
       title: "COUSINS CAP SAVINGS HIT THE BOOKS — the post-June-1 designation officially clears +$2.1M in 2026 and +$45M in 2027; Atlanta now sits ~$19.3M under, ~$125M projected for 2027 (Over The Cap)",
@@ -2248,20 +2260,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com",
     },
     {
-      title: "PEARCE LEGAL UPDATE — edge rusher accepts a Miami-Dade pretrial intervention program; all charges drop if he completes the 12-month term, his attorney tells the AJC",
-      detail: "AJC (reported Tue May 26): James Pearce Jr.'s attorney, Yale Sanford, told the paper that Pearce has accepted an offer to enter a Miami-Dade County state intervention program. If he completes the 12-month program, all charges from his case — initially three felonies and a misdemeanor tied to an alleged incident with his ex-girlfriend, WNBA player Rickea Jackson — will be dropped. Pearce has not attended the Falcons' voluntary offseason program while navigating the case. Stefanski, asked Wednesday: 'In constant communication with all parties, but continuing to wait for more information to come out.' The team otherwise declined comment.",
-      category: "general",
-      sourceUrl: "https://www.ajc.com/sports/2026/05/5-things-we-learned-from-falcons-second-week-of-otas/",
-      sourceLabel: "AJC",
-    },
-    {
-      title: "BRANCH'S BREAKOUT WEEK — 'fast and sudden' in Week 1, then back at the JUGS late with Zaccheaus after Day 1 of Week 2; Stefanski wants him as a true slot",
-      detail: "AJC / BloggingDirty / atlantafalcons.com / ESPN / SI Falcons / DawgNation / Roundtable (combined OTA Week 1 + Week 2 Day 1 coverage, May 18-26): R3 WR Zachariah Branch (Georgia, No. 79) has been the offseason's clearest rookie breakout. Across the first three practices the AJC and senior reporter Will McFadden both flagged the 5'8 / 177 returner-gadget weapon as the standout — 'fast and sudden,' with an explosive catch-and-run during an offense-vs-defense period. After Week 2 Day 1 the cameras caught Branch staying late at the JUGS with Zaccheaus, the only vet in that group. Stefanski's vision: a true slot who can also align outside — Branch carried 75%+ of his career snaps from the slot at USC and then Georgia. Zaccheaus on the rookie: 'He's so eager to learn ... athletically very gifted.' Branch was also invited to the NFLPA Rookie Premiere.",
-      category: "general",
-      sourceUrl: "https://www.dawgnation.com/football/much-like-he-did-georgia-zachariah-branch-making-immediate-impact-atlanta-falcons/L6JEDGNGGFFC5NPIX72TI3G5ZM/",
-      sourceLabel: "DawgNation",
-    },
-    {
       title: "Madrid Week 9 — Falcons HOST the Bengals Nov 8, 9:30 AM ET at the Bernabéu (NFL Network)",
       detail: "NFL.com / Atlantafalcons.com / Bengals.com / Yahoo / NBC PFT (May 13-14): the international slate has Atlanta hosting Cincinnati (Burrow, Chase, Higgins) in Madrid Sun Nov 8, 9:30 AM ET at Santiago Bernabéu, the 70-year home of Real Madrid CF. NFL Network exclusive broadcast. It is the Bengals' first Madrid trip and first international game in seven years. CEO Greg Beadles: 'We are truly honored and deeply grateful for the opportunity to host the Cincinnati Bengals at the Bernabéu.' The game is Atlanta's 6th international appearance (Toronto '13, London '14/'21/'23, Berlin '25) and 5th trip to Europe in six seasons. It falls one week before the Week 11 bye — a clean travel runway.",
       category: "games",
@@ -2278,7 +2276,7 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-06-10T13:30:00Z",
+  generatedAt: "2026-06-11T09:45:00Z",
   windowLabel: "OTA → Minicamp Window · May 19 → Jun 18",
   sessions: [
     {
@@ -2322,6 +2320,27 @@ export const INTERVIEWS = {
         "Bergeron added: 'He brings everybody along with him, so I'm just happy for Drake'",
       ],
       topics: ["drake-london-extension", "bijan-extension", "locker-room"],
+    },
+    {
+      id: "van-pelt-2026-06-03",
+      speaker: "Alex Van Pelt",
+      role: "Quarterbacks Coach",
+      date: "2026-06-03",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "OTA Week 3 · Assistant Coaches Availability (quotes published Jun 8)",
+      sourceUrl: "https://www.espn.com/nfl/story/_/id/49003555/qb-coach-falcons-qb1-battle-penix-fully-healthy",
+      transcriptUrl: "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/alex-van-pelt-falcons-qb-battle-wont-begin-until-michael-penix-is-cleared",
+      verified: true,
+      summary: "Speaking at a midweek assistants availability (his remarks published June 8 by ESPN's Marc Raimondi and amplified by NBC's Pro Football Talk), Van Pelt gave the bluntest framing of the spring on the QB room: there is no Tua-Penix competition yet, and there cannot be one until Michael Penix Jr. is cleared to do everything Tua Tagovailoa is doing. He walked through the rep math behind the imbalance and praised Penix's rehab discipline along the way.",
+      pullQuote: "It's tough to have a competition when both guys aren't competing at the same level right now.",
+      bullets: [
+        "The full thought: 'So, it's hard, and it'll come. It'll happen at some point. Mike's done a great job of getting himself to where he is right now. Really impressive to take 7-on-7 reps and go out and compete ... But really, there's no competition until we can actually evaluate him equally'",
+        "On the rep split: 'We split the reps as evenly as we can without Mike taking team reps. It gets a little lopsided toward Tua'",
+        "Revealed Penix is taking MORE 7-on-7 reps than Tua to offset the missing 11-on-11 work",
+        "Tua continues to take all first-team snaps; Penix remains limited to individual drills and 7-on-7 (ACL surgery was Nov 25)",
+        "Stefanski, separately, on Penix's rehab: 'He's hitting every milestone that he's supposed to hit ... not going to put any timeframes out there just yet'",
+      ],
+      topics: ["qb-competition", "penix-acl", "rep-split"],
     },
     {
       id: "pitts-2026-05-27",
@@ -2385,26 +2404,6 @@ export const INTERVIEWS = {
         "Aukerman on Branch: the returner 'caught our eye early on' in the pre-draft evaluation",
       ],
       topics: ["rees-install", "qb-competition", "van-pelt", "branch-returns"],
-    },
-    {
-      id: "stefanski-2026-05-19",
-      speaker: "Kevin Stefanski",
-      role: "Head Coach",
-      date: "2026-05-19",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "OTA Day 2 · Media Availability",
-      sourceUrl: "https://www.atlantafalcons.com/video/atlanta-falcons-head-coach-kevin-stefanski-ota-media-availability-may-19-2026-press-conference",
-      transcriptUrl: "https://www.youtube.com/watch?v=Jf8WdaEbCFY",
-      verified: true,
-      summary: "Stefanski opened the periodic media window by formalizing the QB plan: intentional rep rotation between Tua and Penix in everything except 11-on-11 team periods, with Penix still held out of full team work as he ramps from his November ACL. The first words from the new head coach about his quarterbacks were structural, not promotional — a coach refusing to crown either, scripting the competition instead. He credited Tommy Rees with running the cadence.",
-      pullQuote: "One guy will be up first one period, and then switch the next period — and rotate every single day.",
-      bullets: [
-        "QB1 reps to be split intentionally between Tua and Penix every period, every drill — Rees enforces the cadence",
-        "Penix limited to individual and 7-on-7 — no team-period work yet, 'that time is coming'",
-        "Health room: 'everybody is doing really well, all in different stages of what they can do and when'",
-        "Refused to confirm a Week-1 starter, declined a public timeline for Penix's full clearance",
-      ],
-      topics: ["qb-competition", "penix-acl", "rees-install"],
     },
   ],
 };
