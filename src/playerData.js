@@ -579,8 +579,8 @@ export const PLAYERS = [
     acquired: "fa-2024",
     stats: {},
     form: 6.1,
-    status: "active",
-    injuryNote: null,
+    status: "pup",
+    injuryNote: "Placed on Reserve/PUP Jun 11, 2026. Missed all of 2025 after summer ankle surgery; designated to return Oct 22 but never activated from IR.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/2973014.png",
     contract: { years: 1, total: 1500000, guaranteed: 200000, apy: 1500000, throughYear: 2026, cap2026: 1500000 },
     career: [{ years: "2024–", team: "Atlanta Falcons", type: "NFL" }],
@@ -2142,7 +2142,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-11T09:45:00Z",
+  generatedAt: "2026-06-12T09:45:00Z",
   cover: {
     kicker: "PEN TO PAPER — The $141M Handshake Becomes Official in Flowery Branch",
     headLine1: "Signed.",
@@ -2168,6 +2168,34 @@ export const NEWS_DIGEST = {
     "Bengals.com", "FantasyPros",
   ],
   topics: [
+    {
+      title: "NORTON TO RESERVE/PUP: Falcons place OT Storm Norton on the Reserve/Physically Unable to Perform list Thursday afternoon; he has not played a snap since 2025 ankle surgery and was never activated off IR last season",
+      detail: "Atlantafalcons.com (Will McFadden, filed Thu Jun 11, 3:33 PM): the team placed veteran tackle Storm Norton on Reserve/PUP, formalizing what 2025 already suggested. Norton underwent ankle surgery last summer, opened the season on IR, was designated to return Oct 22, and saw his 21-day activation window expire without ever suiting up. The 6-foot-7 swing tackle joined Atlanta in 2023 and made three starts in Weeks 14-16 of that season while Kaleb McGary was hurt. The move thins an OT room already reshaped this offseason: McGary retired in April, Jawaan Taylor signed to start at RT, and rookie Ethan Onianwa plus Michael Jerrell round out the depth.",
+      category: "injuries",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-storm-norton-reserve-physically-unable-perform",
+      sourceLabel: "atlantafalcons.com",
+    },
+    {
+      title: "QUIET FRIDAY, LOUD TUESDAY: OTAs are in the books and the June 16-18 mandatory minicamp is now the offseason's last full-squad checkpoint; the Penix 11-on-11 decision headlines the watch list",
+      detail: "Atlantafalcons.com / ESPN offseason calendar (current, Fri Jun 12): the voluntary program is done. Monday Jun 8 was the last OTA open to media, and the team site closed the spring Friday with an OTA wrap edition of its Friday Five podcast. Next up is the first mandatory minicamp of the Stefanski era, Tuesday through Thursday. The watch items: whether Michael Penix Jr. is cleared for team periods, whether James Pearce Jr. reports, Kendal Daniels returning to the field, and how the Tua-Penix rep split shifts when attendance counts. After Jun 18 the building goes dark until camp opens Jul 22.",
+      category: "general",
+      sourceUrl: "https://www.espn.com/nfl/story/_/id/48387060/nfl-offseason-2026-every-32-team-otas-minicamp-key-dates",
+      sourceLabel: "ESPN / atlantafalcons.com",
+    },
+    {
+      title: "'TRUST YOUR FEET': the three words guiding Atlanta's QB competition: with Penix limited, the staff is building its Tua-vs-Penix evaluation around timing, rhythm and footwork",
+      detail: "Atlantafalcons.com (feature, published this week ahead of minicamp): the team site pulled back the curtain on how the coaches plan to judge a quarterback competition in which one passer cannot yet take team reps. The answer is mechanical: timing, rhythm and footwork, distilled into the room's three-word mantra, trust your feet. The framing matters because it gives the staff a common yardstick that works in 7-on-7 (where Penix lives for now) and 11-on-11 (where Tua Tagovailoa is taking every first-team snap), a bridge until the competition can be run, in Alex Van Pelt's word, equally.",
+      category: "coaching",
+      sourceUrl: "https://www.atlantafalcons.com/news/trust-your-feet-michael-penix-tua-tagovailoa-quarterback-competition",
+      sourceLabel: "atlantafalcons.com",
+    },
+    {
+      title: "LONDON'S NEXT GOAL ISN'T MONEY: fresh off the $141M signing, the WR1 says the honor he covets most is a captain's C on his chest",
+      detail: "Atlantafalcons.com (feature, published this week): the team site followed London's Tuesday signing with a piece on what is driving him now. Championships and accolades, sure, but London says the recognition he wants most is being voted a team captain, an honor decided by teammates, not the front office. It extends the tone he set at the signing podium, where he framed the extension as a debt to repay ('I know it's a lot of money, and I've got to prove it still') rather than a finish line.",
+      category: "contracts",
+      sourceUrl: "https://www.atlantafalcons.com/news/drake-london-next-goal-may-not-be-what-you-think-captain-extension",
+      sourceLabel: "atlantafalcons.com",
+    },
     {
       title: "VAN PELT CALLS IT STRAIGHT: NO QB BATTLE YET. 'There's no competition until we can actually evaluate him equally,' the QB coach says of Tua vs. Penix, conceding the rep count 'gets a little lopsided toward Tua'",
       detail: "ESPN (Marc Raimondi) / NBC Sports PFT / NFL.com / Bleacher Report (published Mon Jun 8 evening, the storyline driving QB coverage into minicamp week): quarterbacks coach Alex Van Pelt put the plainest frame yet on Atlanta's QB room: 'It's tough to have a competition when both guys aren't competing at the same level right now. So, it's hard, and it'll come. It'll happen at some point. Mike's done a great job of getting himself to where he is right now. Really impressive to take 7-on-7 reps and go out and compete ... But really, there's no competition until we can actually evaluate him equally.' Tua Tagovailoa is taking all first-team snaps while Penix stays limited to individual and 7-on-7 work; the staff splits reps 'as evenly as we can without Mike taking team reps,' with Penix loading up on extra 7-on-7 reps to compensate. The minicamp-week takeaway: until Penix is cleared, Tua's lead in the rep book compounds by the practice.",
@@ -2204,20 +2232,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "NBC Sports PFT / atlantafalcons.com",
     },
     {
-      title: "BIJAN ON LONDON'S BAG — 'so happy' for his best friend's $141M deal, and on his own next-in-line extension: 'We'll see, man'; teammates say the London payday 'brings people together'",
-      detail: "Atlantafalcons.com / SI Falcons / BloggingDirty (filed Mon Jun 8, final media-open OTA): at the same podium where the QB race dominated, Bijan Robinson said he called Drake London to celebrate the receiver's new four-year, $141M extension — 'I was so happy for him ... he deserves everything he gets,' calling London one of his favorite teammates and his best friend. Asked about his own market-resetting extension — widely reported as the front office's next big-ticket item — Robinson smiled and said only, 'We'll see, man.' Matthew Bergeron framed London's deal as a locker-room lift: it 'brings people together' and 'gets the offense and team going.' The sequence the front office telegraphed all spring — London first, Bijan next — is now the public storyline.",
-      category: "contracts",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-practice-report-drake-london-extension-bijan-robinson",
-      sourceLabel: "atlantafalcons.com / SI Falcons",
-    },
-    {
-      title: "MINICAMP ON DECK — after Monday's final media-open OTA, the building's next full-squad checkpoint is the June 16–18 mandatory veteran minicamp, the first of the Stefanski era; then it goes quiet until camp opens July 22",
-      detail: "Atlantafalcons.com / ESPN offseason calendar (current, as of Tue Jun 9): the voluntary portion of the offseason is essentially done — Monday, June 8 was Atlanta's last OTA practice open to the media. The June 16–18 mandatory veteran minicamp — attendance required — is the first full-squad checkpoint of Kevin Stefanski's first year. The watch items: whether Michael Penix Jr. gets cleared for team periods, the LB rotation with Kendal Daniels and JD Bertrand working back, and first looks at how the Tua/Penix rep split changes when everything counts. After June 18 the building goes quiet until training camp opens July 22.",
-      category: "general",
-      sourceUrl: "https://www.espn.com/nfl/story/_/id/48387060/nfl-offseason-2026-every-32-team-otas-minicamp-key-dates",
-      sourceLabel: "ESPN / atlantafalcons.com",
-    },
-    {
       title: "DANIELS TRACKING FOR MINICAMP — the R4 LB has 'progressed quickly' from the foot injury that had him in a walking boot in May; a return to the practice field at next week's mandatory minicamp is now realistic",
       detail: "The Falcoholic (OTA wrap, filed this week): rookie linebacker Kendal Daniels, spotted in a walking boot during initial workouts in May, has progressed quickly through rehab, working off to the side including stationary-bike sessions, and his return to the field could come as soon as mandatory minicamp June 16-18. Stefanski has since confirmed the trajectory: 'Not going to get into all specifics, but he's good to go. He's out of the boot.' The rest of the ledger holds: S Billy Bowman Jr. (Achilles, Nov 2025) is 'recovering well' per Stefanski and will be available for walkthroughs but still is not healthy enough for full participation, and Penix remains in throwing drills and 7-on-7s awaiting 11-on-11 clearance. The LB rotation (Deablo, Harris, Bertrand, Daniels) is one of minicamp's top watch items.",
       category: "injuries",
@@ -2239,24 +2253,10 @@ export const NEWS_DIGEST = {
       sourceLabel: "The Falcoholic / Over The Cap",
     },
     {
-      title: "MATT RYAN BRINGS 'THROWBACK ENERGY' — the franchise passing king, now president of football, has been at every OTA practice: throwing to the receivers, advising Stefanski and Rees, addressing rookies at 'Falcons U'",
-      detail: "AJC (Daniel Flick, filed Sat May 30): five months into his job as Falcons president of football, Matt Ryan has attended every spring practice — talking technique with Stefanski and OC Tommy Rees, serving as a sounding board for GM Ian Cunningham, and spinning passes to the wideouts in warmups. He addressed the rookie class at 'Falcons U' from a chair no one else in the building has sat in. Chris Lindstrom, who grew up idolizing Ryan and later protected him: 'I think Matt is probably the greatest Falcon ever ... his eyes, opinion, everything is always a value.' Kyle Pitts: 'He can still spin it like he can still play.' Drake London: 'For our president to be down here throwing a ball ... I think that's the dopest thing in the world.' Tua says he sees Ryan every day. Ryan — 59,735 yards, 367 TDs, a league MVP and Ring of Honor member — won't throw his hat in the QB ring, but London joked the itch 'never leaves your body.'",
-      category: "general",
-      sourceUrl: "https://www.ajc.com/sports/2026/05/a-great-resource-how-matt-ryan-is-impacting-falcons-in-new-role/",
-      sourceLabel: "AJC",
-    },
-    {
-      title: "DEABLO TAKES THE GREEN DOT — with Kaden Elliss in New Orleans, Divine Deablo steps into command of the Falcons defense as the play-call relay",
-      detail: "Atlantafalcons.com (OTA-week feature): the green-dot helmet — the defender wired to the sideline who relays the call and sets the front — belonged to Kaden Elliss until he signed with the Saints in March. The team site's 'Divine intervention' feature says it now belongs to Divine Deablo, who has been running the huddle through OTAs alongside free-agent addition Christian Harris while the young LBs (R4 Kendal Daniels, JD Bertrand) work back from injury. The added command responsibility is a bet on Deablo's processing in the post-Elliss structure — and with mandatory minicamp June 16–18 the next full-squad checkpoint, the defensive communication chain is one of the new staff's most-watched installs.",
+      title: "HARRIS IS THE ILB TO WATCH: the team site spotlights free-agent addition Christian Harris, who ran the second level through OTAs while Deablo carried the green dot and the young LBs rehabbed",
+      detail: "Atlantafalcons.com (feature, published this week): with Kaden Elliss in New Orleans, the rebuilt inside linebacker room is one of minicamp's top evaluations, and the team site flagged Christian Harris as the name to know. A 2022 third-round pick with 46 games and 27 starts in four Houston seasons, Harris paired with green-dot wearer Divine Deablo on the first unit through OTAs while R4 Kendal Daniels (foot) and JD Bertrand worked back. With Daniels tracking toward a minicamp return, next week offers the first look at the full rotation.",
       category: "coaching",
-      sourceUrl: "https://www.atlantafalcons.com/news/divine-deablo-green-dot-jeff-ulbrich",
-      sourceLabel: "atlantafalcons.com",
-    },
-    {
-      title: "CALLAHAN'S FIRST IMPRESSION — the veteran OL guru likes what he inherited; Lindstrom takes the changes (and life without McGary) in stride",
-      detail: "Atlantafalcons.com (OTA features): longtime NFL offensive line coach Bill Callahan says he has real respect for what Atlanta's line has already accomplished — and that he's in Flowery Branch to build on it, not tear it down. The room he inherited: first-round pedigree in Chris Lindstrom and Jake Matthews, Matthew Bergeron ascending, Jawaan Taylor stepping in at right tackle after Kaleb McGary's April retirement, and UDFA James Brockermeyer logging first-team center reps while Ryan Neuzil works back. In a separate team-site piece, four-time Pro Bowler Lindstrom says he's taking the changes in stride — new line coach, new RT, new scheme blend. The unit is the quiet foundation of the Stefanski offense, whoever wins the QB job.",
-      category: "coaching",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-offensive-line-first-impression-bill-callahan",
+      sourceUrl: "https://www.atlantafalcons.com/news/christian-harris-falcons-inside-linebacker",
       sourceLabel: "atlantafalcons.com",
     },
     {
@@ -2276,7 +2276,7 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-06-11T09:45:00Z",
+  generatedAt: "2026-06-12T09:45:00Z",
   windowLabel: "OTA → Minicamp Window · May 19 → Jun 18",
   sessions: [
     {
@@ -2299,6 +2299,27 @@ export const INTERVIEWS = {
         "Deal mechanics: 4 years, $141M ($35.25M APY, $100M guaranteed, up to $150M with incentives), through 2030; 2026 still on the $16.82M fifth-year option",
       ],
       topics: ["drake-london-extension", "contracts", "leadership"],
+    },
+    {
+      id: "stefanski-2026-06-08",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-06-08",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Final Media-Open OTA · Media Availability",
+      sourceUrl: "https://www.atlantafalcons.com/video/atlanta-falcons-head-coach-kevin-stefanski-ota-media-availability-june-8-2026-press-conference",
+      transcriptUrl: "https://clutchpoints.com/nfl/atlanta-falcons/falcons-news-kevin-stefanski-james-pearce-jr-question-mandatory-minicamp",
+      verified: true,
+      summary: "At the spring's last practice open to cameras, Stefanski threaded two needles at once. On Michael Penix Jr. he was upbeat but uncommitted, crediting a flawless rehab while answering 'we'll see' on whether 11-on-11 clearance comes by minicamp (Penix took a scheduled rest day Monday). On James Pearce Jr., whose pretrial intervention report had just landed and who is not expected at next week's mandatory camp, he declined every invitation to elaborate.",
+      pullQuote: "He's hitting every milestone that he's supposed to hit.",
+      bullets: [
+        "On Penix's limitations: 'Mike does have limitations based on his rehab, but he's done a great job to date. I've been very impressed with what he's able to do'",
+        "Answered 'we'll see' when asked if Penix could be cleared for 11-on-11 work as soon as the June 16-18 mandatory minicamp; no timetable offered",
+        "Penix took a scheduled rest day Monday rather than practicing with the group",
+        "On the report that Pearce accepted a pretrial intervention program: 'We're in constant communication with all parties but continuing to wait for more information'",
+        "Asked when the team will address Pearce's status: 'I'll deal with next week next week'",
+      ],
+      topics: ["penix-acl", "qb-competition", "pearce-status", "minicamp"],
     },
     {
       id: "bijan-robinson-2026-06-08",
@@ -2383,27 +2404,6 @@ export const INTERVIEWS = {
         "Volunteered 'no collisions' point of emphasis after a couple of helmet-to-helmet hits in 7-on-7",
       ],
       topics: ["qb-competition", "tua-accuracy", "penix-acl"],
-    },
-    {
-      id: "rees-2026-05-26",
-      speaker: "Tommy Rees",
-      role: "Offensive Coordinator",
-      date: "2026-05-26",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "OTA Week 2 Day 1 · Coordinator Availability",
-      sourceUrl: "https://www.atlantafalcons.com/video/tommy-rees-craig-aukerman-tanner-engstrand-speak-on-team-growth-through-otas-press-conference",
-      transcriptUrl: "https://www.youtube.com/watch?v=ozzf3bycqBU",
-      verified: true,
-      summary: "Rees took his first coordinator podium of the spring alongside passing-game coordinator Tanner Engstrand and special-teams coordinator Craig Aukerman, on the heels of OTA Week 2 Day 1. He described a 'committed group,' framed the offseason install as fundamentals- and technique-first while the room masters the system, and praised the quarterback group's buy-in — noting QB coach Alex Van Pelt is running that room day to day. Aukerman, asked about R3 WR Zachariah Branch, said the returner 'caught our eye early on.'",
-      pullQuote: "Working with this quarterback group has been really great so far. These guys support each other.",
-      bullets: [
-        "Offseason focus is 'fundamentals, technique, mastering the offensive system' — 'every day we're with the guys, we feel improvements'",
-        "On the QB room: the group 'has been really great so far' and is 'committed to doing what we've asked them to do'",
-        "Credited QB coach Alex Van Pelt — 'Coach Van Pelt's done a tremendous job running that room'",
-        "Year three working alongside Stefanski 'in a couple different roles' — a built-in familiarity with the system",
-        "Aukerman on Branch: the returner 'caught our eye early on' in the pre-draft evaluation",
-      ],
-      topics: ["rees-install", "qb-competition", "van-pelt", "branch-returns"],
     },
   ],
 };
