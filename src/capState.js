@@ -3,7 +3,7 @@
 export const CAP_STATE = {
   year: 2026,
   capSpaceOTC: 19_300_000,      // Over The Cap (post-June-1 Cousins designation, Jun 1 2026)
-  capSpaceSpotrac: 19_700_000,  // Spotrac top-51 (post-London extension, per BR/Spotrac Jun 3 2026)
+  capSpaceSpotrac: 18_800_000,  // Spotrac top-51 (post-London extension; reduced by net top-51 impact of Wanya Morris trade add, Jun 11 2026)
   leagueRank: 21,
   totalLiabilities: 295_650_548,
   totalAllocations: 268_323_031,
@@ -50,6 +50,7 @@ export const CAP_STATE = {
     },
   ],
   recentMoves: [
+    { date: "2026-06-11", description: "Acquired OT Wanya Morris and a 2027 7th-round pick from Kansas City for a 2027 6th-round pick; adds a 25-year-old swing tackle with 16 career starts (11 at LT in 2024) after McGary's retirement and Storm Norton's PUP placement. Morris is on the final year of his rookie deal, about a $1.71M cap hit, no guaranteed money left" },
     { date: "2026-06-09", description: "WR Drake London officially signs the 4yr/$141M extension (agreed Jun 2) at a Flowery Branch press conference; 'I know it's a lot of money, and I've got to prove it still'" },
     { date: "2026-06-02", description: "Signed WR Drake London to a 4yr/$141M extension (up to $150M w/ incentives, $100M gtd, $35.25M APY — 3rd-highest WR); runs through 2030, 2026 still on $16.82M 5th-yr option. First major deal of the Cunningham/Ryan front office" },
     { date: "2026-06-01", description: "Kirk Cousins post-June-1 designation officially clears +$2.1M in 2026 and +$45M in 2027 cap space (OTC); dead money tail is $22.5M in 2026, $12.5M in 2027" },

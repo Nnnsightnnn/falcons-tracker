@@ -604,6 +604,28 @@ export const PLAYERS = [
     contract: { years: 4, total: 4150000, guaranteed: 100000, apy: 1037500, throughYear: 2027, cap2026: 920000 },
     career: [{ years: "2024–", team: "Atlanta Falcons", type: "NFL" }],
   },
+  {
+    id: "wanya-morris",
+    name: "Wanya Morris",
+    number: 79,
+    position: "OT",
+    posSlot: "LT",
+    positionGroup: "offense",
+    depthRank: 2,
+    height: 77, weight: 320, age: 25, experience: 4,
+    college: "Oklahoma",
+    acquired: "trade-2026-kc",
+    stats: {},
+    form: 6.6,
+    status: "active",
+    injuryNote: "Swing tackle · acquired from KC Jun 11 for a late-round pick swap · 16 career starts (11 at LT in 2024)",
+    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4570577.png",
+    contract: { years: 1, total: 1482048, guaranteed: 0, apy: 1482048, throughYear: 2026, cap2026: 1708113 },
+    career: [
+      { years: "2026–", team: "Atlanta Falcons", type: "NFL · trade from KC" },
+      { years: "2023–2025", team: "Kansas City Chiefs", type: "NFL · Super Bowl LVIII" },
+    ],
+  },
 
   // =========================================
   // DEFENSIVE LINE
@@ -2142,7 +2164,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-12T09:45:00Z",
+  generatedAt: "2026-06-13T13:30:00Z",
   cover: {
     kicker: "PEN TO PAPER — The $141M Handshake Becomes Official in Flowery Branch",
     headLine1: "Signed.",
@@ -2165,9 +2187,16 @@ export const NEWS_DIGEST = {
     "SI Falcons", "AJC", "Bleacher Report", "ClutchPoints", "Heavy.com",
     "Yahoo Sports", "CBS Sports", "Washington Post", "BloggingDirty",
     "Audacy 92.9 The Game", "Yardbarker", "Over The Cap", "Spotrac",
-    "Bengals.com", "FantasyPros",
+    "Bengals.com", "FantasyPros", "Atlanta News First",
   ],
   topics: [
+    {
+      title: "MORRIS TRADE: Falcons land OT Wanya Morris from Kansas City for a late-round pick swap, adding starter-tested tackle depth two days after Storm Norton's PUP move",
+      detail: "ESPN (Adam Schefter) / NFL.com / Atlanta News First (AP source), filed Thu Jun 11 into Fri Jun 12: Atlanta acquired offensive tackle Wanya Morris and a 2027 seventh-round pick from the Chiefs for a 2027 sixth-round pick. Morris, a 2023 third-round pick out of Oklahoma, has 16 career starts (11 of them at left tackle in 2024) and a Super Bowl ring, and gives Stefanski a 25-year-old swing tackle on the final year of his rookie deal (about a $1.71M cap hit, no guaranteed money left). The move answers a thinned tackle room: Kaleb McGary retired in April, Jawaan Taylor signed to start at right tackle, and Storm Norton landed on Reserve/PUP Thursday.",
+      category: "free-agency",
+      sourceUrl: "https://www.espn.com/nfl/story/_/id/49032113/falcons-acquire-wanya-morris-trade-chiefs-sources-say",
+      sourceLabel: "ESPN / Atlanta News First",
+    },
     {
       title: "NORTON TO RESERVE/PUP: Falcons place OT Storm Norton on the Reserve/Physically Unable to Perform list Thursday afternoon; he has not played a snap since 2025 ankle surgery and was never activated off IR last season",
       detail: "Atlantafalcons.com (Will McFadden, filed Thu Jun 11, 3:33 PM): the team placed veteran tackle Storm Norton on Reserve/PUP, formalizing what 2025 already suggested. Norton underwent ankle surgery last summer, opened the season on IR, was designated to return Oct 22, and saw his 21-day activation window expire without ever suiting up. The 6-foot-7 swing tackle joined Atlanta in 2023 and made three starts in Weeks 14-16 of that season while Kaleb McGary was hurt. The move thins an OT room already reshaped this offseason: McGary retired in April, Jawaan Taylor signed to start at RT, and rookie Ethan Onianwa plus Michael Jerrell round out the depth.",
@@ -2276,7 +2305,7 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-06-12T09:45:00Z",
+  generatedAt: "2026-06-13T13:30:00Z",
   windowLabel: "OTA → Minicamp Window · May 19 → Jun 18",
   sessions: [
     {
