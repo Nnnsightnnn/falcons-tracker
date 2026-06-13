@@ -121,7 +121,7 @@ export function MagazineShell({ activeKey, setView, pageInfo, children }) {
 
         {/* COLOPHON */}
         <div className="colophon">
-          <a href="https://github.com/nnnsightnnn" target="_blank" rel="noopener noreferrer">
+          <a href="https://nnnsightnnn.com" target="_blank" rel="noopener noreferrer">
             Built by nnnsightnnn
           </a>
         </div>
