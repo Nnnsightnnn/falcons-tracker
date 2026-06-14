@@ -2164,14 +2164,14 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-13T13:30:00Z",
+  generatedAt: "2026-06-14T14:00:00Z",
   cover: {
     kicker: "PEN TO PAPER — The $141M Handshake Becomes Official in Flowery Branch",
     headLine1: "Signed.",
     headEm: "Sealed.",
     headLine3: "Now London says he has to prove it.",
     deck:
-      "One week after the agreement leaked, Drake London sat at a Flowery Branch podium Tuesday and made the four-year, $141M extension official, then immediately turned the page: 'I know it's a lot of money, and I've got to prove it still. That's what my mindset is right now.' GM Ian Cunningham called him 'exactly what we're building here.' The other clock still ticking: whether Michael Penix Jr. is cleared for 11-on-11 at next week's June 16-18 mandatory minicamp. Stefanski's Monday answer was still 'we'll see.'",
+      "One week after the agreement leaked, Drake London sat at a Flowery Branch podium Tuesday and made the four-year, $141M extension official, then immediately turned the page: 'I know it's a lot of money, and I've got to prove it still. That's what my mindset is right now.' GM Ian Cunningham called him 'exactly what we're building here.' The other clock still ticking: whether Michael Penix Jr. is cleared for 11-on-11 at this week's June 16-18 mandatory minicamp, which opens Tuesday. Stefanski's latest answer was still 'we'll see.'",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "drake-london",
@@ -2191,11 +2191,11 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "MORRIS TRADE: Falcons land OT Wanya Morris from Kansas City for a late-round pick swap, adding starter-tested tackle depth two days after Storm Norton's PUP move",
-      detail: "ESPN (Adam Schefter) / NFL.com / Atlanta News First (AP source), filed Thu Jun 11 into Fri Jun 12: Atlanta acquired offensive tackle Wanya Morris and a 2027 seventh-round pick from the Chiefs for a 2027 sixth-round pick. Morris, a 2023 third-round pick out of Oklahoma, has 16 career starts (11 of them at left tackle in 2024) and a Super Bowl ring, and gives Stefanski a 25-year-old swing tackle on the final year of his rookie deal (about a $1.71M cap hit, no guaranteed money left). The move answers a thinned tackle room: Kaleb McGary retired in April, Jawaan Taylor signed to start at right tackle, and Storm Norton landed on Reserve/PUP Thursday.",
-      category: "free-agency",
-      sourceUrl: "https://www.espn.com/nfl/story/_/id/49032113/falcons-acquire-wanya-morris-trade-chiefs-sources-say",
-      sourceLabel: "ESPN / Atlanta News First",
+      title: "MINICAMP OPENS TUESDAY: the Jun 16-18 mandatory camp is the offseason's last full-squad checkpoint, and the Penix 11-on-11 decision headlines the watch list",
+      detail: "Atlantafalcons.com / ESPN / NBC Sports PFT (current, Sun Jun 14, two days out): Atlanta's first mandatory minicamp of the Stefanski era runs Tuesday through Thursday, the first attendance-required event of the offseason and the building's last full-squad gathering before training camp opens Jul 22. The watch list: whether Michael Penix Jr. is cleared for team periods (Stefanski's answer stayed 'we'll see'), whether James Pearce Jr. reports (not expected, as he works through his Miami-Dade pretrial program), rookie LB Kendal Daniels back on the field out of his walking boot, and how the Tua-Penix rep split shifts once attendance counts. After Thursday the facility goes quiet until camp.",
+      category: "general",
+      sourceUrl: "https://www.espn.com/nfl/story/_/id/48387060/nfl-offseason-2026-every-32-team-otas-minicamp-key-dates",
+      sourceLabel: "ESPN / atlantafalcons.com",
     },
     {
       title: "NORTON TO RESERVE/PUP: Falcons place OT Storm Norton on the Reserve/Physically Unable to Perform list Thursday afternoon; he has not played a snap since 2025 ankle surgery and was never activated off IR last season",
@@ -2205,11 +2205,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com",
     },
     {
-      title: "QUIET FRIDAY, LOUD TUESDAY: OTAs are in the books and the June 16-18 mandatory minicamp is now the offseason's last full-squad checkpoint; the Penix 11-on-11 decision headlines the watch list",
-      detail: "Atlantafalcons.com / ESPN offseason calendar (current, Fri Jun 12): the voluntary program is done. Monday Jun 8 was the last OTA open to media, and the team site closed the spring Friday with an OTA wrap edition of its Friday Five podcast. Next up is the first mandatory minicamp of the Stefanski era, Tuesday through Thursday. The watch items: whether Michael Penix Jr. is cleared for team periods, whether James Pearce Jr. reports, Kendal Daniels returning to the field, and how the Tua-Penix rep split shifts when attendance counts. After Jun 18 the building goes dark until camp opens Jul 22.",
-      category: "general",
-      sourceUrl: "https://www.espn.com/nfl/story/_/id/48387060/nfl-offseason-2026-every-32-team-otas-minicamp-key-dates",
-      sourceLabel: "ESPN / atlantafalcons.com",
+      title: "MORRIS TRADE ADDS TACKLE DEPTH: Falcons land OT Wanya Morris from Kansas City for a late-round pick swap, two days after Storm Norton's PUP move",
+      detail: "ESPN (Adam Schefter) / NFL.com / Atlanta News First (AP source), filed Thu Jun 11 into Fri Jun 12: Atlanta acquired offensive tackle Wanya Morris and a 2027 seventh-round pick from the Chiefs for a 2027 sixth-round pick. Morris, a 2023 third-round pick out of Oklahoma, has 16 career starts (11 of them at left tackle in 2024) and a Super Bowl ring, and gives Stefanski a 25-year-old swing tackle on the final year of his rookie deal (about a $1.71M cap hit, no guaranteed money left). The move answers a thinned tackle room: Kaleb McGary retired in April, Jawaan Taylor signed to start at right tackle, and Storm Norton landed on Reserve/PUP Thursday. Morris gives the room another body to evaluate when minicamp opens Tuesday.",
+      category: "free-agency",
+      sourceUrl: "https://www.espn.com/nfl/story/_/id/49032113/falcons-acquire-wanya-morris-trade-chiefs-sources-say",
+      sourceLabel: "ESPN / Atlanta News First",
     },
     {
       title: "'TRUST YOUR FEET': the three words guiding Atlanta's QB competition: with Penix limited, the staff is building its Tua-vs-Penix evaluation around timing, rhythm and footwork",
@@ -2305,8 +2305,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-06-13T13:30:00Z",
-  windowLabel: "OTA → Minicamp Window · May 19 → Jun 18",
+  generatedAt: "2026-06-14T14:00:00Z",
+  windowLabel: "Minicamp Window · Jun 16 → Jun 18",
   sessions: [
     {
       id: "drake-london-2026-06-09",
