@@ -2164,14 +2164,14 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-15T13:00:00Z",
+  generatedAt: "2026-06-16T13:00:00Z",
   cover: {
-    kicker: "CLEARANCE WATCH · Stefanski's 'We'll See' Hangs Over a Tuesday Minicamp Opener",
+    kicker: "CLEARANCE WATCH · Day 1 of Mandatory Minicamp Opens, and Stefanski's 'We'll See' on Penix Is Now Live",
     headLine1: "Eleven",
     headEm: "on eleven.",
     headLine3: "Now that's the only number that matters.",
     deck:
-      "Atlanta's first mandatory minicamp of the Stefanski era opens Tuesday, the offseason's last full-squad checkpoint before the building goes quiet until training camp on July 22. One question towers over the three days: does Michael Penix Jr. finally get cleared for 11-on-11, or does Tua Tagovailoa's first-team rep lead keep compounding? Penix has 'hit every milestone' in his ACL rehab, per Stefanski, who still would only offer 'we'll see.' Also on the watch list: whether James Pearce Jr. reports (not expected), and rookie LB Kendal Daniels back on the field out of his walking boot.",
+      "Atlanta's first mandatory minicamp of the Stefanski era is underway, opening Tuesday for the three-day run that is the offseason's last full-squad checkpoint before the building goes quiet until training camp on July 22. One question towers over the week: does Michael Penix Jr. finally get cleared for 11-on-11, or does Tua Tagovailoa's first-team rep lead keep compounding? Penix has 'hit every milestone' in his ACL rehab, per Stefanski, who still would only offer 'we'll see.' Also on the watch list: whether James Pearce Jr. reports (not expected), and rookie LB Kendal Daniels back on the field out of his walking boot.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
@@ -2185,7 +2185,7 @@ export const NEWS_DIGEST = {
     // this run. Pointing at the minicamp-eve path resets the staleness clock
     // and wires the image in the moment the generator catches up; until then
     // the penix-jr headshot fallback keeps the cover coherent with the lead.
-    coverImageUrl: "/falcons-tracker/assets/cover/2026-06-15-penix-minicamp.jpg",
+    coverImageUrl: "/falcons-tracker/assets/cover/2026-06-16-penix-minicamp-day1.jpg",
   },
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "NFL Network",
@@ -2197,8 +2197,8 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "MINICAMP OPENS TOMORROW: the Jun 16-18 mandatory camp is the offseason's last full-squad checkpoint, and the Penix 11-on-11 decision headlines the watch list",
-      detail: "Atlantafalcons.com / ESPN / NBC Sports PFT (current, Mon Jun 15, one day out): Atlanta's first mandatory minicamp of the Stefanski era runs Tuesday through Thursday, the first attendance-required event of the offseason and the building's last full-squad gathering before training camp opens Jul 22. The watch list: whether Michael Penix Jr. is cleared for team periods (Stefanski's answer stayed 'we'll see'), whether James Pearce Jr. reports (not expected, as he works through his Miami-Dade pretrial program), rookie LB Kendal Daniels back on the field out of his walking boot, and how the Tua-Penix rep split shifts once attendance counts. After Thursday the facility goes quiet until camp.",
+      title: "MINICAMP UNDERWAY: Day 1 of the Jun 16-18 mandatory camp opens Tuesday, the offseason's last full-squad checkpoint, with the Penix 11-on-11 decision headlining the watch list",
+      detail: "Atlantafalcons.com / ESPN / NBC Sports PFT / Yahoo Sports (current, Tue Jun 16, opening day): Atlanta's first mandatory minicamp of the Stefanski era runs Tuesday through Thursday, the first attendance-required event of the offseason and the building's last full-squad gathering before training camp opens Jul 22. The watch list as the field opens: whether Michael Penix Jr. is cleared for team periods (Stefanski's answer stayed 'we'll see,' while crediting Penix for hitting every rehab milestone), whether James Pearce Jr. reports (not expected, as he works through his Miami-Dade pretrial program), rookie LB Kendal Daniels back on the field out of his walking boot, and how the Tua-Penix rep split shifts once attendance counts. After Thursday the facility goes quiet until camp.",
       category: "general",
       sourceUrl: "https://www.espn.com/nfl/story/_/id/48387060/nfl-offseason-2026-every-32-team-otas-minicamp-key-dates",
       sourceLabel: "ESPN / atlantafalcons.com",
@@ -2311,8 +2311,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-06-15T13:00:00Z",
-  windowLabel: "Minicamp Window · Jun 16 → Jun 18",
+  generatedAt: "2026-06-16T13:00:00Z",
+  windowLabel: "Mandatory Minicamp · Jun 16 → Jun 18",
   sessions: [
     {
       id: "drake-london-2026-06-09",
