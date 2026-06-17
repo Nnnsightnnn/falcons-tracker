@@ -838,7 +838,7 @@ export const PLAYERS = [
     stats: { tackles: 31, sacks: 4.5 },
     form: 7.6,
     status: "active",
-    injuryNote: "Away from team during Miami-Dade pretrial program · not expected at June 16-18 minicamp (Rapoport)",
+    injuryNote: "Reported to mandatory minicamp Jun 16, first time with team since Feb arrest · limited to weight room and individual drills, no team periods · still in Miami-Dade pretrial program; league yet to rule on discipline",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/5081394.png",
     contract: { years: 4, total: 14500000, guaranteed: 14500000, apy: 3625000, throughYear: 2028, cap2026: 3350000 },
     career: [{ years: "2025–", team: "Atlanta Falcons", type: "NFL" }],
@@ -1426,7 +1426,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "active",
-    injuryNote: "Foot (walking boot in May) · out of the boot and 'good to go' per Stefanski · expected on field at minicamp",
+    injuryNote: "Foot · held out of minicamp Day 1 (Jun 16) along with JD Bertrand, opening first-team ILB reps for Christian Harris · was out of the walking boot and 'good to go' per Stefanski entering camp",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4595343.png",
     contract: { years: 4, total: 4750000, guaranteed: 700000, apy: 1187500, throughYear: 2029, cap2026: 900000 },
     career: [
@@ -2164,32 +2164,33 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-16T13:00:00Z",
+  generatedAt: "2026-06-17T13:00:00Z",
   cover: {
-    kicker: "CLEARANCE WATCH · Day 1 of Mandatory Minicamp Opens, and Stefanski's 'We'll See' on Penix Is Now Live",
+    kicker: "MINICAMP, DAY 1 · The 11-on-11 Answer Is 'Not Yet,' and James Pearce Jr. Is Back in the Building",
     headLine1: "Eleven",
     headEm: "on eleven.",
-    headLine3: "Now that's the only number that matters.",
+    headLine3: "Still the only number that won't move.",
     deck:
-      "Atlanta's first mandatory minicamp of the Stefanski era is underway, opening Tuesday for the three-day run that is the offseason's last full-squad checkpoint before the building goes quiet until training camp on July 22. One question towers over the week: does Michael Penix Jr. finally get cleared for 11-on-11, or does Tua Tagovailoa's first-team rep lead keep compounding? Penix has 'hit every milestone' in his ACL rehab, per Stefanski, who still would only offer 'we'll see.' Also on the watch list: whether James Pearce Jr. reports (not expected), and rookie LB Kendal Daniels back on the field out of his walking boot.",
+      "Day 1 of Atlanta's first mandatory minicamp under Kevin Stefanski settled the spring's biggest question without changing it: Michael Penix Jr. is still not cleared for 11-on-11, and the staff is content to keep it that way. Stefanski called Penix 'exactly where he needs to be,' Penix told reporters 'I'm not 100% yet, but I know I will be,' and the coach made clear the real Tua-vs-Penix evaluation now waits for training camp. The day's surprise came at the edge: James Pearce Jr., not expected to attend, reported anyway, the first time the rookie sacks leader has been with the team since his February arrest. He is limited to the weight room and individual drills, with the league still silent on any discipline. Also held out Tuesday: rookie LB Kendal Daniels and JD Bertrand, handing Christian Harris a clear runway at inside linebacker.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
     stampLabel: "QB · CLEARANCE WATCH",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
-    // NOTE (2026-06-15 run): the downstream image generator has not been
-    // populating public/assets/cover (only two 2026-05-28 smoke-test files
-    // exist on disk), and ~/Vault + the limn-editor-enhance skill are not
-    // reachable from the Cowork sandbox, so no new request could be queued
-    // this run. Pointing at the minicamp-eve path resets the staleness clock
-    // and wires the image in the moment the generator catches up; until then
-    // the penix-jr headshot fallback keeps the cover coherent with the lead.
+    // NOTE (2026-06-17 run): cover is fresh (1 day old) and already targets
+    // today's lead subject (Penix at minicamp), so no new request was warranted
+    // on either the visual-story or 4-day-staleness trigger. ~/Vault + the
+    // limn-editor-enhance skill remain unreachable from the Cowork sandbox and
+    // the downstream generator still has not populated public/assets/cover
+    // (only two 2026-05-28 smoke-test files exist on disk), so no request could
+    // be queued regardless. The penix-jr headshot fallback keeps the cover
+    // coherent with the lead until the generator catches up.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-06-16-penix-minicamp-day1.jpg",
   },
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "NFL Network",
-    "NBC Sports / Pro Football Talk", "Pro Football Rumors", "The Falcoholic",
+    "AP (Washington Times)", "NBC Sports / Pro Football Talk", "Pro Football Rumors", "The Falcoholic",
     "SI Falcons", "AJC", "Bleacher Report", "ClutchPoints", "Heavy.com",
     "Yahoo Sports", "CBS Sports", "Washington Post", "BloggingDirty",
     "Audacy 92.9 The Game", "Yardbarker", "Over The Cap", "Spotrac",
@@ -2197,11 +2198,39 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "MINICAMP UNDERWAY: Day 1 of the Jun 16-18 mandatory camp opens Tuesday, the offseason's last full-squad checkpoint, with the Penix 11-on-11 decision headlining the watch list",
-      detail: "Atlantafalcons.com / ESPN / NBC Sports PFT / Yahoo Sports (current, Tue Jun 16, opening day): Atlanta's first mandatory minicamp of the Stefanski era runs Tuesday through Thursday, the first attendance-required event of the offseason and the building's last full-squad gathering before training camp opens Jul 22. The watch list as the field opens: whether Michael Penix Jr. is cleared for team periods (Stefanski's answer stayed 'we'll see,' while crediting Penix for hitting every rehab milestone), whether James Pearce Jr. reports (not expected, as he works through his Miami-Dade pretrial program), rookie LB Kendal Daniels back on the field out of his walking boot, and how the Tua-Penix rep split shifts once attendance counts. After Thursday the facility goes quiet until camp.",
+      title: "DAY 1 ANSWER IS 'NOT YET': Penix held out of 11-on-11 at Tuesday's minicamp opener, but Stefanski calls him 'exactly where he needs to be' and pushes the real QB evaluation to training camp",
+      detail: "NFL.com roundup / Atlantafalcons.com (Day 1 practice report) / ClutchPoints (filed Tue Jun 16): the spring's defining question got its clearest answer yet, and it did not move the needle. Michael Penix Jr. again did not take team-period reps on the first day of mandatory minicamp, staying on the individual and 7-on-7 track he has run since OTAs. Stefanski was emphatic that the hold is by design, not concern: 'Very pleased with the work that he's putting in. He's exactly where he needs to be, and we'll just continue to lean on medical and Mike and continue to make good decisions for his rehabilitation.' The coach would not commit to Penix being cleared by the July 22 training-camp open, and reiterated that the Tua-vs-Penix competition does not truly begin until both can be evaluated equally. Tua Tagovailoa keeps taking every first-team snap.",
+      category: "injuries",
+      sourceUrl: "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-tuesday-june-16",
+      sourceLabel: "NFL.com / atlantafalcons.com",
+    },
+    {
+      title: "PEARCE REPORTS: the rookie sacks leader, not expected at camp, shows up anyway; it is the first time he has been with the team since his February arrest, but he is limited to the weight room and individual drills",
+      detail: "AP (Washington Times) / SI Falcons / Atlantafalcons.com (filed Tue Jun 16): the day's surprise came at the edge. James Pearce Jr., widely reported as unlikely to attend, reported for the start of mandatory minicamp, his first appearance with the team since his Feb 7 arrest near Miami on three felony charges (he accepted a pretrial intervention program in late May; charges drop on completion). Stefanski set firm limits: 'He'll do work in the weight room, he'll do individual. He's not going to team settings, team period type stuff yet. Just feel like with him not being here for the offseason program, I don't think it's fair to put him in those type of drills, but he'll be out there.' Asked about their conversations, Stefanski said only that Pearce 'knows what is expected of him.' The team says it still has not heard from the league about possible discipline.",
       category: "general",
-      sourceUrl: "https://www.espn.com/nfl/story/_/id/48387060/nfl-offseason-2026-every-32-team-otas-minicamp-key-dates",
-      sourceLabel: "ESPN / atlantafalcons.com",
+      sourceUrl: "https://www.washingtontimes.com/news/2026/jun/16/sacks-leader-pearce-returns-falcons-minicamp-following-tumultuous/",
+      sourceLabel: "AP / SI Falcons",
+    },
+    {
+      title: "PENIX, IN HIS OWN WORDS: 'I'm not 100% yet, but I know I will be,' the QB tells reporters at minicamp, and the staff says he has done more than anyone anticipated for this stage of an ACL rehab",
+      detail: "Yahoo Sports / ClutchPoints (ESPN's Marc Raimondi, filed Tue Jun 16): meeting the media at minicamp, Michael Penix Jr. delivered a measured, optimistic read on his own recovery from the late-November ACL tear: 'I'm not 100% yet, but I know I will be.' He has yet to do any 11-on-11 work, but coaches and team observers note he has progressed faster than expected given the severity of the injury, and Atlanta has taken notice of the rigor of his rehab. The framing keeps the franchise's stance intact: Tua was signed to compete, but the building still views Penix as its quarterback of the future.",
+      category: "injuries",
+      sourceUrl: "https://sports.yahoo.com/articles/falcons-michael-penix-jr-provides-190913203.html",
+      sourceLabel: "Yahoo Sports / ESPN",
+    },
+    {
+      title: "ILB DOOR SWINGS OPEN: with rookie Kendal Daniels (foot) and JD Bertrand both held out of Day 1, free-agent addition Christian Harris ran the first-team inside linebacker spot with a clear leg up",
+      detail: "The Falcoholic (minicamp Day 1 notes, filed Tue Jun 16): the rebuilt inside linebacker room, one of camp's top evaluations after Kaden Elliss left for New Orleans, opened with two of its contenders on the sideline. R4 pick Kendal Daniels (foot) and JD Bertrand were both kept from practicing, which left Christian Harris pairing with green-dot wearer Divine Deablo on the first unit and, in the words of the wrap, with 'a major leg up' in the rotation race. A 2022 third-round pick with 27 career starts in Houston, Harris is making the most of the reps while the young linebackers work back.",
+      category: "coaching",
+      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-news/94172/2026-falcons-minicamp-rounding-up-news-and-notes-from-the-first-day",
+      sourceLabel: "The Falcoholic",
+    },
+    {
+      title: "TRYOUT WATCH: Atlanta is hosting a handful of veterans on minicamp tryout deals, including former second-round DT Byron Cowart, as the front office kicks the tires on late-summer depth",
+      detail: "The Falcoholic / Atlantafalcons.com (filed Tue Jun 16): alongside the 90-man roster, the Falcons brought in several tryout players for the three-day mandatory camp, headlined by veteran defensive tackle Byron Cowart, a 2019 fifth-round pick (originally a heralded recruit and 2015 fifth-overall JUCO-bound prospect) with stops in New England and beyond. Tryout invites rarely produce signings, but they signal where the staff sees thin spots, and interior defensive line depth behind the starters is one to watch as camp approaches.",
+      category: "general",
+      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-news/94172/2026-falcons-minicamp-rounding-up-news-and-notes-from-the-first-day",
+      sourceLabel: "The Falcoholic",
     },
     {
       title: "NORTON TO RESERVE/PUP: Falcons place OT Storm Norton on the Reserve/Physically Unable to Perform list Thursday afternoon; he has not played a snap since 2025 ankle surgery and was never activated off IR last season",
@@ -2225,27 +2254,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com",
     },
     {
-      title: "LONDON'S NEXT GOAL ISN'T MONEY: fresh off the $141M signing, the WR1 says the honor he covets most is a captain's C on his chest",
-      detail: "Atlantafalcons.com (feature, published this week): the team site followed London's Tuesday signing with a piece on what is driving him now. Championships and accolades, sure, but London says the recognition he wants most is being voted a team captain, an honor decided by teammates, not the front office. It extends the tone he set at the signing podium, where he framed the extension as a debt to repay ('I know it's a lot of money, and I've got to prove it still') rather than a finish line.",
-      category: "contracts",
-      sourceUrl: "https://www.atlantafalcons.com/news/drake-london-next-goal-may-not-be-what-you-think-captain-extension",
-      sourceLabel: "atlantafalcons.com",
-    },
-    {
-      title: "VAN PELT CALLS IT STRAIGHT: NO QB BATTLE YET. 'There's no competition until we can actually evaluate him equally,' the QB coach says of Tua vs. Penix, conceding the rep count 'gets a little lopsided toward Tua'",
-      detail: "ESPN (Marc Raimondi) / NBC Sports PFT / NFL.com / Bleacher Report (published Mon Jun 8 evening, the storyline driving QB coverage into minicamp week): quarterbacks coach Alex Van Pelt put the plainest frame yet on Atlanta's QB room: 'It's tough to have a competition when both guys aren't competing at the same level right now. So, it's hard, and it'll come. It'll happen at some point. Mike's done a great job of getting himself to where he is right now. Really impressive to take 7-on-7 reps and go out and compete ... But really, there's no competition until we can actually evaluate him equally.' Tua Tagovailoa is taking all first-team snaps while Penix stays limited to individual and 7-on-7 work; the staff splits reps 'as evenly as we can without Mike taking team reps,' with Penix loading up on extra 7-on-7 reps to compensate. The minicamp-week takeaway: until Penix is cleared, Tua's lead in the rep book compounds by the practice.",
-      category: "coaching",
-      sourceUrl: "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/alex-van-pelt-falcons-qb-battle-wont-begin-until-michael-penix-is-cleared",
-      sourceLabel: "ESPN / NBC Sports PFT",
-    },
-    {
-      title: "PEARCE NOT EXPECTED AT MINICAMP, per NFL Network's Rapoport; asked when the team will address his edge rusher's status, Stefanski offered only: 'I'll deal with next week next week'",
-      detail: "NFL Network (Ian Rapoport) / ClutchPoints / Audacy 92.9 The Game / SI (reported in recent days, ahead of the Jun 16-18 camp): James Pearce Jr. is not expected to attend mandatory minicamp as he continues to navigate his Miami-Dade legal process. Pearce accepted a pretrial intervention program in late May (12 months; all charges dropped on completion, per his attorney) and has stayed away from the entire voluntary offseason program. Minicamp is the offseason's first mandatory checkpoint, which makes any absence a fineable event unless the club excuses it. Stefanski declined to engage at his final OTA availability: 'I'll deal with next week next week.' The football stakes ride along: Atlanta posted the NFL's second-most sacks in 2025 and returns its top five sackers, Pearce among them.",
-      category: "general",
-      sourceUrl: "https://clutchpoints.com/nfl/atlanta-falcons/falcons-news-kevin-stefanski-james-pearce-jr-question-mandatory-minicamp",
-      sourceLabel: "NFL Network / ClutchPoints",
-    },
-    {
       title: "BIJAN TALKS ARE LIVE — Falcons have 'engaged in talks' on a Robinson extension per ESPN's Graziano, who projects a three-year, $60M deal with $25M fully guaranteed; PFR notes the exercised 2027 option means Atlanta can move fast or wait",
       detail: "Pro Football Rumors / ESPN (Dan Graziano), posted Mon Jun 8: the next domino after Drake London is officially in motion. Atlanta has engaged in extension talks with Bijan Robinson, per Graziano, who projects a three-year, $60M extension with $25M fully guaranteed. At $20M per year that would slot Robinson just behind Saquon Barkley's league-leading $20.6M AAV and ahead of Christian McCaffrey ($19M) and De'Von Achane ($16M). PFR notes the leverage picture: Robinson's 2027 fifth-year option is already exercised, so the team faces no urgency, though neither side would be surprised by a quick strike before camp. The Jahmyr Gibbs subplot looms over the market: some around the league expect the Lions back to land the richer deal, and neither RB's camp wants to set the ceiling first.",
       category: "contracts",
@@ -2260,20 +2268,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com / AP",
     },
     {
-      title: "'WE'LL SEE' ON PENIX — at Monday's final media-open OTA, Stefanski says Penix has hit every rehab milestone but stops short of guaranteeing 11-on-11 clearance before the offseason ends; the QB took a scheduled rest day",
-      detail: "Atlantafalcons.com / NBC Sports PFT / Pro Football Rumors / SI Falcons / BloggingDirty (filed Mon Jun 8, the spring's last practice open to cameras): Kevin Stefanski offered a measured update on Michael Penix Jr., saying the third-year QB has 'hit every milestone' in his rehab from the November ACL but answering 'we'll see' when asked if Penix will be cleared for 11-on-11 work before voluntary OTAs close. Penix — cleared for individual and 7-on-7 since OTAs opened, still held out of team periods — took a scheduled rest day Monday. Whether he reaches full team work at the June 16–18 mandatory minicamp, or Atlanta keeps proceeding with caution into training camp, is now the offseason's defining QB question. S Billy Bowman Jr. (Achilles) is progressing but still not practicing.",
-      category: "injuries",
-      sourceUrl: "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kevin-stefanski-well-see-if-michael-penix-is-cleared-for-11-on-11-work-at-minicamp",
-      sourceLabel: "NBC Sports PFT / atlantafalcons.com",
-    },
-    {
-      title: "DANIELS TRACKING FOR MINICAMP — the R4 LB has 'progressed quickly' from the foot injury that had him in a walking boot in May; a return to the practice field at next week's mandatory minicamp is now realistic",
-      detail: "The Falcoholic (OTA wrap, filed this week): rookie linebacker Kendal Daniels, spotted in a walking boot during initial workouts in May, has progressed quickly through rehab, working off to the side including stationary-bike sessions, and his return to the field could come as soon as mandatory minicamp June 16-18. Stefanski has since confirmed the trajectory: 'Not going to get into all specifics, but he's good to go. He's out of the boot.' The rest of the ledger holds: S Billy Bowman Jr. (Achilles, Nov 2025) is 'recovering well' per Stefanski and will be available for walkthroughs but still is not healthy enough for full participation, and Penix remains in throwing drills and 7-on-7s awaiting 11-on-11 clearance. The LB rotation (Deablo, Harris, Bertrand, Daniels) is one of minicamp's top watch items.",
-      category: "injuries",
-      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-news/94040/falcons-ota-news-injury-updates-michael-penix-billy-bowman-drake-london",
-      sourceLabel: "The Falcoholic",
-    },
-    {
       title: "PITTS' 'SIXTH-YEAR OPTION' — the franchise-tagged TE steps into 2026 with a mantra, a matured body and a new staff that sees him as 'a big piece of this thing'",
       detail: "Atlantafalcons.com (Tori McElhaney feature, filed Tue Jun 2): Kyle Pitts revealed the mantra behind his career-best 2025 — 'You have the opportunity to do something. Just do it. It's up to you.' — a season of 88 catches, 928 yards and five TDs (career highs in receptions and scores) that convinced the new regime to keep him on the $14.1M tag. Pitts calls the tag 'Ian taking a chance ... kind of like my fifth-year option, but it's a sixth-year option,' and says the new offense is 'adding more tools to my tool box' in route running and scheme. OC Tommy Rees: 'He's a great veteran for us right now ... the buy-in being at an extremely high level.' Pass-game coordinator Tanner Engstrand: 'I think Kyle is going to be a big piece of this thing.' Stefanski began his NFL career coaching tight ends, and his offenses have historically fed the position — the one-year audition is set up for both sides to win. The calendar adds a wrinkle: July 15 is the league deadline for tagged players to sign multi-year deals; absent an agreement by then, Pitts plays 2026 on the one-year tag.",
       category: "contracts",
@@ -2286,13 +2280,6 @@ export const NEWS_DIGEST = {
       category: "contracts",
       sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-news/93857/falcons-officially-gain-2026-2027-cap-space-on-june-1-from-kirk-cousins-cut",
       sourceLabel: "The Falcoholic / Over The Cap",
-    },
-    {
-      title: "HARRIS IS THE ILB TO WATCH: the team site spotlights free-agent addition Christian Harris, who ran the second level through OTAs while Deablo carried the green dot and the young LBs rehabbed",
-      detail: "Atlantafalcons.com (feature, published this week): with Kaden Elliss in New Orleans, the rebuilt inside linebacker room is one of minicamp's top evaluations, and the team site flagged Christian Harris as the name to know. A 2022 third-round pick with 46 games and 27 starts in four Houston seasons, Harris paired with green-dot wearer Divine Deablo on the first unit through OTAs while R4 Kendal Daniels (foot) and JD Bertrand worked back. With Daniels tracking toward a minicamp return, next week offers the first look at the full rotation.",
-      category: "coaching",
-      sourceUrl: "https://www.atlantafalcons.com/news/christian-harris-falcons-inside-linebacker",
-      sourceLabel: "atlantafalcons.com",
     },
     {
       title: "Madrid Week 9 — Falcons HOST the Bengals Nov 8, 9:30 AM ET at the Bernabéu (NFL Network)",
@@ -2311,9 +2298,50 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-06-16T13:00:00Z",
+  generatedAt: "2026-06-17T13:00:00Z",
   windowLabel: "Mandatory Minicamp · Jun 16 → Jun 18",
   sessions: [
+    {
+      id: "stefanski-2026-06-16",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-06-16",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Mandatory Minicamp Day 1 · Media Availability",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-practice-report-what-we-learned-day-1-minicamp",
+      transcriptUrl: "https://www.si.com/nfl/falcons/onsi/falcons-stefanski-address-james-pearce-s-presence-at-mandatory-minicamp",
+      verified: true,
+      summary: "Day 1 of mandatory minicamp handed Stefanski two answers to give. On Michael Penix Jr. he was content with the status quo: the QB is still held out of 11-on-11, by design, and the coach would not commit to camp clearance, saying only that Penix is exactly where he needs to be. On James Pearce Jr., who reported despite reports he would not, Stefanski set firm limits and otherwise kept the personal side of the conversation private.",
+      pullQuote: "He's exactly where he needs to be, and we'll just continue to lean on medical and Mike and continue to make good decisions for his rehabilitation.",
+      bullets: [
+        "On Penix: 'Very pleased with the work that he's putting in,' but no 11-on-11 reps on Day 1 and no commitment to clearance by the July 22 training-camp open",
+        "On Pearce's role: 'He'll do work in the weight room, he'll do individual. He's not going to team settings, team period type stuff yet'",
+        "On why Pearce is limited: 'Just feel like with him not being here for the offseason program, I don't think it's fair to put him in those type of drills, but he'll be out there'",
+        "On their conversations: declined specifics, said only that Pearce 'knows what is expected of him' and that 'throughout every situation, you take in all the information available to you'",
+        "The team says it still has not heard from the league office about possible discipline for Pearce",
+      ],
+      topics: ["penix-acl", "pearce-status", "minicamp", "qb-competition"],
+    },
+    {
+      id: "penix-2026-06-16",
+      speaker: "Michael Penix Jr.",
+      role: "Quarterback",
+      date: "2026-06-16",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Mandatory Minicamp Day 1 · Player Availability",
+      sourceUrl: "https://sports.yahoo.com/articles/falcons-michael-penix-jr-provides-190913203.html",
+      transcriptUrl: "https://clutchpoints.com/nfl/atlanta-falcons/falcons-news-michael-penix-jr-provides-injury-update",
+      verified: true,
+      summary: "Meeting reporters at the minicamp opener (quotes reported by ESPN's Marc Raimondi), Penix gave a calm, confident read on his ACL recovery. He acknowledged he is not all the way back, has not yet done any team-period work, and leaned on the belief that full health is a matter of when, not if. Observers continue to note he has progressed faster than expected for this stage of the rehab.",
+      pullQuote: "I'm not 100% yet, but I know I will be.",
+      bullets: [
+        "Confirmed he has yet to take any 11-on-11 reps, staying on the individual and 7-on-7 plan he has run since OTAs",
+        "Team observers note he has done more than anticipated given the severity of the late-November ACL tear",
+        "The franchise still views Penix as its quarterback of the future even after signing Tua Tagovailoa to compete",
+        "Kept the tone forward-looking, framing full clearance as an inevitability rather than a worry",
+      ],
+      topics: ["penix-acl", "qb-competition", "minicamp"],
+    },
     {
       id: "drake-london-2026-06-09",
       speaker: "Drake London",
@@ -2397,48 +2425,6 @@ export const INTERVIEWS = {
         "Stefanski, separately, on Penix's rehab: 'He's hitting every milestone that he's supposed to hit ... not going to put any timeframes out there just yet'",
       ],
       topics: ["qb-competition", "penix-acl", "rep-split"],
-    },
-    {
-      id: "pitts-2026-05-27",
-      speaker: "Kyle Pitts Sr.",
-      role: "Tight End",
-      date: "2026-05-27",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "OTA Week 2 Day 2 · Player Availability",
-      sourceUrl: "https://www.atlantafalcons.com/news/matured-confident-kyle-pitts-franchise-tag-year",
-      transcriptUrl: "https://www.atlantafalcons.com/video/drake-london-kyle-pitts-sr-other-falcons-on-growing-team-chemistry-in-otas-press-conference",
-      verified: true,
-      summary: "Speaking at the OTA Week 2 player podium (quotes published in Tori McElhaney's June 2 team-site feature), Pitts pulled back the curtain on the mantra behind his career-best 2025 — 88 catches, 928 yards, five touchdowns — and reframed the $14.1M franchise tag as a vote of confidence rather than a stall: his own 'sixth-year option.' He talked through the physical maturation behind the leap and what the new Stefanski/Rees system is adding to his game.",
-      pullQuote: "You have the opportunity to do something. Just do it. It's up to you.",
-      bullets: [
-        "Recited the daily mantra he set before the 2025 season — the mindset he credits for career highs in catches (88) and TDs (5)",
-        "On the franchise tag: '(It's) Ian taking a chance. It's kind of like my fifth-year option, but it's a sixth-year option ... They trusted that they see something in (me)'",
-        "Says he's 'definitely matured more, coming into my maturer body' — nutrition and recovery are now central to his regimen; he turns 26 in October",
-        "The new offense is 'adding more tools to my tool box ... route running, schematically. Being an asset in this offense'",
-        "OC Tommy Rees, separately: 'He's a great veteran for us right now ... the buy-in being at an extremely high level' — and Tanner Engstrand calls him 'a big piece of this thing'",
-      ],
-      topics: ["pitts-franchise-tag", "tight-ends", "stefanski-offense"],
-    },
-    {
-      id: "stefanski-2026-05-27",
-      speaker: "Kevin Stefanski",
-      role: "Head Coach",
-      date: "2026-05-27",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "OTA Week 2 Day 2 · Media Availability",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-practice-report-tua-tagovailoa-accuracy-drake-london",
-      transcriptUrl: "https://www.youtube.com/watch?v=JiV2NMXJnGU",
-      verified: true,
-      summary: "After OTA Week 2 Day 2 — the practice on which Tua dropped a back-shoulder fade to Drake London only the receiver's length could corral and closed the day with a jump-ball TD — Stefanski leaned all the way into the QB-accuracy framing. He named accuracy the most important trait for a quarterback, and credited Tua's as something closer to native equipment than coaching. He did not commit to a Week 1 starter and confirmed Penix's ramp is still tracking on the same individual + 7-on-7 plan he laid out a week earlier.",
-      pullQuote: "I think Tua, just in his career, as you've seen, just has that innate, God-given ability.",
-      bullets: [
-        "Accuracy is the most important trait for a quarterback — Tua's is 'innate, God-given'",
-        "Cited the back-shoulder fade to London and the closing jump-ball TD as the day's representative plays",
-        "QB rep split holds — every period, every drill — through every practice Penix is cleared for",
-        "Confirmed Penix still held out of 11-on-11; team-period clearance 'is coming,' no public timeline",
-        "Volunteered 'no collisions' point of emphasis after a couple of helmet-to-helmet hits in 7-on-7",
-      ],
-      topics: ["qb-competition", "tua-accuracy", "penix-acl"],
     },
   ],
 };
