@@ -242,25 +242,6 @@ export const PLAYERS = [
     ],
   },
   {
-    id: "casey-washington",
-    name: "Casey Washington",
-    number: 82,
-    position: "WR",
-    posSlot: "X",
-    positionGroup: "offense",
-    depthRank: 3,
-    height: 75, weight: 200, age: 23, experience: 3,
-    college: "Illinois",
-    acquired: "draft-2024-R6",
-    stats: { receptions: 12, recYds: 142, recTDs: 1 },
-    form: 6.2,
-    status: "active",
-    injuryNote: null,
-    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4428796.png",
-    contract: { years: 4, total: 4250000, guaranteed: 240000, apy: 1062500, throughYear: 2027, cap2026: 950000 },
-    career: [{ years: "2024–", team: "Atlanta Falcons", type: "NFL" }],
-  },
-  {
     id: "drummond",
     name: "Dylan Drummond",
     number: 80,
@@ -776,29 +757,6 @@ export const PLAYERS = [
     contract: { years: 1, total: 1100000, guaranteed: 100000, apy: 1100000, throughYear: 2026, cap2026: 1100000 },
     career: [{ years: "2025–", team: "Atlanta Falcons", type: "NFL" }],
   },
-  {
-    id: "garcia-de",
-    name: "Elijah Garcia",
-    number: 91,
-    position: "DE",
-    posSlot: "RDE",
-    positionGroup: "defense",
-    depthRank: 3,
-    height: 75, weight: 296, age: 26, experience: 4,
-    college: "Rice",
-    acquired: "fa-2026",
-    stats: {},
-    form: 0,
-    status: "active",
-    injuryNote: "Rotational base end · ex-Broncos",
-    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4039170.png",
-    contract: { years: 1, total: 1300000, guaranteed: 200000, apy: 1300000, throughYear: 2026, cap2026: 1300000 },
-    career: [
-      { years: "2026–", team: "Atlanta Falcons", type: "NFL" },
-      { years: "2023–2025", team: "Denver Broncos", type: "NFL" },
-    ],
-  },
-
   // =========================================
   // EDGE / OLB
   // =========================================
@@ -2164,25 +2122,25 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-17T13:00:00Z",
+  generatedAt: "2026-06-18T13:00:00Z",
   cover: {
-    kicker: "MINICAMP, DAY 1 · The 11-on-11 Answer Is 'Not Yet,' and James Pearce Jr. Is Back in the Building",
+    kicker: "MINICAMP WRAPS · Spring Closes With Penix Still on the 7-on-7 Track, and a Training-Camp Date Now on the Board",
     headLine1: "Eleven",
     headEm: "on eleven.",
-    headLine3: "Still the only number that won't move.",
+    headLine3: "The number that waits for July.",
     deck:
-      "Day 1 of Atlanta's first mandatory minicamp under Kevin Stefanski settled the spring's biggest question without changing it: Michael Penix Jr. is still not cleared for 11-on-11, and the staff is content to keep it that way. Stefanski called Penix 'exactly where he needs to be,' Penix told reporters 'I'm not 100% yet, but I know I will be,' and the coach made clear the real Tua-vs-Penix evaluation now waits for training camp. The day's surprise came at the edge: James Pearce Jr., not expected to attend, reported anyway, the first time the rookie sacks leader has been with the team since his February arrest. He is limited to the weight room and individual drills, with the league still silent on any discipline. Also held out Tuesday: rookie LB Kendal Daniels and JD Bertrand, handing Christian Harris a clear runway at inside linebacker.",
+      "Atlanta broke for the summer Thursday after three days of mandatory minicamp that answered the spring's defining question by tabling it. Michael Penix Jr. never took an 11-on-11 rep, by design, and Stefanski would not commit to clearance, calling him 'exactly where he needs to be.' Penix set his own bar: being ready for camp is 'the expectation,' though 'it's really up to my doc.' The real Tua-vs-Penix evaluation now has a runway, the team announced its 2026 training-camp schedule with the first full-team practice July 29 and the preseason opener Aug 14 at home against Denver. The week's other business came off the field: James Pearce Jr. reported for the first time since his February arrest but was held to the weight room and individual work, and the front office signed three UFL standouts as the camp closed.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
     stampLabel: "QB · CLEARANCE WATCH",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
-    // NOTE (2026-06-17 run): cover is fresh (1 day old) and already targets
-    // today's lead subject (Penix at minicamp), so no new request was warranted
-    // on either the visual-story or 4-day-staleness trigger. ~/Vault + the
-    // limn-editor-enhance skill remain unreachable from the Cowork sandbox and
-    // the downstream generator still has not populated public/assets/cover
+    // NOTE (2026-06-18 run): cover image is 2 days old (under the 4-day
+    // staleness backstop) and still targets today's lead subject (Penix at
+    // minicamp), so no new request was warranted on either trigger. ~/Vault +
+    // the limn-editor-enhance skill remain unreachable from the Cowork sandbox
+    // and the downstream generator still has not populated public/assets/cover
     // (only two 2026-05-28 smoke-test files exist on disk), so no request could
     // be queued regardless. The penix-jr headshot fallback keeps the cover
     // coherent with the lead until the generator catches up.
@@ -2198,11 +2156,25 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "DAY 1 ANSWER IS 'NOT YET': Penix held out of 11-on-11 at Tuesday's minicamp opener, but Stefanski calls him 'exactly where he needs to be' and pushes the real QB evaluation to training camp",
-      detail: "NFL.com roundup / Atlantafalcons.com (Day 1 practice report) / ClutchPoints (filed Tue Jun 16): the spring's defining question got its clearest answer yet, and it did not move the needle. Michael Penix Jr. again did not take team-period reps on the first day of mandatory minicamp, staying on the individual and 7-on-7 track he has run since OTAs. Stefanski was emphatic that the hold is by design, not concern: 'Very pleased with the work that he's putting in. He's exactly where he needs to be, and we'll just continue to lean on medical and Mike and continue to make good decisions for his rehabilitation.' The coach would not commit to Penix being cleared by the July 22 training-camp open, and reiterated that the Tua-vs-Penix competition does not truly begin until both can be evaluated equally. Tua Tagovailoa keeps taking every first-team snap.",
+      title: "MINICAMP WRAPS, PENIX STILL ON THE 7-ON-7 TRACK: Atlanta broke for the summer Thursday with its QB never cleared for 11-on-11, but Penix set his own bar for camp: being ready is 'the expectation,' though 'it's really up to my doc'",
+      detail: "Yardbarker / ClutchPoints / Atlantafalcons.com (filed Tue Jun 16 into Thu Jun 18): the spring's defining question closed the way it opened, tabled by design. Michael Penix Jr. did not take a single team-period rep across the three-day mandatory minicamp, staying on the individual and 7-on-7 plan he has run since OTAs as he rehabs the late-November ACL surgery. Stefanski would not commit to a clearance date: 'He's not cleared for 11-on-11. So we'll continue with the plan with what Mike has done. To date, very pleased with the work that he's putting in. He's exactly where he needs to be.' Penix offered the first hard marker of the offseason on his own timeline, calling training-camp readiness 'the expectation' while deferring to medical: 'I know I go see my doctor before all that kicks off. So, it's really up to my doc.' Observers note he has looked sharp and shown no discomfort in everything movement-related. Tua Tagovailoa took every first-team snap.",
       category: "injuries",
-      sourceUrl: "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-tuesday-june-16",
-      sourceLabel: "NFL.com / atlantafalcons.com",
+      sourceUrl: "https://www.yardbarker.com/nfl/articles/falcons_qb_michael_penix_jr_expects_to_be_ready_for_training_camp/s1_14819_43962156",
+      sourceLabel: "Yardbarker / atlantafalcons.com",
+    },
+    {
+      title: "TRAINING-CAMP DATE ON THE BOARD: Falcons announce their 2026 camp schedule, first full-team practice July 29, 10 fan-open practices, and a preseason opener Aug 14 at home against Denver",
+      detail: "Atlantafalcons.com / The Falcoholic / AJC / Heavy.com (filed Wed Jun 17): with minicamp closing, the team put a calendar to the summer. Rookies report a few days ahead of veterans, and the first full-team practice of Kevin Stefanski's first camp lands Wednesday July 29. The Falcons set 10 practices open to fans, including a season-ticket-member session Friday July 31 and an 'Under the Lights' practice at a local high school Saturday Aug 8. The preseason: home vs. Denver Aug 14, at Indianapolis Aug 22 (preceded by joint practices with the Colts), and a road finale at Miami. The date matters because it is the runway for the real Tua-vs-Penix evaluation that the staff has said cannot begin until Penix is cleared to do everything Tagovailoa is doing.",
+      category: "general",
+      sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-training-camp-schedule-announced",
+      sourceLabel: "atlantafalcons.com / AJC",
+    },
+    {
+      title: "THREE UFL STANDOUTS IN AS CAMP CLOSES: Atlanta signs DE Keshawn Banks, DT Devonnsha Maxwell and WR Antwane Wells Jr., releasing Casey Washington, Elijah Garcia and CJ Nunnally IV",
+      detail: "Atlantafalcons.com / AJC / SI Falcons (filed Wed Jun 17): the front office worked the margins as the second minicamp practice ended, adding three players off strong 2026 UFL seasons. DE Keshawn Banks put up 5 sacks and 11 tackles for loss in 10 games for the Orlando Storm (prior NFL time with Green Bay, New England and Arizona in 2024). DT Devonnsha Maxwell, a Georgia native and former Bengal, had 4 sacks and 7 TFLs for the UFL-champion DC Defenders. WR Antwane Wells Jr., a former Giant, was a key piece of Columbus's offense. To make room, the Falcons released WR Casey Washington, DL Elijah Garcia and LB CJ Nunnally IV. The moves signal where the staff still sees thin spots: interior and edge defensive line depth, and receiver behind the top group.",
+      category: "free-agency",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-sign-three-ufl-players-casey-washington",
+      sourceLabel: "atlantafalcons.com / AJC",
     },
     {
       title: "PEARCE REPORTS: the rookie sacks leader, not expected at camp, shows up anyway; it is the first time he has been with the team since his February arrest, but he is limited to the weight room and individual drills",
@@ -2212,23 +2184,9 @@ export const NEWS_DIGEST = {
       sourceLabel: "AP / SI Falcons",
     },
     {
-      title: "PENIX, IN HIS OWN WORDS: 'I'm not 100% yet, but I know I will be,' the QB tells reporters at minicamp, and the staff says he has done more than anyone anticipated for this stage of an ACL rehab",
-      detail: "Yahoo Sports / ClutchPoints (ESPN's Marc Raimondi, filed Tue Jun 16): meeting the media at minicamp, Michael Penix Jr. delivered a measured, optimistic read on his own recovery from the late-November ACL tear: 'I'm not 100% yet, but I know I will be.' He has yet to do any 11-on-11 work, but coaches and team observers note he has progressed faster than expected given the severity of the injury, and Atlanta has taken notice of the rigor of his rehab. The framing keeps the franchise's stance intact: Tua was signed to compete, but the building still views Penix as its quarterback of the future.",
-      category: "injuries",
-      sourceUrl: "https://sports.yahoo.com/articles/falcons-michael-penix-jr-provides-190913203.html",
-      sourceLabel: "Yahoo Sports / ESPN",
-    },
-    {
       title: "ILB DOOR SWINGS OPEN: with rookie Kendal Daniels (foot) and JD Bertrand both held out of Day 1, free-agent addition Christian Harris ran the first-team inside linebacker spot with a clear leg up",
       detail: "The Falcoholic (minicamp Day 1 notes, filed Tue Jun 16): the rebuilt inside linebacker room, one of camp's top evaluations after Kaden Elliss left for New Orleans, opened with two of its contenders on the sideline. R4 pick Kendal Daniels (foot) and JD Bertrand were both kept from practicing, which left Christian Harris pairing with green-dot wearer Divine Deablo on the first unit and, in the words of the wrap, with 'a major leg up' in the rotation race. A 2022 third-round pick with 27 career starts in Houston, Harris is making the most of the reps while the young linebackers work back.",
       category: "coaching",
-      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-news/94172/2026-falcons-minicamp-rounding-up-news-and-notes-from-the-first-day",
-      sourceLabel: "The Falcoholic",
-    },
-    {
-      title: "TRYOUT WATCH: Atlanta is hosting a handful of veterans on minicamp tryout deals, including former second-round DT Byron Cowart, as the front office kicks the tires on late-summer depth",
-      detail: "The Falcoholic / Atlantafalcons.com (filed Tue Jun 16): alongside the 90-man roster, the Falcons brought in several tryout players for the three-day mandatory camp, headlined by veteran defensive tackle Byron Cowart, a 2019 fifth-round pick (originally a heralded recruit and 2015 fifth-overall JUCO-bound prospect) with stops in New England and beyond. Tryout invites rarely produce signings, but they signal where the staff sees thin spots, and interior defensive line depth behind the starters is one to watch as camp approaches.",
-      category: "general",
       sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-news/94172/2026-falcons-minicamp-rounding-up-news-and-notes-from-the-first-day",
       sourceLabel: "The Falcoholic",
     },
@@ -2298,8 +2256,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-06-17T13:00:00Z",
-  windowLabel: "Mandatory Minicamp · Jun 16 → Jun 18",
+  generatedAt: "2026-06-18T13:00:00Z",
+  windowLabel: "Mandatory Minicamp Close → Training Camp Runway · Jun 18 → Jul 29",
   sessions: [
     {
       id: "stefanski-2026-06-16",
@@ -2336,11 +2294,12 @@ export const INTERVIEWS = {
       pullQuote: "I'm not 100% yet, but I know I will be.",
       bullets: [
         "Confirmed he has yet to take any 11-on-11 reps, staying on the individual and 7-on-7 plan he has run since OTAs",
-        "Team observers note he has done more than anticipated given the severity of the late-November ACL tear",
+        "On training camp: being ready is 'the expectation,' but deferred to medical, 'I know I go see my doctor before all that kicks off. So, it's really up to my doc'",
+        "Team observers note he has done more than anticipated given the severity of the late-November ACL tear, and has looked sharp with no discomfort in movement work",
         "The franchise still views Penix as its quarterback of the future even after signing Tua Tagovailoa to compete",
         "Kept the tone forward-looking, framing full clearance as an inevitability rather than a worry",
       ],
-      topics: ["penix-acl", "qb-competition", "minicamp"],
+      topics: ["penix-acl", "qb-competition", "minicamp", "training-camp"],
     },
     {
       id: "drake-london-2026-06-09",

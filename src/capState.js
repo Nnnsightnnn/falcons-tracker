@@ -50,6 +50,7 @@ export const CAP_STATE = {
     },
   ],
   recentMoves: [
+    { date: "2026-06-17", description: "Signed three 2026 UFL standouts as minicamp closed: DE Keshawn Banks (5 sacks, 11 TFL for Orlando), DT Devonnsha Maxwell (UFL-champion DC Defenders, Georgia native), WR Antwane Wells Jr. (ex-Giants, Columbus). Released WR Casey Washington, DL Elijah Garcia and LB CJ Nunnally IV in corresponding moves. Minimum-salary depth signings, negligible cap impact" },
     { date: "2026-06-11", description: "Acquired OT Wanya Morris and a 2027 7th-round pick from Kansas City for a 2027 6th-round pick; adds a 25-year-old swing tackle with 16 career starts (11 at LT in 2024) after McGary's retirement and Storm Norton's PUP placement. Morris is on the final year of his rookie deal, about a $1.71M cap hit, no guaranteed money left" },
     { date: "2026-06-09", description: "WR Drake London officially signs the 4yr/$141M extension (agreed Jun 2) at a Flowery Branch press conference; 'I know it's a lot of money, and I've got to prove it still'" },
     { date: "2026-06-02", description: "Signed WR Drake London to a 4yr/$141M extension (up to $150M w/ incentives, $100M gtd, $35.25M APY — 3rd-highest WR); runs through 2030, 2026 still on $16.82M 5th-yr option. First major deal of the Cunningham/Ryan front office" },
