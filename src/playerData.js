@@ -2122,7 +2122,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-18T13:00:00Z",
+  generatedAt: "2026-06-19T08:32:00Z",
   cover: {
     kicker: "MINICAMP WRAPS · Spring Closes With Penix Still on the 7-on-7 Track, and a Training-Camp Date Now on the Board",
     headLine1: "Eleven",
@@ -2136,14 +2136,16 @@ export const NEWS_DIGEST = {
     stampLabel: "QB · CLEARANCE WATCH",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
-    // NOTE (2026-06-18 run): cover image is 2 days old (under the 4-day
-    // staleness backstop) and still targets today's lead subject (Penix at
-    // minicamp), so no new request was warranted on either trigger. ~/Vault +
-    // the limn-editor-enhance skill remain unreachable from the Cowork sandbox
-    // and the downstream generator still has not populated public/assets/cover
-    // (only two 2026-05-28 smoke-test files exist on disk), so no request could
-    // be queued regardless. The penix-jr headshot fallback keeps the cover
-    // coherent with the lead until the generator catches up.
+    // NOTE (2026-06-19 run): cover image is 3 days old (still under the 4-day
+    // staleness backstop) and still targets the standing lead subject (Penix at
+    // minicamp), so no new request was warranted on either trigger. No major new
+    // story landed between Jun 18 and Jun 19: the team is now on its post-minicamp
+    // break until camp opens Jul 29. ~/Vault and the limn-editor-enhance skill
+    // remain unreachable from the Cowork sandbox, and the downstream generator
+    // still has not populated public/assets/cover (only two 2026-05-28 smoke-test
+    // files exist on disk), so no request could be queued regardless. The
+    // penix-jr headshot fallback keeps the cover coherent with the lead. Heads-up
+    // for the next run: this image crosses the 4-day backstop on Jun 20.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-06-16-penix-minicamp-day1.jpg",
   },
   sources: [
@@ -2256,8 +2258,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-06-18T13:00:00Z",
-  windowLabel: "Mandatory Minicamp Close → Training Camp Runway · Jun 18 → Jul 29",
+  generatedAt: "2026-06-19T08:32:00Z",
+  windowLabel: "Post-Minicamp Break → Training Camp Runway · Jun 19 → Jul 29",
   sessions: [
     {
       id: "stefanski-2026-06-16",
