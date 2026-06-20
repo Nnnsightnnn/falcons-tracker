@@ -2122,9 +2122,9 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-19T08:32:00Z",
+  generatedAt: "2026-06-20T08:32:33Z",
   cover: {
-    kicker: "MINICAMP WRAPS · Spring Closes With Penix Still on the 7-on-7 Track, and a Training-Camp Date Now on the Board",
+    kicker: "DEAD PERIOD OPENS · Spring Closes With Penix Still on the 7-on-7 Track, and a Training-Camp Date Now on the Board",
     headLine1: "Eleven",
     headEm: "on eleven.",
     headLine3: "The number that waits for July.",
@@ -2136,16 +2136,19 @@ export const NEWS_DIGEST = {
     stampLabel: "QB · CLEARANCE WATCH",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
-    // NOTE (2026-06-19 run): cover image is 3 days old (still under the 4-day
-    // staleness backstop) and still targets the standing lead subject (Penix at
-    // minicamp), so no new request was warranted on either trigger. No major new
-    // story landed between Jun 18 and Jun 19: the team is now on its post-minicamp
-    // break until camp opens Jul 29. ~/Vault and the limn-editor-enhance skill
-    // remain unreachable from the Cowork sandbox, and the downstream generator
-    // still has not populated public/assets/cover (only two 2026-05-28 smoke-test
-    // files exist on disk), so no request could be queued regardless. The
-    // penix-jr headshot fallback keeps the cover coherent with the lead. Heads-up
-    // for the next run: this image crosses the 4-day backstop on Jun 20.
+    // NOTE (2026-06-20 run): cover image is now 4 days old and at the staleness
+    // backstop, but it CANNOT be refreshed from this environment: ~/Vault and the
+    // limn-editor-enhance skill remain unreachable from the Cowork sandbox, and
+    // the downstream image generator has still never populated public/assets/cover
+    // (only two 2026-05-28 smoke-test files exist on disk). So no request could be
+    // queued and coverImageUrl was left unchanged rather than bumped to a path the
+    // generator will not fill. No major new story landed Jun 19 -> Jun 20; the
+    // team is on its post-minicamp break and today (Jun 20) is the last day of the
+    // OTAs/minicamp phase, with the dead period (CampCountdown hero) opening Jun 21.
+    // The penix-jr headshot fallback keeps the cover coherent with the standing
+    // lead. ACTION FOR KENNY: the cover pipeline (vault + limn skill + generator)
+    // is not wired up in this sandbox; covers will stay on the headshot fallback
+    // until that is fixed.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-06-16-penix-minicamp-day1.jpg",
   },
   sources: [
@@ -2157,6 +2160,13 @@ export const NEWS_DIGEST = {
     "Bengals.com", "FantasyPros", "Atlanta News First",
   ],
   topics: [
+    {
+      title: "THE QUIET STRETCH BEGINS: with minicamp closed, Atlanta enters the NFL dead period; the next time the full team is on the grass is the first training-camp practice Wednesday July 29, the runway for the real Tua-vs-Penix evaluation",
+      detail: "Calendar checkpoint (Sat Jun 20): the offseason program is officially over. The Falcons wrapped three days of mandatory minicamp Thursday Jun 18 and now go dark for the league's dead period, the roughly six-week gap before camp opens. Per the schedule the team announced Jun 17, rookies report ahead of veterans and the first full-team practice lands Wednesday Jul 29, with the preseason opener at home against Denver Aug 14. Two threads carry into the break with no resolution: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, calling camp readiness 'the expectation' but deferring to his doctor, and the league office has still not told the team whether James Pearce Jr. faces discipline. The genuine quarterback competition, plus the rebuilt inside-linebacker race, cannot really start until pads come on in late July.",
+      category: "general",
+      sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-training-camp-schedule-announced",
+      sourceLabel: "atlantafalcons.com / The Falcoholic",
+    },
     {
       title: "MINICAMP WRAPS, PENIX STILL ON THE 7-ON-7 TRACK: Atlanta broke for the summer Thursday with its QB never cleared for 11-on-11, but Penix set his own bar for camp: being ready is 'the expectation,' though 'it's really up to my doc'",
       detail: "Yardbarker / ClutchPoints / Atlantafalcons.com (filed Tue Jun 16 into Thu Jun 18): the spring's defining question closed the way it opened, tabled by design. Michael Penix Jr. did not take a single team-period rep across the three-day mandatory minicamp, staying on the individual and 7-on-7 plan he has run since OTAs as he rehabs the late-November ACL surgery. Stefanski would not commit to a clearance date: 'He's not cleared for 11-on-11. So we'll continue with the plan with what Mike has done. To date, very pleased with the work that he's putting in. He's exactly where he needs to be.' Penix offered the first hard marker of the offseason on his own timeline, calling training-camp readiness 'the expectation' while deferring to medical: 'I know I go see my doctor before all that kicks off. So, it's really up to my doc.' Observers note he has looked sharp and shown no discomfort in everything movement-related. Tua Tagovailoa took every first-team snap.",
@@ -2258,8 +2268,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-06-19T08:32:00Z",
-  windowLabel: "Post-Minicamp Break → Training Camp Runway · Jun 19 → Jul 29",
+  generatedAt: "2026-06-20T08:32:33Z",
+  windowLabel: "Dead Period · Post-Minicamp Break → Training Camp · Jun 20 → Jul 29",
   sessions: [
     {
       id: "stefanski-2026-06-16",
