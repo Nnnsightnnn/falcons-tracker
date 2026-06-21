@@ -2122,31 +2122,32 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-20T08:32:33Z",
+  generatedAt: "2026-06-21T08:33:09Z",
   cover: {
-    kicker: "DEAD PERIOD OPENS · Spring Closes With Penix Still on the 7-on-7 Track, and a Training-Camp Date Now on the Board",
+    kicker: "DEAD PERIOD, DAY ONE · The Building Goes Dark With Penix Still on the 7-on-7 Track, and the Whole Season Now Pointing at July 29",
     headLine1: "Eleven",
     headEm: "on eleven.",
     headLine3: "The number that waits for July.",
     deck:
-      "Atlanta broke for the summer Thursday after three days of mandatory minicamp that answered the spring's defining question by tabling it. Michael Penix Jr. never took an 11-on-11 rep, by design, and Stefanski would not commit to clearance, calling him 'exactly where he needs to be.' Penix set his own bar: being ready for camp is 'the expectation,' though 'it's really up to my doc.' The real Tua-vs-Penix evaluation now has a runway, the team announced its 2026 training-camp schedule with the first full-team practice July 29 and the preseason opener Aug 14 at home against Denver. The week's other business came off the field: James Pearce Jr. reported for the first time since his February arrest but was held to the weight room and individual work, and the front office signed three UFL standouts as the camp closed.",
+      "The offseason program is over, and as of Sunday the Falcons are officially in the league's dead period, the roughly six-week quiet before camp. The spring's defining question closed the way it opened, tabled by design: Michael Penix Jr. never took an 11-on-11 rep across mandatory minicamp, and Stefanski would not commit to clearance, calling him 'exactly where he needs to be.' Penix set his own bar, being ready for camp is 'the expectation,' though 'it's really up to my doc.' The real Tua-vs-Penix evaluation now has a date on it: the first full-team practice is Wednesday July 29, with the preseason opener Aug 14 at home against Denver. Two threads carry into the break unresolved, Penix's medical clearance and whether the league disciplines James Pearce Jr., who reported during minicamp for the first time since his February arrest but was held to the weight room and individual work. Until pads come on in late July, the building is quiet.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
     stampLabel: "QB · CLEARANCE WATCH",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
-    // NOTE (2026-06-20 run): cover image is now 4 days old and at the staleness
-    // backstop, but it CANNOT be refreshed from this environment: ~/Vault and the
-    // limn-editor-enhance skill remain unreachable from the Cowork sandbox, and
-    // the downstream image generator has still never populated public/assets/cover
-    // (only two 2026-05-28 smoke-test files exist on disk). So no request could be
-    // queued and coverImageUrl was left unchanged rather than bumped to a path the
-    // generator will not fill. No major new story landed Jun 19 -> Jun 20; the
-    // team is on its post-minicamp break and today (Jun 20) is the last day of the
-    // OTAs/minicamp phase, with the dead period (CampCountdown hero) opening Jun 21.
-    // The penix-jr headshot fallback keeps the cover coherent with the standing
-    // lead. ACTION FOR KENNY: the cover pipeline (vault + limn skill + generator)
+    // NOTE (2026-06-21 run): cover image is now 5 days old, past the 4-day
+    // staleness backstop, but it STILL cannot be refreshed from this environment:
+    // ~/Vault and the limn-editor-enhance skill remain unreachable from the Cowork
+    // sandbox, and the downstream image generator has still never populated
+    // public/assets/cover (only two 2026-05-28 smoke-test files exist on disk).
+    // So no request could be queued, and coverImageUrl was left unchanged rather
+    // than bumped to a path the generator will not fill (a bumped path would 404
+    // identically and just churn the metadata). The cover already falls back to the
+    // penix-jr headshot, which still matches the standing lead. The phase rotated
+    // today: OTAs/minicamp closed Jun 20, and the dead period (CampCountdown hero)
+    // opened Jun 21. The cover prose was refreshed to the dead-period-day-one
+    // framing. ACTION FOR KENNY: the cover pipeline (vault + limn skill + generator)
     // is not wired up in this sandbox; covers will stay on the headshot fallback
     // until that is fixed.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-06-16-penix-minicamp-day1.jpg",
@@ -2161,8 +2162,8 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "THE QUIET STRETCH BEGINS: with minicamp closed, Atlanta enters the NFL dead period; the next time the full team is on the grass is the first training-camp practice Wednesday July 29, the runway for the real Tua-vs-Penix evaluation",
-      detail: "Calendar checkpoint (Sat Jun 20): the offseason program is officially over. The Falcons wrapped three days of mandatory minicamp Thursday Jun 18 and now go dark for the league's dead period, the roughly six-week gap before camp opens. Per the schedule the team announced Jun 17, rookies report ahead of veterans and the first full-team practice lands Wednesday Jul 29, with the preseason opener at home against Denver Aug 14. Two threads carry into the break with no resolution: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, calling camp readiness 'the expectation' but deferring to his doctor, and the league office has still not told the team whether James Pearce Jr. faces discipline. The genuine quarterback competition, plus the rebuilt inside-linebacker race, cannot really start until pads come on in late July.",
+      title: "THE QUIET STRETCH IS HERE: the dead period officially opens; with the offseason program closed, the next time the full team is on the grass is the first training-camp practice Wednesday July 29, the runway for the real Tua-vs-Penix evaluation",
+      detail: "Calendar checkpoint (Sun Jun 21): the dead period is now on the clock. The Falcons wrapped three days of mandatory minicamp Thursday Jun 18, broke for the summer, and as of today the building goes dark for the league's roughly six-week quiet before camp. Per the schedule the team announced Jun 17, rookies report ahead of veterans and the first full-team practice lands Wednesday Jul 29, with the preseason opener at home against Denver Aug 14. Two threads carry into the break with no resolution: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, calling camp readiness 'the expectation' but deferring to his doctor, and the league office has still not told the team whether James Pearce Jr. faces discipline (analysts now expect any ruling could wait until 2027). The genuine quarterback competition, plus the rebuilt inside-linebacker race and the made-over defensive line, cannot really start until pads come on in late July.",
       category: "general",
       sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-training-camp-schedule-announced",
       sourceLabel: "atlantafalcons.com / The Falcoholic",
@@ -2182,6 +2183,13 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com / AJC",
     },
     {
+      title: "'WRECKING BALL' UP FRONT: as the dead period opens, the made-over defensive line is the quiet camp battle to watch, with free-agent DT Da'Shawn Hand, nicknamed 'Kingpin' by his position coach, ticketed to anchor the run defense",
+      detail: "SI Falcons / Yahoo Sports / Atlantafalcons.com (camp-preview features carried into the Jun 21 break): with the headline QB and contract stories on hold until late July, the rebuilt front is where the staff has quietly reshaped the roster. Da'Shawn Hand, signed from the Chargers in March off a career-high 13 starts, has embraced a 'wrecking ball' mentality and already earned the 'Kingpin' nickname from D-line coach Nate Ollie as the 'final boss' against the run, ticketed as at least a partial replacement for David Onyemata. Through the spring the first-team interior reps ran through Maason Smith, Brandon Dorlus and Hand, with Zach Harrison and Cameron Thomas rotating behind them, and Samson Ebukam added off the edge. The group is building on a 2025 unit that logged the NFL's second-most sacks (57); all five of last year's top rushers, Pearce, Dorlus, Jalon Walker, LaCale London and Harrison, are back. The real sorting starts when pads come on July 29.",
+      category: "coaching",
+      sourceUrl: "https://www.atlantafalcons.com/news/training-camp-preview-defensive-line",
+      sourceLabel: "atlantafalcons.com / SI Falcons",
+    },
+    {
       title: "THREE UFL STANDOUTS IN AS CAMP CLOSES: Atlanta signs DE Keshawn Banks, DT Devonnsha Maxwell and WR Antwane Wells Jr., releasing Casey Washington, Elijah Garcia and CJ Nunnally IV",
       detail: "Atlantafalcons.com / AJC / SI Falcons (filed Wed Jun 17): the front office worked the margins as the second minicamp practice ended, adding three players off strong 2026 UFL seasons. DE Keshawn Banks put up 5 sacks and 11 tackles for loss in 10 games for the Orlando Storm (prior NFL time with Green Bay, New England and Arizona in 2024). DT Devonnsha Maxwell, a Georgia native and former Bengal, had 4 sacks and 7 TFLs for the UFL-champion DC Defenders. WR Antwane Wells Jr., a former Giant, was a key piece of Columbus's offense. To make room, the Falcons released WR Casey Washington, DL Elijah Garcia and LB CJ Nunnally IV. The moves signal where the staff still sees thin spots: interior and edge defensive line depth, and receiver behind the top group.",
       category: "free-agency",
@@ -2189,11 +2197,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com / AJC",
     },
     {
-      title: "PEARCE REPORTS: the rookie sacks leader, not expected at camp, shows up anyway; it is the first time he has been with the team since his February arrest, but he is limited to the weight room and individual drills",
-      detail: "AP (Washington Times) / SI Falcons / Atlantafalcons.com (filed Tue Jun 16): the day's surprise came at the edge. James Pearce Jr., widely reported as unlikely to attend, reported for the start of mandatory minicamp, his first appearance with the team since his Feb 7 arrest near Miami on three felony charges (he accepted a pretrial intervention program in late May; charges drop on completion). Stefanski set firm limits: 'He'll do work in the weight room, he'll do individual. He's not going to team settings, team period type stuff yet. Just feel like with him not being here for the offseason program, I don't think it's fair to put him in those type of drills, but he'll be out there.' Asked about their conversations, Stefanski said only that Pearce 'knows what is expected of him.' The team says it still has not heard from the league about possible discipline.",
+      title: "PEARCE DISCIPLINE MAY WAIT UNTIL 2027: with his arrest now in a 12-month diversion program, analysts expect the NFL to sit on any personal-conduct ruling until the legal track plays out, meaning the edge rusher likely opens 2026 without a suspension on the books",
+      detail: "Audacy / 92-9 The Game (analysis carried into the dead period, building on AP / SI Falcons reporting from minicamp Jun 16): the cleanest read on James Pearce Jr.'s status is that nothing gets decided soon. Pearce accepted a Miami-Dade diversion program that the state upgraded from six months to a full year (mental-health treatment, anger-management and impulse-control services, random drug testing, apology letters); charges from the Feb 7 arrest drop only on completion. Because the league typically waits for the legal process to resolve before ruling under the personal-conduct policy, analysts now expect any discipline could be pushed into 2027, with one floated outcome a six-game suspension that could be appealed down to four. For 2026 that points to Pearce being available. He reported during mandatory minicamp, his first time with the team since the arrest, but Stefanski held him to the weight room and individual drills: 'He's not going to team settings, team period type stuff yet,' adding only that Pearce 'knows what is expected of him.' The team still says it has not heard from the league office.",
       category: "general",
-      sourceUrl: "https://www.washingtontimes.com/news/2026/jun/16/sacks-leader-pearce-returns-falcons-minicamp-following-tumultuous/",
-      sourceLabel: "AP / SI Falcons",
+      sourceUrl: "https://www.audacy.com/929thegame/sports/atlanta-falcons/why-nfl-may-wait-until-2027-to-address-james-pearce-jr-situation",
+      sourceLabel: "Audacy 92.9 The Game / AP",
     },
     {
       title: "ILB DOOR SWINGS OPEN: with rookie Kendal Daniels (foot) and JD Bertrand both held out of Day 1, free-agent addition Christian Harris ran the first-team inside linebacker spot with a clear leg up",
@@ -2217,18 +2225,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "ESPN / Atlanta News First",
     },
     {
-      title: "'TRUST YOUR FEET': the three words guiding Atlanta's QB competition: with Penix limited, the staff is building its Tua-vs-Penix evaluation around timing, rhythm and footwork",
-      detail: "Atlantafalcons.com (feature, published this week ahead of minicamp): the team site pulled back the curtain on how the coaches plan to judge a quarterback competition in which one passer cannot yet take team reps. The answer is mechanical: timing, rhythm and footwork, distilled into the room's three-word mantra, trust your feet. The framing matters because it gives the staff a common yardstick that works in 7-on-7 (where Penix lives for now) and 11-on-11 (where Tua Tagovailoa is taking every first-team snap), a bridge until the competition can be run, in Alex Van Pelt's word, equally.",
-      category: "coaching",
-      sourceUrl: "https://www.atlantafalcons.com/news/trust-your-feet-michael-penix-tua-tagovailoa-quarterback-competition",
-      sourceLabel: "atlantafalcons.com",
-    },
-    {
-      title: "BIJAN TALKS ARE LIVE — Falcons have 'engaged in talks' on a Robinson extension per ESPN's Graziano, who projects a three-year, $60M deal with $25M fully guaranteed; PFR notes the exercised 2027 option means Atlanta can move fast or wait",
-      detail: "Pro Football Rumors / ESPN (Dan Graziano), posted Mon Jun 8: the next domino after Drake London is officially in motion. Atlanta has engaged in extension talks with Bijan Robinson, per Graziano, who projects a three-year, $60M extension with $25M fully guaranteed. At $20M per year that would slot Robinson just behind Saquon Barkley's league-leading $20.6M AAV and ahead of Christian McCaffrey ($19M) and De'Von Achane ($16M). PFR notes the leverage picture: Robinson's 2027 fifth-year option is already exercised, so the team faces no urgency, though neither side would be surprised by a quick strike before camp. The Jahmyr Gibbs subplot looms over the market: some around the league expect the Lions back to land the richer deal, and neither RB's camp wants to set the ceiling first.",
+      title: "BIJAN, NO DEAL YET, BUT THE NUMBERS ARE FORMING: with talks live and no signature, a new model projects a deal that would top Saquon Barkley's league-leading running-back AAV; Robinson keeps his usual distance, 'We'll see, man. I let them handle all that stuff'",
+      detail: "Yahoo Sports / Bleacher Report / ESPN (projection work published Fri Jun 19, building on Graziano's Jun 8 report): the next domino after Drake London is still in motion but unsigned. Atlanta has engaged in extension talks with Bijan Robinson, and the projections are sharpening as the dead period opens. One widely cited model floats a four-year deal in the high-$80Ms that would push Robinson past Barkley's $20.6M AAV to the top of the running-back market; earlier framing from Graziano had pointed to roughly $20M per year (three years, $60M, $25M guaranteed). The leverage picture is unchanged: Robinson's 2027 fifth-year option is already exercised (projected near $11.3M), so Atlanta can move fast or wait. Robinson, asked again if he is next, kept his distance: 'We'll see, man. We'll see, because I'm not the type of guy to talk about it. I let them handle all that stuff.' The Jahmyr Gibbs subplot still looms, neither back's camp wants to set the ceiling first.",
       category: "contracts",
-      sourceUrl: "https://www.profootballrumors.com/2026/06/falcons-discussing-extension-with-rb-bijan-robinson",
-      sourceLabel: "Pro Football Rumors / ESPN",
+      sourceUrl: "https://sports.yahoo.com/articles/model-projects-details-bijan-robinson-140039496.html",
+      sourceLabel: "Yahoo Sports / ESPN",
     },
     {
       title: "LONDON MAKES IT OFFICIAL — one week after the agreement, the WR1 signs the 4-year, $141M extension at a Flowery Branch podium Tuesday and vows to earn it: 'I know it's a lot of money, and I've got to prove it still'",
@@ -2268,8 +2269,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-06-20T08:32:33Z",
-  windowLabel: "Dead Period · Post-Minicamp Break → Training Camp · Jun 20 → Jul 29",
+  generatedAt: "2026-06-21T08:33:09Z",
+  windowLabel: "Dead Period · Building Goes Dark → Training Camp Opens · Jun 21 → Jul 29",
   sessions: [
     {
       id: "stefanski-2026-06-16",
