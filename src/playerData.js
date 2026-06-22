@@ -2122,34 +2122,33 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-21T08:33:09Z",
+  generatedAt: "2026-06-22T08:30:00Z",
   cover: {
-    kicker: "DEAD PERIOD, DAY ONE · The Building Goes Dark With Penix Still on the 7-on-7 Track, and the Whole Season Now Pointing at July 29",
+    kicker: "DEAD PERIOD · The Building Is Quiet, but the QB Read Is Already Tilting: Tua Took Every First-Team Rep While Penix Stayed on the 7-on-7 Track, and It All Points at July 29",
     headLine1: "Eleven",
     headEm: "on eleven.",
     headLine3: "The number that waits for July.",
     deck:
-      "The offseason program is over, and as of Sunday the Falcons are officially in the league's dead period, the roughly six-week quiet before camp. The spring's defining question closed the way it opened, tabled by design: Michael Penix Jr. never took an 11-on-11 rep across mandatory minicamp, and Stefanski would not commit to clearance, calling him 'exactly where he needs to be.' Penix set his own bar, being ready for camp is 'the expectation,' though 'it's really up to my doc.' The real Tua-vs-Penix evaluation now has a date on it: the first full-team practice is Wednesday July 29, with the preseason opener Aug 14 at home against Denver. Two threads carry into the break unresolved, Penix's medical clearance and whether the league disciplines James Pearce Jr., who reported during minicamp for the first time since his February arrest but was held to the weight room and individual work. Until pads come on in late July, the building is quiet.",
+      "The offseason program is over and the Falcons are into the league's dead period, the roughly six-week quiet before camp. The spring's defining question closed the way it opened, tabled by design: Michael Penix Jr. never took an 11-on-11 rep across mandatory minicamp, and Stefanski would not commit to clearance, calling him 'exactly where he needs to be.' But the read is hardening anyway. With Penix limited to individual and 7-on-7 work as he rehabs his late-November ACL surgery, Tua Tagovailoa took every first-team snap and closed minicamp with one of his best practices of the spring, and a wave of analysts now calls him the early QB1 favorite in an offense that prizes accuracy. The real evaluation still has a date on it: the first full-team practice is Wednesday July 29, with the preseason opener Aug 14 at home against Denver. Two threads carry into the break unresolved, Penix's medical clearance and whether the league disciplines James Pearce Jr., who reported during minicamp for the first time since his February arrest but was held to the weight room and individual work. Until pads come on in late July, the building is quiet.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
     stampLabel: "QB · CLEARANCE WATCH",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
-    // NOTE (2026-06-21 run): cover image is now 5 days old, past the 4-day
-    // staleness backstop, but it STILL cannot be refreshed from this environment:
-    // ~/Vault and the limn-editor-enhance skill remain unreachable from the Cowork
-    // sandbox, and the downstream image generator has still never populated
-    // public/assets/cover (only two 2026-05-28 smoke-test files exist on disk).
-    // So no request could be queued, and coverImageUrl was left unchanged rather
-    // than bumped to a path the generator will not fill (a bumped path would 404
-    // identically and just churn the metadata). The cover already falls back to the
-    // penix-jr headshot, which still matches the standing lead. The phase rotated
-    // today: OTAs/minicamp closed Jun 20, and the dead period (CampCountdown hero)
-    // opened Jun 21. The cover prose was refreshed to the dead-period-day-one
-    // framing. ACTION FOR KENNY: the cover pipeline (vault + limn skill + generator)
-    // is not wired up in this sandbox; covers will stay on the headshot fallback
-    // until that is fixed.
+    // NOTE (2026-06-22 run): cover image is now 6 days old, past the 4-day
+    // staleness backstop, but it STILL cannot be refreshed from this environment.
+    // Re-verified this run: ~/Vault does not exist in the sandbox, the
+    // limn-editor-enhance skill is not present under ~/.claude/skills, and
+    // public/assets/cover holds only two 2026-05-28 smoke-test files, so the
+    // downstream generator has never populated it. No image request could be
+    // queued. coverImageUrl was left unchanged rather than bumped to a path the
+    // generator will not fill (a bumped path would 404 identically and just churn
+    // metadata). The cover falls back to the penix-jr headshot, which still fits
+    // the QB-clearance-watch lead. The cover prose was refreshed this run to the
+    // dead-period framing with the hardening Tua-as-QB1-favorite read.
+    // ACTION FOR KENNY: the cover pipeline (vault + limn skill + generator) is not
+    // wired up in this sandbox; covers stay on the headshot fallback until fixed.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-06-16-penix-minicamp-day1.jpg",
   },
   sources: [
@@ -2162,8 +2161,15 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "THE QUIET STRETCH IS HERE: the dead period officially opens; with the offseason program closed, the next time the full team is on the grass is the first training-camp practice Wednesday July 29, the runway for the real Tua-vs-Penix evaluation",
-      detail: "Calendar checkpoint (Sun Jun 21): the dead period is now on the clock. The Falcons wrapped three days of mandatory minicamp Thursday Jun 18, broke for the summer, and as of today the building goes dark for the league's roughly six-week quiet before camp. Per the schedule the team announced Jun 17, rookies report ahead of veterans and the first full-team practice lands Wednesday Jul 29, with the preseason opener at home against Denver Aug 14. Two threads carry into the break with no resolution: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, calling camp readiness 'the expectation' but deferring to his doctor, and the league office has still not told the team whether James Pearce Jr. faces discipline (analysts now expect any ruling could wait until 2027). The genuine quarterback competition, plus the rebuilt inside-linebacker race and the made-over defensive line, cannot really start until pads come on in late July.",
+      title: "TUA IS PULLING AHEAD IN A RACE THAT HASN'T STARTED: a wave of post-minicamp analysis now tags Tagovailoa the early QB1 favorite, having taken every first-team rep and closed the spring 3-for-3 with a red-zone TD to Bijan while Penix stays capped at 7-on-7",
+      detail: "Yahoo Sports / ClutchPoints / Heavy.com (post-minicamp analysis carried into the Jun 21-22 break): the competition the staff keeps calling a competition is, for now, a one-man rep count. With Michael Penix Jr. limited to individual and 7-on-7 work as he rehabs his late-November ACL surgery, Tua Tagovailoa has banked the entire first-team workload this spring and closed mandatory minicamp with what observers called one of his best practices, going 3-for-3 with a touchdown over the middle to Bijan Robinson in an 11-on-11 red-zone period. Tagovailoa framed it carefully: 'We know we're in a competition, but at the same time, we're on the same team.' The structural edge is real, Kevin Stefanski's offense prizes accuracy above all, which fits Tua, and he simply has the reps Penix has not been cleared to take. The caveat the staff repeats: nothing is decided until Penix is 100% and doing everything Tua is doing, which is the whole point of the July 29 camp open.",
+      category: "general",
+      sourceUrl: "https://sports.yahoo.com/articles/tua-tagovailoa-emerges-obvious-falcons-135710648.html",
+      sourceLabel: "Yahoo Sports / ClutchPoints / Heavy.com",
+    },
+    {
+      title: "THE QUIET STRETCH IS HERE: the dead period is on the clock; with the offseason program closed, the next time the full team is on the grass is the first training-camp practice Wednesday July 29, the runway for the real Tua-vs-Penix evaluation",
+      detail: "Calendar checkpoint (week of Jun 22): the dead period is now on the clock. The Falcons wrapped three days of mandatory minicamp Thursday Jun 18, broke for the summer, and as of today the building goes dark for the league's roughly six-week quiet before camp. Per the schedule the team announced Jun 17, rookies report ahead of veterans and the first full-team practice lands Wednesday Jul 29, with the preseason opener at home against Denver Aug 14. Two threads carry into the break with no resolution: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, calling camp readiness 'the expectation' but deferring to his doctor, and the league office has still not told the team whether James Pearce Jr. faces discipline (analysts now expect any ruling could wait until 2027). The genuine quarterback competition, plus the rebuilt inside-linebacker race and the made-over defensive line, cannot really start until pads come on in late July.",
       category: "general",
       sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-training-camp-schedule-announced",
       sourceLabel: "atlantafalcons.com / The Falcoholic",
@@ -2269,7 +2275,7 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-06-21T08:33:09Z",
+  generatedAt: "2026-06-22T08:30:00Z",
   windowLabel: "Dead Period · Building Goes Dark → Training Camp Opens · Jun 21 → Jul 29",
   sessions: [
     {
