@@ -2122,7 +2122,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-22T08:30:00Z",
+  generatedAt: "2026-06-23T12:30:00Z",
   cover: {
     kicker: "DEAD PERIOD · The Building Is Quiet, but the QB Read Is Already Tilting: Tua Took Every First-Team Rep While Penix Stayed on the 7-on-7 Track, and It All Points at July 29",
     headLine1: "Eleven",
@@ -2136,17 +2136,17 @@ export const NEWS_DIGEST = {
     stampLabel: "QB · CLEARANCE WATCH",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
-    // NOTE (2026-06-22 run): cover image is now 6 days old, past the 4-day
+    // NOTE (2026-06-23 run): cover image is now 7 days old, past the 4-day
     // staleness backstop, but it STILL cannot be refreshed from this environment.
-    // Re-verified this run: ~/Vault does not exist in the sandbox, the
-    // limn-editor-enhance skill is not present under ~/.claude/skills, and
-    // public/assets/cover holds only two 2026-05-28 smoke-test files, so the
+    // Re-verified this run: no Vault directory exists in the sandbox, the
+    // limn-editor-enhance skill is not present under the mounted .claude/skills,
+    // and public/assets/cover holds only two 2026-05-28 smoke-test files, so the
     // downstream generator has never populated it. No image request could be
     // queued. coverImageUrl was left unchanged rather than bumped to a path the
     // generator will not fill (a bumped path would 404 identically and just churn
     // metadata). The cover falls back to the penix-jr headshot, which still fits
-    // the QB-clearance-watch lead. The cover prose was refreshed this run to the
-    // dead-period framing with the hardening Tua-as-QB1-favorite read.
+    // the QB-clearance-watch lead. Cover prose retained from the 06-22 run: the
+    // dead-period framing with the hardening Tua-as-QB1-favorite read still holds.
     // ACTION FOR KENNY: the cover pipeline (vault + limn skill + generator) is not
     // wired up in this sandbox; covers stay on the headshot fallback until fixed.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-06-16-penix-minicamp-day1.jpg",
@@ -2160,6 +2160,13 @@ export const NEWS_DIGEST = {
     "Bengals.com", "FantasyPros", "Atlanta News First",
   ],
   topics: [
+    {
+      title: "PITTS LANDS ON THE DEADLINE RUMOR BOARD: with the quiet stretch open and no long-term deal, ESPN's Dan Graziano floats the franchise-tagged tight end as a 2026 trade-deadline candidate and names Baltimore, thin at the position, as a logical suitor",
+      detail: "ESPN (Dan Graziano) / ClutchPoints / Yahoo Sports / Heavy.com (chatter building through the week of Jun 22): the dead period's first real talking point is a hypothetical, not a transaction. In a leaguewide look at players who could move by the deadline, Graziano listed Kyle Pitts as a name to watch, with the logic tied to Atlanta's calendar. Pitts is set to play 2026 on the $15.05M franchise tag, and if the sides do not reach a multi-year deal by the July 15 deadline and the team struggles early, rival clubs are expected to ask. The Ravens surface as the cleanest fit, having lost tight ends Isaiah Likely and Charlie Kolar in free agency, though Baltimore did extend Mark Andrews through 2028. Nothing is imminent: this is offseason speculation, not reporting of a deal. The Falcons' public posture, from Ian Cunningham keeping Pitts on the tag to OC Tommy Rees calling him 'a big piece of this thing,' points to keeping him. Still, it is the kind of thread that fills a quiet June, and the July 15 extension deadline is the next real marker.",
+      category: "general",
+      sourceUrl: "https://clutchpoints.com/nfl/nfl-stories/nfl-rumors-lamar-jackson-kyle-pitts-espn-insider-floats-ravens-falcons-trade-idea",
+      sourceLabel: "ESPN / ClutchPoints / Yahoo Sports",
+    },
     {
       title: "TUA IS PULLING AHEAD IN A RACE THAT HASN'T STARTED: a wave of post-minicamp analysis now tags Tagovailoa the early QB1 favorite, having taken every first-team rep and closed the spring 3-for-3 with a red-zone TD to Bijan while Penix stays capped at 7-on-7",
       detail: "Yahoo Sports / ClutchPoints / Heavy.com (post-minicamp analysis carried into the Jun 21-22 break): the competition the staff keeps calling a competition is, for now, a one-man rep count. With Michael Penix Jr. limited to individual and 7-on-7 work as he rehabs his late-November ACL surgery, Tua Tagovailoa has banked the entire first-team workload this spring and closed mandatory minicamp with what observers called one of his best practices, going 3-for-3 with a touchdown over the middle to Bijan Robinson in an 11-on-11 red-zone period. Tagovailoa framed it carefully: 'We know we're in a competition, but at the same time, we're on the same team.' The structural edge is real, Kevin Stefanski's offense prizes accuracy above all, which fits Tua, and he simply has the reps Penix has not been cleared to take. The caveat the staff repeats: nothing is decided until Penix is 100% and doing everything Tua is doing, which is the whole point of the July 29 camp open.",
@@ -2217,13 +2224,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "The Falcoholic",
     },
     {
-      title: "NORTON TO RESERVE/PUP: Falcons place OT Storm Norton on the Reserve/Physically Unable to Perform list Thursday afternoon; he has not played a snap since 2025 ankle surgery and was never activated off IR last season",
-      detail: "Atlantafalcons.com (Will McFadden, filed Thu Jun 11, 3:33 PM): the team placed veteran tackle Storm Norton on Reserve/PUP, formalizing what 2025 already suggested. Norton underwent ankle surgery last summer, opened the season on IR, was designated to return Oct 22, and saw his 21-day activation window expire without ever suiting up. The 6-foot-7 swing tackle joined Atlanta in 2023 and made three starts in Weeks 14-16 of that season while Kaleb McGary was hurt. The move thins an OT room already reshaped this offseason: McGary retired in April, Jawaan Taylor signed to start at RT, and rookie Ethan Onianwa plus Michael Jerrell round out the depth.",
-      category: "injuries",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-storm-norton-reserve-physically-unable-perform",
-      sourceLabel: "atlantafalcons.com",
-    },
-    {
       title: "MORRIS TRADE ADDS TACKLE DEPTH: Falcons land OT Wanya Morris from Kansas City for a late-round pick swap, two days after Storm Norton's PUP move",
       detail: "ESPN (Adam Schefter) / NFL.com / Atlanta News First (AP source), filed Thu Jun 11 into Fri Jun 12: Atlanta acquired offensive tackle Wanya Morris and a 2027 seventh-round pick from the Chiefs for a 2027 sixth-round pick. Morris, a 2023 third-round pick out of Oklahoma, has 16 career starts (11 of them at left tackle in 2024) and a Super Bowl ring, and gives Stefanski a 25-year-old swing tackle on the final year of his rookie deal (about a $1.71M cap hit, no guaranteed money left). The move answers a thinned tackle room: Kaleb McGary retired in April, Jawaan Taylor signed to start at right tackle, and Storm Norton landed on Reserve/PUP Thursday. Morris gives the room another body to evaluate when minicamp opens Tuesday.",
       category: "free-agency",
@@ -2252,13 +2252,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com",
     },
     {
-      title: "COUSINS CAP SAVINGS HIT THE BOOKS — the post-June-1 designation officially clears +$2.1M in 2026 and +$45M in 2027; Atlanta now sits ~$19.3M under, ~$125M projected for 2027 (Over The Cap)",
-      detail: "The Falcoholic / Yahoo Sports / Over The Cap (filed Mon Jun 1): the second half of the Kirk Cousins divorce came due. Atlanta cut Cousins back in the spring with a post-June-1 designation, and as of June 1 the rest of the savings officially hit the books — an additional $2.1M of 2026 cap space and a far larger $45M in 2027 relief, per Over The Cap. The flip side is the dead-money tail: Cousins counts $22.5M in dead money in 2026 and another $12.5M in 2027. The net effect leaves the Falcons roughly $19.3M under the 2026 cap (OTC) with about $125M projected for 2027 — real ammunition that the front office promptly deployed on the Drake London extension (signed Jun 2) — with the market-setting Bijan Robinson deal Schefter still expects 'this offseason' up next. GM Ian Cunningham had the room; London was the first to cash in.",
-      category: "contracts",
-      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-news/93857/falcons-officially-gain-2026-2027-cap-space-on-june-1-from-kirk-cousins-cut",
-      sourceLabel: "The Falcoholic / Over The Cap",
-    },
-    {
       title: "Madrid Week 9 — Falcons HOST the Bengals Nov 8, 9:30 AM ET at the Bernabéu (NFL Network)",
       detail: "NFL.com / Atlantafalcons.com / Bengals.com / Yahoo / NBC PFT (May 13-14): the international slate has Atlanta hosting Cincinnati (Burrow, Chase, Higgins) in Madrid Sun Nov 8, 9:30 AM ET at Santiago Bernabéu, the 70-year home of Real Madrid CF. NFL Network exclusive broadcast. It is the Bengals' first Madrid trip and first international game in seven years. CEO Greg Beadles: 'We are truly honored and deeply grateful for the opportunity to host the Cincinnati Bengals at the Bernabéu.' The game is Atlanta's 6th international appearance (Toronto '13, London '14/'21/'23, Berlin '25) and 5th trip to Europe in six seasons. It falls one week before the Week 11 bye — a clean travel runway.",
       category: "games",
@@ -2275,7 +2268,7 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-06-22T08:30:00Z",
+  generatedAt: "2026-06-23T12:30:00Z",
   windowLabel: "Dead Period · Building Goes Dark → Training Camp Opens · Jun 21 → Jul 29",
   sessions: [
     {
