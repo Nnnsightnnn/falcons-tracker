@@ -24,6 +24,13 @@ export const todayLong = (d) =>
   d.toLocaleDateString("en-US", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
 export const todayShort = (d) =>
   d.toLocaleDateString("en-US", { month: "short", day: "numeric" }).toUpperCase();
+// Surname that ignores generational suffixes, so "Michael Penix Jr." → "Penix"
+// (not "Jr.") and "Kyle Pitts Sr." → "Pitts". Mirrors DepthChartView.lastName.
+export const surname = (name) => {
+  if (!name) return "";
+  const parts = name.replace(/\s+(Jr\.?|Sr\.?|II|III|IV|V)$/i, "").trim().split(" ");
+  return parts[parts.length - 1] || name;
+};
 
 // CoverImage — prefers a custom cover image when present, gracefully
 // falls back to the player-headshot if the custom asset 404s (e.g. when
@@ -249,10 +256,10 @@ export default function MagazineCover({ setView }) {
           </div>
           <div className="stamp">
             <div className="k">{coverFeature?.stampLabel || "PRIMARY · WORKHORSE"}</div>
-            <div className="name">{cover ? `${cover.name.split(" ")[0][0]}. ${cover.name.split(" ").slice(-1)}` : "B. Robinson"}</div>
+            <div className="name">{cover ? `${cover.name.split(" ")[0][0]}. ${surname(cover.name)}` : "B. Robinson"}</div>
             <div className="pos">#{cover?.number} · {cover?.position} · {(cover?.college || "TEXAS").toUpperCase()}</div>
           </div>
-          <div className="caption">PHOTOGRAPH — {(cover?.name?.split(" ").slice(-1)[0] || "BIJAN").toUpperCase()} AT BRANCH, {currentPhase.name.toUpperCase()} · {todayShort(today)}</div>
+          <div className="caption">PHOTOGRAPH — {(surname(cover?.name) || "BIJAN").toUpperCase()} AT BRANCH, {currentPhase.name.toUpperCase()} · {todayShort(today)}</div>
         </div>
       </section>
 
@@ -506,7 +513,7 @@ function AgateCell({ k, v, s, ox }) {
 
 function Dossier({ player, badge, role, stats, ranks, quote }) {
   const name = player?.name?.split(" ");
-  const last = name ? name.slice(-1).join(" ").replace(/\.$/, "") : "—";
+  const last = player?.name ? surname(player.name) : "—";
   const display = name ? `${name[0][0]}. ${last}` : "—";
   const collegeShort = (player?.college || "").toUpperCase();
   return (

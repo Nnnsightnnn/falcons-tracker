@@ -2136,17 +2136,18 @@ export const NEWS_DIGEST = {
     stampLabel: "TE · CORE SECURED",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
-    // NOTE (2026-06-24 run): the lead changed to the Kyle Pitts extension, so the
-    // cover prose, photoId (now "pitts"), and coverImageUrl were realigned to it.
-    // The cover-image pipeline is STILL not wired up in this sandbox: no Vault
-    // directory exists, the limn-editor-enhance skill is not present under the
-    // mounted .claude/skills, and public/assets/cover holds only two 2026-05-28
-    // smoke-test files. No image request could be queued. coverImageUrl was bumped
-    // to a 2026-06-24 pitts-extension path so it tracks the live lead and resets
-    // the staleness clock semantically; the file does not yet exist, so the
-    // CoverImage component falls back to the pitts headshot, which fits the lead.
-    // ACTION FOR KENNY: the cover pipeline (vault + limn skill + generator) is not
-    // wired up in this sandbox; covers stay on the headshot fallback until fixed.
+    // NOTE (2026-06-24 run): an image request for this lead WAS queued this run.
+    // The Vault inbox and the limn-editor-enhance skill are not mounted in the
+    // Cowork sandbox, but they exist on the real machine, so the request was
+    // appended to ~/Vault/Notes/image-requests.md via Desktop Commander (entry:
+    // "FALCONS · 2026-06-24 · Pitts Signs the $54M Extension", slug
+    // pitts-extension). coverImageUrl points at the path that request will fill.
+    // REAL BLOCKER FOR KENNY: the downstream antigravity-image-generator task has
+    // not run since 2026-05-28 (public/assets/cover still holds only the two
+    // 05-28 smoke tests; the 06-06 Penix and 06-10 London requests are still
+    // ungenerated). Until that generator runs, the cover stays on the pitts
+    // headshot fallback. Fixing the generator, not the queue, is what unblocks
+    // fresh covers.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-06-24-pitts-extension.jpg",
   },
   sources: [
