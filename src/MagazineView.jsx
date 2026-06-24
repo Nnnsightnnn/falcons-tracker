@@ -184,9 +184,11 @@ export default function MagazineCover({ setView }) {
       const tvUp = (w.tv || "").toUpperCase();
       const isPrime = !isBye && /PRIME|ESPN|NBC|AMAZON|NFL NETWORK/.test(tvUp) && /8:|9:30/.test(w.kickoffET || "");
       const dayLabel = isBye ? "— BYE —" : `${w.side === "home" ? "vs" : "@"} ${w.opponent}`;
+      // Local-noon parse so the weekday never rolls back a day in ET (UTC-).
+      const gameDate = new Date(w.date + "T12:00:00");
       const net = isBye
-        ? todayShort(new Date(w.date))
-        : `${new Date(w.date).toLocaleDateString("en-US", { weekday: "short" }).toUpperCase()} · ${tvUp.split(" ")[0]}`;
+        ? todayShort(gameDate)
+        : `${gameDate.toLocaleDateString("en-US", { weekday: "short" }).toUpperCase()} · ${tvUp.split(" ")[0]}`;
       return { wk: w.week, isBye, isPrime, dayLabel, opp: w.opponent, net };
     });
   }, []);

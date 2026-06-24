@@ -42,14 +42,21 @@ function netLabel(w) {
   return tv;
 }
 
+// Parse the ISO date at local noon so the weekday/day never rolls back to the
+// previous day in timezones behind UTC (e.g. "2026-09-13" is a Sunday, but
+// `new Date("2026-09-13")` is UTC midnight = Sat evening in ET → wrong day).
+function gameDate(w) {
+  return new Date(w.date + "T12:00:00");
+}
+
 function dayLine(w) {
   if (w.status === "bye") return "— · —";
-  const day = new Date(w.date).toLocaleDateString("en-US", { weekday: "short" }).toUpperCase();
+  const day = gameDate(w).toLocaleDateString("en-US", { weekday: "short" }).toUpperCase();
   return `${w.kickoffET} · ${day}`;
 }
 
 function dateShort(w) {
-  return new Date(w.date).toLocaleDateString("en-US", { month: "short", day: "2-digit" }).toUpperCase();
+  return gameDate(w).toLocaleDateString("en-US", { month: "short", day: "2-digit" }).toUpperCase();
 }
 
 function venueShort(w) {
