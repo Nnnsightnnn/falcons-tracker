@@ -2,8 +2,8 @@
 
 export const CAP_STATE = {
   year: 2026,
-  capSpaceOTC: 19_300_000,      // Over The Cap (post-June-1 Cousins designation, Jun 1 2026)
-  capSpaceSpotrac: 18_800_000,  // Spotrac top-51 (post-London extension; reduced by net top-51 impact of Wanya Morris trade add, Jun 11 2026)
+  capSpaceOTC: 30_400_000,      // Over The Cap (approx, post-Pitts extension Jun 23: OTC pegged ~$11.06M freed vs the $14.12M tag)
+  capSpaceSpotrac: 29_900_000,  // Spotrac top-51 (approx, post-Pitts extension; prior post-London/Morris base +~$11M from the tag-to-deal swap)
   leagueRank: 21,
   totalLiabilities: 295_650_548,
   totalAllocations: 268_323_031,
@@ -21,20 +21,13 @@ export const CAP_STATE = {
     { playerId: "bates", amount: 16800000 },
     { playerId: "drake-london", amount: 16800000 },
     { playerId: "matthews", amount: 15500000 },
-    { playerId: "pitts", amount: 14124000 },
   ],
   pendingExtensions: [
     {
       playerId: "bijan",
       status: "extension-eligible",
       priority: 1,
-      rationale: "Eligible after 3 accrued seasons; $11.32M 5th-yr option exercised for 2027. Talks now underway per ESPN's Graziano (Jun 8), who projects 3yr/$60M with $25M fully guaranteed (just behind Saquon's league-leading $20.6M AAV). No urgency with team control through 2027, but a pre-camp strike would surprise no one.",
-    },
-    {
-      playerId: "pitts",
-      status: "tagged",
-      priority: 2,
-      rationale: "Franchise tag applied for 2026 ($14.1M). Long-term deal deferred.",
+      rationale: "Eligible after 3 accrued seasons; $11.32M 5th-yr option exercised for 2027. Talks now underway per ESPN's Graziano (Jun 8); one widely cited model projects 4yr/$87.6M, which would top Saquon's league-leading $20.6M AAV, while Graziano's earlier framing pointed to roughly 3yr/$60M with $25M guaranteed. No urgency with team control through 2027, but the Pitts deal (Jun 23) freed runway and Robinson is the clear next domino.",
     },
   ],
   restructureCandidates: [
@@ -50,6 +43,7 @@ export const CAP_STATE = {
     },
   ],
   recentMoves: [
+    { date: "2026-06-23", description: "Signed TE Kyle Pitts Sr. to a 3yr/$54M extension ($36M fully guaranteed, $18M APY, 3rd among TEs behind Kittle and McBride; largest 3-year TE deal in NFL history per his agency). Rips up the $15.05M franchise tag, runs through 2028. OTC pegged ~$11M in 2026 cap savings vs the tag. Second core extension in three weeks after London; sets up Bijan Robinson next" },
     { date: "2026-06-17", description: "Signed three 2026 UFL standouts as minicamp closed: DE Keshawn Banks (5 sacks, 11 TFL for Orlando), DT Devonnsha Maxwell (UFL-champion DC Defenders, Georgia native), WR Antwane Wells Jr. (ex-Giants, Columbus). Released WR Casey Washington, DL Elijah Garcia and LB CJ Nunnally IV in corresponding moves. Minimum-salary depth signings, negligible cap impact" },
     { date: "2026-06-11", description: "Acquired OT Wanya Morris and a 2027 7th-round pick from Kansas City for a 2027 6th-round pick; adds a 25-year-old swing tackle with 16 career starts (11 at LT in 2024) after McGary's retirement and Storm Norton's PUP placement. Morris is on the final year of his rookie deal, about a $1.71M cap hit, no guaranteed money left" },
     { date: "2026-06-09", description: "WR Drake London officially signs the 4yr/$141M extension (agreed Jun 2) at a Flowery Branch press conference; 'I know it's a lot of money, and I've got to prove it still'" },

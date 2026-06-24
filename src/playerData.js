@@ -298,11 +298,11 @@ export const PLAYERS = [
     stats: { receptions: 58, recYds: 694, recTDs: 4, targets: 92 },
     form: 7.3,
     status: "active",
-    injuryNote: "Franchise tagged for 2026 · $14.1M",
+    injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4360248.png",
-    contract: { years: 1, total: 14124000, guaranteed: 14124000, apy: 14124000, throughYear: 2026, cap2026: 14124000 },
+    contract: { years: 3, total: 54000000, guaranteed: 36000000, apy: 18000000, throughYear: 2028, cap2026: 3060000 },
     career: [
-      { years: "2021–", team: "Atlanta Falcons", type: "NFL · franchise-tagged" },
+      { years: "2021–", team: "Atlanta Falcons", type: "NFL · 3yr/$54M extension (2026)" },
       { years: "2018–2020", team: "Florida", type: "College · John Mackey Award" },
     ],
   },
@@ -2122,34 +2122,32 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-23T12:30:00Z",
+  generatedAt: "2026-06-24T13:00:00Z",
   cover: {
-    kicker: "DEAD PERIOD · The Building Is Quiet, but the QB Read Is Already Tilting: Tua Took Every First-Team Rep While Penix Stayed on the 7-on-7 Track, and It All Points at July 29",
-    headLine1: "Eleven",
-    headEm: "on eleven.",
-    headLine3: "The number that waits for July.",
+    kicker: "DEAD PERIOD · The Core Gets Locked: Atlanta Tears Up Kyle Pitts's Franchise Tag for a 3-Year, $54M Extension, the Largest Three-Year Tight End Deal in League History, and Turns the Page to Bijan",
+    headLine1: "Fifty-four",
+    headEm: "million, and it's done.",
+    headLine3: "The tag is gone; the core holds through 2028.",
     deck:
-      "The offseason program is over and the Falcons are into the league's dead period, the roughly six-week quiet before camp. The spring's defining question closed the way it opened, tabled by design: Michael Penix Jr. never took an 11-on-11 rep across mandatory minicamp, and Stefanski would not commit to clearance, calling him 'exactly where he needs to be.' But the read is hardening anyway. With Penix limited to individual and 7-on-7 work as he rehabs his late-November ACL surgery, Tua Tagovailoa took every first-team snap and closed minicamp with one of his best practices of the spring, and a wave of analysts now calls him the early QB1 favorite in an offense that prizes accuracy. The real evaluation still has a date on it: the first full-team practice is Wednesday July 29, with the preseason opener Aug 14 at home against Denver. Two threads carry into the break unresolved, Penix's medical clearance and whether the league disciplines James Pearce Jr., who reported during minicamp for the first time since his February arrest but was held to the weight room and individual work. Until pads come on in late July, the building is quiet.",
+      "The quiet stretch broke for one big piece of business. On Tuesday the Falcons reached agreement with franchise-tagged tight end Kyle Pitts Sr. on a three-year, $54M extension, $36M of it fully guaranteed, an $18M average that lands third among NFL tight ends behind George Kittle and Trey McBride. His agency calls it the largest three-year deal for a tight end in league history. The pact rips up the $15.05M tag Atlanta applied in March and ties Pitts to the franchise through 2028, the second core extension in three weeks after Drake London's 4-year, $141M deal, and a clear signal the new regime is building around the players it drafted. Over The Cap pegged the move as freeing roughly $11M of 2026 cap room, useful runway for the next domino, Bijan Robinson, whose talks are live and projected to reset the running-back market. The other spring threads stay tabled into the break: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, with Tua Tagovailoa having taken every first-team rep, and the league has not told the team whether James Pearce Jr. faces discipline. The first full-team practice is Wednesday July 29.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
-    photoId: "penix-jr",
-    stampLabel: "QB · CLEARANCE WATCH",
+    photoId: "pitts",
+    stampLabel: "TE · CORE SECURED",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
-    // NOTE (2026-06-23 run): cover image is now 7 days old, past the 4-day
-    // staleness backstop, but it STILL cannot be refreshed from this environment.
-    // Re-verified this run: no Vault directory exists in the sandbox, the
-    // limn-editor-enhance skill is not present under the mounted .claude/skills,
-    // and public/assets/cover holds only two 2026-05-28 smoke-test files, so the
-    // downstream generator has never populated it. No image request could be
-    // queued. coverImageUrl was left unchanged rather than bumped to a path the
-    // generator will not fill (a bumped path would 404 identically and just churn
-    // metadata). The cover falls back to the penix-jr headshot, which still fits
-    // the QB-clearance-watch lead. Cover prose retained from the 06-22 run: the
-    // dead-period framing with the hardening Tua-as-QB1-favorite read still holds.
+    // NOTE (2026-06-24 run): the lead changed to the Kyle Pitts extension, so the
+    // cover prose, photoId (now "pitts"), and coverImageUrl were realigned to it.
+    // The cover-image pipeline is STILL not wired up in this sandbox: no Vault
+    // directory exists, the limn-editor-enhance skill is not present under the
+    // mounted .claude/skills, and public/assets/cover holds only two 2026-05-28
+    // smoke-test files. No image request could be queued. coverImageUrl was bumped
+    // to a 2026-06-24 pitts-extension path so it tracks the live lead and resets
+    // the staleness clock semantically; the file does not yet exist, so the
+    // CoverImage component falls back to the pitts headshot, which fits the lead.
     // ACTION FOR KENNY: the cover pipeline (vault + limn skill + generator) is not
     // wired up in this sandbox; covers stay on the headshot fallback until fixed.
-    coverImageUrl: "/falcons-tracker/assets/cover/2026-06-16-penix-minicamp-day1.jpg",
+    coverImageUrl: "/falcons-tracker/assets/cover/2026-06-24-pitts-extension.jpg",
   },
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "NFL Network",
@@ -2161,11 +2159,11 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "PITTS LANDS ON THE DEADLINE RUMOR BOARD: with the quiet stretch open and no long-term deal, ESPN's Dan Graziano floats the franchise-tagged tight end as a 2026 trade-deadline candidate and names Baltimore, thin at the position, as a logical suitor",
-      detail: "ESPN (Dan Graziano) / ClutchPoints / Yahoo Sports / Heavy.com (chatter building through the week of Jun 22): the dead period's first real talking point is a hypothetical, not a transaction. In a leaguewide look at players who could move by the deadline, Graziano listed Kyle Pitts as a name to watch, with the logic tied to Atlanta's calendar. Pitts is set to play 2026 on the $15.05M franchise tag, and if the sides do not reach a multi-year deal by the July 15 deadline and the team struggles early, rival clubs are expected to ask. The Ravens surface as the cleanest fit, having lost tight ends Isaiah Likely and Charlie Kolar in free agency, though Baltimore did extend Mark Andrews through 2028. Nothing is imminent: this is offseason speculation, not reporting of a deal. The Falcons' public posture, from Ian Cunningham keeping Pitts on the tag to OC Tommy Rees calling him 'a big piece of this thing,' points to keeping him. Still, it is the kind of thread that fills a quiet June, and the July 15 extension deadline is the next real marker.",
-      category: "general",
-      sourceUrl: "https://clutchpoints.com/nfl/nfl-stories/nfl-rumors-lamar-jackson-kyle-pitts-espn-insider-floats-ravens-falcons-trade-idea",
-      sourceLabel: "ESPN / ClutchPoints / Yahoo Sports",
+      title: "PITTS GETS PAID, TAG TORN UP: Atlanta and Kyle Pitts Sr. agree Tuesday on a 3-year, $54M extension with $36M guaranteed, the largest three-year tight end deal in NFL history, ripping up the $15.05M franchise tag and locking him in through 2028",
+      detail: "ESPN / NFL Network / CBS Sports / atlantafalcons.com (broke Tue Jun 23): the dead period's first real transaction is a big one. The Falcons reached agreement with franchise-tagged tight end Kyle Pitts Sr. on a three-year, $54M extension that includes $36M fully guaranteed and an $18M average annual value, third among NFL tight ends behind San Francisco's George Kittle ($19.1M) and Arizona's Trey McBride ($19M). His agency called it the largest three-year deal for a tight end in league history. The pact rips up the $15.045M franchise tag Atlanta applied in March and ties Pitts to the franchise through 2028, the clearest signal yet that the new regime sees the 2021 No. 4 overall pick as a foundation piece after his career-best 2025 (88 catches, 928 yards, five TDs). Over The Cap pegged the deal as freeing roughly $11M of 2026 cap room versus the tag number. It is the second core extension in three weeks after Drake London's 4-year, $141M deal, and it clears the runway for the next domino, Bijan Robinson.",
+      category: "contracts",
+      sourceUrl: "https://www.espn.com/nfl/story/_/id/49157000/sources-falcons-te-kyle-pitts-agree-3-year-54m-deal",
+      sourceLabel: "ESPN / NFL Network / atlantafalcons.com",
     },
     {
       title: "TUA IS PULLING AHEAD IN A RACE THAT HASN'T STARTED: a wave of post-minicamp analysis now tags Tagovailoa the early QB1 favorite, having taken every first-team rep and closed the spring 3-for-3 with a red-zone TD to Bijan while Penix stays capped at 7-on-7",
@@ -2232,7 +2230,7 @@ export const NEWS_DIGEST = {
     },
     {
       title: "BIJAN, NO DEAL YET, BUT THE NUMBERS ARE FORMING: with talks live and no signature, a new model projects a deal that would top Saquon Barkley's league-leading running-back AAV; Robinson keeps his usual distance, 'We'll see, man. I let them handle all that stuff'",
-      detail: "Yahoo Sports / Bleacher Report / ESPN (projection work published Fri Jun 19, building on Graziano's Jun 8 report): the next domino after Drake London is still in motion but unsigned. Atlanta has engaged in extension talks with Bijan Robinson, and the projections are sharpening as the dead period opens. One widely cited model floats a four-year deal in the high-$80Ms that would push Robinson past Barkley's $20.6M AAV to the top of the running-back market; earlier framing from Graziano had pointed to roughly $20M per year (three years, $60M, $25M guaranteed). The leverage picture is unchanged: Robinson's 2027 fifth-year option is already exercised (projected near $11.3M), so Atlanta can move fast or wait. Robinson, asked again if he is next, kept his distance: 'We'll see, man. We'll see, because I'm not the type of guy to talk about it. I let them handle all that stuff.' The Jahmyr Gibbs subplot still looms, neither back's camp wants to set the ceiling first.",
+      detail: "Yahoo Sports / Bleacher Report / ESPN (projection work published Fri Jun 19, building on Graziano's Jun 8 report; framed as up next after the Jun 23 Pitts deal): the next domino after Drake London and now Kyle Pitts is still in motion but unsigned. Atlanta has engaged in extension talks with Bijan Robinson, and the projections are sharpening as the dead period rolls on. One widely cited model floats a four-year deal in the high-$80Ms that would push Robinson past Barkley's $20.6M AAV to the top of the running-back market; earlier framing from Graziano had pointed to roughly $20M per year (three years, $60M, $25M guaranteed). The leverage picture is unchanged: Robinson's 2027 fifth-year option is already exercised (projected near $11.3M), so Atlanta can move fast or wait. Robinson, asked again if he is next, kept his distance: 'We'll see, man. We'll see, because I'm not the type of guy to talk about it. I let them handle all that stuff.' The Jahmyr Gibbs subplot still looms, neither back's camp wants to set the ceiling first.",
       category: "contracts",
       sourceUrl: "https://sports.yahoo.com/articles/model-projects-details-bijan-robinson-140039496.html",
       sourceLabel: "Yahoo Sports / ESPN",
@@ -2243,13 +2241,6 @@ export const NEWS_DIGEST = {
       category: "contracts",
       sourceUrl: "https://www.atlantafalcons.com/news/falcons-sign-drake-london-contract-extension",
       sourceLabel: "atlantafalcons.com / AP",
-    },
-    {
-      title: "PITTS' 'SIXTH-YEAR OPTION' — the franchise-tagged TE steps into 2026 with a mantra, a matured body and a new staff that sees him as 'a big piece of this thing'",
-      detail: "Atlantafalcons.com (Tori McElhaney feature, filed Tue Jun 2): Kyle Pitts revealed the mantra behind his career-best 2025 — 'You have the opportunity to do something. Just do it. It's up to you.' — a season of 88 catches, 928 yards and five TDs (career highs in receptions and scores) that convinced the new regime to keep him on the $14.1M tag. Pitts calls the tag 'Ian taking a chance ... kind of like my fifth-year option, but it's a sixth-year option,' and says the new offense is 'adding more tools to my tool box' in route running and scheme. OC Tommy Rees: 'He's a great veteran for us right now ... the buy-in being at an extremely high level.' Pass-game coordinator Tanner Engstrand: 'I think Kyle is going to be a big piece of this thing.' Stefanski began his NFL career coaching tight ends, and his offenses have historically fed the position — the one-year audition is set up for both sides to win. The calendar adds a wrinkle: July 15 is the league deadline for tagged players to sign multi-year deals; absent an agreement by then, Pitts plays 2026 on the one-year tag.",
-      category: "contracts",
-      sourceUrl: "https://www.atlantafalcons.com/news/matured-confident-kyle-pitts-franchise-tag-year",
-      sourceLabel: "atlantafalcons.com",
     },
     {
       title: "Madrid Week 9 — Falcons HOST the Bengals Nov 8, 9:30 AM ET at the Bernabéu (NFL Network)",
@@ -2268,7 +2259,7 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-06-23T12:30:00Z",
+  generatedAt: "2026-06-24T13:00:00Z",
   windowLabel: "Dead Period · Building Goes Dark → Training Camp Opens · Jun 21 → Jul 29",
   sessions: [
     {
