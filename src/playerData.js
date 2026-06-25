@@ -2136,18 +2136,11 @@ export const NEWS_DIGEST = {
     stampLabel: "TE · CORE SECURED",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
-    // NOTE (2026-06-24 run): an image request for this lead WAS queued this run.
-    // The Vault inbox and the limn-editor-enhance skill are not mounted in the
-    // Cowork sandbox, but they exist on the real machine, so the request was
-    // appended to ~/Vault/Notes/image-requests.md via Desktop Commander (entry:
-    // "FALCONS · 2026-06-24 · Pitts Signs the $54M Extension", slug
-    // pitts-extension). coverImageUrl points at the path that request will fill.
-    // REAL BLOCKER FOR KENNY: the downstream antigravity-image-generator task has
-    // not run since 2026-05-28 (public/assets/cover still holds only the two
-    // 05-28 smoke tests; the 06-06 Penix and 06-10 London requests are still
-    // ungenerated). Until that generator runs, the cover stays on the pitts
-    // headshot fallback. Fixing the generator, not the queue, is what unblocks
-    // fresh covers.
+    // STATUS (2026-06-25): generated and live. The downstream Antigravity image
+    // generator was run on demand (agy --print) and produced the backlog:
+    // 2026-06-24-pitts-extension.jpg (197 KB), 2026-06-10-london-signed.jpg, and
+    // 2026-06-06-penix-live.jpg are all committed and pushed to origin/master.
+    // The cover now resolves to the real Pitts image, not the headshot fallback.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-06-24-pitts-extension.jpg",
   },
   sources: [
