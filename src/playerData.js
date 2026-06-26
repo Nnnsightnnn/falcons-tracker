@@ -2122,7 +2122,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-25T08:30:00Z",
+  generatedAt: "2026-06-26T08:30:00Z",
   cover: {
     kicker: "DEAD PERIOD · The Core Gets Locked: Atlanta Tears Up Kyle Pitts's Franchise Tag for a 3-Year, $54M Extension, the Largest Three-Year Tight End Deal in League History, and Turns the Page to Bijan",
     headLine1: "Fifty-four",
@@ -2153,6 +2153,13 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
+      title: "BIJAN EXTENSION NOW CALLED 'IMMINENT': with Pitts and London locked up, NFL Network's Tom Pelissero says a Bijan Robinson deal is imminent and a priority for Atlanta, the last of the three core extensions the front office flagged, though there is no signature yet",
+      detail: "NFL Network (Tom Pelissero, 'The Insiders,' Jun 25) / ClutchPoints / SI Falcons / Yahoo (Jun 24-25): after the Jun 23 Kyle Pitts extension, the last domino is the closest it has been. Pelissero said on the league's insider show that a Bijan Robinson extension is imminent and a clear priority for the Falcons, echoing Marc Raimondi's Jun 24 report that talks are ongoing and a deal is expected soon. Nothing is signed: Robinson is still on his rookie deal (a $1.145M base in 2026) with the 2027 fifth-year option already exercised, so Atlanta holds the leverage to move now or wait. The numbers are forming around a market reset, with widely cited projections floating a four-year deal in the high-$80Ms that would push Robinson past Saquon Barkley's $20.6M AAV to the top of the running-back market. The wrinkle SI Falcons flagged Jun 25 is a staring contest with Detroit's Jahmyr Gibbs: whoever signs first likely sets a number the other clears, so each side has reason to let the other go first. Robinson keeps his usual distance: 'We'll see, man. I let them handle all that stuff.'",
+      category: "contracts",
+      sourceUrl: "https://www.nfl.com/videos/pelissero-highlights-contract-extensions-due-soon-for-baker-mayfield-bijan-robinson-and-other-key-players-the-insiders",
+      sourceLabel: "NFL Network / ClutchPoints / SI Falcons",
+    },
+    {
       title: "PITTS GETS PAID, TAG TORN UP: Atlanta and Kyle Pitts Sr. agree Tuesday on a 3-year, $54M extension with $36M guaranteed, the largest three-year tight end deal in NFL history, ripping up the $15.05M franchise tag and locking him in through 2028",
       detail: "ESPN / NFL Network / CBS Sports / atlantafalcons.com (broke Tue Jun 23): the dead period's first real transaction is a big one. The Falcons reached agreement with franchise-tagged tight end Kyle Pitts Sr. on a three-year, $54M extension that includes $36M fully guaranteed and an $18M average annual value, third among NFL tight ends behind San Francisco's George Kittle ($19.1M) and Arizona's Trey McBride ($19M). His agency called it the largest three-year deal for a tight end in league history. The pact rips up the $15.045M franchise tag Atlanta applied in March and ties Pitts to the franchise through 2028, the clearest signal yet that the new regime sees the 2021 No. 4 overall pick as a foundation piece after his career-best 2025 (88 catches, 928 yards, five TDs). Over The Cap pegged the deal as freeing roughly $11M of 2026 cap room versus the tag number. It is the second core extension in three weeks after Drake London's 4-year, $141M deal, and it clears the runway for the next domino, Bijan Robinson. SI Falcons framed the math the regime is betting on (Jun 24): after a Bijan deal the Falcons could carry north of $74M in guarantees across just three skill players, roughly 24% of the 2026 cap, a spend the front office can stomach only because the quarterback room costs about $4.42M this year.",
       category: "contracts",
@@ -2168,7 +2175,7 @@ export const NEWS_DIGEST = {
     },
     {
       title: "THE QUIET STRETCH IS HERE: the dead period is on the clock; with the offseason program closed, the next time the full team is on the grass is the first training-camp practice Wednesday July 29, the runway for the real Tua-vs-Penix evaluation",
-      detail: "Calendar checkpoint (Jun 25): the dead period is now a few days in. The Falcons wrapped three days of mandatory minicamp Thursday Jun 18, broke for the summer, and the building has gone dark for the league's roughly six-week quiet before camp. Per the schedule the team announced Jun 17, rookies report ahead of veterans and the first full-team practice lands Wednesday Jul 29, with the preseason opener at home against Denver Aug 14. Two threads carry into the break with no resolution: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, calling camp readiness 'the expectation' but deferring to his doctor, and the league office has still not told the team whether James Pearce Jr. faces discipline (analysts now expect any ruling could wait until 2027). The genuine quarterback competition, plus the rebuilt inside-linebacker race and the made-over defensive line, cannot really start until pads come on in late July.",
+      detail: "Calendar checkpoint (Jun 26): the dead period is now about a week in. The Falcons wrapped three days of mandatory minicamp Thursday Jun 18, broke for the summer, and the building has gone dark for the league's roughly six-week quiet before camp. Per the schedule the team announced Jun 17, rookies report ahead of veterans and the first full-team practice lands Wednesday Jul 29, with the preseason opener at home against Denver Aug 14. Two threads carry into the break with no resolution: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, calling camp readiness 'the expectation' but deferring to his doctor, and the league office has still not told the team whether James Pearce Jr. faces discipline (analysts now expect any ruling could wait until 2027). The genuine quarterback competition, plus the rebuilt inside-linebacker race and the made-over defensive line, cannot really start until pads come on in late July.",
       category: "general",
       sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-training-camp-schedule-announced",
       sourceLabel: "atlantafalcons.com / The Falcoholic",
@@ -2221,13 +2228,6 @@ export const NEWS_DIGEST = {
       category: "free-agency",
       sourceUrl: "https://www.espn.com/nfl/story/_/id/49032113/falcons-acquire-wanya-morris-trade-chiefs-sources-say",
       sourceLabel: "ESPN / Atlanta News First",
-    },
-    {
-      title: "BIJAN, NO DEAL YET, BUT THE NUMBERS ARE FORMING: with talks live and no signature, a new model projects a deal that would top Saquon Barkley's league-leading running-back AAV; Robinson keeps his usual distance, 'We'll see, man. I let them handle all that stuff'",
-      detail: "ClutchPoints / Yahoo / Yardbarker (Marc Raimondi, Jun 24, building on Jun 19 projection work and Graziano's Jun 8 report; framed as up next after the Jun 23 Pitts deal): the next domino after Drake London and now Kyle Pitts is still in motion but unsigned, and the freshest reporting says it is close. Falcons reporter Marc Raimondi says an extension is expected to get done soon, with conversations between the team and Robinson's reps ongoing. Atlanta has engaged in extension talks with Bijan Robinson, and the projections are sharpening as the dead period rolls on. One widely cited model floats a four-year deal in the high-$80Ms that would push Robinson past Barkley's $20.6M AAV to the top of the running-back market; earlier framing from Graziano had pointed to roughly $20M per year (three years, $60M, $25M guaranteed). The leverage picture is unchanged: Robinson's 2027 fifth-year option is already exercised (projected near $11.3M), so Atlanta can move fast or wait. Robinson, asked again if he is next, kept his distance: 'We'll see, man. We'll see, because I'm not the type of guy to talk about it. I let them handle all that stuff.' The Jahmyr Gibbs subplot still looms, neither back's camp wants to set the ceiling first.",
-      category: "contracts",
-      sourceUrl: "https://sports.yahoo.com/articles/model-projects-details-bijan-robinson-140039496.html",
-      sourceLabel: "Yahoo Sports / ESPN",
     },
     {
       title: "LONDON MAKES IT OFFICIAL — one week after the agreement, the WR1 signs the 4-year, $141M extension at a Flowery Branch podium Tuesday and vows to earn it: 'I know it's a lot of money, and I've got to prove it still'",
