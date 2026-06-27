@@ -27,7 +27,7 @@ export const CAP_STATE = {
       playerId: "bijan",
       status: "extension-eligible",
       priority: 1,
-      rationale: "Eligible after 3 accrued seasons; $11.32M 5th-yr option exercised for 2027. Talks now underway per ESPN's Graziano (Jun 8); one widely cited model projects 4yr/$87.6M, which would top Saquon's league-leading $20.6M AAV, while Graziano's earlier framing pointed to roughly 3yr/$60M with $25M guaranteed. No urgency with team control through 2027, but the Pitts deal (Jun 23) freed runway and Robinson is the clear next domino.",
+      rationale: "Eligible after 3 accrued seasons; $11.32M 5th-yr option exercised for 2027. NFL Network's Pelissero called a deal 'imminent' (Jun 25), the last of the three core extensions after Pitts (Jun 23) and London. The Athletic's Austin Mock model (via Pro Football Rumors, Jun 26) projects $21.9M AAV with a position-record $52.7M guaranteed, topping Saquon's league-leading $20.6M AAV; a likely staring contest with Detroit's Jahmyr Gibbs ($19.9M AAV projection) means whoever signs first sets the bar. No urgency with team control through 2027, but the Pitts deal freed runway and Robinson is the clear next domino.",
     },
   ],
   restructureCandidates: [

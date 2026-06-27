@@ -2122,7 +2122,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-26T08:30:00Z",
+  generatedAt: "2026-06-27T08:30:00Z",
   cover: {
     kicker: "DEAD PERIOD · The Core Gets Locked: Atlanta Tears Up Kyle Pitts's Franchise Tag for a 3-Year, $54M Extension, the Largest Three-Year Tight End Deal in League History, and Turns the Page to Bijan",
     headLine1: "Fifty-four",
@@ -2154,7 +2154,7 @@ export const NEWS_DIGEST = {
   topics: [
     {
       title: "BIJAN EXTENSION NOW CALLED 'IMMINENT': with Pitts and London locked up, NFL Network's Tom Pelissero says a Bijan Robinson deal is imminent and a priority for Atlanta, the last of the three core extensions the front office flagged, though there is no signature yet",
-      detail: "NFL Network (Tom Pelissero, 'The Insiders,' Jun 25) / ClutchPoints / SI Falcons / Yahoo (Jun 24-25): after the Jun 23 Kyle Pitts extension, the last domino is the closest it has been. Pelissero said on the league's insider show that a Bijan Robinson extension is imminent and a clear priority for the Falcons, echoing Marc Raimondi's Jun 24 report that talks are ongoing and a deal is expected soon. Nothing is signed: Robinson is still on his rookie deal (a $1.145M base in 2026) with the 2027 fifth-year option already exercised, so Atlanta holds the leverage to move now or wait. The numbers are forming around a market reset, with widely cited projections floating a four-year deal in the high-$80Ms that would push Robinson past Saquon Barkley's $20.6M AAV to the top of the running-back market. The wrinkle SI Falcons flagged Jun 25 is a staring contest with Detroit's Jahmyr Gibbs: whoever signs first likely sets a number the other clears, so each side has reason to let the other go first. Robinson keeps his usual distance: 'We'll see, man. I let them handle all that stuff.'",
+      detail: "NFL Network (Tom Pelissero, 'The Insiders,' Jun 25) / ClutchPoints / SI Falcons / Yahoo / Pro Football Rumors (Jun 24-26): a week into the dead period the last domino is still the closest it has been, but unsigned. Pelissero said on the league's insider show that a Bijan Robinson extension is imminent and a clear priority for the Falcons, echoing Marc Raimondi's Jun 24 report that talks are ongoing and a deal is expected soon. Nothing is on paper yet: Robinson is still on his rookie deal (a $1.145M base in 2026) with the 2027 fifth-year option already exercised, so Atlanta holds the leverage to move now or wait. A fresh model from The Athletic's Austin Mock (carried by Pro Football Rumors Jun 26) puts the number at $21.9M per year with a position-record $52.7M in guarantees, which would push Robinson past Saquon Barkley's $20.6M AAV to the top of the running-back market. The wrinkle is a staring contest with Detroit's Jahmyr Gibbs, also extension-eligible and projected just behind at $19.9M AAV: whoever signs first likely sets a number the other clears, so each side has reason to let the other go first. Robinson keeps his usual distance: 'We'll see, man. I let them handle all that stuff.'",
       category: "contracts",
       sourceUrl: "https://www.nfl.com/videos/pelissero-highlights-contract-extensions-due-soon-for-baker-mayfield-bijan-robinson-and-other-key-players-the-insiders",
       sourceLabel: "NFL Network / ClutchPoints / SI Falcons",
