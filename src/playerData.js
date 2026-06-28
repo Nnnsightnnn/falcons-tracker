@@ -2122,26 +2122,26 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-27T08:30:00Z",
+  generatedAt: "2026-06-28T08:30:00Z",
   cover: {
-    kicker: "DEAD PERIOD · The Core Gets Locked: Atlanta Tears Up Kyle Pitts's Franchise Tag for a 3-Year, $54M Extension, the Largest Three-Year Tight End Deal in League History, and Turns the Page to Bijan",
-    headLine1: "Fifty-four",
-    headEm: "million, and it's done.",
-    headLine3: "The tag is gone; the core holds through 2028.",
+    kicker: "DEAD PERIOD · The World Cup Comes to the Falcons' House: With the Building Dark Until July 29, Bijan Robinson, Drake London and Teammates Take in the Tournament on Their Own Field as Atlanta Stadium Hosts 2026 World Cup Matches",
+    headLine1: "The world's game,",
+    headEm: "on their own grass.",
+    headLine3: "A rare bit of summer color before the pads come on.",
     deck:
-      "The quiet stretch broke for one big piece of business. On Tuesday the Falcons reached agreement with franchise-tagged tight end Kyle Pitts Sr. on a three-year, $54M extension, $36M of it fully guaranteed, an $18M average that lands third among NFL tight ends behind George Kittle and Trey McBride. His agency calls it the largest three-year deal for a tight end in league history. The pact rips up the $15.05M tag Atlanta applied in March and ties Pitts to the franchise through 2028, the second core extension in three weeks after Drake London's 4-year, $141M deal, and a clear signal the new regime is building around the players it drafted. Over The Cap pegged the move as freeing roughly $11M of 2026 cap room, useful runway for the next domino, Bijan Robinson, whose talks are live and projected to reset the running-back market. The other spring threads stay tabled into the break: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, with Tua Tagovailoa having taken every first-team rep, and the league has not told the team whether James Pearce Jr. faces discipline. The first full-team practice is Wednesday July 29.",
+      "The quietest week on the NFL calendar is the loudest at Mercedes-Benz Stadium, one of 16 North American venues hosting the 2026 World Cup and the Falcons' home field. With the offseason program closed until July 29, Bijan Robinson, Drake London and other players and coaches have turned up to watch the world's biggest tournament on the same grass they play on in the fall, taking in stars like Spain's Lamine Yamal and Brazil's Vinicius Junior. For Robinson the connection runs deeper than fandom: he and Vinicius Junior first linked up through a shared jeweler three years ago, reconnected after Brazil's 2024 friendly at the stadium, and have followed each other since. There is a tidy synergy with the season ahead, too, the Falcons host the Bengals in Madrid on Nov 8, putting Atlanta in Yamal's home country. The football threads stay tabled into the break: Kyle Pitts (3 years, $54M) and Drake London (4 years, $141M) are locked up, Bijan's own extension is reported as imminent but unsigned, Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL, and the league has not told the team whether James Pearce Jr. faces discipline. The first full-team practice is Wednesday July 29.",
     byline: "The Tracker Desk",
-    filedFrom: "Flowery Branch",
-    photoId: "pitts",
-    stampLabel: "TE · CORE SECURED",
+    filedFrom: "Atlanta",
+    photoId: "bijan",
+    stampLabel: "RB · SUMMER AT HOME",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
-    // STATUS (2026-06-25): generated and live. The downstream Antigravity image
-    // generator was run on demand (agy --print) and produced the backlog:
-    // 2026-06-24-pitts-extension.jpg (197 KB), 2026-06-10-london-signed.jpg, and
-    // 2026-06-06-penix-live.jpg are all committed and pushed to origin/master.
-    // The cover now resolves to the real Pitts image, not the headshot fallback.
-    coverImageUrl: "/falcons-tracker/assets/cover/2026-06-24-pitts-extension.jpg",
+    // STATUS (2026-06-28): new cover request queued in ~/Vault/Notes/image-requests.md
+    // (2026-06-28-bijan-world-cup.jpg) for the downstream Antigravity image generator.
+    // Until that file lands, CoverImage falls back to the photoId ("bijan") headshot,
+    // so the cover is never broken. Prior covers (pitts-extension, london-signed,
+    // penix-live) remain committed under public/assets/cover/.
+    coverImageUrl: "/falcons-tracker/assets/cover/2026-06-28-bijan-world-cup.jpg",
   },
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "NFL Network",
@@ -2149,7 +2149,7 @@ export const NEWS_DIGEST = {
     "SI Falcons", "AJC", "Bleacher Report", "ClutchPoints", "Heavy.com",
     "Yahoo Sports", "CBS Sports", "Washington Post", "BloggingDirty",
     "Audacy 92.9 The Game", "Yardbarker", "Over The Cap", "Spotrac",
-    "Bengals.com", "FantasyPros", "Atlanta News First",
+    "Bengals.com", "FantasyPros", "Atlanta News First", "The Athletic",
   ],
   topics: [
     {
@@ -2165,6 +2165,13 @@ export const NEWS_DIGEST = {
       category: "contracts",
       sourceUrl: "https://www.espn.com/nfl/story/_/id/49157000/sources-falcons-te-kyle-pitts-agree-3-year-54m-deal",
       sourceLabel: "ESPN / NFL Network / atlantafalcons.com",
+    },
+    {
+      title: "THE WORLD CUP COMES TO THE FALCONS' HOUSE: with the building dark for the dead period, Bijan Robinson, Drake London and a clutch of teammates are watching the world's biggest tournament on their own field, as Atlanta Stadium hosts 2026 World Cup matches and stars like Lamine Yamal and Vinicius Junior",
+      detail: "Atlantafalcons.com / ESPN (filed into the Jun 26-27 dead-period stretch): the quietest week on the NFL calendar is the loudest at Mercedes-Benz Stadium, one of 16 North American venues hosting the 2026 World Cup, and the Falcons' home field. With the offseason program closed until July 29, Bijan Robinson, Drake London and other players and coaches have turned up to take in the soccer, watching Spain's Lamine Yamal and Brazil's Vinicius Junior on the same grass they play on in the fall. For Robinson the connection runs deeper than fandom: he and Vinicius Junior first linked up through a shared jeweler three years ago, met again after Brazil's 2024 friendly at the stadium, and have followed each other since. There is a tidy synergy with the season ahead, too, the Falcons host the Bengals in Madrid on Nov 8, putting Atlanta in Yamal's home country. A rare bit of summer color before pads come on.",
+      category: "general",
+      sourceUrl: "https://www.atlantafalcons.com/news/bijan-robinson-lamine-yamal-vinicius-junior-drake-london-world-cup",
+      sourceLabel: "atlantafalcons.com / ESPN",
     },
     {
       title: "TUA IS PULLING AHEAD IN A RACE THAT HASN'T STARTED: a wave of post-minicamp analysis now tags Tagovailoa the early QB1 favorite, having taken every first-team rep and closed the spring 3-for-3 with a red-zone TD to Bijan while Penix stays capped at 7-on-7",
@@ -2209,8 +2216,8 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com / AJC",
     },
     {
-      title: "PEARCE DISCIPLINE MAY WAIT UNTIL 2027: with his arrest now in a 12-month diversion program, analysts expect the NFL to sit on any personal-conduct ruling until the legal track plays out, meaning the edge rusher likely opens 2026 without a suspension on the books",
-      detail: "Audacy / 92-9 The Game (analysis carried into the dead period, building on AP / SI Falcons reporting from minicamp Jun 16): the cleanest read on James Pearce Jr.'s status is that nothing gets decided soon. Pearce accepted a Miami-Dade diversion program that the state upgraded from six months to a full year (mental-health treatment, anger-management and impulse-control services, random drug testing, apology letters); charges from the Feb 7 arrest drop only on completion. Because the league typically waits for the legal process to resolve before ruling under the personal-conduct policy, analysts now expect any discipline could be pushed into 2027, with one floated outcome a six-game suspension that could be appealed down to four. For 2026 that points to Pearce being available. He reported during mandatory minicamp, his first time with the team since the arrest, but Stefanski held him to the weight room and individual drills: 'He's not going to team settings, team period type stuff yet,' adding only that Pearce 'knows what is expected of him.' The team still says it has not heard from the league office.",
+      title: "PEARCE 'LIKELY' TO BE SUSPENDED, BUT NOT SOON: The Athletic's Josh Kendall now reports a suspension is the likely end point of the NFL's personal-conduct review, though the timing points to 2027, meaning the edge rusher still projects to open 2026 without a ban on the books",
+      detail: "The Athletic (Josh Kendall) via Pro Football Rumors / Yardbarker (Jun 26-27), building on Audacy / 92-9 The Game analysis and AP / SI Falcons reporting from minicamp Jun 16: the freshest read sharpens, not changes, the picture. Kendall reported it is 'likely' Pearce gets suspended once the league rules, with the baseline for a personal-conduct case in this range sitting at six games, but the timing is the whole story. Because the NFL typically waits for the legal process to resolve before acting, and the cleanest read on James Pearce Jr.'s status is still that nothing gets decided soon. Pearce accepted a Miami-Dade diversion program that the state upgraded from six months to a full year (mental-health treatment, anger-management and impulse-control services, random drug testing, apology letters); charges from the Feb 7 arrest drop only on completion. Because the league typically waits for the legal process to resolve before ruling under the personal-conduct policy, analysts now expect any discipline could be pushed into 2027, with one floated outcome a six-game suspension that could be appealed down to four. For 2026 that points to Pearce being available. He reported during mandatory minicamp, his first time with the team since the arrest, but Stefanski held him to the weight room and individual drills: 'He's not going to team settings, team period type stuff yet,' adding only that Pearce 'knows what is expected of him.' The team still says it has not heard from the league office.",
       category: "general",
       sourceUrl: "https://www.audacy.com/929thegame/sports/atlanta-falcons/why-nfl-may-wait-until-2027-to-address-james-pearce-jr-situation",
       sourceLabel: "Audacy 92.9 The Game / AP",
@@ -2221,13 +2228,6 @@ export const NEWS_DIGEST = {
       category: "coaching",
       sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-news/94172/2026-falcons-minicamp-rounding-up-news-and-notes-from-the-first-day",
       sourceLabel: "The Falcoholic",
-    },
-    {
-      title: "MORRIS TRADE ADDS TACKLE DEPTH: Falcons land OT Wanya Morris from Kansas City for a late-round pick swap, two days after Storm Norton's PUP move",
-      detail: "ESPN (Adam Schefter) / NFL.com / Atlanta News First (AP source), filed Thu Jun 11 into Fri Jun 12: Atlanta acquired offensive tackle Wanya Morris and a 2027 seventh-round pick from the Chiefs for a 2027 sixth-round pick. Morris, a 2023 third-round pick out of Oklahoma, has 16 career starts (11 of them at left tackle in 2024) and a Super Bowl ring, and gives Stefanski a 25-year-old swing tackle on the final year of his rookie deal (about a $1.71M cap hit, no guaranteed money left). The move answers a thinned tackle room: Kaleb McGary retired in April, Jawaan Taylor signed to start at right tackle, and Storm Norton landed on Reserve/PUP Thursday. Morris gives the room another body to evaluate when minicamp opens Tuesday.",
-      category: "free-agency",
-      sourceUrl: "https://www.espn.com/nfl/story/_/id/49032113/falcons-acquire-wanya-morris-trade-chiefs-sources-say",
-      sourceLabel: "ESPN / Atlanta News First",
     },
     {
       title: "LONDON MAKES IT OFFICIAL — one week after the agreement, the WR1 signs the 4-year, $141M extension at a Flowery Branch podium Tuesday and vows to earn it: 'I know it's a lot of money, and I've got to prove it still'",
