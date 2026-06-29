@@ -2122,7 +2122,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-28T08:30:00Z",
+  generatedAt: "2026-06-29T08:30:00Z",
   cover: {
     kicker: "DEAD PERIOD · The World Cup Comes to the Falcons' House: With the Building Dark Until July 29, Bijan Robinson, Drake London and Teammates Take in the Tournament on Their Own Field as Atlanta Stadium Hosts 2026 World Cup Matches",
     headLine1: "The world's game,",
