@@ -2122,7 +2122,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-30T08:30:00Z",
+  generatedAt: "2026-07-01T08:31:00Z",
   cover: {
     kicker: "DEAD PERIOD · The World Cup Comes to the Falcons' House: With the Building Dark Until July 29, Bijan Robinson, Drake London and Teammates Take in the Tournament on Their Own Field as Atlanta Stadium Hosts 2026 World Cup Matches",
     headLine1: "The world's game,",
@@ -2182,7 +2182,7 @@ export const NEWS_DIGEST = {
     },
     {
       title: "THE QUIET STRETCH IS HERE: the dead period is on the clock; with the offseason program closed, the next time the full team is on the grass is the first training-camp practice Wednesday July 29, the runway for the real Tua-vs-Penix evaluation",
-      detail: "Calendar checkpoint (Jun 26): the dead period is now about a week in. The Falcons wrapped three days of mandatory minicamp Thursday Jun 18, broke for the summer, and the building has gone dark for the league's roughly six-week quiet before camp. Per the schedule the team announced Jun 17, rookies report ahead of veterans and the first full-team practice lands Wednesday Jul 29, with the preseason opener at home against Denver Aug 14. Two threads carry into the break with no resolution: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, calling camp readiness 'the expectation' but deferring to his doctor, and the league office has still not told the team whether James Pearce Jr. faces discipline (analysts now expect any ruling could wait until 2027). The genuine quarterback competition, plus the rebuilt inside-linebacker race and the made-over defensive line, cannot really start until pads come on in late July.",
+      detail: "Calendar checkpoint (Jul 1): the dead period is now about 10 days in, with four weeks left until the building reopens. The Falcons wrapped three days of mandatory minicamp Thursday Jun 18, broke for the summer, and the facility has been dark through the league's roughly six-week quiet before camp. Per the schedule the team announced Jun 17, rookies report ahead of veterans and the first full-team practice lands Wednesday Jul 29 (28 days out as of today), with the preseason opener at home against Denver Aug 14. Two threads carry into the back half of the break with no resolution: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, calling camp readiness 'the expectation' but deferring to his doctor, and the league office has still not told the team whether James Pearce Jr. faces discipline (analysts now expect any ruling could wait until 2027). The genuine quarterback competition, plus the rebuilt inside-linebacker race and the made-over defensive line, cannot really start until pads come on July 29.",
       category: "general",
       sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-training-camp-schedule-announced",
       sourceLabel: "atlantafalcons.com / The Falcoholic",
