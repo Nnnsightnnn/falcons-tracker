@@ -2122,26 +2122,26 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-07-01T08:31:00Z",
+  generatedAt: "2026-07-03T08:40:00Z",
   cover: {
-    kicker: "DEAD PERIOD · The World Cup Comes to the Falcons' House: With the Building Dark Until July 29, Bijan Robinson, Drake London and Teammates Take in the Tournament on Their Own Field as Atlanta Stadium Hosts 2026 World Cup Matches",
-    headLine1: "The world's game,",
-    headEm: "on their own grass.",
-    headLine3: "A rare bit of summer color before the pads come on.",
+    kicker: "DEAD PERIOD · The Fourth, Far From Home: Jessie Bates III, Zach Harrison, Rookie Jalon Walker and Franchise Legend John Abraham Spend the Week of America's 250th Birthday With U.S. Troops Across Japan on the NFL's Annual USO Tour",
+    headLine1: "A long way from Flowery Branch,",
+    headEm: "close to home.",
+    headLine3: "The Falcons take the Fourth to the troops.",
     deck:
-      "The quietest week on the NFL calendar is the loudest at Mercedes-Benz Stadium, one of 16 North American venues hosting the 2026 World Cup and the Falcons' home field. With the offseason program closed until July 29, Bijan Robinson, Drake London and other players and coaches have turned up to watch the world's biggest tournament on the same grass they play on in the fall, taking in stars like Spain's Lamine Yamal and Brazil's Vinicius Junior. For Robinson the connection runs deeper than fandom: he and Vinicius Junior first linked up through a shared jeweler three years ago, reconnected after Brazil's 2024 friendly at the stadium, and have followed each other since. There is a tidy synergy with the season ahead, too, the Falcons host the Bengals in Madrid on Nov 8, putting Atlanta in Yamal's home country. The football threads stay tabled into the break: Kyle Pitts (3 years, $54M) and Drake London (4 years, $141M) are locked up, Bijan's own extension is reported as imminent but unsigned, Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL, and the league has not told the team whether James Pearce Jr. faces discipline. The first full-team practice is Wednesday July 29.",
+      "With the building dark until July 29 and the country readying its 250th birthday, four Falcons took the quietest week of the calendar overseas. Safety Jessie Bates III, defensive lineman Zach Harrison, rookie edge rusher Jalon Walker and franchise sack king John Abraham traveled throughout Japan on the NFL's annual USO tour, with stops at Marine Corps Air Station Iwakuni, U.S. Fleet Activities Sasebo and Camp Zama, meeting U.S. service members and their families, touring bases, and joining the activities that connect the league to military communities stationed abroad. It is the fourth USO tour the Falcons have made since 2016. The football threads stay tabled into the break: Kyle Pitts (3 years, $54M) put the bow on his deal at a Monday podium and declared 'whatever needs to be done for us to get to meaningful ball, I'm in,' Bijan Robinson's extension is still reported as imminent but unsigned, Michael Penix Jr. remains uncleared for 11-on-11 work, and the league has not ruled on James Pearce Jr. The first full-team practice is Wednesday July 29.",
     byline: "The Tracker Desk",
     filedFrom: "Atlanta",
-    photoId: "bijan",
-    stampLabel: "RB · SUMMER AT HOME",
+    photoId: "bates",
+    stampLabel: "S · USO TOUR · JAPAN",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
-    // STATUS (2026-06-28): new cover request queued in ~/Vault/Notes/image-requests.md
-    // (2026-06-28-bijan-world-cup.jpg) for the downstream Antigravity image generator.
-    // Until that file lands, CoverImage falls back to the photoId ("bijan") headshot,
-    // so the cover is never broken. Prior covers (pitts-extension, london-signed,
-    // penix-live) remain committed under public/assets/cover/.
-    coverImageUrl: "/falcons-tracker/assets/cover/2026-06-28-bijan-world-cup.jpg",
+    // STATUS (2026-07-03): new cover request queued in ~/Vault/Notes/image-requests.md
+    // (2026-07-03-bates-uso-japan.jpg) for the downstream Antigravity image generator.
+    // Until that file lands, CoverImage falls back to the photoId ("bates") headshot,
+    // so the cover is never broken. Prior covers (bijan-world-cup, pitts-extension,
+    // london-signed, penix-live) remain committed under public/assets/cover/.
+    coverImageUrl: "/falcons-tracker/assets/cover/2026-07-03-bates-uso-japan.jpg",
   },
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "NFL Network",
@@ -2152,6 +2152,27 @@ export const NEWS_DIGEST = {
     "Bengals.com", "FantasyPros", "Atlanta News First", "The Athletic",
   ],
   topics: [
+    {
+      title: "FALCONS TAKE THE FOURTH OVERSEAS: Jessie Bates III, Zach Harrison, rookie Jalon Walker and franchise legend John Abraham spend the week before Independence Day visiting U.S. troops across Japan on the NFL's annual USO tour",
+      detail: "Atlantafalcons.com / The Falcoholic (filed Jul 1-2, into the July 4 weekend): the freshest Falcons story of the week is a goodwill run. As Americans prepare to celebrate the country's 250th birthday, Bates, Harrison, Walker and Abraham traveled throughout Japan on the league's annual USO tour, with stops at Marine Corps Air Station Iwakuni, U.S. Fleet Activities Sasebo and Camp Zama, meeting service members and their families, touring facilities and joining activities designed to connect the NFL with military communities stationed abroad. It is the Falcons' fourth USO tour since 2016. A quiet-calendar story, but a fitting one: the next time the players are on a field together is the July 29 camp open.",
+      category: "general",
+      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-news/94362/military-visit-japan-uso-tour",
+      sourceLabel: "atlantafalcons.com / The Falcoholic",
+    },
+    {
+      title: "PITTS, INK DRY, SETS THE TONE FOR ACT TWO: at his signing-day availability the tight end reflects on the tag year that won the new regime over and makes the commitment quote of the summer: 'Whatever needs to be done for us to get to meaningful ball, I'm in'",
+      detail: "Atlantafalcons.com (Tori McElhaney feature, filed Tue Jun 30, off the Mon Jun 29 signing and podium session): with the three-year, $54M deal official, Pitts walked through the arc that got him here: drafted No. 4 overall ('that's been a dream of mine since I started playing the game'), a 1,000-yard Pro Bowl rookie year catching passes from Matt Ryan, three offensive systems, more quarterbacks than seasons played, and the knee injury he worked back from. He framed the franchise tag as 'my opportunity ... it was time to squeeze the rag,' and at 26 sees his evolution just hitting its second act, with Travis Kelce, George Kittle and Tony Gonzalez as proof tight ends can peak late. On his role: blocking, running, mentoring rookies, whatever the coach asks.",
+      category: "contracts",
+      sourceUrl: "https://www.atlantafalcons.com/news/kyle-pitts-contract-2026-im-in",
+      sourceLabel: "atlantafalcons.com",
+    },
+    {
+      title: "CAMP PREVIEW NO. 2, SPECIAL TEAMS GET THE FULL TEARDOWN: new coordinator Craig Aukerman inherits a unit that ranked last in kickoff return average, gets 41-year-old Nick Folk and former All-Pro punter Jake Bailey, and rookie Zachariah Branch has the inside track on return duties",
+      detail: "Atlantafalcons.com (Will McFadden, filed Mon Jun 29, second install of the Mon-Wed-Fri camp-preview series): the third phase got a full overhaul after untimely mistakes cost Atlanta games in 2025 (last in kickoff return average, 27th in punt return yardage, most kickoff return yardage allowed in the league, three field goals blocked). Aukerman, with eight years as a coordinator across the Chargers, Titans and Dolphins, gets a new kicker in Folk, one of the league's most consistent, and a new punter in Bailey, a former All-Pro who played for Aukerman last season, while fifth-year long snapper Liam McCullough stays. The return battle is the fun one: third-round pick Branch, who led all D-I players in punt return yardage as a USC freshman, headlines a rotation with Dotson, Zaccheaus, Drummond, Marion and Anthony; in a companion piece Branch credited the UGA program for a smooth NFL transition. The sleeper question is who replaces the departed core special teamers: Mike Ford (a team-high 366 snaps) returns, and newcomers Cameron Thomas, Channing Tindall, Sydney Brown and rookie Harold Perkins Jr. profile as candidates.",
+      category: "coaching",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-2026-training-camp-preview-special-teams",
+      sourceLabel: "atlantafalcons.com",
+    },
     {
       title: "BIJAN EXTENSION NOW CALLED 'IMMINENT': with Pitts and London locked up, NFL Network's Tom Pelissero says a Bijan Robinson deal is imminent and a priority for Atlanta, the last of the three core extensions the front office flagged, though there is no signature yet",
       detail: "NFL Network (Tom Pelissero, 'The Insiders,' Jun 25) / ClutchPoints / SI Falcons / Yahoo / Pro Football Rumors (Jun 24-26): a week into the dead period the last domino is still the closest it has been, but unsigned. Pelissero said on the league's insider show that a Bijan Robinson extension is imminent and a clear priority for the Falcons, echoing Marc Raimondi's Jun 24 report that talks are ongoing and a deal is expected soon. Nothing is on paper yet: Robinson is still on his rookie deal (a $1.145M base in 2026) with the 2027 fifth-year option already exercised, so Atlanta holds the leverage to move now or wait. A fresh model from The Athletic's Austin Mock (carried by Pro Football Rumors Jun 26) puts the number at $21.9M per year with a position-record $52.7M in guarantees, which would push Robinson past Saquon Barkley's $20.6M AAV to the top of the running-back market. The wrinkle is a staring contest with Detroit's Jahmyr Gibbs, also extension-eligible and projected just behind at $19.9M AAV: whoever signs first likely sets a number the other clears, so each side has reason to let the other go first. Robinson keeps his usual distance: 'We'll see, man. I let them handle all that stuff.'",
@@ -2174,6 +2195,13 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com / ESPN",
     },
     {
+      title: "CAMP-PREVIEW SERIES ROLLS OUT, O-LINE THE FIRST DEEP DIVE: with the building dark, the team is dropping position-by-position training-camp previews, and the offensive line's is a story of turnover, Kaleb McGary retired in April, Jawaan Taylor signed to start at right tackle, and Wanya Morris arrived from Kansas City for a sixth-round pick",
+      detail: "Atlantafalcons.com / The Falcoholic (dead-period camp-preview series, freshest install late June into early July): to fill the quiet stretch the team is publishing unit-by-unit previews ahead of the July 29 open, and the offensive line's carries the most change. Kaleb McGary announced his retirement in early April; the same day Atlanta added veteran tackle Jawaan Taylor on a one-year deal (111 straight starts across seven seasons with Jacksonville and Kansas City), and it sent a sixth-round pick to the Chiefs for tackle Wanya Morris after Storm Norton, still working back from the ankle injury that cost him 2025, landed on the Reserve/PUP list. Inside, Ryan Neuzil is again the projected starting center after seizing the job in 2025, with Chris Lindstrom and Matthew Bergeron anchoring the guard spots and Jake Matthews at left tackle. The scheme wrinkle to track: Kevin Stefanski and OC Tommy Rees are installing a run game that mixes stretch-zone and gap looks, with the quarterbacks under center far more than in 2025, new timing and footwork demands up front. The real sorting starts when pads come on July 29.",
+      category: "coaching",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-2026-training-camp-preview-offensive-line",
+      sourceLabel: "atlantafalcons.com / The Falcoholic",
+    },
+    {
       title: "TUA IS PULLING AHEAD IN A RACE THAT HASN'T STARTED: a wave of post-minicamp analysis now tags Tagovailoa the early QB1 favorite, having taken every first-team rep and closed the spring 3-for-3 with a red-zone TD to Bijan while Penix stays capped at 7-on-7",
       detail: "Yahoo Sports / ClutchPoints / Heavy.com (post-minicamp analysis carried into the Jun 21-22 break): the competition the staff keeps calling a competition is, for now, a one-man rep count. With Michael Penix Jr. limited to individual and 7-on-7 work as he rehabs his late-November ACL surgery, Tua Tagovailoa has banked the entire first-team workload this spring and closed mandatory minicamp with what observers called one of his best practices, going 3-for-3 with a touchdown over the middle to Bijan Robinson in an 11-on-11 red-zone period. Tagovailoa framed it carefully: 'We know we're in a competition, but at the same time, we're on the same team.' The structural edge is real, Kevin Stefanski's offense prizes accuracy above all, which fits Tua, and he simply has the reps Penix has not been cleared to take. The caveat the staff repeats: nothing is decided until Penix is 100% and doing everything Tua is doing, which is the whole point of the July 29 camp open.",
       category: "general",
@@ -2182,7 +2210,7 @@ export const NEWS_DIGEST = {
     },
     {
       title: "THE QUIET STRETCH IS HERE: the dead period is on the clock; with the offseason program closed, the next time the full team is on the grass is the first training-camp practice Wednesday July 29, the runway for the real Tua-vs-Penix evaluation",
-      detail: "Calendar checkpoint (Jul 1): the dead period is now about 10 days in, with four weeks left until the building reopens. The Falcons wrapped three days of mandatory minicamp Thursday Jun 18, broke for the summer, and the facility has been dark through the league's roughly six-week quiet before camp. Per the schedule the team announced Jun 17, rookies report ahead of veterans and the first full-team practice lands Wednesday Jul 29 (28 days out as of today), with the preseason opener at home against Denver Aug 14. Two threads carry into the back half of the break with no resolution: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, calling camp readiness 'the expectation' but deferring to his doctor, and the league office has still not told the team whether James Pearce Jr. faces discipline (analysts now expect any ruling could wait until 2027). The genuine quarterback competition, plus the rebuilt inside-linebacker race and the made-over defensive line, cannot really start until pads come on July 29.",
+      detail: "Calendar checkpoint (Jul 3): the dead period is now about 12 days in, with under four weeks left until the building reopens. The Falcons wrapped three days of mandatory minicamp Thursday Jun 18, broke for the summer, and the facility has been dark through the league's roughly six-week quiet before camp. Per the schedule the team announced Jun 17, rookies report ahead of veterans and the first full-team practice lands Wednesday Jul 29 (26 days out as of today), with the preseason opener at home against Denver Aug 14. Two threads carry into the back half of the break with no resolution: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, calling camp readiness 'the expectation' but deferring to his doctor, and the league office has still not told the team whether James Pearce Jr. faces discipline (analysts now expect any ruling could wait until 2027). The genuine quarterback competition, plus the rebuilt inside-linebacker race and the made-over defensive line, cannot really start until pads come on July 29.",
       category: "general",
       sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-training-camp-schedule-announced",
       sourceLabel: "atlantafalcons.com / The Falcoholic",
@@ -2195,13 +2223,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "Yardbarker / atlantafalcons.com",
     },
     {
-      title: "TRAINING-CAMP DATE ON THE BOARD: Falcons announce their 2026 camp schedule, first full-team practice July 29, 10 fan-open practices, and a preseason opener Aug 14 at home against Denver",
-      detail: "Atlantafalcons.com / The Falcoholic / AJC / Heavy.com (filed Wed Jun 17): with minicamp closing, the team put a calendar to the summer. Rookies report a few days ahead of veterans, and the first full-team practice of Kevin Stefanski's first camp lands Wednesday July 29. The Falcons set 10 practices open to fans, including a season-ticket-member session Friday July 31 and an 'Under the Lights' practice at a local high school Saturday Aug 8. The preseason: home vs. Denver Aug 14, at Indianapolis Aug 22 (preceded by joint practices with the Colts), and a road finale at Miami. The date matters because it is the runway for the real Tua-vs-Penix evaluation that the staff has said cannot begin until Penix is cleared to do everything Tagovailoa is doing.",
-      category: "general",
-      sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-training-camp-schedule-announced",
-      sourceLabel: "atlantafalcons.com / AJC",
-    },
-    {
       title: "'WRECKING BALL' UP FRONT: as the dead period opens, the made-over defensive line is the quiet camp battle to watch, with free-agent DT Da'Shawn Hand, nicknamed 'Kingpin' by his position coach, ticketed to anchor the run defense",
       detail: "SI Falcons / Yahoo Sports / Atlantafalcons.com (camp-preview features carried into the Jun 21 break): with the headline QB and contract stories on hold until late July, the rebuilt front is where the staff has quietly reshaped the roster. Da'Shawn Hand, signed from the Chargers in March off a career-high 13 starts, has embraced a 'wrecking ball' mentality and already earned the 'Kingpin' nickname from D-line coach Nate Ollie as the 'final boss' against the run, ticketed as at least a partial replacement for David Onyemata. Through the spring the first-team interior reps ran through Maason Smith, Brandon Dorlus and Hand, with Zach Harrison and Cameron Thomas rotating behind them, and Samson Ebukam added off the edge. The group is building on a 2025 unit that logged the NFL's second-most sacks (57); all five of last year's top rushers, Pearce, Dorlus, Jalon Walker, LaCale London and Harrison, are back. The real sorting starts when pads come on July 29.",
       category: "coaching",
@@ -2209,32 +2230,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com / SI Falcons",
     },
     {
-      title: "THREE UFL STANDOUTS IN AS CAMP CLOSES: Atlanta signs DE Keshawn Banks, DT Devonnsha Maxwell and WR Antwane Wells Jr., releasing Casey Washington, Elijah Garcia and CJ Nunnally IV",
-      detail: "Atlantafalcons.com / AJC / SI Falcons (filed Wed Jun 17): the front office worked the margins as the second minicamp practice ended, adding three players off strong 2026 UFL seasons. DE Keshawn Banks put up 5 sacks and 11 tackles for loss in 10 games for the Orlando Storm (prior NFL time with Green Bay, New England and Arizona in 2024). DT Devonnsha Maxwell, a Georgia native and former Bengal, had 4 sacks and 7 TFLs for the UFL-champion DC Defenders. WR Antwane Wells Jr., a former Giant, was a key piece of Columbus's offense. To make room, the Falcons released WR Casey Washington, DL Elijah Garcia and LB CJ Nunnally IV. The moves signal where the staff still sees thin spots: interior and edge defensive line depth, and receiver behind the top group.",
-      category: "free-agency",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-sign-three-ufl-players-casey-washington",
-      sourceLabel: "atlantafalcons.com / AJC",
-    },
-    {
       title: "FALCONS NOW BRACING FOR AN EIGHT-GAME PEARCE BAN: the freshest reporting (Heavy / Yardbarker / Pro Football Rumors, late June) has Atlanta preparing for a suspension of at least eight games once the NFL rules, modeled on the Cameron Sutton precedent, though the timing of any discipline still points down the road",
       detail: "Heavy.com / Yardbarker / Pro Football Rumors (late June), building on The Athletic's Josh Kendall ('likely' to be suspended), Audacy / 92-9 The Game analysis and AP / SI Falcons reporting from minicamp Jun 16: the read keeps sharpening. The newest framing has the Falcons bracing for a ban of at least eight games whenever the league acts, with reporters pointing to former Lions DB Cameron Sutton, who got eight games in 2024 after a domestic-violence arrest and a pretrial diversion program, as the cleanest comparable. The commissioner's exempt list, an effective indefinite hold during a league investigation, remains on the table too. Timing is still the whole story: the NFL typically waits for the legal process to resolve before ruling under the personal-conduct policy, so the discipline may not land until 2027. James Pearce Jr. accepted a Miami-Dade diversion program the state upgraded from six months to a full year (mental-health treatment, anger-management and impulse-control services, random drug testing, apology letters); the three felony charges from the Feb 7 arrest drop only on completion. He reported during mandatory minicamp, his first time with the team since the arrest, but Stefanski held him to the weight room and individual drills: 'He's not going to team settings, team period type stuff yet,' adding only that Pearce 'knows what is expected of him.' The team still says it has not heard from the league office.",
       category: "general",
       sourceUrl: "https://www.audacy.com/929thegame/sports/atlanta-falcons/why-nfl-may-wait-until-2027-to-address-james-pearce-jr-situation",
       sourceLabel: "Audacy 92.9 The Game / AP",
-    },
-    {
-      title: "ILB DOOR SWINGS OPEN: with rookie Kendal Daniels (foot) and JD Bertrand both held out of Day 1, free-agent addition Christian Harris ran the first-team inside linebacker spot with a clear leg up",
-      detail: "The Falcoholic (minicamp Day 1 notes, filed Tue Jun 16): the rebuilt inside linebacker room, one of camp's top evaluations after Kaden Elliss left for New Orleans, opened with two of its contenders on the sideline. R4 pick Kendal Daniels (foot) and JD Bertrand were both kept from practicing, which left Christian Harris pairing with green-dot wearer Divine Deablo on the first unit and, in the words of the wrap, with 'a major leg up' in the rotation race. A 2022 third-round pick with 27 career starts in Houston, Harris is making the most of the reps while the young linebackers work back.",
-      category: "coaching",
-      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-news/94172/2026-falcons-minicamp-rounding-up-news-and-notes-from-the-first-day",
-      sourceLabel: "The Falcoholic",
-    },
-    {
-      title: "LONDON MAKES IT OFFICIAL — one week after the agreement, the WR1 signs the 4-year, $141M extension at a Flowery Branch podium Tuesday and vows to earn it: 'I know it's a lot of money, and I've got to prove it still'",
-      detail: "Atlantafalcons.com / AP (Washington Post, Atlanta News First) / CBS Sports (filed Tue Jun 9): Drake London put pen to paper on the extension agreed June 2 (4 years, $141M, up to $150M with incentives, $100M guaranteed, $35.25M APY, third-richest WR deal) and used his signing presser to reset expectations rather than celebrate: 'Raising my standard in every single category there is, becoming a player who's more consistent, and just trying to lead the team in any way possible. Leveling up in all ways.' He also said the honor he covets most is a captain's C, and name-checked the franchise wall: 10th in team receiving yards, chasing Julio ('he's tough to catch'). GM Ian Cunningham: 'Drake London represents exactly what we're building here ... This aligns with our philosophy of drafting, developing, and retaining our own.' London plays 2026 on his $16.82M fifth-year option; the new money runs 2027 through 2030.",
-      category: "contracts",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-sign-drake-london-contract-extension",
-      sourceLabel: "atlantafalcons.com / AP",
     },
     {
       title: "Madrid Week 9 — Falcons HOST the Bengals Nov 8, 9:30 AM ET at the Bernabéu (NFL Network)",
@@ -2253,9 +2253,30 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-06-25T08:30:00Z",
+  generatedAt: "2026-07-03T08:40:00Z",
   windowLabel: "Dead Period · Building Goes Dark → Training Camp Opens · Jun 21 → Jul 29",
   sessions: [
+    {
+      id: "pitts-2026-06-29",
+      speaker: "Kyle Pitts Sr.",
+      role: "Tight End",
+      date: "2026-06-29",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Contract Extension Signing · Media Availability",
+      sourceUrl: "https://www.atlantafalcons.com/news/kyle-pitts-contract-2026-im-in",
+      transcriptUrl: "https://www.atlantafalcons.com/video/kyle-pitts-sr-speaks-to-the-media-on-atlanta-falcons-contract-extension-press-conference",
+      verified: true,
+      summary: "A day after his three-year, $54M extension became official, Pitts met the media and turned the session into a career retrospective rather than a celebration. He traced the arc from being drafted No. 4 overall through three offensive systems, a parade of quarterbacks and a knee injury, framed the franchise-tag year as his window to prove himself to the new regime, and cast the deal as the start of a second act at age 26.",
+      pullQuote: "Whatever needs to be done for us to get to meaningful ball, I'm in. That's how I have been, and now it's just more enhanced.",
+      bullets: [
+        "On the emotional high point of his Atlanta career: 'Getting drafted. Being able to get the chance to get to this next level and play at the highest level, that's been a dream of mine since I started playing the game'",
+        "Framed the tag year as a proving window: 'That was my opportunity, that Atlanta picked me up for another year to showcase (my skills), and then it was time to squeeze the rag'",
+        "On the front office's investment: 'It's always good to know when people like you and for them to invest and trust that I have a lot more to go is pretty cool to see and feel'",
+        "Credited Hayden Hurst and Lee Smith with teaching him professionalism as a rookie, and Jonnu Smith and MyCole Pruitt with helping him stay the course through the knee-injury years",
+        "Sees his evolution entering a second act at 26, pointing to tight ends like Travis Kelce, George Kittle and Tony Gonzalez who kept producing deep into their careers",
+      ],
+      topics: ["pitts-extension", "contracts", "second-act"],
+    },
     {
       id: "stefanski-2026-06-16",
       speaker: "Kevin Stefanski",
@@ -2360,27 +2381,6 @@ export const INTERVIEWS = {
         "Bergeron added: 'He brings everybody along with him, so I'm just happy for Drake'",
       ],
       topics: ["drake-london-extension", "bijan-extension", "locker-room"],
-    },
-    {
-      id: "van-pelt-2026-06-03",
-      speaker: "Alex Van Pelt",
-      role: "Quarterbacks Coach",
-      date: "2026-06-03",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "OTA Week 3 · Assistant Coaches Availability (quotes published Jun 8)",
-      sourceUrl: "https://www.espn.com/nfl/story/_/id/49003555/qb-coach-falcons-qb1-battle-penix-fully-healthy",
-      transcriptUrl: "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/alex-van-pelt-falcons-qb-battle-wont-begin-until-michael-penix-is-cleared",
-      verified: true,
-      summary: "Speaking at a midweek assistants availability (his remarks published June 8 by ESPN's Marc Raimondi and amplified by NBC's Pro Football Talk), Van Pelt gave the bluntest framing of the spring on the QB room: there is no Tua-Penix competition yet, and there cannot be one until Michael Penix Jr. is cleared to do everything Tua Tagovailoa is doing. He walked through the rep math behind the imbalance and praised Penix's rehab discipline along the way.",
-      pullQuote: "It's tough to have a competition when both guys aren't competing at the same level right now.",
-      bullets: [
-        "The full thought: 'So, it's hard, and it'll come. It'll happen at some point. Mike's done a great job of getting himself to where he is right now. Really impressive to take 7-on-7 reps and go out and compete ... But really, there's no competition until we can actually evaluate him equally'",
-        "On the rep split: 'We split the reps as evenly as we can without Mike taking team reps. It gets a little lopsided toward Tua'",
-        "Revealed Penix is taking MORE 7-on-7 reps than Tua to offset the missing 11-on-11 work",
-        "Tua continues to take all first-team snaps; Penix remains limited to individual drills and 7-on-7 (ACL surgery was Nov 25)",
-        "Stefanski, separately, on Penix's rehab: 'He's hitting every milestone that he's supposed to hit ... not going to put any timeframes out there just yet'",
-      ],
-      topics: ["qb-competition", "penix-acl", "rep-split"],
     },
   ],
 };
