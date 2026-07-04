@@ -2122,7 +2122,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-07-03T08:40:00Z",
+  generatedAt: "2026-07-04T08:30:00Z",
   cover: {
     kicker: "DEAD PERIOD · The Fourth, Far From Home: Jessie Bates III, Zach Harrison, Rookie Jalon Walker and Franchise Legend John Abraham Spend the Week of America's 250th Birthday With U.S. Troops Across Japan on the NFL's Annual USO Tour",
     headLine1: "A long way from Flowery Branch,",
@@ -2149,15 +2149,22 @@ export const NEWS_DIGEST = {
     "SI Falcons", "AJC", "Bleacher Report", "ClutchPoints", "Heavy.com",
     "Yahoo Sports", "CBS Sports", "Washington Post", "BloggingDirty",
     "Audacy 92.9 The Game", "Yardbarker", "Over The Cap", "Spotrac",
-    "Bengals.com", "FantasyPros", "Atlanta News First", "The Athletic",
+    "Bengals.com", "FantasyPros", "Atlanta News First", "The Athletic", "Roundtable",
   ],
   topics: [
     {
       title: "FALCONS TAKE THE FOURTH OVERSEAS: Jessie Bates III, Zach Harrison, rookie Jalon Walker and franchise legend John Abraham spend the week before Independence Day visiting U.S. troops across Japan on the NFL's annual USO tour",
-      detail: "Atlantafalcons.com / The Falcoholic (filed Jul 1-2, into the July 4 weekend): the freshest Falcons story of the week is a goodwill run. As Americans prepare to celebrate the country's 250th birthday, Bates, Harrison, Walker and Abraham traveled throughout Japan on the league's annual USO tour, with stops at Marine Corps Air Station Iwakuni, U.S. Fleet Activities Sasebo and Camp Zama, meeting service members and their families, touring facilities and joining activities designed to connect the NFL with military communities stationed abroad. It is the Falcons' fourth USO tour since 2016. A quiet-calendar story, but a fitting one: the next time the players are on a field together is the July 29 camp open.",
+      detail: "Atlantafalcons.com / The Falcoholic (filed Jul 1-2; today is the Fourth itself): on the morning of the country's 250th birthday, the freshest Falcons story of the week remains a goodwill run. Bates, Harrison, Walker and Abraham traveled throughout Japan on the league's annual USO tour, with stops at Marine Corps Air Station Iwakuni, U.S. Fleet Activities Sasebo and Camp Zama, meeting service members and their families, touring facilities and joining activities designed to connect the NFL with military communities stationed abroad. It is the Falcons' fourth USO tour since 2016. A quiet-calendar story, but a fitting one: the next time the players are on a field together is the July 29 camp open.",
       category: "general",
       sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-news/94362/military-visit-japan-uso-tour",
       sourceLabel: "atlantafalcons.com / The Falcoholic",
+    },
+    {
+      title: "HOLIDAY-WEEK ROOM-BY-ROOM READS LAND ON THE QB AND RB GROUPS: pre-camp previews frame the quarterback room as Tua's until Penix is cleared (with a case for keeping Trevor Siemian as the veteran No. 3), and cast Brian Robinson Jr., 400 yards spelling Christian McCaffrey last season, as the insurance behind Bijan",
+      detail: "Roundtable / Yahoo Sports (pre-camp positional room previews carried into the Jul 4 weekend): with the building dark, the preview mill keeps grinding. The quarterback read: the Penix-vs-Tagovailoa battle is the story of camp, but Penix remains the fanbase's choice to lead the franchise, and with the health risks of both men ahead of him, keeping Siemian around as the experienced third arm 'would make a whole lot of sense.' The running back read: Stefanski took this job in part because of Bijan Robinson, the unquestioned bell cow, with former Alabama standout Brian Robinson Jr., signed to a one-year deal after roughly 400 yards spelling Christian McCaffrey in San Francisco, as the change-of-pace piece, and Tyler Goodson and UDFA Cash Jones rounding out a room that also handled kickoff-return work in the spring.",
+      category: "general",
+      sourceUrl: "https://roundtable.io/sports/nfl/falcons/players/atlanta-falcons-2026-pre-training-camp-positional-room-preview-quarterback",
+      sourceLabel: "Roundtable / Yahoo Sports",
     },
     {
       title: "PITTS, INK DRY, SETS THE TONE FOR ACT TWO: at his signing-day availability the tight end reflects on the tag year that won the new regime over and makes the commitment quote of the summer: 'Whatever needs to be done for us to get to meaningful ball, I'm in'",
@@ -2210,17 +2217,10 @@ export const NEWS_DIGEST = {
     },
     {
       title: "THE QUIET STRETCH IS HERE: the dead period is on the clock; with the offseason program closed, the next time the full team is on the grass is the first training-camp practice Wednesday July 29, the runway for the real Tua-vs-Penix evaluation",
-      detail: "Calendar checkpoint (Jul 3): the dead period is now about 12 days in, with under four weeks left until the building reopens. The Falcons wrapped three days of mandatory minicamp Thursday Jun 18, broke for the summer, and the facility has been dark through the league's roughly six-week quiet before camp. Per the schedule the team announced Jun 17, rookies report ahead of veterans and the first full-team practice lands Wednesday Jul 29 (26 days out as of today), with the preseason opener at home against Denver Aug 14. Two threads carry into the back half of the break with no resolution: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, calling camp readiness 'the expectation' but deferring to his doctor, and the league office has still not told the team whether James Pearce Jr. faces discipline (analysts now expect any ruling could wait until 2027). The genuine quarterback competition, plus the rebuilt inside-linebacker race and the made-over defensive line, cannot really start until pads come on July 29.",
+      detail: "Calendar checkpoint (Jul 4, the holiday itself): the dead period is now roughly two weeks in, and the back half of the break starts here. Per the schedule the team announced Jun 17 (and detail carried by Heavy and SI Falcons this week), rookies report Friday Jul 24, veterans follow Tuesday Jul 28, and the first full-team practice lands Wednesday Jul 29, 25 days out as of today. Ten practices are open to fans, including a season-ticket-member session Friday Jul 31 and an Under the Lights practice at a local high school Saturday Aug 8; the preseason opens at home against Denver Aug 14, with a trip to Indianapolis Aug 22 preceded by joint practices with the Colts. Two threads carry into the back half of the break with no resolution: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, calling camp readiness 'the expectation' but deferring to his doctor, and the league office has still not told the team whether James Pearce Jr. faces discipline (analysts now expect any ruling could wait until 2027). The genuine quarterback competition, plus the rebuilt inside-linebacker race and the made-over defensive line, cannot really start until pads come on July 29.",
       category: "general",
       sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-training-camp-schedule-announced",
       sourceLabel: "atlantafalcons.com / The Falcoholic",
-    },
-    {
-      title: "MINICAMP WRAPS, PENIX STILL ON THE 7-ON-7 TRACK: Atlanta broke for the summer Thursday with its QB never cleared for 11-on-11, but Penix set his own bar for camp: being ready is 'the expectation,' though 'it's really up to my doc'",
-      detail: "Yardbarker / ClutchPoints / Atlantafalcons.com (filed Tue Jun 16 into Thu Jun 18): the spring's defining question closed the way it opened, tabled by design. Michael Penix Jr. did not take a single team-period rep across the three-day mandatory minicamp, staying on the individual and 7-on-7 plan he has run since OTAs as he rehabs the late-November ACL surgery. Stefanski would not commit to a clearance date: 'He's not cleared for 11-on-11. So we'll continue with the plan with what Mike has done. To date, very pleased with the work that he's putting in. He's exactly where he needs to be.' Penix offered the first hard marker of the offseason on his own timeline, calling training-camp readiness 'the expectation' while deferring to medical: 'I know I go see my doctor before all that kicks off. So, it's really up to my doc.' Observers note he has looked sharp and shown no discomfort in everything movement-related. Tua Tagovailoa took every first-team snap.",
-      category: "injuries",
-      sourceUrl: "https://www.yardbarker.com/nfl/articles/falcons_qb_michael_penix_jr_expects_to_be_ready_for_training_camp/s1_14819_43962156",
-      sourceLabel: "Yardbarker / atlantafalcons.com",
     },
     {
       title: "'WRECKING BALL' UP FRONT: as the dead period opens, the made-over defensive line is the quiet camp battle to watch, with free-agent DT Da'Shawn Hand, nicknamed 'Kingpin' by his position coach, ticketed to anchor the run defense",
