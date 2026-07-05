@@ -2122,7 +2122,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-07-04T08:30:00Z",
+  generatedAt: "2026-07-05T08:35:00Z",
   cover: {
     kicker: "DEAD PERIOD · The Fourth, Far From Home: Jessie Bates III, Zach Harrison, Rookie Jalon Walker and Franchise Legend John Abraham Spend the Week of America's 250th Birthday With U.S. Troops Across Japan on the NFL's Annual USO Tour",
     headLine1: "A long way from Flowery Branch,",
@@ -2153,8 +2153,15 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
+      title: "HOLIDAY STOCKTAKE AT THE MIDPOINT OF THE BREAK: The Falcoholic marks the Fourth with a four-up, four-down ledger on the 2026 season, crediting Matt Ryan's constant offseason presence and an expected Year 2 defensive jump as top reasons for belief, and opens the floor on best and worst-case predictions",
+      detail: "The Falcoholic (discussion posts filed into the Jul 4 holiday weekend, the freshest Falcons content on the board): with the building dark, fan-side stocktaking fills the gap. The optimism ledger leads with culture: Matt Ryan, a fixture around the facility since OTAs, is described as universally liked and deeply respected, with players and coaches praising his involvement and investment, and the piece argues his winning habits rub off on a young roster. It also expects visible Year 2 progress from a defense that was fun to watch in stretches last season, set against four counterweights headlined by the unsettled quarterback timeline. A companion thread asks for best and worst-case 2026 scenarios ahead of the July 29 camp open. Discussion fodder rather than hard news, but a fair snapshot of where the fanbase sits at the halfway mark of the dead period.",
+      category: "general",
+      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-discussion/94374/4-reasons-falcons-fans-should-be-optimistic-in-2026-and-4-reasons-you-shouldnt",
+      sourceLabel: "The Falcoholic",
+    },
+    {
       title: "FALCONS TAKE THE FOURTH OVERSEAS: Jessie Bates III, Zach Harrison, rookie Jalon Walker and franchise legend John Abraham spend the week before Independence Day visiting U.S. troops across Japan on the NFL's annual USO tour",
-      detail: "Atlantafalcons.com / The Falcoholic (filed Jul 1-2; today is the Fourth itself): on the morning of the country's 250th birthday, the freshest Falcons story of the week remains a goodwill run. Bates, Harrison, Walker and Abraham traveled throughout Japan on the league's annual USO tour, with stops at Marine Corps Air Station Iwakuni, U.S. Fleet Activities Sasebo and Camp Zama, meeting service members and their families, touring facilities and joining activities designed to connect the NFL with military communities stationed abroad. It is the Falcons' fourth USO tour since 2016. A quiet-calendar story, but a fitting one: the next time the players are on a field together is the July 29 camp open.",
+      detail: "Atlantafalcons.com / The Falcoholic (filed Jul 1-2, still the defining image of the holiday week): the day after the country's 250th birthday, the goodwill run remains the story of the stretch. Bates, Harrison, Walker and Abraham traveled throughout Japan on the league's annual USO tour, with stops at Marine Corps Air Station Iwakuni, U.S. Fleet Activities Sasebo and Camp Zama, meeting service members and their families, touring facilities and joining activities designed to connect the NFL with military communities stationed abroad. It is the Falcons' fourth USO tour since 2016. A quiet-calendar story, but a fitting one: the next time the players are on a field together is the July 29 camp open.",
       category: "general",
       sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-news/94362/military-visit-japan-uso-tour",
       sourceLabel: "atlantafalcons.com / The Falcoholic",
@@ -2217,7 +2224,7 @@ export const NEWS_DIGEST = {
     },
     {
       title: "THE QUIET STRETCH IS HERE: the dead period is on the clock; with the offseason program closed, the next time the full team is on the grass is the first training-camp practice Wednesday July 29, the runway for the real Tua-vs-Penix evaluation",
-      detail: "Calendar checkpoint (Jul 4, the holiday itself): the dead period is now roughly two weeks in, and the back half of the break starts here. Per the schedule the team announced Jun 17 (and detail carried by Heavy and SI Falcons this week), rookies report Friday Jul 24, veterans follow Tuesday Jul 28, and the first full-team practice lands Wednesday Jul 29, 25 days out as of today. Ten practices are open to fans, including a season-ticket-member session Friday Jul 31 and an Under the Lights practice at a local high school Saturday Aug 8; the preseason opens at home against Denver Aug 14, with a trip to Indianapolis Aug 22 preceded by joint practices with the Colts. Two threads carry into the back half of the break with no resolution: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, calling camp readiness 'the expectation' but deferring to his doctor, and the league office has still not told the team whether James Pearce Jr. faces discipline (analysts now expect any ruling could wait until 2027). The genuine quarterback competition, plus the rebuilt inside-linebacker race and the made-over defensive line, cannot really start until pads come on July 29.",
+      detail: "Calendar checkpoint (Jul 5, the day after the holiday): the dead period is now two weeks in, and the back half of the break is underway. Per the schedule the team announced Jun 17 (and detail carried by Heavy and SI Falcons this week), rookies report Friday Jul 24, veterans follow Tuesday Jul 28, and the first full-team practice lands Wednesday Jul 29, 24 days out as of today. Ten practices are open to fans, including a season-ticket-member session Friday Jul 31 and an Under the Lights practice at a local high school Saturday Aug 8; the preseason opens at home against Denver Aug 14, with a trip to Indianapolis Aug 22 preceded by joint practices with the Colts. Two threads carry into the back half of the break with no resolution: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, calling camp readiness 'the expectation' but deferring to his doctor, and the league office has still not told the team whether James Pearce Jr. faces discipline (analysts now expect any ruling could wait until 2027). The genuine quarterback competition, plus the rebuilt inside-linebacker race and the made-over defensive line, cannot really start until pads come on July 29.",
       category: "general",
       sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-training-camp-schedule-announced",
       sourceLabel: "atlantafalcons.com / The Falcoholic",
