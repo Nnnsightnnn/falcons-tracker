@@ -2122,26 +2122,26 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-07-06T08:45:00Z",
+  generatedAt: "2026-07-07T08:35:00Z",
   cover: {
-    kicker: "DEAD PERIOD · The Fourth, Far From Home: Jessie Bates III, Zach Harrison, Rookie Jalon Walker and Franchise Legend John Abraham Spend the Week of America's 250th Birthday With U.S. Troops Across Japan on the NFL's Annual USO Tour",
-    headLine1: "A long way from Flowery Branch,",
-    headEm: "close to home.",
-    headLine3: "The Falcons take the Fourth to the troops.",
+    kicker: "DEAD PERIOD · The Succession Question Gets Its Official Answer: A Day After the Fanbase Crowned Him the Defense's Next Centerpiece, Defensive Coordinator Jeff Ulbrich Maps Jalon Walker's Year 2 as the Kaden Elliss Role and Calls Him a 'Force Multiplier' Who Elevates Everyone Around Him",
+    headLine1: "Ask who carries the defense next.",
+    headEm: "Ulbrich already knows.",
+    headLine3: "Jalon Walker, Year 2, everywhere.",
     deck:
-      "With the building dark until July 29 and the country readying its 250th birthday, four Falcons took the quietest week of the calendar overseas. Safety Jessie Bates III, defensive lineman Zach Harrison, rookie edge rusher Jalon Walker and franchise sack king John Abraham traveled throughout Japan on the NFL's annual USO tour, with stops at Marine Corps Air Station Iwakuni, U.S. Fleet Activities Sasebo and Camp Zama, meeting U.S. service members and their families, touring bases, and joining the activities that connect the league to military communities stationed abroad. It is the fourth USO tour the Falcons have made since 2016. The football threads stay tabled into the break: Kyle Pitts (3 years, $54M) put the bow on his deal at a Monday podium and declared 'whatever needs to be done for us to get to meaningful ball, I'm in,' Bijan Robinson's extension is still reported as imminent but unsigned, Michael Penix Jr. remains uncleared for 11-on-11 work, and the league has not ruled on James Pearce Jr. The first full-team practice is Wednesday July 29.",
+      "The team site's camp-preview series reached the outside linebackers Monday morning, and the coordinator answered the succession question himself. Asked how Jalon Walker evolves in Year 2, Jeff Ulbrich laid out a role modeled on what Kaden Elliss did for him last season: days as an outside backer, days as a defensive end, days inside, days as functionally a nickel. 'We are going to ask him to do a lot,' Ulbrich said, before reaching for the phrase he admits is overused: 'the force multiplier ... He is a guy who elevates the people around him.' The room around Walker is remade, with Azeez Ojulari, Cameron Thomas and Samson Ebukam arriving to replace the departed Leonard Floyd and Arnold Ebiketie from an edge group that posted the NFL's 10th-best pressure rate, and the open questions run through it: can Bralen Trice finally make his professional debut after two injury-wrecked seasons, and how many snaps is James Pearce Jr. actually available for? The first full-team practice is Wednesday July 29, now 22 days out.",
     byline: "The Tracker Desk",
     filedFrom: "Atlanta",
-    photoId: "bates",
-    stampLabel: "S · USO TOUR · JAPAN",
+    photoId: "walker",
+    stampLabel: "S · CAMP PREVIEW · OLB",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
-    // STATUS (2026-07-03): new cover request queued in ~/Vault/Notes/image-requests.md
-    // (2026-07-03-bates-uso-japan.jpg) for the downstream Antigravity image generator.
-    // Until that file lands, CoverImage falls back to the photoId ("bates") headshot,
-    // so the cover is never broken. Prior covers (bijan-world-cup, pitts-extension,
-    // london-signed, penix-live) remain committed under public/assets/cover/.
-    coverImageUrl: "/falcons-tracker/assets/cover/2026-07-03-bates-uso-japan.jpg",
+    // STATUS (2026-07-07): new cover request queued in ~/Vault/Notes/image-requests.md
+    // (2026-07-07-walker-year-two.jpg) for the downstream Antigravity image generator.
+    // Until that file lands, CoverImage falls back to the photoId ("walker") headshot,
+    // so the cover is never broken. Prior covers (bates-uso-japan, bijan-world-cup,
+    // pitts-extension, london-signed, penix-live) remain committed under public/assets/cover/.
+    coverImageUrl: "/falcons-tracker/assets/cover/2026-07-07-walker-year-two.jpg",
   },
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "NFL Network",
@@ -2154,17 +2154,17 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "A NEW DEFENSIVE LEADER, BY ACCLAMATION: the fanbase spends the quietest weekend of the year picking who carries the defense next, and the Falcoholic's Sunday Reacts verdict points to second-year edge rusher Jalon Walker as Atlanta's next defensive centerpiece",
-      detail: "The Falcoholic (Reacts survey and companion discussion threads filed Sun Jul 5, the freshest Falcons content on the board): with the building dark for three more weeks, the community turned to a succession question with real on-field stakes. The Reacts read makes the case that Jalon Walker, fresh off the USO tour of Japan, becomes the defense's new centerpiece in 2026: injuries interrupted stretches of his rookie year, but his skill set 'screams star' when right, and his ability to line up in multiple spots makes him a weekly game-plan problem for opposing coordinators. A companion thread asks the adjacent question, whether the defensive MVP belt today belongs to Jessie Bates III, A.J. Terrell or Divine Deablo. Fan-side content rather than hard news, but it frames the stakes of the Jul 29 camp open: Atlanta kept all five of last season's top sack producers from a 57-sack front, and the staff is openly counting on a Year 2 jump. Someone has to become the face of it.",
-      category: "general",
-      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-discussion/94335/defensive-mvp-jessie-bates-aj-terrell-divine-deablo",
-      sourceLabel: "The Falcoholic",
+      title: "CAMP PREVIEW NO. 4, ULBRICH HANDS JALON WALKER THE KADEN ELLISS ROLE: the team-site series reaches the outside linebackers, and the defensive coordinator answers the succession question himself, mapping a Year 2 in which Walker plays everywhere and calling him a 'force multiplier' who 'elevates the people around him'",
+      detail: "Atlantafalcons.com (Tori McElhaney, filed Mon Jul 6 at 9:24 AM, the freshest team-site story on the board): a day after the fanbase crowned Jalon Walker the defense's next centerpiece, the coordinator made it close to official. Asked how Walker evolves in Year 2, Jeff Ulbrich laid out a role modeled on what Kaden Elliss did for him last season: days as an outside backer, days as a defensive end, days inside, days as functionally a nickel. 'We are going to ask him to do a lot,' Ulbrich said. 'Jalon is up to the task, and Jalon is going to bring his own flavor to it, too. I think Jalon has some superpowers that are unique.' Then the phrase he admits is overused: 'the force multiplier. But that's who he is. He is a guy who elevates the people around him.' The room around Walker is remade: Azeez Ojulari, Cameron Thomas and Samson Ebukam arrive to replace the departed Leonard Floyd (3.5 sacks, 31 pressures) and Arnold Ebiketie (2 sacks, 29 pressures) from an edge group that posted the NFL's 10th-best pressure rate (13.5% per Next Gen Stats) and the third-fastest average time to sack (4.5 seconds per TruMedia). The other storylines: whether Bralen Trice, still without a professional snap through two injury-wrecked seasons but a near-full participant in OTAs including 11-on-11 work, can finally debut, and how many snaps James Pearce Jr. is actually available for.",
+      category: "coaching",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-2026-training-camp-preview-outside-linebackers",
+      sourceLabel: "atlantafalcons.com",
     },
     {
-      title: "HOLIDAY STOCKTAKE AT THE MIDPOINT OF THE BREAK: The Falcoholic marks the Fourth with a four-up, four-down ledger on the 2026 season, crediting Matt Ryan's constant offseason presence and an expected Year 2 defensive jump as top reasons for belief, and opens the floor on best and worst-case predictions",
-      detail: "The Falcoholic (discussion posts filed into the Jul 4 holiday weekend, the freshest Falcons content on the board): with the building dark, fan-side stocktaking fills the gap. The optimism ledger leads with culture: Matt Ryan, a fixture around the facility since OTAs, is described as universally liked and deeply respected, with players and coaches praising his involvement and investment, and the piece argues his winning habits rub off on a young roster. It also expects visible Year 2 progress from a defense that was fun to watch in stretches last season, set against four counterweights headlined by the unsettled quarterback timeline. A companion thread asks for best and worst-case 2026 scenarios ahead of the July 29 camp open. Discussion fodder rather than hard news, but a fair snapshot of where the fanbase sits at the halfway mark of the dead period.",
+      title: "A NEW DEFENSIVE LEADER, BY ACCLAMATION: the fanbase spends the quietest weekend of the year picking who carries the defense next, and the Falcoholic's Sunday Reacts verdict points to second-year edge rusher Jalon Walker as Atlanta's next defensive centerpiece",
+      detail: "The Falcoholic (Reacts survey and companion discussion threads filed Sun Jul 5): with the building dark for three more weeks, the community turned to a succession question with real on-field stakes. The Reacts read makes the case that Jalon Walker, fresh off the USO tour of Japan, becomes the defense's new centerpiece in 2026: injuries interrupted stretches of his rookie year, but his skill set 'screams star' when right, and his ability to line up in multiple spots makes him a weekly game-plan problem for opposing coordinators. A companion thread asks the adjacent question, whether the defensive MVP belt today belongs to Jessie Bates III, A.J. Terrell or Divine Deablo. Fan-side content rather than hard news, but it frames the stakes of the Jul 29 camp open: Atlanta kept all five of last season's top sack producers from a 57-sack front, and the staff is openly counting on a Year 2 jump. Someone has to become the face of it.",
       category: "general",
-      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-discussion/94374/4-reasons-falcons-fans-should-be-optimistic-in-2026-and-4-reasons-you-shouldnt",
+      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-discussion/94335/defensive-mvp-jessie-bates-aj-terrell-divine-deablo",
       sourceLabel: "The Falcoholic",
     },
     {
@@ -2232,7 +2232,7 @@ export const NEWS_DIGEST = {
     },
     {
       title: "THE QUIET STRETCH IS HERE: the dead period is on the clock; with the offseason program closed, the next time the full team is on the grass is the first training-camp practice Wednesday July 29, the runway for the real Tua-vs-Penix evaluation",
-      detail: "Calendar checkpoint (Jul 6, two weeks into the break): the back half of the dead period is underway, and the dates are now league-official. The NFL's camp reporting roundup (carried by ESPN and NFL Network's Mike Garafolo, echoed by The Falcoholic) confirms rookies report Friday Jul 24, veterans follow Tuesday Jul 28, and the first full-team practice lands Wednesday Jul 29, 23 days out as of today. Ten practices are open to fans, including a season-ticket-member session Friday Jul 31 and an Under the Lights practice at a local high school Saturday Aug 8; the preseason opens at home against Denver Aug 14, with a trip to Indianapolis Aug 22 preceded by joint practices with the Colts. Two threads carry into the back half of the break with no resolution: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, calling camp readiness 'the expectation' but deferring to his doctor, and the league office has still not told the team whether James Pearce Jr. faces discipline (analysts now expect any ruling could wait until 2027). The genuine quarterback competition, plus the rebuilt inside-linebacker race and the made-over defensive line, cannot really start until pads come on July 29.",
+      detail: "Calendar checkpoint (Jul 7, just past the midpoint of the break): the back half of the dead period is underway, and the dates are now league-official. The NFL's camp reporting roundup (carried by ESPN and NFL Network's Mike Garafolo, echoed by The Falcoholic) confirms rookies report Friday Jul 24, veterans follow Tuesday Jul 28, and the first full-team practice lands Wednesday Jul 29, 22 days out as of today. Ten practices are open to fans, including a season-ticket-member session Friday Jul 31 and an Under the Lights practice at a local high school Saturday Aug 8; the preseason opens at home against Denver Aug 14, with a trip to Indianapolis Aug 22 preceded by joint practices with the Colts. Two threads carry into the back half of the break with no resolution: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, calling camp readiness 'the expectation' but deferring to his doctor, and the league office has still not told the team whether James Pearce Jr. faces discipline (analysts now expect any ruling could wait until 2027). The genuine quarterback competition, plus the rebuilt inside-linebacker race and the made-over defensive line, cannot really start until pads come on July 29.",
       category: "general",
       sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-training-camp-schedule-announced",
       sourceLabel: "atlantafalcons.com / The Falcoholic",
