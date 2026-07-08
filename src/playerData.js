@@ -2122,7 +2122,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-07-07T08:35:00Z",
+  generatedAt: "2026-07-08T08:31:42Z",
   cover: {
     kicker: "DEAD PERIOD · The Succession Question Gets Its Official Answer: A Day After the Fanbase Crowned Him the Defense's Next Centerpiece, Defensive Coordinator Jeff Ulbrich Maps Jalon Walker's Year 2 as the Kaden Elliss Role and Calls Him a 'Force Multiplier' Who Elevates Everyone Around Him",
     headLine1: "Ask who carries the defense next.",
@@ -2150,9 +2150,16 @@ export const NEWS_DIGEST = {
     "Yahoo Sports", "CBS Sports", "Washington Post", "BloggingDirty",
     "Audacy 92.9 The Game", "Yardbarker", "Over The Cap", "Spotrac",
     "Bengals.com", "FantasyPros", "Atlanta News First", "The Athletic", "Roundtable",
-    "Falcons Wire", "CBS News Atlanta",
+    "Falcons Wire", "CBS News Atlanta", "Sharp Football Analysis",
   ],
   topics: [
+    {
+      title: "BIJAN IS THE LEAGUE'S CONSENSUS NO. 1 BACK, AND ATLANTA'S IS THE NO. 1 ROOM: on a quiet dead-period Tuesday the validation stacks up, ESPN's survey of coaches, scouts and executives makes Bijan Robinson the unanimous top running back (a three-spot jump from No. 4 a year ago) while Warren Sharp grades the whole backfield the best unit in football at a near-perfect 98",
+      detail: "Atlantafalcons.com (Will McFadden, filed Tue Jul 7 at 10:25 AM, the freshest item on the team-site board and new since yesterday's digest): with the building still dark, the national verdict came in loud. ESPN's Jeremy Fowler polled coaches, scouts and executives on the league's position groups, and Bijan Robinson was the consensus choice at running back, up from No. 4 entering 2025, with his lowest vote landing at No. 2. An NFC executive on the case: 'Bijan is just more dynamic than the rest of the field in terms of creating positive runs despite blocking failure. Combo of his bend, feet and agility. His size shows up with physicality. And while Gibbs is top-end faster, Bijan is still explosive in his own right, creating home run plays.' The backdrop is a 2025 that led all NFL players with 2,298 scrimmage yards and included a 93-yard touchdown run that broke Warrick Dunn's franchise record against the Rams. Warren Sharp's preseason unit rankings then put the entire Atlanta backfield first with a near-perfect 98, two points clear of Detroit and 10 clear of Buffalo, crediting free-agent addition Brian Robinson Jr. (2,900-plus scrimmage yards and 20 touchdowns in four years, most recently spelling Christian McCaffrey in San Francisco) stepping into the departed Tyler Allgeier's role. Robinson on the new pairing: 'They both run through people on the field ... I can't wait to see what we can do together.' The number still not on paper: his own extension, which Tom Pelissero called imminent two weeks ago.",
+      category: "general",
+      sourceUrl: "https://www.atlantafalcons.com/news/nfl-running-back-rankings-falcons-bijan-robinson-brian-robinson",
+      sourceLabel: "atlantafalcons.com",
+    },
     {
       title: "CAMP PREVIEW NO. 4, ULBRICH HANDS JALON WALKER THE KADEN ELLISS ROLE: the team-site series reaches the outside linebackers, and the defensive coordinator answers the succession question himself, mapping a Year 2 in which Walker plays everywhere and calling him a 'force multiplier' who 'elevates the people around him'",
       detail: "Atlantafalcons.com (Tori McElhaney, filed Mon Jul 6 at 9:24 AM, the freshest team-site story on the board): a day after the fanbase crowned Jalon Walker the defense's next centerpiece, the coordinator made it close to official. Asked how Walker evolves in Year 2, Jeff Ulbrich laid out a role modeled on what Kaden Elliss did for him last season: days as an outside backer, days as a defensive end, days inside, days as functionally a nickel. 'We are going to ask him to do a lot,' Ulbrich said. 'Jalon is up to the task, and Jalon is going to bring his own flavor to it, too. I think Jalon has some superpowers that are unique.' Then the phrase he admits is overused: 'the force multiplier. But that's who he is. He is a guy who elevates the people around him.' The room around Walker is remade: Azeez Ojulari, Cameron Thomas and Samson Ebukam arrive to replace the departed Leonard Floyd (3.5 sacks, 31 pressures) and Arnold Ebiketie (2 sacks, 29 pressures) from an edge group that posted the NFL's 10th-best pressure rate (13.5% per Next Gen Stats) and the third-fastest average time to sack (4.5 seconds per TruMedia). The other storylines: whether Bralen Trice, still without a professional snap through two injury-wrecked seasons but a near-full participant in OTAs including 11-on-11 work, can finally debut, and how many snaps James Pearce Jr. is actually available for.",
