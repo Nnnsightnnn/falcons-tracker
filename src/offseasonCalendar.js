@@ -89,8 +89,8 @@ export const OFFSEASON_CALENDAR = [
   {
     id: "training-camp-open",
     date: "2026-07-22",
-    label: "Training Camp opens",
-    detail: "Full-team reporting day. Flowery Branch welcomes pads back.",
+    label: "Training Camp window opens",
+    detail: "Camp week at Flowery Branch. Rookies report Fri Jul 24, veterans Tue Jul 28, and the first full-team practice is Wed Jul 29. Ten practices are open to fans, including a season-ticket-member session Fri Jul 31 and an Under the Lights practice Sat Aug 8.",
     phase: "training-camp",
   },
   {

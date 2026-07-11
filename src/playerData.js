@@ -928,7 +928,7 @@ export const PLAYERS = [
     stats: { tackles: 31 },
     form: 6.6,
     status: "questionable",
-    injuryNote: "Shoulder recovery from 2025 IR stint",
+    injuryNote: "Shoulder recovery from 2025 IR stint · the Jul 10 ILB camp preview lists him as an option next to Deablo only 'if he gets healthy'",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4247807.png",
     contract: { years: 1, total: 3420000, guaranteed: 3420000, apy: 3420000, throughYear: 2026, cap2026: 3420000 },
     career: [{ years: "2022–", team: "Atlanta Falcons", type: "NFL" }],
@@ -1384,7 +1384,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "active",
-    injuryNote: "Foot · held out of minicamp Day 1 (Jun 16) along with JD Bertrand, opening first-team ILB reps for Christian Harris · was out of the walking boot and 'good to go' per Stefanski entering camp",
+    injuryNote: "Foot · the injury cost him spring practices entirely; out of the walking boot and 'good to go' per Stefanski, but the Jul 10 camp preview still lists him as needing to recover before he gets ILB looks next to Deablo",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4595343.png",
     contract: { years: 4, total: 4750000, guaranteed: 700000, apy: 1187500, throughYear: 2029, cap2026: 900000 },
     career: [
@@ -2122,26 +2122,28 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-07-10T08:32:00Z",
+  generatedAt: "2026-07-11T08:45:00Z",
   cover: {
-    kicker: "DEAD PERIOD · The Succession Question Gets Its Official Answer: A Day After the Fanbase Crowned Him the Defense's Next Centerpiece, Defensive Coordinator Jeff Ulbrich Maps Jalon Walker's Year 2 as the Kaden Elliss Role and Calls Him a 'Force Multiplier' Who Elevates Everyone Around Him",
-    headLine1: "Ask who carries the defense next.",
-    headEm: "Ulbrich already knows.",
-    headLine3: "Jalon Walker, Year 2, everywhere.",
+    kicker: "DEAD PERIOD · You Cannot Replace Kaden Elliss With One Man, So Atlanta Will Not Try: the Camp-Preview Series Reaches the Inside Linebackers, Where Divine Deablo Already Holds the Green Dot, Christian Harris Has Taken Every First-Team Rep Beside Him, and the Last Starting Job on the Defense Is Still Genuinely Open",
+    headLine1: "One man wore the green dot.",
+    headEm: "Now it takes a committee.",
+    headLine3: "Deablo, Harris, and an open seat.",
     deck:
-      "The team site's camp-preview series reached the outside linebackers Monday morning, and the coordinator answered the succession question himself. Asked how Jalon Walker evolves in Year 2, Jeff Ulbrich laid out a role modeled on what Kaden Elliss did for him last season: days as an outside backer, days as a defensive end, days inside, days as functionally a nickel. 'We are going to ask him to do a lot,' Ulbrich said, before reaching for the phrase he admits is overused: 'the force multiplier ... He is a guy who elevates the people around him.' The room around Walker is remade, with Azeez Ojulari, Cameron Thomas and Samson Ebukam arriving to replace the departed Leonard Floyd and Arnold Ebiketie from an edge group that posted the NFL's 10th-best pressure rate, and the open questions run through it: can Bralen Trice finally make his professional debut after two injury-wrecked seasons, and how many snaps is James Pearce Jr. actually available for? The first full-team practice is Wednesday July 29, now 19 days out.",
+      "The team site's Monday-Wednesday-Friday preview series reached the inside linebackers Friday morning, and Tori McElhaney opened with the only honest answer to how Atlanta replaces Kaden Elliss: you cannot, not with one person, and the coordinator knows it. 'What we had asked Kaden to do, I had never been around anything like that before in the past,' Jeff Ulbrich said this spring. 'There were days when he was an outside backer, days when he was a defensive end, days he was an inside backer, days he was, in some ways, a nickel. That's hard to replace.' So it goes by committee. Divine Deablo's role grows first: he carries the green dot Elliss wore last year, and that much is settled. Everything else is not. Christian Harris has taken the primary reps alongside him since OTAs, a placement position coach Barrett Ruud tied to Harris' four years and 27 starts in a Houston system that looks and feels like this one, but Ruud is explicit that camp could still hand the job to someone else: Channing Tindall, a healthy Troy Andersen, rookie Kendal Daniels once his foot clears, or Harold Perkins Jr., whose upside the team bet on despite the knee. Elliss left behind 107 tackles, 3.5 sacks and 17 starts. The sorting begins when pads come on Wednesday July 29, now 18 days out.",
     byline: "The Tracker Desk",
     filedFrom: "Atlanta",
-    photoId: "walker",
-    stampLabel: "S · CAMP PREVIEW · OLB",
+    photoId: "deablo",
+    stampLabel: "S · CAMP PREVIEW · ILB",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
-    // STATUS (2026-07-07): new cover request queued in ~/Vault/Notes/image-requests.md
-    // (2026-07-07-walker-year-two.jpg) for the downstream Antigravity image generator.
-    // Until that file lands, CoverImage falls back to the photoId ("walker") headshot,
-    // so the cover is never broken. Prior covers (bates-uso-japan, bijan-world-cup,
-    // pitts-extension, london-signed, penix-live) remain committed under public/assets/cover/.
-    coverImageUrl: "/falcons-tracker/assets/cover/2026-07-07-walker-year-two.jpg",
+    // STATUS (2026-07-11): new cover request queued in ~/Vault/Notes/image-requests.md
+    // (2026-07-11-deablo-green-dot.jpg) for the downstream Antigravity image generator.
+    // NOTE: the 2026-07-07-walker-year-two.jpg request is still OPEN and unrendered in the
+    // inbox; the downstream generator has not produced a file since 2026-06-28. Until a file
+    // lands, CoverImage falls back to the photoId ("deablo") headshot, so the cover is never
+    // broken. Prior covers (bijan-world-cup, pitts-extension, london-signed, penix-live)
+    // remain committed under public/assets/cover/.
+    coverImageUrl: "/falcons-tracker/assets/cover/2026-07-11-deablo-green-dot.jpg",
   },
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "NFL Network",
@@ -2153,6 +2155,20 @@ export const NEWS_DIGEST = {
     "Falcons Wire", "CBS News Atlanta", "Sharp Football Analysis",
   ],
   topics: [
+    {
+      title: "CAMP PREVIEW NO. 6, THE LAST OPEN STARTING JOB ON THE DEFENSE: the series reaches the inside linebackers, where Divine Deablo inherits the green dot, Christian Harris has held every first-team rep beside him since OTAs, and Ulbrich concedes the Kaden Elliss role cannot be replaced by any one man",
+      detail: "Atlantafalcons.com (Tori McElhaney, filed Fri Jul 10 at 9:43 AM, the freshest team-site story and new since yesterday's digest): the Monday-Wednesday-Friday preview series lands on the heart of the defense, and the framing is subtraction. Kaden Elliss started all 17 games he played in 2025 (107 total tackles, 10 for a loss, 3.5 sacks, six pass breakups, one interception) and did it from four different alignments. 'What we had asked Kaden to do, I had never been around anything like that before in the past,' Jeff Ulbrich said. 'That's hard to replace.' The committee answer starts with Divine Deablo, who now carries the green dot Elliss wore, the one settled fact in the room. The rest is open. Christian Harris has taken the primary reps alongside Deablo through OTAs and mandatory minicamp, and position coach Barrett Ruud tied that to Harris' background: 27 starts across four seasons in a Houston scheme that looks and feels like Atlanta's, with a 2023 peak of 101 tackles, seven TFL, seven pass defenses and two sacks. Ruud stopped short of calling it settled, and McElhaney flags the job as a sneaky-good August battle: Channing Tindall, a healthy Troy Andersen, Kendal Daniels once his foot clears, and Harold Perkins Jr. all get looks, with heavy preseason reps likely as the staff sorts it. Rookie newcomers Daniels (hybrid safety/nickel/linebacker at Oklahoma) and Perkins are the swing factor.",
+      category: "coaching",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-2026-training-camp-preview-inside-linebackers",
+      sourceLabel: "atlantafalcons.com",
+    },
+    {
+      title: "DON'T FORGET HAROLD PERKINS JR.: with the pass rush rebuilt around free-agent edges and returning sack producers, the team site argues the sixth-round rookie who was an All-American-caliber freshman at LSU before the knee could be the defense's most intriguing addition",
+      detail: "Atlantafalcons.com (Tori McElhaney, filed Thu Jul 9 at 10:08 AM): the accounting is stark. Leonard Floyd, Arnold Ebiketie and Kaden Elliss all played out their contracts, and Ruke Orhorhoro was traded to Jacksonville for Maason Smith. Those four combined for 15 sacks and 24 quarterback hurries off a front that just posted the best pass-rushing production in franchise history. Atlanta answered with edge signings Azeez Ojulari, Cameron Thomas and Samson Ebukam, linebackers Christian Harris and Channing Tindall, the returns of Zach Harrison and Bralen Trice from injury, and career-high seasons banked by Brandon Dorlus and LaCale London. Jalon Walker and James Pearce Jr., the 2025 first-rounders, contributed 16 sacks, three forced fumbles and 14 hurries between them. Buried in that pile is Perkins, whose freshman and sophomore years at LSU produced 13 sacks, seven forced fumbles, two interceptions and 26 tackles for loss before a season-ending knee injury and successive scheme changes flattened his last two college seasons. Area scout Dante Fangoli on the bet: 'We all know what he was before the injury. We know that player is still there in him ... despite the injury, despite the scheme changes, the coaching changes, he's never made excuses.' On Ulbrich, Perkins had a lighter read at rookie minicamp: 'I don't know if I can curse on here, but I mess with Coach.' He profiles as the linebacker/pass-rusher hybrid to Kendal Daniels' linebacker/safety hybrid, which is precisely why the Falcons wanted both.",
+      category: "general",
+      sourceUrl: "https://www.atlantafalcons.com/news/amid-falcons-retooled-pass-rush-dont-forget-harold-perkins-jr",
+      sourceLabel: "atlantafalcons.com",
+    },
     {
       title: "CAMP PREVIEW NO. 5, THE TIGHT END ROOM WELCOMES A FAMILIAR FACE: the team-site series reaches the tight ends, where a freshly paid Kyle Pitts headlines a suddenly crowded room, Austin Hooper returns for an 11th NFL season and a second Atlanta tour, and Stefanski lays out a positionless plan for his new weapon",
       detail: "Atlantafalcons.com (Will McFadden and Tori McElhaney, filed Tue Jul 8 at 11:13 AM, the freshest team-site story and new since yesterday's digest): the Monday-Wednesday-Friday preview series lands on the tight ends, and the headline is depth. Kyle Pitts, three-year, $54M extension in hand, closed 2025 by leading all NFL tight ends with 469 receiving yards over the final six weeks and ranking second at the position with four touchdowns. Stefanski framed the plan as positionless: 'I think there's all sorts of different jobs he can do. In-line tight end, line up in the backfield, line up outside. I think it comes back to that versatility piece.' The reunion is Austin Hooper, drafted by Atlanta in the 2016 third round and back for an 11th season after two years in Cleveland under Stefanski and a Super Bowl run with New England (six starts, 21 catches, 263 yards, two touchdowns in 2025), profiling as the in-line complement who can co-exist with Pitts in 12- and 13-personnel and set a veteran tempo. Charlie Woerner returns as the run-blocking specialist, and the room to watch is second-year UDFA Joshua Simon (South Carolina), an OTA and minicamp standout, plus rookie Jack Velling. Feleipe Franks and Teagan Quitoriano are the offseason departures.",
@@ -2182,13 +2198,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "The Falcoholic",
     },
     {
-      title: "HOW THE PITTS DEAL GOT DONE: the team site goes inside the evaluation, with Ian Cunningham and Kevin Stefanski explaining how three months on the franchise tag let the new regime vet not just the player but the person before committing $54M",
-      detail: "Atlantafalcons.com (feature filed in the wake of the Jun 29 signing, fresh on the team site into the holiday stretch): the inside story of the summer's biggest deal treats the tag interim as the feature, not the bug. The three months between the March tag and the June extension gave Cunningham and Stefanski a live evaluation window through the offseason program, and the piece is explicit that the staff was measuring the person and teammate as much as the tight end: how Pitts worked, how he carried the tag year, how he fit the building the new regime is trying to construct. What they saw closed the case for a three-year, $54M commitment rather than a one-year rental. Paired with Pitts' own podium framing of the tag as 'time to squeeze the rag,' the two pieces read as the same story told from both sides of the table.",
-      category: "contracts",
-      sourceUrl: "https://www.atlantafalcons.com/news/evaluation-that-led-to-kyle-pitts-new-deal-ian-cunningham-kevin-stefanski",
-      sourceLabel: "atlantafalcons.com",
-    },
-    {
       title: "CAMP PREVIEW NO. 3, THE DEFENSIVE LINE GETS ITS TEARDOWN: the team-site series reaches the remade front, where free-agent DT Da'Shawn Hand ('Kingpin' to his position coach) anchors the run defense and all five of last year's top sack producers return from a 57-sack unit",
       detail: "Atlantafalcons.com (Will McFadden's Mon-Wed-Fri camp-preview series, defensive line install landing into the holiday stretch after O-line and special teams): the rebuilt front is where the staff quietly reshaped the roster, and the preview lays out the pieces. Da'Shawn Hand, signed from the Chargers in March off a career-high 13 starts, has embraced a 'wrecking ball' mentality and earned the 'Kingpin' nickname from D-line coach Nate Ollie as the 'final boss' against the run, ticketed as at least a partial replacement for David Onyemata. Through the spring the first-team interior reps ran through Maason Smith, Brandon Dorlus and Hand, with Zach Harrison and Cameron Thomas rotating behind them and Samson Ebukam added off the edge. The group builds on a 2025 unit that logged the NFL's second-most sacks (57), and all five of last year's top rushers (Pearce, Dorlus, Jalon Walker, LaCale London and Harrison) are back. The open question the preview cannot answer: how many snaps James Pearce Jr. is actually available for. The real sorting starts when pads come on Jul 29.",
       category: "coaching",
@@ -2208,13 +2217,6 @@ export const NEWS_DIGEST = {
       category: "general",
       sourceUrl: "https://roundtable.io/sports/nfl/falcons/players/atlanta-falcons-2026-pre-training-camp-positional-room-preview-quarterback",
       sourceLabel: "Roundtable / Yahoo Sports",
-    },
-    {
-      title: "PITTS, INK DRY, SETS THE TONE FOR ACT TWO: at his signing-day availability the tight end reflects on the tag year that won the new regime over and makes the commitment quote of the summer: 'Whatever needs to be done for us to get to meaningful ball, I'm in'",
-      detail: "Atlantafalcons.com (Tori McElhaney feature, filed Tue Jun 30, off the Mon Jun 29 signing and podium session): with the three-year, $54M deal official, Pitts walked through the arc that got him here: drafted No. 4 overall ('that's been a dream of mine since I started playing the game'), a 1,000-yard Pro Bowl rookie year catching passes from Matt Ryan, three offensive systems, more quarterbacks than seasons played, and the knee injury he worked back from. He framed the franchise tag as 'my opportunity ... it was time to squeeze the rag,' and at 26 sees his evolution just hitting its second act, with Travis Kelce, George Kittle and Tony Gonzalez as proof tight ends can peak late. On his role: blocking, running, mentoring rookies, whatever the coach asks.",
-      category: "contracts",
-      sourceUrl: "https://www.atlantafalcons.com/news/kyle-pitts-contract-2026-im-in",
-      sourceLabel: "atlantafalcons.com",
     },
     {
       title: "CAMP PREVIEW NO. 2, SPECIAL TEAMS GET THE FULL TEARDOWN: new coordinator Craig Aukerman inherits a unit that ranked last in kickoff return average, gets 41-year-old Nick Folk and former All-Pro punter Jake Bailey, and rookie Zachariah Branch has the inside track on return duties",
@@ -2239,7 +2241,7 @@ export const NEWS_DIGEST = {
     },
     {
       title: "THE QUIET STRETCH IS HERE: the dead period is on the clock; with the offseason program closed, the next time the full team is on the grass is the first training-camp practice Wednesday July 29, the runway for the real Tua-vs-Penix evaluation",
-      detail: "Calendar checkpoint (Jul 10, into the back stretch of the break): the dead period is winding down, and the dates are now league-official. The NFL's camp reporting roundup (carried by ESPN and NFL Network's Mike Garafolo, echoed by The Falcoholic) confirms rookies report Friday Jul 24, veterans follow Tuesday Jul 28, and the first full-team practice lands Wednesday Jul 29, 19 days out as of today. Ten practices are open to fans, including a season-ticket-member session Friday Jul 31 and an Under the Lights practice at a local high school Saturday Aug 8; the preseason opens at home against Denver Aug 14, with a trip to Indianapolis Aug 22 preceded by joint practices with the Colts. Two threads carry into the back half of the break with no resolution: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, calling camp readiness 'the expectation' but deferring to his doctor, and the league office has still not told the team whether James Pearce Jr. faces discipline (analysts now expect any ruling could wait until 2027). The genuine quarterback competition, plus the rebuilt inside-linebacker race and the made-over defensive line, cannot really start until pads come on July 29.",
+      detail: "Calendar checkpoint (Jul 11, into the back stretch of the break): the dead period is winding down, and the dates are now league-official. The NFL's camp reporting roundup (carried by ESPN and NFL Network's Mike Garafolo, echoed by The Falcoholic) confirms rookies report Friday Jul 24, veterans follow Tuesday Jul 28, and the first full-team practice lands Wednesday Jul 29, 18 days out as of today. Ten practices are open to fans, including a season-ticket-member session Friday Jul 31 and an Under the Lights practice at a local high school Saturday Aug 8; the preseason opens at home against Denver Aug 14, with a trip to Indianapolis Aug 22 preceded by joint practices with the Colts. Two threads carry into the back half of the break with no resolution: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, calling camp readiness 'the expectation' but deferring to his doctor, and the league office has still not told the team whether James Pearce Jr. faces discipline (analysts now expect any ruling could wait until 2027). The genuine quarterback competition, plus the rebuilt inside-linebacker race and the made-over defensive line, cannot really start until pads come on July 29.",
       category: "general",
       sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-training-camp-schedule-announced",
       sourceLabel: "atlantafalcons.com / The Falcoholic",
@@ -2250,13 +2252,6 @@ export const NEWS_DIGEST = {
       category: "general",
       sourceUrl: "https://www.audacy.com/929thegame/sports/atlanta-falcons/why-nfl-may-wait-until-2027-to-address-james-pearce-jr-situation",
       sourceLabel: "Audacy 92.9 The Game / AP",
-    },
-    {
-      title: "Madrid Week 9 — Falcons HOST the Bengals Nov 8, 9:30 AM ET at the Bernabéu (NFL Network)",
-      detail: "NFL.com / Atlantafalcons.com / Bengals.com / Yahoo / NBC PFT (May 13-14): the international slate has Atlanta hosting Cincinnati (Burrow, Chase, Higgins) in Madrid Sun Nov 8, 9:30 AM ET at Santiago Bernabéu, the 70-year home of Real Madrid CF. NFL Network exclusive broadcast. It is the Bengals' first Madrid trip and first international game in seven years. CEO Greg Beadles: 'We are truly honored and deeply grateful for the opportunity to host the Cincinnati Bengals at the Bernabéu.' The game is Atlanta's 6th international appearance (Toronto '13, London '14/'21/'23, Berlin '25) and 5th trip to Europe in six seasons. It falls one week before the Week 11 bye — a clean travel runway.",
-      category: "games",
-      sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-2026-schedule-key-dates-matchups-storylines",
-      sourceLabel: "atlantafalcons.com",
     },
   ],
 };
