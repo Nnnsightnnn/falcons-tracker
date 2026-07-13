@@ -2122,29 +2122,31 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-07-12T08:45:00Z",
+  generatedAt: "2026-07-13T08:45:00Z",
   cover: {
     kicker: "DEAD PERIOD · You Cannot Replace Kaden Elliss With One Man, So Atlanta Will Not Try: the Camp-Preview Series Reaches the Inside Linebackers, Where Divine Deablo Already Holds the Green Dot, Christian Harris Has Taken Every First-Team Rep Beside Him, and the Last Starting Job on the Defense Is Still Genuinely Open",
     headLine1: "One man wore the green dot.",
     headEm: "Now it takes a committee.",
     headLine3: "Deablo, Harris, and an open seat.",
     deck:
-      "The team site's Monday-Wednesday-Friday preview series reached the inside linebackers Friday morning, and Tori McElhaney opened with the only honest answer to how Atlanta replaces Kaden Elliss: you cannot, not with one person, and the coordinator knows it. 'What we had asked Kaden to do, I had never been around anything like that before in the past,' Jeff Ulbrich said this spring. 'There were days when he was an outside backer, days when he was a defensive end, days he was an inside backer, days he was, in some ways, a nickel. That's hard to replace.' So it goes by committee. Divine Deablo's role grows first: he carries the green dot Elliss wore last year, and that much is settled. Everything else is not. Christian Harris has taken the primary reps alongside him since OTAs, a placement position coach Barrett Ruud tied to Harris' four years and 27 starts in a Houston system that looks and feels like this one, but Ruud is explicit that camp could still hand the job to someone else: Channing Tindall, a healthy Troy Andersen, rookie Kendal Daniels once his foot clears, or Harold Perkins Jr., whose upside the team bet on despite the knee. Elliss left behind 107 tackles, 3.5 sacks and 17 starts. The sorting begins when pads come on Wednesday July 29, now 17 days out.",
+      "The team site's Monday-Wednesday-Friday preview series reached the inside linebackers Friday morning, and Tori McElhaney opened with the only honest answer to how Atlanta replaces Kaden Elliss: you cannot, not with one person, and the coordinator knows it. 'What we had asked Kaden to do, I had never been around anything like that before in the past,' Jeff Ulbrich said this spring. 'There were days when he was an outside backer, days when he was a defensive end, days he was an inside backer, days he was, in some ways, a nickel. That's hard to replace.' So it goes by committee. Divine Deablo's role grows first: he carries the green dot Elliss wore last year, and that much is settled. Everything else is not. Christian Harris has taken the primary reps alongside him since OTAs, a placement position coach Barrett Ruud tied to Harris' four years and 27 starts in a Houston system that looks and feels like this one, but Ruud is explicit that camp could still hand the job to someone else: Channing Tindall, a healthy Troy Andersen, rookie Kendal Daniels once his foot clears, or Harold Perkins Jr., whose upside the team bet on despite the knee. Elliss left behind 107 tackles, 3.5 sacks and 17 starts. The sorting begins when pads come on Wednesday July 29, now 16 days out.",
     byline: "The Tracker Desk",
     filedFrom: "Atlanta",
     photoId: "deablo",
     stampLabel: "S · CAMP PREVIEW · ILB",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
-    // STATUS (2026-07-12): NO new cover request queued this run. The cover image request
-    // (2026-07-11-deablo-green-dot.jpg) is 1 day old, well inside the 4-day staleness
-    // backstop, and no new picturable story landed since. Deablo/ILB remains the lead.
-    // NOTE: TWO requests are now OPEN and unrendered in ~/Vault/Notes/image-requests.md
+    // STATUS (2026-07-13): NO new cover request queued this run. The cover image request
+    // (2026-07-11-deablo-green-dot.jpg) is 2 days old, inside the 4-day staleness backstop,
+    // and today's freshest item (Dorlus named ESPN's breakout pick) is a media-ranking story,
+    // not a new picturable scene. Deablo/ILB remains the lead.
+    // NOTE: TWO requests are still OPEN and unrendered in ~/Vault/Notes/image-requests.md
     // (2026-07-07-walker-year-two.jpg and 2026-07-11-deablo-green-dot.jpg); the downstream
-    // Antigravity generator has not produced a file since 2026-06-28, so the backlog is
-    // growing. Until a file lands, CoverImage falls back to the photoId ("deablo") headshot,
-    // so the cover is never broken. Prior covers (bijan-world-cup, pitts-extension,
-    // london-signed, penix-live) remain committed under public/assets/cover/.
+    // Antigravity generator has not produced a file since 2026-06-28 (15 days), so the
+    // backlog is growing and needs a look. Until a file lands, CoverImage falls back to the
+    // photoId ("deablo") headshot, so the cover is never broken. Prior covers
+    // (bijan-world-cup, pitts-extension, london-signed, penix-live) remain committed under
+    // public/assets/cover/.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-07-11-deablo-green-dot.jpg",
   },
   sources: [
@@ -2157,6 +2159,20 @@ export const NEWS_DIGEST = {
     "Falcons Wire", "CBS News Atlanta", "Sharp Football Analysis",
   ],
   topics: [
+    {
+      title: "ESPN PICKS ITS FALCON TO BREAK OUT, AND IT IS NOT JALON WALKER: Benjamin Solak's one-per-team list lands on Brandon Dorlus, the third-year interior rusher who put up 8.5 sacks before a season-ending injury, and the pick doubles as a reminder that the next contract conversation after Bijan may be his",
+      detail: "The Falcoholic (filed over the weekend, Jul 11-12, and the freshest item on the board with the building dark) / Yahoo Sports / SI Falcons: ESPN's Benjamin Solak went team by team naming a 2026 breakout candidate, and for Atlanta he passed over the obvious Year 2 answer, Jalon Walker, and took Brandon Dorlus. The case is the back half of last season: 8.5 sacks in all, seven of them after the midpoint, before an injury ended his year early. Solak's read is about position, not just production. Dorlus came out of Oregon as a true tweener who played mostly on the edge, and two years in Atlanta have been spent adding the weight to hold up inside, where he now projects as a first-team interior rusher next to Maason Smith and Da'Shawn Hand. Year 3 is the year young linemen either cement the reputation or lose it. SI's counter, worth keeping honest about, is that a 8.5-sack season arguably means he already broke out and the label undersells him. The subplot BloggingDirty flags: with Drake London and Kyle Pitts paid and Bijan Robinson next, a healthy, productive Dorlus is the front office's next payday problem, and a good one to have.",
+      category: "general",
+      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-news/94429/brandon-dorlus-named-falcons-breakout-pick-by-espn",
+      sourceLabel: "The Falcoholic / ESPN / SI Falcons",
+    },
+    {
+      title: "WHAT THE OFFENSE ACTUALLY BECOMES UNDER STEFANSKI: Falcoholic Live spends an episode on the Rees-Stefanski install and what it asks of Bijan, London and Pitts, the clearest attempt yet to describe a scheme nobody has seen a live snap of",
+      detail: "The Falcoholic (Falcoholic Live, Ep380, with avy3n, posted into the back half of the break): the last real content lane in a dead period is projection, and this is the useful version of it. The panel works through how Kevin Stefanski's offense, run day to day by first-year coordinator Tommy Rees, reshapes the three players Atlanta just committed to. The through-lines: heavy play-action and wide-zone tendencies that historically lifted Cleveland's backs, which points at a Bijan Robinson usage spike beyond the 2,298 scrimmage yards he already led the league with; a tight-end room built to run 12 and 13 personnel now that Austin Hooper is back to play in-line, which is exactly the alignment flexibility Stefanski described when he called Kyle Pitts' plan positionless; and a Drake London role that leans on the trust-with-quarterbacks trait the team site spent June documenting, since whoever wins the job will need a security blanket early. None of it is verifiable until pads come on Jul 29, which is the honest caveat the episode itself makes.",
+      category: "coaching",
+      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-analysis/94437/falcons-offense-changes-2026-bijan-robinson-drake-london-kyle-pitts-falcoholic-live",
+      sourceLabel: "The Falcoholic",
+    },
     {
       title: "CAMP PREVIEW NO. 6, THE LAST OPEN STARTING JOB ON THE DEFENSE: the series reaches the inside linebackers, where Divine Deablo inherits the green dot, Christian Harris has held every first-team rep beside him since OTAs, and Ulbrich concedes the Kaden Elliss role cannot be replaced by any one man",
       detail: "Atlantafalcons.com (Tori McElhaney, filed Fri Jul 10 at 9:43 AM, still the freshest team-site story on the board with the building dark through the weekend): the Monday-Wednesday-Friday preview series lands on the heart of the defense, and the framing is subtraction. Kaden Elliss started all 17 games he played in 2025 (107 total tackles, 10 for a loss, 3.5 sacks, six pass breakups, one interception) and did it from four different alignments. 'What we had asked Kaden to do, I had never been around anything like that before in the past,' Jeff Ulbrich said. 'That's hard to replace.' The committee answer starts with Divine Deablo, who now carries the green dot Elliss wore, the one settled fact in the room. The rest is open. Christian Harris has taken the primary reps alongside Deablo through OTAs and mandatory minicamp, and position coach Barrett Ruud tied that to Harris' background: 27 starts across four seasons in a Houston scheme that looks and feels like Atlanta's, with a 2023 peak of 101 tackles, seven TFL, seven pass defenses and two sacks. Ruud stopped short of calling it settled, and McElhaney flags the job as a sneaky-good August battle: Channing Tindall, a healthy Troy Andersen, Kendal Daniels once his foot clears, and Harold Perkins Jr. all get looks, with heavy preseason reps likely as the staff sorts it. Rookie newcomers Daniels (hybrid safety/nickel/linebacker at Oklahoma) and Perkins are the swing factor.",
@@ -2214,20 +2230,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com",
     },
     {
-      title: "A NEW DEFENSIVE LEADER, BY ACCLAMATION: the fanbase spends the quietest weekend of the year picking who carries the defense next, and the Falcoholic's Sunday Reacts verdict points to second-year edge rusher Jalon Walker as Atlanta's next defensive centerpiece",
-      detail: "The Falcoholic (Reacts survey and companion discussion threads filed Sun Jul 5): with the building dark for three more weeks, the community turned to a succession question with real on-field stakes. The Reacts read makes the case that Jalon Walker, fresh off the USO tour of Japan, becomes the defense's new centerpiece in 2026: injuries interrupted stretches of his rookie year, but his skill set 'screams star' when right, and his ability to line up in multiple spots makes him a weekly game-plan problem for opposing coordinators. A companion thread asks the adjacent question, whether the defensive MVP belt today belongs to Jessie Bates III, A.J. Terrell or Divine Deablo. Fan-side content rather than hard news, but it frames the stakes of the Jul 29 camp open: Atlanta kept all five of last season's top sack producers from a 57-sack front, and the staff is openly counting on a Year 2 jump. Someone has to become the face of it.",
-      category: "general",
-      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-discussion/94335/defensive-mvp-jessie-bates-aj-terrell-divine-deablo",
-      sourceLabel: "The Falcoholic",
-    },
-    {
-      title: "CAMP PREVIEW NO. 3, THE DEFENSIVE LINE GETS ITS TEARDOWN: the team-site series reaches the remade front, where free-agent DT Da'Shawn Hand ('Kingpin' to his position coach) anchors the run defense and all five of last year's top sack producers return from a 57-sack unit",
-      detail: "Atlantafalcons.com (Will McFadden's Mon-Wed-Fri camp-preview series, defensive line install landing into the holiday stretch after O-line and special teams): the rebuilt front is where the staff quietly reshaped the roster, and the preview lays out the pieces. Da'Shawn Hand, signed from the Chargers in March off a career-high 13 starts, has embraced a 'wrecking ball' mentality and earned the 'Kingpin' nickname from D-line coach Nate Ollie as the 'final boss' against the run, ticketed as at least a partial replacement for David Onyemata. Through the spring the first-team interior reps ran through Maason Smith, Brandon Dorlus and Hand, with Zach Harrison and Cameron Thomas rotating behind them and Samson Ebukam added off the edge. The group builds on a 2025 unit that logged the NFL's second-most sacks (57), and all five of last year's top rushers (Pearce, Dorlus, Jalon Walker, LaCale London and Harrison) are back. The open question the preview cannot answer: how many snaps James Pearce Jr. is actually available for. The real sorting starts when pads come on Jul 29.",
-      category: "coaching",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-2026-training-camp-preview-defensive-line",
-      sourceLabel: "atlantafalcons.com",
-    },
-    {
       title: "BIJAN EXTENSION NOW CALLED 'IMMINENT': with Pitts and London locked up, NFL Network's Tom Pelissero says a Bijan Robinson deal is imminent and a priority for Atlanta, the last of the three core extensions the front office flagged, though there is no signature yet",
       detail: "NFL Network (Tom Pelissero, 'The Insiders,' Jun 25) / ClutchPoints / SI Falcons / Yahoo / Pro Football Rumors (Jun 24-26): a week into the dead period the last domino is still the closest it has been, but unsigned. Pelissero said on the league's insider show that a Bijan Robinson extension is imminent and a clear priority for the Falcons, echoing Marc Raimondi's Jun 24 report that talks are ongoing and a deal is expected soon. Nothing is on paper yet: Robinson is still on his rookie deal (a $1.145M base in 2026) with the 2027 fifth-year option already exercised, so Atlanta holds the leverage to move now or wait. A fresh model from The Athletic's Austin Mock (carried by Pro Football Rumors Jun 26) puts the number at $21.9M per year with a position-record $52.7M in guarantees, which would push Robinson past Saquon Barkley's $20.6M AAV to the top of the running-back market. The wrinkle is a staring contest with Detroit's Jahmyr Gibbs, also extension-eligible and projected just behind at $19.9M AAV: whoever signs first likely sets a number the other clears, so each side has reason to let the other go first. Robinson keeps his usual distance: 'We'll see, man. I let them handle all that stuff.'",
       category: "contracts",
@@ -2243,7 +2245,7 @@ export const NEWS_DIGEST = {
     },
     {
       title: "THE QUIET STRETCH IS HERE: the dead period is on the clock; with the offseason program closed, the next time the full team is on the grass is the first training-camp practice Wednesday July 29, the runway for the real Tua-vs-Penix evaluation",
-      detail: "Calendar checkpoint (Jul 12, into the back stretch of the break): the dead period is winding down, and the dates are now league-official. The NFL's camp reporting roundup (carried by ESPN and NFL Network's Mike Garafolo, echoed by The Falcoholic) confirms rookies report Friday Jul 24, veterans follow Tuesday Jul 28, and the first full-team practice lands Wednesday Jul 29, 17 days out as of today. Ten practices are open to fans, including a season-ticket-member session Friday Jul 31 and an Under the Lights practice at a local high school Saturday Aug 8; the preseason opens at home against Denver Aug 14, with a trip to Indianapolis Aug 22 preceded by joint practices with the Colts. Two threads carry into the back half of the break with no resolution: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, calling camp readiness 'the expectation' but deferring to his doctor, and the league office has still not told the team whether James Pearce Jr. faces discipline (analysts now expect any ruling could wait until 2027). The genuine quarterback competition, plus the rebuilt inside-linebacker race and the made-over defensive line, cannot really start until pads come on July 29.",
+      detail: "Calendar checkpoint (Jul 13, with 11 days until the first bodies walk back into Flowery Branch): the dead period is winding down, and the dates are now league-official. The NFL's camp reporting roundup (carried by ESPN and NFL Network's Mike Garafolo, echoed by The Falcoholic) confirms rookies report Friday Jul 24, veterans follow Tuesday Jul 28, and the first full-team practice lands Wednesday Jul 29, 16 days out as of today. Ten practices are open to fans, including a season-ticket-member session Friday Jul 31 and an Under the Lights practice at a local high school Saturday Aug 8; the preseason opens at home against Denver Aug 14, with a trip to Indianapolis Aug 22 preceded by joint practices with the Colts. Two threads carry into the back half of the break with no resolution: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, calling camp readiness 'the expectation' but deferring to his doctor, and the league office has still not told the team whether James Pearce Jr. faces discipline (analysts now expect any ruling could wait until 2027). The genuine quarterback competition, plus the rebuilt inside-linebacker race and the made-over defensive line, cannot really start until pads come on July 29.",
       category: "general",
       sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-training-camp-schedule-announced",
       sourceLabel: "atlantafalcons.com / The Falcoholic",
