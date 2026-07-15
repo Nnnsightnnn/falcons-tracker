@@ -2122,7 +2122,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-07-14T09:05:00Z",
+  generatedAt: "2026-07-15T08:35:00Z",
   cover: {
     kicker: "DEAD PERIOD · You Cannot Replace Kaden Elliss With One Man, So Atlanta Will Not Try: the Camp-Preview Series Reaches the Inside Linebackers, Where Divine Deablo Already Holds the Green Dot, Christian Harris Has Taken Every First-Team Rep Beside Him, and the Last Starting Job on the Defense Is Still Genuinely Open",
     headLine1: "One man wore the green dot.",
@@ -2136,17 +2136,19 @@ export const NEWS_DIGEST = {
     stampLabel: "S · CAMP PREVIEW · ILB",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
-    // STATUS (2026-07-14): NO new cover request queued this run. The cover image request
-    // (2026-07-11-deablo-green-dot.jpg) is 3 days old, still inside the 4-day staleness
-    // backstop, and today's freshest items (Pitts No. 8 among TEs, Lindstrom No. 6 among
-    // interior linemen in ESPN's Fowler poll) are media-ranking stories, not picturable
-    // scenes. Deablo/ILB remains the cover subject; the ESPN rankings lead the digest.
+    // STATUS (2026-07-15): NO new cover request queued this run. The cover image request
+    // (2026-07-11-deablo-green-dot.jpg) is 4 days old, right at the edge of the 4-day
+    // staleness backstop (not yet OVER it), and today's fresh lead (ESPN ranking Atlanta's
+    // roster tied-29th) is a media-ranking story, not a picturable scene. Deablo/ILB remains
+    // the cover subject; the ESPN ranking leads the digest.
     // NOTE: TWO requests are still OPEN and unrendered in ~/Vault/Notes/image-requests.md
     // (2026-07-07-walker-year-two.jpg and 2026-07-11-deablo-green-dot.jpg); the downstream
-    // Antigravity generator has not produced a file since 2026-06-28 (16 days), so the
-    // backlog is growing and needs a look. Queuing a third request would only deepen it.
-    // Until a file lands, CoverImage falls back to the photoId ("deablo") headshot, so the
-    // cover is never broken. Prior covers
+    // Antigravity generator has not produced a file since 2026-06-28 (17 days), so the
+    // backlog is growing and needs a look. Queuing a third request would only deepen it, so
+    // the right move is to let the generator catch up rather than pile on. From tomorrow the
+    // cover crosses the 4-day line; if the generator is still stalled, the fix is unstalling
+    // it, not adding a third request. Until a file lands, CoverImage falls back to the
+    // photoId ("deablo") headshot, so the cover is never broken. Prior covers
     // (bijan-world-cup, pitts-extension, london-signed, penix-live) remain committed under
     // public/assets/cover/.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-07-11-deablo-green-dot.jpg",
@@ -2161,6 +2163,13 @@ export const NEWS_DIGEST = {
     "Falcons Wire", "CBS News Atlanta", "Sharp Football Analysis",
   ],
   topics: [
+    {
+      title: "THE SAME LEAGUE THAT KEEPS PRAISING THE PARTS JUST RANKED THE WHOLE 29TH: ESPN's analyst trio graded all 32 rosters entering 2026 and slotted Atlanta tied for 29th with Arizona, one of the three worst in football, with the unsettled quarterback job cited as the reason the offensive talent does not add up to a contender",
+      detail: "ESPN (Mike Clay, Aaron Schatz, Seth Walder) via Yahoo Sports and SI Falcons (carried into Mon Jul 13, the newest hard item on the board and the sharpest counterweight of the break): after two weeks of national validation for individual Falcons, the same network ranked the sum of the parts near the bottom. Clay, Schatz and Walder placed Atlanta 29th, tied with the Cardinals, and put the blame on the position that has no answer yet. Michael Penix Jr. threw 14 touchdowns in 14 games last year while fighting accuracy questions before a Week 11 ACL tear, and Tua Tagovailoa arrives off a Miami exit, so the panel treated QB1 as the roster's defining hole rather than a settled strength. The offsetting note is familiar: the group called running back the team's biggest strength, the same Bijan-led room the league's coaches and executives just voted No. 1. Walder's X-factor pick was rookie cornerback Avieon Terrell, the undersized second-rounder whose slot-or-boundary fit is one of camp's real questions. The ranking reads as the pessimist's case in a fortnight that otherwise leaned optimist, and it lands next to Dwight Freeney's Year-1 caution: the talent is not the argument, the quarterback and the cohesion are.",
+      category: "general",
+      sourceUrl: "https://sports.yahoo.com/articles/espn-ranks-falcons-roster-among-200452386.html",
+      sourceLabel: "ESPN / Yahoo Sports / SI Falcons",
+    },
     {
       title: "THE LEAGUE VOTES, AND TWO FALCONS LAND IN THE TOP TEN: ESPN's annual executives-coaches-scouts poll dropped its tight end and interior offensive line lists Monday afternoon, and Atlanta placed twice, Kyle Pitts back at No. 8 among tight ends after going unranked a year ago, and Chris Lindstrom at No. 6 among interior linemen for the fourth straight Pro Bowl season",
       detail: "Atlantafalcons.com (Will McFadden, two pieces filed Mon Jul 13, at 2:11 PM and 4:00 PM, the freshest items on the board) off ESPN's Jeremy Fowler survey: the poll is the closest thing the dead period has to news, and it landed on the two Falcons whose 2026 roles were rewritten this offseason. Pitts returns to the top 10 at No. 8, one voter putting him as high as fourth, on the back of 88 catches for 928 yards (second among tight ends), a second-team All-Pro nod, and a closing six weeks in which no tight end in football gained more yards. 'If he's confident and you believe in him, he will ball out,' one coordinator told Fowler. 'If he gets involved early, he can be the most dominant player on the field.' The subtext is the $54M extension he signed on Jun 29 and a new play-caller with a long history of feeding the position. Lindstrom slots sixth, still the steadiest guard in the league since he came off the board in the 2019 first round, and now the lone returning starter on the right side after Kaleb McGary's retirement. The scouting-report line is the interesting one, because it reads like an invitation to Kevin Stefanski: 'They never ask him to pull, but he would open some eyes if he did.' Stefanski's Cleveland offenses pulled guards constantly, and Bill Callahan, entering a 25th season coaching offensive lines with 14 Pro Bowlers on his ledger, is the man who would install it. Lindstrom on Callahan: 'Hearing somebody's opinion of who's watched you across the league, and maybe from a distance, obviously, you would trust their opinion and work on stuff. So, it's been really good so far.'",
@@ -2232,13 +2241,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com",
     },
     {
-      title: "BIJAN EXTENSION NOW CALLED 'IMMINENT': with Pitts and London locked up, NFL Network's Tom Pelissero says a Bijan Robinson deal is imminent and a priority for Atlanta, the last of the three core extensions the front office flagged, though there is no signature yet",
-      detail: "NFL Network (Tom Pelissero, 'The Insiders,' Jun 25) / ClutchPoints / SI Falcons / Yahoo / Pro Football Rumors (Jun 24-26): a week into the dead period the last domino is still the closest it has been, but unsigned. Pelissero said on the league's insider show that a Bijan Robinson extension is imminent and a clear priority for the Falcons, echoing Marc Raimondi's Jun 24 report that talks are ongoing and a deal is expected soon. Nothing is on paper yet: Robinson is still on his rookie deal (a $1.145M base in 2026) with the 2027 fifth-year option already exercised, so Atlanta holds the leverage to move now or wait. A fresh model from The Athletic's Austin Mock (carried by Pro Football Rumors Jun 26) puts the number at $21.9M per year with a position-record $52.7M in guarantees, which would push Robinson past Saquon Barkley's $20.6M AAV to the top of the running-back market. The wrinkle is a staring contest with Detroit's Jahmyr Gibbs, also extension-eligible and projected just behind at $19.9M AAV: whoever signs first likely sets a number the other clears, so each side has reason to let the other go first. Robinson keeps his usual distance: 'We'll see, man. I let them handle all that stuff.'",
-      category: "contracts",
-      sourceUrl: "https://www.nfl.com/videos/pelissero-highlights-contract-extensions-due-soon-for-baker-mayfield-bijan-robinson-and-other-key-players-the-insiders",
-      sourceLabel: "NFL Network / ClutchPoints / SI Falcons",
-    },
-    {
       title: "TUA IS PULLING AHEAD IN A RACE THAT HASN'T STARTED: a wave of post-minicamp analysis now tags Tagovailoa the early QB1 favorite, having taken every first-team rep and closed the spring 3-for-3 with a red-zone TD to Bijan while Penix stays capped at 7-on-7",
       detail: "Yahoo Sports / ClutchPoints / Heavy.com (post-minicamp analysis carried into the Jun 21-22 break): the competition the staff keeps calling a competition is, for now, a one-man rep count. With Michael Penix Jr. limited to individual and 7-on-7 work as he rehabs his late-November ACL surgery, Tua Tagovailoa has banked the entire first-team workload this spring and closed mandatory minicamp with what observers called one of his best practices, going 3-for-3 with a touchdown over the middle to Bijan Robinson in an 11-on-11 red-zone period. Tagovailoa framed it carefully: 'We know we're in a competition, but at the same time, we're on the same team.' The structural edge is real, Kevin Stefanski's offense prizes accuracy above all, which fits Tua, and he simply has the reps Penix has not been cleared to take. The caveat the staff repeats: nothing is decided until Penix is 100% and doing everything Tua is doing, which is the whole point of the July 29 camp open.",
       category: "general",
@@ -2247,7 +2249,7 @@ export const NEWS_DIGEST = {
     },
     {
       title: "THE QUIET STRETCH IS HERE: the dead period is on the clock; with the offseason program closed, the next time the full team is on the grass is the first training-camp practice Wednesday July 29, the runway for the real Tua-vs-Penix evaluation",
-      detail: "Calendar checkpoint (Jul 14, with 10 days until the first bodies walk back into Flowery Branch): the dead period is winding down, and the dates are now league-official. The NFL's camp reporting roundup (carried by ESPN and NFL Network's Mike Garafolo, echoed by The Falcoholic) confirms rookies report Friday Jul 24, veterans follow Tuesday Jul 28, and the first full-team practice lands Wednesday Jul 29, 15 days out as of today. Ten practices are open to fans, including a season-ticket-member session Friday Jul 31 and an Under the Lights practice at a local high school Saturday Aug 8; the preseason opens at home against Denver Aug 14, with a trip to Indianapolis Aug 22 preceded by joint practices with the Colts. Two threads carry into the back half of the break with no resolution: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, calling camp readiness 'the expectation' but deferring to his doctor, and the league office has still not told the team whether James Pearce Jr. faces discipline (analysts now expect any ruling could wait until 2027). The genuine quarterback competition, plus the rebuilt inside-linebacker race and the made-over defensive line, cannot really start until pads come on July 29.",
+      detail: "Calendar checkpoint (Jul 15, with 9 days until the first bodies walk back into Flowery Branch): the dead period is winding down, and the dates are now league-official. The NFL's camp reporting roundup (carried by ESPN and NFL Network's Mike Garafolo, echoed by The Falcoholic) confirms rookies report Friday Jul 24, veterans follow Tuesday Jul 28, and the first full-team practice lands Wednesday Jul 29, 14 days out as of today. Ten practices are open to fans, including a season-ticket-member session Friday Jul 31 and an Under the Lights practice at a local high school Saturday Aug 8; the preseason opens at home against Denver Aug 14, with a trip to Indianapolis Aug 22 preceded by joint practices with the Colts. Two threads carry into the back half of the break with no resolution: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, calling camp readiness 'the expectation' but deferring to his doctor, and the league office has still not told the team whether James Pearce Jr. faces discipline (analysts now expect any ruling could wait until 2027). The genuine quarterback competition, plus the rebuilt inside-linebacker race and the made-over defensive line, cannot really start until pads come on July 29.",
       category: "general",
       sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-training-camp-schedule-announced",
       sourceLabel: "atlantafalcons.com / The Falcoholic",
