@@ -2122,35 +2122,33 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-07-15T08:35:00Z",
+  generatedAt: "2026-07-16T08:35:00Z",
   cover: {
     kicker: "DEAD PERIOD · You Cannot Replace Kaden Elliss With One Man, So Atlanta Will Not Try: the Camp-Preview Series Reaches the Inside Linebackers, Where Divine Deablo Already Holds the Green Dot, Christian Harris Has Taken Every First-Team Rep Beside Him, and the Last Starting Job on the Defense Is Still Genuinely Open",
     headLine1: "One man wore the green dot.",
     headEm: "Now it takes a committee.",
     headLine3: "Deablo, Harris, and an open seat.",
     deck:
-      "The team site's Monday-Wednesday-Friday preview series reached the inside linebackers Friday morning, and Tori McElhaney opened with the only honest answer to how Atlanta replaces Kaden Elliss: you cannot, not with one person, and the coordinator knows it. 'What we had asked Kaden to do, I had never been around anything like that before in the past,' Jeff Ulbrich said this spring. 'There were days when he was an outside backer, days when he was a defensive end, days he was an inside backer, days he was, in some ways, a nickel. That's hard to replace.' So it goes by committee. Divine Deablo's role grows first: he carries the green dot Elliss wore last year, and that much is settled. Everything else is not. Christian Harris has taken the primary reps alongside him since OTAs, a placement position coach Barrett Ruud tied to Harris' four years and 27 starts in a Houston system that looks and feels like this one, but Ruud is explicit that camp could still hand the job to someone else: Channing Tindall, a healthy Troy Andersen, rookie Kendal Daniels once his foot clears, or Harold Perkins Jr., whose upside the team bet on despite the knee. Elliss left behind 107 tackles, 3.5 sacks and 17 starts. The sorting begins when pads come on Wednesday July 29, now 15 days out.",
+      "The team site's Monday-Wednesday-Friday preview series reached the inside linebackers Friday morning, and Tori McElhaney opened with the only honest answer to how Atlanta replaces Kaden Elliss: you cannot, not with one person, and the coordinator knows it. 'What we had asked Kaden to do, I had never been around anything like that before in the past,' Jeff Ulbrich said this spring. 'There were days when he was an outside backer, days when he was a defensive end, days he was an inside backer, days he was, in some ways, a nickel. That's hard to replace.' So it goes by committee. Divine Deablo's role grows first: he carries the green dot Elliss wore last year, and that much is settled. Everything else is not. Christian Harris has taken the primary reps alongside him since OTAs, a placement position coach Barrett Ruud tied to Harris' four years and 27 starts in a Houston system that looks and feels like this one, but Ruud is explicit that camp could still hand the job to someone else: Channing Tindall, a healthy Troy Andersen, rookie Kendal Daniels once his foot clears, or Harold Perkins Jr., whose upside the team bet on despite the knee. Elliss left behind 107 tackles, 3.5 sacks and 17 starts. The sorting begins when pads come on Wednesday July 29, now 13 days out.",
     byline: "The Tracker Desk",
     filedFrom: "Atlanta",
     photoId: "deablo",
     stampLabel: "S · CAMP PREVIEW · ILB",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
-    // STATUS (2026-07-15): NO new cover request queued this run. The cover image request
-    // (2026-07-11-deablo-green-dot.jpg) is 4 days old, right at the edge of the 4-day
-    // staleness backstop (not yet OVER it), and today's fresh lead (ESPN ranking Atlanta's
-    // roster tied-29th) is a media-ranking story, not a picturable scene. Deablo/ILB remains
-    // the cover subject; the ESPN ranking leads the digest.
-    // NOTE: TWO requests are still OPEN and unrendered in ~/Vault/Notes/image-requests.md
-    // (2026-07-07-walker-year-two.jpg and 2026-07-11-deablo-green-dot.jpg); the downstream
-    // Antigravity generator has not produced a file since 2026-06-28 (17 days), so the
-    // backlog is growing and needs a look. Queuing a third request would only deepen it, so
-    // the right move is to let the generator catch up rather than pile on. From tomorrow the
-    // cover crosses the 4-day line; if the generator is still stalled, the fix is unstalling
-    // it, not adding a third request. Until a file lands, CoverImage falls back to the
-    // photoId ("deablo") headshot, so the cover is never broken. Prior covers
-    // (bijan-world-cup, pitts-extension, london-signed, penix-live) remain committed under
-    // public/assets/cover/.
+    // STATUS (2026-07-16): NO new cover request queued this run, by deliberate choice. The
+    // pending cover image (2026-07-11-deablo-green-dot.jpg) is now 5 days old, OVER the 4-day
+    // staleness backstop, and today's fresh lead (the CB/nickel camp preview, the Terrell
+    // brothers) would be a picturable scene. Normally that fires a queue. It does not this run
+    // for two hard reasons: (1) the downstream Antigravity generator has produced no file since
+    // 2026-06-28 (18 days) and TWO requests are already open and unrendered
+    // (2026-07-07-walker-year-two.jpg and 2026-07-11-deablo-green-dot.jpg), so a third request
+    // only deepens a backlog the generator cannot clear; and (2) the ~/Vault mount is not
+    // reachable from this run's sandbox, so the limn-editor-enhance skill and image-requests.md
+    // cannot be invoked or written even if we wanted to. The real fix is unstalling the
+    // generator, not piling on. Until a file lands, CoverImage falls back to the photoId
+    // ("deablo") headshot, so the cover is never broken. Prior covers (bijan-world-cup,
+    // pitts-extension, london-signed, penix-live) remain committed under public/assets/cover/.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-07-11-deablo-green-dot.jpg",
   },
   sources: [
@@ -2163,6 +2161,20 @@ export const NEWS_DIGEST = {
     "Falcons Wire", "CBS News Atlanta", "Sharp Football Analysis",
   ],
   topics: [
+    {
+      title: "CAMP PREVIEW NO. 7, THE BROTHER QUESTION IN THE SECONDARY: the team-site series reaches the cornerbacks and nickels, where A.J. Terrell owns one boundary spot and the other is a two-man race between returning starter Mike Hughes and A.J.'s own brother, second-round rookie Avieon Terrell, while a recovering Billy Bowman Jr. and free-agent add Darnay Holmes sort out the nickel",
+      detail: "Atlantafalcons.com (Tori McElhaney, filed Wed Jul 15 at 12:00 PM, the freshest team-site story on the board with camp two weeks out): the Monday-Wednesday-Friday preview series reaches the corners, and the headline is a family subplot. A.J. Terrell has one boundary spot locked, and the other is a clean two-man race between Mike Hughes, who started the 12 games he played opposite Terrell in 2025, and Avieon Terrell, the brother Atlanta took in the second round of the 2026 draft. The plan is not to overload the rookie: he has inside/outside flex, but the staff is keeping him primarily outside and tracking his progress toward a starting job rather than forcing it, the way it forced A.J. as a rookie. McElhaney's read is that the Falcons would like to get Avieon starting reps next to his brother eventually, but when is a camp question, not a settled one. The nickel is its own puzzle. Billy Bowman Jr. had one of the hottest rookie starts in the league in 2025 before a hamstring and then a ruptured Achilles ended his year, and he was not yet cleared for full team drills this spring, so free-agent addition Darnay Holmes (signed after Dee Alford left for Buffalo) has run the traditional nickel looks through the offseason and is the early answer if Bowman needs more time. The third question is roster math: with Mike Ford Jr. and Natrone Brooks anchoring special teams and depth pieces like C.J. Henderson, A.J. Woods, Cobee Bryant and a returning Darren Hall in the mix, how many defensive backs does Atlanta keep when the starting lineup could still shift into the season.",
+      category: "coaching",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-2026-training-camp-preview-cornerbacks-nickels",
+      sourceLabel: "atlantafalcons.com",
+    },
+    {
+      title: "ESPN LAYS OUT THE FIVE THINGS CAMP HAS TO SETTLE, AND A NEW ONE JUMPS THE LIST: Marc Raimondi's pre-camp questionnaire runs from the Penix health timeline to the Pearce suspension to the Bijan extension, but the freshest wrinkle is right tackle, where Kaleb McGary's April retirement and Jawaan Taylor's arm rehab have left Michael Jerrell taking the first-team reps",
+      detail: "ESPN (Marc Raimondi, filed Mon Jul 13 at 11:57 AM ET): the cleanest single read on what August actually has to decide. Five questions. First, Penix health: he stays steadfast that he will be fully cleared by camp and 100% for Week 1, but a nine-to-twelve-month ACL timeline places full clearance around the middle of camp, and until he takes 11-on-11 reps, Tua Tagovailoa is the starter. Second, the Pearce suspension: discipline is expected for the February arrest, with length and timing still unknown, and it matters because Pearce led the Falcons with 10.5 sacks as a rookie (the most by a rookie since Micah Parsons in 2021), which is why Atlanta stacked edge depth in Azeez Ojulari, Samson Ebukam and Cameron Thomas. Third, the Bijan Robinson extension: yes, and likely inside 2026, after London and Pitts got theirs. Fourth, and the item that is genuinely new to the board, right tackle: Kaleb McGary retired suddenly in April, free-agent signing Jawaan Taylor is still rehabbing arm injuries and did not practice in the spring (and carries a false-start problem), and swing tackle Storm Norton is down again with an ankle, so the Falcons traded for Wanya Morris while Michael Jerrell took most of the first-team right-tackle reps this spring. It profiles as a three-way battle, and it matters more than usual because both quarterbacks are left-handed, making right tackle the blindside. Fifth, replacing Kaden Elliss: Ulbrich says it is not a one-man job, with Christian Harris the early favorite next to Divine Deablo.",
+      category: "general",
+      sourceUrl: "https://www.espn.com/nfl/story/_/id/49308165/key-questions-falcons-camp-including-qb1-status-tua-tagovailoa-michael-penix-jr",
+      sourceLabel: "ESPN",
+    },
     {
       title: "THE SAME LEAGUE THAT KEEPS PRAISING THE PARTS JUST RANKED THE WHOLE 29TH: ESPN's analyst trio graded all 32 rosters entering 2026 and slotted Atlanta tied for 29th with Arizona, one of the three worst in football, with the unsettled quarterback job cited as the reason the offensive talent does not add up to a contender",
       detail: "ESPN (Mike Clay, Aaron Schatz, Seth Walder) via Yahoo Sports and SI Falcons (carried into Mon Jul 13, the newest hard item on the board and the sharpest counterweight of the break): after two weeks of national validation for individual Falcons, the same network ranked the sum of the parts near the bottom. Clay, Schatz and Walder placed Atlanta 29th, tied with the Cardinals, and put the blame on the position that has no answer yet. Michael Penix Jr. threw 14 touchdowns in 14 games last year while fighting accuracy questions before a Week 11 ACL tear, and Tua Tagovailoa arrives off a Miami exit, so the panel treated QB1 as the roster's defining hole rather than a settled strength. The offsetting note is familiar: the group called running back the team's biggest strength, the same Bijan-led room the league's coaches and executives just voted No. 1. Walder's X-factor pick was rookie cornerback Avieon Terrell, the undersized second-rounder whose slot-or-boundary fit is one of camp's real questions. The ranking reads as the pessimist's case in a fortnight that otherwise leaned optimist, and it lands next to Dwight Freeney's Year-1 caution: the talent is not the argument, the quarterback and the cohesion are.",
@@ -2241,25 +2253,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com",
     },
     {
-      title: "TUA IS PULLING AHEAD IN A RACE THAT HASN'T STARTED: a wave of post-minicamp analysis now tags Tagovailoa the early QB1 favorite, having taken every first-team rep and closed the spring 3-for-3 with a red-zone TD to Bijan while Penix stays capped at 7-on-7",
-      detail: "Yahoo Sports / ClutchPoints / Heavy.com (post-minicamp analysis carried into the Jun 21-22 break): the competition the staff keeps calling a competition is, for now, a one-man rep count. With Michael Penix Jr. limited to individual and 7-on-7 work as he rehabs his late-November ACL surgery, Tua Tagovailoa has banked the entire first-team workload this spring and closed mandatory minicamp with what observers called one of his best practices, going 3-for-3 with a touchdown over the middle to Bijan Robinson in an 11-on-11 red-zone period. Tagovailoa framed it carefully: 'We know we're in a competition, but at the same time, we're on the same team.' The structural edge is real, Kevin Stefanski's offense prizes accuracy above all, which fits Tua, and he simply has the reps Penix has not been cleared to take. The caveat the staff repeats: nothing is decided until Penix is 100% and doing everything Tua is doing, which is the whole point of the July 29 camp open.",
-      category: "general",
-      sourceUrl: "https://sports.yahoo.com/articles/tua-tagovailoa-emerges-obvious-falcons-135710648.html",
-      sourceLabel: "Yahoo Sports / ClutchPoints / Heavy.com",
-    },
-    {
       title: "THE QUIET STRETCH IS HERE: the dead period is on the clock; with the offseason program closed, the next time the full team is on the grass is the first training-camp practice Wednesday July 29, the runway for the real Tua-vs-Penix evaluation",
       detail: "Calendar checkpoint (Jul 15, with 9 days until the first bodies walk back into Flowery Branch): the dead period is winding down, and the dates are now league-official. The NFL's camp reporting roundup (carried by ESPN and NFL Network's Mike Garafolo, echoed by The Falcoholic) confirms rookies report Friday Jul 24, veterans follow Tuesday Jul 28, and the first full-team practice lands Wednesday Jul 29, 14 days out as of today. Ten practices are open to fans, including a season-ticket-member session Friday Jul 31 and an Under the Lights practice at a local high school Saturday Aug 8; the preseason opens at home against Denver Aug 14, with a trip to Indianapolis Aug 22 preceded by joint practices with the Colts. Two threads carry into the back half of the break with no resolution: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, calling camp readiness 'the expectation' but deferring to his doctor, and the league office has still not told the team whether James Pearce Jr. faces discipline (analysts now expect any ruling could wait until 2027). The genuine quarterback competition, plus the rebuilt inside-linebacker race and the made-over defensive line, cannot really start until pads come on July 29.",
       category: "general",
       sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-training-camp-schedule-announced",
       sourceLabel: "atlantafalcons.com / The Falcoholic",
-    },
-    {
-      title: "FALCONS NOW BRACING FOR AN EIGHT-GAME PEARCE BAN: the freshest reporting (Heavy / Yardbarker / Pro Football Rumors, late June) has Atlanta preparing for a suspension of at least eight games once the NFL rules, modeled on the Cameron Sutton precedent, though the timing of any discipline still points down the road",
-      detail: "Heavy.com / Yardbarker / Pro Football Rumors (late June), building on The Athletic's Josh Kendall ('likely' to be suspended), Audacy / 92-9 The Game analysis and AP / SI Falcons reporting from minicamp Jun 16: the read keeps sharpening. The newest framing has the Falcons bracing for a ban of at least eight games whenever the league acts, with reporters pointing to former Lions DB Cameron Sutton, who got eight games in 2024 after a domestic-violence arrest and a pretrial diversion program, as the cleanest comparable. The commissioner's exempt list, an effective indefinite hold during a league investigation, remains on the table too. Timing is still the whole story: the NFL typically waits for the legal process to resolve before ruling under the personal-conduct policy, so the discipline may not land until 2027. James Pearce Jr. accepted a Miami-Dade diversion program the state upgraded from six months to a full year (mental-health treatment, anger-management and impulse-control services, random drug testing, apology letters); the three felony charges from the Feb 7 arrest drop only on completion, and his ex-girlfriend, WNBA player Rickea Jackson, has withdrawn her request for a permanent restraining order, though the stay-away condition holds for the full 12 months. He reported during mandatory minicamp, his first time with the team since the arrest, but Stefanski held him to the weight room and individual drills: 'He's not going to team settings, team period type stuff yet,' adding only that Pearce 'knows what is expected of him.' The team still says it has not heard from the league office.",
-      category: "general",
-      sourceUrl: "https://www.audacy.com/929thegame/sports/atlanta-falcons/why-nfl-may-wait-until-2027-to-address-james-pearce-jr-situation",
-      sourceLabel: "Audacy 92.9 The Game / AP",
     },
   ],
 };
