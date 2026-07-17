@@ -2124,32 +2124,30 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 export const NEWS_DIGEST = {
   generatedAt: "2026-07-17T09:10:00Z",
   cover: {
-    kicker: "DEAD PERIOD · You Cannot Replace Kaden Elliss With One Man, So Atlanta Will Not Try: the Camp-Preview Series Reaches the Inside Linebackers, Where Divine Deablo Already Holds the Green Dot, Christian Harris Has Taken Every First-Team Rep Beside Him, and the Last Starting Job on the Defense Is Still Genuinely Open",
-    headLine1: "One man wore the green dot.",
-    headEm: "Now it takes a committee.",
-    headLine3: "Deablo, Harris, and an open seat.",
+    kicker: "DEAD PERIOD · Outside Drake London, the Receiver Room Was Torn Down to the Studs and Rebuilt: the Camp-Preview Series Reaches the Wideouts, Where Jahan Dotson Steps Into the WR2 Job After Two Buried Years in Philadelphia, and He Is Done Being Quiet About the Ceiling He Is Chasing",
+    headLine1: "The room emptied out around Drake London.",
+    headEm: "One man walked back in to fill it.",
+    headLine3: "Jahan Dotson, done apologizing for wanting it.",
     deck:
-      "The team site's Monday-Wednesday-Friday preview series reached the inside linebackers Friday morning, and Tori McElhaney opened with the only honest answer to how Atlanta replaces Kaden Elliss: you cannot, not with one person, and the coordinator knows it. 'What we had asked Kaden to do, I had never been around anything like that before in the past,' Jeff Ulbrich said this spring. 'There were days when he was an outside backer, days when he was a defensive end, days he was an inside backer, days he was, in some ways, a nickel. That's hard to replace.' So it goes by committee. Divine Deablo's role grows first: he carries the green dot Elliss wore last year, and that much is settled. Everything else is not. Christian Harris has taken the primary reps alongside him since OTAs, a placement position coach Barrett Ruud tied to Harris' four years and 27 starts in a Houston system that looks and feels like this one, but Ruud is explicit that camp could still hand the job to someone else: Channing Tindall, a healthy Troy Andersen, rookie Kendal Daniels once his foot clears, or Harold Perkins Jr., whose upside the team bet on despite the knee. Elliss left behind 107 tackles, 3.5 sacks and 17 starts. The sorting begins when pads come on Wednesday July 29, now 12 days out.",
+      "The Monday-Wednesday-Friday preview series reached the receivers, and the math is stark: outside Drake London, this room returns just seven catches for 42 yards of production. The man Atlanta is counting on to fill that void is Jahan Dotson, signed to a two-year, $15M deal this spring and penciled in as the starter opposite London. His arc is the story. The 2022 first-rounder caught 35 passes for 523 yards and seven touchdowns as a Washington rookie, then spent two years buried behind A.J. Brown and DeVonta Smith in Philadelphia (37 catches, 478 yards, one score across 34 games). He frames the detour as school, not exile: 'A younger me wouldn't have handled that well. But as I've grown older and wiser, it's just about getting better.' GM Ian Cunningham says 'it's clicked' for him; Stefanski cited 'real speed, real separation ability.' The competition is live behind him, with returnee Olamide Zaccheaus, third-round rookie Zachariah Branch, and a contested punt-return job all in play. Dotson's own bar is unhidden: 'I want to be one of the greatest. I have the talent to do it.' The evaluation starts for real when pads come on Wednesday July 29, now 12 days out.",
     byline: "The Tracker Desk",
-    filedFrom: "Atlanta",
-    photoId: "deablo",
-    stampLabel: "S · CAMP PREVIEW · ILB",
+    filedFrom: "Flowery Branch",
+    photoId: "dotson",
+    stampLabel: "A · CAMP PREVIEW · WR",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
-    // STATUS (2026-07-17): NO new cover request queued this run, same deliberate hold as the
-    // prior two runs. The pending cover image (2026-07-11-deablo-green-dot.jpg) is now 6 days
-    // old, OVER the 4-day staleness backstop, and today's fresh lead (the Jahan Dotson / WR2
-    // story) would be a picturable practice scene. Normally that fires a queue. It does not this
-    // run for the same two hard reasons: (1) the downstream Antigravity generator has produced no
-    // file since 2026-06-28 (19 days) and TWO requests are already open and unrendered
-    // (2026-07-07-walker-year-two.jpg and 2026-07-11-deablo-green-dot.jpg), so a third request
-    // only deepens a backlog the generator cannot clear; and (2) the ~/Vault mount is not
-    // reachable from this run's sandbox, so the limn-editor-enhance skill and image-requests.md
-    // cannot be invoked or written even if we wanted to. The real fix is unstalling the
-    // generator, not piling on. Until a file lands, CoverImage falls back to the photoId
-    // ("deablo") headshot, so the cover is never broken. Prior covers (bijan-world-cup,
-    // pitts-extension, london-signed, penix-live) remain committed under public/assets/cover/.
-    coverImageUrl: "/falcons-tracker/assets/cover/2026-07-11-deablo-green-dot.jpg",
+    // STATUS (2026-07-17, interactive run via Desktop Commander): cover request QUEUED this run.
+    // The prior scheduled runs kept skipping the queue because the sandbox could not reach the
+    // ~/Vault mount to write image-requests.md. This interactive run reaches the real Vault via
+    // Desktop Commander, so the fresh WR2/Dotson request was written to the top of
+    // ~/Vault/Notes/image-requests.md (Save as: 2026-07-17-dotson-wr2.jpg) and coverImageUrl now
+    // points at it, resetting the staleness clock. NOTE: the downstream Antigravity image
+    // generator has still produced no file since 2026-06-28, so four Falcons requests are now
+    // open and unrendered (dotson-wr2, deablo-green-dot, walker-year-two, bates-uso-japan). Until
+    // that generator is revived, CoverImage falls back to the photoId ("dotson") headshot, so the
+    // cover is never broken. Prior covers (bijan-world-cup, pitts-extension, london-signed,
+    // penix-live) remain committed under public/assets/cover/.
+    coverImageUrl: "/falcons-tracker/assets/cover/2026-07-17-dotson-wr2.jpg",
   },
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "NFL Network",
