@@ -27,7 +27,7 @@ export const PLAYERS = [
     stats: { completions: 166, attempts: 276, passYds: 1982, passTDs: 9, ints: 3, qbRating: 88.5 },
     form: 0,
     status: "pup",
-    injuryNote: "ACL rehab · torn Week 11 2025 · individual + 7-on-7 only through OTAs; Stefanski (Jun 8) says he's 'hit every milestone' but 'we'll see' on 11-on-11 clearance by minicamp",
+    injuryNote: "ACL rehab · torn Week 11 2025 · individual + 7-on-7 only through OTAs and minicamp, still no 11-on-11 rep taken. Penix calls camp readiness 'the expectation' but defers to his doctor; ESPN's nine-to-twelve-month post-surgery timeline points to full clearance around mid-camp rather than the Jul 29 opener, so Tua holds the first-team reps until then",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
     contract: { years: 4, total: 22080000, guaranteed: 22080000, apy: 5520000, throughYear: 2027, cap2026: 5900000 },
     career: [
@@ -1157,7 +1157,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "pup",
-    injuryNote: "Achilles rehab · torn late Nov 2025 · progressing but not practicing; cleared for walkthroughs only as of Jun 8. SI's Jul 8 pre-camp survey now lists him as a doubt to start Week 1, which would push rookie Avieon Terrell into the nickel.",
+    injuryNote: "Achilles rehab · torn late Nov 2025 · progressing but not practicing; cleared for walkthroughs only as of Jun 8. SI's Jul 8 pre-camp survey lists him as a doubt to start Week 1, which would push rookie Avieon Terrell into the nickel. The Jul 17 safeties preview confirms he is still sidelined entering camp, with contract-year Sydney Brown covering both the nickel and the third-safety role until he clears.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4431194.png",
     contract: { years: 4, total: 5200000, guaranteed: 950000, apy: 1300000, throughYear: 2028, cap2026: 1100000 },
     career: [{ years: "2025–", team: "Atlanta Falcons", type: "NFL" }],
@@ -2122,31 +2122,33 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-07-17T09:10:00Z",
+  generatedAt: "2026-07-18T09:05:00Z",
   cover: {
     kicker: "DEAD PERIOD · Outside Drake London, the Receiver Room Was Torn Down to the Studs and Rebuilt: the Camp-Preview Series Reaches the Wideouts, Where Jahan Dotson Steps Into the WR2 Job After Two Buried Years in Philadelphia, and He Is Done Being Quiet About the Ceiling He Is Chasing",
     headLine1: "The room emptied out around Drake London.",
     headEm: "One man walked back in to fill it.",
     headLine3: "Jahan Dotson, done apologizing for wanting it.",
     deck:
-      "The Monday-Wednesday-Friday preview series reached the receivers, and the math is stark: outside Drake London, this room returns just seven catches for 42 yards of production. The man Atlanta is counting on to fill that void is Jahan Dotson, signed to a two-year, $15M deal this spring and penciled in as the starter opposite London. His arc is the story. The 2022 first-rounder caught 35 passes for 523 yards and seven touchdowns as a Washington rookie, then spent two years buried behind A.J. Brown and DeVonta Smith in Philadelphia (37 catches, 478 yards, one score across 34 games). He frames the detour as school, not exile: 'A younger me wouldn't have handled that well. But as I've grown older and wiser, it's just about getting better.' GM Ian Cunningham says 'it's clicked' for him; Stefanski cited 'real speed, real separation ability.' The competition is live behind him, with returnee Olamide Zaccheaus, third-round rookie Zachariah Branch, and a contested punt-return job all in play. Dotson's own bar is unhidden: 'I want to be one of the greatest. I have the talent to do it.' The evaluation starts for real when pads come on Wednesday July 29, now 12 days out.",
+      "The Monday-Wednesday-Friday preview series reached the receivers, and the math is stark: outside Drake London, this room returns just seven catches for 42 yards of production. The man Atlanta is counting on to fill that void is Jahan Dotson, signed to a two-year, $15M deal this spring and penciled in as the starter opposite London. His arc is the story. The 2022 first-rounder caught 35 passes for 523 yards and seven touchdowns as a Washington rookie, then spent two years buried behind A.J. Brown and DeVonta Smith in Philadelphia (37 catches, 478 yards, one score across 34 games). He frames the detour as school, not exile: 'A younger me wouldn't have handled that well. But as I've grown older and wiser, it's just about getting better.' GM Ian Cunningham says 'it's clicked' for him; Stefanski cited 'real speed, real separation ability.' The competition is live behind him, with returnee Olamide Zaccheaus, third-round rookie Zachariah Branch, and a contested punt-return job all in play. Dotson's own bar is unhidden: 'I want to be one of the greatest. I have the talent to do it.' The evaluation starts for real when pads come on Wednesday July 29, now 11 days out.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "dotson",
     stampLabel: "A · CAMP PREVIEW · WR",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
-    // STATUS (2026-07-17, interactive run via Desktop Commander): cover request QUEUED this run.
-    // The prior scheduled runs kept skipping the queue because the sandbox could not reach the
-    // ~/Vault mount to write image-requests.md. This interactive run reaches the real Vault via
-    // Desktop Commander, so the fresh WR2/Dotson request was written to the top of
-    // ~/Vault/Notes/image-requests.md (Save as: 2026-07-17-dotson-wr2.jpg) and coverImageUrl now
-    // points at it, resetting the staleness clock. NOTE: the downstream Antigravity image
-    // generator has still produced no file since 2026-06-28, so four Falcons requests are now
-    // open and unrendered (dotson-wr2, deablo-green-dot, walker-year-two, bates-uso-japan). Until
-    // that generator is revived, CoverImage falls back to the photoId ("dotson") headshot, so the
-    // cover is never broken. Prior covers (bijan-world-cup, pitts-extension, london-signed,
-    // penix-live) remain committed under public/assets/cover/.
+    // STATUS (2026-07-18 scheduled run): cover request SKIPPED this run, deliberately.
+    // Two reasons. First, the staleness backstop does not fire: this cover is dated 2026-07-17,
+    // one day old, well inside the 4-day window. Second, the freshest story today (the Friday
+    // camp-preview installment on the safeties) is a position-room projection rather than a
+    // scene that landed, so trigger 1 does not fire either.
+    // GENERATOR BACK ONLINE: the downstream Antigravity image job cleared its entire backlog on
+    // 2026-07-17. All four previously-open requests now have real files on disk (dotson-wr2,
+    // deablo-green-dot, walker-year-two, bates-uso-japan), so the note carried on this block
+    // through early July about "no file since 2026-06-28" is obsolete and has been removed.
+    // The Dotson plate rendered yesterday and is live, which is the other reason not to burn it
+    // after a single day. NOTE: topics[0] leads with the safeties preview while this cover stays
+    // on the WR2 story, a one-cycle divergence taken on purpose to avoid rotating a just-rendered
+    // image. Expect the cover to move with the next genuine scene (camp opens Jul 29).
     coverImageUrl: "/falcons-tracker/assets/cover/2026-07-17-dotson-wr2.jpg",
   },
   sources: [
@@ -2157,8 +2159,51 @@ export const NEWS_DIGEST = {
     "Audacy 92.9 The Game", "Yardbarker", "Over The Cap", "Spotrac",
     "Bengals.com", "FantasyPros", "Atlanta News First", "The Athletic", "Roundtable",
     "Falcons Wire", "CBS News Atlanta", "Sharp Football Analysis",
+    "Sportsnaut", "The Big Lead", "The Athletic",
   ],
   topics: [
+    {
+      title: "CAMP PREVIEW NO. 8, AND FOR ONCE THE ANSWER IS ALREADY IN THE BUILDING: the Friday installment reaches the safeties, the one room on this roster that asks nothing of August, where Jessie Bates III just landed fifth in ESPN's leaguewide poll, Xavier Watts drew a coordinator comparison to his own running mate, and the only live question is who plays the third safety while Billy Bowman Jr. finishes his Achilles rehab",
+      detail: "Atlantafalcons.com camp-preview series (filed Fri Jul 17, the freshest team-site story on the board) alongside ESPN's Jeremy Fowler position poll and SI Falcons' pre-camp position grades: after seven installments spent cataloguing open jobs, the series finally hit a room with no argument in it. Bates enters his ninth season ranked fifth among NFL safeties in Fowler's survey of coaches, scouts and executives, coming off a second-team All-Pro year and the most productive three-season stretch of his career in Atlanta (13 interceptions, eight forced fumbles, 332 tackles). Watts, who led all rookies with five interceptions last year and finished fourth in Defensive Rookie of the Year voting, missed the top ten but drew honorable mention and an unusually direct scouting note: one coordinator told Fowler that Watts 'has a chance to be one of the best safeties in the league' and carries very similar qualities to Bates. The fit is the point. Watts patrols centerfield and lets Bates play downhill and everywhere else, which is the arrangement that made the 2025 defense work. SI graded the room an A, the highest mark it gave any Atlanta position group. What is genuinely open is the third spot: Bowman is still working back from the ruptured Achilles that ended his rookie year, DeMarcco Hellams is expected to make a full return to the practice field in camp, and fourth-year man Sydney Brown, acquired from Philadelphia in March and now entering a contract year, projects to cover both the nickel and the third-safety role until Bowman is cleared. It is the rare Falcons position preview where the depth chart is the story and the starters are not.",
+      category: "coaching",
+      sourceUrl: "https://www.atlantafalcons.com/news/jessie-bates-ranked-nfl-top-safeties-2026-season-espn",
+      sourceLabel: "atlantafalcons.com / ESPN / SI Falcons",
+    },
+    {
+      title: "THE NATIONAL DESK NARROWS ATLANTA TO THREE QUESTIONS: NFL.com's NFC South camp preview strips the Falcons down to the only three things that actually matter in August, who wins the quarterback job, whether Bijan Robinson signs before the season, and how the defense covers for James Pearce Jr. if the league takes him away",
+      detail: "NFL.com (NFC South training camp preview, filed into the back half of this week): the cleanest outside framing of Atlanta's summer, and it is notable for what it leaves out. No cap mechanics, no schedule talk, no mock-draft residue. Three questions. The quarterback battle between Tua Tagovailoa and Michael Penix Jr. cannot begin in earnest until Penix clears the 11-on-11 threshold, which puts the real evaluation somewhere in the middle of camp rather than at the start of it, and leaves Tagovailoa holding every first-team rep he has banked since OTAs. The Bijan Robinson extension is treated as a question of timing rather than intent, with the league's consensus No. 1 back and the front office both saying the right things and neither in a hurry given team control runs through 2027. The third is the one Atlanta cannot control: if Pearce misses time, the defense loses the player who led the team with 10.5 sacks as a rookie, and the answer has to come from the pile of edge depth the front office stacked this spring in Azeez Ojulari, Samson Ebukam and Cameron Thomas, plus the returns of Zach Harrison and Bralen Trice. The preview's implicit verdict matches the ESPN roster ranking from Monday: the skill talent is not in dispute, the two or three load-bearing unknowns are.",
+      category: "general",
+      sourceUrl: "https://www.nfl.com/news/nfc-south-training-camp-2026-preview-falcons-panthers-saints-buccaneers",
+      sourceLabel: "NFL.com",
+    },
+    {
+      title: "THE OTHER CAMP, THE ONE FOR THE LAST FOUR ROSTER SPOTS: The Falcoholic runs the five offensive jobs genuinely up for grabs, and the most crowded is the back of the receiver room, where two perennial summer standouts, three undrafted rookies and a UFL import are chasing maybe two openings under a coaching staff that owes none of them anything",
+      detail: "The Falcoholic (filed Thu Jul 16, carried by Yahoo Sports): the useful counterweight to a preview cycle fixated on starters. Behind Drake London, Jahan Dotson, Olamide Zaccheaus and third-round rookie Zachariah Branch, the receiver competition is a genuine scrum. Chris Blair and Dylan Drummond are the familiar names, both annual summer standouts who have made camp and preseason noise without converting it into a durable role, Blair on the strength of contested-catch flashes and Drummond as a clean route runner who blocks. Chasing them are three undrafted rookies in Keelan Marion, Vinny Anthony and Le'Meke Brockington, plus Antwane 'Juice' Wells Jr., the UFL signing added in June who brings the physicality the room otherwise lacks. The Falcoholic's honest caveat is the one that makes it interesting: with an entirely new coaching staff, there is no incumbent advantage and no way to name a favorite, because nobody in the building has evaluated any of these players in pads yet. The same dynamic runs through the other four offensive battles, with the right tackle job and the interior backup line spots the ones with actual snap consequences. This is the tier of camp that gets decided in the Denver and Indianapolis preseason games rather than in the Flowery Branch practice periods.",
+      category: "general",
+      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-depth-chart/94300/falcons-training-camp-2026-5-roster-battles-to-watch-on-offense-chris-blair-dylan-drummond",
+      sourceLabel: "The Falcoholic / Yahoo Sports",
+    },
+    {
+      title: "THE PEARCE RULING IS STILL NOT HERE, AND THE ESTIMATES ARE SPLITTING: reporting this week has the Falcons internally preparing for a suspension of at least eight games on the Cameron Sutton precedent, while other analysts read the case for four or fewer, and a separate thread suggests the league may not rule at all until 2027",
+      detail: "Pro Football Rumors, Heavy.com, The Big Lead and Audacy (reporting carried through Jul 15-16), with no official league statement to date: the single largest unresolved variable on the Atlanta defense remains unresolved, and the range of outcomes is now wide enough to be its own story. The facts that are settled: Pearce was arrested in Miami-Dade County and charged with two counts of aggravated battery with a deadly weapon and one count of aggravated stalking, with WNBA player Rickea Jackson identified as the alleged victim, and he has since entered an arrangement under which those charges are cleared upon completion of a pretrial diversion program. No conviction is involved. What is not settled is the NFL's own response, because discipline under the personal conduct policy can be issued without a criminal conviction, and the policy's baseline for domestic violence is a six-game suspension that aggravating circumstances can extend. Reporting indicates the Falcons are internally planning for eight games or more, drawing the comparison to the Cameron Sutton case in Detroit; other analysts covering the case consider anything beyond four games hard to justify on the available record. Audacy's read is the most consequential for camp planning, that the league office may not deliver a ruling before 2027 at all, which would mean Atlanta prepares an entire season around a decision that never comes. Stefanski said in June the team had still not heard from the league, and nothing has changed that.",
+      category: "general",
+      sourceUrl: "https://www.profootballrumors.com/2026/06/falcons-james-pearce-jr-likely-to-receive-suspension",
+      sourceLabel: "Pro Football Rumors / Heavy.com / Audacy / The Big Lead",
+    },
+    {
+      title: "THE BIJAN DEAL IS IN ACTIVE NEGOTIATION, AND ESPN NOW CONFIRMS IT: Dan Graziano puts the Falcons and Robinson formally at the table with camp 11 days out, which sets up the familiar summer question of whether the league's consensus best back signs before pads come on or lets the staring contest with Detroit run into the season",
+      detail: "ESPN (Dan Graziano) via Yahoo Sports, ClutchPoints and Pro Football Rumors (reporting through Jul 15): the extension that Tom Pelissero called imminent in late June is confirmed as an active negotiation rather than a projection, with local reporting adding that a deal is expected to get done soon. The leverage picture has not moved. Atlanta exercised the fifth-year option in April, so Robinson is under control through 2027 and neither side faces a deadline, which is precisely why this has stretched across the entire dead period. What has moved is the market case. Since the last update Robinson was named the consensus No. 1 running back in ESPN's poll of coaches, scouts and executives, jumping three spots from No. 4 a year ago with his lowest individual vote landing at second, and Warren Sharp graded the Atlanta backfield the best unit in football. The Athletic's Austin Mock model projects roughly $21.9M in average annual value with a position-record $52.7M guaranteed, which would clear Saquon Barkley's league-leading $20.6M. The complication is Detroit: Jahmyr Gibbs is in the same window with a projection near $19.9M, and whichever back signs first sets the number the other negotiates against. Robinson's own public posture has not changed since the London signing, a smiling 'We'll see, man.' He would be the third core extension of the Cunningham era after London in June and Pitts at the end of the month.",
+      category: "contracts",
+      sourceUrl: "https://sports.yahoo.com/articles/falcons-rumors-bijan-robinson-contract-173641012.html",
+      sourceLabel: "ESPN / Yahoo Sports / Pro Football Rumors",
+    },
+    {
+      title: "SIX DAYS UNTIL THE FIRST BODIES WALK BACK IN: the dead period is nearly over, with rookies reporting Friday Jul 24, veterans Tuesday Jul 28 and the first full-team practice Wednesday Jul 29, and the fan schedule is now fixed at ten open practices including a Saturday night high-school session in Sugar Hill",
+      detail: "Calendar checkpoint (Jul 18), off the team-site camp announcement and the league reporting-date roundup carried by ESPN, Yahoo Sports and The Falcoholic: the dates are league-official and the runway is short. Rookies report Friday Jul 24, six days out. Veterans follow Tuesday Jul 28. The first full-team practice is Wednesday Jul 29, eleven days out, and that is the first moment any of the summer's open questions can actually be evaluated. Ten practices are open to fans across a three-week stretch, beginning with a season-ticket-member session Friday Jul 31. The one to circle is the Under the Lights practice Saturday Aug 8 at Lanier High School in Sugar Hill, a free 7 p.m. session in a roughly 4,700-seat stadium that requires claiming a ticket in advance. The preseason opens at home against Denver on Friday Aug 14, and the trip to Indianapolis on Saturday Aug 22 is preceded by a pair of joint practices with the Colts, which historically produce more usable evaluation than the exhibition games themselves. Two threads carry into camp unresolved: Michael Penix Jr. still has not been cleared for 11-on-11 work as he rehabs the late-November ACL surgery, calling camp readiness 'the expectation' while deferring to his doctor, and the league office has still issued no ruling on James Pearce Jr.",
+      category: "general",
+      sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-training-camp-schedule-announced",
+      sourceLabel: "atlantafalcons.com / ESPN / The Falcoholic",
+    },
     {
       title: "THE WR2 JOB IS JAHAN DOTSON'S TO RUN WITH, AND HE IS DONE APOLOGIZING FOR WANTING IT: with camp 12 days out, the team-site preview and an AJC feature converge on the same read, that the former first-rounder steps in opposite Drake London atop a receiver room rebuilt from the ground up, and he is not shy about the ceiling he is chasing",
       detail: "AJC (Daniel Flick, filed Sun Jul 5, carried through the break and freshest on the WR board as the position preview lands) plus the team-site and Yahoo camp previews: outside Drake London, this receiver room is almost entirely new, returning just seven catches for 42 yards of production, and the man the Falcons are counting on to fill the void is Jahan Dotson. Atlanta signed the 2022 first-rounder (No. 16 overall, Washington) to a two-year, $15M deal this spring and pencils him in as the starter opposite London. Dotson's arc is the story: 35 catches for 523 yards and seven touchdowns as a rookie, a similar second year (49 for 518), then two lost years buried behind A.J. Brown and DeVonta Smith in Philadelphia (37 catches, 478 yards, one score across 34 games). He frames the Eagles detour as school, not exile: 'A younger me wouldn't have handled that well. But as I've grown older and wiser ... it's just about getting better.' GM Ian Cunningham says 'it's clicked' for him, and Stefanski cited 'real speed, real separation ability.' The competition around him is live: free-agent returnee Olamide Zaccheaus and third-round rookie Zachariah Branch both fit the slot, and Branch, Dotson and Zaccheaus are all getting punt-return looks in what could be one of camp's most contested jobs. Dotson's own bar is unhidden: 'I want to be one of the greatest. I'm not afraid ... I want to be one of the best in the league, and I have the talent to do it.'",
@@ -2195,25 +2240,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com / ESPN",
     },
     {
-      title: "A FALCONS LEGEND POURS COLD WATER ON THE HYPE: Dwight Freeney, asked about Atlanta's ceiling in Year 1 under Stefanski, declines to call them a playoff team, arguing new coach plus new system takes time, while conceding the division is weak enough to keep the door open",
-      detail: "Yahoo Sports / Falcons Wire (recap filed into Monday night, Jul 13, alongside the Pitts ranking): the useful counterweight to a fortnight of national validation. Freeney, who closed his Hall of Fame-caliber career with a season in Atlanta, was asked whether this roster is a contender and would not go there. His argument is procedural rather than personnel: a first-year head coach installing a new offense and a new defensive vocabulary does not usually get its best version of itself in Year 1, and Atlanta is doing it with a quarterback competition unresolved and a first-time offensive coordinator in Tommy Rees. The concession he makes is the one the schedule makers made too, that the NFC South remains soft enough that a merely competent Falcons team can be in it in December. It is worth holding next to the week's other data points: the league's coaches and executives just voted Bijan Robinson the No. 1 back in football, Warren Sharp graded the backfield the best unit in the sport, and now two more Falcons land in the ESPN top ten. Talent is not the question. Cohesion, health at quarterback, and a defense replacing four contributors off the best pass-rush season in franchise history are.",
-      category: "general",
-      sourceUrl: "https://sports.yahoo.com/articles/falcons-recap-dwight-freeneys-prediction-011757330.html",
-      sourceLabel: "Yahoo Sports / Falcons Wire",
-    },
-    {
       title: "ESPN PICKS ITS FALCON TO BREAK OUT, AND IT IS NOT JALON WALKER: Benjamin Solak's one-per-team list lands on Brandon Dorlus, the third-year interior rusher who put up 8.5 sacks before a season-ending injury, and the pick doubles as a reminder that the next contract conversation after Bijan may be his",
       detail: "The Falcoholic (filed over the weekend, Jul 11-12, and the freshest item on the board with the building dark) / Yahoo Sports / SI Falcons: ESPN's Benjamin Solak went team by team naming a 2026 breakout candidate, and for Atlanta he passed over the obvious Year 2 answer, Jalon Walker, and took Brandon Dorlus. The case is the back half of last season: 8.5 sacks in all, seven of them after the midpoint, before an injury ended his year early. Solak's read is about position, not just production. Dorlus came out of Oregon as a true tweener who played mostly on the edge, and two years in Atlanta have been spent adding the weight to hold up inside, where he now projects as a first-team interior rusher next to Maason Smith and Da'Shawn Hand. Year 3 is the year young linemen either cement the reputation or lose it. SI's counter, worth keeping honest about, is that a 8.5-sack season arguably means he already broke out and the label undersells him. The subplot BloggingDirty flags: with Drake London and Kyle Pitts paid and Bijan Robinson next, a healthy, productive Dorlus is the front office's next payday problem, and a good one to have.",
       category: "general",
       sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-news/94429/brandon-dorlus-named-falcons-breakout-pick-by-espn",
       sourceLabel: "The Falcoholic / ESPN / SI Falcons",
-    },
-    {
-      title: "WHAT THE OFFENSE ACTUALLY BECOMES UNDER STEFANSKI: Falcoholic Live spends an episode on the Rees-Stefanski install and what it asks of Bijan, London and Pitts, the clearest attempt yet to describe a scheme nobody has seen a live snap of",
-      detail: "The Falcoholic (Falcoholic Live, Ep380, with avy3n, posted into the back half of the break): the last real content lane in a dead period is projection, and this is the useful version of it. The panel works through how Kevin Stefanski's offense, run day to day by first-year coordinator Tommy Rees, reshapes the three players Atlanta just committed to. The through-lines: heavy play-action and wide-zone tendencies that historically lifted Cleveland's backs, which points at a Bijan Robinson usage spike beyond the 2,298 scrimmage yards he already led the league with; a tight-end room built to run 12 and 13 personnel now that Austin Hooper is back to play in-line, which is exactly the alignment flexibility Stefanski described when he called Kyle Pitts' plan positionless; and a Drake London role that leans on the trust-with-quarterbacks trait the team site spent June documenting, since whoever wins the job will need a security blanket early. None of it is verifiable until pads come on Jul 29, which is the honest caveat the episode itself makes.",
-      category: "coaching",
-      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-analysis/94437/falcons-offense-changes-2026-bijan-robinson-drake-london-kyle-pitts-falcoholic-live",
-      sourceLabel: "The Falcoholic",
     },
     {
       title: "CAMP PREVIEW NO. 6, THE LAST OPEN STARTING JOB ON THE DEFENSE: the series reaches the inside linebackers, where Divine Deablo inherits the green dot, Christian Harris has held every first-team rep beside him since OTAs, and Ulbrich concedes the Kaden Elliss role cannot be replaced by any one man",
@@ -2223,39 +2254,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com",
     },
     {
-      title: "THE FALCONS ARE COMING BACK TO FREE TV: Atlanta News First and ESPN strike a local simulcast deal, putting at least two 2026 games on WANF over the air, starting with the Week 4 Monday nighter at New Orleans and the Week 9 trip to Madrid",
-      detail: "Atlanta News First (staff, filed Thu Jul 9 at 12:00 PM ET, new since yesterday's digest and the only hard transaction-style news of the break): WANF and ESPN have agreed to simulcast select Falcons games locally, which means Atlanta viewers get the national broadcasts over the air rather than having to find them on cable or a streamer. Two games are confirmed. The first is Week 4, Monday Oct 5 at 8 p.m., the Falcons at the Saints in primetime, airing nationally on ESPN and locally on WANF. The second is Week 9, Sunday Nov 8 at 9:30 a.m., the Falcons against the Bengals in Madrid, Spain, airing nationally on NFL Network and locally on WANF. A third is in play: the Dec 26 game against Tampa Bay, if it lands on NFL Network. The deal also carries forward, so any 2027 Falcons game on ESPN or NFL Network gets the same local window. 'Falcons football is part of the fabric of Atlanta, and we're proud to bring these games to fans on Atlanta News First,' station GM Erik Schrader said. With the Falcons added, WANF now holds local broadcast rights to all four of Atlanta's major pro franchises, alongside the Hawks, Braves and Dream.",
-      category: "general",
-      sourceUrl: "https://www.atlantanewsfirst.com/2026/07/09/atlanta-news-first-espn-announce-local-simulcast-agreement-atlanta-falcons-games/",
-      sourceLabel: "Atlanta News First",
-    },
-    {
       title: "THE THREE BATTLES THAT DECIDE THE SEASON, AND A NEW NAME IN THE SECONDARY: SI's pre-camp survey narrows the fight to quarterback, cornerback and linebacker, and drops a detail worth flagging, that rookie safety Billy Bowman Jr. is a doubt to start Week 1, which would push Avieon Terrell into the nickel and open the boundary job next to his brother",
       detail: "SI Falcons (Liam Dreesen, filed Wed Jul 8 at 3:55 PM): with camp two and a half weeks out, the tightest read yet on what actually gets settled in August. Quarterback is the headliner and the one that will not truly start until Michael Penix Jr. is cleared for team periods, since he sat out the 11-on-11 work at OTAs and minicamp while Tua Tagovailoa banked every first-team rep. Dreesen frames the two as near-opposites: Penix with the raw arm to make any throw but a 4-8 record across 12 starts and accuracy questions, Tagovailoa with the accuracy and anticipation Stefanski's offense prizes but a Miami exit that cost the Dolphins a record $99.2M in dead cap. Cornerback is the sleeper. A.J. Terrell owns one boundary spot, and Mike Hughes returns to compete for the other, but second-round rookie Avieon Terrell, A.J.'s brother, is the wild card: technically advanced but undersized at 5-foot-10, 186 pounds, which may fit him better in the slot. The new wrinkle is that Billy Bowman Jr. is a doubt to start Week 1, which opens a path for all three corners to be on the field with Avieon in the nickel. At linebacker Dreesen reads Christian Harris as the early favorite next to Divine Deablo after a strong spring, with Harold Perkins Jr. likely to see the field regardless given how much Ulbrich blitzes his linebackers, and Kendal Daniels a Deablo-shaped project the coordinator would love to pair with the original.",
       category: "general",
       sourceUrl: "https://www.si.com/nfl/falcons/onsi/3-biggest-position-battles-as-atlanta-falcons-training-camp-looms",
       sourceLabel: "SI Falcons",
-    },
-    {
-      title: "DON'T FORGET HAROLD PERKINS JR.: with the pass rush rebuilt around free-agent edges and returning sack producers, the team site argues the sixth-round rookie who was an All-American-caliber freshman at LSU before the knee could be the defense's most intriguing addition",
-      detail: "Atlantafalcons.com (Tori McElhaney, filed Thu Jul 9 at 10:08 AM): the accounting is stark. Leonard Floyd, Arnold Ebiketie and Kaden Elliss all played out their contracts, and Ruke Orhorhoro was traded to Jacksonville for Maason Smith. Those four combined for 15 sacks and 24 quarterback hurries off a front that just posted the best pass-rushing production in franchise history. Atlanta answered with edge signings Azeez Ojulari, Cameron Thomas and Samson Ebukam, linebackers Christian Harris and Channing Tindall, the returns of Zach Harrison and Bralen Trice from injury, and career-high seasons banked by Brandon Dorlus and LaCale London. Jalon Walker and James Pearce Jr., the 2025 first-rounders, contributed 16 sacks, three forced fumbles and 14 hurries between them. Buried in that pile is Perkins, whose freshman and sophomore years at LSU produced 13 sacks, seven forced fumbles, two interceptions and 26 tackles for loss before a season-ending knee injury and successive scheme changes flattened his last two college seasons. Area scout Dante Fangoli on the bet: 'We all know what he was before the injury. We know that player is still there in him ... despite the injury, despite the scheme changes, the coaching changes, he's never made excuses.' On Ulbrich, Perkins had a lighter read at rookie minicamp: 'I don't know if I can curse on here, but I mess with Coach.' He profiles as the linebacker/pass-rusher hybrid to Kendal Daniels' linebacker/safety hybrid, which is precisely why the Falcons wanted both.",
-      category: "general",
-      sourceUrl: "https://www.atlantafalcons.com/news/amid-falcons-retooled-pass-rush-dont-forget-harold-perkins-jr",
-      sourceLabel: "atlantafalcons.com",
-    },
-    {
-      title: "BIJAN IS THE LEAGUE'S CONSENSUS NO. 1 BACK, AND ATLANTA'S IS THE NO. 1 ROOM: on a quiet dead-period Tuesday the validation stacks up, ESPN's survey of coaches, scouts and executives makes Bijan Robinson the unanimous top running back (a three-spot jump from No. 4 a year ago) while Warren Sharp grades the whole backfield the best unit in football at a near-perfect 98",
-      detail: "Atlantafalcons.com (Will McFadden, filed Tue Jul 7 at 10:25 AM): with the building still dark, the national verdict came in loud. ESPN's Jeremy Fowler polled coaches, scouts and executives on the league's position groups, and Bijan Robinson was the consensus choice at running back, up from No. 4 entering 2025, with his lowest vote landing at No. 2. An NFC executive on the case: 'Bijan is just more dynamic than the rest of the field in terms of creating positive runs despite blocking failure. Combo of his bend, feet and agility. His size shows up with physicality. And while Gibbs is top-end faster, Bijan is still explosive in his own right, creating home run plays.' The backdrop is a 2025 that led all NFL players with 2,298 scrimmage yards and included a 93-yard touchdown run that broke Warrick Dunn's franchise record against the Rams. Warren Sharp's preseason unit rankings then put the entire Atlanta backfield first with a near-perfect 98, two points clear of Detroit and 10 clear of Buffalo, crediting free-agent addition Brian Robinson Jr. (2,900-plus scrimmage yards and 20 touchdowns in four years, most recently spelling Christian McCaffrey in San Francisco) stepping into the departed Tyler Allgeier's role. Robinson on the new pairing: 'They both run through people on the field ... I can't wait to see what we can do together.' The number still not on paper: his own extension, which Tom Pelissero called imminent two weeks ago.",
-      category: "general",
-      sourceUrl: "https://www.atlantafalcons.com/news/nfl-running-back-rankings-falcons-bijan-robinson-brian-robinson",
-      sourceLabel: "atlantafalcons.com",
-    },
-    {
-      title: "THE QUIET STRETCH IS HERE: the dead period is on the clock; with the offseason program closed, the next time the full team is on the grass is the first training-camp practice Wednesday July 29, the runway for the real Tua-vs-Penix evaluation",
-      detail: "Calendar checkpoint (Jul 17, with one week until the first bodies walk back into Flowery Branch): the dead period is winding down, and the dates are now league-official. The NFL's camp reporting roundup (carried by ESPN and NFL Network's Mike Garafolo, echoed by The Falcoholic) confirms rookies report Friday Jul 24, veterans follow Tuesday Jul 28, and the first full-team practice lands Wednesday Jul 29, 12 days out as of today. Ten practices are open to fans, including a season-ticket-member session Friday Jul 31 and an Under the Lights practice at a local high school Saturday Aug 8; the preseason opens at home against Denver Aug 14, with a trip to Indianapolis Aug 22 preceded by joint practices with the Colts. Two threads carry into the back half of the break with no resolution: Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs his late-November ACL surgery, calling camp readiness 'the expectation' but deferring to his doctor, and the league office has still not told the team whether James Pearce Jr. faces discipline (analysts now expect any ruling could wait until 2027). The genuine quarterback competition, plus the rebuilt inside-linebacker race and the made-over defensive line, cannot really start until pads come on July 29.",
-      category: "general",
-      sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-training-camp-schedule-announced",
-      sourceLabel: "atlantafalcons.com / The Falcoholic",
     },
   ],
 };
@@ -2267,8 +2270,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-07-03T08:40:00Z",
-  windowLabel: "Dead Period · Building Goes Dark → Training Camp Opens · Jun 21 → Jul 29",
+  generatedAt: "2026-07-18T09:05:00Z",
+  windowLabel: "Dead Period · Final Week Dark · Rookies Report Jul 24 → First Camp Practice Jul 29",
   sessions: [
     {
       id: "pitts-2026-06-29",
