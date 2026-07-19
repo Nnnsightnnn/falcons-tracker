@@ -55,15 +55,22 @@ export const PHASES = [
     accentColor: "#6B7B8E",
     description: "Camp is coming",
     start: "2026-06-21",
-    end: "2026-07-21",
+    end: "2026-07-23",
   },
   {
+    // CALENDAR CORRECTION (2026-07-19 run): the placeholder window opened camp on
+    // Jul 22, but the league-official reporting dates are rookies Fri Jul 24,
+    // veterans Tue Jul 28, first full-team practice Wed Jul 29. Left unchanged the
+    // live site would have flipped to "Camp is open" a full week before anyone
+    // reported. Dead period extended to Jul 23, camp now opens on the rookie
+    // report date. Source: atlantafalcons.com camp schedule announcement + the
+    // NFL.com leaguewide report-date roundup.
     id: "training-camp",
     name: "Training Camp",
     hero: "CampBattles",
     accentColor: "#e67e22",
     description: "Camp is open · Position battles on",
-    start: "2026-07-22",
+    start: "2026-07-24",
     end: "2026-08-10",
   },
   {
