@@ -837,7 +837,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "active",
-    injuryNote: "Returning from 2024 ACL · clean rookie tape pending",
+    injuryNote: "Returning from 2024 ACL, re-aggravated the same knee in summer 2025 and opened last season on IR. First clean stretch of his career this spring: team reporter Tori McElhaney confirms he took a regular rotation in 11-on-11 team drills through OTAs and minicamp, and Pro Football Rumors (Jul 6) has him trending toward full training-camp participation. Padded work is still the real test. Has yet to play a regular-season snap.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4428713.png",
     contract: { years: 4, total: 5800000, guaranteed: 1300000, apy: 1450000, throughYear: 2027, cap2026: 1180000 },
     career: [{ years: "2024–", team: "Atlanta Falcons", type: "NFL" }],
@@ -2122,36 +2122,31 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-07-19T09:10:00Z",
+  generatedAt: "2026-07-20T09:10:00Z",
   cover: {
-    kicker: "DEAD PERIOD · Outside Drake London, the Receiver Room Was Torn Down to the Studs and Rebuilt: the Camp-Preview Series Reaches the Wideouts, Where Jahan Dotson Steps Into the WR2 Job After Two Buried Years in Philadelphia, and He Is Done Being Quiet About the Ceiling He Is Chasing",
-    headLine1: "The room emptied out around Drake London.",
-    headEm: "One man walked back in to fill it.",
-    headLine3: "Jahan Dotson, done apologizing for wanting it.",
+    kicker: "DEAD PERIOD · Four Days From the First Bodies Walking Back In, the Preview Series Is Almost Done and the One Question That Matters Is Still Open: Atlanta Enters Training Camp Without a Named Starting Quarterback, and the National Grading Season Has Started Docking the Franchise for It",
+    headLine1: "Everything else on this roster is answered.",
+    headEm: "The one job that decides the season is not.",
+    headLine3: "Camp opens with QB1 still blank.",
     deck:
-      "The Monday-Wednesday-Friday preview series reached the receivers, and the math is stark: outside Drake London, this room returns just seven catches for 42 yards of production. The man Atlanta is counting on to fill that void is Jahan Dotson, signed to a two-year, $15M deal this spring and penciled in as the starter opposite London. His arc is the story. The 2022 first-rounder caught 35 passes for 523 yards and seven touchdowns as a Washington rookie, then spent two years buried behind A.J. Brown and DeVonta Smith in Philadelphia (37 catches, 478 yards, one score across 34 games). He frames the detour as school, not exile: 'A younger me wouldn't have handled that well. But as I've grown older and wiser, it's just about getting better.' GM Ian Cunningham says 'it's clicked' for him; Stefanski cited 'real speed, real separation ability.' The competition is live behind him, with returnee Olamide Zaccheaus, third-round rookie Zachariah Branch, and a contested punt-return job all in play. Dotson's own bar is unhidden: 'I want to be one of the greatest. I have the talent to do it.' The evaluation starts for real when pads come on Wednesday July 29, now 10 days out.",
+      "Rookies report Friday July 24, veterans Tuesday July 28, and the first full-team practice is Wednesday July 29. The camp-preview series that has run Mondays, Wednesdays and Fridays since late June wraps this week, and the accumulated picture is a roster of answered rooms surrounding one unanswered job. On SI's pre-camp position grades, Atlanta drew an A+ at running back behind Bijan Robinson, an A at safety behind Jessie Bates III and Xavier Watts, an A at kicker after the Nick Folk signing, a B+ at tight end and a B on both lines. The quarterbacks got a D, and the reasoning was not about talent so much as about not knowing: two left-handed passers with long injury files, one of them (Michael Penix Jr.) coming off a third career ACL surgery and still without a team-period rep since November, the other (Tua Tagovailoa) a starter by default whose former club absorbed the largest dead-cap charge in league history to move on from him. Penix has held the same line all summer, that he expects full clearance by camp, but has consistently deferred the decision to his doctors. Tua was the more convincing operator in the spring, with ESPN noting his best day of the offseason came in minicamp red-zone work. The evaluation that has been theoretical since March becomes real when pads come on. Nine days.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
-    photoId: "dotson",
-    stampLabel: "A · CAMP PREVIEW · WR",
+    photoId: "penix-jr",
+    stampLabel: "D · CAMP PREVIEW · QB",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
-    // STATUS (2026-07-19 scheduled run): cover request SKIPPED again, same reasoning, second cycle.
-    // Staleness backstop still does not fire: this cover is dated 2026-07-17, two days old, inside
-    // the 4-day window. Trigger 1 does not fire either, because Sunday of a dead-period weekend
-    // produced no landed scene: the freshest items are the special-teams camp-preview installment
-    // and a Jalon Walker role projection, both room-level analysis rather than a photographable
-    // moment. The backstop expires 2026-07-21, and rookies report 2026-07-24, so the next run or
-    // two should carry a real request either way. Do not let this drift past three cycles.
-    // GENERATOR BACK ONLINE: the downstream Antigravity image job cleared its entire backlog on
-    // 2026-07-17. All four previously-open requests now have real files on disk (dotson-wr2,
-    // deablo-green-dot, walker-year-two, bates-uso-japan), so the note carried on this block
-    // through early July about "no file since 2026-06-28" is obsolete and has been removed.
-    // The Dotson plate rendered yesterday and is live, which is the other reason not to burn it
-    // after a single day. NOTE: topics[0] leads with the safeties preview while this cover stays
-    // on the WR2 story, a one-cycle divergence taken on purpose to avoid rotating a just-rendered
-    // image. Expect the cover to move with the next genuine scene (camp opens Jul 29).
-    coverImageUrl: "/falcons-tracker/assets/cover/2026-07-17-dotson-wr2.jpg",
+    // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
+    // Trigger 2 (staleness backstop) is one day from firing on its own: the Dotson plate is dated
+    // 2026-07-17, three days old, and the backstop expires 2026-07-21. Rather than let it lapse
+    // and then scramble, this run rotates deliberately onto the story that is actually leading
+    // the digest, the quarterback job entering camp week. Queued as 2026-07-20-qb-room-camp-eve.jpg
+    // in ~/Vault/Notes/image-requests.md for the downstream Antigravity job. The pointer below is
+    // already repointed at the not-yet-generated path, which is safe: the CoverImage component
+    // falls back to the photoId headshot (now penix-jr) until the file lands.
+    // Cover and topics[0] are back in alignment this cycle after the deliberate one-cycle
+    // divergence noted on 2026-07-19.
+    coverImageUrl: "/falcons-tracker/assets/cover/2026-07-20-qb-room-camp-eve.jpg",
   },
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "NFL Network",
@@ -2164,6 +2159,20 @@ export const NEWS_DIGEST = {
     "Sportsnaut", "The Big Lead", "The Athletic",
   ],
   topics: [
+    {
+      title: "FOUR DAYS OUT, THE PRE-CAMP GRADING SEASON DELIVERS ITS VERDICT AND IT IS THE SAME ONE EVERY TIME: SI's position-by-position audit hands Atlanta an A+ at running back, an A at safety, an A at kicker and Bs across both lines, then stops at quarterback and writes down a D, not because the two passers lack talent but because nobody, inside the building or out, can yet say which one is the starter",
+      detail: "SI / Atlanta Falcons On SI (position-group grades, published Jul 14 and now the most-cited pre-camp framing as reporting week arrives): the piece is useful precisely because it is unsentimental about where the strength sits. Bijan Robinson's room draws the only A+ on the board, on the back of a league-leading 2,298 scrimmage yards and a 93-yard touchdown against the Rams that was the longest score in football last season, with Brian Robinson Jr. imported as the change-of-pace behind him. Safeties get an A, with Jessie Bates III a Second Team All-Pro and Xavier Watts fourth in Defensive Rookie of the Year voting after leading all first-year players with five interceptions. Nick Folk's arrival draws an A at kicker after a season that ran through three different legs. Tight end lands at B+ with a paid Kyle Pitts, Austin Hooper back for an 11th season and Charlie Woerner blocking. Both lines get a B. The quarterbacks get a D, and the write-up is blunt about why: Penix is coming off a third career ACL surgery with 12 career starts and five season-ending injuries in seven years as a starter, and Tagovailoa arrives from a Miami club that ate the largest dead-cap charge in NFL history to move on. The grade is not a talent judgment so much as an uncertainty tax, and it is the same tax ESPN's roster rankings applied when they slotted Atlanta tied for 29th. Camp is where the bill either comes due or gets torn up.",
+      category: "general",
+      sourceUrl: "https://www.si.com/nfl/falcons/onsi/grading-atlanta-falcons-position-groups-ahead-of-training-camp",
+      sourceLabel: "SI / Atlanta Falcons On SI",
+    },
+    {
+      title: "THE PLAYER WHO HAS NEVER TAKEN AN NFL SNAP JUST QUIETLY CLEARED THE HARDEST PART: Bralen Trice took a regular rotation in 11-on-11 team drills through the spring, two full years after the ACL tear that erased his rookie season and one year after he re-aggravated the same knee, and with a James Pearce Jr. suspension still hanging over the edge room he is no longer a depth luxury",
+      detail: "Pro Football Rumors (Adam La Rose, Jul 6, building on team reporter Tori McElhaney's outside-linebackers camp preview): drafted in the third round in 2024, Trice has yet to play a regular-season down. An ACL tear wiped out his rookie year, then he aggravated the same knee last summer and landed on injured reserve to open the regular season. The spring was the first genuinely clean stretch of his professional career, including a regular turn in team 11-on-11 work, which is the rep type that actually tests a repaired knee. Padded practices are still ahead and remain the real proving ground. What raises the stakes past a feel-good note is the room around him. Jalon Walker is a fixture and Pearce was productive as a rookie, but Pearce faces a strong possibility of a suspension to open the season, and Atlanta's 57 sacks, second in the league, are the thing this new staff most needs to preserve. If Trice holds up through August he moves from a name on the roster to a rotational answer. He turns 25 this season with two years left on his rookie deal, and after the missed time there is no early-extension conversation to be had, which makes the fall a straightforward audition.",
+      category: "injuries",
+      sourceUrl: "https://www.profootballrumors.com/2026/07/falcons-bralen-trice-trending-toward-training-camp-participation",
+      sourceLabel: "Pro Football Rumors / atlantafalcons.com",
+    },
     {
       title: "CAMP PREVIEW NO. 9 LANDS ON THE UNIT THAT WAS THE WORST IN FOOTBALL, AND ATLANTA TORE IT OUT AT THE STUDS: the series reaches special teams, where a 41-year-old Nick Folk replaces a three-kicker carousel, former All-Pro punter Jake Bailey follows his old coordinator to Flowery Branch, and the return jobs that produced a league-worst kickoff average are now Zachariah Branch's to lose",
       detail: "Atlantafalcons.com camp-preview series (special teams installment, carried by Atlanta Leader and the Yahoo Sports aggregation): after eight previews spent litigating position battles, the ninth lands on the phase where 2025 was not competitive with the league. Atlanta finished last in average yards gained on kickoff returns, 27th in punt return yardage, allowed the most kickoff return yardage in football, and gave up a kick return touchdown. The response was total. The kicking job, which went through three different kickers last season, now belongs to Nick Folk, who at 41 arrives as one of the steadiest legs of the past decade and is the anti-carousel signing in the most literal sense. Bradley Pinion is gone and Jake Bailey punts, a former All-Pro who worked directly under special teams coordinator Craig Aukerman a season ago, which makes this less an acquisition than a reunion with a known operating manual. The returns are where the upside sits. Third-round rookie Zachariah Branch led all Division I players in punt return yardage as a freshman at USC with 332 yards, scored on both a punt and a kickoff that season, and finished his college career north of 500 punt return yards and 700 kickoff return yards. He is not handed either job: Jahan Dotson, Olamide Zaccheaus, Dylan Drummond, Keelan Marion and Vinny Anthony II have all taken punt looks, with Brian Robinson Jr., Tyler Goodson, Cash Jones and cornerback Natrone Brooks fielding kickoffs. It is the quietest unit on the preview board and, measured by distance from last year's baseline, the one with the most obvious room to move.",
@@ -2248,20 +2257,6 @@ export const NEWS_DIGEST = {
       sourceUrl: "https://www.atlantafalcons.com/news/falcons-2026-training-camp-preview-cornerbacks-nickels",
       sourceLabel: "atlantafalcons.com",
     },
-    {
-      title: "ESPN LAYS OUT THE FIVE THINGS CAMP HAS TO SETTLE, AND A NEW ONE JUMPS THE LIST: Marc Raimondi's pre-camp questionnaire runs from the Penix health timeline to the Pearce suspension to the Bijan extension, but the freshest wrinkle is right tackle, where Kaleb McGary's April retirement and Jawaan Taylor's arm rehab have left Michael Jerrell taking the first-team reps",
-      detail: "ESPN (Marc Raimondi, filed Mon Jul 13 at 11:57 AM ET): the cleanest single read on what August actually has to decide. Five questions. First, Penix health: he stays steadfast that he will be fully cleared by camp and 100% for Week 1, but a nine-to-twelve-month ACL timeline places full clearance around the middle of camp, and until he takes 11-on-11 reps, Tua Tagovailoa is the starter. Second, the Pearce suspension: discipline is expected for the February arrest, with length and timing still unknown, and it matters because Pearce led the Falcons with 10.5 sacks as a rookie (the most by a rookie since Micah Parsons in 2021), which is why Atlanta stacked edge depth in Azeez Ojulari, Samson Ebukam and Cameron Thomas. Third, the Bijan Robinson extension: yes, and likely inside 2026, after London and Pitts got theirs. Fourth, and the item that is genuinely new to the board, right tackle: Kaleb McGary retired suddenly in April, free-agent signing Jawaan Taylor is still rehabbing arm injuries and did not practice in the spring (and carries a false-start problem), and swing tackle Storm Norton is down again with an ankle, so the Falcons traded for Wanya Morris while Michael Jerrell took most of the first-team right-tackle reps this spring. It profiles as a three-way battle, and it matters more than usual because both quarterbacks are left-handed, making right tackle the blindside. Fifth, replacing Kaden Elliss: Ulbrich says it is not a one-man job, with Christian Harris the early favorite next to Divine Deablo.",
-      category: "general",
-      sourceUrl: "https://www.espn.com/nfl/story/_/id/49308165/key-questions-falcons-camp-including-qb1-status-tua-tagovailoa-michael-penix-jr",
-      sourceLabel: "ESPN",
-    },
-    {
-      title: "THE SAME LEAGUE THAT KEEPS PRAISING THE PARTS JUST RANKED THE WHOLE 29TH: ESPN's analyst trio graded all 32 rosters entering 2026 and slotted Atlanta tied for 29th with Arizona, one of the three worst in football, with the unsettled quarterback job cited as the reason the offensive talent does not add up to a contender",
-      detail: "ESPN (Mike Clay, Aaron Schatz, Seth Walder) via Yahoo Sports and SI Falcons (carried into Mon Jul 13, the newest hard item on the board and the sharpest counterweight of the break): after two weeks of national validation for individual Falcons, the same network ranked the sum of the parts near the bottom. Clay, Schatz and Walder placed Atlanta 29th, tied with the Cardinals, and put the blame on the position that has no answer yet. Michael Penix Jr. threw 14 touchdowns in 14 games last year while fighting accuracy questions before a Week 11 ACL tear, and Tua Tagovailoa arrives off a Miami exit, so the panel treated QB1 as the roster's defining hole rather than a settled strength. The offsetting note is familiar: the group called running back the team's biggest strength, the same Bijan-led room the league's coaches and executives just voted No. 1. Walder's X-factor pick was rookie cornerback Avieon Terrell, the undersized second-rounder whose slot-or-boundary fit is one of camp's real questions. The ranking reads as the pessimist's case in a fortnight that otherwise leaned optimist, and it lands next to Dwight Freeney's Year-1 caution: the talent is not the argument, the quarterback and the cohesion are.",
-      category: "general",
-      sourceUrl: "https://sports.yahoo.com/articles/espn-ranks-falcons-roster-among-200452386.html",
-      sourceLabel: "ESPN / Yahoo Sports / SI Falcons",
-    },
   ],
 };
 
@@ -2272,8 +2267,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-07-19T09:10:00Z",
-  windowLabel: "Dead Period · Last Dark Week · Rookies Report Jul 24 → Veterans Jul 28 → First Camp Practice Jul 29",
+  generatedAt: "2026-07-20T09:10:00Z",
+  windowLabel: "Dead Period · Final Four Days · Rookies Report Jul 24 → Veterans Jul 28 → First Camp Practice Jul 29 → First Open Practice Jul 31",
   sessions: [
     {
       id: "pitts-2026-06-29",
