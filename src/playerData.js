@@ -580,7 +580,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "active",
-    injuryNote: "Swing tackle · D-II development project",
+    injuryNote: "Took most of the first-team right tackle reps through the spring while Jawaan Taylor rehabbed. D-II development project now in a live three-way RT battle.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/5209093.png",
     contract: { years: 4, total: 4150000, guaranteed: 100000, apy: 1037500, throughYear: 2027, cap2026: 920000 },
     career: [{ years: "2024–", team: "Atlanta Falcons", type: "NFL" }],
@@ -2122,14 +2122,14 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-07-20T09:10:00Z",
+  generatedAt: "2026-07-21T09:15:00Z",
   cover: {
-    kicker: "DEAD PERIOD · Four Days From the First Bodies Walking Back In, the Preview Series Is Almost Done and the One Question That Matters Is Still Open: Atlanta Enters Training Camp Without a Named Starting Quarterback, and the National Grading Season Has Started Docking the Franchise for It",
+    kicker: "DEAD PERIOD · Three Days From the First Bodies Walking Back In, the Preview Series Files Its Last Installment This Week and the One Question That Matters Is Still Open: Atlanta Enters Training Camp Without a Named Starting Quarterback, and the Staff Has Been Quietly Telling You for Six Weeks Exactly How It Intends to Decide",
     headLine1: "Everything else on this roster is answered.",
     headEm: "The one job that decides the season is not.",
     headLine3: "Camp opens with QB1 still blank.",
     deck:
-      "Rookies report Friday July 24, veterans Tuesday July 28, and the first full-team practice is Wednesday July 29. The camp-preview series that has run Mondays, Wednesdays and Fridays since late June wraps this week, and the accumulated picture is a roster of answered rooms surrounding one unanswered job. On SI's pre-camp position grades, Atlanta drew an A+ at running back behind Bijan Robinson, an A at safety behind Jessie Bates III and Xavier Watts, an A at kicker after the Nick Folk signing, a B+ at tight end and a B on both lines. The quarterbacks got a D, and the reasoning was not about talent so much as about not knowing: two left-handed passers with long injury files, one of them (Michael Penix Jr.) coming off a third career ACL surgery and still without a team-period rep since November, the other (Tua Tagovailoa) a starter by default whose former club absorbed the largest dead-cap charge in league history to move on from him. Penix has held the same line all summer, that he expects full clearance by camp, but has consistently deferred the decision to his doctors. Tua was the more convincing operator in the spring, with ESPN noting his best day of the offseason came in minicamp red-zone work. The evaluation that has been theoretical since March becomes real when pads come on. Nine days.",
+      "Rookies report Friday July 24, veterans Tuesday July 28, and the first full-team practice is Wednesday July 29. The camp-preview series that has run Mondays, Wednesdays and Fridays since late June files its last installment this week, and the accumulated picture is a roster of answered rooms surrounding one unanswered job. On SI's pre-camp position grades, Atlanta drew an A+ at running back behind Bijan Robinson, an A at safety behind Jessie Bates III and Xavier Watts, an A at kicker after the Nick Folk signing, a B+ at tight end and a B on both lines. The quarterbacks got a D, and the reasoning was not about talent so much as about not knowing: two left-handed passers with long injury files, one of them (Michael Penix Jr.) coming off a third career ACL surgery and still without a team-period rep since November, the other (Tua Tagovailoa) a starter by default whose former club absorbed the largest dead-cap charge in league history to move on from him. What is easy to miss in the grading noise is that the staff has already published its rubric. There is a sign on the quarterback meeting room door reading 'Trust your feet,' and quarterbacks coach Alex Van Pelt has been explicit that footwork, not arm talent, is the thing being measured, and equally explicit that no real competition exists until both men can be evaluated on the same physical terms. Behind them sits a quieter problem with the same left-handed root: both quarterbacks turn their backs to the right edge, and right tackle is the least settled job on the offense. The evaluation that has been theoretical since March becomes real when pads come on. Eight days.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
@@ -2160,7 +2160,35 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "FOUR DAYS OUT, THE PRE-CAMP GRADING SEASON DELIVERS ITS VERDICT AND IT IS THE SAME ONE EVERY TIME: SI's position-by-position audit hands Atlanta an A+ at running back, an A at safety, an A at kicker and Bs across both lines, then stops at quarterback and writes down a D, not because the two passers lack talent but because nobody, inside the building or out, can yet say which one is the starter",
+      title: "THREE DAYS OUT, THE RUBRIC IS ALREADY ON THE DOOR: there is a sign in the Atlanta quarterback meeting room that reads 'Trust your feet,' and it is not decoration, it is the actual evaluation criteria, with Alex Van Pelt saying plainly that footwork is what the staff is grading and that there is no competition at all until Michael Penix Jr. and Tua Tagovailoa can be measured on the same physical terms",
+      detail: "Atlantafalcons.com (Tori McElhaney, 'Trust your feet: The three words guiding Atlanta's quarterback competition') and ESPN (Marc Raimondi, Jul 6 follow-up), read together as reporting week opens: the most useful pre-camp item on the board, because it is the only one that explains how the decision actually gets made rather than guessing who wins it. Van Pelt, who works the room alongside Stefanski and offensive coordinator Tommy Rees, is unusually blunt about the asymmetry: 'It's tough having a competition when both guys aren't competing at the same level (physically). Mike has done a great job of getting himself to where he is right now. Really impressed to see him take 7-on-7 reps, but really, there is no competition until we can actually evaluate them equally.' He goes further on the mechanics of why, noting Penix 'may not be able to put that thing in the ground and throw the ball the way he might two more months from now.' The teaching itself is specific and testable. Van Pelt says the offense ties footwork directly to route concepts, with four distinct drops from the gun matched to different route depths plus three under-center dropbacks before play-action is layered on. That last detail is the one that matters most for Penix: per Next Gen Stats he took exactly one under-center dropback in all of 2025, and this system wants to run from under center. The philosophy traces back through Van Pelt's west coast roots and Stefanski's years under Gary Kubiak, whose line about the feet being the quarterback's clock is the whole idea in one sentence. Van Pelt's read on when the answer arrives is the closest thing to a timeline anyone has offered: 'At some point, you've been coaching long enough that you can see a guy take a lead in the competition. It will come down to who's playing the best ball when it's time to go.'",
+      category: "coaching",
+      sourceUrl: "https://www.atlantafalcons.com/news/trust-your-feet-michael-penix-tua-tagovailoa-quarterback-competition",
+      sourceLabel: "atlantafalcons.com / ESPN",
+    },
+    {
+      title: "THE PROBLEM NOBODY IS TALKING ABOUT SITS ON THE RIGHT EDGE: Atlanta starts camp with no settled right tackle after Kaleb McGary retired without warning in April, and because both quarterbacks on this roster are left-handed, the job Atlanta cannot fill is the one protecting whichever blind side ends up mattering",
+      detail: "ESPN (Marc Raimondi, five lingering questions, filed Jul 13) with the depth-chart detail corroborated by the team-site offensive-line camp preview: this is the most consequential Atlanta story that has not been getting front-page treatment, and the reason it matters is a quirk of the roster. Penix and Tagovailoa are both left-handed, which inverts the usual math and makes right tackle the blindside job. It is also the least settled position on the offense. McGary had held it since he was drafted in 2019, was coming back from a season-ending knee injury, and then retired abruptly in April. Atlanta signed Jawaan Taylor out of Kansas City on April 9 to fill the hole, but Taylor is still rehabbing arm injuries carried over from last season, did not practice at all this spring, and brings a well-documented false-start problem with him. The contingency plans have their own problems. Swing tackle Storm Norton went down with a lingering ankle issue for a second consecutive season and sits on Reserve/PUP as of Jun 11. The front office traded for Wanya Morris, Taylor's former Chiefs teammate, as insurance. And the player who actually took most of the first-team right tackle reps through the spring was Michael Jerrell, a 2024 seventh-round pick out of Division II Findlay with two career seasons and a development-project label. Raimondi frames it as a genuine three-way battle unless Taylor arrives at full health, which is the single cleanest thing to watch when pads come on Jul 29.",
+      category: "general",
+      sourceUrl: "https://www.espn.com/nfl/story/_/id/49308165/key-questions-falcons-camp-including-qb1-status-tua-tagovailoa-michael-penix-jr",
+      sourceLabel: "ESPN / atlantafalcons.com",
+    },
+    {
+      title: "THE GREEN DOT IS SETTLED AND THE SPOT NEXT TO IT IS NOT: Divine Deablo inherits the defensive play-calling duty Kaden Elliss took to New Orleans, Christian Harris is the clubhouse leader beside him after a spring of first-team reps, and Ulbrich's own framing is that replacing Elliss will be a committee rather than a person",
+      detail: "Atlantafalcons.com inside-linebackers camp preview (Jul 10 installment) alongside ESPN's five-questions piece and The Falcoholic's linebacker breakdown: the cleanest read yet on the room Atlanta had to rebuild from scratch. Elliss did four jobs at once, wore the green dot and left for the rival Saints, and Jeff Ulbrich has already conceded on the record that no single player replaces that. The green dot itself is resolved: Deablo carries the helmet radio and becomes the primary defensive play-caller in 2026, a meaningful promotion for a player Atlanta signed as a role piece. The open job is the spot beside him. Christian Harris, signed away from Houston, is the favorite on the strength of OTA and minicamp reps, and the resume is a bet on unfulfilled potential rather than production: a 2022 third-round pick with 46 games and 27 starts across four seasons, with calf and ankle injuries the reason the ceiling never quite arrived. Everyone chasing him carries a caveat. Channing Tindall has 24 career starts between Miami and Arizona but no clear role. Troy Andersen has not played since 2024 and has yet to fully practice because of the knee. JD Bertrand is depth. Fourth-round rookie Kendal Daniels missed the spring hurt. Sixth-rounder Harold Perkins Jr., undersized and very fast, has been running with the second team and is the name the team site keeps circling back to. The wildcard is Jalon Walker, who Ulbrich wanted to master the edge first but who could take inside snaps in a defense that is explicitly planning to rotate. The honest summary from the preview is that it will be by committee, and the committee could look different down to down.",
+      category: "coaching",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-2026-training-camp-preview-inside-linebackers",
+      sourceLabel: "atlantafalcons.com / ESPN / The Falcoholic",
+    },
+    {
+      title: "THREE DAYS UNTIL THE FIRST BODIES WALK BACK IN: the dead period is down to its final seventy-two hours, with rookies reporting Friday Jul 24, veterans Tuesday Jul 28 and the first full-team practice Wednesday Jul 29, and the fan schedule is fixed at ten open practices including a free Saturday night session under the lights at a Sugar Hill high school",
+      detail: "Calendar checkpoint (Jul 21), off the team-site camp announcement and the league reporting-date roundup carried by ESPN, Yahoo Sports and The Falcoholic: the dates are league-official and the runway is now very short. Rookies report Friday Jul 24, three days out. Veterans follow Tuesday Jul 28. The first full-team practice is Wednesday Jul 29, eight days out, and that is the first moment any of the summer's open questions can actually be evaluated, because it is the first moment anyone is in pads. Ten practices are open to fans across a three-week stretch, beginning with a season-ticket-member session Friday Jul 31. The one to circle is the Under the Lights practice Saturday Aug 8 at Lanier High School in Sugar Hill, a free 7 p.m. session in a roughly 4,700-seat stadium that requires claiming a ticket in advance. The preseason opens at home against Denver on Friday Aug 14, and the trip to Indianapolis on Saturday Aug 22 is preceded by a pair of joint practices with the Colts, which historically produce more usable evaluation than the exhibition games themselves. Three threads carry into camp unresolved: Michael Penix Jr. still has not been cleared for 11-on-11 work as he rehabs the late-November ACL surgery, calling camp readiness 'the expectation' while deferring to his doctor, the league office has still issued no ruling on James Pearce Jr., and the right tackle job remains genuinely open.",
+      category: "general",
+      sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-training-camp-schedule-announced",
+      sourceLabel: "atlantafalcons.com / ESPN / The Falcoholic",
+    },
+    {
+      title: "WITH CAMP NOW INSIDE A WEEK, THE PRE-CAMP GRADING SEASON DELIVERS ITS VERDICT AND IT IS THE SAME ONE EVERY TIME: SI's position-by-position audit hands Atlanta an A+ at running back, an A at safety, an A at kicker and Bs across both lines, then stops at quarterback and writes down a D, not because the two passers lack talent but because nobody, inside the building or out, can yet say which one is the starter",
       detail: "SI / Atlanta Falcons On SI (position-group grades, published Jul 14 and now the most-cited pre-camp framing as reporting week arrives): the piece is useful precisely because it is unsentimental about where the strength sits. Bijan Robinson's room draws the only A+ on the board, on the back of a league-leading 2,298 scrimmage yards and a 93-yard touchdown against the Rams that was the longest score in football last season, with Brian Robinson Jr. imported as the change-of-pace behind him. Safeties get an A, with Jessie Bates III a Second Team All-Pro and Xavier Watts fourth in Defensive Rookie of the Year voting after leading all first-year players with five interceptions. Nick Folk's arrival draws an A at kicker after a season that ran through three different legs. Tight end lands at B+ with a paid Kyle Pitts, Austin Hooper back for an 11th season and Charlie Woerner blocking. Both lines get a B. The quarterbacks get a D, and the write-up is blunt about why: Penix is coming off a third career ACL surgery with 12 career starts and five season-ending injuries in seven years as a starter, and Tagovailoa arrives from a Miami club that ate the largest dead-cap charge in NFL history to move on. The grade is not a talent judgment so much as an uncertainty tax, and it is the same tax ESPN's roster rankings applied when they slotted Atlanta tied for 29th. Camp is where the bill either comes due or gets torn up.",
       category: "general",
       sourceUrl: "https://www.si.com/nfl/falcons/onsi/grading-atlanta-falcons-position-groups-ahead-of-training-camp",
@@ -2195,13 +2223,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "Heavy.com / Pro Football Rumors / Audacy / Sportsnaut",
     },
     {
-      title: "THE QUARTERBACK ROOM, COUNTED HONESTLY: an outside pre-camp room preview lays out all four names and makes the uncomfortable observation that Atlanta's most important competition has a fanbase favorite who has not taken a team rep since November, a presumed starter by default, a well-traveled veteran third, and a body",
-      detail: "Roundtable (2026 pre-training-camp positional room preview, carried by Yahoo Sports): a useful corrective to the two-man framing everyone else uses, because it counts the whole room. Michael Penix Jr. and Tua Tagovailoa are the competition, and the preview's read is that the battle is the story of camp and that until Tagovailoa is formally named the starter, Penix remains the fanbase's choice and the player it most wants to see. Behind them the depth is real but modest. Trevor Siemian is the veteran third, and the framing is about the room rather than the depth chart: a quarterback who has played a lot of NFL football strengthens the meeting room whether or not he takes a meaningful snap. Undrafted rookie Jacob Strand, out of Minnesota State Moorhead, is described plainly as a camp arm with almost no path to the 53. The broader premise the preview opens with is the one every Atlanta camp starts from, that Kevin Stefanski was hired to end a playoff drought that now defines the franchise's last decade. The operative date is unchanged and close: first practice Wednesday July 29, and the competition does not truly begin until Penix clears 11-on-11.",
-      category: "general",
-      sourceUrl: "https://sports.yahoo.com/articles/atlanta-falcons-2026-pre-training-120036590.html",
-      sourceLabel: "Roundtable / Yahoo Sports",
-    },
-    {
       title: "CAMP PREVIEW NO. 8, AND FOR ONCE THE ANSWER IS ALREADY IN THE BUILDING: the Friday installment reaches the safeties, the one room on this roster that asks nothing of August, where Jessie Bates III just landed fifth in ESPN's leaguewide poll, Xavier Watts drew a coordinator comparison to his own running mate, and the only live question is who plays the third safety while Billy Bowman Jr. finishes his Achilles rehab",
       detail: "Atlantafalcons.com camp-preview series (filed Fri Jul 17, the freshest team-site story on the board) alongside ESPN's Jeremy Fowler position poll and SI Falcons' pre-camp position grades: after seven installments spent cataloguing open jobs, the series finally hit a room with no argument in it. Bates enters his ninth season ranked fifth among NFL safeties in Fowler's survey of coaches, scouts and executives, coming off a second-team All-Pro year and the most productive three-season stretch of his career in Atlanta (13 interceptions, eight forced fumbles, 332 tackles). Watts, who led all rookies with five interceptions last year and finished fourth in Defensive Rookie of the Year voting, missed the top ten but drew honorable mention and an unusually direct scouting note: one coordinator told Fowler that Watts 'has a chance to be one of the best safeties in the league' and carries very similar qualities to Bates. The fit is the point. Watts patrols centerfield and lets Bates play downhill and everywhere else, which is the arrangement that made the 2025 defense work. SI graded the room an A, the highest mark it gave any Atlanta position group. What is genuinely open is the third spot: Bowman is still working back from the ruptured Achilles that ended his rookie year, DeMarcco Hellams is expected to make a full return to the practice field in camp, and fourth-year man Sydney Brown, acquired from Philadelphia in March and now entering a contract year, projects to cover both the nickel and the third-safety role until Bowman is cleared. It is the rare Falcons position preview where the depth chart is the story and the starters are not.",
       category: "coaching",
@@ -2223,32 +2244,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "The Falcoholic / Yahoo Sports",
     },
     {
-      title: "THE PEARCE RULING IS STILL NOT HERE, AND THE ESTIMATES ARE SPLITTING: reporting this week has the Falcons internally preparing for a suspension of at least eight games on the Cameron Sutton precedent, while other analysts read the case for four or fewer, and a separate thread suggests the league may not rule at all until 2027",
-      detail: "Pro Football Rumors, Heavy.com, The Big Lead and Audacy (reporting carried through Jul 15-16), with no official league statement to date: the single largest unresolved variable on the Atlanta defense remains unresolved, and the range of outcomes is now wide enough to be its own story. The facts that are settled: Pearce was arrested in Miami-Dade County and charged with two counts of aggravated battery with a deadly weapon and one count of aggravated stalking, with WNBA player Rickea Jackson identified as the alleged victim, and he has since entered an arrangement under which those charges are cleared upon completion of a pretrial diversion program. No conviction is involved. What is not settled is the NFL's own response, because discipline under the personal conduct policy can be issued without a criminal conviction, and the policy's baseline for domestic violence is a six-game suspension that aggravating circumstances can extend. Reporting indicates the Falcons are internally planning for eight games or more, drawing the comparison to the Cameron Sutton case in Detroit; other analysts covering the case consider anything beyond four games hard to justify on the available record. Audacy's read is the most consequential for camp planning, that the league office may not deliver a ruling before 2027 at all, which would mean Atlanta prepares an entire season around a decision that never comes. Stefanski said in June the team had still not heard from the league, and nothing has changed that.",
-      category: "general",
-      sourceUrl: "https://www.profootballrumors.com/2026/06/falcons-james-pearce-jr-likely-to-receive-suspension",
-      sourceLabel: "Pro Football Rumors / Heavy.com / Audacy / The Big Lead",
-    },
-    {
       title: "THE BIJAN DEAL IS IN ACTIVE NEGOTIATION, AND ESPN NOW CONFIRMS IT: Dan Graziano puts the Falcons and Robinson formally at the table with camp 11 days out, which sets up the familiar summer question of whether the league's consensus best back signs before pads come on or lets the staring contest with Detroit run into the season",
       detail: "ESPN (Dan Graziano) via Yahoo Sports, ClutchPoints and Pro Football Rumors (reporting through Jul 15): the extension that Tom Pelissero called imminent in late June is confirmed as an active negotiation rather than a projection, with local reporting adding that a deal is expected to get done soon. The leverage picture has not moved. Atlanta exercised the fifth-year option in April, so Robinson is under control through 2027 and neither side faces a deadline, which is precisely why this has stretched across the entire dead period. What has moved is the market case. Since the last update Robinson was named the consensus No. 1 running back in ESPN's poll of coaches, scouts and executives, jumping three spots from No. 4 a year ago with his lowest individual vote landing at second, and Warren Sharp graded the Atlanta backfield the best unit in football. The Athletic's Austin Mock model projects roughly $21.9M in average annual value with a position-record $52.7M guaranteed, which would clear Saquon Barkley's league-leading $20.6M. The complication is Detroit: Jahmyr Gibbs is in the same window with a projection near $19.9M, and whichever back signs first sets the number the other negotiates against. Robinson's own public posture has not changed since the London signing, a smiling 'We'll see, man.' He would be the third core extension of the Cunningham era after London in June and Pitts at the end of the month.",
       category: "contracts",
       sourceUrl: "https://sports.yahoo.com/articles/falcons-rumors-bijan-robinson-contract-173641012.html",
       sourceLabel: "ESPN / Yahoo Sports / Pro Football Rumors",
-    },
-    {
-      title: "FIVE DAYS UNTIL THE FIRST BODIES WALK BACK IN: the dead period is down to its last week, with rookies reporting Friday Jul 24, veterans Tuesday Jul 28 and the first full-team practice Wednesday Jul 29, and the fan schedule is now fixed at ten open practices including a Saturday night high-school session in Sugar Hill",
-      detail: "Calendar checkpoint (Jul 19), off the team-site camp announcement and the league reporting-date roundup carried by ESPN, Yahoo Sports and The Falcoholic: the dates are league-official and the runway is short. Rookies report Friday Jul 24, five days out. Veterans follow Tuesday Jul 28. The first full-team practice is Wednesday Jul 29, ten days out, and that is the first moment any of the summer's open questions can actually be evaluated. Ten practices are open to fans across a three-week stretch, beginning with a season-ticket-member session Friday Jul 31. The one to circle is the Under the Lights practice Saturday Aug 8 at Lanier High School in Sugar Hill, a free 7 p.m. session in a roughly 4,700-seat stadium that requires claiming a ticket in advance. The preseason opens at home against Denver on Friday Aug 14, and the trip to Indianapolis on Saturday Aug 22 is preceded by a pair of joint practices with the Colts, which historically produce more usable evaluation than the exhibition games themselves. Two threads carry into camp unresolved: Michael Penix Jr. still has not been cleared for 11-on-11 work as he rehabs the late-November ACL surgery, calling camp readiness 'the expectation' while deferring to his doctor, and the league office has still issued no ruling on James Pearce Jr.",
-      category: "general",
-      sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-training-camp-schedule-announced",
-      sourceLabel: "atlantafalcons.com / ESPN / The Falcoholic",
-    },
-    {
-      title: "THE WR2 JOB IS JAHAN DOTSON'S TO RUN WITH, AND HE IS DONE APOLOGIZING FOR WANTING IT: with camp 12 days out, the team-site preview and an AJC feature converge on the same read, that the former first-rounder steps in opposite Drake London atop a receiver room rebuilt from the ground up, and he is not shy about the ceiling he is chasing",
-      detail: "AJC (Daniel Flick, filed Sun Jul 5, carried through the break and freshest on the WR board as the position preview lands) plus the team-site and Yahoo camp previews: outside Drake London, this receiver room is almost entirely new, returning just seven catches for 42 yards of production, and the man the Falcons are counting on to fill the void is Jahan Dotson. Atlanta signed the 2022 first-rounder (No. 16 overall, Washington) to a two-year, $15M deal this spring and pencils him in as the starter opposite London. Dotson's arc is the story: 35 catches for 523 yards and seven touchdowns as a rookie, a similar second year (49 for 518), then two lost years buried behind A.J. Brown and DeVonta Smith in Philadelphia (37 catches, 478 yards, one score across 34 games). He frames the Eagles detour as school, not exile: 'A younger me wouldn't have handled that well. But as I've grown older and wiser ... it's just about getting better.' GM Ian Cunningham says 'it's clicked' for him, and Stefanski cited 'real speed, real separation ability.' The competition around him is live: free-agent returnee Olamide Zaccheaus and third-round rookie Zachariah Branch both fit the slot, and Branch, Dotson and Zaccheaus are all getting punt-return looks in what could be one of camp's most contested jobs. Dotson's own bar is unhidden: 'I want to be one of the greatest. I'm not afraid ... I want to be one of the best in the league, and I have the talent to do it.'",
-      category: "coaching",
-      sourceUrl: "https://www.ajc.com/sports/2026/07/jahan-dotson-wants-to-prove-the-falcons-and-himself-right/",
-      sourceLabel: "AJC / atlantafalcons.com",
     },
     {
       title: "CAMP PREVIEW NO. 7, THE BROTHER QUESTION IN THE SECONDARY: the team-site series reaches the cornerbacks and nickels, where A.J. Terrell owns one boundary spot and the other is a two-man race between returning starter Mike Hughes and A.J.'s own brother, second-round rookie Avieon Terrell, while a recovering Billy Bowman Jr. and free-agent add Darnay Holmes sort out the nickel",
@@ -2267,8 +2267,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-07-20T09:10:00Z",
-  windowLabel: "Dead Period · Final Four Days · Rookies Report Jul 24 → Veterans Jul 28 → First Camp Practice Jul 29 → First Open Practice Jul 31",
+  generatedAt: "2026-07-21T09:15:00Z",
+  windowLabel: "Dead Period · Final Three Days · Rookies Report Jul 24 → Veterans Jul 28 → First Camp Practice Jul 29 → First Open Practice Jul 31",
   sessions: [
     {
       id: "pitts-2026-06-29",
@@ -2334,6 +2334,27 @@ export const INTERVIEWS = {
       topics: ["penix-acl", "qb-competition", "minicamp", "training-camp"],
     },
     {
+      id: "van-pelt-2026-06-11",
+      speaker: "Alex Van Pelt",
+      role: "Quarterbacks Coach",
+      date: "2026-06-11",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Offseason Program · Position Coach Media Availability",
+      sourceUrl: "https://www.atlantafalcons.com/news/trust-your-feet-michael-penix-tua-tagovailoa-quarterback-competition",
+      transcriptUrl: "https://www.atlantafalcons.com/video/nate-ollie-john-timu-more-atlanta-falcons-coaches-speak-on-offseason-growth-press-conference",
+      verified: true,
+      summary: "The coach closest to the quarterback decision laid out both the constraint and the criteria. On the constraint, Van Pelt said flatly that no real competition can exist while Penix is physically limited, and that the staff has to discount what it sees accordingly. On the criteria, he pointed at the sign hanging in the quarterback meeting room reading 'Trust your feet,' and explained that footwork is tied route by route to the passing game, with a specific emphasis on getting both quarterbacks comfortable under center in a system that wants to run from there.",
+      pullQuote: "It's tough having a competition when both guys aren't competing at the same level (physically). ... Mike has done a great job of getting himself to where he is right now. Really impressed to see him take 7-on-7 reps, but really, there is no competition until we can actually evaluate them equally.",
+      bullets: [
+        "On discounting what he sees from Penix: 'We have to understand that Mike's knee is not 100% right now, and maybe at the top of his drop he may not be able to put that thing in the ground and throw the ball the way he might two more months from now'",
+        "On why footwork is the grading criteria: 'If your feet are right, you're going to make good decisions. When you get in trouble is when you don't trust your feet and you hang too long and you're off and then you throw bad balls or interceptions'",
+        "On the system's structure: 'There are certain route trees that we have, and then we tie certain footwork in with those exact routes ... We really have really four different drops from the gun that matches different routes with different depths,' plus three dropbacks from under center before play-action",
+        "On the under-center project, which matters because Next Gen Stats credited Penix with exactly one under-center dropback in 2025: 'That's another big thing that we have worked on this year, getting Mike and Tua back under center, because in this system, we love to run the ball from under center'",
+        "On when a starter reveals himself: 'At some point, you've been coaching long enough that you can see a guy take a lead in the competition. ... It will come down to who's playing the best ball when it's time to go'",
+      ],
+      topics: ["qb-competition", "penix-acl", "footwork", "scheme-install"],
+    },
+    {
       id: "drake-london-2026-06-09",
       speaker: "Drake London",
       role: "Wide Receiver",
@@ -2374,27 +2395,6 @@ export const INTERVIEWS = {
         "Asked when the team will address Pearce's status: 'I'll deal with next week next week'",
       ],
       topics: ["penix-acl", "qb-competition", "pearce-status", "minicamp"],
-    },
-    {
-      id: "bijan-robinson-2026-06-08",
-      speaker: "Bijan Robinson",
-      role: "Running Back",
-      date: "2026-06-08",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "Final Media-Open OTA · Player Availability",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-practice-report-drake-london-extension-bijan-robinson",
-      transcriptUrl: "https://www.atlantafalcons.com/video/bijan-robinson-matthew-bergeron-others-on-the-team-s-development-through-otas-press-conference",
-      verified: true,
-      summary: "At Atlanta's final OTA practice open to the media, the day belonged to Drake London's freshly signed four-year, $141M extension — and Bijan Robinson, widely reported as the front office's next big-ticket item, used his podium to celebrate his teammate rather than lobby for himself. He recounted calling London the moment the news broke, and when asked about his own extension offered only a smiling 'We'll see, man.' LG Matthew Bergeron, at the same availability, framed the London deal as a locker-room lift.",
-      pullQuote: "Right when I saw it, I called him. I was so happy for him. He deserves it. He deserves everything that he gets.",
-      bullets: [
-        "On London's extension: 'Obviously, he's one of my favorite teammates, probably my top teammate of all time. That's my best friend. That's my brother'",
-        "Deflected his own contract question — reported as Atlanta's next major extension — with a smiling 'We'll see, man'",
-        "Spoke at the final OTA practice open to media members; the building's next checkpoint is the June 16–18 mandatory minicamp",
-        "Bergeron on the London deal: 'It just brings people together. It gets us going as an offense and as a team'",
-        "Bergeron added: 'He brings everybody along with him, so I'm just happy for Drake'",
-      ],
-      topics: ["drake-london-extension", "bijan-extension", "locker-room"],
     },
   ],
 };
