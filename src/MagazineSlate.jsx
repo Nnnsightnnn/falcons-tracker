@@ -191,7 +191,7 @@ export default function MagazineSlate({ setView }) {
           <div className="card">
             <div className="num">N°1</div>
             <div className="k">SEP 24 · WEEK 03 · TNF</div>
-            <h3>Lambeau, <span className="em">in the cold.</span></h3>
+            <h3>Lambeau, <span className="em">under the lights.</span></h3>
             <div className="meta">@ GREEN BAY · 8:15 PM ET · AMAZON</div>
             <p>The first national look at whichever quarterback wins the seat. <span className="em">Three primetime games in twelve days</span> — Falcons need to be installed by mid-September, not mid-October.</p>
           </div>
@@ -207,7 +207,7 @@ export default function MagazineSlate({ setView }) {
             <div className="k">DEC 13 · WEEK 14 · CLE</div>
             <h3>Stefanski's <span className="em">homecoming.</span></h3>
             <div className="meta">@ CLEVELAND · 1:00 PM ET · CBS</div>
-            <p>Six seasons in Cleveland. Two Coach of the Year awards. The team that hired him in 2020 visits Atlanta's coach for a December afternoon — <span className="em">circle it.</span></p>
+            <p>Six seasons in Cleveland. Two Coach of the Year awards. Atlanta's coach goes back to the building that hired him in 2020 for a December afternoon — <span className="em">circle it.</span></p>
           </div>
         </div>
       </section>
