@@ -27,7 +27,7 @@ export const CAP_STATE = {
       playerId: "bijan",
       status: "extension-eligible",
       priority: 1,
-      rationale: "Eligible after 3 accrued seasons; $11.32M 5th-yr option exercised for 2027. NFL Network's Pelissero called a deal 'imminent' (Jun 25), the last of the three core extensions after Pitts (Jun 23) and London. The Athletic's Austin Mock model (via Pro Football Rumors, Jun 26) projects $21.9M AAV with a position-record $52.7M guaranteed, topping Saquon's league-leading $20.6M AAV; a likely staring contest with Detroit's Jahmyr Gibbs ($19.9M AAV projection) means whoever signs first sets the bar. No urgency with team control through 2027, but the Pitts deal freed runway and Robinson is the clear next domino.",
+      rationale: "Eligible after 3 accrued seasons; $11.32M 5th-yr option exercised for 2027. Now a hold-in: Robinson reported to camp Jul 29 but is not practicing while his agents finalize an extension. Rapoport reports the sides have done a lot of work and a deal is expected before the season, with Robinson likely to break the RB market first and become the league's highest-paid back. The Athletic's Austin Mock model projects $21.9M AAV with a position-record $52.7M guaranteed, topping Saquon's $20.6M AAV; Detroit's Jahmyr Gibbs is holding in over the same window, so whoever signs first sets the bar. Team control through 2027 removes any hard deadline, but this is the clear next domino after Pitts and London.",
     },
   ],
   restructureCandidates: [
@@ -43,6 +43,7 @@ export const CAP_STATE = {
     },
   ],
   recentMoves: [
+    { date: "2026-07-29", description: "Signed veteran QB Cooper Rush and released QB Trevor Siemian with a non-football injury designation, both on the morning of the first camp practice. With Tua Tagovailoa held out (back) and Michael Penix Jr. still limited (ACL), the room needed a healthy veteran arm; Rush, 32, went 9-5 as a spot starter in Dallas and backed up Lamar Jackson in Baltimore in 2025. Minimum-salary signing, negligible cap impact" },
     { date: "2026-06-23", description: "Signed TE Kyle Pitts Sr. to a 3yr/$54M extension ($36M fully guaranteed, $18M APY, 3rd among TEs behind Kittle and McBride; largest 3-year TE deal in NFL history per his agency). Rips up the $15.05M franchise tag, runs through 2028. OTC pegged ~$11M in 2026 cap savings vs the tag. Second core extension in three weeks after London; sets up Bijan Robinson next" },
     { date: "2026-06-17", description: "Signed three 2026 UFL standouts as minicamp closed: DE Keshawn Banks (5 sacks, 11 TFL for Orlando), DT Devonnsha Maxwell (UFL-champion DC Defenders, Georgia native), WR Antwane Wells Jr. (ex-Giants, Columbus). Released WR Casey Washington, DL Elijah Garcia and LB CJ Nunnally IV in corresponding moves. Minimum-salary depth signings, negligible cap impact" },
     { date: "2026-06-11", description: "Acquired OT Wanya Morris and a 2027 7th-round pick from Kansas City for a 2027 6th-round pick; adds a 25-year-old swing tackle with 16 career starts (11 at LT in 2024) after McGary's retirement and Storm Norton's PUP placement. Morris is on the final year of his rookie deal, about a $1.71M cap hit, no guaranteed money left" },

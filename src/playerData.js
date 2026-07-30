@@ -27,7 +27,7 @@ export const PLAYERS = [
     stats: { completions: 166, attempts: 276, passYds: 1982, passTDs: 9, ints: 3, qbRating: 88.5 },
     form: 0,
     status: "pup",
-    injuryNote: "ACL rehab · torn Week 11 2025 · individual + 7-on-7 only through OTAs and minicamp, still no 11-on-11 rep taken. Penix calls camp readiness 'the expectation' but defers to his doctor; ESPN's nine-to-twelve-month post-surgery timeline points to full clearance around mid-camp rather than the Jul 29 opener, so Tua holds the first-team reps until then",
+    injuryNote: "ACL rehab · torn Week 11 2025 · limited to individual and 7-on-7 work on Day 1 of camp (Jul 29), still not cleared for 11-on-11. Penix said Wednesday he was told 'another four weeks, possibly going into that next stage,' though it could be earlier depending on his body, which points clearance toward late August rather than the opener. He is prioritizing health: 'I can't afford to have someone trip and fall on me right now'",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
     contract: { years: 4, total: 22080000, guaranteed: 22080000, apy: 5520000, throughYear: 2027, cap2026: 5900000 },
     career: [
@@ -47,8 +47,8 @@ export const PLAYERS = [
     acquired: "fa-2026-1yr",
     stats: {},
     form: 0,
-    status: "active",
-    injuryNote: null,
+    status: "questionable",
+    injuryNote: "Back tightness flared on Day 1 of camp (Jul 29) and held him out of practice. Stefanski called it short-term: 'Tua is dealing with an injury right now. It's not long term. He'll be out there sooner than later.' The flare-up prompted Atlanta to sign Cooper Rush the same morning",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4241479.png",
     contract: { years: 1, total: 1300000, guaranteed: 1300000, apy: 1300000, throughYear: 2026, cap2026: 1300000 },
     career: [
@@ -58,24 +58,25 @@ export const PLAYERS = [
     ],
   },
   {
-    id: "siemian",
-    name: "Trevor Siemian",
-    number: 13,
+    id: "cooper-rush",
+    name: "Cooper Rush",
+    number: 10,
     position: "QB",
     positionGroup: "offense",
     depthRank: 3,
-    height: 75, weight: 220, age: 34, experience: 10,
-    college: "Northwestern",
-    acquired: "fa-2026",
+    height: 75, weight: 225, age: 32, experience: 9,
+    college: "Central Michigan",
+    acquired: "fa-2026-camp",
     stats: {},
     form: 0,
     status: "active",
-    injuryNote: null,
-    image: "https://a.espncdn.com/i/headshots/nfl/players/full/2511109.png",
+    injuryNote: "Signed Jul 29, the morning of the first camp practice, after the team released Trevor Siemian with a non-football injury. Took first-team reps in his opening practice with both Tua (back) and Penix (ACL) sidelined",
+    image: "https://a.espncdn.com/i/headshots/nfl/players/full/2972515.png",
     contract: { years: 1, total: 1500000, guaranteed: 0, apy: 1500000, throughYear: 2026, cap2026: 1210000 },
     career: [
-      { years: "2026–", team: "Atlanta Falcons", type: "NFL · veteran mentor" },
-      { years: "2015–2025", team: "Various (DEN, MIN, NYJ, NO, CHI, CIN)", type: "NFL · 33 career starts" },
+      { years: "2026–", team: "Atlanta Falcons", type: "NFL" },
+      { years: "2025", team: "Baltimore Ravens", type: "NFL" },
+      { years: "2017–2024", team: "Dallas Cowboys", type: "NFL · 9–5 as a starter" },
     ],
   },
 
@@ -95,7 +96,7 @@ export const PLAYERS = [
     stats: { rushYds: 1478, rushTDs: 14, rushAttempts: 299, receptions: 64, recYds: 820, recTDs: 2, targets: 82 },
     form: 9.2,
     status: "active",
-    injuryNote: "5th-year option exercised 4/12 — $11.32M in 2027",
+    injuryNote: "Hold-in: present at camp but not practicing on Day 1 (Jul 29) while his agents work an extension. Coming off an NFL-leading 2,298 scrimmage yards, he is expected to reset the running back market. Rapoport reports the two sides have done a lot of work and a deal is expected before the season. 5th-year option exercised 4/12, $11.32M in 2027",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4430807.png",
     contract: { years: 5, total: 33220000, guaranteed: 21900000, apy: 6644000, throughYear: 2027, cap2026: 6820000 },
     career: [
@@ -2122,18 +2123,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-07-29T12:30:00Z",
+  generatedAt: "2026-07-30T12:00:00Z",
   cover: {
-    kicker: "TRAINING CAMP · FIRST FULL-TEAM PRACTICE TODAY · The Whole Roster Is Finally on One Field and the One Job That Decides the Season Still Cannot Be Judged: Atlanta's Veterans Reported Tuesday, the First Full Practice Runs This Morning, and the Quarterback Competition Opens With Michael Penix Jr. Still Not Cleared for 11-on-11 and the Insider Read Quietly Tilting to Tua Tagovailoa",
-    headLine1: "The building is full and the field is live.",
-    headEm: "The job that decides the season still cannot be judged.",
-    headLine3: "First full practice, with QB1 not yet a real competition.",
+    kicker: "TRAINING CAMP · DAY 1 IN THE BOOKS · The First Practice of the Stefanski Era Opened With Both Quarterbacks in Street Clothes, a Journeyman Signed at Sunrise Running the Huddle, and the Best Running Back in Football Watching From the Sideline: Tua Tagovailoa's Back Tightened, Michael Penix Jr. Is Still Four Weeks From Clearance, and Bijan Robinson Is Holding In for the Deal That Will Reset His Position",
+    headLine1: "Camp opened and the two most important men stood still.",
+    headEm: "Both quarterbacks watched, and a back nobody can match sat out for money.",
+    headLine3: "Day 1 answered nothing and reframed everything.",
     deck:
-      "The waiting is over. Rookies reported Friday July 24, the full veteran roster walked in Tuesday July 28, and the first full-team practice of Kevin Stefanski's first Atlanta camp runs this morning, Wednesday July 29. It is the first moment any of the summer's open questions can actually be tested, and the biggest one arrives with an asterisk already attached. Michael Penix Jr. is still not cleared for 11-on-11 work as he rehabs the late-November ACL surgery, which means the quarterback competition the franchise has framed since March cannot begin in earnest on day one, and the insider read has quietly tilted toward Tua Tagovailoa as the de facto starter until Penix is medically whole. Quarterbacks coach Alex Van Pelt has said it plainly: there is no real competition until both men can be evaluated on the same physical terms, and the sign on the meeting-room door still reads 'Trust your feet.' Around that one blank sit answered rooms. SI's pre-camp grades handed Atlanta an A+ at running back behind Bijan Robinson, an A at safety behind Jessie Bates III and Xavier Watts, an A at kicker after the Nick Folk signing, a B+ at tight end and Bs on both lines, and a D at quarterback that was an uncertainty tax rather than a talent judgment. Three threads carry onto the practice field unresolved: the QB job, a right tackle spot still open with Jawaan Taylor rehabbing, and an edge room bracing for a James Pearce Jr. suspension the league still has not ruled on. The theoretical becomes real when the whistle blows.",
+      "The first full-team practice of Kevin Stefanski's first Atlanta camp ran Wednesday July 29, and the story of it was who did not take the field. Tua Tagovailoa's back tightened overnight and kept him out, Michael Penix Jr. remains limited to individual and 7-on-7 work as he rehabs the late-November ACL surgery, and so the huddle belonged to undrafted rookie Jack Strand and to Cooper Rush, the nine-year veteran Atlanta signed that same morning after releasing Trevor Siemian with a non-football injury. Stefanski waved off the alarm, calling Tua's issue short-term and promising 'he'll be out there sooner than later,' but Penix's own timeline is the one that lingers: he said he was told 'another four weeks, possibly going into that next stage,' which pushes any real quarterback competition toward late August. The other empty spot on the field was the loudest. Bijan Robinson, coming off an NFL-leading 2,298 scrimmage yards, is holding in, present in the building but not practicing while his agents chase the extension expected to make him the highest-paid running back in football. Around the blanks sit the answered rooms, an A+ backfield, an A at safety, an A at kicker, but Day 1 confirmed the season still hangs on the two jobs nobody could evaluate: the quarterback and the man behind him.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
-    stampLabel: "CAMP DAY 1 · QB WATCH",
+    stampLabel: "CAMP DAY 1 · QB ROOM SHORTHANDED",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2222,6 +2223,17 @@ export const NEWS_DIGEST = {
     // Cowork run with the Vault mounted) should queue the Jul 29 first-padded-practice Penix/Bijan rep
     // immediately. Recency shift this cycle: veterans-report-today moved to first-full-practice-today,
     // QB lead reframed from pre-camp preview to day-1 checkpoint, timestamps bumped.
+    // STATUS (2026-07-30 scheduled run): cover SKIPPED again, identical hard constraint confirmed once
+    // more: ~/Vault/Notes/image-requests.md and the limn-editor-enhance skill are NOT mounted in this
+    // sandbox (only the tracker repos, outputs and uploads are), so the downstream Antigravity queue
+    // cannot be appended. Last plate actually on disk remains 2026-07-17-dotson-wr2.jpg; the
+    // qb-room-camp-eve pointer (dated 2026-07-20, ten days old) was never generated and still resolves
+    // to the penix-jr headshot fallback, which stays exactly aligned with today's Day-1 QB-room lead
+    // (both QBs sidelined, Rush signed, Bijan holding in). Repointing to a Jul-30 slug would only spawn
+    // another dangling request no one can fulfill, so the pointer is left as is. Recency shift this
+    // cycle: lead reframed from first-practice-today to Day-1-recap, cover/topics rebuilt around the
+    // shorthanded QB room, the Rush signing, and the Bijan hold-in; timestamps bumped. The clean queue
+    // moment remains a padded-practice Penix/Bijan/Rush rep, for the first run that can reach the Vault.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-07-20-qb-room-camp-eve.jpg",
   },
   sources: [
@@ -2236,18 +2248,32 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "THE FIELD GOES LIVE TODAY: Atlanta holds its first full-team practice of the Stefanski era this morning, the whole 90-man roster on one field for the first time since minicamp, and the three load-bearing questions the offseason could not close, an unsettled quarterback job, an open right tackle and an edge room bracing for a James Pearce Jr. suspension, finally stop being theoretical the moment the whistle blows",
-      detail: "Team-site and league reporting-date roundup (atlantafalcons.com camp schedule, ESPN's live camp-intel tracker, and Yahoo Sports recaps) confirming the runway is spent: rookies reported Friday Jul 24, the veterans reported Tuesday Jul 28, and the first full-team practice is today, Wednesday Jul 29. This is the checkpoint the whole summer pointed at, because it is the first moment anyone can be evaluated in a team setting rather than projected. Brandon Dorlus set the tone as players arrived, telling reporters to expect competition and 'maybe some fights,' calling it 'a good sign when you got guys who want to compete.' The headline rookie in the building is third-round wideout Zachariah Branch, the 4.35 speedster Tua Tagovailoa has already likened to Jaylen Waddle and who is in line to seize both return jobs. The framing that led the board through the weekend still holds: Atlanta's headline talent is not the question, its depth behind three specific jobs is. Right tackle is the sorest spot, with April signing Jawaan Taylor still working back from arm injuries that cost him all spring team work, first-team reps splitting between third-year man Michael Jerrell and ex-Chief Wanya Morris, and Storm Norton parked on reserve/PUP. The linebacker level, stripped when Kaden Elliss took the green dot to New Orleans, now runs through Divine Deablo and a to-be-settled partner. And the edge room, second in the league with 57 sacks last year, is built as contingency against a Pearce suspension the league still has not ruled on. Ten practices are open to fans starting Friday Jul 31.",
+      title: "DAY 1 OPENED WITH BOTH QUARTERBACKS IN STREET CLOTHES: Atlanta held the first full-team practice of the Stefanski era Wednesday, and the two men the season hinges on watched it, Tua Tagovailoa held out with back tightness and Michael Penix Jr. still limited to individual and 7-on-7 work, which left the first-team huddle to undrafted rookie Jack Strand and to Cooper Rush, signed only hours earlier",
+      detail: "Day-1 reporting from The Falcoholic, NFL.com, ESPN's live camp tracker and Yahoo Sports (all filed Wednesday Jul 29): the checkpoint the whole summer pointed at arrived, and the quarterback room could not answer it. Tua's back tightened overnight and kept him out of the opener, an issue Stefanski repeatedly framed as short-term, while Penix ran only individual and 7-on-7 reps as he rehabs the late-November ACL surgery. With neither top passer available for team periods, the first-team snaps fell to undrafted rookie Jack Strand and to Cooper Rush, whom Atlanta signed that same morning after releasing Trevor Siemian. Around the quiet QB room, the rest of the field went live: Brandon Dorlus set the tone on arrival, telling reporters to expect competition and 'maybe some fights,' third-round wideout Zachariah Branch drew early eyes in line for both return jobs, and the position battles the previews catalogued, right tackle behind a rehabbing Jawaan Taylor, the linebacker spot beside Divine Deablo, and an edge room built as contingency against a possible James Pearce Jr. suspension, finally started being contested in pads. Ten practices open to fans starting Friday Jul 31, with a free Under the Lights session Aug 8 at Lanier High School.",
       category: "general",
-      sourceUrl: "https://www.espn.com/nfl/story/_/id/49448429/atlanta-falcons-training-camp-2026-intel-updates",
-      sourceLabel: "atlantafalcons.com / ESPN / Yahoo Sports",
+      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-training-camp/94684/day-1-news-injuries-qb-tua-tagovailoa-michael-penix-jr-cooper-rush-hold-in-bijan-robinson",
+      sourceLabel: "The Falcoholic / NFL.com / ESPN / Yahoo Sports",
     },
     {
-      title: "THE COMPETITION OPENS WITH A THUMB ALREADY ON THE SCALE: as the first practice arrives, Michael Penix Jr. is still not cleared for 11-on-11 work, which hands Tua Tagovailoa every first-team rep by default, and the insider read has quietly hardened from open battle to Tagovailoa as the de facto starter until Penix is medically whole",
-      detail: "ESPN, Pro Football Rumors ('Falcons Looking For QB1 Determination Weeks Before Season') and Yahoo Sports/Pro Football Network reporting carried into reporting week: the quarterback story enters camp exactly where the coaching staff said it would, which is to say not really started. Penix, rehabbing the late-November ACL reconstruction, has not been cleared for team-period work and has run individual and 7-on-7 reps only since OTAs, so the first full practice belongs to Tagovailoa with the ones. Multiple Atlanta observers now read the room the same way: with Penix limited, Tagovailoa is the presumptive starter by health alone, and one local insider went as far as to say there is not really a competition as of the camp opener. The outside voices agree from a different angle, with Dolphins tackle Patrick Paul predicting his former teammate is 'definitely going to win that spot.' The staff's own posture has not moved: quarterbacks coach Alex Van Pelt has said there is no true competition until both men can be evaluated on the same physical terms, and the front office is reportedly aiming to settle QB1 a few weeks before the opener rather than dragging it to the wire. Penix's public line is unchanged, that Week 1 readiness is 'the expectation' but the timeline is his doctor's call. The practical read for camp: Tagovailoa builds the offense's timing now, and the real evaluation only starts whenever Penix clears the 11-on-11 threshold.",
-      category: "coaching",
-      sourceUrl: "https://www.profootballrumors.com/2026/07/falcons-looking-for-qb1-determination-weeks-before-season",
-      sourceLabel: "ESPN / Pro Football Rumors / Yahoo Sports",
+      title: "PENIX PUTS A NUMBER ON IT, AND IT IS NOT WEEK 1: on Day 1 the quarterback said he was told 'another four weeks, possibly going into that next stage' before full clearance, an admission that pushes any real competition with Tua Tagovailoa toward late August and hands the presumptive starter's job to Tua by health alone",
+      detail: "AJC, NBC Sports Pro Football Talk, NFL.com and the team site's own camp report (all Jul 29): Penix met the media Wednesday and, for the first time, attached a timeline to the rehab of his third career ACL surgery. 'I was told another four weeks, possibly going into that next stage,' he said, 'but at the same time, it could be earlier. It just depends on how my body is doing throughout this whole camp process.' He was blunt that health, not the depth chart, is driving his caution: 'I can't afford to have someone trip and fall on me right now.' Four weeks from the opener lands the real evaluation in late August, well past the point Atlanta hoped to settle QB1, and it means Tua Tagovailoa is the de facto starter whenever his back clears, having banked every first-team rep since OTAs. The wrinkle is that on Day 1 even Tua could not take those reps, which is why the front office moved so fast to add a veteran arm. The staff's posture is unchanged, no true competition until both men can be judged on the same physical terms, but the practical read hardened Wednesday: this is Tua's job to run until Penix is whole.",
+      category: "injuries",
+      sourceUrl: "https://www.ajc.com/sports/2026/07/falcons-qb-michael-penix-jr-could-still-be-4-weeks-from-full-return/",
+      sourceLabel: "AJC / NBC Sports PFT / NFL.com / atlantafalcons.com",
+    },
+    {
+      title: "THE BEST BACK IN FOOTBALL SAT OUT DAY 1 FOR MONEY: Bijan Robinson is holding in, present at camp but not practicing while his agents chase the extension expected to reset the running back market, and Ian Rapoport reports the two sides have done enough work that a deal is expected before the season",
+      detail: "Pro Football Rumors, CBS Sports, Bleacher Report and The Falcoholic (Jul 29): Robinson reported to camp and then watched the first practice from the sideline, out of cleats and helmet, in a hold-in aimed at a new contract rather than a holdout with fines attached. The leverage math is settled, Atlanta exercised his fifth-year option in April, so he is under control through 2027 and neither side faces a deadline, which is why this has stretched into camp. What is not in dispute is the case: he led the NFL with 2,298 scrimmage yards last season, a franchise record, including 1,478 rushing and 820 receiving, and is coming off his second Pro Bowl. Rapoport reports Robinson is the likelier of the offseason's marquee backs to break the market first, with the sides having 'done a lot of work' and needing only to hammer out final terms, and he is expected to become the league's highest-paid running back whenever he signs, sometime between now and Week 1. He holds in alongside Detroit's Jahmyr Gibbs, in the same window, and whichever back signs first sets the number the other negotiates against. It would be the third core Cunningham-era extension after Drake London in June and Kyle Pitts at the end of that month.",
+      category: "contracts",
+      sourceUrl: "https://www.profootballrumors.com/2026/07/bijan-robinson-jahmyr-gibbs-holding-in",
+      sourceLabel: "Pro Football Rumors / CBS Sports / Bleacher Report / The Falcoholic",
+    },
+    {
+      title: "ATLANTA SIGNED A HUDDLE AT SUNRISE: with Tua's back tight and Penix not cleared, the Falcons released Trevor Siemian with a non-football injury and signed nine-year veteran Cooper Rush on Wednesday morning, and by the afternoon he was taking first-team reps in a building he had walked into hours earlier",
+      detail: "Team site, NBC Sports, Pro Football Rumors and The Falcoholic (Jul 29): the quarterback shuffle was fast and functional. Siemian, brought in as a veteran mentor, was released with a non-football injury designation, and in his place Atlanta added Rush, the 32-year-old who went 9-5 as a spot starter across eight seasons in Dallas and spent 2025 backing up Lamar Jackson in Baltimore before a March release. The reason was immediate need, not long-term intent: with both top passers unavailable for team periods on Day 1, the room had exactly one healthy veteran arm, and Rush 'met him in the huddle,' as the team site put it, flying in from Dallas overnight to sign and practice the same day. Stefanski's read on the whole episode doubled as a shrug at camp's unpredictability: 'It's the NFL, brother. This is the NFL and you cannot predict what's coming. You don't have a crystal ball.' Rush is depth insurance while Tua's back settles and Penix works back, not a threat to either job, but on July 29 he was the most available quarterback the Falcons had.",
+      category: "free-agency",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-sign-qb-cooper-rush-training-camp",
+      sourceLabel: "atlantafalcons.com / NBC Sports / Pro Football Rumors / The Falcoholic",
     },
     {
       title: "THE PROBLEM NOBODY IS TALKING ABOUT SITS ON THE RIGHT EDGE: Atlanta starts camp with no settled right tackle after Kaleb McGary retired without warning in April, and because both quarterbacks on this roster are left-handed, the job Atlanta cannot fill is the one protecting whichever blind side ends up mattering",
@@ -2261,13 +2287,6 @@ export const NEWS_DIGEST = {
       detail: "Atlantafalcons.com inside-linebackers camp preview (Jul 10 installment) alongside ESPN's five-questions piece and The Falcoholic's linebacker breakdown: the cleanest read yet on the room Atlanta had to rebuild from scratch. Elliss did four jobs at once, wore the green dot and left for the rival Saints, and Jeff Ulbrich has already conceded on the record that no single player replaces that. The green dot itself is resolved: Deablo carries the helmet radio and becomes the primary defensive play-caller in 2026, a meaningful promotion for a player Atlanta signed as a role piece. The open job is the spot beside him. Christian Harris, signed away from Houston, is the favorite on the strength of OTA and minicamp reps, and the resume is a bet on unfulfilled potential rather than production: a 2022 third-round pick with 46 games and 27 starts across four seasons, with calf and ankle injuries the reason the ceiling never quite arrived. Everyone chasing him carries a caveat. Channing Tindall has 24 career starts between Miami and Arizona but no clear role. Troy Andersen has not played since 2024 and has yet to fully practice because of the knee. JD Bertrand is depth. Fourth-round rookie Kendal Daniels missed the spring hurt. Sixth-rounder Harold Perkins Jr., undersized and very fast, has been running with the second team and is the name the team site keeps circling back to. The wildcard is Jalon Walker, who Ulbrich wanted to master the edge first but who could take inside snaps in a defense that is explicitly planning to rotate. The honest summary from the preview is that it will be by committee, and the committee could look different down to down.",
       category: "coaching",
       sourceUrl: "https://www.atlantafalcons.com/news/falcons-2026-training-camp-preview-inside-linebackers",
-      sourceLabel: "atlantafalcons.com / ESPN / The Falcoholic",
-    },
-    {
-      title: "THE FAN CALENDAR STARTS FRIDAY: with the first full-team practice today, the schedule of ten open practices opens with a season-ticket session Friday Jul 31 and runs to a free Saturday night Under the Lights practice at a Sugar Hill high school, then Colts joint practices ahead of the preseason opener",
-      detail: "Calendar checkpoint (Jul 29), off the team-site camp announcement and the league reporting-date roundup carried by ESPN, Yahoo Sports and The Falcoholic: the dates are league-official and the runway is spent. Rookies reported Friday Jul 24, veterans reported Tuesday Jul 28, and the first full-team practice is today, Wednesday Jul 29, the first moment any of the summer's open questions can be evaluated in a team setting. Ten practices are open to fans across a three-week stretch, beginning with a season-ticket-member session Friday Jul 31. The one to circle is the Under the Lights practice Saturday Aug 8 at Lanier High School in Sugar Hill, a free 7 p.m. session in a roughly 4,700-seat stadium that requires claiming a ticket in advance. The preseason opens at home against Denver on Friday Aug 14, and the trip to Indianapolis on Saturday Aug 22 is preceded by a pair of joint practices with the Colts, which historically produce more usable evaluation than the exhibition games themselves. Three threads carry into camp unresolved: Michael Penix Jr. still has not been cleared for 11-on-11 work as he rehabs the late-November ACL surgery, calling camp readiness 'the expectation' while deferring to his doctor, the league office has still issued no ruling on James Pearce Jr., and the right tackle job remains genuinely open.",
-      category: "general",
-      sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-training-camp-schedule-announced",
       sourceLabel: "atlantafalcons.com / ESPN / The Falcoholic",
     },
     {
@@ -2326,13 +2345,6 @@ export const NEWS_DIGEST = {
       sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-depth-chart/94300/falcons-training-camp-2026-5-roster-battles-to-watch-on-offense-chris-blair-dylan-drummond",
       sourceLabel: "The Falcoholic / Yahoo Sports",
     },
-    {
-      title: "THE BIJAN DEAL IS IN ACTIVE NEGOTIATION, AND ESPN CONFIRMS IT: Dan Graziano puts the Falcons and Robinson formally at the table as camp opens, which sets up the familiar summer question of whether the league's consensus best back signs before pads come on or lets the staring contest with Detroit run into the season",
-      detail: "ESPN (Dan Graziano) via Yahoo Sports, ClutchPoints and Pro Football Rumors (reporting through Jul 15): the extension that Tom Pelissero called imminent in late June is confirmed as an active negotiation rather than a projection, with local reporting adding that a deal is expected to get done soon. The leverage picture has not moved. Atlanta exercised the fifth-year option in April, so Robinson is under control through 2027 and neither side faces a deadline, which is precisely why this has stretched across the entire dead period. What has moved is the market case. Since the last update Robinson was named the consensus No. 1 running back in ESPN's poll of coaches, scouts and executives, jumping three spots from No. 4 a year ago with his lowest individual vote landing at second, and Warren Sharp graded the Atlanta backfield the best unit in football. The Athletic's Austin Mock model projects roughly $21.9M in average annual value with a position-record $52.7M guaranteed, which would clear Saquon Barkley's league-leading $20.6M. The complication is Detroit: Jahmyr Gibbs is in the same window with a projection near $19.9M, and whichever back signs first sets the number the other negotiates against. Robinson's own public posture has not changed since the London signing, a smiling 'We'll see, man.' He would be the third core extension of the Cunningham era after London in June and Pitts at the end of the month.",
-      category: "contracts",
-      sourceUrl: "https://sports.yahoo.com/articles/falcons-rumors-bijan-robinson-contract-173641012.html",
-      sourceLabel: "ESPN / Yahoo Sports / Pro Football Rumors",
-    },
   ],
 };
 
@@ -2343,9 +2355,30 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-07-29T12:30:00Z",
-  windowLabel: "Training Camp · First Full-Team Practice Today (Jul 29) → First Open Practice Jul 31 → Under the Lights Aug 8",
+  generatedAt: "2026-07-30T12:00:00Z",
+  windowLabel: "Training Camp · Day 1 in the Books (Jul 29) → First Open Practice Jul 31 → Under the Lights Aug 8",
   sessions: [
+    {
+      id: "penix-2026-07-29",
+      speaker: "Michael Penix Jr.",
+      role: "Quarterback",
+      date: "2026-07-29",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Training Camp Day 1 · Player Availability",
+      sourceUrl: "https://www.ajc.com/sports/2026/07/falcons-qb-michael-penix-jr-could-still-be-4-weeks-from-full-return/",
+      transcriptUrl: "https://www.atlantafalcons.com/news/falcons-training-camp-report-michael-penix-jr-limited-practice",
+      verified: true,
+      summary: "Meeting the media on the first day of camp, Penix put a number on his ACL rehab for the first time and it landed past the opener. He said he was told he is roughly four weeks from the next stage of clearance, stayed limited to individual and 7-on-7 work, and made clear he is prioritizing health over urgency as he works back from the third ACL surgery of his career. The admission effectively hands the first-team reps to Tua Tagovailoa, who himself sat out Day 1 with back tightness.",
+      pullQuote: "I was told another four weeks, possibly going into that next stage. But at the same time, it could be earlier. It just depends on how my body is doing throughout this whole camp process.",
+      bullets: [
+        "On the timeline: told he is about four weeks from the next stage of clearance, which pushes full participation toward late August rather than the season opener",
+        "On protecting the knee: 'I can't afford to have someone trip and fall on me right now,' explaining why he stays out of 11-on-11 for now",
+        "Remained limited to individual and 7-on-7 work on Day 1, the same plan he has run since OTAs, with no team-period reps yet",
+        "Framed the caution as a health decision he controls with the medical staff, not a setback in the recovery itself",
+        "With Tua also held out Day 1 (back), Penix's limited status left the first-team huddle to Jack Strand and newly signed Cooper Rush",
+      ],
+      topics: ["penix-acl", "qb-competition", "training-camp", "injuries"],
+    },
     {
       id: "folk-2026-07-28",
       speaker: "Nick Folk",
@@ -2450,27 +2483,6 @@ export const INTERVIEWS = {
         "On when a starter reveals himself: 'At some point, you've been coaching long enough that you can see a guy take a lead in the competition. ... It will come down to who's playing the best ball when it's time to go'",
       ],
       topics: ["qb-competition", "penix-acl", "footwork", "scheme-install"],
-    },
-    {
-      id: "drake-london-2026-06-09",
-      speaker: "Drake London",
-      role: "Wide Receiver",
-      date: "2026-06-09",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "Contract Extension Signing · Press Conference",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-sign-drake-london-contract-extension",
-      transcriptUrl: "https://www.atlantafalcons.com/video/drake-london-speaks-to-the-media-on-atlanta-falcons-contract-extension-press-conference",
-      verified: true,
-      summary: "One week after the agreement was reported, London formally signed his four-year, $141M extension and met the media. The session was striking for its lack of victory lap: London framed the deal as a debt to repay, said the honor he covets most is a captain's C, and measured himself against the franchise wall, where he sits 10th in receiving yards chasing Julio Jones. GM Ian Cunningham's accompanying statement cast the deal as proof of a draft-develop-retain philosophy.",
-      pullQuote: "I know it's a lot of money, and I've got to prove it still. That's what my mindset is right now.",
-      bullets: [
-        "On what comes next: 'Raising my standard in every single category there is, becoming a player who's more consistent, and just trying to lead the team in any way possible. Leveling up in all ways'",
-        "On staying through three regimes: 'I couldn't be happier to be here in Atlanta and staying here, even though its been different coaches, different teammates, different regimes ... I am glad to still be representing the Falcons'",
-        "On legacy: 'One of my reasons is to be legendary, to be remembered ... my name might be up on a wall somewhere' — currently 10th in franchise receiving yards, and on Julio: 'he's tough to catch'",
-        "Cunningham's statement: 'Drake London represents exactly what we're building here ... This aligns with our philosophy of drafting, developing, and retaining our own'",
-        "Deal mechanics: 4 years, $141M ($35.25M APY, $100M guaranteed, up to $150M with incentives), through 2030; 2026 still on the $16.82M fifth-year option",
-      ],
-      topics: ["drake-london-extension", "contracts", "leadership"],
     },
   ],
 };
