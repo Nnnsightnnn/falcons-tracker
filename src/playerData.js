@@ -2123,18 +2123,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-07-30T12:00:00Z",
+  generatedAt: "2026-07-31T12:00:00Z",
   cover: {
-    kicker: "TRAINING CAMP · DAY 1 IN THE BOOKS · The First Practice of the Stefanski Era Opened With Both Quarterbacks in Street Clothes, a Journeyman Signed at Sunrise Running the Huddle, and the Best Running Back in Football Watching From the Sideline: Tua Tagovailoa's Back Tightened, Michael Penix Jr. Is Still Four Weeks From Clearance, and Bijan Robinson Is Holding In for the Deal That Will Reset His Position",
-    headLine1: "Camp opened and the two most important men stood still.",
-    headEm: "Both quarterbacks watched, and a back nobody can match sat out for money.",
-    headLine3: "Day 1 answered nothing and reframed everything.",
+    kicker: "TRAINING CAMP · WEEK 1 · Gates Open Today: Three Practices Into the Stefanski Era, Tua Tagovailoa Is Back on the Grass but Not in Team Drills, Michael Penix Jr. Is Dropping 45-Yard Touchdowns in 7-on-7 While Still Four Weeks From Clearance, and Bijan Robinson Has Held In for a Second Straight Day, Present in a Jersey With No Helmet and No Cleats, Waiting on the Deal That Resets His Position",
+    headLine1: "The gates open today, and the quarterback grass is still half-empty.",
+    headEm: "Tua is back but limited, Penix is throwing dimes he cannot yet chase, and the best back in football watches in street clothes.",
+    headLine3: "Three practices in, camp is answering the edges and stalling on the center.",
     deck:
-      "The first full-team practice of Kevin Stefanski's first Atlanta camp ran Wednesday July 29, and the story of it was who did not take the field. Tua Tagovailoa's back tightened overnight and kept him out, Michael Penix Jr. remains limited to individual and 7-on-7 work as he rehabs the late-November ACL surgery, and so the huddle belonged to undrafted rookie Jack Strand and to Cooper Rush, the nine-year veteran Atlanta signed that same morning after releasing Trevor Siemian with a non-football injury. Stefanski waved off the alarm, calling Tua's issue short-term and promising 'he'll be out there sooner than later,' but Penix's own timeline is the one that lingers: he said he was told 'another four weeks, possibly going into that next stage,' which pushes any real quarterback competition toward late August. The other empty spot on the field was the loudest. Bijan Robinson, coming off an NFL-leading 2,298 scrimmage yards, is holding in, present in the building but not practicing while his agents chase the extension expected to make him the highest-paid running back in football. Around the blanks sit the answered rooms, an A+ backfield, an A at safety, an A at kicker, but Day 1 confirmed the season still hangs on the two jobs nobody could evaluate: the quarterback and the man behind him.",
+      "Camp is three practices old and opens to fans for the first time today, Friday July 31, the first of ten public sessions before the free Under the Lights night at Lanier High School on Aug 8. What the first crowd sees is a quarterback room still working around its two most important men. Tua Tagovailoa, held out of the Wednesday opener with back tightness Kevin Stefanski called a short-term flare-up, returned Thursday but only lightly, throwing a handful of passes in individual drills and taking nothing in team periods, with the coach still projecting a full return next week. Michael Penix Jr. remains limited to individual and 7-on-7 work as he rehabs the late-November ACL surgery, and on Day 2 he reminded everyone why the wait grates, dropping a 45-yard touchdown on rookie Zachariah Branch over A.J. Terrell and Jessie Bates III. But Penix has attached a four-week number to his own clearance, which pushes any real competition into late August, and with both passers out of 11-on-11 the Falcons were so thin at the position Thursday that 40-year-old team president Matt Ryan stepped in to throw to receivers, with undrafted rookie Jack Strand and newly signed Cooper Rush handling the rest. The loudest empty spot is still Bijan Robinson's. The NFL's leading scrimmage man last season held in for a second straight practice, present in a jersey with no helmet and no cleats, waiting on the extension expected to make him the highest-paid running back in football, a deal reported to be close but not yet done. Around the blanks the answered rooms keep flashing, Branch in line for both return jobs, Jalon Walker rotating across the front, but three days in the season still hangs on the two jobs no one can grade.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
-    stampLabel: "CAMP DAY 1 · QB ROOM SHORTHANDED",
+    stampLabel: "CAMP WEEK 1 · GATES OPEN TODAY",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2234,6 +2234,17 @@ export const NEWS_DIGEST = {
     // cycle: lead reframed from first-practice-today to Day-1-recap, cover/topics rebuilt around the
     // shorthanded QB room, the Rush signing, and the Bijan hold-in; timestamps bumped. The clean queue
     // moment remains a padded-practice Penix/Bijan/Rush rep, for the first run that can reach the Vault.
+    // STATUS (2026-07-31 scheduled run): cover SKIPPED again, identical hard constraint re-verified:
+    // ~/Vault/Notes/image-requests.md and the limn-editor-enhance skill are NOT mounted in this sandbox
+    // (only the tracker repos, outputs and uploads are), so the downstream Antigravity queue cannot be
+    // appended. Last plate actually on disk remains 2026-07-17-dotson-wr2.jpg; the qb-room-camp-eve
+    // pointer (dated 2026-07-20, eleven days old) was never generated and still resolves to the penix-jr
+    // headshot fallback, which stays aligned with today's Week-1 QB lead (Tua back-limited, Penix at
+    // 7-on-7, Bijan holding in). Repointing would only spawn another dangling request, so the pointer is
+    // left as is. Recency shift this cycle: lead moved from Day-1 recap to Day-2 plus gates-open-today,
+    // Tua's light Thursday return, Penix's 45-yard TD to Branch, and Matt Ryan pressed into throwing reps
+    // all folded in; timestamps bumped. Clean queue moment remains a padded-practice Penix/Bijan/Branch
+    // rep, for the first run that can reach the Vault.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-07-20-qb-room-camp-eve.jpg",
   },
   sources: [
@@ -2248,11 +2259,11 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "DAY 1 OPENED WITH BOTH QUARTERBACKS IN STREET CLOTHES: Atlanta held the first full-team practice of the Stefanski era Wednesday, and the two men the season hinges on watched it, Tua Tagovailoa held out with back tightness and Michael Penix Jr. still limited to individual and 7-on-7 work, which left the first-team huddle to undrafted rookie Jack Strand and to Cooper Rush, signed only hours earlier",
-      detail: "Day-1 reporting from The Falcoholic, NFL.com, ESPN's live camp tracker and Yahoo Sports (all filed Wednesday Jul 29): the checkpoint the whole summer pointed at arrived, and the quarterback room could not answer it. Tua's back tightened overnight and kept him out of the opener, an issue Stefanski repeatedly framed as short-term, while Penix ran only individual and 7-on-7 reps as he rehabs the late-November ACL surgery. With neither top passer available for team periods, the first-team snaps fell to undrafted rookie Jack Strand and to Cooper Rush, whom Atlanta signed that same morning after releasing Trevor Siemian. Around the quiet QB room, the rest of the field went live: Brandon Dorlus set the tone on arrival, telling reporters to expect competition and 'maybe some fights,' third-round wideout Zachariah Branch drew early eyes in line for both return jobs, and the position battles the previews catalogued, right tackle behind a rehabbing Jawaan Taylor, the linebacker spot beside Divine Deablo, and an edge room built as contingency against a possible James Pearce Jr. suspension, finally started being contested in pads. Ten practices open to fans starting Friday Jul 31, with a free Under the Lights session Aug 8 at Lanier High School.",
+      title: "GATES OPEN TODAY WITH THE QB GRASS HALF-EMPTY: three practices into the Stefanski era Atlanta opens to fans Friday, and the first crowd sees Tua Tagovailoa back but limited to individual throws, Michael Penix Jr. still capped at 7-on-7 (where he just dropped a 45-yard touchdown on Zachariah Branch), and undrafted rookie Jack Strand plus new signing Cooper Rush running the team periods, with 40-year-old team president Matt Ryan pressed into throwing reps on Thursday",
+      detail: "Day-2 reporting from the team-site camp report, NBC Sports Pro Football Talk, Yahoo Sports and The Falcoholic (all Jul 30), plus the camp schedule: after sitting out the Wednesday opener with a back flare-up Stefanski called short-term and 'not serious,' Tua returned Thursday but only lightly, throwing a handful of passes in individual drills and taking nothing in 11-on-11, with the staff still eyeing a full return next week. Penix stayed on the individual and 7-on-7 plan he has run since OTAs and made it look easy, hitting Zachariah Branch for a 45-yard touchdown over A.J. Terrell and Jessie Bates III, but he has attached a four-week timeline to his own clearance and cannot yet be chased in team drills. With both passers out of 11-on-11 the position was so thin Thursday that team president Matt Ryan, the 40-year-old former MVP, stepped in to throw to receivers, leaving undrafted rookie Jack Strand and Wednesday-morning signing Cooper Rush to run the huddle. Today, Friday Jul 31, is the first of ten fan-open practices, building to the free Under the Lights session Aug 8 at Lanier High School.",
       category: "general",
-      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-training-camp/94684/day-1-news-injuries-qb-tua-tagovailoa-michael-penix-jr-cooper-rush-hold-in-bijan-robinson",
-      sourceLabel: "The Falcoholic / NFL.com / ESPN / Yahoo Sports",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-jack-strand-tua-tagovailoa",
+      sourceLabel: "atlantafalcons.com / NBC Sports PFT / Yahoo Sports / The Falcoholic",
     },
     {
       title: "PENIX PUTS A NUMBER ON IT, AND IT IS NOT WEEK 1: on Day 1 the quarterback said he was told 'another four weeks, possibly going into that next stage' before full clearance, an admission that pushes any real competition with Tua Tagovailoa toward late August and hands the presumptive starter's job to Tua by health alone",
@@ -2263,7 +2274,7 @@ export const NEWS_DIGEST = {
     },
     {
       title: "THE BEST BACK IN FOOTBALL SAT OUT DAY 1 FOR MONEY: Bijan Robinson is holding in, present at camp but not practicing while his agents chase the extension expected to reset the running back market, and Ian Rapoport reports the two sides have done enough work that a deal is expected before the season",
-      detail: "Pro Football Rumors, CBS Sports, Bleacher Report and The Falcoholic (Jul 29): Robinson reported to camp and then watched the first practice from the sideline, out of cleats and helmet, in a hold-in aimed at a new contract rather than a holdout with fines attached. The leverage math is settled, Atlanta exercised his fifth-year option in April, so he is under control through 2027 and neither side faces a deadline, which is why this has stretched into camp. What is not in dispute is the case: he led the NFL with 2,298 scrimmage yards last season, a franchise record, including 1,478 rushing and 820 receiving, and is coming off his second Pro Bowl. Rapoport reports Robinson is the likelier of the offseason's marquee backs to break the market first, with the sides having 'done a lot of work' and needing only to hammer out final terms, and he is expected to become the league's highest-paid running back whenever he signs, sometime between now and Week 1. He holds in alongside Detroit's Jahmyr Gibbs, in the same window, and whichever back signs first sets the number the other negotiates against. It would be the third core Cunningham-era extension after Drake London in June and Kyle Pitts at the end of that month.",
+      detail: "Pro Football Rumors, CBS Sports, Bleacher Report, ESPN's hold-in tracker and The Falcoholic (Jul 29-30): Robinson reported to camp and has watched the first practices from the sideline, present in a jersey but out of cleats and helmet, in a hold-in aimed at a new contract rather than a holdout with fines attached. The leverage math is settled, Atlanta exercised his fifth-year option in April, so he is under control through 2027 and neither side faces a deadline, which is why this has stretched into camp. What is not in dispute is the case: he led the NFL with 2,298 scrimmage yards last season, a franchise record, including 1,478 rushing and 820 receiving, and is coming off his second Pro Bowl. Rapoport reports Robinson is the likelier of the offseason's marquee backs to break the market first, with the sides having 'done a lot of work' and needing only to hammer out final terms, and he is expected to become the league's highest-paid running back whenever he signs, sometime between now and Week 1. He holds in alongside Detroit's Jahmyr Gibbs, in the same window, and whichever back signs first sets the number the other negotiates against. It would be the third core Cunningham-era extension after Drake London in June and Kyle Pitts at the end of that month.",
       category: "contracts",
       sourceUrl: "https://www.profootballrumors.com/2026/07/bijan-robinson-jahmyr-gibbs-holding-in",
       sourceLabel: "Pro Football Rumors / CBS Sports / Bleacher Report / The Falcoholic",
@@ -2355,8 +2366,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-07-30T12:00:00Z",
-  windowLabel: "Training Camp · Day 1 in the Books (Jul 29) → First Open Practice Jul 31 → Under the Lights Aug 8",
+  generatedAt: "2026-07-31T12:00:00Z",
+  windowLabel: "Training Camp · Week 1 · Fan Practices Open Today (Jul 31) → Under the Lights Aug 8",
   sessions: [
     {
       id: "penix-2026-07-29",
