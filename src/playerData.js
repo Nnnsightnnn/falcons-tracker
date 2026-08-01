@@ -2123,18 +2123,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-07-31T12:00:00Z",
+  generatedAt: "2026-08-01T12:00:00Z",
   cover: {
-    kicker: "TRAINING CAMP · WEEK 1 · Gates Open Today: Three Practices Into the Stefanski Era, Tua Tagovailoa Is Back on the Grass but Not in Team Drills, Michael Penix Jr. Is Dropping 45-Yard Touchdowns in 7-on-7 While Still Four Weeks From Clearance, and Bijan Robinson Has Held In for a Second Straight Day, Present in a Jersey With No Helmet and No Cleats, Waiting on the Deal That Resets His Position",
-    headLine1: "The gates open today, and the quarterback grass is still half-empty.",
-    headEm: "Tua is back but limited, Penix is throwing dimes he cannot yet chase, and the best back in football watches in street clothes.",
-    headLine3: "Three practices in, camp is answering the edges and stalling on the center.",
+    kicker: "TRAINING CAMP · WEEK 1 · Back Together Saturday: The First Practice Open to Every Fan Lands Today, With Kevin Stefanski Already on the Record That His Starters Will Play in the Preseason, Tua Tagovailoa Working Back From a Tight Back, Michael Penix Jr. Still Capped at 7-on-7 Four Weeks From Clearance, and Bijan Robinson Holding In for a New Deal He and the Front Office Both Expect to Get Done",
+    headLine1: "Back Together Saturday opens the gates to everyone, and the quarterback grass is still half-empty.",
+    headEm: "Stefanski says his starters will play preseason snaps, Tua is easing back, Penix is throwing dimes he cannot yet chase, and the best back in football watches in street clothes.",
+    headLine3: "A week in, camp is answering the edges and stalling on the center.",
     deck:
-      "Camp is three practices old and opens to fans for the first time today, Friday July 31, the first of ten public sessions before the free Under the Lights night at Lanier High School on Aug 8. What the first crowd sees is a quarterback room still working around its two most important men. Tua Tagovailoa, held out of the Wednesday opener with back tightness Kevin Stefanski called a short-term flare-up, returned Thursday but only lightly, throwing a handful of passes in individual drills and taking nothing in team periods, with the coach still projecting a full return next week. Michael Penix Jr. remains limited to individual and 7-on-7 work as he rehabs the late-November ACL surgery, and on Day 2 he reminded everyone why the wait grates, dropping a 45-yard touchdown on rookie Zachariah Branch over A.J. Terrell and Jessie Bates III. But Penix has attached a four-week number to his own clearance, which pushes any real competition into late August, and with both passers out of 11-on-11 the Falcons were so thin at the position Thursday that 40-year-old team president Matt Ryan stepped in to throw to receivers, with undrafted rookie Jack Strand and newly signed Cooper Rush handling the rest. The loudest empty spot is still Bijan Robinson's. The NFL's leading scrimmage man last season held in for a second straight practice, present in a jersey with no helmet and no cleats, waiting on the extension expected to make him the highest-paid running back in football, a deal reported to be close but not yet done. Around the blanks the answered rooms keep flashing, Branch in line for both return jobs, Jalon Walker rotating across the front, but three days in the season still hangs on the two jobs no one can grade.",
+      "Camp opens to every fan for the first time today, Saturday August 1, on Back Together Saturday, the first of ten public sessions before the free Under the Lights night on Aug 8. The headline the first full crowd brings with them arrived Friday, when Kevin Stefanski told reporters his starters will play in the preseason, with runway planned in the opener against Denver and the finale against Miami and the middle game against Indianapolis treated differently because of the joint practices that week. His reasoning was plain: for players to get ready to play football, they have to play football. What the crowd will actually watch is a quarterback room still working around its two most important men. Tua Tagovailoa, held out of the Wednesday opener with back tightness Stefanski called a short-term flare-up, returned Thursday but only lightly, throwing a handful of passes in individual drills and taking nothing in team periods, with the coach still projecting a full return this week. Michael Penix Jr. remains limited to individual and 7-on-7 work as he rehabs the late-November ACL surgery, and midweek he reminded everyone why the wait grates, dropping a 45-yard touchdown on rookie Zachariah Branch over A.J. Terrell and Jessie Bates III. But Penix has attached a four-week number to his own clearance, which pushes any real competition into late August, and with both passers limited the Falcons signed veteran Cooper Rush on short notice to steady the huddle. The loudest empty spot is still Bijan Robinson's. The NFL's leading scrimmage man last season is holding in, present at camp but out of cleats and helmet, waiting on the extension expected to make him the highest-paid running back in football, a deal both sides say they expect to finish before the season. Around the blanks the answered rooms keep flashing, Branch in line for both return jobs, Jalon Walker rotating across the front, but a week in the season still hangs on the two jobs no one can grade.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
-    stampLabel: "CAMP WEEK 1 · GATES OPEN TODAY",
+    stampLabel: "CAMP WEEK 1 · BACK TOGETHER SATURDAY",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2245,6 +2245,17 @@ export const NEWS_DIGEST = {
     // Tua's light Thursday return, Penix's 45-yard TD to Branch, and Matt Ryan pressed into throwing reps
     // all folded in; timestamps bumped. Clean queue moment remains a padded-practice Penix/Bijan/Branch
     // rep, for the first run that can reach the Vault.
+    // STATUS (2026-08-01 scheduled run): cover SKIPPED again, identical hard constraint re-verified:
+    // ~/Vault/Notes/image-requests.md and the limn-editor-enhance skill are NOT mounted in this sandbox
+    // (only the tracker repos, outputs and uploads are), so the downstream Antigravity queue cannot be
+    // appended. Last plate actually on disk remains 2026-07-17-dotson-wr2.jpg; the qb-room-camp-eve
+    // pointer (dated 2026-07-20, twelve days old) was never generated and still resolves to the penix-jr
+    // headshot fallback, which stays aligned with today's Week-1 QB lead (Tua easing back, Penix at
+    // 7-on-7, Bijan holding in). Repointing would only spawn another dangling request, so the pointer is
+    // left as is. Recency shift this cycle: lead moved from gates-open (Jul 31, season-ticket-holders)
+    // to Back Together Saturday (Aug 1, first all-fans practice), folding in Stefanski's Jul 31 word that
+    // starters will play the preseason opener (Denver) and finale (Miami); timestamps bumped. Clean queue
+    // moment remains a padded-practice Penix/Bijan/Branch rep, for the first run that can reach the Vault.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-07-20-qb-room-camp-eve.jpg",
   },
   sources: [
@@ -2259,11 +2270,11 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "GATES OPEN TODAY WITH THE QB GRASS HALF-EMPTY: three practices into the Stefanski era Atlanta opens to fans Friday, and the first crowd sees Tua Tagovailoa back but limited to individual throws, Michael Penix Jr. still capped at 7-on-7 (where he just dropped a 45-yard touchdown on Zachariah Branch), and undrafted rookie Jack Strand plus new signing Cooper Rush running the team periods, with 40-year-old team president Matt Ryan pressed into throwing reps on Thursday",
-      detail: "Day-2 reporting from the team-site camp report, NBC Sports Pro Football Talk, Yahoo Sports and The Falcoholic (all Jul 30), plus the camp schedule: after sitting out the Wednesday opener with a back flare-up Stefanski called short-term and 'not serious,' Tua returned Thursday but only lightly, throwing a handful of passes in individual drills and taking nothing in 11-on-11, with the staff still eyeing a full return next week. Penix stayed on the individual and 7-on-7 plan he has run since OTAs and made it look easy, hitting Zachariah Branch for a 45-yard touchdown over A.J. Terrell and Jessie Bates III, but he has attached a four-week timeline to his own clearance and cannot yet be chased in team drills. With both passers out of 11-on-11 the position was so thin Thursday that team president Matt Ryan, the 40-year-old former MVP, stepped in to throw to receivers, leaving undrafted rookie Jack Strand and Wednesday-morning signing Cooper Rush to run the huddle. Today, Friday Jul 31, is the first of ten fan-open practices, building to the free Under the Lights session Aug 8 at Lanier High School.",
+      title: "BACK TOGETHER SATURDAY, AND STEFANSKI SAYS THE STARTERS WILL PLAY: camp opens to every fan today for the first time, and the coach arrives already on the record that his starters will take preseason snaps, with runway planned in the Denver opener and the Miami finale, while the quarterback grass stays half-empty around Tua Tagovailoa's back and Michael Penix Jr.'s 7-on-7 cap",
+      detail: "Team site, SI Falcons and The Falcoholic (Jul 31 camp report) plus the camp schedule: today, Saturday Aug 1, is Back Together Saturday, the first practice open to all fans after Friday's season-ticket-holder session, with Stefanski and GM Ian Cunningham slated to address the crowd and Falcons legends, Freddie Falcon and the cheerleaders on hand. The news the day carries in came Friday, when Stefanski laid out his preseason plan: starters will play, with time planned in the opener against Denver and the finale against Miami, while the middle game against Indianapolis is treated differently because of the joint practices scheduled that week. His logic was blunt, 'for guys to get ready to play football they have to play football.' On the grass the quarterback room is still working around its two most important men. Tua, held out of the Wednesday opener with a back flare-up Stefanski called short-term, returned Thursday but only lightly, throwing in individual drills and taking nothing in 11-on-11, with a full return eyed this week. Penix stayed on the individual and 7-on-7 plan, hitting Zachariah Branch for a 45-yard touchdown over A.J. Terrell and Jessie Bates III, but has attached a four-week timeline to his own clearance. The public run builds to the free Under the Lights session Aug 8.",
       category: "general",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-jack-strand-tua-tagovailoa",
-      sourceLabel: "atlantafalcons.com / NBC Sports PFT / Yahoo Sports / The Falcoholic",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-will-starters-play-in-the-preseason",
+      sourceLabel: "atlantafalcons.com / SI Falcons / The Falcoholic",
     },
     {
       title: "PENIX PUTS A NUMBER ON IT, AND IT IS NOT WEEK 1: on Day 1 the quarterback said he was told 'another four weeks, possibly going into that next stage' before full clearance, an admission that pushes any real competition with Tua Tagovailoa toward late August and hands the presumptive starter's job to Tua by health alone",
@@ -2366,9 +2377,30 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-07-31T12:00:00Z",
-  windowLabel: "Training Camp · Week 1 · Fan Practices Open Today (Jul 31) → Under the Lights Aug 8",
+  generatedAt: "2026-08-01T12:00:00Z",
+  windowLabel: "Training Camp · Week 1 · Back Together Saturday (Aug 1) → Under the Lights Aug 8",
   sessions: [
+    {
+      id: "stefanski-2026-07-31",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-07-31",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Training Camp · Post-Practice Media Availability",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-will-starters-play-in-the-preseason",
+      transcriptUrl: "https://www.si.com/nfl/falcons/onsi/will-atlanta-falcons-starters-play-in-preseason-under-kevin-stefanski",
+      verified: true,
+      summary: "Meeting the media after the third practice, Stefanski settled one of camp's open procedural questions: his starters will play in the preseason. He laid out a plan to give front-line players runway in the opener against Denver and the finale against Miami while treating the middle game against Indianapolis differently because of the joint practices scheduled that week. His reasoning was simple, players need game reps to be ready for games.",
+      pullQuote: "In general, I think for guys to get ready to play football they have to play football.",
+      bullets: [
+        "On the preseason plan: starters will see time in the opener against Denver and the finale against Miami, with the exact snap counts varying by player and coaching need",
+        "On the middle game: the Falcons will treat the Indianapolis game differently because of the joint practices scheduled with the Colts that week",
+        "On the philosophy behind it: framed live preseason reps as the only real way to get players game-ready, a contrast to coaches who sit starters all August",
+        "Spoke on the eve of Back Together Saturday, the first practice open to all fans on Aug 1",
+        "Kept the quarterback timeline unchanged: Tua Tagovailoa easing back from a tight back, Michael Penix Jr. still limited as he rehabs his ACL",
+      ],
+      topics: ["preseason", "training-camp", "qb-competition"],
+    },
     {
       id: "penix-2026-07-29",
       speaker: "Michael Penix Jr.",
@@ -2473,27 +2505,6 @@ export const INTERVIEWS = {
         "Kept the tone forward-looking, framing full clearance as an inevitability rather than a worry",
       ],
       topics: ["penix-acl", "qb-competition", "minicamp", "training-camp"],
-    },
-    {
-      id: "van-pelt-2026-06-11",
-      speaker: "Alex Van Pelt",
-      role: "Quarterbacks Coach",
-      date: "2026-06-11",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "Offseason Program · Position Coach Media Availability",
-      sourceUrl: "https://www.atlantafalcons.com/news/trust-your-feet-michael-penix-tua-tagovailoa-quarterback-competition",
-      transcriptUrl: "https://www.atlantafalcons.com/video/nate-ollie-john-timu-more-atlanta-falcons-coaches-speak-on-offseason-growth-press-conference",
-      verified: true,
-      summary: "The coach closest to the quarterback decision laid out both the constraint and the criteria. On the constraint, Van Pelt said flatly that no real competition can exist while Penix is physically limited, and that the staff has to discount what it sees accordingly. On the criteria, he pointed at the sign hanging in the quarterback meeting room reading 'Trust your feet,' and explained that footwork is tied route by route to the passing game, with a specific emphasis on getting both quarterbacks comfortable under center in a system that wants to run from there.",
-      pullQuote: "It's tough having a competition when both guys aren't competing at the same level (physically). ... Mike has done a great job of getting himself to where he is right now. Really impressed to see him take 7-on-7 reps, but really, there is no competition until we can actually evaluate them equally.",
-      bullets: [
-        "On discounting what he sees from Penix: 'We have to understand that Mike's knee is not 100% right now, and maybe at the top of his drop he may not be able to put that thing in the ground and throw the ball the way he might two more months from now'",
-        "On why footwork is the grading criteria: 'If your feet are right, you're going to make good decisions. When you get in trouble is when you don't trust your feet and you hang too long and you're off and then you throw bad balls or interceptions'",
-        "On the system's structure: 'There are certain route trees that we have, and then we tie certain footwork in with those exact routes ... We really have really four different drops from the gun that matches different routes with different depths,' plus three dropbacks from under center before play-action",
-        "On the under-center project, which matters because Next Gen Stats credited Penix with exactly one under-center dropback in 2025: 'That's another big thing that we have worked on this year, getting Mike and Tua back under center, because in this system, we love to run the ball from under center'",
-        "On when a starter reveals himself: 'At some point, you've been coaching long enough that you can see a guy take a lead in the competition. ... It will come down to who's playing the best ball when it's time to go'",
-      ],
-      topics: ["qb-competition", "penix-acl", "footwork", "scheme-install"],
     },
   ],
 };
