@@ -406,9 +406,9 @@ export const PLAYERS = [
     stats: {},
     form: 7.8,
     status: "active",
-    injuryNote: "LG · extension candidate",
+    injuryNote: "LG · signed 4yr/$96M extension Aug 1, 2026 (through 2030)",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4568510.png",
-    contract: { years: 4, total: 9800000, guaranteed: 5200000, apy: 2450000, throughYear: 2026, cap2026: 2630000 },
+    contract: { years: 4, total: 96000000, guaranteed: 60000000, apy: 24000000, throughYear: 2030, cap2026: 7000000 },
     career: [{ years: "2023–", team: "Atlanta Falcons", type: "NFL" }],
   },
   {
@@ -2123,18 +2123,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-01T12:00:00Z",
+  generatedAt: "2026-08-02T13:00:00Z",
   cover: {
-    kicker: "TRAINING CAMP · WEEK 1 · Back Together Saturday: The First Practice Open to Every Fan Lands Today, With Kevin Stefanski Already on the Record That His Starters Will Play in the Preseason, Tua Tagovailoa Working Back From a Tight Back, Michael Penix Jr. Still Capped at 7-on-7 Four Weeks From Clearance, and Bijan Robinson Holding In for a New Deal He and the Front Office Both Expect to Get Done",
-    headLine1: "Back Together Saturday opens the gates to everyone, and the quarterback grass is still half-empty.",
-    headEm: "Stefanski says his starters will play preseason snaps, Tua is easing back, Penix is throwing dimes he cannot yet chase, and the best back in football watches in street clothes.",
-    headLine3: "A week in, camp is answering the edges and stalling on the center.",
+    kicker: "TRAINING CAMP · WEEK 1 · Bergeron Gets Paid and the Bijan Clock Starts: Atlanta Signs Left Guard Matthew Bergeron to a 4-Year, $96M Extension, the Third Core Deal of the Cunningham Era, While the Best Back in Football Keeps Holding In, the Defense Runs the First Padded Week, and Both Quarterbacks Stay Boxed Into Position Drills",
+    headLine1: "Bergeron gets paid, and the running back everyone is waiting on watches from the sideline.",
+    headEm: "A 4-year, $96M extension for the left guard makes three core deals in two months, hardens the case that Bijan Robinson is next, and leaves the quarterback grass exactly as unsettled as it was on Day 1.",
+    headLine3: "A week in, the checkbook is moving faster than the depth chart.",
     deck:
-      "Camp opens to every fan for the first time today, Saturday August 1, on Back Together Saturday, the first of ten public sessions before the free Under the Lights night on Aug 8. The headline the first full crowd brings with them arrived Friday, when Kevin Stefanski told reporters his starters will play in the preseason, with runway planned in the opener against Denver and the finale against Miami and the middle game against Indianapolis treated differently because of the joint practices that week. His reasoning was plain: for players to get ready to play football, they have to play football. What the crowd will actually watch is a quarterback room still working around its two most important men. Tua Tagovailoa, held out of the Wednesday opener with back tightness Stefanski called a short-term flare-up, returned Thursday but only lightly, throwing a handful of passes in individual drills and taking nothing in team periods, with the coach still projecting a full return this week. Michael Penix Jr. remains limited to individual and 7-on-7 work as he rehabs the late-November ACL surgery, and midweek he reminded everyone why the wait grates, dropping a 45-yard touchdown on rookie Zachariah Branch over A.J. Terrell and Jessie Bates III. But Penix has attached a four-week number to his own clearance, which pushes any real competition into late August, and with both passers limited the Falcons signed veteran Cooper Rush on short notice to steady the huddle. The loudest empty spot is still Bijan Robinson's. The NFL's leading scrimmage man last season is holding in, present at camp but out of cleats and helmet, waiting on the extension expected to make him the highest-paid running back in football, a deal both sides say they expect to finish before the season. Around the blanks the answered rooms keep flashing, Branch in line for both return jobs, Jalon Walker rotating across the front, but a week in the season still hangs on the two jobs no one can grade.",
+      "The Falcons opened August by paying the quiet man. Left guard Matthew Bergeron, a 2023 second-round pick who has started all 49 of his career games, signed a four-year, $96M extension Saturday with $60M guaranteed, running through 2030. Ian Cunningham called him 'the type of player you build around' and 'a cornerstone of our offensive line,' and the deal reads as more than a line item: it is the third core extension in two months after Drake London in June and Kyle Pitts Sr. at the end of that month, and it sharpens the one question hanging over camp. Bijan Robinson, the NFL's leading scrimmage man last season, is still holding in, present at Flowery Branch but out of cleats and helmet while his agents chase the deal expected to make him the highest-paid running back in football. Both sides say it gets done before the season, and Bergeron's signing only tightens that logic. On the grass, the first padded week has belonged to the defense. Day 4 saw smothering coverage and multiple sacks, with Jalon Walker and Samson Ebukam holding the starting edge, Azeez Ojulari flashing a sack, and 6-foot-5 rookie linebacker Kendal Daniels turning heads in coverage on Austin Hooper. The quarterback room stayed exactly where it started: Tua Tagovailoa, easing back from a tight back, has thrown to receivers on the side but taken nothing in team periods, while Michael Penix Jr. remains capped at individual and 7-on-7 work, roughly four weeks from full clearance on his third ACL. Cooper Rush and undrafted rookie Jack Strand keep splitting the first-team huddle. A week in, Atlanta is answering with its checkbook and its defense while the two biggest offensive questions, QB1 and the Bijan number, both wait on August.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
-    photoId: "penix-jr",
-    stampLabel: "CAMP WEEK 1 · BACK TOGETHER SATURDAY",
+    photoId: "bijan",
+    stampLabel: "CAMP WEEK 1 · BERGERON EXTENDED",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2256,6 +2256,17 @@ export const NEWS_DIGEST = {
     // to Back Together Saturday (Aug 1, first all-fans practice), folding in Stefanski's Jul 31 word that
     // starters will play the preseason opener (Denver) and finale (Miami); timestamps bumped. Clean queue
     // moment remains a padded-practice Penix/Bijan/Branch rep, for the first run that can reach the Vault.
+    // STATUS (2026-08-02 scheduled run): cover queue SKIPPED again, same hard constraint re-verified this
+    // cycle: ~/Vault/Notes/image-requests.md and the limn-editor-enhance skill are NOT mounted in this
+    // sandbox (only the tracker repos, outputs and uploads are), so the downstream Antigravity queue cannot
+    // be appended. Last plate actually on disk remains 2026-07-17-dotson-wr2.jpg; the qb-room-camp-eve
+    // pointer (dated 2026-07-20, thirteen days old) was never generated. Lead rotated today to the Matthew
+    // Bergeron 4yr/$96M extension (Aug 1), which reframes the Bijan hold-in as the next domino, so photoId
+    // was moved from penix-jr to bijan to keep the headshot fallback aligned with the story the cover now
+    // leads on (the back everyone is waiting on). Pointer left as is rather than repointed to avoid spawning
+    // yet another dangling request no one can fulfill this cycle; the fallback resolves to the bijan headshot,
+    // which matches the new lead. Clean queue moment remains a padded-practice Bijan/Penix/Branch rep, for
+    // the first run that can reach the Vault.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-07-20-qb-room-camp-eve.jpg",
   },
   sources: [
@@ -2270,8 +2281,22 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
+      title: "BERGERON GETS PAID, AND IT IS THE THIRD CORE DEAL IN TWO MONTHS: Atlanta signed left guard Matthew Bergeron to a four-year, $96M extension Saturday with $60M guaranteed, locking up a 49-game starter through 2030 and stacking a third foundational contract on top of Drake London and Kyle Pitts Sr.",
+      detail: "ESPN, AJC, Pro Football Rumors and the team site (Aug 1): the Falcons extended Bergeron, their 2023 second-round pick, on a four-year deal worth $96M with $60M guaranteed and roughly a $24M average, running through 2030. He would have been a free agent after this season. Bergeron has started all 49 of his appearances across three years and has quietly become one of the league's better young guards. GM Ian Cunningham called him 'the type of player you build around' and 'a cornerstone of our offensive line and the culture we're building in Atlanta.' Bergeron's own reaction looked ahead to the fall: 'Let's get the Benz rocking. The city deserves to be back on that stage.' It is the third core Cunningham-era extension in two months after London in June and Pitts at the end of that month, and it hardens the read that Bijan Robinson is the next domino.",
+      category: "contracts",
+      sourceUrl: "https://www.espn.com/nfl/story/_/id/49505699/falcons-sign-matthew-bergeron-four-year-96m-extension",
+      sourceLabel: "ESPN / AJC / Pro Football Rumors / atlantafalcons.com",
+    },
+    {
+      title: "THE FIRST PADDED WEEK BELONGS TO THE DEFENSE: through four practices the front and secondary have set the tone, with smothering coverage, multiple sacks on Day 4, Jalon Walker and Samson Ebukam holding the starting edge, Azeez Ojulari flashing a sack, and 6-foot-5 rookie Kendal Daniels making plays in coverage",
+      detail: "SI Falcons and The Falcoholic (Day 3 and Day 4 camp reports, Jul 31 to Aug 1): with both quarterbacks limited, the defense has run the early camp. Day 4 was billed as a defensive rout, smothering coverage plus a multi-sack pass rush against a mix of 3-4 and 4-2-5 fronts. On the edge, the starting pair of Walker and Ebukam held, with Ojulari getting home for a sack in the rotation and James Pearce Jr. still working mostly with the depth groups as he ramps up. Inside, Christian Harris took the first reps next to green-dot linebacker Divine Deablo, with Harold Perkins Jr. and fourth-round rookie Kendal Daniels rotating through. Daniels, back from a scheduled rest day, drew notice for his coverage on Austin Hooper, his 6-foot-5 length a rare trait at the position. On a sold-out, unseasonably cool Aug 1, both Penix and Tua worked through position drills on the side.",
+      category: "general",
+      sourceUrl: "https://www.si.com/nfl/falcons/onsi/defense-dominates-bijan-out-big-winners-from-day-4-of-falcons-training-camp",
+      sourceLabel: "SI Falcons / The Falcoholic",
+    },
+    {
       title: "BACK TOGETHER SATURDAY, AND STEFANSKI SAYS THE STARTERS WILL PLAY: camp opens to every fan today for the first time, and the coach arrives already on the record that his starters will take preseason snaps, with runway planned in the Denver opener and the Miami finale, while the quarterback grass stays half-empty around Tua Tagovailoa's back and Michael Penix Jr.'s 7-on-7 cap",
-      detail: "Team site, SI Falcons and The Falcoholic (Jul 31 camp report) plus the camp schedule: today, Saturday Aug 1, is Back Together Saturday, the first practice open to all fans after Friday's season-ticket-holder session, with Stefanski and GM Ian Cunningham slated to address the crowd and Falcons legends, Freddie Falcon and the cheerleaders on hand. The news the day carries in came Friday, when Stefanski laid out his preseason plan: starters will play, with time planned in the opener against Denver and the finale against Miami, while the middle game against Indianapolis is treated differently because of the joint practices scheduled that week. His logic was blunt, 'for guys to get ready to play football they have to play football.' On the grass the quarterback room is still working around its two most important men. Tua, held out of the Wednesday opener with a back flare-up Stefanski called short-term, returned Thursday but only lightly, throwing in individual drills and taking nothing in 11-on-11, with a full return eyed this week. Penix stayed on the individual and 7-on-7 plan, hitting Zachariah Branch for a 45-yard touchdown over A.J. Terrell and Jessie Bates III, but has attached a four-week timeline to his own clearance. The public run builds to the free Under the Lights session Aug 8.",
+      detail: "Team site, SI Falcons and The Falcoholic (Jul 31 camp report) plus the camp schedule: Saturday Aug 1 was Back Together Saturday, the first practice open to all fans after Friday's season-ticket-holder session, with Stefanski and GM Ian Cunningham addressing the crowd and Falcons legends, Freddie Falcon and the cheerleaders on hand. The news the day carries in came Friday, when Stefanski laid out his preseason plan: starters will play, with time planned in the opener against Denver and the finale against Miami, while the middle game against Indianapolis is treated differently because of the joint practices scheduled that week. His logic was blunt, 'for guys to get ready to play football they have to play football.' On the grass the quarterback room is still working around its two most important men. Tua, held out of the Wednesday opener with a back flare-up Stefanski called short-term, returned Thursday but only lightly, throwing in individual drills and taking nothing in 11-on-11, with a full return eyed this week. Penix stayed on the individual and 7-on-7 plan, hitting Zachariah Branch for a 45-yard touchdown over A.J. Terrell and Jessie Bates III, but has attached a four-week timeline to his own clearance. The public run builds to the free Under the Lights session Aug 8.",
       category: "general",
       sourceUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-will-starters-play-in-the-preseason",
       sourceLabel: "atlantafalcons.com / SI Falcons / The Falcoholic",
@@ -2284,15 +2309,15 @@ export const NEWS_DIGEST = {
       sourceLabel: "AJC / NBC Sports PFT / NFL.com / atlantafalcons.com",
     },
     {
-      title: "THE BEST BACK IN FOOTBALL SAT OUT DAY 1 FOR MONEY: Bijan Robinson is holding in, present at camp but not practicing while his agents chase the extension expected to reset the running back market, and Ian Rapoport reports the two sides have done enough work that a deal is expected before the season",
-      detail: "Pro Football Rumors, CBS Sports, Bleacher Report, ESPN's hold-in tracker and The Falcoholic (Jul 29-30): Robinson reported to camp and has watched the first practices from the sideline, present in a jersey but out of cleats and helmet, in a hold-in aimed at a new contract rather than a holdout with fines attached. The leverage math is settled, Atlanta exercised his fifth-year option in April, so he is under control through 2027 and neither side faces a deadline, which is why this has stretched into camp. What is not in dispute is the case: he led the NFL with 2,298 scrimmage yards last season, a franchise record, including 1,478 rushing and 820 receiving, and is coming off his second Pro Bowl. Rapoport reports Robinson is the likelier of the offseason's marquee backs to break the market first, with the sides having 'done a lot of work' and needing only to hammer out final terms, and he is expected to become the league's highest-paid running back whenever he signs, sometime between now and Week 1. He holds in alongside Detroit's Jahmyr Gibbs, in the same window, and whichever back signs first sets the number the other negotiates against. It would be the third core Cunningham-era extension after Drake London in June and Kyle Pitts at the end of that month.",
+      title: "THE BEST BACK IN FOOTBALL IS STILL SITTING, AND BERGERON'S DEAL RAISED THE STAKES: a week into camp Bijan Robinson is still holding in, present but out of cleats and helmet, and Saturday's Bergeron extension left him as the last core piece unsigned, with the two sides reported to have done enough work that a deal is expected before the season",
+      detail: "Pro Football Rumors, CBS Sports, Bleacher Report, ESPN's hold-in tracker and The Falcoholic (Jul 29-30): Robinson reported to camp and has watched the first practices from the sideline, present in a jersey but out of cleats and helmet, in a hold-in aimed at a new contract rather than a holdout with fines attached. The leverage math is settled, Atlanta exercised his fifth-year option in April, so he is under control through 2027 and neither side faces a deadline, which is why this has stretched into camp. What is not in dispute is the case: he led the NFL with 2,298 scrimmage yards last season, a franchise record, including 1,478 rushing and 820 receiving, and is coming off his second Pro Bowl. Rapoport reports Robinson is the likelier of the offseason's marquee backs to break the market first, with the sides having 'done a lot of work' and needing only to hammer out final terms, and he is expected to become the league's highest-paid running back whenever he signs, sometime between now and Week 1. He holds in alongside Detroit's Jahmyr Gibbs, in the same window, and whichever back signs first sets the number the other negotiates against. With Matthew Bergeron signed Aug 1, Robinson is now the last of the marquee Cunningham-era targets left unsigned after London, Pitts and Bergeron.",
       category: "contracts",
       sourceUrl: "https://www.profootballrumors.com/2026/07/bijan-robinson-jahmyr-gibbs-holding-in",
       sourceLabel: "Pro Football Rumors / CBS Sports / Bleacher Report / The Falcoholic",
     },
     {
       title: "ATLANTA SIGNED A HUDDLE AT SUNRISE: with Tua's back tight and Penix not cleared, the Falcons released Trevor Siemian with a non-football injury and signed nine-year veteran Cooper Rush on Wednesday morning, and by the afternoon he was taking first-team reps in a building he had walked into hours earlier",
-      detail: "Team site, NBC Sports, Pro Football Rumors and The Falcoholic (Jul 29): the quarterback shuffle was fast and functional. Siemian, brought in as a veteran mentor, was released with a non-football injury designation, and in his place Atlanta added Rush, the 32-year-old who went 9-5 as a spot starter across eight seasons in Dallas and spent 2025 backing up Lamar Jackson in Baltimore before a March release. The reason was immediate need, not long-term intent: with both top passers unavailable for team periods on Day 1, the room had exactly one healthy veteran arm, and Rush 'met him in the huddle,' as the team site put it, flying in from Dallas overnight to sign and practice the same day. Stefanski's read on the whole episode doubled as a shrug at camp's unpredictability: 'It's the NFL, brother. This is the NFL and you cannot predict what's coming. You don't have a crystal ball.' Rush is depth insurance while Tua's back settles and Penix works back, not a threat to either job, but on July 29 he was the most available quarterback the Falcons had.",
+      detail: "Team site, NBC Sports, Pro Football Rumors and The Falcoholic (Jul 29): the quarterback shuffle was fast and functional. Siemian, brought in as a veteran mentor, was released with a non-football injury designation, and in his place Atlanta added Rush, the 32-year-old who went 9-5 as a spot starter across eight seasons in Dallas and spent 2025 backing up Lamar Jackson in Baltimore before a March release. The reason was immediate need, not long-term intent: with both top passers unavailable for team periods on Day 1, the room had exactly one healthy veteran arm, and Rush 'met him in the huddle,' as the team site put it, flying in from Dallas overnight to sign and practice the same day. Stefanski's read on the whole episode doubled as a shrug at camp's unpredictability: 'It's the NFL, brother. This is the NFL and you cannot predict what's coming. You don't have a crystal ball.' Rush is depth insurance while Tua's back settles and Penix works back, not a threat to either job, but on July 29 he was the most available quarterback the Falcons had. A week later, with Tua still limited and Penix capped at 7-on-7, Rush and undrafted rookie Jack Strand have kept splitting the first-team reps.",
       category: "free-agency",
       sourceUrl: "https://www.atlantafalcons.com/news/falcons-sign-qb-cooper-rush-training-camp",
       sourceLabel: "atlantafalcons.com / NBC Sports / Pro Football Rumors / The Falcoholic",
@@ -2310,13 +2335,6 @@ export const NEWS_DIGEST = {
       category: "coaching",
       sourceUrl: "https://www.atlantafalcons.com/news/falcons-2026-training-camp-preview-inside-linebackers",
       sourceLabel: "atlantafalcons.com / ESPN / The Falcoholic",
-    },
-    {
-      title: "THE PRE-CAMP GRADING SEASON DELIVERED ITS VERDICT AND CAMP INHERITS IT: SI's position-by-position audit handed Atlanta an A+ at running back, an A at safety, an A at kicker and Bs across both lines, then stopped at quarterback and wrote down a D, not because the two passers lack talent but because nobody, inside the building or out, can yet say which one is the starter",
-      detail: "SI / Atlanta Falcons On SI (position-group grades, published Jul 14 and still the most-cited framing as the field goes live): the piece is useful precisely because it is unsentimental about where the strength sits. Bijan Robinson's room draws the only A+ on the board, on the back of a league-leading 2,298 scrimmage yards and a 93-yard touchdown against the Rams that was the longest score in football last season, with Brian Robinson Jr. imported as the change-of-pace behind him. Safeties get an A, with Jessie Bates III a Second Team All-Pro and Xavier Watts fourth in Defensive Rookie of the Year voting after leading all first-year players with five interceptions. Nick Folk's arrival draws an A at kicker after a season that ran through three different legs. Tight end lands at B+ with a paid Kyle Pitts, Austin Hooper back for an 11th season and Charlie Woerner blocking. Both lines get a B. The quarterbacks get a D, and the write-up is blunt about why: Penix is coming off a third career ACL surgery with 12 career starts and five season-ending injuries in seven years as a starter, and Tagovailoa arrives from a Miami club that ate the largest dead-cap charge in NFL history to move on. The grade is not a talent judgment so much as an uncertainty tax, and it is the same tax ESPN's roster rankings applied when they slotted Atlanta tied for 29th. Camp is where the bill either comes due or gets torn up.",
-      category: "general",
-      sourceUrl: "https://www.si.com/nfl/falcons/onsi/grading-atlanta-falcons-position-groups-ahead-of-training-camp",
-      sourceLabel: "SI / Atlanta Falcons On SI",
     },
     {
       title: "THE PLAYER WHO HAS NEVER TAKEN AN NFL SNAP JUST QUIETLY CLEARED THE HARDEST PART: Bralen Trice took a regular rotation in 11-on-11 team drills through the spring, two full years after the ACL tear that erased his rookie season and one year after he re-aggravated the same knee, and with a James Pearce Jr. suspension still hanging over the edge room he is no longer a depth luxury",
@@ -2354,13 +2372,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com / ESPN / SI Falcons",
     },
     {
-      title: "THE NATIONAL DESK NARROWS ATLANTA TO THREE QUESTIONS: NFL.com's NFC South camp preview strips the Falcons down to the only three things that actually matter in August, who wins the quarterback job, whether Bijan Robinson signs before the season, and how the defense covers for James Pearce Jr. if the league takes him away",
-      detail: "NFL.com (NFC South training camp preview, filed into the back half of this week): the cleanest outside framing of Atlanta's summer, and it is notable for what it leaves out. No cap mechanics, no schedule talk, no mock-draft residue. Three questions. The quarterback battle between Tua Tagovailoa and Michael Penix Jr. cannot begin in earnest until Penix clears the 11-on-11 threshold, which puts the real evaluation somewhere in the middle of camp rather than at the start of it, and leaves Tagovailoa holding every first-team rep he has banked since OTAs. The Bijan Robinson extension is treated as a question of timing rather than intent, with the league's consensus No. 1 back and the front office both saying the right things and neither in a hurry given team control runs through 2027. The third is the one Atlanta cannot control: if Pearce misses time, the defense loses the player who led the team with 10.5 sacks as a rookie, and the answer has to come from the pile of edge depth the front office stacked this spring in Azeez Ojulari, Samson Ebukam and Cameron Thomas, plus the returns of Zach Harrison and Bralen Trice. The preview's implicit verdict matches the ESPN roster ranking from Monday: the skill talent is not in dispute, the two or three load-bearing unknowns are.",
-      category: "general",
-      sourceUrl: "https://www.nfl.com/news/nfc-south-training-camp-2026-preview-falcons-panthers-saints-buccaneers",
-      sourceLabel: "NFL.com",
-    },
-    {
       title: "THE OTHER CAMP, THE ONE FOR THE LAST FOUR ROSTER SPOTS: The Falcoholic runs the five offensive jobs genuinely up for grabs, and the most crowded is the back of the receiver room, where two perennial summer standouts, three undrafted rookies and a UFL import are chasing maybe two openings under a coaching staff that owes none of them anything",
       detail: "The Falcoholic (filed Thu Jul 16, carried by Yahoo Sports): the useful counterweight to a preview cycle fixated on starters. Behind Drake London, Jahan Dotson, Olamide Zaccheaus and third-round rookie Zachariah Branch, the receiver competition is a genuine scrum. Chris Blair and Dylan Drummond are the familiar names, both annual summer standouts who have made camp and preseason noise without converting it into a durable role, Blair on the strength of contested-catch flashes and Drummond as a clean route runner who blocks. Chasing them are three undrafted rookies in Keelan Marion, Vinny Anthony and Le'Meke Brockington, plus Antwane 'Juice' Wells Jr., the UFL signing added in June who brings the physicality the room otherwise lacks. The Falcoholic's honest caveat is the one that makes it interesting: with an entirely new coaching staff, there is no incumbent advantage and no way to name a favorite, because nobody in the building has evaluated any of these players in pads yet. The same dynamic runs through the other four offensive battles, with the right tackle job and the interior backup line spots the ones with actual snap consequences. This is the tier of camp that gets decided in the Denver and Indianapolis preseason games rather than in the Flowery Branch practice periods.",
       category: "general",
@@ -2377,9 +2388,30 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-08-01T12:00:00Z",
-  windowLabel: "Training Camp · Week 1 · Back Together Saturday (Aug 1) → Under the Lights Aug 8",
+  generatedAt: "2026-08-02T13:00:00Z",
+  windowLabel: "Training Camp · Week 1 · Bergeron Extended (Aug 1) → Under the Lights Aug 8",
   sessions: [
+    {
+      id: "bergeron-2026-08-01",
+      speaker: "Matthew Bergeron",
+      role: "Guard",
+      date: "2026-08-01",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Contract Extension · Media Availability",
+      sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-matthew-bergeron-contract-extension",
+      transcriptUrl: "https://www.espn.com/nfl/story/_/id/49505699/falcons-sign-matthew-bergeron-four-year-96m-extension",
+      verified: true,
+      summary: "A day after agreeing to a four-year, $96M extension, Bergeron met the media and pointed the conversation at the season rather than the payday. He framed the deal as a commitment to a rebuild he wants to see through, name-checked the front-office and coaching group he is signing on to play with, and set the bar at meaningful football in front of a full Mercedes-Benz Stadium.",
+      pullQuote: "Let's get the Benz rocking. The city deserves to be back on that stage.",
+      bullets: [
+        "On the year ahead: 'Hopefully we can give back to (the fans) some meaningful football,' tying the extension to results rather than the contract itself",
+        "On who he is committing to: cited Matt Ryan, Ian Cunningham and Kevin Stefanski 'and all those guys' as the group he is excited to build with",
+        "The deal is worth $96M over four years with $60M guaranteed and runs through 2030, after he started all 49 of his games across three seasons",
+        "GM Ian Cunningham called him 'the type of player you build around' and 'a cornerstone of our offensive line and the culture we're building in Atlanta'",
+        "Becomes the third core Cunningham-era extension in two months after Drake London and Kyle Pitts Sr.",
+      ],
+      topics: ["bergeron-extension", "contracts", "offensive-line"],
+    },
     {
       id: "stefanski-2026-07-31",
       speaker: "Kevin Stefanski",
@@ -2484,27 +2516,6 @@ export const INTERVIEWS = {
         "The team says it still has not heard from the league office about possible discipline for Pearce",
       ],
       topics: ["penix-acl", "pearce-status", "minicamp", "qb-competition"],
-    },
-    {
-      id: "penix-2026-06-16",
-      speaker: "Michael Penix Jr.",
-      role: "Quarterback",
-      date: "2026-06-16",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "Mandatory Minicamp Day 1 · Player Availability",
-      sourceUrl: "https://sports.yahoo.com/articles/falcons-michael-penix-jr-provides-190913203.html",
-      transcriptUrl: "https://clutchpoints.com/nfl/atlanta-falcons/falcons-news-michael-penix-jr-provides-injury-update",
-      verified: true,
-      summary: "Meeting reporters at the minicamp opener (quotes reported by ESPN's Marc Raimondi), Penix gave a calm, confident read on his ACL recovery. He acknowledged he is not all the way back, has not yet done any team-period work, and leaned on the belief that full health is a matter of when, not if. Observers continue to note he has progressed faster than expected for this stage of the rehab.",
-      pullQuote: "I'm not 100% yet, but I know I will be.",
-      bullets: [
-        "Confirmed he has yet to take any 11-on-11 reps, staying on the individual and 7-on-7 plan he has run since OTAs",
-        "On training camp: being ready is 'the expectation,' but deferred to medical, 'I know I go see my doctor before all that kicks off. So, it's really up to my doc'",
-        "Team observers note he has done more than anticipated given the severity of the late-November ACL tear, and has looked sharp with no discomfort in movement work",
-        "The franchise still views Penix as its quarterback of the future even after signing Tua Tagovailoa to compete",
-        "Kept the tone forward-looking, framing full clearance as an inevitability rather than a worry",
-      ],
-      topics: ["penix-acl", "qb-competition", "minicamp", "training-camp"],
     },
   ],
 };
