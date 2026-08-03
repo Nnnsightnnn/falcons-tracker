@@ -2123,14 +2123,14 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-02T13:00:00Z",
+  generatedAt: "2026-08-03T12:00:00Z",
   cover: {
     kicker: "TRAINING CAMP · WEEK 1 · Bergeron Gets Paid and the Bijan Clock Starts: Atlanta Signs Left Guard Matthew Bergeron to a 4-Year, $96M Extension, the Third Core Deal of the Cunningham Era, While the Best Back in Football Keeps Holding In, the Defense Runs the First Padded Week, and Both Quarterbacks Stay Boxed Into Position Drills",
     headLine1: "Bergeron gets paid, and the running back everyone is waiting on watches from the sideline.",
     headEm: "A 4-year, $96M extension for the left guard makes three core deals in two months, hardens the case that Bijan Robinson is next, and leaves the quarterback grass exactly as unsettled as it was on Day 1.",
     headLine3: "A week in, the checkbook is moving faster than the depth chart.",
     deck:
-      "The Falcons opened August by paying the quiet man. Left guard Matthew Bergeron, a 2023 second-round pick who has started all 49 of his career games, signed a four-year, $96M extension Saturday with $60M guaranteed, running through 2030. Ian Cunningham called him 'the type of player you build around' and 'a cornerstone of our offensive line,' and the deal reads as more than a line item: it is the third core extension in two months after Drake London in June and Kyle Pitts Sr. at the end of that month, and it sharpens the one question hanging over camp. Bijan Robinson, the NFL's leading scrimmage man last season, is still holding in, present at Flowery Branch but out of cleats and helmet while his agents chase the deal expected to make him the highest-paid running back in football. Both sides say it gets done before the season, and Bergeron's signing only tightens that logic. On the grass, the first padded week has belonged to the defense. Day 4 saw smothering coverage and multiple sacks, with Jalon Walker and Samson Ebukam holding the starting edge, Azeez Ojulari flashing a sack, and 6-foot-5 rookie linebacker Kendal Daniels turning heads in coverage on Austin Hooper. The quarterback room stayed exactly where it started: Tua Tagovailoa, easing back from a tight back, has thrown to receivers on the side but taken nothing in team periods, while Michael Penix Jr. remains capped at individual and 7-on-7 work, roughly four weeks from full clearance on his third ACL. Cooper Rush and undrafted rookie Jack Strand keep splitting the first-team huddle. A week in, Atlanta is answering with its checkbook and its defense while the two biggest offensive questions, QB1 and the Bijan number, both wait on August.",
+      "The Falcons opened August by paying the quiet man. Left guard Matthew Bergeron, a 2023 second-round pick who has started all 49 of his career games, signed a four-year, $96M extension Saturday with $60M guaranteed, running through 2030. Ian Cunningham called him 'the type of player you build around' and 'a cornerstone of our offensive line,' and the deal reads as more than a line item: it is the third core extension in two months after Drake London in June and Kyle Pitts Sr. at the end of that month, and it sharpens the one question hanging over camp. Bijan Robinson, the NFL's leading scrimmage man last season, is still holding in, present at Flowery Branch but out of cleats and helmet while his agents chase the deal expected to make him the highest-paid running back in football. Both sides say it gets done before the season, and Bergeron's signing only tightens that logic. On the grass, the opening week has belonged to the defense. Day 4 saw smothering coverage and multiple sacks, with Jalon Walker and Samson Ebukam holding the starting edge, Azeez Ojulari flashing a sack, and 6-foot-5 rookie linebacker Kendal Daniels turning heads in coverage on Austin Hooper. The quarterback room stayed exactly where it started: Tua Tagovailoa, easing back from a tight back, has thrown to receivers on the side but taken nothing in team periods, while Michael Penix Jr. remains capped at individual and 7-on-7 work, roughly four weeks from full clearance on his third ACL. Cooper Rush and undrafted rookie Jack Strand keep splitting the first-team huddle. A week in, Atlanta is answering with its checkbook and its defense while the two biggest offensive questions, QB1 and the Bijan number, both wait on August.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "bijan",
@@ -2267,6 +2267,18 @@ export const NEWS_DIGEST = {
     // yet another dangling request no one can fulfill this cycle; the fallback resolves to the bijan headshot,
     // which matches the new lead. Clean queue moment remains a padded-practice Bijan/Penix/Branch rep, for
     // the first run that can reach the Vault.
+    // STATUS (2026-08-03 scheduled run): cover queue SKIPPED again, same hard constraint re-verified this
+    // cycle: ~/Vault/Notes/image-requests.md and the limn-editor-enhance skill are NOT mounted in this
+    // sandbox (only the tracker repos, outputs and uploads are), so the downstream Antigravity queue cannot
+    // be appended. Last plate actually on disk remains 2026-07-17-dotson-wr2.jpg; the qb-room-camp-eve
+    // pointer (dated 2026-07-20, fourteen days old) was never generated and still resolves to the bijan
+    // headshot fallback, which stays aligned with today's Bergeron/Bijan lead. The staleness backstop is
+    // long past due but cannot be satisfied from this sandbox; repointing would only spawn another dangling
+    // request no one can fulfill. Recency refresh only this cycle: week one is in the books, the team took
+    // Sunday off, and returns Monday (Aug 3) for the first full-pads practice per Atlanta News First (Aug 2),
+    // so a new week-one recap topic leads the digest and the "first padded week" wording was corrected to
+    // "opening week." Clean queue moment remains a padded-practice Bijan/Penix/Branch rep, for the first run
+    // that can reach the Vault.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-07-20-qb-room-camp-eve.jpg",
   },
   sources: [
@@ -2281,6 +2293,13 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
+      title: "WEEK ONE IS IN THE BOOKS, AND THE PADS COME ON MONDAY: Atlanta closed its first training-camp week with the quarterback job and the Bijan Robinson hold-in still the two loudest stories, took Sunday off, and returns Monday for the first full-pads practice of camp, the point where the line play and the position battles finally get physical",
+      detail: "Atlanta News First and The Falcoholic (week-one wrap, Aug 2): the Falcons got through the opening week of AT&T Training Camp with no major injuries and the two headline questions exactly where they started. The quarterback room ran short all week, Tua Tagovailoa easing back from a tight back and Michael Penix Jr. capped at individual and 7-on-7 work as he rehabs his ACL, which left undrafted rookie Jack Strand taking the bulk of the 11-on-11 reps behind newly signed veteran Cooper Rush after Trevor Siemian was released with a non-football injury designation. Contract business framed the rest of the week: Matthew Bergeron's four-year extension landed Saturday and Bijan Robinson kept holding in for a market-resetting deal. After a Sunday off, the team is back Monday (Aug 3) for the first practice in full pads, the point where line play and the position battles stop being theoretical and the padded evaluation the new staff has been waiting on actually begins.",
+      category: "general",
+      sourceUrl: "https://www.atlantanewsfirst.com/2026/08/02/falcons-training-camp-quarterback-battle-contract-talks-headline-first-week/",
+      sourceLabel: "Atlanta News First / The Falcoholic",
+    },
+    {
       title: "BERGERON GETS PAID, AND IT IS THE THIRD CORE DEAL IN TWO MONTHS: Atlanta signed left guard Matthew Bergeron to a four-year, $96M extension Saturday with $60M guaranteed, locking up a 49-game starter through 2030 and stacking a third foundational contract on top of Drake London and Kyle Pitts Sr.",
       detail: "ESPN, AJC, Pro Football Rumors and the team site (Aug 1): the Falcons extended Bergeron, their 2023 second-round pick, on a four-year deal worth $96M with $60M guaranteed and roughly a $24M average, running through 2030. He would have been a free agent after this season. Bergeron has started all 49 of his appearances across three years and has quietly become one of the league's better young guards. GM Ian Cunningham called him 'the type of player you build around' and 'a cornerstone of our offensive line and the culture we're building in Atlanta.' Bergeron's own reaction looked ahead to the fall: 'Let's get the Benz rocking. The city deserves to be back on that stage.' It is the third core Cunningham-era extension in two months after London in June and Pitts at the end of that month, and it hardens the read that Bijan Robinson is the next domino.",
       category: "contracts",
@@ -2288,7 +2307,7 @@ export const NEWS_DIGEST = {
       sourceLabel: "ESPN / AJC / Pro Football Rumors / atlantafalcons.com",
     },
     {
-      title: "THE FIRST PADDED WEEK BELONGS TO THE DEFENSE: through four practices the front and secondary have set the tone, with smothering coverage, multiple sacks on Day 4, Jalon Walker and Samson Ebukam holding the starting edge, Azeez Ojulari flashing a sack, and 6-foot-5 rookie Kendal Daniels making plays in coverage",
+      title: "THE OPENING WEEK BELONGS TO THE DEFENSE: through four practices the front and secondary have set the tone, with smothering coverage, multiple sacks on Day 4, Jalon Walker and Samson Ebukam holding the starting edge, Azeez Ojulari flashing a sack, and 6-foot-5 rookie Kendal Daniels making plays in coverage",
       detail: "SI Falcons and The Falcoholic (Day 3 and Day 4 camp reports, Jul 31 to Aug 1): with both quarterbacks limited, the defense has run the early camp. Day 4 was billed as a defensive rout, smothering coverage plus a multi-sack pass rush against a mix of 3-4 and 4-2-5 fronts. On the edge, the starting pair of Walker and Ebukam held, with Ojulari getting home for a sack in the rotation and James Pearce Jr. still working mostly with the depth groups as he ramps up. Inside, Christian Harris took the first reps next to green-dot linebacker Divine Deablo, with Harold Perkins Jr. and fourth-round rookie Kendal Daniels rotating through. Daniels, back from a scheduled rest day, drew notice for his coverage on Austin Hooper, his 6-foot-5 length a rare trait at the position. On a sold-out, unseasonably cool Aug 1, both Penix and Tua worked through position drills on the side.",
       category: "general",
       sourceUrl: "https://www.si.com/nfl/falcons/onsi/defense-dominates-bijan-out-big-winners-from-day-4-of-falcons-training-camp",
@@ -2310,7 +2329,7 @@ export const NEWS_DIGEST = {
     },
     {
       title: "THE BEST BACK IN FOOTBALL IS STILL SITTING, AND BERGERON'S DEAL RAISED THE STAKES: a week into camp Bijan Robinson is still holding in, present but out of cleats and helmet, and Saturday's Bergeron extension left him as the last core piece unsigned, with the two sides reported to have done enough work that a deal is expected before the season",
-      detail: "Pro Football Rumors, CBS Sports, Bleacher Report, ESPN's hold-in tracker and The Falcoholic (Jul 29-30): Robinson reported to camp and has watched the first practices from the sideline, present in a jersey but out of cleats and helmet, in a hold-in aimed at a new contract rather than a holdout with fines attached. The leverage math is settled, Atlanta exercised his fifth-year option in April, so he is under control through 2027 and neither side faces a deadline, which is why this has stretched into camp. What is not in dispute is the case: he led the NFL with 2,298 scrimmage yards last season, a franchise record, including 1,478 rushing and 820 receiving, and is coming off his second Pro Bowl. Rapoport reports Robinson is the likelier of the offseason's marquee backs to break the market first, with the sides having 'done a lot of work' and needing only to hammer out final terms, and he is expected to become the league's highest-paid running back whenever he signs, sometime between now and Week 1. He holds in alongside Detroit's Jahmyr Gibbs, in the same window, and whichever back signs first sets the number the other negotiates against. With Matthew Bergeron signed Aug 1, Robinson is now the last of the marquee Cunningham-era targets left unsigned after London, Pitts and Bergeron.",
+      detail: "Pro Football Rumors, CBS Sports, Bleacher Report, ESPN's hold-in tracker and The Falcoholic (Jul 29-30): Robinson reported to camp and has watched the first practices from the sideline, present in a jersey but out of cleats and helmet, in a hold-in aimed at a new contract rather than a holdout with fines attached. The leverage math is settled, Atlanta exercised his fifth-year option in April, so he is under control through 2027 and neither side faces a deadline, which is why this has stretched into camp. What is not in dispute is the case: he led the NFL with 2,298 scrimmage yards last season, a franchise record, including 1,478 rushing and 820 receiving, and is coming off his second Pro Bowl. Rapoport reports Robinson is the likelier of the offseason's marquee backs to break the market first, with the sides having 'done a lot of work' and needing only to hammer out final terms, and he is expected to become the league's highest-paid running back whenever he signs, sometime between now and Week 1. He holds in alongside Detroit's Jahmyr Gibbs, in the same window, and whichever back signs first sets the number the other negotiates against. With Matthew Bergeron signed Aug 1, Robinson is now the last of the marquee Cunningham-era targets left unsigned after London, Pitts and Bergeron. ESPN's hold-in tracker and ClutchPoints (Aug 1-2) described the talks as active and stressed the hold-in is not injury related, with any new deal not taking effect until 2028 and Robinson positioned to clear roughly $20.6M per year as the league's highest-paid back.",
       category: "contracts",
       sourceUrl: "https://www.profootballrumors.com/2026/07/bijan-robinson-jahmyr-gibbs-holding-in",
       sourceLabel: "Pro Football Rumors / CBS Sports / Bleacher Report / The Falcoholic",
@@ -2388,8 +2407,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-08-02T13:00:00Z",
-  windowLabel: "Training Camp · Week 1 · Bergeron Extended (Aug 1) → Under the Lights Aug 8",
+  generatedAt: "2026-08-03T12:00:00Z",
+  windowLabel: "Training Camp · Week 2 Opens · Pads On Monday (Aug 3) → Under the Lights Aug 8",
   sessions: [
     {
       id: "bergeron-2026-08-01",
