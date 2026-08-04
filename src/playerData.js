@@ -27,7 +27,7 @@ export const PLAYERS = [
     stats: { completions: 166, attempts: 276, passYds: 1982, passTDs: 9, ints: 3, qbRating: 88.5 },
     form: 0,
     status: "pup",
-    injuryNote: "ACL rehab · torn Week 11 2025 · limited to individual and 7-on-7 work on Day 1 of camp (Jul 29), still not cleared for 11-on-11. Penix said Wednesday he was told 'another four weeks, possibly going into that next stage,' though it could be earlier depending on his body, which points clearance toward late August rather than the opener. He is prioritizing health: 'I can't afford to have someone trip and fall on me right now'",
+    injuryNote: "ACL rehab · torn Week 11 2025 · still capped at individual and 7-on-7 work through the first padded practice (Day 5, Aug 3), not yet cleared for 11-on-11. Sharp on Day 5 anyway: a long ball to Chris Blair and a go-route touchdown to Zachariah Branch. Told at camp open (Jul 29) he was 'another four weeks, possibly going into that next stage,' which points clearance toward late August rather than the opener. Prioritizing health: 'I can't afford to have someone trip and fall on me right now'",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
     contract: { years: 4, total: 22080000, guaranteed: 22080000, apy: 5520000, throughYear: 2027, cap2026: 5900000 },
     career: [
@@ -47,8 +47,8 @@ export const PLAYERS = [
     acquired: "fa-2026-1yr",
     stats: {},
     form: 0,
-    status: "questionable",
-    injuryNote: "Back tightness flared on Day 1 of camp (Jul 29) and held him out of practice. Stefanski called it short-term: 'Tua is dealing with an injury right now. It's not long term. He'll be out there sooner than later.' The flare-up prompted Atlanta to sign Cooper Rush the same morning",
+    status: "active",
+    injuryNote: "Back tightness that held him out of the Day 1 opener (Jul 29) has resolved. He returned lightly late in week one and, on the first padded practice (Day 5, Aug 3), took the main reps of the first team period in a live 11-on-11 look. Waved off the earlier absence: 'just a precaution thing early on in camp ... I feel great right now.' Banking the first-team reps as the de facto QB1 while Penix rehabs",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4241479.png",
     contract: { years: 1, total: 1300000, guaranteed: 1300000, apy: 1300000, throughYear: 2026, cap2026: 1300000 },
     career: [
@@ -2123,18 +2123,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-03T12:00:00Z",
+  generatedAt: "2026-08-04T09:00:00Z",
   cover: {
-    kicker: "TRAINING CAMP · WEEK 1 · Bergeron Gets Paid and the Bijan Clock Starts: Atlanta Signs Left Guard Matthew Bergeron to a 4-Year, $96M Extension, the Third Core Deal of the Cunningham Era, While the Best Back in Football Keeps Holding In, the Defense Runs the First Padded Week, and Both Quarterbacks Stay Boxed Into Position Drills",
-    headLine1: "Bergeron gets paid, and the running back everyone is waiting on watches from the sideline.",
-    headEm: "A 4-year, $96M extension for the left guard makes three core deals in two months, hardens the case that Bijan Robinson is next, and leaves the quarterback grass exactly as unsettled as it was on Day 1.",
-    headLine3: "A week in, the checkbook is moving faster than the depth chart.",
+    kicker: "TRAINING CAMP · WEEK 2 · The Pads Come On and Atlanta Has Its Best Day of Camp: Tua Tagovailoa Returns to Live 11-on-11 Work for the First Time, Michael Penix Jr. Answers With His Sharpest Session Yet Including a Go-Route Touchdown to Zachariah Branch, the Defensive Line Spends the Afternoon in Dirty Pockets, and Bijan Robinson Holds In for a Sixth Straight Practice",
+    headLine1: "The pads went on, and Atlanta had its best day of camp.",
+    headEm: "Tua Tagovailoa took live 11-on-11 reps for the first time, Michael Penix Jr. answered with his sharpest practice yet, and the rookie who keeps making the loudest plays caught the touchdown that brought the hill to its feet.",
+    headLine3: "Week two starts with contact, and the quarterback grass finally has traffic on it.",
     deck:
-      "The Falcons opened August by paying the quiet man. Left guard Matthew Bergeron, a 2023 second-round pick who has started all 49 of his career games, signed a four-year, $96M extension Saturday with $60M guaranteed, running through 2030. Ian Cunningham called him 'the type of player you build around' and 'a cornerstone of our offensive line,' and the deal reads as more than a line item: it is the third core extension in two months after Drake London in June and Kyle Pitts Sr. at the end of that month, and it sharpens the one question hanging over camp. Bijan Robinson, the NFL's leading scrimmage man last season, is still holding in, present at Flowery Branch but out of cleats and helmet while his agents chase the deal expected to make him the highest-paid running back in football. Both sides say it gets done before the season, and Bergeron's signing only tightens that logic. On the grass, the opening week has belonged to the defense. Day 4 saw smothering coverage and multiple sacks, with Jalon Walker and Samson Ebukam holding the starting edge, Azeez Ojulari flashing a sack, and 6-foot-5 rookie linebacker Kendal Daniels turning heads in coverage on Austin Hooper. The quarterback room stayed exactly where it started: Tua Tagovailoa, easing back from a tight back, has thrown to receivers on the side but taken nothing in team periods, while Michael Penix Jr. remains capped at individual and 7-on-7 work, roughly four weeks from full clearance on his third ACL. Cooper Rush and undrafted rookie Jack Strand keep splitting the first-team huddle. A week in, Atlanta is answering with its checkbook and its defense while the two biggest offensive questions, QB1 and the Bijan number, both wait on August.",
+      "Monday brought the first pads of training camp, and with them the best practice Atlanta has run all summer. Tua Tagovailoa, held to walk-through speed a week ago as he eased a tight back, took the main reps of the first team period in a live 11-on-11 look that finally moved at game pace, screens and handoffs to start but real football all the same. Michael Penix Jr., still capped out of team drills as he protects his surgically repaired knee, answered with his sharpest day of camp: a long strike to Chris Blair to open, a go-route touchdown to rookie Zachariah Branch that drew the loudest cheer of the afternoon, and a closing deep ball that Antwane Wells Jr. ran under for a score. Branch, the third-round returner, kept doing what he has done since Day 1, making the play everyone leaves talking about. The pads changed the defense too. Samson Ebukam looked long and powerful off the edge, and the front kept the pockets dirty for Cooper Rush and undrafted rookie Jack Strand, the two arms splitting first-team reps until the starters are whole. The contract picture that framed week one has not moved: Bijan Robinson watched a sixth straight practice from the sideline, present but out of cleats and helmet, holding in for the deal Ian Rapoport says both sides are actively working toward and expect done before Week 1, while Matthew Bergeron's fresh four-year, $96M extension stands as the reminder that Atlanta pays the players it means to keep. A week and a day in, the checkbook and the defense still lead, but for one padded Monday the quarterback grass was the best show on the hill.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
-    photoId: "bijan",
-    stampLabel: "CAMP WEEK 1 · BERGERON EXTENDED",
+    photoId: "penix-jr",
+    stampLabel: "CAMP WEEK 2 · PADS ON · BEST DAY YET",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2279,6 +2279,17 @@ export const NEWS_DIGEST = {
     // so a new week-one recap topic leads the digest and the "first padded week" wording was corrected to
     // "opening week." Clean queue moment remains a padded-practice Bijan/Penix/Branch rep, for the first run
     // that can reach the Vault.
+    // STATUS (2026-08-04 scheduled run): cover queue SKIPPED again, same hard constraint re-verified
+    // this cycle: ~/Vault/Notes/image-requests.md and the limn-editor-enhance skill are NOT mounted in
+    // this sandbox (only the tracker repos, outputs and uploads are), so the downstream Antigravity queue
+    // cannot be appended. Last plate actually on disk remains 2026-07-17-dotson-wr2.jpg; the
+    // qb-room-camp-eve pointer (dated 2026-07-20, fifteen days old) was never generated and still resolves
+    // to the photoId headshot fallback. A genuinely visual story finally landed today, the first padded
+    // practice (Day 5, Aug 3) with Tua back in live 11-on-11 and Penix's go-route touchdown to Branch, so
+    // the cover editorial rotated onto it and photoId moved from bijan to penix-jr to keep the headshot
+    // fallback aligned with the new lead. Repointing the URL to an Aug-04 slug would only spawn another
+    // dangling request no one can fulfill from this sandbox, so the pointer is left as is. The clean queue
+    // moment remains this exact padded-practice Penix/Branch rep, for the first run that can reach the Vault.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-07-20-qb-room-camp-eve.jpg",
   },
   sources: [
@@ -2293,11 +2304,11 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "WEEK ONE IS IN THE BOOKS, AND THE PADS COME ON MONDAY: Atlanta closed its first training-camp week with the quarterback job and the Bijan Robinson hold-in still the two loudest stories, took Sunday off, and returns Monday for the first full-pads practice of camp, the point where the line play and the position battles finally get physical",
-      detail: "Atlanta News First and The Falcoholic (week-one wrap, Aug 2): the Falcons got through the opening week of AT&T Training Camp with no major injuries and the two headline questions exactly where they started. The quarterback room ran short all week, Tua Tagovailoa easing back from a tight back and Michael Penix Jr. capped at individual and 7-on-7 work as he rehabs his ACL, which left undrafted rookie Jack Strand taking the bulk of the 11-on-11 reps behind newly signed veteran Cooper Rush after Trevor Siemian was released with a non-football injury designation. Contract business framed the rest of the week: Matthew Bergeron's four-year extension landed Saturday and Bijan Robinson kept holding in for a market-resetting deal. After a Sunday off, the team is back Monday (Aug 3) for the first practice in full pads, the point where line play and the position battles stop being theoretical and the padded evaluation the new staff has been waiting on actually begins.",
+      title: "THE PADS COME ON AND ATLANTA HAS ITS BEST DAY OF CAMP: on the first padded practice of the summer Tua Tagovailoa returned to live 11-on-11 work for the first time, Michael Penix Jr. answered with his sharpest session yet including a go-route touchdown to Zachariah Branch, and the defensive line spent the afternoon in dirty pockets while Bijan Robinson held in for a sixth straight practice",
+      detail: "The Falcoholic, SI Falcons and the team site (Day 5 camp reports, Aug 3): after four no-pads days and a Sunday off, the pads went on Monday and the intensity climbed with them. Tua Tagovailoa, limited to walk-through speed last week as he eased a tight back, took the main reps of the first team period in a live 11-on-11 look that moved at a quicker pace, screens and handoffs to open but real progress after sitting out Day 1. Penix, still held out of team drills while he rehabs his ACL, competed in every other period and was sharp: a long completion to Chris Blair, a go-route touchdown to rookie Zachariah Branch that drew the loudest cheer of the day, and a closing deep ball that Antwane Wells Jr. brought in for a score. Branch, the third-round returner, again graded out as one of the best players on the field. On defense, Samson Ebukam looked long and powerful off the edge and the front kept the pockets dirty for Cooper Rush and undrafted rookie Jack Strand. Bijan Robinson was a non-participant for a sixth straight practice, hyping teammates from the sideline (he was first on Chris Lindstrom's heels to celebrate a Nathan Carter blitz pickup) while he holds in for a new deal. Rookie nickel Avieon Terrell drew a handful of first-team reps at the slot once the pads came on, a small sign the staff is widening the evaluation now that contact is legal.",
       category: "general",
-      sourceUrl: "https://www.atlantanewsfirst.com/2026/08/02/falcons-training-camp-quarterback-battle-contract-talks-headline-first-week/",
-      sourceLabel: "Atlanta News First / The Falcoholic",
+      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-training-camp/94763/falcons-training-camp-day-5-news-standouts-interviews-injuries-tua-tagovailoa-michael-penix-zachariah-branch-nfl-2026",
+      sourceLabel: "The Falcoholic / SI Falcons / atlantafalcons.com",
     },
     {
       title: "BERGERON GETS PAID, AND IT IS THE THIRD CORE DEAL IN TWO MONTHS: Atlanta signed left guard Matthew Bergeron to a four-year, $96M extension Saturday with $60M guaranteed, locking up a 49-game starter through 2030 and stacking a third foundational contract on top of Drake London and Kyle Pitts Sr.",
@@ -2407,9 +2418,30 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-08-03T12:00:00Z",
-  windowLabel: "Training Camp · Week 2 Opens · Pads On Monday (Aug 3) → Under the Lights Aug 8",
+  generatedAt: "2026-08-04T09:00:00Z",
+  windowLabel: "Training Camp · Week 2 · Pads On (Aug 3) → Under the Lights Aug 8",
   sessions: [
+    {
+      id: "tagovailoa-2026-08-03",
+      speaker: "Tua Tagovailoa",
+      role: "Quarterback",
+      date: "2026-08-03",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "First Padded Practice · Media Availability",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-training-camp-quotes-zachariah-branch-tua-tagovailoa-jack-strand",
+      transcriptUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-intensity-goes-up-as-pads-go-on",
+      verified: true,
+      summary: "On the day the pads came on, Tua Tagovailoa returned to live 11-on-11 work for the first time in camp and spoke afterward with the ease of a player glad to be back in the mix. He waved off the earlier back tightness as a precaution, leaned into the details of Kevin Stefanski's install-heavy routine, and cast his own value as much in the locker room as on the field.",
+      pullQuote: "It feels good to be out there with the guys, be able to throw, continue to hear the plays, get in the huddle with the guys. All of that.",
+      bullets: [
+        "On his back: called the earlier absence 'just a precaution thing early on in camp,' adding 'I feel great right now'",
+        "On Stefanski's method: praised installing the night before and skipping a morning walk-through, 'you can see who's studying, who's been in their playbook, who understands where to go, and where they need to be at'",
+        "On the mindset amid the quarterback questions: 'all you can control is what you can control,' and 'if the cards fall where they fall, then that's what you're dealt with'",
+        "On what he brings beyond the position: 'I think I bring some good vibes for the guys in the locker room,' and checking on teammates 'if guys are not smiling'",
+        "Took the main reps of the first team period in a live 11-on-11 look, his first game-speed team work of camp after sitting out Day 1",
+      ],
+      topics: ["qb-competition", "tua", "training-camp", "pads-on"],
+    },
     {
       id: "bergeron-2026-08-01",
       speaker: "Matthew Bergeron",
@@ -2514,27 +2546,6 @@ export const INTERVIEWS = {
         "Sees his evolution entering a second act at 26, pointing to tight ends like Travis Kelce, George Kittle and Tony Gonzalez who kept producing deep into their careers",
       ],
       topics: ["pitts-extension", "contracts", "second-act"],
-    },
-    {
-      id: "stefanski-2026-06-16",
-      speaker: "Kevin Stefanski",
-      role: "Head Coach",
-      date: "2026-06-16",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "Mandatory Minicamp Day 1 · Media Availability",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-practice-report-what-we-learned-day-1-minicamp",
-      transcriptUrl: "https://www.si.com/nfl/falcons/onsi/falcons-stefanski-address-james-pearce-s-presence-at-mandatory-minicamp",
-      verified: true,
-      summary: "Day 1 of mandatory minicamp handed Stefanski two answers to give. On Michael Penix Jr. he was content with the status quo: the QB is still held out of 11-on-11, by design, and the coach would not commit to camp clearance, saying only that Penix is exactly where he needs to be. On James Pearce Jr., who reported despite reports he would not, Stefanski set firm limits and otherwise kept the personal side of the conversation private.",
-      pullQuote: "He's exactly where he needs to be, and we'll just continue to lean on medical and Mike and continue to make good decisions for his rehabilitation.",
-      bullets: [
-        "On Penix: 'Very pleased with the work that he's putting in,' but no 11-on-11 reps on Day 1 and no commitment to clearance by the late-July training-camp open",
-        "On Pearce's role: 'He'll do work in the weight room, he'll do individual. He's not going to team settings, team period type stuff yet'",
-        "On why Pearce is limited: 'Just feel like with him not being here for the offseason program, I don't think it's fair to put him in those type of drills, but he'll be out there'",
-        "On their conversations: declined specifics, said only that Pearce 'knows what is expected of him' and that 'throughout every situation, you take in all the information available to you'",
-        "The team says it still has not heard from the league office about possible discipline for Pearce",
-      ],
-      topics: ["penix-acl", "pearce-status", "minicamp", "qb-competition"],
     },
   ],
 };
