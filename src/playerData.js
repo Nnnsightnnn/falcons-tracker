@@ -96,11 +96,11 @@ export const PLAYERS = [
     stats: { rushYds: 1478, rushTDs: 14, rushAttempts: 299, receptions: 64, recYds: 820, recTDs: 2, targets: 82 },
     form: 9.2,
     status: "active",
-    injuryNote: "Hold-in: present at camp but not practicing on Day 1 (Jul 29) while his agents work an extension. Coming off an NFL-leading 2,298 scrimmage yards, he is expected to reset the running back market. Rapoport reports the two sides have done a lot of work and a deal is expected before the season. 5th-year option exercised 4/12, $11.32M in 2027",
+    injuryNote: "Signed a three-year extension worth up to $75M (Aug 4) that ended a five-day hold-in and made him the highest-paid running back in NFL history: $51M guaranteed and $37M at signing, the most ever guaranteed to a back, running through 2030. Stefanski said there will be a ramp-up period rather than a full-speed return to practice",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4430807.png",
-    contract: { years: 5, total: 33220000, guaranteed: 21900000, apy: 6644000, throughYear: 2027, cap2026: 6820000 },
+    contract: { years: 3, total: 75000000, guaranteed: 51000000, apy: 25000000, throughYear: 2030, cap2026: 9000000 },
     career: [
-      { years: "2023–", team: "Atlanta Falcons", type: "NFL · 2x Pro Bowl" },
+      { years: "2023–", team: "Atlanta Falcons", type: "NFL · 2x Pro Bowl · All-Pro" },
       { years: "2020–2022", team: "Texas", type: "College" },
     ],
   },
@@ -773,9 +773,9 @@ export const PLAYERS = [
     college: "Georgia",
     acquired: "draft-2025-R1-P15",
     stats: { tackles: 62, tfl: 10, sacks: 5.5, ff: 1 },
-    form: 8.5,
-    status: "active",
-    injuryNote: "Rookie-year starter · 2024 Butkus Award",
+    form: 0,
+    status: "ir",
+    injuryNote: "Feared season-ending torn ACL. Went down without contact late in the Day 6 practice (Aug 4) during an 11-on-11 two-minute drill, was carted off as teammates took a knee, and Stefanski ended practice early. NFL Network reported the team fears a torn ACL and The Athletic's Josh Kendall reported a torn ACL the same evening, pending an MRI to confirm. A confirmed tear ends his 2026 season; expected to move to IR",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4685597.png",
     contract: { years: 4, total: 19200000, guaranteed: 19200000, apy: 4800000, throughYear: 2028, cap2026: 4400000 },
     career: [
@@ -2123,18 +2123,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-04T09:00:00Z",
+  generatedAt: "2026-08-05T12:30:00Z",
   cover: {
-    kicker: "TRAINING CAMP · WEEK 2 · The Pads Come On and Atlanta Has Its Best Day of Camp: Tua Tagovailoa Returns to Live 11-on-11 Work for the First Time, Michael Penix Jr. Answers With His Sharpest Session Yet Including a Go-Route Touchdown to Zachariah Branch, the Defensive Line Spends the Afternoon in Dirty Pockets, and Bijan Robinson Holds In for a Sixth Straight Practice",
-    headLine1: "The pads went on, and Atlanta had its best day of camp.",
-    headEm: "Tua Tagovailoa took live 11-on-11 reps for the first time, Michael Penix Jr. answered with his sharpest practice yet, and the rookie who keeps making the loudest plays caught the touchdown that brought the hill to its feet.",
-    headLine3: "Week two starts with contact, and the quarterback grass finally has traffic on it.",
+    kicker: "TRAINING CAMP · WEEK 2 · The Best Day and the Worst Day Arrived Together: Atlanta Made Bijan Robinson the Highest-Paid Running Back in NFL History on a Three-Year Extension Worth Up to $75M That Ended His Hold-In, and Hours Later Watched First-Round Edge Rusher Jalon Walker Get Carted Off With a Feared Torn ACL",
+    headLine1: "The best day and the worst day arrived on the same afternoon.",
+    headEm: "Bijan Robinson got the record deal that ends his hold-in and resets the running back market, and then, with the celebration still fresh, Jalon Walker went down in a two-minute drill and was carted off with a knee the team fears is a torn ACL.",
+    headLine3: "One signature made the offense whole. One non-contact step may have taken the defense's young centerpiece for the year.",
     deck:
-      "Monday brought the first pads of training camp, and with them the best practice Atlanta has run all summer. Tua Tagovailoa, held to walk-through speed a week ago as he eased a tight back, took the main reps of the first team period in a live 11-on-11 look that finally moved at game pace, screens and handoffs to start but real football all the same. Michael Penix Jr., still capped out of team drills as he protects his surgically repaired knee, answered with his sharpest day of camp: a long strike to Chris Blair to open, a go-route touchdown to rookie Zachariah Branch that drew the loudest cheer of the afternoon, and a closing deep ball that Antwane Wells Jr. ran under for a score. Branch, the third-round returner, kept doing what he has done since Day 1, making the play everyone leaves talking about. The pads changed the defense too. Samson Ebukam looked long and powerful off the edge, and the front kept the pockets dirty for Cooper Rush and undrafted rookie Jack Strand, the two arms splitting first-team reps until the starters are whole. The contract picture that framed week one has not moved: Bijan Robinson watched a sixth straight practice from the sideline, present but out of cleats and helmet, holding in for the deal Ian Rapoport says both sides are actively working toward and expect done before Week 1, while Matthew Bergeron's fresh four-year, $96M extension stands as the reminder that Atlanta pays the players it means to keep. A week and a day in, the checkbook and the defense still lead, but for one padded Monday the quarterback grass was the best show on the hill.",
+      "Tuesday gave Atlanta its highest high and a gut-punch inside the same practice window. In the morning the Falcons and Bijan Robinson agreed to a three-year extension worth up to $75 million, roughly $22.25M in new base average with a max of $25M a year, carrying $51 million guaranteed and $37 million at signing, the most money ever guaranteed to a running back and enough to make him the highest-paid back in NFL history. The deal ended a five-day hold-in and made Robinson the fourth core piece Ian Cunningham has locked up this offseason after Drake London, Kyle Pitts Sr. and Matthew Bergeron. Kevin Stefanski, who called Robinson 'wired the right way,' promised a measured ramp-up rather than a full-speed return. Then the afternoon turned. Late in an 11-on-11 two-minute period, second-year edge rusher Jalon Walker went down without contact, trainers rushed out, teammates took a knee, and the No. 15 pick of the 2025 draft was carted off. NFL Network reported the team feared a torn ACL and The Athletic's Josh Kendall reported Tuesday evening that Walker had torn it, pending an MRI, an injury that would end his season before it started and gut an edge room already bracing for a possible James Pearce Jr. suspension. Stefanski ended practice roughly 45 minutes early. On the grass the quarterback picture kept inching forward, Tua Tagovailoa taking a second day of light 11-on-11 work and going 3-of-4, Michael Penix Jr. still capped at 7-on-7, Cooper Rush closing with the ones in the two-minute drill. A week and a day in, Atlanta paid its franchise back and, in the space of a few hours, may have lost the player it drafted to build the defense around.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
-    photoId: "penix-jr",
-    stampLabel: "CAMP WEEK 2 · PADS ON · BEST DAY YET",
+    photoId: "bijan",
+    stampLabel: "CAMP WEEK 2 · BIJAN PAID · WALKER DOWN",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2290,6 +2290,17 @@ export const NEWS_DIGEST = {
     // fallback aligned with the new lead. Repointing the URL to an Aug-04 slug would only spawn another
     // dangling request no one can fulfill from this sandbox, so the pointer is left as is. The clean queue
     // moment remains this exact padded-practice Penix/Branch rep, for the first run that can reach the Vault.
+    // STATUS (2026-08-05 scheduled run): cover queue SKIPPED again, same hard constraint re-verified this
+    // cycle: ~/Vault/Notes/image-requests.md and the limn-editor-enhance skill are NOT mounted in this
+    // sandbox (only the tracker repos, outputs and uploads are), so the downstream Antigravity queue cannot
+    // be appended. Last plate actually on disk remains 2026-07-17-dotson-wr2.jpg; the qb-room-camp-eve
+    // pointer (dated 2026-07-20, sixteen days old) was never generated and still resolves to the photoId
+    // headshot fallback. Two franchise-scale stories landed on Aug 4, the Bijan Robinson record extension
+    // and the Jalon Walker feared torn ACL, so the cover editorial rotated onto the day itself and photoId
+    // moved from penix-jr to bijan to keep the headshot fallback anchored on the signing (a face fans want
+    // to see) rather than an injured player. Repointing the URL to an Aug-05 slug would only spawn another
+    // dangling request no one can fulfill from this sandbox, so the pointer is left as is. The clean queue
+    // moment is a Bijan return-to-practice or Penix/Branch padded rep, for the first run that can reach the Vault.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-07-20-qb-room-camp-eve.jpg",
   },
   sources: [
@@ -2303,6 +2314,27 @@ export const NEWS_DIGEST = {
     "Sportsnaut", "The Big Lead", "The Athletic",
   ],
   topics: [
+    {
+      title: "WALKER FEARED TO HAVE TORN HIS ACL, AND ATLANTA'S DEFENSE MAY HAVE LOST ITS YOUNG CENTERPIECE FOR THE YEAR: late in Tuesday's practice second-year edge rusher Jalon Walker went down without contact in an 11-on-11 two-minute drill, was carted off as teammates took a knee, and NFL Network reported the team fears a torn ACL, with The Athletic's Josh Kendall reporting Tuesday evening that he had in fact torn it pending an MRI",
+      detail: "NFL Network, ESPN, The Athletic and The Falcoholic (Aug 4, Day 6): the injury overshadowed everything else on a day that had started with the Bijan Robinson signing. Walker went down late in an 11-on-11 two-minute period, without contact, and was immediately attended to by trainers as the entire team took a knee, the on-field sign of a serious injury. He was carted off, and Kevin Stefanski ended practice roughly 45 minutes early. NFL Network's Ian Rapoport reported the Falcons fear a torn ACL, and The Athletic's Josh Kendall reported Tuesday evening that Walker had torn the ACL, with an MRI to confirm. A confirmed tear ends his 2026 season before it starts. The No. 15 overall pick of the 2025 draft out of Georgia, Walker started as a rookie and posted 62 tackles, 10 tackles for loss, 5.5 sacks and a forced fumble, and Jeff Ulbrich had spent the offseason talking about unlocking his versatility in Year 2. The timing is brutal for an edge room that is already planning to open the season without James Pearce Jr., who faces a possible suspension, which pushes Samson Ebukam, Azeez Ojulari, Cameron Thomas and the returning Bralen Trice into far larger roles.",
+      category: "injuries",
+      sourceUrl: "https://www.nfl.com/news/falcons-lb-jalon-walker-feared-to-have-torn-acl-in-training-camp-practice",
+      sourceLabel: "NFL.com / ESPN / The Athletic / The Falcoholic",
+    },
+    {
+      title: "BIJAN GETS PAID, AND HE IS THE HIGHEST-PAID RUNNING BACK IN NFL HISTORY: the Falcons ended a five-day hold-in Tuesday morning by agreeing with Robinson on a three-year extension worth up to $75 million, with $51 million guaranteed and $37 million at signing, the most money ever guaranteed to a running back, resetting the market and locking up the fourth core Cunningham-era piece after London, Pitts and Bergeron",
+      detail: "ESPN (Adam Schefter), NFL.com, The Washington Post and SI Falcons (Aug 4): Robinson and the Falcons agreed to a three-year extension worth up to $75 million, roughly $22.25M in new base average with a max of about $25M per year, that makes him the highest-paid running back in NFL history, surpassing Saquon Barkley's $20.6M. The deal carries $51 million guaranteed and $37 million at signing, the most ever guaranteed to a back on a non-rookie deal, and runs through 2030 after his 2027 fifth-year option. Negotiated by Nicole Lynn of Klutch Sports, it ended a hold-in that had reached five days. Robinson led the NFL with 2,298 scrimmage yards in 2025, a first-team All-Pro season and the 12th-highest single-season total in league history, and across three years he has 3,910 rushing yards and 25 rushing touchdowns plus 1,738 receiving yards and nine scores on an NFL-leading 1,003 touches. He is the third offensive weapon Atlanta has extended this summer after Drake London (4yr/$141M) and Kyle Pitts Sr. (3yr/$54M), with Matthew Bergeron (4yr/$96M) added Aug 1, and the four now account for roughly a quarter of the projected salary cap.",
+      category: "contracts",
+      sourceUrl: "https://www.espn.com/nfl/story/_/id/49527923/falcons-rb-robinson-reach-3-year-deal-worth-75m",
+      sourceLabel: "ESPN / NFL.com / Washington Post / SI Falcons",
+    },
+    {
+      title: "DAY 6 WAS SHELLS, NOT PADS, AND THE QUARTERBACK GRASS KEPT INCHING FORWARD BEFORE THE INJURY: with league rules barring back-to-back padded practices the Falcons went back to shells, Tua Tagovailoa took a second day of light 11-on-11 work and went 3-of-4, Michael Penix Jr. stayed capped at 7-on-7, and Cooper Rush closed with the first team in the two-minute drill that ended in Walker's injury",
+      detail: "The Falcoholic and SI Falcons (Day 6 camp reports, Aug 4): Stefanski told reporters the Falcons were in shells rather than full pads because at this point of camp league rules prohibit back-to-back padded practices. Tua eased into 11-on-11 for a second straight day, throwing just a handful of times and finishing 3-of-4, with his best rep a well-layered ball to Drake London over a leaping Christian Harris; he said he expected to practice fully Wednesday. Penix again worked individual and 7-on-7 only as he protects his surgically repaired knee. Defensive coordinator Jeff Ulbrich was back on the sideline, and the staff spent the day rotating blitz packages, with Harold Perkins Jr. and rookie Kendal Daniels mixing through various looks. Cooper Rush, signed a week earlier, took first-team reps in the closing two-minute drill, the same period in which Walker was hurt.",
+      category: "general",
+      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-training-camp/94818/falcons-training-camp-day-6-news-standouts-interviews-injuries-jalon-walker-tua-tagovailoa-michael-penix-nfl-2026",
+      sourceLabel: "The Falcoholic / SI Falcons",
+    },
     {
       title: "THE PADS COME ON AND ATLANTA HAS ITS BEST DAY OF CAMP: on the first padded practice of the summer Tua Tagovailoa returned to live 11-on-11 work for the first time, Michael Penix Jr. answered with his sharpest session yet including a go-route touchdown to Zachariah Branch, and the defensive line spent the afternoon in dirty pockets while Bijan Robinson held in for a sixth straight practice",
       detail: "The Falcoholic, SI Falcons and the team site (Day 5 camp reports, Aug 3): after four no-pads days and a Sunday off, the pads went on Monday and the intensity climbed with them. Tua Tagovailoa, limited to walk-through speed last week as he eased a tight back, took the main reps of the first team period in a live 11-on-11 look that moved at a quicker pace, screens and handoffs to open but real progress after sitting out Day 1. Penix, still held out of team drills while he rehabs his ACL, competed in every other period and was sharp: a long completion to Chris Blair, a go-route touchdown to rookie Zachariah Branch that drew the loudest cheer of the day, and a closing deep ball that Antwane Wells Jr. brought in for a score. Branch, the third-round returner, again graded out as one of the best players on the field. On defense, Samson Ebukam looked long and powerful off the edge and the front kept the pockets dirty for Cooper Rush and undrafted rookie Jack Strand. Bijan Robinson was a non-participant for a sixth straight practice, hyping teammates from the sideline (he was first on Chris Lindstrom's heels to celebrate a Nathan Carter blitz pickup) while he holds in for a new deal. Rookie nickel Avieon Terrell drew a handful of first-team reps at the slot once the pads came on, a small sign the staff is widening the evaluation now that contact is legal.",
@@ -2339,13 +2371,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "AJC / NBC Sports PFT / NFL.com / atlantafalcons.com",
     },
     {
-      title: "THE BEST BACK IN FOOTBALL IS STILL SITTING, AND BERGERON'S DEAL RAISED THE STAKES: a week into camp Bijan Robinson is still holding in, present but out of cleats and helmet, and Saturday's Bergeron extension left him as the last core piece unsigned, with the two sides reported to have done enough work that a deal is expected before the season",
-      detail: "Pro Football Rumors, CBS Sports, Bleacher Report, ESPN's hold-in tracker and The Falcoholic (Jul 29-30): Robinson reported to camp and has watched the first practices from the sideline, present in a jersey but out of cleats and helmet, in a hold-in aimed at a new contract rather than a holdout with fines attached. The leverage math is settled, Atlanta exercised his fifth-year option in April, so he is under control through 2027 and neither side faces a deadline, which is why this has stretched into camp. What is not in dispute is the case: he led the NFL with 2,298 scrimmage yards last season, a franchise record, including 1,478 rushing and 820 receiving, and is coming off his second Pro Bowl. Rapoport reports Robinson is the likelier of the offseason's marquee backs to break the market first, with the sides having 'done a lot of work' and needing only to hammer out final terms, and he is expected to become the league's highest-paid running back whenever he signs, sometime between now and Week 1. He holds in alongside Detroit's Jahmyr Gibbs, in the same window, and whichever back signs first sets the number the other negotiates against. With Matthew Bergeron signed Aug 1, Robinson is now the last of the marquee Cunningham-era targets left unsigned after London, Pitts and Bergeron. ESPN's hold-in tracker and ClutchPoints (Aug 1-2) described the talks as active and stressed the hold-in is not injury related, with any new deal not taking effect until 2028 and Robinson positioned to clear roughly $20.6M per year as the league's highest-paid back.",
-      category: "contracts",
-      sourceUrl: "https://www.profootballrumors.com/2026/07/bijan-robinson-jahmyr-gibbs-holding-in",
-      sourceLabel: "Pro Football Rumors / CBS Sports / Bleacher Report / The Falcoholic",
-    },
-    {
       title: "ATLANTA SIGNED A HUDDLE AT SUNRISE: with Tua's back tight and Penix not cleared, the Falcons released Trevor Siemian with a non-football injury and signed nine-year veteran Cooper Rush on Wednesday morning, and by the afternoon he was taking first-team reps in a building he had walked into hours earlier",
       detail: "Team site, NBC Sports, Pro Football Rumors and The Falcoholic (Jul 29): the quarterback shuffle was fast and functional. Siemian, brought in as a veteran mentor, was released with a non-football injury designation, and in his place Atlanta added Rush, the 32-year-old who went 9-5 as a spot starter across eight seasons in Dallas and spent 2025 backing up Lamar Jackson in Baltimore before a March release. The reason was immediate need, not long-term intent: with both top passers unavailable for team periods on Day 1, the room had exactly one healthy veteran arm, and Rush 'met him in the huddle,' as the team site put it, flying in from Dallas overnight to sign and practice the same day. Stefanski's read on the whole episode doubled as a shrug at camp's unpredictability: 'It's the NFL, brother. This is the NFL and you cannot predict what's coming. You don't have a crystal ball.' Rush is depth insurance while Tua's back settles and Penix works back, not a threat to either job, but on July 29 he was the most available quarterback the Falcons had. A week later, with Tua still limited and Penix capped at 7-on-7, Rush and undrafted rookie Jack Strand have kept splitting the first-team reps.",
       category: "free-agency",
@@ -2358,13 +2383,6 @@ export const NEWS_DIGEST = {
       category: "general",
       sourceUrl: "https://www.espn.com/nfl/story/_/id/49308165/key-questions-falcons-camp-including-qb1-status-tua-tagovailoa-michael-penix-jr",
       sourceLabel: "ESPN / atlantafalcons.com",
-    },
-    {
-      title: "THE GREEN DOT IS SETTLED AND THE SPOT NEXT TO IT IS NOT: Divine Deablo inherits the defensive play-calling duty Kaden Elliss took to New Orleans, Christian Harris is the clubhouse leader beside him after a spring of first-team reps, and Ulbrich's own framing is that replacing Elliss will be a committee rather than a person",
-      detail: "Atlantafalcons.com inside-linebackers camp preview (Jul 10 installment) alongside ESPN's five-questions piece and The Falcoholic's linebacker breakdown: the cleanest read yet on the room Atlanta had to rebuild from scratch. Elliss did four jobs at once, wore the green dot and left for the rival Saints, and Jeff Ulbrich has already conceded on the record that no single player replaces that. The green dot itself is resolved: Deablo carries the helmet radio and becomes the primary defensive play-caller in 2026, a meaningful promotion for a player Atlanta signed as a role piece. The open job is the spot beside him. Christian Harris, signed away from Houston, is the favorite on the strength of OTA and minicamp reps, and the resume is a bet on unfulfilled potential rather than production: a 2022 third-round pick with 46 games and 27 starts across four seasons, with calf and ankle injuries the reason the ceiling never quite arrived. Everyone chasing him carries a caveat. Channing Tindall has 24 career starts between Miami and Arizona but no clear role. Troy Andersen has not played since 2024 and has yet to fully practice because of the knee. JD Bertrand is depth. Fourth-round rookie Kendal Daniels missed the spring hurt. Sixth-rounder Harold Perkins Jr., undersized and very fast, has been running with the second team and is the name the team site keeps circling back to. The wildcard is Jalon Walker, who Ulbrich wanted to master the edge first but who could take inside snaps in a defense that is explicitly planning to rotate. The honest summary from the preview is that it will be by committee, and the committee could look different down to down.",
-      category: "coaching",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-2026-training-camp-preview-inside-linebackers",
-      sourceLabel: "atlantafalcons.com / ESPN / The Falcoholic",
     },
     {
       title: "THE PLAYER WHO HAS NEVER TAKEN AN NFL SNAP JUST QUIETLY CLEARED THE HARDEST PART: Bralen Trice took a regular rotation in 11-on-11 team drills through the spring, two full years after the ACL tear that erased his rookie season and one year after he re-aggravated the same knee, and with a James Pearce Jr. suspension still hanging over the edge room he is no longer a depth luxury",
@@ -2381,13 +2399,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com / Atlanta Leader",
     },
     {
-      title: "ULBRICH SAYS THE QUIET PART ABOUT YEAR ONE: 'THE VISION FOR HIM IS SO MUCH CLEARER IN YEAR 2,' the coordinator's framing of Jalon Walker doubles as an admission that Atlanta did not fully know how to use its first-round hybrid last season, and the plan now is to move him off the ball, over the guard and off the edge week to week",
-      detail: "NFL.com and atlantafalcons.com (Walker versatility pieces, carried by Yahoo Sports and The Falcoholic): the most substantive scheme item on the board heading into camp, and it is about a player rather than a job. Jeff Ulbrich's line, that 'the vision for him is so much clearer in Year 2,' is generous to himself and honest at the same time. Walker came out of Georgia as a genuine hybrid, and a rookie season spent mostly finding a home is now supposed to become a season spent exploiting the flexibility. Walker's own description of the conversations is specific about the range: 'many ways to move me around along our defensive front, whether it's over the ball, over a guard, off the edge.' The stakes are structural. Kaden Elliss took four alignments' worth of responsibility to New Orleans, Ulbrich has already conceded that role cannot be replaced by one man, and Walker is the closest thing on the roster to a one-man answer for the part of it that involves rushing from anywhere. The expectation attached to him externally is double-digit sacks, and The Falcoholic goes further, casting him as the defense's new centerpiece rather than a complementary piece. Worth holding next to ESPN's breakout pick from last week, which passed over Walker for Brandon Dorlus on the theory that the obvious answer is priced in. Both can be true, and camp is where the alignment charts stop being theoretical.",
-      category: "coaching",
-      sourceUrl: "https://www.nfl.com/news/falcons-dc-jeff-ulbrich-ready-to-utilize-jalon-walker-versatility-in-year-2",
-      sourceLabel: "NFL.com / atlantafalcons.com / The Falcoholic",
-    },
-    {
       title: "THE PEARCE CASE MOVES, BUT NOT THE WAY ATLANTA WANTED: the pretrial diversion program has been extended from six months to a full year, which pushes the legal resolution deep into the season, while the suspension estimates have quietly narrowed toward a four-to-eight game band and a return to the field at some point in 2026",
       detail: "Heavy.com, Pro Football Rumors, The Big Lead, Sportsnaut and Audacy (reporting carried through the weekend), with still no statement from the league office: two things changed since the last update, and they cut in opposite directions. The first is procedural and unhelpful. The length of the pretrial diversion program covering Pearce's Miami-Dade charges, two counts of aggravated battery with a deadly weapon and one count of aggravated stalking, with WNBA player Rickea Jackson identified as the alleged victim, has been extended from six months to one year. Charges are still cleared on completion and no conviction is involved, but a twelve-month program means the underlying case will not be formally closed until well inside the 2026 season, which is exactly the scenario Audacy flagged when it reported the league may not rule before 2027. The second is a softening of the projected penalty. The Athletic's Josh Kendall still reads a suspension as likely, and the Falcons are reportedly planning internally for eight games or more on the Cameron Sutton precedent, but the aggregate read has drifted toward four to eight games on the logic that the case is headed toward dismissal and no one was physically harmed. The practical translation for camp is unchanged: Atlanta prepares as though it will be without the player who led the team with 10.5 sacks as a rookie, and the edge room it stacked this spring in Azeez Ojulari, Samson Ebukam and Cameron Thomas is the contingency plan whether or not it is ever needed.",
       category: "general",
@@ -2401,13 +2412,6 @@ export const NEWS_DIGEST = {
       sourceUrl: "https://www.atlantafalcons.com/news/jessie-bates-ranked-nfl-top-safeties-2026-season-espn",
       sourceLabel: "atlantafalcons.com / ESPN / SI Falcons",
     },
-    {
-      title: "THE OTHER CAMP, THE ONE FOR THE LAST FOUR ROSTER SPOTS: The Falcoholic runs the five offensive jobs genuinely up for grabs, and the most crowded is the back of the receiver room, where two perennial summer standouts, three undrafted rookies and a UFL import are chasing maybe two openings under a coaching staff that owes none of them anything",
-      detail: "The Falcoholic (filed Thu Jul 16, carried by Yahoo Sports): the useful counterweight to a preview cycle fixated on starters. Behind Drake London, Jahan Dotson, Olamide Zaccheaus and third-round rookie Zachariah Branch, the receiver competition is a genuine scrum. Chris Blair and Dylan Drummond are the familiar names, both annual summer standouts who have made camp and preseason noise without converting it into a durable role, Blair on the strength of contested-catch flashes and Drummond as a clean route runner who blocks. Chasing them are three undrafted rookies in Keelan Marion, Vinny Anthony and Le'Meke Brockington, plus Antwane 'Juice' Wells Jr., the UFL signing added in June who brings the physicality the room otherwise lacks. The Falcoholic's honest caveat is the one that makes it interesting: with an entirely new coaching staff, there is no incumbent advantage and no way to name a favorite, because nobody in the building has evaluated any of these players in pads yet. The same dynamic runs through the other four offensive battles, with the right tackle job and the interior backup line spots the ones with actual snap consequences. This is the tier of camp that gets decided in the Denver and Indianapolis preseason games rather than in the Flowery Branch practice periods.",
-      category: "general",
-      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-depth-chart/94300/falcons-training-camp-2026-5-roster-battles-to-watch-on-offense-chris-blair-dylan-drummond",
-      sourceLabel: "The Falcoholic / Yahoo Sports",
-    },
   ],
 };
 
@@ -2418,9 +2422,30 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-08-04T09:00:00Z",
-  windowLabel: "Training Camp · Week 2 · Pads On (Aug 3) → Under the Lights Aug 8",
+  generatedAt: "2026-08-05T12:30:00Z",
+  windowLabel: "Training Camp · Week 2 · Bijan Signs, Walker Down (Aug 4) → Under the Lights Aug 8",
   sessions: [
+    {
+      id: "stefanski-2026-08-04",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-08-04",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Bijan Robinson Extension · Post-Practice Media Availability",
+      sourceUrl: "https://www.si.com/nfl/falcons/onsi/kevin-stefanski-reacts-bijan-robinson-record-breaking-contract-extension-falcons",
+      transcriptUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-bijan-robinson-strikes-a-deal-kevin-stefanski-details-his-ramp-up",
+      verified: true,
+      summary: "Meeting the media Tuesday afternoon after the Falcons and Bijan Robinson agreed on a record extension, Stefanski framed the resolution as expected and turned quickly to the person. He called the talks amicable, promised a measured ramp-up rather than a full-speed return for his star back, and spent most of the session on Robinson's character, recalling that he knew Robinson was special within the first few plays of studying Atlanta's film during his interview.",
+      pullQuote: "He's wired the right way. He was raised the right way. He's a team guy all the way, and that can be rare sometimes in this day and age.",
+      bullets: [
+        "On the deal: 'Very excited for him, excited for us. Knew throughout this whole process that it would be a process, and felt good about where we were,' and confirmed the negotiation was 'very amicable'",
+        "On the return: there will be a 'ramp-up period' rather than an immediate full-speed return, and 'it allows us to get Bijan ready, and he's eager, beyond eager, to be out there'",
+        "On when he knew Robinson was special: recalled watching Atlanta's film during his interview and seeing Robinson take a screen '50 yards for a touchdown' on the third play of the season, 'So not long'",
+        "On the reputation that preceded the player: 'I was with somebody that was just extolling Bijan's virtue, his person,' being told he would not believe Robinson when he first met him",
+        "Robinson is the fourth core piece extended this offseason after London, Pitts and Bergeron, a run that dropped Atlanta's pending-free-agent count from 44 to 42 of 90 players",
+      ],
+      topics: ["bijan-extension", "contracts", "training-camp"],
+    },
     {
       id: "tagovailoa-2026-08-03",
       speaker: "Tua Tagovailoa",
@@ -2525,27 +2550,6 @@ export const INTERVIEWS = {
         "Steps into a job that went through three different kickers in 2025 as the veteran stabilizer the staff wanted",
       ],
       topics: ["special-teams", "roster", "training-camp"],
-    },
-    {
-      id: "pitts-2026-06-29",
-      speaker: "Kyle Pitts Sr.",
-      role: "Tight End",
-      date: "2026-06-29",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "Contract Extension Signing · Media Availability",
-      sourceUrl: "https://www.atlantafalcons.com/news/kyle-pitts-contract-2026-im-in",
-      transcriptUrl: "https://www.atlantafalcons.com/video/kyle-pitts-sr-speaks-to-the-media-on-atlanta-falcons-contract-extension-press-conference",
-      verified: true,
-      summary: "A day after his three-year, $54M extension became official, Pitts met the media and turned the session into a career retrospective rather than a celebration. He traced the arc from being drafted No. 4 overall through three offensive systems, a parade of quarterbacks and a knee injury, framed the franchise-tag year as his window to prove himself to the new regime, and cast the deal as the start of a second act at age 26.",
-      pullQuote: "Whatever needs to be done for us to get to meaningful ball, I'm in. That's how I have been, and now it's just more enhanced.",
-      bullets: [
-        "On the emotional high point of his Atlanta career: 'Getting drafted. Being able to get the chance to get to this next level and play at the highest level, that's been a dream of mine since I started playing the game'",
-        "Framed the tag year as a proving window: 'That was my opportunity, that Atlanta picked me up for another year to showcase (my skills), and then it was time to squeeze the rag'",
-        "On the front office's investment: 'It's always good to know when people like you and for them to invest and trust that I have a lot more to go is pretty cool to see and feel'",
-        "Credited Hayden Hurst and Lee Smith with teaching him professionalism as a rookie, and Jonnu Smith and MyCole Pruitt with helping him stay the course through the knee-injury years",
-        "Sees his evolution entering a second act at 26, pointing to tight ends like Travis Kelce, George Kittle and Tony Gonzalez who kept producing deep into their careers",
-      ],
-      topics: ["pitts-extension", "contracts", "second-act"],
     },
   ],
 };

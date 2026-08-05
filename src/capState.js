@@ -22,14 +22,7 @@ export const CAP_STATE = {
     { playerId: "drake-london", amount: 16800000 },
     { playerId: "matthews", amount: 15500000 },
   ],
-  pendingExtensions: [
-    {
-      playerId: "bijan",
-      status: "extension-eligible",
-      priority: 1,
-      rationale: "Eligible after 3 accrued seasons; $11.32M 5th-yr option exercised for 2027. Now a hold-in: Robinson reported to camp Jul 29 but is not practicing while his agents finalize an extension. Rapoport reports the sides have done a lot of work and a deal is expected before the season, with Robinson likely to break the RB market first and become the league's highest-paid back. The Athletic's Austin Mock model projects $21.9M AAV with a position-record $52.7M guaranteed, topping Saquon's $20.6M AAV; Detroit's Jahmyr Gibbs is holding in over the same window, so whoever signs first sets the bar. Team control through 2027 removes any hard deadline, but with Bergeron's 4yr/$96M extension signed Aug 1, this is the clear next domino after Bergeron, Pitts and London.",
-    },
-  ],
+  pendingExtensions: [],
   restructureCandidates: [
     {
       playerId: "lindstrom",
@@ -43,6 +36,8 @@ export const CAP_STATE = {
     },
   ],
   recentMoves: [
+    { date: "2026-08-04", description: "EDGE Jalon Walker feared to have torn his ACL in the Day 6 practice; carted off after a non-contact fall in an 11-on-11 two-minute drill. NFL Network reported the team fears a torn ACL and The Athletic's Josh Kendall reported a tear the same evening, pending an MRI. A confirmed tear ends his 2026 season and would send the 2025 first-round pick to IR, thinning an edge room already bracing for a possible James Pearce Jr. suspension" },
+    { date: "2026-08-04", description: "Signed RB Bijan Robinson to a three-year extension worth up to $75M, making him the highest-paid running back in NFL history: $51M guaranteed and $37M at signing, the most ever guaranteed to a back, running through 2030. Ends a five-day camp hold-in. Negotiated by Nicole Lynn (Klutch Sports). Fourth core Cunningham-era extension after London, Pitts and Bergeron; signing-bonus proration raises the 2026 cap hit modestly off his prior $3.24M base" },
     { date: "2026-08-01", description: "Signed LG Matthew Bergeron to a 4yr/$96M extension ($60M guaranteed, $24M APY) running through 2030, announced Saturday. The 2023 second-round pick has started all 49 of his games across three seasons and would have hit free agency after this year. GM Ian Cunningham called him 'the type of player you build around' and 'a cornerstone of our offensive line.' It is the third core Cunningham-era extension in two months after Drake London and Kyle Pitts Sr., and it reinforces that Bijan Robinson is the next domino. Modest 2026 cap impact from signing-bonus proration" },
     { date: "2026-07-29", description: "Signed veteran QB Cooper Rush and released QB Trevor Siemian with a non-football injury designation, both on the morning of the first camp practice. With Tua Tagovailoa held out (back) and Michael Penix Jr. still limited (ACL), the room needed a healthy veteran arm; Rush, 32, went 9-5 as a spot starter in Dallas and backed up Lamar Jackson in Baltimore in 2025. Minimum-salary signing, negligible cap impact" },
     { date: "2026-06-23", description: "Signed TE Kyle Pitts Sr. to a 3yr/$54M extension ($36M fully guaranteed, $18M APY, 3rd among TEs behind Kittle and McBride; largest 3-year TE deal in NFL history per his agency). Rips up the $15.05M franchise tag, runs through 2028. OTC pegged ~$11M in 2026 cap savings vs the tag. Second core extension in three weeks after London; sets up Bijan Robinson next" },
