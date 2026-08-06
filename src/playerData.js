@@ -775,7 +775,7 @@ export const PLAYERS = [
     stats: { tackles: 62, tfl: 10, sacks: 5.5, ff: 1 },
     form: 0,
     status: "ir",
-    injuryNote: "Feared season-ending torn ACL. Went down without contact late in the Day 6 practice (Aug 4) during an 11-on-11 two-minute drill, was carted off as teammates took a knee, and Stefanski ended practice early. NFL Network reported the team fears a torn ACL and The Athletic's Josh Kendall reported a torn ACL the same evening, pending an MRI to confirm. A confirmed tear ends his 2026 season; expected to move to IR",
+    injuryNote: "Season-ending torn ACL, confirmed. Went down without contact late in the Day 6 practice (Aug 4) during an 11-on-11 two-minute drill and was carted off as teammates took a knee. Tests confirmed the torn ACL on Aug 5, and the team announced he will miss the 2026 season. Outside linebackers coach John Timu called it a huge loss for a defense that drafted him 15th overall in 2025 to build the edge around",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4685597.png",
     contract: { years: 4, total: 19200000, guaranteed: 19200000, apy: 4800000, throughYear: 2028, cap2026: 4400000 },
     career: [
@@ -2123,18 +2123,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-05T12:30:00Z",
+  generatedAt: "2026-08-06T09:00:00Z",
   cover: {
-    kicker: "TRAINING CAMP · WEEK 2 · The Best Day and the Worst Day Arrived Together: Atlanta Made Bijan Robinson the Highest-Paid Running Back in NFL History on a Three-Year Extension Worth Up to $75M That Ended His Hold-In, and Hours Later Watched First-Round Edge Rusher Jalon Walker Get Carted Off With a Feared Torn ACL",
-    headLine1: "The best day and the worst day arrived on the same afternoon.",
-    headEm: "Bijan Robinson got the record deal that ends his hold-in and resets the running back market, and then, with the celebration still fresh, Jalon Walker went down in a two-minute drill and was carted off with a knee the team fears is a torn ACL.",
-    headLine3: "One signature made the offense whole. One non-contact step may have taken the defense's young centerpiece for the year.",
+    kicker: "TRAINING CAMP · WEEK 2 · It Is Confirmed: Tests Came Back on Jalon Walker and the Falcons Announced Their Second-Year Edge Rusher Tore His ACL and Will Miss the Entire 2026 Season, a Gut-Punch That Lands Two Days After Atlanta Made Bijan Robinson the Highest-Paid Running Back in NFL History",
+    headLine1: "The worst fear came back confirmed.",
+    headEm: "Tests on Jalon Walker came back Wednesday and the Falcons announced what the building had dreaded since Tuesday's cart: a torn ACL, and a lost 2026 season for the 22-year-old the team drafted to build its defense around.",
+    headLine3: "Two days earlier Atlanta signed Bijan Robinson to a record deal. Now the defense has to replace its young centerpiece before the pads have even come off.",
     deck:
-      "Tuesday gave Atlanta its highest high and a gut-punch inside the same practice window. In the morning the Falcons and Bijan Robinson agreed to a three-year extension worth up to $75 million, roughly $22.25M in new base average with a max of $25M a year, carrying $51 million guaranteed and $37 million at signing, the most money ever guaranteed to a running back and enough to make him the highest-paid back in NFL history. The deal ended a five-day hold-in and made Robinson the fourth core piece Ian Cunningham has locked up this offseason after Drake London, Kyle Pitts Sr. and Matthew Bergeron. Kevin Stefanski, who called Robinson 'wired the right way,' promised a measured ramp-up rather than a full-speed return. Then the afternoon turned. Late in an 11-on-11 two-minute period, second-year edge rusher Jalon Walker went down without contact, trainers rushed out, teammates took a knee, and the No. 15 pick of the 2025 draft was carted off. NFL Network reported the team feared a torn ACL and The Athletic's Josh Kendall reported Tuesday evening that Walker had torn it, pending an MRI, an injury that would end his season before it started and gut an edge room already bracing for a possible James Pearce Jr. suspension. Stefanski ended practice roughly 45 minutes early. On the grass the quarterback picture kept inching forward, Tua Tagovailoa taking a second day of light 11-on-11 work and going 3-of-4, Michael Penix Jr. still capped at 7-on-7, Cooper Rush closing with the ones in the two-minute drill. A week and a day in, Atlanta paid its franchise back and, in the space of a few hours, may have lost the player it drafted to build the defense around.",
+      "The MRI took the hope out of it. On Wednesday the Falcons confirmed that second-year edge rusher Jalon Walker tore his ACL in Tuesday's practice and will miss the entire 2026 season, turning a feared injury into a settled and season-ending one. Walker had gone down without contact late in an 11-on-11 two-minute period, trainers rushing out as the whole team took a knee, and was carted off with Kevin Stefanski ending practice roughly 45 minutes early. The No. 15 overall pick of the 2025 draft out of Georgia, Walker started as a rookie and posted 62 tackles, 10 tackles for loss and 5.5 sacks, and Jeff Ulbrich had spent the offseason talking about unlocking his versatility in Year 2. Outside linebackers coach John Timu called it a huge loss, and Michael Penix Jr. said of his teammate, 'I know that he's a strong individual, he's going to get through it.' The timing is cruel on two fronts. It gut-punches an edge room already bracing to open the season without James Pearce Jr., who faces a possible suspension, and pushes Samson Ebukam, Azeez Ojulari, Cameron Thomas and the returning Bralen Trice into far larger roles. And it lands just two days after the franchise's highest high, the three-year extension worth up to $75 million that made Bijan Robinson the highest-paid running back in NFL history, $51 million guaranteed, and ended his five-day hold-in. On the grass the quarterback picture keeps inching forward, Tua Tagovailoa easing back into 11-on-11 work while Michael Penix Jr. stays capped at 7-on-7 and Cooper Rush holds the veteran reps, with the free Under the Lights session set for Aug 8. A week and a half into camp, Atlanta paid its franchise back and lost the player it drafted to build the defense around, inside the same three days.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "bijan",
-    stampLabel: "CAMP WEEK 2 · BIJAN PAID · WALKER DOWN",
+    stampLabel: "CAMP WEEK 2 · WALKER ACL CONFIRMED · OUT FOR 2026",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2301,6 +2301,17 @@ export const NEWS_DIGEST = {
     // to see) rather than an injured player. Repointing the URL to an Aug-05 slug would only spawn another
     // dangling request no one can fulfill from this sandbox, so the pointer is left as is. The clean queue
     // moment is a Bijan return-to-practice or Penix/Branch padded rep, for the first run that can reach the Vault.
+    // STATUS (2026-08-06 scheduled run): cover queue SKIPPED again, same hard constraint re-verified this
+    // cycle: ~/Vault/Notes/image-requests.md and the limn-editor-enhance skill are NOT mounted in this
+    // sandbox (only the tracker repos, outputs and uploads are), so the downstream Antigravity queue cannot
+    // be appended. Last plate actually on disk remains 2026-07-17-dotson-wr2.jpg; the qb-room-camp-eve
+    // pointer (dated 2026-07-20, seventeen days old) was never generated and still resolves to the photoId
+    // headshot fallback. Today's lead rotated to the CONFIRMED Jalon Walker torn ACL (out for 2026, tests
+    // back Aug 5); photoId is left on bijan so the headshot fallback anchors on a face fans want to see
+    // (the record signing, still the co-lead) rather than the injured player, per the standing guidance not
+    // to point the cover at an injured man. Repointing the URL to an Aug-06 slug would only spawn another
+    // dangling request no one can fulfill from this sandbox, so the pointer is left as is. The clean queue
+    // moment is a Bijan return-to-practice or Penix/Branch padded rep, for the first run that can reach the Vault.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-07-20-qb-room-camp-eve.jpg",
   },
   sources: [
@@ -2315,11 +2326,11 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "WALKER FEARED TO HAVE TORN HIS ACL, AND ATLANTA'S DEFENSE MAY HAVE LOST ITS YOUNG CENTERPIECE FOR THE YEAR: late in Tuesday's practice second-year edge rusher Jalon Walker went down without contact in an 11-on-11 two-minute drill, was carted off as teammates took a knee, and NFL Network reported the team fears a torn ACL, with The Athletic's Josh Kendall reporting Tuesday evening that he had in fact torn it pending an MRI",
-      detail: "NFL Network, ESPN, The Athletic and The Falcoholic (Aug 4, Day 6): the injury overshadowed everything else on a day that had started with the Bijan Robinson signing. Walker went down late in an 11-on-11 two-minute period, without contact, and was immediately attended to by trainers as the entire team took a knee, the on-field sign of a serious injury. He was carted off, and Kevin Stefanski ended practice roughly 45 minutes early. NFL Network's Ian Rapoport reported the Falcons fear a torn ACL, and The Athletic's Josh Kendall reported Tuesday evening that Walker had torn the ACL, with an MRI to confirm. A confirmed tear ends his 2026 season before it starts. The No. 15 overall pick of the 2025 draft out of Georgia, Walker started as a rookie and posted 62 tackles, 10 tackles for loss, 5.5 sacks and a forced fumble, and Jeff Ulbrich had spent the offseason talking about unlocking his versatility in Year 2. The timing is brutal for an edge room that is already planning to open the season without James Pearce Jr., who faces a possible suspension, which pushes Samson Ebukam, Azeez Ojulari, Cameron Thomas and the returning Bralen Trice into far larger roles.",
+      title: "IT IS CONFIRMED: JALON WALKER TORE HIS ACL AND WILL MISS THE 2026 SEASON, AND ATLANTA'S DEFENSE LOSES ITS YOUNG CENTERPIECE BEFORE THE PADS COME OFF: tests came back Wednesday and the Falcons announced their second-year edge rusher is out for the year after going down without contact in Tuesday's two-minute drill, an injury that guts an edge room already bracing for a possible James Pearce Jr. suspension",
+      detail: "ESPN, NFL.com, NBC Sports and the team site (Aug 5): the MRI confirmed the worst. A day after Jalon Walker was carted off without contact late in a Day 6 two-minute drill, tests confirmed a torn ACL and the Falcons announced he will miss the entire 2026 season. Outside linebackers coach John Timu called it a huge loss Wednesday, and Michael Penix Jr. said of his teammate, 'I know that he's a strong individual, he's going to get through it.' The No. 15 overall pick of the 2025 draft out of Georgia, Walker started as a rookie and posted 62 tackles, 10 tackles for loss and 5.5 sacks, and Jeff Ulbrich had spent the offseason talking about unlocking his versatility in Year 2. The timing is brutal for an edge room already planning to open the season without Pearce, who faces a possible suspension, which pushes Samson Ebukam, Azeez Ojulari, Cameron Thomas and the returning Bralen Trice into far larger roles. The AJC framed the fallout bluntly, asking where Atlanta turns now that its most dynamic young rusher is gone for the year.",
       category: "injuries",
-      sourceUrl: "https://www.nfl.com/news/falcons-lb-jalon-walker-feared-to-have-torn-acl-in-training-camp-practice",
-      sourceLabel: "NFL.com / ESPN / The Athletic / The Falcoholic",
+      sourceUrl: "https://www.atlantafalcons.com/news/jalon-walker-to-miss-2026-season",
+      sourceLabel: "atlantafalcons.com / ESPN / NFL.com / NBC Sports",
     },
     {
       title: "BIJAN GETS PAID, AND HE IS THE HIGHEST-PAID RUNNING BACK IN NFL HISTORY: the Falcons ended a five-day hold-in Tuesday morning by agreeing with Robinson on a three-year extension worth up to $75 million, with $51 million guaranteed and $37 million at signing, the most money ever guaranteed to a running back, resetting the market and locking up the fourth core Cunningham-era piece after London, Pitts and Bergeron",
@@ -2422,8 +2433,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-08-05T12:30:00Z",
-  windowLabel: "Training Camp · Week 2 · Bijan Signs, Walker Down (Aug 4) → Under the Lights Aug 8",
+  generatedAt: "2026-08-06T09:00:00Z",
+  windowLabel: "Training Camp · Week 2 · Walker ACL Confirmed (Aug 5) → Under the Lights Aug 8",
   sessions: [
     {
       id: "stefanski-2026-08-04",
