@@ -775,7 +775,7 @@ export const PLAYERS = [
     stats: { tackles: 62, tfl: 10, sacks: 5.5, ff: 1 },
     form: 0,
     status: "ir",
-    injuryNote: "Season-ending torn ACL, confirmed. Went down without contact late in the Day 6 practice (Aug 4) during an 11-on-11 two-minute drill and was carted off as teammates took a knee. Tests confirmed the torn ACL on Aug 5, and the team announced he will miss the 2026 season. Outside linebackers coach John Timu called it a huge loss for a defense that drafted him 15th overall in 2025 to build the edge around",
+    injuryNote: "Season-ending torn ACL, confirmed, and placed on injured reserve (Aug 6, corresponding move added DB Keidron Smith). Went down without contact late in the Day 6 practice (Aug 4) during an 11-on-11 two-minute drill and was carted off as teammates took a knee. Tests confirmed the torn ACL on Aug 5, the team announced he will miss the 2026 season, and it moved him to IR the next day. Outside linebackers coach John Timu called it a huge loss for a defense that drafted him 15th overall in 2025 to build the edge around",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4685597.png",
     contract: { years: 4, total: 19200000, guaranteed: 19200000, apy: 4800000, throughYear: 2028, cap2026: 4400000 },
     career: [
@@ -2123,18 +2123,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-06T09:00:00Z",
+  generatedAt: "2026-08-07T09:00:00Z",
   cover: {
-    kicker: "TRAINING CAMP · WEEK 2 · It Is Confirmed: Tests Came Back on Jalon Walker and the Falcons Announced Their Second-Year Edge Rusher Tore His ACL and Will Miss the Entire 2026 Season, a Gut-Punch That Lands Two Days After Atlanta Made Bijan Robinson the Highest-Paid Running Back in NFL History",
-    headLine1: "The worst fear came back confirmed.",
-    headEm: "Tests on Jalon Walker came back Wednesday and the Falcons announced what the building had dreaded since Tuesday's cart: a torn ACL, and a lost 2026 season for the 22-year-old the team drafted to build its defense around.",
-    headLine3: "Two days earlier Atlanta signed Bijan Robinson to a record deal. Now the defense has to replace its young centerpiece before the pads have even come off.",
+    kicker: "TRAINING CAMP · WEEK 2 · Bijan Robinson Is Back on the Grass: Three Days After the Record Extension That Made Him the Highest-Paid Running Back in NFL History, Atlanta's Franchise Back Returned to Practice for the First Time Since Signing, a Bright Note on a Roster Still Absorbing the Loss of Jalon Walker for the Season",
+    headLine1: "The face of the franchise is back on the field.",
+    headEm: "Bijan Robinson returned to practice Thursday for the first time since his record extension, easing back through warmups and individual work as Atlanta ramps him toward full speed, the first good news on a grass that lost Jalon Walker for the year two days earlier.",
+    headLine3: "The Falcons placed Walker on injured reserve and turned the page, and camp got its edge back: live tackling in pads, Avieon Terrell picking off Tua, and the free Under the Lights session set for Saturday.",
     deck:
-      "The MRI took the hope out of it. On Wednesday the Falcons confirmed that second-year edge rusher Jalon Walker tore his ACL in Tuesday's practice and will miss the entire 2026 season, turning a feared injury into a settled and season-ending one. Walker had gone down without contact late in an 11-on-11 two-minute period, trainers rushing out as the whole team took a knee, and was carted off with Kevin Stefanski ending practice roughly 45 minutes early. The No. 15 overall pick of the 2025 draft out of Georgia, Walker started as a rookie and posted 62 tackles, 10 tackles for loss and 5.5 sacks, and Jeff Ulbrich had spent the offseason talking about unlocking his versatility in Year 2. Outside linebackers coach John Timu called it a huge loss, and Michael Penix Jr. said of his teammate, 'I know that he's a strong individual, he's going to get through it.' The timing is cruel on two fronts. It gut-punches an edge room already bracing to open the season without James Pearce Jr., who faces a possible suspension, and pushes Samson Ebukam, Azeez Ojulari, Cameron Thomas and the returning Bralen Trice into far larger roles. And it lands just two days after the franchise's highest high, the three-year extension worth up to $75 million that made Bijan Robinson the highest-paid running back in NFL history, $51 million guaranteed, and ended his five-day hold-in. On the grass the quarterback picture keeps inching forward, Tua Tagovailoa easing back into 11-on-11 work while Michael Penix Jr. stays capped at 7-on-7 and Cooper Rush holds the veteran reps, with the free Under the Lights session set for Aug 8. A week and a half into camp, Atlanta paid its franchise back and lost the player it drafted to build the defense around, inside the same three days.",
+      "There was a familiar No. 7 back in the mix Thursday, and after the week Atlanta just had it read like relief. Bijan Robinson returned to the practice field for the first time since agreeing to the three-year extension worth up to $75 million that made him the highest-paid running back in NFL history, taking part in team warmups and individual drills while the staff holds him out of full team periods and ramps him back after a week-long hold-in. Kevin Stefanski had promised a measured ramp-up rather than a full-speed return, and this was the first day of it. The rest of Day 7 had the crackle of a camp finding its edge: it was the second padded practice and the first with live tackling in 11-on-11, the energy up a notch, and rookie cornerback Avieon Terrell opened the team period by picking off Tua Tagovailoa on a diving play, rotating between outside corner and the slot as his physicality keeps drawing notice. Tua worked in team drills for a second straight day, still not a full go as he manages a tight back, while Michael Penix Jr. stayed on his individual and 7-on-7 plan and Cooper Rush held the veteran reps, including a red-zone touchdown to Kyle Pitts Sr. The backdrop is heavier. A day after confirming Walker's torn ACL, the Falcons placed the second-year edge rusher on injured reserve, ending his 2026 season and pressing Samson Ebukam, Azeez Ojulari, Cameron Thomas and the never-played Bralen Trice into a far larger rotation, with James Pearce Jr.'s possible suspension still hanging over the room. Atlanta lost the player it drafted to build its defense around, then got the face of its offense back on the grass, inside 72 hours. The public run builds to Under the Lights on Saturday, Aug 8.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "bijan",
-    stampLabel: "CAMP WEEK 2 · WALKER ACL CONFIRMED · OUT FOR 2026",
+    stampLabel: "CAMP WEEK 2 · BIJAN BACK ON THE GRASS · WALKER TO IR",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2312,6 +2312,17 @@ export const NEWS_DIGEST = {
     // to point the cover at an injured man. Repointing the URL to an Aug-06 slug would only spawn another
     // dangling request no one can fulfill from this sandbox, so the pointer is left as is. The clean queue
     // moment is a Bijan return-to-practice or Penix/Branch padded rep, for the first run that can reach the Vault.
+    // STATUS (2026-08-07 scheduled run): cover queue SKIPPED again, same hard constraint re-verified this
+    // cycle: ~/Vault/Notes/image-requests.md and the limn-editor-enhance skill are NOT mounted in this
+    // sandbox (only the tracker repos, outputs and uploads are), so the downstream Antigravity queue cannot
+    // be appended. Last plate actually on disk remains 2026-07-17-dotson-wr2.jpg; the qb-room-camp-eve
+    // pointer (dated 2026-07-20, eighteen days old) was never generated and still resolves to the photoId
+    // headshot fallback. Today's lead rotated to the clean, positive scene the last several notes kept
+    // naming as the ideal queue moment: Bijan Robinson back on the practice field Thursday (Aug 6) for the
+    // first time since his record deal. photoId stays bijan, so the fallback resolves to exactly the face
+    // this cover now leads on. This is precisely the rep to queue (Bijan easing back in at Flowery Branch)
+    // for the first run that can reach the Vault. Repointing the URL to an Aug-07 slug would only spawn
+    // another dangling request no one can fulfill from this sandbox, so the pointer is left as is.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-07-20-qb-room-camp-eve.jpg",
   },
   sources: [
@@ -2326,6 +2337,27 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
+      title: "BIJAN IS BACK ON THE GRASS: three days after the record extension that made him the highest-paid running back in NFL history, Robinson returned to practice Thursday for the first time since signing, easing in through warmups and individual drills while the staff holds him out of full team periods and ramps him toward game speed",
+      detail: "The Falcoholic and the team site (Day 7 camp report, Aug 6): the No. 7 was back in the mix Thursday for the first time since ending his hold-in with a three-year deal worth up to $75 million. Robinson took part in team warmups and individual work but was held out of team drills as Atlanta ramps him back after a week away from the field, exactly the measured return Kevin Stefanski promised Tuesday when he said there would be a ramp-up period rather than a full-speed return. Robinson stayed his usual engaged self on the sideline through the team periods, the same posture he kept during the hold-in. It is the first genuinely bright note on a grass that lost Jalon Walker for the season two days earlier, and it puts the face of the offense back in front of a camp that builds toward the free Under the Lights session Saturday, Aug 8.",
+      category: "general",
+      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-training-camp/94869/falcons-training-camp-day-7-news-standouts-interviews-injuries-michael-penix-tua-tagovailoa-bijan-robinson-avieon-terrell-nfl-2026",
+      sourceLabel: "The Falcoholic / atlantafalcons.com",
+    },
+    {
+      title: "THE DEFENSE TURNS THE PAGE: Atlanta placed Jalon Walker on injured reserve, ending his 2026 season, and moved forward with an edge rotation of Samson Ebukam, Azeez Ojulari, Cameron Thomas and the never-played Bralen Trice, a group ESPN's Jeremy Fowler notes the Falcons were already trying to add to before the injury",
+      detail: "The team site, ESPN, CBS Sports and the AJC (Aug 5 to 6): a day after confirming the torn ACL, the Falcons made it official and placed Walker on injured reserve, adding defensive back Keidron Smith to the roster in a corresponding move. The AJC's question, where does Atlanta turn now, is the whole story of the fall on defense. The room leans on Ebukam and Thomas as the next men up, with Ojulari flashing in the rotation and Trice, who has yet to play an NFL snap after two lost seasons to knee injuries, suddenly counted on. The math is thin: the group has combined for 63.5 career sacks across 26 player-seasons, more than half of them Ebukam's, and James Pearce Jr.'s possible suspension still hangs over it. Fowler reported Atlanta was hunting extra pass rushers even before Walker went down, so a veteran edge add would surprise no one, and the staff has cross-trained bodies at multiple spots to buy flexibility while the picture settles.",
+      category: "injuries",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-atlanta-defense-jalon-walker-michael-penix-jr",
+      sourceLabel: "atlantafalcons.com / ESPN / CBS Sports / AJC",
+    },
+    {
+      title: "AVIEON TERRELL PICKS OFF TUA AS THE PADS GET LOUDER: on the second padded day and the first with live tackling, the rookie fourth-round corner opened the team period with a diving interception of Tua Tagovailoa, rotating between outside and the slot as his physicality keeps standing out in a deep cornerback room",
+      detail: "The Falcoholic and SI Falcons (Day 7 camp report, Aug 6): with league rules finally allowing live tackling in 11-on-11, the energy climbed and the defense kept its edge from the opening whistle. Avieon Terrell, the Clemson product and younger brother of A.J. Terrell, opened the first team period by picking off Tua on a diving play on a ball intended for Jahan Dotson that Sydney Brown got a hand to, his first interception of camp. Terrell has spent the summer rotating between outside corner and the nickel and has been one of the more physical players in the secondary. Tua worked in team drills for a second straight day but was not a full go as he manages a tight back, and Cooper Rush again held veteran reps, connecting with Kyle Pitts Sr. for a red-zone touchdown as he settles into an offense he joined barely a week ago.",
+      category: "general",
+      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-training-camp/94869/falcons-training-camp-day-7-news-standouts-interviews-injuries-michael-penix-tua-tagovailoa-bijan-robinson-avieon-terrell-nfl-2026",
+      sourceLabel: "The Falcoholic / SI Falcons",
+    },
+    {
       title: "IT IS CONFIRMED: JALON WALKER TORE HIS ACL AND WILL MISS THE 2026 SEASON, AND ATLANTA'S DEFENSE LOSES ITS YOUNG CENTERPIECE BEFORE THE PADS COME OFF: tests came back Wednesday and the Falcons announced their second-year edge rusher is out for the year after going down without contact in Tuesday's two-minute drill, an injury that guts an edge room already bracing for a possible James Pearce Jr. suspension",
       detail: "ESPN, NFL.com, NBC Sports and the team site (Aug 5): the MRI confirmed the worst. A day after Jalon Walker was carted off without contact late in a Day 6 two-minute drill, tests confirmed a torn ACL and the Falcons announced he will miss the entire 2026 season. Outside linebackers coach John Timu called it a huge loss Wednesday, and Michael Penix Jr. said of his teammate, 'I know that he's a strong individual, he's going to get through it.' The No. 15 overall pick of the 2025 draft out of Georgia, Walker started as a rookie and posted 62 tackles, 10 tackles for loss and 5.5 sacks, and Jeff Ulbrich had spent the offseason talking about unlocking his versatility in Year 2. The timing is brutal for an edge room already planning to open the season without Pearce, who faces a possible suspension, which pushes Samson Ebukam, Azeez Ojulari, Cameron Thomas and the returning Bralen Trice into far larger roles. The AJC framed the fallout bluntly, asking where Atlanta turns now that its most dynamic young rusher is gone for the year.",
       category: "injuries",
@@ -2338,13 +2370,6 @@ export const NEWS_DIGEST = {
       category: "contracts",
       sourceUrl: "https://www.espn.com/nfl/story/_/id/49527923/falcons-rb-robinson-reach-3-year-deal-worth-75m",
       sourceLabel: "ESPN / NFL.com / Washington Post / SI Falcons",
-    },
-    {
-      title: "DAY 6 WAS SHELLS, NOT PADS, AND THE QUARTERBACK GRASS KEPT INCHING FORWARD BEFORE THE INJURY: with league rules barring back-to-back padded practices the Falcons went back to shells, Tua Tagovailoa took a second day of light 11-on-11 work and went 3-of-4, Michael Penix Jr. stayed capped at 7-on-7, and Cooper Rush closed with the first team in the two-minute drill that ended in Walker's injury",
-      detail: "The Falcoholic and SI Falcons (Day 6 camp reports, Aug 4): Stefanski told reporters the Falcons were in shells rather than full pads because at this point of camp league rules prohibit back-to-back padded practices. Tua eased into 11-on-11 for a second straight day, throwing just a handful of times and finishing 3-of-4, with his best rep a well-layered ball to Drake London over a leaping Christian Harris; he said he expected to practice fully Wednesday. Penix again worked individual and 7-on-7 only as he protects his surgically repaired knee. Defensive coordinator Jeff Ulbrich was back on the sideline, and the staff spent the day rotating blitz packages, with Harold Perkins Jr. and rookie Kendal Daniels mixing through various looks. Cooper Rush, signed a week earlier, took first-team reps in the closing two-minute drill, the same period in which Walker was hurt.",
-      category: "general",
-      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-training-camp/94818/falcons-training-camp-day-6-news-standouts-interviews-injuries-jalon-walker-tua-tagovailoa-michael-penix-nfl-2026",
-      sourceLabel: "The Falcoholic / SI Falcons",
     },
     {
       title: "THE PADS COME ON AND ATLANTA HAS ITS BEST DAY OF CAMP: on the first padded practice of the summer Tua Tagovailoa returned to live 11-on-11 work for the first time, Michael Penix Jr. answered with his sharpest session yet including a go-route touchdown to Zachariah Branch, and the defensive line spent the afternoon in dirty pockets while Bijan Robinson held in for a sixth straight practice",
@@ -2403,25 +2428,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "Pro Football Rumors / atlantafalcons.com",
     },
     {
-      title: "CAMP PREVIEW NO. 9 LANDS ON THE UNIT THAT WAS THE WORST IN FOOTBALL, AND ATLANTA TORE IT OUT AT THE STUDS: the series reaches special teams, where a 41-year-old Nick Folk replaces a three-kicker carousel, former All-Pro punter Jake Bailey follows his old coordinator to Flowery Branch, and the return jobs that produced a league-worst kickoff average are now Zachariah Branch's to lose",
-      detail: "Atlantafalcons.com camp-preview series (special teams installment, carried by Atlanta Leader and the Yahoo Sports aggregation): after eight previews spent litigating position battles, the ninth lands on the phase where 2025 was not competitive with the league. Atlanta finished last in average yards gained on kickoff returns, 27th in punt return yardage, allowed the most kickoff return yardage in football, and gave up a kick return touchdown. The response was total. The kicking job, which went through three different kickers last season, now belongs to Nick Folk, who at 41 arrives as one of the steadiest legs of the past decade and is the anti-carousel signing in the most literal sense. Bradley Pinion is gone and Jake Bailey punts, a former All-Pro who worked directly under special teams coordinator Craig Aukerman a season ago, which makes this less an acquisition than a reunion with a known operating manual. The returns are where the upside sits. Third-round rookie Zachariah Branch led all Division I players in punt return yardage as a freshman at USC with 332 yards, scored on both a punt and a kickoff that season, and finished his college career north of 500 punt return yards and 700 kickoff return yards. He is not handed either job: Jahan Dotson, Olamide Zaccheaus, Dylan Drummond, Keelan Marion and Vinny Anthony II have all taken punt looks, with Brian Robinson Jr., Tyler Goodson, Cash Jones and cornerback Natrone Brooks fielding kickoffs. It is the quietest unit on the preview board and, measured by distance from last year's baseline, the one with the most obvious room to move.",
-      category: "coaching",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-2026-training-camp-preview-special-teams",
-      sourceLabel: "atlantafalcons.com / Atlanta Leader",
-    },
-    {
       title: "THE PEARCE CASE MOVES, BUT NOT THE WAY ATLANTA WANTED: the pretrial diversion program has been extended from six months to a full year, which pushes the legal resolution deep into the season, while the suspension estimates have quietly narrowed toward a four-to-eight game band and a return to the field at some point in 2026",
       detail: "Heavy.com, Pro Football Rumors, The Big Lead, Sportsnaut and Audacy (reporting carried through the weekend), with still no statement from the league office: two things changed since the last update, and they cut in opposite directions. The first is procedural and unhelpful. The length of the pretrial diversion program covering Pearce's Miami-Dade charges, two counts of aggravated battery with a deadly weapon and one count of aggravated stalking, with WNBA player Rickea Jackson identified as the alleged victim, has been extended from six months to one year. Charges are still cleared on completion and no conviction is involved, but a twelve-month program means the underlying case will not be formally closed until well inside the 2026 season, which is exactly the scenario Audacy flagged when it reported the league may not rule before 2027. The second is a softening of the projected penalty. The Athletic's Josh Kendall still reads a suspension as likely, and the Falcons are reportedly planning internally for eight games or more on the Cameron Sutton precedent, but the aggregate read has drifted toward four to eight games on the logic that the case is headed toward dismissal and no one was physically harmed. The practical translation for camp is unchanged: Atlanta prepares as though it will be without the player who led the team with 10.5 sacks as a rookie, and the edge room it stacked this spring in Azeez Ojulari, Samson Ebukam and Cameron Thomas is the contingency plan whether or not it is ever needed.",
       category: "general",
       sourceUrl: "https://heavy.com/sports/nfl/atlanta-falcons/james-pearce-jr-could-be-slapped-with-suspension-per-latest-report/",
       sourceLabel: "Heavy.com / Pro Football Rumors / Audacy / Sportsnaut",
-    },
-    {
-      title: "CAMP PREVIEW NO. 8, AND FOR ONCE THE ANSWER IS ALREADY IN THE BUILDING: the Friday installment reaches the safeties, the one room on this roster that asks nothing of August, where Jessie Bates III just landed fifth in ESPN's leaguewide poll, Xavier Watts drew a coordinator comparison to his own running mate, and the only live question is who plays the third safety while Billy Bowman Jr. finishes his Achilles rehab",
-      detail: "Atlantafalcons.com camp-preview series (filed Fri Jul 17, the freshest team-site story on the board) alongside ESPN's Jeremy Fowler position poll and SI Falcons' pre-camp position grades: after seven installments spent cataloguing open jobs, the series finally hit a room with no argument in it. Bates enters his ninth season ranked fifth among NFL safeties in Fowler's survey of coaches, scouts and executives, coming off a second-team All-Pro year and the most productive three-season stretch of his career in Atlanta (13 interceptions, eight forced fumbles, 332 tackles). Watts, who led all rookies with five interceptions last year and finished fourth in Defensive Rookie of the Year voting, missed the top ten but drew honorable mention and an unusually direct scouting note: one coordinator told Fowler that Watts 'has a chance to be one of the best safeties in the league' and carries very similar qualities to Bates. The fit is the point. Watts patrols centerfield and lets Bates play downhill and everywhere else, which is the arrangement that made the 2025 defense work. SI graded the room an A, the highest mark it gave any Atlanta position group. What is genuinely open is the third spot: Bowman is still working back from the ruptured Achilles that ended his rookie year, DeMarcco Hellams is expected to make a full return to the practice field in camp, and fourth-year man Sydney Brown, acquired from Philadelphia in March and now entering a contract year, projects to cover both the nickel and the third-safety role until Bowman is cleared. It is the rare Falcons position preview where the depth chart is the story and the starters are not.",
-      category: "coaching",
-      sourceUrl: "https://www.atlantafalcons.com/news/jessie-bates-ranked-nfl-top-safeties-2026-season-espn",
-      sourceLabel: "atlantafalcons.com / ESPN / SI Falcons",
     },
   ],
 };
@@ -2433,8 +2444,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-08-06T09:00:00Z",
-  windowLabel: "Training Camp · Week 2 · Walker ACL Confirmed (Aug 5) → Under the Lights Aug 8",
+  generatedAt: "2026-08-07T09:00:00Z",
+  windowLabel: "Training Camp · Week 2 · Bijan Back on the Grass (Aug 6) → Under the Lights Aug 8",
   sessions: [
     {
       id: "stefanski-2026-08-04",
