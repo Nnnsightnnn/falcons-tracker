@@ -96,7 +96,7 @@ export const PLAYERS = [
     stats: { rushYds: 1478, rushTDs: 14, rushAttempts: 299, receptions: 64, recYds: 820, recTDs: 2, targets: 82 },
     form: 9.2,
     status: "active",
-    injuryNote: "Signed a three-year extension worth up to $75M (Aug 4) that ended a five-day hold-in and made him the highest-paid running back in NFL history: $51M guaranteed and $37M at signing, the most ever guaranteed to a back, running through 2030. Stefanski said there will be a ramp-up period rather than a full-speed return to practice",
+    injuryNote: "Signed a three-year extension worth up to $75M (Aug 4) that ended a five-day hold-in and made him the highest-paid running back in NFL history: $51M guaranteed and $37M at signing, the most ever guaranteed to a back, running through 2030. Stefanski said there would be a ramp-up period rather than a full-speed return; Robinson logged his first full-team 11-on-11 reps of camp on Aug 7 and produced a wheel-route touchdown from Tua",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4430807.png",
     contract: { years: 3, total: 75000000, guaranteed: 51000000, apy: 25000000, throughYear: 2030, cap2026: 9000000 },
     career: [
@@ -2123,18 +2123,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-07T09:00:00Z",
+  generatedAt: "2026-08-08T09:00:00Z",
   cover: {
-    kicker: "TRAINING CAMP · WEEK 2 · Bijan Robinson Is Back on the Grass: Three Days After the Record Extension That Made Him the Highest-Paid Running Back in NFL History, Atlanta's Franchise Back Returned to Practice for the First Time Since Signing, a Bright Note on a Roster Still Absorbing the Loss of Jalon Walker for the Season",
-    headLine1: "The face of the franchise is back on the field.",
-    headEm: "Bijan Robinson returned to practice Thursday for the first time since his record extension, easing back through warmups and individual work as Atlanta ramps him toward full speed, the first good news on a grass that lost Jalon Walker for the year two days earlier.",
-    headLine3: "The Falcons placed Walker on injured reserve and turned the page, and camp got its edge back: live tackling in pads, Avieon Terrell picking off Tua, and the free Under the Lights session set for Saturday.",
+    kicker: "TRAINING CAMP · WEEK 2 · Just Bij It: Five Days After the Record Extension That Made Him the Highest-Paid Running Back in NFL History, Bijan Robinson Took His First Full-Team Reps of Camp on Friday and Turned Them Into the Highlight of Day 8, a Wheel-Route Touchdown From a Now Full-Go Tua Tagovailoa, as Atlanta's Public Run Builds Toward Under the Lights Tonight",
+    headLine1: "The franchise back is all the way back.",
+    headEm: "Bijan Robinson logged his first full-team reps of training camp Friday, five days after his record extension, and on his opening 11-on-11 series ran a wheel down the left sideline that the defense could not track, Tua Tagovailoa dropping the ball in for what would have been a touchdown in live action.",
+    headLine3: "A now full-go Tua added a red-zone touchdown to Olamide Zaccheaus and worked Jahan Dotson free, Harold Perkins Jr. kept earning starter reps in the wake of Jalon Walker's season-ending ACL tear, and the free Under the Lights session at Lanier High awaits Saturday night.",
     deck:
-      "There was a familiar No. 7 back in the mix Thursday, and after the week Atlanta just had it read like relief. Bijan Robinson returned to the practice field for the first time since agreeing to the three-year extension worth up to $75 million that made him the highest-paid running back in NFL history, taking part in team warmups and individual drills while the staff holds him out of full team periods and ramps him back after a week-long hold-in. Kevin Stefanski had promised a measured ramp-up rather than a full-speed return, and this was the first day of it. The rest of Day 7 had the crackle of a camp finding its edge: it was the second padded practice and the first with live tackling in 11-on-11, the energy up a notch, and rookie cornerback Avieon Terrell opened the team period by picking off Tua Tagovailoa on a diving play, rotating between outside corner and the slot as his physicality keeps drawing notice. Tua worked in team drills for a second straight day, still not a full go as he manages a tight back, while Michael Penix Jr. stayed on his individual and 7-on-7 plan and Cooper Rush held the veteran reps, including a red-zone touchdown to Kyle Pitts Sr. The backdrop is heavier. A day after confirming Walker's torn ACL, the Falcons placed the second-year edge rusher on injured reserve, ending his 2026 season and pressing Samson Ebukam, Azeez Ojulari, Cameron Thomas and the never-played Bralen Trice into a far larger rotation, with James Pearce Jr.'s possible suspension still hanging over the room. Atlanta lost the player it drafted to build its defense around, then got the face of its offense back on the grass, inside 72 hours. The public run builds to Under the Lights on Saturday, Aug 8.",
+      "There was a familiar No. 7 in the middle of everything Friday, and this time he was all the way in it. On a foggy morning at Flowery Branch, the eighth session of camp, Bijan Robinson logged action in full-team periods for the first time, five days after the three-year extension worth up to $75 million that made him the highest-paid running back in NFL history. It was the most he has been involved in a practice, and it took no time at all to matter: on his first 11-on-11 series, Robinson ran a wheel down the left sideline that the defense simply could not keep up with, a couple of steps on the nearest man, and Tua Tagovailoa dropped the ball into his arms for what would have been a touchdown in live action. Tua looked more or less full go after a week of easing a tight back, adding a red-zone touchdown to Olamide Zaccheaus on a delayed dig and winning Jahan Dotson free against Cobee Bryant, while the staff got creative in short yardage, at one point lining both Bijan and Brian Robinson Jr. in the backfield together. The day carried its usual live-tackling period and plenty of trench work, no clear winner between the lines. In the wake of Jalon Walker's season-ending ACL tear, rookie linebacker Harold Perkins Jr. kept earning trust, taking snaps with the starting unit, lining up off the left edge and running an A-gap blitz. Michael Penix Jr. stayed on his individual and 7-on-7 plan and hit rookie Keelan Marion for a sliding red-zone touchdown. The public run now builds to its marquee night: the free Under the Lights session at Lanier High School on Saturday, Aug 8, at 7 p.m.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "bijan",
-    stampLabel: "CAMP WEEK 2 · BIJAN BACK ON THE GRASS · WALKER TO IR",
+    stampLabel: "CAMP WEEK 2 · BIJAN'S FIRST 11-ON-11 · WHEEL-ROUTE TD · UNDER THE LIGHTS TONIGHT",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2323,6 +2323,18 @@ export const NEWS_DIGEST = {
     // this cover now leads on. This is precisely the rep to queue (Bijan easing back in at Flowery Branch)
     // for the first run that can reach the Vault. Repointing the URL to an Aug-07 slug would only spawn
     // another dangling request no one can fulfill from this sandbox, so the pointer is left as is.
+    // STATUS (2026-08-08 scheduled run): cover queue SKIPPED again, same hard constraint re-verified this
+    // cycle: ~/Vault/Notes/image-requests.md and the limn-editor-enhance skill are NOT mounted in this
+    // sandbox (only the tracker repos, outputs and uploads are), so the downstream Antigravity queue cannot
+    // be appended. Last plate actually on disk remains 2026-07-17-dotson-wr2.jpg; the qb-room-camp-eve
+    // pointer (dated 2026-07-20, nineteen days old) was never generated and still resolves to the photoId
+    // headshot fallback. Today's lead rotated forward to the even better version of the scene the last notes
+    // kept naming: Bijan back in FULL 11-on-11 for the first time Friday (Aug 7, Day 8) and immediately
+    // producing the highlight of the day, a wheel-route touchdown from a now full-go Tua. photoId stays
+    // bijan, so the fallback resolves to exactly the face this cover leads on. This padded-practice Bijan
+    // wheel-route rep is the ideal queue moment for the first run that can reach the Vault. Repointing the
+    // URL to an Aug-08 slug would only spawn another dangling request no one can fulfill from this sandbox,
+    // so the pointer is left as is.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-07-20-qb-room-camp-eve.jpg",
   },
   sources: [
@@ -2337,11 +2349,18 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "BIJAN IS BACK ON THE GRASS: three days after the record extension that made him the highest-paid running back in NFL history, Robinson returned to practice Thursday for the first time since signing, easing in through warmups and individual drills while the staff holds him out of full team periods and ramps him toward game speed",
-      detail: "The Falcoholic and the team site (Day 7 camp report, Aug 6): the No. 7 was back in the mix Thursday for the first time since ending his hold-in with a three-year deal worth up to $75 million. Robinson took part in team warmups and individual work but was held out of team drills as Atlanta ramps him back after a week away from the field, exactly the measured return Kevin Stefanski promised Tuesday when he said there would be a ramp-up period rather than a full-speed return. Robinson stayed his usual engaged self on the sideline through the team periods, the same posture he kept during the hold-in. It is the first genuinely bright note on a grass that lost Jalon Walker for the season two days earlier, and it puts the face of the offense back in front of a camp that builds toward the free Under the Lights session Saturday, Aug 8.",
+      title: "BIJAN'S FIRST FULL 11-ON-11 REPS END IN A WHEEL-ROUTE TOUCHDOWN: five days after the record extension that made him the highest-paid running back in NFL history, Robinson took full-team snaps for the first time Friday and immediately delivered the highlight of Day 8, running a wheel down the left sideline the defense could not track for what would have been a touchdown from a now full-go Tua Tagovailoa",
+      detail: "The team site (Day 8 camp report, Aug 7): on a foggy Friday morning, the eighth session of camp, Robinson logged action in full-team periods for the first time after a brief acclimation earlier in the week, the most he has been involved in a practice since ending his hold-in with a three-year deal worth up to $75 million. Fittingly, he produced the play of the day. On his first 11-on-11 series, Robinson ran a wheel route down the left sideline that the defense simply could not keep up with, a couple of steps on the nearest defender, and Tua Tagovailoa dropped the ball into his arms for what would have been a touchdown in live action. Tua looked more or less full go after a week of managing a tight back, later hitting Olamide Zaccheaus on a delayed dig for a red-zone touchdown and winning Jahan Dotson free against Cobee Bryant. The staff got creative in short yardage, at one point lining both Bijan and Brian Robinson Jr. in the backfield together. It puts the face of the offense at full speed heading into the free Under the Lights session at Lanier High School on Saturday, Aug 8, at 7 p.m.",
       category: "general",
-      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-training-camp/94869/falcons-training-camp-day-7-news-standouts-interviews-injuries-michael-penix-tua-tagovailoa-bijan-robinson-avieon-terrell-nfl-2026",
-      sourceLabel: "The Falcoholic / atlantafalcons.com",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-training-camp-report-bijan-robinson-harold-perkins-jalon-walker",
+      sourceLabel: "atlantafalcons.com",
+    },
+    {
+      title: "PERKINS GETS MORE ON HIS PLATE AS THE DEFENSE REDRAWS AROUND WALKER: with Jalon Walker out for the year, rookie linebacker Harold Perkins Jr. took Friday's snaps with the starting unit, lined up off the left edge and ran an A-gap blitz, versatility Kevin Stefanski said before practice the staff is leaning into as the youngster keeps earning reps",
+      detail: "The team site (Day 8 camp report, Aug 7): Stefanski spoke before Friday's practice about the rookie's development, saying Perkins is earning more reps on the field. It shows. Perkins closed his first week by earning his first snaps alongside starting inside linebacker Divine Deablo, and in the wake of Walker's injury he has begun moving around the formation more. On Friday he took snaps with the starting unit, lined up off the left edge at times, and was sent on an A-gap blitz as the mug defender during an 11-on-11 period with the offense backed up against its own end zone. The staff seems comfortable putting more on his plate, and the flexibility matters now that the edge room is thin behind Samson Ebukam and Cameron Thomas with a possible James Pearce Jr. suspension still hanging over it.",
+      category: "general",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-training-camp-report-bijan-robinson-harold-perkins-jalon-walker",
+      sourceLabel: "atlantafalcons.com",
     },
     {
       title: "THE DEFENSE TURNS THE PAGE: Atlanta placed Jalon Walker on injured reserve, ending his 2026 season, and moved forward with an edge rotation of Samson Ebukam, Azeez Ojulari, Cameron Thomas and the never-played Bralen Trice, a group ESPN's Jeremy Fowler notes the Falcons were already trying to add to before the injury",
@@ -2384,13 +2403,6 @@ export const NEWS_DIGEST = {
       category: "contracts",
       sourceUrl: "https://www.espn.com/nfl/story/_/id/49505699/falcons-sign-matthew-bergeron-four-year-96m-extension",
       sourceLabel: "ESPN / AJC / Pro Football Rumors / atlantafalcons.com",
-    },
-    {
-      title: "THE OPENING WEEK BELONGS TO THE DEFENSE: through four practices the front and secondary have set the tone, with smothering coverage, multiple sacks on Day 4, Jalon Walker and Samson Ebukam holding the starting edge, Azeez Ojulari flashing a sack, and 6-foot-5 rookie Kendal Daniels making plays in coverage",
-      detail: "SI Falcons and The Falcoholic (Day 3 and Day 4 camp reports, Jul 31 to Aug 1): with both quarterbacks limited, the defense has run the early camp. Day 4 was billed as a defensive rout, smothering coverage plus a multi-sack pass rush against a mix of 3-4 and 4-2-5 fronts. On the edge, the starting pair of Walker and Ebukam held, with Ojulari getting home for a sack in the rotation and James Pearce Jr. still working mostly with the depth groups as he ramps up. Inside, Christian Harris took the first reps next to green-dot linebacker Divine Deablo, with Harold Perkins Jr. and fourth-round rookie Kendal Daniels rotating through. Daniels, back from a scheduled rest day, drew notice for his coverage on Austin Hooper, his 6-foot-5 length a rare trait at the position. On a sold-out, unseasonably cool Aug 1, both Penix and Tua worked through position drills on the side.",
-      category: "general",
-      sourceUrl: "https://www.si.com/nfl/falcons/onsi/defense-dominates-bijan-out-big-winners-from-day-4-of-falcons-training-camp",
-      sourceLabel: "SI Falcons / The Falcoholic",
     },
     {
       title: "BACK TOGETHER SATURDAY, AND STEFANSKI SAYS THE STARTERS WILL PLAY: camp opens to every fan today for the first time, and the coach arrives already on the record that his starters will take preseason snaps, with runway planned in the Denver opener and the Miami finale, while the quarterback grass stays half-empty around Tua Tagovailoa's back and Michael Penix Jr.'s 7-on-7 cap",
@@ -2444,8 +2456,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-08-07T09:00:00Z",
-  windowLabel: "Training Camp · Week 2 · Bijan Back on the Grass (Aug 6) → Under the Lights Aug 8",
+  generatedAt: "2026-08-08T09:00:00Z",
+  windowLabel: "Training Camp · Week 2 · Bijan's First 11-on-11 (Aug 7) → Under the Lights Aug 8",
   sessions: [
     {
       id: "stefanski-2026-08-04",
