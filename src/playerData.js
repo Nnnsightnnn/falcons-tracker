@@ -2123,18 +2123,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-08T09:00:00Z",
+  generatedAt: "2026-08-09T09:00:00Z",
   cover: {
-    kicker: "TRAINING CAMP · WEEK 2 · Just Bij It: Five Days After the Record Extension That Made Him the Highest-Paid Running Back in NFL History, Bijan Robinson Took His First Full-Team Reps of Camp on Friday and Turned Them Into the Highlight of Day 8, a Wheel-Route Touchdown From a Now Full-Go Tua Tagovailoa, as Atlanta's Public Run Builds Toward Under the Lights Tonight",
-    headLine1: "The franchise back is all the way back.",
-    headEm: "Bijan Robinson logged his first full-team reps of training camp Friday, five days after his record extension, and on his opening 11-on-11 series ran a wheel down the left sideline that the defense could not track, Tua Tagovailoa dropping the ball in for what would have been a touchdown in live action.",
-    headLine3: "A now full-go Tua added a red-zone touchdown to Olamide Zaccheaus and worked Jahan Dotson free, Harold Perkins Jr. kept earning starter reps in the wake of Jalon Walker's season-ending ACL tear, and the free Under the Lights session at Lanier High awaits Saturday night.",
+    kicker: "TRAINING CAMP · UNDER THE LIGHTS · Saturday Night in Sugar Hill: With Camp's Marquee Session Moved to Longhorn Stadium at Lanier High, a Sharp Michael Penix Jr. Went 6-of-8 in Seven-on-Seven and Dropped a 50-Yard Touchdown on Rookie Zachariah Branch, the Best Player on the Grass Again, While a Managed Bijan Robinson Took Only a Few Early Handoffs and Atlanta's Preseason Opener Against Denver Moved Inside a Week",
+    headLine1: "The lights came on, and so did the rookie.",
+    headEm: "Under the lights at Lanier High School on Saturday night, Michael Penix Jr. went 6-of-8 in seven-on-seven and capped it with a 50-yard touchdown to Zachariah Branch, the third-round returner who was again the best receiver on the field.",
+    headLine3: "Penix also hit Drake London on a deep corner and touched Jahan Dotson for about 20 on the right sideline, Bijan Robinson eased through a managed night with only a few early handoffs before sitting the team periods, and the Denver preseason opener now sits five days out on Aug 14.",
     deck:
-      "There was a familiar No. 7 in the middle of everything Friday, and this time he was all the way in it. On a foggy morning at Flowery Branch, the eighth session of camp, Bijan Robinson logged action in full-team periods for the first time, five days after the three-year extension worth up to $75 million that made him the highest-paid running back in NFL history. It was the most he has been involved in a practice, and it took no time at all to matter: on his first 11-on-11 series, Robinson ran a wheel down the left sideline that the defense simply could not keep up with, a couple of steps on the nearest man, and Tua Tagovailoa dropped the ball into his arms for what would have been a touchdown in live action. Tua looked more or less full go after a week of easing a tight back, adding a red-zone touchdown to Olamide Zaccheaus on a delayed dig and winning Jahan Dotson free against Cobee Bryant, while the staff got creative in short yardage, at one point lining both Bijan and Brian Robinson Jr. in the backfield together. The day carried its usual live-tackling period and plenty of trench work, no clear winner between the lines. In the wake of Jalon Walker's season-ending ACL tear, rookie linebacker Harold Perkins Jr. kept earning trust, taking snaps with the starting unit, lining up off the left edge and running an A-gap blitz. Michael Penix Jr. stayed on his individual and 7-on-7 plan and hit rookie Keelan Marion for a sliding red-zone touchdown. The public run now builds to its marquee night: the free Under the Lights session at Lanier High School on Saturday, Aug 8, at 7 p.m.",
+      "The Falcons packed up Flowery Branch for a night and took camp on the road, and the marquee session did not disappoint. Under the lights at Longhorn Stadium at Lanier High School in Sugar Hill on Saturday, in front of a free house that filled in after gates opened at 6 p.m., Atlanta held its Saturday Night Lights practice in full pads and let its passing game breathe. Michael Penix Jr., still capped at individual and seven-on-seven work as he rehabs his ACL, was efficient and sharp, going 6-of-8 in seven-on-seven and closing the night with a 50-yard touchdown to Zachariah Branch. The third-round returner was again the best receiver on the grass, drawing looks from every quarterback and turning a drag from Penix into what would have gone the distance in a real game. Penix layered in a deep corner route to Drake London and a touch throw to Jahan Dotson for about 20 yards down the right sideline. Bijan Robinson, back on the field five days after the record extension that briefly made him the highest-paid running back in NFL history, was handled with care on the night, taking a few early handoffs before sitting out the team sessions as the staff sticks to its ramp-up plan. Afterward Penix and Kyle Pitts Sr. addressed the crowd and the cameras, closing the public portion of a camp that has stacked live tackling, record contracts and a full quarterback room's worth of intrigue. The runway now shortens fast: the phase flips to preseason on Tuesday and the opener against Denver at Mercedes-Benz Stadium is set for Friday, Aug 14, at 7 p.m., the first live look at Kevin Stefanski's starters after he promised they would play.",
     byline: "The Tracker Desk",
-    filedFrom: "Flowery Branch",
-    photoId: "bijan",
-    stampLabel: "CAMP WEEK 2 · BIJAN'S FIRST 11-ON-11 · WHEEL-ROUTE TD · UNDER THE LIGHTS TONIGHT",
+    filedFrom: "Sugar Hill",
+    photoId: "penix-jr",
+    stampLabel: "UNDER THE LIGHTS · PENIX 50-YD TD TO BRANCH · DENVER IN 5 DAYS",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2335,7 +2335,15 @@ export const NEWS_DIGEST = {
     // wheel-route rep is the ideal queue moment for the first run that can reach the Vault. Repointing the
     // URL to an Aug-08 slug would only spawn another dangling request no one can fulfill from this sandbox,
     // so the pointer is left as is.
-    coverImageUrl: "/falcons-tracker/assets/cover/2026-07-20-qb-room-camp-eve.jpg",
+    // STATUS (2026-08-09 scheduled run): cover ROTATED editorially onto Saturday Night Lights
+    // (Aug 8 at Lanier High, Penix 50-yd TD to Branch), the freshest visual story of the cycle, and
+    // repointed to 2026-08-09-under-the-lights.jpg to reset the staleness clock. IMAGE STILL NOT
+    // QUEUED: re-verified ~/Vault/Notes/image-requests.md and the limn-editor-enhance skill are NOT
+    // mounted in this sandbox (only the tracker repos, outputs and uploads are), so the downstream
+    // Antigravity queue cannot be appended. The new pointer resolves to the penix-jr headshot fallback
+    // until a plate is generated, which is safe and now aligned with the Under-the-Lights lead. The
+    // first run that can reach the Vault should queue a night-practice Penix/Branch scene at Lanier.
+    coverImageUrl: "/falcons-tracker/assets/cover/2026-08-09-under-the-lights.jpg",
   },
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "NFL Network",
@@ -2348,6 +2356,20 @@ export const NEWS_DIGEST = {
     "Sportsnaut", "The Big Lead", "The Athletic",
   ],
   topics: [
+    {
+      title: "UNDER THE LIGHTS: PENIX DROPS A 50-YARD TOUCHDOWN ON BRANCH AS CAMP GOES ON THE ROAD: at the Falcons' Saturday Night Lights practice at Lanier High School, Michael Penix Jr. went 6-of-8 in seven-on-seven and closed the night with a 50-yard scoring strike to rookie Zachariah Branch, the best receiver on the grass again, while a managed Bijan Robinson took only a few early handoffs and the Denver preseason opener moved inside a week",
+      detail: "The Falcoholic, ESPN and the team site (Saturday Night Lights, Aug 8): Atlanta moved its marquee open session to Longhorn Stadium at Lanier High in Sugar Hill, gates at 6 p.m., and let the passing game breathe under the lights in full pads. Penix, still held to individual and seven-on-seven work as he rehabs his ACL, was efficient and sharp, going 6-of-8 in seven-on-seven and capping the night with a 50-yard touchdown to Branch. The third-round returner drew looks from every quarterback and again graded as the best receiver on the field, turning a drag route into what would have gone the distance in a real game. Penix also hit Drake London on a deep corner and touched Jahan Dotson for about 20 yards down the right sideline. Bijan Robinson, back on the field five days after his record extension, was handled carefully, taking a few early handoffs before sitting the team periods. Penix and Kyle Pitts Sr. addressed the crowd and the media afterward, closing the public portion of camp. The runway now shortens fast: the preseason opener against Denver at Mercedes-Benz Stadium is set for Friday, Aug 14, at 7 p.m.",
+      category: "general",
+      sourceUrl: "https://www.atlantafalcons.com/video/michael-penix-jr-kyle-pitts-sr-speak-on-2026-preparation-after-atlanta-falcons-saturday-night-lights-nfl",
+      sourceLabel: "atlantafalcons.com / The Falcoholic / ESPN",
+    },
+    {
+      title: "FIVE DAYS TO DENVER, AND STEFANSKI SAYS THE STARTERS WILL PLAY: the phase flips from training camp to preseason Tuesday, and Atlanta opens its exhibition slate at home against the Broncos on Friday, Aug 14, at 7 p.m., the first live look at Kevin Stefanski's first-team offense after he committed to giving his front-liners runway in the opener and the Miami finale",
+      detail: "Atlantafalcons.com game page and the schedule (confirmed Aug 8): the Falcons' preseason opens Friday, Aug 14, against Denver at Mercedes-Benz Stadium, a 7 p.m. ET kickoff, the first of three exhibitions before the regular season. It is the payoff to the plan Stefanski laid out earlier in camp, that his starters will play in the opener and the finale against Miami while the middle game against Indianapolis is treated differently because of the joint practices scheduled that week. His logic was blunt: for players to get ready to play football, they have to play football. The open question the game will start to answer is the quarterback picture. Tua Tagovailoa has banked the first-team reps and is the de facto starter as his back settles, while Penix, capped at seven-on-seven, has attached a roughly four-week timeline to full clearance, pushing any real competition toward late August.",
+      category: "games",
+      sourceUrl: "https://www.atlantafalcons.com/game-day/2026/pre/falcons-vs-broncos/",
+      sourceLabel: "atlantafalcons.com",
+    },
     {
       title: "BIJAN'S FIRST FULL 11-ON-11 REPS END IN A WHEEL-ROUTE TOUCHDOWN: five days after the record extension that made him the highest-paid running back in NFL history, Robinson took full-team snaps for the first time Friday and immediately delivered the highlight of Day 8, running a wheel down the left sideline the defense could not track for what would have been a touchdown from a now full-go Tua Tagovailoa",
       detail: "The team site (Day 8 camp report, Aug 7): on a foggy Friday morning, the eighth session of camp, Robinson logged action in full-team periods for the first time after a brief acclimation earlier in the week, the most he has been involved in a practice since ending his hold-in with a three-year deal worth up to $75 million. Fittingly, he produced the play of the day. On his first 11-on-11 series, Robinson ran a wheel route down the left sideline that the defense simply could not keep up with, a couple of steps on the nearest defender, and Tua Tagovailoa dropped the ball into his arms for what would have been a touchdown in live action. Tua looked more or less full go after a week of managing a tight back, later hitting Olamide Zaccheaus on a delayed dig for a red-zone touchdown and winning Jahan Dotson free against Cobee Bryant. The staff got creative in short yardage, at one point lining both Bijan and Brian Robinson Jr. in the backfield together. It puts the face of the offense at full speed heading into the free Under the Lights session at Lanier High School on Saturday, Aug 8, at 7 p.m.",
@@ -2419,25 +2441,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "AJC / NBC Sports PFT / NFL.com / atlantafalcons.com",
     },
     {
-      title: "ATLANTA SIGNED A HUDDLE AT SUNRISE: with Tua's back tight and Penix not cleared, the Falcons released Trevor Siemian with a non-football injury and signed nine-year veteran Cooper Rush on Wednesday morning, and by the afternoon he was taking first-team reps in a building he had walked into hours earlier",
-      detail: "Team site, NBC Sports, Pro Football Rumors and The Falcoholic (Jul 29): the quarterback shuffle was fast and functional. Siemian, brought in as a veteran mentor, was released with a non-football injury designation, and in his place Atlanta added Rush, the 32-year-old who went 9-5 as a spot starter across eight seasons in Dallas and spent 2025 backing up Lamar Jackson in Baltimore before a March release. The reason was immediate need, not long-term intent: with both top passers unavailable for team periods on Day 1, the room had exactly one healthy veteran arm, and Rush 'met him in the huddle,' as the team site put it, flying in from Dallas overnight to sign and practice the same day. Stefanski's read on the whole episode doubled as a shrug at camp's unpredictability: 'It's the NFL, brother. This is the NFL and you cannot predict what's coming. You don't have a crystal ball.' Rush is depth insurance while Tua's back settles and Penix works back, not a threat to either job, but on July 29 he was the most available quarterback the Falcons had. A week later, with Tua still limited and Penix capped at 7-on-7, Rush and undrafted rookie Jack Strand have kept splitting the first-team reps.",
-      category: "free-agency",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-sign-qb-cooper-rush-training-camp",
-      sourceLabel: "atlantafalcons.com / NBC Sports / Pro Football Rumors / The Falcoholic",
-    },
-    {
       title: "THE PROBLEM NOBODY IS TALKING ABOUT SITS ON THE RIGHT EDGE: Atlanta starts camp with no settled right tackle after Kaleb McGary retired without warning in April, and because both quarterbacks on this roster are left-handed, the job Atlanta cannot fill is the one protecting whichever blind side ends up mattering",
       detail: "ESPN (Marc Raimondi, five lingering questions, filed Jul 13) with the depth-chart detail corroborated by the team-site offensive-line camp preview: this is the most consequential Atlanta story that has not been getting front-page treatment, and the reason it matters is a quirk of the roster. Penix and Tagovailoa are both left-handed, which inverts the usual math and makes right tackle the blindside job. It is also the least settled position on the offense. McGary had held it since he was drafted in 2019, was coming back from a season-ending knee injury, and then retired abruptly in April. Atlanta signed Jawaan Taylor out of Kansas City on April 9 to fill the hole, but Taylor is still rehabbing arm injuries carried over from last season, did not practice at all this spring, and brings a well-documented false-start problem with him. The contingency plans have their own problems. Swing tackle Storm Norton went down with a lingering ankle issue for a second consecutive season and sits on Reserve/PUP as of Jun 11. The front office traded for Wanya Morris, Taylor's former Chiefs teammate, as insurance. And the player who actually took most of the first-team right tackle reps through the spring was Michael Jerrell, a 2024 seventh-round pick out of Division II Findlay with two career seasons and a development-project label. Raimondi frames it as a genuine three-way battle unless Taylor arrives at full health, which is the single cleanest thing to watch when pads come on Jul 29.",
       category: "general",
       sourceUrl: "https://www.espn.com/nfl/story/_/id/49308165/key-questions-falcons-camp-including-qb1-status-tua-tagovailoa-michael-penix-jr",
       sourceLabel: "ESPN / atlantafalcons.com",
-    },
-    {
-      title: "THE PLAYER WHO HAS NEVER TAKEN AN NFL SNAP JUST QUIETLY CLEARED THE HARDEST PART: Bralen Trice took a regular rotation in 11-on-11 team drills through the spring, two full years after the ACL tear that erased his rookie season and one year after he re-aggravated the same knee, and with a James Pearce Jr. suspension still hanging over the edge room he is no longer a depth luxury",
-      detail: "Pro Football Rumors (Adam La Rose, Jul 6, building on team reporter Tori McElhaney's outside-linebackers camp preview): drafted in the third round in 2024, Trice has yet to play a regular-season down. An ACL tear wiped out his rookie year, then he aggravated the same knee last summer and landed on injured reserve to open the regular season. The spring was the first genuinely clean stretch of his professional career, including a regular turn in team 11-on-11 work, which is the rep type that actually tests a repaired knee. Padded practices are still ahead and remain the real proving ground. What raises the stakes past a feel-good note is the room around him. Jalon Walker is a fixture and Pearce was productive as a rookie, but Pearce faces a strong possibility of a suspension to open the season, and Atlanta's 57 sacks, second in the league, are the thing this new staff most needs to preserve. If Trice holds up through August he moves from a name on the roster to a rotational answer. He turns 25 this season with two years left on his rookie deal, and after the missed time there is no early-extension conversation to be had, which makes the fall a straightforward audition.",
-      category: "injuries",
-      sourceUrl: "https://www.profootballrumors.com/2026/07/falcons-bralen-trice-trending-toward-training-camp-participation",
-      sourceLabel: "Pro Football Rumors / atlantafalcons.com",
     },
     {
       title: "THE PEARCE CASE MOVES, BUT NOT THE WAY ATLANTA WANTED: the pretrial diversion program has been extended from six months to a full year, which pushes the legal resolution deep into the season, while the suspension estimates have quietly narrowed toward a four-to-eight game band and a return to the field at some point in 2026",
@@ -2456,9 +2464,30 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-08-08T09:00:00Z",
-  windowLabel: "Training Camp · Week 2 · Bijan's First 11-on-11 (Aug 7) → Under the Lights Aug 8",
+  generatedAt: "2026-08-09T09:00:00Z",
+  windowLabel: "Training Camp · Week 2 → Under the Lights (Aug 8) · Preseason opener vs. Denver Aug 14",
   sessions: [
+    {
+      id: "robinson-2026-08-05",
+      speaker: "Bijan Robinson",
+      role: "Running Back",
+      date: "2026-08-05",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Record Extension · Press Conference",
+      sourceUrl: "https://fieldlevelmedia.com/news/falcons-rb-bijan-robinson-a-dream-to-stay-with-one-team/",
+      transcriptUrl: "https://www.atlantafalcons.com/news/bijan-robinson-contract-extension",
+      verified: true,
+      summary: "A day after the deal became official, Robinson took the podium flanked by family and his Klutch Sports representatives and steered the conversation away from the numbers and toward legacy. He framed staying in one place as a childhood dream, leaned on his faith, and welcomed the running-back debate with Detroit's Jahmyr Gibbs as fuel rather than friction.",
+      pullQuote: "This is one of my dreams, to stay with one team. I think that is such a cool thing just because guys like Kobe Bryant and Michael Jordan, they all stayed on their one team, so I think that is a cool legacy thing for yourself.",
+      bullets: [
+        "On the milestone: kept it plain and grateful, 'God is so good,' and had posted 'God this is for you! Blessings. Love this team and this city!' when the deal broke Tuesday",
+        "On staying in Atlanta: called a one-team career 'one of my dreams,' invoking Kobe Bryant and Michael Jordan as the legacy model",
+        "On the Gibbs comparison: 'The Bijan-Gibbs debate is actually cool to see. It actually helps us both out because every single Sunday, or whatever day we play, we're always trying to compete against each other'",
+        "The three-year extension is worth up to $75 million with $51 million guaranteed and $37 million at signing, the most ever guaranteed to a running back, and runs through 2030",
+        "Robinson is the fourth core Cunningham-era piece extended this offseason after Drake London, Kyle Pitts Sr. and Matthew Bergeron",
+      ],
+      topics: ["bijan-extension", "contracts", "training-camp"],
+    },
     {
       id: "stefanski-2026-08-04",
       speaker: "Kevin Stefanski",
@@ -2563,27 +2592,6 @@ export const INTERVIEWS = {
         "With Tua also held out Day 1 (back), Penix's limited status left the first-team huddle to Jack Strand and newly signed Cooper Rush",
       ],
       topics: ["penix-acl", "qb-competition", "training-camp", "injuries"],
-    },
-    {
-      id: "folk-2026-07-28",
-      speaker: "Nick Folk",
-      role: "Kicker",
-      date: "2026-07-28",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "Veterans Report Day · Media Availability",
-      sourceUrl: "https://www.washingtonpost.com/sports/nfl/2026/07/28/falcons-training-camp-folk/970fabc0-8aa1-11f1-8912-d71e69d679d7_story.html",
-      transcriptUrl: "https://www.foxsports.com/articles/nfl/41yearold-new-falcons-kicker-nick-folk-says-the-start-of-training-camp-is-always-exciting",
-      verified: true,
-      summary: "Reporting for his first camp with Atlanta at age 41, Folk met the media on veterans-report day and framed the summer as the front end of the only thing that matters to him, playing on Sundays. He explained the signing as a coaching-staff reunion more than a free-agent decision, and arrives as the deliberate anti-carousel answer to a 2025 kicking situation that ran through three different legs.",
-      pullQuote: "I tell everyone, there is nothing like playing on Sundays. Being in front of people, being in front of your fans and playing, there's nothing like it. So training camp is just the start of that.",
-      bullets: [
-        "On the start of camp at 41: called it 'always exciting,' saying he is 'just excited to kind of get going'",
-        "On why he chose Atlanta: 'Craig Aukerman was a lot of it. I enjoyed playing for Craig,' referring to the special teams coordinator he worked under a year ago",
-        "On the reunion with punter Jake Bailey: 'Having Jake come as well, I played with him for four years in New England'",
-        "Signed with the Falcons on March 9, three days before the team added Bailey, rebuilding the specialist room around a known operating manual",
-        "Steps into a job that went through three different kickers in 2025 as the veteran stabilizer the staff wanted",
-      ],
-      topics: ["special-teams", "roster", "training-camp"],
     },
   ],
 };
