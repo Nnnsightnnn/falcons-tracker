@@ -1201,8 +1201,8 @@ export const PLAYERS = [
     acquired: "fa-2024",
     stats: { tackles: 98, int_def: 3, pass_def: 9, ff: 1 },
     form: 9.1,
-    status: "active",
-    injuryNote: "All-Pro · restructure candidate",
+    status: "questionable",
+    injuryNote: "Back ailment, missed 4 straight camp practices (Aug 9); All-Pro FS",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/3919512.png",
     contract: { years: 4, total: 64000000, guaranteed: 36000000, apy: 16000000, throughYear: 2027, cap2026: 16800000 },
     career: [
@@ -2123,18 +2123,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-09T09:00:00Z",
+  generatedAt: "2026-08-10T09:00:00Z",
   cover: {
-    kicker: "TRAINING CAMP · UNDER THE LIGHTS · Saturday Night in Sugar Hill: With Camp's Marquee Session Moved to Longhorn Stadium at Lanier High, a Sharp Michael Penix Jr. Went 6-of-8 in Seven-on-Seven and Dropped a 50-Yard Touchdown on Rookie Zachariah Branch, the Best Player on the Grass Again, While a Managed Bijan Robinson Took Only a Few Early Handoffs and Atlanta's Preseason Opener Against Denver Moved Inside a Week",
-    headLine1: "The lights came on, and so did the rookie.",
-    headEm: "Under the lights at Lanier High School on Saturday night, Michael Penix Jr. went 6-of-8 in seven-on-seven and capped it with a 50-yard touchdown to Zachariah Branch, the third-round returner who was again the best receiver on the field.",
-    headLine3: "Penix also hit Drake London on a deep corner and touched Jahan Dotson for about 20 on the right sideline, Bijan Robinson eased through a managed night with only a few early handoffs before sitting the team periods, and the Denver preseason opener now sits five days out on Aug 14.",
+    kicker: "TRAINING CAMP CLOSES · UNDER THE LIGHTS · Sugar Hill: In the Last Public Session of the Summer, a Full-Go Tua Tagovailoa Turned in His Best Day of Camp, Going 6-of-8 in Eleven-on-Eleven With a 30-Yard Touch Throw to Jahan Dotson and a Play-Action Lob to Drake London Before Lightning Cut the Packed Lanier High Practice Short, Michael Penix Jr. Answered in Seven-on-Seven With a 50-Yard Touchdown to Rookie Zachariah Branch, and the Phase Now Flips to Preseason With Denver Four Days Out",
+    headLine1: "Camp closed with the starter finally at full speed.",
+    headEm: "In the last public practice of the summer, under the lights at Lanier High School, a full-go Tua Tagovailoa turned in his best day of camp, going 6-of-8 in eleven-on-eleven with a 30-yard touch throw to Jahan Dotson and a play-action rollout lob to Drake London before lightning cut the night short.",
+    headLine3: "Michael Penix Jr., still capped at seven-on-seven as he rehabs his ACL, answered with a 50-yard touchdown to rookie Zachariah Branch, rookie tackle Ethan Onianwa held his own against James Pearce Jr., and the phase now flips to preseason on Tuesday with the Denver opener four days out on Aug 14.",
     deck:
-      "The Falcons packed up Flowery Branch for a night and took camp on the road, and the marquee session did not disappoint. Under the lights at Longhorn Stadium at Lanier High School in Sugar Hill on Saturday, in front of a free house that filled in after gates opened at 6 p.m., Atlanta held its Saturday Night Lights practice in full pads and let its passing game breathe. Michael Penix Jr., still capped at individual and seven-on-seven work as he rehabs his ACL, was efficient and sharp, going 6-of-8 in seven-on-seven and closing the night with a 50-yard touchdown to Zachariah Branch. The third-round returner was again the best receiver on the grass, drawing looks from every quarterback and turning a drag from Penix into what would have gone the distance in a real game. Penix layered in a deep corner route to Drake London and a touch throw to Jahan Dotson for about 20 yards down the right sideline. Bijan Robinson, back on the field five days after the record extension that briefly made him the highest-paid running back in NFL history, was handled with care on the night, taking a few early handoffs before sitting out the team sessions as the staff sticks to its ramp-up plan. Afterward Penix and Kyle Pitts Sr. addressed the crowd and the cameras, closing the public portion of a camp that has stacked live tackling, record contracts and a full quarterback room's worth of intrigue. The runway now shortens fast: the phase flips to preseason on Tuesday and the opener against Denver at Mercedes-Benz Stadium is set for Friday, Aug 14, at 7 p.m., the first live look at Kevin Stefanski's starters after he promised they would play.",
+      "The Falcons packed up Flowery Branch for a night and took camp on the road to close out the summer, and the last public session belonged to the quarterback everyone came to see. Under the lights at Longhorn Stadium at Lanier High School in Sugar Hill, in front of a packed house, a now full-go Tua Tagovailoa turned in his best practice of camp, running with the first team at every interval and going 6-of-8 in eleven-on-eleven, including his two sharpest throws of the summer: a 30-yard touch ball to Jahan Dotson and a play-action rollout lob to Drake London. The night ended early when lightning was spotted around 8:10 p.m., halting the practice with more than thirty minutes still on the field. Michael Penix Jr., held to individual and seven-on-seven work as he rehabs his ACL, was again efficient and closed his night with a 50-yard touchdown to Zachariah Branch, the third-round returner who has graded as one of the best receivers on the grass all camp. Rookie offensive tackle Ethan Onianwa kept getting run with the first and second units and stonewalled James Pearce Jr. off the edge, a bright spot at an unsettled right tackle. On the injury front, defensive lineman Zach Harrison was activated and cleared to return, while safety Jessie Bates III missed a fourth straight day with a back ailment. The runway now shortens fast: the phase flips to preseason on Tuesday and the opener against Denver at Mercedes-Benz Stadium is set for Friday, Aug 14, at 7 p.m., the first live look at Kevin Stefanski's starters after he promised they would play.",
     byline: "The Tracker Desk",
     filedFrom: "Sugar Hill",
-    photoId: "penix-jr",
-    stampLabel: "UNDER THE LIGHTS · PENIX 50-YD TD TO BRANCH · DENVER IN 5 DAYS",
+    photoId: "tua",
+    stampLabel: "CAMP CLOSES · TUA'S BEST DAY, LIGHTNING-SHORTENED · DENVER IN 4 DAYS",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2343,6 +2343,17 @@ export const NEWS_DIGEST = {
     // Antigravity queue cannot be appended. The new pointer resolves to the penix-jr headshot fallback
     // until a plate is generated, which is safe and now aligned with the Under-the-Lights lead. The
     // first run that can reach the Vault should queue a night-practice Penix/Branch scene at Lanier.
+    // STATUS (2026-08-10 scheduled run): cover KEPT on the Under-the-Lights plate (dated 2026-08-09,
+    // one day old, well inside the 4-day staleness backstop) and reframed editorially around the same
+    // Lanier session now that the fuller Aug 8/9 reporting is in: a full-go Tua Tagovailoa's best day
+    // of camp (6-of-8 in 11-on-11, 30-yd touch to Dotson, PA lob to London), the lightning stoppage,
+    // rookie Ethan Onianwa holding up at RT, and the phase flipping to preseason tomorrow. photoId
+    // moved penix-jr to tua so the headshot fallback matches the freshened Tua-led lead. IMAGE STILL
+    // NOT QUEUED: re-verified ~/Vault/Notes/image-requests.md and the limn-editor-enhance skill are
+    // NOT mounted in this sandbox (only the tracker repos, outputs and uploads are), so the downstream
+    // Antigravity queue cannot be appended. The pointer resolves to the tua headshot fallback until a
+    // plate is generated, which is safe and aligned. No repoint this cycle (plate is fresh); the clean
+    // queue moment for the first run that can reach the Vault is a Lanier night-practice Tua/Penix scene.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-08-09-under-the-lights.jpg",
   },
   sources: [
@@ -2357,18 +2368,25 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "UNDER THE LIGHTS: PENIX DROPS A 50-YARD TOUCHDOWN ON BRANCH AS CAMP GOES ON THE ROAD: at the Falcons' Saturday Night Lights practice at Lanier High School, Michael Penix Jr. went 6-of-8 in seven-on-seven and closed the night with a 50-yard scoring strike to rookie Zachariah Branch, the best receiver on the grass again, while a managed Bijan Robinson took only a few early handoffs and the Denver preseason opener moved inside a week",
-      detail: "The Falcoholic, ESPN and the team site (Saturday Night Lights, Aug 8): Atlanta moved its marquee open session to Longhorn Stadium at Lanier High in Sugar Hill, gates at 6 p.m., and let the passing game breathe under the lights in full pads. Penix, still held to individual and seven-on-seven work as he rehabs his ACL, was efficient and sharp, going 6-of-8 in seven-on-seven and capping the night with a 50-yard touchdown to Branch. The third-round returner drew looks from every quarterback and again graded as the best receiver on the field, turning a drag route into what would have gone the distance in a real game. Penix also hit Drake London on a deep corner and touched Jahan Dotson for about 20 yards down the right sideline. Bijan Robinson, back on the field five days after his record extension, was handled carefully, taking a few early handoffs before sitting the team periods. Penix and Kyle Pitts Sr. addressed the crowd and the media afterward, closing the public portion of camp. The runway now shortens fast: the preseason opener against Denver at Mercedes-Benz Stadium is set for Friday, Aug 14, at 7 p.m.",
+      title: "CAMP CLOSES UNDER THE LIGHTS: A FULL-GO TUA TURNS IN HIS BEST DAY BEFORE LIGHTNING CUTS IT SHORT: in the last public practice of the summer at Lanier High School, Tua Tagovailoa ran with the first team at every interval and went 6-of-8 in eleven-on-eleven with a 30-yard touch throw to Jahan Dotson and a play-action lob to Drake London, Michael Penix Jr. answered in seven-on-seven with a 50-yard touchdown to rookie Zachariah Branch, and a lightning strike ended the packed session early",
+      detail: "AJC, ClutchPoints, The Falcoholic and the team site (Saturday Night Lights, Aug 8, into the Day 9 reports): Atlanta closed its public camp with a night session at Longhorn Stadium at Lanier High in Sugar Hill, and it belonged to the starter. A now full-go Tua Tagovailoa, past the tight back that cost him the opening days, turned in his best practice of camp, going 6-of-8 in eleven-on-eleven that included his two sharpest throws of the summer, a 30-yard touch ball to Jahan Dotson and a play-action rollout lob to Drake London. The night ended early when lightning was spotted around 8:10 p.m., halting a packed stadium with more than thirty minutes still on the field. Penix, held to individual and seven-on-seven work as he rehabs his ACL, was again efficient and closed with a 50-yard touchdown to Branch, the third-round returner who has graded as one of the best receivers on the grass all camp. Rookie tackle Ethan Onianwa kept getting first- and second-team run and stonewalled James Pearce Jr. off the edge, a bright spot at an unsettled right tackle. It closes a camp that stacked live tackling, record contracts and a full quarterback room's worth of intrigue.",
       category: "general",
-      sourceUrl: "https://www.atlantafalcons.com/video/michael-penix-jr-kyle-pitts-sr-speak-on-2026-preparation-after-atlanta-falcons-saturday-night-lights-nfl",
-      sourceLabel: "atlantafalcons.com / The Falcoholic / ESPN",
+      sourceUrl: "https://www.ajc.com/sports/2026/08/tagovailoa-rookie-onianwa-star-at-falcons-training-camp-practice-at-lanier-high/",
+      sourceLabel: "AJC / ClutchPoints / The Falcoholic / atlantafalcons.com",
     },
     {
-      title: "FIVE DAYS TO DENVER, AND STEFANSKI SAYS THE STARTERS WILL PLAY: the phase flips from training camp to preseason Tuesday, and Atlanta opens its exhibition slate at home against the Broncos on Friday, Aug 14, at 7 p.m., the first live look at Kevin Stefanski's first-team offense after he committed to giving his front-liners runway in the opener and the Miami finale",
-      detail: "Atlantafalcons.com game page and the schedule (confirmed Aug 8): the Falcons' preseason opens Friday, Aug 14, against Denver at Mercedes-Benz Stadium, a 7 p.m. ET kickoff, the first of three exhibitions before the regular season. It is the payoff to the plan Stefanski laid out earlier in camp, that his starters will play in the opener and the finale against Miami while the middle game against Indianapolis is treated differently because of the joint practices scheduled that week. His logic was blunt: for players to get ready to play football, they have to play football. The open question the game will start to answer is the quarterback picture. Tua Tagovailoa has banked the first-team reps and is the de facto starter as his back settles, while Penix, capped at seven-on-seven, has attached a roughly four-week timeline to full clearance, pushing any real competition toward late August.",
+      title: "THE PHASE FLIPS TO PRESEASON TUESDAY, AND DENVER IS FOUR DAYS OUT: with the public camp closed, Atlanta turns to its exhibition slate, opening at home against the Broncos on Friday, Aug 14, at 7 p.m., the first live look at Kevin Stefanski's first-team offense after he committed to giving his front-liners runway in the opener and the Miami finale",
+      detail: "Atlantafalcons.com game page and the schedule (confirmed Aug 8): the Falcons' preseason opens Friday, Aug 14, against Denver at Mercedes-Benz Stadium, a 7 p.m. ET kickoff, the first of three exhibitions before the regular season, with joint practices at Indianapolis on Aug 19 and 20 leading into the middle game on Aug 22. It is the payoff to the plan Stefanski laid out earlier in camp, that his starters will play in the opener and the finale against Miami while the Colts game is treated differently because of those joint sessions. His logic was blunt: for players to get ready to play football, they have to play football. The open question the game will start to answer is the quarterback picture. Tua Tagovailoa has banked the first-team reps and is the de facto starter now that his back has cleared, while Penix, capped at seven-on-seven, has attached a roughly four-week timeline to full clearance, pushing any real competition toward late August.",
       category: "games",
       sourceUrl: "https://www.atlantafalcons.com/game-day/2026/pre/falcons-vs-broncos/",
       sourceLabel: "atlantafalcons.com",
+    },
+    {
+      title: "THE CAMP INJURY LEDGER: HARRISON BACK, BATES STILL DOWN: defensive lineman Zach Harrison was activated and cleared to return to practice, a welcome piece of depth for an injury-thinned front, while All-Pro safety Jessie Bates III missed a fourth straight day with a back ailment as the public portion of camp wrapped",
+      detail: "The Falcoholic, Yardbarker and BloggingDirty (Day 9 reports, Aug 9): the news on the injury front cut both ways as camp closed. Zach Harrison, the fourth-year edge out of Ohio State, was activated and cleared to return to practice, a needed body for an edge and defensive-line room already down Jalon Walker for the year and bracing for a possible James Pearce Jr. suspension. On the other side, Jessie Bates III, the first-team free safety and one of the league's best, sat out a fourth consecutive practice with a back issue. The Falcons have given no timeline, and while there is no indication it is serious, it is the kind of veteran maintenance absence that bears watching with the Denver opener four days out.",
+      category: "injuries",
+      sourceUrl: "https://www.yardbarker.com/nfl/articles/falcons_injury_updates_on_jessie_bates_iii_zach_harrison/s1_16493_44148670",
+      sourceLabel: "The Falcoholic / Yardbarker / BloggingDirty",
     },
     {
       title: "BIJAN'S FIRST FULL 11-ON-11 REPS END IN A WHEEL-ROUTE TOUCHDOWN: five days after the record extension that made him the highest-paid running back in NFL history, Robinson took full-team snaps for the first time Friday and immediately delivered the highlight of Day 8, running a wheel down the left sideline the defense could not track for what would have been a touchdown from a now full-go Tua Tagovailoa",
@@ -2427,13 +2445,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "ESPN / AJC / Pro Football Rumors / atlantafalcons.com",
     },
     {
-      title: "BACK TOGETHER SATURDAY, AND STEFANSKI SAYS THE STARTERS WILL PLAY: camp opens to every fan today for the first time, and the coach arrives already on the record that his starters will take preseason snaps, with runway planned in the Denver opener and the Miami finale, while the quarterback grass stays half-empty around Tua Tagovailoa's back and Michael Penix Jr.'s 7-on-7 cap",
-      detail: "Team site, SI Falcons and The Falcoholic (Jul 31 camp report) plus the camp schedule: Saturday Aug 1 was Back Together Saturday, the first practice open to all fans after Friday's season-ticket-holder session, with Stefanski and GM Ian Cunningham addressing the crowd and Falcons legends, Freddie Falcon and the cheerleaders on hand. The news the day carries in came Friday, when Stefanski laid out his preseason plan: starters will play, with time planned in the opener against Denver and the finale against Miami, while the middle game against Indianapolis is treated differently because of the joint practices scheduled that week. His logic was blunt, 'for guys to get ready to play football they have to play football.' On the grass the quarterback room is still working around its two most important men. Tua, held out of the Wednesday opener with a back flare-up Stefanski called short-term, returned Thursday but only lightly, throwing in individual drills and taking nothing in 11-on-11, with a full return eyed this week. Penix stayed on the individual and 7-on-7 plan, hitting Zachariah Branch for a 45-yard touchdown over A.J. Terrell and Jessie Bates III, but has attached a four-week timeline to his own clearance. The public run builds to the free Under the Lights session Aug 8.",
-      category: "general",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-will-starters-play-in-the-preseason",
-      sourceLabel: "atlantafalcons.com / SI Falcons / The Falcoholic",
-    },
-    {
       title: "PENIX PUTS A NUMBER ON IT, AND IT IS NOT WEEK 1: on Day 1 the quarterback said he was told 'another four weeks, possibly going into that next stage' before full clearance, an admission that pushes any real competition with Tua Tagovailoa toward late August and hands the presumptive starter's job to Tua by health alone",
       detail: "AJC, NBC Sports Pro Football Talk, NFL.com and the team site's own camp report (all Jul 29): Penix met the media Wednesday and, for the first time, attached a timeline to the rehab of his third career ACL surgery. 'I was told another four weeks, possibly going into that next stage,' he said, 'but at the same time, it could be earlier. It just depends on how my body is doing throughout this whole camp process.' He was blunt that health, not the depth chart, is driving his caution: 'I can't afford to have someone trip and fall on me right now.' Four weeks from the opener lands the real evaluation in late August, well past the point Atlanta hoped to settle QB1, and it means Tua Tagovailoa is the de facto starter whenever his back clears, having banked every first-team rep since OTAs. The wrinkle is that on Day 1 even Tua could not take those reps, which is why the front office moved so fast to add a veteran arm. The staff's posture is unchanged, no true competition until both men can be judged on the same physical terms, but the practical read hardened Wednesday: this is Tua's job to run until Penix is whole.",
       category: "injuries",
@@ -2464,8 +2475,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-08-09T09:00:00Z",
-  windowLabel: "Training Camp · Week 2 → Under the Lights (Aug 8) · Preseason opener vs. Denver Aug 14",
+  generatedAt: "2026-08-10T09:00:00Z",
+  windowLabel: "Camp Closes (Aug 8, Under the Lights) → Preseason opener vs. Denver Fri Aug 14, 7 p.m.",
   sessions: [
     {
       id: "robinson-2026-08-05",
