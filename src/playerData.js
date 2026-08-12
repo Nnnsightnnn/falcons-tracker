@@ -465,7 +465,7 @@ export const PLAYERS = [
     stats: {},
     form: 7.5,
     status: "active",
-    injuryNote: "RT · ex-Chiefs · signed 4/9 after McGary retirement",
+    injuryNote: "Activated off PUP Aug 10 and cleared to practice, back in the RT battle. Ex-Chiefs, signed 4/9 after McGary retirement",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4034961.png",
     contract: { years: 1, total: 5000000, guaranteed: 3000000, apy: 5000000, throughYear: 2026, cap2026: 5000000 },
     career: [
@@ -856,8 +856,8 @@ export const PLAYERS = [
     acquired: "fa-2025",
     stats: {},
     form: 0,
-    status: "active",
-    injuryNote: "Rotational rusher · ex-Titans",
+    status: "pup",
+    injuryNote: "Placed on Reserve/PUP Aug 10, out for the 2026 season (injury). Rotational rusher, ex-Titans",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4243457.png",
     contract: { years: 1, total: 1300000, guaranteed: 100000, apy: 1300000, throughYear: 2026, cap2026: 1300000 },
     career: [
@@ -1202,7 +1202,7 @@ export const PLAYERS = [
     stats: { tackles: 98, int_def: 3, pass_def: 9, ff: 1 },
     form: 9.1,
     status: "questionable",
-    injuryNote: "Back ailment, missed 4 straight camp practices (Aug 9); All-Pro FS",
+    injuryNote: "Back ailment, missed 5 straight camp practices (through Aug 11); Stefanski expects a short-term absence with no Week 1 concern. All-Pro FS",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/3919512.png",
     contract: { years: 4, total: 64000000, guaranteed: 36000000, apy: 16000000, throughYear: 2027, cap2026: 16800000 },
     career: [
@@ -2123,18 +2123,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-11T09:00:00Z",
+  generatedAt: "2026-08-12T09:00:00Z",
   cover: {
-    kicker: "TRAINING CAMP CLOSES · UNDER THE LIGHTS · Sugar Hill: In the Last Public Session of the Summer, a Full-Go Tua Tagovailoa Turned in His Best Day of Camp, Going 6-of-8 in Eleven-on-Eleven With a 30-Yard Touch Throw to Jahan Dotson and a Play-Action Lob to Drake London Before Lightning Cut the Packed Lanier High Practice Short, Michael Penix Jr. Answered in Seven-on-Seven With a 50-Yard Touchdown to Rookie Zachariah Branch, and the Phase Now Flips to Preseason With Denver Four Days Out",
+    kicker: "TRAINING CAMP CLOSES · UNDER THE LIGHTS · Sugar Hill: In the Last Public Session of the Summer, a Full-Go Tua Tagovailoa Turned in His Best Day of Camp, Going 6-of-8 in Eleven-on-Eleven With a 30-Yard Touch Throw to Jahan Dotson and a Play-Action Lob to Drake London Before Lightning Cut the Packed Lanier High Practice Short, Michael Penix Jr. Answered in Seven-on-Seven With a 50-Yard Touchdown to Rookie Zachariah Branch, and the Phase Now Flips to Preseason With Denver Two Days Out",
     headLine1: "Camp closed with the starter finally at full speed.",
     headEm: "In the last public practice of the summer, under the lights at Lanier High School, a full-go Tua Tagovailoa turned in his best day of camp, going 6-of-8 in eleven-on-eleven with a 30-yard touch throw to Jahan Dotson and a play-action rollout lob to Drake London before lightning cut the night short.",
-    headLine3: "Michael Penix Jr., still capped at seven-on-seven as he rehabs his ACL, answered with a 50-yard touchdown to rookie Zachariah Branch, rookie tackle Ethan Onianwa held his own against James Pearce Jr., and the phase now flips to preseason on Tuesday with the Denver opener four days out on Aug 14.",
+    headLine3: "Michael Penix Jr., still capped at seven-on-seven as he rehabs his ACL, answered with a 50-yard touchdown to rookie Zachariah Branch, rookie tackle Ethan Onianwa held his own against James Pearce Jr., and the phase has flipped to preseason with the Denver opener two days out on Aug 14.",
     deck:
       "The Falcons packed up Flowery Branch for a night and took camp on the road to close out the summer, and the last public session belonged to the quarterback everyone came to see. Under the lights at Longhorn Stadium at Lanier High School in Sugar Hill, in front of a packed house, a now full-go Tua Tagovailoa turned in his best practice of camp, running with the first team at every interval and going 6-of-8 in eleven-on-eleven, including his two sharpest throws of the summer: a 30-yard touch ball to Jahan Dotson and a play-action rollout lob to Drake London. The night ended early when lightning was spotted around 8:10 p.m., halting the practice with more than thirty minutes still on the field. Michael Penix Jr., held to individual and seven-on-seven work as he rehabs his ACL, was again efficient and closed his night with a 50-yard touchdown to Zachariah Branch, the third-round returner who has graded as one of the best receivers on the grass all camp. Rookie offensive tackle Ethan Onianwa kept getting run with the first and second units and stonewalled James Pearce Jr. off the edge, a bright spot at an unsettled right tackle. On the injury front, defensive lineman Zach Harrison was activated and cleared to return, while safety Jessie Bates III missed a fourth straight day with a back ailment. The runway now shortens fast: the phase flips to preseason on Tuesday and the opener against Denver at Mercedes-Benz Stadium is set for Friday, Aug 14, at 7 p.m., the first live look at Kevin Stefanski's starters after he promised they would play.",
     byline: "The Tracker Desk",
     filedFrom: "Sugar Hill",
     photoId: "tua",
-    stampLabel: "CAMP CLOSES · TUA'S BEST DAY, LIGHTNING-SHORTENED · DENVER IN 4 DAYS",
+    stampLabel: "CAMP CLOSES · TUA'S BEST DAY, LIGHTNING-SHORTENED · DENVER IN 2 DAYS",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2364,6 +2364,16 @@ export const NEWS_DIGEST = {
     // de facto Week 1 starter now leading the preseason-week coverage; the pointer resolves to the tua
     // headshot fallback until a plate exists, which is safe. The clean queue moment for the first run that
     // can reach the Vault remains a Lanier night-practice Tua/Penix scene or a Denver-opener first-team rep.
+    // STATUS (2026-08-12 scheduled run): cover queue SKIPPED again, same hard constraint re-verified this
+    // cycle: ~/Vault/Notes/image-requests.md and the limn-editor-enhance skill are NOT mounted in this
+    // sandbox (only the tracker repos, outputs and uploads are), so the downstream Antigravity queue cannot
+    // be appended. Last plate actually on disk remains 2026-07-17-dotson-wr2.jpg; the under-the-lights
+    // pointer was never generated and still resolves to the photoId (tua) headshot fallback, which stays
+    // aligned with the preseason-week lead. Recency refresh only this cycle: Denver countdown moved from
+    // four-days-out to two-days-out across the cover kicker, headline and stamp, the Cameron Sample edge
+    // signing plus Jawaan Taylor's PUP activation folded into the digest, and the injury ledger updated to
+    // Bates' fifth day down. The clean queue moment for the first run that can reach the Vault remains a
+    // Denver-opener first-team rep on Aug 14.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-08-09-under-the-lights.jpg",
   },
   sources: [
@@ -2378,11 +2388,18 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "PRESEASON IS HERE: DENVER FRIDAY, AND STEFANSKI WILL PLAY HIS STARTERS: the phase flips to preseason with the public camp closed, and Atlanta opens its exhibition slate at home against the Broncos on Friday, Aug 14, at 7 p.m., the first live look at Kevin Stefanski's first-team offense after he committed to playing his front-liners in the opener and the Miami finale",
-      detail: "Atlantafalcons.com, SI Falcons and BloggingDirty (Stefanski's preseason-plan comments, carried into Denver week): the Falcons' preseason opens Friday at Mercedes-Benz Stadium, and Stefanski's philosophy is a clean break from the recent past. He plans to play his starters in two of the three exhibitions, against Denver on Aug 14 and Miami on Aug 30, while holding them to fewer snaps in the middle game at Indianapolis on Aug 22 because of the joint practices that precede it. He called the plan 'fluid,' with the exact snap counts depending on what the Colts sessions reveal and where the staff thinks the top of the roster needs work before Week 1, but the principle is blunt: he thinks it is good to play in the preseason. It is the payoff to a camp that stacked live tackling, record contracts and a full quarterback room's worth of intrigue.",
+      title: "PRESEASON OPENS FRIDAY, TWO DAYS OUT: DENVER AT THE BENZ, AND STEFANSKI WILL PLAY HIS STARTERS: with the public camp closed and joint work in Indianapolis still a week away, Atlanta opens its exhibition slate at home against the Broncos on Friday, Aug 14, at 7 p.m., the first live look at Kevin Stefanski's first-team offense after he committed to playing his front-liners in the opener and the Miami finale",
+      detail: "Atlantafalcons.com, SI Falcons and BloggingDirty (Stefanski's preseason-plan comments, carried into Denver week): the Falcons' preseason opens Friday at Mercedes-Benz Stadium, and Stefanski's philosophy is a clean break from the recent past. He plans to play his starters in two of the three exhibitions, against Denver on Aug 14 and Miami on Aug 30, while holding them to fewer snaps in the middle game at Indianapolis on Aug 22 because of the joint practices that precede it. He called the plan 'fluid,' with the exact snap counts depending on what the Colts sessions reveal and where the staff thinks the top of the roster needs work before Week 1, but the principle is blunt: he thinks it is good to play in the preseason. The camp itself ran through a Wednesday, Aug 12 session at IBM Performance Field, the last tune-up before the lights come on. It is the payoff to a camp that stacked live tackling, record contracts and a full quarterback room's worth of intrigue.",
       category: "games",
       sourceUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-will-starters-play-in-the-preseason",
       sourceLabel: "atlantafalcons.com / SI Falcons / BloggingDirty",
+    },
+    {
+      title: "ATLANTA RESTOCKS THE EDGE: CAMERON SAMPLE SIGNED, JAWAAN TAYLOR ACTIVATED OFF PUP, MALONE LOST FOR THE YEAR: less than a week after Jalon Walker's season-ending ACL tear, the Falcons signed veteran defensive end Cameron Sample on Monday, Aug 10, activated right tackle Jawaan Taylor off the PUP list to open the RT battle, and in a corresponding move placed edge DeAngelo Malone on Reserve/PUP, out for the 2026 season",
+      detail: "Atlantafalcons.com, Atlanta News First, Pro Football Rumors and SI Falcons (Aug 10): the Falcons moved to shore up a suddenly thin edge room. Sample, 26, is a Snellville native and a 2021 fourth-round pick of the Bengals who spent three seasons in Cincinnati's rotation, signed a one-year deal with San Francisco in April, and was released last week. He was in full pads for Monday's practice hours after signing. The same day, Atlanta activated Taylor off PUP and cleared him to practice, putting the presumptive right tackle back into a three-way competition with Wanya Morris and Michael Jerrell. The corresponding move stung: DeAngelo Malone, a rotational rusher, was placed on Reserve/PUP and will miss the season with injury. The sequence reads as a front office still hunting bodies for an edge group down Walker for the year and bracing for a possible James Pearce Jr. suspension.",
+      category: "free-agency",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-right-tackle-jawaan-taylor-cleared-injury-return-practice",
+      sourceLabel: "atlantafalcons.com / Atlanta News First / Pro Football Rumors / SI Falcons",
     },
     {
       title: "NO TUA DECISION YET FOR FRIDAY, AND PENIX CANNOT PLAY UNTIL HE CLEARS 11-ON-11: Stefanski said he has not decided whether Tua Tagovailoa, past the tight back that cost him the opening days, will play in the Denver opener, while confirming Michael Penix Jr. cannot appear in any game until he is cleared for full-team work, a bar that keeps the presumptive starter's job Tua's by health alone",
@@ -2406,11 +2423,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "AJC / ClutchPoints / The Falcoholic / atlantafalcons.com",
     },
     {
-      title: "THE CAMP INJURY LEDGER: HARRISON BACK, BATES STILL DOWN: defensive lineman Zach Harrison was activated and cleared to return to practice, a welcome piece of depth for an injury-thinned front, while All-Pro safety Jessie Bates III missed a fourth straight day with a back ailment as the public portion of camp wrapped",
-      detail: "The Falcoholic, Yardbarker and BloggingDirty (Day 9 reports, Aug 9): the news on the injury front cut both ways as camp closed. Zach Harrison, the fourth-year edge out of Ohio State, was activated and cleared to return to practice, a needed body for an edge and defensive-line room already down Jalon Walker for the year and bracing for a possible James Pearce Jr. suspension. On the other side, Jessie Bates III, the first-team free safety and one of the league's best, sat out a fourth consecutive practice with a back issue. The Falcons have given no timeline, and while there is no indication it is serious, it is the kind of veteran maintenance absence that bears watching with the Denver opener four days out.",
+      title: "THE CAMP INJURY LEDGER: BATES INTO A FIFTH DAY DOWN, DEABLO AND TWO DBS OUT TUESDAY: All-Pro safety Jessie Bates III missed a fifth straight practice with a back ailment through the Aug 11 session, joined on the sideline by starting inside linebacker Divine Deablo and defensive backs Natrone Brooks and Avieon Terrell, though Stefanski has framed Bates as a short-term absence with no Week 1 concern",
+      detail: "ESPN, The Falcoholic and Atlanta News First (Tuesday, Aug 11): the injury sheet thinned the defense as camp closed toward the opener. Bates, the first-team free safety and one of the league's best, sat out a fifth consecutive practice with a back issue, with DeMarcco Hellams taking first-team reps alongside Xavier Watts in his place. Stefanski said it should not be long before Bates is back and that the club does not expect the absence to bleed into the regular season. Deablo, the defense's green-dot signal-caller, plus corners Natrone Brooks and Avieon Terrell also missed Tuesday's work. On the brighter side, edge Zach Harrison had been activated and cleared to return over the weekend, a needed body for a front already down Jalon Walker for the year and bracing for a possible James Pearce Jr. suspension.",
       category: "injuries",
-      sourceUrl: "https://www.yardbarker.com/nfl/articles/falcons_injury_updates_on_jessie_bates_iii_zach_harrison/s1_16493_44148670",
-      sourceLabel: "The Falcoholic / Yardbarker / BloggingDirty",
+      sourceUrl: "https://www.espn.com/nfl/story/_/id/49448429/atlanta-falcons-training-camp-2026-intel-updates",
+      sourceLabel: "ESPN / The Falcoholic / Atlanta News First",
     },
     {
       title: "BIJAN'S FIRST FULL 11-ON-11 REPS END IN A WHEEL-ROUTE TOUCHDOWN: five days after the record extension that made him the highest-paid running back in NFL history, Robinson took full-team snaps for the first time Friday and immediately delivered the highlight of Day 8, running a wheel down the left sideline the defense could not track for what would have been a touchdown from a now full-go Tua Tagovailoa",
@@ -2469,11 +2486,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "ESPN / atlantafalcons.com",
     },
     {
-      title: "THE PEARCE CASE MOVES, BUT NOT THE WAY ATLANTA WANTED: the pretrial diversion program has been extended from six months to a full year, which pushes the legal resolution deep into the season, while the suspension estimates have quietly narrowed toward a four-to-eight game band and a return to the field at some point in 2026",
-      detail: "Heavy.com, Pro Football Rumors, The Big Lead, Sportsnaut and Audacy (reporting carried through the weekend), with still no statement from the league office: two things changed since the last update, and they cut in opposite directions. The first is procedural and unhelpful. The length of the pretrial diversion program covering Pearce's Miami-Dade charges, two counts of aggravated battery with a deadly weapon and one count of aggravated stalking, with WNBA player Rickea Jackson identified as the alleged victim, has been extended from six months to one year. Charges are still cleared on completion and no conviction is involved, but a twelve-month program means the underlying case will not be formally closed until well inside the 2026 season, which is exactly the scenario Audacy flagged when it reported the league may not rule before 2027. The second is a softening of the projected penalty. The Athletic's Josh Kendall still reads a suspension as likely, and the Falcons are reportedly planning internally for eight games or more on the Cameron Sutton precedent, but the aggregate read has drifted toward four to eight games on the logic that the case is headed toward dismissal and no one was physically harmed. The practical translation for camp is unchanged: Atlanta prepares as though it will be without the player who led the team with 10.5 sacks as a rookie, and the edge room it stacked this spring in Azeez Ojulari, Samson Ebukam and Cameron Thomas is the contingency plan whether or not it is ever needed.",
+      title: "THE PEARCE CASE, A RESOLUTION 'IN THE NEXT FEW DAYS': team president Greg Beadles said Atlanta expects the league to rule on James Pearce Jr.'s status within days, while Stefanski, as of Aug 10, still had no update; the internal read hovers around a six-game suspension with some fearing it climbs toward eight, and the second-year rusher keeps taking second-team reps in the meantime",
+      detail: "Yahoo Sports, ClutchPoints, SI Falcons and Sportsnaut (early-to-mid August): the wait may be nearing an end. Beadles told reporters the club expects a resolution from the league office in the next few days, the most concrete timeline yet, even as Stefanski gave a deliberately vague answer on Aug 10 and said he had no update. The projected penalty has settled in a four-to-eight game band, with most guesses around six and The Athletic's Josh Kendall warning it could reach eight, or half the season. The underlying Miami-Dade charges, two counts of aggravated battery with a deadly weapon and one count of aggravated stalking, with WNBA player Rickea Jackson identified as the alleged victim, are moving through a pretrial diversion program that was extended from six months to a full year, so the legal case will not close until deep into the season regardless of what the league decides. Pearce has been back with the team since OTAs and is taking second-team reps. The practical translation for camp is unchanged: Atlanta prepares as though it will open without the player who led the team with 10.5 sacks as a rookie, leaning on Ebukam, Ojulari, Thomas and the newly signed Cameron Sample.",
       category: "general",
-      sourceUrl: "https://heavy.com/sports/nfl/atlanta-falcons/james-pearce-jr-could-be-slapped-with-suspension-per-latest-report/",
-      sourceLabel: "Heavy.com / Pro Football Rumors / Audacy / Sportsnaut",
+      sourceUrl: "https://sports.yahoo.com/articles/falcons-exec-provides-james-pearce-181656052.html",
+      sourceLabel: "Yahoo Sports / ClutchPoints / SI Falcons / Sportsnaut",
     },
   ],
 };
@@ -2485,8 +2502,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-08-11T09:00:00Z",
-  windowLabel: "Preseason Week 1 · Opener vs. Denver Fri Aug 14, 7 p.m. → Colts joint practices Aug 19–20",
+  generatedAt: "2026-08-12T09:00:00Z",
+  windowLabel: "Preseason Week 1 · Opener vs. Denver Fri Aug 14, 7 p.m. (two days out) → Colts joint practices Aug 19–20",
   sessions: [
     {
       id: "robinson-2026-08-05",
