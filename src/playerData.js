@@ -914,27 +914,6 @@ export const PLAYERS = [
     ],
   },
   {
-    id: "andersen",
-    name: "Troy Andersen",
-    number: 44,
-    position: "LB",
-    posSlot: "MIKE",
-        stRoles: ["PP"],
-    stRank: {"PP":3},
-    positionGroup: "defense",
-    depthRank: 2,
-    height: 75, weight: 243, age: 26, experience: 5,
-    college: "Montana State",
-    acquired: "draft-2022-R2",
-    stats: { tackles: 31 },
-    form: 6.6,
-    status: "questionable",
-    injuryNote: "Shoulder recovery from 2025 IR stint · the Jul 10 ILB camp preview lists him as an option next to Deablo only 'if he gets healthy'",
-    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4247807.png",
-    contract: { years: 1, total: 3420000, guaranteed: 3420000, apy: 3420000, throughYear: 2026, cap2026: 3420000 },
-    career: [{ years: "2022–", team: "Atlanta Falcons", type: "NFL" }],
-  },
-  {
     id: "tindall",
     name: "Channing Tindall",
     number: 55,
@@ -2123,18 +2102,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-12T09:00:00Z",
+  generatedAt: "2026-08-13T09:00:00Z",
   cover: {
-    kicker: "TRAINING CAMP CLOSES · UNDER THE LIGHTS · Sugar Hill: In the Last Public Session of the Summer, a Full-Go Tua Tagovailoa Turned in His Best Day of Camp, Going 6-of-8 in Eleven-on-Eleven With a 30-Yard Touch Throw to Jahan Dotson and a Play-Action Lob to Drake London Before Lightning Cut the Packed Lanier High Practice Short, Michael Penix Jr. Answered in Seven-on-Seven With a 50-Yard Touchdown to Rookie Zachariah Branch, and the Phase Now Flips to Preseason With Denver Two Days Out",
-    headLine1: "Camp closed with the starter finally at full speed.",
-    headEm: "In the last public practice of the summer, under the lights at Lanier High School, a full-go Tua Tagovailoa turned in his best day of camp, going 6-of-8 in eleven-on-eleven with a 30-yard touch throw to Jahan Dotson and a play-action rollout lob to Drake London before lightning cut the night short.",
-    headLine3: "Michael Penix Jr., still capped at seven-on-seven as he rehabs his ACL, answered with a 50-yard touchdown to rookie Zachariah Branch, rookie tackle Ethan Onianwa held his own against James Pearce Jr., and the phase has flipped to preseason with the Denver opener two days out on Aug 14.",
+    kicker: "PRESEASON EVE · THE CALL IS MADE · Flowery Branch: Two Days From the Lights at Mercedes-Benz Stadium, Kevin Stefanski Named Tua Tagovailoa His Starter for Friday's Opener Against Denver While Pointedly Refusing to Call the Job Settled for Week 1, Laid Out a Starters-Play Plan of a Series or So, Roughly Ten Snaps, Before Cooper Rush and Then Jack Strand, and Confirmed Michael Penix Jr. Still Cannot Suit Up Until He Clears Full-Team Work as His ACL Rehab Runs Its Course",
+    headLine1: "Tua gets the ball Friday, but not the season, not yet.",
+    headEm: "Two days from the preseason opener, Kevin Stefanski named Tua Tagovailoa the starter for the Broncos game and in the same breath declined to call him the Week 1 quarterback, keeping the most-watched job in Atlanta open by design.",
+    headLine3: "The front-liners will get a series, about ten plays, before Cooper Rush and then Jack Strand take over; Michael Penix Jr., still not cleared for eleven-on-eleven as he rehabs his ACL, will not play, and the first live look at Stefanski's team comes Friday at 7 p.m.",
     deck:
-      "The Falcons packed up Flowery Branch for a night and took camp on the road to close out the summer, and the last public session belonged to the quarterback everyone came to see. Under the lights at Longhorn Stadium at Lanier High School in Sugar Hill, in front of a packed house, a now full-go Tua Tagovailoa turned in his best practice of camp, running with the first team at every interval and going 6-of-8 in eleven-on-eleven, including his two sharpest throws of the summer: a 30-yard touch ball to Jahan Dotson and a play-action rollout lob to Drake London. The night ended early when lightning was spotted around 8:10 p.m., halting the practice with more than thirty minutes still on the field. Michael Penix Jr., held to individual and seven-on-seven work as he rehabs his ACL, was again efficient and closed his night with a 50-yard touchdown to Zachariah Branch, the third-round returner who has graded as one of the best receivers on the grass all camp. Rookie offensive tackle Ethan Onianwa kept getting run with the first and second units and stonewalled James Pearce Jr. off the edge, a bright spot at an unsettled right tackle. On the injury front, defensive lineman Zach Harrison was activated and cleared to return, while safety Jessie Bates III missed a fourth straight day with a back ailment. The runway now shortens fast: the phase flips to preseason on Tuesday and the opener against Denver at Mercedes-Benz Stadium is set for Friday, Aug 14, at 7 p.m., the first live look at Kevin Stefanski's starters after he promised they would play.",
+      "The most-watched decision of Atlanta's summer got a first answer on Tuesday, and it came with a caveat. Two days out from the preseason opener, Kevin Stefanski told reporters that Tua Tagovailoa will start Friday night against the Denver Broncos, then made a point of separating that from the bigger question: this does not name Tagovailoa the Week 1 quarterback. 'We are not there right now to name a starter for Week 1,' the coach said. 'We will cross that bridge when we get to it. We feel very good about where Tua is, where all of our guys are, but he will start on Friday night.' The plan for the front-liners is modest by design, a single series or about ten snaps depending on which comes first, with the plan 'in pencil' until the end of Wednesday's practice. Cooper Rush rotates in behind Tua and Jack Strand finishes the game. Michael Penix Jr. will not play at all: he is still not cleared for full-team, 11-on-11 work as he rehabs the ACL he tore last November, and Stefanski said Penix will hold that individual and 7-on-7 pace through next week's Colts joint practices, though the staff likes where the rehab sits and called the latest read on the knee encouraging. The injury room otherwise trended the right way, with Jessie Bates III improving from a back issue and Jawaan Taylor moving into football activities. Kickoff against the Broncos is set for 7 p.m. at Mercedes-Benz Stadium, the first live look at the team Stefanski has spent a summer building.",
     byline: "The Tracker Desk",
-    filedFrom: "Sugar Hill",
+    filedFrom: "Flowery Branch",
     photoId: "tua",
-    stampLabel: "CAMP CLOSES · TUA'S BEST DAY, LIGHTNING-SHORTENED · DENVER IN 2 DAYS",
+    stampLabel: "TUA STARTS FRIDAY, QB1 STILL OPEN · PENIX HELD OUT · DENVER IN 2 DAYS",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2374,6 +2353,15 @@ export const NEWS_DIGEST = {
     // signing plus Jawaan Taylor's PUP activation folded into the digest, and the injury ledger updated to
     // Bates' fifth day down. The clean queue moment for the first run that can reach the Vault remains a
     // Denver-opener first-team rep on Aug 14.
+    // STATUS (2026-08-13 scheduled run): cover SKIPPED, same hard constraint. Re-verified that
+    // ~/Vault/Notes/image-requests.md and the limn-editor-enhance skill are NOT mounted in this
+    // sandbox (only the tracker repos, outputs and uploads are), so the downstream Antigravity queue
+    // cannot be appended. The last plate actually on disk is still 2026-07-17-dotson-wr2.jpg; the
+    // 2026-08-09-under-the-lights.jpg pointer was never generated and already resolves to the tua
+    // headshot fallback, which stays aligned with today's Tua-named-starter lead. Repointing would
+    // only spawn another dangling request, so the pointer is left as is. Cover TEXT refreshed to the
+    // Aug 12 lead (Stefanski names Tua the Friday starter). The clean queue moment for the first run
+    // that can reach the Vault is the Aug 14 Denver-opener first-team rep.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-08-09-under-the-lights.jpg",
   },
   sources: [
@@ -2388,11 +2376,25 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "PRESEASON OPENS FRIDAY, TWO DAYS OUT: DENVER AT THE BENZ, AND STEFANSKI WILL PLAY HIS STARTERS: with the public camp closed and joint work in Indianapolis still a week away, Atlanta opens its exhibition slate at home against the Broncos on Friday, Aug 14, at 7 p.m., the first live look at Kevin Stefanski's first-team offense after he committed to playing his front-liners in the opener and the Miami finale",
-      detail: "Atlantafalcons.com, SI Falcons and BloggingDirty (Stefanski's preseason-plan comments, carried into Denver week): the Falcons' preseason opens Friday at Mercedes-Benz Stadium, and Stefanski's philosophy is a clean break from the recent past. He plans to play his starters in two of the three exhibitions, against Denver on Aug 14 and Miami on Aug 30, while holding them to fewer snaps in the middle game at Indianapolis on Aug 22 because of the joint practices that precede it. He called the plan 'fluid,' with the exact snap counts depending on what the Colts sessions reveal and where the staff thinks the top of the roster needs work before Week 1, but the principle is blunt: he thinks it is good to play in the preseason. The camp itself ran through a Wednesday, Aug 12 session at IBM Performance Field, the last tune-up before the lights come on. It is the payoff to a camp that stacked live tackling, record contracts and a full quarterback room's worth of intrigue.",
+      title: "STEFANSKI NAMES TUA HIS FRIDAY STARTER, BUT NOT YET HIS WEEK 1 QB: two days out from the preseason opener, Kevin Stefanski said Tua Tagovailoa will start against Denver on Friday while pointedly declining to call the regular-season job settled, laying out a plan to play the front-liners a series or so, roughly ten snaps, before Cooper Rush and then Jack Strand take over",
+      detail: "Atlantafalcons.com, ESPN and The Falcoholic (Stefanski's Aug 12 pre-practice availability): the head coach put the first real marker on the quarterback race and then immediately hedged it. Tagovailoa gets the start Friday night at Mercedes-Benz Stadium, but Stefanski was explicit that it does not name him QB1: 'We are not there right now to name a starter for Week 1. We will cross that bridge when we get to it. We feel very good about where Tua is, where all of our guys are, but he will start on Friday night.' The plan for the starters is a single series or about ten plays, 'depending on which comes first,' with the whole thing 'in pencil' until the end of Wednesday's practice, Rush rotating in next and Jack Strand finishing. Michael Penix Jr. will not play: he is still not cleared for full-team, 11-on-11 work as he rehabs the ACL he tore last November, and Stefanski said Penix will hold that individual and 7-on-7 pace through next week's Colts joint practices, though the staff likes where the rehab sits. Kickoff is 7 p.m. ET, the first live look at Stefanski's team.",
       category: "games",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-will-starters-play-in-the-preseason",
-      sourceLabel: "atlantafalcons.com / SI Falcons / BloggingDirty",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-kevin-stefanski-starters-in-first-preseason-game-tua-tagovailoa",
+      sourceLabel: "atlantafalcons.com / ESPN / The Falcoholic",
+    },
+    {
+      title: "THE PRESEASON DEPTH CHART LANDS, AND A WAVE OF ROSTER CHURN WITH IT: Atlanta released its first unofficial depth chart Tuesday with developmental tackle Michael Jerrell atop the right-tackle spot and both Jawaan Taylor and Michael Penix Jr. flagged as injured, while a busy transactions week added RB Trey Sermon and TE Nick Muse, claimed Alabama guard Jaeden Roberts off waivers, and cut veteran linebacker Troy Andersen",
+      detail: "Atlantafalcons.com (Aug 11 to 12): the club published its preseason depth chart ahead of Denver, and the line that stands out is at right tackle, where 2024 seventh-round project Michael Jerrell holds the top spot with Taylor still carrying an injury asterisk as he ramps back off the PUP list. The roster underneath kept moving. Atlanta signed running back Trey Sermon, a Marietta native and former Ohio State back, for depth behind Bijan and Brian Robinson Jr.; signed tight end Nick Muse while waiving/injuring receiver Le'Meke Brockington and linebacker Malik Verdon; and claimed offensive lineman Jaeden Roberts, an Alabama product who had signed with Philadelphia as an undrafted free agent, off waivers. In the corresponding subtraction, the Falcons released linebacker Troy Andersen, their 2022 second-round pick, whose three seasons were repeatedly interrupted by injury. It is a bottom-of-roster reshuffle two days before the exhibition slate opens.",
+      category: "free-agency",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-depth-chart-preseason-game-vs-denver-broncos",
+      sourceLabel: "atlantafalcons.com",
+    },
+    {
+      title: "THE INJURY LEDGER TWO DAYS OUT: BATES TRENDING BACK, PENIX 'ENCOURAGING,' TAYLOR INTO FOOTBALL ACTIVITIES: as camp closed, Stefanski offered upbeat reads across the training room, saying All-Pro safety Jessie Bates III is improving from the back issue that cost him practice time, that the latest news on Michael Penix Jr.'s knee was 'encouraging,' and that right tackle Jawaan Taylor would be doing football activities, with Aveion Terrell, Bralen Trice and Da'Shawn Hand all rehabbing shorter-term issues",
+      detail: "ESPN, The Falcoholic and atlantafalcons.com (Aug 12): the health picture brightened as the Falcons turned toward the opener. Stefanski said Bates, the first-team free safety who had missed several practices with a back ailment, is improving, though he probably would not practice fully on Wednesday, and the staff does not expect the issue to bleed into the regular season, with DeMarcco Hellams having taken his first-team reps in the interim. He called the update on Penix's surgically repaired knee 'encouraging' while keeping him out of team work, and said Taylor, activated off PUP last week, would be doing football activities as he ramps back at right tackle. Aveion Terrell, Bralen Trice and Da'Shawn Hand are each rehabbing their own injuries, none of which the coach expects to be long-term. On the brighter side of the ledger, edge Zach Harrison had already been activated and cleared to return, a needed body for a front down Jalon Walker for the year.",
+      category: "injuries",
+      sourceUrl: "https://www.espn.com/nfl/story/_/id/49448429/atlanta-falcons-training-camp-2026-intel-updates",
+      sourceLabel: "ESPN / The Falcoholic / atlantafalcons.com",
     },
     {
       title: "ATLANTA RESTOCKS THE EDGE: CAMERON SAMPLE SIGNED, JAWAAN TAYLOR ACTIVATED OFF PUP, MALONE LOST FOR THE YEAR: less than a week after Jalon Walker's season-ending ACL tear, the Falcons signed veteran defensive end Cameron Sample on Monday, Aug 10, activated right tackle Jawaan Taylor off the PUP list to open the RT battle, and in a corresponding move placed edge DeAngelo Malone on Reserve/PUP, out for the 2026 season",
@@ -2400,13 +2402,6 @@ export const NEWS_DIGEST = {
       category: "free-agency",
       sourceUrl: "https://www.atlantafalcons.com/news/falcons-right-tackle-jawaan-taylor-cleared-injury-return-practice",
       sourceLabel: "atlantafalcons.com / Atlanta News First / Pro Football Rumors / SI Falcons",
-    },
-    {
-      title: "NO TUA DECISION YET FOR FRIDAY, AND PENIX CANNOT PLAY UNTIL HE CLEARS 11-ON-11: Stefanski said he has not decided whether Tua Tagovailoa, past the tight back that cost him the opening days, will play in the Denver opener, while confirming Michael Penix Jr. cannot appear in any game until he is cleared for full-team work, a bar that keeps the presumptive starter's job Tua's by health alone",
-      detail: "ESPN, The Falcoholic and NBC Sports Pro Football Talk (Denver-week updates): the quarterback picture is the question the preseason will begin to answer, and it is still tilted by availability. Tagovailoa has banked the first-team reps and is the de facto starter now that his back has cleared, but Stefanski has not committed to playing him Friday, a normal opener-week hedge for a veteran. Penix, capped at individual and seven-on-seven work as he rehabs the ACL he tore last November, is bound by a firmer rule: Stefanski said Penix cannot play in a game until he is cleared for eleven-on-eleven in practice, and the quarterback has attached a roughly four-week timeline to that full clearance. That pushes any real competition toward late August and leaves Tua the clear Week 1 front-runner. Penix, for his part, said his clearance 'could be any day.'",
-      category: "injuries",
-      sourceUrl: "https://www.espn.com/nfl/story/_/id/49448429/atlanta-falcons-training-camp-2026-intel-updates",
-      sourceLabel: "ESPN / The Falcoholic / NBC Sports PFT",
     },
     {
       title: "THE COLTS JOINT PRACTICES ARE SET: GRAND PARK, AUG 19 AND 20: Atlanta will close its camp work on the road, joining Indianapolis for two sessions at the Grand Park Sports Campus in Westfield before the teams' Aug 22 preseason game at Lucas Oil Stadium, the reason the starters will see lighter duty in that middle exhibition",
@@ -2421,13 +2416,6 @@ export const NEWS_DIGEST = {
       category: "general",
       sourceUrl: "https://www.ajc.com/sports/2026/08/tagovailoa-rookie-onianwa-star-at-falcons-training-camp-practice-at-lanier-high/",
       sourceLabel: "AJC / ClutchPoints / The Falcoholic / atlantafalcons.com",
-    },
-    {
-      title: "THE CAMP INJURY LEDGER: BATES INTO A FIFTH DAY DOWN, DEABLO AND TWO DBS OUT TUESDAY: All-Pro safety Jessie Bates III missed a fifth straight practice with a back ailment through the Aug 11 session, joined on the sideline by starting inside linebacker Divine Deablo and defensive backs Natrone Brooks and Avieon Terrell, though Stefanski has framed Bates as a short-term absence with no Week 1 concern",
-      detail: "ESPN, The Falcoholic and Atlanta News First (Tuesday, Aug 11): the injury sheet thinned the defense as camp closed toward the opener. Bates, the first-team free safety and one of the league's best, sat out a fifth consecutive practice with a back issue, with DeMarcco Hellams taking first-team reps alongside Xavier Watts in his place. Stefanski said it should not be long before Bates is back and that the club does not expect the absence to bleed into the regular season. Deablo, the defense's green-dot signal-caller, plus corners Natrone Brooks and Avieon Terrell also missed Tuesday's work. On the brighter side, edge Zach Harrison had been activated and cleared to return over the weekend, a needed body for a front already down Jalon Walker for the year and bracing for a possible James Pearce Jr. suspension.",
-      category: "injuries",
-      sourceUrl: "https://www.espn.com/nfl/story/_/id/49448429/atlanta-falcons-training-camp-2026-intel-updates",
-      sourceLabel: "ESPN / The Falcoholic / Atlanta News First",
     },
     {
       title: "BIJAN'S FIRST FULL 11-ON-11 REPS END IN A WHEEL-ROUTE TOUCHDOWN: five days after the record extension that made him the highest-paid running back in NFL history, Robinson took full-team snaps for the first time Friday and immediately delivered the highlight of Day 8, running a wheel down the left sideline the defense could not track for what would have been a touchdown from a now full-go Tua Tagovailoa",
@@ -2472,25 +2460,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "ESPN / AJC / Pro Football Rumors / atlantafalcons.com",
     },
     {
-      title: "PENIX PUTS A NUMBER ON IT, AND IT IS NOT WEEK 1: on Day 1 the quarterback said he was told 'another four weeks, possibly going into that next stage' before full clearance, an admission that pushes any real competition with Tua Tagovailoa toward late August and hands the presumptive starter's job to Tua by health alone",
-      detail: "AJC, NBC Sports Pro Football Talk, NFL.com and the team site's own camp report (all Jul 29): Penix met the media Wednesday and, for the first time, attached a timeline to the rehab of his third career ACL surgery. 'I was told another four weeks, possibly going into that next stage,' he said, 'but at the same time, it could be earlier. It just depends on how my body is doing throughout this whole camp process.' He was blunt that health, not the depth chart, is driving his caution: 'I can't afford to have someone trip and fall on me right now.' Four weeks from the opener lands the real evaluation in late August, well past the point Atlanta hoped to settle QB1, and it means Tua Tagovailoa is the de facto starter whenever his back clears, having banked every first-team rep since OTAs. The wrinkle is that on Day 1 even Tua could not take those reps, which is why the front office moved so fast to add a veteran arm. The staff's posture is unchanged, no true competition until both men can be judged on the same physical terms, but the practical read hardened Wednesday: this is Tua's job to run until Penix is whole.",
-      category: "injuries",
-      sourceUrl: "https://www.ajc.com/sports/2026/07/falcons-qb-michael-penix-jr-could-still-be-4-weeks-from-full-return/",
-      sourceLabel: "AJC / NBC Sports PFT / NFL.com / atlantafalcons.com",
-    },
-    {
-      title: "THE PROBLEM NOBODY IS TALKING ABOUT SITS ON THE RIGHT EDGE: Atlanta starts camp with no settled right tackle after Kaleb McGary retired without warning in April, and because both quarterbacks on this roster are left-handed, the job Atlanta cannot fill is the one protecting whichever blind side ends up mattering",
-      detail: "ESPN (Marc Raimondi, five lingering questions, filed Jul 13) with the depth-chart detail corroborated by the team-site offensive-line camp preview: this is the most consequential Atlanta story that has not been getting front-page treatment, and the reason it matters is a quirk of the roster. Penix and Tagovailoa are both left-handed, which inverts the usual math and makes right tackle the blindside job. It is also the least settled position on the offense. McGary had held it since he was drafted in 2019, was coming back from a season-ending knee injury, and then retired abruptly in April. Atlanta signed Jawaan Taylor out of Kansas City on April 9 to fill the hole, but Taylor is still rehabbing arm injuries carried over from last season, did not practice at all this spring, and brings a well-documented false-start problem with him. The contingency plans have their own problems. Swing tackle Storm Norton went down with a lingering ankle issue for a second consecutive season and sits on Reserve/PUP as of Jun 11. The front office traded for Wanya Morris, Taylor's former Chiefs teammate, as insurance. And the player who actually took most of the first-team right tackle reps through the spring was Michael Jerrell, a 2024 seventh-round pick out of Division II Findlay with two career seasons and a development-project label. Raimondi frames it as a genuine three-way battle unless Taylor arrives at full health, which is the single cleanest thing to watch when pads come on Jul 29.",
-      category: "general",
-      sourceUrl: "https://www.espn.com/nfl/story/_/id/49308165/key-questions-falcons-camp-including-qb1-status-tua-tagovailoa-michael-penix-jr",
-      sourceLabel: "ESPN / atlantafalcons.com",
-    },
-    {
-      title: "THE PEARCE CASE, A RESOLUTION 'IN THE NEXT FEW DAYS': team president Greg Beadles said Atlanta expects the league to rule on James Pearce Jr.'s status within days, while Stefanski, as of Aug 10, still had no update; the internal read hovers around a six-game suspension with some fearing it climbs toward eight, and the second-year rusher keeps taking second-team reps in the meantime",
-      detail: "Yahoo Sports, ClutchPoints, SI Falcons and Sportsnaut (early-to-mid August): the wait may be nearing an end. Beadles told reporters the club expects a resolution from the league office in the next few days, the most concrete timeline yet, even as Stefanski gave a deliberately vague answer on Aug 10 and said he had no update. The projected penalty has settled in a four-to-eight game band, with most guesses around six and The Athletic's Josh Kendall warning it could reach eight, or half the season. The underlying Miami-Dade charges, two counts of aggravated battery with a deadly weapon and one count of aggravated stalking, with WNBA player Rickea Jackson identified as the alleged victim, are moving through a pretrial diversion program that was extended from six months to a full year, so the legal case will not close until deep into the season regardless of what the league decides. Pearce has been back with the team since OTAs and is taking second-team reps. The practical translation for camp is unchanged: Atlanta prepares as though it will open without the player who led the team with 10.5 sacks as a rookie, leaning on Ebukam, Ojulari, Thomas and the newly signed Cameron Sample.",
+      title: "THE PEARCE CASE, STILL UNRESOLVED AS DENVER WEEK ARRIVES: team president Greg Beadles said Atlanta expects the league to rule on James Pearce Jr.'s status within days, but as of Aug 12 no decision had landed and Stefanski still had no update, even as one report floated the possibility the suspension does not come until next year; the internal read hovers around a six-game ban with some fearing it climbs toward eight, and the second-year rusher keeps taking second-team reps in the meantime",
+      detail: "Yahoo Sports, ClutchPoints, SI Falcons, Sportsnaut and Audacy 92.9 The Game (early-to-mid August): the wait keeps stretching. Beadles told reporters weeks ago that the club expected a resolution from the league office within days, but as of Denver week no ruling had come, and Stefanski gave a deliberately vague answer on Aug 10 and said he had no update. Complicating the timeline, Audacy reported that the discipline may not land until next year given the pace of the underlying legal process. The projected penalty has settled in a four-to-eight game band, with most guesses around six and The Athletic's Josh Kendall warning it could reach eight, or half the season. The Miami-Dade charges, two counts of aggravated battery with a deadly weapon and one count of aggravated stalking, with WNBA player Rickea Jackson identified as the alleged victim, are moving through a pretrial diversion program extended from six months to a full year, so the legal case will not close until deep into the season regardless of what the league decides. Pearce has been back with the team since OTAs and is taking second-team reps. The practical translation for camp is unchanged: Atlanta prepares as though it will open without the player who led the team with 10.5 sacks as a rookie, leaning on Ebukam, Ojulari, Thomas and the newly signed Cameron Sample.",
       category: "general",
       sourceUrl: "https://sports.yahoo.com/articles/falcons-exec-provides-james-pearce-181656052.html",
-      sourceLabel: "Yahoo Sports / ClutchPoints / SI Falcons / Sportsnaut",
+      sourceLabel: "Yahoo Sports / ClutchPoints / SI Falcons / Sportsnaut / Audacy 92.9",
     },
   ],
 };
@@ -2502,9 +2476,30 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-08-12T09:00:00Z",
-  windowLabel: "Preseason Week 1 · Opener vs. Denver Fri Aug 14, 7 p.m. (two days out) → Colts joint practices Aug 19–20",
+  generatedAt: "2026-08-13T09:00:00Z",
+  windowLabel: "Preseason Week 1 · Opener vs. Denver Fri Aug 14, 7 p.m. (one day out) → Colts joint practices Aug 19–20",
   sessions: [
+    {
+      id: "stefanski-2026-08-12",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-08-12",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Preseason Week 1 · Pre-Practice Media Availability",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-kevin-stefanski-starters-in-first-preseason-game-tua-tagovailoa",
+      transcriptUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-kevin-stefanski-starters-in-first-preseason-game-tua-tagovailoa",
+      verified: true,
+      summary: "Two days out from the preseason opener, Stefanski laid out his plan for the Broncos game and named Tua Tagovailoa the Friday starter while pointedly declining to call him the Week 1 quarterback. He said the front-line players will get a series or so, roughly ten plays, then walked through the quarterback rotation and Michael Penix Jr.'s rehab pace. His message on the job was patience: the decision can wait.",
+      pullQuote: "We are not there right now to name a starter for Week 1. We will cross that bridge when we get to it.",
+      bullets: [
+        "Named Tua Tagovailoa the starter for Friday against Denver, then clarified it does not settle the Week 1 job: 'We feel very good about where Tua is, where all of our guys are, but he will start on Friday night'",
+        "On snap counts: the starters will play a series, about 10 plays, 'depending on which comes first,' with the plan 'in pencil' until the end of Wednesday's practice",
+        "On the rotation: Tua starts, Cooper Rush works in next, and Jack Strand finishes the game",
+        "On Penix: not yet cleared for full-team, 11-on-11 work, and he will hold that individual, 1-on-1 and 7-on-7 pace through the Colts joint practices next week, though the staff likes where the ACL rehab sits",
+        "On play time elsewhere: 'We will vary play time by players,' with some getting more and some less based on what the staff thinks each needs before the season",
+      ],
+      topics: ["qb-competition", "tua", "penix-acl", "preseason"],
+    },
     {
       id: "robinson-2026-08-05",
       speaker: "Bijan Robinson",
@@ -2609,27 +2604,6 @@ export const INTERVIEWS = {
         "Kept the quarterback timeline unchanged: Tua Tagovailoa easing back from a tight back, Michael Penix Jr. still limited as he rehabs his ACL",
       ],
       topics: ["preseason", "training-camp", "qb-competition"],
-    },
-    {
-      id: "penix-2026-07-29",
-      speaker: "Michael Penix Jr.",
-      role: "Quarterback",
-      date: "2026-07-29",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "Training Camp Day 1 · Player Availability",
-      sourceUrl: "https://www.ajc.com/sports/2026/07/falcons-qb-michael-penix-jr-could-still-be-4-weeks-from-full-return/",
-      transcriptUrl: "https://www.atlantafalcons.com/news/falcons-training-camp-report-michael-penix-jr-limited-practice",
-      verified: true,
-      summary: "Meeting the media on the first day of camp, Penix put a number on his ACL rehab for the first time and it landed past the opener. He said he was told he is roughly four weeks from the next stage of clearance, stayed limited to individual and 7-on-7 work, and made clear he is prioritizing health over urgency as he works back from the third ACL surgery of his career. The admission effectively hands the first-team reps to Tua Tagovailoa, who himself sat out Day 1 with back tightness.",
-      pullQuote: "I was told another four weeks, possibly going into that next stage. But at the same time, it could be earlier. It just depends on how my body is doing throughout this whole camp process.",
-      bullets: [
-        "On the timeline: told he is about four weeks from the next stage of clearance, which pushes full participation toward late August rather than the season opener",
-        "On protecting the knee: 'I can't afford to have someone trip and fall on me right now,' explaining why he stays out of 11-on-11 for now",
-        "Remained limited to individual and 7-on-7 work on Day 1, the same plan he has run since OTAs, with no team-period reps yet",
-        "Framed the caution as a health decision he controls with the medical staff, not a setback in the recovery itself",
-        "With Tua also held out Day 1 (back), Penix's limited status left the first-team huddle to Jack Strand and newly signed Cooper Rush",
-      ],
-      topics: ["penix-acl", "qb-competition", "training-camp", "injuries"],
     },
   ],
 };
