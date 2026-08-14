@@ -2102,18 +2102,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-13T09:00:00Z",
+  generatedAt: "2026-08-14T09:00:00Z",
   cover: {
-    kicker: "PRESEASON EVE · THE CALL IS MADE · Flowery Branch: Two Days From the Lights at Mercedes-Benz Stadium, Kevin Stefanski Named Tua Tagovailoa His Starter for Friday's Opener Against Denver While Pointedly Refusing to Call the Job Settled for Week 1, Laid Out a Starters-Play Plan of a Series or So, Roughly Ten Snaps, Before Cooper Rush and Then Jack Strand, and Confirmed Michael Penix Jr. Still Cannot Suit Up Until He Clears Full-Team Work as His ACL Rehab Runs Its Course",
-    headLine1: "Tua gets the ball Friday, but not the season, not yet.",
-    headEm: "Two days from the preseason opener, Kevin Stefanski named Tua Tagovailoa the starter for the Broncos game and in the same breath declined to call him the Week 1 quarterback, keeping the most-watched job in Atlanta open by design.",
-    headLine3: "The front-liners will get a series, about ten plays, before Cooper Rush and then Jack Strand take over; Michael Penix Jr., still not cleared for eleven-on-eleven as he rehabs his ACL, will not play, and the first live look at Stefanski's team comes Friday at 7 p.m.",
+    kicker: "GAME DAY · THE LIGHTS COME ON · Flowery Branch to Mercedes-Benz Stadium: Atlanta Opens Its Preseason Tonight Against Denver With Tua Tagovailoa Starting Under Kevin Stefanski's Plan of a Series or So, Roughly Ten Snaps, Before Cooper Rush and Then Jack Strand, While the Coach Keeps the Week 1 Job Pointedly Open and Michael Penix Jr., Still Not Cleared for Full-Team Work as His ACL Rehab Runs Its Course, Watches From the Sideline",
+    headLine1: "The lights come on tonight: Tua starts, the season stays open.",
+    headEm: "Atlanta opens its preseason against the Broncos tonight at 7 with Tua Tagovailoa under center, but Kevin Stefanski has been pointed that starting the opener does not settle the Week 1 job, keeping the most-watched race in Atlanta open by design.",
+    headLine3: "The front-liners get a series, about ten plays, before Cooper Rush and then Jack Strand take over; Michael Penix Jr., still not cleared for eleven-on-eleven as he rehabs his ACL, will not play, and the first live look at Stefanski's team is tonight at Mercedes-Benz Stadium.",
     deck:
-      "The most-watched decision of Atlanta's summer got a first answer on Tuesday, and it came with a caveat. Two days out from the preseason opener, Kevin Stefanski told reporters that Tua Tagovailoa will start Friday night against the Denver Broncos, then made a point of separating that from the bigger question: this does not name Tagovailoa the Week 1 quarterback. 'We are not there right now to name a starter for Week 1,' the coach said. 'We will cross that bridge when we get to it. We feel very good about where Tua is, where all of our guys are, but he will start on Friday night.' The plan for the front-liners is modest by design, a single series or about ten snaps depending on which comes first, with the plan 'in pencil' until the end of Wednesday's practice. Cooper Rush rotates in behind Tua and Jack Strand finishes the game. Michael Penix Jr. will not play at all: he is still not cleared for full-team, 11-on-11 work as he rehabs the ACL he tore last November, and Stefanski said Penix will hold that individual and 7-on-7 pace through next week's Colts joint practices, though the staff likes where the rehab sits and called the latest read on the knee encouraging. The injury room otherwise trended the right way, with Jessie Bates III improving from a back issue and Jawaan Taylor moving into football activities. Kickoff against the Broncos is set for 7 p.m. at Mercedes-Benz Stadium, the first live look at the team Stefanski has spent a summer building.",
+      "The most-watched decision of Atlanta's summer gets its first live test tonight. Kevin Stefanski named Tua Tagovailoa the starter for the preseason opener against the Denver Broncos, then made a point of separating that from the bigger question: it does not name Tagovailoa the Week 1 quarterback. 'We are not there right now to name a starter for Week 1,' the coach said. 'We will cross that bridge when we get to it. We feel very good about where Tua is, where all of our guys are, but he will start on Friday night.' The plan for the front-liners is modest by design, a single series or about ten snaps depending on which comes first. Cooper Rush rotates in behind Tua and Jack Strand finishes the game. Michael Penix Jr. will not play at all: he is still not cleared for full-team, 11-on-11 work as he rehabs the ACL he tore last November, and Stefanski said Penix will hold that individual and 7-on-7 pace through next week's Colts joint practices, though the staff likes where the rehab sits and called the latest read on the knee encouraging. The injury room otherwise trended the right way, with Jessie Bates III improving from a back issue and Jawaan Taylor moving into football activities. Kickoff against the Broncos is 7 p.m. at Mercedes-Benz Stadium, the first live look at the team Stefanski has spent a summer building.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "tua",
-    stampLabel: "TUA STARTS FRIDAY, QB1 STILL OPEN · PENIX HELD OUT · DENVER IN 2 DAYS",
+    stampLabel: "TUA STARTS TONIGHT, QB1 STILL OPEN · PENIX HELD OUT · DENVER AT 7 P.M.",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2362,6 +2362,19 @@ export const NEWS_DIGEST = {
     // only spawn another dangling request, so the pointer is left as is. Cover TEXT refreshed to the
     // Aug 12 lead (Stefanski names Tua the Friday starter). The clean queue moment for the first run
     // that can reach the Vault is the Aug 14 Denver-opener first-team rep.
+    // STATUS (2026-08-14 scheduled run — GAME DAY): cover queue SKIPPED again, same hard constraint
+    // re-verified this cycle. ~/Vault is NOT mounted (only the tracker repos, outputs and uploads are),
+    // so the limn-editor-enhance skill and the downstream Antigravity image queue at
+    // ~/Vault/Notes/image-requests.md cannot be reached or appended. The last plate actually on disk
+    // is still 2026-07-17-dotson-wr2.jpg; the 2026-08-09-under-the-lights.jpg pointer was never
+    // generated and already resolves to the photoId (tua) headshot fallback, which stays exactly
+    // aligned with tonight's Tua-starts-the-opener lead. The staleness backstop is technically past
+    // due (pointer dated 2026-08-09, five days old), but because the pointer already falls back to the
+    // photoId headshot and photoId tracks the lead (tua), the cover the reader actually sees is fresh
+    // and on-story. Repointing to a 2026-08-14 slug would only spawn another dangling request no one
+    // can fulfill this cycle, so the pointer is left as is. Cover TEXT reframed two-days-out to GAME
+    // DAY (tonight, 7 p.m. vs Denver). The clean queue moment for the first run that can reach the
+    // Vault is tonight's Denver-opener first-team rep (Tua under center at Mercedes-Benz Stadium).
     coverImageUrl: "/falcons-tracker/assets/cover/2026-08-09-under-the-lights.jpg",
   },
   sources: [
@@ -2376,8 +2389,8 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "STEFANSKI NAMES TUA HIS FRIDAY STARTER, BUT NOT YET HIS WEEK 1 QB: two days out from the preseason opener, Kevin Stefanski said Tua Tagovailoa will start against Denver on Friday while pointedly declining to call the regular-season job settled, laying out a plan to play the front-liners a series or so, roughly ten snaps, before Cooper Rush and then Jack Strand take over",
-      detail: "Atlantafalcons.com, ESPN and The Falcoholic (Stefanski's Aug 12 pre-practice availability): the head coach put the first real marker on the quarterback race and then immediately hedged it. Tagovailoa gets the start Friday night at Mercedes-Benz Stadium, but Stefanski was explicit that it does not name him QB1: 'We are not there right now to name a starter for Week 1. We will cross that bridge when we get to it. We feel very good about where Tua is, where all of our guys are, but he will start on Friday night.' The plan for the starters is a single series or about ten plays, 'depending on which comes first,' with the whole thing 'in pencil' until the end of Wednesday's practice, Rush rotating in next and Jack Strand finishing. Michael Penix Jr. will not play: he is still not cleared for full-team, 11-on-11 work as he rehabs the ACL he tore last November, and Stefanski said Penix will hold that individual and 7-on-7 pace through next week's Colts joint practices, though the staff likes where the rehab sits. Kickoff is 7 p.m. ET, the first live look at Stefanski's team.",
+      title: "GAME DAY: TUA STARTS THE OPENER TONIGHT, BUT THE WEEK 1 JOB STAYS OPEN: Atlanta's preseason begins tonight at 7 against Denver with Tua Tagovailoa under center, the first live test of a quarterback race Kevin Stefanski has pointedly refused to settle, and the front-liners are slated for a series or so, roughly ten snaps, before Cooper Rush and then Jack Strand take over",
+      detail: "Atlantafalcons.com, ESPN and The Falcoholic (Stefanski's Aug 12 availability, into game day): the head coach put the first real marker on the quarterback race and then immediately hedged it. Tagovailoa gets the start tonight at Mercedes-Benz Stadium, but Stefanski was explicit that it does not name him QB1: 'We are not there right now to name a starter for Week 1. We will cross that bridge when we get to it. We feel very good about where Tua is, where all of our guys are, but he will start on Friday night.' The plan for the starters is a single series or about ten plays, 'depending on which comes first,' with Rush rotating in next and Jack Strand finishing. Michael Penix Jr. will not play: he is still not cleared for full-team, 11-on-11 work as he rehabs the ACL he tore last November, and Stefanski said Penix will hold that individual and 7-on-7 pace through next week's Colts joint practices, though the staff likes where the rehab sits. Kickoff is 7 p.m. ET, the first live look at Stefanski's team.",
       category: "games",
       sourceUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-kevin-stefanski-starters-in-first-preseason-game-tua-tagovailoa",
       sourceLabel: "atlantafalcons.com / ESPN / The Falcoholic",
@@ -2476,8 +2489,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-08-13T09:00:00Z",
-  windowLabel: "Preseason Week 1 · Opener vs. Denver Fri Aug 14, 7 p.m. (one day out) → Colts joint practices Aug 19–20",
+  generatedAt: "2026-08-14T09:00:00Z",
+  windowLabel: "Preseason Week 1 · GAME DAY: Opener vs. Denver tonight, 7 p.m. → Colts joint practices Aug 19–20, game at Indianapolis Aug 22",
   sessions: [
     {
       id: "stefanski-2026-08-12",
