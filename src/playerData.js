@@ -797,7 +797,7 @@ export const PLAYERS = [
     stats: { tackles: 31, sacks: 4.5 },
     form: 7.6,
     status: "active",
-    injuryNote: "Reported to mandatory minicamp Jun 16, first time with team since Feb arrest · limited to weight room and individual drills, no team periods · still in Miami-Dade pretrial program; league yet to rule on discipline",
+    injuryNote: "Suspended 8 games (NFL Personal Conduct Policy, announced Aug 14) · ban starts Aug 30, eligible to return Nov 2 (week of Bengals game in Madrid) · can play preseason and stay with the team until then · still in Miami-Dade pretrial diversion program",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/5081394.png",
     contract: { years: 4, total: 14500000, guaranteed: 14500000, apy: 3625000, throughYear: 2028, cap2026: 3350000 },
     career: [{ years: "2025–", team: "Atlanta Falcons", type: "NFL" }],
@@ -2102,18 +2102,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-14T09:00:00Z",
+  generatedAt: "2026-08-15T13:00:00Z",
   cover: {
-    kicker: "GAME DAY · THE LIGHTS COME ON · Flowery Branch to Mercedes-Benz Stadium: Atlanta Opens Its Preseason Tonight Against Denver With Tua Tagovailoa Starting Under Kevin Stefanski's Plan of a Series or So, Roughly Ten Snaps, Before Cooper Rush and Then Jack Strand, While the Coach Keeps the Week 1 Job Pointedly Open and Michael Penix Jr., Still Not Cleared for Full-Team Work as His ACL Rehab Runs Its Course, Watches From the Sideline",
-    headLine1: "The lights come on tonight: Tua starts, the season stays open.",
-    headEm: "Atlanta opens its preseason against the Broncos tonight at 7 with Tua Tagovailoa under center, but Kevin Stefanski has been pointed that starting the opener does not settle the Week 1 job, keeping the most-watched race in Atlanta open by design.",
-    headLine3: "The front-liners get a series, about ten plays, before Cooper Rush and then Jack Strand take over; Michael Penix Jr., still not cleared for eleven-on-eleven as he rehabs his ACL, will not play, and the first live look at Stefanski's team is tonight at Mercedes-Benz Stadium.",
+    kicker: "GAME DAY IN THE REARVIEW · A SOBERING DEBUT · Mercedes-Benz Stadium: The Kevin Stefanski Era Opens With a 27-7 Preseason Loss to Denver, the Falcons Held to 192 Yards and Trailing 24-0 at the Half, Tua Tagovailoa Playing Two Series and Finding Kyle Pitts on Four of Five Throws Before Cooper Rush, a 97-Yard Pick-Six and Rookie Jack Strand's Late Rushing Touchdown, All of It Hours After the NFL Suspended Edge Rusher James Pearce Jr. for the First Eight Games of the Regular Season",
+    headLine1: "A sobering first look: Broncos 27, Falcons 7.",
+    headEm: "Kevin Stefanski's Atlanta debut was a quiet one, a 27-7 preseason loss in which the offense managed 192 yards and the first team barely ten snaps, but the result, as the coach said, ultimately does not count. 'I think we have miles to go,' he had said the week before, and Friday showed the distance.",
+    headLine3: "Tua Tagovailoa played two series and leaned on Kyle Pitts, Cooper Rush guided the only sustained drive before a 97-yard pick-six, and undrafted rookie Jack Strand muscled in Atlanta's lone touchdown, all of it hours after the NFL handed James Pearce Jr. an eight-game suspension. Next is Indianapolis: joint practices Aug 19 and 20, the game Aug 22.",
     deck:
-      "The most-watched decision of Atlanta's summer gets its first live test tonight. Kevin Stefanski named Tua Tagovailoa the starter for the preseason opener against the Denver Broncos, then made a point of separating that from the bigger question: it does not name Tagovailoa the Week 1 quarterback. 'We are not there right now to name a starter for Week 1,' the coach said. 'We will cross that bridge when we get to it. We feel very good about where Tua is, where all of our guys are, but he will start on Friday night.' The plan for the front-liners is modest by design, a single series or about ten snaps depending on which comes first. Cooper Rush rotates in behind Tua and Jack Strand finishes the game. Michael Penix Jr. will not play at all: he is still not cleared for full-team, 11-on-11 work as he rehabs the ACL he tore last November, and Stefanski said Penix will hold that individual and 7-on-7 pace through next week's Colts joint practices, though the staff likes where the rehab sits and called the latest read on the knee encouraging. The injury room otherwise trended the right way, with Jessie Bates III improving from a back issue and Jawaan Taylor moving into football activities. Kickoff against the Broncos is 7 p.m. at Mercedes-Benz Stadium, the first live look at the team Stefanski has spent a summer building.",
+      "The Kevin Stefanski era opened without fireworks. Atlanta lost its preseason opener to the Denver Broncos 27-7 at Mercedes-Benz Stadium, wearing the new red home jerseys, and trailed 24-0 by halftime while the offense was held to 192 total yards. The result does not count, and the coach framed it that way, but it gave the staff plenty to evaluate. Tua Tagovailoa, the Friday starter though not yet the named Week 1 quarterback, played two series, handed off to Brian Robinson Jr. to open both, and completed his passes almost exclusively to Kyle Pitts, who caught four of Tua's five throws for 22 yards. Bijan Robinson and Drake London dressed but did not play, and Michael Penix Jr. warmed up but remains barred from team work as he rehabs his ACL. Cooper Rush ran the night's only sustained drive, a 13-play march that reached the Denver 7 before it ended on a 97-yard Jahdae Barron pick-six, and undrafted rookie Jack Strand later muscled in Atlanta's lone touchdown. Chris Blair led the receivers with 37 yards on a pair of grabs, including a leaping 21-yard catch. The loss came hours after the NFL suspended edge rusher James Pearce Jr. for the first eight games of the season for violating the personal conduct policy, a penalty the club said it had anticipated. 'We trust we have the guys to step up,' Stefanski said. Atlanta practices Monday, then travels to Indianapolis for joint practices with the Colts on Aug 19 and 20 before the second preseason game on Aug 22.",
     byline: "The Tracker Desk",
-    filedFrom: "Flowery Branch",
+    filedFrom: "Atlanta",
     photoId: "tua",
-    stampLabel: "TUA STARTS TONIGHT, QB1 STILL OPEN · PENIX HELD OUT · DENVER AT 7 P.M.",
+    stampLabel: "BRONCOS 27, FALCONS 7 · PEARCE SUSPENDED 8 GAMES · COLTS JOINT PRACTICES AUG 19-20",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2375,7 +2375,17 @@ export const NEWS_DIGEST = {
     // can fulfill this cycle, so the pointer is left as is. Cover TEXT reframed two-days-out to GAME
     // DAY (tonight, 7 p.m. vs Denver). The clean queue moment for the first run that can reach the
     // Vault is tonight's Denver-opener first-team rep (Tua under center at Mercedes-Benz Stadium).
-    coverImageUrl: "/falcons-tracker/assets/cover/2026-08-09-under-the-lights.jpg",
+    // STATUS (2026-08-15 scheduled run — MORNING AFTER): cover ROTATED editorially onto the preseason
+    // opener now in the books (Broncos 27-7, Stefanski's Atlanta debut, Pearce suspended hours before
+    // kickoff) and repointed to 2026-08-15-red-debut.jpg to reset the staleness clock (the prior
+    // 2026-08-09-under-the-lights pointer was six days old, past the 4-day backstop). IMAGE STILL NOT
+    // QUEUED: re-verified ~/Vault/Notes/image-requests.md and the limn-editor-enhance skill are NOT
+    // mounted in this sandbox (only the tracker repos, outputs and uploads are), so the downstream
+    // Antigravity queue cannot be appended. The new pointer resolves to the photoId (tua) headshot
+    // fallback until a plate is generated, which is safe and aligned with the debut lead. The clean
+    // queue moment for the first run that can reach the Vault is Tua under center in the red home
+    // jerseys at Mercedes-Benz Stadium, or a Colts joint-practice first-team rep Aug 19-20.
+    coverImageUrl: "/falcons-tracker/assets/cover/2026-08-15-red-debut.jpg",
   },
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "NFL Network",
@@ -2385,15 +2395,22 @@ export const NEWS_DIGEST = {
     "Audacy 92.9 The Game", "Yardbarker", "Over The Cap", "Spotrac",
     "Bengals.com", "FantasyPros", "Atlanta News First", "The Athletic", "Roundtable",
     "Falcons Wire", "CBS News Atlanta", "Sharp Football Analysis",
-    "Sportsnaut", "The Big Lead", "The Athletic",
+    "Sportsnaut", "The Big Lead", "The Athletic", "Mile High Report",
   ],
   topics: [
     {
-      title: "GAME DAY: TUA STARTS THE OPENER TONIGHT, BUT THE WEEK 1 JOB STAYS OPEN: Atlanta's preseason begins tonight at 7 against Denver with Tua Tagovailoa under center, the first live test of a quarterback race Kevin Stefanski has pointedly refused to settle, and the front-liners are slated for a series or so, roughly ten snaps, before Cooper Rush and then Jack Strand take over",
-      detail: "Atlantafalcons.com, ESPN and The Falcoholic (Stefanski's Aug 12 availability, into game day): the head coach put the first real marker on the quarterback race and then immediately hedged it. Tagovailoa gets the start tonight at Mercedes-Benz Stadium, but Stefanski was explicit that it does not name him QB1: 'We are not there right now to name a starter for Week 1. We will cross that bridge when we get to it. We feel very good about where Tua is, where all of our guys are, but he will start on Friday night.' The plan for the starters is a single series or about ten plays, 'depending on which comes first,' with Rush rotating in next and Jack Strand finishing. Michael Penix Jr. will not play: he is still not cleared for full-team, 11-on-11 work as he rehabs the ACL he tore last November, and Stefanski said Penix will hold that individual and 7-on-7 pace through next week's Colts joint practices, though the staff likes where the rehab sits. Kickoff is 7 p.m. ET, the first live look at Stefanski's team.",
+      title: "A SOBERING DEBUT: BRONCOS 27, FALCONS 7, AS STEFANSKI'S ATLANTA OFFENSE MANAGES JUST 192 YARDS: the Kevin Stefanski era opened Friday night with a lopsided preseason loss at Mercedes-Benz Stadium, Atlanta trailing 24-0 at the half, Tua Tagovailoa playing two quiet series and leaning almost entirely on Kyle Pitts, before Cooper Rush ran the night's only sustained drive and undrafted rookie Jack Strand muscled in the lone touchdown",
+      detail: "Atlantafalcons.com, ESPN, The Falcoholic and Mile High Report (Aug 14, into the morning-after reports): wearing the new red home jerseys, the Falcons lost their preseason opener to Denver 27-7 and were held to 192 total yards in Stefanski's first game in charge. The result does not count, and the coach said as much, but it left plenty to evaluate. Tagovailoa, the Friday starter though not the named Week 1 quarterback, played two series, handed off to Brian Robinson Jr. to open both, and completed four of his five throws to Pitts for 22 yards. Bijan Robinson and Drake London dressed but did not play, and Michael Penix Jr. warmed up but stayed out of the game as he rehabs his ACL. Rush guided a 13-play march that reached the Denver 7 before ending on a 97-yard Jahdae Barron pick-six, Chris Blair led the receivers with 37 yards on a leaping 21-yard grab and one other catch, and Strand bulled in Atlanta's only score late. On defense, JD Bertrand forced a fumble that Jammie Robinson recovered. 'I think we have miles to go,' Stefanski had said a week earlier. Atlanta practices Monday before traveling to Indianapolis.",
       category: "games",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-kevin-stefanski-starters-in-first-preseason-game-tua-tagovailoa",
-      sourceLabel: "atlantafalcons.com / ESPN / The Falcoholic",
+      sourceUrl: "https://www.atlantafalcons.com/news/game-breakdown-falcons-broncos-preseason-score-takeaways-reaction",
+      sourceLabel: "atlantafalcons.com / ESPN / The Falcoholic / Mile High Report",
+    },
+    {
+      title: "THE PEARCE WAIT ENDS: NFL SUSPENDS JAMES PEARCE JR. FOR THE FIRST EIGHT GAMES OF THE SEASON: hours before the preseason opener Friday, the league ruled on the second-year edge rusher, handing him an eight-game ban for violating the Personal Conduct Policy that starts Aug 30 and keeps him out until the Falcons' Nov 2 game against the Bengals in Madrid, though he can still play the preseason and remain with the team until then",
+      detail: "Atlantafalcons.com, NFL.com and ESPN (Aug 14, 3:12 p.m.): the discipline the club had braced for all summer finally landed. Pearce, who led Atlanta with 10.5 sacks as a rookie, the most by a first-year player since Micah Parsons in 2021, will be suspended for the first eight games of 2026. The ban takes effect Sunday, Aug 30, which is also the 53-man roster cutdown deadline, so Pearce can participate in all preseason games and team activities until then. He is eligible for reinstatement Monday, Nov 2, the week Atlanta plays the Cincinnati Bengals in Madrid, Spain. The suspension, paired with Jalon Walker's season-ending ACL tear, thins an edge room that Atlanta had already been restocking. 'We trust we have the guys to step up,' Stefanski said, adding that the club had anticipated the ruling: 'We were anticipating the suspension, so we have been pretty intentional about how we've planned it.' The Miami-Dade criminal case remains in a pretrial diversion program that runs deep into the season.",
+      category: "general",
+      sourceUrl: "https://www.atlantafalcons.com/news/james-pearce-jr-suspension-nfl-eight-games-season",
+      sourceLabel: "atlantafalcons.com / NFL.com / ESPN",
     },
     {
       title: "THE PRESEASON DEPTH CHART LANDS, AND A WAVE OF ROSTER CHURN WITH IT: Atlanta released its first unofficial depth chart Tuesday with developmental tackle Michael Jerrell atop the right-tackle spot and both Jawaan Taylor and Michael Penix Jr. flagged as injured, while a busy transactions week added RB Trey Sermon and TE Nick Muse, claimed Alabama guard Jaeden Roberts off waivers, and cut veteran linebacker Troy Andersen",
@@ -2403,11 +2420,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com",
     },
     {
-      title: "THE INJURY LEDGER TWO DAYS OUT: BATES TRENDING BACK, PENIX 'ENCOURAGING,' TAYLOR INTO FOOTBALL ACTIVITIES: as camp closed, Stefanski offered upbeat reads across the training room, saying All-Pro safety Jessie Bates III is improving from the back issue that cost him practice time, that the latest news on Michael Penix Jr.'s knee was 'encouraging,' and that right tackle Jawaan Taylor would be doing football activities, with Aveion Terrell, Bralen Trice and Da'Shawn Hand all rehabbing shorter-term issues",
-      detail: "ESPN, The Falcoholic and atlantafalcons.com (Aug 12): the health picture brightened as the Falcons turned toward the opener. Stefanski said Bates, the first-team free safety who had missed several practices with a back ailment, is improving, though he probably would not practice fully on Wednesday, and the staff does not expect the issue to bleed into the regular season, with DeMarcco Hellams having taken his first-team reps in the interim. He called the update on Penix's surgically repaired knee 'encouraging' while keeping him out of team work, and said Taylor, activated off PUP last week, would be doing football activities as he ramps back at right tackle. Aveion Terrell, Bralen Trice and Da'Shawn Hand are each rehabbing their own injuries, none of which the coach expects to be long-term. On the brighter side of the ledger, edge Zach Harrison had already been activated and cleared to return, a needed body for a front down Jalon Walker for the year.",
+      title: "THE POST-GAME INJURY LEDGER: JAKE MATTHEWS EXITS EARLY BUT 'OK,' HELLAMS BANGED UP AND BACK, PENIX AND TRICE STILL DOWN: the opener passed without a major new injury, with left tackle Jake Matthews leaving after one series with something Stefanski called minor, safety DeMarcco Hellams shaken up on a Denver touchdown before returning, and Michael Penix Jr. and Bralen Trice both held out entirely",
+      detail: "ESPN and atlantafalcons.com (Aug 14): the health news out of the preseason opener was mercifully quiet. Stefanski said Matthews, who left the game after one series, 'was dealing with something but he's OK,' and Hellams, banged up at the tail end of a 5-yard Denver touchdown, returned the next defensive series. Penix dressed and warmed up but did not play and remains barred from 11-on-11 work as he rehabs his surgically repaired knee, with Stefanski confirming he will keep the same individual, 1-on-1 and 7-on-7 limitations through the Colts joint practices next week. Edge Bralen Trice, who has missed the last two seasons with knee injuries and became a non-participant in the final days of camp, did not play either. Against that backdrop the defense is still absorbing Jalon Walker's season-ending ACL tear and now James Pearce Jr.'s eight-game suspension, leaning on Samson Ebukam, Azeez Ojulari, Cameron Thomas, Brandon Dorlus and Zach Harrison up front.",
       category: "injuries",
-      sourceUrl: "https://www.espn.com/nfl/story/_/id/49448429/atlanta-falcons-training-camp-2026-intel-updates",
-      sourceLabel: "ESPN / The Falcoholic / atlantafalcons.com",
+      sourceUrl: "https://www.atlantafalcons.com/news/game-breakdown-falcons-broncos-preseason-score-takeaways-reaction",
+      sourceLabel: "ESPN / atlantafalcons.com",
     },
     {
       title: "ATLANTA RESTOCKS THE EDGE: CAMERON SAMPLE SIGNED, JAWAAN TAYLOR ACTIVATED OFF PUP, MALONE LOST FOR THE YEAR: less than a week after Jalon Walker's season-ending ACL tear, the Falcons signed veteran defensive end Cameron Sample on Monday, Aug 10, activated right tackle Jawaan Taylor off the PUP list to open the RT battle, and in a corresponding move placed edge DeAngelo Malone on Reserve/PUP, out for the 2026 season",
@@ -2472,13 +2489,6 @@ export const NEWS_DIGEST = {
       sourceUrl: "https://www.espn.com/nfl/story/_/id/49505699/falcons-sign-matthew-bergeron-four-year-96m-extension",
       sourceLabel: "ESPN / AJC / Pro Football Rumors / atlantafalcons.com",
     },
-    {
-      title: "THE PEARCE CASE, STILL UNRESOLVED AS DENVER WEEK ARRIVES: team president Greg Beadles said Atlanta expects the league to rule on James Pearce Jr.'s status within days, but as of Aug 12 no decision had landed and Stefanski still had no update, even as one report floated the possibility the suspension does not come until next year; the internal read hovers around a six-game ban with some fearing it climbs toward eight, and the second-year rusher keeps taking second-team reps in the meantime",
-      detail: "Yahoo Sports, ClutchPoints, SI Falcons, Sportsnaut and Audacy 92.9 The Game (early-to-mid August): the wait keeps stretching. Beadles told reporters weeks ago that the club expected a resolution from the league office within days, but as of Denver week no ruling had come, and Stefanski gave a deliberately vague answer on Aug 10 and said he had no update. Complicating the timeline, Audacy reported that the discipline may not land until next year given the pace of the underlying legal process. The projected penalty has settled in a four-to-eight game band, with most guesses around six and The Athletic's Josh Kendall warning it could reach eight, or half the season. The Miami-Dade charges, two counts of aggravated battery with a deadly weapon and one count of aggravated stalking, with WNBA player Rickea Jackson identified as the alleged victim, are moving through a pretrial diversion program extended from six months to a full year, so the legal case will not close until deep into the season regardless of what the league decides. Pearce has been back with the team since OTAs and is taking second-team reps. The practical translation for camp is unchanged: Atlanta prepares as though it will open without the player who led the team with 10.5 sacks as a rookie, leaning on Ebukam, Ojulari, Thomas and the newly signed Cameron Sample.",
-      category: "general",
-      sourceUrl: "https://sports.yahoo.com/articles/falcons-exec-provides-james-pearce-181656052.html",
-      sourceLabel: "Yahoo Sports / ClutchPoints / SI Falcons / Sportsnaut / Audacy 92.9",
-    },
   ],
 };
 
@@ -2489,9 +2499,30 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-08-14T09:00:00Z",
-  windowLabel: "Preseason Week 1 · GAME DAY: Opener vs. Denver tonight, 7 p.m. → Colts joint practices Aug 19–20, game at Indianapolis Aug 22",
+  generatedAt: "2026-08-15T13:00:00Z",
+  windowLabel: "Preseason Week 1 in the books · Opener vs. Denver (L 27-7) → Colts joint practices Aug 19–20, game at Indianapolis Aug 22, 1 p.m. ET",
   sessions: [
+    {
+      id: "stefanski-2026-08-14",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-08-14",
+      venue: "Mercedes-Benz Stadium · Atlanta",
+      session: "Preseason Week 1 vs. Broncos · Post-Game Press Conference",
+      sourceUrl: "https://www.atlantafalcons.com/news/kevin-stefanski-james-pearce-suspension-jalon-walker",
+      transcriptUrl: "https://www.atlantafalcons.com/news/game-breakdown-falcons-broncos-preseason-score-takeaways-reaction",
+      verified: true,
+      summary: "After a 27-7 preseason loss to Denver that opened his Atlanta tenure, Stefanski met the media with two subjects to address: a sloppy offensive night and the James Pearce Jr. suspension that had landed hours before kickoff. He kept the game result in perspective as evaluation tape, then spent most of the session on the pass rush, saying the team had planned for the eight-game ban and trusts the group it has assembled without Pearce and the injured Jalon Walker.",
+      pullQuote: "We trust we have the guys to step up.",
+      bullets: [
+        "On the Pearce suspension: 'We were anticipating the suspension, so we have been pretty intentional about how we've planned it,' expressing confidence in the edge group compiled for 2026",
+        "On Pearce the person: 'James continues to do everything in his power to be a great teammate and works very hard on himself, in the building and outside the building'",
+        "On the plan until the ban starts Aug 30: 'He'll continue to work, continue to play in these (preseason) games,' before serving the suspension and becoming eligible to return around the Nov 2 game against the Bengals in Madrid",
+        "On the offense in the loss: said he evaluates the entire unit and that Atlanta did not move the ball well enough as an offense",
+        "On left tackle Jake Matthews, who exited after one series: 'was dealing with something but he's OK'",
+      ],
+      topics: ["pearce-suspension", "preseason", "edge-room", "injuries"],
+    },
     {
       id: "stefanski-2026-08-12",
       speaker: "Kevin Stefanski",
@@ -2596,27 +2627,6 @@ export const INTERVIEWS = {
         "Becomes the third core Cunningham-era extension in two months after Drake London and Kyle Pitts Sr.",
       ],
       topics: ["bergeron-extension", "contracts", "offensive-line"],
-    },
-    {
-      id: "stefanski-2026-07-31",
-      speaker: "Kevin Stefanski",
-      role: "Head Coach",
-      date: "2026-07-31",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "Training Camp · Post-Practice Media Availability",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-will-starters-play-in-the-preseason",
-      transcriptUrl: "https://www.si.com/nfl/falcons/onsi/will-atlanta-falcons-starters-play-in-preseason-under-kevin-stefanski",
-      verified: true,
-      summary: "Meeting the media after the third practice, Stefanski settled one of camp's open procedural questions: his starters will play in the preseason. He laid out a plan to give front-line players runway in the opener against Denver and the finale against Miami while treating the middle game against Indianapolis differently because of the joint practices scheduled that week. His reasoning was simple, players need game reps to be ready for games.",
-      pullQuote: "In general, I think for guys to get ready to play football they have to play football.",
-      bullets: [
-        "On the preseason plan: starters will see time in the opener against Denver and the finale against Miami, with the exact snap counts varying by player and coaching need",
-        "On the middle game: the Falcons will treat the Indianapolis game differently because of the joint practices scheduled with the Colts that week",
-        "On the philosophy behind it: framed live preseason reps as the only real way to get players game-ready, a contrast to coaches who sit starters all August",
-        "Spoke on the eve of Back Together Saturday, the first practice open to all fans on Aug 1",
-        "Kept the quarterback timeline unchanged: Tua Tagovailoa easing back from a tight back, Michael Penix Jr. still limited as he rehabs his ACL",
-      ],
-      topics: ["preseason", "training-camp", "qb-competition"],
     },
   ],
 };
