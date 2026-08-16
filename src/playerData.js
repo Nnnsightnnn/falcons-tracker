@@ -27,7 +27,7 @@ export const PLAYERS = [
     stats: { completions: 166, attempts: 276, passYds: 1982, passTDs: 9, ints: 3, qbRating: 88.5 },
     form: 0,
     status: "pup",
-    injuryNote: "ACL rehab · torn Week 11 2025 · still capped at individual and 7-on-7 work through the first padded practice (Day 5, Aug 3), not yet cleared for 11-on-11. Sharp on Day 5 anyway: a long ball to Chris Blair and a go-route touchdown to Zachariah Branch. Told at camp open (Jul 29) he was 'another four weeks, possibly going into that next stage,' which points clearance toward late August rather than the opener. Prioritizing health: 'I can't afford to have someone trip and fall on me right now'",
+    injuryNote: "ACL rehab · torn Week 11 2025 · dressed and warmed up for the Aug 14 preseason opener vs Denver but did not play, still barred from 11-on-11 work. Stefanski confirmed Penix will hold the same individual, 1-on-1 and 7-on-7 limitations through the Colts joint practices Aug 19-20, though the staff likes where the rehab sits. Told at camp open (Jul 29) he was 'another four weeks, possibly going into that next stage,' which points clearance toward late August. Prioritizing health: 'I can't afford to have someone trip and fall on me right now'",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
     contract: { years: 4, total: 22080000, guaranteed: 22080000, apy: 5520000, throughYear: 2027, cap2026: 5900000 },
     career: [
@@ -2102,7 +2102,7 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-15T13:00:00Z",
+  generatedAt: "2026-08-16T13:00:00Z",
   cover: {
     kicker: "GAME DAY IN THE REARVIEW · A SOBERING DEBUT · Mercedes-Benz Stadium: The Kevin Stefanski Era Opens With a 27-7 Preseason Loss to Denver, the Falcons Held to 192 Yards and Trailing 24-0 at the Half, Tua Tagovailoa Playing Two Series and Finding Kyle Pitts on Four of Five Throws Before Cooper Rush, a 97-Yard Pick-Six and Rookie Jack Strand's Late Rushing Touchdown, All of It Hours After the NFL Suspended Edge Rusher James Pearce Jr. for the First Eight Games of the Regular Season",
     headLine1: "A sobering first look: Broncos 27, Falcons 7.",
@@ -2385,6 +2385,16 @@ export const NEWS_DIGEST = {
     // fallback until a plate is generated, which is safe and aligned with the debut lead. The clean
     // queue moment for the first run that can reach the Vault is Tua under center in the red home
     // jerseys at Mercedes-Benz Stadium, or a Colts joint-practice first-team rep Aug 19-20.
+    // STATUS (2026-08-16 scheduled run — SUNDAY AFTER): cover KEPT on the red-debut plate
+    // (pointer dated 2026-08-15, one day old, well inside the 4-day backstop). No new visual
+    // story landed Aug 15-16: the news cycle is the same opener-recap / Pearce-suspension /
+    // Walker-ACL story, with the next live reps not until the Colts joint practices Aug 19-20.
+    // Neither cover trigger fired, so the queue is SKIPPED. Image still not generated: re-verified
+    // ~/Vault/Notes/image-requests.md and the limn-editor-enhance skill are NOT mounted in this
+    // sandbox (only the tracker repos, outputs and uploads are), so the pointer continues to resolve
+    // to the photoId (tua) headshot fallback, which stays aligned with the preseason-opener lead.
+    // The clean queue moment for the first run that can reach the Vault is a Colts joint-practice
+    // first-team rep Aug 19-20, or Tua under center in the red home jerseys.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-08-15-red-debut.jpg",
   },
   sources: [
@@ -2499,8 +2509,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-08-15T13:00:00Z",
-  windowLabel: "Preseason Week 1 in the books · Opener vs. Denver (L 27-7) → Colts joint practices Aug 19–20, game at Indianapolis Aug 22, 1 p.m. ET",
+  generatedAt: "2026-08-16T13:00:00Z",
+  windowLabel: "Preseason Week 1 in the books · Opener vs. Denver (L 27-7) → Monday practice, then Colts joint practices Aug 19–20, game at Indianapolis Aug 22, 1 p.m. ET",
   sessions: [
     {
       id: "stefanski-2026-08-14",
