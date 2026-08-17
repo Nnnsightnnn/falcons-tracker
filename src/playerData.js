@@ -969,8 +969,8 @@ export const PLAYERS = [
     acquired: "fa-2025-UDFA",
     stats: {},
     form: 0,
-    status: "active",
-    injuryNote: "Hybrid LB/S · sub-package",
+    status: "ir",
+    injuryNote: "Waived/injured Aug 12; reverted to injured reserve",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4684636.png",
     contract: { years: 1, total: 960000, guaranteed: 0, apy: 960000, throughYear: 2026, cap2026: 960000 },
     career: [{ years: "2025–", team: "Atlanta Falcons", type: "NFL" }],
@@ -2102,18 +2102,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-16T13:00:00Z",
+  generatedAt: "2026-08-17T12:30:00Z",
   cover: {
-    kicker: "GAME DAY IN THE REARVIEW · A SOBERING DEBUT · Mercedes-Benz Stadium: The Kevin Stefanski Era Opens With a 27-7 Preseason Loss to Denver, the Falcons Held to 192 Yards and Trailing 24-0 at the Half, Tua Tagovailoa Playing Two Series and Finding Kyle Pitts on Four of Five Throws Before Cooper Rush, a 97-Yard Pick-Six and Rookie Jack Strand's Late Rushing Touchdown, All of It Hours After the NFL Suspended Edge Rusher James Pearce Jr. for the First Eight Games of the Regular Season",
-    headLine1: "A sobering first look: Broncos 27, Falcons 7.",
-    headEm: "Kevin Stefanski's Atlanta debut was a quiet one, a 27-7 preseason loss in which the offense managed 192 yards and the first team barely ten snaps, but the result, as the coach said, ultimately does not count. 'I think we have miles to go,' he had said the week before, and Friday showed the distance.",
-    headLine3: "Tua Tagovailoa played two series and leaned on Kyle Pitts, Cooper Rush guided the only sustained drive before a 97-yard pick-six, and undrafted rookie Jack Strand muscled in Atlanta's lone touchdown, all of it hours after the NFL handed James Pearce Jr. an eight-game suspension. Next is Indianapolis: joint practices Aug 19 and 20, the game Aug 22.",
+    kicker: "THE PAGE TURNS TO INDIANAPOLIS · CAMP RECONVENES IN FLOWERY BRANCH MONDAY WITH THE PRESEASON OPENER FILED AWAY AS TAPE: Tua Tagovailoa, Sharply Critical of a Three-of-Five Debut He Called Not Up to Standard, Leads a First Team That Will Get the Bulk of the Reps in the Colts Joint Practices Aug 19 and 20 Before a Lighter Load in Saturday's Game at Lucas Oil Stadium, While Michael Penix Jr. Is Cleared to Take Seven-on-Seven Snaps Against Another Defense for the First Time, All Under the Shadow of James Pearce Jr.'s Eight-Game Suspension and Jalon Walker's Season-Ending ACL",
+    headLine1: "Eyes to Indianapolis: the work turns to Colts week.",
+    headEm: "The preseason opener, a 27-7 loss to Denver, is filed away as evaluation tape. 'I think we have miles to go,' Kevin Stefanski had said, and the week ahead in Indianapolis, two joint practices and then a game, is where Atlanta starts closing the distance.",
+    headLine3: "Tua Tagovailoa, who called his own three-of-five debut not up to standard, leads a first team that will get the bulk of the reps in the Colts joint practices Aug 19 and 20 before a lighter load in Saturday's game. Michael Penix Jr., still barred from full-team work, is cleared to take seven-on-seven snaps against another defense for the first time.",
     deck:
-      "The Kevin Stefanski era opened without fireworks. Atlanta lost its preseason opener to the Denver Broncos 27-7 at Mercedes-Benz Stadium, wearing the new red home jerseys, and trailed 24-0 by halftime while the offense was held to 192 total yards. The result does not count, and the coach framed it that way, but it gave the staff plenty to evaluate. Tua Tagovailoa, the Friday starter though not yet the named Week 1 quarterback, played two series, handed off to Brian Robinson Jr. to open both, and completed his passes almost exclusively to Kyle Pitts, who caught four of Tua's five throws for 22 yards. Bijan Robinson and Drake London dressed but did not play, and Michael Penix Jr. warmed up but remains barred from team work as he rehabs his ACL. Cooper Rush ran the night's only sustained drive, a 13-play march that reached the Denver 7 before it ended on a 97-yard Jahdae Barron pick-six, and undrafted rookie Jack Strand later muscled in Atlanta's lone touchdown. Chris Blair led the receivers with 37 yards on a pair of grabs, including a leaping 21-yard catch. The loss came hours after the NFL suspended edge rusher James Pearce Jr. for the first eight games of the season for violating the personal conduct policy, a penalty the club said it had anticipated. 'We trust we have the guys to step up,' Stefanski said. Atlanta practices Monday, then travels to Indianapolis for joint practices with the Colts on Aug 19 and 20 before the second preseason game on Aug 22.",
+      "Camp reconvenes at Flowery Branch on Monday with the preseason opener behind it and the road pointing at Indianapolis. Atlanta lost that opener 27-7 to the Denver Broncos in Kevin Stefanski's debut, wearing the new red home jerseys, and was held to 192 total yards, but the coach framed the night as tape to learn from rather than a result that counts. Tua Tagovailoa, the Friday starter though not yet the named Week 1 quarterback, was his own harshest critic afterward, calling a two-series, three-of-five outing not up to standard. Now the work sharpens: the Falcons travel to Westfield, Indiana, for joint practices with the Colts on Aug 19 and 20, live reps against another roster that Stefanski says his starters will dominate before he pulls back their snaps in the Aug 22 game at Lucas Oil Stadium. Michael Penix Jr., held to individual, one-on-one and seven-on-seven work as he rehabs his surgically repaired ACL, will be cleared to take those seven-on-seven reps against the Colts defense, a first step back toward game speed. The backdrop stays heavy. James Pearce Jr.'s eight-game suspension begins Aug 30, the same day as roster cutdowns, and Jalon Walker's season-ending ACL tear has already redrawn the edge room around Samson Ebukam, Azeez Ojulari, Cameron Thomas and Brandon Dorlus. The bottom-of-roster churn continued too, with tight end Nick Muse signed and receiver Le'Meke Brockington and linebacker Malik Verdon waived.",
     byline: "The Tracker Desk",
-    filedFrom: "Atlanta",
+    filedFrom: "Flowery Branch",
     photoId: "tua",
-    stampLabel: "BRONCOS 27, FALCONS 7 · PEARCE SUSPENDED 8 GAMES · COLTS JOINT PRACTICES AUG 19-20",
+    stampLabel: "PRESEASON WK 2 AT INDIANAPOLIS · COLTS JOINT PRACTICES AUG 19-20 · PENIX CLEARED FOR 7-ON-7",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2395,6 +2395,17 @@ export const NEWS_DIGEST = {
     // to the photoId (tua) headshot fallback, which stays aligned with the preseason-opener lead.
     // The clean queue moment for the first run that can reach the Vault is a Colts joint-practice
     // first-team rep Aug 19-20, or Tua under center in the red home jerseys.
+    // STATUS (2026-08-17 scheduled run — MONDAY, CAMP RECONVENES): cover ROTATED editorially off the
+    // opener recap and onto the forward look at Colts week (the page turns to Indianapolis: two joint
+    // practices Aug 19-20, Penix cleared for 7-on-7 against another defense, starters heavy in practice
+    // then light in the Aug 22 game). Quiet day-after-Sunday news cycle otherwise. Cover QUEUE SKIPPED:
+    // re-verified ~/Vault/Notes/image-requests.md and the limn-editor-enhance skill are NOT mounted in
+    // this sandbox (only the tracker repos, outputs and uploads are), so the downstream Antigravity queue
+    // cannot be appended. The 2026-08-15-red-debut.jpg pointer (two days old, inside the 4-day backstop)
+    // was never generated and already resolves to the photoId (tua) headshot fallback, which stays exactly
+    // aligned with the new Tua-led Colts-week lead. Repointing to an Aug-17 slug would only spawn another
+    // dangling request no one can fulfill this cycle, so the pointer is left as is. The clean queue moment
+    // for the first run that can reach the Vault is a Colts joint-practice first-team rep Aug 19-20.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-08-15-red-debut.jpg",
   },
   sources: [
@@ -2409,8 +2420,15 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
+      title: "CAMP RECONVENES AND THE PAGE TURNS TO INDIANAPOLIS: with the preseason opener filed away as tape, the Falcons get back to work in Flowery Branch on Monday and point toward two joint practices with the Colts on Aug 19 and 20, where Kevin Stefanski says his starters will get the bulk of the reps and Michael Penix Jr. will be cleared to take seven-on-seven snaps against another defense for the first time before a lighter workload in Saturday's game at Lucas Oil Stadium",
+      detail: "The Falcoholic, Blogging Dirty and atlantafalcons.com (Aug 15 to 17): after a 27-7 loss to Denver in Kevin Stefanski's Atlanta debut, the Falcons turn to the most valuable week of the exhibition slate, joint practices against the Indianapolis Colts at the Grand Park Sports Campus in Westfield on Wednesday and Thursday. Stefanski said the majority of the reps in those sessions will go to the first team, and confirmed that Michael Penix Jr., still barred from full-team 11-on-11 work as he rehabs his surgically repaired ACL, will take part in the joint seven-on-seven periods, his first work against another team's defense since the injury. Because those live reps do the teaching, Stefanski intends to pull back his starters' snaps in the Aug 22 game at Lucas Oil Stadium after giving them fuller runs against Denver and, later, Miami. Tua Tagovailoa, who started the opener but was sharply critical of a three-of-five, two-series night he called not up to standard, remains the de facto QB1 while the staff declines to settle the Week 1 job.",
+      category: "general",
+      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-training-camp/95068/tua-tagovailoa-starter-preseason-michael-penix-jr-injury-news-updates-jessie-bates",
+      sourceLabel: "The Falcoholic / Blogging Dirty / atlantafalcons.com",
+    },
+    {
       title: "A SOBERING DEBUT: BRONCOS 27, FALCONS 7, AS STEFANSKI'S ATLANTA OFFENSE MANAGES JUST 192 YARDS: the Kevin Stefanski era opened Friday night with a lopsided preseason loss at Mercedes-Benz Stadium, Atlanta trailing 24-0 at the half, Tua Tagovailoa playing two quiet series and leaning almost entirely on Kyle Pitts, before Cooper Rush ran the night's only sustained drive and undrafted rookie Jack Strand muscled in the lone touchdown",
-      detail: "Atlantafalcons.com, ESPN, The Falcoholic and Mile High Report (Aug 14, into the morning-after reports): wearing the new red home jerseys, the Falcons lost their preseason opener to Denver 27-7 and were held to 192 total yards in Stefanski's first game in charge. The result does not count, and the coach said as much, but it left plenty to evaluate. Tagovailoa, the Friday starter though not the named Week 1 quarterback, played two series, handed off to Brian Robinson Jr. to open both, and completed four of his five throws to Pitts for 22 yards. Bijan Robinson and Drake London dressed but did not play, and Michael Penix Jr. warmed up but stayed out of the game as he rehabs his ACL. Rush guided a 13-play march that reached the Denver 7 before ending on a 97-yard Jahdae Barron pick-six, Chris Blair led the receivers with 37 yards on a leaping 21-yard grab and one other catch, and Strand bulled in Atlanta's only score late. On defense, JD Bertrand forced a fumble that Jammie Robinson recovered. 'I think we have miles to go,' Stefanski had said a week earlier. Atlanta practices Monday before traveling to Indianapolis.",
+      detail: "Atlantafalcons.com, ESPN, The Falcoholic and Mile High Report (Aug 14, into the morning-after reports): wearing the new red home jerseys, the Falcons lost their preseason opener to Denver 27-7 and were held to 192 total yards in Stefanski's first game in charge. The result does not count, and the coach said as much, but it left plenty to evaluate. Tagovailoa, the Friday starter though not the named Week 1 quarterback, played two series, handed off to Brian Robinson Jr. to open both, and went three of five for 22 yards, leaning almost entirely on Kyle Pitts, before calling the outing not up to standard. Bijan Robinson and Drake London dressed but did not play, and Michael Penix Jr. warmed up but stayed out of the game as he rehabs his ACL. Rush guided a 13-play march that reached the Denver 7 before ending on a 97-yard Jahdae Barron pick-six, Chris Blair led the receivers with 37 yards on a leaping 21-yard grab and one other catch, and Strand bulled in Atlanta's only score late. On defense, JD Bertrand forced a fumble that Jammie Robinson recovered. 'I think we have miles to go,' Stefanski had said a week earlier. Atlanta practices Monday before traveling to Indianapolis.",
       category: "games",
       sourceUrl: "https://www.atlantafalcons.com/news/game-breakdown-falcons-broncos-preseason-score-takeaways-reaction",
       sourceLabel: "atlantafalcons.com / ESPN / The Falcoholic / Mile High Report",
@@ -2492,13 +2510,6 @@ export const NEWS_DIGEST = {
       sourceUrl: "https://www.espn.com/nfl/story/_/id/49527923/falcons-rb-robinson-reach-3-year-deal-worth-75m",
       sourceLabel: "ESPN / NFL.com / Washington Post / SI Falcons",
     },
-    {
-      title: "BERGERON GETS PAID, AND IT IS THE THIRD CORE DEAL IN TWO MONTHS: Atlanta signed left guard Matthew Bergeron to a four-year, $96M extension Saturday with $60M guaranteed, locking up a 49-game starter through 2030 and stacking a third foundational contract on top of Drake London and Kyle Pitts Sr.",
-      detail: "ESPN, AJC, Pro Football Rumors and the team site (Aug 1): the Falcons extended Bergeron, their 2023 second-round pick, on a four-year deal worth $96M with $60M guaranteed and roughly a $24M average, running through 2030. He would have been a free agent after this season. Bergeron has started all 49 of his appearances across three years and has quietly become one of the league's better young guards. GM Ian Cunningham called him 'the type of player you build around' and 'a cornerstone of our offensive line and the culture we're building in Atlanta.' Bergeron's own reaction looked ahead to the fall: 'Let's get the Benz rocking. The city deserves to be back on that stage.' It is the third core Cunningham-era extension in two months after London in June and Pitts at the end of that month, and it hardens the read that Bijan Robinson is the next domino.",
-      category: "contracts",
-      sourceUrl: "https://www.espn.com/nfl/story/_/id/49505699/falcons-sign-matthew-bergeron-four-year-96m-extension",
-      sourceLabel: "ESPN / AJC / Pro Football Rumors / atlantafalcons.com",
-    },
   ],
 };
 
@@ -2509,8 +2520,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-08-16T13:00:00Z",
-  windowLabel: "Preseason Week 1 in the books · Opener vs. Denver (L 27-7) → Monday practice, then Colts joint practices Aug 19–20, game at Indianapolis Aug 22, 1 p.m. ET",
+  generatedAt: "2026-08-17T12:30:00Z",
+  windowLabel: "Colts Week · Camp reconvenes Mon Aug 17 in Flowery Branch → joint practices at Indianapolis Aug 19–20, preseason game at Lucas Oil Stadium Aug 22, 1 p.m. ET",
   sessions: [
     {
       id: "stefanski-2026-08-14",
