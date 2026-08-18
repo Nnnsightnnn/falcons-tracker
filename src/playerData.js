@@ -2102,18 +2102,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-17T12:30:00Z",
+  generatedAt: "2026-08-18T08:31:12Z",
   cover: {
-    kicker: "THE PAGE TURNS TO INDIANAPOLIS · CAMP RECONVENES IN FLOWERY BRANCH MONDAY WITH THE PRESEASON OPENER FILED AWAY AS TAPE: Tua Tagovailoa, Sharply Critical of a Three-of-Five Debut He Called Not Up to Standard, Leads a First Team That Will Get the Bulk of the Reps in the Colts Joint Practices Aug 19 and 20 Before a Lighter Load in Saturday's Game at Lucas Oil Stadium, While Michael Penix Jr. Is Cleared to Take Seven-on-Seven Snaps Against Another Defense for the First Time, All Under the Shadow of James Pearce Jr.'s Eight-Game Suspension and Jalon Walker's Season-Ending ACL",
-    headLine1: "Eyes to Indianapolis: the work turns to Colts week.",
-    headEm: "The preseason opener, a 27-7 loss to Denver, is filed away as evaluation tape. 'I think we have miles to go,' Kevin Stefanski had said, and the week ahead in Indianapolis, two joint practices and then a game, is where Atlanta starts closing the distance.",
+    kicker: "COLTS WEEK OPENS TOMORROW · THE FINAL FLOWERY BRANCH TUNE-UP DONE, THE ROAD BENDS TO WESTFIELD: Tua Tagovailoa, Sharply Critical of a Three-of-Five Debut He Called Not Up to Standard, Leads a First Team That Will Get the Bulk of the Reps in the Colts Joint Practices Aug 19 and 20 Before a Lighter Load in Saturday's Game at Lucas Oil Stadium, While Michael Penix Jr. Is Cleared to Take Seven-on-Seven Snaps Against Another Defense for the First Time, All Under the Shadow of James Pearce Jr.'s Eight-Game Suspension and Jalon Walker's Season-Ending ACL",
+    headLine1: "Eyes to Indianapolis: Colts week opens tomorrow.",
+    headEm: "The preseason opener, a 27-7 loss to Denver, is filed away as evaluation tape. 'I think we have miles to go,' Kevin Stefanski had said, and the week ahead in Indianapolis, two joint practices starting tomorrow and then a game, is where Atlanta starts closing the distance.",
     headLine3: "Tua Tagovailoa, who called his own three-of-five debut not up to standard, leads a first team that will get the bulk of the reps in the Colts joint practices Aug 19 and 20 before a lighter load in Saturday's game. Michael Penix Jr., still barred from full-team work, is cleared to take seven-on-seven snaps against another defense for the first time.",
     deck:
-      "Camp reconvenes at Flowery Branch on Monday with the preseason opener behind it and the road pointing at Indianapolis. Atlanta lost that opener 27-7 to the Denver Broncos in Kevin Stefanski's debut, wearing the new red home jerseys, and was held to 192 total yards, but the coach framed the night as tape to learn from rather than a result that counts. Tua Tagovailoa, the Friday starter though not yet the named Week 1 quarterback, was his own harshest critic afterward, calling a two-series, three-of-five outing not up to standard. Now the work sharpens: the Falcons travel to Westfield, Indiana, for joint practices with the Colts on Aug 19 and 20, live reps against another roster that Stefanski says his starters will dominate before he pulls back their snaps in the Aug 22 game at Lucas Oil Stadium. Michael Penix Jr., held to individual, one-on-one and seven-on-seven work as he rehabs his surgically repaired ACL, will be cleared to take those seven-on-seven reps against the Colts defense, a first step back toward game speed. The backdrop stays heavy. James Pearce Jr.'s eight-game suspension begins Aug 30, the same day as roster cutdowns, and Jalon Walker's season-ending ACL tear has already redrawn the edge room around Samson Ebukam, Azeez Ojulari, Cameron Thomas and Brandon Dorlus. The bottom-of-roster churn continued too, with tight end Nick Muse signed and receiver Le'Meke Brockington and linebacker Malik Verdon waived.",
+      "Atlanta wrapped its last Flowery Branch work before the most valuable week of the exhibition slate, and the road now bends to Westfield, Indiana. The Falcons lost their preseason opener 27-7 to the Denver Broncos in Kevin Stefanski's debut, wearing the new red home jerseys, and were held to 192 total yards, but the coach framed the night as tape to learn from rather than a result that counts. Tua Tagovailoa, the Friday starter though not yet the named Week 1 quarterback, was his own harshest critic afterward, calling a two-series, three-of-five outing not up to standard. Now the work sharpens: the Falcons open two joint practices with the Colts tomorrow, Wednesday Aug 19, and Thursday Aug 20, live reps against another roster that Stefanski says his starters will dominate before he pulls back their snaps in the Aug 22 game at Lucas Oil Stadium. Michael Penix Jr., held to individual, one-on-one and seven-on-seven work as he rehabs his surgically repaired ACL, will be cleared to take those seven-on-seven reps against the Colts defense, a first step back toward game speed. The backdrop stays heavy. James Pearce Jr.'s eight-game suspension begins Aug 30, the same day as roster cutdowns, and Jalon Walker's season-ending ACL tear has already redrawn the edge room around Samson Ebukam, Azeez Ojulari, Cameron Thomas and Brandon Dorlus. The bottom-of-roster churn continued too, with tight end Nick Muse signed and receiver Le'Meke Brockington and linebacker Malik Verdon waived.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "tua",
-    stampLabel: "PRESEASON WK 2 AT INDIANAPOLIS · COLTS JOINT PRACTICES AUG 19-20 · PENIX CLEARED FOR 7-ON-7",
+    stampLabel: "PRESEASON WK 2 AT INDIANAPOLIS · COLTS JOINT PRACTICES OPEN TOMORROW AUG 19-20 · PENIX CLEARED FOR 7-ON-7",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2406,6 +2406,15 @@ export const NEWS_DIGEST = {
     // aligned with the new Tua-led Colts-week lead. Repointing to an Aug-17 slug would only spawn another
     // dangling request no one can fulfill this cycle, so the pointer is left as is. The clean queue moment
     // for the first run that can reach the Vault is a Colts joint-practice first-team rep Aug 19-20.
+    // STATUS (2026-08-18 scheduled run — TUESDAY, EVE OF COLTS WEEK): cover KEPT on the red-debut plate
+    // (pointer dated 2026-08-15, three days old, still inside the 4-day staleness backstop). No new visual
+    // story landed Aug 17-18: the cycle is the same Colts-week forward look, with the first live reps not
+    // until tomorrow's joint practice (Wed Aug 19). Neither cover trigger fired, so the queue is SKIPPED.
+    // Image still not generated: re-verified ~/Vault/Notes/image-requests.md and the limn-editor-enhance
+    // skill are NOT mounted in this sandbox (only the tracker repos, outputs and uploads are), so the
+    // pointer continues to resolve to the photoId (tua) headshot fallback, which stays aligned with the
+    // Tua-led Colts-week lead. The clean queue moment for the first run that can reach the Vault is a Colts
+    // joint-practice first-team rep Aug 19-20 (Penix cleared for 7-on-7 against Indianapolis is picturable).
     coverImageUrl: "/falcons-tracker/assets/cover/2026-08-15-red-debut.jpg",
   },
   sources: [
@@ -2420,11 +2429,18 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "CAMP RECONVENES AND THE PAGE TURNS TO INDIANAPOLIS: with the preseason opener filed away as tape, the Falcons get back to work in Flowery Branch on Monday and point toward two joint practices with the Colts on Aug 19 and 20, where Kevin Stefanski says his starters will get the bulk of the reps and Michael Penix Jr. will be cleared to take seven-on-seven snaps against another defense for the first time before a lighter workload in Saturday's game at Lucas Oil Stadium",
-      detail: "The Falcoholic, Blogging Dirty and atlantafalcons.com (Aug 15 to 17): after a 27-7 loss to Denver in Kevin Stefanski's Atlanta debut, the Falcons turn to the most valuable week of the exhibition slate, joint practices against the Indianapolis Colts at the Grand Park Sports Campus in Westfield on Wednesday and Thursday. Stefanski said the majority of the reps in those sessions will go to the first team, and confirmed that Michael Penix Jr., still barred from full-team 11-on-11 work as he rehabs his surgically repaired ACL, will take part in the joint seven-on-seven periods, his first work against another team's defense since the injury. Because those live reps do the teaching, Stefanski intends to pull back his starters' snaps in the Aug 22 game at Lucas Oil Stadium after giving them fuller runs against Denver and, later, Miami. Tua Tagovailoa, who started the opener but was sharply critical of a three-of-five, two-series night he called not up to standard, remains the de facto QB1 while the staff declines to settle the Week 1 job.",
+      title: "COLTS WEEK OPENS TOMORROW: WITH THE FINAL FLOWERY BRANCH TUNE-UP DONE, THE FALCONS POINT AT WESTFIELD FOR TWO JOINT PRACTICES, WHERE THE STARTERS GET THE BULK OF THE REPS AND PENIX FACES ANOTHER DEFENSE FOR THE FIRST TIME: Atlanta closes its home work and travels to Indiana for joint sessions with the Colts on Wednesday, Aug 19, and Thursday, Aug 20, the most valuable reps of the exhibition slate, before a lighter starter workload in Saturday's game at Lucas Oil Stadium",
+      detail: "The Falcoholic, Blogging Dirty and atlantafalcons.com (Aug 15 to 18): after a 27-7 loss to Denver in Kevin Stefanski's Atlanta debut, the Falcons turn to the most valuable week of the exhibition slate, joint practices against the Indianapolis Colts at the Grand Park Sports Campus in Westfield on Wednesday and Thursday. Stefanski said the majority of the reps in those sessions will go to the first team, calling it a chance to get 'a lot of situational football' done and to go one-on-one against players 'you don't have a book on,' and confirmed that Michael Penix Jr., still barred from full-team 11-on-11 work as he rehabs his surgically repaired ACL, will take part in the joint seven-on-seven periods, his first work against another team's defense since the injury. Because those live reps do the teaching, Stefanski intends to pull back his starters' snaps in the Aug 22 game at Lucas Oil Stadium, where Cooper Rush and Jack Strand will hold down the offense, after giving them fuller runs against Denver and, later, Miami. Tua Tagovailoa, who started the opener but was sharply critical of a three-of-five, two-series night he called not up to standard, remains the de facto QB1 while the staff declines to settle the Week 1 job.",
       category: "general",
-      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-training-camp/95068/tua-tagovailoa-starter-preseason-michael-penix-jr-injury-news-updates-jessie-bates",
-      sourceLabel: "The Falcoholic / Blogging Dirty / atlantafalcons.com",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-team-prepares-for-joint-practices-with-indianapolis-colts",
+      sourceLabel: "atlantafalcons.com / The Falcoholic / Colts.com",
+    },
+    {
+      title: "A FRANCHISE VOICE BETS ON THE TURN: RODDY WHITE PREDICTS ATLANTA'S FIRST WINNING SEASON SINCE 2017: the four-time Pro Bowl receiver and Falcons Ring of Honor member forecast an 11-win 2026 and a return to the playoffs, a call that, if it holds, would end the franchise's longest postseason drought after last year's 8-9 finish",
+      detail: "Yahoo Sports and Falcons Wire (Aug 18): Atlanta legend Roddy White put his faith in the current roster, predicting the Falcons win 11 games and reach the playoffs for the first time since the 2017 season. The forecast lands as camp optimism runs high around the extended young core of Bijan Robinson, Drake London, Kyle Pitts Sr. and Matthew Bergeron, though it sits against real attrition on defense, Jalon Walker lost for the year and James Pearce Jr. suspended eight games. The Falcons went 8-9 in 2025 and have not posted a winning record or made the postseason since 2017, the longest such drought in team history. White's number is a bet on the offense carrying a defense still being redrawn.",
+      category: "general",
+      sourceUrl: "https://sports.yahoo.com/articles/falcons-news-atlanta-legend-predicts-020521403.html",
+      sourceLabel: "Yahoo Sports / Falcons Wire",
     },
     {
       title: "A SOBERING DEBUT: BRONCOS 27, FALCONS 7, AS STEFANSKI'S ATLANTA OFFENSE MANAGES JUST 192 YARDS: the Kevin Stefanski era opened Friday night with a lopsided preseason loss at Mercedes-Benz Stadium, Atlanta trailing 24-0 at the half, Tua Tagovailoa playing two quiet series and leaning almost entirely on Kyle Pitts, before Cooper Rush ran the night's only sustained drive and undrafted rookie Jack Strand muscled in the lone touchdown",
@@ -2520,9 +2536,29 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-08-17T12:30:00Z",
-  windowLabel: "Colts Week · Camp reconvenes Mon Aug 17 in Flowery Branch → joint practices at Indianapolis Aug 19–20, preseason game at Lucas Oil Stadium Aug 22, 1 p.m. ET",
+  generatedAt: "2026-08-18T08:31:12Z",
+  windowLabel: "Colts Week · Final Flowery Branch tune-up done → joint practices at Indianapolis open tomorrow Aug 19–20, preseason game at Lucas Oil Stadium Aug 22, 1 p.m. ET",
   sessions: [
+    {
+      id: "stefanski-2026-08-17",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-08-17",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Colts Week · Pre-Practice Media Availability",
+      sourceUrl: "https://www.atlantanewsfirst.com/2026/08/17/falcons-focus-joint-practices-with-colts-key-camp-week/",
+      transcriptUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-team-prepares-for-joint-practices-with-indianapolis-colts",
+      verified: true,
+      summary: "Back at Flowery Branch after the day off, Stefanski turned the page from the Denver loss to the week that matters most in August: two joint practices with the Colts. He sold the sessions as concentrated situational work and live one-on-ones against an unfamiliar opponent, laid out a starter-heavy practice plan that flips to a lighter game workload Saturday, and reaffirmed Michael Penix Jr. will get seven-on-seven reps against Indianapolis.",
+      pullQuote: "A lot of situational football will get accomplished.",
+      bullets: [
+        "On the value of the joint sessions: the team will get 'a lot of reps' for its starters and the chance to go one-on-one against players 'you don't have a book on'",
+        "On the practice plan: Tua Tagovailoa gets the bulk of the run in the joint practices, while Cooper Rush and Jack Strand hold down the offense in Saturday's game at Lucas Oil Stadium",
+        "On Penix: confirmed he will take part in the joint seven-on-seven periods, his first work against another team's defense since the ACL surgery, while staying out of full-team 11-on-11",
+        "On the schedule: Atlanta practices with the Colts at the Grand Park Sports Campus in Westfield on Wednesday, Aug 19, and Thursday, Aug 20, before the Aug 22 preseason game",
+      ],
+      topics: ["joint-practices", "colts-week", "penix-acl", "preseason"],
+    },
     {
       id: "stefanski-2026-08-14",
       speaker: "Kevin Stefanski",
@@ -2627,27 +2663,6 @@ export const INTERVIEWS = {
         "Took the main reps of the first team period in a live 11-on-11 look, his first game-speed team work of camp after sitting out Day 1",
       ],
       topics: ["qb-competition", "tua", "training-camp", "pads-on"],
-    },
-    {
-      id: "bergeron-2026-08-01",
-      speaker: "Matthew Bergeron",
-      role: "Guard",
-      date: "2026-08-01",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "Contract Extension · Media Availability",
-      sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-matthew-bergeron-contract-extension",
-      transcriptUrl: "https://www.espn.com/nfl/story/_/id/49505699/falcons-sign-matthew-bergeron-four-year-96m-extension",
-      verified: true,
-      summary: "A day after agreeing to a four-year, $96M extension, Bergeron met the media and pointed the conversation at the season rather than the payday. He framed the deal as a commitment to a rebuild he wants to see through, name-checked the front-office and coaching group he is signing on to play with, and set the bar at meaningful football in front of a full Mercedes-Benz Stadium.",
-      pullQuote: "Let's get the Benz rocking. The city deserves to be back on that stage.",
-      bullets: [
-        "On the year ahead: 'Hopefully we can give back to (the fans) some meaningful football,' tying the extension to results rather than the contract itself",
-        "On who he is committing to: cited Matt Ryan, Ian Cunningham and Kevin Stefanski 'and all those guys' as the group he is excited to build with",
-        "The deal is worth $96M over four years with $60M guaranteed and runs through 2030, after he started all 49 of his games across three seasons",
-        "GM Ian Cunningham called him 'the type of player you build around' and 'a cornerstone of our offensive line and the culture we're building in Atlanta'",
-        "Becomes the third core Cunningham-era extension in two months after Drake London and Kyle Pitts Sr.",
-      ],
-      topics: ["bergeron-extension", "contracts", "offensive-line"],
     },
   ],
 };
