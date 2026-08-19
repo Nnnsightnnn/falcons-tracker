@@ -2102,18 +2102,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-18T08:31:12Z",
+  generatedAt: "2026-08-19T08:30:00Z",
   cover: {
-    kicker: "COLTS WEEK OPENS TOMORROW · THE FINAL FLOWERY BRANCH TUNE-UP DONE, THE ROAD BENDS TO WESTFIELD: Tua Tagovailoa, Sharply Critical of a Three-of-Five Debut He Called Not Up to Standard, Leads a First Team That Will Get the Bulk of the Reps in the Colts Joint Practices Aug 19 and 20 Before a Lighter Load in Saturday's Game at Lucas Oil Stadium, While Michael Penix Jr. Is Cleared to Take Seven-on-Seven Snaps Against Another Defense for the First Time, All Under the Shadow of James Pearce Jr.'s Eight-Game Suspension and Jalon Walker's Season-Ending ACL",
-    headLine1: "Eyes to Indianapolis: Colts week opens tomorrow.",
-    headEm: "The preseason opener, a 27-7 loss to Denver, is filed away as evaluation tape. 'I think we have miles to go,' Kevin Stefanski had said, and the week ahead in Indianapolis, two joint practices starting tomorrow and then a game, is where Atlanta starts closing the distance.",
-    headLine3: "Tua Tagovailoa, who called his own three-of-five debut not up to standard, leads a first team that will get the bulk of the reps in the Colts joint practices Aug 19 and 20 before a lighter load in Saturday's game. Michael Penix Jr., still barred from full-team work, is cleared to take seven-on-seven snaps against another defense for the first time.",
+    kicker: "COLTS WEEK IS HERE · THE ROAD BENT TO WESTFIELD AND THE PADS POP TODAY: Atlanta Opens the First of Two Joint Practices With Indianapolis on Wednesday, Aug 19, With Tua Tagovailoa's First Team Set to Get the Bulk of the Reps and Michael Penix Jr. Cleared to Face Another Defense in Seven-on-Seven for the First Time Since His ACL Surgery, a Day After the Falcons Answered a Gutted Edge Room by Signing Three-Time Pro Bowler Za'Darius Smith, Reuniting Him With Kevin Stefanski",
+    headLine1: "In Indianapolis at last: the joint practices open today.",
+    headEm: "The preseason opener, a 27-7 loss to Denver, is filed away as evaluation tape. 'I think we have miles to go,' Kevin Stefanski had said, and the two joint practices with the Colts that begin this afternoon in Westfield are where Atlanta starts closing the distance, the most valuable reps of the exhibition slate.",
+    headLine3: "Tua Tagovailoa's first team gets the bulk of the work in the joint sessions Aug 19 and 20 before a lighter load in Saturday's game. Michael Penix Jr., still barred from full-team snaps, is cleared to take seven-on-seven reps against another defense for the first time since surgery. And the day before, Atlanta answered its thinned edge room by signing three-time Pro Bowler Za'Darius Smith.",
     deck:
-      "Atlanta wrapped its last Flowery Branch work before the most valuable week of the exhibition slate, and the road now bends to Westfield, Indiana. The Falcons lost their preseason opener 27-7 to the Denver Broncos in Kevin Stefanski's debut, wearing the new red home jerseys, and were held to 192 total yards, but the coach framed the night as tape to learn from rather than a result that counts. Tua Tagovailoa, the Friday starter though not yet the named Week 1 quarterback, was his own harshest critic afterward, calling a two-series, three-of-five outing not up to standard. Now the work sharpens: the Falcons open two joint practices with the Colts tomorrow, Wednesday Aug 19, and Thursday Aug 20, live reps against another roster that Stefanski says his starters will dominate before he pulls back their snaps in the Aug 22 game at Lucas Oil Stadium. Michael Penix Jr., held to individual, one-on-one and seven-on-seven work as he rehabs his surgically repaired ACL, will be cleared to take those seven-on-seven reps against the Colts defense, a first step back toward game speed. The backdrop stays heavy. James Pearce Jr.'s eight-game suspension begins Aug 30, the same day as roster cutdowns, and Jalon Walker's season-ending ACL tear has already redrawn the edge room around Samson Ebukam, Azeez Ojulari, Cameron Thomas and Brandon Dorlus. The bottom-of-roster churn continued too, with tight end Nick Muse signed and receiver Le'Meke Brockington and linebacker Malik Verdon waived.",
+      "The wait for the most valuable week of the exhibition slate is over: the Falcons open the first of two joint practices with the Colts this afternoon at the Grand Park Sports Campus in Westfield, Indiana. Atlanta lost its preseason opener 27-7 to the Denver Broncos in Kevin Stefanski's debut, wearing the new red home jerseys, and was held to 192 total yards, but the coach framed the night as tape to learn from rather than a result that counts. Tua Tagovailoa, the Friday starter though not yet the named Week 1 quarterback, was his own harshest critic afterward, calling a two-series, three-of-five outing not up to standard. Now the work sharpens: Stefanski says his first team will get the bulk of the reps across today and Thursday, live one-on-ones against a roster the Falcons 'don't have a book on,' before he pulls back those snaps in the Aug 22 game at Lucas Oil Stadium, where Cooper Rush and Jack Strand run the offense. Michael Penix Jr., held to individual, one-on-one and seven-on-seven work as he rehabs his surgically repaired ACL, will take those seven-on-seven reps against the Colts defense, a first step back toward game speed. The backdrop shifted overnight: a day after Jalon Walker's season-ending ACL tear and James Pearce Jr.'s eight-game suspension gutted the edge, Atlanta signed three-time Pro Bowler Za'Darius Smith on Tuesday to a one-year deal worth up to $8 million, reuniting the 33-year-old rusher with Stefanski, who coached him in Cleveland. Pearce's ban still begins Aug 30, the day of roster cutdowns.",
     byline: "The Tracker Desk",
-    filedFrom: "Flowery Branch",
+    filedFrom: "Westfield, Ind.",
     photoId: "tua",
-    stampLabel: "PRESEASON WK 2 AT INDIANAPOLIS · COLTS JOINT PRACTICES OPEN TOMORROW AUG 19-20 · PENIX CLEARED FOR 7-ON-7",
+    stampLabel: "PRESEASON WK 2 AT INDIANAPOLIS · COLTS JOINT PRACTICES OPEN TODAY AUG 19-20 · PENIX CLEARED FOR 7-ON-7 · ZA'DARIUS SMITH SIGNED",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2415,6 +2415,17 @@ export const NEWS_DIGEST = {
     // pointer continues to resolve to the photoId (tua) headshot fallback, which stays aligned with the
     // Tua-led Colts-week lead. The clean queue moment for the first run that can reach the Vault is a Colts
     // joint-practice first-team rep Aug 19-20 (Penix cleared for 7-on-7 against Indianapolis is picturable).
+    // STATUS (2026-08-19 scheduled run — WEDNESDAY, JOINT PRACTICES OPEN TODAY): a genuinely visual story
+    // landed (Trigger 1) and the red-debut pointer is now 4 days old (Trigger 2 at the boundary), so this
+    // run WANTED to queue a Colts joint-practice rep (Penix throwing 7-on-7 against Indianapolis, or Tua
+    // leading the first team at Grand Park). But the hard constraint is unchanged: re-verified that only the
+    // tracker repos, outputs and uploads are mounted; ~/Vault/Notes/image-requests.md and the
+    // limn-editor-enhance skill are NOT reachable, so the downstream Antigravity queue cannot be appended.
+    // Cover QUEUE SKIPPED. The 2026-08-15-red-debut.jpg pointer was never generated and already resolves to
+    // the photoId (tua) headshot fallback, which stays exactly aligned with today's Tua-led Colts-week lead,
+    // so the pointer is left as is (repointing to an Aug-19 slug would only spawn another dangling request no
+    // one can fulfill and would keep the same tua fallback). The clean queue moment for the first run that can
+    // reach the Vault is a Colts joint-practice rep (Penix 7-on-7 vs. Indianapolis, or Tua under center at Grand Park).
     coverImageUrl: "/falcons-tracker/assets/cover/2026-08-15-red-debut.jpg",
   },
   sources: [
@@ -2429,11 +2440,18 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "COLTS WEEK OPENS TOMORROW: WITH THE FINAL FLOWERY BRANCH TUNE-UP DONE, THE FALCONS POINT AT WESTFIELD FOR TWO JOINT PRACTICES, WHERE THE STARTERS GET THE BULK OF THE REPS AND PENIX FACES ANOTHER DEFENSE FOR THE FIRST TIME: Atlanta closes its home work and travels to Indiana for joint sessions with the Colts on Wednesday, Aug 19, and Thursday, Aug 20, the most valuable reps of the exhibition slate, before a lighter starter workload in Saturday's game at Lucas Oil Stadium",
-      detail: "The Falcoholic, Blogging Dirty and atlantafalcons.com (Aug 15 to 18): after a 27-7 loss to Denver in Kevin Stefanski's Atlanta debut, the Falcons turn to the most valuable week of the exhibition slate, joint practices against the Indianapolis Colts at the Grand Park Sports Campus in Westfield on Wednesday and Thursday. Stefanski said the majority of the reps in those sessions will go to the first team, calling it a chance to get 'a lot of situational football' done and to go one-on-one against players 'you don't have a book on,' and confirmed that Michael Penix Jr., still barred from full-team 11-on-11 work as he rehabs his surgically repaired ACL, will take part in the joint seven-on-seven periods, his first work against another team's defense since the injury. Because those live reps do the teaching, Stefanski intends to pull back his starters' snaps in the Aug 22 game at Lucas Oil Stadium, where Cooper Rush and Jack Strand will hold down the offense, after giving them fuller runs against Denver and, later, Miami. Tua Tagovailoa, who started the opener but was sharply critical of a three-of-five, two-series night he called not up to standard, remains the de facto QB1 while the staff declines to settle the Week 1 job.",
+      title: "COLTS WEEK IS HERE: THE JOINT PRACTICES OPEN TODAY IN WESTFIELD, WHERE THE STARTERS GET THE BULK OF THE REPS AND PENIX FACES ANOTHER DEFENSE FOR THE FIRST TIME: Atlanta takes the field with Indianapolis for the first of two joint sessions Wednesday, Aug 19, the most valuable reps of the exhibition slate, before a lighter starter workload in Saturday's game at Lucas Oil Stadium",
+      detail: "Colts.com, The Falcoholic and atlantafalcons.com (Aug 18 into Aug 19): the wait is over. After a 27-7 loss to Denver in Kevin Stefanski's Atlanta debut, the Falcons open the most valuable week of the exhibition slate today, the first of two joint practices against the Indianapolis Colts at the Grand Park Sports Campus in Westfield, with a second session Thursday. Stefanski said the majority of the reps will go to the first team, calling it a chance to get 'a lot of situational football' done and to go one-on-one against players 'you don't have a book on,' and confirmed that Michael Penix Jr., still barred from full-team 11-on-11 work as he rehabs his surgically repaired ACL, will take part in the joint seven-on-seven periods, his first work against another team's defense since the injury. Because those live reps do the teaching, Stefanski intends to pull back his starters' snaps in the Aug 22 game at Lucas Oil Stadium, where Cooper Rush and Jack Strand will hold down the offense. Tua Tagovailoa, who started the opener but was sharply critical of a three-of-five, two-series night he called not up to standard, remains the de facto QB1 while the staff declines to settle the Week 1 job.",
       category: "general",
       sourceUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-team-prepares-for-joint-practices-with-indianapolis-colts",
       sourceLabel: "atlantafalcons.com / The Falcoholic / Colts.com",
+    },
+    {
+      title: "ATLANTA UNRETIRES A PASS RUSHER: FALCONS SIGN THREE-TIME PRO BOWLER ZA'DARIUS SMITH, REUNITING HIM WITH STEFANSKI: with the edge room gutted by Jalon Walker's season-ending ACL and James Pearce Jr.'s eight-game ban, the Falcons landed the 33-year-old Smith on a one-year deal worth up to $8 million Tuesday, beating out the Browns for a veteran who last played for Kevin Stefanski in Cleveland",
+      detail: "ESPN, NFL.com, CBS Sports and Pro Football Rumors (Aug 18): a day before the Colts joint practices, Atlanta answered its thinned edge with experience, signing Za'Darius Smith to a one-year contract worth $6 million and up to $8 million with incentives. Smith, a three-time Pro Bowler, had retired in October 2025 after five games with the Eagles, so the deal is an un-retirement. The reunion with Stefanski, who coached him for two seasons in Cleveland in 2023 and 2024, helped seal it, and the Falcons reportedly beat out the Browns after Smith worked out for Atlanta. The move follows the two blows that reshaped the group this month: Walker tore his ACL on Aug 4 and is out for the year, and Pearce drew an eight-game suspension that starts Aug 30. Smith projects into a rotation with Samson Ebukam, Azeez Ojulari, Cameron Thomas and Brandon Dorlus while Pearce sits.",
+      category: "free-agency",
+      sourceUrl: "https://www.espn.com/nfl/story/_/id/49648078/falcons-sign-veteran-zadarius-smith-bolster-pass-rush",
+      sourceLabel: "ESPN / NFL.com / CBS Sports / Pro Football Rumors",
     },
     {
       title: "A FRANCHISE VOICE BETS ON THE TURN: RODDY WHITE PREDICTS ATLANTA'S FIRST WINNING SEASON SINCE 2017: the four-time Pro Bowl receiver and Falcons Ring of Honor member forecast an 11-win 2026 and a return to the playoffs, a call that, if it holds, would end the franchise's longest postseason drought after last year's 8-9 finish",
@@ -2536,8 +2554,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-08-18T08:31:12Z",
-  windowLabel: "Colts Week · Final Flowery Branch tune-up done → joint practices at Indianapolis open tomorrow Aug 19–20, preseason game at Lucas Oil Stadium Aug 22, 1 p.m. ET",
+  generatedAt: "2026-08-19T08:30:00Z",
+  windowLabel: "Colts Week · Joint practices at Indianapolis underway Aug 19–20 (Grand Park, Westfield), preseason game at Lucas Oil Stadium Aug 22, 1 p.m. ET",
   sessions: [
     {
       id: "stefanski-2026-08-17",
