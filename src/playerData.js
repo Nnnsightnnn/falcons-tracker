@@ -2102,18 +2102,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-20T08:35:00Z",
+  generatedAt: "2026-08-21T12:30:00Z",
   cover: {
-    kicker: "DAY 1 IN THE BOOKS, DAY 2 THIS AFTERNOON: The Colts Got the Better of Wednesday's First Joint Practice in Westfield, Where Daniel Jones Carved Up Atlanta's First-Team Defense and the Falcons' Offense Found Only Two True Highlights, a Leaping Drake London Touchdown Over Justin Walley and a Rookie Zachariah Branch Collision, While Tua Tagovailoa Leaned Almost Entirely on the Short Game and Michael Penix Jr., Capped at Seven-on-Seven, Faced Another Defense for the First Time Since His ACL Surgery; the Two Sides Meet Again Thursday Before Saturday's Game at Lucas Oil Stadium",
-    headLine1: "Day 1 belonged to the Colts. Day 2 is this afternoon.",
-    headEm: "Indianapolis got the better of Wednesday's first joint practice, Daniel Jones carving up Atlanta's first-team defense while the Falcons' offense managed only a couple of real highlights. The one bright, undeniable spark: Drake London rising over Justin Walley for a leaping touchdown. The two teams meet again Thursday, then play Saturday at Lucas Oil Stadium.",
-    headLine3: "Tua Tagovailoa went 8 of 13 in team drills but leaned almost entirely on the short game, with only one throw traveling past ten yards. Michael Penix Jr., still capped at seven-on-seven, went 6 of 9 against another defense for the first time since his ACL surgery. The clearest positive was Atlanta's run defense, sharply better after two rough outings against the run.",
+    kicker: "THE DEFENSE ANSWERS, AND THE JOINT WEEK ENDS EVEN: A Day After the Colts Got the Better of Wednesday's Opener, Atlanta's Defensive Front Was Relentless in Thursday's Second and Final Joint Practice in Westfield, an Undrafted Rookie in Carlos Allen Jr. Living in the Backfield and the Secondary Winning Nearly Every Rep in One-on-Ones, Mike Ford's Interception the Exclamation Point, While Michael Penix Jr. Said His Return-to-Play Call With His Doctor Is Coming and That Time Is 'Real Soon'; Now the Reserves Take Over Saturday at Lucas Oil Stadium, Where the Starters Sit and Cooper Rush and Jack Strand Split the Halves",
+    headLine1: "The defense answered. The week ends even. Now the twos and threes get their game.",
+    headEm: "A day after Indianapolis got the better of the opener, Atlanta's defensive front was relentless in Thursday's second and final joint practice, undrafted rookie Carlos Allen Jr. living in the backfield and the secondary winning nearly every one-on-one. The starters, having taken the bulk of the joint-practice reps, sit Saturday at Lucas Oil Stadium, leaving the game to the reserves.",
+    headLine3: "Michael Penix Jr., still held out of eleven-on-eleven, called the two joint practices 'very important' for facing another defense and said his check-in with his doctor is imminent: 'I don't think my doctor is ready for me to take those hits right now, but that time is coming real soon.' Cooper Rush and Jack Strand will each run a half in the exhibition.",
     deck:
-      "The most valuable week of the exhibition slate is underway, and Day 1 went to the hosts. In the first of two joint practices at the Grand Park Sports Campus in Westfield, the Indianapolis Colts got the better of the Atlanta Falcons on Wednesday, Colts quarterback Daniel Jones lights out against Atlanta's first-team defense. The Falcons' offense found only two true highlights: Drake London rose over Colts cornerback Justin Walley for a leaping touchdown, and rookie Zachariah Branch, all of 5-foot-10, lowered his shoulder and won a physical rep late. Otherwise the explosive plays were scarce. Tua Tagovailoa completed 8 of 13 in eleven-on-eleven and a perfect 3 of 3 in seven-on-seven, but his work was tilted heavily toward swing passes to Bijan Robinson, with only one throw traveling more than ten yards. Michael Penix Jr., held to individual, one-on-one and seven-on-seven work as he rehabs his surgically repaired ACL, faced another team's defense for the first time since the injury and went 6 of 9, his best ball a curl to Juice Wells, though he missed high to London and overthrew Chris Blair. The line news mattered too: Jawaan Taylor took every right-tackle snap and said he felt good, revealing he had the knee cleaned up in March. The clearest positive came against the run, where a defense that had surrendered 162 rushing yards to Denver looked much sharper. Atlanta and Indianapolis meet again Thursday afternoon before Saturday's game at Lucas Oil Stadium, where Cooper Rush and Jack Strand will run an offense missing its rested starters. Newly signed edge Za'Darius Smith, still en route Wednesday, had yet to practice.",
+      "The most valuable week of the exhibition slate ended in a split. A day after the Colts got the better of the first joint practice, the Atlanta Falcons' defense showed up furious on Thursday for the second and final session at the Grand Park Sports Campus in Westfield, and the front was the story. Undrafted rookie Carlos Allen Jr., a Houston product working with the second and third units, lived in the backfield, stacking tackles for loss and drawing a roar from defensive line coach Nate Ollie, while Maason Smith, Brandon Dorlus and Chris Williams clogged run lanes against a Colts offensive line with a strong reputation. The secondary was every bit as good, A.J. Terrell, Darnay Holmes and A.J. Woods stringing together wins in one-on-ones and Mike Ford collecting an interception with nearly everyone else adding a pass breakup. Rookie linebackers Harold Perkins Jr. and Kendal Daniels each punched away a pass in seven-on-seven. It was the answer a unit gashed for 162 rushing yards by Denver and beaten on Day 1 needed. On the health front, Jawaan Taylor and Divine Deablo were back and active, Jessie Bates III did some on-field work, and Avieon Terrell and Billy Bowman Jr. sat out the joint week. Michael Penix Jr., capped at seven-on-seven as he rehabs his surgically repaired ACL, called the two Colts sessions 'very important' and said his return-to-play conversation with his doctor is close, adding, 'that time is coming real soon.' Kevin Stefanski confirmed the starters, who soaked up the joint-practice reps, will sit Saturday at Lucas Oil Stadium, leaving the exhibition to the twos and threes with Cooper Rush and Jack Strand splitting the halves. Za'Darius Smith, signed Tuesday, gives the thinned edge room a three-time Pro Bowl boost as the group presses on without Jalon Walker and, come Aug 30, James Pearce Jr.",
     byline: "The Tracker Desk",
     filedFrom: "Westfield, Ind.",
-    photoId: "tua",
-    stampLabel: "PRESEASON WK 2 AT INDIANAPOLIS · COLTS JOINT PRACTICE DAY 1 DONE, DAY 2 TODAY AUG 20 · PENIX 6-OF-9 IN 7-ON-7 · LONDON MOSSES WALLEY",
+    photoId: "terrell",
+    stampLabel: "PRESEASON WK 2 AT INDIANAPOLIS · COLTS JOINT PRACTICES DONE, D-LINE OWNS DAY 2 AUG 20 · MIKE FORD PICK · PENIX: RETURN 'REAL SOON' · GAME SAT AUG 22, 1 PM ET",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2437,6 +2437,17 @@ export const NEWS_DIGEST = {
     // (tua) headshot fallback, which stays aligned with today's Tua-led joint-practice lead, so the pointer is left
     // as is (repointing to an Aug-20 slug would only spawn another dangling request no one can fulfill and would keep
     // the same tua fallback). The clean queue moment remains the first run that can actually reach the Vault.
+    // STATUS (2026-08-21 scheduled run): cover SKIPPED, identical hard constraint re-verified. The
+    // ~/Vault/Notes/image-requests.md file and the limn-editor-enhance skill are NOT mounted in this
+    // sandbox (only the tracker repos, outputs and uploads are), so the downstream Antigravity image
+    // queue cannot be appended. The staleness backstop is well past due, but the coverImageUrl pointer
+    // (2026-08-15-red-debut.jpg) was never generated, so it already resolves to the photoId headshot
+    // fallback, and repointing to an Aug-21 slug would only spawn another dangling request no one can
+    // fulfill this cycle. Cover text and photoId were rotated onto today's lead (defense's Day 2 answer
+    // in the Colts joint practices + Penix return-to-play update), and photoId moved tua -> terrell to
+    // match the defense-led story, keeping the fallback both fresh and safe. The clean queue moment
+    // remains the first run that can actually reach the Vault (an Antigravity-side run, or a Cowork run
+    // with the Vault mounted); a padded-practice or game-action scene from the Colts week is the target.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-08-15-red-debut.jpg",
   },
   sources: [
@@ -2450,6 +2461,34 @@ export const NEWS_DIGEST = {
     "Sportsnaut", "The Big Lead", "The Athletic", "Mile High Report",
   ],
   topics: [
+    {
+      title: "THE DEFENSE ANSWERS ON DAY 2: ATLANTA'S FRONT OWNS THE FINAL JOINT PRACTICE, CARLOS ALLEN JR. LIVES IN THE BACKFIELD AND THE SECONDARY WINS NEARLY EVERY REP: a day after the Colts got the better of the opener, the Falcons' defense was relentless in Thursday's second and last session in Westfield, an emphatic response from a unit that had been gashed on the ground",
+      detail: "Atlantafalcons.com (Aug 20, 7:30 p.m.): if the defense that showed up for Day 2 of joint practices had played in Berlin last season, Will McFadden wrote, things might have gone differently. Atlanta's front was extremely difficult for a well-regarded Colts offensive line to handle. Undrafted rookie Carlos Allen Jr., a Houston product rotating with the second and third units, was the breakout, stuffing runs and bursting into the backfield for multiple tackles for loss, one of which drew a scream and a celebration from defensive line coach Nate Ollie. Maason Smith opened the first eleven-on-eleven period with a run stuff, and Brandon Dorlus and Chris Williams clogged lanes throughout. The secondary matched it: A.J. Terrell, Darnay Holmes and A.J. Woods won a strong one-on-one period, and Mike Ford picked off a pass while nearly everyone else logged a breakup. Rookie linebackers Harold Perkins Jr. and Kendal Daniels each swatted away a seven-on-seven throw. Roll call: Jawaan Taylor and Divine Deablo were back and active, Jessie Bates III did some on-field work, and neither Avieon Terrell nor Billy Bowman Jr. took part in the joint week.",
+      category: "general",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-defensive-line-shines-in-second-joint-practice-with-colts",
+      sourceLabel: "atlantafalcons.com",
+    },
+    {
+      title: "'THAT TIME IS COMING REAL SOON': PENIX SAYS HIS RETURN-TO-PLAY CALL IS IMMINENT AS THE FOUR-WEEK WINDOW CLOSES: after facing another team's defense for the first time since ACL surgery, Michael Penix Jr. said in Indianapolis that a check-in with his doctor is scheduled and the clearance to take hits, the last box left, is nearing",
+      detail: "Atlantafalcons.com (Aug 20, 6:27 p.m.): Penix, held to individual, one-on-one and seven-on-seven work all camp, said his doctor had asked for four more weeks at that clearance level back on July 29, and that window is nearing its end. He now has a call scheduled to check in. 'I know that call will be coming up soon,' he said. 'Talk to my doctor, see where he thinks I am, see how he feels about everything and then we will go from there.' He called the two Colts practices 'very important' for getting acclimated and seeing 'different looks' and 'live competition,' and said he feels ready to handle a dirty pocket, with only the risk of taking a hit if he cannot escape holding him back. 'I don't think my doctor is ready for me to take those hits right now, but that time is coming real soon.' He added, 'Whatever (the doctor) says, that's what it's going to be. I am going to trust him, and trust God, and I am just going to continue taking steps in the right direction.'",
+      category: "injuries",
+      sourceUrl: "https://www.atlantafalcons.com/news/that-time-is-coming-real-soon-michael-penix-jr-provides-update-on-return-to-play-timeline",
+      sourceLabel: "atlantafalcons.com",
+    },
+    {
+      title: "PRESEASON WEEK 2, TONIGHT'S EVE: STARTERS SIT, RUSH AND STRAND SPLIT THE HALVES AT INDIANAPOLIS: with the joint practices banking the front-liners' reps, Kevin Stefanski confirmed Atlanta's starters will not play Saturday at Lucas Oil Stadium, handing the exhibition to the twos and threes with the backup quarterbacks each getting a half",
+      detail: "Atlantafalcons.com and VSiN (Aug 20 into Aug 21): the Falcons close their Indianapolis trip with the 1 p.m. ET preseason game Saturday, Aug 22, and it belongs to the reserves. 'By and large, our starters will not play in this game,' Stefanski said. 'This will be the twos and threes, if you will. It's how Shane structured their reps in these practices to make sure that the ones are getting the majority of the reps. So then this is really their game.' Cooper Rush and Jack Strand, the undrafted rookie who muscled in Atlanta's only touchdown against Denver, are set to split the halves at quarterback, with Michael Penix Jr. not playing as he rehabs his ACL. On the Colts' side, Riley Leonard is slated to start with Anthony Richardson behind him, while Daniel Jones, who carved up Atlanta on Day 1 of the joint practices, is not expected to play in the preseason.",
+      category: "games",
+      sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-depth-chart-for-second-preseason-game-vs-indianapolis-colts",
+      sourceLabel: "atlantafalcons.com / VSiN",
+    },
+    {
+      title: "BOTTOM-OF-ROSTER CHURN ROLLS ON: TREY SERMON TO IR NINE DAYS AFTER SIGNING, WHILE ATLANTA ADDS WR BEAUX COLLINS AND CUTS KRISTIAN WILKERSON: the Falcons lost a depth back and reshuffled the receiver room in the days around the Colts trip, with Sermon's short Atlanta stay ending on injured reserve",
+      detail: "Atlantafalcons.com, SI Falcons and NBC Sports (Aug 19 to 20): running back Trey Sermon, a Marietta native and former 49ers third-round pick who signed on Aug 10 for depth behind Bijan Robinson and Brian Robinson Jr., was placed on injured reserve just nine days later, the team not disclosing the injury. In a separate move, Atlanta signed wide receiver Beaux Collins, who had joined the Giants as an undrafted free agent in 2025 and appeared in nine games before a season-ending injury, and released receiver Kristian Wilkerson. The transactions are the usual late-August churn at the back of a 90-man roster ahead of the Aug 30 cut to 53, and they thin the running-back depth chart a touch just as the reserves are set to carry Saturday's game.",
+      category: "free-agency",
+      sourceUrl: "https://www.atlantafalcons.com/news/rb-trey-sermon-injured-reserve",
+      sourceLabel: "atlantafalcons.com / SI Falcons / NBC Sports",
+    },
     {
       title: "DAY 1 GOES TO INDIANAPOLIS: COLTS GET THE BETTER OF THE FIRST JOINT PRACTICE, DANIEL JONES CARVES UP ATLANTA'S FIRST TEAM AND LONDON'S LEAPING TD IS THE LONE REAL SPARK: the Falcons and Colts open two days of shared work in Westfield, and Wednesday belonged to the hosts, though Atlanta's run defense showed real improvement and the second session is this afternoon before Saturday's game at Lucas Oil Stadium",
       detail: "SI Falcons, The Falcoholic and atlantafalcons.com (Aug 19 into Aug 20): the most valuable week of the exhibition slate opened with the Colts getting the better of the Falcons at the Grand Park Sports Campus. Indianapolis quarterback Daniel Jones was lights out against Atlanta's first-team defense, and the Falcons' offense produced only two true highlights: Drake London rose over Colts cornerback Justin Walley for a leaping touchdown, and rookie Zachariah Branch, listed at 5-foot-10 and 180 pounds, lowered his shoulder and won a physical rep in the final period. Tua Tagovailoa completed 8 of 13 in eleven-on-eleven and a perfect 3 of 3 in seven-on-seven, but leaned heavily on the short game, swing passes to Bijan Robinson, with only one throw traveling more than ten yards. Michael Penix Jr., capped at seven-on-seven as he rehabs his surgically repaired ACL, faced another team's defense for the first time since surgery and went 6 of 9, his best ball a curl to Juice Wells, though he missed high to London and overthrew Chris Blair. Jawaan Taylor took every right-tackle snap and said he felt good, revealing he had the knee cleaned up in March. The clearest positive was the run defense, sharply better after Atlanta gave up 162 rushing yards to Denver on Friday. Jessie Bates III and Avieon Terrell were held out of team work. The teams practice again Thursday afternoon before the Aug 22 game, where the rested starters sit and Cooper Rush and Jack Strand run the offense.",
@@ -2500,48 +2539,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "ESPN / atlantafalcons.com",
     },
     {
-      title: "ATLANTA RESTOCKS THE EDGE: CAMERON SAMPLE SIGNED, JAWAAN TAYLOR ACTIVATED OFF PUP, MALONE LOST FOR THE YEAR: less than a week after Jalon Walker's season-ending ACL tear, the Falcons signed veteran defensive end Cameron Sample on Monday, Aug 10, activated right tackle Jawaan Taylor off the PUP list to open the RT battle, and in a corresponding move placed edge DeAngelo Malone on Reserve/PUP, out for the 2026 season",
-      detail: "Atlantafalcons.com, Atlanta News First, Pro Football Rumors and SI Falcons (Aug 10): the Falcons moved to shore up a suddenly thin edge room. Sample, 26, is a Snellville native and a 2021 fourth-round pick of the Bengals who spent three seasons in Cincinnati's rotation, signed a one-year deal with San Francisco in April, and was released last week. He was in full pads for Monday's practice hours after signing. The same day, Atlanta activated Taylor off PUP and cleared him to practice, putting the presumptive right tackle back into a three-way competition with Wanya Morris and Michael Jerrell. The corresponding move stung: DeAngelo Malone, a rotational rusher, was placed on Reserve/PUP and will miss the season with injury. The sequence reads as a front office still hunting bodies for an edge group down Walker for the year and bracing for a possible James Pearce Jr. suspension.",
-      category: "free-agency",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-right-tackle-jawaan-taylor-cleared-injury-return-practice",
-      sourceLabel: "atlantafalcons.com / Atlanta News First / Pro Football Rumors / SI Falcons",
-    },
-    {
-      title: "CAMP CLOSES UNDER THE LIGHTS: A FULL-GO TUA TURNS IN HIS BEST DAY BEFORE LIGHTNING CUTS IT SHORT: in the last public practice of the summer at Lanier High School, Tua Tagovailoa ran with the first team at every interval and went 6-of-8 in eleven-on-eleven with a 30-yard touch throw to Jahan Dotson and a play-action lob to Drake London, Michael Penix Jr. answered in seven-on-seven with a 50-yard touchdown to rookie Zachariah Branch, and a lightning strike ended the packed session early",
-      detail: "AJC, ClutchPoints, The Falcoholic and the team site (Saturday Night Lights, Aug 8, into the Day 9 reports): Atlanta closed its public camp with a night session at Longhorn Stadium at Lanier High in Sugar Hill, and it belonged to the starter. A now full-go Tua Tagovailoa, past the tight back that cost him the opening days, turned in his best practice of camp, going 6-of-8 in eleven-on-eleven that included his two sharpest throws of the summer, a 30-yard touch ball to Jahan Dotson and a play-action rollout lob to Drake London. The night ended early when lightning was spotted around 8:10 p.m., halting a packed stadium with more than thirty minutes still on the field. Penix, held to individual and seven-on-seven work as he rehabs his ACL, was again efficient and closed with a 50-yard touchdown to Branch, the third-round returner who has graded as one of the best receivers on the grass all camp. Rookie tackle Ethan Onianwa kept getting first- and second-team run and stonewalled James Pearce Jr. off the edge, a bright spot at an unsettled right tackle. It closes a camp that stacked live tackling, record contracts and a full quarterback room's worth of intrigue.",
-      category: "general",
-      sourceUrl: "https://www.ajc.com/sports/2026/08/tagovailoa-rookie-onianwa-star-at-falcons-training-camp-practice-at-lanier-high/",
-      sourceLabel: "AJC / ClutchPoints / The Falcoholic / atlantafalcons.com",
-    },
-    {
-      title: "BIJAN'S FIRST FULL 11-ON-11 REPS END IN A WHEEL-ROUTE TOUCHDOWN: five days after the record extension that made him the highest-paid running back in NFL history, Robinson took full-team snaps for the first time Friday and immediately delivered the highlight of Day 8, running a wheel down the left sideline the defense could not track for what would have been a touchdown from a now full-go Tua Tagovailoa",
-      detail: "The team site (Day 8 camp report, Aug 7): on a foggy Friday morning, the eighth session of camp, Robinson logged action in full-team periods for the first time after a brief acclimation earlier in the week, the most he has been involved in a practice since ending his hold-in with a three-year deal worth up to $75 million. Fittingly, he produced the play of the day. On his first 11-on-11 series, Robinson ran a wheel route down the left sideline that the defense simply could not keep up with, a couple of steps on the nearest defender, and Tua Tagovailoa dropped the ball into his arms for what would have been a touchdown in live action. Tua looked more or less full go after a week of managing a tight back, later hitting Olamide Zaccheaus on a delayed dig for a red-zone touchdown and winning Jahan Dotson free against Cobee Bryant. The staff got creative in short yardage, at one point lining both Bijan and Brian Robinson Jr. in the backfield together. It puts the face of the offense at full speed heading into the free Under the Lights session at Lanier High School on Saturday, Aug 8, at 7 p.m.",
-      category: "general",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-training-camp-report-bijan-robinson-harold-perkins-jalon-walker",
-      sourceLabel: "atlantafalcons.com",
-    },
-    {
-      title: "PERKINS GETS MORE ON HIS PLATE AS THE DEFENSE REDRAWS AROUND WALKER: with Jalon Walker out for the year, rookie linebacker Harold Perkins Jr. took Friday's snaps with the starting unit, lined up off the left edge and ran an A-gap blitz, versatility Kevin Stefanski said before practice the staff is leaning into as the youngster keeps earning reps",
-      detail: "The team site (Day 8 camp report, Aug 7): Stefanski spoke before Friday's practice about the rookie's development, saying Perkins is earning more reps on the field. It shows. Perkins closed his first week by earning his first snaps alongside starting inside linebacker Divine Deablo, and in the wake of Walker's injury he has begun moving around the formation more. On Friday he took snaps with the starting unit, lined up off the left edge at times, and was sent on an A-gap blitz as the mug defender during an 11-on-11 period with the offense backed up against its own end zone. The staff seems comfortable putting more on his plate, and the flexibility matters now that the edge room is thin behind Samson Ebukam and Cameron Thomas with a possible James Pearce Jr. suspension still hanging over it.",
-      category: "general",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-training-camp-report-bijan-robinson-harold-perkins-jalon-walker",
-      sourceLabel: "atlantafalcons.com",
-    },
-    {
-      title: "THE DEFENSE TURNS THE PAGE: Atlanta placed Jalon Walker on injured reserve, ending his 2026 season, and moved forward with an edge rotation of Samson Ebukam, Azeez Ojulari, Cameron Thomas and the never-played Bralen Trice, a group ESPN's Jeremy Fowler notes the Falcons were already trying to add to before the injury",
-      detail: "The team site, ESPN, CBS Sports and the AJC (Aug 5 to 6): a day after confirming the torn ACL, the Falcons made it official and placed Walker on injured reserve, adding defensive back Keidron Smith to the roster in a corresponding move. The AJC's question, where does Atlanta turn now, is the whole story of the fall on defense. The room leans on Ebukam and Thomas as the next men up, with Ojulari flashing in the rotation and Trice, who has yet to play an NFL snap after two lost seasons to knee injuries, suddenly counted on. The math is thin: the group has combined for 63.5 career sacks across 26 player-seasons, more than half of them Ebukam's, and James Pearce Jr.'s possible suspension still hangs over it. Fowler reported Atlanta was hunting extra pass rushers even before Walker went down, so a veteran edge add would surprise no one, and the staff has cross-trained bodies at multiple spots to buy flexibility while the picture settles.",
-      category: "injuries",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-atlanta-defense-jalon-walker-michael-penix-jr",
-      sourceLabel: "atlantafalcons.com / ESPN / CBS Sports / AJC",
-    },
-    {
-      title: "IT IS CONFIRMED: JALON WALKER TORE HIS ACL AND WILL MISS THE 2026 SEASON, AND ATLANTA'S DEFENSE LOSES ITS YOUNG CENTERPIECE BEFORE THE PADS COME OFF: tests came back Wednesday and the Falcons announced their second-year edge rusher is out for the year after going down without contact in Tuesday's two-minute drill, an injury that guts an edge room already bracing for a possible James Pearce Jr. suspension",
-      detail: "ESPN, NFL.com, NBC Sports and the team site (Aug 5): the MRI confirmed the worst. A day after Jalon Walker was carted off without contact late in a Day 6 two-minute drill, tests confirmed a torn ACL and the Falcons announced he will miss the entire 2026 season. Outside linebackers coach John Timu called it a huge loss Wednesday, and Michael Penix Jr. said of his teammate, 'I know that he's a strong individual, he's going to get through it.' The No. 15 overall pick of the 2025 draft out of Georgia, Walker started as a rookie and posted 62 tackles, 10 tackles for loss and 5.5 sacks, and Jeff Ulbrich had spent the offseason talking about unlocking his versatility in Year 2. The timing is brutal for an edge room already planning to open the season without Pearce, who faces a possible suspension, which pushes Samson Ebukam, Azeez Ojulari, Cameron Thomas and the returning Bralen Trice into far larger roles. The AJC framed the fallout bluntly, asking where Atlanta turns now that its most dynamic young rusher is gone for the year.",
-      category: "injuries",
-      sourceUrl: "https://www.atlantafalcons.com/news/jalon-walker-to-miss-2026-season",
-      sourceLabel: "atlantafalcons.com / ESPN / NFL.com / NBC Sports",
-    },
-    {
       title: "BIJAN GETS PAID, AND HE IS THE HIGHEST-PAID RUNNING BACK IN NFL HISTORY: the Falcons ended a five-day hold-in Tuesday morning by agreeing with Robinson on a three-year extension worth up to $75 million, with $51 million guaranteed and $37 million at signing, the most money ever guaranteed to a running back, resetting the market and locking up the fourth core Cunningham-era piece after London, Pitts and Bergeron",
       detail: "ESPN (Adam Schefter), NFL.com, The Washington Post and SI Falcons (Aug 4): Robinson and the Falcons agreed to a three-year extension worth up to $75 million, roughly $22.25M in new base average with a max of about $25M per year, that makes him the highest-paid running back in NFL history, surpassing Saquon Barkley's $20.6M. The deal carries $51 million guaranteed and $37 million at signing, the most ever guaranteed to a back on a non-rookie deal, and runs through 2030 after his 2027 fifth-year option. Negotiated by Nicole Lynn of Klutch Sports, it ended a hold-in that had reached five days. Robinson led the NFL with 2,298 scrimmage yards in 2025, a first-team All-Pro season and the 12th-highest single-season total in league history, and across three years he has 3,910 rushing yards and 25 rushing touchdowns plus 1,738 receiving yards and nine scores on an NFL-leading 1,003 touches. He is the third offensive weapon Atlanta has extended this summer after Drake London (4yr/$141M) and Kyle Pitts Sr. (3yr/$54M), with Matthew Bergeron (4yr/$96M) added Aug 1, and the four now account for roughly a quarter of the projected salary cap.",
       category: "contracts",
@@ -2558,9 +2555,30 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-08-20T08:35:00Z",
-  windowLabel: "Colts Week · Joint practices at Indianapolis, Day 1 complete Aug 19, Day 2 this afternoon Aug 20 (Grand Park, Westfield), preseason game at Lucas Oil Stadium Aug 22, 1 p.m. ET",
+  generatedAt: "2026-08-21T12:30:00Z",
+  windowLabel: "Colts Week wrap · Joint practices complete at Indianapolis (Grand Park, Westfield, Aug 19 and 20), preseason game at Lucas Oil Stadium Sat Aug 22, 1 p.m. ET",
   sessions: [
+    {
+      id: "penix-2026-08-20",
+      speaker: "Michael Penix Jr.",
+      role: "Quarterback",
+      date: "2026-08-20",
+      venue: "Grand Park Sports Campus · Westfield, Ind.",
+      session: "Colts Joint Practice Day 2 · Media Availability",
+      sourceUrl: "https://www.atlantafalcons.com/news/that-time-is-coming-real-soon-michael-penix-jr-provides-update-on-return-to-play-timeline",
+      transcriptUrl: "https://www.atlantafalcons.com/news/that-time-is-coming-real-soon-michael-penix-jr-provides-update-on-return-to-play-timeline",
+      verified: true,
+      summary: "After facing another team's defense for the first time since his ACL surgery, Penix delivered the most encouraging health update of the summer. He said his doctor asked for four more weeks at his current clearance level back on July 29, that the window is nearly up, and that a check-in call is scheduled. The last box left is taking a hit, and he framed the wait as trust in his doctor and patience with the process.",
+      pullQuote: "I don't think my doctor is ready for me to take those hits right now, but that time is coming real soon.",
+      bullets: [
+        "On the timeline: 'I know that call will be coming up soon. Talk to my doctor, see where he thinks I am, see how he feels about everything and then we will go from there'",
+        "On what is left: said he feels equipped for a dirty pocket and can escape a rush, and the only remaining concern is contact when he cannot get away",
+        "On the joint practices: called the two Colts sessions 'very important' for getting acclimated, and valued facing 'different looks' and 'live competition' after seeing the same defense all camp",
+        "On the mindset: 'Whatever (the doctor) says, that's what it's going to be. I am going to trust him, and trust God, and I am just going to continue taking steps in the right direction'",
+        "Context: Penix has been capped at individual, one-on-one and seven-on-seven work all camp and has not yet taken an eleven-on-eleven rep since the injury",
+      ],
+      topics: ["penix-acl", "qb-competition", "joint-practices", "preseason"],
+    },
     {
       id: "stefanski-2026-08-17",
       speaker: "Kevin Stefanski",
@@ -2664,27 +2682,6 @@ export const INTERVIEWS = {
         "Robinson is the fourth core piece extended this offseason after London, Pitts and Bergeron, a run that dropped Atlanta's pending-free-agent count from 44 to 42 of 90 players",
       ],
       topics: ["bijan-extension", "contracts", "training-camp"],
-    },
-    {
-      id: "tagovailoa-2026-08-03",
-      speaker: "Tua Tagovailoa",
-      role: "Quarterback",
-      date: "2026-08-03",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "First Padded Practice · Media Availability",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-training-camp-quotes-zachariah-branch-tua-tagovailoa-jack-strand",
-      transcriptUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-intensity-goes-up-as-pads-go-on",
-      verified: true,
-      summary: "On the day the pads came on, Tua Tagovailoa returned to live 11-on-11 work for the first time in camp and spoke afterward with the ease of a player glad to be back in the mix. He waved off the earlier back tightness as a precaution, leaned into the details of Kevin Stefanski's install-heavy routine, and cast his own value as much in the locker room as on the field.",
-      pullQuote: "It feels good to be out there with the guys, be able to throw, continue to hear the plays, get in the huddle with the guys. All of that.",
-      bullets: [
-        "On his back: called the earlier absence 'just a precaution thing early on in camp,' adding 'I feel great right now'",
-        "On Stefanski's method: praised installing the night before and skipping a morning walk-through, 'you can see who's studying, who's been in their playbook, who understands where to go, and where they need to be at'",
-        "On the mindset amid the quarterback questions: 'all you can control is what you can control,' and 'if the cards fall where they fall, then that's what you're dealt with'",
-        "On what he brings beyond the position: 'I think I bring some good vibes for the guys in the locker room,' and checking on teammates 'if guys are not smiling'",
-        "Took the main reps of the first team period in a live 11-on-11 look, his first game-speed team work of camp after sitting out Day 1",
-      ],
-      topics: ["qb-competition", "tua", "training-camp", "pads-on"],
     },
   ],
 };
