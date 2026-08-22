@@ -2102,18 +2102,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-21T12:30:00Z",
+  generatedAt: "2026-08-22T09:00:00Z",
   cover: {
     kicker: "THE DEFENSE ANSWERS, AND THE JOINT WEEK ENDS EVEN: A Day After the Colts Got the Better of Wednesday's Opener, Atlanta's Defensive Front Was Relentless in Thursday's Second and Final Joint Practice in Westfield, an Undrafted Rookie in Carlos Allen Jr. Living in the Backfield and the Secondary Winning Nearly Every Rep in One-on-Ones, Mike Ford's Interception the Exclamation Point, While Michael Penix Jr. Said His Return-to-Play Call With His Doctor Is Coming and That Time Is 'Real Soon'; Now the Reserves Take Over Saturday at Lucas Oil Stadium, Where the Starters Sit and Cooper Rush and Jack Strand Split the Halves",
-    headLine1: "The defense answered. The week ends even. Now the twos and threes get their game.",
-    headEm: "A day after Indianapolis got the better of the opener, Atlanta's defensive front was relentless in Thursday's second and final joint practice, undrafted rookie Carlos Allen Jr. living in the backfield and the secondary winning nearly every one-on-one. The starters, having taken the bulk of the joint-practice reps, sit Saturday at Lucas Oil Stadium, leaving the game to the reserves.",
+    headLine1: "The defense answered. The week ends even. Today the twos and threes get their game.",
+    headEm: "A day after Indianapolis got the better of the opener, Atlanta's defensive front was relentless in Thursday's second and final joint practice, undrafted rookie Carlos Allen Jr. living in the backfield and the secondary winning nearly every one-on-one. The starters, having taken the bulk of the joint-practice reps, sit today at Lucas Oil Stadium, leaving the exhibition to the reserves.",
     headLine3: "Michael Penix Jr., still held out of eleven-on-eleven, called the two joint practices 'very important' for facing another defense and said his check-in with his doctor is imminent: 'I don't think my doctor is ready for me to take those hits right now, but that time is coming real soon.' Cooper Rush and Jack Strand will each run a half in the exhibition.",
     deck:
-      "The most valuable week of the exhibition slate ended in a split. A day after the Colts got the better of the first joint practice, the Atlanta Falcons' defense showed up furious on Thursday for the second and final session at the Grand Park Sports Campus in Westfield, and the front was the story. Undrafted rookie Carlos Allen Jr., a Houston product working with the second and third units, lived in the backfield, stacking tackles for loss and drawing a roar from defensive line coach Nate Ollie, while Maason Smith, Brandon Dorlus and Chris Williams clogged run lanes against a Colts offensive line with a strong reputation. The secondary was every bit as good, A.J. Terrell, Darnay Holmes and A.J. Woods stringing together wins in one-on-ones and Mike Ford collecting an interception with nearly everyone else adding a pass breakup. Rookie linebackers Harold Perkins Jr. and Kendal Daniels each punched away a pass in seven-on-seven. It was the answer a unit gashed for 162 rushing yards by Denver and beaten on Day 1 needed. On the health front, Jawaan Taylor and Divine Deablo were back and active, Jessie Bates III did some on-field work, and Avieon Terrell and Billy Bowman Jr. sat out the joint week. Michael Penix Jr., capped at seven-on-seven as he rehabs his surgically repaired ACL, called the two Colts sessions 'very important' and said his return-to-play conversation with his doctor is close, adding, 'that time is coming real soon.' Kevin Stefanski confirmed the starters, who soaked up the joint-practice reps, will sit Saturday at Lucas Oil Stadium, leaving the exhibition to the twos and threes with Cooper Rush and Jack Strand splitting the halves. Za'Darius Smith, signed Tuesday, gives the thinned edge room a three-time Pro Bowl boost as the group presses on without Jalon Walker and, come Aug 30, James Pearce Jr.",
+      "The most valuable week of the exhibition slate ended in a split. A day after the Colts got the better of the first joint practice, the Atlanta Falcons' defense showed up furious on Thursday for the second and final session at the Grand Park Sports Campus in Westfield, and the front was the story. Undrafted rookie Carlos Allen Jr., a Houston product working with the second and third units, lived in the backfield, stacking tackles for loss and drawing a roar from defensive line coach Nate Ollie, while Maason Smith, Brandon Dorlus and Chris Williams clogged run lanes against a Colts offensive line with a strong reputation. The secondary was every bit as good, A.J. Terrell, Darnay Holmes and A.J. Woods stringing together wins in one-on-ones and Mike Ford collecting an interception with nearly everyone else adding a pass breakup. Rookie linebackers Harold Perkins Jr. and Kendal Daniels each punched away a pass in seven-on-seven. It was the answer a unit gashed for 162 rushing yards by Denver and beaten on Day 1 needed. On the health front, Jawaan Taylor and Divine Deablo were back and active, Jessie Bates III did some on-field work, and Avieon Terrell and Billy Bowman Jr. sat out the joint week. Michael Penix Jr., capped at seven-on-seven as he rehabs his surgically repaired ACL, called the two Colts sessions 'very important' and said his return-to-play conversation with his doctor is close, adding, 'that time is coming real soon.' Kevin Stefanski confirmed the starters, who soaked up the joint-practice reps, will sit today at Lucas Oil Stadium, leaving the exhibition to the twos and threes with Cooper Rush and Jack Strand splitting the halves. The front-seven depth kept growing on Friday, too: Atlanta signed defensive tackle Eric Johnson, a former Colt reuniting with line coach Nate Ollie, a day after adding three-time Pro Bowl edge Za'Darius Smith, who gives the thinned edge room a boost as the group presses on without Jalon Walker and, come Aug 30, James Pearce Jr.",
     byline: "The Tracker Desk",
     filedFrom: "Westfield, Ind.",
     photoId: "terrell",
-    stampLabel: "PRESEASON WK 2 AT INDIANAPOLIS · COLTS JOINT PRACTICES DONE, D-LINE OWNS DAY 2 AUG 20 · MIKE FORD PICK · PENIX: RETURN 'REAL SOON' · GAME SAT AUG 22, 1 PM ET",
+    stampLabel: "PRESEASON WK 2 AT INDIANAPOLIS · GAME DAY SAT AUG 22, 1 PM ET · STARTERS SIT, RUSH + STRAND SPLIT HALVES · D-LINE OWNED JOINT DAY 2 · PENIX: RETURN 'REAL SOON' · DT ERIC JOHNSON SIGNED",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2448,6 +2448,17 @@ export const NEWS_DIGEST = {
     // match the defense-led story, keeping the fallback both fresh and safe. The clean queue moment
     // remains the first run that can actually reach the Vault (an Antigravity-side run, or a Cowork run
     // with the Vault mounted); a padded-practice or game-action scene from the Colts week is the target.
+    // STATUS (2026-08-22 scheduled run): cover SKIPPED, identical hard constraint re-verified. The
+    // ~/Vault/Notes/image-requests.md file and the limn-editor-enhance skill are NOT mounted in this
+    // sandbox (only the tracker repos, outputs and uploads are), so the downstream Antigravity image
+    // queue cannot be appended. The coverImageUrl pointer (2026-08-15-red-debut.jpg) was never
+    // generated (last plate actually on disk is 2026-07-17-dotson-wr2.jpg), so it already resolves to
+    // the photoId headshot fallback (terrell), which stays aligned with today's defense-led / game-day
+    // lead. Repointing to an Aug-22 slug would only spawn another dangling request no one can fulfill
+    // this cycle, so the pointer is left as is. Recency refresh only this cycle: cover reframed to game
+    // day (starters sit, Rush + Strand split halves today at Lucas Oil), DT Eric Johnson signing folded
+    // in, timestamps bumped. The clean queue moment remains the first run that can reach the Vault; a
+    // game-action or padded-practice scene from the Colts week is the target.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-08-15-red-debut.jpg",
   },
   sources: [
@@ -2462,6 +2473,20 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
+      title: "GAME DAY AT INDIANAPOLIS: STARTERS SIT, RUSH AND STRAND SPLIT THE HALVES AS THE RESERVES CARRY PRESEASON WEEK 2: with two joint practices banking the front-liners' reps, the Falcons hand today's 1 p.m. ET exhibition at Lucas Oil Stadium to the twos and threes, the backup quarterbacks each getting a half and Michael Penix Jr. sitting as he rehabs his ACL",
+      detail: "Atlantafalcons.com and VSiN (Aug 20 to 21, game Saturday Aug 22): Atlanta closes its Indianapolis trip with a 1 p.m. ET kickoff, and it belongs to the backups. 'By and large, our starters will not play in this game,' Kevin Stefanski said. 'This will be the twos and threes, if you will. It's how Shane structured their reps in these practices to make sure that the ones are getting the majority of the reps. So then this is really their game.' Cooper Rush and Jack Strand, the undrafted rookie who muscled in Atlanta's only touchdown against Denver, split the halves at quarterback, with Penix held out as he rehabs his ACL. On the Colts' side, Riley Leonard is slated to start with Anthony Richardson behind him, while Daniel Jones, who carved up Atlanta on Day 1 of the joint practices, is not expected to play. The local broadcast is on FOX 5.",
+      category: "games",
+      sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-depth-chart-for-second-preseason-game-vs-indianapolis-colts",
+      sourceLabel: "atlantafalcons.com / VSiN",
+    },
+    {
+      title: "MORE FRONT DEPTH ON THE EVE OF THE GAME: FALCONS SIGN DT ERIC JOHNSON, REUNITING HIM WITH LINE COACH NATE OLLIE: a day before the Colts exhibition, Atlanta added the 6-foot-4, 320-pound interior lineman, who spent last season in Indianapolis and opened this summer with Minnesota before a release, deepening the defensive-tackle rotation as cutdown nears",
+      detail: "Atlantafalcons.com and NBC Sports (Aug 21): the Falcons signed defensive tackle Eric Johnson, 28, on Friday. Johnson spent much of the offseason program and training camp with the Vikings but was released earlier in the week, and he appeared in 12 games for the Colts last season. The move reunites him with Falcons defensive line coach Nate Ollie, who was Indianapolis' defensive line coach in 2022 when the Colts first brought Johnson in, and that familiarity was a draw. It is a depth add for the interior rotation behind Maason Smith and Brandon Dorlus as Atlanta shapes its front ahead of the Aug 30 cut to 53. Minimum-salary mechanics, negligible cap impact.",
+      category: "free-agency",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-sign-defensive-tackle-eric-johnson-nate-ollie",
+      sourceLabel: "atlantafalcons.com / NBC Sports",
+    },
+    {
       title: "THE DEFENSE ANSWERS ON DAY 2: ATLANTA'S FRONT OWNS THE FINAL JOINT PRACTICE, CARLOS ALLEN JR. LIVES IN THE BACKFIELD AND THE SECONDARY WINS NEARLY EVERY REP: a day after the Colts got the better of the opener, the Falcons' defense was relentless in Thursday's second and last session in Westfield, an emphatic response from a unit that had been gashed on the ground",
       detail: "Atlantafalcons.com (Aug 20, 7:30 p.m.): if the defense that showed up for Day 2 of joint practices had played in Berlin last season, Will McFadden wrote, things might have gone differently. Atlanta's front was extremely difficult for a well-regarded Colts offensive line to handle. Undrafted rookie Carlos Allen Jr., a Houston product rotating with the second and third units, was the breakout, stuffing runs and bursting into the backfield for multiple tackles for loss, one of which drew a scream and a celebration from defensive line coach Nate Ollie. Maason Smith opened the first eleven-on-eleven period with a run stuff, and Brandon Dorlus and Chris Williams clogged lanes throughout. The secondary matched it: A.J. Terrell, Darnay Holmes and A.J. Woods won a strong one-on-one period, and Mike Ford picked off a pass while nearly everyone else logged a breakup. Rookie linebackers Harold Perkins Jr. and Kendal Daniels each swatted away a seven-on-seven throw. Roll call: Jawaan Taylor and Divine Deablo were back and active, Jessie Bates III did some on-field work, and neither Avieon Terrell nor Billy Bowman Jr. took part in the joint week.",
       category: "general",
@@ -2474,13 +2499,6 @@ export const NEWS_DIGEST = {
       category: "injuries",
       sourceUrl: "https://www.atlantafalcons.com/news/that-time-is-coming-real-soon-michael-penix-jr-provides-update-on-return-to-play-timeline",
       sourceLabel: "atlantafalcons.com",
-    },
-    {
-      title: "PRESEASON WEEK 2, TONIGHT'S EVE: STARTERS SIT, RUSH AND STRAND SPLIT THE HALVES AT INDIANAPOLIS: with the joint practices banking the front-liners' reps, Kevin Stefanski confirmed Atlanta's starters will not play Saturday at Lucas Oil Stadium, handing the exhibition to the twos and threes with the backup quarterbacks each getting a half",
-      detail: "Atlantafalcons.com and VSiN (Aug 20 into Aug 21): the Falcons close their Indianapolis trip with the 1 p.m. ET preseason game Saturday, Aug 22, and it belongs to the reserves. 'By and large, our starters will not play in this game,' Stefanski said. 'This will be the twos and threes, if you will. It's how Shane structured their reps in these practices to make sure that the ones are getting the majority of the reps. So then this is really their game.' Cooper Rush and Jack Strand, the undrafted rookie who muscled in Atlanta's only touchdown against Denver, are set to split the halves at quarterback, with Michael Penix Jr. not playing as he rehabs his ACL. On the Colts' side, Riley Leonard is slated to start with Anthony Richardson behind him, while Daniel Jones, who carved up Atlanta on Day 1 of the joint practices, is not expected to play in the preseason.",
-      category: "games",
-      sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-depth-chart-for-second-preseason-game-vs-indianapolis-colts",
-      sourceLabel: "atlantafalcons.com / VSiN",
     },
     {
       title: "BOTTOM-OF-ROSTER CHURN ROLLS ON: TREY SERMON TO IR NINE DAYS AFTER SIGNING, WHILE ATLANTA ADDS WR BEAUX COLLINS AND CUTS KRISTIAN WILKERSON: the Falcons lost a depth back and reshuffled the receiver room in the days around the Colts trip, with Sermon's short Atlanta stay ending on injured reserve",
@@ -2555,8 +2573,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-08-21T12:30:00Z",
-  windowLabel: "Colts Week wrap · Joint practices complete at Indianapolis (Grand Park, Westfield, Aug 19 and 20), preseason game at Lucas Oil Stadium Sat Aug 22, 1 p.m. ET",
+  generatedAt: "2026-08-22T09:00:00Z",
+  windowLabel: "Preseason Week 2 · Game day at Indianapolis (Lucas Oil Stadium, Sat Aug 22, 1 p.m. ET), starters rested after the Aug 19 and 20 Colts joint practices",
   sessions: [
     {
       id: "penix-2026-08-20",
