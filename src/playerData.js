@@ -27,7 +27,7 @@ export const PLAYERS = [
     stats: { completions: 166, attempts: 276, passYds: 1982, passTDs: 9, ints: 3, qbRating: 88.5 },
     form: 0,
     status: "active",
-    injuryNote: "ACL rehab · torn Week 11 2025 · CLEARED for full-team work. After the Aug 22 win at Indianapolis, Stefanski said Penix is cleared for 11-on-11 and would practice in team periods Monday (Aug 24), his first full-speed reps since surgery, checking the last box in the rehab. He sat out both preseason games and was capped at individual, 1-on-1 and 7-on-7 work through the Colts joint practices before the clearance. Return sharpens the QB1 race with Tua ahead of the Aug 28 finale vs Miami",
+    injuryNote: "ACL rehab · torn Week 11 2025 · BACK in full-team work. Penix returned to 11-on-11 Monday (Aug 24), taking the first snap of practice in his first full-speed reps since surgery and checking the last box in the rehab. Stefanski said he and Tua will split first-team reps the rest of Miami week. He sat out both preseason games and was capped at individual, 1-on-1 and 7-on-7 work through the Colts joint practices before the Aug 22 clearance. Whether he plays the Aug 28 finale vs Miami is undecided; the QB1 race is now live",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
     contract: { years: 4, total: 22080000, guaranteed: 22080000, apy: 5520000, throughYear: 2027, cap2026: 5900000 },
     career: [
@@ -2102,18 +2102,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-24T10:30:00Z",
+  generatedAt: "2026-08-25T09:30:00Z",
   cover: {
-    kicker: "PENIX IS CLEARED, AND THE BACKUPS ROUT THE COLTS: Atlanta Snapped an Eight-Game Preseason Losing Streak Saturday at Lucas Oil Stadium With a 34-6 Win Its Starters Never Touched, Cooper Rush and Jack Strand Nearly Flawless in the First Half and the Undrafted Strand Ripping Off 212 Yards and Two Scores, But the Headline Waited for After: Kevin Stefanski Said Michael Penix Jr. Has Been Cleared for Eleven-on-Eleven Work and Will Practice in Team Periods Monday, the Last Box in His ACL Rehab Finally Checked as Game Week for the Aug 28 Finale Against Miami Opens",
-    headLine1: "Penix is cleared. The backups routed the Colts. The last box is checked.",
-    headEm: "Atlanta snapped an eight-game preseason losing streak with a 34-6 win its starters never played, Cooper Rush and Jack Strand nearly perfect through the first half, before the news that mattered most landed after the whistle: Michael Penix Jr. is cleared for eleven-on-eleven and practices in team periods Monday.",
-    headLine3: "Stefanski put it plainly at Lucas Oil Stadium: 'He is cleared for 11-on-11. He'll practice Monday in team periods.' It is the last hurdle in a rehab that had capped Penix at individual, one-on-one and seven-on-seven work since ACL surgery, and it reframes a quarterback race that Tua Tagovailoa has not seized. Next up is the Aug 28 finale against Miami, then the Aug 30 cut to 53.",
+    kicker: "PENIX IS BACK IN THE HUDDLE: Michael Penix Jr. Took the First Snap in Team Drills Monday at Flowery Branch, His First Eleven-on-Eleven Reps Since ACL Surgery, and He Split First-Team Work With Tua Tagovailoa in a Quarterback Race That Just Tightened, Kevin Stefanski Confirming the Starters Will Play the Aug 28 Preseason Finale Against Miami Before the Roster Trims to 53 on Aug 30",
+    headLine1: "Penix is back in the huddle. The quarterback race just tightened.",
+    headEm: "Michael Penix Jr. took the first snap in team drills Monday, his first eleven-on-eleven work since ACL surgery, and split first-team reps with Tua Tagovailoa. Stefanski says the starters will play Friday against Miami before the Aug 30 cut to 53.",
+    headLine3: "Cleared Saturday, on the grass in full-team periods Monday: Penix opened practice under center and, per Stefanski, will share the first unit with Tagovailoa the rest of game week. 'This is a big step for Mike,' the coach said. Jahan Dotson came away raving: 'He can truly make every single throw on the field.' Next is the Aug 28 finale against Miami, the last live look before the roster falls to 53.",
     deck:
-      "The result did not count, but the two developments around it will shape Atlanta's season. On the field Saturday, the Falcons handed the exhibition to their twos and threes and watched them dismantle the Colts 34-6, snapping an eight-game preseason losing streak with a game the front-liners never entered. Cooper Rush and Jack Strand were nearly flawless before halftime, combining to complete 14 of 15 throws for 137 yards and a touchdown, and the undrafted Strand, a Minnesota State-Moorhead product and engineering-physics graduate, kept going: he was 8 of 8 for 155 yards at one point on his way to 12 of 17 for 212 yards, a 13-yard scoring pass to fellow rookie Cash Jones and a 16-yard touchdown run early in the third quarter, staking a real claim to the third quarterback job. Atlanta outgained Indianapolis 461 yards to 164 and ran for 164. Then Kevin Stefanski delivered the headline that waited for the podium: Michael Penix Jr., held out of full-team work all summer as he rehabbed a surgically repaired ACL, has been cleared. 'He is cleared for 11-on-11,' Stefanski said. 'He'll practice Monday in team periods.' Penix, who started nine games last season before the season-ending knee injury, will take his first eleven-on-eleven reps since surgery in the days ahead, and his return sharpens a quarterback competition that Tua Tagovailoa did not seize across a rough joint-practice week. Game week for the Aug 28 finale against Miami opens Monday, with the Aug 30 cutdown to 53 close behind.",
+      "The last box is checked, and Michael Penix Jr. is throwing in team periods again. Two days after Kevin Stefanski confirmed his medical clearance, Penix took the first snap of Monday's practice at IBM Performance Field, his first eleven-on-eleven reps since the ACL surgery that ended his 2025 season nine starts in. Stefanski kept the framing simple, wanting only to see his quarterback make it cleanly through the session, and called 11-on-11 'the closest thing that we have to what we do in the fall.' The reps were live and imperfect, a deep ball to Jahan Dotson down the left sideline that did not connect, but the sight of Penix commanding a huddle again is what reshapes the summer. Stefanski said Penix and Tua Tagovailoa will split first-team work the rest of the week, sharpening a competition Tagovailoa did not seize across a rough joint-practice stretch and a quiet preseason opener. Dotson, for one, left impressed by the professionalism and the arm: 'He can truly make every single throw on the field.' The stakes now converge on the Aug 28 finale against Miami, where Stefanski has confirmed the starters will play, the last live evaluation before Atlanta cuts from 90 to 53 on Aug 30. Whether Penix takes game snaps Friday is still to be decided, but for the first time since November he is doing it all at practice.",
     byline: "The Tracker Desk",
-    filedFrom: "Indianapolis",
+    filedFrom: "Flowery Branch",
     photoId: "penix-jr",
-    stampLabel: "PRESEASON WK 2 · FALCONS 34, COLTS 6 · 8-GAME SKID SNAPPED · STRAND 212 YDS, 2 TD · PENIX CLEARED FOR 11-ON-11, PRACTICES MONDAY · FINALE FRI AUG 28 VS MIAMI · CUTS AUG 30",
+    stampLabel: "PRESEASON WK 3 · PENIX BACK IN 11-ON-11 MONDAY · SPLITS 1ST-TEAM REPS WITH TUA · STARTERS TO PLAY FINALE FRI AUG 28 VS MIAMI · CUTS TO 53 ON AUG 30",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2470,6 +2470,19 @@ export const NEWS_DIGEST = {
     // would only spawn another dangling request no one can fulfill this cycle, so the pointer is left
     // as is. The clean queue moment remains the first run that can reach the Vault; a Penix
     // first-11-on-11-back rep or a Strand/Cash Jones game-action scene is the target.
+    // STATUS (2026-08-25 scheduled run): cover SKIPPED, identical hard constraint re-verified. Checked
+    // both ~/Vault/Notes/image-requests.md and ~/.claude/skills/limn-editor-enhance/ from this sandbox
+    // and neither is mounted (only the tracker repos, outputs and uploads are), so the downstream
+    // Antigravity image queue cannot be appended. The coverImageUrl pointer (2026-08-15-red-debut.jpg)
+    // was never generated (last plate actually on disk is 2026-07-17-dotson-wr2.jpg), so it already
+    // resolves to the photoId headshot fallback, which stays penix-jr and matches today's lead: Penix
+    // back in 11-on-11 for the first time since ACL surgery (took the first snap Monday, split 1st-team
+    // reps with Tua). Penix is a star with a real headshot, so the fallback is both fresh and safe.
+    // Repointing to an Aug-25 slug would only spawn another dangling request no one can fulfill this
+    // cycle, so the pointer is left as is. Recency refresh only this cycle: cover, topics[0] and a new
+    // Stefanski Aug-24 presser were rotated onto Penix's return to full-team work; timestamps bumped.
+    // The clean queue moment remains the first run that can reach the Vault; a Penix first-11-on-11-back
+    // rep at Flowery Branch is the exact target.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-08-15-red-debut.jpg",
   },
   sources: [
@@ -2483,6 +2496,13 @@ export const NEWS_DIGEST = {
     "Sportsnaut", "The Big Lead", "The Athletic", "Mile High Report",
   ],
   topics: [
+    {
+      title: "PENIX IS BACK IN THE HUDDLE: MICHAEL PENIX JR. TAKES HIS FIRST 11-ON-11 REPS SINCE ACL SURGERY, OPENING MONDAY'S PRACTICE UNDER CENTER AND SPLITTING FIRST-TEAM WORK WITH TUA: two days after Kevin Stefanski confirmed the medical clearance, Penix returned to full-team drills at Flowery Branch, taking the first snap of the session and sharing the starting reps with Tua Tagovailoa in a quarterback race that just tightened for the season",
+      detail: "Atlantafalcons.com, Atlanta News First (AP) and NBC Sports (Aug 24): Michael Penix Jr. took the first snap of Monday's practice, his first eleven-on-eleven work since the ACL surgery that ended his 2025 season after nine starts. Stefanski said he wanted only to see his quarterback make it cleanly through the session and called 11-on-11 'the closest thing that we have to what we do in the fall,' adding, 'This is a big step for Mike, and he's excited for it.' The reps were live and imperfect, including a deep ball to Jahan Dotson down the left sideline that did not connect, but the coach confirmed Penix and Tua Tagovailoa will split first-team work the rest of game week, sharpening a competition Tagovailoa has not seized. Dotson came away impressed: 'He can truly make every single throw on the field.'",
+      category: "injuries",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-recapping-michael-penix-jr-return-full-team-work",
+      sourceLabel: "atlantafalcons.com / Atlanta News First (AP) / NBC Sports",
+    },
     {
       title: "FALCONS 34, COLTS 6: THE BACKUPS SNAP AN EIGHT-GAME PRESEASON LOSING STREAK AS RUSH AND STRAND PICK APART INDIANAPOLIS: with the starters resting after the joint week, Atlanta's reserves ran away with Saturday's exhibition at Lucas Oil Stadium, undrafted rookie Jack Strand throwing for 212 yards and running in a score while the Falcons outgained the Colts 461 to 164",
       detail: "CBS Sports, Yahoo Sports and atlantafalcons.com (Aug 22): Atlanta ended an eight-game preseason skid with a lopsided win its front-liners never touched. Cooper Rush and Jack Strand were nearly flawless before halftime, combining to complete 14 of 15 passes for 137 yards and a touchdown. Strand, an undrafted rookie out of Minnesota State-Moorhead and an engineering-physics graduate, was 8 of 8 for 155 yards at one point and finished 12 of 17 for 212 yards, a 13-yard scoring pass to fellow rookie Cash Jones and a 16-yard touchdown run early in the third, making a hard push for the third quarterback job behind the Tua Tagovailoa and Michael Penix Jr. race. Atlanta rushed for 164 yards and outgained Indianapolis 461 to 164. Neither Tua nor Penix played.",
@@ -2512,8 +2532,8 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com",
     },
     {
-      title: "GAME WEEK, AND THE LAST LOOK BEFORE CUTS: FALCONS HOST MIAMI IN THE PRESEASON FINALE FRIDAY AUG 28, THEN TRIM TO 53 ON AUG 30: the exhibition slate closes at Mercedes-Benz Stadium with roster spots still open on the edge, at linebacker and in the receiver room, the last audition before Atlanta cuts from 90 to 53 two days later",
-      detail: "Atlantafalcons.com and Yardbarker (Aug 22 to 23): Atlanta returns home to face the Dolphins in its preseason finale, the final live evaluation before the Aug 30 cutdown to 53. With Penix cleared for team work, the quarterback reps become the storyline to watch, but the roster math is the stakes: the edge room is thin without Jalon Walker (season-ending ACL) and, come Aug 30, the suspended James Pearce Jr., and reserve battles at linebacker, cornerback and receiver run down to the wire. Undrafted rookie Jack Strand's 212-yard afternoon in Indianapolis put the third quarterback job in play as well. The 53-man deadline is 6 p.m. ET Sunday, Aug 30.",
+      title: "STARTERS WILL PLAY THE FINALE: STEFANSKI CONFIRMS THE FRONT-LINERS SUIT UP FRIDAY AUG 28 VS MIAMI BEFORE THE TRIM TO 53 ON AUG 30: after resting nearly everyone in Indianapolis, Atlanta will give its regulars a live look at Mercedes-Benz Stadium, with roster spots still open on the edge, at linebacker and in the receiver room in the last audition before cutdown",
+      detail: "Atlantafalcons.com and Yardbarker (Aug 24): Kevin Stefanski said he expects to play his starters in the preseason finale against the Dolphins, the final live evaluation before the Aug 30 cutdown to 53. Tua Tagovailoa is expected to take snaps, and with Penix back in full-team work the quarterback reps become the storyline to watch, though whether Penix plays in the game is still to be decided. The roster math is the real stakes: the edge room is thin without Jalon Walker (season-ending ACL) and, come Aug 30, the suspended James Pearce Jr., and reserve battles at linebacker, cornerback and receiver run down to the wire. Undrafted rookie Jack Strand's 212-yard afternoon in Indianapolis put the third quarterback job in play as well. The 53-man deadline is 6 p.m. ET Sunday, Aug 30.",
       category: "games",
       sourceUrl: "https://www.yardbarker.com/nfl/articles/michael_penix_jrs_status_revealed_as_atlanta_falcons_prepare_for_dolphins_clash/s1_17664_44207086",
       sourceLabel: "atlantafalcons.com / Yardbarker",
@@ -2538,13 +2558,6 @@ export const NEWS_DIGEST = {
       category: "free-agency",
       sourceUrl: "https://www.espn.com/nfl/story/_/id/49648078/falcons-sign-veteran-zadarius-smith-bolster-pass-rush",
       sourceLabel: "ESPN / NFL.com / CBS Sports / Pro Football Rumors",
-    },
-    {
-      title: "A FRANCHISE VOICE BETS ON THE TURN: RODDY WHITE PREDICTS ATLANTA'S FIRST WINNING SEASON SINCE 2017: the four-time Pro Bowl receiver and Falcons Ring of Honor member forecast an 11-win 2026 and a return to the playoffs, a call that, if it holds, would end the franchise's longest postseason drought after last year's 8-9 finish",
-      detail: "Yahoo Sports and Falcons Wire (Aug 18): Atlanta legend Roddy White put his faith in the current roster, predicting the Falcons win 11 games and reach the playoffs for the first time since the 2017 season. The forecast lands as camp optimism runs high around the extended young core of Bijan Robinson, Drake London, Kyle Pitts Sr. and Matthew Bergeron, though it sits against real attrition on defense, Jalon Walker lost for the year and James Pearce Jr. suspended eight games. The Falcons went 8-9 in 2025 and have not posted a winning record or made the postseason since 2017, the longest such drought in team history. White's number is a bet on the offense carrying a defense still being redrawn.",
-      category: "general",
-      sourceUrl: "https://sports.yahoo.com/articles/falcons-news-atlanta-legend-predicts-020521403.html",
-      sourceLabel: "Yahoo Sports / Falcons Wire",
     },
     {
       title: "A SOBERING DEBUT: BRONCOS 27, FALCONS 7, AS STEFANSKI'S ATLANTA OFFENSE MANAGES JUST 192 YARDS: the Kevin Stefanski era opened Friday night with a lopsided preseason loss at Mercedes-Benz Stadium, Atlanta trailing 24-0 at the half, Tua Tagovailoa playing two quiet series and leaning almost entirely on Kyle Pitts, before Cooper Rush ran the night's only sustained drive and undrafted rookie Jack Strand muscled in the lone touchdown",
@@ -2591,9 +2604,29 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-08-24T10:30:00Z",
-  windowLabel: "Preseason Week 3 · Game week vs. Miami (finale Fri Aug 28 at Mercedes-Benz Stadium), after the Aug 22 win at Indianapolis and Penix's clearance for full-team work",
+  generatedAt: "2026-08-25T09:30:00Z",
+  windowLabel: "Preseason Week 3 · Game week vs. Miami (finale Fri Aug 28 at Mercedes-Benz Stadium), with Penix back in 11-on-11 as of Monday Aug 24 and the starters set to play before the Aug 30 cut to 53",
   sessions: [
+    {
+      id: "stefanski-2026-08-24",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-08-24",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Miami Week · Post-Practice Media Availability",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-recapping-michael-penix-jr-return-full-team-work",
+      transcriptUrl: "https://www.atlantafalcons.com/news/falcons-preseason-miami-dolphins-michael-penix-starters",
+      verified: true,
+      summary: "The day Penix returned to full-team work, Stefanski framed it as a milestone and nothing more, wanting only to see his quarterback come through a clean session. He said Penix and Tua Tagovailoa will split first-team reps the rest of game week, confirmed the starters will play Friday against Miami, and left open whether Penix takes game snaps in the finale before the Aug 30 cut to 53.",
+      pullQuote: "This is a big step for Mike, and he's excited for it.",
+      bullets: [
+        "On the return: Penix took the first snap of practice, his first eleven-on-eleven reps since ACL surgery, and Stefanski called 11-on-11 'the closest thing that we have to what we do in the fall'",
+        "On the quarterback reps: confirmed Penix and Tua Tagovailoa will split first-team work through the rest of Miami week",
+        "On the finale: said he expects to play the starters against the Dolphins on Aug 28, the last live look before cutdown, with Tagovailoa expected to take snaps",
+        "On Penix in the game: left it undecided whether Penix suits up Friday, keeping the focus on getting him through team practice first",
+      ],
+      topics: ["penix-acl", "qb-competition", "preseason", "dolphins-week"],
+    },
     {
       id: "stefanski-2026-08-22",
       speaker: "Kevin Stefanski",
@@ -2696,27 +2729,6 @@ export const INTERVIEWS = {
         "On play time elsewhere: 'We will vary play time by players,' with some getting more and some less based on what the staff thinks each needs before the season",
       ],
       topics: ["qb-competition", "tua", "penix-acl", "preseason"],
-    },
-    {
-      id: "robinson-2026-08-05",
-      speaker: "Bijan Robinson",
-      role: "Running Back",
-      date: "2026-08-05",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "Record Extension · Press Conference",
-      sourceUrl: "https://fieldlevelmedia.com/news/falcons-rb-bijan-robinson-a-dream-to-stay-with-one-team/",
-      transcriptUrl: "https://www.atlantafalcons.com/news/bijan-robinson-contract-extension",
-      verified: true,
-      summary: "A day after the deal became official, Robinson took the podium flanked by family and his Klutch Sports representatives and steered the conversation away from the numbers and toward legacy. He framed staying in one place as a childhood dream, leaned on his faith, and welcomed the running-back debate with Detroit's Jahmyr Gibbs as fuel rather than friction.",
-      pullQuote: "This is one of my dreams, to stay with one team. I think that is such a cool thing just because guys like Kobe Bryant and Michael Jordan, they all stayed on their one team, so I think that is a cool legacy thing for yourself.",
-      bullets: [
-        "On the milestone: kept it plain and grateful, 'God is so good,' and had posted 'God this is for you! Blessings. Love this team and this city!' when the deal broke Tuesday",
-        "On staying in Atlanta: called a one-team career 'one of my dreams,' invoking Kobe Bryant and Michael Jordan as the legacy model",
-        "On the Gibbs comparison: 'The Bijan-Gibbs debate is actually cool to see. It actually helps us both out because every single Sunday, or whatever day we play, we're always trying to compete against each other'",
-        "The three-year extension is worth up to $75 million with $51 million guaranteed and $37 million at signing, the most ever guaranteed to a running back, and runs through 2030",
-        "Robinson is the fourth core Cunningham-era piece extended this offseason after Drake London, Kyle Pitts Sr. and Matthew Bergeron",
-      ],
-      topics: ["bijan-extension", "contracts", "training-camp"],
     },
   ],
 };
