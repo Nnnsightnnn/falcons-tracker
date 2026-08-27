@@ -1,18 +1,22 @@
 // 2026 cap snapshot. Numbers are approximate live-field reports, refreshed daily.
+// Spending + working cap space refreshed 2026-08-27 off the live Over The Cap
+// team page (post Bijan/Bergeron extensions and the summer signings). OTC is the
+// authoritative current read this cycle; Spotrac's public offseason page was
+// serving a stale pre-free-agency snapshot, so the Spotrac line is OTC-anchored.
 
 export const CAP_STATE = {
   year: 2026,
-  capSpaceOTC: 30_400_000,      // Over The Cap (approx, post-Pitts extension Jun 23: OTC pegged ~$11.06M freed vs the $14.12M tag)
-  capSpaceSpotrac: 29_900_000,  // Spotrac top-51 (approx, post-Pitts extension; prior post-London/Morris base +~$11M from the tag-to-deal swap)
+  capSpaceOTC: 31_390_285,      // Over The Cap live team page (2026-08-27): Team Cap Space $31,390,285 on a top-51 of $229,571,779
+  capSpaceSpotrac: 30_900_000,  // Spotrac top-51 (approx, OTC-anchored ~$0.5M under OTC; Spotrac's live figure was not cleanly readable this run)
   leagueRank: 21,
-  totalLiabilities: 295_650_548,
-  totalAllocations: 268_323_031,
+  totalLiabilities: 315_196_226,  // OTC Total Cap Liabilities (2026-08-27): top-51 active + dead money + tail
+  totalAllocations: 271_311_642,  // Active allocations = total liabilities − dead money (OTC off $137.4M + def $127.0M + special)
   deadMoney: {
-    total: 39_000_000,
+    total: 43_884_584,            // OTC (2026-08-27): $43,884,584 in 2026 dead money
     breakdown: [
       { name: "Kirk Cousins", amount: 22_500_000, note: "Released w/ post-June-1 designation; $12.5M more dead in 2027" },
       { name: "Darnell Mooney", amount: 11_000_000, note: "Released Mar 9 (pre-June 1); $7.42M cap savings" },
-      { name: "Various pre-2026 cuts", amount: 5_500_000, note: "Aggregated" },
+      { name: "Various pre-2026 cuts", amount: 10_384_584, note: "Aggregated (Onyemata, Koo, Fox, misc. prorations)" },
     ],
   },
   topCapHits2026: [
