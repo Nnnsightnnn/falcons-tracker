@@ -2152,18 +2152,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-26T08:40:00Z",
+  generatedAt: "2026-08-27T12:30:00Z",
   cover: {
-    kicker: "PENIX IS ON THE STARTER LINE: Atlanta's Depth Chart for Friday's Preseason Finale at Miami Now Lists 'Tua Tagovailoa OR Michael Penix Jr.' at Quarterback, Penix's First Appearance on the First Unit Since ACL Surgery, With Kevin Stefanski Set to Play the Starters at Hard Rock Stadium as the Last Audition Before the Roster Trims to 53 on Aug 30, Though Tua Will Likely Take the Start and Penix's Game Status Stays Undecided",
-    headLine1: "Penix reaches the starter line. Tua still holds the pen.",
-    headEm: "Atlanta's finale depth chart now lists 'Tua Tagovailoa OR Michael Penix Jr.' at quarterback, Penix's first time on the first unit since his ACL surgery. The starters play Friday at Miami, the last live look before the Aug 30 cut to 53.",
-    headLine3: "Four days after his first eleven-on-eleven reps since surgery, Penix is co-No. 1 on the depth chart released Monday for the preseason finale. Stefanski will play his regulars at Hard Rock Stadium and is treating the week like a regular-season schedule, 'Today will be a Wednesday,' he said, but stayed non-committal on whether Penix takes game snaps. Tua Tagovailoa remains the likely Friday starter. Behind them, jobs at running back, edge, corner and receiver run to the wire before Sunday's cut.",
+    kicker: "PENIX WILL SIT: Kevin Stefanski Has Ruled Michael Penix Jr. Out of Friday's Preseason Finale at Miami and Tua Tagovailoa Will Start, the Falcons Choosing to Protect a Surgically Repaired Knee With Only Three Full-Team Practices Back Rather Than Risk Live Game Snaps, Leaving the Week 1 Quarterback Job Open and Day-to-Day as Atlanta Turns to the Aug 30 Trim to 53",
+    headLine1: "Penix sits the finale. The QB job stays open.",
+    headEm: "Stefanski has ruled Michael Penix Jr. out of Friday's game at Miami and will start Tua Tagovailoa. Cleared for full-team work only last week, Penix gets no live game snaps this summer, and Atlanta stays day-to-day on its Week 1 starter.",
+    headLine3: "Penix was medically cleared for 11-on-11 last Saturday and took his first full-team reps Monday, but three practices back is not enough for the staff to send him into a preseason game on a rebuilt ACL. Tagovailoa, who has done little to seize the job across a quiet August, gets the start in the finale. The QB1 call now runs into the regular-season buildup, and the roster below runs to the wire before Sunday's cut to 53.",
     deck:
-      "Michael Penix Jr. has climbed all the way back to the starter line. Atlanta's depth chart for Friday's preseason finale at Miami, released Monday, lists the quarterback spot as 'Tua Tagovailoa OR Michael Penix Jr.,' the first time Penix has appeared on the first unit since the ACL surgery that ended his 2025 season nine starts in. It is the paper confirmation of a week that began with him taking the first snap of Monday's practice, his first eleven-on-eleven reps since the injury, and splitting first-team work with Tagovailoa. Kevin Stefanski will play his starters at Hard Rock Stadium and is treating the whole week like an in-season game, telling the room 'we'll treat this week like a regular-season schedule' and that Monday would stand in for a Wednesday. He stayed non-committal on whether Penix suits up Friday, and for now Tagovailoa is the likelier man to take the opening snap as the staff decides how far to push a rehabbing knee. The stakes are larger than the quarterback line: with Trey Sermon on injured reserve, backs like Nathan Carter, Cash Jones and Tyler Goodson are auditioning behind Bijan Robinson, and jobs on the edge, at cornerback and in the receiver room run to the wire before Atlanta trims from 90 to 53 by 6 p.m. ET Sunday, Aug 30. One last live look, and then the decisions turn permanent.",
+      "Michael Penix Jr. will not play in Friday's preseason finale at Miami. Kevin Stefanski ruled the quarterback out on Wednesday, choosing to hold a surgically repaired knee out of live game action after Penix took his first eleven-on-eleven reps only Monday, his third full-team practice since the ACL surgery that ended his 2025 season nine starts in. Tua Tagovailoa will start against the Dolphins instead. Penix said he feels confident in both his physical recovery and his mental preparation despite the limited reps, but the caution is the point: with two weeks to the opener, there is no reason to gamble on exhibition snaps. The larger question the finale does not answer is who takes the first snap that counts. Tagovailoa has done little to seize the job, three completions for twenty-two yards against Denver across a subdued preseason, and Stefanski is keeping the competition day-to-day. Behind the quarterbacks, the stakes are roster-wide: with Trey Sermon on injured reserve and the edge room thinned by Jalon Walker's season-ending ACL and James Pearce Jr.'s looming eight-game ban, jobs at running back, cornerback and receiver run to the wire before Atlanta trims from 90 to 53 by 6 p.m. ET Sunday, Aug 30. One last live look, and then the decisions turn permanent.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
-    stampLabel: "PRESEASON WK 3 · FINALE DEPTH CHART LISTS PENIX CO-NO. 1 QB · STARTERS PLAY FRI AUG 28 AT MIAMI · TUA LIKELY STARTS, PENIX GAME STATUS TBD · CUTS TO 53 BY 6PM ET SUN AUG 30",
+    stampLabel: "PRESEASON WK 3 · PENIX RULED OUT OF FINALE · TUA STARTS FRI AUG 28 AT MIAMI · WEEK 1 QB1 STILL OPEN, DAY-TO-DAY · CUTS TO 53 BY 6PM ET SUN AUG 30",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2546,6 +2546,18 @@ export const NEWS_DIGEST = {
     // rotated onto the finale depth chart / co-No. 1 storyline; fixed the finale venue (Hard Rock Stadium,
     // Miami, an AWAY game, not Mercedes-Benz Stadium); timestamps bumped. Clean queue moment remains the
     // first run that can reach the Vault; a Penix first-team rep or a Friday game-action scene is the target.
+    // STATUS (2026-08-27 scheduled run): cover SKIPPED, identical hard constraint re-verified. Checked
+    // the mounts from this sandbox: only the tracker repos, outputs and uploads are mounted; ~/Vault and
+    // ~/.claude/skills/limn-editor-enhance are NOT reachable, so the downstream Antigravity image queue
+    // cannot be appended. The coverImageUrl pointer (2026-08-15-red-debut.jpg) was never generated (last
+    // plate actually on disk is 2026-07-17-dotson-wr2.jpg), so it already resolves to the photoId headshot
+    // fallback, which stays penix-jr and matches today's lead: Stefanski ruled Penix OUT of Friday's finale
+    // at Miami, Tua will start, QB1 stays open. Penix is a star with a real headshot, so the fallback is
+    // fresh and safe. Repointing to an Aug-27 slug would only spawn another dangling request no one can
+    // fulfill this cycle, so the pointer is left as is. Recency refresh only: cover, topics[0] and the
+    // INTERVIEWS window rotated onto the Penix-out / Tua-starts finale storyline; timestamps bumped. Clean
+    // queue moment remains the first run that can reach the Vault; a Penix first-team practice rep or a
+    // Friday game-action scene is the target.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-08-15-red-debut.jpg",
   },
   sources: [
@@ -2559,6 +2571,13 @@ export const NEWS_DIGEST = {
     "Sportsnaut", "The Big Lead", "The Athletic", "Mile High Report",
   ],
   topics: [
+    {
+      title: "PENIX WILL SIT THE FINALE: STEFANSKI RULES MICHAEL PENIX JR. OUT OF FRIDAY'S GAME AT MIAMI AND TUA TAGOVAILOA WILL START, AS ATLANTA KEEPS ITS QUARTERBACK RACE DAY-TO-DAY WITH TWO WEEKS TO KICKOFF: cleared for 11-on-11 only Monday and with just three full-team practices in his legs, Penix stays out of live game action while the staff protects a surgically repaired knee, leaving the Week 1 QB1 call still open",
+      detail: "Atlanta News First, The Falcoholic and Yardbarker (Aug 26): Kevin Stefanski said Michael Penix Jr. will not play in Friday's preseason finale against the Dolphins, and Tua Tagovailoa is expected to start. Penix was medically cleared for full-team work last Saturday and took his first eleven-on-eleven reps Monday, but with only three team practices back he will not get live game snaps this summer. Penix said he is confident in both his physical recovery and his mental preparation despite the limited reps. The Falcons still have not named a Week 1 starter and are staying day-to-day at the position, with Tagovailoa having done little to seize it, three completions for 22 yards against Denver, across a quiet preseason. The finale is the last live evaluation before Atlanta trims to 53 by 6 p.m. ET Sunday, Aug 30.",
+      category: "injuries",
+      sourceUrl: "https://www.atlantanewsfirst.com/2026/08/26/falcons-rest-penix-preseason-finale-zadarius-smith-reflects-nfl-return/",
+      sourceLabel: "Atlanta News First / The Falcoholic / Yardbarker",
+    },
     {
       title: "PENIX HITS THE STARTER LINE: THE FINALE DEPTH CHART NOW LISTS 'TUA TAGOVAILOA OR MICHAEL PENIX JR.' AT QUARTERBACK, HIS FIRST TIME ON THE FIRST UNIT SINCE ACL SURGERY, AS STEFANSKI PREPS THE STARTERS FOR FRIDAY AT MIAMI: four days after his first 11-on-11 reps, Penix is co-No. 1 on the depth chart Atlanta released Monday for the preseason finale, though Tua remains the likely starter and Penix's game status is still undecided",
       detail: "Atlantafalcons.com, Yahoo Sports and SI Falcons (Aug 25): the Falcons' unofficial depth chart for Friday's finale at Miami lists the quarterback spot as 'Tua Tagovailoa OR Michael Penix Jr.,' Penix's first appearance on the first unit since the ACL surgery that ended his 2025 season nine starts in. It is the paper confirmation of Penix's climb back after he took his first eleven-on-eleven reps Monday. Kevin Stefanski said he will play his starters and is treating the whole week like an in-season game, telling the room the club would 'treat this week like a regular-season schedule' and that Monday would stand in for a Wednesday, but he stayed non-committal on whether Penix suits up. For now Tagovailoa is the likelier man to take the opening snap as the staff weighs how far to push a rehabbing knee before the Aug 30 cut to 53.",
@@ -2644,13 +2663,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com / NFL.com / ESPN",
     },
     {
-      title: "THE PRESEASON DEPTH CHART LANDS, AND A WAVE OF ROSTER CHURN WITH IT: Atlanta released its first unofficial depth chart Tuesday with developmental tackle Michael Jerrell atop the right-tackle spot and both Jawaan Taylor and Michael Penix Jr. flagged as injured, while a busy transactions week added RB Trey Sermon and TE Nick Muse, claimed Alabama guard Jaeden Roberts off waivers, and cut veteran linebacker Troy Andersen",
-      detail: "Atlantafalcons.com (Aug 11 to 12): the club published its preseason depth chart ahead of Denver, and the line that stands out is at right tackle, where 2024 seventh-round project Michael Jerrell holds the top spot with Taylor still carrying an injury asterisk as he ramps back off the PUP list. The roster underneath kept moving. Atlanta signed running back Trey Sermon, a Marietta native and former Ohio State back, for depth behind Bijan and Brian Robinson Jr.; signed tight end Nick Muse while waiving/injuring receiver Le'Meke Brockington and linebacker Malik Verdon; and claimed offensive lineman Jaeden Roberts, an Alabama product who had signed with Philadelphia as an undrafted free agent, off waivers. In the corresponding subtraction, the Falcons released linebacker Troy Andersen, their 2022 second-round pick, whose three seasons were repeatedly interrupted by injury. It is a bottom-of-roster reshuffle two days before the exhibition slate opens.",
-      category: "free-agency",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-depth-chart-preseason-game-vs-denver-broncos",
-      sourceLabel: "atlantafalcons.com",
-    },
-    {
       title: "BIJAN GETS PAID, AND HE IS THE HIGHEST-PAID RUNNING BACK IN NFL HISTORY: the Falcons ended a five-day hold-in Tuesday morning by agreeing with Robinson on a three-year extension worth up to $75 million, with $51 million guaranteed and $37 million at signing, the most money ever guaranteed to a running back, resetting the market and locking up the fourth core Cunningham-era piece after London, Pitts and Bergeron",
       detail: "ESPN (Adam Schefter), NFL.com, The Washington Post and SI Falcons (Aug 4): Robinson and the Falcons agreed to a three-year extension worth up to $75 million, roughly $22.25M in new base average with a max of about $25M per year, that makes him the highest-paid running back in NFL history, surpassing Saquon Barkley's $20.6M. The deal carries $51 million guaranteed and $37 million at signing, the most ever guaranteed to a back on a non-rookie deal, and runs through 2030 after his 2027 fifth-year option. Negotiated by Nicole Lynn of Klutch Sports, it ended a hold-in that had reached five days. Robinson led the NFL with 2,298 scrimmage yards in 2025, a first-team All-Pro season and the 12th-highest single-season total in league history, and across three years he has 3,910 rushing yards and 25 rushing touchdowns plus 1,738 receiving yards and nine scores on an NFL-leading 1,003 touches. He is the third offensive weapon Atlanta has extended this summer after Drake London (4yr/$141M) and Kyle Pitts Sr. (3yr/$54M), with Matthew Bergeron (4yr/$96M) added Aug 1, and the four now account for roughly a quarter of the projected salary cap.",
       category: "contracts",
@@ -2667,9 +2679,30 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-08-26T08:40:00Z",
-  windowLabel: "Preseason Week 3 · Game week at Miami (finale Fri Aug 28 at Hard Rock Stadium), with Penix now listed co-No. 1 on the finale depth chart after returning to 11-on-11 Monday Aug 24 and the starters set to play before the Aug 30 cut to 53",
+  generatedAt: "2026-08-27T12:30:00Z",
+  windowLabel: "Preseason Week 3 · Game week at Miami (finale Fri Aug 28 at Hard Rock Stadium), with Penix ruled OUT of the game and Tua set to start after Penix returned to 11-on-11 Monday Aug 24, the Week 1 QB job still day-to-day, and the starters playing before the Aug 30 cut to 53",
   sessions: [
+    {
+      id: "stefanski-2026-08-26",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-08-26",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Miami Week · Wednesday Media Availability",
+      sourceUrl: "https://www.atlantanewsfirst.com/2026/08/26/falcons-rest-penix-preseason-finale-zadarius-smith-reflects-nfl-return/",
+      transcriptUrl: "https://www.thefalcoholic.com/atlanta-falcons-news/95419/michael-penix-jr-injury-update-preseason-miami-dolphins",
+      verified: true,
+      summary: "Two days before the finale, Stefanski ruled Michael Penix Jr. out of Friday's game at Miami and said Tua Tagovailoa will start, choosing to keep a rehabbing knee out of live action after only three full-team practices. He declined to name a Week 1 starter, insisting the club is best served keeping the quarterback race day to day, and framed Penix's week of team reps as an important first step rather than a verdict.",
+      pullQuote: "I'm best served and we're best served keeping it day to day and focusing on what's in front of us.",
+      bullets: [
+        "On the finale: Penix will not play Friday against Miami, and Tua Tagovailoa is expected to start the last preseason game",
+        "On the QB1 call: declined to name a Week 1 starter, keeping the competition day to day 'and focusing on what's in front of us'",
+        "On Penix's week: called it 'an important week for Mike,' his first team reps with a real offensive and defensive line around him, and valued seeing him move up and get chased in the pocket",
+        "On not overreading it: 'outside of this week, I don't think it's fair to go further than that,' declining to project the reps onto the opener decision",
+        "Penix's own read: 'I've been feeling really good... I definitely feel like I'll be where I need to be mentally and physically to feel confident enough to go out there Week 1'",
+      ],
+      topics: ["penix-acl", "qb-competition", "preseason", "dolphins-week"],
+    },
     {
       id: "stefanski-2026-08-24",
       speaker: "Kevin Stefanski",
@@ -2771,27 +2804,6 @@ export const INTERVIEWS = {
         "On left tackle Jake Matthews, who exited after one series: 'was dealing with something but he's OK'",
       ],
       topics: ["pearce-suspension", "preseason", "edge-room", "injuries"],
-    },
-    {
-      id: "stefanski-2026-08-12",
-      speaker: "Kevin Stefanski",
-      role: "Head Coach",
-      date: "2026-08-12",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "Preseason Week 1 · Pre-Practice Media Availability",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-kevin-stefanski-starters-in-first-preseason-game-tua-tagovailoa",
-      transcriptUrl: "https://www.atlantafalcons.com/news/falcons-camp-report-kevin-stefanski-starters-in-first-preseason-game-tua-tagovailoa",
-      verified: true,
-      summary: "Two days out from the preseason opener, Stefanski laid out his plan for the Broncos game and named Tua Tagovailoa the Friday starter while pointedly declining to call him the Week 1 quarterback. He said the front-line players will get a series or so, roughly ten plays, then walked through the quarterback rotation and Michael Penix Jr.'s rehab pace. His message on the job was patience: the decision can wait.",
-      pullQuote: "We are not there right now to name a starter for Week 1. We will cross that bridge when we get to it.",
-      bullets: [
-        "Named Tua Tagovailoa the starter for Friday against Denver, then clarified it does not settle the Week 1 job: 'We feel very good about where Tua is, where all of our guys are, but he will start on Friday night'",
-        "On snap counts: the starters will play a series, about 10 plays, 'depending on which comes first,' with the plan 'in pencil' until the end of Wednesday's practice",
-        "On the rotation: Tua starts, Cooper Rush works in next, and Jack Strand finishes the game",
-        "On Penix: not yet cleared for full-team, 11-on-11 work, and he will hold that individual, 1-on-1 and 7-on-7 pace through the Colts joint practices next week, though the staff likes where the ACL rehab sits",
-        "On play time elsewhere: 'We will vary play time by players,' with some getting more and some less based on what the staff thinks each needs before the season",
-      ],
-      topics: ["qb-competition", "tua", "penix-acl", "preseason"],
     },
   ],
 };
