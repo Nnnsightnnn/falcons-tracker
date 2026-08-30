@@ -796,8 +796,8 @@ export const PLAYERS = [
     acquired: "draft-2025-R1-P26",
     stats: { tackles: 31, sacks: 4.5 },
     form: 7.6,
-    status: "active",
-    injuryNote: "Suspended 8 games (NFL Personal Conduct Policy, announced Aug 14) · ban starts Aug 30, eligible to return Nov 2 (week of Bengals game in Madrid) · can play preseason and stay with the team until then · still in Miami-Dade pretrial diversion program",
+    status: "suspended",
+    injuryNote: "Suspended 8 games (NFL Personal Conduct Policy, announced Aug 14) · ban now in effect (began Aug 30, the cutdown deadline), eligible to return Nov 2 (week of Bengals game in Madrid) · does not count against the 53-man limit while suspended · still in Miami-Dade pretrial diversion program",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/5081394.png",
     contract: { years: 4, total: 14500000, guaranteed: 14500000, apy: 3625000, throughYear: 2028, cap2026: 3350000 },
     career: [{ years: "2025–", team: "Atlanta Falcons", type: "NFL" }],
@@ -2152,18 +2152,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-29T13:00:00Z",
+  generatedAt: "2026-08-30T09:00:00Z",
   cover: {
-    kicker: "FALCONS 17, DOLPHINS 12: Tua Tagovailoa Is Booed in His Return to Miami, Leads a Touchdown Drive on His Opening Series and Then Loses a Snap-Exchange Fumble in a Tidy but Uneven Three-Series Finale, Michael Penix Jr. Watches in Street Clothes for the Second Straight Game, and Kevin Stefanski Carries an Officially Open Week 1 Quarterback Job Into Sunday's 6 p.m. ET Trim to 53",
-    headLine1: "A tidy, uneven finale. The QB job still open.",
-    headEm: "Atlanta closes the preseason 17-12 at Miami. Tua Tagovailoa, booed in his return, went 7 of 8 for 95 yards and capped his opening drive with a Brian Robinson Jr. score, then fumbled a snap on his second series. Penix sat again, and Stefanski takes an undecided Week 1 call into the Aug 30 cutdown.",
-    headLine3: "Tagovailoa played three series against his former team, efficient through the air but sloppy on the exchange, his second lost-or-loose fumble of a quiet August. Cooper Rush followed with a clean 13-of-18, 106-yard, one-touchdown night that only sharpened the third-quarterback picture behind the Tua and Penix race. Michael Penix Jr., cleared for full-team work only last week and with three practices back on a rebuilt knee, again did not dress. The QB1 call now belongs to the regular-season buildup, and the roster below runs to the wire before Sunday's cut to 53.",
+    kicker: "CUTDOWN DAY: Atlanta Must Trim From 90 to 53 by 6 p.m. ET Sunday as the NFL's Moved-Up Deadline Arrives, Bubble Jobs at Running Back, Receiver and Cornerback Running to the Wire, Undrafted Darlings Jack Strand and Cash Jones Sweating Waivers, and Kevin Stefanski Still Carrying an Officially Open Week 1 Quarterback Job Between Michael Penix Jr. and Tua Tagovailoa Into the Regular-Season Buildup",
+    headLine1: "Cutdown day. Fifty-three by six o'clock.",
+    headEm: "The Falcons must reach the 53-man limit by 6 p.m. ET Sunday, two days earlier than usual, with waiver claims due 1 p.m. ET Monday. The AJC projects Atlanta keeps three quarterbacks (Tua, Penix, Cooper Rush), five receivers and seven corners, designates Billy Bowman Jr. to injured reserve, and trims undrafted darlings Jack Strand and Cash Jones to the practice-squad bubble.",
+    headLine3: "The edge room is already reshaped: Jalon Walker's season-ending ACL and James Pearce Jr.'s eight-game ban, which starts today, forced the Za'Darius Smith un-retirement and leave five outside linebackers projected to stick. Pearce and an IR designation do not count against the 53, so suspended and injured players can be stashed. The quarterback question outlives the deadline. Stefanski has still not named a Week 1 starter, Ian Rapoport reads the silence as a lean toward Tua because Penix has not been cleared for game contact, and 92.9 The Game's Mark Zinno expects Penix to open at Pittsburgh anyway. The roster below runs to the wire.",
     deck:
-      "The preseason ended the way most of Atlanta's August felt: efficient enough to look the part, uneven enough to leave the biggest question open. The Falcons beat the Dolphins 17-12 at Hard Rock Stadium on Friday, and Tua Tagovailoa, booed by the Miami crowd he used to play for, went 7 of 8 for 95 yards across three series. His first drive was the tape the staff wanted, a 60-yard march capped by a Brian Robinson Jr. three-yard touchdown run, but he opened his second series by fumbling the snap exchange and giving it back, his second fumble of a subdued preseason. Cooper Rush relieved him and was sharp, 13 of 18 for 106 yards and a score, quietly making the case to hold the third quarterback job. Michael Penix Jr. did not play for the second straight game, held out as he builds back from ACL surgery on only a week of full-team reps. Kevin Stefanski still will not name a Week 1 starter, insisting the club is best served keeping the competition day to day even with the Sept 13 opener at Pittsburgh two weeks out, and a growing chorus of writers now reads the caution as a lean toward Penix. Behind the quarterbacks, the stakes turn permanent this weekend: with the edge room thinned by Jalon Walker's season-ending ACL and James Pearce Jr.'s eight-game ban starting Sunday, bubble jobs at running back, cornerback and receiver, Cash Jones, Tyler Goodson, Cobee Bryant and Chris Blair among the names, run to the wire before Atlanta trims from 90 to 53 by 6 p.m. ET Sunday, Aug 30.",
+      "The NFL's gloomiest summer day arrives on a moved-up clock. The Falcons must cut from 90 players to 53 by 6 p.m. ET Sunday, two days earlier than usual, with waiver claims processing at 1 p.m. ET Monday, and the last live look, a tidy 17-12 win at Miami on Friday, settled less than the front office hoped. The Atlanta Journal-Constitution's projection keeps three quarterbacks (Tua Tagovailoa, Michael Penix Jr. and veteran Cooper Rush), five receivers behind Drake London, and a deep seven-man cornerback room, while sending undrafted social-media favorites Jack Strand at quarterback and Cash Jones at running back to the practice-squad bubble if they clear waivers. Billy Bowman Jr. is projected for injured reserve, which does not count against the limit, and James Pearce Jr., whose eight-game suspension begins today, can stay with the club without taking a roster spot. The edge group, gutted by Jalon Walker's season-ending ACL and the Pearce ban, projects to keep Za'Darius Smith, Samson Ebukam, Cameron Thomas, Azeez Ojulari and Bralen Trice. And the biggest question survives the cut: Kevin Stefanski still will not name a Week 1 starter with the Sept 13 opener at Pittsburgh two weeks out. Rapoport's general feel is that Tua starts because Penix has not been cleared for game contact, while Atlanta's own airwaves lean the other way, a competition that now belongs entirely to the regular-season buildup.",
     byline: "The Tracker Desk",
-    filedFrom: "Miami Gardens",
+    filedFrom: "Flowery Branch",
     photoId: "tua",
-    stampLabel: "PRESEASON FINALE · FALCONS 17, DOLPHINS 12 (AT MIAMI) · TUA 7/8, 95 YDS, TD DRIVE + LOST FUMBLE · PENIX SITS AGAIN · WEEK 1 QB1 STILL OPEN (AT PITTSBURGH SEP 13) · CUTS TO 53 BY 6PM ET SUN AUG 30",
+    stampLabel: "CUTDOWN DAY · 90 TO 53 BY 6PM ET SUN AUG 30 (WAIVERS 1PM ET MON) · AJC PROJECTS 3 QBS, 5 WRS, 7 CBS · BOWMAN TO IR · PEARCE BAN STARTS TODAY · WEEK 1 QB1 STILL OPEN (AT PITTSBURGH SEP 13)",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2582,6 +2582,16 @@ export const NEWS_DIGEST = {
     // fresh Aug-29 slug, which would only spawn another dangling request no run can fulfill this cycle. Clean
     // queue moment remains a finale game-action or cutdown-day scene for the first run that can reach the
     // Vault (an Antigravity-side run, or a Cowork run with the Vault mounted).
+    // STATUS (2026-08-30 scheduled run): cover queue SKIPPED again, same hard constraint re-verified this
+    // cycle: only the tracker repos, outputs and uploads are mounted, so ~/Vault/Notes/image-requests.md and
+    // the limn-editor-enhance skill are NOT reachable and the downstream Antigravity queue cannot be appended.
+    // Confirmed the last plate actually on disk is 2026-07-17-dotson-wr2.jpg; the 2026-08-15-red-debut.jpg
+    // pointer (15 days old) was never generated and already resolves to the photoId headshot fallback. The lead
+    // rotated from the finale result to cutdown day (90-to-53 by 6pm ET today) with the QB1 call still open, so
+    // photoId stays "tua" (a star with a real headshot) and the fallback remains fresh and aligned. Pointer left
+    // as is rather than repointed to an Aug-30 slug, which would only spawn another dangling request no run can
+    // fulfill this cycle. Clean queue moment remains a cutdown-day or Steelers-week scene for the first run that
+    // can reach the Vault (an Antigravity-side run, or a Cowork run with the Vault mounted).
     coverImageUrl: "/falcons-tracker/assets/cover/2026-08-15-red-debut.jpg",
   },
   sources: [
@@ -2596,18 +2606,25 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
+      title: "CUTDOWN DAY IS HERE: ATLANTA MUST TRIM FROM 90 TO 53 BY 6 P.M. ET SUNDAY AS THE NFL'S MOVED-UP DEADLINE ARRIVES, WITH WAIVER CLAIMS DUE 1 P.M. ET MONDAY: the AJC's final projection keeps three quarterbacks (Tua Tagovailoa, Michael Penix Jr., Cooper Rush), five receivers behind Drake London and a deep seven-man cornerback room, designates safety Billy Bowman Jr. to injured reserve, and trims undrafted darlings Jack Strand and Cash Jones to the practice-squad bubble",
+      detail: "AJC (Daniel Flick, Aug 27) and ESPN (Aug 28): the league moved cutdown up two days this year, so Atlanta must reach 53 players by 6 p.m. ET Sunday, Aug 30, with waiver claims processing at 1 p.m. ET Monday. The AJC projection has the Falcons keeping veteran Cooper Rush over Strand as the third quarterback, keeping Bijan Robinson, Brian Robinson Jr. and Tyler Goodson at running back while Cash Jones and Nathan Carter miss, and carrying five wideouts (London, Jahan Dotson, Olamide Zaccheaus, Zachariah Branch, Chris Blair) with Dylan Drummond on the bubble. Billy Bowman Jr. is projected for injured reserve, which does not count against the limit, and James Pearce Jr., whose eight-game ban begins today, stays without taking a roster spot. Strand and Jones would be prized practice-squad stashes if they clear waivers. Nick Folk, Jake Bailey and long snapper Liam McCullough hold the specialist jobs.",
+      category: "general",
+      sourceUrl: "https://www.ajc.com/sports/2026/08/falcons-53-man-roster-projection-as-training-camp-preseason-come-to-an-end/",
+      sourceLabel: "AJC (Daniel Flick) / ESPN",
+    },
+    {
+      title: "THE QB1 CALL OUTLIVES THE CUT: STEFANSKI STILL WILL NOT NAME A WEEK 1 STARTER, RAPOPORT READS THE SILENCE AS A LEAN TOWARD TUA BECAUSE PENIX IS NOT CLEARED FOR CONTACT, AND 92.9 THE GAME'S MARK ZINNO EXPECTS PENIX AT PITTSBURGH ANYWAY: two weeks from the Sept 13 opener, the competition between Michael Penix Jr. and Tua Tagovailoa is officially open, with reporters and Atlanta's own airwaves split on which way the club leans",
+      detail: "NFL.com, ESPN, Yahoo Sports and Audacy 92.9 The Game (Aug 27 to 29): after ruling Penix out of the finale, Stefanski said he has no timeline on the QB1 decision and is best served keeping it day to day. Ian Rapoport's 'general feel is that Tua will be the starter for Week 1' because Penix, back to full-team work only last week, 'has not been cleared' for game contact. Mark Zinno of 92.9 The Game pushed the other way: 'Michael Penix will be the starter Week 1. Yes, even without playing in the preseason.' Multiple beat items read the locker room as leaning Penix, and ClutchPoints noted Mike Florio floating whether an uneven Tua camp could even put his roster spot in play, though the AJC projects all three quarterbacks stick. The staff has framed the finale as one more data point, not a verdict.",
+      category: "general",
+      sourceUrl: "https://www.nfl.com/news/michael-penix-jr-out-falcons-preseason-finale-falcons-qb1-decision",
+      sourceLabel: "NFL.com / ESPN / Yahoo Sports / Audacy 92.9 The Game",
+    },
+    {
       title: "FALCONS 17, DOLPHINS 12: TUA IS BOOED IN HIS MIAMI RETURN, LEADS A TOUCHDOWN DRIVE AND THEN LOSES A SNAP-EXCHANGE FUMBLE IN A TIDY BUT UNEVEN FINALE, PENIX SITS AGAIN AND THE WEEK 1 JOB STAYS OPEN INTO CUTDOWN: Tagovailoa went 7 of 8 for 95 yards across three series against his former team, capping his opening drive with a Brian Robinson Jr. score before fumbling the exchange on his second possession, his second loose ball of a quiet August, while Cooper Rush relieved him with a clean 13-of-18, 106-yard, one-touchdown night",
       detail: "Atlanta News First (AP), Bleacher Report and SI Falcons (Aug 28 into Aug 29): Atlanta closed the preseason with a 17-12 win at Hard Rock Stadium, but the finale answered little about the quarterback race. Tua Tagovailoa, booed by the Miami crowd he used to play for, was efficient through the air, 7 of 8 for 95 yards, and his first series was the tape the staff wanted, a 60-yard drive capped by a Brian Robinson Jr. three-yard touchdown run for a 7-0 lead. He then opened his second series by fumbling the snap exchange and giving Miami the ball, his second fumble of the exhibition slate. Cooper Rush followed with 13 of 18 for 106 yards and a touchdown, quietly strengthening his hold on the third quarterback job behind the Tua and Michael Penix Jr. competition. Penix did not dress for the second straight game as he builds back from ACL surgery on a week of full-team reps. It was the last live look before Atlanta trims from 90 to 53 by 6 p.m. ET Sunday, Aug 30.",
       category: "games",
       sourceUrl: "https://www.atlantanewsfirst.com/2026/08/29/tua-tagovailoa-leads-td-drive-loses-fumble-falcons-17-12-preseason-win-over-dolphins/",
       sourceLabel: "Atlanta News First (AP) / Bleacher Report / SI Falcons",
-    },
-    {
-      title: "CUTDOWN WEEKEND: ATLANTA MUST TRIM FROM 90 TO 53 BY 6 P.M. ET SUNDAY, WITH BUBBLE JOBS AT RUNNING BACK, CORNERBACK AND RECEIVER RUNNING TO THE WIRE: with the edge room already thinned by Jalon Walker's season-ending ACL and James Pearce Jr.'s eight-game ban starting Sunday, Cash Jones, Tyler Goodson, Cobee Bryant and Chris Blair are among the names fighting for the last seats as the NFL's moved-up Aug 30 deadline arrives",
-      detail: "Yahoo Sports, SI Falcons and AJC (Aug 28 into Aug 29): the league pushed cutdown up two days this year, so the Falcons must reach the 53-man limit by 6 p.m. ET Sunday, Aug 30, with waiver claims processing Monday. The finale sorted a few bubble cases: rookie running back Cash Jones has quietly played his way into the conversation in a crowded backfield behind Bijan Robinson and Brian Robinson Jr., pushing Tyler Goodson for a reserve seat, while wideout Chris Blair kept his case alive with production across the exhibition slate. At cornerback, several candidates are competing for one or two spots, with Cobee Bryant among the names on the edge. Suspended players do not count against the 53, so Pearce can stay with the team while he serves his ban. Expect the bulk of Atlanta's moves to land Saturday into Sunday afternoon.",
-      category: "general",
-      sourceUrl: "https://sports.yahoo.com/articles/falcons-still-major-roster-questions-235209698.html",
-      sourceLabel: "Yahoo Sports / SI Falcons / AJC",
     },
     {
       title: "PENIX IS BACK IN THE HUDDLE: MICHAEL PENIX JR. TAKES HIS FIRST 11-ON-11 REPS SINCE ACL SURGERY, OPENING MONDAY'S PRACTICE UNDER CENTER AND SPLITTING FIRST-TEAM WORK WITH TUA: two days after Kevin Stefanski confirmed the medical clearance, Penix returned to full-team drills at Flowery Branch, taking the first snap of the session and sharing the starting reps with Tua Tagovailoa in a quarterback race that just tightened for the season",
@@ -2696,9 +2713,30 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-08-29T13:00:00Z",
-  windowLabel: "Cutdown Weekend · Preseason closed with a 17-12 win at Miami (Fri Aug 28, Hard Rock Stadium) in which Tua started and Penix sat for the second straight game, the Week 1 QB job at Pittsburgh (Sep 13) still officially open and day-to-day ('I'm best served, and we're best served, by keeping it day to day,' Stefanski said), as Atlanta trims from 90 to 53 by 6 p.m. ET Sunday, Aug 30",
+  generatedAt: "2026-08-30T09:00:00Z",
+  windowLabel: "Cutdown Day · Atlanta trims from 90 to 53 by 6 p.m. ET Sunday, Aug 30 (waiver claims 1 p.m. ET Monday), two days after closing the preseason 17-12 at Miami. Stefanski, praising Tua's operation but flagging an 'avoidable' snap-exchange fumble, still has not named a Week 1 starter at Pittsburgh (Sep 13), keeping the Penix-Tua race open into the regular-season buildup",
   sessions: [
+    {
+      id: "stefanski-2026-08-28",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-08-28",
+      venue: "Hard Rock Stadium · Miami Gardens, Fla.",
+      session: "Preseason Finale at Dolphins · Post-Game Press Conference",
+      sourceUrl: "https://clutchpoints.com/nfl/atlanta-falcons/falcons-news-kevin-stefanski-complements-tua-tagovailoa-strong-showing-dolphins",
+      transcriptUrl: "https://x.com/marcraimondi/status/2093525997844914260",
+      verified: true,
+      summary: "After a 17-12 win in Tua Tagovailoa's return to Miami, Stefanski credited his quarterback for operating the offense and moving the ball on the opening drives, but flagged the botched center-to-quarterback exchange as an avoidable mistake the team will clean up. He offered no timeline on the Week 1 starter, leaving the Penix-Tua competition open into the regular-season buildup with cutdown two days away.",
+      pullQuote: "I thought Tua did a nice job operating, obviously moving the football for a couple drives. Plenty to clean up. An avoidable center-to-quarterback exchange. We have to clean that up. And we will.",
+      bullets: [
+        "On Tua: praised him for operating the offense and moving the football on a couple of drives, and said 'by and large, he operated' in his return to Miami",
+        "On the fumble: called the second-series snap-exchange giveaway 'avoidable,' something the team 'has to clean up, and we will'",
+        "On the QB1 call: offered no timeline on naming a Week 1 starter, keeping the Penix-Tua competition day to day",
+        "On the finale numbers: Tagovailoa went 7 of 8 for 95 yards over three series and led a Brian Robinson Jr. touchdown drive before Cooper Rush finished 13 of 18 for 106 yards and a score",
+        "Context: Atlanta closed the preseason 2-1 and now must reach 53 by 6 p.m. ET Sunday before the Sept 13 opener at Pittsburgh",
+      ],
+      topics: ["qb-competition", "preseason", "dolphins-week", "cutdown"],
+    },
     {
       id: "stefanski-2026-08-26",
       speaker: "Kevin Stefanski",
@@ -2800,27 +2838,6 @@ export const INTERVIEWS = {
         "On the schedule: Atlanta practices with the Colts at the Grand Park Sports Campus in Westfield on Wednesday, Aug 19, and Thursday, Aug 20, before the Aug 22 preseason game",
       ],
       topics: ["joint-practices", "colts-week", "penix-acl", "preseason"],
-    },
-    {
-      id: "stefanski-2026-08-14",
-      speaker: "Kevin Stefanski",
-      role: "Head Coach",
-      date: "2026-08-14",
-      venue: "Mercedes-Benz Stadium · Atlanta",
-      session: "Preseason Week 1 vs. Broncos · Post-Game Press Conference",
-      sourceUrl: "https://www.atlantafalcons.com/news/kevin-stefanski-james-pearce-suspension-jalon-walker",
-      transcriptUrl: "https://www.atlantafalcons.com/news/game-breakdown-falcons-broncos-preseason-score-takeaways-reaction",
-      verified: true,
-      summary: "After a 27-7 preseason loss to Denver that opened his Atlanta tenure, Stefanski met the media with two subjects to address: a sloppy offensive night and the James Pearce Jr. suspension that had landed hours before kickoff. He kept the game result in perspective as evaluation tape, then spent most of the session on the pass rush, saying the team had planned for the eight-game ban and trusts the group it has assembled without Pearce and the injured Jalon Walker.",
-      pullQuote: "We trust we have the guys to step up.",
-      bullets: [
-        "On the Pearce suspension: 'We were anticipating the suspension, so we have been pretty intentional about how we've planned it,' expressing confidence in the edge group compiled for 2026",
-        "On Pearce the person: 'James continues to do everything in his power to be a great teammate and works very hard on himself, in the building and outside the building'",
-        "On the plan until the ban starts Aug 30: 'He'll continue to work, continue to play in these (preseason) games,' before serving the suspension and becoming eligible to return around the Nov 2 game against the Bengals in Madrid",
-        "On the offense in the loss: said he evaluates the entire unit and that Atlanta did not move the ball well enough as an offense",
-        "On left tackle Jake Matthews, who exited after one series: 'was dealing with something but he's OK'",
-      ],
-      topics: ["pearce-suspension", "preseason", "edge-room", "injuries"],
     },
   ],
 };
