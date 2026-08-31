@@ -250,9 +250,10 @@
 }
 .mag-root .cover h1.head {
   font-family: var(--m-display);
-  font-size: 96px;
-  line-height: 0.88;
-  letter-spacing: -0.022em;
+  font-size: clamp(24px, 3.2vw, 38px);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
   margin: 0;
   color: var(--ink);
 }
@@ -1766,7 +1767,7 @@
     border-right: none;
     border-bottom: 1px solid var(--rule);
   }
-  .mag-root .cover h1.head { font-size: clamp(44px, 13vw, 76px); line-height: 0.92; }
+  .mag-root .cover h1.head { font-size: clamp(26px, 7.4vw, 40px); line-height: 1.1; }
   .mag-root .cover .deck { font-size: 16px; margin-top: 16px; max-width: none; }
   .mag-root .cover .drop {
     column-count: 1;
@@ -2141,7 +2142,7 @@
 
 @media (max-width: 480px) {
   .mag-root .masthead .wordmark .title { font-size: clamp(34px, 12vw, 52px); }
-  .mag-root .cover h1.head { font-size: clamp(36px, 12vw, 60px); }
+  .mag-root .cover h1.head { font-size: clamp(24px, 8vw, 34px); }
   .mag-root .agate-strip .cell .v { font-size: 22px; }
   .mag-root .agate-strip .cell .s { font-size: 8px; }
   .mag-root .schedule .grid { grid-template-columns: repeat(2, 1fr); }

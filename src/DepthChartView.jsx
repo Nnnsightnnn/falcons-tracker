@@ -756,6 +756,133 @@ function LegendRow({ groupPlayers, slotsCount }) {
   );
 }
 
+// ─── BASE PERSONNEL (starting eleven) ───────────────────────────────────────
+// The depth matrix below lists every position's ladder. This strip sits on top
+// and answers the simpler question: who actually lines up? Offense shows base
+// 11 personnel (3 WR). Defense shows Atlanta's nickel base (4-2-5) — five DBs,
+// with the NICKEL slot treated as a true starter, not buried under CB depth.
+const FORMATIONS = {
+  offense: {
+    scheme: "11 PERSONNEL · 3 WR",
+    groups: [
+      { label: "SKILL", slots: [
+        { pos: "QB", role: "QB" }, { pos: "RB", role: "RB" },
+        { pos: "WR", slot: "X", role: "WR" }, { pos: "WR", slot: "Z", role: "WR" },
+        { pos: "WR", slot: "SLOT", role: "SLOT" }, { pos: "TE", role: "TE" },
+      ]},
+      { label: "OFFENSIVE LINE", slots: [
+        { pos: "OT", slot: "LT", role: "LT" }, { pos: "OG", slot: "LG", role: "LG" },
+        { pos: "C", role: "C" }, { pos: "OG", slot: "RG", role: "RG" },
+        { pos: "OT", slot: "RT", role: "RT" },
+      ]},
+    ],
+  },
+  defense: {
+    scheme: "NICKEL · 4-2-5",
+    groups: [
+      { label: "FRONT FOUR", slots: [
+        { pos: "EDGE", slot: "LEDGE", role: "EDGE" }, { pos: "DT", slot: "1T", role: "NT" },
+        { pos: "DT", slot: "3T", role: "3T" }, { pos: "EDGE", slot: "REDGE", role: "EDGE" },
+      ]},
+      { label: "LINEBACKERS", slots: [
+        { pos: "LB", slot: "MIKE", role: "MIKE" }, { pos: "LB", slot: "WILL", role: "WILL" },
+      ]},
+      { label: "SECONDARY (5 DB)", slots: [
+        { pos: "CB", slot: "LCB", role: "LCB" }, { pos: "S", slot: "FS", role: "FS" },
+        { pos: "CB", slot: "NICKEL", role: "NICKEL", highlight: true },
+        { pos: "S", slot: "SS", role: "SS" }, { pos: "CB", slot: "RCB", role: "RCB" },
+      ]},
+    ],
+  },
+};
+
+const UNAVAILABLE = new Set(["ir", "pup", "nfi", "suspended"]);
+
+// Pick the on-field starter for a formation slot: lowest depthRank in that
+// posSlot bucket, preferring an available body over an injured/suspended one.
+function resolveStarter(byPos, pos, slot) {
+  let list = (byPos[pos] || []).slice();
+  if (slot) {
+    const splits = POSITION_SPLITS[pos];
+    list = list.filter((p) => resolveSlot(p, splits) === slot);
+  }
+  list.sort((a, b) => a.depthRank - b.depthRank);
+  const available = list.filter((p) => !UNAVAILABLE.has((p.status || "").toLowerCase()));
+  return available[0] || list[0] || null;
+}
+
+function BaseUnitChip({ slot, player, onPlayerClick }) {
+  const hot = slot.highlight;
+  const glyph = player ? statusGlyph(player) : null;
+  return (
+    <div
+      onClick={() => player && onPlayerClick && onPlayerClick(player)}
+      title={player ? player.name : "unfilled"}
+      style={{
+        flex: "1 1 92px", minWidth: 88,
+        background: hot ? "rgba(255,45,61,0.10)" : "#0B0C0F",
+        border: hot ? "1px solid var(--hot)" : "1px solid #ffffff12",
+        boxShadow: hot ? "0 0 12px rgba(255,45,61,0.28)" : "none",
+        padding: "8px 9px",
+        cursor: player && onPlayerClick ? "pointer" : "default",
+        display: "flex", flexDirection: "column", gap: 6,
+      }}>
+      <span className="mono" style={{
+        fontSize: 8.5, letterSpacing: "0.2em", fontWeight: 700,
+        color: hot ? "var(--hot)" : "var(--silver)",
+      }}>{slot.role}</span>
+      <div style={{ display: "flex", alignItems: "center", gap: 7, minWidth: 0 }}>
+        {player && <PlayerPhoto player={player} size={26} />}
+        <div style={{ minWidth: 0, display: "flex", flexDirection: "column", gap: 1 }}>
+          <span className="stencil" style={{
+            fontSize: 12.5, color: "var(--ivory)", letterSpacing: "0.02em", lineHeight: 1,
+            whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
+          }}>{player ? lastName(player.name) : "—"}</span>
+          <span className="mono" style={{ fontSize: 8, color: "var(--steel-2)", letterSpacing: "0.12em" }}>
+            {player ? `#${player.number ?? "—"}${glyph ? " · " + glyph.label : ""}` : "UNFILLED"}
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function BaseUnitStrip({ side, byPos, onPlayerClick }) {
+  const spec = FORMATIONS[side];
+  if (!spec) return null;
+  return (
+    <div style={{
+      background: "var(--carbon)", border: "1px solid #ffffff10",
+      borderTop: "2px solid var(--hot)", padding: "14px 16px 16px", marginTop: 16,
+    }}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 12, flexWrap: "wrap", gap: 6 }}>
+        <span className="mono" style={{ fontSize: 10, letterSpacing: "0.26em", color: "var(--hot)", fontWeight: 700 }}>
+          ▎ BASE {side === "defense" ? "DEFENSE" : "OFFENSE"} · STARTING ELEVEN
+        </span>
+        <span className="mono" style={{ fontSize: 9, letterSpacing: "0.18em", color: "var(--steel-2)" }}>
+          {spec.scheme}
+        </span>
+      </div>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: 14 }}>
+        {spec.groups.map((group) => (
+          <div key={group.label} style={{ display: "flex", flexDirection: "column", gap: 6, flex: "1 1 240px", minWidth: 220 }}>
+            <span className="mono" style={{ fontSize: 8.5, letterSpacing: "0.22em", color: "var(--steel-2)" }}>
+              {group.label}
+            </span>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+              {group.slots.map((slot, i) => (
+                <BaseUnitChip key={slot.role + i} slot={slot}
+                  player={resolveStarter(byPos, slot.pos, slot.slot)}
+                  onPlayerClick={onPlayerClick} />
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 // ─── Main view ──────────────────────────────────────────────────────────────
 export default function DepthChartView({ players, currentPhase, onPlayerClick }) {
   const [side, setSide] = useState("offense");
@@ -853,6 +980,10 @@ export default function DepthChartView({ players, currentPhase, onPlayerClick })
           );
         })}
       </div>
+
+      {side !== "special" && (
+        <BaseUnitStrip side={side} byPos={byPos} onPlayerClick={onPlayerClick} />
+      )}
 
       <StrengthStrip
         positionsForGroup={positionsForGroup}
