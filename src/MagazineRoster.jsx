@@ -3,7 +3,7 @@ import { PLAYERS } from "./playerData.js";
 import { MagazineShell, playerById } from "./MagazineView.jsx";
 import MagazinePlayerModal from "./MagazinePlayerModal.jsx";
 
-// Roster — magazine "The Ninety" + room spotlights + 11-row depth ladder.
+// Roster — magazine "The Fifty-Three" + room spotlights + starting eleven + ladder.
 
 const ROOM_LADDER = [
   { code: "QB",   label: "Quarterback",     positions: ["QB"] },
@@ -121,6 +121,9 @@ function slotFlags(p) {
 export default function MagazineRoster({ setView }) {
   const [selected, setSelected] = useState(null);
   const rosterTotal = PLAYERS.length;
+  const reserveCount = PLAYERS.filter((p) => ["pup", "ir", "nfi", "suspended"].includes(p.status)).length;
+  const activeCount = rosterTotal - reserveCount;
+  const qbCount = PLAYERS.filter((p) => p.position === "QB").length;
   const rookies = ["avieon-terrell", "zachariah-branch", "kendal-daniels", "harold-perkins", "anterio-thompson", "ethan-onianwa"];
   const drafted = PLAYERS.filter((p) => rookies.some((id) => p.id?.startsWith(id.split("-")[0]))).length || 6;
   const pupir = PLAYERS.filter((p) => ["pup", "ir", "nfi", "suspended"].includes(p.status)).length;
@@ -143,42 +146,42 @@ export default function MagazineRoster({ setView }) {
       <section className="roster-cover">
         <div className="lede">
           <div className="kicker-row">
-            <span className="feature-badge">Cover · The Ninety</span>
+            <span className="feature-badge">Cover · The Fifty-Three</span>
             <span className="kicker">Department III · The Roster</span>
             <span className="kicker-rule"></span>
           </div>
 
-          <h1>The <span className="em">Ninety.</span></h1>
+          <h1>The <span className="em">Fifty-Three.</span></h1>
 
           <p className="deck">
-            Six rookies. Eighty-four returners. One position room that lost its starter twelve days into 2025 and might lose its quarterback by Week 1. Stefanski is installing identity at Flowery Branch — and the seating chart is still being argued.
+            Ninety became fifty-three on Sunday's moved-up cutdown. Atlanta kept four quarterbacks, traded for Gervon Dexter, and let some surprises go. Stefanski's first Falcons roster is set, and the seating chart hardens now for the Sept 13 opener at Pittsburgh.
           </p>
 
           <div className="byline">
             BY <span className="author">THE TRACKER DESK</span>
-            &nbsp;·&nbsp; <span className="m-mute">FILED FROM FLOWERY BRANCH · MAY 19</span>
+            &nbsp;·&nbsp; <span className="m-mute">FILED FROM FLOWERY BRANCH · AUG 31</span>
           </div>
 
           <div className="anatomy">
-            <div className="b"><div className="k">Roster</div><div className="v">{rosterTotal}</div><div className="s">POST-MINICAMP</div></div>
-            <div className="b"><div className="k">Drafted</div><div className="v ox">{String(drafted).padStart(2, "0")}</div><div className="s">'26 CLASS</div></div>
-            <div className="b"><div className="k">PUP / IR</div><div className="v">{String(pupir).padStart(2, "0")}</div><div className="s">PENIX · BOWMAN · …</div></div>
-            <div className="b"><div className="k">UDFA</div><div className="v">14</div><div className="s">14 SIGNED MAY 7</div></div>
-            <div className="b"><div className="k">Avg Age</div><div className="v">25.4</div><div className="s">OFFENSE-WEIGHTED</div></div>
+            <div className="b"><div className="k">Roster</div><div className="v">{activeCount}</div><div className="s">INITIAL 53</div></div>
+            <div className="b"><div className="k">Reserve</div><div className="v">{String(reserveCount).padStart(2, "0")}</div><div className="s">IR · PUP · SUSP</div></div>
+            <div className="b"><div className="k">QBs Kept</div><div className="v ox">{String(qbCount).padStart(2, "0")}</div><div className="s">TUA·PENIX·RUSH·STRAND</div></div>
+            <div className="b"><div className="k">Cut Day</div><div className="v">37</div><div className="s">MOVED OFF · AUG 30</div></div>
+            <div className="b"><div className="k">Added</div><div className="v ox">01</div><div className="s">DEXTER · TRADE</div></div>
+            <div className="b"><div className="k">Drafted</div><div className="v">{String(drafted).padStart(2, "0")}</div><div className="s">'26 CLASS</div></div>
             <div className="b"><div className="k">Pro Bowls</div><div className="v">08</div><div className="s">BIJAN · BATES · LINDSTROM</div></div>
             <div className="b"><div className="k">All-Pros</div><div className="v ox">04</div><div className="s">BIJAN · BATES</div></div>
-            <div className="b"><div className="k">Tagged</div><div className="v">{String(tagged).padStart(2, "0")}</div><div className="s">PITTS · $14.1M</div></div>
           </div>
         </div>
 
         <div className="collage">
-          <div className="num">90</div>
+          <div className="num">53</div>
           <CollageTile className="t1" player={bijan}  label="B. ROBINSON · #7" />
           <CollageTile className="t2" player={london} label="D. LONDON · #5" />
           <CollageTile className="t3" player={penix}  label="M. PENIX JR. · #9" />
           <CollageTile className="t4" player={bates}  label="J. BATES III · #3" />
           <div className="center">
-            <div className="k">— FALCONS · ROSTER 2026 · 90 ON BRANCH FIELD —</div>
+            <div className="k">— FALCONS · ROSTER 2026 · THE INITIAL 53 —</div>
           </div>
           <div className="halftone"></div>
         </div>
