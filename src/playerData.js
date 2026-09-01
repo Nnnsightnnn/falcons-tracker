@@ -93,7 +93,7 @@ export const PLAYERS = [
     form: 0,
     status: "active",
     injuryNote: "Undrafted rookie who made the initial 53 on Aug 30, a rare Division II QB to stick. An engineering-physics graduate of Minnesota State-Moorhead, he threw for 212 yards with a passing and a rushing touchdown in the preseason win at Indianapolis to force his way onto the roster behind Tua, Penix and Cooper Rush.",
-    image: null,
+    image: "https://static.clubs.nfl.com/image/upload/t_headshot_desktop/falcons/vhi23rd7gzuw6lwaxhi1",
     contract: { years: 3, total: 3000000, guaranteed: 0, apy: 1000000, throughYear: 2028, cap2026: 840000 },
     career: [{ years: "2026–", team: "Atlanta Falcons", type: "NFL · UDFA" }],
   },
