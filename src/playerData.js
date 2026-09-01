@@ -510,23 +510,70 @@ export const PLAYERS = [
     career: [{ years: "2024–", team: "Atlanta Falcons", type: "NFL" }],
   },
   {
-    id: "harrison",
-    name: "Zach Harrison",
-    number: 96,
-    position: "DE",
-    posSlot: "LDE",
+    id: "yasir-abdullah",
+    name: "Yasir Abdullah",
+    number: 45,
+    position: "EDGE",
+    posSlot: "LEDGE",
     positionGroup: "defense",
-    depthRank: 1,
-    height: 78, weight: 272, age: 24, experience: 4,
-    college: "Ohio State",
-    acquired: "draft-2023-R3",
-    stats: { tackles: 41, tfl: 5, sacks: 3.5 },
-    form: 7.2,
+    depthRank: 3,
+    height: 73, weight: 237, age: 25, experience: 4,
+    college: "Louisville",
+    acquired: "waivers-2026-JAX",
+    stats: {},
+    form: 6.2,
     status: "active",
-    injuryNote: null,
-    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4426412.png",
-    contract: { years: 4, total: 5400000, guaranteed: 2100000, apy: 1350000, throughYear: 2026, cap2026: 1440000 },
-    career: [{ years: "2023–", team: "Atlanta Falcons", type: "NFL" }],
+    injuryNote: "Claimed off waivers from Jacksonville on Sept 1, a 2023 fifth-round pick who adds pass-rush depth to an edge room down Jalon Walker for the year and James Pearce Jr. for eight games.",
+    image: null,
+    contract: { years: 1, total: 1170000, guaranteed: 0, apy: 1170000, throughYear: 2026, cap2026: 1170000 },
+    career: [
+      { years: "2026–", team: "Atlanta Falcons", type: "NFL" },
+      { years: "2023–2025", team: "Jacksonville Jaguars", type: "NFL · 2023 R5 #136" },
+    ],
+  },
+  {
+    id: "jared-ivey",
+    name: "Jared Ivey",
+    number: 96,
+    position: "EDGE",
+    posSlot: "REDGE",
+    positionGroup: "defense",
+    depthRank: 4,
+    height: 78, weight: 274, age: 23, experience: 2,
+    college: "Ole Miss",
+    acquired: "waivers-2026-SEA",
+    stats: {},
+    form: 6.0,
+    status: "active",
+    injuryNote: "Claimed off waivers from Seattle on Sept 1, a long, developmental edge who profiles as rotational depth and a special-teams body behind the veteran front.",
+    image: null,
+    contract: { years: 1, total: 900000, guaranteed: 0, apy: 900000, throughYear: 2026, cap2026: 900000 },
+    career: [
+      { years: "2026–", team: "Atlanta Falcons", type: "NFL" },
+      { years: "2025", team: "Seattle Seahawks", type: "NFL" },
+    ],
+  },
+  {
+    id: "cameron-williams",
+    name: "Cameron Williams",
+    number: 68,
+    position: "OT",
+    posSlot: "SWING",
+    positionGroup: "offense",
+    depthRank: 3,
+    height: 78, weight: 317, age: 22, experience: 2,
+    college: "Texas",
+    acquired: "waivers-2026-PHI",
+    stats: {},
+    form: 6.0,
+    status: "active",
+    injuryNote: "Claimed off waivers from Philadelphia on Sept 1, a big developmental tackle who adds swing depth on an offensive line the Falcons have prioritized all summer.",
+    image: null,
+    contract: { years: 1, total: 900000, guaranteed: 0, apy: 900000, throughYear: 2026, cap2026: 900000 },
+    career: [
+      { years: "2026–", team: "Atlanta Falcons", type: "NFL" },
+      { years: "2025", team: "Philadelphia Eagles", type: "NFL" },
+    ],
   },
   {
     id: "maason-smith",
@@ -883,27 +930,6 @@ export const PLAYERS = [
     career: [{ years: "2023–", team: "Atlanta Falcons", type: "NFL" }],
   },
   {
-    id: "brooks-cb",
-    name: "Natrone Brooks",
-    number: 35,
-    position: "CB",
-    posSlot: "NICKEL",
-        stRoles: ["GUNNER"],
-    stRank: {"GUNNER":2},
-    positionGroup: "defense",
-    depthRank: 1,
-    height: 71, weight: 190, age: 27, experience: 4,
-    college: "Mississippi Valley State",
-    acquired: "extension-2026",
-    stats: { tackles: 32, pass_def: 4 },
-    form: 6.8,
-    status: "active",
-    injuryNote: "Extended March 2026",
-    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4689989.png",
-    contract: { years: 2, total: 4500000, guaranteed: 2000000, apy: 2250000, throughYear: 2027, cap2026: 2250000 },
-    career: [{ years: "2024–", team: "Atlanta Falcons", type: "NFL" }],
-  },
-  {
     id: "henderson-cb",
     name: "C.J. Henderson",
     number: 39,
@@ -1076,27 +1102,6 @@ export const PLAYERS = [
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4567111.png",
     contract: { years: 4, total: 3800000, guaranteed: 200000, apy: 950000, throughYear: 2026, cap2026: 1100000 },
-    career: [{ years: "2023–", team: "Atlanta Falcons", type: "NFL" }],
-  },
-  {
-    id: "jammie-robinson",
-    name: "Jammie Robinson",
-    number: 34,
-    position: "S",
-    posSlot: "FS",
-        stRoles: ["PP","GUNNER"],
-    stRank: {"PP":4,"GUNNER":5},
-    positionGroup: "defense",
-    depthRank: 3,
-    height: 71, weight: 207, age: 25, experience: 3,
-    college: "Florida State",
-    acquired: "draft-2023-R5",
-    stats: {},
-    form: 6.4,
-    status: "active",
-    injuryNote: "Box safety / sub-package",
-    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4430411.png",
-    contract: { years: 4, total: 4350000, guaranteed: 220000, apy: 1087500, throughYear: 2026, cap2026: 1050000 },
     career: [{ years: "2023–", team: "Atlanta Falcons", type: "NFL" }],
   },
   {
@@ -1926,18 +1931,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-31T09:00:00Z",
+  generatedAt: "2026-09-01T09:00:00Z",
   cover: {
-    kicker: "THE 53 IS SET: Atlanta Trims From 90 on the NFL's Moved-Up Cutdown Clock, Keeps a Surprising Four Quarterbacks (Tua, Penix, Cooper Rush and Undrafted Rookie Jack Strand), Swings a Cutdown-Day Trade for Bears DT Gervon Dexter, and Sends Roster Surprises Tyler Goodson, Azeez Ojulari and Darnay Holmes to the Practice-Squad Market as Kevin Stefanski Still Will Not Name a Week 1 Starter With the Sept 13 Opener at Pittsburgh Two Weeks Out",
-    headLine1: "The 53 is set.",
-    headEm: "Four quarterbacks made it.",
-    headLine3: "Cunningham trades for Dexter.",
+    kicker: "THE ROSTER IS SETTLED, THE PAGE TURNS TO PITTSBURGH: Atlanta Rounds Out Its 53 by Claiming LBs Yasir Abdullah and Jared Ivey and OT Cameron Williams Off Waivers (Waiving Longtime DL Zach Harrison, DBs Jammie Robinson and Natrone Brooks in the Process), Fills a 15-Man Practice Squad That Brings Back Tyler Goodson, Darnay Holmes, Cameron Sample and Cash Jones, and Now Aims the Whole Building at the Sept 13 Opener at Pittsburgh With Kevin Stefanski Still Not Naming a Week 1 Starter and Michael Penix Jr. Insisting He Will Be Ready",
+    headLine1: "The roster is settled.",
+    headEm: "Eyes turn to Pittsburgh.",
+    headLine3: "QB1 still unnamed.",
     deck:
-      "The most consequential roster day of the summer answered one question loudly and left the biggest one open. Atlanta cut from 90 to 53 by the NFL's moved-up 6 p.m. ET Sunday deadline, with waiver claims processing at 1 p.m. ET Monday, and the surprise was the position the club refused to thin: the Falcons kept four quarterbacks, carrying Tua Tagovailoa, Michael Penix Jr., veteran Cooper Rush and undrafted Minnesota State-Moorhead rookie Jack Strand, whose 212-yard preseason night against Indianapolis played its way onto the team. General manager Ian Cunningham then made the day's boldest move, trading cornerback Clark Phillips III and a 2027 fifth-round pick to the Bears for defensive tackle Gervon Dexter Sr., the 24-year-old he had a hand in drafting in Chicago, adding a two-year starter (44 tackles, six sacks in 2025) to the interior rotation next to Maason Smith and Brandon Dorlus. The releases stung in places: running back Tyler Goodson, edge Azeez Ojulari and corner Darnay Holmes were among the cuts and now headline Atlanta's practice-squad shopping list. The roster tilts toward the lines and the secondary, with just two running backs and five outside linebackers in a group already down Walker for the year and Pearce for eight games. And the quarterback competition simply moved into the regular-season buildup: two weeks from the Sept 13 opener at Pittsburgh, Kevin Stefanski still has not named a starter, with Rapoport leaning Tua on medical grounds and Atlanta's own airwaves leaning Penix.",
+      "Two days after cutting from 90 to 53, Atlanta finished the shaping of its roster and pointed everything at Week 1. On the waiver wire Monday the Falcons claimed linebackers Yasir Abdullah (from Jacksonville) and Jared Ivey (from Seattle) and offensive tackle Cameron Williams (from Philadelphia), waiving longtime defensive lineman and former third-round pick Zach Harrison along with defensive backs Jammie Robinson and Natrone Brooks to make the room. The club then built out a 15-man practice squad, one spot still open, that reunites it with cutdown casualties Tyler Goodson, Darnay Holmes, Cameron Sample and rookie back Cash Jones. What it did not do was settle the one question everyone is waiting on: Kevin Stefanski still has not named a Week 1 starter, keeping the Tua Tagovailoa and Michael Penix Jr. competition open into game-prep week, with Ian Rapoport reading the silence as a lean toward Tua on medical grounds and Penix telling reporters he will be ready physically and mentally at Pittsburgh. The build tilts to the trenches and the secondary, still down Jalon Walker for the year and James Pearce Jr. for eight games, as the regular season arrives with the opener now twelve days out.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "tua",
-    stampLabel: "53 SET · 90 TO 53 BY 6PM ET SUN AUG 30 (WAIVERS 1PM ET MON) · FOUR QBS KEPT (TUA, PENIX, RUSH, STRAND) · TRADE: DEXTER IN, PHILLIPS OUT · GOODSON / OJULARI / HOLMES CUT · WEEK 1 QB1 STILL OPEN (AT PITTSBURGH SEP 13)",
+    stampLabel: "ROSTER SETTLED · WAIVERS: ABDULLAH / IVEY / WILLIAMS IN, HARRISON / ROBINSON / BROOKS OUT · 15-MAN PRACTICE SQUAD (GOODSON, HOLMES, SAMPLE, JONES) · WEEK 1 QB1 STILL OPEN · AT PITTSBURGH SEP 13",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2366,6 +2371,18 @@ export const NEWS_DIGEST = {
     // as is rather than repointed to an Aug-30 slug, which would only spawn another dangling request no run can
     // fulfill this cycle. Clean queue moment remains a cutdown-day or Steelers-week scene for the first run that
     // can reach the Vault (an Antigravity-side run, or a Cowork run with the Vault mounted).
+    // STATUS (2026-09-01 scheduled run): cover queue SKIPPED again, same hard constraint re-verified this
+    // cycle: ~/Vault is NOT mounted (only the tracker repos, outputs and uploads are), so
+    // ~/Vault/Notes/image-requests.md and the limn-editor-enhance skill are unreachable and the downstream
+    // Antigravity queue cannot be appended. Confirmed the last plate actually on disk is 2026-07-17-dotson-wr2.jpg;
+    // the 2026-08-15-red-debut.jpg pointer (17 days old) was never generated and already resolves to the photoId
+    // headshot fallback. The lead rotated from cutdown day to the roster now fully settled (Monday waiver claims,
+    // 15-man practice squad) with the page turning to the Sept 13 opener at Pittsburgh. Today's lead is a
+    // roster/transaction story with no single picturable face, so photoId stays "tua" (a star with a real headshot
+    // and the throughline of the still-open QB1 race), keeping the fallback fresh and on-story. Pointer left as is
+    // rather than repointed to a Sep-01 slug, which would only spawn another dangling request no run can fulfill this
+    // cycle. Clean queue moment remains a Steelers-week first-team practice rep or a Tua/Penix under-center scene for
+    // the first run that can reach the Vault (an Antigravity-side run, or a Cowork run with the Vault mounted).
     coverImageUrl: "/falcons-tracker/assets/cover/2026-08-15-red-debut.jpg",
   },
   sources: [
@@ -2379,6 +2396,13 @@ export const NEWS_DIGEST = {
     "Sportsnaut", "The Big Lead", "The Athletic", "Mile High Report",
   ],
   topics: [
+    {
+      title: "THE ROSTER IS SETTLED AND THE PAGE TURNS TO PITTSBURGH: ATLANTA CLAIMS LBS YASIR ABDULLAH AND JARED IVEY AND OT CAMERON WILLIAMS OFF WAIVERS, WAIVING LONGTIME DL ZACH HARRISON AND DBS JAMMIE ROBINSON AND NATRONE BROOKS TO MAKE ROOM, THEN FILLS A 15-MAN PRACTICE SQUAD THAT BRINGS BACK GOODSON, HOLMES, SAMPLE AND CASH JONES: with the 53 shaped and one practice-squad spot still open, the whole building now aims at the Sept 13 opener with the Week 1 quarterback still unnamed",
+      detail: "atlantafalcons.com, NBC Sports (Pro Football Talk), Yahoo Sports and The Falcoholic (Aug 31 into Sep 1): Atlanta rounded out its roster on the Monday waiver wire, claiming linebackers Yasir Abdullah (waived by Jacksonville) and Jared Ivey (waived by Seattle) and offensive tackle Cameron Williams (waived by Philadelphia). To clear the space the Falcons waived longtime defensive lineman Zach Harrison, a former third-round pick who logged 8.5 sacks across 40 games in three seasons, along with defensive backs Jammie Robinson and Natrone Brooks. The club then built a 15-man practice squad, one spot still open, made up entirely of training-camp holdovers and headlined by the return of cutdown casualties running back Tyler Goodson, cornerback Darnay Holmes, edge Cameron Sample and rookie back Cash Jones. With the roster settled, attention shifts to the regular-season opener at Pittsburgh, where Michael Penix Jr. has told reporters he will be ready physically and mentally if named the Week 1 starter.",
+      category: "general",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-claim-waivers-nfl-roster-cutdowns-yasir-abdullah-jared-ivey-cameron-williams",
+      sourceLabel: "atlantafalcons.com / NBC Sports / Yahoo Sports / The Falcoholic",
+    },
     {
       title: "THE 53 IS SET: ATLANTA KEEPS A SURPRISING FOUR QUARTERBACKS AS IT TRIMS FROM 90 ON THE NFL'S MOVED-UP CUTDOWN CLOCK, WITH UNDRAFTED ROOKIE JACK STRAND STICKING BEHIND TUA, PENIX AND COOPER RUSH: the initial roster skews to the trenches and secondary, carrying only two running backs and five outside linebackers, with waiver claims processed at 1 p.m. ET Monday before the practice squad forms",
       detail: "The Falcoholic, Pro Football Rumors and Yahoo Sports (Aug 30): Atlanta reached the 53-man limit by the league's moved-up 6 p.m. ET Sunday deadline, moving 37 players off the active roster. The surprise was the four-quarterback room: Tua Tagovailoa, Michael Penix Jr., veteran Cooper Rush and undrafted Minnesota State-Moorhead rookie Jack Strand, whose 212-yard night against the Colts played its way on, all made it. The build carries just two running backs (Bijan Robinson and Brian Robinson Jr.), a deep offensive line and defensive backfield, three tight ends and only five outside linebackers in a group already down Jalon Walker for the year and James Pearce Jr. for eight games. Waiver claims processed at 1 p.m. ET Monday before teams could begin signing practice-squad players.",
@@ -2464,8 +2488,8 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com / NFL.com / ESPN",
     },
     {
-      title: "BIJAN GETS PAID, AND HE IS THE HIGHEST-PAID RUNNING BACK IN NFL HISTORY: the Falcons ended a five-day hold-in Tuesday morning by agreeing with Robinson on a three-year extension worth up to $75 million, with $51 million guaranteed and $37 million at signing, the most money ever guaranteed to a running back, resetting the market and locking up the fourth core Cunningham-era piece after London, Pitts and Bergeron",
-      detail: "ESPN (Adam Schefter), NFL.com, The Washington Post and SI Falcons (Aug 4): Robinson and the Falcons agreed to a three-year extension worth up to $75 million, roughly $22.25M in new base average with a max of about $25M per year, that makes him the highest-paid running back in NFL history, surpassing Saquon Barkley's $20.6M. The deal carries $51 million guaranteed and $37 million at signing, the most ever guaranteed to a back on a non-rookie deal, and runs through 2030 after his 2027 fifth-year option. Negotiated by Nicole Lynn of Klutch Sports, it ended a hold-in that had reached five days. Robinson led the NFL with 2,298 scrimmage yards in 2025, a first-team All-Pro season and the 12th-highest single-season total in league history, and across three years he has 3,910 rushing yards and 25 rushing touchdowns plus 1,738 receiving yards and nine scores on an NFL-leading 1,003 touches. He is the third offensive weapon Atlanta has extended this summer after Drake London (4yr/$141M) and Kyle Pitts Sr. (3yr/$54M), with Matthew Bergeron (4yr/$96M) added Aug 1, and the four now account for roughly a quarter of the projected salary cap.",
+      title: "THE MARQUEE SUMMER, IN ONE LINE: BIJAN ROBINSON'S RECORD RUNNING-BACK EXTENSION CAPPED A CUNNINGHAM-ERA SPENDING SPREE THAT ALSO LOCKED UP LONDON, PITTS AND BERGERON: the three-year deal worth up to $75 million (with $51 million guaranteed) made Robinson the highest-paid back in NFL history and, together with the other extensions, now accounts for roughly a quarter of Atlanta's projected cap",
+      detail: "ESPN (Adam Schefter), NFL.com, The Washington Post and SI Falcons (Aug 4, still shaping the roster math): Robinson's three-year extension worth up to $75 million, about $22.25M in new base average, carries $51 million guaranteed and $37 million at signing, the most ever guaranteed to a running back on a non-rookie deal, and runs through 2030 after his 2027 fifth-year option. It made him the highest-paid back in league history, surpassing Saquon Barkley's $20.6M, after he led the NFL with 2,298 scrimmage yards in a first-team All-Pro 2025. He is the fourth core piece Atlanta extended this summer, joining Drake London (4yr/$141M), Kyle Pitts Sr. (3yr/$54M) and Matthew Bergeron (4yr/$96M), a group that now accounts for roughly a quarter of the projected salary cap as the season opens.",
       category: "contracts",
       sourceUrl: "https://www.espn.com/nfl/story/_/id/49527923/falcons-rb-robinson-reach-3-year-deal-worth-75m",
       sourceLabel: "ESPN / NFL.com / Washington Post / SI Falcons",
@@ -2480,8 +2504,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-08-31T09:00:00Z",
-  windowLabel: "Roster Set · Atlanta trimmed from 90 to 53 by the NFL's moved-up 6 p.m. ET Sunday deadline (waiver claims processed 1 p.m. ET Monday), keeping four quarterbacks and trading for Bears DT Gervon Dexter. In his finale presser, Stefanski praised Tua's operation but flagged an 'avoidable' snap-exchange fumble and still has not named a Week 1 starter at Pittsburgh (Sep 13), keeping the Penix-Tua race open into the regular-season buildup",
+  generatedAt: "2026-09-01T09:00:00Z",
+  windowLabel: "Roster Settled, Steelers Week Ahead · Atlanta finished its 53 with Monday waiver claims (LBs Yasir Abdullah and Jared Ivey, OT Cameron Williams) and a 15-man practice squad, then turned the page to the Sept 13 opener at Pittsburgh. In his finale presser, Stefanski praised Tua's operation but flagged an 'avoidable' snap-exchange fumble and still has not named a Week 1 starter, keeping the Penix-Tua race open into game-prep week",
   sessions: [
     {
       id: "stefanski-2026-08-28",
