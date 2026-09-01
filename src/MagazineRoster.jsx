@@ -6,17 +6,19 @@ import MagazinePlayerModal from "./MagazinePlayerModal.jsx";
 // Roster — magazine "The Fifty-Three" + room spotlights + starting eleven + ladder.
 
 const ROOM_LADDER = [
-  { code: "QB",   label: "Quarterback",     positions: ["QB"] },
-  { code: "RB",   label: "Running Back",    positions: ["RB"] },
-  { code: "WR",   label: "Wide Receiver",   positions: ["WR"] },
-  { code: "TE",   label: "Tight End",       positions: ["TE"] },
-  { code: "OL",   label: "Offensive Line",  positions: ["OT", "OG", "C"] },
-  { code: "DL",   label: "Defensive Line",  positions: ["DT", "DE"] },
-  { code: "EDGE", label: "Edge Rusher",     positions: ["EDGE"] },
-  { code: "LB",   label: "Linebacker",      positions: ["LB"] },
-  { code: "CB",   label: "Cornerback",      positions: ["CB"] },
-  { code: "S",    label: "Safety",          positions: ["S"] },
-  { code: "ST",   label: "Specialists",     positions: ["K", "P", "LS"] },
+  { code: "QB",   label: "Quarterback",      positions: ["QB"] },
+  { code: "RB",   label: "Running Back",     positions: ["RB"] },
+  { code: "WR",   label: "Wide Receiver",    positions: ["WR"] },
+  { code: "TE",   label: "Tight End",        positions: ["TE"] },
+  { code: "OT",   label: "Offensive Tackle", positions: ["OT"] },
+  { code: "IOL",  label: "Interior O-Line",  positions: ["OG", "C"] },
+  { code: "DT",   label: "Defensive Tackle", positions: ["DT"] },
+  { code: "DE",   label: "Defensive End",    positions: ["DE"] },
+  { code: "EDGE", label: "Edge Rusher",      positions: ["EDGE"] },
+  { code: "LB",   label: "Linebacker",       positions: ["LB"] },
+  { code: "CB",   label: "Cornerback",       positions: ["CB"] },
+  { code: "S",    label: "Safety",           positions: ["S"] },
+  { code: "ST",   label: "Specialists",      positions: ["K", "P", "LS"] },
 ];
 
 function topByPosition(positions, n) {
@@ -27,7 +29,7 @@ function topByPosition(positions, n) {
 }
 
 // ─── Base personnel (the on-field eleven) ───────────────────────────────────
-// The Ladder below lists every room four deep. This surfaces the simpler
+// The Ladder below lists every room at full depth (wrapping past 4). This surfaces the simpler
 // truth: who lines up. Offense is base 11 personnel (3 WR); defense is the
 // nickel base (4-2-5), so the NICKEL slot is a true starter, not CB depth.
 const POS_SPLITS = {
@@ -239,7 +241,7 @@ export default function MagazineRoster({ setView }) {
         <div className="rule"></div>
         <div>
           <div className="title">The <span className="em">Ladder</span></div>
-          <div className="meta">Eleven position rooms · Four deep · Starter to fringe · Page 10</div>
+          <div className="meta">Thirteen position rooms · Full depth · Starter to fringe · Page 10</div>
         </div>
         <div className="rule"></div>
       </div>
@@ -254,12 +256,14 @@ export default function MagazineRoster({ setView }) {
         </div>
 
         {ROOM_LADDER.map((room) => {
+          // Show EVERY body in the room (starter → fringe), sorted by depth.
+          // Rooms deeper than 4 wrap to additional rows via the .slots grid,
+          // so nobody gets chopped. Pad only to fill the first row of 4.
           const players = PLAYERS
             .filter((p) => room.positions.includes(p.position))
-            .sort((a, b) => (a.depthRank ?? 9) - (b.depthRank ?? 9))
-            .slice(0, 4);
-          // Pad to 4 slots
-          const slots = [0, 1, 2, 3].map((i) => players[i] || null);
+            .sort((a, b) => (a.depthRank ?? 9) - (b.depthRank ?? 9));
+          const padTo = Math.max(4, Math.ceil(players.length / 4) * 4);
+          const slots = Array.from({ length: padTo }, (_, i) => players[i] || null);
 
           return (
             <div key={room.code} className="lrow">
@@ -267,44 +271,46 @@ export default function MagazineRoster({ setView }) {
                 <div className="n">{room.code}</div>
                 <div className="l">{room.label}</div>
               </div>
-              {slots.map((p, i) => {
-                if (!p) {
+              <div className="slots">
+                {slots.map((p, i) => {
+                  if (!p) {
+                    return (
+                      <div key={i} className="slot empty">
+                        <div className="snm">— open camp body —</div>
+                      </div>
+                    );
+                  }
+                  const cls = ["slot", "clickable"];
+                  if (i === 0) cls.push("starter");
+                  const flags = slotFlags(p);
+                  if (flags) cls.push(flags);
+                  const college = (p.college || "").slice(0, 4).toUpperCase();
+                  const note = slotNote(p);
                   return (
-                    <div key={i} className="slot empty">
-                      <div className="snm">— open camp body —</div>
+                    <div
+                      key={p.id}
+                      className={cls.join(" ")}
+                      onClick={() => open(p)}
+                      role="button"
+                      tabIndex={0}
+                      onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") open(p); }}
+                    >
+                      <div className="slot-row">
+                        <div className="ladder-photo">
+                          <div className="bg"></div>
+                          {p.image && <img src={p.image} alt="" />}
+                          <div className="halftone"></div>
+                        </div>
+                        <div className="slot-text">
+                          <div className="jn">#{p.number} · {college}</div>
+                          <div className="snm">{shortName(p.name)}</div>
+                          {note && <div className="snote">{note}</div>}
+                        </div>
+                      </div>
                     </div>
                   );
-                }
-                const cls = ["slot", "clickable"];
-                if (i === 0) cls.push("starter");
-                const flags = slotFlags(p);
-                if (flags) cls.push(flags);
-                const college = (p.college || "").slice(0, 4).toUpperCase();
-                const note = slotNote(p);
-                return (
-                  <div
-                    key={p.id}
-                    className={cls.join(" ")}
-                    onClick={() => open(p)}
-                    role="button"
-                    tabIndex={0}
-                    onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") open(p); }}
-                  >
-                    <div className="slot-row">
-                      <div className="ladder-photo">
-                        <div className="bg"></div>
-                        {p.image && <img src={p.image} alt="" />}
-                        <div className="halftone"></div>
-                      </div>
-                      <div className="slot-text">
-                        <div className="jn">#{p.number} · {college}</div>
-                        <div className="snm">{shortName(p.name)}</div>
-                        {note && <div className="snote">{note}</div>}
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
+                })}
+              </div>
             </div>
           );
         })}

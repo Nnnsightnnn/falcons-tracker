@@ -1428,13 +1428,18 @@
 .mag-root .ladder .heads .h { padding: 10px 12px 8px; font-family: var(--m-cond); font-size: 10px; letter-spacing: 0.24em; color: var(--ink-mute); text-transform: uppercase; border-right: 1px solid var(--rule-soft); }
 .mag-root .ladder .heads .h:last-child { border-right: none; }
 .mag-root .ladder .heads .h.depth-1 { color: var(--oxblood); font-weight: 600; }
-.mag-root .ladder .lrow { display: grid; grid-template-columns: 120px repeat(4, 1fr); border-bottom: 1px solid var(--rule-soft); gap: 0; }
+.mag-root .ladder .lrow { display: grid; grid-template-columns: 120px 1fr; border-bottom: 1px solid var(--rule-soft); gap: 0; }
 .mag-root .ladder .lrow:last-child { border-bottom: none; }
+/* Slots wrap in a 4-up grid: rooms deeper than 4 flow onto extra rows, nobody chopped. */
+.mag-root .ladder .lrow .slots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
 .mag-root .ladder .lrow .pos { padding: 14px 14px; border-right: 1px solid var(--rule); display: flex; flex-direction: column; justify-content: center; background: var(--paper-soft); }
 .mag-root .ladder .lrow .pos .n { font-family: var(--m-display); font-size: 26px; line-height: 1; color: var(--ink); }
 .mag-root .ladder .lrow .pos .l { font-family: var(--m-cond); font-size: 9px; letter-spacing: 0.22em; color: var(--ink-mute); margin-top: 4px; }
 .mag-root .ladder .lrow .slot { padding: 12px 14px; border-right: 1px solid var(--rule-soft); display: flex; flex-direction: column; justify-content: center; position: relative; }
-.mag-root .ladder .lrow .slot:last-child { border-right: none; }
+.mag-root .ladder .lrow .slots .slot:nth-child(4n) { border-right: none; }
+.mag-root .ladder .lrow .slots .slot:last-child { border-right: none; }
+/* wrapped depth rows (5th body onward) get a soft top rule to separate the tier */
+.mag-root .ladder .lrow .slots .slot:nth-child(n+5) { border-top: 1px solid var(--rule-soft); }
 .mag-root .ladder .lrow .slot .jn { font-family: var(--m-mono); font-size: 10px; letter-spacing: 0.14em; color: var(--ink-mute); }
 .mag-root .ladder .lrow .slot .snm { font-family: var(--m-display); font-size: 17px; line-height: 1.05; color: var(--ink); margin-top: 3px; }
 .mag-root .ladder .lrow .slot.starter { background: var(--paper); }
