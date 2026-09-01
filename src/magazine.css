@@ -1398,6 +1398,31 @@
 .mag-root .roomrow .right .status.pup { color: var(--oxblood); font-weight: 600; }
 .mag-root .roomrow .right .status.tag { color: var(--m-gold); font-weight: 600; }
 
+/* ── The Starting Eleven (base personnel · nickel defense) ─────────────── */
+.mag-root .eleven { display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid var(--rule); }
+.mag-root .eleven-side { padding: 24px 30px 30px; }
+.mag-root .eleven-side:first-child { border-right: 1px solid var(--rule); }
+.mag-root .eleven-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; padding-bottom: 10px; margin-bottom: 14px; border-bottom: 2px solid var(--rule); }
+.mag-root .eleven-head .side { font-family: var(--m-display); font-size: 26px; color: var(--ink); line-height: 1; }
+.mag-root .eleven-head .scheme { font-family: var(--m-cond); font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--oxblood); }
+.mag-root .eleven-unit { margin-bottom: 14px; }
+.mag-root .eleven-unit:last-child { margin-bottom: 0; }
+.mag-root .eleven-unit .ulabel { font-family: var(--m-cond); font-size: 9.5px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 8px; }
+.mag-root .eleven-unit .ugrid { display: flex; flex-wrap: wrap; gap: 7px; }
+.mag-root .eleven .ecard { flex: 1 1 96px; min-width: 90px; background: var(--paper-soft); border: 1px solid var(--rule-soft); border-left: 3px solid var(--rule-soft); padding: 8px 10px; display: flex; flex-direction: column; gap: 3px; }
+.mag-root .eleven .ecard.clickable { cursor: pointer; }
+.mag-root .eleven .ecard.clickable:hover { background: #fffdf6; }
+.mag-root .eleven .ecard .erole { font-family: var(--m-cond); font-size: 8.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-mute); }
+.mag-root .eleven .ecard .ename { font-family: var(--m-display); font-size: 15px; line-height: 1; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mag-root .eleven .ecard .enum { font-family: var(--m-cond); font-size: 9px; letter-spacing: 0.14em; color: var(--ink-mute); }
+.mag-root .eleven .ecard.hot { border-color: var(--oxblood); border-left-color: var(--oxblood); background: rgba(139,29,29,0.07); }
+.mag-root .eleven .ecard.hot .erole { color: var(--oxblood); font-weight: 600; }
+.mag-root .eleven .ecard.hot .ename { color: var(--oxblood-deep); }
+@media (max-width: 760px) {
+  .mag-root .eleven { grid-template-columns: 1fr; }
+  .mag-root .eleven-side:first-child { border-right: none; border-bottom: 1px solid var(--rule); }
+}
+
 .mag-root .ladder { padding: 28px 40px 36px; border-bottom: 1px solid var(--rule); }
 .mag-root .ladder .heads { display: grid; grid-template-columns: 120px repeat(4, 1fr); gap: 0; border-bottom: 4px double var(--rule); }
 .mag-root .ladder .heads .h { padding: 10px 12px 8px; font-family: var(--m-cond); font-size: 10px; letter-spacing: 0.24em; color: var(--ink-mute); text-transform: uppercase; border-right: 1px solid var(--rule-soft); }

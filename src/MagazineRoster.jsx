@@ -26,6 +26,62 @@ function topByPosition(positions, n) {
     .slice(0, n);
 }
 
+// ─── Base personnel (the on-field eleven) ───────────────────────────────────
+// The Ladder below lists every room four deep. This surfaces the simpler
+// truth: who lines up. Offense is base 11 personnel (3 WR); defense is the
+// nickel base (4-2-5), so the NICKEL slot is a true starter, not CB depth.
+const POS_SPLITS = {
+  WR: ["X", "Z", "SLOT"], OG: ["LG", "RG"], OT: ["LT", "RT"],
+  EDGE: ["LEDGE", "REDGE"], DT: ["1T", "3T"], LB: ["MIKE", "WILL"],
+  CB: ["LCB", "RCB", "NICKEL"], S: ["FS", "SS"],
+};
+const UNAVAILABLE = new Set(["ir", "pup", "nfi", "suspended"]);
+
+function resolveSlotOf(p, slots) {
+  if (!slots) return null;
+  return p.posSlot && slots.includes(p.posSlot) ? p.posSlot : slots[0];
+}
+function starterFor(pos, slot) {
+  let list = PLAYERS.filter((p) => p.position === pos);
+  if (slot) list = list.filter((p) => resolveSlotOf(p, POS_SPLITS[pos]) === slot);
+  list.sort((a, b) => (a.depthRank ?? 9) - (b.depthRank ?? 9));
+  const avail = list.filter((p) => !UNAVAILABLE.has((p.status || "").toLowerCase()));
+  return avail[0] || list[0] || null;
+}
+
+const BASE_OFFENSE = {
+  scheme: "11 Personnel · 3 WR",
+  units: [
+    { label: "Backfield & Receivers", slots: [
+      { pos: "QB", role: "QB" }, { pos: "RB", role: "RB" },
+      { pos: "WR", slot: "X", role: "WR · X" }, { pos: "WR", slot: "Z", role: "WR · Z" },
+      { pos: "WR", slot: "SLOT", role: "Slot" }, { pos: "TE", role: "TE" },
+    ]},
+    { label: "Offensive Line", slots: [
+      { pos: "OT", slot: "LT", role: "LT" }, { pos: "OG", slot: "LG", role: "LG" },
+      { pos: "C", role: "C" }, { pos: "OG", slot: "RG", role: "RG" },
+      { pos: "OT", slot: "RT", role: "RT" },
+    ]},
+  ],
+};
+const BASE_DEFENSE = {
+  scheme: "Nickel · 4-2-5",
+  units: [
+    { label: "Front Four", slots: [
+      { pos: "EDGE", slot: "LEDGE", role: "Edge" }, { pos: "DT", slot: "1T", role: "Nose" },
+      { pos: "DT", slot: "3T", role: "3-Tech" }, { pos: "EDGE", slot: "REDGE", role: "Edge" },
+    ]},
+    { label: "Linebackers", slots: [
+      { pos: "LB", slot: "MIKE", role: "Mike" }, { pos: "LB", slot: "WILL", role: "Will" },
+    ]},
+    { label: "Secondary · 5 DB", slots: [
+      { pos: "CB", slot: "LCB", role: "CB" }, { pos: "S", slot: "FS", role: "FS" },
+      { pos: "CB", slot: "NICKEL", role: "Nickel", highlight: true },
+      { pos: "S", slot: "SS", role: "SS" }, { pos: "CB", slot: "RCB", role: "CB" },
+    ]},
+  ],
+};
+
 function shortName(name) {
   if (!name) return "—";
   const parts = name.split(" ");
@@ -160,6 +216,21 @@ export default function MagazineRoster({ setView }) {
         <cite>— Head Coach <span className="nm">Kevin Stefanski</span> · on the depth ladder</cite>
       </section>
 
+      {/* THE STARTING ELEVEN */}
+      <div className="section-head">
+        <div className="rule"></div>
+        <div>
+          <div className="title">The Starting <span className="em">Eleven</span></div>
+          <div className="meta">Base personnel · 11 pers. offense · Nickel (4-2-5) defense · five defensive backs</div>
+        </div>
+        <div className="rule"></div>
+      </div>
+
+      <section className="eleven">
+        <ElevenSide title="Offense" scheme={BASE_OFFENSE.scheme} units={BASE_OFFENSE.units} onSelect={open} />
+        <ElevenSide title="Defense" scheme={BASE_DEFENSE.scheme} units={BASE_DEFENSE.units} onSelect={open} />
+      </section>
+
       {/* THE LADDER */}
       <div className="section-head">
         <div className="rule"></div>
@@ -239,6 +310,44 @@ export default function MagazineRoster({ setView }) {
       <MagazinePlayerModal player={selected} onClose={() => setSelected(null)} />
 
     </MagazineShell>
+  );
+}
+
+function ElevenSide({ title, scheme, units, onSelect }) {
+  return (
+    <div className="eleven-side">
+      <div className="eleven-head">
+        <span className="side">{title}</span>
+        <span className="scheme">{scheme}</span>
+      </div>
+      {units.map((u) => (
+        <div key={u.label} className="eleven-unit">
+          <div className="ulabel">{u.label}</div>
+          <div className="ugrid">
+            {u.slots.map((slot, i) => {
+              const p = starterFor(slot.pos, slot.slot);
+              const cls = ["ecard"];
+              if (slot.highlight) cls.push("hot");
+              if (p) cls.push("clickable");
+              return (
+                <div
+                  key={slot.role + i}
+                  className={cls.join(" ")}
+                  onClick={p ? () => onSelect?.(p) : undefined}
+                  role={p ? "button" : undefined}
+                  tabIndex={p ? 0 : undefined}
+                  onKeyDown={p ? (e) => { if (e.key === "Enter" || e.key === " ") onSelect?.(p); } : undefined}
+                >
+                  <div className="erole">{slot.role}</div>
+                  <div className="ename">{p ? shortName(p.name) : "—"}</div>
+                  <div className="enum">{p ? `#${p.number ?? "—"}` : "unfilled"}</div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      ))}
+    </div>
   );
 }
 
