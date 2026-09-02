@@ -1931,18 +1931,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-09-01T09:00:00Z",
+  generatedAt: "2026-09-02T12:30:00Z",
   cover: {
-    kicker: "THE ROSTER IS SETTLED, THE PAGE TURNS TO PITTSBURGH: Atlanta Rounds Out Its 53 by Claiming LBs Yasir Abdullah and Jared Ivey and OT Cameron Williams Off Waivers (Waiving Longtime DL Zach Harrison, DBs Jammie Robinson and Natrone Brooks in the Process), Fills a 15-Man Practice Squad That Brings Back Tyler Goodson, Darnay Holmes, Cameron Sample and Cash Jones, and Now Aims the Whole Building at the Sept 13 Opener at Pittsburgh With Kevin Stefanski Still Not Naming a Week 1 Starter and Michael Penix Jr. Insisting He Will Be Ready",
-    headLine1: "The roster is settled.",
+    kicker: "THE ROSTER IS COMPLETE, THE PAGE TURNS FULLY TO PITTSBURGH: Atlanta Closes Out Its Practice Squad Tuesday by Signing Undrafted OL Josh Thompson (Filling the 16th and Final Spot), After Rounding Out the 53 With Monday Waiver Claims of LBs Yasir Abdullah and Jared Ivey and OT Cameron Williams (Waiving Longtime DL Zach Harrison, DBs Jammie Robinson and Natrone Brooks in the Process), and Now Aims the Whole Building at the Sept 13 Opener at Pittsburgh With Kevin Stefanski Still Not Naming a Week 1 Starter and Michael Penix Jr. Insisting He Will Be Ready",
+    headLine1: "The roster is complete.",
     headEm: "Eyes turn to Pittsburgh.",
     headLine3: "QB1 still unnamed.",
     deck:
-      "Two days after cutting from 90 to 53, Atlanta finished the shaping of its roster and pointed everything at Week 1. On the waiver wire Monday the Falcons claimed linebackers Yasir Abdullah (from Jacksonville) and Jared Ivey (from Seattle) and offensive tackle Cameron Williams (from Philadelphia), waiving longtime defensive lineman and former third-round pick Zach Harrison along with defensive backs Jammie Robinson and Natrone Brooks to make the room. The club then built out a 15-man practice squad, one spot still open, that reunites it with cutdown casualties Tyler Goodson, Darnay Holmes, Cameron Sample and rookie back Cash Jones. What it did not do was settle the one question everyone is waiting on: Kevin Stefanski still has not named a Week 1 starter, keeping the Tua Tagovailoa and Michael Penix Jr. competition open into game-prep week, with Ian Rapoport reading the silence as a lean toward Tua on medical grounds and Penix telling reporters he will be ready physically and mentally at Pittsburgh. The build tilts to the trenches and the secondary, still down Jalon Walker for the year and James Pearce Jr. for eight games, as the regular season arrives with the opener now twelve days out.",
+      "The shaping is over. With Tuesday's signing of undrafted rookie guard Josh Thompson (an ex-Chiefs UDFA out of LSU) filling the 16th and final practice-squad spot, Atlanta finished building its roster and pointed everything at Week 1. The back-end work started on the Monday waiver wire, where the Falcons claimed linebackers Yasir Abdullah (from Jacksonville) and Jared Ivey (from Seattle) and offensive tackle Cameron Williams (from Philadelphia), waiving longtime defensive lineman and former third-round pick Zach Harrison along with defensive backs Jammie Robinson and Natrone Brooks to make the room. The practice squad reunited the club with cutdown casualties Tyler Goodson, Darnay Holmes, Cameron Sample and rookie back Cash Jones before Thompson closed it out. What is still unsettled is the one question everyone is waiting on: Kevin Stefanski has not named a Week 1 starter, keeping the Tua Tagovailoa and Michael Penix Jr. competition open into game-prep week, with Ian Rapoport reading the silence as a lean toward Tua on medical grounds and Penix telling reporters he will be ready physically and mentally at Pittsburgh. The build tilts to the trenches and the secondary, still down Jalon Walker for the year and James Pearce Jr. for eight games, as the regular season arrives with the opener now eleven days out.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "tua",
-    stampLabel: "ROSTER SETTLED · WAIVERS: ABDULLAH / IVEY / WILLIAMS IN, HARRISON / ROBINSON / BROOKS OUT · 15-MAN PRACTICE SQUAD (GOODSON, HOLMES, SAMPLE, JONES) · WEEK 1 QB1 STILL OPEN · AT PITTSBURGH SEP 13",
+    stampLabel: "ROSTER COMPLETE · PRACTICE SQUAD FILLED (16TH SPOT: OL JOSH THOMPSON) · WAIVERS: ABDULLAH / IVEY / WILLIAMS IN, HARRISON / ROBINSON / BROOKS OUT · WEEK 1 QB1 STILL OPEN · AT PITTSBURGH SEP 13",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2383,6 +2383,15 @@ export const NEWS_DIGEST = {
     // rather than repointed to a Sep-01 slug, which would only spawn another dangling request no run can fulfill this
     // cycle. Clean queue moment remains a Steelers-week first-team practice rep or a Tua/Penix under-center scene for
     // the first run that can reach the Vault (an Antigravity-side run, or a Cowork run with the Vault mounted).
+    // STATUS (2026-09-02 scheduled run): cover queue SKIPPED again, identical hard constraint re-verified: ~/Vault
+    // is NOT mounted (only the tracker repos, outputs and uploads are), so image-requests.md and the
+    // limn-editor-enhance skill are unreachable and the downstream Antigravity queue cannot be appended. The
+    // 2026-08-15-red-debut.jpg pointer (18 days old) was never generated and already resolves to the photoId "tua"
+    // headshot fallback, which stays on-story with the still-open QB1 race. Today is a quiet game-week transition day
+    // (practice squad completed Tuesday with OL Josh Thompson, no picturable single-face story), so photoId stays
+    // "tua" and the pointer is left as is rather than spawning another dangling Sep-02 request. Clean queue moment
+    // remains a Steelers-week first-team practice rep or a Tua/Penix under-center scene for the first run that can
+    // reach the Vault (an Antigravity-side run, or a Cowork run with the Vault mounted).
     coverImageUrl: "/falcons-tracker/assets/cover/2026-08-15-red-debut.jpg",
   },
   sources: [
@@ -2397,11 +2406,11 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "THE ROSTER IS SETTLED AND THE PAGE TURNS TO PITTSBURGH: ATLANTA CLAIMS LBS YASIR ABDULLAH AND JARED IVEY AND OT CAMERON WILLIAMS OFF WAIVERS, WAIVING LONGTIME DL ZACH HARRISON AND DBS JAMMIE ROBINSON AND NATRONE BROOKS TO MAKE ROOM, THEN FILLS A 15-MAN PRACTICE SQUAD THAT BRINGS BACK GOODSON, HOLMES, SAMPLE AND CASH JONES: with the 53 shaped and one practice-squad spot still open, the whole building now aims at the Sept 13 opener with the Week 1 quarterback still unnamed",
-      detail: "atlantafalcons.com, NBC Sports (Pro Football Talk), Yahoo Sports and The Falcoholic (Aug 31 into Sep 1): Atlanta rounded out its roster on the Monday waiver wire, claiming linebackers Yasir Abdullah (waived by Jacksonville) and Jared Ivey (waived by Seattle) and offensive tackle Cameron Williams (waived by Philadelphia). To clear the space the Falcons waived longtime defensive lineman Zach Harrison, a former third-round pick who logged 8.5 sacks across 40 games in three seasons, along with defensive backs Jammie Robinson and Natrone Brooks. The club then built a 15-man practice squad, one spot still open, made up entirely of training-camp holdovers and headlined by the return of cutdown casualties running back Tyler Goodson, cornerback Darnay Holmes, edge Cameron Sample and rookie back Cash Jones. With the roster settled, attention shifts to the regular-season opener at Pittsburgh, where Michael Penix Jr. has told reporters he will be ready physically and mentally if named the Week 1 starter.",
+      title: "THE ROSTER IS COMPLETE AND THE PAGE TURNS FULLY TO PITTSBURGH: ATLANTA CLOSES OUT ITS PRACTICE SQUAD TUESDAY BY SIGNING UNDRAFTED OL JOSH THOMPSON, FILLING THE 16TH AND FINAL SPOT AFTER ROUNDING OUT THE 53 WITH MONDAY WAIVER CLAIMS OF LBS YASIR ABDULLAH AND JARED IVEY AND OT CAMERON WILLIAMS: with the roster now set from top to bottom, the whole building aims at the Sept 13 opener eleven days out, the Week 1 quarterback still unnamed",
+      detail: "atlantafalcons.com, Yardbarker, SI Falcons and Pro Football Rumors (Sep 1 into Sep 2): Atlanta finished shaping its roster on Tuesday, signing undrafted rookie offensive guard Josh Thompson (an ex-Chiefs UDFA who transferred to LSU for his final college season) to fill the 16th and final practice-squad spot and adding interior offensive-line depth. The move closed out a back-end sequence that began on the Monday waiver wire, where the Falcons claimed linebackers Yasir Abdullah (waived by Jacksonville) and Jared Ivey (waived by Seattle) and offensive tackle Cameron Williams (waived by Philadelphia), waiving longtime defensive lineman Zach Harrison, a former third-round pick who logged 8.5 sacks across 40 games in three seasons, along with defensive backs Jammie Robinson and Natrone Brooks to clear the room. The practice squad, made up entirely of training-camp holdovers, is headlined by the return of cutdown casualties running back Tyler Goodson, cornerback Darnay Holmes, edge Cameron Sample and rookie back Cash Jones. With the roster complete, attention shifts fully to the regular-season opener at Pittsburgh, where Michael Penix Jr. has told reporters he will be ready physically and mentally if named the Week 1 starter.",
       category: "general",
       sourceUrl: "https://www.atlantafalcons.com/news/falcons-claim-waivers-nfl-roster-cutdowns-yasir-abdullah-jared-ivey-cameron-williams",
-      sourceLabel: "atlantafalcons.com / NBC Sports / Yahoo Sports / The Falcoholic",
+      sourceLabel: "atlantafalcons.com / Yardbarker / SI Falcons / Pro Football Rumors",
     },
     {
       title: "THE 53 IS SET: ATLANTA KEEPS A SURPRISING FOUR QUARTERBACKS AS IT TRIMS FROM 90 ON THE NFL'S MOVED-UP CUTDOWN CLOCK, WITH UNDRAFTED ROOKIE JACK STRAND STICKING BEHIND TUA, PENIX AND COOPER RUSH: the initial roster skews to the trenches and secondary, carrying only two running backs and five outside linebackers, with waiver claims processed at 1 p.m. ET Monday before the practice squad forms",
@@ -2504,8 +2513,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-09-01T09:00:00Z",
-  windowLabel: "Roster Settled, Steelers Week Ahead · Atlanta finished its 53 with Monday waiver claims (LBs Yasir Abdullah and Jared Ivey, OT Cameron Williams) and a 15-man practice squad, then turned the page to the Sept 13 opener at Pittsburgh. In his finale presser, Stefanski praised Tua's operation but flagged an 'avoidable' snap-exchange fumble and still has not named a Week 1 starter, keeping the Penix-Tua race open into game-prep week",
+  generatedAt: "2026-09-02T12:30:00Z",
+  windowLabel: "Roster Complete, Steelers Week Ahead · Atlanta closed out its practice squad Tuesday by signing OL Josh Thompson (the 16th and final spot), after rounding out the 53 with Monday waiver claims (LBs Yasir Abdullah and Jared Ivey, OT Cameron Williams). The building is now pointed at the Sept 13 opener at Pittsburgh, eleven days out. In his finale presser, Stefanski praised Tua's operation but flagged an 'avoidable' snap-exchange fumble and still has not named a Week 1 starter, keeping the Penix-Tua race open into game-prep week",
   sessions: [
     {
       id: "stefanski-2026-08-28",
