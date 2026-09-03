@@ -862,11 +862,37 @@ export const PLAYERS = [
     acquired: "draft-2024-R5",
     stats: { tackles: 18 },
     form: 6.2,
-    status: "active",
-    injuryNote: "Special teams ace",
+    status: "ir",
+    injuryNote: "Placed on reserve/injured list Sep 1 (undisclosed); must miss at least four games before he can return",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4428872.png",
     contract: { years: 4, total: 4400000, guaranteed: 200000, apy: 1100000, throughYear: 2027, cap2026: 970000 },
     career: [{ years: "2024–", team: "Atlanta Falcons", type: "NFL" }],
+  },
+  {
+    id: "josh-woods",
+    name: "Josh Woods",
+    number: 42,
+    position: "LB",
+    posSlot: "WILL",
+    stRoles: ["PP", "KOR-cover"],
+    stRank: { "PP": 2 },
+    positionGroup: "defense",
+    depthRank: 3,
+    height: 73, weight: 235, age: 30, experience: 8,
+    college: "Maryland",
+    acquired: "fa-2024",
+    stats: { tackles: 14 },
+    form: 5.8,
+    status: "active",
+    injuryNote: "Signed off the practice squad to the 53 on Sep 1, filling JD Bertrand's roster spot; core special-teamer",
+    image: "https://a.espncdn.com/i/headshots/nfl/players/full/3128303.png",
+    contract: { years: 1, total: 1300000, guaranteed: 0, apy: 1300000, throughYear: 2026, cap2026: 1300000 },
+    career: [
+      { years: "2024–", team: "Atlanta Falcons", type: "NFL" },
+      { years: "2023", team: "Arizona Cardinals", type: "NFL" },
+      { years: "2021–2022", team: "Detroit Lions", type: "NFL" },
+      { years: "2019–2021", team: "Chicago Bears", type: "NFL" },
+    ],
   },
   {
     id: "verdon",
@@ -1931,18 +1957,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-09-02T12:30:00Z",
+  generatedAt: "2026-09-03T08:33:29Z",
   cover: {
-    kicker: "THE ROSTER IS COMPLETE, THE PAGE TURNS FULLY TO PITTSBURGH: Atlanta Closes Out Its Practice Squad Tuesday by Signing Undrafted OL Josh Thompson (Filling the 16th and Final Spot), After Rounding Out the 53 With Monday Waiver Claims of LBs Yasir Abdullah and Jared Ivey and OT Cameron Williams (Waiving Longtime DL Zach Harrison, DBs Jammie Robinson and Natrone Brooks in the Process), and Now Aims the Whole Building at the Sept 13 Opener at Pittsburgh With Kevin Stefanski Still Not Naming a Week 1 Starter and Michael Penix Jr. Insisting He Will Be Ready",
-    headLine1: "The roster is complete.",
-    headEm: "Eyes turn to Pittsburgh.",
+    kicker: "THE BACK END KEEPS MOVING WITH TEN DAYS TO PITTSBURGH: Atlanta Places Core Special-Teams LB JD Bertrand on Injured Reserve (Undisclosed, Out at Least Four Games) and Signs Veteran LB Josh Woods off the Practice Squad to Fill the 53-Man Spot, Then Reshuffles the Practice Squad by Re-Signing DE Zach Harrison, DE Khalid Kareem and DB Jammie Robinson While Releasing Cameron Sample and Cobee Bryant, All With Kevin Stefanski Still Not Naming a Week 1 Starter",
+    headLine1: "The roster is set,",
+    headEm: "the back end keeps moving.",
     headLine3: "QB1 still unnamed.",
     deck:
-      "The shaping is over. With Tuesday's signing of undrafted rookie guard Josh Thompson (an ex-Chiefs UDFA out of LSU) filling the 16th and final practice-squad spot, Atlanta finished building its roster and pointed everything at Week 1. The back-end work started on the Monday waiver wire, where the Falcons claimed linebackers Yasir Abdullah (from Jacksonville) and Jared Ivey (from Seattle) and offensive tackle Cameron Williams (from Philadelphia), waiving longtime defensive lineman and former third-round pick Zach Harrison along with defensive backs Jammie Robinson and Natrone Brooks to make the room. The practice squad reunited the club with cutdown casualties Tyler Goodson, Darnay Holmes, Cameron Sample and rookie back Cash Jones before Thompson closed it out. What is still unsettled is the one question everyone is waiting on: Kevin Stefanski has not named a Week 1 starter, keeping the Tua Tagovailoa and Michael Penix Jr. competition open into game-prep week, with Ian Rapoport reading the silence as a lean toward Tua on medical grounds and Penix telling reporters he will be ready physically and mentally at Pittsburgh. The build tilts to the trenches and the secondary, still down Jalon Walker for the year and James Pearce Jr. for eight games, as the regular season arrives with the opener now eleven days out.",
+      "The 53 is built, but the churn has not stopped. Atlanta placed core special-teams linebacker JD Bertrand on injured reserve with an undisclosed injury, a move that sidelines him at least four games, and signed eight-year veteran Josh Woods off the practice squad to take the roster spot. Woods, a Maryland product in his third season with the club, played 82 percent of the special-teams snaps across the twelve games he was active a year ago. The Falcons then reworked the practice squad, bringing back defensive end Zach Harrison (unclaimed on waivers days after being cut), defensive end Khalid Kareem and defensive back Jammie Robinson, and releasing edge Cameron Sample and cornerback Cobee Bryant. It is bottom-of-roster work, but it lands on a defense already down Jalon Walker for the year and James Pearce Jr. for eight games. What is still unsettled is the one question everyone is waiting on: Kevin Stefanski has not named a Week 1 starter, keeping the Tua Tagovailoa and Michael Penix Jr. competition open into game-prep week, with Ian Rapoport reading the silence as a lean toward Tua on medical grounds and Penix telling reporters he will be ready physically and mentally at Pittsburgh. The regular season arrives with the opener now ten days out.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "tua",
-    stampLabel: "ROSTER COMPLETE · PRACTICE SQUAD FILLED (16TH SPOT: OL JOSH THOMPSON) · WAIVERS: ABDULLAH / IVEY / WILLIAMS IN, HARRISON / ROBINSON / BROOKS OUT · WEEK 1 QB1 STILL OPEN · AT PITTSBURGH SEP 13",
+    stampLabel: "BERTRAND TO IR (OUT 4+) · WOODS SIGNED TO 53 · PS RESHUFFLE: HARRISON / KAREEM / ROBINSON IN, SAMPLE / BRYANT OUT · WEEK 1 QB1 STILL OPEN · AT PITTSBURGH SEP 13",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2392,6 +2418,15 @@ export const NEWS_DIGEST = {
     // "tua" and the pointer is left as is rather than spawning another dangling Sep-02 request. Clean queue moment
     // remains a Steelers-week first-team practice rep or a Tua/Penix under-center scene for the first run that can
     // reach the Vault (an Antigravity-side run, or a Cowork run with the Vault mounted).
+    // STATUS (2026-09-03 scheduled run): cover queue SKIPPED again, identical hard constraint re-verified: ~/Vault
+    // is NOT mounted (checked this run: only the tracker repos, outputs and uploads are), so image-requests.md and
+    // the limn-editor-enhance skill are unreachable and the downstream Antigravity queue cannot be appended. The
+    // 2026-08-15-red-debut.jpg pointer (19 days old) was never generated and already resolves to the photoId "tua"
+    // headshot fallback, which stays on-story with the still-open QB1 race. Today's lead is a roster/transaction
+    // story (Bertrand to IR, Woods promoted, practice-squad reshuffle) with no picturable single face, so photoId
+    // stays "tua" and the pointer is left as is rather than spawning another dangling Sep-03 request. Clean queue
+    // moment remains a Steelers-week first-team practice rep or a Tua/Penix under-center scene for the first run
+    // that can reach the Vault (an Antigravity-side run, or a Cowork run with the Vault mounted).
     coverImageUrl: "/falcons-tracker/assets/cover/2026-08-15-red-debut.jpg",
   },
   sources: [
@@ -2406,8 +2441,15 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "THE ROSTER IS COMPLETE AND THE PAGE TURNS FULLY TO PITTSBURGH: ATLANTA CLOSES OUT ITS PRACTICE SQUAD TUESDAY BY SIGNING UNDRAFTED OL JOSH THOMPSON, FILLING THE 16TH AND FINAL SPOT AFTER ROUNDING OUT THE 53 WITH MONDAY WAIVER CLAIMS OF LBS YASIR ABDULLAH AND JARED IVEY AND OT CAMERON WILLIAMS: with the roster now set from top to bottom, the whole building aims at the Sept 13 opener eleven days out, the Week 1 quarterback still unnamed",
-      detail: "atlantafalcons.com, Yardbarker, SI Falcons and Pro Football Rumors (Sep 1 into Sep 2): Atlanta finished shaping its roster on Tuesday, signing undrafted rookie offensive guard Josh Thompson (an ex-Chiefs UDFA who transferred to LSU for his final college season) to fill the 16th and final practice-squad spot and adding interior offensive-line depth. The move closed out a back-end sequence that began on the Monday waiver wire, where the Falcons claimed linebackers Yasir Abdullah (waived by Jacksonville) and Jared Ivey (waived by Seattle) and offensive tackle Cameron Williams (waived by Philadelphia), waiving longtime defensive lineman Zach Harrison, a former third-round pick who logged 8.5 sacks across 40 games in three seasons, along with defensive backs Jammie Robinson and Natrone Brooks to clear the room. The practice squad, made up entirely of training-camp holdovers, is headlined by the return of cutdown casualties running back Tyler Goodson, cornerback Darnay Holmes, edge Cameron Sample and rookie back Cash Jones. With the roster complete, attention shifts fully to the regular-season opener at Pittsburgh, where Michael Penix Jr. has told reporters he will be ready physically and mentally if named the Week 1 starter.",
+      title: "THE LINEBACKER ROOM TAKES ANOTHER HIT: FALCONS PLACE JD BERTRAND ON INJURED RESERVE AND SIGN VETERAN JOSH WOODS OFF THE PRACTICE SQUAD TO FILL THE SPOT, THEN SHUFFLE THE PRACTICE SQUAD BY RE-SIGNING DE ZACH HARRISON, DE KHALID KAREEM AND DB JAMMIE ROBINSON (RELEASING CAMERON SAMPLE AND COBEE BRYANT): ten days from Pittsburgh, Atlanta reshapes the back end of its roster again with the Week 1 quarterback still unnamed",
+      detail: "atlantafalcons.com, NBC Sports (Pro Football Talk), SI Falcons and Yahoo Sports (Sep 1 into Sep 2): Atlanta placed core special-teams linebacker JD Bertrand on the reserve/injured list with an undisclosed injury, meaning he must miss at least four games before he can return, and signed eight-year veteran linebacker Josh Woods off the practice squad to the 53-man roster in the corresponding move. Woods, a Maryland product who has spent the past two seasons in Atlanta, played 82 percent of the special-teams snaps across the twelve games he was active in 2025. The club then reshuffled the practice squad, bringing back defensive end Zach Harrison (a former third-round pick who went unclaimed on waivers days earlier), defensive end Khalid Kareem and defensive back Jammie Robinson, both prior Falcons, while releasing edge Cameron Sample and cornerback Cobee Bryant from the unit. The churn comes as the whole building points at the Sept 13 opener at Pittsburgh, where Kevin Stefanski has still not named a Week 1 starter in the Michael Penix Jr. and Tua Tagovailoa competition.",
+      category: "injuries",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-sign-josh-woods-53-man-roster-jd-bertrand-injured-reserve",
+      sourceLabel: "atlantafalcons.com / NBC Sports (PFT) / SI Falcons / Yahoo Sports",
+    },
+    {
+      title: "THE ROSTER IS COMPLETE AND THE PAGE TURNS FULLY TO PITTSBURGH: ATLANTA CLOSED OUT ITS PRACTICE SQUAD TUESDAY BY SIGNING UNDRAFTED OL JOSH THOMPSON, FILLING THE 16TH AND FINAL SPOT AFTER ROUNDING OUT THE 53 WITH MONDAY WAIVER CLAIMS OF LBS YASIR ABDULLAH AND JARED IVEY AND OT CAMERON WILLIAMS: with the roster set from top to bottom, the whole building aims at the Sept 13 opener, the Week 1 quarterback still unnamed",
+      detail: "atlantafalcons.com, Yardbarker, SI Falcons and Pro Football Rumors (Sep 1 into Sep 2): Atlanta finished shaping its roster on Tuesday, signing undrafted rookie offensive guard Josh Thompson (an ex-Chiefs UDFA who transferred to LSU for his final college season) to fill the 16th and final practice-squad spot and adding interior offensive-line depth. The move closed out a back-end sequence that began on the Monday waiver wire, where the Falcons claimed linebackers Yasir Abdullah (waived by Jacksonville) and Jared Ivey (waived by Seattle) and offensive tackle Cameron Williams (waived by Philadelphia), waiving longtime defensive lineman Zach Harrison, a former third-round pick who logged 8.5 sacks across 40 games in three seasons, along with defensive backs Jammie Robinson and Natrone Brooks to clear the room (Harrison and Robinson both went unclaimed and were re-signed to the practice squad days later). The practice squad, made up largely of training-camp holdovers, is headlined by the return of cutdown casualties running back Tyler Goodson, cornerback Darnay Holmes and rookie back Cash Jones. With the roster complete, attention shifts fully to the regular-season opener at Pittsburgh, where Michael Penix Jr. has told reporters he will be ready physically and mentally if named the Week 1 starter.",
       category: "general",
       sourceUrl: "https://www.atlantafalcons.com/news/falcons-claim-waivers-nfl-roster-cutdowns-yasir-abdullah-jared-ivey-cameron-williams",
       sourceLabel: "atlantafalcons.com / Yardbarker / SI Falcons / Pro Football Rumors",
@@ -2469,13 +2511,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com",
     },
     {
-      title: "BOTTOM-OF-ROSTER CHURN ROLLS ON: TREY SERMON TO IR NINE DAYS AFTER SIGNING, WHILE ATLANTA ADDS WR BEAUX COLLINS AND CUTS KRISTIAN WILKERSON: the Falcons lost a depth back and reshuffled the receiver room in the days around the Colts trip, with Sermon's short Atlanta stay ending on injured reserve",
-      detail: "Atlantafalcons.com, SI Falcons and NBC Sports (Aug 19 to 20): running back Trey Sermon, a Marietta native and former 49ers third-round pick who signed on Aug 10 for depth behind Bijan Robinson and Brian Robinson Jr., was placed on injured reserve just nine days later, the team not disclosing the injury. In a separate move, Atlanta signed wide receiver Beaux Collins, who had joined the Giants as an undrafted free agent in 2025 and appeared in nine games before a season-ending injury, and released receiver Kristian Wilkerson. The transactions are the usual late-August churn at the back of a 90-man roster ahead of the Aug 30 cut to 53, and they thin the running-back depth chart a touch just as the reserves are set to carry Saturday's game.",
-      category: "free-agency",
-      sourceUrl: "https://www.atlantafalcons.com/news/rb-trey-sermon-injured-reserve",
-      sourceLabel: "atlantafalcons.com / SI Falcons / NBC Sports",
-    },
-    {
       title: "DAY 1 GOES TO INDIANAPOLIS: COLTS GET THE BETTER OF THE FIRST JOINT PRACTICE, DANIEL JONES CARVES UP ATLANTA'S FIRST TEAM AND LONDON'S LEAPING TD IS THE LONE REAL SPARK: the Falcons and Colts open two days of shared work in Westfield, and Wednesday belonged to the hosts, though Atlanta's run defense showed real improvement and the second session is this afternoon before Saturday's game at Lucas Oil Stadium",
       detail: "SI Falcons, The Falcoholic and atlantafalcons.com (Aug 19 into Aug 20): the most valuable week of the exhibition slate opened with the Colts getting the better of the Falcons at the Grand Park Sports Campus. Indianapolis quarterback Daniel Jones was lights out against Atlanta's first-team defense, and the Falcons' offense produced only two true highlights: Drake London rose over Colts cornerback Justin Walley for a leaping touchdown, and rookie Zachariah Branch, listed at 5-foot-10 and 180 pounds, lowered his shoulder and won a physical rep in the final period. Tua Tagovailoa completed 8 of 13 in eleven-on-eleven and a perfect 3 of 3 in seven-on-seven, but leaned heavily on the short game, swing passes to Bijan Robinson, with only one throw traveling more than ten yards. Michael Penix Jr., capped at seven-on-seven as he rehabs his surgically repaired ACL, faced another team's defense for the first time since surgery and went 6 of 9, his best ball a curl to Juice Wells, though he missed high to London and overthrew Chris Blair. Jawaan Taylor took every right-tackle snap and said he felt good, revealing he had the knee cleaned up in March. The clearest positive was the run defense, sharply better after Atlanta gave up 162 rushing yards to Denver on Friday. Jessie Bates III and Avieon Terrell were held out of team work. The teams practice again Thursday afternoon before the Aug 22 game, where the rested starters sit and Cooper Rush and Jack Strand run the offense.",
       category: "general",
@@ -2513,8 +2548,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-09-02T12:30:00Z",
-  windowLabel: "Roster Complete, Steelers Week Ahead · Atlanta closed out its practice squad Tuesday by signing OL Josh Thompson (the 16th and final spot), after rounding out the 53 with Monday waiver claims (LBs Yasir Abdullah and Jared Ivey, OT Cameron Williams). The building is now pointed at the Sept 13 opener at Pittsburgh, eleven days out. In his finale presser, Stefanski praised Tua's operation but flagged an 'avoidable' snap-exchange fumble and still has not named a Week 1 starter, keeping the Penix-Tua race open into game-prep week",
+  generatedAt: "2026-09-03T08:33:29Z",
+  windowLabel: "Steelers Week Buildup · Atlanta keeps working the back end of its roster, placing LB JD Bertrand on injured reserve and signing veteran LB Josh Woods off the practice squad, with a practice-squad reshuffle (Harrison, Kareem, Robinson back in) around it. The building is pointed at the Sept 13 opener at Pittsburgh, ten days out. No new podium since the preseason finale: Stefanski praised Tua's operation but flagged an 'avoidable' snap-exchange fumble and still has not named a Week 1 starter, keeping the Penix-Tua race open into game-prep week",
   sessions: [
     {
       id: "stefanski-2026-08-28",
