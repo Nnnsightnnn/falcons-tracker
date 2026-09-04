@@ -27,7 +27,7 @@ export const PLAYERS = [
     stats: { completions: 166, attempts: 276, passYds: 1982, passTDs: 9, ints: 3, qbRating: 88.5 },
     form: 0,
     status: "active",
-    injuryNote: "ACL rehab · torn Week 11 2025 · BACK in full-team work. Penix returned to 11-on-11 Monday (Aug 24), taking the first snap of practice in his first full-speed reps since surgery and checking the last box in the rehab. Stefanski said he and Tua will split first-team reps the rest of Miami week. He sat out both preseason games and was capped at individual, 1-on-1 and 7-on-7 work through the Colts joint practices before the Aug 22 clearance. Whether he plays the Aug 28 finale vs Miami is undecided; the QB1 race is now live",
+    injuryNote: "ACL rehab · torn Week 11 2025 · fully back in team work. Penix returned to 11-on-11 on Aug 24 (first full-speed reps since surgery) after being capped at individual, 1-on-1 and 7-on-7 work all summer, and he sat out both preseason games. He has told reporters he will be healthy for the Sept 13 opener at Pittsburgh, and the staff wants a full week of 11-on-11 reps to gauge his response. The Week 1 QB1 race with Tua is still open; an NBC Sports report says the club plans to start Penix eventually and could open with Tua as a placeholder",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
     contract: { years: 4, total: 22080000, guaranteed: 22080000, apy: 5520000, throughYear: 2027, cap2026: 5900000 },
     career: [
@@ -1630,7 +1630,17 @@ export const RSS_FEEDS = [
 // =========================================
 // NEXT GAME (null during offseason)
 // =========================================
-export const NEXT_GAME = null;
+export const NEXT_GAME = {
+  week: 1,
+  opp: "Pittsburgh Steelers",
+  oppAbbr: "PIT",
+  home: false,
+  venue: "Acrisure Stadium · Pittsburgh, Pa.",
+  date: "2026-09-13",
+  kickoff: "1:00 PM ET",
+  tv: "FOX",
+  note: "Regular-season opener and the head-coaching debut for both Kevin Stefanski (Atlanta) and Mike McCarthy (Pittsburgh). Falcons enter as the only NFL club that had not named a Week 1 starter through the week before kickoff.",
+};
 
 // =========================================
 // 2026 SCHEDULE
@@ -1957,18 +1967,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-09-03T08:33:29Z",
+  generatedAt: "2026-09-04T08:33:43Z",
   cover: {
-    kicker: "THE BACK END KEEPS MOVING WITH TEN DAYS TO PITTSBURGH: Atlanta Places Core Special-Teams LB JD Bertrand on Injured Reserve (Undisclosed, Out at Least Four Games) and Signs Veteran LB Josh Woods off the Practice Squad to Fill the 53-Man Spot, Then Reshuffles the Practice Squad by Re-Signing DE Zach Harrison, DE Khalid Kareem and DB Jammie Robinson While Releasing Cameron Sample and Cobee Bryant, All With Kevin Stefanski Still Not Naming a Week 1 Starter",
-    headLine1: "The roster is set,",
-    headEm: "the back end keeps moving.",
-    headLine3: "QB1 still unnamed.",
+    kicker: "NINE DAYS TO PITTSBURGH AND STILL NO QB1: Atlanta Is the Only NFL Team Without a Named Week 1 Starter as GM Ian Cunningham Frames the Call as a Group Decision (Cunningham, Stefanski, Matt Ryan and Arthur Blank), Adam Schefter Confirms the Race Is Genuinely Open, and Reports Split on Whether Tua Tagovailoa Opens as a Placeholder or Michael Penix Jr. Is Ready in Time",
+    headLine1: "Nine days out,",
+    headEm: "still no QB1.",
+    headLine3: "The last team without one.",
     deck:
-      "The 53 is built, but the churn has not stopped. Atlanta placed core special-teams linebacker JD Bertrand on injured reserve with an undisclosed injury, a move that sidelines him at least four games, and signed eight-year veteran Josh Woods off the practice squad to take the roster spot. Woods, a Maryland product in his third season with the club, played 82 percent of the special-teams snaps across the twelve games he was active a year ago. The Falcons then reworked the practice squad, bringing back defensive end Zach Harrison (unclaimed on waivers days after being cut), defensive end Khalid Kareem and defensive back Jammie Robinson, and releasing edge Cameron Sample and cornerback Cobee Bryant. It is bottom-of-roster work, but it lands on a defense already down Jalon Walker for the year and James Pearce Jr. for eight games. What is still unsettled is the one question everyone is waiting on: Kevin Stefanski has not named a Week 1 starter, keeping the Tua Tagovailoa and Michael Penix Jr. competition open into game-prep week, with Ian Rapoport reading the silence as a lean toward Tua on medical grounds and Penix telling reporters he will be ready physically and mentally at Pittsburgh. The regular season arrives with the opener now ten days out.",
+      "The regular season is here and Atlanta is the only club in the league that has not named a Week 1 starter. Adam Schefter reported the Falcons remain genuinely undecided between Tua Tagovailoa and Michael Penix Jr., and general manager Ian Cunningham framed the call as a group decision that will involve himself, Kevin Stefanski, president of football operations Matt Ryan and owner Arthur Blank. Stefanski, for his part, has set no timeline and said the verdict will come 'whenever they tell me I have to.' The medical picture is what keeps the door swinging both ways: an NBC Sports report says the Falcons plan to start Penix eventually and could open with Tua as a placeholder while Penix finishes his climb back from the ACL surgery that ended his 2025 season, but Penix has told reporters he will be healthy for the opener, and the staff wants to watch how he responds to a full week of 11-on-11 reps before it decides. The backdrop stays busy, a defense already down Jalon Walker for the year and James Pearce Jr. for eight games, but the one question everyone is waiting on is the one under center, with the opener at Pittsburgh now nine days away.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "tua",
-    stampLabel: "BERTRAND TO IR (OUT 4+) · WOODS SIGNED TO 53 · PS RESHUFFLE: HARRISON / KAREEM / ROBINSON IN, SAMPLE / BRYANT OUT · WEEK 1 QB1 STILL OPEN · AT PITTSBURGH SEP 13",
+    stampLabel: "ONLY NFL TEAM WITHOUT A NAMED QB1 · CUNNINGHAM: GROUP DECISION · SCHEFTER: RACE OPEN · PENIX EVENTUALLY, TUA POSSIBLE PLACEHOLDER · AT PITTSBURGH SEP 13",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2427,6 +2437,16 @@ export const NEWS_DIGEST = {
     // stays "tua" and the pointer is left as is rather than spawning another dangling Sep-03 request. Clean queue
     // moment remains a Steelers-week first-team practice rep or a Tua/Penix under-center scene for the first run
     // that can reach the Vault (an Antigravity-side run, or a Cowork run with the Vault mounted).
+    // STATUS (2026-09-04 scheduled run): cover queue SKIPPED again, identical hard constraint re-verified: ~/Vault
+    // is NOT mounted (checked this run: only the tracker repos, outputs and uploads are), so image-requests.md and
+    // the limn-editor-enhance skill are unreachable and the downstream Antigravity queue cannot be appended. The
+    // 2026-08-15-red-debut.jpg pointer (20 days old) was never generated and already resolves to the photoId "tua"
+    // headshot fallback, which stays on-story with the still-open QB1 race that now leads the digest. Today's lead
+    // is the QB1-undecided story (Atlanta the only NFL team without a named Week 1 starter, Cunningham's group-call
+    // framing, Schefter confirming the race is open); the natural face is either Tua or Penix, so photoId stays
+    // "tua" and the pointer is left as is rather than spawning another dangling Sep-04 request. Clean queue moment
+    // remains a Steelers-week first-team practice rep or a Tua/Penix under-center scene for the first run that can
+    // reach the Vault (an Antigravity-side run, or a Cowork run with the Vault mounted).
     coverImageUrl: "/falcons-tracker/assets/cover/2026-08-15-red-debut.jpg",
   },
   sources: [
@@ -2440,6 +2460,13 @@ export const NEWS_DIGEST = {
     "Sportsnaut", "The Big Lead", "The Athletic", "Mile High Report",
   ],
   topics: [
+    {
+      title: "NINE DAYS TO PITTSBURGH AND ATLANTA IS THE ONLY NFL TEAM WITHOUT A NAMED WEEK 1 STARTER: ADAM SCHEFTER CONFIRMS THE TUA-PENIX RACE IS GENUINELY OPEN, GM IAN CUNNINGHAM CALLS IT A GROUP DECISION (HIMSELF, STEFANSKI, MATT RYAN AND ARTHUR BLANK), AND REPORTS SPLIT ON WHETHER PENIX IS READY OR TUA OPENS AS A PLACEHOLDER: with the regular season here, the one question the whole building is waiting on is still the one under center",
+      detail: "ESPN, Yahoo Sports (Adam Schefter), Pro Football Rumors and SI Falcons / The Falcoholic (Sep 3 into Sep 4): as the opener closes in, the Falcons remain the lone NFL club that has not announced a Week 1 quarterback. Adam Schefter reported Atlanta is still genuinely undecided between Tua Tagovailoa and Michael Penix Jr., and general manager Ian Cunningham described the decision as a group call that will involve himself, head coach Kevin Stefanski, president of football operations Matt Ryan and owner Arthur Blank. Stefanski has set no timeline, saying the verdict will come 'whenever they tell me I have to.' The medical picture keeps both doors open: an NBC Sports report says the Falcons plan to start Penix eventually and could open with Tua as a placeholder while Penix finishes his return from the ACL surgery that ended his 2025 season, though Penix has told reporters he will be healthy for the opener and the staff wants to see how he responds to a full week of 11-on-11 work before deciding. The race plays out against a defense already down Jalon Walker for the year and James Pearce Jr. for eight games.",
+      category: "general",
+      sourceUrl: "https://www.espn.com/nfl/story/_/id/49806953/falcons-not-announced-qb1-michael-penix-jr-tua-tagovailoa",
+      sourceLabel: "ESPN / Yahoo Sports (Schefter) / Pro Football Rumors / SI Falcons / NBC Sports",
+    },
     {
       title: "THE LINEBACKER ROOM TAKES ANOTHER HIT: FALCONS PLACE JD BERTRAND ON INJURED RESERVE AND SIGN VETERAN JOSH WOODS OFF THE PRACTICE SQUAD TO FILL THE SPOT, THEN SHUFFLE THE PRACTICE SQUAD BY RE-SIGNING DE ZACH HARRISON, DE KHALID KAREEM AND DB JAMMIE ROBINSON (RELEASING CAMERON SAMPLE AND COBEE BRYANT): ten days from Pittsburgh, Atlanta reshapes the back end of its roster again with the Week 1 quarterback still unnamed",
       detail: "atlantafalcons.com, NBC Sports (Pro Football Talk), SI Falcons and Yahoo Sports (Sep 1 into Sep 2): Atlanta placed core special-teams linebacker JD Bertrand on the reserve/injured list with an undisclosed injury, meaning he must miss at least four games before he can return, and signed eight-year veteran linebacker Josh Woods off the practice squad to the 53-man roster in the corresponding move. Woods, a Maryland product who has spent the past two seasons in Atlanta, played 82 percent of the special-teams snaps across the twelve games he was active in 2025. The club then reshuffled the practice squad, bringing back defensive end Zach Harrison (a former third-round pick who went unclaimed on waivers days earlier), defensive end Khalid Kareem and defensive back Jammie Robinson, both prior Falcons, while releasing edge Cameron Sample and cornerback Cobee Bryant from the unit. The churn comes as the whole building points at the Sept 13 opener at Pittsburgh, where Kevin Stefanski has still not named a Week 1 starter in the Michael Penix Jr. and Tua Tagovailoa competition.",
@@ -2548,8 +2575,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-09-03T08:33:29Z",
-  windowLabel: "Steelers Week Buildup · Atlanta keeps working the back end of its roster, placing LB JD Bertrand on injured reserve and signing veteran LB Josh Woods off the practice squad, with a practice-squad reshuffle (Harrison, Kareem, Robinson back in) around it. The building is pointed at the Sept 13 opener at Pittsburgh, ten days out. No new podium since the preseason finale: Stefanski praised Tua's operation but flagged an 'avoidable' snap-exchange fumble and still has not named a Week 1 starter, keeping the Penix-Tua race open into game-prep week",
+  generatedAt: "2026-09-04T08:33:43Z",
+  windowLabel: "Steelers Week · The regular season is here and Atlanta remains the only NFL team without a named Week 1 starter, nine days from the Sept 13 opener at Pittsburgh. GM Ian Cunningham framed the quarterback call as a group decision (Cunningham, Stefanski, Matt Ryan and Arthur Blank), Adam Schefter reported the Tua-Penix race is still genuinely open, and an NBC Sports report says the Falcons plan to start Penix eventually and could open with Tua as a placeholder while Penix finishes his ACL return. Stefanski has set no timeline, saying it will come 'whenever they tell me I have to,' and the staff wants a full week of 11-on-11 reps before deciding",
   sessions: [
     {
       id: "stefanski-2026-08-28",
