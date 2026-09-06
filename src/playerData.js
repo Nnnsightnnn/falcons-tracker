@@ -1967,18 +1967,18 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-09-05T08:30:00Z",
+  generatedAt: "2026-09-06T08:30:00Z",
   cover: {
-    kicker: "EIGHT DAYS TO PITTSBURGH AND STILL NO QB1: Atlanta Is the Only NFL Team Without a Named Week 1 Starter as GM Ian Cunningham Frames the Call as a Group Decision (Cunningham, Stefanski, Matt Ryan and Arthur Blank), Adam Schefter Confirms the Race Is Genuinely Open, and Reports Split on Whether Tua Tagovailoa Opens as a Placeholder or Michael Penix Jr. Is Ready in Time",
-    headLine1: "Eight days out,",
+    kicker: "SEVEN DAYS TO PITTSBURGH AND STILL NO QB1: Atlanta Is the Only NFL Team Without a Named Week 1 Starter as GM Ian Cunningham Frames the Call as a Group Decision (Cunningham, Stefanski, Matt Ryan and Arthur Blank), Adam Schefter Confirms the Race Is Genuinely Open, and the National Reaction Turns Sharp with Dan Orlovsky and The Falcoholic Calling the Delay a Leadership Vacuum",
+    headLine1: "Seven days out,",
     headEm: "still no QB1.",
     headLine3: "The last team without one.",
     deck:
-      "The regular season is here and Atlanta is the only club in the league that has not named a Week 1 starter. Adam Schefter reported the Falcons remain genuinely undecided between Tua Tagovailoa and Michael Penix Jr., and general manager Ian Cunningham framed the call as a group decision that will involve himself, Kevin Stefanski, president of football operations Matt Ryan and owner Arthur Blank. Stefanski, for his part, has set no timeline and said the verdict will come 'whenever they tell me I have to.' The medical picture is what keeps the door swinging both ways: an NBC Sports report says the Falcons plan to start Penix eventually and could open with Tua as a placeholder while Penix finishes his climb back from the ACL surgery that ended his 2025 season, but Penix has told reporters he will be healthy for the opener, and the staff wants to watch how he responds to a full week of 11-on-11 reps before it decides. The backdrop stays busy, a defense already down Jalon Walker for the year and James Pearce Jr. for eight games, but the one question everyone is waiting on is the one under center, with the opener at Pittsburgh now eight days away. On Sep 4 the club underlined the uncertainty another way, naming five team captains, kicker Nick Folk, safety Jessie Bates III, running back Bijan Robinson, guard Chris Lindstrom and linebacker Divine Deablo, with no quarterback among them for the first time in years.",
+      "The regular season is here and, a week out from the opener, Atlanta is the only club in the league that has not named a Week 1 starter. Adam Schefter reported the Falcons remain genuinely undecided between Tua Tagovailoa and Michael Penix Jr., and general manager Ian Cunningham framed the call as a group decision that will involve himself, Kevin Stefanski, president of football operations Matt Ryan and owner Arthur Blank. Stefanski, for his part, has set no timeline and said the verdict will come 'whenever they tell me I have to.' The medical picture is what keeps the door swinging both ways: an NBC Sports report says the Falcons plan to start Penix eventually and could open with Tua as a placeholder while Penix finishes his climb back from the ACL surgery that ended his 2025 season, but Penix has told reporters he will be healthy for the opener, and the staff wants to watch how he responds to a full week of 11-on-11 reps before it decides. The waiting has drawn national heat: ESPN's Dan Orlovsky ripped the process as backwards, and The Falcoholic argued the club does not have a quarterback controversy so much as a leadership vacuum, pointing to a Sep 4 captains vote that named five players with no quarterback among them for the first time in years (kicker Nick Folk, safety Jessie Bates III, running back Bijan Robinson, guard Chris Lindstrom and linebacker Divine Deablo). The backdrop stays busy, a defense already down Jalon Walker for the year and James Pearce Jr. for eight games, but the one question everyone is waiting on is the one under center, with the opener at Pittsburgh now seven days away.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "tua",
-    stampLabel: "ONLY NFL TEAM WITHOUT A NAMED QB1 · CUNNINGHAM: GROUP DECISION · SCHEFTER: RACE OPEN · PENIX EVENTUALLY, TUA POSSIBLE PLACEHOLDER · AT PITTSBURGH SEP 13",
+    stampLabel: "ONLY NFL TEAM WITHOUT A NAMED QB1 · CUNNINGHAM: GROUP DECISION · SCHEFTER: RACE OPEN · ORLOVSKY & FALCOHOLIC: LEADERSHIP VACUUM · AT PITTSBURGH SEP 13",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2447,6 +2447,18 @@ export const NEWS_DIGEST = {
     // "tua" and the pointer is left as is rather than spawning another dangling Sep-04 request. Clean queue moment
     // remains a Steelers-week first-team practice rep or a Tua/Penix under-center scene for the first run that can
     // reach the Vault (an Antigravity-side run, or a Cowork run with the Vault mounted).
+    // STATUS (2026-09-06 scheduled run): cover queue SKIPPED again, identical hard constraint re-verified:
+    // ~/Vault is NOT mounted (checked this run: only the tracker repos, outputs and uploads are), so
+    // image-requests.md and the limn-editor-enhance skill are unreachable and the downstream Antigravity
+    // queue cannot be appended. Confirmed again the last plate actually on disk is 2026-07-17-dotson-wr2.jpg;
+    // the 2026-08-15-red-debut.jpg pointer (22 days old) was never generated and already resolves to the
+    // photoId "tua" headshot fallback, which stays on-story with the still-open QB1 race that leads the digest.
+    // Quiet Sep 5-6 news cycle: no new hard news and no picturable single-face scene landed, just the
+    // national-reaction turn (Orlovsky, The Falcoholic's leadership-vacuum framing). photoId stays "tua" and
+    // the pointer is left as is rather than spawning another dangling Sep-06 request no run can fulfill.
+    // Recency refresh only this cycle: countdown moved eight-days-out to seven-days-out, national reaction
+    // folded into the lead, timestamps bumped. Clean queue moment remains a Steelers-week first-team practice
+    // rep or a Tua/Penix under-center scene for the first run that can reach the Vault.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-08-15-red-debut.jpg",
   },
   sources: [
@@ -2461,11 +2473,11 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "EIGHT DAYS TO PITTSBURGH AND ATLANTA IS THE ONLY NFL TEAM WITHOUT A NAMED WEEK 1 STARTER: ADAM SCHEFTER CONFIRMS THE TUA-PENIX RACE IS GENUINELY OPEN, GM IAN CUNNINGHAM CALLS IT A GROUP DECISION (HIMSELF, STEFANSKI, MATT RYAN AND ARTHUR BLANK), AND REPORTS SPLIT ON WHETHER PENIX IS READY OR TUA OPENS AS A PLACEHOLDER: with the regular season here, the one question the whole building is waiting on is still the one under center",
-      detail: "ESPN, Yahoo Sports (Adam Schefter), Pro Football Rumors and SI Falcons / The Falcoholic (Sep 3 into Sep 5): with the opener now eight days out, the Falcons remain the lone NFL club that has not announced a Week 1 quarterback. Adam Schefter reported Atlanta is still genuinely undecided between Tua Tagovailoa and Michael Penix Jr., and general manager Ian Cunningham described the decision as a group call that will involve himself, head coach Kevin Stefanski, president of football operations Matt Ryan and owner Arthur Blank. Stefanski has set no timeline, saying the verdict will come 'whenever they tell me I have to.' The medical picture keeps both doors open: an NBC Sports report says the Falcons plan to start Penix eventually and could open with Tua as a placeholder while Penix finishes his return from the ACL surgery that ended his 2025 season, though Penix has told reporters he will be healthy for the opener and the staff wants to see how he responds to a full week of 11-on-11 work before deciding. The race plays out against a defense already down Jalon Walker for the year and James Pearce Jr. for eight games.",
+      title: "SEVEN DAYS TO PITTSBURGH AND ATLANTA IS STILL THE ONLY NFL TEAM WITHOUT A NAMED WEEK 1 STARTER: ADAM SCHEFTER CONFIRMS THE TUA-PENIX RACE IS GENUINELY OPEN, GM IAN CUNNINGHAM CALLS IT A GROUP DECISION (HIMSELF, STEFANSKI, MATT RYAN AND ARTHUR BLANK), AND THE NATIONAL REACTION TURNS SHARP AS DAN ORLOVSKY AND THE FALCOHOLIC BRAND THE DELAY A LEADERSHIP VACUUM: with the regular season here, the one question the whole building is waiting on is still the one under center",
+      detail: "ESPN, Yahoo Sports (Adam Schefter), Pro Football Rumors and SI Falcons / The Falcoholic (Sep 3 into Sep 6): with the opener now a week out, the Falcons remain the lone NFL club that has not announced a Week 1 quarterback. Adam Schefter reported Atlanta is still genuinely undecided between Tua Tagovailoa and Michael Penix Jr., and general manager Ian Cunningham described the decision as a group call that will involve himself, head coach Kevin Stefanski, president of football operations Matt Ryan and owner Arthur Blank. Stefanski has set no timeline, saying the verdict will come 'whenever they tell me I have to.' The medical picture keeps both doors open: an NBC Sports report says the Falcons plan to start Penix eventually and could open with Tua as a placeholder while Penix finishes his return from the ACL surgery that ended his 2025 season, though Penix has told reporters he will be healthy for the opener and the staff wants to see how he responds to a full week of 11-on-11 work before deciding. The wait has drawn national heat: ESPN's Dan Orlovsky ripped the process, and The Falcoholic argued the club does not have a quarterback controversy so much as a leadership vacuum, pointing back to a captains vote that named five players with no quarterback among them. The race plays out against a defense already down Jalon Walker for the year and James Pearce Jr. for eight games.",
       category: "general",
       sourceUrl: "https://www.espn.com/nfl/story/_/id/49806953/falcons-not-announced-qb1-michael-penix-jr-tua-tagovailoa",
-      sourceLabel: "ESPN / Yahoo Sports (Schefter) / Pro Football Rumors / SI Falcons / NBC Sports",
+      sourceLabel: "ESPN / Yahoo Sports (Schefter) / Pro Football Rumors / SI Falcons / The Falcoholic",
     },
     {
       title: "NO QUARTERBACK AMONG THE CAPTAINS: ATLANTA VOTES IN FIVE FOR 2026 (NICK FOLK, JESSIE BATES III, BIJAN ROBINSON, CHRIS LINDSTROM AND DIVINE DEABLO) AND NEITHER TUA NOR PENIX MAKES THE CUT, A POINTED MARKER WITH THE WEEK 1 JOB STILL OPEN: Robinson, Deablo and Folk are first-time captains, Lindstrom returns to the group and Bates keeps the honor he has held every year since 2023",
@@ -2568,8 +2580,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-09-05T08:30:00Z",
-  windowLabel: "Steelers Week · The regular season is here and Atlanta remains the only NFL team without a named Week 1 starter, eight days from the Sept 13 opener at Pittsburgh. On Sep 4 the club named five captains (Nick Folk, Jessie Bates III, Bijan Robinson, Chris Lindstrom and Divine Deablo) with no quarterback among them, a pointed marker while the Tua-Penix race stays open. GM Ian Cunningham framed the quarterback call as a group decision (Cunningham, Stefanski, Matt Ryan and Arthur Blank), Adam Schefter reported the Tua-Penix race is still genuinely open, and an NBC Sports report says the Falcons plan to start Penix eventually and could open with Tua as a placeholder while Penix finishes his ACL return. Stefanski has set no timeline, saying it will come 'whenever they tell me I have to,' and the staff wants a full week of 11-on-11 reps before deciding",
+  generatedAt: "2026-09-06T08:30:00Z",
+  windowLabel: "Steelers Week · The regular season is here and Atlanta remains the only NFL team without a named Week 1 starter, seven days from the Sept 13 opener at Pittsburgh. On Sep 4 the club named five captains (Nick Folk, Jessie Bates III, Bijan Robinson, Chris Lindstrom and Divine Deablo) with no quarterback among them, a pointed marker while the Tua-Penix race stays open. GM Ian Cunningham framed the quarterback call as a group decision (Cunningham, Stefanski, Matt Ryan and Arthur Blank), Adam Schefter reported the Tua-Penix race is still genuinely open, and an NBC Sports report says the Falcons plan to start Penix eventually and could open with Tua as a placeholder while Penix finishes his ACL return. The wait has drawn national heat, with Dan Orlovsky and The Falcoholic branding the delay a leadership vacuum. Stefanski has set no timeline, saying it will come 'whenever they tell me I have to,' and the staff wants a full week of 11-on-11 reps before deciding. The first Steelers-week podium sessions land midweek",
   sessions: [
     {
       id: "stefanski-2026-08-28",
