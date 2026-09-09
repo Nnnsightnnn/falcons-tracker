@@ -1428,6 +1428,11 @@
 .mag-root .ladder .heads .h { padding: 10px 12px 8px; font-family: var(--m-cond); font-size: 10px; letter-spacing: 0.24em; color: var(--ink-mute); text-transform: uppercase; border-right: 1px solid var(--rule-soft); }
 .mag-root .ladder .heads .h:last-child { border-right: none; }
 .mag-root .ladder .heads .h.depth-1 { color: var(--oxblood); font-weight: 600; }
+.mag-root .ladder .heads .h.span { grid-column: span 1; }
+.mag-root .ladder .heads .h.span-rest { grid-column: span 3; letter-spacing: 0.12em; text-transform: none; font-family: var(--m-serif); font-style: italic; font-size: 11px; }
+.mag-root .ladder .lrow .slot .jn .rk { display: inline-block; margin-left: 6px; padding: 1px 5px; font-size: 8px; letter-spacing: 0.18em; border: 1px solid var(--rule-soft); color: var(--ink-mute); vertical-align: 1px; }
+.mag-root .ladder .lrow .slot.starter .jn .rk { border-color: var(--oxblood); color: var(--oxblood); }
+.mag-root .ladder .lrow .slot.injured .jn .rk { border-color: var(--rule-soft); color: var(--ink-mute); }
 .mag-root .ladder .lrow { display: grid; grid-template-columns: 120px 1fr; border-bottom: 1px solid var(--rule-soft); gap: 0; }
 .mag-root .ladder .lrow:last-child { border-bottom: none; }
 /* Slots wrap in a 4-up grid: rooms deeper than 4 flow onto extra rows, nobody chopped. */

@@ -249,10 +249,8 @@ export default function MagazineRoster({ setView }) {
       <section className="ladder">
         <div className="heads">
           <div className="h">Position</div>
-          <div className="h depth-1">▎ Starter · 1</div>
-          <div className="h">Backup · 2</div>
-          <div className="h">Reserve · 3</div>
-          <div className="h">Fringe · 4</div>
+          <div className="h depth-1 span">▎ Starters carry the red rule</div>
+          <div className="h span-rest">Sorted starter → backup → reserve → fringe · rooms with two or three starters show them all</div>
         </div>
 
         {ROOM_LADDER.map((room) => {
@@ -281,11 +279,20 @@ export default function MagazineRoster({ setView }) {
                     );
                   }
                   const cls = ["slot", "clickable"];
-                  if (i === 0) cls.push("starter");
+                  // A starter is any rank-1 body on the active roster, not just
+                  // the first slot: OT, IOL, WR, DT, CB, S and LB all start 2-3.
+                  const isStarter = p.depthRank === 1 && (p.status === "active" || p.status === "questionable");
+                  if (isStarter) cls.push("starter");
                   const flags = slotFlags(p);
                   if (flags) cls.push(flags);
                   const college = (p.college || "").slice(0, 4).toUpperCase();
                   const note = slotNote(p);
+                  const tier = p.status !== "active" && p.status !== "questionable"
+                    ? (p.status || "").toUpperCase()
+                    : p.depthRank === 1 ? "STARTER"
+                    : p.depthRank === 2 ? "BACKUP"
+                    : p.depthRank === 3 ? "RESERVE"
+                    : "FRINGE";
                   return (
                     <div
                       key={p.id}
@@ -302,7 +309,7 @@ export default function MagazineRoster({ setView }) {
                           <div className="halftone"></div>
                         </div>
                         <div className="slot-text">
-                          <div className="jn">#{p.number} · {college}</div>
+                          <div className="jn">#{p.number} · {college} <span className="rk">{tier}</span></div>
                           <div className="snm">{shortName(p.name)}</div>
                           {note && <div className="snote">{note}</div>}
                         </div>
