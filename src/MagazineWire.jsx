@@ -13,13 +13,14 @@ const CALENDAR = [
   { d: "JUN 16-18", what: <span><span className="em">Mandatory veteran minicamp.</span> Attendance not optional.</span> },
 ];
 
-const TICKER = [
-  "MEDIA DAY 1 · STEFANSKI & CUNNINGHAM OPEN THE OTA WINDOW",
-  "TUA TAKES QB1 REPS · PENIX RAMPING",
-  "AVIEON TERRELL HAMSTRING \"100 PERCENT\"",
-  "LONDON EXT. PROJECTED 4YR / $135M",
-  "BIJAN DEAL \"THIS OFFSEASON\" — SCHEFTER",
-];
+// Ticker is derived from the digest so it never goes stale: the short head
+// of each of the five freshest topics (text before the first colon), in the
+// sentence case the data carries. Emphasis comes from the strip's styling,
+// not from capitalization (see CLAUDE.md STYLE-00001).
+const TICKER = (NEWS_DIGEST?.topics || [])
+  .slice(0, 5)
+  .map((t) => (t.title || "").split(": ")[0].trim())
+  .filter(Boolean);
 
 const BEAT_MAP = {
   contracts:    "contracts",

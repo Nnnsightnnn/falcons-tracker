@@ -261,7 +261,7 @@ export default function MagazineCover({ setView }) {
             <div className="name">{cover ? `${cover.name.split(" ")[0][0]}. ${surname(cover.name)}` : "B. Robinson"}</div>
             <div className="pos">#{cover?.number} · {cover?.position} · {(cover?.college || "TEXAS").toUpperCase()}</div>
           </div>
-          <div className="caption">PHOTOGRAPH — {(surname(cover?.name) || "BIJAN").toUpperCase()} AT BRANCH, {currentPhase.name.toUpperCase()} · {todayShort(today)}</div>
+          <div className="caption">Photograph: {surname(cover?.name) || "Bijan"} at Flowery Branch, {currentPhase.name} · {todayShort(today)}</div>
         </div>
       </section>
 

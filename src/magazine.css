@@ -229,10 +229,13 @@
   margin-bottom: 14px;
 }
 .mag-root .cover .kicker {
+  /* Holds a full sentence of prose from NEWS_DIGEST.cover.kicker, so no
+     text-transform here: sentence case comes from the data (STYLE-00001).
+     Tracking is loosened only slightly so a long line stays readable. */
   font-family: var(--m-cond);
-  font-size: 11px;
-  letter-spacing: 0.34em;
-  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
   color: var(--oxblood);
   font-weight: 600;
 }
@@ -1586,7 +1589,7 @@
 /* ─────────────────────────────────────────────────────────────────────
    PAGE-SPECIFIC: WIRE (06)
    ──────────────────────────────────────────────────────────────────── */
-.mag-root .ticker { background: var(--ink); color: var(--paper); padding: 12px 32px; border-bottom: 1px solid var(--rule); display: flex; align-items: center; gap: 28px; overflow: hidden; font-family: var(--m-cond); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; white-space: nowrap; }
+.mag-root .ticker { background: var(--ink); color: var(--paper); padding: 12px 32px; border-bottom: 1px solid var(--rule); display: flex; align-items: center; gap: 28px; overflow: hidden; font-family: var(--m-cond); font-size: 12px; letter-spacing: 0.06em; white-space: nowrap; }
 .mag-root .ticker .live { color: var(--paper); background: var(--oxblood); padding: 4px 10px 3px; flex-shrink: 0; display: inline-flex; align-items: center; gap: 6px; }
 .mag-root .ticker .live::before { content: ""; width: 8px; height: 8px; background: var(--gold-soft); border-radius: 50%; }
 .mag-root .ticker .scroll { display: flex; gap: 28px; color: var(--gold-soft); overflow: hidden; }
