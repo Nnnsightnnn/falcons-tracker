@@ -1034,7 +1034,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "active",
-    injuryNote: "Activated off Reserve/PUP and added to the initial 53 on cutdown day (Aug 30) after an Achilles rehab (torn late Nov 2025). Back in the nickel/slot mix behind Natrone Brooks.",
+    injuryNote: "Limited (Achilles) on the Week 1 Wednesday injury report and not expected to play at Pittsburgh, but practicing again roughly nine months after the late-Nov 2025 rupture. Activated off Reserve/PUP onto the initial 53 on cutdown day (Aug 30); in the nickel/slot mix behind Avieon Terrell.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4431194.png",
     contract: { years: 4, total: 5200000, guaranteed: 950000, apy: 1300000, throughYear: 2028, cap2026: 1100000 },
     career: [{ years: "2025–", team: "Atlanta Falcons", type: "NFL" }],
@@ -1967,14 +1967,14 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-09-09T12:00:00Z",
+  generatedAt: "2026-09-10T12:00:00Z",
   cover: {
-    kicker: "Steelers week · Tua named the Week 1 starter, Penix inactive",
+    kicker: "Game week at Pittsburgh · Tua starts, Penix inactive",
     headLine1: "It's Tua.",
     headEm: "Penix sits.",
     headLine3: "Atlanta finally has a QB1.",
     deck:
-      "The wait is over. On Monday, five days from the opener, Kevin Stefanski named Tua Tagovailoa the Falcons' Week 1 starter and confirmed Michael Penix Jr. will be inactive at Pittsburgh, ending a competition that ran from the spring through camp and the preseason and made Atlanta the last team in the league still without a named starter. Stefanski credited Tagovailoa for the work behind the decision, saying he has 'put himself in position to go be the best version of himself' in a new system, and pointed to the reps Tagovailoa banked while Penix was capped in his climb back from the ACL surgery that ended his 2025 season. Penix, cleared for 11-on-11 only on Aug 22 and held out of every preseason game, was measured in defeat, saying he wants to be able to give the team '100 percent' and would not force his return before he can. Cooper Rush will back Tagovailoa up. Stefanski declined to look past the opener, offering no read on who starts beyond Week 1, and the framing suggests Penix remains the plan once he is fully cleared for contact. The decision lands on a defense already down Jalon Walker for the year and James Pearce Jr. for eight games, but the question that hung over the whole building all summer finally has an answer. Atlanta is now into its first regular-season practice week, the Week 1 depth chart is out, and the opener at Pittsburgh is four days away.",
+      "The wait is over. On Monday, five days from the opener, Kevin Stefanski named Tua Tagovailoa the Falcons' Week 1 starter and confirmed Michael Penix Jr. will be inactive at Pittsburgh, ending a competition that ran from the spring through camp and the preseason and made Atlanta the last team in the league still without a named starter. Stefanski credited Tagovailoa for the work behind the decision, saying he has 'put himself in position to go be the best version of himself' in a new system, and pointed to the reps Tagovailoa banked while Penix was capped in his climb back from the ACL surgery that ended his 2025 season. Penix, cleared for 11-on-11 only on Aug 22 and held out of every preseason game, was measured in defeat, saying he wants to be able to give the team '100 percent' and would not force his return before he can. Cooper Rush will back Tagovailoa up. Stefanski declined to look past the opener, offering no read on who starts beyond Week 1, and the framing suggests Penix remains the plan once he is fully cleared for contact. The decision lands on a defense already down Jalon Walker for the year and James Pearce Jr. for eight games, but the question that hung over the whole building all summer finally has an answer. Atlanta is now deep into game week, the Week 1 depth chart and first injury reports are out, and the opener at Pittsburgh is three days away.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "tua",
@@ -2503,6 +2503,13 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
+      title: "Game week opens with a manageable injury report: Michael Penix Jr. logs a full Wednesday practice even as he sits Sunday, while five Falcons are limited entering Steelers prep, cornerback Billy Bowman Jr. the only real availability worry: Za'Darius Smith (shoulder), rookie Zachariah Branch (hamstring), Brandon Dorlus (groin), Kyle Hinton (knee) and Bowman (Achilles) were partial participants, with Bowman, back on the field just nine months after his ruptured Achilles, unlikely to play at Pittsburgh",
+      detail: "atlantafalcons.com, Steelers Depot, The Falcoholic and Yahoo Sports (Sep 9): Atlanta's first regular-season injury report was a light one. Michael Penix Jr., already ruled inactive for Sunday as he builds back from ACL surgery, was a full participant on Wednesday, an encouraging marker even with Tua Tagovailoa set to start. Five players were limited: edge Za'Darius Smith (shoulder), rookie receiver Zachariah Branch (hamstring), defensive lineman Brandon Dorlus (groin), interior lineman Kyle Hinton (knee) and nickel Billy Bowman Jr. (Achilles). Branch, the second-round rookie listed as the punt returner, is expected to factor into the offense and special teams despite the hamstring. Bowman, who tore his Achilles late in November, is practicing again roughly nine months later but is not expected to play at Pittsburgh. Pittsburgh, by contrast, listed only cornerback Joey Porter Jr. (back, limited) on its Wednesday report.",
+      category: "injuries",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-injury-report-zachariah-branch-brandon-dorlus-limited-pittsburgh-steelers",
+      sourceLabel: "atlantafalcons.com / Steelers Depot / The Falcoholic / Yahoo Sports",
+    },
+    {
       title: "It's Tua: Atlanta names Tagovailoa its Week 1 starter and will make Michael Penix Jr. inactive at Pittsburgh, ending a monthslong competition and answering the last open QB question in the league five days from kickoff: Cooper Rush is set as the backup and Stefanski, who credited Tua for putting himself 'in position to go be the best version of himself,' declined to look past Sunday",
       detail: "NFL.com, ESPN, AP (Washington Times) and NBC Sports (Sep 7): Kevin Stefanski named Tua Tagovailoa the Falcons' Week 1 starter Monday and confirmed Michael Penix Jr. will be inactive for the Sept 13 opener at Pittsburgh, ending a quarterback competition that ran from the spring through training camp and the preseason and had left Atlanta the only NFL team without a named starter. Stefanski said Tagovailoa 'has done a really nice job of working at it' in a new system and 'has really put himself in position to go be the best version of himself,' and noted Tagovailoa banked the more valuable reps while Penix was capped in his return from the ACL surgery that ended his 2025 season after nine starts. Penix, cleared for 11-on-11 only on Aug 22 and held out of every preseason game, said he did not feel ready to give the team everything: 'I want to be stronger. I want to be able to go out there and give the team 100%, and if I don't feel like I can do that, I don't want to.' Cooper Rush will back Tagovailoa up. Stefanski declined to speculate on who starts beyond Week 1, and the broader reporting still points to Penix as the eventual starter once he is fully cleared for contact. The call lands on a defense already down Jalon Walker for the year and James Pearce Jr. for eight games.",
       category: "general",
@@ -2593,13 +2600,6 @@ export const NEWS_DIGEST = {
       sourceUrl: "https://www.atlantafalcons.com/news/michael-penix-jr-cleared-for-full-team-work",
       sourceLabel: "atlantafalcons.com / CBS Sports / Yardbarker",
     },
-    {
-      title: "Day 1 goes to Indianapolis: Colts get the better of the first joint practice, Daniel Jones carves up Atlanta's first team and London's leaping TD is the lone real spark: the Falcons and Colts open two days of shared work in Westfield, and Wednesday belonged to the hosts, though Atlanta's run defense showed real improvement and the second session is this afternoon before Saturday's game at Lucas Oil Stadium",
-      detail: "SI Falcons, The Falcoholic and atlantafalcons.com (Aug 19 into Aug 20): the most valuable week of the exhibition slate opened with the Colts getting the better of the Falcons at the Grand Park Sports Campus. Indianapolis quarterback Daniel Jones was lights out against Atlanta's first-team defense, and the Falcons' offense produced only two true highlights: Drake London rose over Colts cornerback Justin Walley for a leaping touchdown, and rookie Zachariah Branch, listed at 5-foot-10 and 180 pounds, lowered his shoulder and won a physical rep in the final period. Tua Tagovailoa completed 8 of 13 in eleven-on-eleven and a perfect 3 of 3 in seven-on-seven, but leaned heavily on the short game, swing passes to Bijan Robinson, with only one throw traveling more than ten yards. Michael Penix Jr., capped at seven-on-seven as he rehabs his surgically repaired ACL, faced another team's defense for the first time since surgery and went 6 of 9, his best ball a curl to Juice Wells, though he missed high to London and overthrew Chris Blair. Jawaan Taylor took every right-tackle snap and said he felt good, revealing he had the knee cleaned up in March. The clearest positive was the run defense, sharply better after Atlanta gave up 162 rushing yards to Denver on Friday. Jessie Bates III and Avieon Terrell were held out of team work. The teams practice again Thursday afternoon before the Aug 22 game, where the rested starters sit and Cooper Rush and Jack Strand run the offense.",
-      category: "general",
-      sourceUrl: "https://www.si.com/nfl/falcons/onsi/three-major-takeaways-from-falcons-joint-practice-day-1-with-colts",
-      sourceLabel: "SI Falcons / The Falcoholic / atlantafalcons.com",
-    },
   ],
 };
 
@@ -2610,9 +2610,29 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-09-09T12:00:00Z",
-  windowLabel: "Game Week vs. Pittsburgh · Sep 7 → Sep 13. Kevin Stefanski named Tua Tagovailoa the Week 1 starter Monday and ruled Michael Penix Jr. inactive at Pittsburgh, ending a monthslong competition; Penix, measured at the podium, said he is 'really close' but not yet 100 percent. Cooper Rush is the backup. Atlanta opened its first regular-season practice week and released the Week 1 depth chart, and is a road underdog of roughly a field goal at Acrisure Stadium in the head-coaching debuts of Stefanski and Mike McCarthy",
+  generatedAt: "2026-09-10T12:00:00Z",
+  windowLabel: "Game Week vs. Pittsburgh · Sep 7 → Sep 13. With Tua Tagovailoa named the Week 1 starter and Michael Penix Jr. inactive, Atlanta turned to Steelers prep. Stefanski's Wednesday podium praised a still-elite Cam Heyward and cast Tagovailoa as a quarterback playing with a chip on his shoulder, while a light first injury report (Penix full; five limited) cleared the way. Atlanta is a road underdog of roughly a field goal at Acrisure Stadium in the head-coaching debuts of Stefanski and Mike McCarthy",
   sessions: [
+    {
+      id: "stefanski-2026-09-09",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-09-09",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Steelers Week · Wednesday Media Availability",
+      sourceUrl: "https://steelersdepot.com/2026/09/has-not-fallen-off-at-all-falcons-hc-kevin-stefanski-marvels-at-ageless-cam-heyward/",
+      transcriptUrl: "https://www.atlantafalcons.com/video/interviews-press-conferences",
+      verified: true,
+      summary: "In his first game-week Wednesday session as Falcons head coach, Stefanski turned the page from the quarterback decision to Pittsburgh. He praised the Steelers' veteran interior, singling out Cam Heyward as a future Hall of Famer who has not slipped, and framed Tua Tagovailoa as a quarterback carrying a chip on his shoulder into the opener.",
+      pullQuote: "He's a terrific player. Has not fallen off at all. I think he's gotten better, which is crazy.",
+      bullets: [
+        "On Cam Heyward: called the Steelers lineman a future Hall of Famer who has 'not fallen off at all' and has somehow 'gotten better,' recalling his battles with Joel Bitonio",
+        "On Tua's mindset: 'You want to prove people wrong. You have a chip on your shoulder,' on how Tagovailoa is approaching the Week 1 start",
+        "On the injury report: with Michael Penix Jr. logging a full practice and five players limited, the Falcons carried no new availability alarms into Steelers prep",
+        "On the matchup: kept the focus on a physical Pittsburgh front as Atlanta prepares to open on the road in his head-coaching debut",
+      ],
+      topics: ["steelers-week", "week-1", "qb-competition", "matchup"],
+    },
     {
       id: "stefanski-2026-09-07",
       speaker: "Kevin Stefanski",
@@ -2715,26 +2735,6 @@ export const INTERVIEWS = {
         "On Penix in the game: left it undecided whether Penix suits up Friday, keeping the focus on getting him through team practice first",
       ],
       topics: ["penix-acl", "qb-competition", "preseason", "dolphins-week"],
-    },
-    {
-      id: "stefanski-2026-08-22",
-      speaker: "Kevin Stefanski",
-      role: "Head Coach",
-      date: "2026-08-22",
-      venue: "Lucas Oil Stadium · Indianapolis",
-      session: "Preseason Week 2 at Colts · Post-Game Press Conference",
-      sourceUrl: "https://www.cbssports.com/nfl/news/falcons-penix-cleared-to-practice-as-rush-and-strand-pick-apart-colts-in-34-6-preseason-win/",
-      transcriptUrl: "https://www.atlantafalcons.com/news/michael-penix-jr-cleared-for-full-team-work",
-      verified: true,
-      summary: "After a 34-6 win that his starters never entered, Stefanski gave the update that overshadowed the box score: Michael Penix Jr. has been cleared for full-team work and will practice in team periods Monday, his first eleven-on-eleven reps since ACL surgery. He credited the reserves for a clean, physical afternoon led by Cooper Rush and undrafted rookie Jack Strand, and turned the page to a game week that doubles as the final look before cutdown.",
-      pullQuote: "He is cleared for 11-on-11. He'll practice Monday in team periods.",
-      bullets: [
-        "On Penix: confirmed the clearance for full-team work and a Monday return to team periods, the last box in a rehab that had capped Penix at individual, one-on-one and seven-on-seven work all camp",
-        "On the backups: praised the first-half command of Cooper Rush and Jack Strand, who combined to complete 14 of 15 for 137 yards and a touchdown before the reserves pulled away",
-        "On the win: acknowledged it does not count but valued the clean, physical tape from a team that had dropped eight straight preseason games",
-        "On what is next: framed the Aug 28 finale against Miami as the final live evaluation before the Aug 30 cut to 53, with Penix's return reshaping how the quarterback reps get divided",
-      ],
-      topics: ["penix-acl", "qb-competition", "preseason", "colts-week"],
     },
   ],
 };
