@@ -27,7 +27,7 @@ export const PLAYERS = [
     stats: { completions: 166, attempts: 276, passYds: 1982, passTDs: 9, ints: 3, qbRating: 88.5 },
     form: 0,
     status: "active",
-    injuryNote: "Will be inactive for the Sept 13 opener at Pittsburgh: Stefanski named Tua the Week 1 starter on Sep 7, ending the summer competition. Penix returned to 11-on-11 on Aug 24 (first full-speed reps since the Week 11 2025 ACL surgery) but was held out of both preseason games and had not been cleared for contact. He said he did not feel ready to give the team '100%' and would not force his return; the broader reporting still frames him as the eventual starter once fully cleared",
+    injuryNote: "Inactive for the Sept 13 opener at Pittsburgh as he builds back from the Week 11 2025 ACL surgery. NFL Network's Ian Rapoport reported (Sep 13) that Penix could be ready for action in Week 2 or 3: he is healthy but 'not where he feels like he needs to be right now,' though close. With Tua Tagovailoa week to week (oblique) after the opener, Penix is a live option for Sunday's home opener vs. Carolina and is still framed as the eventual starter once fully cleared for contact",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
     contract: { years: 4, total: 22080000, guaranteed: 22080000, apy: 5520000, throughYear: 2027, cap2026: 5900000 },
     career: [
@@ -48,7 +48,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "questionable",
-    injuryNote: "Oblique. Ruled OUT of the Sunday opener at Pittsburgh on Friday's final injury report (Sep 11) after hurting his side in Thursday's individual period; Stefanski called him week to week and said, 'Disappointed for him, obviously. He's going to rally behind Coop.' Named the Week 1 starter on Sep 7, he cedes the debut to Cooper Rush and is expected back once the oblique settles",
+    injuryNote: "Oblique. Missed the Sept 13 opener at Pittsburgh after hurting his side in Thursday's individual period; Stefanski called him week to week. Named the Week 1 starter on Sep 7, he ceded the debut to Cooper Rush (who threw two interceptions in a 20-13 loss). His status for the Sept 20 home opener vs. Carolina is uncertain, and a nearly-ready Michael Penix Jr. could factor into the Week 2 quarterback call",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4241479.png",
     contract: { years: 1, total: 1300000, guaranteed: 1300000, apy: 1300000, throughYear: 2026, cap2026: 1300000 },
     career: [
@@ -1631,15 +1631,15 @@ export const RSS_FEEDS = [
 // NEXT GAME (null during offseason)
 // =========================================
 export const NEXT_GAME = {
-  week: 1,
-  opp: "Pittsburgh Steelers",
-  oppAbbr: "PIT",
-  home: false,
-  venue: "Acrisure Stadium · Pittsburgh, Pa.",
-  date: "2026-09-13",
+  week: 2,
+  opp: "Carolina Panthers",
+  oppAbbr: "CAR",
+  home: true,
+  venue: "Mercedes-Benz Stadium · Atlanta, Ga.",
+  date: "2026-09-20",
   kickoff: "1:00 PM ET",
   tv: "FOX",
-  note: "Regular-season opener and the head-coaching debut for both Kevin Stefanski (Atlanta) and Mike McCarthy (Pittsburgh). Tua Tagovailoa (oblique) was ruled out Friday and is week to week, so veteran Cooper Rush starts, drawing his former Cowboys coach McCarthy, with undrafted rookie Jack Strand the backup and Michael Penix Jr. (knee) inactive. Also out: OL Cameron Williams (ankle) and CB Billy Bowman Jr. (Achilles); DE Za'Darius Smith (shoulder) is questionable. Atlanta opens as a 3-point road underdog (total near 42.5).",
+  note: "Home opener and NFC South opener, with both teams reeling from lopsided Week 1 losses: Atlanta fell 20-13 at Pittsburgh, Carolina was routed 59-37 at home by Chicago. The Falcons' quarterback picture is unsettled: Tua Tagovailoa (oblique) is week to week and uncertain, while Michael Penix Jr. (knee/ACL rehab) could be in play for Week 2 or 3, leaving Cooper Rush as the fallback after a two-interception debut. Every NFC South team opened 0-1, so the division race is level entering Sunday.",
 };
 
 // =========================================
@@ -1686,7 +1686,7 @@ export const SCHEDULE_2026_OPPONENTS = {
 export const SCHEDULE_2026 = [
   {
     week: 1,
-    status: "confirmed",
+    status: "final",
     opponent: "PIT",
     opponentName: "Pittsburgh Steelers",
     side: "away",
@@ -1694,7 +1694,10 @@ export const SCHEDULE_2026 = [
     kickoffET: "1:00 PM ET",
     tv: "FOX",
     venue: "Acrisure Stadium, Pittsburgh",
-    note: "Season opener · Stefanski's first game as Falcons HC vs. McCarthy's Steelers.",
+    result: "L",
+    atlScore: 13,
+    oppScore: 20,
+    note: "Season opener · Falcons fell 20-13; T.J. Watt pick-six, two missed FGs and nine penalties sank a winnable debut for Stefanski.",
   },
   {
     week: 2,
@@ -1964,21 +1967,39 @@ export const NFC_SOUTH_STANDINGS_2025 = [
 ];
 
 // =========================================
+// RESULTS 2026 — live, week by week
+// =========================================
+export const RESULTS_2026 = [
+  { date: "2026-09-13", opp: "PIT", home: false, atlScore: 13, oppScore: 20, result: "L" },
+];
+
+// =========================================
+// NFC SOUTH 2026 STANDINGS — live (through Week 1)
+// All four clubs opened 0-1; ordered by point differential as an early tiebreak.
+// =========================================
+export const NFC_SOUTH_STANDINGS_2026 = [
+  { team: "New Orleans Saints", code: "NO", wins: 0, losses: 1, pct: 0.0, divisionFinish: 1 },
+  { team: "Tampa Bay Buccaneers", code: "TB", wins: 0, losses: 1, pct: 0.0, divisionFinish: 2 },
+  { team: "Atlanta Falcons", code: "ATL", wins: 0, losses: 1, pct: 0.0, divisionFinish: 3, isFalcons: true },
+  { team: "Carolina Panthers", code: "CAR", wins: 0, losses: 1, pct: 0.0, divisionFinish: 4 },
+];
+
+// =========================================
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-09-13T13:00:00Z",
+  generatedAt: "2026-09-14T08:30:00Z",
   cover: {
-    kicker: "Gameday at Pittsburgh · Rush starts through back spasms",
-    headLine1: "Tua is out.",
-    headEm: "Rush is in.",
-    headLine3: "A backup draws his old coach.",
+    kicker: "Week 1 at Pittsburgh · Steelers 20, Falcons 13",
+    headLine1: "A winnable one,",
+    headEm: "given away.",
+    headLine3: "Atlanta opens 0-1.",
     deck:
-      "The quarterback job that took a summer to settle keeps unraveling, right up to kickoff. Tua Tagovailoa, named the Week 1 starter on Sep 7, hurt his oblique in a Thursday practice, and on Friday Atlanta ruled him out and called him week to week, handing the opener to nine-year veteran Cooper Rush. Then Saturday brought one more scare: Rush turned up with back spasms. The Falcons say they still expect him to start, but the twist laid the depth chart bare, because behind him sits only undrafted rookie Jack Strand, with Michael Penix Jr. inactive as he builds back from last November's ACL surgery. 'Disappointed for him, obviously,' Stefanski said of Tua. 'He's going to rally behind Coop and do everything he can to help Coop.' The matchup writes itself: Rush spent five years under Mike McCarthy in Dallas, and now he opens against him in McCarthy's Pittsburgh debut. Cameron Williams (ankle) and Billy Bowman Jr. (Achilles) are also out, and Za'Darius Smith (shoulder) is questionable on a front already down Jalon Walker for the year and James Pearce Jr. for eight games. Atlanta opens as a road underdog of roughly a field goal at Acrisure Stadium, kickoff 1 p.m. ET Sunday on FOX.",
+      "The Stefanski era began the way too many Falcons seasons have, with a game there for the taking that slipped through self-inflicted holes. Atlanta lost 20-13 at Pittsburgh on Sunday, undone by two Cooper Rush interceptions (one a 35-yard T.J. Watt pick-six that swung the fourth quarter), two missed field goals and nine penalties for 96 yards. Rush, pressed into an emergency start when Tua Tagovailoa (oblique) was ruled out Friday, finished 12 of 22 for 143 yards with a touchdown and the two picks, and did not hide from it: 'I wish I played better,' he said, and of the second interception, 'I want that one back.' The bright spot wore No. 7. Bijan Robinson piled up 173 yards from scrimmage (83 rushing, 90 receiving) and caught a 23-yard touchdown, carrying an offense that otherwise sputtered around him, with Drake London held to two catches for 29 yards. Kevin Stefanski was blunt about the math: 'It's just hard to win on the road when you do those things.' Now the questions turn home. Tua is week to week with the oblique and uncertain for Sunday's home opener against Carolina, while Michael Penix Jr., ten months back from ACL surgery, could be in play for Week 2 or 3. The whole NFC South opened 0-1, so Atlanta enters the Panthers game a game back of no one.",
     byline: "The Tracker Desk",
-    filedFrom: "Flowery Branch",
-    photoId: "cooper-rush",
-    stampLabel: "Week 1 at Pittsburgh · Sun Sep 13",
+    filedFrom: "Pittsburgh",
+    photoId: "bijan",
+    stampLabel: "Week 1 · Steelers 20, Falcons 13",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2513,7 +2534,15 @@ export const NEWS_DIGEST = {
     // resolves to the photoId fallback, which stays "cooper-rush" and remains aligned with today's gameday
     // lead (Rush starting through Saturday back spasms). Both triggers fire but neither can be acted on without
     // the Vault. Clean queue moment remains a Rush-under-center or gameday-hero scene once the Vault is reachable.
-    coverImageUrl: "/falcons-tracker/assets/cover/2026-08-15-red-debut.jpg",
+    // STATUS (2026-09-14 post-gameday run): same hard constraint re-verified (~/Vault NOT mounted; only the
+    // tracker repos, outputs and uploads are, so image-requests.md and limn-editor-enhance are unreachable and
+    // no request can be appended to the downstream Antigravity queue). The lead rotated to Sunday's 20-13 loss
+    // at Pittsburgh, whose picturable hero is Bijan Robinson (173 scrimmage yards, a 23-yard TD). The pointer
+    // is repointed to the not-yet-generated 2026-09-14-bijan-pittsburgh.jpg and photoId to "bijan" so the
+    // headshot fallback now matches the new lead. Both staleness and visual triggers fire (Bijan carrying the
+    // offense in Pittsburgh is a clean gameday-hero scene) but neither can be acted on without the Vault. Clean
+    // queue moment remains that Bijan scene for the first run that can reach the Vault.
+    coverImageUrl: "/falcons-tracker/assets/cover/2026-09-14-bijan-pittsburgh.jpg",
   },
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "NFL Network",
@@ -2525,98 +2554,85 @@ export const NEWS_DIGEST = {
     "Falcons Wire", "CBS News Atlanta", "Sharp Football Analysis",
     "Sportsnaut", "The Big Lead", "The Athletic", "Mile High Report",
     "Steelers Depot", "Behind the Steel Curtain",
+    "FOX Sports", "steelers.com", "BVM Sports", "FBSchedules",
   ],
   topics: [
     {
-      title: "Gameday, and the quarterback room holds its breath: Cooper Rush turned up with back spasms on Saturday but the Falcons still expect him to start the Pittsburgh opener, leaving undrafted rookie Jack Strand a snap from his NFL debut with Tua Tagovailoa (oblique) already out and Michael Penix Jr. (knee) inactive",
-      detail: "NBC Sports, ESPN and Draft Sharks (Sep 12): a day after Cooper Rush was pressed into the Week 1 start, the veteran experienced back spasms Saturday, one more wobble for an offense that has cycled through its depth chart all week. The Falcons announced they still expect Rush to start Sunday at Acrisure Stadium, but the scare underscored how thin things have gotten: with Tua Tagovailoa ruled out with an oblique and Michael Penix Jr. inactive as he builds back from November's ACL surgery, undrafted rookie Jack Strand is the only healthy quarterback behind Rush and would be the emergency option if the back tightens up again. Kickoff is 1 p.m. ET on FOX, with Atlanta a road underdog of roughly a field goal in the head-coaching debuts of Kevin Stefanski and Mike McCarthy, Rush's former Dallas coach.",
-      category: "injuries",
-      sourceUrl: "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/cooper-rush-is-dealing-with-back-spasms-falcons-still-expect-him-to-start-sunday",
-      sourceLabel: "NBC Sports / ESPN / Draft Sharks",
+      title: "Falcons open 0-1: Pittsburgh escapes 20-13 as a T.J. Watt pick-six, two missed field goals and nine penalties sink a winnable opener, spoiling Kevin Stefanski's Falcons debut and Cooper Rush's emergency start",
+      detail: "ESPN, AP, Yahoo Sports and The Falcoholic (Sep 13): Atlanta lost its season opener 20-13 at Acrisure Stadium, a game it was in until the mistakes piled up. T.J. Watt was the difference, finishing with two sacks and an interception he returned 35 yards for the go-ahead fourth-quarter touchdown after jumping a Cooper Rush throw. Atlanta also missed two field goals and committed nine penalties for 96 yards, and Rush's two interceptions (a minus-one turnover margin, plus the defensive score) left too much to overcome. Aaron Rodgers managed the Steelers offense cleanly, throwing for 221 yards and a touchdown with no turnovers in Mike McCarthy's Pittsburgh debut. The loss drops Atlanta to 0-1 with the home opener against Carolina next.",
+      category: "games",
+      sourceUrl: "https://www.espn.com/nfl/recap?gameId=401872658",
+      sourceLabel: "ESPN / AP / Yahoo Sports / The Falcoholic",
     },
     {
-      title: "It's Rush: Tua Tagovailoa is ruled OUT of the Pittsburgh opener with an oblique and Cooper Rush will start, a day-before turn that hands the veteran his old Cowboys coach Mike McCarthy in McCarthy's Steelers debut: Stefanski called Tua week to week ('disappointed for him, obviously... he's going to rally behind Coop'), named undrafted rookie Jack Strand the backup with Michael Penix Jr. inactive, and also ruled out OL Cameron Williams and CB Billy Bowman Jr., with edge Za'Darius Smith questionable",
-      detail: "ESPN, AP (Washington Times), CBS Sports and atlantafalcons.com (Sep 11): the Falcons ruled Tua Tagovailoa out of Sunday's opener at Pittsburgh on their final injury report, ending a week that had swung from naming him the Week 1 starter to losing him to a Thursday oblique. Kevin Stefanski said Tagovailoa is week to week and would 'rally behind Coop and do everything he can to help Coop,' and turned the offense over to nine-year veteran Cooper Rush, who took every first-team rep once Tua went down. Rush started 40-plus games under Mike McCarthy across five years in Dallas (9-5 as a starter) and now opens against him in McCarthy's first game leading Pittsburgh. With Michael Penix Jr. inactive as he builds back from November's ACL surgery ('Mike will be ready when Mike's ready,' Stefanski said), undrafted rookie Jack Strand is the emergency backup. Atlanta also ruled out offensive lineman Cameron Williams (ankle) and cornerback Billy Bowman Jr. (Achilles); edge rusher Za'Darius Smith (shoulder), a full practice participant, is the lone questionable on a front already without Jalon Walker (season) and James Pearce Jr. (eight-game suspension).",
+      title: "Quarterback play tanks it: Cooper Rush goes 12-of-22 for 143 yards with a touchdown and two interceptions in his emergency start, and owns it afterward ('I wish I played better... I want that one back')",
+      detail: "AJC, SI Falcons and Yahoo Sports (Sep 13): pressed into the start when Tua Tagovailoa was ruled out Friday, Rush completed 12 of 22 passes for 143 yards with a 23-yard touchdown to Bijan Robinson but threw two costly interceptions, including the T.J. Watt pick-six that flipped the fourth quarter. The veteran did not deflect: 'I wish I played better' and 'wish I put us in a better position to win,' he said, and of the second pick, 'I want that one back.' The thin passing output (143 yards, with Drake London limited to two catches for 29) put the quarterback question back at the center of Atlanta's week as it turns to the home opener.",
+      category: "games",
+      sourceUrl: "https://www.ajc.com/sports/2026/09/falcons-third-string-qb-cooper-rush-falls-short-in-emergency-start/",
+      sourceLabel: "AJC / SI Falcons / Yahoo Sports",
+    },
+    {
+      title: "Bijan carries the offense: Robinson posts 173 yards from scrimmage (83 rushing, 90 receiving) and a 23-yard receiving touchdown in the loss, the lone consistent source of offense around a struggling passing game",
+      detail: "Bleacher Report and steelers.com box score (Sep 13): the Falcons' first-year captain was the one thing that worked in Pittsburgh, leading the team in both rushing (83 yards) and receiving (90 yards) for 173 all-purpose yards and hauling in a 23-yard touchdown pass from Cooper Rush. Robinson's dual-threat afternoon underscored both his value and the offense's imbalance: with the passing game producing just 143 yards and Drake London held to 29, Atlanta leaned on Robinson but could not build enough around him to overcome the turnovers and missed kicks.",
+      category: "games",
+      sourceUrl: "https://bleacherreport.com/articles/25499116-steelers-beat-falcons-box-score-stats-highlights-aaron-rodgers-bijan-dk-rush-top-players",
+      sourceLabel: "Bleacher Report / steelers.com",
+    },
+    {
+      title: "Stefanski on the miscues: 'It's just hard to win on the road when you do those things,' the new head coach says, pointing at the penalties, the turnovers and the defensive score in his debut",
+      detail: "atlantafalcons.com and BVM Sports (Sep 13): in his first postgame press conference as Falcons head coach, Stefanski credited his team for fighting to the end but was direct about the self-inflicted damage. 'Our guys fought to the end there, but really if you look at the penalties, the turnovers, including a defensive score for them, it's just hard to win on the road when you do those things,' he said. On the nine flags, he added: 'We've got to look at our technique and look at if there's ways to be better,' distinguishing between technique lapses and plays where the Falcons 'got beat quickly and then resorted to holding.'",
+      category: "coaching",
+      sourceUrl: "https://www.atlantafalcons.com/news/kevin-stefanski-penalties-turnovers-steelers-game-recap",
+      sourceLabel: "atlantafalcons.com / BVM Sports",
+    },
+    {
+      title: "The QB picture for Week 2: Tua Tagovailoa (oblique) remains week to week and uncertain for Sunday's home opener, while NFL Network's Ian Rapoport reports Michael Penix Jr. could be ready for Week 2 or 3 as he nears full strength from ACL surgery",
+      detail: "NBC Sports, Yahoo Sports and NFL.com (Sep 12 into Sep 13): Atlanta's quarterback room stays unsettled heading home. Tagovailoa, who hurt his oblique in a Thursday practice and missed the opener, is week to week and his status for the Carolina game is unclear. Penix, roughly ten months removed from the November ACL surgery that ended his 2025 season, is healthy but 'not where he feels like he needs to be right now,' though Rapoport reported he could be in play for Week 2 or Week 3. Whether the Falcons turn back to a healthy Penix or ride Rush again against the Panthers is the question of the week at Flowery Branch.",
+      category: "injuries",
+      sourceUrl: "https://sports.yahoo.com/articles/atlanta-falcons-major-injury-michael-182515548.html",
+      sourceLabel: "NBC Sports / Yahoo Sports / NFL.com",
+    },
+    {
+      title: "Next up, the home opener: Atlanta hosts the Carolina Panthers on Sunday, Sept 20 at 1 p.m. ET on FOX to open NFC South play, with both teams reeling from lopsided Week 1 losses (Carolina fell 59-37 to Chicago in a record-setting shootout)",
+      detail: "NFL.com and FBSchedules (Sep 13): the Falcons return to Mercedes-Benz Stadium for their home opener against the defending division-winning Panthers, a divisional date that suddenly looks like an early measuring stick for two struggling teams. Carolina was blown out 59-37 at home by the Bears in the highest-scoring opener the two franchises have produced, the first game in NFL history to end on that exact scoreline. For Atlanta, a home crowd and a familiar NFC South opponent offer a chance to steady a week that opened with turnovers and penalties in Pittsburgh.",
+      category: "games",
+      sourceUrl: "https://www.atlantafalcons.com/schedule/",
+      sourceLabel: "NFL.com / atlantafalcons.com / FBSchedules",
+    },
+    {
+      title: "Everyone's a loser in the NFC South: all four division teams dropped their openers, leaving Atlanta, Tampa Bay, New Orleans and Carolina tied at 0-1 before divisional play even begins",
+      detail: "The Falcoholic and Yahoo Sports (Sep 13): the division could not have started flatter. Tampa Bay lost 33-27 at Cincinnati despite four lost Baker Mayfield fumbles, New Orleans blew a 21-point lead and fell 31-30 in overtime to Detroit when a two-point try failed, Carolina was routed 59-37 by Chicago, and Atlanta dropped its 20-13 game at Pittsburgh. Every NFC South club sits 0-1, so the Falcons' loss costs them no ground in the standings and Sunday's home date with the Panthers becomes the division's first chance for anyone to get above water.",
+      category: "general",
+      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-scores-results/96166/nfc-south-standings-week-1-buccaneers-saints-panthers",
+      sourceLabel: "The Falcoholic / Yahoo Sports",
+    },
+    {
+      title: "How it got here: Tua was ruled OUT of the opener Friday with an oblique and Stefanski named Cooper Rush the starter, sending the veteran against his old Cowboys coach Mike McCarthy with undrafted rookie Jack Strand backing up and Penix inactive",
+      detail: "ESPN, AP and atlantafalcons.com (Sep 11): the week that ended in Pittsburgh turned on Friday's final injury report, when Atlanta ruled Tagovailoa out with the oblique he tweaked Thursday and handed the start to Cooper Rush. Stefanski called Tua week to week and said he was 'disappointed for him, obviously,' adding that Tua would 'rally behind Coop.' Rush, who started 40-plus games under McCarthy in Dallas, drew his former coach in McCarthy's Steelers debut. The Falcons also ruled out OL Cameron Williams (ankle) and CB Billy Bowman Jr. (Achilles) and listed edge Za'Darius Smith (shoulder) as questionable on a front already down Jalon Walker for the year and James Pearce Jr. for eight games.",
       category: "injuries",
       sourceUrl: "https://www.espn.com/nfl/story/_/id/49905536/tagovailoa-rush-start-qb-falcons-vs-steelers",
-      sourceLabel: "ESPN / AP (Washington Times) / CBS Sports / atlantafalcons.com",
+      sourceLabel: "ESPN / AP / atlantafalcons.com",
     },
     {
-      title: "Injury scare shakes the opener: Tua Tagovailoa tweaks an oblique in Thursday's practice and is limited, and Cooper Rush takes every first-team snap two days before Pittsburgh, turning a settled quarterback job back into a question: Rush said he was told 'early on' he was going and called the reps 'huge,' the injury is described as day to day, and the Falcons will resolve it on Friday's final injury report",
-      detail: "NFL.com, ESPN, atlantafalcons.com, AJC and NBC Sports (Sep 10 into Sep 11): Tua Tagovailoa hurt his oblique during an individual throwing portion early in Thursday's practice at Flowery Branch, reaching toward his side after a pass, walking a few steps, then dropping to a knee and briefly sitting on the grass before the team listed him as a limited participant. Veteran Cooper Rush took all of the first-team reps the rest of the session, the first time he has run the No. 1 offense since signing in Atlanta, and said afterward, 'Early on I got told that I was going,' adding the work was 'huge' with the opener days away. The timing matters because Thursday is widely considered the most important practice of the week, and multiple outlets read Tua as unlikely to be full by Sunday. Stefanski was scheduled to speak Friday, the same day the Falcons file game-status designations on their final injury report, leaving open whether Tagovailoa or Rush starts at Pittsburgh. Michael Penix Jr. remains inactive as he builds back from ACL surgery, so a Rush start would put the veteran opposite his former Cowboys coach Mike McCarthy in McCarthy's Pittsburgh debut.",
-      category: "injuries",
-      sourceUrl: "https://www.atlantafalcons.com/news/cooper-rush-takes-first-team-reps-in-wake-of-tua-tagovailoa-s-oblique-injury",
-      sourceLabel: "NFL.com / ESPN / atlantafalcons.com / AJC / NBC Sports",
-    },
-    {
-      title: "Game week opens with a manageable injury report: Michael Penix Jr. logs a full Wednesday practice even as he sits Sunday, while five Falcons are limited entering Steelers prep, cornerback Billy Bowman Jr. the only real availability worry: Za'Darius Smith (shoulder), rookie Zachariah Branch (hamstring), Brandon Dorlus (groin), Kyle Hinton (knee) and Bowman (Achilles) were partial participants, with Bowman, back on the field just nine months after his ruptured Achilles, unlikely to play at Pittsburgh",
-      detail: "atlantafalcons.com, Steelers Depot, The Falcoholic and Yahoo Sports (Sep 9): Atlanta's first regular-season injury report was a light one. Michael Penix Jr., already ruled inactive for Sunday as he builds back from ACL surgery, was a full participant on Wednesday, an encouraging marker even with Tua Tagovailoa set to start. Five players were limited: edge Za'Darius Smith (shoulder), rookie receiver Zachariah Branch (hamstring), defensive lineman Brandon Dorlus (groin), interior lineman Kyle Hinton (knee) and nickel Billy Bowman Jr. (Achilles). Branch, the second-round rookie listed as the punt returner, is expected to factor into the offense and special teams despite the hamstring. Bowman, who tore his Achilles late in November, is practicing again roughly nine months later but is not expected to play at Pittsburgh. Pittsburgh, by contrast, listed only cornerback Joey Porter Jr. (back, limited) on its Wednesday report.",
-      category: "injuries",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-injury-report-zachariah-branch-brandon-dorlus-limited-pittsburgh-steelers",
-      sourceLabel: "atlantafalcons.com / Steelers Depot / The Falcoholic / Yahoo Sports",
-    },
-    {
-      title: "It's Tua: Atlanta names Tagovailoa its Week 1 starter and will make Michael Penix Jr. inactive at Pittsburgh, ending a monthslong competition and answering the last open QB question in the league five days from kickoff: Cooper Rush is set as the backup and Stefanski, who credited Tua for putting himself 'in position to go be the best version of himself,' declined to look past Sunday",
-      detail: "NFL.com, ESPN, AP (Washington Times) and NBC Sports (Sep 7): Kevin Stefanski named Tua Tagovailoa the Falcons' Week 1 starter Monday and confirmed Michael Penix Jr. will be inactive for the Sept 13 opener at Pittsburgh, ending a quarterback competition that ran from the spring through training camp and the preseason and had left Atlanta the only NFL team without a named starter. Stefanski said Tagovailoa 'has done a really nice job of working at it' in a new system and 'has really put himself in position to go be the best version of himself,' and noted Tagovailoa banked the more valuable reps while Penix was capped in his return from the ACL surgery that ended his 2025 season after nine starts. Penix, cleared for 11-on-11 only on Aug 22 and held out of every preseason game, said he did not feel ready to give the team everything: 'I want to be stronger. I want to be able to go out there and give the team 100%, and if I don't feel like I can do that, I don't want to.' Cooper Rush will back Tagovailoa up. Stefanski declined to speculate on who starts beyond Week 1, and the broader reporting still points to Penix as the eventual starter once he is fully cleared for contact. The call lands on a defense already down Jalon Walker for the year and James Pearce Jr. for eight games.",
+      title: "No quarterback among the captains: Atlanta voted in five for 2026 (Nick Folk, Jessie Bates III, Bijan Robinson, Chris Lindstrom and Divine Deablo), and Robinson rewarded the nod with a 173-yard opener",
+      detail: "AJC and atlantafalcons.com (Sep 4): for the first time in years the Falcons named no quarterback among their captains, with kicker Nick Folk, safety Jessie Bates III, running back Bijan Robinson, guard Chris Lindstrom and linebacker Divine Deablo getting the vote. Robinson, Deablo and Folk earned the honor for the first time; Lindstrom returns to the group and Bates has been a captain every season since 2023. Robinson made the case for the choice in Week 1, leading Atlanta in both rushing and receiving in the loss at Pittsburgh.",
       category: "general",
-      sourceUrl: "https://www.nfl.com/news/falcons-tua-tagovailoa-starting-quarterback-week-1-steelers",
-      sourceLabel: "NFL.com / ESPN / AP (Washington Times) / NBC Sports",
+      sourceUrl: "https://www.ajc.com/sports/2026/09/bijan-robinson-among-falcons-5-captains-for-2026/",
+      sourceLabel: "AJC / atlantafalcons.com",
     },
     {
-      title: "Opener set at Acrisure: Falcons open roughly a field-goal underdog at Pittsburgh in a game that doubles as the head-coaching debuts for Kevin Stefanski and Mike McCarthy, with Atlanta's thinned edge room the story to watch: FOX carries the 1 p.m. ET kickoff Sunday, Sept 13, at Acrisure Stadium",
-      detail: "SI (betting), NFL.com and atlantafalcons.com (Sep 8): Atlanta travels to Acrisure Stadium as a road underdog of roughly a field goal with the total sitting near the low 40s, a coin-flip line for a game that is also the head-coaching opener for Kevin Stefanski in Atlanta and Mike McCarthy in Pittsburgh (McCarthy took over the Steelers this offseason). The Falcons opened their first regular-season practice week Monday at Flowery Branch with Tua Tagovailoa under center. The absences that matter most are the ones already known: edge rushers Jalon Walker (season-ending ACL) and James Pearce Jr. (eight-game suspension) leave Atlanta leaning on a retooled front that un-retired Za'Darius Smith and traded for Gervon Dexter Sr. Atlanta sat outside the top 20 of the league's Week 1 power-rankings roundup.",
-      category: "games",
-      sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-week-1-depth-chart-vs-pittsburgh-steelers",
-      sourceLabel: "SI (betting) / NFL.com / atlantafalcons.com",
+      title: "The retooled front's first test: with Jalon Walker out for the year and James Pearce Jr. serving an eight-game suspension, Atlanta's un-retired Za'Darius Smith and trade addition Gervon Dexter Sr. anchored a defense that held Pittsburgh to 20 points",
+      detail: "ESPN and CBS Sports (Sep 13, background Aug 30): the defense largely did its job in the opener, keeping Atlanta within one score until the offense's turnovers tilted the game. The group is leaning on pieces added late in the summer: edge Za'Darius Smith, who came out of retirement, and defensive tackle Gervon Dexter Sr., acquired from Chicago on cutdown day for CB Clark Phillips III and a 2027 fifth-round pick, are covering for the season-long loss of first-rounder Jalon Walker (ACL) and the eight-game suspension of rookie James Pearce Jr. Holding a Rodgers-led offense to 20 is a workable baseline as the front continues to jell.",
+      category: "general",
+      sourceUrl: "https://www.espn.com/nfl/story/_/id/49771892/sources-falcons-add-gervon-dexter-sr-trade-bears",
+      sourceLabel: "ESPN / CBS Sports",
     },
     {
-      title: "Week 1 depth chart is out and the rookies have arrived: Atlanta lists second-year-class linebacker Kendal Daniels as a starting inside 'backer next to Divine Deablo, with Harold Perkins JR. behind him, and slots rookie Avieon Terrell as the starting nickel: Billy Bowman Jr., back from a season-ending Achilles rupture, is Terrell's backup, and the unofficial chart confirms Tua over Cooper Rush, Jack Strand and an inactive Michael Penix Jr.",
-      detail: "atlantafalcons.com (Sep 8): the Falcons released their unofficial Week 1 depth chart, and the young defenders the staff leaned on all summer are penciled in. Rookie linebacker Kendal Daniels is listed as a starting inside linebacker alongside Divine Deablo, with fellow draftee Harold Perkins Jr. as his backup, after both rotated in beside Deablo at a high clip through camp and the preseason. Second-round rookie Avieon Terrell, A.J. Terrell's younger brother, is the starting nickel, with Billy Bowman Jr., returning from the Achilles rupture that ended his 2025 season, slotted behind him. On offense the chart is as expected: Tua Tagovailoa at quarterback over Cooper Rush, undrafted rookie Jack Strand and an inactive Michael Penix Jr., Bijan Robinson at running back, Drake London, Olamide Zaccheaus and Jahan Dotson at receiver, and Kyle Pitts Sr. and Charlie Woerner at tight end. Zachariah Branch is listed as the punt returner.",
+      title: "Rookies in the rotation: second-year-class linebacker Kendal Daniels started inside next to Divine Deablo and second-round nickel Avieon Terrell drew a starting role in the opener, with rookie returner Zachariah Branch active despite a hamstring",
+      detail: "atlantafalcons.com (Sep 8): Atlanta's Week 1 debut leaned on its young defenders. Rookie linebacker Kendal Daniels was listed as a starting inside linebacker alongside Divine Deablo, with fellow draftee Harold Perkins Jr. behind him, and second-round rookie Avieon Terrell (A.J. Terrell's younger brother) opened as the starting nickel. Second-round receiver Zachariah Branch, the listed punt returner, was active through a hamstring issue. The rookie usage is a marker of how much the staff is asking of its 2026 class right out of the gate.",
       category: "general",
       sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-week-1-depth-chart-vs-pittsburgh-steelers",
       sourceLabel: "atlantafalcons.com",
-    },
-    {
-      title: "No quarterback among the captains: Atlanta votes in five for 2026 (Nick Folk, Jessie Bates III, Bijan Robinson, Chris Lindstrom and Divine Deablo) and neither Tua nor Penix makes the cut, a pointed marker with the Week 1 job still open: Robinson, Deablo and Folk are first-time captains, Lindstrom returns to the group and Bates keeps the honor he has held every year since 2023",
-      detail: "AJC, atlantafalcons.com, NBC Sports (Pro Football Talk), SI Falcons and Bleacher Report (Sep 4): the Falcons named their 2026 captains and, for the first time in years, no quarterback was among them, an unmistakable reflection of the still-unsettled Tua Tagovailoa and Michael Penix Jr. competition. The five are kicker Nick Folk, safety Jessie Bates III, running back Bijan Robinson, guard Chris Lindstrom and linebacker Divine Deablo. Robinson, Deablo and Folk earned the honor for the first time; Lindstrom was also a captain in 2023 and 2025, and Bates has been voted one every season since he joined the club in 2023. Some national reaction was sharp (Yahoo Sports collected fans branding the sequence 'unserious' for naming captains before a starter), but the message from the locker room vote was simply that leadership this year runs through the backfield, the secondary and the offensive line rather than the quarterback room.",
-      category: "general",
-      sourceUrl: "https://www.ajc.com/sports/2026/09/bijan-robinson-among-falcons-5-captains-for-2026/",
-      sourceLabel: "AJC / atlantafalcons.com / NBC Sports (PFT) / SI Falcons / Bleacher Report",
-    },
-    {
-      title: "The linebacker room takes another hit: Falcons place JD Bertrand on injured reserve and sign veteran Josh Woods off the practice squad to fill the spot, then shuffle the practice squad by re-signing DE Zach Harrison, DE Khalid Kareem and DB Jammie Robinson (releasing Cameron Sample and Cobee Bryant): ten days from Pittsburgh, Atlanta reshapes the back end of its roster again with the Week 1 quarterback still unnamed",
-      detail: "atlantafalcons.com, NBC Sports (Pro Football Talk), SI Falcons and Yahoo Sports (Sep 1 into Sep 2): Atlanta placed core special-teams linebacker JD Bertrand on the reserve/injured list with an undisclosed injury, meaning he must miss at least four games before he can return, and signed eight-year veteran linebacker Josh Woods off the practice squad to the 53-man roster in the corresponding move. Woods, a Maryland product who has spent the past two seasons in Atlanta, played 82 percent of the special-teams snaps across the twelve games he was active in 2025. The club then reshuffled the practice squad, bringing back defensive end Zach Harrison (a former third-round pick who went unclaimed on waivers days earlier), defensive end Khalid Kareem and defensive back Jammie Robinson, both prior Falcons, while releasing edge Cameron Sample and cornerback Cobee Bryant from the unit. The churn comes as the whole building points at the Sept 13 opener at Pittsburgh, where Kevin Stefanski has still not named a Week 1 starter in the Michael Penix Jr. and Tua Tagovailoa competition.",
-      category: "injuries",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-sign-josh-woods-53-man-roster-jd-bertrand-injured-reserve",
-      sourceLabel: "atlantafalcons.com / NBC Sports (PFT) / SI Falcons / Yahoo Sports",
-    },
-    {
-      title: "The roster is complete and the page turns fully to Pittsburgh: Atlanta closed out its practice squad Tuesday by signing undrafted OL Josh Thompson, filling the 16th and final spot after rounding out the 53 with Monday waiver claims of LBs Yasir Abdullah and Jared Ivey and OT Cameron Williams: with the roster set from top to bottom, the whole building aims at the Sept 13 opener, the Week 1 quarterback still unnamed",
-      detail: "atlantafalcons.com, Yardbarker, SI Falcons and Pro Football Rumors (Sep 1 into Sep 2): Atlanta finished shaping its roster on Tuesday, signing undrafted rookie offensive guard Josh Thompson (an ex-Chiefs UDFA who transferred to LSU for his final college season) to fill the 16th and final practice-squad spot and adding interior offensive-line depth. The move closed out a back-end sequence that began on the Monday waiver wire, where the Falcons claimed linebackers Yasir Abdullah (waived by Jacksonville) and Jared Ivey (waived by Seattle) and offensive tackle Cameron Williams (waived by Philadelphia), waiving longtime defensive lineman Zach Harrison, a former third-round pick who logged 8.5 sacks across 40 games in three seasons, along with defensive backs Jammie Robinson and Natrone Brooks to clear the room (Harrison and Robinson both went unclaimed and were re-signed to the practice squad days later). The practice squad, made up largely of training-camp holdovers, is headlined by the return of cutdown casualties running back Tyler Goodson, cornerback Darnay Holmes and rookie back Cash Jones. With the roster complete, attention shifts fully to the regular-season opener at Pittsburgh, where Michael Penix Jr. has told reporters he will be ready physically and mentally if named the Week 1 starter.",
-      category: "general",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-claim-waivers-nfl-roster-cutdowns-yasir-abdullah-jared-ivey-cameron-williams",
-      sourceLabel: "atlantafalcons.com / Yardbarker / SI Falcons / Pro Football Rumors",
-    },
-    {
-      title: "The 53 is set: Atlanta keeps a surprising four quarterbacks as it trims from 90 on the NFL's moved-up cutdown clock, with undrafted rookie Jack Strand sticking behind Tua, Penix and Cooper Rush: the initial roster skews to the trenches and secondary, carrying only two running backs and five outside linebackers, with waiver claims processed at 1 p.m. ET Monday before the practice squad forms",
-      detail: "The Falcoholic, Pro Football Rumors and Yahoo Sports (Aug 30): Atlanta reached the 53-man limit by the league's moved-up 6 p.m. ET Sunday deadline, moving 37 players off the active roster. The surprise was the four-quarterback room: Tua Tagovailoa, Michael Penix Jr., veteran Cooper Rush and undrafted Minnesota State-Moorhead rookie Jack Strand, whose 212-yard night against the Colts played its way on, all made it. The build carries just two running backs (Bijan Robinson and Brian Robinson Jr.), a deep offensive line and defensive backfield, three tight ends and only five outside linebackers in a group already down Jalon Walker for the year and James Pearce Jr. for eight games. Waiver claims processed at 1 p.m. ET Monday before teams could begin signing practice-squad players.",
-      category: "general",
-      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-roster/95606/falcons-2026-roster-team-announces-initial-53-man-roster-jack-strand-malcolm-dewalt-iv",
-      sourceLabel: "The Falcoholic / Pro Football Rumors / Yahoo Sports",
-    },
-    {
-      title: "Cunningham's cutdown-day strike: Falcons trade CB Clark Phillips III and a 2027 fifth-round pick to Chicago for DT Gervon Dexter Sr.: Atlanta lands a 24-year-old former second-round starter for its interior rotation on the day the roster is set, reuniting the tackle with the general manager who helped draft him",
-      detail: "ESPN, CBS Sports and the Chicago Sun-Times (Aug 30): the Falcons acquired defensive tackle Gervon Dexter Sr. from the Bears for cornerback Clark Phillips III and a 2027 fifth-round pick. Dexter, a 2023 second-round pick, started all 17 games last season with 44 tackles and six sacks, and had 11 sacks across his two years in Chicago. GM Ian Cunningham was the Bears' assistant general manager when the club drafted him, and Falcons defensive line coach Nate Ollie adds another familiar interior body next to Maason Smith and Brandon Dorlus. Dexter is in the final year of his rookie deal at about a $2.14M cap hit, so a 2027 extension call now belongs to Atlanta. Phillips, a 2023 fourth-rounder who missed most of last season with a triceps injury, gives Chicago cornerback depth.",
-      category: "free-agency",
-      sourceUrl: "https://www.espn.com/nfl/story/_/id/49771892/sources-falcons-add-gervon-dexter-sr-trade-bears",
-      sourceLabel: "ESPN / CBS Sports / Chicago Sun-Times",
-    },
-    {
-      title: "The QB1 call outlives the cut: Stefanski still will not name a Week 1 starter, Rapoport reads the silence as a lean toward Tua because Penix is not cleared for contact, and 92.9 the game's mark Zinno expects Penix at Pittsburgh anyway: two weeks from the Sept 13 opener, the competition between Michael Penix Jr. and Tua Tagovailoa is officially open, with reporters and Atlanta's own airwaves split on which way the club leans",
-      detail: "NFL.com, ESPN, Yahoo Sports and Audacy 92.9 The Game (Aug 27 to 29): after ruling Penix out of the finale, Stefanski said he has no timeline on the QB1 decision and is best served keeping it day to day. Ian Rapoport's 'general feel is that Tua will be the starter for Week 1' because Penix, back to full-team work only last week, 'has not been cleared' for game contact. Mark Zinno of 92.9 The Game pushed the other way: 'Michael Penix will be the starter Week 1. Yes, even without playing in the preseason.' Multiple beat items read the locker room as leaning Penix, and ClutchPoints noted Mike Florio floating whether an uneven Tua camp could even put his roster spot in play, though the AJC projects all three quarterbacks stick. The staff has framed the finale as one more data point, not a verdict.",
-      category: "general",
-      sourceUrl: "https://www.nfl.com/news/michael-penix-jr-out-falcons-preseason-finale-falcons-qb1-decision",
-      sourceLabel: "NFL.com / ESPN / Yahoo Sports / Audacy 92.9 The Game",
     },
   ],
 };
@@ -2628,9 +2644,49 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-09-13T13:00:00Z",
-  windowLabel: "Gameday vs. Pittsburgh · Sep 7 → Sep 13. The week ends the way it lurched all along, on the quarterback. Stefanski ruled Tua Tagovailoa out Friday with an oblique, called him week to week, and named Cooper Rush the starter with undrafted rookie Jack Strand backing up and Michael Penix Jr. inactive, then Saturday brought back spasms for Rush, who the Falcons still expect to start. Stefanski's Friday podium leads the Press Room, ahead of Rush's Thursday session, the Wednesday matchup availability and the Sep 7 starter announcement. Atlanta opens as a road underdog of roughly a field goal at Acrisure Stadium in the head-coaching debuts of Stefanski and Mike McCarthy, Rush's former Dallas coach",
+  generatedAt: "2026-09-14T08:30:00Z",
+  windowLabel: "Week 1 Postgame at Pittsburgh · Sep 13. Atlanta opened the Stefanski era with a 20-13 loss it largely handed to the Steelers: two Cooper Rush interceptions (one a T.J. Watt pick-six), two missed field goals and nine penalties. Rush's postgame podium leads the Press Room, where the emergency starter owned a rough night ('I wish I played better'), ahead of Stefanski's postgame session pinning the loss on the miscues. The buildup availabilities from Steelers week follow, with the room now turning to Sunday's home opener against Carolina and a quarterback picture still in flux (Tua week to week, Penix nearing a return)",
   sessions: [
+    {
+      id: "rush-2026-09-13",
+      speaker: "Cooper Rush",
+      role: "Quarterback",
+      date: "2026-09-13",
+      venue: "Acrisure Stadium · Pittsburgh, Pa.",
+      session: "Week 1 at Steelers · Postgame Press Conference",
+      sourceUrl: "https://www.atlantafalcons.com/video/quarterback-cooper-rush-week-1-at-steelers-post-game-press-conference-atlanta-falcons",
+      transcriptUrl: "https://www.ajc.com/sports/2026/09/falcons-third-string-qb-cooper-rush-falls-short-in-emergency-start/",
+      verified: true,
+      summary: "Pressed into an emergency start when Tua Tagovailoa was ruled out Friday, Rush finished 12 of 22 for 143 yards with a touchdown and two interceptions in the 20-13 loss, and he did not deflect afterward. He took ownership of the giveaways, singling out the second interception as the one he most wanted back, and credited the Steelers' front for a physical afternoon.",
+      pullQuote: "I wish I played better. I want that one back.",
+      bullets: [
+        "On his performance: 'I wish I played better,' and 'wish I put us in a better position to win,' after the 20-13 loss",
+        "On the second interception: said plainly, 'I want that one back,' calling it the play he most regretted",
+        "Line: completed 12 of 22 passes for 143 yards with a 23-yard touchdown to Bijan Robinson and two interceptions, one returned for a score by T.J. Watt",
+        "Context: Rush started against his former Dallas head coach Mike McCarthy in McCarthy's Pittsburgh debut, with Tua Tagovailoa (oblique) out and Michael Penix Jr. inactive",
+      ],
+      topics: ["week-1", "postgame", "cooper-rush", "turnovers"],
+    },
+    {
+      id: "stefanski-2026-09-13",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-09-13",
+      venue: "Acrisure Stadium · Pittsburgh, Pa.",
+      session: "Week 1 at Steelers · Postgame Press Conference",
+      sourceUrl: "https://www.atlantafalcons.com/news/kevin-stefanski-penalties-turnovers-steelers-game-recap",
+      transcriptUrl: "https://bvmsports.com/2026/09/13/kevin-stefanski-on-falcons-miscues-vs-steelers-hard-to-win-on-the-road-when-you-do-those-things/",
+      verified: true,
+      summary: "In his first game as Falcons head coach, Stefanski credited his team for fighting to the finish but was direct about the self-inflicted damage that decided a winnable road opener. He pointed to the penalties, the turnovers and Pittsburgh's defensive score, and said the coaching staff would look hard at technique on the flags.",
+      pullQuote: "It's just hard to win on the road when you do those things.",
+      bullets: [
+        "On the loss: 'Our guys fought to the end there, but really if you look at the penalties, the turnovers, including a defensive score for them, it's just hard to win on the road when you do those things'",
+        "On the nine penalties: 'We've got to look at our technique and look at if there's ways to be better'",
+        "On the flags in detail: distinguished technique lapses from plays where the Falcons 'got beat quickly and then resorted to holding,' vowing to 'look at ways to be better'",
+        "Context: Atlanta committed nine penalties for 96 yards, missed two field goals and lost the turnover battle by one, including T.J. Watt's pick-six",
+      ],
+      topics: ["week-1", "postgame", "penalties", "turnovers"],
+    },
     {
       id: "stefanski-2026-09-11",
       speaker: "Kevin Stefanski",
@@ -2712,47 +2768,6 @@ export const INTERVIEWS = {
         "On beyond Week 1: declined to speculate on who the team might start at quarterback past the opener",
       ],
       topics: ["qb-competition", "penix-acl", "steelers-week", "week-1"],
-    },
-    {
-      id: "penix-2026-09-07",
-      speaker: "Michael Penix Jr.",
-      role: "Quarterback",
-      date: "2026-09-07",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "Steelers Week · Post-Decision Media Availability",
-      sourceUrl: "https://www.atlantafalcons.com/news/michael-penix-jr-health-update-injury-status-quarterback",
-      transcriptUrl: "https://www.atlantafalcons.com/news/michael-penix-jr-health-update-injury-status-quarterback",
-      verified: true,
-      summary: "Hours after Stefanski named Tua Tagovailoa the Week 1 starter, Penix addressed his own status without a hint of frustration. Ten months removed from ACL surgery, he said he is close to full strength but not there yet, and that he told the staff he did not want to be on the field until he can give the team everything.",
-      pullQuote: "I want to be able to be 100 percent so I can help this team win football games. And I'm really close.",
-      bullets: [
-        "On his health: said he is 'really close' but not where he wants to be, roughly ten months out from the November ACL surgery that ended his 2025 season",
-        "On the decision: did not push to play, telling the staff 'I want to be stronger. I want to be able to be out there and give the team 100 percent'",
-        "On his mindset: framed sitting Week 1 as wanting to help the team win rather than a setback, and said he will keep building",
-        "Context: Penix is listed as inactive on the Week 1 depth chart behind Tagovailoa, Cooper Rush and rookie Jack Strand",
-      ],
-      topics: ["penix-acl", "qb-competition", "steelers-week", "week-1"],
-    },
-    {
-      id: "stefanski-2026-08-28",
-      speaker: "Kevin Stefanski",
-      role: "Head Coach",
-      date: "2026-08-28",
-      venue: "Hard Rock Stadium · Miami Gardens, Fla.",
-      session: "Preseason Finale at Dolphins · Post-Game Press Conference",
-      sourceUrl: "https://clutchpoints.com/nfl/atlanta-falcons/falcons-news-kevin-stefanski-complements-tua-tagovailoa-strong-showing-dolphins",
-      transcriptUrl: "https://x.com/marcraimondi/status/2093525997844914260",
-      verified: true,
-      summary: "After a 17-12 win in Tua Tagovailoa's return to Miami, Stefanski credited his quarterback for operating the offense and moving the ball on the opening drives, but flagged the botched center-to-quarterback exchange as an avoidable mistake the team will clean up. He offered no timeline on the Week 1 starter, leaving the Penix-Tua competition open into the regular-season buildup with cutdown two days away.",
-      pullQuote: "I thought Tua did a nice job operating, obviously moving the football for a couple drives. Plenty to clean up. An avoidable center-to-quarterback exchange. We have to clean that up. And we will.",
-      bullets: [
-        "On Tua: praised him for operating the offense and moving the football on a couple of drives, and said 'by and large, he operated' in his return to Miami",
-        "On the fumble: called the second-series snap-exchange giveaway 'avoidable,' something the team 'has to clean up, and we will'",
-        "On the QB1 call: offered no timeline on naming a Week 1 starter, keeping the Penix-Tua competition day to day",
-        "On the finale numbers: Tagovailoa went 7 of 8 for 95 yards over three series and led a Brian Robinson Jr. touchdown drive before Cooper Rush finished 13 of 18 for 106 yards and a score",
-        "Context: Atlanta closed the preseason 2-1 and now must reach 53 by 6 p.m. ET Sunday before the Sept 13 opener at Pittsburgh",
-      ],
-      topics: ["qb-competition", "preseason", "dolphins-week", "cutdown"],
     },
   ],
 };
