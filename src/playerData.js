@@ -381,8 +381,8 @@ export const PLAYERS = [
     acquired: "draft-2019-R1-P14",
     stats: {},
     form: 9.3,
-    status: "active",
-    injuryNote: "RG · 2x All-Pro · restructure candidate",
+    status: "questionable",
+    injuryNote: "In concussion protocol (left Week 1 after 51 snaps) · RG · 2x All-Pro",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/3672833.png",
     contract: { years: 5, total: 102500000, guaranteed: 55000000, apy: 20500000, throughYear: 2028, cap2026: 19500000 },
     career: [
@@ -654,8 +654,8 @@ export const PLAYERS = [
     acquired: "fa-2026",
     stats: { tackles: 22, tfl: 5 },
     form: 6.5,
-    status: "active",
-    injuryNote: "Partial replacement for Onyemata · 1-yr / $3M",
+    status: "ir",
+    injuryNote: "Out for season · torn quad (Week 1 at Pittsburgh, seven snaps) · 1-yr / $3M",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/3126352.png",
     contract: { years: 1, total: 3000000, guaranteed: 1500000, apy: 3000000, throughYear: 2026, cap2026: 3000000 },
     career: [
@@ -1988,7 +1988,7 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-09-14T08:30:00Z",
+  generatedAt: "2026-09-15T12:30:00Z",
   cover: {
     kicker: "Week 1 at Pittsburgh · Steelers 20, Falcons 13",
     headLine1: "A winnable one,",
@@ -2542,6 +2542,12 @@ export const NEWS_DIGEST = {
     // headshot fallback now matches the new lead. Both staleness and visual triggers fire (Bijan carrying the
     // offense in Pittsburgh is a clean gameday-hero scene) but neither can be acted on without the Vault. Clean
     // queue moment remains that Bijan scene for the first run that can reach the Vault.
+    // STATUS (2026-09-15 run): cover queue SKIPPED. Staleness backstop does NOT fire (the 2026-09-14-bijan-
+    // pittsburgh.jpg pointer is one day old, well inside the 4-day window) and today's lead is the Monday
+    // injury/QB-decision fallout, which has no picturable scene. Separately the hard constraint holds again
+    // (~/Vault NOT mounted; only the tracker repos, outputs and uploads are), so the downstream Antigravity
+    // image queue is unreachable anyway. Pointer and photoId ("bijan") stay put and remain aligned with the
+    // still-current Week 1 cover story.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-14-bijan-pittsburgh.jpg",
   },
   sources: [
@@ -2557,6 +2563,13 @@ export const NEWS_DIGEST = {
     "FOX Sports", "steelers.com", "BVM Sports", "FBSchedules",
   ],
   topics: [
+    {
+      title: "Monday fallout in Flowery Branch: Da'Shawn Hand is out for the year with a torn quad, Chris Lindstrom lands in the concussion protocol, and Kevin Stefanski still won't name a Week 2 quarterback",
+      detail: "NBC Sports (Pro Football Talk), atlantafalcons.com and The Falcoholic (Sep 14): Stefanski's Monday availability turned Week 1's bruises into hard news. Defensive tackle Da'Shawn Hand tore his quad in Sunday's opener and will miss the rest of the season, needing surgery after just seven snaps in what will be his only Atlanta appearance, a costly hit to an already thin interior. Right guard Chris Lindstrom, a captain and two-time All-Pro, is in the concussion protocol after playing 51 snaps before leaving, with Kyle Hinton filling in for the final nine; his progress through the protocol will decide whether he starts the home opener. On the quarterback front, Stefanski said he had 'no updates' on Tua Tagovailoa (oblique) or Michael Penix Jr. and would not commit to a Week 2 starter, saying only that he needed to 'get through today' first.",
+      category: "injuries",
+      sourceUrl: "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/falcons-say-chris-lindstrom-is-in-concussion-protocol-dashawn-hand-is-out-for-the-year",
+      sourceLabel: "NBC Sports (PFT) / atlantafalcons.com / The Falcoholic",
+    },
     {
       title: "Falcons open 0-1: Pittsburgh escapes 20-13 as a T.J. Watt pick-six, two missed field goals and nine penalties sink a winnable opener, spoiling Kevin Stefanski's Falcons debut and Cooper Rush's emergency start",
       detail: "ESPN, AP, Yahoo Sports and The Falcoholic (Sep 13): Atlanta lost its season opener 20-13 at Acrisure Stadium, a game it was in until the mistakes piled up. T.J. Watt was the difference, finishing with two sacks and an interception he returned 35 yards for the go-ahead fourth-quarter touchdown after jumping a Cooper Rush throw. Atlanta also missed two field goals and committed nine penalties for 96 yards, and Rush's two interceptions (a minus-one turnover margin, plus the defensive score) left too much to overcome. Aaron Rodgers managed the Steelers offense cleanly, throwing for 221 yards and a touchdown with no turnovers in Mike McCarthy's Pittsburgh debut. The loss drops Atlanta to 0-1 with the home opener against Carolina next.",
@@ -2644,9 +2657,29 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-09-14T08:30:00Z",
-  windowLabel: "Week 1 Postgame at Pittsburgh · Sep 13. Atlanta opened the Stefanski era with a 20-13 loss it largely handed to the Steelers: two Cooper Rush interceptions (one a T.J. Watt pick-six), two missed field goals and nine penalties. Rush's postgame podium leads the Press Room, where the emergency starter owned a rough night ('I wish I played better'), ahead of Stefanski's postgame session pinning the loss on the miscues. The buildup availabilities from Steelers week follow, with the room now turning to Sunday's home opener against Carolina and a quarterback picture still in flux (Tua week to week, Penix nearing a return)",
+  generatedAt: "2026-09-15T12:30:00Z",
+  windowLabel: "Panthers Week · Sep 14 into the Sept 20 home opener. Stefanski's Monday availability leads the Press Room, where the coach turned Week 1's bruises into hard news: Da'Shawn Hand out for the year with a torn quad, Chris Lindstrom in the concussion protocol, and no Week 2 quarterback named yet ('I need to get through today'). Sunday's postgame podiums from Pittsburgh follow, Rush owning a rough emergency start and Stefanski pinning the 20-13 loss on the miscues, with the buildup availabilities from Steelers week behind them and the quarterback picture (Tua week to week, Penix nearing a return) still the story of the week",
   sessions: [
+    {
+      id: "stefanski-2026-09-14",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-09-14",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Panthers Week · Monday Media Availability",
+      sourceUrl: "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/falcons-say-chris-lindstrom-is-in-concussion-protocol-dashawn-hand-is-out-for-the-year",
+      transcriptUrl: "https://sports.yahoo.com/articles/kevin-stefanski-no-decision-made-185843719.html",
+      verified: true,
+      summary: "The day after the 20-13 loss at Pittsburgh, Stefanski opened Panthers week by confirming two Week 1 casualties on the lines and holding off on a quarterback decision for the home opener. He said Da'Shawn Hand is out for the season with a torn quad and Chris Lindstrom is in the concussion protocol, and offered no timeline on either injured quarterback.",
+      pullQuote: "I need to get through today.",
+      bullets: [
+        "On Da'Shawn Hand: confirmed the defensive tackle tore his quad in Sunday's opener and is out for the year after seven snaps in his Atlanta debut",
+        "On Chris Lindstrom: said the two-time All-Pro right guard is in the concussion protocol after leaving Week 1, with his availability against Carolina tied to clearing the protocol",
+        "On the Week 2 quarterback: declined to name a starter, saying 'I need to get through today' before committing, with no timeline set",
+        "On Tua Tagovailoa and Michael Penix Jr.: said he had 'no updates' on the health of either quarterback",
+      ],
+      topics: ["panthers-week", "injuries", "qb-decision", "concussion-protocol"],
+    },
     {
       id: "rush-2026-09-13",
       speaker: "Cooper Rush",
@@ -2747,27 +2780,6 @@ export const INTERVIEWS = {
         "On the matchup: kept the focus on a physical Pittsburgh front as Atlanta prepares to open on the road in his head-coaching debut",
       ],
       topics: ["steelers-week", "week-1", "qb-competition", "matchup"],
-    },
-    {
-      id: "stefanski-2026-09-07",
-      speaker: "Kevin Stefanski",
-      role: "Head Coach",
-      date: "2026-09-07",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "Steelers Week · Week 1 Starter Announcement",
-      sourceUrl: "https://www.nfl.com/news/falcons-tua-tagovailoa-starting-quarterback-week-1-steelers",
-      transcriptUrl: "https://www.nfl.com/news/falcons-tua-tagovailoa-starting-quarterback-week-1-steelers",
-      verified: true,
-      summary: "Six days before the opener, Stefanski ended the summer's biggest question, naming Tua Tagovailoa the Week 1 starter and ruling Michael Penix Jr. inactive at Pittsburgh. He credited Tagovailoa for the work he put in learning a new system and the reps he banked while Penix rehabbed, named Cooper Rush the backup, and declined to project the depth chart beyond Sunday.",
-      pullQuote: "I think he's really put himself in position to go be the best version of himself.",
-      bullets: [
-        "On the decision: named Tua Tagovailoa the Week 1 starter and said Michael Penix Jr. will be inactive against the Steelers",
-        "On Tua's work: 'I've gotten to see Tua work from the spring until now... he's done a really nice job of working at it,' calling it a new system for all the quarterbacks",
-        "On Penix: 'Of course, Mike just getting back to 11-on-11, wanted to make sure we gave him an opportunity in these practices, and we did,' after clearing him for full-team work Aug 22",
-        "On the depth chart: confirmed Cooper Rush will back up Tagovailoa",
-        "On beyond Week 1: declined to speculate on who the team might start at quarterback past the opener",
-      ],
-      topics: ["qb-competition", "penix-acl", "steelers-week", "week-1"],
     },
   ],
 };
