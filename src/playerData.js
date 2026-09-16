@@ -1988,14 +1988,14 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-09-15T12:30:00Z",
+  generatedAt: "2026-09-16T12:30:00Z",
   cover: {
     kicker: "Week 1 at Pittsburgh · Steelers 20, Falcons 13",
     headLine1: "A winnable one,",
     headEm: "given away.",
     headLine3: "Atlanta opens 0-1.",
     deck:
-      "The Stefanski era began the way too many Falcons seasons have, with a game there for the taking that slipped through self-inflicted holes. Atlanta lost 20-13 at Pittsburgh on Sunday, undone by two Cooper Rush interceptions (one a 35-yard T.J. Watt pick-six that swung the fourth quarter), two missed field goals and nine penalties for 96 yards. Rush, pressed into an emergency start when Tua Tagovailoa (oblique) was ruled out Friday, finished 12 of 22 for 143 yards with a touchdown and the two picks, and did not hide from it: 'I wish I played better,' he said, and of the second interception, 'I want that one back.' The bright spot wore No. 7. Bijan Robinson piled up 173 yards from scrimmage (83 rushing, 90 receiving) and caught a 23-yard touchdown, carrying an offense that otherwise sputtered around him, with Drake London held to two catches for 29 yards. Kevin Stefanski was blunt about the math: 'It's just hard to win on the road when you do those things.' Now the questions turn home. Tua is week to week with the oblique and uncertain for Sunday's home opener against Carolina, while Michael Penix Jr., ten months back from ACL surgery, could be in play for Week 2 or 3. The whole NFC South opened 0-1, so Atlanta enters the Panthers game a game back of no one.",
+      "The Stefanski era began the way too many Falcons seasons have, with a game there for the taking that slipped through self-inflicted holes. Atlanta lost 20-13 at Pittsburgh on Sunday, undone by two Cooper Rush interceptions (one a 35-yard T.J. Watt pick-six that swung the fourth quarter), two missed field goals and nine penalties for 96 yards. Rush, pressed into an emergency start when Tua Tagovailoa (oblique) was ruled out Friday, finished 12 of 22 for 143 yards with a touchdown and the two picks, and did not hide from it: 'I wish I played better,' he said, and of the second interception, 'I want that one back.' The bright spot wore No. 7. Bijan Robinson piled up 173 yards from scrimmage (83 rushing, 90 receiving) and caught a 23-yard touchdown, carrying an offense that otherwise sputtered around him, with Drake London held to two catches for 29 yards. Kevin Stefanski was blunt about the math: 'It's just hard to win on the road when you do those things.' Now the questions turn home. Entering Wednesday's first game-week practice, the tea leaves point back to Rush: the team relabeled its midweek media session a 'QB Cooper Rush press conference,' the strongest signal yet that he starts Sunday's home opener against Carolina. Tua is still week to week with the oblique, Michael Penix Jr. (ten months back from ACL surgery) is nearing a return but not there yet, and Stefanski has not made it official. The whole NFC South opened 0-1, so Atlanta enters the Panthers game a game back of no one.",
     byline: "The Tracker Desk",
     filedFrom: "Pittsburgh",
     photoId: "bijan",
@@ -2564,6 +2564,13 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
+      title: "The tea leaves point to Rush: as game-week practice opens Wednesday, Atlanta relabels its midweek availability a 'QB Cooper Rush press conference,' the clearest signal yet he starts the home opener even as Stefanski keeps it unofficial",
+      detail: "The Falcoholic, Yahoo Sports and Roundtable (Sep 15 into Sep 16): the Falcons quietly changed their Wednesday media advisory from a generic 'starting QB press conference' to one naming Cooper Rush, the strongest indication yet that the veteran will start Sunday's home opener against Carolina for a second straight week. The team cautions the listing is a placeholder made 'based on no new information,' and Kevin Stefanski has said he will name a starter only when he decides to make it public. Tua Tagovailoa (oblique) remains week to week and Michael Penix Jr. is nearing a return from ACL surgery but not yet cleared, so Wednesday's first game-week injury report is the next real tell.",
+      category: "games",
+      sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-depth-chart/96234/cooper-rush-starting-quarterback-week-2-carolina-panthers-tua-tagovailoa-michael-penix-jr-jack-strand",
+      sourceLabel: "The Falcoholic / Yahoo Sports / Roundtable",
+    },
+    {
       title: "Monday fallout in Flowery Branch: Da'Shawn Hand is out for the year with a torn quad, Chris Lindstrom lands in the concussion protocol, and Kevin Stefanski still won't name a Week 2 quarterback",
       detail: "NBC Sports (Pro Football Talk), atlantafalcons.com and The Falcoholic (Sep 14): Stefanski's Monday availability turned Week 1's bruises into hard news. Defensive tackle Da'Shawn Hand tore his quad in Sunday's opener and will miss the rest of the season, needing surgery after just seven snaps in what will be his only Atlanta appearance, a costly hit to an already thin interior. Right guard Chris Lindstrom, a captain and two-time All-Pro, is in the concussion protocol after playing 51 snaps before leaving, with Kyle Hinton filling in for the final nine; his progress through the protocol will decide whether he starts the home opener. On the quarterback front, Stefanski said he had 'no updates' on Tua Tagovailoa (oblique) or Michael Penix Jr. and would not commit to a Week 2 starter, saying only that he needed to 'get through today' first.",
       category: "injuries",
@@ -2657,8 +2664,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-09-15T12:30:00Z",
-  windowLabel: "Panthers Week · Sep 14 into the Sept 20 home opener. Stefanski's Monday availability leads the Press Room, where the coach turned Week 1's bruises into hard news: Da'Shawn Hand out for the year with a torn quad, Chris Lindstrom in the concussion protocol, and no Week 2 quarterback named yet ('I need to get through today'). Sunday's postgame podiums from Pittsburgh follow, Rush owning a rough emergency start and Stefanski pinning the 20-13 loss on the miscues, with the buildup availabilities from Steelers week behind them and the quarterback picture (Tua week to week, Penix nearing a return) still the story of the week",
+  generatedAt: "2026-09-16T12:30:00Z",
+  windowLabel: "Panthers Week · Sep 14 into the Sept 20 home opener",
   sessions: [
     {
       id: "stefanski-2026-09-14",
