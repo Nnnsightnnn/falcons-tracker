@@ -27,7 +27,7 @@ export const PLAYERS = [
     stats: { completions: 166, attempts: 276, passYds: 1982, passTDs: 9, ints: 3, qbRating: 88.5 },
     form: 0,
     status: "active",
-    injuryNote: "Inactive for the Sept 13 opener at Pittsburgh as he builds back from the Week 11 2025 ACL surgery. NFL Network's Ian Rapoport reported (Sep 13) that Penix could be ready for action in Week 2 or 3: he is healthy but 'not where he feels like he needs to be right now,' though close. With Tua Tagovailoa week to week (oblique) after the opener, Penix is a live option for Sunday's home opener vs. Carolina and is still framed as the eventual starter once fully cleared for contact",
+    injuryNote: "Inactive for the Sept 13 opener at Pittsburgh as he builds back from the Week 11 2025 ACL surgery. At Wednesday's game-week practice (Sep 16) he was a full participant and split first-team reps with Cooper Rush while Tua Tagovailoa (oblique) sat, and he would not rule out Sunday: 'I'm working extremely hard. I'm dying to be out there.' Called himself 'close' and stressed he has final say on his own body. Stefanski has not named a Week 2 starter and ruled no one out, leaving Penix a live option for the home opener vs. Carolina and still framed as the eventual starter once fully cleared for contact",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
     contract: { years: 4, total: 22080000, guaranteed: 22080000, apy: 5520000, throughYear: 2027, cap2026: 5900000 },
     career: [
@@ -1988,14 +1988,14 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-09-16T12:30:00Z",
+  generatedAt: "2026-09-17T12:00:00Z",
   cover: {
     kicker: "Week 1 at Pittsburgh · Steelers 20, Falcons 13",
     headLine1: "A winnable one,",
     headEm: "given away.",
     headLine3: "Atlanta opens 0-1.",
     deck:
-      "The Stefanski era began the way too many Falcons seasons have, with a game there for the taking that slipped through self-inflicted holes. Atlanta lost 20-13 at Pittsburgh on Sunday, undone by two Cooper Rush interceptions (one a 35-yard T.J. Watt pick-six that swung the fourth quarter), two missed field goals and nine penalties for 96 yards. Rush, pressed into an emergency start when Tua Tagovailoa (oblique) was ruled out Friday, finished 12 of 22 for 143 yards with a touchdown and the two picks, and did not hide from it: 'I wish I played better,' he said, and of the second interception, 'I want that one back.' The bright spot wore No. 7. Bijan Robinson piled up 173 yards from scrimmage (83 rushing, 90 receiving) and caught a 23-yard touchdown, carrying an offense that otherwise sputtered around him, with Drake London held to two catches for 29 yards. Kevin Stefanski was blunt about the math: 'It's just hard to win on the road when you do those things.' Now the questions turn home. Entering Wednesday's first game-week practice, the tea leaves point back to Rush: the team relabeled its midweek media session a 'QB Cooper Rush press conference,' the strongest signal yet that he starts Sunday's home opener against Carolina. Tua is still week to week with the oblique, Michael Penix Jr. (ten months back from ACL surgery) is nearing a return but not there yet, and Stefanski has not made it official. The whole NFC South opened 0-1, so Atlanta enters the Panthers game a game back of no one.",
+      "The Stefanski era began the way too many Falcons seasons have, with a game there for the taking that slipped through self-inflicted holes. Atlanta lost 20-13 at Pittsburgh on Sunday, undone by two Cooper Rush interceptions (one a 35-yard T.J. Watt pick-six that swung the fourth quarter), two missed field goals and nine penalties for 96 yards. Rush, pressed into an emergency start when Tua Tagovailoa (oblique) was ruled out Friday, finished 12 of 22 for 143 yards with a touchdown and the two picks, and did not hide from it: 'I wish I played better,' he said, and of the second interception, 'I want that one back.' The bright spot wore No. 7. Bijan Robinson piled up 173 yards from scrimmage (83 rushing, 90 receiving) and caught a 23-yard touchdown, carrying an offense that otherwise sputtered around him, with Drake London held to two catches for 29 yards. Kevin Stefanski was blunt about the math: 'It's just hard to win on the road when you do those things.' Now the questions turn home, and they are still open. At Wednesday's first full game-week practice Stefanski named no starter and ruled no one out: 'We are working through it. Tua is not going to practice today, but he is getting better. Mike and Cooper will practice.' Tua remains week to week with the oblique, Cooper Rush is the veteran fallback after his two-interception debut, and Michael Penix Jr., ten months back from ACL surgery, split first-team reps with Rush, was a full participant and would not rule out Sunday: 'I'm working extremely hard. I'm dying to be out there.' The relabeled 'QB Cooper Rush press conference' looked less settled by day's end, with rookie Jack Strand also in the mix. The whole NFC South opened 0-1, so Atlanta enters the Panthers game a game back of no one.",
     byline: "The Tracker Desk",
     filedFrom: "Pittsburgh",
     photoId: "bijan",
@@ -2564,8 +2564,8 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "The tea leaves point to Rush: as game-week practice opens Wednesday, Atlanta relabels its midweek availability a 'QB Cooper Rush press conference,' the clearest signal yet he starts the home opener even as Stefanski keeps it unofficial",
-      detail: "The Falcoholic, Yahoo Sports and Roundtable (Sep 15 into Sep 16): the Falcons quietly changed their Wednesday media advisory from a generic 'starting QB press conference' to one naming Cooper Rush, the strongest indication yet that the veteran will start Sunday's home opener against Carolina for a second straight week. The team cautions the listing is a placeholder made 'based on no new information,' and Kevin Stefanski has said he will name a starter only when he decides to make it public. Tua Tagovailoa (oblique) remains week to week and Michael Penix Jr. is nearing a return from ACL surgery but not yet cleared, so Wednesday's first game-week injury report is the next real tell.",
+      title: "Still no Week 2 quarterback: Stefanski rules no one out as Penix and Rush split first-team reps Wednesday, Tua sits, and Penix says he is 'close' and 'dying to be out there'",
+      detail: "Pro Football Rumors, Larry Brown Sports and The Athletic (Sep 16): opening the first full game-week practice, Kevin Stefanski said the Falcons have not decided their starter for Sunday's home opener and have not ruled anybody out. 'We are working through it. Tua is not going to practice today, but he is getting better. Mike and Cooper will practice,' he said, holding Tua Tagovailoa (oblique) out while Michael Penix Jr. and Cooper Rush split first-team reps. Penix, ten months back from ACL surgery, was a full participant and would not rule out playing: 'I'm working extremely hard. I'm dying to be out there.' The relabeled 'QB Cooper Rush press conference' listing looked less settled by day's end, with undrafted rookie Jack Strand also not ruled out.",
       category: "games",
       sourceUrl: "https://www.thefalcoholic.com/atlanta-falcons-depth-chart/96234/cooper-rush-starting-quarterback-week-2-carolina-panthers-tua-tagovailoa-michael-penix-jr-jack-strand",
       sourceLabel: "The Falcoholic / Yahoo Sports / Roundtable",
@@ -2664,9 +2664,49 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-09-16T12:30:00Z",
-  windowLabel: "Panthers Week · Sep 14 into the Sept 20 home opener",
+  generatedAt: "2026-09-17T12:00:00Z",
+  windowLabel: "Panthers Week · Sep 16 into the Sept 20 home opener",
   sessions: [
+    {
+      id: "stefanski-2026-09-16",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-09-16",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Panthers Week · Wednesday Media Availability",
+      sourceUrl: "https://www.profootballrumors.com/2026/09/falcons-undecided-on-week-2-qb",
+      transcriptUrl: "https://larrybrownsports.com/football/kevin-stefanski-falcons-uncertain-qb-situation-week-2/770415",
+      verified: true,
+      summary: "Opening the first full game-week practice, Stefanski still would not name a Week 2 starter and pointedly ruled no one out. He held Tua Tagovailoa out of Wednesday's session while calling him improved, and had Michael Penix Jr. and Cooper Rush split first-team reps, with Penix a full participant. The listing that had put Rush's name on the midweek podium looked less settled by day's end.",
+      pullQuote: "We are working through it. Tua is not going to practice today, but he is getting better. Mike and Cooper will practice.",
+      bullets: [
+        "On the decision: said the Falcons have not decided their quarterback and have not ruled anybody out, with all four options still live",
+        "On Tua Tagovailoa: kept him out of Wednesday's practice with the oblique but said he 'is getting better'",
+        "On the reps: had Penix and Rush split first-team work, and called Penix a full participant while declining to detail exactly what he is doing",
+        "On Jack Strand: did not rule out the undrafted rookie for the game either, per reporters in the room",
+      ],
+      topics: ["panthers-week", "qb-decision", "penix-acl", "first-team-reps"],
+    },
+    {
+      id: "penix-2026-09-16",
+      speaker: "Michael Penix Jr.",
+      role: "Quarterback",
+      date: "2026-09-16",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Panthers Week · Wednesday Media Availability",
+      sourceUrl: "https://larrybrownsports.com/football/kevin-stefanski-falcons-uncertain-qb-situation-week-2/770415",
+      transcriptUrl: "https://x.com/CameronWolfe/status/2100315945419845711",
+      verified: true,
+      summary: "Ten months removed from the ACL tear that ended his 2025, Penix spoke for the first time this week and made plain how badly he wants back on the field. He called himself 'close,' would not rule out playing Sunday, and stressed the final call on his body is his, drawing a line between his rehab and other high-profile return timelines. He split first-team reps with Rush on Wednesday.",
+      pullQuote: "I'm working extremely hard. I'm dying to be out there.",
+      bullets: [
+        "On his status: called himself 'close' and did not rule out playing Sunday against Carolina",
+        "On the decision: said he has final say on his own body and framed his injury as different from other recent high-profile returns",
+        "On the work: 'I'm working extremely hard,' and 'I'm dying to be out there,' on pushing to return from November's ACL surgery",
+        "On Wednesday: split first-team reps with Cooper Rush while Tua Tagovailoa did not practice",
+      ],
+      topics: ["qb-decision", "penix-acl", "panthers-week"],
+    },
     {
       id: "stefanski-2026-09-14",
       speaker: "Kevin Stefanski",
@@ -2747,46 +2787,6 @@ export const INTERVIEWS = {
         "Context: Rush spent five years under Mike McCarthy in Dallas and now faces him in McCarthy's Steelers debut; Cameron Williams (ankle) and Billy Bowman Jr. (Achilles) were also ruled out, Za'Darius Smith (shoulder) questionable",
       ],
       topics: ["qb-injury", "steelers-week", "week-1", "cooper-rush", "penix-acl"],
-    },
-    {
-      id: "rush-2026-09-10",
-      speaker: "Cooper Rush",
-      role: "Quarterback",
-      date: "2026-09-10",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "Steelers Week · Thursday Post-Practice Media Availability",
-      sourceUrl: "https://www.atlantafalcons.com/news/cooper-rush-takes-first-team-reps-in-wake-of-tua-tagovailoa-s-oblique-injury",
-      transcriptUrl: "https://www.nfl.com/news/tua-tagovailoa-limited-falcons-practice-oblique-cooper-rush",
-      verified: true,
-      summary: "After Tua Tagovailoa hurt his oblique in the open individual period and was listed as limited, Rush took every first-team snap for the rest of Thursday's practice, his first run with the No. 1 offense since signing in Atlanta. The veteran, matter-of-fact about the turn, said he was told early in the session that he was up and treated it as ordinary next-man-up work two days before the opener.",
-      pullQuote: "Early on I got told that I was going.",
-      bullets: [
-        "On stepping in: said he was told 'early on' in Thursday's practice that he would take the first-team reps once Tagovailoa was limited",
-        "On the value: called the first-team work 'huge,' noting 'all those reps matter, and it's a big advantage for me' with Pittsburgh two days out",
-        "On the mindset: 'I'm not sure what happened. It's Thursday practice. Practice has to go on, and so you're up next'",
-        "Context: a Rush start Sunday would come against his former Cowboys head coach Mike McCarthy in McCarthy's Pittsburgh debut, with Michael Penix Jr. inactive and rookie Jack Strand behind him",
-      ],
-      topics: ["qb-injury", "steelers-week", "week-1", "cooper-rush"],
-    },
-    {
-      id: "stefanski-2026-09-09",
-      speaker: "Kevin Stefanski",
-      role: "Head Coach",
-      date: "2026-09-09",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "Steelers Week · Wednesday Media Availability",
-      sourceUrl: "https://steelersdepot.com/2026/09/has-not-fallen-off-at-all-falcons-hc-kevin-stefanski-marvels-at-ageless-cam-heyward/",
-      transcriptUrl: "https://www.atlantafalcons.com/video/interviews-press-conferences",
-      verified: true,
-      summary: "In his first game-week Wednesday session as Falcons head coach, Stefanski turned the page from the quarterback decision to Pittsburgh. He praised the Steelers' veteran interior, singling out Cam Heyward as a future Hall of Famer who has not slipped, and framed Tua Tagovailoa as a quarterback carrying a chip on his shoulder into the opener.",
-      pullQuote: "He's a terrific player. Has not fallen off at all. I think he's gotten better, which is crazy.",
-      bullets: [
-        "On Cam Heyward: called the Steelers lineman a future Hall of Famer who has 'not fallen off at all' and has somehow 'gotten better,' recalling his battles with Joel Bitonio",
-        "On Tua's mindset: 'You want to prove people wrong. You have a chip on your shoulder,' on how Tagovailoa is approaching the Week 1 start",
-        "On the injury report: with Michael Penix Jr. logging a full practice and five players limited, the Falcons carried no new availability alarms into Steelers prep",
-        "On the matchup: kept the focus on a physical Pittsburgh front as Atlanta prepares to open on the road in his head-coaching debut",
-      ],
-      topics: ["steelers-week", "week-1", "qb-competition", "matchup"],
     },
   ],
 };
