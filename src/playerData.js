@@ -27,7 +27,7 @@ export const PLAYERS = [
     stats: { completions: 166, attempts: 276, passYds: 1982, passTDs: 9, ints: 3, qbRating: 88.5 },
     form: 0,
     status: "active",
-    injuryNote: "Inactive for the Sept 13 opener at Pittsburgh as he builds back from the Week 11 2025 ACL surgery. At Wednesday's game-week practice (Sep 16) he was a full participant and split first-team reps with Cooper Rush while Tua Tagovailoa (oblique) sat, and he would not rule out Sunday: 'I'm working extremely hard. I'm dying to be out there.' Called himself 'close' and stressed he has final say on his own body. Stefanski has not named a Week 2 starter and ruled no one out, leaving Penix a live option for the home opener vs. Carolina and still framed as the eventual starter once fully cleared for contact",
+    injuryNote: "Ruled out for the Sept 20 home opener vs. Carolina on Friday's (Sep 18) final injury report, still building back from the Week 11 2025 ACL surgery and reported to be a week or two from being ready to start. Was a full participant through Panthers week and split first-team reps with Cooper Rush while Tua Tagovailoa (oblique) sat, and would not rule himself out: 'I'm working extremely hard. I'm dying to be out there.' Still framed as the eventual starter once fully cleared for contact",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
     contract: { years: 4, total: 22080000, guaranteed: 22080000, apy: 5520000, throughYear: 2027, cap2026: 5900000 },
     career: [
@@ -48,7 +48,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "questionable",
-    injuryNote: "Oblique. Missed the Sept 13 opener at Pittsburgh after hurting his side in Thursday's individual period; Stefanski called him week to week. Named the Week 1 starter on Sep 7, he ceded the debut to Cooper Rush (who threw two interceptions in a 20-13 loss). His status for the Sept 20 home opener vs. Carolina is uncertain, and a nearly-ready Michael Penix Jr. could factor into the Week 2 quarterback call",
+    injuryNote: "Oblique. Missed the Sept 13 opener at Pittsburgh after hurting his side in Thursday's individual period; Stefanski called him week to week. Did not practice at all during Panthers week and was listed doubtful on Friday's (Sep 18) final injury report for the Sept 20 home opener vs. Carolina, with Cooper Rush named the starter and Michael Penix Jr. ruled out",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4241479.png",
     contract: { years: 1, total: 1300000, guaranteed: 1300000, apy: 1300000, throughYear: 2026, cap2026: 1300000 },
     career: [
@@ -70,7 +70,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "active",
-    injuryNote: "Named the Week 1 starter on Friday (Sep 11) after Tua Tagovailoa was ruled out with an oblique, drawing his former Cowboys head coach Mike McCarthy in McCarthy's Pittsburgh debut. Took every first-team rep in Thursday's practice, said he was told 'early on' he was going and called the reps 'huge.' Undrafted rookie Jack Strand backs him up. Signed Jul 29, the morning of the first camp practice, after the team released Trevor Siemian",
+    injuryNote: "Named the Week 2 starter on Friday (Sep 18) for the home opener vs. Carolina, his second straight start, with Michael Penix Jr. ruled out and Tua Tagovailoa (oblique) doubtful. Managed back spasms during the week but handled the bulk of first-team work. Owns a rocky debut in the 20-13 Week 1 loss at Pittsburgh (12 of 22, 143 yards, a touchdown to Bijan Robinson and two interceptions, one a 35-yard T.J. Watt pick-six). Undrafted rookie Jack Strand backs him up. Signed Jul 29 after the team released Trevor Siemian",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/2972515.png",
     contract: { years: 1, total: 1500000, guaranteed: 0, apy: 1500000, throughYear: 2026, cap2026: 1210000 },
     career: [
@@ -382,7 +382,7 @@ export const PLAYERS = [
     stats: {},
     form: 9.3,
     status: "questionable",
-    injuryNote: "In concussion protocol (left Week 1 after 51 snaps); limited in Thursday's practice (Sep 17), availability for the home opener tied to clearing the protocol · RG · 2x All-Pro",
+    injuryNote: "Concussion (left Week 1 after 51 snaps). Progressed through the week and practiced fully Friday (Sep 18), but was listed questionable on the final injury report and still needs independent-neurologist clearance before he can play the Sept 20 home opener · RG · 2x All-Pro",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/3672833.png",
     contract: { years: 5, total: 102500000, guaranteed: 55000000, apy: 20500000, throughYear: 2028, cap2026: 19500000 },
     career: [
@@ -930,8 +930,8 @@ export const PLAYERS = [
     acquired: "draft-2020-R1-P16",
     stats: { tackles: 68, int_def: 2, pass_def: 13 },
     form: 8.2,
-    status: "active",
-    injuryNote: "Shoulder (Week 1 at Pittsburgh): missed Wednesday but returned as a full participant Thursday (Sep 17) and is on track for the home opener · CB1 · paid like one (4yr/$81M extension in 2024)",
+    status: "questionable",
+    injuryNote: "Shoulder (Week 1 at Pittsburgh): returned as a full participant Thursday but did not practice Friday (Sep 18) and was listed questionable on the final injury report for the Sept 20 home opener · CB1 · paid like one (4yr/$81M extension in 2024)",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4239995.png",
     contract: { years: 4, total: 81000000, guaranteed: 43500000, apy: 20250000, throughYear: 2028, cap2026: 19200000 },
     career: [{ years: "2020–", team: "Atlanta Falcons", type: "NFL · Pro Bowl 2021" }],
@@ -1034,7 +1034,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "active",
-    injuryNote: "Ruled OUT (Achilles) on Friday's final injury report for the Pittsburgh opener, but practicing again roughly nine months after the late-Nov 2025 rupture. Activated off Reserve/PUP onto the initial 53 on cutdown day (Aug 30); in the nickel/slot mix behind Avieon Terrell.",
+    injuryNote: "Ruled OUT (Achilles) again on Friday's (Sep 18) final injury report, this time for the Sept 20 home opener vs. Carolina, still working back roughly nine to ten months after the late-Nov 2025 rupture. Activated off Reserve/PUP onto the initial 53 on cutdown day (Aug 30); in the nickel/slot mix behind Avieon Terrell.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4431194.png",
     contract: { years: 4, total: 5200000, guaranteed: 950000, apy: 1300000, throughYear: 2028, cap2026: 1100000 },
     career: [{ years: "2025–", team: "Atlanta Falcons", type: "NFL" }],
@@ -1639,7 +1639,7 @@ export const NEXT_GAME = {
   date: "2026-09-20",
   kickoff: "1:00 PM ET",
   tv: "FOX",
-  note: "Home opener and NFC South opener, with both teams reeling from lopsided Week 1 losses: Atlanta fell 20-13 at Pittsburgh, Carolina was routed 59-37 at home by Chicago. The Falcons' quarterback picture is unsettled: Tua Tagovailoa (oblique) has not practiced all week and is uncertain, Michael Penix Jr. (ACL rehab) is a full participant but reportedly a week or two from starting, and Cooper Rush profiles as the likely starter after a two-interception debut. Oddsmakers open the Panthers as a 2.5-point favorite. Every NFC South team opened 0-1, so the division race is level entering Sunday.",
+  note: "Home opener and NFC South opener, with both teams reeling from lopsided Week 1 losses: Atlanta fell 20-13 at Pittsburgh, Carolina was routed 59-37 at home by Chicago. The quarterback picture firmed up Friday: Kevin Stefanski named Cooper Rush the starter for a second straight week, Michael Penix Jr. (ACL rehab) was ruled out and Tua Tagovailoa (oblique), who did not practice all week, is doubtful. Also on the final report, cornerback Billy Bowman Jr. (Achilles) is out, while guard Chris Lindstrom (concussion) and cornerback A.J. Terrell (shoulder) are questionable. Oddsmakers make the Panthers a 2.5-point favorite. Every NFC South team opened 0-1, so the division race is level entering Sunday.",
 };
 
 // =========================================
@@ -1988,14 +1988,14 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-09-18T12:00:00Z",
+  generatedAt: "2026-09-19T13:00:00Z",
   cover: {
     kicker: "Home opener · Panthers at Falcons · Sun 1 p.m. FOX",
-    headLine1: "The quarterback job,",
-    headEm: "still open.",
-    headLine3: "Tua hasn't practiced.",
+    headLine1: "Rush gets the ball,",
+    headEm: "again.",
+    headLine3: "Penix out, Tua doubtful.",
     deck:
-      "Five days after a winnable opener slipped away in Pittsburgh, the Falcons return to Mercedes-Benz Stadium on Sunday to open NFC South play against Carolina with their quarterback room still unsettled. Tua Tagovailoa, out for Week 1 with the oblique he tweaked in a Thursday practice, has not practiced all week and is a real question for the home opener, leaving Cooper Rush, who is managing back spasms, as the likely starter after a rocky debut (12 of 22, 143 yards, a touchdown and two interceptions, one a 35-yard T.J. Watt pick-six). Michael Penix Jr., ten months back from ACL surgery and a full participant again this week, split first-team reps but is still described as a week or two from being ready to start, and would not rule himself out: 'I'm working extremely hard. I'm dying to be out there.' Kevin Stefanski has named no starter and ruled no one out, undrafted rookie Jack Strand included: 'We are working through it,' he said Wednesday. The report brought relief in one corner, with A.J. Terrell (shoulder) back as a full participant Thursday, though captain and two-time All-Pro guard Chris Lindstrom (concussion protocol) was limited and defensive tackle Da'Shawn Hand is lost for the year with a torn quad. Both teams arrive reeling, Carolina routed 59-37 at home by Chicago in Week 1, yet oddsmakers still make the Panthers a 2.5-point favorite in Atlanta, a sign of how little the openers settled. Every NFC South club opened 0-1, so Sunday is the division's first chance for anyone to climb above water, and the Falcons enter it a game back of no one.",
+      "The quarterback suspense broke Friday. Kevin Stefanski named Cooper Rush the starter for Sunday's home opener against Carolina, his second straight start after the winnable 20-13 loss at Pittsburgh, and the injury report drew the rest of the picture in hard lines: Michael Penix Jr. ruled out, still building back from November's ACL surgery and not quite ready, and Tua Tagovailoa (oblique), who did not practice all week, listed doubtful. Rush owns a rocky debut (12 of 22, 143 yards, a touchdown and two interceptions, one a 35-yard T.J. Watt pick-six), and gets a second chance to steady the offense around a Bijan Robinson who was the only thing that worked in Pittsburgh (173 scrimmage yards). Two other Friday designations matter: captain and two-time All-Pro guard Chris Lindstrom (concussion) practiced fully but still needs independent-neurologist clearance and is questionable, and cornerback A.J. Terrell (shoulder) is questionable after sitting out Friday, while cornerback Billy Bowman Jr. (Achilles) is out and defensive tackle Da'Shawn Hand is already lost for the year. Both teams arrive reeling, Carolina routed 59-37 at home by Chicago in Week 1, yet oddsmakers still make the Panthers a 2.5-point favorite in Atlanta. Every NFC South club opened 0-1, so Sunday is the division's first chance for anyone to climb above water.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "bijan",
@@ -2559,7 +2559,14 @@ export const NEWS_DIGEST = {
     // the new headline. Repointing to a fresh QB-scene slug would only spawn another dangling request no one can
     // fulfill this cycle, so the pointer is left as is. Clean queue moment: a home-opener gameday-hero scene, for
     // the first run that can reach the Vault.
-    coverImageUrl: "/falcons-tracker/assets/cover/2026-09-14-bijan-pittsburgh.jpg",
+    // STATUS (2026-09-19 scheduled run): cover STORY rotated onto the now-confirmed Friday QB decision (Rush
+    // named starter, Penix out, Tua doubtful) for Sunday's home opener. Staleness backstop had fired (the
+    // 2026-09-14 pointer was 5 days old), so the pointer is repointed to a fresh dated slug to reset the clock;
+    // photoId stays "bijan" (a star with a real headshot and the face of the team) so the fallback stays clean
+    // under the new headline. The ~/Vault image-request file is NOT reachable from this sandbox (only the tracker
+    // repos are mounted), so the limn/Antigravity queue could not be appended this run and the new pointer
+    // resolves to the photoId "bijan" headshot fallback until a downstream job fills it. Reported in Step 9.
+    coverImageUrl: "/falcons-tracker/assets/cover/2026-09-19-rush-home-opener.jpg",
   },
   sources: [
     "Atlanta Falcons Official", "ESPN", "NFL.com", "NFL Network",
@@ -2575,11 +2582,11 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "Quarterback job still open on the eve of the home opener: Tua Tagovailoa has not practiced all week, Cooper Rush takes the first-team reps and profiles as the likely Sunday starter, and Michael Penix Jr. is called a week or two from starting",
-      detail: "atlantafalcons.com, The Falcoholic and Yahoo Sports (Sep 17-18): Atlanta closed its practice week with the picture clearer only at the edges. Tua Tagovailoa (oblique) did not practice at all this week, putting his availability for Sunday's home opener in real doubt, while Cooper Rush, managing back spasms, handled the bulk of the first-team work and looks the likely starter. Michael Penix Jr. was a full participant again but is reported to be roughly a week or two from being ready to start as he builds back from November's ACL surgery, and Stefanski has still not named a starter or ruled anyone out. Elsewhere on the report, cornerback A.J. Terrell (shoulder) returned as a full participant Thursday, right guard Chris Lindstrom (concussion protocol) was limited, and rookie linebacker Kendal Daniels was added as limited. Oddsmakers open the reeling Panthers as a 2.5-point favorite in Atlanta.",
+      title: "Cooper Rush confirmed as the Week 2 starter: Stefanski names him Friday, Penix ruled out and Tua listed doubtful as the home opener arrives",
+      detail: "NFL.com, ESPN and Yahoo Sports (Sep 18): Kevin Stefanski ended the week's quarterback suspense Friday, naming Cooper Rush the starter for Sunday's home opener against Carolina, his second straight start after the 20-13 loss at Pittsburgh. Michael Penix Jr. was ruled out, still building back from November's ACL surgery and not quite ready to start, and Tua Tagovailoa (oblique), who did not practice all week, was listed doubtful. The final report also ruled out cornerback Billy Bowman Jr. (Achilles), while captain and two-time All-Pro guard Chris Lindstrom (concussion) and cornerback A.J. Terrell (shoulder) were both listed questionable; Lindstrom practiced fully Friday but still needs independent-neurologist clearance before he can play. Oddsmakers make the reeling Panthers, blown out 59-37 by Chicago in Week 1, a 2.5-point favorite in Atlanta.",
       category: "injuries",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-injury-report-a-j-terrell-chris-lindstrom-tua-tagovailoa-panthers",
-      sourceLabel: "atlantafalcons.com / The Falcoholic / Yahoo Sports",
+      sourceUrl: "https://www.nfl.com/news/falcons-qb-cooper-rush-start-week-2-panthers",
+      sourceLabel: "NFL.com / ESPN / Yahoo Sports",
     },
     {
       title: "Still no Week 2 quarterback: Stefanski rules no one out as Penix and Rush split first-team reps Wednesday, Tua sits, and Penix says he is 'close' and 'dying to be out there'",
