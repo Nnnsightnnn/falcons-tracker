@@ -1988,14 +1988,14 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-09-19T13:00:00Z",
+  generatedAt: "2026-09-20T09:00:00Z",
   cover: {
-    kicker: "Home opener · Panthers at Falcons · Sun 1 p.m. FOX",
+    kicker: "Home opener · Panthers at Falcons · Today 1 p.m. FOX",
     headLine1: "Rush gets the ball,",
     headEm: "again.",
     headLine3: "Penix out, Tua doubtful.",
     deck:
-      "The quarterback suspense broke Friday. Kevin Stefanski named Cooper Rush the starter for Sunday's home opener against Carolina, his second straight start after the winnable 20-13 loss at Pittsburgh, and the injury report drew the rest of the picture in hard lines: Michael Penix Jr. ruled out, still building back from November's ACL surgery and not quite ready, and Tua Tagovailoa (oblique), who did not practice all week, listed doubtful. Rush owns a rocky debut (12 of 22, 143 yards, a touchdown and two interceptions, one a 35-yard T.J. Watt pick-six), and gets a second chance to steady the offense around a Bijan Robinson who was the only thing that worked in Pittsburgh (173 scrimmage yards). Two other Friday designations matter: captain and two-time All-Pro guard Chris Lindstrom (concussion) practiced fully but still needs independent-neurologist clearance and is questionable, and cornerback A.J. Terrell (shoulder) is questionable after sitting out Friday, while cornerback Billy Bowman Jr. (Achilles) is out and defensive tackle Da'Shawn Hand is already lost for the year. Both teams arrive reeling, Carolina routed 59-37 at home by Chicago in Week 1, yet oddsmakers still make the Panthers a 2.5-point favorite in Atlanta. Every NFC South club opened 0-1, so Sunday is the division's first chance for anyone to climb above water.",
+      "Game day in Atlanta, and the quarterback picture is set: Kevin Stefanski named Cooper Rush the starter for today's 1 p.m. home opener against Carolina, his second straight start after the winnable 20-13 loss at Pittsburgh, and Friday's injury report drew the rest in hard lines: Michael Penix Jr. ruled out, still building back from November's ACL surgery and not quite ready, and Tua Tagovailoa (oblique), who did not practice all week, listed doubtful. Rush owns a rocky debut (12 of 22, 143 yards, a touchdown and two interceptions, one a 35-yard T.J. Watt pick-six), and gets a second chance to steady the offense around a Bijan Robinson who was the only thing that worked in Pittsburgh (173 scrimmage yards). Two other designations matter: captain and two-time All-Pro guard Chris Lindstrom (concussion) practiced fully Friday but still needs independent-neurologist clearance and is questionable, and cornerback A.J. Terrell (shoulder) is questionable after sitting out Friday, while cornerback Billy Bowman Jr. (Achilles) is out and defensive tackle Da'Shawn Hand is already lost for the year. Both teams arrive reeling, Carolina routed 59-37 at home by Chicago in Week 1, yet oddsmakers still make the Panthers a 2.5-point favorite in Atlanta. Every NFC South club opened 0-1, so today is the division's first chance for anyone to climb above water.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "bijan",
@@ -2566,6 +2566,14 @@ export const NEWS_DIGEST = {
     // under the new headline. The ~/Vault image-request file is NOT reachable from this sandbox (only the tracker
     // repos are mounted), so the limn/Antigravity queue could not be appended this run and the new pointer
     // resolves to the photoId "bijan" headshot fallback until a downstream job fills it. Reported in Step 9.
+    // STATUS (2026-09-20 scheduled run): cover SKIPPED, same hard constraint. ~/Vault/Notes/image-requests.md and
+    // the limn-editor-enhance skill are NOT mounted in this sandbox (only the tracker repos, outputs and uploads
+    // are), so the downstream Antigravity queue cannot be appended. The 2026-09-19 pointer is one day old, so the
+    // 4-day staleness backstop has NOT fired; the file was never generated and resolves to the photoId "bijan"
+    // headshot fallback (a star with a real headshot, still the face of the team), which stays clean under the
+    // game-day headline. Recency refresh only this cycle: cover/kicker/topics[0] reframed from Friday's QB
+    // announcement to present-tense game day (kickoff today, 1 p.m. vs. Carolina); NEWS_DIGEST + INTERVIEWS
+    // timestamps bumped to 2026-09-20. Game had not kicked off at run time (04:33 ET), so no result was recorded.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-19-rush-home-opener.jpg",
   },
   sources: [
@@ -2582,7 +2590,7 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "Cooper Rush confirmed as the Week 2 starter: Stefanski names him Friday, Penix ruled out and Tua listed doubtful as the home opener arrives",
+      title: "Home opener today, Cooper Rush under center: Stefanski named him Friday, Penix ruled out and Tua listed doubtful as Carolina visits at 1 p.m.",
       detail: "NFL.com, ESPN and Yahoo Sports (Sep 18): Kevin Stefanski ended the week's quarterback suspense Friday, naming Cooper Rush the starter for Sunday's home opener against Carolina, his second straight start after the 20-13 loss at Pittsburgh. Michael Penix Jr. was ruled out, still building back from November's ACL surgery and not quite ready to start, and Tua Tagovailoa (oblique), who did not practice all week, was listed doubtful. The final report also ruled out cornerback Billy Bowman Jr. (Achilles), while captain and two-time All-Pro guard Chris Lindstrom (concussion) and cornerback A.J. Terrell (shoulder) were both listed questionable; Lindstrom practiced fully Friday but still needs independent-neurologist clearance before he can play. Oddsmakers make the reeling Panthers, blown out 59-37 by Chicago in Week 1, a 2.5-point favorite in Atlanta.",
       category: "injuries",
       sourceUrl: "https://www.nfl.com/news/falcons-qb-cooper-rush-start-week-2-panthers",
@@ -2689,8 +2697,8 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-09-18T12:00:00Z",
-  windowLabel: "Panthers Week · practice week into the Sept 20 home opener",
+  generatedAt: "2026-09-20T09:00:00Z",
+  windowLabel: "Panthers Week · game day, Sept 20 home opener",
   sessions: [
     {
       id: "stefanski-2026-09-16",
