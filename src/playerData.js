@@ -27,7 +27,7 @@ export const PLAYERS = [
     stats: { completions: 166, attempts: 276, passYds: 1982, passTDs: 9, ints: 3, qbRating: 88.5 },
     form: 0,
     status: "active",
-    injuryNote: "Sat out the first two games while completing his return from November 2025 ACL surgery, but is now poised to make his 2026 debut. After the 34-3 Week 2 loss, ESPN's Adam Schefter and NFL Network's Ian Rapoport reported Penix could start Thursday's Week 3 game at Green Bay, the plan all along, and that he is the team's preferred starter. Stefanski called a Week 3 QB decision too soon but has not ruled him in or out. Roughly ten months from surgery and building toward full strength",
+    injuryNote: "Sat out the first two games while completing his return from November 2025 ACL surgery; named the Week 3 starter on Monday, Sept 21, his first game action since the injury, for Thursday night at Green Bay. Listed as a full participant (knee) on the Week 3 estimated report. Roughly ten months from surgery and building toward full strength",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
     contract: { years: 4, total: 22080000, guaranteed: 22080000, apy: 5520000, throughYear: 2027, cap2026: 5900000 },
     career: [
@@ -48,7 +48,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "questionable",
-    injuryNote: "Oblique. Has missed both games so far (Sept 13 at Pittsburgh and the Sept 20 home opener vs. Carolina) after hurting his side in a Week 1 practice; Stefanski calls him week to week. Still had not returned to practice entering the Week 3 short week at Green Bay, and with Michael Penix Jr. reportedly poised to debut Thursday, Tua's path back to the field is uncertain",
+    injuryNote: "Oblique. Has missed both games so far (Sept 13 at Pittsburgh and the Sept 20 home opener vs. Carolina) after hurting his side in a Week 1 practice; Stefanski calls him week to week. Listed as a limited participant on the Week 3 Monday estimate, his first showing above non-participant since the injury, with Stefanski saying he is 'getting better.' Stays behind Michael Penix Jr., named the Week 3 starter, on the depth chart",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4241479.png",
     contract: { years: 1, total: 1300000, guaranteed: 1300000, apy: 1300000, throughYear: 2026, cap2026: 1300000 },
     career: [
@@ -767,7 +767,7 @@ export const PLAYERS = [
     stats: { tackles: 31, sacks: 4 },
     form: 6.9,
     status: "active",
-    injuryNote: "Signed March 12 on a one-year, $2.765M deal for veteran edge depth. Entering his ninth active NFL season across the Rams, 49ers and Colts; missed the 2024 season with a torn Achilles before returning in Indianapolis. Slides up to the LEDGE starter role after Atlanta's surprise cutdown-day release of Azeez Ojulari, working opposite Za'Darius Smith with Pearce serving an eight-game ban from Aug 30.",
+    injuryNote: "Signed March 12 on a one-year, $2.765M deal for veteran edge depth. Entering his ninth active NFL season across the Rams, 49ers and Colts; missed the 2024 season with a torn Achilles before returning in Indianapolis. Slides up to the LEDGE starter role after Atlanta's surprise cutdown-day release of Azeez Ojulari, working opposite Za'Darius Smith with Pearce serving an eight-game ban from Aug 30. Did not participate (hamstring) on the Week 3 Monday estimate, a fresh concern for a thin edge room on a short week.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/3045527.png",
     contract: { years: 1, total: 2765000, guaranteed: 1500000, apy: 2765000, throughYear: 2026, cap2026: 2765000 },
     career: [
@@ -931,7 +931,7 @@ export const PLAYERS = [
     stats: { tackles: 68, int_def: 2, pass_def: 13 },
     form: 8.2,
     status: "active",
-    injuryNote: "Played the Sept 20 home opener through the shoulder injury he tweaked in Week 1 at Pittsburgh, active off a questionable tag · CB1 · paid like one (4yr/$81M extension in 2024)",
+    injuryNote: "Played the Sept 20 home opener through a shoulder issue, then did not participate (groin) on the Week 3 Monday estimate, a new worry for the secondary on a short week · CB1 · paid like one (4yr/$81M extension in 2024)",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4239995.png",
     contract: { years: 4, total: 81000000, guaranteed: 43500000, apy: 20250000, throughYear: 2028, cap2026: 19200000 },
     career: [{ years: "2020–", team: "Atlanta Falcons", type: "NFL · Pro Bowl 2021" }],
@@ -1639,7 +1639,7 @@ export const NEXT_GAME = {
   date: "2026-09-24",
   kickoff: "8:15 PM ET",
   tv: "Amazon Prime",
-  note: "Thursday Night Football on a short week, with the 0-2 Falcons stumbling into Lambeau after a 34-3 home wipeout by Carolina. The quarterback room is the story again: Cooper Rush was benched Sunday for undrafted rookie Jack Strand after a fumble, two interceptions and a chorus of boos, and Kevin Stefanski declined to name a Week 3 starter, saying it was too soon. ESPN's Adam Schefter and NFL Network's Ian Rapoport report Michael Penix Jr., now roughly ten months from ACL surgery and the team's preferred starter, could make his 2026 debut Thursday, the plan all along, while Tua Tagovailoa (oblique) has yet to practice. A defense that surrendered three Bryce Young touchdown passes now faces Green Bay on three days' rest. Every NFC South rival except Carolina and New Orleans also sits below .500, but Atlanta needs a first win before the schedule turns brutal.",
+  note: "Thursday Night Football on a short week, with the 0-2 Falcons stumbling into Lambeau after a 34-3 home wipeout by Carolina. The quarterback room finally has an answer: after benching Cooper Rush on Sunday for undrafted rookie Jack Strand, Atlanta named Michael Penix Jr. the Week 3 starter Monday, his first game action since a torn left ACL ended his 2025 season in November. Penix was a full participant on the Week 3 estimate; Tua Tagovailoa (oblique) was limited for the first time since Week 1 but stays behind him. A defense that surrendered three Bryce Young touchdown passes, and that listed Samson Ebukam (hamstring) and A.J. Terrell (groin) as non-participants Monday, now faces Green Bay on three days' rest. Atlanta needs a first win before the schedule turns brutal.",
 };
 
 // =========================================
@@ -1994,14 +1994,14 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-09-21T09:00:00Z",
+  generatedAt: "2026-09-22T13:30:00Z",
   cover: {
-    kicker: "0-2 · Panthers 34, Falcons 3 · Packers on Thursday",
-    headLine1: "Booed off at home,",
+    kicker: "0-2 · Penix gets the ball Thursday at Green Bay",
+    headLine1: "Penix has the keys,",
     headEm: "0-2.",
-    headLine3: "Now Penix, and Green Bay in three days.",
+    headLine3: "His first start since the ACL, Thursday at Lambeau.",
     deck:
-      "The home opener was a wipeout. Carolina rolled into Mercedes-Benz Stadium and left with a 34-3 win, Bryce Young throwing three touchdown passes and Devin Lloyd returning one of his two interceptions for a score, and the loudest sound in the building was Falcons fans booing their own team six minutes in, after Cooper Rush lost a fumble on the opening drive. Rush never recovered, going 10 of 17 for 86 yards with two interceptions before Kevin Stefanski benched him for undrafted rookie Jack Strand, and Nick Folk's 41-yard field goal was all the offense Atlanta could muster. Bijan Robinson, the lone bright spot again, was bottled up to 72 rushing yards behind a line that could not hold. At 0-2 and staring at a short week, the quarterback question turns back to Michael Penix Jr.: Stefanski would not name a Week 3 starter, but ESPN and NFL Network report Penix, roughly ten months from ACL surgery and the team's preferred option, could make his 2026 debut Thursday night at Lambeau Field, the plan all along, while Tua Tagovailoa (oblique) has still not practiced. 'It's our job for them to not boo, again,' Robinson said afterward. They get three days to make that true.",
+      "The quarterback carousel finally stopped Monday. With Atlanta 0-2 and coming off a 34-3 home wipeout by Carolina, the Falcons named Michael Penix Jr. their starter for Thursday night at Lambeau Field, his first game action since a torn left ACL ended his 2025 season in November. Kevin Stefanski was cautious at his morning podium, saying he would update the choice once he had talked to the players, and the team confirmed the move hours later. Penix was a full participant on the Week 3 estimate; Tua Tagovailoa (oblique) was limited for the first time since his Week 1 injury, a sign he is 'getting better,' but stays behind Penix on the depth chart. Cooper Rush, benched Sunday for undrafted rookie Jack Strand after a fumble and two interceptions drew boos six minutes in, moves back to the bench. Now Penix, roughly ten months from surgery, gets a short week, a hostile road crowd and a defense that just surrendered three Bryce Young touchdowns to fix in one Thursday. Bijan Robinson, held to 72 yards behind a line that could not hold, put it plainly after the loss: 'It's our job for them to not boo, again.'",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
@@ -2590,6 +2590,16 @@ export const NEWS_DIGEST = {
     // resolve to the photoId "penix-jr" headshot fallback (a healthy, forward-looking face, the Thursday pivot)
     // until a downstream job fills it. The clean queue moment is a Penix live-throwing rep at Flowery Branch this
     // short week, for the first run that can reach the Vault. Reported in Step 9.
+    // STATUS (2026-09-22 scheduled run): cover SKIPPED. The penix-packers-pivot pointer is dated
+    // 2026-09-21, one day old, well inside the 4-day staleness backstop, and still perfectly aligned
+    // with today's lead (Penix officially named the Week 3 starter, the same subject). Same hard
+    // constraint as every prior run: ~/Vault/Notes/image-requests.md and the limn-editor-enhance skill
+    // are NOT mounted in this sandbox (only the tracker repos, outputs and uploads are), so no request
+    // could be queued regardless. Repointing to a fresh slug would only spawn another dangling request
+    // no one can fulfill this cycle, so the pointer is left as is; it resolves to the penix-jr headshot
+    // fallback until a downstream job fills it. Recency refresh only this cycle: cover editorial, lead
+    // topics and NEXT_GAME reframed from "could debut / decision too soon" to the confirmed Penix start,
+    // Week 3 estimated injury report added, timestamps bumped.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-21-penix-packers-pivot.jpg",
   },
   sources: [
@@ -2606,6 +2616,20 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
+      title: "Michael Penix Jr. is the Week 3 starter: Atlanta names its healthy first-rounder for Thursday night at Green Bay, his first start since November's torn ACL",
+      detail: "atlantafalcons.com, NFL.com and ESPN (Sep 21): the Falcons ended the quarterback churn by naming Penix their starter for Thursday's short-week trip to Lambeau Field, his first game action since a torn left ACL ended his 2025 season in Week 11. Head coach Kevin Stefanski was noncommittal at his Monday podium, saying he would update the choice after talking with the players, but the team confirmed Penix hours later. Roughly ten months removed from surgery, Penix takes over an 0-2 offense that has scored one touchdown in two games, with Cooper Rush moving back to the bench and Tua Tagovailoa (oblique) still working his way back.",
+      category: "games",
+      sourceUrl: "https://www.atlantafalcons.com/news/michael-penix-jr-starting-qb-thursday-night-football-vs-packers",
+      sourceLabel: "atlantafalcons.com / NFL.com / ESPN",
+    },
+    {
+      title: "Week 3 estimated injury report: Penix a full participant, Tua limited for the first time since Week 1, and Samson Ebukam and A.J. Terrell held out",
+      detail: "atlantafalcons.com (Sep 21): off a Monday walk-through, the Falcons listed Penix (knee) and cornerback Billy Bowman Jr. (Achilles) as full participants. Tua Tagovailoa (oblique) was limited, his first showing above non-participant since the Week 1 injury, with Stefanski saying only that he is 'getting better.' Defensive end Brandon Dorlus (thumb), tight end Nick Muse (shoulder), running back Brian Robinson Jr. (ankle) and tackle Jawaan Taylor (rib) were limited, while defensive end Samson Ebukam (hamstring) and cornerback A.J. Terrell Jr. (groin) did not participate, two new defensive worries on a short week.",
+      category: "injuries",
+      sourceUrl: "https://www.atlantafalcons.com/news/estimated-injury-report-released-week-3-green-bay-packers",
+      sourceLabel: "atlantafalcons.com",
+    },
+    {
       title: "Booed off at home: Carolina wrecks the opener 34-3, Cooper Rush is benched for undrafted rookie Jack Strand, and the Falcons fall to 0-2 as fans jeer their own team six minutes in",
       detail: "ESPN, Yahoo Sports and FantasyPros (Sep 20): Atlanta's home opener was a rout from the start. Rush lost a fumble on a 9-yard scramble on the opening series, drawing boos before the first quarter was half over, and never steadied, finishing 10 of 17 for 86 yards with two interceptions before Kevin Stefanski pulled him for rookie Jack Strand. Nick Folk's 41-yard field goal was the only score Atlanta managed, and Carolina cruised 34-3 to drop the Falcons to 0-2. Stefanski would not name a starting quarterback for Thursday night's short-week trip to Green Bay.",
       category: "games",
@@ -2620,11 +2644,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "FOX Sports / ESPN",
     },
     {
-      title: "Back to Penix? Stefanski calls a Week 3 quarterback decision too soon, but ESPN and NFL Network report Michael Penix Jr. could make his 2026 debut Thursday at Green Bay as the preferred starter",
-      detail: "ESPN (Sep 20-21): with Rush benched and the Falcons 0-2, the quarterback job is open again. Stefanski said after the loss that it was too soon to name a Week 3 starter and that now was 'not the time to know' if Penix was in play, but Adam Schefter and Ian Rapoport reported that Penix, roughly ten months removed from November's ACL surgery, could start Thursday night at Lambeau Field and that a Week 3 return had been the plan. Penix is the team's preferred option; Tua Tagovailoa (oblique) has still not practiced and remains sidelined on the short week.",
+      title: "The other sideline: Green Bay opens as a 7-point favorite, but Jordan Love has completed roughly 52% of his passes behind a thinned-out offensive line",
+      detail: "SI and Covers Week 3 previews (Sep 21): the Packers host Thursday's opener as about a touchdown favorite, yet Green Bay's offense has been uneven early, with Love completing near 52 percent of his attempts and protection issues up front. For an 0-2 Atlanta team that has struggled to protect its own passer and to generate a pass rush, a wobbling Packers line offers a possible opening, even on three days' rest, as Penix makes his season debut in a hostile primetime setting.",
       category: "games",
-      sourceUrl: "https://www.espn.com/nfl/story/_/id/49985117/sources-falcons-qb-michael-penix-jr-play-week-3",
-      sourceLabel: "ESPN / NFL Network",
+      sourceUrl: "https://www.si.com/betting/falcons-vs-packers-prediction-odds-spread-injuries-trends-for-nfl-week-3-2026",
+      sourceLabel: "SI / Covers",
     },
     {
       title: "'You have to earn it': after the boos, Falcons players and coaches own the frustration and say the fix is on them, not the fans",
@@ -2649,7 +2673,7 @@ export const NEWS_DIGEST = {
     },
     {
       title: "Short week, tall order: the 0-2 Falcons travel to Lambeau Field for Thursday Night Football on three days' rest, the first of three straight primetime games",
-      detail: "NFL.com and the 2026 schedule (Sep 21): Atlanta plays at the Green Bay Packers on Thursday, Sept 24 at 8:15 p.m. ET on Amazon Prime, a quick turnaround after Sunday's blowout. It opens a brutal primetime stretch, with a Monday-night trip to New Orleans in Week 4 and a Sunday-night home date with Baltimore's Lamar Jackson in Week 5 to follow. A defense that just gave up three Bryce Young touchdown passes gets little time to reset before facing Green Bay in front of a national audience, with the quarterback decision and the offensive line the biggest questions.",
+      detail: "NFL.com and the 2026 schedule (Sep 21): Atlanta plays at the Green Bay Packers on Thursday, Sept 24 at 8:15 p.m. ET on Amazon Prime, a quick turnaround after Sunday's blowout. It opens a brutal primetime stretch, with a Monday-night trip to New Orleans in Week 4 and a Sunday-night home date with Baltimore's Lamar Jackson in Week 5 to follow. A defense that just gave up three Bryce Young touchdown passes gets little time to reset before facing Green Bay in front of a national audience, with Penix's return and the offensive line the biggest questions.",
       category: "games",
       sourceUrl: "https://www.nfl.com/schedules/2026/by-week/week-3",
       sourceLabel: "NFL.com",
@@ -2663,7 +2687,7 @@ export const NEWS_DIGEST = {
     },
     {
       title: "Cooper Rush's Atlanta audition unravels: two rough starts, a benching, and a passing game averaging under 5 yards an attempt put the veteran's grip on the job in doubt",
-      detail: "FantasyPros and Yahoo Sports (Sep 20): signed to be the safety net behind Tua Tagovailoa and Michael Penix Jr., Rush instead started the first two games with Tua and Penix hurt, and both went badly, a two-interception day in the 20-13 loss at Pittsburgh followed by a fumble, two more picks and a benching against Carolina. His removal for undrafted rookie Jack Strand at 34-3 signaled how quickly the staff soured on the quarterback play, and with Penix reportedly poised to return Thursday, Rush's window as the starter may already have closed.",
+      detail: "FantasyPros and Yahoo Sports (Sep 20): signed to be the safety net behind Tua Tagovailoa and Michael Penix Jr., Rush instead started the first two games with Tua and Penix hurt, and both went badly, a two-interception day in the 20-13 loss at Pittsburgh followed by a fumble, two more picks and a benching against Carolina. His removal for undrafted rookie Jack Strand at 34-3 signaled how quickly the staff soured on the quarterback play, and with Penix now named the Week 3 starter, Rush's window atop the room has closed for the moment.",
       category: "games",
       sourceUrl: "https://sports.yahoo.com/articles/falcons-qb-situation-worsens-cooper-213501920.html",
       sourceLabel: "Yahoo Sports / FantasyPros",
@@ -2699,9 +2723,29 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-09-21T09:00:00Z",
+  generatedAt: "2026-09-22T13:30:00Z",
   windowLabel: "Packers Week · Thursday Night Football at Green Bay, Sept 24",
   sessions: [
+    {
+      id: "stefanski-2026-09-21",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-09-21",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Week 3 vs. Green Bay · Monday Media Availability",
+      sourceUrl: "https://www.atlantafalcons.com/news/michael-penix-jr-starting-qb-thursday-night-football-vs-packers",
+      transcriptUrl: "https://www.atlantafalcons.com/news/estimated-injury-report-released-week-3-green-bay-packers",
+      verified: true,
+      summary: "Opening a short week with the Falcons 0-2, Stefanski was cautious at the podium about his quarterback plan, saying he would update the choice once he had spoken with the players, then the team confirmed hours later that Michael Penix Jr. would start Thursday at Green Bay. He said Tua Tagovailoa is 'getting better,' the day the veteran was listed as a limited participant for the first time since his Week 1 oblique injury.",
+      pullQuote: "I'll give you an update when I've been able to talk to the players and work through it.",
+      bullets: [
+        "On the quarterback: noncommittal at the podium, saying he would update the plan after talking with the players, before the team named Penix the Week 3 starter later Monday",
+        "On Michael Penix Jr.: pointed to his day-to-day conversations with the quarterback and medical staff, saying he is confident in where the process stands roughly ten months from ACL surgery",
+        "On Tua Tagovailoa: said the veteran (oblique) is 'getting better,' the day Tua was a limited participant for the first time since the Week 1 injury",
+        "On the short week: Atlanta held a walk-through Monday and travels to Green Bay on Wednesday ahead of Thursday's primetime opener",
+      ],
+      topics: ["packers-week", "qb-decision", "penix-acl", "injury-report"],
+    },
     {
       id: "stefanski-2026-09-20",
       speaker: "Kevin Stefanski",
@@ -2801,26 +2845,6 @@ export const INTERVIEWS = {
         "On Tua Tagovailoa and Michael Penix Jr.: said he had 'no updates' on the health of either quarterback",
       ],
       topics: ["panthers-week", "injuries", "qb-decision", "concussion-protocol"],
-    },
-    {
-      id: "rush-2026-09-13",
-      speaker: "Cooper Rush",
-      role: "Quarterback",
-      date: "2026-09-13",
-      venue: "Acrisure Stadium · Pittsburgh, Pa.",
-      session: "Week 1 at Steelers · Postgame Press Conference",
-      sourceUrl: "https://www.atlantafalcons.com/video/quarterback-cooper-rush-week-1-at-steelers-post-game-press-conference-atlanta-falcons",
-      transcriptUrl: "https://www.ajc.com/sports/2026/09/falcons-third-string-qb-cooper-rush-falls-short-in-emergency-start/",
-      verified: true,
-      summary: "Pressed into an emergency start when Tua Tagovailoa was ruled out Friday, Rush finished 12 of 22 for 143 yards with a touchdown and two interceptions in the 20-13 loss, and he did not deflect afterward. He took ownership of the giveaways, singling out the second interception as the one he most wanted back, and credited the Steelers' front for a physical afternoon.",
-      pullQuote: "I wish I played better. I want that one back.",
-      bullets: [
-        "On his performance: 'I wish I played better,' and 'wish I put us in a better position to win,' after the 20-13 loss",
-        "On the second interception: said plainly, 'I want that one back,' calling it the play he most regretted",
-        "Line: completed 12 of 22 passes for 143 yards with a 23-yard touchdown to Bijan Robinson and two interceptions, one returned for a score by T.J. Watt",
-        "Context: Rush started against his former Dallas head coach Mike McCarthy in McCarthy's Pittsburgh debut, with Tua Tagovailoa (oblique) out and Michael Penix Jr. inactive",
-      ],
-      topics: ["week-1", "postgame", "cooper-rush", "turnovers"],
     },
   ],
 };
