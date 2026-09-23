@@ -930,8 +930,8 @@ export const PLAYERS = [
     acquired: "draft-2020-R1-P16",
     stats: { tackles: 68, int_def: 2, pass_def: 13 },
     form: 8.2,
-    status: "active",
-    injuryNote: "Played the Sept 20 home opener through a shoulder issue, then did not participate (groin) on the Week 3 Monday estimate, a new worry for the secondary on a short week · CB1 · paid like one (4yr/$81M extension in 2024)",
+    status: "ir",
+    injuryNote: "Placed on injured reserve Monday (Sep 22) with the groin injury that knocked him out of the Sept 20 Carolina loss in the first quarter, sidelining the CB1 for at least four games; the team signed DL Zach Harrison off the practice squad in the corresponding move. Leaves Mike Hughes and rookie Avieon Terrell, A.J.'s younger brother, to cover the top corner spots at Green Bay · CB1 · paid like one (4yr/$81M extension in 2024)",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4239995.png",
     contract: { years: 4, total: 81000000, guaranteed: 43500000, apy: 20250000, throughYear: 2028, cap2026: 19200000 },
     career: [{ years: "2020–", team: "Atlanta Falcons", type: "NFL · Pro Bowl 2021" }],
@@ -1639,7 +1639,7 @@ export const NEXT_GAME = {
   date: "2026-09-24",
   kickoff: "8:15 PM ET",
   tv: "Amazon Prime",
-  note: "Thursday Night Football on a short week, with the 0-2 Falcons stumbling into Lambeau after a 34-3 home wipeout by Carolina. The quarterback room finally has an answer: after benching Cooper Rush on Sunday for undrafted rookie Jack Strand, Atlanta named Michael Penix Jr. the Week 3 starter Monday, his first game action since a torn left ACL ended his 2025 season in November. Penix was a full participant on the Week 3 estimate; Tua Tagovailoa (oblique) was limited for the first time since Week 1 but stays behind him. A defense that surrendered three Bryce Young touchdown passes, and that listed Samson Ebukam (hamstring) and A.J. Terrell (groin) as non-participants Monday, now faces Green Bay on three days' rest. Atlanta needs a first win before the schedule turns brutal.",
+  note: "Thursday Night Football on a short week, with the 0-2 Falcons stumbling into Lambeau after a 34-3 home wipeout by Carolina. The quarterback room finally has an answer: after benching Cooper Rush on Sunday for undrafted rookie Jack Strand, Atlanta named Michael Penix Jr. the Week 3 starter Monday, his first game action since a torn left ACL ended his 2025 season in November. He inherits the NFL's only offense yet to reach the red zone this season and a seven-quarter touchdown drought. The secondary took a hit hours later: CB1 A.J. Terrell (groin) went on injured reserve for at least four games, with Zach Harrison signed off the practice squad in the corresponding move, and Samson Ebukam (hamstring) was a Monday non-participant. A defense that surrendered three Bryce Young touchdown passes now faces Green Bay on three days' rest. Atlanta needs a first win before the schedule turns brutal.",
 };
 
 // =========================================
@@ -1994,7 +1994,7 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-09-22T13:30:00Z",
+  generatedAt: "2026-09-23T13:00:00Z",
   cover: {
     kicker: "0-2 · Penix gets the ball Thursday at Green Bay",
     headLine1: "Penix has the keys,",
@@ -2600,6 +2600,16 @@ export const NEWS_DIGEST = {
     // fallback until a downstream job fills it. Recency refresh only this cycle: cover editorial, lead
     // topics and NEXT_GAME reframed from "could debut / decision too soon" to the confirmed Penix start,
     // Week 3 estimated injury report added, timestamps bumped.
+    // STATUS (2026-09-23 scheduled run): cover SKIPPED. The penix-packers-pivot pointer is dated
+    // 2026-09-21, two days old, inside the 4-day staleness backstop, and still exactly aligned with
+    // today's lead (Penix's confirmed Thursday start, same subject; the game has not been played yet).
+    // Same hard constraint as every prior run: ~/Vault/Notes/image-requests.md and the
+    // limn-editor-enhance skill are NOT mounted in this sandbox (only the tracker repos, outputs and
+    // uploads are), so no request could be queued regardless. Pointer left as is; resolves to the
+    // penix-jr headshot fallback until a downstream job fills it. Recency update only this cycle:
+    // A.J. Terrell placed on IR (Sep 22, groin, four-game minimum) with Zach Harrison signed off the
+    // practice squad, folded into a new digest topic, the injury-report topic, NEXT_GAME.note and
+    // CAP_STATE.recentMoves; the red-zone / seven-quarter TD drought added to the lead; timestamps bumped.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-21-penix-packers-pivot.jpg",
   },
   sources: [
@@ -2617,14 +2627,21 @@ export const NEWS_DIGEST = {
   topics: [
     {
       title: "Michael Penix Jr. is the Week 3 starter: Atlanta names its healthy first-rounder for Thursday night at Green Bay, his first start since November's torn ACL",
-      detail: "atlantafalcons.com, NFL.com and ESPN (Sep 21): the Falcons ended the quarterback churn by naming Penix their starter for Thursday's short-week trip to Lambeau Field, his first game action since a torn left ACL ended his 2025 season in Week 11. Head coach Kevin Stefanski was noncommittal at his Monday podium, saying he would update the choice after talking with the players, but the team confirmed Penix hours later. Roughly ten months removed from surgery, Penix takes over an 0-2 offense that has scored one touchdown in two games, with Cooper Rush moving back to the bench and Tua Tagovailoa (oblique) still working his way back.",
+      detail: "atlantafalcons.com, NFL.com and ESPN (Sep 21): the Falcons ended the quarterback churn by naming Penix their starter for Thursday's short-week trip to Lambeau Field, his first game action since a torn left ACL ended his 2025 season in Week 11. Head coach Kevin Stefanski was noncommittal at his Monday podium, saying he would update the choice after talking with the players, but the team confirmed Penix hours later. Roughly ten months removed from surgery, Penix inherits the league's only offense yet to reach the red zone through two games, a unit that has gone seven straight quarters without a touchdown, with Cooper Rush moving back to the bench and Tua Tagovailoa (oblique) still working his way back.",
       category: "games",
       sourceUrl: "https://www.atlantafalcons.com/news/michael-penix-jr-starting-qb-thursday-night-football-vs-packers",
       sourceLabel: "atlantafalcons.com / NFL.com / ESPN",
     },
     {
-      title: "Week 3 estimated injury report: Penix a full participant, Tua limited for the first time since Week 1, and Samson Ebukam and A.J. Terrell held out",
-      detail: "atlantafalcons.com (Sep 21): off a Monday walk-through, the Falcons listed Penix (knee) and cornerback Billy Bowman Jr. (Achilles) as full participants. Tua Tagovailoa (oblique) was limited, his first showing above non-participant since the Week 1 injury, with Stefanski saying only that he is 'getting better.' Defensive end Brandon Dorlus (thumb), tight end Nick Muse (shoulder), running back Brian Robinson Jr. (ankle) and tackle Jawaan Taylor (rib) were limited, while defensive end Samson Ebukam (hamstring) and cornerback A.J. Terrell Jr. (groin) did not participate, two new defensive worries on a short week.",
+      title: "A.J. Terrell to injured reserve: Atlanta loses its CB1 for at least four games with the groin injury from Sunday, and signs DL Zach Harrison off the practice squad",
+      detail: "atlantafalcons.com, NBC Sports and The Falcoholic (Sep 22): the Falcons placed cornerback A.J. Terrell Jr. on injured reserve Monday, confirming the groin injury that knocked the $81M CB1 out of the Carolina loss in the first quarter (he was first evaluated for a concussion, then cleared) will keep him out a minimum of four games. In the corresponding move Atlanta signed defensive lineman Zach Harrison to the active roster off the practice squad, where he had landed after clearing waivers at cutdown. The loss thins an already stressed secondary heading into a short week at Green Bay, pushing Mike Hughes and rookie Avieon Terrell, A.J.'s younger brother, into the top corner roles.",
+      category: "injuries",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-place-aj-terrell-jr-on-injured-reserve",
+      sourceLabel: "atlantafalcons.com / NBC Sports / The Falcoholic",
+    },
+    {
+      title: "Week 3 estimated injury report: Penix a full participant, Tua limited for the first time since Week 1, and Samson Ebukam held out before Terrell landed on IR",
+      detail: "atlantafalcons.com (Sep 21-22): off a Monday walk-through, the Falcons listed Penix (knee) and cornerback Billy Bowman Jr. (Achilles) as full participants. Tua Tagovailoa (oblique) was limited, his first showing above non-participant since the Week 1 injury, with Stefanski saying only that he is 'getting better.' Defensive end Brandon Dorlus (thumb), tight end Nick Muse (shoulder), running back Brian Robinson Jr. (ankle) and tackle Jawaan Taylor (rib) were limited, while defensive end Samson Ebukam (hamstring) and cornerback A.J. Terrell Jr. (groin) did not participate; hours later Terrell was placed on injured reserve, taking his name off the Thursday equation entirely.",
       category: "injuries",
       sourceUrl: "https://www.atlantafalcons.com/news/estimated-injury-report-released-week-3-green-bay-packers",
       sourceLabel: "atlantafalcons.com",
@@ -2723,7 +2740,7 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-09-22T13:30:00Z",
+  generatedAt: "2026-09-23T13:00:00Z",
   windowLabel: "Packers Week · Thursday Night Football at Green Bay, Sept 24",
   sessions: [
     {
