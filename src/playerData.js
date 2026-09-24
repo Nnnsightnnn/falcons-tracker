@@ -767,7 +767,7 @@ export const PLAYERS = [
     stats: { tackles: 31, sacks: 4 },
     form: 6.9,
     status: "active",
-    injuryNote: "Signed March 12 on a one-year, $2.765M deal for veteran edge depth. Entering his ninth active NFL season across the Rams, 49ers and Colts; missed the 2024 season with a torn Achilles before returning in Indianapolis. Slides up to the LEDGE starter role after Atlanta's surprise cutdown-day release of Azeez Ojulari, working opposite Za'Darius Smith with Pearce serving an eight-game ban from Aug 30. Did not participate (hamstring) on the Week 3 Monday estimate, a fresh concern for a thin edge room on a short week.",
+    injuryNote: "Signed March 12 on a one-year, $2.765M deal for veteran edge depth. Entering his ninth active NFL season across the Rams, 49ers and Colts; missed the 2024 season with a torn Achilles before returning in Indianapolis. Slides up to the LEDGE starter role after Atlanta's surprise cutdown-day release of Azeez Ojulari, working opposite Za'Darius Smith with Pearce serving an eight-game ban from Aug 30. Ruled OUT (hamstring) on the final Week 3 injury report, a fresh blow to a thin edge room on a short week at Green Bay.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/3045527.png",
     contract: { years: 1, total: 2765000, guaranteed: 1500000, apy: 2765000, throughYear: 2026, cap2026: 2765000 },
     career: [
@@ -1034,7 +1034,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "active",
-    injuryNote: "Ruled OUT (Achilles) again on Friday's (Sep 18) final injury report, this time for the Sept 20 home opener vs. Carolina, still working back roughly nine to ten months after the late-Nov 2025 rupture. Activated off Reserve/PUP onto the initial 53 on cutdown day (Aug 30); in the nickel/slot mix behind Avieon Terrell.",
+    injuryNote: "Listed DOUBTFUL (Achilles) on the final Week 3 injury report ahead of Thursday at Green Bay, still working back roughly ten months after the late-Nov 2025 rupture; had been ruled out for the Week 2 home opener vs. Carolina. Activated off Reserve/PUP onto the initial 53 on cutdown day (Aug 30); in the nickel/slot mix behind Avieon Terrell.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4431194.png",
     contract: { years: 4, total: 5200000, guaranteed: 950000, apy: 1300000, throughYear: 2028, cap2026: 1100000 },
     career: [{ years: "2025–", team: "Atlanta Falcons", type: "NFL" }],
@@ -1639,7 +1639,7 @@ export const NEXT_GAME = {
   date: "2026-09-24",
   kickoff: "8:15 PM ET",
   tv: "Amazon Prime",
-  note: "Thursday Night Football on a short week, with the 0-2 Falcons stumbling into Lambeau after a 34-3 home wipeout by Carolina. The quarterback room finally has an answer: after benching Cooper Rush on Sunday for undrafted rookie Jack Strand, Atlanta named Michael Penix Jr. the Week 3 starter Monday, his first game action since a torn left ACL ended his 2025 season in November. He inherits the NFL's only offense yet to reach the red zone this season and a seven-quarter touchdown drought. The secondary took a hit hours later: CB1 A.J. Terrell (groin) went on injured reserve for at least four games, with Zach Harrison signed off the practice squad in the corresponding move, and Samson Ebukam (hamstring) was a Monday non-participant. A defense that surrendered three Bryce Young touchdown passes now faces Green Bay on three days' rest. Atlanta needs a first win before the schedule turns brutal.",
+  note: "Game day at Lambeau. The 0-2 Falcons play Thursday Night Football on three days' rest after a 34-3 home wipeout by Carolina, with Michael Penix Jr. making his first start since a torn left ACL ended his 2025 season in November. He inherits the NFL's only offense yet to reach the red zone this season and a seven-quarter touchdown drought. The final injury report brought one lift: Tua Tagovailoa (oblique) is active for the first time this season and will back Penix up. The pass rush is thinner than ever, though, with edge Samson Ebukam (hamstring) ruled out and CB1 A.J. Terrell already on injured reserve (groin); nickel Billy Bowman Jr. (Achilles) is doubtful. Green Bay, 1-1 after an overtime win at the Jets, is a 6.5-point favorite but plays without WR Jayden Reed (neck) and two banged-up offensive linemen. Atlanta needs a first win before the schedule turns brutal.",
 };
 
 // =========================================
@@ -1994,7 +1994,7 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-09-23T13:00:00Z",
+  generatedAt: "2026-09-24T12:00:00Z",
   cover: {
     kicker: "0-2 · Penix gets the ball Thursday at Green Bay",
     headLine1: "Penix has the keys,",
@@ -2626,8 +2626,8 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "Michael Penix Jr. is the Week 3 starter: Atlanta names its healthy first-rounder for Thursday night at Green Bay, his first start since November's torn ACL",
-      detail: "atlantafalcons.com, NFL.com and ESPN (Sep 21): the Falcons ended the quarterback churn by naming Penix their starter for Thursday's short-week trip to Lambeau Field, his first game action since a torn left ACL ended his 2025 season in Week 11. Head coach Kevin Stefanski was noncommittal at his Monday podium, saying he would update the choice after talking with the players, but the team confirmed Penix hours later. Roughly ten months removed from surgery, Penix inherits the league's only offense yet to reach the red zone through two games, a unit that has gone seven straight quarters without a touchdown, with Cooper Rush moving back to the bench and Tua Tagovailoa (oblique) still working his way back.",
+      title: "Game day: Michael Penix Jr. starts at Lambeau, his first action since November's torn ACL, as the 0-2 Falcons try to save their offense on Thursday night",
+      detail: "atlantafalcons.com, NFL.com and ESPN (Sep 21-24): after naming Penix their Week 3 starter Monday, the Falcons carry the decision into Thursday's primetime trip to Green Bay (8:15 p.m. ET, Amazon Prime), his first game action since a torn left ACL ended his 2025 season in Week 11. Roughly ten months removed from surgery, Penix inherits the league's only offense yet to reach the red zone through two games, a unit that has gone seven straight quarters without a touchdown. Cooper Rush moves back to the bench, and for the first time this season Penix has an experienced fallback: Tua Tagovailoa (oblique) is active as the No. 2 after being limited, then a full participant, in the short week.",
       category: "games",
       sourceUrl: "https://www.atlantafalcons.com/news/michael-penix-jr-starting-qb-thursday-night-football-vs-packers",
       sourceLabel: "atlantafalcons.com / NFL.com / ESPN",
@@ -2640,11 +2640,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com / NBC Sports / The Falcoholic",
     },
     {
-      title: "Week 3 estimated injury report: Penix a full participant, Tua limited for the first time since Week 1, and Samson Ebukam held out before Terrell landed on IR",
-      detail: "atlantafalcons.com (Sep 21-22): off a Monday walk-through, the Falcons listed Penix (knee) and cornerback Billy Bowman Jr. (Achilles) as full participants. Tua Tagovailoa (oblique) was limited, his first showing above non-participant since the Week 1 injury, with Stefanski saying only that he is 'getting better.' Defensive end Brandon Dorlus (thumb), tight end Nick Muse (shoulder), running back Brian Robinson Jr. (ankle) and tackle Jawaan Taylor (rib) were limited, while defensive end Samson Ebukam (hamstring) and cornerback A.J. Terrell Jr. (groin) did not participate; hours later Terrell was placed on injured reserve, taking his name off the Thursday equation entirely.",
+      title: "Final Week 3 injury report: Ebukam ruled out and Bowman doubtful thin the defense, but both quarterbacks are active for the first time all season",
+      detail: "atlantafalcons.com and Yahoo Sports (Sep 23): Atlanta's final report before the short-week trip carried both good and bad news. Michael Penix Jr. and Tua Tagovailoa are both active for the first time in 2026, Penix starting and Tua the backup after progressing from limited to a full participant. On defense the picture darkened: edge rusher Samson Ebukam (hamstring) was ruled out, a hit to an already thin pass rush, and second-year nickel Billy Bowman Jr. (Achilles) was listed doubtful. With A.J. Terrell Jr. already on injured reserve, the secondary leans harder on Mike Hughes and rookie Avieon Terrell against Jordan Love.",
       category: "injuries",
-      sourceUrl: "https://www.atlantafalcons.com/news/estimated-injury-report-released-week-3-green-bay-packers",
-      sourceLabel: "atlantafalcons.com",
+      sourceUrl: "https://sports.yahoo.com/articles/falcons-final-week-3-injury-201745521.html",
+      sourceLabel: "atlantafalcons.com / Yahoo Sports",
     },
     {
       title: "Booed off at home: Carolina wrecks the opener 34-3, Cooper Rush is benched for undrafted rookie Jack Strand, and the Falcons fall to 0-2 as fans jeer their own team six minutes in",
@@ -2661,11 +2661,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "FOX Sports / ESPN",
     },
     {
-      title: "The other sideline: Green Bay opens as a 7-point favorite, but Jordan Love has completed roughly 52% of his passes behind a thinned-out offensive line",
-      detail: "SI and Covers Week 3 previews (Sep 21): the Packers host Thursday's opener as about a touchdown favorite, yet Green Bay's offense has been uneven early, with Love completing near 52 percent of his attempts and protection issues up front. For an 0-2 Atlanta team that has struggled to protect its own passer and to generate a pass rush, a wobbling Packers line offers a possible opening, even on three days' rest, as Penix makes his season debut in a hostile primetime setting.",
+      title: "The other sideline: Green Bay is a 6.5-point favorite and hosting its home opener at 1-1, but the Packers are banged up, ruling out WR Jayden Reed and two offensive linemen",
+      detail: "Yahoo Sports, packers.com and Covers Week 3 previews (Sep 23): the Packers arrive 1-1 after a soaking overtime win at the Jets and open as roughly a touchdown favorite (6.5) in their Lambeau home opener, but their final report ruled out four, including receiver Jayden Reed (neck), guard Aaron Banks (toe) and tackle Zach Bako-Bewele (knee), with defensive tackle Javon Hargrave (knee/concussion) questionable. For an 0-2 Atlanta team that has struggled to protect its passer and to generate a rush, a thinned Green Bay front offers a possible opening, even on three days' rest, as Penix makes his season debut in a hostile primetime setting.",
       category: "games",
-      sourceUrl: "https://www.si.com/betting/falcons-vs-packers-prediction-odds-spread-injuries-trends-for-nfl-week-3-2026",
-      sourceLabel: "SI / Covers",
+      sourceUrl: "https://www.packers.com/news/packers-rule-out-four-list-two-questionable-vs-falcons-week-3-injury-report-2026",
+      sourceLabel: "packers.com / Yahoo Sports / Covers",
     },
     {
       title: "'You have to earn it': after the boos, Falcons players and coaches own the frustration and say the fix is on them, not the fans",
@@ -2740,7 +2740,7 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-09-23T13:00:00Z",
+  generatedAt: "2026-09-24T12:00:00Z",
   windowLabel: "Packers Week · Thursday Night Football at Green Bay, Sept 24",
   sessions: [
     {
