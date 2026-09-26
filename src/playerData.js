@@ -47,8 +47,8 @@ export const PLAYERS = [
     acquired: "fa-2026-1yr",
     stats: {},
     form: 0,
-    status: "questionable",
-    injuryNote: "Oblique. Has missed both games so far (Sept 13 at Pittsburgh and the Sept 20 home opener vs. Carolina) after hurting his side in a Week 1 practice; Stefanski calls him week to week. Listed as a limited participant on the Week 3 Monday estimate, his first showing above non-participant since the injury, with Stefanski saying he is 'getting better.' Stays behind Michael Penix Jr., named the Week 3 starter, on the depth chart",
+    status: "active",
+    injuryNote: "Oblique. Missed the first two games (Sept 13 at Pittsburgh, Sept 20 vs. Carolina) after hurting his side in a Week 1 practice, then progressed from limited to full participation during Week 3 and was active for the first time in 2026 at Green Bay, backing up Michael Penix Jr. in the 35-14 win. Healthy entering the Week 4 trip to New Orleans, second on the depth chart behind Penix",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4241479.png",
     contract: { years: 1, total: 1300000, guaranteed: 1300000, apy: 1300000, throughYear: 2026, cap2026: 1300000 },
     career: [
@@ -1998,7 +1998,7 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-09-25T08:30:00Z",
+  generatedAt: "2026-09-26T08:24:05Z",
   cover: {
     kicker: "1-2 · Penix's return powers a 35-14 rout at Lambeau",
     headLine1: "Penix delivers,",
@@ -2731,7 +2731,7 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-09-25T08:30:00Z",
+  generatedAt: "2026-09-26T08:24:05Z",
   windowLabel: "Green Bay Postgame → Saints Week · Sept 24 → Oct 5",
   sessions: [
     {
