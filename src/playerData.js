@@ -1999,7 +1999,7 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-09-28T08:28:09Z",
+  generatedAt: "2026-09-29T08:29:10Z",
   cover: {
     kicker: "1-2 · The NFC South is bunched; Monday at New Orleans is a first-place swing",
     headLine1: "Penix delivers,",
@@ -2636,8 +2636,16 @@ export const NEWS_DIGEST = {
     "Steelers Depot", "Behind the Steel Curtain",
     "FOX Sports", "steelers.com", "BVM Sports", "FBSchedules",
     "Pro Football Network", "StatMuse", "packers.com", "PFF", "New Orleans Saints Official", "Covers.com",
+    "Louisiana Sports",
   ],
   topics: [
+    {
+      title: "Opening line lands and the Saints are the pick: New Orleans opens as a 2.5-point home favorite for Monday night, total 48.5, in a meeting of 1-2 division rivals",
+      detail: "Yahoo Sports, Sports Illustrated and Louisiana Sports (Sep 28): sportsbooks opened the Saints as 2.5-point favorites over Atlanta for the Week 4 Monday-nighter in the Superdome, with the over/under set at 48.5. Both teams sit at 1-2, so a road win would pull the Falcons even at the top of the division; the game also falls on the 20th anniversary of New Orleans' post-Katrina 'Domecoming.' Atlanta arrives off the Penix-led 35-14 rout at Green Bay, while the Saints are reeling after blowing a fourth-quarter lead at home to the Raiders.",
+      category: "games",
+      sourceUrl: "https://sports.yahoo.com/articles/odds-saints-vs-falcons-opening-130500110.html",
+      sourceLabel: "Yahoo Sports / SI / Louisiana Sports",
+    },
     {
       title: "First-place swing on Monday night: the whole NFC South sits at 1-2, and the Falcons head to New Orleans for their first division game of 2026",
       detail: "StatMuse and atlantafalcons.com (Sep 27-28): Week 3 left the top of the NFC South bunched, with Carolina, New Orleans and Atlanta all 1-2 and only Tampa Bay (0-3) adrift. The Falcons play at the Saints on Monday, Oct 5 at 8:15 p.m. ET on ESPN, so a win in the Superdome would pull Atlanta even at the top of a division no one has taken charge of, and hand the Penix-led offense its first road division test.",
@@ -2696,7 +2704,7 @@ export const NEWS_DIGEST = {
     },
     {
       title: "A.J. Terrell watches from IR: the $81M CB1 missed the Green Bay win with a groin injury and remains out at least four games",
-      detail: "atlantafalcons.com and NBC Sports (Sep 22, ongoing): Terrell went on injured reserve with the groin injury that knocked him out of the Carolina loss, sidelining the top cornerback for a minimum of four games. Mike Hughes, C.J. Henderson and rookie Avieon Terrell, A.J.'s younger brother, have covered the top roles in his absence, and the corresponding move that brought Zach Harrison up off the practice squad paid off with his blocked field goal at Green Bay.",
+      detail: "atlantafalcons.com and NBC Sports (Sep 22, updated Sep 25): Terrell went on injured reserve with the groin injury that knocked him out of the Carolina loss, sidelining the top cornerback for a minimum of four games. Mike Hughes, C.J. Henderson and rookie Avieon Terrell, A.J.'s younger brother, have covered the top roles in his absence, and the corresponding move that brought Zach Harrison up off the practice squad paid off with his blocked field goal at Green Bay. Atlanta added more depth on Sep 25, poaching CB Robert Longerbeam (a 2025 sixth-round Ravens pick) off the Eagles' practice squad.",
       category: "injuries",
       sourceUrl: "https://www.atlantafalcons.com/news/falcons-place-aj-terrell-jr-on-injured-reserve",
       sourceLabel: "atlantafalcons.com / NBC Sports",
@@ -2714,13 +2722,6 @@ export const NEWS_DIGEST = {
       category: "general",
       sourceUrl: "https://www.cbssports.com/nfl/news/michael-penix-jr-returns-as-falcons-visit-packers/",
       sourceLabel: "ESPN / CBS Sports",
-    },
-    {
-      title: "No quarterback among the captains: Atlanta's five voted leaders (Nick Folk, Jessie Bates III, Bijan Robinson, Chris Lindstrom and Divine Deablo) set the tone through the turnaround",
-      detail: "AJC and atlantafalcons.com (Sep 4, ongoing): for the first time in years the Falcons named no quarterback among their captains, and that group carried the message from the home-opener boos to the Green Bay breakthrough. Bates and Robinson fronted the accountability at 0-2, and Robinson's 213-yard night at Lambeau backed the talk up.",
-      category: "general",
-      sourceUrl: "https://www.ajc.com/sports/2026/09/bijan-robinson-among-falcons-5-captains-for-2026/",
-      sourceLabel: "AJC / atlantafalcons.com",
     },
   ],
 };
