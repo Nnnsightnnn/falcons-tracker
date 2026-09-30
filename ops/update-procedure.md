@@ -186,6 +186,12 @@ Only update PLAYERS if searches reveal:
 - Confirmed stats from a played game (regular season only).
 - New signing / release → add or remove from PLAYERS; mirror in CAP_STATE.recentMoves.
 
+New signings must actually be added to PLAYERS, not skipped for missing details. Look them up:
+jersey number, height/weight, age and college from the team roster page
+(`https://www.atlantafalcons.com/team/players-roster/<first>-<last>/`), draft/career history from
+Wikipedia or Pro Football Reference, and the ESPN ID from a web search (then verify per STEP 5B).
+Omit `contract` only if no real terms are published (the modal hides the contract grid without it).
+
 Do NOT change stats speculatively. Do NOT invent headshot URLs; leave `image: null` if you don't have a real one.
 
 ## STEP 5B: FILL MISSING HEADSHOTS
