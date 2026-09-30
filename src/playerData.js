@@ -70,7 +70,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "active",
-    injuryNote: "Benched in the Sept 20 home opener after a fumble and two interceptions: went 10 of 17 for 86 yards before Stefanski pulled him for undrafted rookie Jack Strand in the 34-3 loss. Started the first two games with Tua Tagovailoa and Michael Penix Jr. hurt, both losses (his Week 1 line at Pittsburgh: 12 of 22, 143 yards, a TD to Bijan Robinson and two picks, one a T.J. Watt pick-six). With Penix reportedly poised to return Thursday, his hold on the job is in doubt. Signed Jul 29 after the team released Trevor Siemian",
+    injuryNote: "Benched in the Sept 20 home opener after a fumble and two interceptions: went 10 of 17 for 86 yards before Stefanski pulled him for undrafted rookie Jack Strand in the 34-3 loss. Started the first two games with Tua Tagovailoa and Michael Penix Jr. hurt, both losses (his Week 1 line at Pittsburgh: 12 of 22, 143 yards, a TD to Bijan Robinson and two picks, one a T.J. Watt pick-six). Dropped to third on the depth chart behind Michael Penix Jr. and Tua Tagovailoa after Penix's Week 3 return (Week 4 depth chart, Sep 29). Signed Jul 29 after the team released Trevor Siemian",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/2972515.png",
     contract: { years: 1, total: 1500000, guaranteed: 0, apy: 1500000, throughYear: 2026, cap2026: 1210000 },
     career: [
@@ -931,7 +931,7 @@ export const PLAYERS = [
     stats: { tackles: 68, int_def: 2, pass_def: 13 },
     form: 8.2,
     status: "ir",
-    injuryNote: "Placed on injured reserve Monday (Sep 22) with the groin injury that knocked him out of the Sept 20 Carolina loss in the first quarter, sidelining the CB1 for at least four games; the team signed DL Zach Harrison off the practice squad in the corresponding move. Leaves Mike Hughes and rookie Avieon Terrell, A.J.'s younger brother, to cover the top corner spots at Green Bay · CB1 · paid like one (4yr/$81M extension in 2024)",
+    injuryNote: "Placed on injured reserve Monday (Sep 22) with the groin injury that knocked him out of the Sept 20 Carolina loss in the first quarter, sidelining the CB1 for at least four games; the team signed DL Zach Harrison off the practice squad in the corresponding move. C.J. Henderson took his starting spot on the Week 4 depth chart (Sep 29), with Malcolm DeWalt IV behind him; the team also signed CB Robert Longerbeam off the Eagles' practice squad on Sep 23 · CB1 · paid like one (4yr/$81M extension in 2024)",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4239995.png",
     contract: { years: 4, total: 81000000, guaranteed: 43500000, apy: 20250000, throughYear: 2028, cap2026: 19200000 },
     career: [{ years: "2020–", team: "Atlanta Falcons", type: "NFL · Pro Bowl 2021" }],
@@ -960,16 +960,16 @@ export const PLAYERS = [
     name: "C.J. Henderson",
     number: 39,
     position: "CB",
-    posSlot: "RCB",
+    posSlot: "LCB",
     positionGroup: "defense",
-    depthRank: 2,
+    depthRank: 1,
     height: 73, weight: 200, age: 27, experience: 6,
     college: "Florida",
     acquired: "fa-2026",
     stats: { tackles: 28, pass_def: 5 },
     form: 6.6,
     status: "active",
-    injuryNote: "Reclamation · ex-#9 overall (2020 JAX)",
+    injuryNote: "Named the starting cornerback on the Week 4 depth chart (Sep 29) in place of A.J. Terrell (IR, groin) after breaking up multiple passes in the Week 3 win at Green Bay · Reclamation · ex-#9 overall (2020 JAX)",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4240596.png",
     contract: { years: 1, total: 2200000, guaranteed: 750000, apy: 2200000, throughYear: 2026, cap2026: 2200000 },
     career: [
@@ -1004,11 +1004,11 @@ export const PLAYERS = [
     name: "Malcolm DeWalt IV",
     number: 36,
     position: "CB",
-    posSlot: "RCB",
+    posSlot: "LCB",
         stRoles: ["GUNNER"],
     stRank: {"GUNNER":4},
     positionGroup: "defense",
-    depthRank: 4,
+    depthRank: 2,
     height: 71, weight: 190, age: 23, experience: 0,
     college: "Akron",
     acquired: "fa-2026-UDFA",
@@ -1639,7 +1639,7 @@ export const NEXT_GAME = {
   date: "2026-10-05",
   kickoff: "8:15 PM ET",
   tv: "ESPN",
-  note: "Monday Night Football, and the Falcons arrive on a high. Michael Penix Jr. announced his return from a torn ACL with a 35-14 rout of the Packers at Lambeau, the first win of the Kevin Stefanski era, and now Atlanta (1-2) heads into the Superdome for its first NFC South road test. Bijan Robinson piled up 213 scrimmage yards and two touchdowns at Green Bay and Drake London went for 154 receiving; the challenge is stringing a second straight complete game together against a division rival. New Orleans sits near the top of the NFC South early, so a win would pull the Falcons even in the loss column with the leaders. Atlanta gets ten days between primetime trips before a Sunday-night home date with Baltimore in Week 5.",
+  note: "Monday Night Football in the Superdome, 20 years after the Saints reopened it against Atlanta. The Falcons (1-2) arrive off Michael Penix Jr.'s ACL return, a 35-14 rout at Lambeau in which Bijan Robinson ran for 194 yards and two scores, Drake London caught nine passes for a career-high 194, and the defense allowed a franchise-record-low 17 rushing yards. The Week 4 depth chart (Sep 29) starts C.J. Henderson at cornerback for the injured A.J. Terrell. New Orleans (1-2) blew a fourth-quarter lead to the Raiders and is a 2.5- to 3-point favorite, total 48.5. A win would pull Atlanta even at the top of a bunched NFC South before a Sunday-night home date with Baltimore in Week 5.",
 };
 
 // =========================================
@@ -1727,7 +1727,7 @@ export const SCHEDULE_2026 = [
     result: "W",
     atlScore: 35,
     oppScore: 14,
-    note: "Thursday Night Football · Falcons 35-14. Michael Penix Jr. (18-of-25, 239, TD) won his first start back from a torn ACL; Bijan Robinson ran for two scores and 213 scrimmage yards and Drake London caught eight for 154 as Atlanta got its first win of the year.",
+    note: "Thursday Night Football · Falcons 35-14. Michael Penix Jr. (18-of-25, 256, TD) won his first start back from a torn ACL; Bijan Robinson ran for 194 yards and two scores (213 from scrimmage), Drake London caught nine for 194, and the defense allowed a franchise-record-low 17 rushing yards as Atlanta got its first win of the year.",
   },
   {
     week: 4,
@@ -1999,18 +1999,18 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-09-29T08:29:10Z",
+  generatedAt: "2026-09-30T08:28:48Z",
   cover: {
-    kicker: "1-2 · The NFC South is bunched; Monday at New Orleans is a first-place swing",
-    headLine1: "Penix delivers,",
-    headEm: "35-14.",
-    headLine3: "His return from the ACL ends the winless start at Green Bay.",
+    kicker: "Saints Week · Henderson starts for Terrell, the line hits Saints -3, and the Falcons climb the rankings",
+    headLine1: "Next stop,",
+    headEm: "the Dome.",
+    headLine3: "Penix and a record-setting run defense take a 1-2 start to Monday night in New Orleans.",
     deck:
-      "The wait is over on two fronts. Ten months after a torn left ACL ended his 2025 season, Michael Penix Jr. returned Thursday night at Lambeau Field and led the Falcons to a 35-14 rout of the Packers, the first win of the Kevin Stefanski era and Atlanta's first of 2026. Penix shook off an early interception to finish 18 of 25 for 239 yards and a touchdown, and the ground game did the rest: Bijan Robinson piled up 213 scrimmage yards and two scores, while Drake London caught eight balls for 154 yards. The defense, thinned by injuries all week, blocked a field goal and held Jordan Love's offense to 14 points. 'I'm just so thankful, so blessed to be back in this position,' Penix said afterward. At 1-2 in a division where Carolina, New Orleans and Atlanta are all 1-2, the Falcons turn to a Monday-night trip to a Saints team that just blew a late lead to the Raiders.",
+      "Five days out from the Falcons' first NFC South game, the Week 4 depth chart is in and it carries one change: C.J. Henderson replaces the injured A.J. Terrell at cornerback, with new signee Robert Longerbeam added behind him. Michael Penix Jr. stays atop a quarterback room of Tua Tagovailoa, Cooper Rush and Jack Strand after going 18 of 25 for 256 yards in his ACL return at Lambeau, where Bijan Robinson ran for 194 yards, Drake London caught nine passes for a career-high 194, and the defense allowed a franchise-record-low 17 rushing yards. The national view has shifted with it: CBS Sports moved Atlanta up nine spots to No. 21, and three other outlets jumped the Falcons six places. Sportsbooks are less convinced, nudging New Orleans from a 2.5-point to a 3-point favorite at some shops for a Monday-night meeting of 1-2 teams, 20 years after the Superdome's post-Katrina reopening against these same Falcons.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
-    stampLabel: "Week 3 · Falcons 35, Packers 14 at Green Bay",
+    stampLabel: "Week 4 · Monday Night at New Orleans · Oct 5, 8:15 p.m. ET",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2622,6 +2622,9 @@ export const NEWS_DIGEST = {
     // clock; it is safe because the CoverImage component falls back to the photoId (penix-jr) headshot until
     // a real plate lands. A genuinely visual story landed today (Penix return, Bijan two-TD game), so this
     // would have been a clean queue moment had the Vault been reachable.
+    // STATUS (2026-09-30 cloud run): image request SKIPPED (cloud run; the limn/Vault queue is not reachable and
+    // this run is instructed not to touch coverImageUrl). Cover text rotated onto Saints week; the pointer and the
+    // penix-jr photoId fallback are unchanged.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
@@ -2636,92 +2639,99 @@ export const NEWS_DIGEST = {
     "Steelers Depot", "Behind the Steel Curtain",
     "FOX Sports", "steelers.com", "BVM Sports", "FBSchedules",
     "Pro Football Network", "StatMuse", "packers.com", "PFF", "New Orleans Saints Official", "Covers.com",
-    "Louisiana Sports",
+    "Louisiana Sports", "VegasOdds", "Crescent City Sports", "AP (ABC News)",
   ],
   topics: [
     {
-      title: "Opening line lands and the Saints are the pick: New Orleans opens as a 2.5-point home favorite for Monday night, total 48.5, in a meeting of 1-2 division rivals",
-      detail: "Yahoo Sports, Sports Illustrated and Louisiana Sports (Sep 28): sportsbooks opened the Saints as 2.5-point favorites over Atlanta for the Week 4 Monday-nighter in the Superdome, with the over/under set at 48.5. Both teams sit at 1-2, so a road win would pull the Falcons even at the top of the division; the game also falls on the 20th anniversary of New Orleans' post-Katrina 'Domecoming.' Atlanta arrives off the Penix-led 35-14 rout at Green Bay, while the Saints are reeling after blowing a fourth-quarter lead at home to the Raiders.",
-      category: "games",
-      sourceUrl: "https://sports.yahoo.com/articles/odds-saints-vs-falcons-opening-130500110.html",
-      sourceLabel: "Yahoo Sports / SI / Louisiana Sports",
+      title: "Week 4 depth chart: C.J. Henderson takes A.J. Terrell's starting job at corner, new signee Robert Longerbeam joins the two-deep, and Penix stays QB1",
+      detail: "atlantafalcons.com and Yahoo Sports (Tuesday, Sep 29): the only lineup change from Week 3 is Henderson moving into the starting cornerback spot vacated by Terrell (IR, groin), with Malcolm DeWalt IV sliding into Henderson's backup role and Longerbeam, claimed off the Eagles' practice squad last week, added to the chart. At quarterback it is Michael Penix Jr., then Tua Tagovailoa, Cooper Rush and Jack Strand.",
+      category: "general",
+      sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-week-4-depth-chart-vs-new-orleans-saints",
+      sourceLabel: "atlantafalcons.com / Yahoo Sports",
     },
     {
-      title: "First-place swing on Monday night: the whole NFC South sits at 1-2, and the Falcons head to New Orleans for their first division game of 2026",
-      detail: "StatMuse and atlantafalcons.com (Sep 27-28): Week 3 left the top of the NFC South bunched, with Carolina, New Orleans and Atlanta all 1-2 and only Tampa Bay (0-3) adrift. The Falcons play at the Saints on Monday, Oct 5 at 8:15 p.m. ET on ESPN, so a win in the Superdome would pull Atlanta even at the top of a division no one has taken charge of, and hand the Penix-led offense its first road division test.",
+      title: "Power rankings bounce: the Lambeau rout lifts Atlanta as high as No. 21 (CBS, up nine), with The Athletic, Bleacher Report and FOX all jumping the Falcons six spots to 25",
+      detail: "atlantafalcons.com Week 4 roundup (Sep 29): the common thread was the quarterback. CBS Sports said getting a functional quarterback changed everything, Bleacher Report wrote 'What a difference having a competent quarterback makes,' and The Athletic called its confidence in the position suddenly high. ESPN was the holdout at No. 29 (up two), and FOX flagged a rough October ahead.",
+      category: "general",
+      sourceUrl: "https://www.atlantafalcons.com/news/week-4-nfl-power-rankings-roundup-falcons-on-the-rise-after-prime-time-win",
+      sourceLabel: "atlantafalcons.com",
+    },
+    {
+      title: "The line ticks toward New Orleans: Saints -2.5 has moved to -3 at some books (moneyline -155 / +130), total 48.5, on the 20th anniversary of the Domecoming",
+      detail: "Covers and VegasOdds (Sep 28-29): the Saints opened as 2.5-point home favorites for Monday night and some books now hang a full field goal, with the total holding at 48.5. Covers notes the last three Falcons-Saints meetings all stayed under and none reached 40 points. Crescent City Sports (Sep 29) adds the backdrop: the game falls 20 years after Sept. 25, 2006, when the Saints beat Atlanta 23-3 on Monday night in the first game in the Superdome after Hurricane Katrina.",
+      category: "games",
+      sourceUrl: "https://www.vegasodds.com/predictions/nfl/mnf-odds-predictions-falcons-vs-saints-week-4-preview-picks-oct-5/",
+      sourceLabel: "Covers / VegasOdds / Crescent City Sports",
+    },
+    {
+      title: "First-place swing on Monday night: the whole NFC South sits at 1-2 except Tampa Bay, and the Falcons head to New Orleans for their first division game of 2026",
+      detail: "StatMuse and atlantafalcons.com (Sep 27-28): Week 3 left Carolina, New Orleans and Atlanta all at 1-2 with only Tampa Bay (0-3) adrift. The Falcons play at the Saints on Monday, Oct 5 at 8:15 p.m. ET on ESPN, so a win in the Superdome would pull Atlanta even at the top of a division no one has taken charge of, and hand the Penix-led offense its first road division test.",
       category: "general",
       sourceUrl: "https://www.statmuse.com/nfl/ask/nfc-south-standings",
       sourceLabel: "StatMuse / atlantafalcons.com",
     },
     {
-      title: "Atlanta's Monday host stumbles: the Saints blow a fourth-quarter lead and lose to the Raiders 35-27, dropping to 1-2 despite four Tyler Shough touchdowns",
-      detail: "neworleanssaints.com and PFF (Sep 27): New Orleans led in the fourth quarter before four late turnovers sank it in a 35-27 home loss to Las Vegas. Second-year quarterback Tyler Shough threw four touchdown passes, all to tight ends, and went 29 of 42 for 250 yards, but lost a fumble and threw a fourth-quarter interception; Chris Olave caught nine passes for 107 yards. That is the reeling team Atlanta gets next, in prime time, in the Superdome.",
+      title: "A franchise record against the run: Green Bay managed just 17 rushing yards, the fewest Atlanta has ever allowed, and the Falcons now lead the NFL at 47.7 per game",
+      detail: "atlantafalcons.com (Sep 25) and VegasOdds (Sep 29): the Lambeau performance dropped Atlanta's season average from 63 rushing yards allowed to a league-best 47.7. Interior linemen Gervon Dexter Sr. and Brandon Dorlus have combined for 27 pressures, the most of any interior duo in the league. 'When you can run the ball like that and stop the run how we did, we're going to win a lot of ball games like that,' Jessie Bates III said.",
+      category: "games",
+      sourceUrl: "https://www.atlantafalcons.com/news/drake-london-bijan-robinson-falcons-packers-michael-penix",
+      sourceLabel: "atlantafalcons.com / VegasOdds",
+    },
+    {
+      title: "Atlanta's Monday host stumbles: the Saints blew a fourth-quarter lead and lost to the Raiders 35-27, dropping to 1-2 despite four Tyler Shough touchdowns",
+      detail: "neworleanssaints.com and PFF (Sep 27): New Orleans led in the fourth quarter before late turnovers sank it in a 35-27 home loss to Las Vegas. Shough threw four touchdown passes, all to tight ends, and went 29 of 42 for 250 yards, but lost a fumble and threw a fourth-quarter interception; Chris Olave caught nine passes for 107 yards. The Saints have allowed 31 or more points in two of three games.",
       category: "games",
       sourceUrl: "https://www.neworleanssaints.com/news/2026-nfl-week-3-las-vegas-raiders-vs-new-orleans-saints-game-recap",
-      sourceLabel: "neworleanssaints.com / PFF",
+      sourceLabel: "neworleanssaints.com / PFF / VegasOdds",
     },
     {
       title: "Statement at Lambeau: Michael Penix Jr. returned from a torn ACL and the Falcons routed the Packers 35-14 for their first win of 2026",
-      detail: "atlantafalcons.com, ESPN and CBS Sports (Sep 24): ten months after a torn left ACL ended his 2025 season, Penix made his return last Thursday in prime time and led Atlanta to a 35-14 win at Green Bay, the first of the Kevin Stefanski era. He shook off an early interception to finish 18 of 25 for 239 yards and a touchdown, the Falcons led 17-7 at halftime and pulled away, and a defense thinned by injuries all week held Jordan Love's offense to 14 points.",
+      detail: "AP, atlantafalcons.com and CBS Sports (Sep 24): ten months after a torn left ACL ended his 2025 season, Penix returned in prime time and led Atlanta to a 35-14 win at Green Bay, the first of the Kevin Stefanski era. He shook off an interception on the opening drive to finish 18 of 25 for 256 yards and a touchdown, and a defense thinned by injuries all week held Jordan Love's offense to 14 points.",
       category: "games",
-      sourceUrl: "https://www.espn.com/nfl/story/_/id/50023295/nfl-green-bay-packers-atlanta-falcons-jordan-love-michael-penix",
-      sourceLabel: "ESPN / atlantafalcons.com / CBS Sports",
+      sourceUrl: "https://abcnews.com/Sports/wireStory/bijan-robinson-runs-roughshod-packers-falcons-breeze-35-136743389",
+      sourceLabel: "AP / atlantafalcons.com / CBS Sports",
     },
     {
-      title: "Bijan Robinson and Drake London go supernova: 213 scrimmage yards and two touchdowns for Robinson, 154 receiving for London, an NFL first",
-      detail: "atlantafalcons.com game breakdown (Sep 24): Robinson carried the offense with 213 yards from scrimmage and two scores, ripping runs of 55 and 31 yards, and became the 10th player in NFL history to reach 6,000 career scrimmage yards before turning 25. London added eight catches for 154 yards, and the pair set an NFL record by producing a 150-yard rusher and a 150-yard receiver in the same game for the third time, the most of any teammate duo. Austin Hooper and Brian Robinson Jr. also reached the end zone.",
+      title: "Bijan Robinson and Drake London make history: 194 rushing yards and two touchdowns for Robinson, a career-high 194 receiving for London",
+      detail: "AP, PFF and atlantafalcons.com (Sep 24-25): Robinson ran for 194 yards and two scores (213 from scrimmage) and became the 10th player in NFL history to reach 6,000 career scrimmage yards before turning 25. London caught nine of 10 targets for 194 yards, more than half of it on two go routes. The pair became the first teammate duo to each top 150 yards in the same game three times. 'Me and Drake, that's my real-life brother... it's pretty special,' Robinson said. (Earlier editions of this digest listed London at 8 for 154; the AP box score has 9 for 194.)",
       category: "games",
-      sourceUrl: "https://www.atlantafalcons.com/news/game-breakdown-what-happened-in-falcons-vs-packers",
-      sourceLabel: "atlantafalcons.com",
+      sourceUrl: "https://www.atlantafalcons.com/news/drake-london-bijan-robinson-falcons-packers-michael-penix",
+      sourceLabel: "AP / PFF / atlantafalcons.com",
     },
     {
       title: "'The definition of resiliency': teammates rally around Penix's return, and his own reaction was two words, 'But God'",
-      detail: "atlantafalcons.com and ClutchPoints (Sep 24-25): after an interception on an early drive, Penix settled and completed 17 of his next 20 throws. 'I've been fighting and scratching for a long time to get to where I'm at today,' he said, thanking the trainers, his family and his teammates. Drake London called him 'the definition of resiliency,' and Jessie Bates III recalled Penix in tears in the locker room before the final preseason game because he wanted to be ready. Penix summed up the night in two words: 'But God.'",
+      detail: "atlantafalcons.com and ClutchPoints (Sep 24-25): after the early interception, Penix completed 17 of his next 20 throws. 'I've been fighting and scratching for a long time to get to where I'm at today,' he said, thanking the trainers, his family and his teammates. Drake London called him 'the definition of resiliency,' and Jessie Bates III recalled Penix in tears in the locker room before the final preseason game because he wanted to be ready.",
       category: "general",
       sourceUrl: "https://www.atlantafalcons.com/news/michael-penix-jr-resiliency-falcons-win-thursday-night-football-packers",
       sourceLabel: "atlantafalcons.com / ClutchPoints",
     },
     {
       title: "The thin defense holds up: Zach Harrison blocks a field goal, Cameron Thomas gets home, and C.J. Henderson locks down for the injured A.J. Terrell",
-      detail: "atlantafalcons.com (Sep 24): down its top corner (A.J. Terrell, IR) and edge rusher Samson Ebukam (hamstring), Atlanta's defense still limited Green Bay to 14 points. Zach Harrison, signed off the practice squad only two days earlier, blocked a 44-yard field goal; Cameron Thomas recorded a sack; and C.J. Henderson, starting in place of Terrell, broke up multiple passes. It was the kind of complementary defensive effort the unit could not muster in the 34-3 Carolina loss a week earlier.",
+      detail: "atlantafalcons.com (Sep 24): down its top corner (Terrell, IR) and edge rusher Samson Ebukam (hamstring), Atlanta's defense still limited Green Bay to 14 points. Harrison, signed off the practice squad only two days earlier, blocked a 44-yard field goal; Thomas recorded a sack; and Henderson, now the listed starter for New Orleans, broke up multiple passes. It was the complementary effort the unit could not muster in the 34-3 Carolina loss a week earlier.",
       category: "games",
       sourceUrl: "https://www.atlantafalcons.com/news/game-breakdown-what-happened-in-falcons-vs-packers",
       sourceLabel: "atlantafalcons.com",
     },
     {
       title: "Stefanski gets his first Falcons win and a moment with Penix: 'I feel great for him. I'm proud of him'",
-      detail: "Yahoo Sports and Yardbarker (Sep 24-25): the head coach earned his first victory in Atlanta and made clear what the night meant beyond the standings. Asked about Penix's return from the ACL, Stefanski said, 'I feel great for him. I'm proud of him,' and praised 'the overall effort.' The staff had a mini-bye to rest up before the Week 4 Monday-nighter at New Orleans, the middle leg of a three-game primetime run.",
+      detail: "Yahoo Sports and Yardbarker (Sep 24-25): the head coach earned his first victory in Atlanta and made clear what the night meant beyond the standings, praising 'the overall effort.' The staff used the mini-bye to rest up before the Monday-nighter at New Orleans, the middle leg of a three-game primetime run that closes with a Sunday-night home date against Baltimore in Week 5.",
       category: "coaching",
       sourceUrl: "https://sports.yahoo.com/articles/kevin-stefanski-comments-falcons-week-034131494.html",
       sourceLabel: "Yahoo Sports / Yardbarker",
     },
     {
-      title: "Three straight in prime time: after Monday at New Orleans, the Falcons host Baltimore's Lamar Jackson on Sunday night in Week 5",
-      detail: "NFL.com and the 2026 schedule (Sep 25): Atlanta's trip to the Superdome on Oct 5 (8:15 p.m. ET, ESPN) is the middle game of a three-week national run that opened at Lambeau on Thursday and closes with a Sunday-night home date against the Ravens in Week 5. It is a stretch that will tell a lot about whether the Penix-led offense and a banged-up defense can hold up under the lights.",
-      category: "games",
-      sourceUrl: "https://www.nfl.com/schedules/2026/by-team/atlanta-falcons",
-      sourceLabel: "NFL.com",
-    },
-    {
-      title: "A.J. Terrell watches from IR: the $81M CB1 missed the Green Bay win with a groin injury and remains out at least four games",
-      detail: "atlantafalcons.com and NBC Sports (Sep 22, updated Sep 25): Terrell went on injured reserve with the groin injury that knocked him out of the Carolina loss, sidelining the top cornerback for a minimum of four games. Mike Hughes, C.J. Henderson and rookie Avieon Terrell, A.J.'s younger brother, have covered the top roles in his absence, and the corresponding move that brought Zach Harrison up off the practice squad paid off with his blocked field goal at Green Bay. Atlanta added more depth on Sep 25, poaching CB Robert Longerbeam (a 2025 sixth-round Ravens pick) off the Eagles' practice squad.",
+      title: "A.J. Terrell watches from IR: the $81M CB1 remains out at least four games with a groin injury, and the corner depth has been rebuilt around him",
+      detail: "atlantafalcons.com and NBC Sports (Sep 22-23, depth chart Sep 29): Terrell went on injured reserve with the groin injury that knocked him out of the Carolina loss. C.J. Henderson now starts in his place, with Mike Hughes, rookie Avieon Terrell (A.J.'s younger brother) and Billy Bowman Jr. in the mix. Atlanta added depth on Sep 23, signing CB Robert Longerbeam (a 2025 sixth-round Ravens pick out of Rutgers) off the Eagles' practice squad.",
       category: "injuries",
       sourceUrl: "https://www.atlantafalcons.com/news/falcons-place-aj-terrell-jr-on-injured-reserve",
       sourceLabel: "atlantafalcons.com / NBC Sports",
     },
     {
-      title: "Injury watch: edge Samson Ebukam (hamstring) is day-to-day for New Orleans, while nickel Billy Bowman Jr. is back after making his 2026 debut at Green Bay",
-      detail: "atlantafalcons.com injury reports and NBC Sports (Sep 24, updated): Ebukam was ruled out for the short week and did not factor in at Green Bay, leaving the pass rush shorthanded; he is day-to-day heading into the Week 4 Monday-nighter. Bowman, cleared from questionable, made his 2026 debut Thursday roughly ten months after an Achilles rupture and helped cover for the injured Terrell. Atlanta remains without Jalon Walker (ACL, out for the year) and the suspended James Pearce Jr.",
+      title: "Injury watch: edge Samson Ebukam (hamstring) is day-to-day for New Orleans, while nickel Billy Bowman Jr. is back after his 2026 debut at Green Bay",
+      detail: "atlantafalcons.com injury reports and NBC Sports (Sep 24, updated): Ebukam missed the short week at Green Bay and is day-to-day heading into Monday; the first Week 4 injury report is due later this week. Bowman made his 2026 debut Thursday roughly ten months after an Achilles rupture. Atlanta remains without Jalon Walker (ACL, out for the year) and the suspended James Pearce Jr.",
       category: "injuries",
       sourceUrl: "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/thursday-night-football-falcons-cb-billy-bowman-will-make-his-2026-debut",
       sourceLabel: "atlantafalcons.com / NBC Sports",
-    },
-    {
-      title: "The quarterback room settles, for now: Penix's win locks him in as QB1, with Tua Tagovailoa healthy behind him and Cooper Rush third",
-      detail: "ESPN and CBS Sports (Sep 24): the carousel that churned through Cooper Rush and undrafted rookie Jack Strand during an 0-2 start has stopped. Penix's return performance gives Atlanta a clear QB1, and Tua Tagovailoa, active for the first time all season Thursday after an oblique injury, backs him up. Rush, benched in the Carolina loss, drops to third on the depth chart.",
-      category: "general",
-      sourceUrl: "https://www.cbssports.com/nfl/news/michael-penix-jr-returns-as-falcons-visit-packers/",
-      sourceLabel: "ESPN / CBS Sports",
     },
   ],
 };
@@ -2733,7 +2743,7 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-09-28T08:28:09Z",
+  generatedAt: "2026-09-30T08:28:48Z",
   windowLabel: "Saints Week · Green Bay postgame → MNF at New Orleans · Sept 24 → Oct 5",
   sessions: [
     {
@@ -2749,7 +2759,7 @@ export const INTERVIEWS = {
       summary: "In his first game action since a torn left ACL ended his 2025 season, Penix led the Falcons to a 35-14 win at Lambeau and spoke afterward through obvious emotion. He leaned on his faith, thanked the people who carried him through rehab, and brushed off the early interception that briefly threatened to derail the night.",
       pullQuote: "I've been fighting and scratching for a long time to get to where I'm at today.",
       bullets: [
-        "On the return: 'I'm just so thankful, so blessed to be back in this position,' after finishing 18 of 25 for 239 yards and a touchdown roughly ten months from surgery",
+        "On the return: 'I'm just so thankful, so blessed to be back in this position,' after finishing 18 of 25 for 256 yards and a touchdown roughly ten months from surgery",
         "On his faith: reduced the night to two words, 'But God,' when asked what it meant to be back on the field",
         "On his support system: thanked the trainers, his family and his wife, and his teammates for 'being there for me each and every day'",
         "On Bijan Robinson: called it 'such a blessing to have somebody like that on your team' after Robinson's 213-yard, two-touchdown game",
@@ -2771,7 +2781,7 @@ export const INTERVIEWS = {
       bullets: [
         "On Penix's return: 'I feel great for him. I'm proud of him,' saying he was grateful to 'witness it' after the long ACL rehab",
         "On the win: praised the 'overall effort,' the first complete performance of his Atlanta tenure, and noted plainly that 'it counts as one'",
-        "On the offense: watched Bijan Robinson run for 213 scrimmage yards and two scores and Drake London go for 154 receiving behind a line that finally held",
+        "On the offense: watched Bijan Robinson run for 213 scrimmage yards and two scores and Drake London go for 194 receiving behind a line that finally held",
         "On what's next: turned the page to the Monday-night division trip to New Orleans in Week 4",
       ],
       topics: ["postgame", "week-3", "penix-acl", "packers-week"],
@@ -2786,12 +2796,12 @@ export const INTERVIEWS = {
       sourceUrl: "https://www.atlantafalcons.com/news/michael-penix-jr-resiliency-falcons-win-thursday-night-football-packers",
       transcriptUrl: "https://www.atlantafalcons.com/news/game-breakdown-what-happened-in-falcons-vs-packers",
       verified: true,
-      summary: "Coming off an eight-catch, 154-yard night, London spent his time at the podium talking about his quarterback. He framed Penix's bounce-back from an early interception as pure competitiveness and called the return the defining trait of the Falcons' first win.",
+      summary: "Coming off a nine-catch, 194-yard night, a career high, London spent his time at the podium talking about his quarterback. He framed Penix's bounce-back from an early interception as pure competitiveness and called the return the defining trait of the Falcons' first win.",
       pullQuote: "He's the definition of resiliency.",
       bullets: [
         "On Penix: 'He's the definition of resiliency,' pointing to the comeback from a torn ACL and a rocky opening drive",
         "On the interception: said that after the pick, 'He's a gamer, so when that happened he was like, Well, it can't get no worse than this'",
-        "On his own night: caught eight passes for 154 yards, pairing with Bijan Robinson's 150-plus rushing game for an NFL record third time",
+        "On his own night: caught nine passes for a career-high 194 yards, pairing with Bijan Robinson's 150-plus rushing game for an NFL record third time",
         "On the offense: the receiving corps and ground game clicked together for the first time in 2026 in the 35-14 win",
       ],
       topics: ["postgame", "week-3", "penix-acl", "offense"],
