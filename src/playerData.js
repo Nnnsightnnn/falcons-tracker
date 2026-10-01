@@ -611,9 +611,9 @@ export const PLAYERS = [
     stats: { tackles: 44, tfl: 5, sacks: 6 },
     form: 7.2,
     status: "active",
-    injuryNote: "Acquired Aug 30 (cutdown day) from Chicago for CB Clark Phillips III and a 2027 fifth-round pick, reuniting with GM Ian Cunningham, who was the Bears' assistant GM when they drafted him. A 2023 second-round pick and a two-year starter in Chicago, Dexter posted 44 tackles and six sacks over 17 starts in 2025 and steps into the interior rotation alongside Maason Smith and Brandon Dorlus. In the final year of his rookie deal, so a 2027 extension call now belongs to Atlanta.",
+    injuryNote: "Acquired Aug 30 (cutdown day) from Chicago for CB Clark Phillips III and a 2027 fifth-round pick, reuniting with GM Ian Cunningham, who was the Bears' assistant GM when they drafted him. A 2023 second-round pick and a two-year starter in Chicago, Dexter posted 44 tackles and six sacks over 17 starts in 2025 and steps into the interior rotation alongside Maason Smith and Brandon Dorlus. On Sep 30 he agreed to a four-year, $78 million extension with $46.5 million guaranteed (agents Drew and Jason Rosenhaus via ESPN's Adam Schefter; confirmed by the team), keeping him in Atlanta through 2030. Through three games he has 15 pressures, three QB hits and half a sack, ranking eighth in the NFL in pressure rate (20.5%) per the team. 'Gervon is a young, ascending talent whose power, disruption and impact along the defensive line are difficult to find,' GM Ian Cunningham said.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4429014.png",
-    contract: { years: 1, total: 2140000, guaranteed: 0, apy: 2140000, throughYear: 2026, cap2026: 2140000 },
+    contract: { years: 4, total: 78000000, guaranteed: 46500000, apy: 19500000, throughYear: 2030, cap2026: 2140000 }, // 4-yr extension agreed 2026-09-30; cap2026 is the pre-extension rookie figure until the restructured 2026 number is published
     career: [
       { years: "2026–", team: "Atlanta Falcons", type: "NFL" },
       { years: "2023–2025", team: "Chicago Bears", type: "NFL · 2023 R2 #53" },
@@ -1662,7 +1662,7 @@ export const NEXT_GAME = {
   date: "2026-10-05",
   kickoff: "8:15 PM ET",
   tv: "ESPN",
-  note: "Monday Night Football in the Superdome, 20 years after the Saints reopened it against Atlanta. The Falcons (1-2) arrive off Michael Penix Jr.'s ACL return, a 35-14 rout at Lambeau in which Bijan Robinson ran for 194 yards and two scores, Drake London caught nine passes for a career-high 194, and the defense allowed a franchise-record-low 17 rushing yards. The Week 4 depth chart (Sep 29) starts C.J. Henderson at cornerback for the injured A.J. Terrell. New Orleans (1-2) blew a fourth-quarter lead to the Raiders and is a 2.5- to 3-point favorite, total 48.5. A win would pull Atlanta even at the top of a bunched NFC South before a Sunday-night home date with Baltimore in Week 5.",
+  note: "Monday Night Football in the Superdome, 20 years after the Saints reopened it against Atlanta. The Falcons (1-2) arrive off Michael Penix Jr.'s ACL return, a 35-14 rout at Lambeau in which Bijan Robinson ran for 194 yards and two scores, Drake London caught nine passes for a career-high 194, and the defense allowed a franchise-record-low 17 rushing yards. The Week 4 depth chart (Sep 29) starts C.J. Henderson at cornerback for the injured A.J. Terrell. New Orleans (1-2) blew a fourth-quarter lead to the Raiders, will be without RB Travis Etienne (hamstring, ruled out Sep 29), and is a 2.5- to 3-point favorite, total 48.5. On Sep 30 Atlanta extended DT Gervon Dexter Sr., a key piece of that run defense, for four years and $78 million. A win would pull Atlanta even at the top of a bunched NFC South before a Sunday-night home date with Baltimore in Week 5.",
 };
 
 // =========================================
@@ -2022,14 +2022,14 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-09-30T08:28:48Z",
+  generatedAt: "2026-10-01T08:30:00Z",
   cover: {
-    kicker: "Saints Week · Henderson starts for Terrell, the line hits Saints -3, and the Falcons climb the rankings",
+    kicker: "Saints Week · Gervon Dexter gets paid, Travis Etienne is ruled out, and the Falcons climb the rankings",
     headLine1: "Next stop,",
     headEm: "the Dome.",
     headLine3: "Penix and a record-setting run defense take a 1-2 start to Monday night in New Orleans.",
     deck:
-      "Five days out from the Falcons' first NFC South game, the Week 4 depth chart is in and it carries one change: C.J. Henderson replaces the injured A.J. Terrell at cornerback, with new signee Robert Longerbeam added behind him. Michael Penix Jr. stays atop a quarterback room of Tua Tagovailoa, Cooper Rush and Jack Strand after going 18 of 25 for 256 yards in his ACL return at Lambeau, where Bijan Robinson ran for 194 yards, Drake London caught nine passes for a career-high 194, and the defense allowed a franchise-record-low 17 rushing yards. The national view has shifted with it: CBS Sports moved Atlanta up nine spots to No. 21, and three other outlets jumped the Falcons six places. Sportsbooks are less convinced, nudging New Orleans from a 2.5-point to a 3-point favorite at some shops for a Monday-night meeting of 1-2 teams, 20 years after the Superdome's post-Katrina reopening against these same Falcons.",
+      "Atlanta locked up the middle of its record-setting run defense on Wednesday, agreeing to a four-year, $78 million extension with defensive tackle Gervon Dexter Sr. barely a month after trading for him, while New Orleans ruled out running back Travis Etienne (hamstring) for Monday night. The Week 4 depth chart carries one change: C.J. Henderson replaces the injured A.J. Terrell at cornerback, with new signee Robert Longerbeam added behind him. Michael Penix Jr. stays atop a quarterback room of Tua Tagovailoa, Cooper Rush and Jack Strand after going 18 of 25 for 256 yards in his ACL return at Lambeau, where Bijan Robinson ran for 194 yards, Drake London caught nine passes for a career-high 194, and the defense allowed a franchise-record-low 17 rushing yards. The national view has shifted with it: CBS Sports moved Atlanta up nine spots to No. 21, and three other outlets jumped the Falcons six places. Sportsbooks are less convinced, nudging New Orleans from a 2.5-point to a 3-point favorite at some shops for a Monday-night meeting of 1-2 teams, 20 years after the Superdome's post-Katrina reopening against these same Falcons.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
@@ -2648,6 +2648,8 @@ export const NEWS_DIGEST = {
     // STATUS (2026-09-30 cloud run): image request SKIPPED (cloud run; the limn/Vault queue is not reachable and
     // this run is instructed not to touch coverImageUrl). Cover text rotated onto Saints week; the pointer and the
     // penix-jr photoId fallback are unchanged.
+    // STATUS (2026-10-01 cloud run): image request SKIPPED (cloud run; limn/Vault queue unreachable, run instructed
+    // not to touch coverImageUrl). Kicker and deck now lead with the Dexter extension; pointer and penix-jr fallback unchanged.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
@@ -2663,8 +2665,23 @@ export const NEWS_DIGEST = {
     "FOX Sports", "steelers.com", "BVM Sports", "FBSchedules",
     "Pro Football Network", "StatMuse", "packers.com", "PFF", "New Orleans Saints Official", "Covers.com",
     "Louisiana Sports", "VegasOdds", "Crescent City Sports", "AP (ABC News)",
+    "National Football Post", "SI Betting",
   ],
   topics: [
+    {
+      title: "Falcons pay Gervon Dexter Sr.: a four-year, $78 million extension with $46.5 million guaranteed, one month after trading for him",
+      detail: "atlantafalcons.com, ESPN and National Football Post (Wednesday, Sep 30): the defensive tackle acquired from Chicago on Aug 30 for CB Clark Phillips III and a 2027 fifth-rounder is now signed through 2030 at $19.5 million a year. Through three games he has 15 pressures and ranks eighth in the NFL in pressure rate (20.5%). 'Gervon is a young, ascending talent whose power, disruption and impact along the defensive line are difficult to find,' GM Ian Cunningham said.",
+      category: "contracts",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-dt-gervon-dexter-sr-agree-to-terms-on-four-year-contract-extension",
+      sourceLabel: "atlantafalcons.com / ESPN / National Football Post",
+    },
+    {
+      title: "Saints lose a back for Monday: Travis Etienne (hamstring) is ruled out, leaving Alvin Kamara to lead the New Orleans run game against the NFL's No. 1 run defense",
+      detail: "Yahoo Sports (Tuesday, Sep 29): Kellen Moore ruled Etienne out after he pulled his left hamstring on a 16-yard run in the third quarter of the Raiders loss, with no return timeline and IR still undecided. Kamara takes over as the primary back with Kendre Miller and rookie CJ Donaldson behind him, against a Falcons defense allowing a league-low 47.7 rushing yards per game.",
+      category: "injuries",
+      sourceUrl: "https://sports.yahoo.com/articles/saints-rb-etienne-ruled-vs-011514763.html",
+      sourceLabel: "Yahoo Sports",
+    },
     {
       title: "Week 4 depth chart: C.J. Henderson takes A.J. Terrell's starting job at corner, new signee Robert Longerbeam joins the two-deep, and Penix stays QB1",
       detail: "atlantafalcons.com and Yahoo Sports (Tuesday, Sep 29): the only lineup change from Week 3 is Henderson moving into the starting cornerback spot vacated by Terrell (IR, groin), with Malcolm DeWalt IV sliding into Henderson's backup role and Longerbeam, claimed off the Eagles' practice squad last week, added to the chart. At quarterback it is Michael Penix Jr., then Tua Tagovailoa, Cooper Rush and Jack Strand.",
@@ -2681,7 +2698,7 @@ export const NEWS_DIGEST = {
     },
     {
       title: "The line ticks toward New Orleans: Saints -2.5 has moved to -3 at some books (moneyline -155 / +130), total 48.5, on the 20th anniversary of the Domecoming",
-      detail: "Covers and VegasOdds (Sep 28-29): the Saints opened as 2.5-point home favorites for Monday night and some books now hang a full field goal, with the total holding at 48.5. Covers notes the last three Falcons-Saints meetings all stayed under and none reached 40 points. Crescent City Sports (Sep 29) adds the backdrop: the game falls 20 years after Sept. 25, 2006, when the Saints beat Atlanta 23-3 on Monday night in the first game in the Superdome after Hurricane Katrina.",
+      detail: "Covers and VegasOdds (Sep 28-29): the Saints opened as 2.5-point home favorites for Monday night and some books now hang a full field goal, with the total holding at 48.5. Covers notes the last three Falcons-Saints meetings all stayed under and none reached 40 points. Crescent City Sports (Sep 29) adds the backdrop: the game falls 20 years after Sept. 25, 2006, when the Saints beat Atlanta 23-3 on Monday night in the first game in the Superdome after Hurricane Katrina. Per neworleanssaints.com, Atlanta leads the all-time series 57-56 and swept New Orleans in 2025, most recently 19-17 on Jan 4.",
       category: "games",
       sourceUrl: "https://www.vegasodds.com/predictions/nfl/mnf-odds-predictions-falcons-vs-saints-week-4-preview-picks-oct-5/",
       sourceLabel: "Covers / VegasOdds / Crescent City Sports",
@@ -2722,25 +2739,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "AP / PFF / atlantafalcons.com",
     },
     {
-      title: "'The definition of resiliency': teammates rally around Penix's return, and his own reaction was two words, 'But God'",
-      detail: "atlantafalcons.com and ClutchPoints (Sep 24-25): after the early interception, Penix completed 17 of his next 20 throws. 'I've been fighting and scratching for a long time to get to where I'm at today,' he said, thanking the trainers, his family and his teammates. Drake London called him 'the definition of resiliency,' and Jessie Bates III recalled Penix in tears in the locker room before the final preseason game because he wanted to be ready.",
-      category: "general",
-      sourceUrl: "https://www.atlantafalcons.com/news/michael-penix-jr-resiliency-falcons-win-thursday-night-football-packers",
-      sourceLabel: "atlantafalcons.com / ClutchPoints",
-    },
-    {
       title: "The thin defense holds up: Zach Harrison blocks a field goal, Cameron Thomas gets home, and C.J. Henderson locks down for the injured A.J. Terrell",
       detail: "atlantafalcons.com (Sep 24): down its top corner (Terrell, IR) and edge rusher Samson Ebukam (hamstring), Atlanta's defense still limited Green Bay to 14 points. Harrison, signed off the practice squad only two days earlier, blocked a 44-yard field goal; Thomas recorded a sack; and Henderson, now the listed starter for New Orleans, broke up multiple passes. It was the complementary effort the unit could not muster in the 34-3 Carolina loss a week earlier.",
       category: "games",
       sourceUrl: "https://www.atlantafalcons.com/news/game-breakdown-what-happened-in-falcons-vs-packers",
       sourceLabel: "atlantafalcons.com",
-    },
-    {
-      title: "Stefanski gets his first Falcons win and a moment with Penix: 'I feel great for him. I'm proud of him'",
-      detail: "Yahoo Sports and Yardbarker (Sep 24-25): the head coach earned his first victory in Atlanta and made clear what the night meant beyond the standings, praising 'the overall effort.' The staff used the mini-bye to rest up before the Monday-nighter at New Orleans, the middle leg of a three-game primetime run that closes with a Sunday-night home date against Baltimore in Week 5.",
-      category: "coaching",
-      sourceUrl: "https://sports.yahoo.com/articles/kevin-stefanski-comments-falcons-week-034131494.html",
-      sourceLabel: "Yahoo Sports / Yardbarker",
     },
     {
       title: "A.J. Terrell watches from IR: the $81M CB1 remains out at least four games with a groin injury, and the corner depth has been rebuilt around him",
