@@ -191,6 +191,8 @@ jersey number, height/weight, age and college from the team roster page
 (`https://www.atlantafalcons.com/team/players-roster/<first>-<last>/`), draft/career history from
 Wikipedia or Pro Football Reference, and the ESPN ID from a web search (then verify per STEP 5B).
 Omit `contract` only if no real terms are published (the modal hides the contract grid without it).
+Practice-squad signings are the exception: PLAYERS tracks the 53-man roster (plus IR/suspended), so log a practice-squad
+signing in CAP_STATE.recentMoves and the digest only, and add the player to PLAYERS when he is signed to the 53.
 
 Do NOT change stats speculatively. Do NOT invent headshot URLs; leave `image: null` if you don't have a real one.
 
@@ -320,7 +322,6 @@ deletes or moves a local file:
 
 ```bash
 cd ~/falcons-tracker && bash scripts/git-publish.sh \
-  --repo ~/falcons-tracker \
   --branch master \
   --message "<descriptive one-liner summarizing the lead story>" \
   src/playerData.js src/draftData.js src/capState.js src/offseasonCalendar.js   # only the files you edited
