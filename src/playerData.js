@@ -522,8 +522,8 @@ export const PLAYERS = [
     acquired: "waivers-2026-JAX",
     stats: {},
     form: 6.2,
-    status: "active",
-    injuryNote: "Claimed off waivers from Jacksonville on Sept 1, a 2023 fifth-round pick (No. 136) out of Louisville, an undersized, twitchy edge/outside linebacker (6-1, 240) who adds pass-rush depth to a room down Jalon Walker for the year and James Pearce Jr. for eight games.",
+    status: "questionable",
+    injuryNote: "Claimed off waivers from Jacksonville on Sept 1, a 2023 fifth-round pick (No. 136) out of Louisville, an undersized, twitchy edge/outside linebacker (6-1, 240) who adds pass-rush depth to a room down Jalon Walker for the year and James Pearce Jr. for eight games. Added to Saturday's Week 4 report (Oct 3) with an illness: full participant, but listed questionable for Monday at New Orleans.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4360807.png",
     contract: { years: 1, total: 1170000, guaranteed: 0, apy: 1170000, throughYear: 2026, cap2026: 1170000 },
     career: [
@@ -766,8 +766,8 @@ export const PLAYERS = [
     acquired: "fa-2026-1yr",
     stats: { tackles: 31, sacks: 4 },
     form: 6.9,
-    status: "active",
-    injuryNote: "Signed March 12 on a one-year, $2.765M deal for veteran edge depth. Entering his ninth active NFL season across the Rams, 49ers and Colts; missed the 2024 season with a torn Achilles before returning in Indianapolis. Slides up to the LEDGE starter role after Atlanta's surprise cutdown-day release of Azeez Ojulari, working opposite Za'Darius Smith with Pearce serving an eight-game ban from Aug 30. Missed the Week 3 win at Green Bay (hamstring); returned to practice as a limited participant on Oct 1, the first Week 4 injury report, and was limited again on Friday, Oct 2, ahead of the Monday-nighter at New Orleans; game status due on Saturday's final report.",
+    status: "questionable",
+    injuryNote: "Signed March 12 on a one-year, $2.765M deal for veteran edge depth. Entering his ninth active NFL season across the Rams, 49ers and Colts; missed the 2024 season with a torn Achilles before returning in Indianapolis. Slides up to the LEDGE starter role after Atlanta's surprise cutdown-day release of Azeez Ojulari, working opposite Za'Darius Smith with Pearce serving an eight-game ban from Aug 30. Missed the Week 3 win at Green Bay (hamstring); limited on Oct 1 and Oct 2, then a full participant on Saturday, Oct 3 for the first time since the injury. Listed questionable for the Monday-nighter at New Orleans.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/3045527.png",
     contract: { years: 1, total: 2765000, guaranteed: 1500000, apy: 2765000, throughYear: 2026, cap2026: 2765000 },
     career: [
@@ -816,8 +816,8 @@ export const PLAYERS = [
     acquired: "fa-2026",
     stats: { tackles: 92, tfl: 7, sacks: 2, int_def: 1 },
     form: 8.0,
-    status: "active",
-    injuryNote: "MIKE · 3yr/$30M FA splash from LV. Limited in practice with a hamstring on both Week 4 practice reports (Oct 1 and Oct 2) ahead of Monday night at New Orleans; has not missed a game and played every defensive snap at Green Bay.",
+    status: "questionable",
+    injuryNote: "MIKE · 3yr/$30M FA splash from LV. Limited in practice with a hamstring all week (Oct 1-3) and listed questionable on Saturday's final report for Monday night at New Orleans; has not missed a game and played every defensive snap at Green Bay.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4037626.png",
     contract: { years: 3, total: 30000000, guaranteed: 18000000, apy: 10000000, throughYear: 2028, cap2026: 8500000 },
     career: [
@@ -1242,7 +1242,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "active",
-    injuryNote: "Added to the Week 4 injury report on Friday, Oct 2 as a limited participant (Achilles); atlantafalcons.com describes it as routine management of an offseason issue that 'shouldn't necessarily raise any alarms.' Missed spring practices with a foot injury before being cleared for camp",
+    injuryNote: "Added to the Week 4 injury report on Friday, Oct 2 as a limited participant (Achilles), then practiced fully on Saturday, Oct 3 and carries no game designation for Monday at New Orleans. Missed spring practices with a foot injury before being cleared for camp",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4595343.png",
     contract: { years: 4, total: 4750000, guaranteed: 700000, apy: 1187500, throughYear: 2029, cap2026: 900000 },
     career: [
@@ -1662,7 +1662,7 @@ export const NEXT_GAME = {
   date: "2026-10-05",
   kickoff: "8:15 PM ET",
   tv: "ESPN",
-  note: "Monday Night Football in the Superdome, 20 years after the Saints reopened it against Atlanta. The Falcons (1-2) arrive off Michael Penix Jr.'s ACL return, a 35-14 rout at Lambeau in which Bijan Robinson ran for 194 yards and two scores (NFC Offensive Player of the Week), Drake London caught nine passes for a career-high 194, and the defense allowed a franchise-record-low 17 rushing yards. C.J. Henderson starts at cornerback for the injured A.J. Terrell; Samson Ebukam and Divine Deablo (both hamstring) were limited in practice on Oct 1 and Oct 2, with LB Kendal Daniels (Achilles) added as limited on Friday and RT Jawaan Taylor given a rest day. New Orleans (1-2) blew a fourth-quarter lead to the Raiders, placed RB Travis Etienne on IR, and held LBs Kaden Elliss and Pete Werner and edges Carl Granderson and Anfernee Jennings out of practice on both Thursday and Friday. The Saints mark the 20th anniversary of the Domecoming with Irma Thomas singing the anthem and Steve Gleason and Curtis Deloatch honored at the game. The Saints are 2.5- to 3-point favorites, total 48.5. A win would pull Atlanta even at the top of a bunched NFC South before a Sunday-night home date with Baltimore in Week 5.",
+  note: "Monday Night Football in the Superdome, 20 years after the Saints reopened it against Atlanta. The Falcons (1-2) arrive off Michael Penix Jr.'s ACL return, a 35-14 rout at Lambeau in which Bijan Robinson ran for 194 yards and two scores (NFC Offensive Player of the Week), Drake London caught nine passes for a career-high 194, and the defense allowed a franchise-record-low 17 rushing yards. C.J. Henderson starts at cornerback for the injured A.J. Terrell. Saturday's final report (Oct 3) ruled no Falcons out: LB Divine Deablo (hamstring, limited all week), edge Samson Ebukam (hamstring, full on Saturday) and LB Yasir Abdullah (illness) are questionable, and rookie LB Kendal Daniels (Achilles) is cleared. New Orleans (1-2) blew a fourth-quarter lead to the Raiders, placed RB Travis Etienne on IR, and has ruled out LB Kaden Elliss and edges Carl Granderson and Anfernee Jennings, with LB Pete Werner (shoulder) and TE Noah Fant (abdomen) questionable. The Saints mark the 20th anniversary of the Domecoming with Irma Thomas singing the anthem and Steve Gleason and Curtis Deloatch honored at the game. The Saints are 2.5- to 3-point favorites, total 48.5. With the Saints, Falcons and Panthers all 1-2, the winner moves into at least a tie for first in the NFC South before a Sunday-night home date with Baltimore in Week 5.",
 };
 
 // =========================================
@@ -2022,23 +2022,23 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-10-03T08:30:00Z",
+  generatedAt: "2026-10-04T08:45:00Z",
   cover: {
-    kicker: "Saints Week · Ebukam and Deablo limited again, four Saints defenders still out, and Penix has one nice thing to say about the Dome",
+    kicker: "Saints Week · Final injury reports: no Falcons ruled out, Ebukam back to full, and three Saints front-seven starters are out",
     headLine1: "Next stop,",
     headEm: "the Dome.",
     headLine3: "Penix and a record-setting run defense take a 1-2 start to Monday night in New Orleans.",
     deck:
-      "Friday's practice (Oct 2) kept the Week 4 picture steady for Atlanta: edge Samson Ebukam and linebacker Divine Deablo "
-      + "were limited with hamstrings for a second straight day, rookie linebacker Kendal Daniels joined the report as limited (Achilles), "
-      + "Za'Darius Smith returned to limited work after his rest day and right tackle Jawaan Taylor got one of his own. New Orleans is "
-      + "still missing four front-seven starters: linebackers Kaden Elliss and Pete Werner and edges Carl Granderson and Anfernee Jennings "
-      + "sat out again, with Travis Etienne already on injured reserve. Michael Penix Jr., who took a career-high 35 snaps under center "
-      + "at Lambeau, offered the week's best line on Thursday: the Superdome is 'a nice dome. That's probably the only nice thing I can say "
-      + "about them.' Monday night doubles as the 20th anniversary of the Saints' return to the Dome after Hurricane Katrina, with Irma "
-      + "Thomas back for the anthem and Steve Gleason and Curtis Deloatch honored for the 2006 blocked punt, and New Orleans native Harold "
-      + "Perkins Jr. comes home as a Falcon. The experts split 7-7 on the team site's picks roundup; the books still lean Saints by 2.5. "
-      + "Brian Asamoah II is now officially on the practice squad. A win would give the Falcons (1-2) a share of first place in the NFC South.",
+      "Saturday's final reports (Oct 3) broke Atlanta's way. Edge Samson Ebukam, who missed the Lambeau win, practiced fully for the "
+      + "first time since his hamstring injury and is questionable; linebacker Divine Deablo (hamstring) was limited all week and is also "
+      + "questionable, with linebacker Yasir Abdullah (illness) the third question mark. Nobody was ruled out, and rookie linebacker Kendal "
+      + "Daniels (Achilles) was cleared after a full practice. New Orleans ruled out linebacker Kaden Elliss and edges Carl Granderson and "
+      + "Anfernee Jennings, and listed linebacker Pete Werner (shoulder stinger) and tight end Noah Fant questionable; 'We'll just let it be "
+      + "evaluated for the next 24 or so hours,' Kellen Moore said of Werner. If Deablo cannot go, rookie Harold Perkins Jr., the New Orleans "
+      + "native whose family sheltered in the Superdome during Katrina, takes on more of the middle of the field on the night the Saints mark "
+      + "20 years since the Domecoming. Michael Penix Jr. has already supplied the trash talk ('a nice dome. That's probably the only nice "
+      + "thing I can say about them'). The books lean Saints by 2.5, the experts split 7-7, and with the Saints, Falcons and Panthers all "
+      + "1-2, the winner moves into at least a tie for first in the NFC South.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
@@ -2663,6 +2663,8 @@ export const NEWS_DIGEST = {
     // injury reports, Bijan's Player of the Week award and the Asamoah signing; pointer and penix-jr fallback unchanged.
     // STATUS (2026-10-03 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto the Friday injury
     // reports, Penix's Dome line and the Domecoming anniversary; pointer and penix-jr fallback unchanged.
+    // STATUS (2026-10-04 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto Saturday's final
+    // injury reports for both teams; pointer and penix-jr fallback unchanged.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
@@ -2679,22 +2681,29 @@ export const NEWS_DIGEST = {
     "Pro Football Network", "StatMuse", "packers.com", "PFF", "New Orleans Saints Official", "Covers.com",
     "Louisiana Sports", "VegasOdds", "Crescent City Sports", "AP (ABC News)",
     "National Football Post", "SI Betting", "NFL.com News Roundup", "Audacy WWL", "BetMGM",
-    "Newsweek", "FOX Sports (AP preview)",
+    "Newsweek", "FOX Sports (AP preview)", "Gameday Atlanta (Yahoo Sports)",
   ],
   topics: [
     {
-      title: "Friday injury report: Ebukam and Deablo limited again, rookie LB Kendal Daniels added, and Jawaan Taylor gets a rest day",
-      detail: "atlantafalcons.com and neworleanssaints.com (Friday, Oct 2): edge Samson Ebukam and linebacker Divine Deablo (both hamstring) were limited for a second straight day; Deablo has not missed a snap this season. Kendal Daniels joined the report as limited (Achilles), which the team site said 'shouldn't necessarily raise any alarms,' Za'Darius Smith went from a rest day to limited, and RT Jawaan Taylor did not practice (rest). Game statuses come with Saturday's final report.",
+      title: "Final injury report: no Falcons ruled out for Monday, Ebukam practices fully, and Deablo, Ebukam and Yasir Abdullah are questionable",
+      detail: "atlantafalcons.com and Yahoo Sports (Saturday, Oct 3): edge Samson Ebukam, who missed the Green Bay win, was a full participant for the first time since his hamstring injury but carries a questionable tag, as does linebacker Divine Deablo (hamstring), who was limited all week. LB Yasir Abdullah (illness) is the third questionable player. Rookie LB Kendal Daniels (Achilles) practiced fully and has no designation, Za'Darius Smith and Jawaan Taylor were full after rest days, and LT Jake Matthews got a rest day. If Deablo sits, Gameday Atlanta notes, more of the middle falls to rookie Harold Perkins Jr.",
       category: "injuries",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-injury-report-starters-limited-saints",
-      sourceLabel: "atlantafalcons.com / neworleanssaints.com / Yahoo Sports",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-injury-report-monday-night-football-saints-divine-deablo-samson-ebukam",
+      sourceLabel: "atlantafalcons.com / Yahoo Sports / Gameday Atlanta",
     },
     {
-      title: "Saints still short four front-seven starters: Elliss, Werner, Granderson and Jennings all sit out again Friday",
-      detail: "neworleanssaints.com, SI and Crescent City Sports (Friday, Oct 2): linebackers Kaden Elliss (calf) and Pete Werner (shoulder) and edges Carl Granderson (ankle) and Anfernee Jennings (knee) did not practice for a second day, and DL Davon Godchaux got a rest day. Safety Julian Blackmon was upgraded to full, while TE Noah Fant, WR/returner Barion Brown and DL Christen Miller stayed limited. RB Travis Etienne is on injured reserve for at least four weeks.",
+      title: "Saints rule out Kaden Elliss, Carl Granderson and Anfernee Jennings; Pete Werner and Noah Fant are questionable",
+      detail: "neworleanssaints.com and SI Saints (Saturday, Oct 3): New Orleans will be without its starting linebacker Elliss (calf) and both edges Granderson (ankle) and Jennings (knee), after all three missed the full week. LB Werner (shoulder stinger) and TE Fant (abdomen) are questionable; 'We obviously still have time until Monday night. We'll just let it be evaluated for the next 24 or so hours,' Kellen Moore said of Werner. Safety Julian Blackmon and returner Barion Brown were full participants, and RB Travis Etienne is on injured reserve.",
       category: "injuries",
-      sourceUrl: "https://www.neworleanssaints.com/news/injury-report-atlanta-falcons-vs-new-orleans-saints-2026-nfl-week-4-friday",
-      sourceLabel: "neworleanssaints.com / SI / Crescent City Sports",
+      sourceUrl: "https://www.neworleanssaints.com/news/injury-report-atlanta-falcons-vs-new-orleans-saints-2026-nfl-week-4-saturday",
+      sourceLabel: "neworleanssaints.com / SI Saints",
+    },
+    {
+      title: "First place is on the table: the Saints, Falcons and Panthers are all 1-2, and Monday's winner moves into at least a share of the NFC South lead",
+      detail: "neworleanssaints.com (Saturday, Oct 3): the Week 4 Monday-nighter is the NFC South opener for both teams, and the Saints spent the week on cleaning up their turnovers. Five of the last eight Falcons-Saints meetings since 2022 were decided by three points or fewer, per atlantafalcons.com.",
+      category: "games",
+      sourceUrl: "https://www.neworleanssaints.com/news/morning-break-saints-turnover-monday-night-football-falcons-new-orleans-news-headlines-10-3-2026",
+      sourceLabel: "neworleanssaints.com / atlantafalcons.com",
     },
     {
       title: "Penix on the Superdome: 'It's a nice dome. That's probably the only nice thing I can say about them'",
@@ -2712,7 +2721,7 @@ export const NEWS_DIGEST = {
     },
     {
       title: "Experts split down the middle: seven pick Atlanta, seven pick New Orleans",
-      detail: "atlantafalcons.com expert picks roundup (Friday, Oct 2): ESPN's Dan Graziano and CBS Sports' Pete Prisco and John Breech side with the Falcons after the Lambeau rout, while ESPN's Jeremy Fowler and Ben Solak and SI's Albert Breer take the Saints and their fourth-quarter resilience. The line holds at Saints -2.5.",
+      detail: "atlantafalcons.com expert picks roundup (Friday, Oct 2): ESPN's Dan Graziano and CBS Sports' Pete Prisco and John Breech side with the Falcons after the Lambeau rout, while ESPN's Jeremy Fowler and Ben Solak and SI's Albert Breer take the Saints and their fourth-quarter resilience. The AJC's Michael Cunningham (Oct 1) has Atlanta covering the 2.5 but not winning outright. The line holds at Saints -2.5.",
       category: "games",
       sourceUrl: "https://www.atlantafalcons.com/news/nfl-expert-picks-week-4-falcons-saints",
       sourceLabel: "atlantafalcons.com",
@@ -2773,14 +2782,6 @@ export const NEWS_DIGEST = {
       sourceUrl: "https://www.vegasodds.com/predictions/nfl/mnf-odds-predictions-falcons-vs-saints-week-4-preview-picks-oct-5/",
       sourceLabel: "Covers / VegasOdds / SI Betting / Crescent City Sports",
     },
-    {
-      title: "A franchise record against the run: Green Bay managed just 17 rushing yards, the fewest Atlanta has ever allowed, and the Falcons now lead the NFL at 47.7 per game",
-      detail: "atlantafalcons.com (Sep 25) and VegasOdds (Sep 29): the Lambeau performance dropped Atlanta's season average from 63 rushing yards allowed to a league-best 47.7. Interior linemen Gervon Dexter Sr. and Brandon Dorlus have combined for 27 pressures, the most of any interior duo in the league. 'When you can run the ball like that and stop the run how we did, we're going to win a lot of ball games like that,' Jessie Bates III said.",
-      category: "games",
-      sourceUrl: "https://www.atlantafalcons.com/news/drake-london-bijan-robinson-falcons-packers-michael-penix",
-      sourceLabel: "atlantafalcons.com / VegasOdds",
-    },
-
   ],
 };
 
