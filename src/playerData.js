@@ -1662,7 +1662,7 @@ export const NEXT_GAME = {
   date: "2026-10-05",
   kickoff: "8:15 PM ET",
   tv: "ESPN",
-  note: "Monday Night Football in the Superdome, 20 years after the Saints reopened it against Atlanta. The Falcons (1-2) arrive off Michael Penix Jr.'s ACL return, a 35-14 rout at Lambeau in which Bijan Robinson ran for 194 yards and two scores (NFC Offensive Player of the Week), Drake London caught nine passes for a career-high 194, and the defense allowed a franchise-record-low 17 rushing yards. C.J. Henderson starts at cornerback for the injured A.J. Terrell. Saturday's final report (Oct 3) ruled no Falcons out: LB Divine Deablo (hamstring, limited all week), edge Samson Ebukam (hamstring, full on Saturday) and LB Yasir Abdullah (illness) are questionable, and rookie LB Kendal Daniels (Achilles) is cleared. New Orleans (1-2) blew a fourth-quarter lead to the Raiders, placed RB Travis Etienne on IR, and has ruled out LB Kaden Elliss and edges Carl Granderson and Anfernee Jennings, with LB Pete Werner (shoulder) and TE Noah Fant (abdomen) questionable. The Saints mark the 20th anniversary of the Domecoming with Irma Thomas singing the anthem and Steve Gleason and Curtis Deloatch honored at the game. The Saints are 2.5- to 3-point favorites, total 48.5. With the Saints, Falcons and Panthers all 1-2, the winner moves into at least a tie for first in the NFC South before a Sunday-night home date with Baltimore in Week 5.",
+  note: "Game day. Monday Night Football in the Superdome (ESPN: Joe Buck, Troy Aikman, Laura Rutledge; Falcons in red), 20 years after the Saints reopened the building against Atlanta. The Falcons (1-2) arrive off Michael Penix Jr.'s ACL return, a 35-14 rout at Lambeau in which Bijan Robinson ran for 194 yards and two scores (NFC Offensive Player of the Week), Drake London caught nine passes for a career-high 194, and the defense allowed a franchise-record-low 17 rushing yards. C.J. Henderson starts at cornerback for the injured A.J. Terrell. No Falcons were ruled out: LB Divine Deablo (hamstring), edge Samson Ebukam (hamstring) and LB Yasir Abdullah (illness) are questionable. New Orleans (1-2) is without LB Kaden Elliss and edges Carl Granderson and Anfernee Jennings, with LB Pete Werner (shoulder) and TE Noah Fant (abdomen) questionable, and RB Travis Etienne on IR. The stakes rose on Sunday: Carolina beat Detroit 32-26 to sit alone in first at 2-2 and Tampa Bay fell to 0-4, so tonight's winner ties the Panthers for the NFC South lead. Saints -2.5, total 47.5 (Covers, Oct 4). Next: Baltimore at home on Sunday Night Football in Week 5.",
 };
 
 // =========================================
@@ -2005,44 +2005,43 @@ export const RESULTS_2026 = [
 ];
 
 // =========================================
-// NFC SOUTH 2026 STANDINGS — live (all four teams through Week 3)
-// Week 3 is complete and the top of the division is bunched: Carolina, New Orleans
-// and Atlanta are all 1-2 (Carolina leads on tiebreakers), while Tampa Bay is alone
-// in the cellar at 0-3 after losing to Minnesota. The Saints fell at home to the
-// Raiders 35-27; Atlanta visits New Orleans on Monday night in Week 4.
+// NFC SOUTH 2026 STANDINGS — live (Week 4 Sunday games complete; ATL-NO Monday night pending)
+// Carolina beat Detroit 32-26 on Sunday Night Football (Oct 4) and sits alone in first at 2-2.
+// Tampa Bay fell 17-14 to Green Bay with undrafted rookie Jalon Daniels starting for the injured
+// Baker Mayfield and is 0-4. Atlanta and New Orleans (both 1-2) meet Monday night; the winner
+// moves into a tie with Carolina for first place.
 // =========================================
 export const NFC_SOUTH_STANDINGS_2026 = [
-  { team: "Carolina Panthers", code: "CAR", wins: 1, losses: 2, pct: 0.333, divisionFinish: 1 },
+  { team: "Carolina Panthers", code: "CAR", wins: 2, losses: 2, pct: 0.5, divisionFinish: 1 },
   { team: "New Orleans Saints", code: "NO", wins: 1, losses: 2, pct: 0.333, divisionFinish: 2 },
   { team: "Atlanta Falcons", code: "ATL", wins: 1, losses: 2, pct: 0.333, divisionFinish: 3, isFalcons: true },
-  { team: "Tampa Bay Buccaneers", code: "TB", wins: 0, losses: 3, pct: 0.0, divisionFinish: 4 },
+  { team: "Tampa Bay Buccaneers", code: "TB", wins: 0, losses: 4, pct: 0.0, divisionFinish: 4 },
 ];
 
 // =========================================
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-10-04T08:45:00Z",
+  generatedAt: "2026-10-05T08:45:00Z",
   cover: {
-    kicker: "Saints Week · Final injury reports: no Falcons ruled out, Ebukam back to full, and three Saints front-seven starters are out",
-    headLine1: "Next stop,",
+    kicker: "Game Day · Monday Night at the Superdome: Carolina takes sole possession of first on Sunday night, and tonight's winner joins them",
+    headLine1: "Tonight,",
     headEm: "the Dome.",
-    headLine3: "Penix and a record-setting run defense take a 1-2 start to Monday night in New Orleans.",
+    headLine3: "Penix, Bijan and a record-setting run defense take a 1-2 start into a Monday-night fight for a share of first place.",
     deck:
-      "Saturday's final reports (Oct 3) broke Atlanta's way. Edge Samson Ebukam, who missed the Lambeau win, practiced fully for the "
-      + "first time since his hamstring injury and is questionable; linebacker Divine Deablo (hamstring) was limited all week and is also "
-      + "questionable, with linebacker Yasir Abdullah (illness) the third question mark. Nobody was ruled out, and rookie linebacker Kendal "
-      + "Daniels (Achilles) was cleared after a full practice. New Orleans ruled out linebacker Kaden Elliss and edges Carl Granderson and "
-      + "Anfernee Jennings, and listed linebacker Pete Werner (shoulder stinger) and tight end Noah Fant questionable; 'We'll just let it be "
-      + "evaluated for the next 24 or so hours,' Kellen Moore said of Werner. If Deablo cannot go, rookie Harold Perkins Jr., the New Orleans "
-      + "native whose family sheltered in the Superdome during Katrina, takes on more of the middle of the field on the night the Saints mark "
-      + "20 years since the Domecoming. Michael Penix Jr. has already supplied the trash talk ('a nice dome. That's probably the only nice "
-      + "thing I can say about them'). The books lean Saints by 2.5, the experts split 7-7, and with the Saints, Falcons and Panthers all "
-      + "1-2, the winner moves into at least a tie for first in the NFC South.",
+      "Sunday made the stakes plain. Carolina beat Detroit 32-26 on Sunday Night Football behind Bryce Young (329 yards, two "
+      + "touchdowns) and Tetairoa McMillan (14 catches, 192 yards) to sit alone atop the NFC South at 2-2, while Tampa Bay lost 17-14 "
+      + "at home to Green Bay with undrafted rookie Jalon Daniels starting for the injured Baker Mayfield and is 0-4. Atlanta and New "
+      + "Orleans are both 1-2, so the winner at the Superdome tonight (8:15 p.m. ET, ESPN) moves into a tie with the Panthers for first. "
+      + "No Falcons were ruled out; Divine Deablo, Samson Ebukam and Yasir Abdullah are questionable. The Saints are without linebacker "
+      + "Kaden Elliss and edges Carl Granderson and Anfernee Jennings, and Covers notes Elliss, Pete Werner (questionable) and Jennings "
+      + "account for 62% of New Orleans' linebacker snaps this season, against a Bijan Robinson who has run for 194 yards in his last "
+      + "game. The other number to watch: under Kellen Moore the Saints are 5-0 when they win the turnover battle and 0-9 when they lose "
+      + "it. The line sits at Saints -2.5 with the total down to 47.5, on the night New Orleans marks 20 years since the Domecoming.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
-    stampLabel: "Week 4 · Monday Night at New Orleans · Oct 5, 8:15 p.m. ET",
+    stampLabel: "Week 4 · Game Day · Monday Night at New Orleans · Tonight, 8:15 p.m. ET · ESPN",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2665,6 +2664,8 @@ export const NEWS_DIGEST = {
     // reports, Penix's Dome line and the Domecoming anniversary; pointer and penix-jr fallback unchanged.
     // STATUS (2026-10-04 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto Saturday's final
     // injury reports for both teams; pointer and penix-jr fallback unchanged.
+    // STATUS (2026-10-05 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto game day and Sunday's
+    // NFC South results (Carolina 2-2 alone in first, Tampa Bay 0-4); pointer and penix-jr fallback unchanged.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
@@ -2682,8 +2683,44 @@ export const NEWS_DIGEST = {
     "Louisiana Sports", "VegasOdds", "Crescent City Sports", "AP (ABC News)",
     "National Football Post", "SI Betting", "NFL.com News Roundup", "Audacy WWL", "BetMGM",
     "Newsweek", "FOX Sports (AP preview)", "Gameday Atlanta (Yahoo Sports)",
+    "buccaneers.com", "Covers",
   ],
   topics: [
+    {
+      title: "Game day: Falcons at Saints tonight, 8:15 p.m. ET on ESPN, with first place in the NFC South on the line",
+      detail: "atlantafalcons.com (Monday, Oct 5): Joe Buck, Troy Aikman and Laura Rutledge have the call on ESPN, with Wes Durham and Dave Archer on 92.9 The Game; the Falcons wear red. It is the NFC South opener for both 1-2 teams, Michael Penix Jr.'s first Saints game since his ACL return, and the 20th anniversary of the Domecoming.",
+      category: "games",
+      sourceUrl: "https://www.atlantafalcons.com/news/where-watch-atlanta-falcons-new-orleans-saints-stream-tv-radio-mnf-espn",
+      sourceLabel: "atlantafalcons.com",
+    },
+    {
+      title: "Panthers beat the Lions 32-26 on Sunday night and sit alone in first at 2-2; tonight's winner ties them",
+      detail: "CBS Sports (Sunday night, Oct 4): Bryce Young completed his first 11 passes and finished 29-of-41 for 329 yards and two touchdowns, both to Tetairoa McMillan (14 catches, career-high 192 yards), and Chuba Hubbard ran for 122 yards and two scores. Carolina paid for it: cornerbacks Jaycee Horn and Mike Jackson are expected to miss about eight weeks, with RT Monroe Freeling (knee) and LB Jaelan Phillips (hamstring) also hurt.",
+      category: "games",
+      sourceUrl: "https://www.cbssports.com/nfl/news/bryce-young-tetairoa-mcmillan-power-panthers-past-lions/",
+      sourceLabel: "CBS Sports",
+    },
+    {
+      title: "Buccaneers fall to 0-4 as undrafted rookie Jalon Daniels makes his first start for the injured Baker Mayfield",
+      detail: "buccaneers.com (Sunday, Oct 4): Green Bay won 17-14 in Tampa; Daniels went 19-of-27 for 148 yards, a touchdown and two interceptions and led a fourth-quarter push that stalled on the final drive. It is Tampa Bay's first 0-4 start since 2013, with Mayfield (hand) facing about three weeks out. 'We can't keep getting close and not winning,' Todd Bowles said.",
+      category: "games",
+      sourceUrl: "https://www.buccaneers.com/news/packers-bucs-week-4-recap-postgame-report-2026",
+      sourceLabel: "buccaneers.com",
+    },
+    {
+      title: "Saints linebacker crisis: Elliss, Werner and Jennings account for 62% of New Orleans' linebacker snaps, and the line holds at Saints -2.5 with the total down to 47.5",
+      detail: "Covers (Sunday, Oct 4) backs Atlanta +2.5, noting that New Orleans ranks 26th in points allowed (27.7 a game) and 31st in defensive success rate, and that Penix ranked top four in EPA per dropback at Green Bay. The total has dipped from 48.5 to 47.5. neworleanssaints.com (Oct 4) concedes at least one starting linebacker will miss the game, and possibly both, with backups asked to slow Bijan Robinson.",
+      category: "games",
+      sourceUrl: "https://www.covers.com/nfl/falcons-vs-saints-prediction-picks-oct-5-2026",
+      sourceLabel: "Covers / neworleanssaints.com",
+    },
+    {
+      title: "The turnover number: under Kellen Moore the Saints are 5-0 when they win the turnover battle and 0-9 when they lose it",
+      detail: "Audacy WWL (Sunday, Oct 4) lists ball security as one of three things to watch, with Tyler Shough already sacked 10 times through three weeks and backup Asim Richards at left tackle. Atlanta leads the NFL in pressure rate at 44.2%, per Sharp Football Analysis (Oct 1), and Bijan Robinson averages about 150 yards a game in prime time.",
+      category: "games",
+      sourceUrl: "https://www.audacy.com/wwl/local-sports/saints/3-things-saints-falcons",
+      sourceLabel: "Audacy WWL / Sharp Football Analysis",
+    },
     {
       title: "Final injury report: no Falcons ruled out for Monday, Ebukam practices fully, and Deablo, Ebukam and Yasir Abdullah are questionable",
       detail: "atlantafalcons.com and Yahoo Sports (Saturday, Oct 3): edge Samson Ebukam, who missed the Green Bay win, was a full participant for the first time since his hamstring injury but carries a questionable tag, as does linebacker Divine Deablo (hamstring), who was limited all week. LB Yasir Abdullah (illness) is the third questionable player. Rookie LB Kendal Daniels (Achilles) practiced fully and has no designation, Za'Darius Smith and Jawaan Taylor were full after rest days, and LT Jake Matthews got a rest day. If Deablo sits, Gameday Atlanta notes, more of the middle falls to rookie Harold Perkins Jr.",
@@ -2699,13 +2736,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "neworleanssaints.com / SI Saints",
     },
     {
-      title: "First place is on the table: the Saints, Falcons and Panthers are all 1-2, and Monday's winner moves into at least a share of the NFC South lead",
-      detail: "neworleanssaints.com (Saturday, Oct 3): the Week 4 Monday-nighter is the NFC South opener for both teams, and the Saints spent the week on cleaning up their turnovers. Five of the last eight Falcons-Saints meetings since 2022 were decided by three points or fewer, per atlantafalcons.com.",
-      category: "games",
-      sourceUrl: "https://www.neworleanssaints.com/news/morning-break-saints-turnover-monday-night-football-falcons-new-orleans-news-headlines-10-3-2026",
-      sourceLabel: "neworleanssaints.com / atlantafalcons.com",
-    },
-    {
       title: "Penix on the Superdome: 'It's a nice dome. That's probably the only nice thing I can say about them'",
       detail: "Thursday press conference (Oct 1), via Newsweek, Yahoo and SI: Penix added some heat to the rivalry before his first Saints game since returning from the ACL tear. SI (Oct 2) also noted he took a career-high 35 of 71 snaps under center at Green Bay, after one under-center pass attempt in all of 2025; 'Under center was never hard for me. I just do what I'm told to do,' he said.",
       category: "games",
@@ -2718,13 +2748,6 @@ export const NEWS_DIGEST = {
       category: "games",
       sourceUrl: "https://www.si.com/nfl/saints/onsi/saints-friday-injury-report-still-cloudy-legends-perform-to-be-honored-monday-night-01m3z8gs3xpb",
       sourceLabel: "SI Saints / atlantafalcons.com / SI Falcons",
-    },
-    {
-      title: "Experts split down the middle: seven pick Atlanta, seven pick New Orleans",
-      detail: "atlantafalcons.com expert picks roundup (Friday, Oct 2): ESPN's Dan Graziano and CBS Sports' Pete Prisco and John Breech side with the Falcons after the Lambeau rout, while ESPN's Jeremy Fowler and Ben Solak and SI's Albert Breer take the Saints and their fourth-quarter resilience. The AJC's Michael Cunningham (Oct 1) has Atlanta covering the 2.5 but not winning outright. The line holds at Saints -2.5.",
-      category: "games",
-      sourceUrl: "https://www.atlantafalcons.com/news/nfl-expert-picks-week-4-falcons-saints",
-      sourceLabel: "atlantafalcons.com",
     },
     {
       title: "Brian Asamoah II is officially a Falcon: the former Vikings third-rounder takes the 16th and final practice-squad spot, wearing No. 41",
@@ -2755,32 +2778,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com / ESPN / National Football Post",
     },
     {
-      title: "Maason Smith returns to the building where he tore his ACL: the former LSU tackle plays in the Superdome for the first time since 2022",
-      detail: "SI Falcons (Wednesday, Sep 30): Smith tore his ACL in the Superdome in LSU's 2022 opener. 'The last time I played there, I tore my ACL. Just a whole bunch of emotions, but I'm expecting us to go out there and do what we need to do,' he said, adding that the defensive line still plays with the 'same amount of pride as we did from day one.'",
-      category: "general",
-      sourceUrl: "https://www.si.com/nfl/falcons/onsi/falcons-dt-maason-smith-seeks-redemption-in-superdome-return-vs-saints",
-      sourceLabel: "SI Falcons",
-    },
-    {
-      title: "Tua Tagovailoa embraces the backup job: 'Mike's the guy. We have to do everything we can to support him'",
-      detail: "SI Falcons (Tuesday, Sep 29): healthy again after the Week 1 oblique injury he first thought was his back locking up, Tagovailoa said his job is extra film, throws and answers for Michael Penix Jr., so that he is 'not the reason he's failing.' He added that he will always view it as a competition, but the job description right now is support.",
-      category: "general",
-      sourceUrl: "https://www.si.com/nfl/falcons/onsi/tua-tagovailoa-opens-up-on-his-role-as-atlanta-falcons-backup-qb",
-      sourceLabel: "SI Falcons",
-    },
-    {
       title: "Week 4 depth chart: C.J. Henderson takes A.J. Terrell's starting job at corner, new signee Robert Longerbeam joins the two-deep, and Penix stays QB1",
       detail: "atlantafalcons.com and Yahoo Sports (Tuesday, Sep 29): the only lineup change from Week 3 is Henderson moving into the starting cornerback spot vacated by Terrell (IR, groin), with Malcolm DeWalt IV sliding into Henderson's backup role and Longerbeam, claimed off the Eagles' practice squad last week, added to the chart. At quarterback it is Michael Penix Jr., then Tua Tagovailoa, Cooper Rush and Jack Strand.",
       category: "general",
       sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-week-4-depth-chart-vs-new-orleans-saints",
       sourceLabel: "atlantafalcons.com / Yahoo Sports",
-    },
-    {
-      title: "The line ticks toward New Orleans: Saints favored by 2.5 to 3 points (BetMGM: -2.5, moneyline -150 / +125), total 48.5, on the 20th anniversary of the Domecoming",
-      detail: "Covers, VegasOdds and SI Betting (Sep 28-30): the Saints opened as 2.5-point home favorites for Monday night and some books now hang a full field goal, with the total holding at 48.5. Covers notes the last three Falcons-Saints meetings all stayed under and none reached 40 points. Crescent City Sports (Sep 29) adds the backdrop: the game falls 20 years after Sept. 25, 2006, when the Saints beat Atlanta 23-3 on Monday night in the first game in the Superdome after Hurricane Katrina. Per neworleanssaints.com, Atlanta leads the all-time series 57-56 and swept New Orleans in 2025, most recently 19-17 on Jan 4.",
-      category: "games",
-      sourceUrl: "https://www.vegasodds.com/predictions/nfl/mnf-odds-predictions-falcons-vs-saints-week-4-preview-picks-oct-5/",
-      sourceLabel: "Covers / VegasOdds / SI Betting / Crescent City Sports",
     },
   ],
 };
