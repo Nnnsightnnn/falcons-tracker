@@ -323,7 +323,7 @@ export const PLAYERS = [
     stats: {},
     form: 8.5,
     status: "questionable",
-    injuryNote: "LT · restructured March 2026 (cleared $10.5M). Left the 45-24 win at New Orleans (Oct 5) late in the first quarter with a groin injury and was ruled out before the second half, in his 200th career game (fourth Falcon to reach 200) and with the NFL's longest active consecutive-starts streak (199) on the line. Michael Jerrell replaced him. No timeline announced as of Oct 6; status for Sunday night vs. Baltimore unclear.",
+    injuryNote: "LT · restructured March 2026 (cleared $10.5M). Left the 45-24 win at New Orleans (Oct 5) late in the first quarter with a groin injury and was ruled out before the second half, in his 200th career game (fourth Falcon to reach 200) and with the NFL's longest active consecutive-starts streak (199) on the line. Michael Jerrell replaced him. No timeline announced as of Oct 7. The Week 5 depth chart (released Oct 6) was unchanged from Week 4 and still lists him at LT; status for Sunday night vs. Baltimore unclear until the first practice report.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/16713.png",
     contract: { years: 3, total: 55500000, guaranteed: 0, apy: 18500000, throughYear: 2027, cap2026: 15500000 },
     career: [
@@ -1662,7 +1662,7 @@ export const NEXT_GAME = {
   date: "2026-10-11",
   kickoff: "8:20 PM ET",
   tv: "NBC",
-  note: "Sunday Night Football at Mercedes-Benz Stadium (NBC), the Falcons' third straight prime-time game. Atlanta (2-2) arrives off a 45-24 win at New Orleans in which Bijan Robinson (145 yards, two TDs) and Brian Robinson Jr. (three TDs) ran for five scores and Michael Penix Jr. (15-of-20, 223, TD) improved to 2-0 as the starter with no turnovers. The cost: edge Za'Darius Smith (concussion, neck) and LT Jake Matthews (groin, in his 200th career game) both left in the first half, with Michael Jerrell replacing Matthews. Baltimore (3-1) beat Tennessee 24-18 on Oct 4 but lost Lamar Jackson to a left ankle injury; coach Jesse Minter said Monday he did not know the chances Jackson plays, and Tyler Huntley finished the game. The line moved from Ravens -6 at open to about -2.5 to -3.5 (SI Betting, Oct 5). Next: Chicago at home in Week 6.",
+  note: "Sunday Night Football at Mercedes-Benz Stadium (NBC), the Falcons' third straight prime-time game. Atlanta (2-2) arrives off a 45-24 win at New Orleans in which Bijan Robinson (145 yards, two TDs) and Brian Robinson Jr. (three TDs) ran for five scores and Michael Penix Jr. (15-of-20, 223, TD) improved to 2-0 as the starter with no turnovers. The cost: edge Za'Darius Smith (concussion, neck) and LT Jake Matthews (groin) both left in the first half, with Michael Jerrell replacing Matthews; no timeline yet for either, and the Week 5 depth chart (Oct 6) was unchanged. Baltimore (3-1) beat Tennessee 24-18 on Oct 4, but Lamar Jackson has a sprained left ankle that gives him only an outside chance to play, per NFL Network's Ian Rapoport (Oct 6); Tyler Huntley (7-9 as a starter) would start. The line has flipped from Ravens -6 on the lookahead to Ravens -2.5 (SI Betting, Oct 6). Next: Chicago at home in Week 6.",
 };
 
 // =========================================
@@ -2025,18 +2025,18 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-10-06T09:00:00Z",
+  generatedAt: "2026-10-07T08:45:00Z",
   cover: {
-    kicker: "Monday Night Football · Falcons 45, Saints 24: the Robinsons run for five touchdowns and Atlanta ties Carolina for first",
-    headLine1: "Five scores,",
-    headEm: "two Robinsons.",
-    headLine3: "Bijan and Brian run the Saints out of their own anniversary night, Penix stays clean, and the Falcons are back to .500 and level atop the NFC South.",
+    kicker: "Ravens week · Lamar Jackson has an outside chance to play Sunday night, and the line has flipped toward Atlanta",
+    headLine1: "Lamar's ankle,",
+    headEm: "Atlanta's window.",
+    headLine3: "Baltimore's MVP quarterback is a long shot with a sprained ankle, the spread has collapsed from six points to two and a half, and the 2-2 Falcons are climbing every power ranking.",
     deck:
-      "Atlanta never trailed. Bijan Robinson broke a 59-yard touchdown run on the third snap and finished with 145 yards and two scores, Brian Robinson Jr. added three short touchdowns, and the Falcons matched a franchise record with five rushing touchdowns in a 45-24 rout of the Saints on Monday Night Football, the 20th anniversary of the Domecoming. Michael Penix Jr. went 15-of-20 for 223 yards, a 31-yard touchdown to Jahan Dotson and no turnovers, and is 2-0 since returning from his torn ACL. 'Mike played well; he took care of the football and made some really good throws,' Kevin Stefanski said. The win lifts Atlanta to 2-2 and into a tie with Carolina atop the NFC South, but it was not free: edge Za'Darius Smith (concussion, neck) and left tackle Jake Matthews (groin, in his 200th career game) both left in the first half. Next is Baltimore on Sunday Night Football, with Lamar Jackson's ankle the week's first question.",
+      "Two days after a 45-24 rout in New Orleans put Atlanta level with Carolina atop the NFC South, the week's biggest Falcons story is in Baltimore. Lamar Jackson sprained his left ankle when he was sacked late in the first half against Tennessee, and NFL Network's Ian Rapoport reported Tuesday that he has only an outside chance to play Sunday night at Mercedes-Benz Stadium; the injury is not considered long-term or surgical, but he could miss multiple games. Tyler Huntley, 7-9 as a starter, would take over. 'The guys have a lot of confidence in him to be able to go out there and do it,' Ravens coach Jesse Minter said. The market moved with the news: Baltimore opened as a six-point favorite on the lookahead line and is now -2.5. Atlanta has its own questions, with LT Jake Matthews (groin) and edge Za'Darius Smith (concussion, neck) both without a timeline, though the Week 5 depth chart released Tuesday was unchanged. The first practice reports of the short week will tell more.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
-    stampLabel: "Week 4 · Final · Falcons 45, Saints 24 · Next: Ravens, Sunday Night Football, Oct 11",
+    stampLabel: "Week 5 · Ravens at Falcons · Sunday Night Football, Oct 11, 8:20 PM ET, NBC · Falcons 2-2, tied for first",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2663,6 +2663,8 @@ export const NEWS_DIGEST = {
     // NFC South results (Carolina 2-2 alone in first, Tampa Bay 0-4); pointer and penix-jr fallback unchanged.
     // STATUS (2026-10-06 cloud run): image request SKIPPED (cloud run). Kicker and deck rebuilt around the 45-24 Monday-night
     // win at New Orleans (five rushing TDs, Falcons 2-2 and tied for first); pointer and penix-jr fallback unchanged.
+    // STATUS (2026-10-07 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto Ravens week (Lamar Jackson's
+    // ankle sprain, the line flip to Ravens -2.5, Matthews/Smith with no timeline); pointer and penix-jr fallback unchanged.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
@@ -2681,8 +2683,37 @@ export const NEWS_DIGEST = {
     "National Football Post", "SI Betting", "NFL.com News Roundup", "Audacy WWL", "BetMGM",
     "Newsweek", "FOX Sports (AP preview)", "Gameday Atlanta (Yahoo Sports)",
     "buccaneers.com", "Covers", "AP (TSN)", "Atlanta News First", "Pro Football Network", "SI Betting",
+    "SI Ravens", "Yahoo Sports (Ravens)", "CBS Sports (Ravens)",
   ],
   topics: [
+    {
+      title: "Lamar Jackson has a sprained ankle and only an outside chance to play Sunday night in Atlanta",
+      detail: "NFL Network's Ian Rapoport, via SI, Yahoo and CBS Sports (Tuesday, Oct 6): the injury is not considered long-term or surgical, but Jackson could miss multiple games depending on rehab. Tyler Huntley, 7-9 as a spot starter, went 8-of-9 for 63 yards in relief against Tennessee. 'The guys have a lot of confidence in him to be able to go out there and do it,' coach Jesse Minter said.",
+      category: "injuries",
+      sourceUrl: "https://www.si.com/nfl/ravens/onsi/lamar-jackson-unlikely-to-play-ravens-primetime-matchup-vs-falcons-with-minor-ankle-sprain-01m48t32e03v",
+      sourceLabel: "SI Ravens / Yahoo Sports / CBS Sports",
+    },
+    {
+      title: "The line flips: Baltimore drops from a six-point favorite to -2.5 at Mercedes-Benz Stadium",
+      detail: "SI Betting (Tuesday, Oct 6): the Ravens opened at -6 on the lookahead, fell to -3.5 on Sunday night and sit at -2.5 at DraftKings after the Jackson report. Baltimore is 6-11 when Jackson does not play; if he cannot finish a full practice by Friday, he is likely out. Kickoff is 8:20 p.m. ET Sunday on NBC.",
+      category: "games",
+      sourceUrl: "https://www.si.com/betting/ravens-vs-falcons-odds-completely-flip-after-latest-lamar-jackson-injury-update",
+      sourceLabel: "SI Betting",
+    },
+    {
+      title: "Falcons climb every Week 5 power ranking, as high as No. 19 at CBS Sports",
+      detail: "atlantafalcons.com roundup (Tuesday, Oct 6): ESPN 25th (up 4), The Athletic 22nd (up 3), Bleacher Report and FOX Sports 21st (up 4), CBS 19th (up 2). Atlanta's 80 points over the last two games are the most in the NFL in that span; The Athletic listed its concern level as 'waning, as long as they have Bijan Robinson.'",
+      category: "general",
+      sourceUrl: "https://www.atlantafalcons.com/news/week-5-nfl-power-rankings-roundup-falcons-on-the-move-after-mnf-win",
+      sourceLabel: "atlantafalcons.com",
+    },
+    {
+      title: "No changes on the Week 5 depth chart, and still no timeline for Jake Matthews or Za'Darius Smith",
+      detail: "atlantafalcons.com (Tuesday, Oct 6): the team kept its Week 4 depth chart, with Matthews still listed at left tackle, as the short week began. SI Falcons (Oct 6) flagged Matthews' groin injury as the bigger concern for the quick turnaround; Michael Jerrell played the rest of Monday's game at LT. The first injury report of Ravens week is due Wednesday.",
+      category: "injuries",
+      sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-week-5-depth-chart-vs-baltimore-ravens",
+      sourceLabel: "atlantafalcons.com / SI Falcons",
+    },
     {
       title: "Falcons 45, Saints 24: Atlanta never trails in the Superdome and is 2-2, tied with Carolina for first in the NFC South",
       detail: "AP and CBS Sports (Monday night, Oct 5): the Falcons ran for 205 yards to New Orleans' 50 and committed no turnovers, winning back-to-back road games by 20-plus points. Tyler Shough threw for 286 yards and Alvin Kamara scored his first two touchdowns of the season, but the Saints fell to 1-3. 'Fans understandably are upset. You're playing the Falcons and you lose like that? I'd boo, too,' Shough said.",
@@ -2710,13 +2741,6 @@ export const NEWS_DIGEST = {
       category: "injuries",
       sourceUrl: "https://www.si.com/nfl/falcons/onsi/falcons-lose-pair-of-crucial-players-on-monday-night-football",
       sourceLabel: "atlantafalcons.com / SI Falcons / Heavy",
-    },
-    {
-      title: "Next: Baltimore on Sunday Night Football, and Lamar Jackson's ankle is the week's first question",
-      detail: "NBC Sports / PFT and SI Betting (Monday, Oct 5): the Ravens (3-1) beat Tennessee 24-18 on Sunday but Jackson left with a left ankle injury after a late second-quarter sack. 'I don't know the chances yet. We're still gathering a lot of the information, imaging, things like that,' coach Jesse Minter said, adding he did not expect it to be 'crazy long term.' The line has moved from Ravens -6 at open to about -2.5 to -3.5. Kickoff is 8:20 p.m. ET Sunday at Mercedes-Benz Stadium on NBC.",
-      category: "games",
-      sourceUrl: "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jesse-minter-unsure-of-lamar-jacksons-availability-for-week-5-vs-falcons",
-      sourceLabel: "NBC Sports / PFT / SI Betting",
     },
     {
       title: "Questionable trio all play: Divine Deablo, Samson Ebukam and Yasir Abdullah were active in New Orleans",
@@ -2747,25 +2771,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "buccaneers.com",
     },
     {
-      title: "Penix on the Superdome: 'It's a nice dome. That's probably the only nice thing I can say about them'",
-      detail: "Thursday press conference (Oct 1), via Newsweek, Yahoo and SI: Penix added some heat to the rivalry before his first Saints game since returning from the ACL tear. SI (Oct 2) also noted he took a career-high 35 of 71 snaps under center at Green Bay, after one under-center pass attempt in all of 2025; 'Under center was never hard for me. I just do what I'm told to do,' he said.",
-      category: "games",
-      sourceUrl: "https://www.newsweek.com/sports/nfl/michael-penix-jr-throws-shade-at-saints-ahead-of-monday-night-matchup-12513970",
-      sourceLabel: "Newsweek / Yahoo Sports / SI Falcons",
-    },
-    {
       title: "Brian Asamoah II is officially a Falcon: the former Vikings third-rounder takes the 16th and final practice-squad spot, wearing No. 41",
       detail: "Yahoo Sports and the atlantafalcons.com roster (Oct 1-2): the 26-year-old Oklahoma linebacker, reported on Sep 30, was signed to the practice squad rather than the 53, filling it for Week 4. He has 30 tackles and two forced fumbles in 50 career games with Minnesota and Cincinnati and projects as special-teams depth.",
       category: "free-agency",
       sourceUrl: "https://sports.yahoo.com/articles/falcons-sign-veteran-lb-final-113114312.html",
       sourceLabel: "Yahoo Sports / atlantafalcons.com",
-    },
-    {
-      title: "Bijan Robinson is NFC Offensive Player of the Week for the third time in his career, and he leads the NFL with 467 scrimmage yards",
-      detail: "atlantafalcons.com (Wednesday, Sep 30): the award recognizes Robinson's 194 rushing yards and two touchdowns (213 from scrimmage) at Green Bay. It was his seventh prime-time game with 100-plus scrimmage yards, a franchise record, and his first two Player of the Week awards also came in prime time in 2025. 'We have to really flush this game and get ready for the Saints,' Robinson said.",
-      category: "games",
-      sourceUrl: "https://www.atlantafalcons.com/news/bijan-robinson-nfc-offensive-player-week-packers",
-      sourceLabel: "atlantafalcons.com",
     },
     {
       title: "Falcons pay Gervon Dexter Sr.: a four-year, $78 million extension with $46.5 million guaranteed, one month after trading for him",
