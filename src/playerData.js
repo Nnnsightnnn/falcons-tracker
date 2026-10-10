@@ -323,7 +323,7 @@ export const PLAYERS = [
     stats: {},
     form: 8.5,
     status: "questionable",
-    injuryNote: "LT · restructured March 2026 (cleared $10.5M). Left the 45-24 win at New Orleans (Oct 5) late in the first quarter with a groin injury and was ruled out before the second half, in his 200th career game (fourth Falcon to reach 200) and with the NFL's longest active consecutive-starts streak (199) on the line. Michael Jerrell replaced him. The Week 5 depth chart (released Oct 6) was unchanged from Week 4 and still lists him at LT. Did not participate (groin) on Wednesday's estimated report (Oct 7), a walkthrough on the short week, then returned to practice as a limited participant on Thursday (Oct 8), per atlantafalcons.com; game designations come Friday, and SportsTalkATL calls him a game-time decision for Sunday night vs. Baltimore.",
+    injuryNote: "LT · restructured March 2026 (cleared $10.5M). Left the 45-24 win at New Orleans (Oct 5) late in the first quarter with a groin injury and was ruled out before the second half, in his 200th career game (fourth Falcon to reach 200) and with the NFL's longest active consecutive-starts streak (199) on the line. Michael Jerrell replaced him. The Week 5 depth chart (released Oct 6) was unchanged from Week 4 and still lists him at LT. Did not participate (groin) on Wednesday's estimated report (Oct 7), a walkthrough on the short week, then returned to practice as a limited participant on Thursday (Oct 8), per atlantafalcons.com. Upgraded to a full participant on Friday (Oct 9) and listed questionable for Sunday night vs. Baltimore; SportsTalkATL calls him a game-time decision, and if he plays it would be his 200th consecutive start.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/16713.png",
     contract: { years: 3, total: 55500000, guaranteed: 0, apy: 18500000, throughYear: 2027, cap2026: 15500000 },
     career: [
@@ -523,7 +523,7 @@ export const PLAYERS = [
     stats: {},
     form: 6.2,
     status: "questionable",
-    injuryNote: "Claimed off waivers from Jacksonville on Sept 1, a 2023 fifth-round pick (No. 136) out of Louisville, an undersized, twitchy edge/outside linebacker (6-1, 240) who adds pass-rush depth to a room down Jalon Walker for the year and James Pearce Jr. for eight games. Listed questionable (illness) for Week 4 but was not among the inactives for the 45-24 win at New Orleans (Oct 5). Did not participate (hamstring) on the Week 5 estimated report (Wednesday, Oct 7) or in Thursday's practice (Oct 8).",
+    injuryNote: "Claimed off waivers from Jacksonville on Sept 1, a 2023 fifth-round pick (No. 136) out of Louisville, an undersized, twitchy edge/outside linebacker (6-1, 240) who adds pass-rush depth to a room down Jalon Walker for the year and James Pearce Jr. for eight games. Listed questionable (illness) for Week 4 but was not among the inactives for the 45-24 win at New Orleans (Oct 5). Did not participate (hamstring) on the Week 5 estimated report (Wednesday, Oct 7) or in Thursday's (Oct 8) and Friday's (Oct 9) practices, and was ruled OUT for Sunday night vs. Baltimore on the final report (Oct 9). Status kept at questionable because the tracker schema has no single-game 'out' value.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4360807.png",
     contract: { years: 1, total: 1170000, guaranteed: 0, apy: 1170000, throughYear: 2026, cap2026: 1170000 },
     career: [
@@ -741,7 +741,7 @@ export const PLAYERS = [
     stats: { tackles: 24, sacks: 9, ff: 1 },
     form: 7.4,
     status: "questionable",
-    injuryNote: "Signed Aug 18 to a one-year deal worth $6M and up to $8M with incentives, un-retiring after leaving the game in October 2025 following five games with the Eagles. Three-time Pro Bowler, reunited with HC Kevin Stefanski (his coach in Cleveland, 2023-24), and the REDGE starter with Jalon Walker (ACL) out for the year and James Pearce Jr. serving an eight-game ban. Entered Week 4 leading the team with 2.5 sacks (SI Falcons). Left the 45-24 win at New Orleans (Oct 5) in the first quarter with a concussion and neck injury and did not return; now in the concussion protocol ahead of Sunday night vs. Baltimore and listed as did not participate (concussion, neck) on Wednesday's estimated report (Oct 7) and again in Thursday's practice (Oct 8).",
+    injuryNote: "Signed Aug 18 to a one-year deal worth $6M and up to $8M with incentives, un-retiring after leaving the game in October 2025 following five games with the Eagles. Three-time Pro Bowler, reunited with HC Kevin Stefanski (his coach in Cleveland, 2023-24), and the REDGE starter with Jalon Walker (ACL) out for the year and James Pearce Jr. serving an eight-game ban. Entered Week 4 leading the team with 2.5 sacks (SI Falcons). Left the 45-24 win at New Orleans (Oct 5) in the first quarter with a concussion and neck injury and did not return; now in the concussion protocol ahead of Sunday night vs. Baltimore and listed as did not participate (concussion, neck) on Wednesday's estimated report (Oct 7) and again in Thursday's practice (Oct 8). Returned as a limited participant on Friday (Oct 9) and listed questionable for Sunday night vs. Baltimore.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/3043168.png",
     contract: { years: 1, total: 6000000, guaranteed: 3500000, apy: 6000000, throughYear: 2026, cap2026: 6000000 },
     career: [
@@ -766,8 +766,8 @@ export const PLAYERS = [
     acquired: "fa-2026-1yr",
     stats: { tackles: 31, sacks: 4 },
     form: 6.9,
-    status: "active",
-    injuryNote: "Signed March 12 on a one-year, $2.765M deal for veteran edge depth. Entering his ninth active NFL season across the Rams, 49ers and Colts; missed the 2024 season with a torn Achilles before returning in Indianapolis. Slides up to the LEDGE starter role after Atlanta's surprise cutdown-day release of Azeez Ojulari, working opposite Za'Darius Smith with Pearce serving an eight-game ban from Aug 30. Missed the Week 3 win at Green Bay (hamstring), then returned from a questionable tag to play in the 45-24 Monday-night win at New Orleans (Oct 5). Added to the Week 5 report as limited (hamstring) on Thursday (Oct 8).",
+    status: "questionable",
+    injuryNote: "Signed March 12 on a one-year, $2.765M deal for veteran edge depth. Entering his ninth active NFL season across the Rams, 49ers and Colts; missed the 2024 season with a torn Achilles before returning in Indianapolis. Slides up to the LEDGE starter role after Atlanta's surprise cutdown-day release of Azeez Ojulari, working opposite Za'Darius Smith with Pearce serving an eight-game ban from Aug 30. Missed the Week 3 win at Green Bay (hamstring), then returned from a questionable tag to play in the 45-24 Monday-night win at New Orleans (Oct 5). Added to the Week 5 report as limited (hamstring) on Thursday (Oct 8), limited again Friday (Oct 9) and listed questionable for Sunday night vs. Baltimore.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/3045527.png",
     contract: { years: 1, total: 2765000, guaranteed: 1500000, apy: 2765000, throughYear: 2026, cap2026: 2765000 },
     career: [
@@ -816,8 +816,8 @@ export const PLAYERS = [
     acquired: "fa-2026",
     stats: { tackles: 92, tfl: 7, sacks: 2, int_def: 1 },
     form: 8.0,
-    status: "active",
-    injuryNote: "MIKE · 3yr/$30M FA splash from LV. Limited in practice with a hamstring all week (Oct 1-3) and listed questionable, but was active and played in the 45-24 Monday-night win at New Orleans (Oct 5); has not missed a game. Added to the Week 5 report as limited (hamstring) on Thursday (Oct 8).",
+    status: "questionable",
+    injuryNote: "MIKE · 3yr/$30M FA splash from LV. Limited in practice with a hamstring all week (Oct 1-3) and listed questionable, but was active and played in the 45-24 Monday-night win at New Orleans (Oct 5); has not missed a game. Added to the Week 5 report as limited (hamstring) on Thursday (Oct 8), limited again Friday (Oct 9) and listed questionable for Sunday night vs. Baltimore.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4037626.png",
     contract: { years: 3, total: 30000000, guaranteed: 18000000, apy: 10000000, throughYear: 2028, cap2026: 8500000 },
     career: [
@@ -1662,7 +1662,7 @@ export const NEXT_GAME = {
   date: "2026-10-11",
   kickoff: "8:20 PM ET",
   tv: "NBC",
-  note: "Sunday Night Football at Mercedes-Benz Stadium (NBC), the Falcons' third straight prime-time game. Atlanta (2-2) arrives off a 45-24 win at New Orleans in which Bijan Robinson (145 yards, two TDs) and Brian Robinson Jr. (three TDs) ran for five scores and Michael Penix Jr. (15-of-20, 223, TD) improved to 2-0 as the starter with no turnovers. On Thursday's report (Oct 8), LT Jake Matthews (groin) returned as a limited participant, OT Michael Jerrell (ankle) and DE Cam Thomas (shoulder) were full, LB Divine Deablo and DE Samson Ebukam were added as limited (hamstring), and edge Za'Darius Smith (concussion, neck) and LB Yasir Abdullah (hamstring) sat out again. Game designations come Friday. Baltimore (3-1) beat Tennessee 24-18 on Oct 4, but Lamar Jackson (ankle) missed a second straight practice Thursday, with Tyler Huntley set to start if he cannot go; Jesse Minter has said Jackson does not need to practice to play, though ESPN's Adam Schefter calls his chances 'realistic.' Trey Hendrickson (finger), Marlon Humphrey (hamstring, calf) and new C Cam Jurgens (concussion) also missed Thursday, while LT Ronnie Stanley and S Kyle Hamilton returned to full work. Atlanta is favored by 3 to 3.5 (DraftKings -3, Oct 7; Fanatics -3.5, Oct 8) with a 43.5 total. Atlanta's No. 1 run defense (48.3 yards a game) meets Baltimore's No. 4 rushing offense (153.5) and Derrick Henry, who on Thursday called Bijan 'the best in the game right now.' Next: Chicago at home in Week 6.",
+  note: "Sunday Night Football at Mercedes-Benz Stadium (NBC), the Falcons' third straight prime-time game and the first red-out in the stadium's history, with John Abraham inducted into the Ring of Honor at halftime. Atlanta (2-2) arrives off a 45-24 win at New Orleans in which Bijan Robinson (145 yards, two TDs) and Brian Robinson Jr. (three TDs) ran for five scores and Michael Penix Jr. (15-of-20, 223, TD) improved to 2-0 as the starter with no turnovers. Baltimore (3-1) ruled out Lamar Jackson (ankle) and Trey Hendrickson (finger) on Friday (Oct 9); Tyler Huntley (7-9 in 16 career starts, 2-0 last season) makes his 17th start, and new C Cam Jurgens (concussion) is not expected to debut until Week 6. Zay Flowers (foot), Marlon Humphrey (hamstring, calf) and G Andrew Vorhees (foot) are questionable. Atlanta's final report: LB Yasir Abdullah (hamstring) is out; LT Jake Matthews (groin, full on Friday), edge Za'Darius Smith (concussion, neck, limited), LB Divine Deablo and DE Samson Ebukam (both hamstring, limited) are questionable. The Falcons were 3- to 3.5-point favorites with a 43.5 total before Jackson was ruled out. Atlanta's No. 1 run defense (48.3 yards a game) meets Baltimore's No. 4 rushing offense and Derrick Henry (374 yards, seven TDs). Next: Chicago at home in Week 6.",
 };
 
 // =========================================
@@ -1777,7 +1777,7 @@ export const SCHEDULE_2026 = [
     kickoffET: "8:20 PM ET",
     tv: "NBC",
     venue: "Mercedes-Benz Stadium, Atlanta",
-    note: "Sunday Night Football · third straight primetime, vs. Lamar Jackson.",
+    note: "Sunday Night Football · third straight primetime. Lamar Jackson (ankle) ruled out Oct 9; Tyler Huntley starts. Red-out night and John Abraham Ring of Honor induction.",
   },
   {
     week: 6,
@@ -2025,18 +2025,18 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-10-09T08:45:00Z",
+  generatedAt: "2026-10-10T09:00:00Z",
   cover: {
-    kicker: "Ravens week · Jake Matthews is back at practice, Lamar Jackson is not, and Friday's designations decide the rest",
-    headLine1: "Matthews back,",
-    headEm: "Lamar still out.",
-    headLine3: "Atlanta's left tackle returned as a limited participant Thursday while Baltimore's quarterback missed a second straight day, leaving Tyler Huntley on track to start Sunday night unless Jackson works Friday.",
+    kicker: "Ravens week \u00b7 Baltimore rules out Lamar Jackson and Trey Hendrickson, and Tyler Huntley gets the Sunday night start in Atlanta",
+    headLine1: "No Lamar.",
+    headEm: "Huntley it is.",
+    headLine3: "The Ravens ruled out their two-time MVP and their top pass rusher on Friday, while Atlanta's own report broke kindly: Jake Matthews practiced fully and Za'Darius Smith returned, both questionable.",
     deck:
-      "The best news of the Falcons' short week came Thursday: Jake Matthews, who left Monday's win at New Orleans with a groin injury, practiced on a limited basis, and Michael Jerrell (ankle) and Cam Thomas (shoulder) were full. The list grew in other places. LB Divine Deablo and DE Samson Ebukam were added as limited with hamstring injuries, and Za'Darius Smith (concussion, neck) and Yasir Abdullah (hamstring) sat out again. In Owings Mills, Lamar Jackson was absent for a second day, along with Trey Hendrickson, Marlon Humphrey and Cam Jurgens. Jesse Minter has said Jackson does not need to practice to play, and Adam Schefter calls his chances realistic, but if he does no work by the end of Friday there is little reason to expect him in Atlanta. The book still has the Falcons favored by 3 to 3.5. And from the other sideline, Derrick Henry offered the week's best quote: Bijan Robinson is 'the best in the game right now.'",
+      "Friday settled the week's biggest question. Jesse Minter announced that Lamar Jackson (ankle) will not play Sunday night, and Trey Hendrickson (finger) is out too, so Tyler Huntley makes his 17th career start. Kevin Stefanski knows him well: he coached Huntley in Cleveland and called him 'one of my favorites to coach,' adding, 'Last time I played him, he beat us.' Atlanta's side of the ledger improved. Jake Matthews was a full participant and is questionable, with his 200th straight start on the line; Za'Darius Smith returned as limited and is questionable as well, along with Divine Deablo and Samson Ebukam. Only Yasir Abdullah is out. Sunday is also the first red-out in Mercedes-Benz Stadium history, with John Abraham, the franchise sack leader, going into the Ring of Honor at halftime.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
-    stampLabel: "Week 5 · Ravens at Falcons · Sunday Night Football, Oct 11, 8:20 PM ET, NBC · Falcons 2-2, tied for first · Falcons -3 to -3.5",
+    stampLabel: "Week 5 · Ravens at Falcons · Sunday Night Football, Oct 11, 8:20 PM ET, NBC · Falcons 2-2, tied for first · Lamar Jackson OUT, Huntley starts",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2669,6 +2669,8 @@ export const NEWS_DIGEST = {
     // practice, the line swinging to Falcons -3, the Jurgens trade and Atlanta's first Week 5 injury report; pointer and fallback unchanged.
     // STATUS (2026-10-09 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto Thursday's reports (Matthews back
     // limited, Jackson out a second day, Deablo and Ebukam added) and Derrick Henry's Bijan quote; pointer and penix-jr fallback unchanged.
+    // STATUS (2026-10-10 cloud run): image request SKIPPED (cloud run). Kicker and deck rebuilt around Friday's final reports (Jackson and
+    // Hendrickson ruled out, Huntley to start; Matthews full and questionable, Smith back limited) and Sunday's red-out / Abraham induction; pointer unchanged.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
@@ -2690,21 +2692,50 @@ export const NEWS_DIGEST = {
     "SI Ravens", "Yahoo Sports (Ravens)", "CBS Sports (Ravens)",
     "baltimoreravens.com", "Baltimore Positive (WNST)", "Newsweek (Ravens)", "SI Falcons (Oct 7)", "EssentiallySports",
     "SportsTalkATL", "SI Betting (Oct 8)", "KMJ / AP preview",
+    "AJC (Oct 9)", "Athlon Sports (Yahoo)", "NBC Washington", "SI Ravens (Oct 9)", "Audacy 92.9 The Game (Oct 9)",
   ],
   topics: [
     {
-      title: "Jake Matthews returns to practice; Deablo and Ebukam added to the report as Za'Darius Smith sits again",
-      detail: "atlantafalcons.com (Thursday, Oct 8): LT Matthews (groin), who left Monday's win in the first half, was upgraded to limited, and OT Michael Jerrell (ankle) and DE Cam Thomas (shoulder) were full. LB Divine Deablo and DE Samson Ebukam were added as limited with hamstring injuries, while edge Za'Darius Smith (concussion, neck), still in the protocol, and LB Yasir Abdullah (hamstring) did not practice. Game designations are due Friday.",
+      title: "Ravens rule out Lamar Jackson and Trey Hendrickson; Tyler Huntley starts Sunday night",
+      detail: "baltimoreravens.com, AP and Athlon Sports (Friday, Oct 9): Jesse Minter announced that Jackson (ankle), who missed all three practices, will not play, and Hendrickson (finger) misses a second straight game after a hand procedure. Huntley, 7-9 in 16 career starts and 2-0 last season, makes his 17th start; in Week 4 relief he went 8-of-9 for 63 yards. Zay Flowers (foot), Marlon Humphrey (hamstring, calf) and G Andrew Vorhees (foot) are questionable, and C Cam Jurgens (concussion) is not expected to debut until Week 6.",
       category: "injuries",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-injury-report-ilb-divine-deablo-de-samson-ebukam-added-to-report",
-      sourceLabel: "atlantafalcons.com / PFT / SportsTalkATL",
+      sourceUrl: "https://www.baltimoreravens.com/news/lamar-jackson-trey-hendrickson-injury-report-marlon-humphrey-zay-flowers-ronnie-stanley-ravens-falcons",
+      sourceLabel: "baltimoreravens.com / AP / Athlon Sports",
     },
     {
-      title: "Lamar Jackson misses a second straight practice, and Friday becomes the deadline",
-      detail: "PFT and baltimoreravens.com (Thursday, Oct 8): Jackson (ankle) again stayed off the field, as did Trey Hendrickson (finger), Marlon Humphrey (hamstring, calf) and C Cam Jurgens (concussion), while LT Ronnie Stanley and S Kyle Hamilton returned to full work. Minter has said Jackson does not need to practice to play, and ESPN's Adam Schefter calls his chances 'realistic,' but PFT notes there is little reason to expect him if he does no work by the end of Friday. Tyler Huntley would make his 17th career start.",
+      title: "Final report: Matthews full and questionable, Za'Darius Smith back on the field, only Abdullah ruled out",
+      detail: "atlantafalcons.com (Friday, Oct 9): LT Jake Matthews (groin) was a full participant and is questionable, with his 200th consecutive start at stake. Edge Za'Darius Smith (concussion, neck) returned as limited and is questionable, as are LB Divine Deablo and DE Samson Ebukam (both hamstring, limited). LB Yasir Abdullah (hamstring) is out. OT Michael Jerrell (ankle) and DE Cam Thomas (shoulder) were full and carry no designation.",
       category: "injuries",
-      sourceUrl: "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/lamar-jackson-remains-out-of-ravens-practice-thursday",
-      sourceLabel: "NBC Sports / PFT / baltimoreravens.com",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-injury-report-vs-ravens-za-darius-smith-jake-matthews",
+      sourceLabel: "atlantafalcons.com / Yahoo Sports",
+    },
+    {
+      title: "Stefanski on Huntley: 'one of my favorites to coach,' and 'last time I played him, he beat us'",
+      detail: "AJC (Friday, Oct 9): Stefanski coached Huntley in Cleveland's 2024 offseason program and part of 2025 camp, and faced him three times with the Browns (70.2% completions, 633 yards, two TDs, one INT; his teams went 1-2). 'He can make every throw. He can extend every play,' Stefanski said. DC Jeff Ulbrich said Atlanta prepared for both quarterbacks: 'They do have a similar skill set.'",
+      category: "coaching",
+      sourceUrl: "https://www.ajc.com/sports/2026/10/ravens-rule-out-qb-lamar-jackson-falcons-to-face-tyler-huntley/",
+      sourceLabel: "AJC / Audacy 92.9 The Game",
+    },
+    {
+      title: "Huntley on starting again: 'It's just like riding a bike'",
+      detail: "baltimoreravens.com (Friday, Oct 9): told Friday he would start after taking the first-team reps all week, Huntley said regular practice snaps leave him sharper, and when asked whether the training wheels were off he answered, 'Yes, definitely.' Minter: ''Snoop' has done a great job this week, and we have operated at a high level, and I expect him to play really well.'",
+      category: "games",
+      sourceUrl: "https://www.baltimoreravens.com/news/tyler-huntley-starting-lamar-jackson-jakobi-lane-nick-vannett-zion-young-ravens-falcons",
+      sourceLabel: "baltimoreravens.com",
+    },
+    {
+      title: "Red-out night: John Abraham joins the Ring of Honor at halftime",
+      detail: "atlantafalcons.com and AJC (Oct 7-9): Sunday is the first red-out in Mercedes-Benz Stadium history, timed with the unveiling of the Falcons' new red uniforms, and fans are asked to be seated by 8 p.m. Abraham, whose 68.5 sacks are the most in team history, is inducted at halftime; Bill Fralic follows posthumously in Week 16 vs. Tampa Bay. 'We need all our fans to show up,' Penix said.",
+      category: "general",
+      sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-induct-john-abraham-bill-fralic-ring-of-honor-2026",
+      sourceLabel: "atlantafalcons.com / AJC",
+    },
+    {
+      title: "Bijan's 614 scrimmage yards are his best four-game start, and Atlanta's two-week surge is a league first",
+      detail: "atlantafalcons.com (Friday, Oct 9): Robinson's 339 rushing yards over the last two games are second-most in a two-game span in team history, one behind Warrick Dunn's 340 (November 2003). Per the team, Atlanta is the only club in NFL history with a two-game stretch of 80-plus points, 800-plus yards, no more than one turnover and no more than one sack allowed.",
+      category: "games",
+      sourceUrl: "https://atlantafalcons.com/news/falcons-news-now-top-headlines-falcons-sunday-night-football-baltimore-ravens",
+      sourceLabel: "atlantafalcons.com",
     },
     {
       title: "Derrick Henry on Bijan Robinson: 'He's the best in the game right now'",
@@ -2712,13 +2743,6 @@ export const NEWS_DIGEST = {
       category: "games",
       sourceUrl: "https://www.baltimoreravens.com/news/declan-doyle-confident-tyler-huntley-derrick-henry-calls-bijan-robinson-best-running-back-week-5-ravens-falcons",
       sourceLabel: "baltimoreravens.com / AP",
-    },
-    {
-      title: "Atlanta stays a field-goal favorite even after the 'realistic' Lamar report",
-      detail: "SI Betting (Thursday, Oct 8): Fanatics had the Falcons -3.5 after Schefter's update, a sign oddsmakers still expect Huntley, after DraftKings had Atlanta -3 with a 43.5 total on Wednesday. Baltimore opened as a six-point favorite on the lookahead line. Kickoff is 8:20 p.m. ET Sunday on NBC.",
-      category: "games",
-      sourceUrl: "https://www.si.com/betting/positive-lamar-jackson-injury-update-doesnt-alter-ravens-vs-falcons-odds-in-week-5",
-      sourceLabel: "SI Betting",
     },
     {
       title: "Penix on Baltimore's defense: 'It's hard to find a weak point'",
@@ -2742,13 +2766,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "SI Falcons",
     },
     {
-      title: "Falcons climb every Week 5 power ranking, as high as No. 19 at CBS Sports",
-      detail: "atlantafalcons.com roundup (Tuesday, Oct 6): ESPN 25th (up 4), The Athletic 22nd (up 3), Bleacher Report and FOX Sports 21st (up 4), CBS 19th (up 2). Atlanta's 80 points over the last two games are the most in the NFL in that span; The Athletic listed its concern level as 'waning, as long as they have Bijan Robinson.'",
-      category: "general",
-      sourceUrl: "https://www.atlantafalcons.com/news/week-5-nfl-power-rankings-roundup-falcons-on-the-move-after-mnf-win",
-      sourceLabel: "atlantafalcons.com",
-    },
-    {
       title: "Falcons 45, Saints 24: Atlanta never trails in the Superdome and is 2-2, tied with Carolina for first in the NFC South",
       detail: "AP and CBS Sports (Monday night, Oct 5): the Falcons ran for 205 yards to New Orleans' 50 and committed no turnovers, winning back-to-back road games by 20-plus points. Tyler Shough threw for 286 yards and Alvin Kamara scored his first two touchdowns of the season, but the Saints fell to 1-3. 'Fans understandably are upset. You're playing the Falcons and you lose like that? I'd boo, too,' Shough said.",
       category: "games",
@@ -2770,13 +2787,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "AP / FOX Sports / atlantafalcons.com",
     },
     {
-      title: "Injuries: Za'Darius Smith (concussion, neck) and Jake Matthews (groin) both leave in the first half",
-      detail: "atlantafalcons.com, SI Falcons and Heavy (Oct 5-6): Smith, who entered the night leading the team with 2.5 sacks, was hurt in the first quarter and ruled out in the second. Matthews, playing his 200th career game with the NFL's longest active starts streak (199), left late in the first quarter and was ruled out before the second half; Michael Jerrell took over at left tackle. No timeline was given for either, and Smith's loss thins an edge room already without Jalon Walker and James Pearce Jr.",
-      category: "injuries",
-      sourceUrl: "https://www.si.com/nfl/falcons/onsi/falcons-lose-pair-of-crucial-players-on-monday-night-football",
-      sourceLabel: "atlantafalcons.com / SI Falcons / Heavy",
-    },
-    {
       title: "Falcons pay Gervon Dexter Sr.: a four-year, $78 million extension with $46.5 million guaranteed, one month after trading for him",
       detail: "atlantafalcons.com, ESPN and National Football Post (Wednesday, Sep 30): the defensive tackle acquired from Chicago on Aug 30 for CB Clark Phillips III and a 2027 fifth-rounder is now signed through 2030 at $19.5 million a year. Through three games he has 15 pressures and ranks eighth in the NFL in pressure rate (20.5%). 'Gervon is a young, ascending talent whose power, disruption and impact along the defensive line are difficult to find,' GM Ian Cunningham said.",
       category: "contracts",
@@ -2793,9 +2803,29 @@ export const NEWS_DIGEST = {
 // back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
 // reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-10-09T08:45:00Z",
+  generatedAt: "2026-10-10T09:00:00Z",
   windowLabel: "Saints postgame → Ravens Week · Oct 5 → Oct 11",
   sessions: [
+    {
+      id: "stefanski-2026-10-09",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-10-09",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Week 5 vs. Baltimore · Friday Media Availability",
+      sourceUrl: "https://www.ajc.com/sports/2026/10/ravens-rule-out-qb-lamar-jackson-falcons-to-face-tyler-huntley/",
+      transcriptUrl: "https://www.audacy.com/929thegame/video/stefanski-is-familiar-with-tyler-huntley-xbkeuwa",
+      verified: true,
+      summary: "On the day Baltimore ruled out Lamar Jackson, Stefanski spoke warmly about the quarterback he will see instead. He coached Tyler Huntley in Cleveland and has lost to him before, and he made clear Atlanta is not treating the backup as a downgrade.",
+      pullQuote: "He can make every throw. He can extend every play.",
+      bullets: [
+        "On Huntley personally: 'He's an outstanding player, great person and one of my favorites to coach'",
+        "On their history: 'Last time I played him, he beat us.' Huntley's teams went 1-2 against Stefanski's Browns, completing 70.2% for 633 yards (AJC)",
+        "Stefanski coached Huntley in the Browns' 2024 offseason program and for three weeks of 2025 training camp (AJC)",
+        "DC Jeff Ulbrich, same day, on preparing for both quarterbacks: 'They do have a similar skill set. They're both very athletic; both have the ability to make every throw'",
+      ],
+      topics: ["ravens-week", "week-5", "huntley", "opponent-scouting"],
+    },
     {
       id: "penix-2026-10-07",
       speaker: "Michael Penix Jr.",
@@ -2892,25 +2922,6 @@ export const INTERVIEWS = {
         "On the extra time: 'You have to really make sure that you're focused on things that your players can execute'",
       ],
       topics: ["saints-week", "game-plan", "week-4"],
-    },
-    {
-      id: "tagovailoa-2026-09-29",
-      speaker: "Tua Tagovailoa",
-      role: "Quarterback",
-      date: "2026-09-29",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "Week 4 vs. New Orleans · Post-Practice Media Availability",
-      sourceUrl: "https://www.si.com/nfl/falcons/onsi/tua-tagovailoa-opens-up-on-his-role-as-atlanta-falcons-backup-qb",
-      transcriptUrl: "https://www.atlantafalcons.com/video/atlanta-falcons-tua-tagovailoa-and-maason-smith-speak-to-the-media-post-practice-press-conference",
-      verified: true,
-      summary: "In his first extended comments since Michael Penix Jr. took over, the Week 1 starter described the oblique injury that cost him the job and defined his new role plainly: support the starter. He did not concede the competition, but left no doubt about the current pecking order.",
-      pullQuote: "Mike's the guy. We have to do everything we can to support him, and we're going to support him.",
-      bullets: [
-        "On the injury: thought at first his back had locked up before it was diagnosed as an oblique strain, 'it's unfortunate, but it is what it is'",
-        "On his role: 'You've got to do everything you can to make sure you're not the reason he's failing,' through film, extra throws and questions",
-        "On the competition: 'I'm always going to look at it as a competition. But as I said, this is the job description right now'",
-      ],
-      topics: ["qb-room", "backup-role", "saints-week"],
     },
   ],
 };
