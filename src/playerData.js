@@ -27,7 +27,7 @@ export const PLAYERS = [
     stats: { completions: 166, attempts: 276, passYds: 1982, passTDs: 9, ints: 3, qbRating: 88.5 },
     form: 0,
     status: "active",
-    injuryNote: "Sat out the first two games while completing his return from November 2025 ACL surgery; named the Week 3 starter on Monday, Sept 21, his first game action since the injury, for Thursday night at Green Bay. Listed as a full participant (knee) on the Week 3 estimated report. Roughly ten months from surgery and building toward full strength",
+    injuryNote: "Ribs. Hurt on a Tavius Robinson sack in the final half-minute of regulation in the 30-23 overtime loss to Baltimore (Oct 11), returned for one incompletion, then sat out overtime as Tua Tagovailoa finished. Stefanski said imaging is scheduled for Monday (Oct 12); Penix said it is 'not something that is going to be a long-term thing' and expects to play Week 6 vs. Chicago. Third start back from November 2025 ACL surgery (19-of-32, 240, TD, no turnovers)",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
     contract: { years: 4, total: 22080000, guaranteed: 22080000, apy: 5520000, throughYear: 2027, cap2026: 5900000 },
     career: [
@@ -969,7 +969,7 @@ export const PLAYERS = [
     stats: { tackles: 28, pass_def: 5 },
     form: 6.6,
     status: "active",
-    injuryNote: "Named the starting cornerback on the Week 4 depth chart (Sep 29) in place of A.J. Terrell (IR, groin) after breaking up multiple passes in the Week 3 win at Green Bay · Reclamation · ex-#9 overall (2020 JAX)",
+    injuryNote: "Groin. Stefanski listed it among the injuries after the 30-23 overtime loss to Baltimore (Oct 11); no timeline yet. Started at cornerback since the Week 4 depth chart (Sep 29) in place of A.J. Terrell (IR, groin) · Reclamation · ex-#9 overall (2020 JAX)",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4240596.png",
     contract: { years: 1, total: 2200000, guaranteed: 750000, apy: 2200000, throughYear: 2026, cap2026: 2200000 },
     career: [
@@ -1675,15 +1675,15 @@ export const RSS_FEEDS = [
 // NEXT GAME (null during offseason)
 // =========================================
 export const NEXT_GAME = {
-  week: 5,
-  opp: "Baltimore Ravens",
-  oppAbbr: "BAL",
+  week: 6,
+  opp: "Chicago Bears",
+  oppAbbr: "CHI",
   home: true,
   venue: "Mercedes-Benz Stadium · Atlanta, Ga.",
-  date: "2026-10-11",
-  kickoff: "8:20 PM ET",
-  tv: "NBC",
-  note: "Sunday Night Football at Mercedes-Benz Stadium (NBC), the Falcons' third straight prime-time game and the first red-out in the stadium's history, with John Abraham inducted into the Ring of Honor at halftime. Atlanta (2-2) arrives off a 45-24 win at New Orleans in which Bijan Robinson (145 yards, two TDs) and Brian Robinson Jr. (three TDs) ran for five scores and Michael Penix Jr. (15-of-20, 223, TD) improved to 2-0 as the starter with no turnovers. Baltimore (3-1) ruled out Lamar Jackson (ankle) and Trey Hendrickson (finger) on Friday (Oct 9); Tyler Huntley (7-9 in 16 career starts, 2-0 last season) makes his 17th start, and new C Cam Jurgens (concussion) is not expected to debut until Week 6. Zay Flowers (foot), Marlon Humphrey (hamstring, calf) and G Andrew Vorhees (foot) are questionable. Atlanta's final report listed LT Jake Matthews (groin, full on Friday), LB Divine Deablo and DE Samson Ebukam (both hamstring, limited) as questionable; on Saturday (Oct 10) edge Za'Darius Smith (concussion, neck) was downgraded to out, LB Yasir Abdullah (hamstring) went to injured reserve, S Jammie Robinson was signed to the 53 and DEs Bralen Trice and Drake Jackson were elevated. Baltimore elevated OT Chuma Edoga and G Kyle Hergel. The Falcons are 3.5-point favorites with a 43.5 total (Covers, Saturday night), a swing of nearly 10 points from Baltimore's -6 look-ahead line. Atlanta's No. 1 run defense (48.3 yards a game) meets Baltimore's No. 4 rushing offense and Derrick Henry (374 yards, seven TDs). Next: Chicago at home in Week 6.",
+  date: "2026-10-18",
+  kickoff: "1:00 PM ET",
+  tv: "FOX",
+  note: "Atlanta (2-3) returns to Mercedes-Benz Stadium for a 1 PM kickoff after a 30-23 overtime loss to Baltimore on Sunday night, its first non-prime-time game since Week 2. The quarterback question leads the week: Michael Penix Jr. hurt his ribs on a sack in the final half-minute of regulation and sat out overtime, Kevin Stefanski said imaging comes Monday (Oct 12), and Penix said the injury is not long-term and 'I'mma be ready to go next week.' Tua Tagovailoa (2-of-3, 34, INT in relief) is the backup. CB C.J. Henderson (groin) was also hurt, and edge Za'Darius Smith (concussion, neck) is eligible to return after missing the Ravens game. Chicago arrives at 3-2. Atlanta trails Carolina by a half-game in the NFC South. Next: San Francisco at home in Week 7.",
 };
 
 // =========================================
@@ -1790,7 +1790,7 @@ export const SCHEDULE_2026 = [
   },
   {
     week: 5,
-    status: "confirmed",
+    status: "final",
     opponent: "BAL",
     opponentName: "Baltimore Ravens",
     side: "home",
@@ -1798,7 +1798,10 @@ export const SCHEDULE_2026 = [
     kickoffET: "8:20 PM ET",
     tv: "NBC",
     venue: "Mercedes-Benz Stadium, Atlanta",
-    note: "Sunday Night Football · third straight primetime. Lamar Jackson (ankle) ruled out Oct 9; Tyler Huntley starts. Za'Darius Smith (concussion) downgraded to out Oct 10. Falcons -3.5. Red-out night and John Abraham Ring of Honor induction.",
+    result: "L",
+    atlScore: 23,
+    oppScore: 30,
+    note: "Sunday Night Football · Ravens 30-23 (OT). Atlanta led 23-15 with 2:25 left, but Tyler Huntley (24-of-32, 201, two TDs) drove 71 yards for a TD and Derrick Henry ran in the tying two-point try. Michael Penix Jr. (19-of-32, 240, TD) hurt his ribs on a late sack; Huntley's 1-yard sneak won it in overtime and Kyle Hamilton picked off Tua Tagovailoa to end it. Jessie Bates III scored on a 36-yard fumble return.",
   },
   {
     week: 6,
@@ -2027,37 +2030,38 @@ export const RESULTS_2026 = [
   { date: "2026-09-20", opp: "CAR", home: true, atlScore: 3, oppScore: 34, result: "L" },
   { date: "2026-09-24", opp: "GB", home: false, atlScore: 35, oppScore: 14, result: "W" },
   { date: "2026-10-05", opp: "NO", home: false, atlScore: 45, oppScore: 24, result: "W" },
+  { date: "2026-10-11", opp: "BAL", home: true, atlScore: 23, oppScore: 30, result: "L", ot: true },
 ];
 
 // =========================================
-// NFC SOUTH 2026 STANDINGS — live (through Week 4, final after Monday Night Football Oct 5)
-// Atlanta won 45-24 at New Orleans to move to 2-2, tied with Carolina (beat Detroit 32-26 on Oct 4)
-// for first place. Carolina is listed first on the head-to-head tiebreaker (Panthers 34, Falcons 3
-// in Week 2). New Orleans falls to 1-3; Tampa Bay is 0-4.
+// NFC SOUTH 2026 STANDINGS — live (through Week 5, after Sunday Night Football Oct 11)
+// Atlanta lost 30-23 in overtime to Baltimore and falls to 2-3. Carolina (2-2) was on its Week 5 bye and
+// now sits alone in first. Tampa Bay beat Dallas 24-16 on Thursday (Oct 8) and New Orleans lost 23-13 to
+// Minnesota on Sunday, leaving both at 1-4 (listed in prior order; no head-to-head yet).
 // =========================================
 export const NFC_SOUTH_STANDINGS_2026 = [
   { team: "Carolina Panthers", code: "CAR", wins: 2, losses: 2, pct: 0.5, divisionFinish: 1 },
-  { team: "Atlanta Falcons", code: "ATL", wins: 2, losses: 2, pct: 0.5, divisionFinish: 2, isFalcons: true },
-  { team: "New Orleans Saints", code: "NO", wins: 1, losses: 3, pct: 0.25, divisionFinish: 3 },
-  { team: "Tampa Bay Buccaneers", code: "TB", wins: 0, losses: 4, pct: 0.0, divisionFinish: 4 },
+  { team: "Atlanta Falcons", code: "ATL", wins: 2, losses: 3, pct: 0.4, divisionFinish: 2, isFalcons: true },
+  { team: "New Orleans Saints", code: "NO", wins: 1, losses: 4, pct: 0.2, divisionFinish: 3 },
+  { team: "Tampa Bay Buccaneers", code: "TB", wins: 1, losses: 4, pct: 0.2, divisionFinish: 4 },
 ];
 
 // =========================================
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-10-11T08:45:00Z",
+  generatedAt: "2026-10-12T08:40:00Z",
   cover: {
-    kicker: "Game day \u00b7 Ravens at Falcons, Sunday Night Football, 8:20 PM ET on NBC, with Za'Darius Smith downgraded to out and Lamar Jackson already ruled out",
+    kicker: "Postgame \u00b7 Ravens 30, Falcons 23 (OT) on Sunday Night Football, with Michael Penix Jr. hurt late and imaging set for Monday",
     headLine1: "Red out.",
-    headEm: "Lights on.",
-    headLine3: "Atlanta hosts a Lamar-less Baltimore as a 3.5-point favorite, but Saturday took Za'Darius Smith off the board and sent Yasir Abdullah to injured reserve.",
+    headEm: "Lead gone.",
+    headLine3: "Atlanta led a Lamar-less Baltimore by eight with 2:25 to play, then lost Penix to a rib injury and the game in overtime.",
     deck:
-      "The week ends with both sides short a pass rusher. Za'Darius Smith (concussion, neck), questionable after a limited Friday, was downgraded to out on Saturday, and Yasir Abdullah went to injured reserve with the hamstring that kept him out all week. Safety Jammie Robinson takes the roster spot, and DEs Bralen Trice and Drake Jackson were elevated to fill out the edge with Samson Ebukam still questionable. Baltimore is without Lamar Jackson and Trey Hendrickson, so Tyler Huntley makes his 17th career start against the NFL's No. 1 run defense, which Jeff Ulbrich said would not change much either way: 'The offense is going to be similar either way.' Jake Matthews (groin) is questionable after a full Friday, with his 200th straight start on the line. It is the first red-out in Mercedes-Benz Stadium history, and John Abraham joins the Ring of Honor at halftime.",
+      "Tyler Huntley drove 71 yards in six plays, found Devontez Walker for the touchdown and handed the tying two-point try to Derrick Henry. On Atlanta's answer, Penix was sacked by Tavius Robinson and hurt his ribs, came back for one incompletion, and the Falcons punted on fourth-and-8. Baltimore opened overtime with a 14-play, 68-yard march that ended on Huntley's 1-yard sneak, and Kyle Hamilton intercepted Tua Tagovailoa on the second play of Atlanta's possession. The defense had its moments, including Jessie Bates III's 36-yard fumble-return touchdown and three sacks, but the No. 1 run defense gave up 208 rushing yards at 5.9 a carry. 'We had missed opportunities, and when you're playing a good football team, the margins are razor thin,' Kevin Stefanski said. Penix said the injury is not long-term: 'Knowing me, I'mma be ready to go next week.' Atlanta is 2-3, a half-game behind Carolina, with Chicago (3-2) up next.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
-    stampLabel: "Game day · Week 5 · Ravens at Falcons · Sunday Night Football, Oct 11, 8:20 PM ET, NBC · Falcons -3.5 · Lamar Jackson and Za'Darius Smith OUT",
+    stampLabel: "Final/OT · Week 5 · Ravens 30, Falcons 23 · Penix (ribs) imaging Monday · Falcons 2-3 · Next: Bears, Sun Oct 18, 1 PM ET, FOX",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2692,6 +2696,9 @@ export const NEWS_DIGEST = {
     // limited, Jackson out a second day, Deablo and Ebukam added) and Derrick Henry's Bijan quote; pointer and penix-jr fallback unchanged.
     // STATUS (2026-10-10 cloud run): image request SKIPPED (cloud run). Kicker and deck rebuilt around Friday's final reports (Jackson and
     // Hendrickson ruled out, Huntley to start; Matthews full and questionable, Smith back limited) and Sunday's red-out / Abraham induction; pointer unchanged.
+    // STATUS (2026-10-11 cloud run): image request SKIPPED (cloud run). Game-day kicker and deck (Smith out, Abdullah IR, -3.5); pointer unchanged.
+    // STATUS (2026-10-12 cloud run): image request SKIPPED (cloud run). Kicker and deck rebuilt around the 30-23 overtime loss to Baltimore and
+    // Penix's rib injury; pointer and penix-jr fallback unchanged.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
@@ -2715,10 +2722,76 @@ export const NEWS_DIGEST = {
     "SportsTalkATL", "SI Betting (Oct 8)", "KMJ / AP preview",
     "AJC (Oct 9)", "Athlon Sports (Yahoo)", "NBC Washington", "SI Ravens (Oct 9)", "Audacy 92.9 The Game (Oct 9)",
     "atlantafalcons.com (Oct 10)", "Falcons Wire (Yahoo, Oct 10)", "RotoWire", "NFL.com News Roundup (Oct 10)", "Covers.com (Oct 10)", "NFL.com / The Athletic (Oct 9)",
+    "CBS Sports (Oct 11-12)", "NBC Sports / PFT (Oct 11)", "Bleacher Report (Oct 11)", "AJC (Oct 11)", "NFL.com (Oct 12)",
+    "Falcons Wire (Yahoo, Oct 12)", "Heavy.com (Oct 12)", "A to Z Sports (Oct 12)", "Yahoo Sports instant analysis (Oct 12)",
+    "panthers.com (Oct 7)", "neworleanssaints.com (Oct 11)", "buccaneers.com (Oct 8)",
   ],
   topics: [
     {
-      title: "Za'Darius Smith downgraded to out: Atlanta loses a key edge rusher for Sunday night",
+      title: "Ravens 30, Falcons 23 (OT): Atlanta blows an eight-point lead in the final 2:25 and falls to 2-3",
+      detail: "NBC Sports/PFT and CBS Sports (Sunday night, Oct 11): Baltimore, without Lamar Jackson, got the ball down 23-15 with two timeouts and 2:25 left and tied it in 1:51 on Tyler Huntley's TD pass to Devontez Walker and Derrick Henry's two-point run. Huntley (24-of-32, 201, two TDs) finished a 14-play, 68-yard overtime drive with a 1-yard sneak, and Kyle Hamilton intercepted Tua Tagovailoa to end it. Baltimore is 4-1.",
+      category: "games",
+      sourceUrl: "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/sunday-night-football-ravens-come-back-to-beat-falcons-in-ot-30-23",
+      sourceLabel: "NBC Sports / PFT / CBS Sports",
+    },
+    {
+      title: "Penix hurts his ribs late, sits out overtime; imaging Monday, and he says he'll be ready for Chicago",
+      detail: "NFL.com and CBS Sports (postgame, Oct 11-12): Penix was sacked by Tavius Robinson in the final half-minute of regulation, returned for one incompletion, then stayed on the bench through overtime. Stefanski said imaging is next. Penix: 'What I am going through right now I know, it's not something that is going to be a long-term thing.' He finished 19-of-32 for 240 yards, a TD and no turnovers in his third start back from the ACL tear.",
+      category: "injuries",
+      sourceUrl: "https://www.nfl.com/news/falcons-qb-michael-penix-jr-ribs-says-injury-isn-t-long-term-will-be-ok",
+      sourceLabel: "NFL.com / CBS Sports / Heavy.com",
+    },
+    {
+      title: "Stefanski: 'Credit to Baltimore. Obviously we didn't do enough to win that game'",
+      detail: "Falcons Wire via Yahoo Sports (postgame, Oct 11): the coach said Atlanta 'had missed opportunities' against a good team where 'the margins are razor thin,' and listed two injuries: 'C.J. Henderson has a groin injury. Mike Penix has a rib injury.' On Penix trying to return: 'he was trying to work to get comfortable and could not.' No timeline yet for Henderson, who has started at corner since A.J. Terrell went to IR.",
+      category: "coaching",
+      sourceUrl: "https://sports.yahoo.com/articles/kevin-stefanski-comments-falcons-loss-044955245.html",
+      sourceLabel: "Falcons Wire (Yahoo Sports)",
+    },
+    {
+      title: "The end of regulation: a punt on fourth-and-8 and Tua's overtime interception draw the second-guessing",
+      detail: "A to Z Sports and AJC (Oct 12): after Penix's sack, Atlanta punted on fourth-and-8 instead of trying a desperation play, sending a tiring defense into overtime, where Baltimore held the ball for over seven minutes. Tagovailoa (2-of-3, 34 yards) hit a 20-yard pass before Hamilton, a Georgia native, picked him off on the second play of Atlanta's possession.",
+      category: "games",
+      sourceUrl: "https://atozsports.com/nfl/atlanta-falcons-news/winners-losers-falcons-vs-ravens-michael-penix-jr-tua-tagovailoa-kevin-stefanski/",
+      sourceLabel: "A to Z Sports / AJC",
+    },
+    {
+      title: "Bates scores on a 36-yard fumble return, and the pass rush gets three sacks without Za'Darius Smith",
+      detail: "AJC and Yahoo Sports (Oct 11-12): Sydney Brown forced a Mark Andrews fumble in the first quarter and Jessie Bates III took it back for his fifth career TD, his first on a fumble return. Despite missing Smith, Atlanta sacked Huntley three times with eight QB hits and also dropped Zay Flowers on a trick play. Nick Folk made all three field goals, including a 48-yarder.",
+      category: "games",
+      sourceUrl: "https://www.ajc.com/sports/2026/10/falcons-squander-late-lead-in-ot-loss-to-ravens/",
+      sourceLabel: "AJC / Yahoo Sports",
+    },
+    {
+      title: "The NFL's No. 1 run defense gives up 208 yards at 5.9 a carry",
+      detail: "AJC (Oct 11): Baltimore ran 35 times for 208 yards and outgained Atlanta 391-367 with 24 first downs to 17. Henry ran for 102 yards and caught an 18-yard TD screen, and Justice Hill added 73, including a 47-yard run. Atlanta had entered allowing a league-low 48.3 rushing yards a game.",
+      category: "games",
+      sourceUrl: "https://www.ajc.com/sports/2026/10/falcons-squander-late-lead-in-ot-loss-to-ravens/",
+      sourceLabel: "AJC / NBC Sports / PFT",
+    },
+    {
+      title: "London goes 7-for-118, every catch a first down, and Pitts scores his first TD of the year",
+      detail: "Bleacher Report and AJC (Oct 11): Drake London caught seven of 11 targets for 118 yards, all for first downs, and Kyle Pitts had five for 42 and a 13-yard TD. Bijan Robinson was held to 28 yards on five first-half carries but finished with 86 on 17 and 118 from scrimmage. Penix did not complete a pass in the first 22 minutes.",
+      category: "games",
+      sourceUrl: "https://bleacherreport.com/articles/25509416-ravens-beat-falcons-ot-box-score-stats-highlights-bijan-henry-tua-more-amid-penix-injury",
+      sourceLabel: "Bleacher Report / AJC",
+    },
+    {
+      title: "Next: Chicago (3-2) at Mercedes-Benz Stadium, Sunday, 1 PM ET on FOX",
+      detail: "AJC (Oct 11): after three straight prime-time games, Atlanta hosts the Bears in a 1 p.m. kickoff with Penix's status the story of the week. The first injury report of the week is due Wednesday.",
+      category: "games",
+      sourceUrl: "https://www.ajc.com/sports/2026/10/falcons-squander-late-lead-in-ot-loss-to-ravens/",
+      sourceLabel: "AJC",
+    },
+    {
+      title: "NFC South: Carolina is alone in first after its bye; Saints and Bucs both 1-4",
+      detail: "Week 5 (Oct 8-11): the Panthers (2-2) were idle, and Atlanta's loss drops it a half-game back at 2-3. Tampa Bay won its first game, 24-16 over Dallas on Thursday night, and New Orleans lost 23-13 at home to unbeaten Minnesota on Sunday.",
+      category: "general",
+      sourceUrl: "https://www.neworleanssaints.com/game-day/2026/reg-week5/vikings-at-saints/box-score",
+      sourceLabel: "panthers.com / neworleanssaints.com / buccaneers.com",
+    },
+    {
+      title: "Za'Darius Smith sat out the Ravens game; Week 6 vs. Chicago is his earliest return",
       detail: "atlantafalcons.com reporter Tori McElhaney, NFL.com and RotoWire (Saturday, Oct 10): Smith (concussion, neck), who returned as limited on Friday and was listed questionable, did not clear the protocol and will not play vs. Baltimore. He entered Week 4 leading the team with 2.5 sacks. With Samson Ebukam (hamstring) also questionable, Jared Ivey, Cam Thomas and the elevated Bralen Trice and Drake Jackson are in line for more edge snaps. His earliest return is Week 6 vs. Chicago (Oct 18).",
       category: "injuries",
       sourceUrl: "https://www.rotowire.com/football/headlines/zadarius-smith-injury-wont-play-against-baltimore-641792",
@@ -2732,83 +2805,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com / Yahoo Sports / NFL.com",
     },
     {
-      title: "Game day: red-out Sunday night, kickoff 8:20 PM ET on NBC, Falcons favored by 3.5",
-      detail: "Covers.com (updated Saturday night, Oct 10): Atlanta is a 3.5-point favorite with a 43.5 total, a swing of nearly 10 points from Baltimore's -6 look-ahead line once Lamar Jackson was ruled out. Inactives are due 90 minutes before kickoff. Fans are asked to wear red for the first red-out in Mercedes-Benz Stadium history, with John Abraham's Ring of Honor induction at halftime.",
-      category: "games",
-      sourceUrl: "https://www.covers.com/nfl/ravens-vs-falcons-prediction-picks-odds-sunday-oct-11-2026",
-      sourceLabel: "Covers.com / atlantafalcons.com",
-    },
-    {
-      title: "Ulbrich on Derrick Henry: 'We have had some success versus the run so far, but what a great challenge'",
-      detail: "NFL.com / The Athletic and AJC (Thursday's coordinator availability, published Oct 9): the defensive coordinator said the Ravens' offense 'is going to be similar either way' at quarterback and stressed being 'on top of our tackling.' Atlanta allows a league-low 2.7 yards per carry; Henry has 374 yards. Ulbrich also said suspended edge James Pearce Jr. is 'in a great space,' and OC Tommy Rees said the staff will 'continue to build around' Michael Penix Jr.",
-      category: "coaching",
-      sourceUrl: "https://nfl.com/news/can-the-falcons-top-ranked-run-defense-handle-derrick-henry-and-the-ravens-on-snf",
-      sourceLabel: "NFL.com (The Athletic) / AJC",
-    },
-    {
-      title: "Ravens rule out Lamar Jackson and Trey Hendrickson; Tyler Huntley starts Sunday night",
-      detail: "baltimoreravens.com, AP and Athlon Sports (Friday, Oct 9): Jesse Minter announced that Jackson (ankle), who missed all three practices, will not play, and Hendrickson (finger) misses a second straight game after a hand procedure. Huntley, 7-9 in 16 career starts and 2-0 last season, makes his 17th start; in Week 4 relief he went 8-of-9 for 63 yards. Zay Flowers (foot), Marlon Humphrey (hamstring, calf) and G Andrew Vorhees (foot) are questionable, and C Cam Jurgens (concussion) is not expected to debut until Week 6.",
-      category: "injuries",
-      sourceUrl: "https://www.baltimoreravens.com/news/lamar-jackson-trey-hendrickson-injury-report-marlon-humphrey-zay-flowers-ronnie-stanley-ravens-falcons",
-      sourceLabel: "baltimoreravens.com / AP / Athlon Sports",
-    },
-    {
-      title: "Friday's final report: Matthews full and questionable, Deablo and Ebukam questionable",
-      detail: "atlantafalcons.com (Friday, Oct 9): LT Jake Matthews (groin) was a full participant and is questionable, with his 200th consecutive start at stake. Edge Za'Darius Smith (concussion, neck) returned as limited and is questionable, as are LB Divine Deablo and DE Samson Ebukam (both hamstring, limited). LB Yasir Abdullah (hamstring) is out. OT Michael Jerrell (ankle) and DE Cam Thomas (shoulder) were full and carry no designation. (Update: Smith was downgraded to out on Saturday and Abdullah went to injured reserve; see above.)",
-      category: "injuries",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-injury-report-vs-ravens-za-darius-smith-jake-matthews",
-      sourceLabel: "atlantafalcons.com / Yahoo Sports",
-    },
-    {
-      title: "Stefanski on Huntley: 'one of my favorites to coach,' and 'last time I played him, he beat us'",
-      detail: "AJC (Friday, Oct 9): Stefanski coached Huntley in Cleveland's 2024 offseason program and part of 2025 camp, and faced him three times with the Browns (70.2% completions, 633 yards, two TDs, one INT; his teams went 1-2). 'He can make every throw. He can extend every play,' Stefanski said. DC Jeff Ulbrich said Atlanta prepared for both quarterbacks: 'They do have a similar skill set.'",
-      category: "coaching",
-      sourceUrl: "https://www.ajc.com/sports/2026/10/ravens-rule-out-qb-lamar-jackson-falcons-to-face-tyler-huntley/",
-      sourceLabel: "AJC / Audacy 92.9 The Game",
-    },
-    {
-      title: "Huntley on starting again: 'It's just like riding a bike'",
-      detail: "baltimoreravens.com (Friday, Oct 9): told Friday he would start after taking the first-team reps all week, Huntley said regular practice snaps leave him sharper, and when asked whether the training wheels were off he answered, 'Yes, definitely.' Minter: ''Snoop' has done a great job this week, and we have operated at a high level, and I expect him to play really well.'",
-      category: "games",
-      sourceUrl: "https://www.baltimoreravens.com/news/tyler-huntley-starting-lamar-jackson-jakobi-lane-nick-vannett-zion-young-ravens-falcons",
-      sourceLabel: "baltimoreravens.com",
-    },
-    {
-      title: "Red-out night: John Abraham joins the Ring of Honor at halftime",
-      detail: "atlantafalcons.com and AJC (Oct 7-9): Sunday is the first red-out in Mercedes-Benz Stadium history, timed with the unveiling of the Falcons' new red uniforms, and fans are asked to be seated by 8 p.m. Abraham, whose 68.5 sacks are the most in team history, is inducted at halftime; Bill Fralic follows posthumously in Week 16 vs. Tampa Bay. 'We need all our fans to show up,' Penix said.",
-      category: "general",
-      sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-induct-john-abraham-bill-fralic-ring-of-honor-2026",
-      sourceLabel: "atlantafalcons.com / AJC",
-    },
-    {
-      title: "Bijan's 614 scrimmage yards are his best four-game start, and Atlanta's two-week surge is a league first",
-      detail: "atlantafalcons.com (Friday, Oct 9): Robinson's 339 rushing yards over the last two games are second-most in a two-game span in team history, one behind Warrick Dunn's 340 (November 2003). Per the team, Atlanta is the only club in NFL history with a two-game stretch of 80-plus points, 800-plus yards, no more than one turnover and no more than one sack allowed.",
-      category: "games",
-      sourceUrl: "https://atlantafalcons.com/news/falcons-news-now-top-headlines-falcons-sunday-night-football-baltimore-ravens",
-      sourceLabel: "atlantafalcons.com",
-    },
-    {
-      title: "Derrick Henry on Bijan Robinson: 'He's the best in the game right now'",
-      detail: "baltimoreravens.com (Thursday, Oct 8): the Ravens' 32-year-old back, who leads Baltimore's No. 4 rushing attack into Sunday night, crowned his counterpart before the matchup: 'He's the best in the game right now, he's doing it all.' Bijan enters with 494 rushing yards and four touchdowns, and Atlanta ranks second in the NFL at 181 rushing yards a game, per AP.",
-      category: "games",
-      sourceUrl: "https://www.baltimoreravens.com/news/declan-doyle-confident-tyler-huntley-derrick-henry-calls-bijan-robinson-best-running-back-week-5-ravens-falcons",
-      sourceLabel: "baltimoreravens.com / AP",
-    },
-    {
-      title: "Penix on Baltimore's defense: 'It's hard to find a weak point'",
-      detail: "SI Falcons (Thursday, Oct 8), from his Wednesday media session: Penix, 73.3% passing for 479 yards in two wins, called Roquan Smith 'the one that makes that whole defense go' and said the plan is to 'lock into our scheme and trust our scheme.' Stefanski, per AP, said success running against teams like Baltimore requires being 'on point.'",
-      category: "games",
-      sourceUrl: "https://www.si.com/nfl/falcons/onsi/falcons-qb-michael-penix-jr-scouts-ravens-defense-ahead-of-week-5-showdown",
-      sourceLabel: "SI Falcons / AP",
-    },
-    {
-      title: "Falcons 45, Saints 24: Atlanta never trails in the Superdome and is 2-2, tied with Carolina for first in the NFC South",
-      detail: "AP and CBS Sports (Monday night, Oct 5): the Falcons ran for 205 yards to New Orleans' 50 and committed no turnovers, winning back-to-back road games by 20-plus points. Tyler Shough threw for 286 yards and Alvin Kamara scored his first two touchdowns of the season, but the Saints fell to 1-3. 'Fans understandably are upset. You're playing the Falcons and you lose like that? I'd boo, too,' Shough said.",
-      category: "games",
-      sourceUrl: "https://www.cbssports.com/nfl/news/bijan-robinson-rushes-for-145-yards-as-falcons-rout-saints-45-24/",
-      sourceLabel: "AP (CBS Sports / TSN)",
-    },
-    {
       title: "Falcons pay Gervon Dexter Sr.: a four-year, $78 million extension with $46.5 million guaranteed, one month after trading for him",
       detail: "atlantafalcons.com, ESPN and National Football Post (Wednesday, Sep 30): the defensive tackle acquired from Chicago on Aug 30 for CB Clark Phillips III and a 2027 fifth-rounder is now signed through 2030 at $19.5 million a year. Through three games he has 15 pressures and ranks eighth in the NFL in pressure rate (20.5%). 'Gervon is a young, ascending talent whose power, disruption and impact along the defensive line are difficult to find,' GM Ian Cunningham said.",
       category: "contracts",
@@ -2818,16 +2814,46 @@ export const NEWS_DIGEST = {
   ],
 };
 
-// ─── INTERVIEWS — press conference & podium dispatches ────────────────────
-// Refreshed by the falcons-tracker-update skill. Each session is a structured
-// summary of a real press availability: speaker, role, date, venue, a single
-// pullQuote, 3–5 bullets of substantive content, and a sourceUrl pointing
-// back to the team site / NFL.com / NBC PFT / AJC primary source. Order is
-// reverse-chronological — newest session first.
 export const INTERVIEWS = {
-  generatedAt: "2026-10-11T08:45:00Z",
-  windowLabel: "Saints postgame → Ravens Week · Oct 5 → Oct 11",
+  generatedAt: "2026-10-12T08:40:00Z",
+  windowLabel: "Saints postgame → Ravens postgame · Oct 5 → Oct 11",
   sessions: [
+    {
+      id: "stefanski-2026-10-11",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-10-11",
+      venue: "Mercedes-Benz Stadium · Atlanta, Ga.",
+      session: "Week 5 vs. Baltimore · Postgame Press Conference",
+      sourceUrl: "https://sports.yahoo.com/articles/kevin-stefanski-comments-falcons-loss-044955245.html",
+      summary: "After an eight-point fourth-quarter lead became a 30-23 overtime loss, Stefanski kept it short: credit to the Ravens, missed chances for Atlanta. He opened with the injury news, a rib injury for Michael Penix Jr. and a groin injury for C.J. Henderson, with imaging still to come.",
+      pullQuote: "We had missed opportunities, and when you're playing a good football team, the margins are razor thin.",
+      bullets: [
+        "Opening statement: 'Injury front: C.J. Henderson has a groin injury. Mike Penix has a rib injury.'",
+        "On the result: 'Credit to Baltimore. Obviously we didn't do enough to win that game.'",
+        "On whether Penix could return in overtime: 'Yeah, he was trying to work to get comfortable and could not.'",
+        "Said Penix will undergo imaging before any timeline is set (NFL.com, Heavy.com)",
+      ],
+      topics: ["ravens-week", "week-5", "postgame", "penix-ribs", "injuries"],
+    },
+    {
+      id: "penix-2026-10-11",
+      speaker: "Michael Penix Jr.",
+      role: "Quarterback",
+      date: "2026-10-11",
+      venue: "Mercedes-Benz Stadium · Atlanta, Ga.",
+      session: "Week 5 vs. Baltimore · Postgame Press Conference",
+      sourceUrl: "https://www.cbssports.com/nfl/news/michael-penix-jr-injury-update-falcons-qb-ravens-bears/",
+      summary: "Penix, who went 19-of-32 for 240 yards and a TD before a late sack left him with a rib injury, explained why he stayed on the bench in overtime and made clear he expects to face Chicago. Comments relayed by atlantafalcons.com's Tori McElhaney, NFL.com and CBS Sports.",
+      pullQuote: "Knowing me, I'mma be ready to go next week because I've sat out enough my career.",
+      bullets: [
+        "On the injury: 'What I am going through right now I know, it's not something that is going to be a long-term thing'",
+        "'Today, it took me out for the last couple of minutes of the game, but I'll be alright' (NFL.com)",
+        "On sitting out overtime: 'I did not feel like I was gonna be able to give our team what we needed,' adding 'I was getting cold'",
+        "On the week ahead: 'I will work my tail off to make sure I'm back out there on that field'",
+      ],
+      topics: ["ravens-week", "week-5", "postgame", "penix-ribs", "bears-week"],
+    },
     {
       id: "stefanski-2026-10-09",
       speaker: "Kevin Stefanski",
@@ -2905,44 +2931,6 @@ export const INTERVIEWS = {
         "The cost: edge Za'Darius Smith (concussion, neck) and LT Jake Matthews (groin) both left in the first half, per atlantafalcons.com",
       ],
       topics: ["postgame", "week-4", "saints-week", "penix"],
-    },
-    {
-      id: "robinson-jr-2026-10-05",
-      speaker: "Brian Robinson Jr.",
-      role: "Running Back",
-      date: "2026-10-05",
-      venue: "Caesars Superdome · New Orleans, La.",
-      session: "Week 4 at New Orleans · Postgame Locker Room",
-      sourceUrl: "https://www.cbssports.com/nfl/news/bijan-robinson-rushes-for-145-yards-as-falcons-rout-saints-45-24/",
-      transcriptUrl: "https://tsn.ca/nfl/article/robinson-powers-falcons-past-saints-on-20th-anniversary-of-superdomes-reopening",
-      verified: true,
-      summary: "The backup back scored three times from inside the 11 as he and Bijan Robinson combined for five rushing touchdowns, matching the franchise record. Afterward he called it the best night of his career and set the bar for the 2-2 Falcons.",
-      pullQuote: "The most fun I've had in my career.",
-      bullets: [
-        "Scored on runs of 4, 8 and 11 yards for a career-high three rushing touchdowns (Pro Football Network, CBS Sports)",
-        "On the team: 'We can be as good as we want to be' (AP)",
-        "Teammate Bijan Robinson on the 59-yard opening score: 'make sure that we put it on them early so the crowd doesn't become an issue' (AP)",
-      ],
-      topics: ["postgame", "week-4", "run-game", "saints-week"],
-    },
-    {
-      id: "penix-2026-10-01",
-      speaker: "Michael Penix Jr.",
-      role: "Quarterback",
-      date: "2026-10-01",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "Week 4 vs. New Orleans · Thursday Media Availability",
-      sourceUrl: "https://www.newsweek.com/sports/nfl/michael-penix-jr-throws-shade-at-saints-ahead-of-monday-night-matchup-12513970",
-      transcriptUrl: "https://www.atlantafalcons.com/video/quarterback-michael-penix-jr-media-availability-thursday-october-1st-press-conference",
-      verified: true,
-      summary: "In his first podium session of Saints week, Penix leaned into the rivalry ahead of his first trip to the Superdome since the ACL tear. He also brushed off the scheme shift that had him under center for half of Atlanta's snaps at Green Bay.",
-      pullQuote: "It's a nice dome. That's probably the only nice thing I can say about them.",
-      bullets: [
-        "On the Saints: offered the Superdome as the one compliment he would pay New Orleans before Monday night (Newsweek, Yahoo, SI)",
-        "On playing under center (per SI, Oct 2): 'Under center was never hard for me. I just do what I'm told to do,' after a career-high 35 under-center snaps at Lambeau",
-        "On play action: 'Some people say that play action stuff is better under the center. But as long as you're giving a good fake, it's all the same'",
-      ],
-      topics: ["saints-week", "rivalry", "under-center", "week-4"],
     },
   ],
 };
