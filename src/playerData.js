@@ -27,7 +27,7 @@ export const PLAYERS = [
     stats: { completions: 166, attempts: 276, passYds: 1982, passTDs: 9, ints: 3, qbRating: 88.5 },
     form: 0,
     status: "active",
-    injuryNote: "Ribs. Hurt on a Tavius Robinson sack in the final half-minute of regulation in the 30-23 overtime loss to Baltimore (Oct 11), returned for one incompletion, then sat out overtime as Tua Tagovailoa finished. Stefanski said imaging is scheduled for Monday (Oct 12); Penix said it is 'not something that is going to be a long-term thing' and expects to play Week 6 vs. Chicago. Third start back from November 2025 ACL surgery (19-of-32, 240, TD, no turnovers)",
+    injuryNote: "Ribs. Hurt on a Tavius Robinson sack in the final half-minute of regulation in the 30-23 overtime loss to Baltimore (Oct 11), returned for one incompletion, then sat out overtime as Tua Tagovailoa finished. He had X-rays and imaging Monday (Oct 12); multiple reports said he avoided a serious injury, and The Athletic's Jonathan Jones reported optimism he plays Week 6 vs. Chicago. Stefanski would not share results and said he will know more Wednesday (Oct 14): 'I can answer that better Wednesday.' Penix: 'not something that is going to be a long-term thing.' Tua Tagovailoa would make his first Falcons start if Penix cannot go. Third start back from November 2025 ACL surgery (19-of-32, 240, TD, no turnovers)",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
     contract: { years: 4, total: 22080000, guaranteed: 22080000, apy: 5520000, throughYear: 2027, cap2026: 5900000 },
     career: [
@@ -1683,7 +1683,7 @@ export const NEXT_GAME = {
   date: "2026-10-18",
   kickoff: "1:00 PM ET",
   tv: "FOX",
-  note: "Atlanta (2-3) returns to Mercedes-Benz Stadium for a 1 PM kickoff after a 30-23 overtime loss to Baltimore on Sunday night, its first non-prime-time game since Week 2. The quarterback question leads the week: Michael Penix Jr. hurt his ribs on a sack in the final half-minute of regulation and sat out overtime, Kevin Stefanski said imaging comes Monday (Oct 12), and Penix said the injury is not long-term and 'I'mma be ready to go next week.' Tua Tagovailoa (2-of-3, 34, INT in relief) is the backup. CB C.J. Henderson (groin) was also hurt, and edge Za'Darius Smith (concussion, neck) is eligible to return after missing the Ravens game. Chicago arrives at 3-2. Atlanta trails Carolina by a half-game in the NFC South. Next: San Francisco at home in Week 7.",
+  note: "Atlanta (2-3) returns to Mercedes-Benz Stadium for a 1 PM kickoff after a 30-23 overtime loss to Baltimore, its first non-prime-time game since Week 2. Both teams have a quarterback question. Michael Penix Jr. (ribs) had imaging Monday and reports say he avoided a serious injury, but Kevin Stefanski said he will know more Wednesday (Oct 14); Tua Tagovailoa would make his first Falcons start if Penix cannot play. Chicago (3-2) lost 31-7 at Green Bay with Tyson Bagent starting while Caleb Williams (hamstring) missed a third straight game; Ben Johnson said Williams could be close for Atlanta, and the line flipped from Bears +1.5 to Bears -3 (SI Betting, Oct 12). CB C.J. Henderson (groin) is also being evaluated, and edge Za'Darius Smith (concussion, neck) is eligible to return. Atlanta trails Carolina by a half-game in the NFC South. Next: San Francisco at home in Week 7.",
 };
 
 // =========================================
@@ -2050,18 +2050,18 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-10-12T08:40:00Z",
+  generatedAt: "2026-10-13T08:30:00Z",
   cover: {
-    kicker: "Postgame \u00b7 Ravens 30, Falcons 23 (OT) on Sunday Night Football, with Michael Penix Jr. hurt late and imaging set for Monday",
-    headLine1: "Red out.",
-    headEm: "Lead gone.",
-    headLine3: "Atlanta led a Lamar-less Baltimore by eight with 2:25 to play, then lost Penix to a rib injury and the game in overtime.",
+    kicker: "Bears week \u00b7 Penix (ribs) had imaging Monday and reports say he dodged a serious injury, but Stefanski will not say until Wednesday",
+    headLine1: "Ribs.",
+    headEm: "Wait for Wednesday.",
+    headLine3: "Penix expects to face Chicago, Tua is the fallback, and the Bears are now favored in Atlanta as Caleb Williams nears a return.",
     deck:
-      "Tyler Huntley drove 71 yards in six plays, found Devontez Walker for the touchdown and handed the tying two-point try to Derrick Henry. On Atlanta's answer, Penix was sacked by Tavius Robinson and hurt his ribs, came back for one incompletion, and the Falcons punted on fourth-and-8. Baltimore opened overtime with a 14-play, 68-yard march that ended on Huntley's 1-yard sneak, and Kyle Hamilton intercepted Tua Tagovailoa on the second play of Atlanta's possession. The defense had its moments, including Jessie Bates III's 36-yard fumble-return touchdown and three sacks, but the No. 1 run defense gave up 208 rushing yards at 5.9 a carry. 'We had missed opportunities, and when you're playing a good football team, the margins are razor thin,' Kevin Stefanski said. Penix said the injury is not long-term: 'Knowing me, I'mma be ready to go next week.' Atlanta is 2-3, a half-game behind Carolina, with Chicago (3-2) up next.",
+      "Michael Penix Jr. had X-rays and imaging on Monday after the late sack that knocked him out of Sunday's 30-23 overtime loss to Baltimore. Multiple reports said the rib injury is not serious, and The Athletic's Jonathan Jones reported optimism that he plays Sunday, but Kevin Stefanski declined to share results: 'I can answer that better Wednesday.' If Penix cannot go, Tua Tagovailoa makes his first Falcons start. Penix said he pushed to return in overtime and that the pain grew as he stood on the sideline. Chicago (3-2) is coming off a 31-7 loss at Green Bay with Tyson Bagent at quarterback, but Ben Johnson said Caleb Williams (hamstring) could be close, and the line has flipped from Bears +1.5 to Bears -3. Stefanski's other Monday theme was third down: 'we've got to look at ways that we can, No. 1, avoid third down, and No. 2, be in more manageable situations.' The first injury report of the week is due Wednesday.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
-    stampLabel: "Final/OT · Week 5 · Ravens 30, Falcons 23 · Penix (ribs) imaging Monday · Falcons 2-3 · Next: Bears, Sun Oct 18, 1 PM ET, FOX",
+    stampLabel: "Bears week \u00b7 Penix (ribs) update Wednesday \u00b7 Bears -3 \u00b7 Falcons 2-3 \u00b7 Sun Oct 18, 1 PM ET, FOX",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2699,6 +2699,8 @@ export const NEWS_DIGEST = {
     // STATUS (2026-10-11 cloud run): image request SKIPPED (cloud run). Game-day kicker and deck (Smith out, Abdullah IR, -3.5); pointer unchanged.
     // STATUS (2026-10-12 cloud run): image request SKIPPED (cloud run). Kicker and deck rebuilt around the 30-23 overtime loss to Baltimore and
     // Penix's rib injury; pointer and penix-jr fallback unchanged.
+    // STATUS (2026-10-13 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto Bears week (Penix imaging, Wednesday
+    // decision, Caleb Williams nearing a return, line flip to Bears -3); pointer and penix-jr fallback unchanged.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
@@ -2725,8 +2727,31 @@ export const NEWS_DIGEST = {
     "CBS Sports (Oct 11-12)", "NBC Sports / PFT (Oct 11)", "Bleacher Report (Oct 11)", "AJC (Oct 11)", "NFL.com (Oct 12)",
     "Falcons Wire (Yahoo, Oct 12)", "Heavy.com (Oct 12)", "A to Z Sports (Oct 12)", "Yahoo Sports instant analysis (Oct 12)",
     "panthers.com (Oct 7)", "neworleanssaints.com (Oct 11)", "buccaneers.com (Oct 8)",
+    "AJC (Oct 12)", "NBC Sports / PFT (Oct 12)", "Field Level Media (Oct 12)", "Heavy.com (Oct 12, The Athletic report)",
+    "theScore (Oct 12)", "atlantafalcons.com (Oct 12)", "SI Betting (Oct 12)", "ABC7 Chicago (Oct 11)",
   ],
   topics: [
+    {
+      title: "Penix has imaging on his ribs; reports say it is not serious, and Stefanski will update Wednesday",
+      detail: "AJC, NBC Sports/PFT and Field Level Media (Monday, Oct 12): Penix had X-rays and imaging, and multiple reports said he avoided a serious injury. The Athletic's Jonathan Jones reported optimism he plays Sunday. Stefanski would not share results: 'I can answer that better Wednesday,' adding that 'with any type of injury, I always want to see how the guys respond over a couple of days.' Tua Tagovailoa would make his first Falcons start if Penix cannot go.",
+      category: "injuries",
+      sourceUrl: "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kevin-stefanski-well-have-a-better-idea-wednesday-about-michael-penix",
+      sourceLabel: "AJC / NBC Sports / PFT / Field Level Media",
+    },
+    {
+      title: "Line flips to Bears -3 in Atlanta as Caleb Williams nears a return",
+      detail: "SI Betting (Monday, Oct 12): Chicago opened as a 1.5-point underdog and is now a three-point favorite (-175 on DraftKings) after Ben Johnson said Williams (hamstring) is 'on track' and could be close for Week 6. PFT's Mike Florio reported Williams is still week-to-week. The Bears (3-2) lost 31-7 at Green Bay on Sunday with Tyson Bagent starting before Case Keenum replaced him in the fourth quarter.",
+      category: "games",
+      sourceUrl: "https://www.si.com/betting/positive-caleb-williams-update-causes-major-shift-in-bears-vs-falcons-odds-for-nfl-week-6",
+      sourceLabel: "SI Betting / ABC7 Chicago",
+    },
+    {
+      title: "Stefanski's Monday fix: 'avoid third down' and get into more manageable situations",
+      detail: "theScore and atlantafalcons.com (Monday, Oct 12): reviewing the loss, Stefanski said 'we've got to look at ways that we can, No. 1, avoid third down, and No. 2, be in more manageable situations.' Atlanta has had an NFL-record four different quarterbacks throw interceptions this season. Bijan Robinson leads the league with 580 rushing yards and Drake London is fourth with 488 receiving yards.",
+      category: "coaching",
+      sourceUrl: "https://www.thescore.com/nfl/news/3622637/falcons-are-facing-more-quarterback-uncertainty-after-penix-injures-rib-in-overtime-loss",
+      sourceLabel: "theScore / atlantafalcons.com",
+    },
     {
       title: "Ravens 30, Falcons 23 (OT): Atlanta blows an eight-point lead in the final 2:25 and falls to 2-3",
       detail: "NBC Sports/PFT and CBS Sports (Sunday night, Oct 11): Baltimore, without Lamar Jackson, got the ball down 23-15 with two timeouts and 2:25 left and tied it in 1:51 on Tyler Huntley's TD pass to Devontez Walker and Derrick Henry's two-point run. Huntley (24-of-32, 201, two TDs) finished a 14-play, 68-yard overtime drive with a 1-yard sneak, and Kyle Hamilton intercepted Tua Tagovailoa to end it. Baltimore is 4-1.",
@@ -2777,13 +2802,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "Bleacher Report / AJC",
     },
     {
-      title: "Next: Chicago (3-2) at Mercedes-Benz Stadium, Sunday, 1 PM ET on FOX",
-      detail: "AJC (Oct 11): after three straight prime-time games, Atlanta hosts the Bears in a 1 p.m. kickoff with Penix's status the story of the week. The first injury report of the week is due Wednesday.",
-      category: "games",
-      sourceUrl: "https://www.ajc.com/sports/2026/10/falcons-squander-late-lead-in-ot-loss-to-ravens/",
-      sourceLabel: "AJC",
-    },
-    {
       title: "NFC South: Carolina is alone in first after its bye; Saints and Bucs both 1-4",
       detail: "Week 5 (Oct 8-11): the Panthers (2-2) were idle, and Atlanta's loss drops it a half-game back at 2-3. Tampa Bay won its first game, 24-16 over Dallas on Thursday night, and New Orleans lost 23-13 at home to unbeaten Minnesota on Sunday.",
       category: "general",
@@ -2791,11 +2809,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "panthers.com / neworleanssaints.com / buccaneers.com",
     },
     {
-      title: "Za'Darius Smith sat out the Ravens game; Week 6 vs. Chicago is his earliest return",
-      detail: "atlantafalcons.com reporter Tori McElhaney, NFL.com and RotoWire (Saturday, Oct 10): Smith (concussion, neck), who returned as limited on Friday and was listed questionable, did not clear the protocol and will not play vs. Baltimore. He entered Week 4 leading the team with 2.5 sacks. With Samson Ebukam (hamstring) also questionable, Jared Ivey, Cam Thomas and the elevated Bralen Trice and Drake Jackson are in line for more edge snaps. His earliest return is Week 6 vs. Chicago (Oct 18).",
+      title: "Henderson's groin and Za'Darius Smith's concussion are the other Bears-week questions",
+      detail: "atlantafalcons.com and theScore (Oct 12): CB C.J. Henderson, starting since A.J. Terrell went to IR, left the Ravens game with a groin injury, and the team expected more after Monday's imaging; Aveion Terrell, Billy Bowman and Sydney Brown are next in line. Edge Za'Darius Smith (concussion, neck) was inactive Sunday after not clearing the protocol, and Chicago on Sunday is his earliest return. The first injury report comes Wednesday.",
       category: "injuries",
-      sourceUrl: "https://www.rotowire.com/football/headlines/zadarius-smith-injury-wont-play-against-baltimore-641792",
-      sourceLabel: "Tori McElhaney (atlantafalcons.com) / NFL.com / RotoWire",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-ravens-game-notes-injuries-quotes-stats",
+      sourceLabel: "atlantafalcons.com / theScore / CBS Sports (RotoWire)",
     },
     {
       title: "Abdullah to injured reserve, Jammie Robinson signed to the 53, Trice and Drake Jackson elevated",
@@ -2815,9 +2833,27 @@ export const NEWS_DIGEST = {
 };
 
 export const INTERVIEWS = {
-  generatedAt: "2026-10-12T08:40:00Z",
-  windowLabel: "Saints postgame → Ravens postgame · Oct 5 → Oct 11",
+  generatedAt: "2026-10-13T08:30:00Z",
+  windowLabel: "Ravens postgame → Bears week · Oct 7 → Oct 18",
   sessions: [
+    {
+      id: "stefanski-2026-10-12",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-10-12",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Week 6 vs. Chicago · Monday Media Availability",
+      sourceUrl: "https://www.ajc.com/sports/2026/10/falcons-penix-ribs-bears-status-uncertain/",
+      summary: "The day after the overtime loss, Stefanski would not reveal what Michael Penix Jr.'s rib imaging showed or whether he can start against Chicago, pushing the answer to Wednesday. He spent the rest of the session on what went wrong on third down. Quotes via AJC, NBC Sports/PFT and theScore.",
+      pullQuote: "I can answer that better Wednesday.",
+      bullets: [
+        "On Penix's status: 'We'll treat his injury over the next couple days, and then I'll have a better understanding as we get into Wednesday for how he's doing' (AJC)",
+        "On why he would not commit: 'With any type of injury, I always want to see how the guys respond over a couple of days' (PFT)",
+        "Declined to say what the X-rays showed, including whether there was a fracture (AJC)",
+        "On the offense: 'we've got to look at ways that we can, No. 1, avoid third down, and No. 2, be in more manageable situations' (theScore)",
+      ],
+      topics: ["bears-week", "week-6", "penix-ribs", "third-down"],
+    },
     {
       id: "stefanski-2026-10-11",
       speaker: "Kevin Stefanski",
@@ -2912,25 +2948,6 @@ export const INTERVIEWS = {
         "On Roquan Smith: 'He's a leader. He's the one that makes that whole defense go'",
       ],
       topics: ["ravens-week", "week-5", "penix", "opponent-scouting"],
-    },
-    {
-      id: "stefanski-2026-10-05",
-      speaker: "Kevin Stefanski",
-      role: "Head Coach",
-      date: "2026-10-05",
-      venue: "Caesars Superdome · New Orleans, La.",
-      session: "Week 4 at New Orleans · Postgame Press Conference",
-      sourceUrl: "https://tsn.ca/nfl/article/robinson-powers-falcons-past-saints-on-20th-anniversary-of-superdomes-reopening",
-      transcriptUrl: "https://www.atlantafalcons.com/video/kevin-stefanski-s-locker-room-speech-after-monday-night-football-win-over-the-saints-falcons",
-      verified: true,
-      summary: "After a 45-24 win that put Atlanta at 2-2 and level with Carolina atop the division, Stefanski kept his public praise on the quarterback. Penix went 15-of-20 with no turnovers in his second start back from the ACL tear, and the coach singled out how he is running the offense.",
-      pullQuote: "Mike played well; he took care of the football and made some really good throws.",
-      bullets: [
-        "On Penix: 'I really like his demeanor and how he is operating,' after a 15-of-20, 223-yard, one-touchdown night with no turnovers (AP)",
-        "The result: Atlanta never trailed, ran for 205 yards to New Orleans' 50, and won a second straight road game by 21 points",
-        "The cost: edge Za'Darius Smith (concussion, neck) and LT Jake Matthews (groin) both left in the first half, per atlantafalcons.com",
-      ],
-      topics: ["postgame", "week-4", "saints-week", "penix"],
     },
   ],
 };
