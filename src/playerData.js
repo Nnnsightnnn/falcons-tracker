@@ -1683,7 +1683,7 @@ export const NEXT_GAME = {
   date: "2026-10-18",
   kickoff: "1:00 PM ET",
   tv: "FOX",
-  note: "Atlanta (2-3) returns to Mercedes-Benz Stadium for a 1 PM kickoff after a 30-23 overtime loss to Baltimore, its first non-prime-time game since Week 2. Both teams have a quarterback question. Michael Penix Jr. (ribs) had imaging Monday and reports say he avoided a serious injury, but Kevin Stefanski said he will know more Wednesday (Oct 14); Tua Tagovailoa would make his first Falcons start if Penix cannot play. Chicago (3-2) lost 31-7 at Green Bay with Tyson Bagent starting while Caleb Williams (hamstring) missed a third straight game; Ben Johnson said Williams could be close for Atlanta, and the line flipped from Bears +1.5 to Bears -3 (SI Betting, Oct 12). CB C.J. Henderson (groin) is also being evaluated, and edge Za'Darius Smith (concussion, neck) is eligible to return. Atlanta trails Carolina by a half-game in the NFC South. Next: San Francisco at home in Week 7.",
+  note: "Atlanta (2-3) returns to Mercedes-Benz Stadium for a 1 PM kickoff after a 30-23 overtime loss to Baltimore, its first non-prime-time game since Week 2. Both teams have a quarterback question. Michael Penix Jr. (ribs) had imaging Monday and reports say he avoided a serious injury, but Kevin Stefanski said he will know more Wednesday (Oct 14); Tuesday's depth chart (Oct 13) still lists Penix at QB1; Tua Tagovailoa would make his first Falcons start if Penix cannot play. Chicago (3-2) lost 31-7 at Green Bay with Tyson Bagent starting while Caleb Williams (hamstring) missed a third straight game; NFL Network's Ian Rapoport said 'all signs point' to Williams playing (Oct 12), Ben Johnson has not named a fallback between Tyson Bagent and Case Keenum, and the line flipped from Bears +1.5 to Bears -3 (SI Betting, Oct 12). CB C.J. Henderson (groin) is also being evaluated, and edge Za'Darius Smith (concussion, neck) is eligible to return. Atlanta trails Carolina by a half-game in the NFC South. Next: San Francisco at home in Week 7.",
 };
 
 // =========================================
@@ -2050,18 +2050,18 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-10-13T08:30:00Z",
+  generatedAt: "2026-10-14T08:30:00Z",
   cover: {
-    kicker: "Bears week \u00b7 Penix (ribs) had imaging Monday and reports say he dodged a serious injury, but Stefanski will not say until Wednesday",
+    kicker: "Bears week \u00b7 Stefanski's Penix (ribs) update is due today, and Tuesday's depth chart still lists him at QB1",
     headLine1: "Ribs.",
     headEm: "Wait for Wednesday.",
     headLine3: "Penix expects to face Chicago, Tua is the fallback, and the Bears are now favored in Atlanta as Caleb Williams nears a return.",
     deck:
-      "Michael Penix Jr. had X-rays and imaging on Monday after the late sack that knocked him out of Sunday's 30-23 overtime loss to Baltimore. Multiple reports said the rib injury is not serious, and The Athletic's Jonathan Jones reported optimism that he plays Sunday, but Kevin Stefanski declined to share results: 'I can answer that better Wednesday.' If Penix cannot go, Tua Tagovailoa makes his first Falcons start. Penix said he pushed to return in overtime and that the pain grew as he stood on the sideline. Chicago (3-2) is coming off a 31-7 loss at Green Bay with Tyson Bagent at quarterback, but Ben Johnson said Caleb Williams (hamstring) could be close, and the line has flipped from Bears +1.5 to Bears -3. Stefanski's other Monday theme was third down: 'we've got to look at ways that we can, No. 1, avoid third down, and No. 2, be in more manageable situations.' The first injury report of the week is due Wednesday.",
+      "Michael Penix Jr. had X-rays and imaging on Monday after the late sack that knocked him out of Sunday's 30-23 overtime loss to Baltimore. Multiple reports said the rib injury is not serious, and The Athletic's Jonathan Jones reported optimism that he plays Sunday, but Kevin Stefanski declined to share results: 'I can answer that better Wednesday.' If Penix cannot go, Tua Tagovailoa makes his first Falcons start. Penix said he pushed to return in overtime and that the pain grew as he stood on the sideline. Chicago (3-2) is coming off a 31-7 loss at Green Bay with Tyson Bagent at quarterback, but NFL Network's Ian Rapoport said 'all signs point' to Caleb Williams (hamstring) returning this week, and the line has flipped from Bears +1.5 to Bears -3. Tuesday's depth chart still lists Penix first, ahead of Tagovailoa. Stefanski's other Monday theme was third down: 'we've got to look at ways that we can, No. 1, avoid third down, and No. 2, be in more manageable situations.' The first injury report of the week, and Stefanski's answer on Penix, are due today.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
-    stampLabel: "Bears week \u00b7 Penix (ribs) update Wednesday \u00b7 Bears -3 \u00b7 Falcons 2-3 \u00b7 Sun Oct 18, 1 PM ET, FOX",
+    stampLabel: "Bears week \u00b7 Penix (ribs) update today \u00b7 Bears -3 \u00b7 Falcons 2-3 \u00b7 Sun Oct 18, 1 PM ET, FOX",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2701,6 +2701,8 @@ export const NEWS_DIGEST = {
     // Penix's rib injury; pointer and penix-jr fallback unchanged.
     // STATUS (2026-10-13 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto Bears week (Penix imaging, Wednesday
     // decision, Caleb Williams nearing a return, line flip to Bears -3); pointer and penix-jr fallback unchanged.
+    // STATUS (2026-10-14 cloud run): image request SKIPPED (cloud run). Kicker and deck nudged onto Wednesday's Penix decision day, the
+    // Tuesday depth chart (Penix still QB1) and Rapoport's 'all signs point' report on Caleb Williams; pointer and penix-jr fallback unchanged.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
@@ -2729,8 +2731,23 @@ export const NEWS_DIGEST = {
     "panthers.com (Oct 7)", "neworleanssaints.com (Oct 11)", "buccaneers.com (Oct 8)",
     "AJC (Oct 12)", "NBC Sports / PFT (Oct 12)", "Field Level Media (Oct 12)", "Heavy.com (Oct 12, The Athletic report)",
     "theScore (Oct 12)", "atlantafalcons.com (Oct 12)", "SI Betting (Oct 12)", "ABC7 Chicago (Oct 11)",
+    "NBC Sports (Oct 12)", "Heavy.com (Oct 12-13)", "Falcons Wire (Yahoo, Oct 13)", "SI Betting (Oct 13)",
   ],
   topics: [
+    {
+      title: "Rapoport: 'all signs point' to Caleb Williams playing in Atlanta, and Ben Johnson will not name a fallback",
+      detail: "NBC Sports and Heavy.com (Monday-Tuesday, Oct 12-13): NFL Network's Ian Rapoport said 'All signs point to Caleb Williams being back on the field this week for Chicago.' Johnson said Williams (hamstring) is 'going the right way' and would not say whether Tyson Bagent (12-of-21, 87 yards, two interceptions before he was benched at Green Bay) or Case Keenum starts if Williams sits. Williams practiced on a limited basis Oct 9, his first work since the Week 2 injury.",
+      category: "games",
+      sourceUrl: "https://heavy.com/sports/nfl/chicago-bears/caleb-williams-return-injury-update-falcons/",
+      sourceLabel: "NBC Sports / Heavy.com / NFL Network",
+    },
+    {
+      title: "Week 6 depth chart keeps Penix at QB1 ahead of Tua; Jammie Robinson replaces Abdullah",
+      detail: "Falcons Wire via Yahoo Sports (Tuesday, Oct 13): Atlanta's depth chart for Chicago lists Penix first, then Tua Tagovailoa, Cooper Rush and Jack Strand, with Penix's status still uncertain. The only change reflects last week's moves (LB Yasir Abdullah to IR, S Jammie Robinson signed to the 53). C.J. Henderson (groin) is still listed as a starting corner.",
+      category: "general",
+      sourceUrl: "https://sports.yahoo.com/articles/falcons-release-depth-chart-nfl-205110778.html",
+      sourceLabel: "Falcons Wire (Yahoo Sports)",
+    },
     {
       title: "Penix has imaging on his ribs; reports say it is not serious, and Stefanski will update Wednesday",
       detail: "AJC, NBC Sports/PFT and Field Level Media (Monday, Oct 12): Penix had X-rays and imaging, and multiple reports said he avoided a serious injury. The Athletic's Jonathan Jones reported optimism he plays Sunday. Stefanski would not share results: 'I can answer that better Wednesday,' adding that 'with any type of injury, I always want to see how the guys respond over a couple of days.' Tua Tagovailoa would make his first Falcons start if Penix cannot go.",
@@ -2740,7 +2757,7 @@ export const NEWS_DIGEST = {
     },
     {
       title: "Line flips to Bears -3 in Atlanta as Caleb Williams nears a return",
-      detail: "SI Betting (Monday, Oct 12): Chicago opened as a 1.5-point underdog and is now a three-point favorite (-175 on DraftKings) after Ben Johnson said Williams (hamstring) is 'on track' and could be close for Week 6. PFT's Mike Florio reported Williams is still week-to-week. The Bears (3-2) lost 31-7 at Green Bay on Sunday with Tyson Bagent starting before Case Keenum replaced him in the fourth quarter.",
+      detail: "SI Betting (Monday, Oct 12): Chicago opened as a 1.5-point underdog and is now a three-point favorite (-175 on DraftKings) after Ben Johnson said Williams (hamstring) is 'on track' and could be close for Week 6. PFT's Mike Florio reported Williams is still week-to-week. The Bears (3-2) lost 31-7 at Green Bay on Sunday with Tyson Bagent starting before Case Keenum replaced him in the fourth quarter. On Tuesday (Oct 13), SI Betting still had Chicago -3 (-120) and noted the positive Penix reports had not moved the number.",
       category: "games",
       sourceUrl: "https://www.si.com/betting/positive-caleb-williams-update-causes-major-shift-in-bears-vs-falcons-odds-for-nfl-week-6",
       sourceLabel: "SI Betting / ABC7 Chicago",
@@ -2772,20 +2789,6 @@ export const NEWS_DIGEST = {
       category: "coaching",
       sourceUrl: "https://sports.yahoo.com/articles/kevin-stefanski-comments-falcons-loss-044955245.html",
       sourceLabel: "Falcons Wire (Yahoo Sports)",
-    },
-    {
-      title: "The end of regulation: a punt on fourth-and-8 and Tua's overtime interception draw the second-guessing",
-      detail: "A to Z Sports and AJC (Oct 12): after Penix's sack, Atlanta punted on fourth-and-8 instead of trying a desperation play, sending a tiring defense into overtime, where Baltimore held the ball for over seven minutes. Tagovailoa (2-of-3, 34 yards) hit a 20-yard pass before Hamilton, a Georgia native, picked him off on the second play of Atlanta's possession.",
-      category: "games",
-      sourceUrl: "https://atozsports.com/nfl/atlanta-falcons-news/winners-losers-falcons-vs-ravens-michael-penix-jr-tua-tagovailoa-kevin-stefanski/",
-      sourceLabel: "A to Z Sports / AJC",
-    },
-    {
-      title: "Bates scores on a 36-yard fumble return, and the pass rush gets three sacks without Za'Darius Smith",
-      detail: "AJC and Yahoo Sports (Oct 11-12): Sydney Brown forced a Mark Andrews fumble in the first quarter and Jessie Bates III took it back for his fifth career TD, his first on a fumble return. Despite missing Smith, Atlanta sacked Huntley three times with eight QB hits and also dropped Zay Flowers on a trick play. Nick Folk made all three field goals, including a 48-yarder.",
-      category: "games",
-      sourceUrl: "https://www.ajc.com/sports/2026/10/falcons-squander-late-lead-in-ot-loss-to-ravens/",
-      sourceLabel: "AJC / Yahoo Sports",
     },
     {
       title: "The NFL's No. 1 run defense gives up 208 yards at 5.9 a carry",
