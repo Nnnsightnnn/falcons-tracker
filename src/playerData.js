@@ -27,7 +27,7 @@ export const PLAYERS = [
     stats: { completions: 166, attempts: 276, passYds: 1982, passTDs: 9, ints: 3, qbRating: 88.5 },
     form: 0,
     status: "active",
-    injuryNote: "Ribs. Hurt on a Tavius Robinson sack in the final half-minute of regulation in the 30-23 overtime loss to Baltimore (Oct 11), returned for one incompletion, then sat out overtime as Tua Tagovailoa finished. He had X-rays and imaging Monday (Oct 12); multiple reports said he avoided a serious injury, and The Athletic's Jonathan Jones reported optimism he plays Week 6 vs. Chicago. Stefanski would not share results and said he will know more Wednesday (Oct 14): 'I can answer that better Wednesday.' Penix: 'not something that is going to be a long-term thing.' Tua Tagovailoa would make his first Falcons start if Penix cannot go. Third start back from November 2025 ACL surgery (19-of-32, 240, TD, no turnovers)",
+    injuryNote: "Ribs. Hurt on a Tavius Robinson sack in the final half-minute of regulation in the 30-23 overtime loss to Baltimore (Oct 11), returned for one incompletion, then sat out overtime as Tua Tagovailoa finished. He had X-rays and imaging Monday (Oct 12), and on Wednesday (Oct 14) he was a full participant in the first Week 6 practice, taking the first-team reps (atlantafalcons.com, AJC). Asked if Penix starts vs. Chicago, Stefanski said 'Yes, as long as everything goes according to plan.' Penix said his MRI and scans came back positive and that his ribs 'get better every day': 'It's not always comfortable, but I made every throw today.' Tua Tagovailoa is the fallback if there is a setback. Third start back from November 2025 ACL surgery (19-of-32, 240, TD, no turnovers)",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
     contract: { years: 4, total: 22080000, guaranteed: 22080000, apy: 5520000, throughYear: 2027, cap2026: 5900000 },
     career: [
@@ -323,7 +323,7 @@ export const PLAYERS = [
     stats: {},
     form: 8.5,
     status: "questionable",
-    injuryNote: "LT · restructured March 2026 (cleared $10.5M). Left the 45-24 win at New Orleans (Oct 5) late in the first quarter with a groin injury and was ruled out before the second half, in his 200th career game (fourth Falcon to reach 200) and with the NFL's longest active consecutive-starts streak (199) on the line. Michael Jerrell replaced him. The Week 5 depth chart (released Oct 6) was unchanged from Week 4 and still lists him at LT. Did not participate (groin) on Wednesday's estimated report (Oct 7), a walkthrough on the short week, then returned to practice as a limited participant on Thursday (Oct 8), per atlantafalcons.com. Upgraded to a full participant on Friday (Oct 9) and listed questionable for Sunday night vs. Baltimore; SportsTalkATL calls him a game-time decision, and if he plays it would be his 200th consecutive start.",
+    injuryNote: "LT · restructured March 2026 (cleared $10.5M). Left the 45-24 win at New Orleans (Oct 5) late in the first quarter with a groin injury and was ruled out before the second half, in his 200th career game (fourth Falcon to reach 200) and with the NFL's longest active consecutive-starts streak (199) on the line. Michael Jerrell replaced him. The Week 5 depth chart (released Oct 6) was unchanged from Week 4 and still lists him at LT. Did not participate (groin) on Wednesday's estimated report (Oct 7), a walkthrough on the short week, then returned to practice as a limited participant on Thursday (Oct 8), per atlantafalcons.com. Upgraded to a full participant on Friday (Oct 9) and listed questionable for Sunday night vs. Baltimore; SportsTalkATL calls him a game-time decision, and if he plays it would be his 200th consecutive start. A full participant (groin) on Wednesday's first Week 6 report (Oct 14) ahead of Chicago.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/16713.png",
     contract: { years: 3, total: 55500000, guaranteed: 0, apy: 18500000, throughYear: 2027, cap2026: 15500000 },
     career: [
@@ -741,7 +741,7 @@ export const PLAYERS = [
     stats: { tackles: 24, sacks: 9, ff: 1 },
     form: 7.4,
     status: "questionable",
-    injuryNote: "Signed Aug 18 to a one-year deal worth $6M and up to $8M with incentives, un-retiring after leaving the game in October 2025 following five games with the Eagles. Three-time Pro Bowler, reunited with HC Kevin Stefanski (his coach in Cleveland, 2023-24), and the REDGE starter with Jalon Walker (ACL) out for the year and James Pearce Jr. serving an eight-game ban. Entered Week 4 leading the team with 2.5 sacks (SI Falcons). Left the 45-24 win at New Orleans (Oct 5) in the first quarter with a concussion and neck injury and did not return; now in the concussion protocol ahead of Sunday night vs. Baltimore and listed as did not participate (concussion, neck) on Wednesday's estimated report (Oct 7) and again in Thursday's practice (Oct 8). Returned as a limited participant on Friday (Oct 9) and was listed questionable, then downgraded to OUT on Saturday (Oct 10) after not clearing the protocol (team reporter Tori McElhaney, NFL.com). Earliest possible return is Week 6 vs. Chicago (Oct 18); Jared Ivey, Cam Thomas and elevated DEs Bralen Trice and Drake Jackson absorb his snaps. Status kept at questionable because the tracker schema has no single-game 'out' value.",
+    injuryNote: "Signed Aug 18 to a one-year deal worth $6M and up to $8M with incentives, un-retiring after leaving the game in October 2025 following five games with the Eagles. Three-time Pro Bowler, reunited with HC Kevin Stefanski (his coach in Cleveland, 2023-24), and the REDGE starter with Jalon Walker (ACL) out for the year and James Pearce Jr. serving an eight-game ban. Entered Week 4 leading the team with 2.5 sacks (SI Falcons). Left the 45-24 win at New Orleans (Oct 5) in the first quarter with a concussion and neck injury and did not return; now in the concussion protocol ahead of Sunday night vs. Baltimore and listed as did not participate (concussion, neck) on Wednesday's estimated report (Oct 7) and again in Thursday's practice (Oct 8). Returned as a limited participant on Friday (Oct 9) and was listed questionable, then downgraded to OUT on Saturday (Oct 10) after not clearing the protocol (team reporter Tori McElhaney, NFL.com). Earliest possible return is Week 6 vs. Chicago (Oct 18), and he was a limited participant (concussion, neck) in Wednesday's first Week 6 practice (Oct 14); Jared Ivey, Cam Thomas and elevated DEs Bralen Trice and Drake Jackson absorb his snaps. Status kept at questionable because the tracker schema has no single-game 'out' value.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/3043168.png",
     contract: { years: 1, total: 6000000, guaranteed: 3500000, apy: 6000000, throughYear: 2026, cap2026: 6000000 },
     career: [
@@ -817,7 +817,7 @@ export const PLAYERS = [
     stats: { tackles: 92, tfl: 7, sacks: 2, int_def: 1 },
     form: 8.0,
     status: "questionable",
-    injuryNote: "MIKE · 3yr/$30M FA splash from LV. Limited in practice with a hamstring all week (Oct 1-3) and listed questionable, but was active and played in the 45-24 Monday-night win at New Orleans (Oct 5); has not missed a game. Added to the Week 5 report as limited (hamstring) on Thursday (Oct 8), limited again Friday (Oct 9) and listed questionable for Sunday night vs. Baltimore.",
+    injuryNote: "MIKE · 3yr/$30M FA splash from LV. Limited in practice with a hamstring all week (Oct 1-3) and listed questionable, but was active and played in the 45-24 Monday-night win at New Orleans (Oct 5); has not missed a game. Added to the Week 5 report as limited (hamstring) on Thursday (Oct 8), limited again Friday (Oct 9) and listed questionable for Sunday night vs. Baltimore. Limited (hamstring) again on Wednesday (Oct 14), the first Week 6 report before Chicago.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4037626.png",
     contract: { years: 3, total: 30000000, guaranteed: 18000000, apy: 10000000, throughYear: 2028, cap2026: 8500000 },
     career: [
@@ -968,8 +968,8 @@ export const PLAYERS = [
     acquired: "fa-2026",
     stats: { tackles: 28, pass_def: 5 },
     form: 6.6,
-    status: "active",
-    injuryNote: "Groin. Stefanski listed it among the injuries after the 30-23 overtime loss to Baltimore (Oct 11); no timeline yet. Started at cornerback since the Week 4 depth chart (Sep 29) in place of A.J. Terrell (IR, groin) · Reclamation · ex-#9 overall (2020 JAX)",
+    status: "questionable",
+    injuryNote: "Groin. Hurt in the 30-23 overtime loss to Baltimore (Oct 11) and did not practice Wednesday (Oct 14), the only Falcon held out of the first Week 6 session. Stefanski said he is 'getting better' and the team is not ruling him out for Sunday vs. Chicago (atlantafalcons.com); Aveion Terrell, Billy Bowman and Sydney Brown are next in line. Started at cornerback since the Week 4 depth chart (Sep 29) in place of A.J. Terrell (IR, groin) · Reclamation · ex-#9 overall (2020 JAX)",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4240596.png",
     contract: { years: 1, total: 2200000, guaranteed: 750000, apy: 2200000, throughYear: 2026, cap2026: 2200000 },
     career: [
@@ -1683,7 +1683,7 @@ export const NEXT_GAME = {
   date: "2026-10-18",
   kickoff: "1:00 PM ET",
   tv: "FOX",
-  note: "Atlanta (2-3) returns to Mercedes-Benz Stadium for a 1 PM kickoff after a 30-23 overtime loss to Baltimore, its first non-prime-time game since Week 2. Both teams have a quarterback question. Michael Penix Jr. (ribs) had imaging Monday and reports say he avoided a serious injury, but Kevin Stefanski said he will know more Wednesday (Oct 14); Tuesday's depth chart (Oct 13) still lists Penix at QB1; Tua Tagovailoa would make his first Falcons start if Penix cannot play. Chicago (3-2) lost 31-7 at Green Bay with Tyson Bagent starting while Caleb Williams (hamstring) missed a third straight game; NFL Network's Ian Rapoport said 'all signs point' to Williams playing (Oct 12), Ben Johnson has not named a fallback between Tyson Bagent and Case Keenum, and the line flipped from Bears +1.5 to Bears -3 (SI Betting, Oct 12). CB C.J. Henderson (groin) is also being evaluated, and edge Za'Darius Smith (concussion, neck) is eligible to return. Atlanta trails Carolina by a half-game in the NFC South. Next: San Francisco at home in Week 7.",
+  note: "Atlanta (2-3) returns to Mercedes-Benz Stadium for a 1 PM kickoff after a 30-23 overtime loss to Baltimore, its first non-prime-time game since Week 2. Michael Penix Jr. (ribs) was a full participant in Wednesday's first practice (Oct 14) and took the first-team reps; asked if Penix starts, Kevin Stefanski said 'Yes, as long as everything goes according to plan.' Tua Tagovailoa is the fallback. CB C.J. Henderson (groin) did not practice but is not being ruled out, Za'Darius Smith (concussion, neck) and Divine Deablo (hamstring) were limited, and Jake Matthews (groin) was full. Chicago (3-2) listed Caleb Williams (hamstring) as a full participant on its estimated Wednesday report after he missed the last two games; Ben Johnson said 'I feel good about the plan that we have in place.' The Bears are 3-point favorites (-175 moneyline, total 47.5, SI Betting). Atlanta trails Carolina by a half-game in the NFC South. Next: San Francisco at home in Week 7.",
 };
 
 // =========================================
@@ -2050,18 +2050,18 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-10-14T08:30:00Z",
+  generatedAt: "2026-10-15T08:30:00Z",
   cover: {
-    kicker: "Bears week \u00b7 Stefanski's Penix (ribs) update is due today, and Tuesday's depth chart still lists him at QB1",
+    kicker: "Bears week \u00b7 Penix (ribs) practices fully on Wednesday and Stefanski says he starts 'as long as everything goes according to plan'",
     headLine1: "Ribs.",
-    headEm: "Wait for Wednesday.",
-    headLine3: "Penix expects to face Chicago, Tua is the fallback, and the Bears are now favored in Atlanta as Caleb Williams nears a return.",
+    headEm: "Full go.",
+    headLine3: "Penix takes the first-team reps and says he made every throw, while Caleb Williams practices fully for Chicago.",
     deck:
-      "Michael Penix Jr. had X-rays and imaging on Monday after the late sack that knocked him out of Sunday's 30-23 overtime loss to Baltimore. Multiple reports said the rib injury is not serious, and The Athletic's Jonathan Jones reported optimism that he plays Sunday, but Kevin Stefanski declined to share results: 'I can answer that better Wednesday.' If Penix cannot go, Tua Tagovailoa makes his first Falcons start. Penix said he pushed to return in overtime and that the pain grew as he stood on the sideline. Chicago (3-2) is coming off a 31-7 loss at Green Bay with Tyson Bagent at quarterback, but NFL Network's Ian Rapoport said 'all signs point' to Caleb Williams (hamstring) returning this week, and the line has flipped from Bears +1.5 to Bears -3. Tuesday's depth chart still lists Penix first, ahead of Tagovailoa. Stefanski's other Monday theme was third down: 'we've got to look at ways that we can, No. 1, avoid third down, and No. 2, be in more manageable situations.' The first injury report of the week, and Stefanski's answer on Penix, are due today.",
+      "Three days after a late sack knocked him out of the 30-23 overtime loss to Baltimore, Michael Penix Jr. was a full participant in Wednesday's first Week 6 practice and took the first-team reps. Asked whether Penix will start Sunday, Kevin Stefanski said 'Yes, as long as everything goes according to plan,' though he would not go into specifics beyond 'he's feeling better.' Penix said his MRI and scans came back positive and his ribs 'get better every day': 'It's not always comfortable, but I made every throw today.' Tua Tagovailoa remains the fallback. CB C.J. Henderson (groin) was the only Falcon who did not practice, and Stefanski said he is getting better. Za'Darius Smith (concussion, neck) and Divine Deablo (hamstring) were limited, and Jake Matthews (groin) was full. Across the field, Caleb Williams (hamstring) was a full participant on Chicago's estimated report after missing two games, and Ben Johnson said he feels good about the plan in place. The Bears stay 3-point favorites, with a total of 47.5.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
-    stampLabel: "Bears week \u00b7 Penix (ribs) update today \u00b7 Bears -3 \u00b7 Falcons 2-3 \u00b7 Sun Oct 18, 1 PM ET, FOX",
+    stampLabel: "Bears week \u00b7 Penix (ribs) full Wednesday \u00b7 Bears -3 \u00b7 Falcons 2-3 \u00b7 Sun Oct 18, 1 PM ET, FOX",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2703,6 +2703,8 @@ export const NEWS_DIGEST = {
     // decision, Caleb Williams nearing a return, line flip to Bears -3); pointer and penix-jr fallback unchanged.
     // STATUS (2026-10-14 cloud run): image request SKIPPED (cloud run). Kicker and deck nudged onto Wednesday's Penix decision day, the
     // Tuesday depth chart (Penix still QB1) and Rapoport's 'all signs point' report on Caleb Williams; pointer and penix-jr fallback unchanged.
+    // STATUS (2026-10-15 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto Penix's full Wednesday practice,
+    // Stefanski's 'as long as everything goes according to plan' and Caleb Williams practicing fully; pointer and penix-jr fallback unchanged.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
@@ -2732,14 +2734,44 @@ export const NEWS_DIGEST = {
     "AJC (Oct 12)", "NBC Sports / PFT (Oct 12)", "Field Level Media (Oct 12)", "Heavy.com (Oct 12, The Athletic report)",
     "theScore (Oct 12)", "atlantafalcons.com (Oct 12)", "SI Betting (Oct 12)", "ABC7 Chicago (Oct 11)",
     "NBC Sports (Oct 12)", "Heavy.com (Oct 12-13)", "Falcons Wire (Yahoo, Oct 13)", "SI Betting (Oct 13)",
+    "atlantafalcons.com (Oct 14)", "AJC (Oct 14)", "CBS Sports (Oct 14)", "NBC Sports / PFT (Oct 14)", "Yahoo Sports (Oct 14)",
+    "CBS News Atlanta (Oct 14)", "Falcons Wire (Yahoo, Oct 14)", "SI Bears On SI (Oct 14)", "SI Betting (Oct 14)",
   ],
   topics: [
     {
-      title: "Rapoport: 'all signs point' to Caleb Williams playing in Atlanta, and Ben Johnson will not name a fallback",
-      detail: "NBC Sports and Heavy.com (Monday-Tuesday, Oct 12-13): NFL Network's Ian Rapoport said 'All signs point to Caleb Williams being back on the field this week for Chicago.' Johnson said Williams (hamstring) is 'going the right way' and would not say whether Tyson Bagent (12-of-21, 87 yards, two interceptions before he was benched at Green Bay) or Case Keenum starts if Williams sits. Williams practiced on a limited basis Oct 9, his first work since the Week 2 injury.",
+      title: "Penix practices fully on Wednesday, and Stefanski says he starts 'as long as everything goes according to plan'",
+      detail: "atlantafalcons.com, CBS Sports and NBC Sports/PFT (Wednesday, Oct 14): Stefanski said before practice that Penix (ribs) would be 'limited in some fashion,' then the injury report listed him as a full participant. Asked if Penix starts Sunday: 'Yes, as long as everything goes according to plan.' He would not go into specifics beyond 'he's feeling better.' Tua Tagovailoa is the fallback.",
+      category: "injuries",
+      sourceUrl: "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/michael-penix-fully-participated-in-wednesdays-practice",
+      sourceLabel: "atlantafalcons.com / CBS Sports / NBC Sports / PFT",
+    },
+    {
+      title: "Penix: 'It's not always comfortable, but I made every throw today'",
+      detail: "AJC (Wednesday, Oct 14): Penix said his ribs 'get better every day,' that his MRI and scans came back positive and that he took all the first-team reps. Asked if he is confident he will play: 'Yes.' He declined to say whether the ribs are bruised. Since his Week 3 return, the offense has scored on 17 of 27 possessions.",
+      category: "injuries",
+      sourceUrl: "https://www.ajc.com/sports/2026/10/falcons-qb-penix-plans-start-vs-bears/",
+      sourceLabel: "AJC",
+    },
+    {
+      title: "Caleb Williams is a full participant on Chicago's Wednesday report",
+      detail: "Bears On SI and Falcons Wire (Wednesday, Oct 14): Williams (hamstring) was listed as a full participant on an estimated report after missing the last two games with a Grade 2 strain. Ben Johnson: 'it's still fluid, but, you know, I feel good about the plan that we have in place at this point.' RB Kyle Monangai, LBs T.J. Edwards and Keyshaun Elliott and DL Dayo Odeyingbo did not participate; CB Tyrique Stevenson was limited.",
       category: "games",
-      sourceUrl: "https://heavy.com/sports/nfl/chicago-bears/caleb-williams-return-injury-update-falcons/",
-      sourceLabel: "NBC Sports / Heavy.com / NFL Network",
+      sourceUrl: "https://www.si.com/nfl/bears/onsi/bears-wednesday-injury-report-bad-news-kyle-monangai-caleb-williams-progresses",
+      sourceLabel: "Bears On SI / Falcons Wire (Yahoo Sports)",
+    },
+    {
+      title: "Week 6 report: Henderson sits, Za'Darius Smith and Deablo limited, Matthews full",
+      detail: "atlantafalcons.com (Wednesday, Oct 14): CB C.J. Henderson (groin) did not practice, but Stefanski said he is 'getting better' and the team is not ruling him out. Edge Za'Darius Smith (concussion, neck), who missed the Ravens game, was limited, as was LB Divine Deablo (hamstring). LT Jake Matthews (groin) was a full participant.",
+      category: "injuries",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-injury-report-michael-penix-jr-chicago-bears",
+      sourceLabel: "atlantafalcons.com / Falcons Wire (Yahoo Sports)",
+    },
+    {
+      title: "Bears stay 3-point favorites in Atlanta, with the total at 47.5",
+      detail: "SI Betting (Wednesday, Oct 14): Chicago is -3 (-118) with a -175 moneyline (Falcons +145) after Atlanta opened as a 1.5-point favorite, and the total is 47.5. Both quarterbacks were listed as questionable in SI's preview. Stefanski on Chicago: 'It's a huge challenge for our football team' (CBS News Atlanta).",
+      category: "games",
+      sourceUrl: "https://www.si.com/betting/bears-vs-falcons-prediction-odds-spread-injuries-trends-for-nfl-week-6-2026",
+      sourceLabel: "SI Betting / CBS News Atlanta",
     },
     {
       title: "Week 6 depth chart keeps Penix at QB1 ahead of Tua; Jammie Robinson replaces Abdullah",
@@ -2747,20 +2779,6 @@ export const NEWS_DIGEST = {
       category: "general",
       sourceUrl: "https://sports.yahoo.com/articles/falcons-release-depth-chart-nfl-205110778.html",
       sourceLabel: "Falcons Wire (Yahoo Sports)",
-    },
-    {
-      title: "Penix has imaging on his ribs; reports say it is not serious, and Stefanski will update Wednesday",
-      detail: "AJC, NBC Sports/PFT and Field Level Media (Monday, Oct 12): Penix had X-rays and imaging, and multiple reports said he avoided a serious injury. The Athletic's Jonathan Jones reported optimism he plays Sunday. Stefanski would not share results: 'I can answer that better Wednesday,' adding that 'with any type of injury, I always want to see how the guys respond over a couple of days.' Tua Tagovailoa would make his first Falcons start if Penix cannot go.",
-      category: "injuries",
-      sourceUrl: "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kevin-stefanski-well-have-a-better-idea-wednesday-about-michael-penix",
-      sourceLabel: "AJC / NBC Sports / PFT / Field Level Media",
-    },
-    {
-      title: "Line flips to Bears -3 in Atlanta as Caleb Williams nears a return",
-      detail: "SI Betting (Monday, Oct 12): Chicago opened as a 1.5-point underdog and is now a three-point favorite (-175 on DraftKings) after Ben Johnson said Williams (hamstring) is 'on track' and could be close for Week 6. PFT's Mike Florio reported Williams is still week-to-week. The Bears (3-2) lost 31-7 at Green Bay on Sunday with Tyson Bagent starting before Case Keenum replaced him in the fourth quarter. On Tuesday (Oct 13), SI Betting still had Chicago -3 (-120) and noted the positive Penix reports had not moved the number.",
-      category: "games",
-      sourceUrl: "https://www.si.com/betting/positive-caleb-williams-update-causes-major-shift-in-bears-vs-falcons-odds-for-nfl-week-6",
-      sourceLabel: "SI Betting / ABC7 Chicago",
     },
     {
       title: "Stefanski's Monday fix: 'avoid third down' and get into more manageable situations",
@@ -2812,20 +2830,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "panthers.com / neworleanssaints.com / buccaneers.com",
     },
     {
-      title: "Henderson's groin and Za'Darius Smith's concussion are the other Bears-week questions",
-      detail: "atlantafalcons.com and theScore (Oct 12): CB C.J. Henderson, starting since A.J. Terrell went to IR, left the Ravens game with a groin injury, and the team expected more after Monday's imaging; Aveion Terrell, Billy Bowman and Sydney Brown are next in line. Edge Za'Darius Smith (concussion, neck) was inactive Sunday after not clearing the protocol, and Chicago on Sunday is his earliest return. The first injury report comes Wednesday.",
-      category: "injuries",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-ravens-game-notes-injuries-quotes-stats",
-      sourceLabel: "atlantafalcons.com / theScore / CBS Sports (RotoWire)",
-    },
-    {
-      title: "Abdullah to injured reserve, Jammie Robinson signed to the 53, Trice and Drake Jackson elevated",
-      detail: "atlantafalcons.com (Saturday, Oct 10): LB Yasir Abdullah (hamstring), already ruled out, goes on IR and must miss at least four games. S Jammie Robinson, a 2023 Carolina fifth-rounder out of Florida State who was elevated for the win at New Orleans, takes the roster spot for secondary depth and special teams. DEs Bralen Trice (his third and final standard elevation) and Drake Jackson (his first) were called up for Sunday. Baltimore elevated OT Chuma Edoga and G Kyle Hergel.",
-      category: "general",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-place-yasir-abdullah-on-ir-sign-jammie-robinson",
-      sourceLabel: "atlantafalcons.com / Yahoo Sports / NFL.com",
-    },
-    {
       title: "Falcons pay Gervon Dexter Sr.: a four-year, $78 million extension with $46.5 million guaranteed, one month after trading for him",
       detail: "atlantafalcons.com, ESPN and National Football Post (Wednesday, Sep 30): the defensive tackle acquired from Chicago on Aug 30 for CB Clark Phillips III and a 2027 fifth-rounder is now signed through 2030 at $19.5 million a year. Through three games he has 15 pressures and ranks eighth in the NFL in pressure rate (20.5%). 'Gervon is a young, ascending talent whose power, disruption and impact along the defensive line are difficult to find,' GM Ian Cunningham said.",
       category: "contracts",
@@ -2836,9 +2840,46 @@ export const NEWS_DIGEST = {
 };
 
 export const INTERVIEWS = {
-  generatedAt: "2026-10-13T08:30:00Z",
-  windowLabel: "Ravens postgame → Bears week · Oct 7 → Oct 18",
+  generatedAt: "2026-10-15T08:30:00Z",
+  windowLabel: "Ravens postgame → Bears week · Oct 11 → Oct 18",
   sessions: [
+    {
+      id: "penix-2026-10-14",
+      speaker: "Michael Penix Jr.",
+      role: "Quarterback",
+      date: "2026-10-14",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Week 6 vs. Chicago · Wednesday Media Availability",
+      sourceUrl: "https://www.ajc.com/sports/2026/10/falcons-qb-penix-plans-start-vs-bears/",
+      summary: "After a full practice three days removed from the rib injury that kept him out of overtime against Baltimore, Penix left no doubt about his plans for Sunday. He said he took the first-team reps and that his scans came back positive, while admitting there is still some discomfort. Quotes via AJC.",
+      pullQuote: "It's not always comfortable, but I made every throw today.",
+      bullets: [
+        "On his ribs: 'They get better every day'",
+        "Asked whether he is confident he will play Sunday: 'Yes.' Then: 'We're good, and I feel good to play this week'",
+        "Said his MRI and scans came back positive, but declined to say whether the ribs are bruised (AJC)",
+        "On Chicago's defense, fifth in scoring at 19.2 points a game: 'they do a great job with their scheme'",
+      ],
+      topics: ["bears-week", "week-6", "penix-ribs"],
+    },
+    {
+      id: "stefanski-2026-10-14",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-10-14",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Week 6 vs. Chicago · Wednesday Media Availability",
+      sourceUrl: "https://www.cbssports.com/nfl/news/michael-penix-jr-injury-update-falcons-vs-bears/",
+      summary: "Two days after pushing the question to Wednesday, Stefanski answered it: Penix will practice and is in line to start against Chicago barring a setback. He kept the injury details private and expected Penix to be limited, before the injury report listed him as a full participant. Quotes via CBS Sports and CBS News Atlanta.",
+      pullQuote: "Yes, as long as everything goes according to plan.",
+      bullets: [
+        "Opening on Penix: 'Mike will practice,' adding 'He'll be limited in some fashion' (the report later listed him as full)",
+        "On how many reps Penix would take: 'It could be all, some, none. We shall see.'",
+        "On managing the ribs: 'With any injury like this, you want to make sure, as they move around, how they're feeling'",
+        "On the Bears: 'It's a huge challenge for our football team' (CBS News Atlanta)",
+        "Said CB C.J. Henderson (groin) is getting better and is not being ruled out for Sunday (atlantafalcons.com)",
+      ],
+      topics: ["bears-week", "week-6", "penix-ribs", "injuries"],
+    },
     {
       id: "stefanski-2026-10-12",
       speaker: "Kevin Stefanski",
@@ -2912,45 +2953,6 @@ export const INTERVIEWS = {
         "DC Jeff Ulbrich, same day, on preparing for both quarterbacks: 'They do have a similar skill set. They're both very athletic; both have the ability to make every throw'",
       ],
       topics: ["ravens-week", "week-5", "huntley", "opponent-scouting"],
-    },
-    {
-      id: "ulbrich-2026-10-08",
-      speaker: "Jeff Ulbrich",
-      role: "Defensive Coordinator",
-      date: "2026-10-08",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "Week 5 vs. Baltimore · Thursday Coordinators' Availability",
-      sourceUrl: "https://nfl.com/news/can-the-falcons-top-ranked-run-defense-handle-derrick-henry-and-the-ravens-on-snf",
-      summary: "With the league's No. 1 run defense about to meet Derrick Henry, Ulbrich framed Sunday night as a measuring stick and put the emphasis on tackling. He said the Ravens' offense would look much the same with Lamar Jackson or Tyler Huntley, and gave an upbeat update on suspended edge James Pearce Jr.",
-      pullQuote: "We have had some success versus the run so far, but what a great challenge.",
-      bullets: [
-        "Called the Henry matchup a chance to test the defense against 'the best,' saying the group takes 'a lot of pride in our ability to play a physical brand of football'",
-        "On Henry's stiff-arm: the defense has to be 'on top of our tackling this week' (Atlanta's 9.6% missed-tackle rate is third-best in the league, per SumerSports)",
-        "On the Ravens' quarterback situation: 'The offense is going to be similar either way'",
-        "On James Pearce Jr., halfway through an eight-game suspension: 'I had a sit-down with him. He's in a great space,' adding that he looks like he's been working",
-        "On rookie LB Kendal Daniels and DL Brandon Dorlus: 'Those two give you the ability to do everything base and everything nickel' (AJC)",
-      ],
-      topics: ["ravens-week", "week-5", "run-defense", "derrick-henry", "pearce-suspension"],
-    },
-    {
-      id: "penix-2026-10-07",
-      speaker: "Michael Penix Jr.",
-      role: "Quarterback",
-      date: "2026-10-07",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "Week 5 vs. Baltimore · Wednesday Media Availability",
-      sourceUrl: "https://www.si.com/nfl/falcons/onsi/falcons-qb-michael-penix-jr-scouts-ravens-defense-ahead-of-week-5-showdown",
-      transcriptUrl: "https://www.atlantafalcons.com/video/quarterback-michael-penix-jr-media-availability-wednesday-october-7th-press-conference",
-      verified: true,
-      summary: "Opening a short week before the Falcons' third straight prime-time game, Penix spent his podium time on the Ravens' defense rather than their quarterback situation. He praised every level of it, singled out Roquan Smith, and kept the answer on executing Atlanta's own plan.",
-      pullQuote: "But we've got to just lock into our scheme and trust our scheme.",
-      bullets: [
-        "On the Ravens overall: 'They got some players. They got some ballplayers,' calling Baltimore 'a really good team all around'",
-        "On the front seven: 'Their front is good, and they have backers that are good'",
-        "On the secondary: said it is 'hard to find a weak point in their defense'",
-        "On Roquan Smith: 'He's a leader. He's the one that makes that whole defense go'",
-      ],
-      topics: ["ravens-week", "week-5", "penix", "opponent-scouting"],
     },
   ],
 };
