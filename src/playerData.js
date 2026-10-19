@@ -27,7 +27,7 @@ export const PLAYERS = [
     stats: { completions: 166, attempts: 276, passYds: 1982, passTDs: 9, ints: 3, qbRating: 88.5 },
     form: 0,
     status: "active",
-    injuryNote: "Ribs. Hurt on a Tavius Robinson sack in the final half-minute of regulation in the 30-23 overtime loss to Baltimore (Oct 11), returned for one incompletion, then sat out overtime as Tua Tagovailoa finished. He had X-rays and imaging Monday (Oct 12), and on Wednesday (Oct 14) he was a full participant in the first Week 6 practice, taking the first-team reps (atlantafalcons.com, AJC). Asked if Penix starts vs. Chicago, Stefanski said 'Yes, as long as everything goes according to plan.' Penix said his MRI and scans came back positive and that his ribs 'get better every day': 'It's not always comfortable, but I made every throw today.' Full again on Thursday (Oct 15), his second straight full session (atlantafalcons.com). Tua Tagovailoa is the fallback if there is a setback. Third start back from November 2025 ACL surgery (19-of-32, 240, TD, no turnovers) Full all week and carries NO injury designation for Chicago (Friday, Oct 16); Stefanski said he will have no limitations and 'handled everything really well' (AJC, Falcons Wire).",
+    injuryNote: "Played through the rib injury from the Oct 11 Baltimore game: started vs. Chicago (Oct 18) with no designation and went 19-of-33 for 225 yards, three TDs and no interceptions, but was sacked five times (three by Kyler Gordon) and lost a fumble on the game-ending strip. No new injury reported. Now 2-2 as a starter since returning from November 2025 ACL surgery.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
     contract: { years: 4, total: 22080000, guaranteed: 22080000, apy: 5520000, throughYear: 2027, cap2026: 5900000 },
     career: [
@@ -838,7 +838,7 @@ export const PLAYERS = [
     stats: { tackles: 92, tfl: 7, sacks: 2, int_def: 1 },
     form: 8.0,
     status: "questionable",
-    injuryNote: "MIKE · 3yr/$30M FA splash from LV. Limited in practice with a hamstring all week (Oct 1-3) and listed questionable, but was active and played in the 45-24 Monday-night win at New Orleans (Oct 5); has not missed a game. Added to the Week 5 report as limited (hamstring) on Thursday (Oct 8), limited again Friday (Oct 9) and listed questionable for Sunday night vs. Baltimore. Limited (hamstring) again on Wednesday (Oct 14), the first Week 6 report before Chicago, then upgraded to a full participant on Thursday (Oct 15).",
+    injuryNote: "Arm. Injured in the first half of the 31-23 loss to Chicago (Oct 18) and ruled out late in the second quarter (atlantafalcons.com); severity not yet announced. Had battled a hamstring issue through Weeks 4-6 practices without missing a game. MIKE · 3yr/$30M FA signing from Las Vegas.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4037626.png",
     contract: { years: 3, total: 30000000, guaranteed: 18000000, apy: 10000000, throughYear: 2028, cap2026: 8500000 },
     career: [
@@ -1077,8 +1077,8 @@ export const PLAYERS = [
     acquired: "draft-2025-R4",
     stats: {},
     form: 0,
-    status: "active",
-    injuryNote: "Made his 2026 debut in the Week 3 win at Green Bay (Sep 24), cleared from questionable, roughly ten months after the late-Nov 2025 Achilles rupture; had been ruled out for the Week 2 home opener vs. Carolina before returning at Green Bay. Activated off Reserve/PUP onto the initial 53 on cutdown day (Aug 30); in the nickel/slot mix behind Avieon Terrell.",
+    status: "questionable",
+    injuryNote: "Hamstring. Strained in the fourth quarter of the 31-23 loss to Chicago (Oct 18) and listed doubtful to return (atlantafalcons.com); severity not yet announced. Returned in Week 3 from a late-Nov 2025 Achilles rupture; in the nickel/slot mix behind Avieon Terrell.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4431194.png",
     contract: { years: 4, total: 5200000, guaranteed: 950000, apy: 1300000, throughYear: 2028, cap2026: 1100000 },
     career: [{ years: "2025–", team: "Atlanta Falcons", type: "NFL" }],
@@ -1216,7 +1216,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "active",
-    injuryNote: "Healthy. Named to start at outside cornerback vs. Chicago (Oct 18) with C.J. Henderson (groin) ruled out, his third career start and first on the outside (AJC, Oct 16). Per Next Gen Stats he has allowed five catches for 39 yards on 10 targets across 100 coverage snaps.",
+    injuryNote: "Started at outside cornerback vs. Chicago (Oct 18) with C.J. Henderson (groin) out, his third career start and first on the outside. Was evaluated for a concussion and also suffered a stinger, was listed questionable to return, and came back in the third quarter (atlantafalcons.com). Watch the Week 7 injury report.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4870988.png",
     contract: { years: 4, total: 8500000, guaranteed: 4200000, apy: 2125000, throughYear: 2029, cap2026: 1400000 },
     career: [
@@ -1262,8 +1262,8 @@ export const PLAYERS = [
     acquired: "draft-2026-R4-P134",
     stats: {},
     form: 0,
-    status: "active",
-    injuryNote: "Added to the Week 4 injury report on Friday, Oct 2 as a limited participant (Achilles), then practiced fully on Saturday, Oct 3 and carries no game designation for Monday at New Orleans. Back on the report as a limited participant (Achilles) on Thursday, Oct 15, during Bears week (atlantafalcons.com). Missed spring practices with a foot injury before being cleared for camp",
+    status: "questionable",
+    injuryNote: "Neck. Carted off on a stretcher in the third quarter of the 31-23 loss to Chicago (Oct 18) after his facemask hit TE Colston Loveland's knee on a tackle, and taken to Grady Memorial Hospital. The team said he was alert with movement in all extremities; The Athletic's Josh Kendall reported he was walking under his own power in the locker room. Stefanski: 'All reports so far are good.' Further evaluation pending; no timeline. Earlier: limited (Achilles) on the Week 4 and Week 6 practice reports.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4595343.png",
     contract: { years: 4, total: 4750000, guaranteed: 700000, apy: 1187500, throughYear: 2029, cap2026: 900000 },
     career: [
@@ -1675,15 +1675,15 @@ export const RSS_FEEDS = [
 // NEXT GAME (null during offseason)
 // =========================================
 export const NEXT_GAME = {
-  week: 6,
-  opp: "Chicago Bears",
-  oppAbbr: "CHI",
+  week: 7,
+  opp: "San Francisco 49ers",
+  oppAbbr: "SF",
   home: true,
   venue: "Mercedes-Benz Stadium · Atlanta, Ga.",
-  date: "2026-10-18",
+  date: "2026-10-25",
   kickoff: "1:00 PM ET",
   tv: "FOX",
-  note: "Game day. Atlanta (2-3) hosts Chicago (3-2) at 1 PM ET on FOX after a 30-23 overtime loss to Baltimore; inactives are due at 11:30 AM ET. Michael Penix Jr. (ribs) has no designation and makes his fourth straight start. CB C.J. Henderson (groin) is OUT, so rookie Avieon Terrell starts outside opposite Mike Hughes; Za'Darius Smith (neck) is questionable and Drake London (hip) carries no designation. Saturday (Oct 17): Atlanta signed OLB Bralen Trice from the practice squad to the 53 and elevated DE Drake Jackson and S Jammie Robinson. Chicago: Caleb Williams (hamstring, questionable) is expected to start after missing three games, per NFL Network and ESPN. The Bears activated CB Kyler Gordon from PUP, put DL Dayo Odeyingbo on IR and released S Xavier Woods; LBs T.J. Edwards and Keyshaun Elliott and RB Kyle Monangai are out and Montez Sweat is suspended. Line: Bears -1.5, total 51.5 (Bettors Insider, citing ESPN odds). Atlanta trails Carolina by a half-game in the NFC South. Next: San Francisco at home in Week 7.",
+  note: "Atlanta (2-4, 0-3 at home) hosts unbeaten San Francisco (5-0) after a 31-23 loss to Chicago, its second straight defeat. The 49ers play Washington on Monday Night Football (Oct 19) before traveling. Injury watch from the Bears game: LB Kendal Daniels (neck) was taken to Grady Memorial Hospital and was alert with movement in all extremities; LB Divine Deablo (arm) and DB Billy Bowman Jr. (hamstring) left the game; CB Avieon Terrell was evaluated for a concussion and a stinger but returned. CB A.J. Terrell (groin, IR since Sept 22) is eligible to come off injured reserve this week. Atlanta trails Carolina (3-2) by 1.5 games in the NFC South. Next: at Tampa Bay in Week 8.",
 };
 
 // =========================================
@@ -1805,7 +1805,7 @@ export const SCHEDULE_2026 = [
   },
   {
     week: 6,
-    status: "confirmed",
+    status: "final",
     opponent: "CHI",
     opponentName: "Chicago Bears",
     side: "home",
@@ -1813,7 +1813,10 @@ export const SCHEDULE_2026 = [
     kickoffET: "1:00 PM ET",
     tv: "FOX",
     venue: "Mercedes-Benz Stadium, Atlanta",
-    note: "Bears at MBS · post-primetime breather.",
+    result: "L",
+    atlScore: 23,
+    oppScore: 31,
+    note: "Bears 31-23. Caleb Williams (30-of-36, 305, TD) returned from a hamstring injury and Chicago scored TDs on its first two drives; Zachariah Branch lost two return fumbles and Kyler Gordon sacked Michael Penix Jr. three times, forcing the game-ending fumble. Penix threw three TDs, two to Kyle Pitts in a 16-point fourth quarter. LB Kendal Daniels was carted off with a neck injury.",
   },
   {
     week: 7,
@@ -2031,36 +2034,37 @@ export const RESULTS_2026 = [
   { date: "2026-09-24", opp: "GB", home: false, atlScore: 35, oppScore: 14, result: "W" },
   { date: "2026-10-05", opp: "NO", home: false, atlScore: 45, oppScore: 24, result: "W" },
   { date: "2026-10-11", opp: "BAL", home: true, atlScore: 23, oppScore: 30, result: "L", ot: true },
+  { date: "2026-10-18", opp: "CHI", home: true, atlScore: 23, oppScore: 31, result: "L" },
 ];
 
 // =========================================
-// NFC SOUTH 2026 STANDINGS — live (through Week 5, after Sunday Night Football Oct 11)
-// Atlanta lost 30-23 in overtime to Baltimore and falls to 2-3. Carolina (2-2) was on its Week 5 bye and
-// now sits alone in first. Tampa Bay beat Dallas 24-16 on Thursday (Oct 8) and New Orleans lost 23-13 to
-// Minnesota on Sunday, leaving both at 1-4 (listed in prior order; no head-to-head yet).
+// NFC SOUTH 2026 STANDINGS — live (through Week 6 Sunday, Oct 18)
+// Atlanta lost 31-23 at home to Chicago and falls to 2-4. Carolina beat Philadelphia 25-14 and leads by 1.5
+// games at 3-2. New Orleans beat the Giants 34-27 to reach 2-4; Atlanta stays second on the head-to-head
+// tiebreaker (45-24 win at New Orleans, Oct 5). Tampa Bay lost 26-19 in overtime to Pittsburgh and is 1-5.
 // =========================================
 export const NFC_SOUTH_STANDINGS_2026 = [
-  { team: "Carolina Panthers", code: "CAR", wins: 2, losses: 2, pct: 0.5, divisionFinish: 1 },
-  { team: "Atlanta Falcons", code: "ATL", wins: 2, losses: 3, pct: 0.4, divisionFinish: 2, isFalcons: true },
-  { team: "New Orleans Saints", code: "NO", wins: 1, losses: 4, pct: 0.2, divisionFinish: 3 },
-  { team: "Tampa Bay Buccaneers", code: "TB", wins: 1, losses: 4, pct: 0.2, divisionFinish: 4 },
+  { team: "Carolina Panthers", code: "CAR", wins: 3, losses: 2, pct: 0.6, divisionFinish: 1 },
+  { team: "Atlanta Falcons", code: "ATL", wins: 2, losses: 4, pct: 0.333, divisionFinish: 2, isFalcons: true },
+  { team: "New Orleans Saints", code: "NO", wins: 2, losses: 4, pct: 0.333, divisionFinish: 3 },
+  { team: "Tampa Bay Buccaneers", code: "TB", wins: 1, losses: 5, pct: 0.167, divisionFinish: 4 },
 ];
 
 // =========================================
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-10-18T08:45:00Z",
+  generatedAt: "2026-10-19T08:45:00Z",
   cover: {
-    kicker: "Game day · Bears at Falcons, 1 PM ET: Caleb Williams is expected to start, and Bralen Trice finally gets a 53-man contract",
-    headLine1: "Caleb's back.",
-    headEm: "Kickoff at one.",
-    headLine3: "Williams returns for Chicago, Trice is signed to the 53, and Atlanta tries to climb back to .500.",
-    deck: "The last question of Bears week was answered Saturday afternoon: Caleb Williams (hamstring), questionable after three full practices, is expected to start, per NFL Network's Ian Rapoport and Mike Garafolo and ESPN's Adam Schefter, ending a three-game absence in which Chicago went 2-1. Atlanta spent the open roster spot on Bralen Trice, signing the 2024 third-round pick from the practice squad after he had used all three of his elevations, and elevated DE Drake Jackson and S Jammie Robinson. Michael Penix Jr. (ribs) has no designation, C.J. Henderson is out so rookie Avieon Terrell starts outside, and Za'Darius Smith (neck) is a game-time call. Chicago activated CB Kyler Gordon from PUP and placed Dayo Odeyingbo on IR. Both teams rank top-two in rushing (Bears 173.2 yards a game, Falcons 166.8). Bears -1.5, total 51.5; inactives at 11:30 AM ET.",
+    kicker: "Bears 31, Falcons 23: a 14-0 hole, three lost fumbles and a scare for Kendal Daniels drop Atlanta to 2-4",
+    headLine1: "We beat ourselves.",
+    headEm: "Two and four.",
+    headLine3: "Chicago scores on its first two drives, Branch loses two returns, and a fourth-quarter rally falls eight short.",
+    deck: "Caleb Williams came back from three games out with a hamstring injury and completed his first 12 passes, and Chicago led 14-0 after one quarter and 21-7 at the half, the last score set up by a Zachariah Branch muffed punt. Branch lost a kickoff return late in the third quarter too, Chicago led 31-7, and Atlanta's 16-point fourth quarter (two Kyle Pitts TDs, two-point catches by Branch and Drake London) ended when Kyler Gordon stripped Michael Penix Jr. on third-and-16 with 3:34 left, his third sack of the day. Penix finished 19-of-33 for 225 yards and three TDs; Bijan Robinson had 61 yards on nine carries as Chicago held the ball for 40:08. The scariest moment came in the third quarter, when rookie LB Kendal Daniels was carted off and taken to Grady Memorial Hospital with a neck injury; the team said he was alert with movement in all extremities, and Stefanski said 'all reports so far are good.' 'I just felt like we beat ourselves,' Stefanski said. Atlanta is 0-3 at home and 1.5 games behind Carolina; unbeaten San Francisco is next.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
-    stampLabel: "Game day · Caleb Williams expected to start · Trice signed to 53 · Henderson OUT · Smith Q · Bears -1.5 · Falcons 2-3 · Today, 1 PM ET, FOX",
+    stampLabel: "Final · Bears 31, Falcons 23 · Falcons 2-4, 0-3 at home · Daniels (neck) hospitalized, initial reports good · Deablo (arm), Bowman (hamstring) hurt · Next: 49ers (5-0), Sun Oct 25, 1 PM ET, FOX",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2710,6 +2714,8 @@ export const NEWS_DIGEST = {
     // the concussion protocol, Penix full a second day, Henderson DNP again, Ulbrich on CB depth); pointer and penix-jr fallback unchanged.
     // STATUS (2026-10-18 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto game day (Caleb Williams expected
     // to start, Bralen Trice signed to the 53, Jackson and Robinson elevated); pointer and penix-jr fallback unchanged.
+    // STATUS (2026-10-19 cloud run): image request SKIPPED (cloud run). Kicker and deck rebuilt around the 31-23 loss to Chicago
+    // (14-0 start, Branch's two lost return fumbles, Daniels carted off with a neck injury); pointer and penix-jr fallback unchanged.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
@@ -2744,113 +2750,119 @@ export const NEWS_DIGEST = {
     "atlantafalcons.com (Oct 15)", "Falcons Wire (Yahoo, Oct 15)", "On Tap Sports Net (Oct 15)", "Chicago Sun-Times (Oct 15)", "Heavy.com (Oct 15)",
     "atlantafalcons.com (Oct 16)", "AJC (Oct 16)", "Falcons Wire (Yahoo, Oct 16)", "National Football Post (Oct 16)", "NBC Sports / PFT (Oct 16)", "Chicago Sun-Times (Oct 16)", "Shaw Local (Oct 16)", "SI Bears On SI (Oct 16)", "SI Betting (Oct 15)", "FanDuel Research (Oct 16)", "Bleacher Nation (Oct 16)",
     "atlantafalcons.com (Oct 17)", "Falcons Wire (Yahoo, Oct 17)", "Pro Football Rumors (Oct 17)", "NFL.com News Roundup (Oct 17)", "NFL.com / NFL Network (Oct 17)", "NBC Sports / PFT (Oct 17)", "NBC Chicago (Oct 17)", "Bleacher Report (Oct 17)", "chicagobears.com (Oct 17)", "Bettors Insider (Oct 17)",
+    "atlantafalcons.com (Oct 18)", "FootballDB box score (Oct 18)", "NFL.com (Oct 18)", "AJC (Oct 18)", "Falcons Wire (Yahoo, Oct 18)", "Heavy.com (Oct 18)", "SI Falcons On SI (Oct 19)", "Saturday Down South (Oct 18)", "Yardbarker / AP (Oct 19)", "Panthers Wire (Yahoo, Oct 18)", "Bleacher Nation (Oct 18)", "Chicago Sun-Times (Oct 18)", "FOX Sports (Oct 19)",
   ],
   topics: [
     {
-      title: "Caleb Williams is expected to start for Chicago",
-      detail: "NFL.com and NBC Sports/PFT (Saturday afternoon, Oct 17): NFL Network's Ian Rapoport and Mike Garafolo and ESPN's Adam Schefter reported the Bears plan to start Williams, listed questionable (hamstring) after three full practices and out since Week 2. Rapoport said he took the starter reps and 'is ready to roll.' Chicago went 2-1 without him.",
+      title: "Bears 31, Falcons 23: Atlanta digs a 14-0 hole and falls to 2-4",
+      detail: "atlantafalcons.com, NFL.com and the FootballDB box score (Sunday, Oct 18): Chicago scored TDs on its first two possessions, outgained Atlanta 154-3 in the first quarter (Falcons Wire) and led 31-7 entering the fourth. Caleb Williams, back from a hamstring injury, went 30-of-36 for 305 yards and a TD, and Chicago held the ball 40:08 to 19:52. Atlanta lost three fumbles and is 0-3 at home.",
       category: "games",
-      sourceUrl: "https://www.nfl.com/news/nfl-network-bears-qb-caleb-williams-hamstring-expected-to-start-sunday-vs-falcons",
-      sourceLabel: "NFL.com / NBC Sports / NBC Chicago",
+      sourceUrl: "https://www.atlantafalcons.com/news/game-breakdown-what-happened-falcons-bears-score-takeaways",
+      sourceLabel: "atlantafalcons.com / NFL.com / FootballDB",
     },
     {
-      title: "Bralen Trice signed to the 53 after using up his elevations",
-      detail: "atlantafalcons.com (Saturday, Oct 17): the 2024 third-round pick, who lost his first two seasons to knee injuries and cleared waivers at cutdown, was signed from the practice squad. He was elevated in Weeks 1, 3 and 5 (the max), averaging about 26% of defensive snaps, and had four QB hurries at Green Bay. He fills the spot opened by Jammie Robinson's release.",
-      category: "general",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-sign-bralen-trice-active-roster-chicago-bears",
-      sourceLabel: "atlantafalcons.com / Pro Football Rumors",
-    },
-    {
-      title: "Drake Jackson and Jammie Robinson elevated for Sunday",
-      detail: "atlantafalcons.com and Falcons Wire (Saturday, Oct 17): Robinson, released from the 53 on Thursday, re-signed to the practice squad and was elevated, as was DE Drake Jackson for a second straight week. Falcons Wire calls Jackson 'some insurance' if Za'Darius Smith (neck, questionable) cannot play. Inactives are due at 11:30 AM ET.",
-      category: "general",
-      sourceUrl: "https://sports.yahoo.com/articles/falcons-changes-roster-ahead-week-203140090.html",
-      sourceLabel: "atlantafalcons.com / Falcons Wire (Yahoo Sports)",
-    },
-    {
-      title: "Bears activate Kyler Gordon, put Dayo Odeyingbo on IR and release Xavier Woods",
-      detail: "chicagobears.com and NFL.com (Saturday, Oct 17): CB Gordon comes off PUP for his season debut, though ESPN's Jeremy Fowler reports he will likely be eased in. Chicago also signed DB Nick McCloud from the practice squad and elevated LB Buddy Johnson and RB Zavier Scott. Montez Sweat is serving a two-game suspension.",
-      category: "games",
-      sourceUrl: "https://chicagobears.com/news/chicago-bears-announce-roster-moves-october-17-2026",
-      sourceLabel: "chicagobears.com / NFL.com",
-    },
-    {
-      title: "The run-game collision: Chicago's NFL-best ground attack vs. Atlanta's fourth-ranked run defense",
-      detail: "chicagobears.com preview (Saturday, Oct 17): the Bears run for 173.2 yards a game (first) and Atlanta 166.8, while the Falcons allow 80.2 (fourth). Former Falcon Grady Jarrett, now a Bears DT, on facing old teammate Bijan Robinson (580 yards, NFL-high): 'It takes a whole unit to attempt to slow down a special player like Bijan.' Penix's 131.3 third-down rating leads the league.",
-      category: "games",
-      sourceUrl: "https://www.chicagobears.com/news/game-preview-bears-at-falcons-2026-week-6",
-      sourceLabel: "chicagobears.com",
-    },
-    {
-      title: "Line holds at Bears -1.5 as the total climbs to 51.5",
-      detail: "Bettors Insider, citing ESPN's odds page (Saturday, Oct 17): Chicago is a 1.5-point favorite (moneyline Bears -118, Falcons -102) after Atlanta opened as a 1.5-point home favorite, and the total has risen four points from a 47.5 open.",
-      category: "games",
-      sourceUrl: "https://bettorsinsider.com/nfl/2026/10/17/caleb-williams-questionable-for-bears-at-falcons-hamstring-update-line-movement-and-passing-prop/",
-      sourceLabel: "Bettors Insider",
-    },
-    {
-      title: "Final report: Henderson is out, Za'Darius Smith questionable, and Penix carries no designation",
-      detail: "atlantafalcons.com (Friday, Oct 16): CB C.J. Henderson (groin) was ruled out after a third straight missed practice, and DE Za'Darius Smith (neck) is questionable after another limited day. Michael Penix Jr. (ribs), Cam Thomas (groin), Kendal Daniels (Achilles) and Jawaan Taylor (rest) were full; Jake Matthews (groin) and Divine Deablo (hamstring) were limited but carry no designation.",
+      title: "Kendal Daniels carted off with a neck injury; early reports encouraging",
+      detail: "Falcons statement and On SI (Sunday, Oct 18 into Monday): the rookie LB was hurt making a third-quarter tackle on TE Colston Loveland, was down for several minutes and was taken to Grady Memorial Hospital. The team said he 'is alert and has movement in all his extremities,' and The Athletic's Josh Kendall reported he was walking under his own power in the locker room. Stefanski: 'All reports so far are good. We'll continue to pray they remain good.'",
       category: "injuries",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-injury-report-c-j-henderson-ruled-out-of-week-6-matchup-vs-bears",
-      sourceLabel: "atlantafalcons.com",
+      sourceUrl: "https://www.si.com/nfl/falcons/onsi/falcons-get-update-on-kendal-daniels-after-scary-injury",
+      sourceLabel: "On SI / Saturday Down South / Yardbarker",
     },
     {
-      title: "Stefanski: Penix will have no limitations Sunday",
-      detail: "AJC and Falcons Wire (Friday, Oct 16): Stefanski said Penix will play without restrictions and does not expect him to need extra protection on his midsection: 'I thought he handled everything really well.' Penix is 2-1 as a starter with 719 yards, three TDs and one interception.",
-      category: "injuries",
-      sourceUrl: "https://www.ajc.com/sports/2026/10/atlanta-falcons-injury-report-week-6/",
+      title: "Zachariah Branch's two lost return fumbles turn into 10 Bears points",
+      detail: "AJC (Sunday, Oct 18): the rookie muffed a punt late in the second quarter, setting up the TD that made it 21-7 at half, and lost a kickoff return late in the third that led to a field goal and a 31-7 lead. He later caught a two-point try. Stefanski: 'We're counting on him. He'll be better for this,' and 'He has to take care of the football.'",
+      category: "games",
+      sourceUrl: "https://www.ajc.com/sports/2026/10/another-falcons-disaster-in-loss-to-bears/",
       sourceLabel: "AJC / Falcons Wire (Yahoo Sports)",
     },
     {
-      title: "Avieon Terrell gets the start outside: 'I'm confident'",
-      detail: "AJC (Friday, Oct 16): with Henderson out, the rookie starts at outside corner opposite Mike Hughes, his third career start and first on the outside. Per Next Gen Stats he has allowed five catches for 39 yards on 10 targets in 100 coverage snaps.",
+      title: "Kyler Gordon's return: three sacks and the game-ending strip of Penix",
+      detail: "AJC and Bleacher Nation (Sunday, Oct 18): in his first game back from PUP, the Bears CB sacked Michael Penix Jr. three times and forced two fumbles, the last on third-and-16 with 3:34 left after Atlanta had cut it to 31-23. Penix was sacked five times. Stefanski called Gordon 'an excellent blitzer' and said the staff will review whether the protection plan held up.",
       category: "games",
-      sourceUrl: "https://www.ajc.com/sports/2026/10/atlanta-falcons-injury-report-week-6/",
-      sourceLabel: "AJC",
+      sourceUrl: "https://www.ajc.com/sports/2026/10/another-falcons-disaster-in-loss-to-bears/",
+      sourceLabel: "AJC / Bleacher Nation",
     },
     {
-      title: "Drake London is a surprise Friday addition (hip), limited but no designation",
-      detail: "Falcons Wire (Friday, Oct 16): London, who leads the NFL with 408 receiving yards over Weeks 3-5, appeared on the report for the first time this week as a limited participant with a hip issue. He has no game designation, a sign the team does not view it as serious.",
+      title: "Penix throws three TDs, two to Pitts, in a 16-point fourth quarter",
+      detail: "FootballDB box score (Oct 18): Penix finished 19-of-33 for 225 yards, three TDs and no interceptions (108.8 rating). Kyle Pitts caught TDs of 10 and 5 yards, Jahan Dotson had 87 yards and a 13-yard TD, and Drake London (4-62) and Branch caught two-point conversions.",
+      category: "games",
+      sourceUrl: "https://www.footballdb.com/games/boxscore/chicago-bears-vs-atlanta-falcons-2026101805",
+      sourceLabel: "FootballDB / Falcons Wire",
+    },
+    {
+      title: "The run game disappears: 12 carries, 63 yards",
+      detail: "FootballDB and Heavy.com (Oct 18): Bijan Robinson had 61 yards on nine carries, and the NFL's No. 2 rushing offense ran 12 times as the early deficit and Chicago's 40 minutes of possession took it away. Robinson: 'That's what we set our identity in: this run game. The run game gets everything going on this offense.'",
+      category: "games",
+      sourceUrl: "https://heavy.com/sports/nfl/atlanta-falcons/kevin-stefanski-honest-after-loss/",
+      sourceLabel: "Heavy.com / FootballDB",
+    },
+    {
+      title: "Stefanski owns the slow start: 'That's on me and our staff'",
+      detail: "AJC, Heavy.com and Falcons Wire (Sunday, Oct 18): 'I just felt like we beat ourselves,' Stefanski said. 'They beat us, the Bears beat us, we also beat us.' He said the team talked 'at length about starting fast in this ballgame, and we did not,' and that losing at home is 'very, very disappointing.'",
+      category: "coaching",
+      sourceUrl: "https://sports.yahoo.com/articles/kevin-stefanski-comments-falcons-31-205344874.html",
+      sourceLabel: "Falcons Wire (Yahoo Sports) / AJC / Heavy.com",
+    },
+    {
+      title: "Deablo (arm) and Bowman (hamstring) also leave; Avieon Terrell returns from a concussion check",
+      detail: "atlantafalcons.com (Sunday, Oct 18): LB Divine Deablo was ruled out late in the second quarter with an arm injury and DB Billy Bowman Jr. strained a hamstring in the fourth. Rookie CB Avieon Terrell, starting outside for C.J. Henderson, was evaluated for a concussion and a stinger and returned in the third quarter. No timelines yet; Stefanski's Monday availability is next.",
       category: "injuries",
-      sourceUrl: "https://sports.yahoo.com/articles/falcons-drake-london-injury-suddenly-210959473.html",
-      sourceLabel: "Falcons Wire (Yahoo Sports)",
+      sourceUrl: "https://www.atlantafalcons.com/news/game-breakdown-what-happened-falcons-bears-score-takeaways",
+      sourceLabel: "atlantafalcons.com / Yardbarker",
     },
     {
-      title: "Caleb Williams is questionable despite a full week; four Bears ruled out",
-      detail: "NFL.com, PFT and the Chicago Sun-Times (Friday, Oct 16): Williams (hamstring, hurt Sept 20) practiced fully all week but still needs to clear final benchmarks; Ben Johnson said playing is 'potentially' possible. Tyson Bagent and Case Keenum are the fallbacks. LBs T.J. Edwards and Keyshaun Elliott, DE Dayo Odeyingbo and RB Kyle Monangai are out, and CBs Kyler Gordon and Tyrique Stevenson are questionable.",
+      title: "Bright spot up front: Dexter and Dorlus each get a sack",
+      detail: "atlantafalcons.com (Oct 18): Gervon Dexter had a sack, two pressures and a tackle for loss, and Brandon Dorlus a sack, two pressures and two TFLs; both entered the week tied for the most pressures among NFL interior defenders. Atlanta sacked Williams four times, and Chicago was flagged 12 times for 133 yards.",
       category: "games",
-      sourceUrl: "https://www.nfl.com/news/bears-qb-caleb-williams-hamstring-questionable-to-play-falcons",
-      sourceLabel: "NFL.com / NBC Sports / Chicago Sun-Times",
+      sourceUrl: "https://www.atlantafalcons.com/news/game-breakdown-what-happened-falcons-bears-score-takeaways",
+      sourceLabel: "atlantafalcons.com / Chicago Sun-Times",
     },
     {
-      title: "A.J. Terrell is eligible to return next week: 'We'll see'",
-      detail: "AJC (Friday, Oct 16): the CB1, on IR with a groin injury since Sept 22, can come off the list next week. Stefanski: 'I don't want to say just yet, but he's doing very well.' His brother Avieon said he's 'good.'",
-      category: "injuries",
-      sourceUrl: "https://www.ajc.com/sports/2026/10/atlanta-falcons-injury-report-week-6/",
-      sourceLabel: "AJC",
-    },
-    {
-      title: "Ravens 30, Falcons 23 (OT): Atlanta blows an eight-point lead in the final 2:25 and falls to 2-3",
-      detail: "NBC Sports/PFT and CBS Sports (Sunday night, Oct 11): Baltimore, without Lamar Jackson, got the ball down 23-15 with two timeouts and 2:25 left and tied it in 1:51 on Tyler Huntley's TD pass to Devontez Walker and Derrick Henry's two-point run. Huntley (24-of-32, 201, two TDs) finished a 14-play, 68-yard overtime drive with a 1-yard sneak, and Kyle Hamilton intercepted Tua Tagovailoa to end it. Baltimore is 4-1.",
-      category: "games",
-      sourceUrl: "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/sunday-night-football-ravens-come-back-to-beat-falcons-in-ot-30-23",
-      sourceLabel: "NBC Sports / PFT / CBS Sports",
-    },
-    {
-      title: "NFC South: Carolina is alone in first after its bye; Saints and Bucs both 1-4",
-      detail: "Week 5 (Oct 8-11): the Panthers (2-2) were idle, and Atlanta's loss drops it a half-game back at 2-3. Tampa Bay won its first game, 24-16 over Dallas on Thursday night, and New Orleans lost 23-13 at home to unbeaten Minnesota on Sunday.",
+      title: "NFC South: Carolina pulls 1.5 games ahead; Saints climb to 2-4",
+      detail: "NFL.com and Panthers Wire (Sunday, Oct 18): Carolina beat Philadelphia 25-14 behind Chuba Hubbard's 120 rushing yards to go 3-2. New Orleans beat the Giants 34-27 with four Tyler Shough TD passes and sits third behind Atlanta on the head-to-head tiebreaker. Tampa Bay blew a 13-point fourth-quarter lead and lost 26-19 in overtime at Pittsburgh to fall to 1-5.",
       category: "general",
-      sourceUrl: "https://www.neworleanssaints.com/game-day/2026/reg-week5/vikings-at-saints/box-score",
-      sourceLabel: "panthers.com / neworleanssaints.com / buccaneers.com",
+      sourceUrl: "https://nfl.com/news/2026-nfl-season-week-6-what-we-learned-from-sunday-s-games",
+      sourceLabel: "NFL.com / Panthers Wire (Yahoo Sports)",
+    },
+    {
+      title: "Up next: unbeaten San Francisco comes to Atlanta",
+      detail: "atlantafalcons.com and FOX Sports (Oct 18-19): the 5-0 49ers visit Mercedes-Benz Stadium on Sunday, Oct 25 at 1 PM ET on FOX, after hosting Washington on Monday Night Football tonight. Atlanta has lost two straight since its two-game win streak.",
+      category: "games",
+      sourceUrl: "https://www.foxsports.com/nfl/week-7-san-francisco-49ers-vs-atlanta-falcons-oct-25-2026-game-boxscore-11243",
+      sourceLabel: "atlantafalcons.com / FOX Sports",
+    },
+    {
+      title: "A.J. Terrell can come off IR this week",
+      detail: "atlantafalcons.com (Oct 18) and AJC (Oct 16): the CB1, on injured reserve with a groin injury since Sept 22, is eligible to return as soon as 49ers week. Stefanski on Friday: 'I don't want to say just yet, but he's doing very well.' C.J. Henderson (groin) missed the Bears game.",
+      category: "injuries",
+      sourceUrl: "https://www.ajc.com/sports/2026/10/atlanta-falcons-injury-report-week-6/",
+      sourceLabel: "atlantafalcons.com / AJC",
     },
   ],
 };
 
 export const INTERVIEWS = {
-  generatedAt: "2026-10-18T08:45:00Z",
-  windowLabel: "Ravens postgame → Bears week · Oct 11 → Oct 18",
+  generatedAt: "2026-10-19T08:45:00Z",
+  windowLabel: "Bears week → Bears postgame · Oct 12 → Oct 18",
   sessions: [
+    {
+      id: "stefanski-2026-10-18",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-10-18",
+      venue: "Mercedes-Benz Stadium · Atlanta, Ga.",
+      session: "Week 6 vs. Chicago · Postgame Press Conference",
+      sourceUrl: "https://sports.yahoo.com/articles/kevin-stefanski-comments-falcons-31-205344874.html",
+      summary: "After a 31-23 home loss built on a 14-0 start and three lost fumbles, Stefanski put the slow start on himself and his staff and backed rookie returner Zachariah Branch. He also gave an early, encouraging update on Kendal Daniels. Quotes via Falcons Wire, AJC, Heavy.com and On SI.",
+      pullQuote: "I just felt like we beat ourselves.",
+      bullets: [
+        "On the start: 'That's on me and our staff' (AJC), adding 'we talked at length about starting fast in this ballgame, and we did not' (Heavy.com)",
+        "On the turnovers: 'You turn the ball over three times against a good team, it's going to be hard to win'",
+        "On Branch's two lost return fumbles: 'We're counting on him. He'll be better for this' and 'He has to take care of the football' (Falcons Wire, AJC)",
+        "On Kendal Daniels (neck): 'All reports so far are good. We'll continue to pray they remain good' (On SI)",
+        "On Kyler Gordon's three sacks: called him 'an excellent blitzer' and said the staff will review the protection plan (AJC)",
+      ],
+      topics: ["bears-week", "week-6", "postgame", "turnovers", "special-teams", "injuries"],
+    },
     {
       id: "stefanski-2026-10-16",
       speaker: "Kevin Stefanski",
@@ -2940,24 +2952,6 @@ export const INTERVIEWS = {
         "On the offense: 'we've got to look at ways that we can, No. 1, avoid third down, and No. 2, be in more manageable situations' (theScore)",
       ],
       topics: ["bears-week", "week-6", "penix-ribs", "third-down"],
-    },
-    {
-      id: "stefanski-2026-10-11",
-      speaker: "Kevin Stefanski",
-      role: "Head Coach",
-      date: "2026-10-11",
-      venue: "Mercedes-Benz Stadium · Atlanta, Ga.",
-      session: "Week 5 vs. Baltimore · Postgame Press Conference",
-      sourceUrl: "https://sports.yahoo.com/articles/kevin-stefanski-comments-falcons-loss-044955245.html",
-      summary: "After an eight-point fourth-quarter lead became a 30-23 overtime loss, Stefanski kept it short: credit to the Ravens, missed chances for Atlanta. He opened with the injury news, a rib injury for Michael Penix Jr. and a groin injury for C.J. Henderson, with imaging still to come.",
-      pullQuote: "We had missed opportunities, and when you're playing a good football team, the margins are razor thin.",
-      bullets: [
-        "Opening statement: 'Injury front: C.J. Henderson has a groin injury. Mike Penix has a rib injury.'",
-        "On the result: 'Credit to Baltimore. Obviously we didn't do enough to win that game.'",
-        "On whether Penix could return in overtime: 'Yeah, he was trying to work to get comfortable and could not.'",
-        "Said Penix will undergo imaging before any timeline is set (NFL.com, Heavy.com)",
-      ],
-      topics: ["ravens-week", "week-5", "postgame", "penix-ribs", "injuries"],
     },
   ],
 };
