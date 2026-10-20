@@ -58,25 +58,29 @@ export const PLAYERS = [
     ],
   },
   {
-    id: "cooper-rush",
-    name: "Cooper Rush",
-    number: 10,
+    id: "andy-dalton",
+    name: "Andy Dalton",
+    number: 13,
     position: "QB",
     positionGroup: "offense",
     depthRank: 3,
-    height: 75, weight: 225, age: 32, experience: 9,
-    college: "Central Michigan",
-    acquired: "fa-2026-camp",
+    height: 74, weight: 220, age: 38, experience: 15,
+    college: "TCU",
+    acquired: "fa-2026-in-season",
     stats: {},
     form: 0,
     status: "active",
-    injuryNote: "Benched in the Sept 20 home opener after a fumble and two interceptions: went 10 of 17 for 86 yards before Stefanski pulled him for undrafted rookie Jack Strand in the 34-3 loss. Started the first two games with Tua Tagovailoa and Michael Penix Jr. hurt, both losses (his Week 1 line at Pittsburgh: 12 of 22, 143 yards, a TD to Bijan Robinson and two picks, one a T.J. Watt pick-six). Dropped to third on the depth chart behind Michael Penix Jr. and Tua Tagovailoa after Penix's Week 3 return (Week 4 depth chart, Sep 29). Signed Jul 29 after the team released Trevor Siemian",
-    image: "https://a.espncdn.com/i/headshots/nfl/players/full/2972515.png",
-    contract: { years: 1, total: 1500000, guaranteed: 0, apy: 1500000, throughYear: 2026, cap2026: 1210000 },
+    injuryNote: "Signed Monday (Oct 19), the day after the Bears loss, as Cooper Rush was released. Philadelphia had released him Oct 9 after he won the Eagles' backup job. Expected to compete with Tua Tagovailoa for the QB2 job behind Michael Penix Jr. (The Athletic's Jonathan Jones), though Tua likely stays No. 2 against the 49ers (AP). Stefanski: 'I think at this point we're just trying to get Andy up to speed.' 84-83-2 as a starter over 16 seasons, with 254 career TD passes. Contract terms not published.",
+    image: "https://a.espncdn.com/i/headshots/nfl/players/full/14012.png",
     career: [
       { years: "2026–", team: "Atlanta Falcons", type: "NFL" },
-      { years: "2025", team: "Baltimore Ravens", type: "NFL" },
-      { years: "2017–2024", team: "Dallas Cowboys", type: "NFL · 9–5 as a starter" },
+      { years: "2026", team: "Philadelphia Eagles", type: "NFL · released Oct 9" },
+      { years: "2023–2025", team: "Carolina Panthers", type: "NFL" },
+      { years: "2022", team: "New Orleans Saints", type: "NFL · 14 starts" },
+      { years: "2021", team: "Chicago Bears", type: "NFL" },
+      { years: "2020", team: "Dallas Cowboys", type: "NFL" },
+      { years: "2011–2019", team: "Cincinnati Bengals", type: "NFL · 3x Pro Bowl · 2011 R2 pick" },
+      { years: "2007–2010", team: "TCU", type: "College" },
     ],
   },
   {
@@ -838,7 +842,7 @@ export const PLAYERS = [
     stats: { tackles: 92, tfl: 7, sacks: 2, int_def: 1 },
     form: 8.0,
     status: "questionable",
-    injuryNote: "Arm. Injured in the first half of the 31-23 loss to Chicago (Oct 18) and ruled out late in the second quarter (atlantafalcons.com); severity not yet announced. Had battled a hamstring issue through Weeks 4-6 practices without missing a game. MIKE · 3yr/$30M FA signing from Las Vegas.",
+    injuryNote: "Arm. Injured in the first half of the 31-23 loss to Chicago (Oct 18) and ruled out late in the second quarter (atlantafalcons.com); Stefanski had no update Monday (Oct 19, AP). Had battled a hamstring issue through Weeks 4-6 practices without missing a game. MIKE · 3yr/$30M FA signing from Las Vegas.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4037626.png",
     contract: { years: 3, total: 30000000, guaranteed: 18000000, apy: 10000000, throughYear: 2028, cap2026: 8500000 },
     career: [
@@ -952,7 +956,7 @@ export const PLAYERS = [
     stats: { tackles: 68, int_def: 2, pass_def: 13 },
     form: 8.2,
     status: "ir",
-    injuryNote: "Placed on injured reserve Monday (Sep 22) with the groin injury that knocked him out of the Sept 20 Carolina loss in the first quarter, sidelining the CB1 for at least four games; the team signed DL Zach Harrison off the practice squad in the corresponding move. C.J. Henderson took his starting spot on the Week 4 depth chart (Sep 29), with Malcolm DeWalt IV behind him; the team also signed CB Robert Longerbeam off the Eagles' practice squad on Sep 23 · CB1 · paid like one (4yr/$81M extension in 2024) Eligible to come off IR next week; Stefanski (Oct 16): 'We'll see. I don't want to say just yet, but he's doing very well' (AJC).",
+    injuryNote: "Placed on injured reserve Monday (Sep 22) with the groin injury that knocked him out of the Sept 20 Carolina loss in the first quarter, sidelining the CB1 for at least four games; the team signed DL Zach Harrison off the practice squad in the corresponding move. C.J. Henderson took his starting spot on the Week 4 depth chart (Sep 29), with Malcolm DeWalt IV behind him; the team also signed CB Robert Longerbeam off the Eagles' practice squad on Sep 23 · CB1 · paid like one (4yr/$81M extension in 2024) Eligible to come off IR next week; Stefanski (Oct 16): 'We'll see. I don't want to say just yet, but he's doing very well' (AJC). Monday (Oct 19), on a Week 7 return: 'It's trending that way, but let's get through the next couple of days' (AP).",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4239995.png",
     contract: { years: 4, total: 81000000, guaranteed: 43500000, apy: 20250000, throughYear: 2028, cap2026: 19200000 },
     career: [{ years: "2020–", team: "Atlanta Falcons", type: "NFL · Pro Bowl 2021" }],
@@ -1078,7 +1082,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "questionable",
-    injuryNote: "Hamstring. Strained in the fourth quarter of the 31-23 loss to Chicago (Oct 18) and listed doubtful to return (atlantafalcons.com); severity not yet announced. Returned in Week 3 from a late-Nov 2025 Achilles rupture; in the nickel/slot mix behind Avieon Terrell.",
+    injuryNote: "Hamstring. Strained in the fourth quarter of the 31-23 loss to Chicago (Oct 18) and listed doubtful to return (atlantafalcons.com); Stefanski had no update Monday (Oct 19, AP). Returned in Week 3 from a late-Nov 2025 Achilles rupture; in the nickel/slot mix behind Avieon Terrell.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4431194.png",
     contract: { years: 4, total: 5200000, guaranteed: 950000, apy: 1300000, throughYear: 2028, cap2026: 1100000 },
     career: [{ years: "2025–", team: "Atlanta Falcons", type: "NFL" }],
@@ -1216,7 +1220,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "active",
-    injuryNote: "Started at outside cornerback vs. Chicago (Oct 18) with C.J. Henderson (groin) out, his third career start and first on the outside. Was evaluated for a concussion and also suffered a stinger, was listed questionable to return, and came back in the third quarter (atlantafalcons.com). Watch the Week 7 injury report.",
+    injuryNote: "Started at outside cornerback vs. Chicago (Oct 18) with C.J. Henderson (groin) out, his third career start and first on the outside. Was evaluated for a concussion and also suffered a stinger, was listed questionable to return, and came back in the third quarter (atlantafalcons.com). AP lists the injury as his left shoulder; Stefanski had no update Monday (Oct 19). Watch the Week 7 injury report.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4870988.png",
     contract: { years: 4, total: 8500000, guaranteed: 4200000, apy: 2125000, throughYear: 2029, cap2026: 1400000 },
     career: [
@@ -1263,7 +1267,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "questionable",
-    injuryNote: "Neck. Carted off on a stretcher in the third quarter of the 31-23 loss to Chicago (Oct 18) after his facemask hit TE Colston Loveland's knee on a tackle, and taken to Grady Memorial Hospital. The team said he was alert with movement in all extremities; The Athletic's Josh Kendall reported he was walking under his own power in the locker room. Stefanski: 'All reports so far are good.' Further evaluation pending; no timeline. Earlier: limited (Achilles) on the Week 4 and Week 6 practice reports.",
+    injuryNote: "Neck. Carted off on a stretcher in the third quarter of the 31-23 loss to Chicago (Oct 18) after his facemask hit TE Colston Loveland's knee on a tackle, and taken to Grady Memorial Hospital. The team said he was alert with movement in all extremities; The Athletic's Josh Kendall reported he was walking under his own power in the locker room. Stefanski: 'All reports so far are good.' Monday (Oct 19): was at the facility, and Stefanski said it was too early to project his status for 49ers week: 'I feel very, very fortunate that he got the treatment he got' and 'we feel really good about where he is' (AP). Earlier: limited (Achilles) on the Week 4 and Week 6 practice reports.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4595343.png",
     contract: { years: 4, total: 4750000, guaranteed: 700000, apy: 1187500, throughYear: 2029, cap2026: 900000 },
     career: [
@@ -1683,7 +1687,7 @@ export const NEXT_GAME = {
   date: "2026-10-25",
   kickoff: "1:00 PM ET",
   tv: "FOX",
-  note: "Atlanta (2-4, 0-3 at home) hosts unbeaten San Francisco (5-0) after a 31-23 loss to Chicago, its second straight defeat. The 49ers play Washington on Monday Night Football (Oct 19) before traveling. Injury watch from the Bears game: LB Kendal Daniels (neck) was taken to Grady Memorial Hospital and was alert with movement in all extremities; LB Divine Deablo (arm) and DB Billy Bowman Jr. (hamstring) left the game; CB Avieon Terrell was evaluated for a concussion and a stinger but returned. CB A.J. Terrell (groin, IR since Sept 22) is eligible to come off injured reserve this week. Atlanta trails Carolina (3-2) by 1.5 games in the NFC South. Next: at Tampa Bay in Week 8.",
+  note: "Atlanta (2-4, 0-3 at home) hosts unbeaten San Francisco (6-0), which held off Washington 23-17 on Monday Night Football (Oct 19) as Brock Purdy became the highest-rated qualified passer in NFL history (105.6). Opening line: 49ers -4.5, total 50.5 (FOX Sports / bet365, Oct 19). SF injury watch: WR Mike Evans left MNF with Achilles tendinitis (not believed long-term), and Luke Gifford (groin) and Upton Stout (shoulder) also left. Atlanta: CB A.J. Terrell (groin, IR) is 'trending' toward a return per Stefanski; LB Kendal Daniels (neck) was at the facility Monday with his status too early to project; no updates on Divine Deablo (arm), Billy Bowman Jr. (hamstring) or Avieon Terrell (left shoulder). QB Andy Dalton signed and Cooper Rush released Monday. Atlanta trails Carolina (3-2) by 1.5 games. Next: at Tampa Bay in Week 8.",
 };
 
 // =========================================
@@ -2054,17 +2058,17 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-10-19T08:45:00Z",
+  generatedAt: "2026-10-20T08:40:00Z",
   cover: {
-    kicker: "Bears 31, Falcons 23: a 14-0 hole, three lost fumbles and a scare for Kendal Daniels drop Atlanta to 2-4",
-    headLine1: "We beat ourselves.",
-    headEm: "Two and four.",
-    headLine3: "Chicago scores on its first two drives, Branch loses two returns, and a fourth-quarter rally falls eight short.",
-    deck: "Caleb Williams came back from three games out with a hamstring injury and completed his first 12 passes, and Chicago led 14-0 after one quarter and 21-7 at the half, the last score set up by a Zachariah Branch muffed punt. Branch lost a kickoff return late in the third quarter too, Chicago led 31-7, and Atlanta's 16-point fourth quarter (two Kyle Pitts TDs, two-point catches by Branch and Drake London) ended when Kyler Gordon stripped Michael Penix Jr. on third-and-16 with 3:34 left, his third sack of the day. Penix finished 19-of-33 for 225 yards and three TDs; Bijan Robinson had 61 yards on nine carries as Chicago held the ball for 40:08. The scariest moment came in the third quarter, when rookie LB Kendal Daniels was carted off and taken to Grady Memorial Hospital with a neck injury; the team said he was alert with movement in all extremities, and Stefanski said 'all reports so far are good.' 'I just felt like we beat ourselves,' Stefanski said. Atlanta is 0-3 at home and 1.5 games behind Carolina; unbeaten San Francisco is next.",
+    kicker: "49ers week: Andy Dalton signed and Cooper Rush released, A.J. Terrell 'trending' toward a return, Kendal Daniels back at the facility, and San Francisco arrives 6-0",
+    headLine1: "Make them pay.",
+    headEm: "Six and oh.",
+    headLine3: "Stefanski wants the blitz punished, Atlanta adds a 16-year veteran QB, and the unbeaten 49ers come to town as 4.5-point favorites.",
+    deck: "A day after the 31-23 loss to Chicago, the Falcons released Cooper Rush, who started the first two games, and signed Andy Dalton, 38, released by Philadelphia on Oct 9. Stefanski said the team is 'just trying to get Andy up to speed'; Tua Tagovailoa is likely to stay the No. 2 behind Michael Penix Jr. against San Francisco (AP). On the Bears' blitz-heavy plan, which pressured Penix on 56.4% of his dropbacks, Stefanski said: 'when they pressure you as an offense, you have to make them pay,' adding 'this league can be a copycat league.' Rookie LB Kendal Daniels (neck) was at the facility Monday, though Stefanski said it is too early to project his status, and A.J. Terrell's return from IR is 'trending that way.' No updates on Divine Deablo (arm) or Billy Bowman Jr. (hamstring). The 49ers held off Washington 23-17 on Monday night to go 6-0, with Brock Purdy becoming the highest-rated qualified passer in NFL history. Opening line: 49ers -4.5, total 50.5.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
-    stampLabel: "Final · Bears 31, Falcons 23 · Falcons 2-4, 0-3 at home · Daniels (neck) hospitalized, initial reports good · Deablo (arm), Bowman (hamstring) hurt · Next: 49ers (5-0), Sun Oct 25, 1 PM ET, FOX",
+    stampLabel: "49ers week · Falcons 2-4, 0-3 at home · Dalton signed, Rush released · A.J. Terrell trending toward return · Daniels (neck) at facility · Next: 49ers (6-0), Sun Oct 25, 1 PM ET, FOX · SF -4.5",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2716,6 +2720,8 @@ export const NEWS_DIGEST = {
     // to start, Bralen Trice signed to the 53, Jackson and Robinson elevated); pointer and penix-jr fallback unchanged.
     // STATUS (2026-10-19 cloud run): image request SKIPPED (cloud run). Kicker and deck rebuilt around the 31-23 loss to Chicago
     // (14-0 start, Branch's two lost return fumbles, Daniels carted off with a neck injury); pointer and penix-jr fallback unchanged.
+    // STATUS (2026-10-20 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto 49ers week (Dalton signed, Rush
+    // released, Stefanski's 'make them pay' on the blitz, A.J. Terrell trending, 49ers 6-0 after MNF); pointer and penix-jr fallback unchanged.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
@@ -2751,8 +2757,51 @@ export const NEWS_DIGEST = {
     "atlantafalcons.com (Oct 16)", "AJC (Oct 16)", "Falcons Wire (Yahoo, Oct 16)", "National Football Post (Oct 16)", "NBC Sports / PFT (Oct 16)", "Chicago Sun-Times (Oct 16)", "Shaw Local (Oct 16)", "SI Bears On SI (Oct 16)", "SI Betting (Oct 15)", "FanDuel Research (Oct 16)", "Bleacher Nation (Oct 16)",
     "atlantafalcons.com (Oct 17)", "Falcons Wire (Yahoo, Oct 17)", "Pro Football Rumors (Oct 17)", "NFL.com News Roundup (Oct 17)", "NFL.com / NFL Network (Oct 17)", "NBC Sports / PFT (Oct 17)", "NBC Chicago (Oct 17)", "Bleacher Report (Oct 17)", "chicagobears.com (Oct 17)", "Bettors Insider (Oct 17)",
     "atlantafalcons.com (Oct 18)", "FootballDB box score (Oct 18)", "NFL.com (Oct 18)", "AJC (Oct 18)", "Falcons Wire (Yahoo, Oct 18)", "Heavy.com (Oct 18)", "SI Falcons On SI (Oct 19)", "Saturday Down South (Oct 18)", "Yardbarker / AP (Oct 19)", "Panthers Wire (Yahoo, Oct 18)", "Bleacher Nation (Oct 18)", "Chicago Sun-Times (Oct 18)", "FOX Sports (Oct 19)",
+    "atlantafalcons.com (Oct 19)", "AP (ABC News, Oct 19)", "WABE / AP (Oct 19)", "CBS Sports (Oct 19)", "Yahoo Sports (Oct 19)", "AP (ABC News, Oct 20)", "NBC Bay Area (Oct 20)", "FOX Sports odds (Oct 19)",
   ],
   topics: [
+    {
+      title: "Falcons sign Andy Dalton, release Cooper Rush",
+      detail: "atlantafalcons.com and AP (Monday, Oct 19): a day after the Bears loss, Atlanta released Rush, who went 0-2 as the Week 1-2 starter (22 of 39, 229 yards, one TD, four INTs), and signed the 38-year-old Dalton, released by Philadelphia on Oct 9. The Athletic's Jonathan Jones reported Dalton will compete with Tua Tagovailoa for the backup job, though Tua likely stays No. 2 vs. San Francisco. Stefanski: 'I think at this point we're just trying to get Andy up to speed.'",
+      category: "free-agency",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-release-cooper-rush-sign-andy-dalton",
+      sourceLabel: "atlantafalcons.com / AP (WABE) / CBS Sports",
+    },
+    {
+      title: "Stefanski on the Bears' blitz: 'You have to make them pay'",
+      detail: "AP (Monday, Oct 19): Chicago pressured Penix on 56.4% of his dropbacks, per Next Gen Stats (atlantafalcons.com). 'I think the name of the game in the NFL is when they pressure you as an offense, you have to make them pay,' Stefanski said. 'We didn't do that enough yesterday and that's on all of us.' He warned that 'this league can be a copycat league.' Against 22 blitzes Penix went 10-of-18 for 121 yards and three TDs.",
+      category: "coaching",
+      sourceUrl: "https://abcnews.com/Politics/wireStory/after-slow-start-loss-bears-penix-falcons-urgency-137398138",
+      sourceLabel: "AP (ABC News) / atlantafalcons.com",
+    },
+    {
+      title: "A.J. Terrell's return from IR is 'trending that way'",
+      detail: "AP (Monday, Oct 19): the CB1, out four games with a groin injury, is eligible to come off injured reserve for the 49ers game. 'It's trending that way, but let's get through the next couple of days,' Stefanski said. C.J. Henderson (groin) missed the Bears game, and rookie Avieon Terrell (left shoulder) started outside.",
+      category: "injuries",
+      sourceUrl: "https://abcnews.com/Politics/wireStory/after-slow-start-loss-bears-penix-falcons-urgency-137398138",
+      sourceLabel: "AP (ABC News)",
+    },
+    {
+      title: "Kendal Daniels back at the facility after his neck scare",
+      detail: "AP (Monday, Oct 19): the rookie LB, taken off on a stretcher Sunday and evaluated at a hospital, returned to the locker room after the game and was at the facility Monday. Stefanski said it is too early to project his status for this week: 'I feel very, very fortunate that he got the treatment he got. But also that we feel really good about where he is.' No updates on Divine Deablo (arm) or Billy Bowman Jr. (hamstring).",
+      category: "injuries",
+      sourceUrl: "https://abcnews.com/Politics/wireStory/after-slow-start-loss-bears-penix-falcons-urgency-137398138",
+      sourceLabel: "AP (ABC News) / atlantafalcons.com",
+    },
+    {
+      title: "49ers hold off Washington on MNF and arrive 6-0",
+      detail: "AP and NBC Bay Area (Monday night, Oct 19): San Francisco built a 20-3 lead behind two Christian McCaffrey TD runs and won 23-17 when Malik Mustapha broke up a fourth-down pass at the goal line with 1:54 left. Brock Purdy (21 of 29, 264 yards, TD to George Kittle) became the highest-rated qualified passer in NFL history at 105.6. WR Mike Evans left with Achilles tendinitis that Kyle Shanahan said is not believed to be long-term.",
+      category: "games",
+      sourceUrl: "https://abcnews.com/Sports/wireStory/purdy-49ers-build-big-lead-hold-beat-commanders-137402248",
+      sourceLabel: "AP (ABC News) / NBC Bay Area",
+    },
+    {
+      title: "Opening line: 49ers by 4.5 in Atlanta",
+      detail: "FOX Sports (bet365, Oct 19): San Francisco is a 4.5-point road favorite with a total of 50.5 for Sunday's 1 PM ET kickoff at Mercedes-Benz Stadium on FOX. Atlanta is 0-3 at home and has lost two straight.",
+      category: "games",
+      sourceUrl: "https://www.foxsports.com/stories/nfl/2026-nfl-odds-week-7-lines-spreads-results-all-14-games",
+      sourceLabel: "FOX Sports",
+    },
     {
       title: "Bears 31, Falcons 23: Atlanta digs a 14-0 hole and falls to 2-4",
       detail: "atlantafalcons.com, NFL.com and the FootballDB box score (Sunday, Oct 18): Chicago scored TDs on its first two possessions, outgained Atlanta 154-3 in the first quarter (Falcons Wire) and led 31-7 entering the fourth. Caleb Williams, back from a hamstring injury, went 30-of-36 for 305 yards and a TD, and Chicago held the ball 40:08 to 19:52. Atlanta lost three fumbles and is 0-3 at home.",
@@ -2761,25 +2810,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com / NFL.com / FootballDB",
     },
     {
-      title: "Kendal Daniels carted off with a neck injury; early reports encouraging",
-      detail: "Falcons statement and On SI (Sunday, Oct 18 into Monday): the rookie LB was hurt making a third-quarter tackle on TE Colston Loveland, was down for several minutes and was taken to Grady Memorial Hospital. The team said he 'is alert and has movement in all his extremities,' and The Athletic's Josh Kendall reported he was walking under his own power in the locker room. Stefanski: 'All reports so far are good. We'll continue to pray they remain good.'",
-      category: "injuries",
-      sourceUrl: "https://www.si.com/nfl/falcons/onsi/falcons-get-update-on-kendal-daniels-after-scary-injury",
-      sourceLabel: "On SI / Saturday Down South / Yardbarker",
-    },
-    {
       title: "Zachariah Branch's two lost return fumbles turn into 10 Bears points",
       detail: "AJC (Sunday, Oct 18): the rookie muffed a punt late in the second quarter, setting up the TD that made it 21-7 at half, and lost a kickoff return late in the third that led to a field goal and a 31-7 lead. He later caught a two-point try. Stefanski: 'We're counting on him. He'll be better for this,' and 'He has to take care of the football.'",
       category: "games",
       sourceUrl: "https://www.ajc.com/sports/2026/10/another-falcons-disaster-in-loss-to-bears/",
       sourceLabel: "AJC / Falcons Wire (Yahoo Sports)",
-    },
-    {
-      title: "Kyler Gordon's return: three sacks and the game-ending strip of Penix",
-      detail: "AJC and Bleacher Nation (Sunday, Oct 18): in his first game back from PUP, the Bears CB sacked Michael Penix Jr. three times and forced two fumbles, the last on third-and-16 with 3:34 left after Atlanta had cut it to 31-23. Penix was sacked five times. Stefanski called Gordon 'an excellent blitzer' and said the staff will review whether the protection plan held up.",
-      category: "games",
-      sourceUrl: "https://www.ajc.com/sports/2026/10/another-falcons-disaster-in-loss-to-bears/",
-      sourceLabel: "AJC / Bleacher Nation",
     },
     {
       title: "Penix throws three TDs, two to Pitts, in a 16-point fourth quarter",
@@ -2810,40 +2845,38 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com / Yardbarker",
     },
     {
-      title: "Bright spot up front: Dexter and Dorlus each get a sack",
-      detail: "atlantafalcons.com (Oct 18): Gervon Dexter had a sack, two pressures and a tackle for loss, and Brandon Dorlus a sack, two pressures and two TFLs; both entered the week tied for the most pressures among NFL interior defenders. Atlanta sacked Williams four times, and Chicago was flagged 12 times for 133 yards.",
-      category: "games",
-      sourceUrl: "https://www.atlantafalcons.com/news/game-breakdown-what-happened-falcons-bears-score-takeaways",
-      sourceLabel: "atlantafalcons.com / Chicago Sun-Times",
-    },
-    {
       title: "NFC South: Carolina pulls 1.5 games ahead; Saints climb to 2-4",
       detail: "NFL.com and Panthers Wire (Sunday, Oct 18): Carolina beat Philadelphia 25-14 behind Chuba Hubbard's 120 rushing yards to go 3-2. New Orleans beat the Giants 34-27 with four Tyler Shough TD passes and sits third behind Atlanta on the head-to-head tiebreaker. Tampa Bay blew a 13-point fourth-quarter lead and lost 26-19 in overtime at Pittsburgh to fall to 1-5.",
       category: "general",
       sourceUrl: "https://nfl.com/news/2026-nfl-season-week-6-what-we-learned-from-sunday-s-games",
       sourceLabel: "NFL.com / Panthers Wire (Yahoo Sports)",
     },
-    {
-      title: "Up next: unbeaten San Francisco comes to Atlanta",
-      detail: "atlantafalcons.com and FOX Sports (Oct 18-19): the 5-0 49ers visit Mercedes-Benz Stadium on Sunday, Oct 25 at 1 PM ET on FOX, after hosting Washington on Monday Night Football tonight. Atlanta has lost two straight since its two-game win streak.",
-      category: "games",
-      sourceUrl: "https://www.foxsports.com/nfl/week-7-san-francisco-49ers-vs-atlanta-falcons-oct-25-2026-game-boxscore-11243",
-      sourceLabel: "atlantafalcons.com / FOX Sports",
-    },
-    {
-      title: "A.J. Terrell can come off IR this week",
-      detail: "atlantafalcons.com (Oct 18) and AJC (Oct 16): the CB1, on injured reserve with a groin injury since Sept 22, is eligible to return as soon as 49ers week. Stefanski on Friday: 'I don't want to say just yet, but he's doing very well.' C.J. Henderson (groin) missed the Bears game.",
-      category: "injuries",
-      sourceUrl: "https://www.ajc.com/sports/2026/10/atlanta-falcons-injury-report-week-6/",
-      sourceLabel: "atlantafalcons.com / AJC",
-    },
   ],
 };
 
 export const INTERVIEWS = {
-  generatedAt: "2026-10-19T08:45:00Z",
-  windowLabel: "Bears week → Bears postgame · Oct 12 → Oct 18",
+  generatedAt: "2026-10-20T08:40:00Z",
+  windowLabel: "Bears week → 49ers week · Oct 14 → Oct 19",
   sessions: [
+    {
+      id: "stefanski-2026-10-19",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-10-19",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Week 7 vs. San Francisco · Monday Media Availability",
+      sourceUrl: "https://abcnews.com/Politics/wireStory/after-slow-start-loss-bears-penix-falcons-urgency-137398138",
+      summary: "The day after the Bears loss, Stefanski framed Chicago's blitz-heavy plan as a test the offense failed and expects other teams to copy it. He was upbeat on Kendal Daniels and A.J. Terrell, and explained the Andy Dalton signing. Quotes via AP and WABE.",
+      pullQuote: "I think the name of the game in the NFL is when they pressure you as an offense, you have to make them pay.",
+      bullets: [
+        "On the blitz: 'We didn't do that enough yesterday and that's on all of us,' and 'You have to look at those as an opportunity if teams are going to all-out blitz you in a given game'",
+        "Warned that 'this league can be a copycat league' after Chicago's pressure plan",
+        "On Kendal Daniels (neck), at the facility Monday: 'I feel very, very fortunate that he got the treatment he got. But also that we feel really good about where he is.' Too early to project his status",
+        "On A.J. Terrell coming off IR: 'It's trending that way, but let's get through the next couple of days'",
+        "On Dalton: GM Ian Cunningham 'is always looking at ways that we feel like we can add to the roster and Andy was available,' and 'we're just trying to get Andy up to speed' (WABE / AP)",
+      ],
+      topics: ["49ers-week", "week-7", "blitz", "injuries", "qb-depth"],
+    },
     {
       id: "stefanski-2026-10-18",
       speaker: "Kevin Stefanski",
@@ -2934,24 +2967,6 @@ export const INTERVIEWS = {
         "Said CB C.J. Henderson (groin) is getting better and is not being ruled out for Sunday (atlantafalcons.com)",
       ],
       topics: ["bears-week", "week-6", "penix-ribs", "injuries"],
-    },
-    {
-      id: "stefanski-2026-10-12",
-      speaker: "Kevin Stefanski",
-      role: "Head Coach",
-      date: "2026-10-12",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "Week 6 vs. Chicago · Monday Media Availability",
-      sourceUrl: "https://www.ajc.com/sports/2026/10/falcons-penix-ribs-bears-status-uncertain/",
-      summary: "The day after the overtime loss, Stefanski would not reveal what Michael Penix Jr.'s rib imaging showed or whether he can start against Chicago, pushing the answer to Wednesday. He spent the rest of the session on what went wrong on third down. Quotes via AJC, NBC Sports/PFT and theScore.",
-      pullQuote: "I can answer that better Wednesday.",
-      bullets: [
-        "On Penix's status: 'We'll treat his injury over the next couple days, and then I'll have a better understanding as we get into Wednesday for how he's doing' (AJC)",
-        "On why he would not commit: 'With any type of injury, I always want to see how the guys respond over a couple of days' (PFT)",
-        "Declined to say what the X-rays showed, including whether there was a fracture (AJC)",
-        "On the offense: 'we've got to look at ways that we can, No. 1, avoid third down, and No. 2, be in more manageable situations' (theScore)",
-      ],
-      topics: ["bears-week", "week-6", "penix-ribs", "third-down"],
     },
   ],
 };
