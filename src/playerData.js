@@ -782,24 +782,29 @@ export const PLAYERS = [
     ],
   },
   {
-    id: "bralen-trice",
-    name: "Bralen Trice",
-    number: 48,
+    id: "charles-snowden",
+    name: "Charles Snowden",
+    number: null,
     position: "EDGE",
     posSlot: "LEDGE",
     positionGroup: "defense",
     depthRank: 3,
-    height: 76, weight: 274, age: 25, experience: 3,
-    college: "Washington",
-    acquired: "draft-2024-R3-P74",
+    height: 78, weight: 250, age: 28, experience: 3,
+    college: "Virginia",
+    acquired: "fa-2026-in-season",
     stats: {},
-    form: 6.2,
+    form: 0,
     status: "active",
-    injuryNote: "Signed from the practice squad to the 53-man roster on Saturday, Oct 17, the day before Week 6 vs. Chicago, after using all three standard elevations (Weeks 1, 3 and 5). A 2024 third-round pick (No. 74) out of Washington, he tore his ACL in his first preseason game as a rookie and began 2025 on injured reserve after aggravating the knee; waived at the Aug 30 cutdown, he cleared waivers and joined the practice squad. In his first healthy season he has averaged about 26% of defensive snaps in the rotation, with four QB hurries in Week 3 at Green Bay (atlantafalcons.com). Fills the roster spot opened by S Jammie Robinson's Oct 15 release. Contract terms not published.",
-    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4428713.png",
+    injuryNote: "Signed off Washington's practice squad to the 53-man roster on Tuesday (Oct 20), per NFL Network's Ian Rapoport, with Bralen Trice released in the corresponding move. Not yet on the Week 7 depth chart because the team had not announced the signing (Falcons Wire). A 6-foot-6 edge, undrafted out of Virginia in 2021, he started nine games for the Raiders in both 2024 and 2025 and has 67 career tackles, 4.5 sacks and 11 QB hits (Falcons Wire, Pro Football Rumors). Signed by Dallas in June, he was suspended for the first three games of 2026 over a prior DUI arrest and released in August with an injury settlement, then joined Washington's practice squad Sept 29 (Heavy). Jersey number and contract terms not yet published.",
+    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4240849.png",
     career: [
-      { years: "2024–", team: "Atlanta Falcons", type: "NFL · 2024 R3 #74" },
-      { years: "2020–2023", team: "Washington Huskies", type: "College" },
+      { years: "2026–", team: "Atlanta Falcons", type: "NFL" },
+      { years: "2026", team: "Washington Commanders", type: "NFL · practice squad" },
+      { years: "2026", team: "Dallas Cowboys", type: "NFL · offseason" },
+      { years: "2023–2025", team: "Las Vegas Raiders", type: "NFL · 18 starts (2024-25)" },
+      { years: "2022", team: "Tampa Bay Buccaneers", type: "NFL · offseason" },
+      { years: "2021", team: "Chicago Bears", type: "NFL · UDFA" },
+      { years: "2017–2020", team: "Virginia", type: "College · 2020 All-ACC second team" },
     ],
   },
   {
@@ -1687,7 +1692,7 @@ export const NEXT_GAME = {
   date: "2026-10-25",
   kickoff: "1:00 PM ET",
   tv: "FOX",
-  note: "Atlanta (2-4, 0-3 at home) hosts unbeaten San Francisco (6-0), which held off Washington 23-17 on Monday Night Football (Oct 19) as Brock Purdy became the highest-rated qualified passer in NFL history (105.6). Opening line: 49ers -4.5, total 50.5 (FOX Sports / bet365, Oct 19). SF injury watch: WR Mike Evans left MNF with Achilles tendinitis (not believed long-term), and Luke Gifford (groin) and Upton Stout (shoulder) also left. Atlanta: CB A.J. Terrell (groin, IR) is 'trending' toward a return per Stefanski; LB Kendal Daniels (neck) was at the facility Monday with his status too early to project; no updates on Divine Deablo (arm), Billy Bowman Jr. (hamstring) or Avieon Terrell (left shoulder). QB Andy Dalton signed and Cooper Rush released Monday. Atlanta trails Carolina (3-2) by 1.5 games. Next: at Tampa Bay in Week 8.",
+  note: "Atlanta (2-4, 0-3 at home) hosts unbeaten San Francisco (6-0), which held off Washington 23-17 on Monday Night Football (Oct 19) as Brock Purdy became the highest-rated qualified passer in NFL history (105.6). Opening line: 49ers -4.5, total 50.5 (FOX Sports / bet365, Oct 19). SF injury watch: WR Mike Evans left MNF with Achilles tendinitis (not believed long-term), and Luke Gifford (groin) and Upton Stout (shoulder) also left. Atlanta: CB A.J. Terrell (groin, IR) is 'trending' toward a return per Stefanski; LB Kendal Daniels (neck) was at the facility Monday with his status too early to project; no updates on Divine Deablo (arm), Billy Bowman Jr. (hamstring) or Avieon Terrell (left shoulder). QB Andy Dalton signed and Cooper Rush released Monday; Dalton is QB3 on Tuesday's depth chart. Tuesday (Oct 20): edge Charles Snowden reported signed off Washington's practice squad to the 53 and OLB Bralen Trice released. SF update: Rapoport says Evans will manage the tendinitis for much of the season but he has not been ruled out; Shanahan does not expect Deebo Samuel or Demarcus Robinson back until after the bye, and Christian Kirk (calf) is a possibility. Atlanta trails Carolina (3-2) by 1.5 games. Next: at Tampa Bay in Week 8.",
 };
 
 // =========================================
@@ -2058,17 +2063,17 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-10-20T08:40:00Z",
+  generatedAt: "2026-10-21T08:45:00Z",
   cover: {
-    kicker: "49ers week: Andy Dalton signed and Cooper Rush released, A.J. Terrell 'trending' toward a return, Kendal Daniels back at the facility, and San Francisco arrives 6-0",
+    kicker: "49ers week: Atlanta poaches edge Charles Snowden from Washington and cuts Bralen Trice, Dalton slots in at QB3, and Mike Evans faces a season of Achilles management for unbeaten San Francisco",
     headLine1: "Make them pay.",
     headEm: "Six and oh.",
-    headLine3: "Stefanski wants the blitz punished, Atlanta adds a 16-year veteran QB, and the unbeaten 49ers come to town as 4.5-point favorites.",
-    deck: "A day after the 31-23 loss to Chicago, the Falcons released Cooper Rush, who started the first two games, and signed Andy Dalton, 38, released by Philadelphia on Oct 9. Stefanski said the team is 'just trying to get Andy up to speed'; Tua Tagovailoa is likely to stay the No. 2 behind Michael Penix Jr. against San Francisco (AP). On the Bears' blitz-heavy plan, which pressured Penix on 56.4% of his dropbacks, Stefanski said: 'when they pressure you as an offense, you have to make them pay,' adding 'this league can be a copycat league.' Rookie LB Kendal Daniels (neck) was at the facility Monday, though Stefanski said it is too early to project his status, and A.J. Terrell's return from IR is 'trending that way.' No updates on Divine Deablo (arm) or Billy Bowman Jr. (hamstring). The 49ers held off Washington 23-17 on Monday night to go 6-0, with Brock Purdy becoming the highest-rated qualified passer in NFL history. Opening line: 49ers -4.5, total 50.5.",
+    headLine3: "Another edge arrives, the depth chart barely moves, and the unbeaten 49ers come to town as 4.5-point favorites.",
+    deck: "Tuesday brought more roster churn: NFL Network's Ian Rapoport reported the Falcons are signing edge Charles Snowden off Washington's practice squad to the 53, and Bralen Trice, signed to the active roster only on Saturday, was released. Snowden, 6-foot-6, started nine games for the Raiders in each of the last two seasons. LB TJ Quinn joined the practice squad. The Week 7 depth chart had one change, Andy Dalton at No. 3 behind Michael Penix Jr. and Tua Tagovailoa, and it still lists Zachariah Branch at punt returner after his two lost fumbles against Chicago. For San Francisco (6-0), Rapoport reported Mike Evans' Achilles tendinitis is something he will 'have to manage for the better part of the season,' though he has not been ruled out, and Kyle Shanahan does not expect Deebo Samuel or Demarcus Robinson back until after the bye. Stefanski's Wednesday availability and the first injury report are next. Opening line: 49ers -4.5, total 50.5.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
-    stampLabel: "49ers week · Falcons 2-4, 0-3 at home · Dalton signed, Rush released · A.J. Terrell trending toward return · Daniels (neck) at facility · Next: 49ers (6-0), Sun Oct 25, 1 PM ET, FOX · SF -4.5",
+    stampLabel: "49ers week · Falcons 2-4, 0-3 at home · Snowden signed, Trice released · Dalton QB3 · Evans managing Achilles · Next: 49ers (6-0), Sun Oct 25, 1 PM ET, FOX · SF -4.5",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2722,6 +2727,8 @@ export const NEWS_DIGEST = {
     // (14-0 start, Branch's two lost return fumbles, Daniels carted off with a neck injury); pointer and penix-jr fallback unchanged.
     // STATUS (2026-10-20 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto 49ers week (Dalton signed, Rush
     // released, Stefanski's 'make them pay' on the blitz, A.J. Terrell trending, 49ers 6-0 after MNF); pointer and penix-jr fallback unchanged.
+    // STATUS (2026-10-21 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto Tuesday's moves (Snowden signed
+    // off Washington's practice squad, Trice released, Dalton QB3 on the depth chart, Evans' Achilles); pointer and penix-jr fallback unchanged.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
@@ -2758,8 +2765,30 @@ export const NEWS_DIGEST = {
     "atlantafalcons.com (Oct 17)", "Falcons Wire (Yahoo, Oct 17)", "Pro Football Rumors (Oct 17)", "NFL.com News Roundup (Oct 17)", "NFL.com / NFL Network (Oct 17)", "NBC Sports / PFT (Oct 17)", "NBC Chicago (Oct 17)", "Bleacher Report (Oct 17)", "chicagobears.com (Oct 17)", "Bettors Insider (Oct 17)",
     "atlantafalcons.com (Oct 18)", "FootballDB box score (Oct 18)", "NFL.com (Oct 18)", "AJC (Oct 18)", "Falcons Wire (Yahoo, Oct 18)", "Heavy.com (Oct 18)", "SI Falcons On SI (Oct 19)", "Saturday Down South (Oct 18)", "Yardbarker / AP (Oct 19)", "Panthers Wire (Yahoo, Oct 18)", "Bleacher Nation (Oct 18)", "Chicago Sun-Times (Oct 18)", "FOX Sports (Oct 19)",
     "atlantafalcons.com (Oct 19)", "AP (ABC News, Oct 19)", "WABE / AP (Oct 19)", "CBS Sports (Oct 19)", "Yahoo Sports (Oct 19)", "AP (ABC News, Oct 20)", "NBC Bay Area (Oct 20)", "FOX Sports odds (Oct 19)",
+    "atlantafalcons.com (Oct 20)", "Falcons Wire (Yahoo, Oct 20)", "Pro Football Rumors (Oct 20)", "Heavy.com (Oct 20)", "49ers Webzone (Oct 20)",
   ],
   topics: [
+    {
+      title: "Falcons poach edge Charles Snowden from Washington, release Bralen Trice",
+      detail: "NFL Network's Ian Rapoport (Tuesday, Oct 20): Atlanta is signing the 6-foot-6 Snowden off the Commanders' practice squad to its 53-man roster, and The Athletic's Josh Kendall reported Trice, signed to the 53 only on Saturday, is being cut (atlantafalcons.com confirmed the release). Snowden started nine games for the Raiders in each of 2024 and 2025 and has 4.5 career sacks. The team also added Louisville LB TJ Quinn, a Valdosta native, to the practice squad.",
+      category: "free-agency",
+      sourceUrl: "https://sports.yahoo.com/articles/falcons-poach-edge-rusher-off-163040934.html",
+      sourceLabel: "Falcons Wire (Yahoo Sports) / atlantafalcons.com / Pro Football Rumors",
+    },
+    {
+      title: "Week 7 depth chart: Dalton slots in at QB3, Branch keeps punt returns",
+      detail: "atlantafalcons.com (Tuesday, Oct 20): the only change on the unofficial chart was Andy Dalton at No. 3 behind Michael Penix Jr. and Tua Tagovailoa, with Jack Strand fourth. Zachariah Branch is still listed as the punt returner after his two lost return fumbles against Chicago, with Brian Robinson Jr. at kick returner. Divine Deablo and Kendal Daniels remain listed at inside linebacker despite their injuries; Snowden is not yet on the chart because his signing had not been announced.",
+      category: "general",
+      sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-week-7-depth-chart-vs-san-francisco-49ers",
+      sourceLabel: "atlantafalcons.com / Falcons Wire (Yahoo Sports)",
+    },
+    {
+      title: "49ers: Mike Evans will manage Achilles tendinitis 'for the better part of the season'",
+      detail: "49ers Webzone (Tuesday, Oct 20): Rapoport reported Evans' Achilles tendinitis is 'something that he's going to have to manage for the better part of the season.' He left Monday's win in the second quarter with a game-high 94 yards and has not been ruled out for Atlanta. Kyle Shanahan said he would 'be surprised if we got Deebo or D-Rob back till most likely after the bye-week,' effectively ruling out Deebo Samuel (hamstring) and Demarcus Robinson (ankle, IR) for Sunday; Christian Kirk (calf) is a possibility (Heavy).",
+      category: "injuries",
+      sourceUrl: "https://www.49erswebzone.com/articles/204399-rapoport-manage-achilles-tendinitis-season/",
+      sourceLabel: "49ers Webzone / Heavy.com",
+    },
     {
       title: "Falcons sign Andy Dalton, release Cooper Rush",
       detail: "atlantafalcons.com and AP (Monday, Oct 19): a day after the Bears loss, Atlanta released Rush, who went 0-2 as the Week 1-2 starter (22 of 39, 229 yards, one TD, four INTs), and signed the 38-year-old Dalton, released by Philadelphia on Oct 9. The Athletic's Jonathan Jones reported Dalton will compete with Tua Tagovailoa for the backup job, though Tua likely stays No. 2 vs. San Francisco. Stefanski: 'I think at this point we're just trying to get Andy up to speed.'",
@@ -2817,13 +2846,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "AJC / Falcons Wire (Yahoo Sports)",
     },
     {
-      title: "Penix throws three TDs, two to Pitts, in a 16-point fourth quarter",
-      detail: "FootballDB box score (Oct 18): Penix finished 19-of-33 for 225 yards, three TDs and no interceptions (108.8 rating). Kyle Pitts caught TDs of 10 and 5 yards, Jahan Dotson had 87 yards and a 13-yard TD, and Drake London (4-62) and Branch caught two-point conversions.",
-      category: "games",
-      sourceUrl: "https://www.footballdb.com/games/boxscore/chicago-bears-vs-atlanta-falcons-2026101805",
-      sourceLabel: "FootballDB / Falcons Wire",
-    },
-    {
       title: "The run game disappears: 12 carries, 63 yards",
       detail: "FootballDB and Heavy.com (Oct 18): Bijan Robinson had 61 yards on nine carries, and the NFL's No. 2 rushing offense ran 12 times as the early deficit and Chicago's 40 minutes of possession took it away. Robinson: 'That's what we set our identity in: this run game. The run game gets everything going on this offense.'",
       category: "games",
@@ -2836,13 +2858,6 @@ export const NEWS_DIGEST = {
       category: "coaching",
       sourceUrl: "https://sports.yahoo.com/articles/kevin-stefanski-comments-falcons-31-205344874.html",
       sourceLabel: "Falcons Wire (Yahoo Sports) / AJC / Heavy.com",
-    },
-    {
-      title: "Deablo (arm) and Bowman (hamstring) also leave; Avieon Terrell returns from a concussion check",
-      detail: "atlantafalcons.com (Sunday, Oct 18): LB Divine Deablo was ruled out late in the second quarter with an arm injury and DB Billy Bowman Jr. strained a hamstring in the fourth. Rookie CB Avieon Terrell, starting outside for C.J. Henderson, was evaluated for a concussion and a stinger and returned in the third quarter. No timelines yet; Stefanski's Monday availability is next.",
-      category: "injuries",
-      sourceUrl: "https://www.atlantafalcons.com/news/game-breakdown-what-happened-falcons-bears-score-takeaways",
-      sourceLabel: "atlantafalcons.com / Yardbarker",
     },
     {
       title: "NFC South: Carolina pulls 1.5 games ahead; Saints climb to 2-4",
