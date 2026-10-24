@@ -139,7 +139,7 @@ export const PLAYERS = [
     stats: { rushYds: 499, rushTDs: 4, rushAttempts: 125 },
     form: 7.4,
     status: "questionable",
-    injuryNote: "Hamstring. Limited on the first Week 7 injury report (Wednesday, Oct 21, atlantafalcons.com). Did not practice Thursday (Oct 22), a downgrade from limited (49ers Webzone, official report).",
+    injuryNote: "Hamstring. Limited on the first Week 7 injury report (Wednesday, Oct 21, atlantafalcons.com). Did not practice Thursday (Oct 22), a downgrade from limited (49ers Webzone, official report). Friday (Oct 23), final Week 7 report (atlantafalcons.com): did not practice and ruled OUT vs. San Francisco; Khalil Herbert elevated from the practice squad as the backup back. Status kept at questionable because the tracker schema has no single-game 'out' value.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4241474.png",
     contract: { years: 1, total: 2500000, guaranteed: 1500000, apy: 2500000, throughYear: 2026, cap2026: 2500000 },
     career: [
@@ -212,7 +212,7 @@ export const PLAYERS = [
     stats: { receptions: 39, recYds: 313, recTDs: 2 },
     form: 6.6,
     status: "questionable",
-    injuryNote: "Slot return · drafted by ATL 2019, back from CHI Wednesday (Oct 21), first Week 7 report: limited (shoulder) (atlantafalcons.com).",
+    injuryNote: "Slot return · drafted by ATL 2019, back from CHI Wednesday (Oct 21), first Week 7 report: limited (shoulder) (atlantafalcons.com). Friday (Oct 23), final Week 7 report (atlantafalcons.com): limited (shoulder) and QUESTIONABLE.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/3917914.png",
     contract: { years: 1, total: 2400000, guaranteed: 1000000, apy: 2400000, throughYear: 2026, cap2026: 2400000 },
     career: [
@@ -326,8 +326,8 @@ export const PLAYERS = [
     acquired: "draft-2014-R1-P6",
     stats: {},
     form: 8.5,
-    status: "questionable",
-    injuryNote: "LT · restructured March 2026 (cleared $10.5M). Left the 45-24 win at New Orleans (Oct 5) late in the first quarter with a groin injury and was ruled out before the second half, in his 200th career game (fourth Falcon to reach 200) and with the NFL's longest active consecutive-starts streak (199) on the line. Michael Jerrell replaced him. The Week 5 depth chart (released Oct 6) was unchanged from Week 4 and still lists him at LT. Did not participate (groin) on Wednesday's estimated report (Oct 7), a walkthrough on the short week, then returned to practice as a limited participant on Thursday (Oct 8), per atlantafalcons.com. Upgraded to a full participant on Friday (Oct 9) and listed questionable for Sunday night vs. Baltimore; SportsTalkATL calls him a game-time decision, and if he plays it would be his 200th consecutive start. A full participant (groin) on Wednesday's first Week 6 report (Oct 14) ahead of Chicago, and full again on Thursday (Oct 15).",
+    status: "active",
+    injuryNote: "LT · restructured March 2026 (cleared $10.5M). Left the 45-24 win at New Orleans (Oct 5) late in the first quarter with a groin injury and was ruled out before the second half, in his 200th career game (fourth Falcon to reach 200) and with the NFL's longest active consecutive-starts streak (199) on the line. Michael Jerrell replaced him. The Week 5 depth chart (released Oct 6) was unchanged from Week 4 and still lists him at LT. Did not participate (groin) on Wednesday's estimated report (Oct 7), a walkthrough on the short week, then returned to practice as a limited participant on Thursday (Oct 8), per atlantafalcons.com. Upgraded to a full participant on Friday (Oct 9) and listed questionable for Sunday night vs. Baltimore; SportsTalkATL calls him a game-time decision, and if he plays it would be his 200th consecutive start. A full participant (groin) on Wednesday's first Week 6 report (Oct 14) ahead of Chicago, and full again on Thursday (Oct 15). Friday (Oct 23), final Week 7 report (atlantafalcons.com): limited as a rest day (not injury related) and carries no game designation vs. San Francisco.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/16713.png",
     contract: { years: 3, total: 55500000, guaranteed: 0, apy: 18500000, throughYear: 2027, cap2026: 15500000 },
     career: [
@@ -485,7 +485,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "questionable",
-    injuryNote: "Took most of the first-team right tackle reps through the spring while Jawaan Taylor rehabbed. D-II development project who replaced Jake Matthews (groin) at left tackle for most of the 45-24 win at New Orleans (Oct 5). Limited (ankle) on the Week 5 estimated report (Wednesday, Oct 7), then a full participant on Thursday (Oct 8); he is listed behind Matthews at LT on the Week 5 depth chart. Wednesday (Oct 21), first Week 7 report: limited (bicep) (atlantafalcons.com). Week 7: limited (bicep) Wednesday (Oct 21), then did not practice Thursday (Oct 22) (official report via 49ers Webzone).",
+    injuryNote: "Took most of the first-team right tackle reps through the spring while Jawaan Taylor rehabbed. D-II development project who replaced Jake Matthews (groin) at left tackle for most of the 45-24 win at New Orleans (Oct 5). Limited (ankle) on the Week 5 estimated report (Wednesday, Oct 7), then a full participant on Thursday (Oct 8); he is listed behind Matthews at LT on the Week 5 depth chart. Wednesday (Oct 21), first Week 7 report: limited (bicep) (atlantafalcons.com). Week 7: limited (bicep) Wednesday (Oct 21), then did not practice Thursday (Oct 22) (official report via 49ers Webzone). Friday (Oct 23), final Week 7 report (atlantafalcons.com): did not practice and ruled OUT vs. San Francisco (bicep). Status kept at questionable because the tracker schema has no single-game 'out' value.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/5209093.png",
     contract: { years: 4, total: 4150000, guaranteed: 100000, apy: 1037500, throughYear: 2027, cap2026: 920000 },
     career: [{ years: "2024–", team: "Atlanta Falcons", type: "NFL" }],
@@ -570,8 +570,8 @@ export const PLAYERS = [
     acquired: "waivers-2026-PHI",
     stats: {},
     form: 6.0,
-    status: "active",
-    injuryNote: "Claimed off waivers from Philadelphia on Sept 1, a big (6-5, 317) developmental tackle and 2025 sixth-round pick (No. 207) who started 15 games at right tackle for a College Football Playoff Texas team, adding swing depth on a line the Falcons have prioritized all summer.",
+    status: "questionable",
+    injuryNote: "Claimed off waivers from Philadelphia on Sept 1, a big (6-5, 317) developmental tackle and 2025 sixth-round pick (No. 207) who started 15 games at right tackle for a College Football Playoff Texas team, adding swing depth on a line the Falcons have prioritized all summer. Friday (Oct 23), final Week 7 report (atlantafalcons.com): limited (ankle) on Thursday and Friday (Oct 22-23) and listed QUESTIONABLE vs. San Francisco.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4685590.png",
     contract: { years: 1, total: 900000, guaranteed: 0, apy: 900000, throughYear: 2026, cap2026: 900000 },
     career: [
@@ -614,8 +614,8 @@ export const PLAYERS = [
     acquired: "trade-2026-CHI",
     stats: { tackles: 44, tfl: 5, sacks: 6 },
     form: 7.2,
-    status: "active",
-    injuryNote: "Acquired Aug 30 (cutdown day) from Chicago for CB Clark Phillips III and a 2027 fifth-round pick, reuniting with GM Ian Cunningham, who was the Bears' assistant GM when they drafted him. A 2023 second-round pick and a two-year starter in Chicago, Dexter posted 44 tackles and six sacks over 17 starts in 2025 and steps into the interior rotation alongside Maason Smith and Brandon Dorlus. On Sep 30 he agreed to a four-year, $78 million extension with $46.5 million guaranteed (agents Drew and Jason Rosenhaus via ESPN's Adam Schefter; confirmed by the team), keeping him in Atlanta through 2030. Through three games he has 15 pressures, three QB hits and half a sack, ranking eighth in the NFL in pressure rate (20.5%) per the team. 'Gervon is a young, ascending talent whose power, disruption and impact along the defensive line are difficult to find,' GM Ian Cunningham said.",
+    status: "questionable",
+    injuryNote: "Acquired Aug 30 (cutdown day) from Chicago for CB Clark Phillips III and a 2027 fifth-round pick, reuniting with GM Ian Cunningham, who was the Bears' assistant GM when they drafted him. A 2023 second-round pick and a two-year starter in Chicago, Dexter posted 44 tackles and six sacks over 17 starts in 2025 and steps into the interior rotation alongside Maason Smith and Brandon Dorlus. On Sep 30 he agreed to a four-year, $78 million extension with $46.5 million guaranteed (agents Drew and Jason Rosenhaus via ESPN's Adam Schefter; confirmed by the team), keeping him in Atlanta through 2030. Through three games he has 15 pressures, three QB hits and half a sack, ranking eighth in the NFL in pressure rate (20.5%) per the team. 'Gervon is a young, ascending talent whose power, disruption and impact along the defensive line are difficult to find,' GM Ian Cunningham said. Friday (Oct 23), final Week 7 report (atlantafalcons.com): limited (hamstring) on Thursday and Friday (Oct 22-23) and listed QUESTIONABLE vs. San Francisco.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4429014.png",
     contract: { years: 4, total: 78000000, guaranteed: 46500000, apy: 19500000, throughYear: 2030, cap2026: 2140000 }, // 4-yr extension agreed 2026-09-30; cap2026 is the pre-extension rookie figure until the restructured 2026 number is published
     career: [
@@ -636,8 +636,8 @@ export const PLAYERS = [
     acquired: "fa-2026",
     stats: { tackles: 24, sacks: 2 },
     form: 6.4,
-    status: "active",
-    injuryNote: "Ex-Browns · 1-yr deal. Added to the Week 6 injury report as a limited participant (groin) on Thursday, Oct 15, ahead of Chicago (atlantafalcons.com). Upgraded to full on Friday (Oct 16) and carries no game designation.",
+    status: "questionable",
+    injuryNote: "Ex-Browns · 1-yr deal. Added to the Week 6 injury report as a limited participant (groin) on Thursday, Oct 15, ahead of Chicago (atlantafalcons.com). Upgraded to full on Friday (Oct 16) and carries no game designation. Friday (Oct 23), final Week 7 report (atlantafalcons.com): on the Week 7 report with a groin injury: limited Thursday (Oct 22), full Friday, and listed QUESTIONABLE.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4361510.png",
     contract: { years: 1, total: 2500000, guaranteed: 1200000, apy: 2500000, throughYear: 2026, cap2026: 2500000 },
     career: [
@@ -745,7 +745,7 @@ export const PLAYERS = [
     stats: { tackles: 24, sacks: 9, ff: 1 },
     form: 7.4,
     status: "questionable",
-    injuryNote: "Signed Aug 18 to a one-year deal worth $6M and up to $8M with incentives, un-retiring after leaving the game in October 2025 following five games with the Eagles. Three-time Pro Bowler, reunited with HC Kevin Stefanski (his coach in Cleveland, 2023-24), and the REDGE starter with Jalon Walker (ACL) out for the year and James Pearce Jr. serving an eight-game ban. Entered Week 4 leading the team with 2.5 sacks (SI Falcons). Left the 45-24 win at New Orleans (Oct 5) in the first quarter with a concussion and neck injury and did not return; now in the concussion protocol ahead of Sunday night vs. Baltimore and listed as did not participate (concussion, neck) on Wednesday's estimated report (Oct 7) and again in Thursday's practice (Oct 8). Returned as a limited participant on Friday (Oct 9) and was listed questionable, then downgraded to OUT on Saturday (Oct 10) after not clearing the protocol (team reporter Tori McElhaney, NFL.com). Earliest possible return is Week 6 vs. Chicago (Oct 18), and he was a limited participant (concussion, neck) in Wednesday's first Week 6 practice (Oct 14). Cleared the concussion protocol on Thursday (Oct 15) and was limited again with the neck alone listed (atlantafalcons.com); Jared Ivey, Cam Thomas and elevated DEs Bralen Trice and Drake Jackson absorb his snaps. Status kept at questionable because the tracker schema has no single-game 'out' value. Limited again Friday (Oct 16) and listed QUESTIONABLE (neck) on the final Week 6 report (atlantafalcons.com). Wednesday (Oct 21), first Week 7 report: limited (neck) (atlantafalcons.com).",
+    injuryNote: "Signed Aug 18 to a one-year deal worth $6M and up to $8M with incentives, un-retiring after leaving the game in October 2025 following five games with the Eagles. Three-time Pro Bowler, reunited with HC Kevin Stefanski (his coach in Cleveland, 2023-24), and the REDGE starter with Jalon Walker (ACL) out for the year and James Pearce Jr. serving an eight-game ban. Entered Week 4 leading the team with 2.5 sacks (SI Falcons). Left the 45-24 win at New Orleans (Oct 5) in the first quarter with a concussion and neck injury and did not return; now in the concussion protocol ahead of Sunday night vs. Baltimore and listed as did not participate (concussion, neck) on Wednesday's estimated report (Oct 7) and again in Thursday's practice (Oct 8). Returned as a limited participant on Friday (Oct 9) and was listed questionable, then downgraded to OUT on Saturday (Oct 10) after not clearing the protocol (team reporter Tori McElhaney, NFL.com). Earliest possible return is Week 6 vs. Chicago (Oct 18), and he was a limited participant (concussion, neck) in Wednesday's first Week 6 practice (Oct 14). Cleared the concussion protocol on Thursday (Oct 15) and was limited again with the neck alone listed (atlantafalcons.com); Jared Ivey, Cam Thomas and elevated DEs Bralen Trice and Drake Jackson absorb his snaps. Status kept at questionable because the tracker schema has no single-game 'out' value. Limited again Friday (Oct 16) and listed QUESTIONABLE (neck) on the final Week 6 report (atlantafalcons.com). Wednesday (Oct 21), first Week 7 report: limited (neck) (atlantafalcons.com). Friday (Oct 23), final Week 7 report (atlantafalcons.com): upgraded to FULL (neck) and listed QUESTIONABLE.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/3043168.png",
     contract: { years: 1, total: 6000000, guaranteed: 3500000, apy: 6000000, throughYear: 2026, cap2026: 6000000 },
     career: [
@@ -771,7 +771,7 @@ export const PLAYERS = [
     stats: { tackles: 31, sacks: 4 },
     form: 6.9,
     status: "questionable",
-    injuryNote: "Signed March 12 on a one-year, $2.765M deal for veteran edge depth. Entering his ninth active NFL season across the Rams, 49ers and Colts; missed the 2024 season with a torn Achilles before returning in Indianapolis. Slides up to the LEDGE starter role after Atlanta's surprise cutdown-day release of Azeez Ojulari, working opposite Za'Darius Smith with Pearce serving an eight-game ban from Aug 30. Missed the Week 3 win at Green Bay (hamstring), then returned from a questionable tag to play in the 45-24 Monday-night win at New Orleans (Oct 5). Added to the Week 5 report as limited (hamstring) on Thursday (Oct 8), limited again Friday (Oct 9) and listed questionable for Sunday night vs. Baltimore. Wednesday (Oct 21), first Week 7 report: limited (hamstring) (atlantafalcons.com).",
+    injuryNote: "Signed March 12 on a one-year, $2.765M deal for veteran edge depth. Entering his ninth active NFL season across the Rams, 49ers and Colts; missed the 2024 season with a torn Achilles before returning in Indianapolis. Slides up to the LEDGE starter role after Atlanta's surprise cutdown-day release of Azeez Ojulari, working opposite Za'Darius Smith with Pearce serving an eight-game ban from Aug 30. Missed the Week 3 win at Green Bay (hamstring), then returned from a questionable tag to play in the 45-24 Monday-night win at New Orleans (Oct 5). Added to the Week 5 report as limited (hamstring) on Thursday (Oct 8), limited again Friday (Oct 9) and listed questionable for Sunday night vs. Baltimore. Wednesday (Oct 21), first Week 7 report: limited (hamstring) (atlantafalcons.com). Friday (Oct 23), final Week 7 report (atlantafalcons.com): limited (hamstring) and listed QUESTIONABLE.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/3045527.png",
     contract: { years: 1, total: 2765000, guaranteed: 1500000, apy: 2765000, throughYear: 2026, cap2026: 2765000 },
     career: [
@@ -847,7 +847,7 @@ export const PLAYERS = [
     stats: { tackles: 92, tfl: 7, sacks: 2, int_def: 1 },
     form: 8.0,
     status: "questionable",
-    injuryNote: "Arm. Injured in the first half of the 31-23 loss to Chicago (Oct 18) and ruled out late in the second quarter (atlantafalcons.com); Stefanski had no update Monday (Oct 19, AP). Had battled a hamstring issue through Weeks 4-6 practices without missing a game. MIKE · 3yr/$30M FA signing from Las Vegas. Wednesday (Oct 21), first Week 7 report: did not participate, with the injury listed as forearm (atlantafalcons.com). Did not practice Wednesday or Thursday (Oct 21-22, forearm) of 49ers week (official report via 49ers Webzone).",
+    injuryNote: "Arm. Injured in the first half of the 31-23 loss to Chicago (Oct 18) and ruled out late in the second quarter (atlantafalcons.com); Stefanski had no update Monday (Oct 19, AP). Had battled a hamstring issue through Weeks 4-6 practices without missing a game. MIKE · 3yr/$30M FA signing from Las Vegas. Wednesday (Oct 21), first Week 7 report: did not participate, with the injury listed as forearm (atlantafalcons.com). Did not practice Wednesday or Thursday (Oct 21-22, forearm) of 49ers week (official report via 49ers Webzone). Friday (Oct 23), final Week 7 report (atlantafalcons.com): did not practice and ruled OUT vs. San Francisco (forearm). Status kept at questionable because the tracker schema has no single-game 'out' value.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4037626.png",
     contract: { years: 3, total: 30000000, guaranteed: 18000000, apy: 10000000, throughYear: 2028, cap2026: 8500000 },
     career: [
@@ -961,7 +961,7 @@ export const PLAYERS = [
     stats: { tackles: 68, int_def: 2, pass_def: 13 },
     form: 8.2,
     status: "ir",
-    injuryNote: "Placed on injured reserve Monday (Sep 22) with the groin injury that knocked him out of the Sept 20 Carolina loss in the first quarter, sidelining the CB1 for at least four games; the team signed DL Zach Harrison off the practice squad in the corresponding move. C.J. Henderson took his starting spot on the Week 4 depth chart (Sep 29), with Malcolm DeWalt IV behind him; the team also signed CB Robert Longerbeam off the Eagles' practice squad on Sep 23 · CB1 · paid like one (4yr/$81M extension in 2024) Eligible to come off IR next week; Stefanski (Oct 16): 'We'll see. I don't want to say just yet, but he's doing very well' (AJC). Monday (Oct 19), on a Week 7 return: 'It's trending that way, but let's get through the next couple of days' (AP). Wednesday (Oct 21), first Week 7 report: the team designated him for return from IR, opening a 21-day activation window (NBC Sports / PFT), and he was a limited participant (groin) in his first practice since Sept. 20 (atlantafalcons.com). Remains on IR until activated. Thursday (Oct 22): limited again (groin) on the official report (49ers Webzone); Falcons Wire described him as a full participant, so the two accounts differ. The team released CB Malcolm DeWalt IV the same day, a move both Falcons Wire and Atlanta Falcons On SI tied to a likely Terrell activation, though the team has not confirmed the link.",
+    injuryNote: "Placed on injured reserve Monday (Sep 22) with the groin injury that knocked him out of the Sept 20 Carolina loss in the first quarter, sidelining the CB1 for at least four games; the team signed DL Zach Harrison off the practice squad in the corresponding move. C.J. Henderson took his starting spot on the Week 4 depth chart (Sep 29), with Malcolm DeWalt IV behind him; the team also signed CB Robert Longerbeam off the Eagles' practice squad on Sep 23 · CB1 · paid like one (4yr/$81M extension in 2024) Eligible to come off IR next week; Stefanski (Oct 16): 'We'll see. I don't want to say just yet, but he's doing very well' (AJC). Monday (Oct 19), on a Week 7 return: 'It's trending that way, but let's get through the next couple of days' (AP). Wednesday (Oct 21), first Week 7 report: the team designated him for return from IR, opening a 21-day activation window (NBC Sports / PFT), and he was a limited participant (groin) in his first practice since Sept. 20 (atlantafalcons.com). Remains on IR until activated. Thursday (Oct 22): limited again (groin) on the official report (49ers Webzone); Falcons Wire described him as a full participant, so the two accounts differ. The team released CB Malcolm DeWalt IV the same day, a move both Falcons Wire and Atlanta Falcons On SI tied to a likely Terrell activation, though the team has not confirmed the link. Friday (Oct 23), final Week 7 report (atlantafalcons.com): a FULL participant (groin) and listed QUESTIONABLE. Stefanski: 'I thought he's looked better' and 'we'll see how it goes over the next 48 hours.' Must be activated to the 53 by 4 p.m. ET Saturday (Oct 24) to play Sunday.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4239995.png",
     contract: { years: 4, total: 81000000, guaranteed: 43500000, apy: 20250000, throughYear: 2028, cap2026: 19200000 },
     career: [{ years: "2020–", team: "Atlanta Falcons", type: "NFL · Pro Bowl 2021" }],
@@ -999,7 +999,7 @@ export const PLAYERS = [
     stats: { tackles: 28, pass_def: 5 },
     form: 6.6,
     status: "questionable",
-    injuryNote: "Groin. Hurt in the 30-23 overtime loss to Baltimore (Oct 11) and did not practice Wednesday (Oct 14), the only Falcon held out of the first Week 6 session. Stefanski said he is 'getting better' and the team is not ruling him out for Sunday vs. Chicago (atlantafalcons.com). Did not practice again on Thursday (Oct 15), his second straight DNP; DC Jeff Ulbrich, asked about the depth behind him: 'Mike Hughes is a top-end starter in this league' and 'Avieon (Terrell) is emerging.' Rookie Avieon Terrell would likely make his first career start if Henderson sits (AJC); Avieon Terrell, Billy Bowman and Sydney Brown are next in line. Started at cornerback since the Week 4 depth chart (Sep 29) in place of A.J. Terrell (IR, groin) · Reclamation · ex-#9 overall (2020 JAX) Ruled OUT for Sunday vs. Chicago on Friday's final report (Oct 16) after a third straight DNP; rookie Avieon Terrell starts outside (AJC). Status kept at questionable because the tracker schema has no single-game 'out' value. Wednesday (Oct 21), first Week 7 report: limited (groin), his first practice action since the Baltimore game (atlantafalcons.com).",
+    injuryNote: "Groin. Hurt in the 30-23 overtime loss to Baltimore (Oct 11) and did not practice Wednesday (Oct 14), the only Falcon held out of the first Week 6 session. Stefanski said he is 'getting better' and the team is not ruling him out for Sunday vs. Chicago (atlantafalcons.com). Did not practice again on Thursday (Oct 15), his second straight DNP; DC Jeff Ulbrich, asked about the depth behind him: 'Mike Hughes is a top-end starter in this league' and 'Avieon (Terrell) is emerging.' Rookie Avieon Terrell would likely make his first career start if Henderson sits (AJC); Avieon Terrell, Billy Bowman and Sydney Brown are next in line. Started at cornerback since the Week 4 depth chart (Sep 29) in place of A.J. Terrell (IR, groin) · Reclamation · ex-#9 overall (2020 JAX) Ruled OUT for Sunday vs. Chicago on Friday's final report (Oct 16) after a third straight DNP; rookie Avieon Terrell starts outside (AJC). Status kept at questionable because the tracker schema has no single-game 'out' value. Wednesday (Oct 21), first Week 7 report: limited (groin), his first practice action since the Baltimore game (atlantafalcons.com). Friday (Oct 23), final Week 7 report (atlantafalcons.com): upgraded to FULL (groin) and listed QUESTIONABLE.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4240596.png",
     contract: { years: 1, total: 2200000, guaranteed: 750000, apy: 2200000, throughYear: 2026, cap2026: 2200000 },
     career: [
@@ -1066,7 +1066,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "questionable",
-    injuryNote: "Hamstring. Strained in the fourth quarter of the 31-23 loss to Chicago (Oct 18) and listed doubtful to return (atlantafalcons.com); Stefanski had no update Monday (Oct 19, AP). Returned in Week 3 from a late-Nov 2025 Achilles rupture; in the nickel/slot mix behind Avieon Terrell. Wednesday (Oct 21), first Week 7 report: did not participate (hamstring) (atlantafalcons.com). Did not practice Wednesday or Thursday (Oct 21-22, hamstring) of 49ers week (official report via 49ers Webzone).",
+    injuryNote: "Hamstring. Strained in the fourth quarter of the 31-23 loss to Chicago (Oct 18) and listed doubtful to return (atlantafalcons.com); Stefanski had no update Monday (Oct 19, AP). Returned in Week 3 from a late-Nov 2025 Achilles rupture; in the nickel/slot mix behind Avieon Terrell. Wednesday (Oct 21), first Week 7 report: did not participate (hamstring) (atlantafalcons.com). Did not practice Wednesday or Thursday (Oct 21-22, hamstring) of 49ers week (official report via 49ers Webzone). Friday (Oct 23), final Week 7 report (atlantafalcons.com): did not practice and ruled OUT vs. San Francisco (hamstring). Status kept at questionable because the tracker schema has no single-game 'out' value.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4431194.png",
     contract: { years: 4, total: 5200000, guaranteed: 950000, apy: 1300000, throughYear: 2028, cap2026: 1100000 },
     career: [{ years: "2025–", team: "Atlanta Falcons", type: "NFL" }],
@@ -1204,7 +1204,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "questionable",
-    injuryNote: "Started at outside cornerback vs. Chicago (Oct 18) with C.J. Henderson (groin) out, his third career start and first on the outside. Was evaluated for a concussion and also suffered a stinger, was listed questionable to return, and came back in the third quarter (atlantafalcons.com). AP lists the injury as his left shoulder; Stefanski had no update Monday (Oct 19). Watch the Week 7 injury report. Wednesday (Oct 21), first Week 7 report: limited, with the injury now listed as hamstring (atlantafalcons.com).",
+    injuryNote: "Started at outside cornerback vs. Chicago (Oct 18) with C.J. Henderson (groin) out, his third career start and first on the outside. Was evaluated for a concussion and also suffered a stinger, was listed questionable to return, and came back in the third quarter (atlantafalcons.com). AP lists the injury as his left shoulder; Stefanski had no update Monday (Oct 19). Watch the Week 7 injury report. Wednesday (Oct 21), first Week 7 report: limited, with the injury now listed as hamstring (atlantafalcons.com). Friday (Oct 23), final Week 7 report (atlantafalcons.com): limited, injury now listed as back, and QUESTIONABLE.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4870988.png",
     contract: { years: 4, total: 8500000, guaranteed: 4200000, apy: 2125000, throughYear: 2029, cap2026: 1400000 },
     career: [
@@ -1251,7 +1251,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "questionable",
-    injuryNote: "Neck. Carted off on a stretcher in the third quarter of the 31-23 loss to Chicago (Oct 18) after his facemask hit TE Colston Loveland's knee on a tackle, and taken to Grady Memorial Hospital. The team said he was alert with movement in all extremities; The Athletic's Josh Kendall reported he was walking under his own power in the locker room. Stefanski: 'All reports so far are good.' Monday (Oct 19): was at the facility, and Stefanski said it was too early to project his status for 49ers week: 'I feel very, very fortunate that he got the treatment he got' and 'we feel really good about where he is' (AP). Earlier: limited (Achilles) on the Week 4 and Week 6 practice reports. Wednesday (Oct 21), first Week 7 report: a FULL participant (neck), and Stefanski confirmed he is not in the concussion protocol: 'Doing a lot better. He will practice today. He'll move around. But we'll see how it goes this week' (atlantafalcons.com). Thursday (Oct 22): moved from full to limited (neck) on the official report (49ers Webzone); Falcons Wire wrote he 'appears to be good to go for Week 7.' DC Jeff Ulbrich, on Daniels filling in for Divine Deablo: 'He takes a lot of pride in getting everybody on the same page' (ESPN's Marc Raimondi, via Falcons Wire).",
+    injuryNote: "Neck. Carted off on a stretcher in the third quarter of the 31-23 loss to Chicago (Oct 18) after his facemask hit TE Colston Loveland's knee on a tackle, and taken to Grady Memorial Hospital. The team said he was alert with movement in all extremities; The Athletic's Josh Kendall reported he was walking under his own power in the locker room. Stefanski: 'All reports so far are good.' Monday (Oct 19): was at the facility, and Stefanski said it was too early to project his status for 49ers week: 'I feel very, very fortunate that he got the treatment he got' and 'we feel really good about where he is' (AP). Earlier: limited (Achilles) on the Week 4 and Week 6 practice reports. Wednesday (Oct 21), first Week 7 report: a FULL participant (neck), and Stefanski confirmed he is not in the concussion protocol: 'Doing a lot better. He will practice today. He'll move around. But we'll see how it goes this week' (atlantafalcons.com). Thursday (Oct 22): moved from full to limited (neck) on the official report (49ers Webzone); Falcons Wire wrote he 'appears to be good to go for Week 7.' DC Jeff Ulbrich, on Daniels filling in for Divine Deablo: 'He takes a lot of pride in getting everybody on the same page' (ESPN's Marc Raimondi, via Falcons Wire). Friday (Oct 23), final Week 7 report (atlantafalcons.com): back to FULL (neck) and listed QUESTIONABLE; Daniels said he 'feels good' and could wear the green dot with Deablo out (Atlanta Falcons On SI).",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4595343.png",
     contract: { years: 4, total: 4750000, guaranteed: 700000, apy: 1187500, throughYear: 2029, cap2026: 900000 },
     career: [
@@ -1671,7 +1671,7 @@ export const NEXT_GAME = {
   date: "2026-10-25",
   kickoff: "1:00 PM ET",
   tv: "FOX",
-  note: "Atlanta (2-4, 0-3 at home) hosts unbeaten San Francisco (6-0), which held off Washington 23-17 on Monday Night Football (Oct 19). Line: opened 49ers -4.5, total 50.5 (FOX Sports, Oct 19); BetMGM SF -3.5, total 50.5 (SI Betting, Oct 20); AP lists SF -2.5 (Oct 22). Atlanta, Thursday report (Oct 22, official via 49ers Webzone): DNP for DB Billy Bowman Jr. (hamstring), LB Divine Deablo (forearm), RB Brian Robinson Jr. (hamstring), OT Michael Jerrell (bicep) and OT Jawaan Taylor (rest); limited: CB A.J. Terrell (groin, day 2 of his 21-day IR return window), LB Kendal Daniels (neck, down from full), Gervon Dexter, Samson Ebukam, C.J. Henderson, Za'Darius Smith, Avieon Terrell, Cameron Thomas, Cameron Williams, Olamide Zaccheaus; full: Beaux Collins. Roster: CB Malcolm DeWalt IV released Oct 22 (roster at 52); QB Andy Dalton signed Oct 19; edge Charles Snowden signed Oct 20. San Francisco, Thursday: DNP for Nick Bosa (knee, calf), Mike Evans (ribs, Achilles), Deebo Samuel, Luke Gifford, Garret Wallow, Siran Neal, Marques Sigle and Upton Stout; Mykel Williams limited; Trent Williams and Christian Kirk full. Former Falcons HC Raheem Morris returns as the 49ers' defensive coordinator. Friday's report brings game statuses. Atlanta trails Carolina (3-2) by 1.5 games. Next: at Tampa Bay in Week 8.",
+  note: "Atlanta (2-4, 0-3 at home) hosts unbeaten San Francisco (6-0). Line: opened 49ers -4.5, total 50.5 (FOX Sports, Oct 19); DraftKings SF -2.5, total 49.5 (ESPN, Oct 23); AP lists SF -2.5 (Oct 24). ESPN FPI gives the 49ers a 78.7% chance. Atlanta, final report (Fri Oct 23, atlantafalcons.com): OUT: RB Brian Robinson Jr. (hamstring), LB Divine Deablo (forearm), DB Billy Bowman Jr. (hamstring), OT Michael Jerrell (bicep). QUESTIONABLE (10): CB A.J. Terrell (groin, full Friday, must be activated from IR by 4 p.m. ET Saturday to play), LB Kendal Daniels (neck, full), CB C.J. Henderson (groin, full), DE Za'Darius Smith (neck, full), DE Cam Thomas (groin, full), WR Beaux Collins (hip), DT Gervon Dexter Sr. (hamstring), DE Samson Ebukam (hamstring), CB Avieon Terrell (back), OT Cameron Williams (ankle) and WR Olamide Zaccheaus (shoulder). RB Khalil Herbert elevated from the practice squad; Andy Dalton expected inactive. San Francisco, final report: OUT: Nick Bosa (calf, knee), Mike Evans (ribs, Achilles), Deebo Samuel (hamstring), Luke Gifford, Garret Wallow, Marques Sigle; Bosa and Evans did not travel (NBC Sports Bay Area). Questionable: WR Christian Kirk (calf, expected to be activated from IR Saturday), S Siran Neal, CB Upton Stout. Former Falcons HC Raheem Morris returns as the 49ers' defensive coordinator. Falcons wear black throwbacks with red helmets. Inactives 11:30 AM ET. Atlanta trails Carolina (3-2) by 1.5 games. Next: at Tampa Bay in Week 8.",
 };
 
 // =========================================
@@ -2042,17 +2042,17 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-10-23T08:40:00Z",
+  generatedAt: "2026-10-24T08:30:00Z",
   cover: {
-    kicker: "49ers week, Thursday: Brian Robinson Jr. and Michael Jerrell join Billy Bowman Jr. and Divine Deablo on the sideline, Kendal Daniels drops to limited, A.J. Terrell stays limited, and Atlanta cuts CB Malcolm DeWalt IV as Raheem Morris prepares to return with San Francisco's defense",
-    headLine1: "Four sit.",
-    headEm: "An old friend comes back.",
-    headLine3: "Thursday's report thins the Falcons' list of healthy bodies, a roster spot opens for Terrell, and Raheem Morris brings the 49ers' defense to Mercedes-Benz Stadium.",
-    deck: "Thursday's official report (via 49ers Webzone) had four Falcons out of practice: Bowman (hamstring) and Deablo (forearm) again, plus RB Brian Robinson Jr. (hamstring) and OT Michael Jerrell (bicep), both downgraded from limited. Kendal Daniels went from full to limited (neck), A.J. Terrell was limited again (groin) in the second practice of his IR return window, and Gervon Dexter, Cameron Thomas and Cameron Williams appeared as limited. The same day Atlanta released undrafted rookie CB Malcolm DeWalt IV, a move Falcons Wire and Atlanta Falcons On SI read as clearing room for Terrell. San Francisco held eight out, Nick Bosa and Mike Evans again among them; GM John Lynch on Evans: 'we'll let these next couple of days play out and make a decision when we have to.' Former Falcons coach Raheem Morris, now the 49ers' defensive coordinator, on Michael Penix Jr.: 'Loved the kid, loved everything about him.' AP lists the 49ers by 2.5.",
+    kicker: "49ers week, final report: Brian Robinson Jr., Divine Deablo, Billy Bowman Jr. and Michael Jerrell are out, A.J. Terrell goes full and is questionable pending a Saturday activation, Khalil Herbert is elevated, and San Francisco leaves Nick Bosa and Mike Evans at home",
+    headLine1: "Four out, ten questionable.",
+    headEm: "Bosa and Evans stay home.",
+    headLine3: "Friday's reports thin both sides: Atlanta waits on A.J. Terrell's activation, and the unbeaten 49ers arrive without three Pro Bowlers.",
+    deck: "Atlanta's final report (Friday, atlantafalcons.com) ruled out RB Brian Robinson Jr. (hamstring), LB Divine Deablo (forearm), DB Billy Bowman Jr. (hamstring) and OT Michael Jerrell (bicep), and listed 10 players questionable. A.J. Terrell went full for the first time since landing on IR and is questionable; to play he must be activated by 4 p.m. ET Saturday. Stefanski: 'I thought he's looked better,' and 'we'll see how it goes over the next 48 hours.' Kendal Daniels, C.J. Henderson and Za'Darius Smith also went full, and RB Khalil Herbert was elevated from the practice squad. San Francisco ruled out six, including Nick Bosa, Mike Evans and Deebo Samuel; Bosa and Evans did not travel. DraftKings has the 49ers by 2.5 with a 49.5 total, and ESPN's FPI gives them a 78.7% chance.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
-    stampLabel: "49ers week · Falcons 2-4, 0-3 at home · Thu DNP: Bowman, Deablo, B. Robinson, Jerrell · Terrell limited · DeWalt released · 49ers: Bosa, Evans DNP again · Next: 49ers (6-0), Sun Oct 25, 1 PM ET, FOX · SF -2.5 (AP)",
+    stampLabel: "49ers week · Falcons 2-4, 0-3 at home · OUT: B. Robinson, Deablo, Bowman, Jerrell · 10 questionable incl. A.J. Terrell · Herbert elevated · 49ers OUT: Bosa, Evans, Samuel · Sun Oct 25, 1 PM ET, FOX · SF -2.5, O/U 49.5 (DK)",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -2712,6 +2712,8 @@ export const NEWS_DIGEST = {
     // return window opened, Daniels full, Bowman and Deablo DNP, 10 49ers out incl. Evans and Bosa, Stefanski on Purdy); pointer unchanged.
     // STATUS (2026-10-23 cloud run): cover request SKIPPED (cloud run; the Vault image queue and
     // limn-editor-enhance are not reachable). coverImageUrl intentionally left unchanged per the run rules.
+    // STATUS (2026-10-24 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto Friday's final reports
+    // (four Falcons out, Terrell full and questionable, Herbert elevated, Bosa/Evans/Samuel out for SF); pointer unchanged.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
@@ -2751,14 +2753,50 @@ export const NEWS_DIGEST = {
     "atlantafalcons.com (Oct 20)", "Falcons Wire (Yahoo, Oct 20)", "Pro Football Rumors (Oct 20)", "Heavy.com (Oct 20)", "49ers Webzone (Oct 20)",
     "atlantafalcons.com (Oct 21)", "NBC Sports / PFT (Oct 21)", "49ers Webzone (Oct 21)", "Falcons Wire (Yahoo, Oct 21)", "KNBR / The Sports Leader (Oct 21)", "Athlon Sports (Oct 21)", "DeFi Rate (Oct 21)",
     "49ers Webzone (Oct 22)", "Falcons Wire (Yahoo, Oct 22)", "Atlanta Falcons On SI (Yahoo, Oct 22)", "AP (FOX Sports, Oct 22)", "Heavy.com (Oct 22)", "Stadium Rant (Yardbarker, Oct 22)", "SI Betting (Oct 20)",
+    "atlantafalcons.com (Oct 23)", "Falcons Wire (Yahoo, Oct 23)", "Atlanta Falcons On SI (Oct 23)", "49ers Webzone (Oct 23)", "NBC Sports Bay Area (Oct 23)", "ESPN (Oct 23)", "AP (The Sumter Item, Oct 24)",
   ],
   topics: [
     {
-      title: "Thursday report: Robinson and Jerrell join Bowman and Deablo on the sideline",
-      detail: "Official Thursday report (Oct 22, via 49ers Webzone): DNP for DB Billy Bowman Jr. (hamstring), LB Divine Deablo (forearm), RB Brian Robinson Jr. (hamstring) and OT Michael Jerrell (bicep), the last two downgraded from limited, plus a rest day for OT Jawaan Taylor. LB Kendal Daniels moved from full to limited (neck). Also limited: Gervon Dexter (hamstring), Samson Ebukam, C.J. Henderson, Za'Darius Smith, Avieon Terrell, Cameron Thomas (groin), Cameron Williams (ankle) and Olamide Zaccheaus; WR Beaux Collins (hip) went full. Falcons Wire wrote Daniels 'appears to be good to go for Week 7.'",
+      title: "Final report: Robinson, Deablo, Bowman and Jerrell out; 10 questionable",
+      detail: "atlantafalcons.com (Friday, Oct 23): RB Brian Robinson Jr. (hamstring), LB Divine Deablo (forearm), DB Billy Bowman Jr. (hamstring) and OT Michael Jerrell (bicep) did not practice and are OUT vs. San Francisco. Questionable: Beaux Collins, Kendal Daniels, Gervon Dexter Sr., Samson Ebukam, C.J. Henderson, Za'Darius Smith, A.J. Terrell, Avieon Terrell, Cameron Williams and Olamide Zaccheaus. Daniels, Henderson, Smith and Cam Thomas went full; Jake Matthews and Jawaan Taylor had rest days.",
       category: "injuries",
-      sourceUrl: "https://www.49erswebzone.com/articles/204458-falcons-injury-players-thursdays-practice/",
-      sourceLabel: "49ers Webzone / Falcons Wire (Yahoo Sports)",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-injury-report-brian-robinson-divine-deablo-out-vs-49ers",
+      sourceLabel: "atlantafalcons.com / Falcons Wire (Yahoo Sports)",
+    },
+    {
+      title: "A.J. Terrell goes full, questionable; activation due by Saturday 4 PM",
+      detail: "atlantafalcons.com (Friday, Oct 23): the CB1 was a full participant (groin) for the first time since going on IR and is listed questionable, but he must be added to the 53 by 4 p.m. ET Saturday to play. Stefanski: 'I thought he's looked better,' and 'He's worked very hard throughout the time he's been out, but we'll see how it goes over the next 48 hours' (Falcons Wire). The roster has an open spot after Thursday's DeWalt release.",
+      category: "injuries",
+      sourceUrl: "https://sports.yahoo.com/articles/falcons-hc-provides-injury-updates-172215030.html",
+      sourceLabel: "atlantafalcons.com / Falcons Wire (Yahoo Sports)",
+    },
+    {
+      title: "Khalil Herbert elevated to back up Bijan",
+      detail: "Falcons Wire (Friday, Oct 23): with Brian Robinson Jr. out and only two backs on the 53, Atlanta is elevating former Bears RB Khalil Herbert from the practice squad, as Stefanski said it would. Herbert has 1,957 rushing yards and nine TDs over five seasons. Andy Dalton is expected to be inactive while he gets up to speed (Falcons Wire, Oct 21).",
+      category: "free-agency",
+      sourceUrl: "https://sports.yahoo.com/articles/falcons-elevate-former-bears-rb-203645437.html",
+      sourceLabel: "Falcons Wire (Yahoo Sports)",
+    },
+    {
+      title: "49ers rule out Bosa, Evans and Samuel; Bosa and Evans stay home",
+      detail: "49ers Webzone and NBC Sports Bay Area (Friday, Oct 23): San Francisco ruled out DE Nick Bosa (calf, knee), WR Mike Evans (ribs, Achilles), WR Deebo Samuel (hamstring), LBs Luke Gifford and Garret Wallow and S Marques Sigle. Bosa and Evans will not travel to Atlanta and stay behind for treatment. WR Christian Kirk (calf) is questionable and expected to be activated from IR on Saturday; S Siran Neal and CB Upton Stout are also questionable.",
+      category: "injuries",
+      sourceUrl: "https://www.49erswebzone.com/articles/204483-49ers-falcons-final-injury-report/",
+      sourceLabel: "49ers Webzone / NBC Sports Bay Area",
+    },
+    {
+      title: "ESPN preview: 49ers by 2.5, FPI says 78.7%",
+      detail: "ESPN (Friday, Oct 23): DraftKings has SF -2.5 with a 49.5 total, and FPI gives the 49ers a 78.7% win probability. All three ESPN pickers take San Francisco (27-20, 27-23, 23-16). Penix posts an 81 Total QBR against man coverage (sixth) but 39 against zone (23rd), and the 49ers play zone on 68% of dropbacks. Atlanta is 0-3 against the spread at home. AP (Saturday) also lists the 49ers by 2.5.",
+      category: "games",
+      sourceUrl: "https://www.espn.com/nfl/story/_/id/50229521/week-7-picks-predictions-schedule-fantasy-odds-2026",
+      sourceLabel: "ESPN / AP (The Sumter Item)",
+    },
+    {
+      title: "Black throwbacks and red helmets vs. the 49ers",
+      detail: "Falcons Wire (Thursday, Oct 22): Atlanta will wear its black throwback uniforms with red helmets on Sunday, a combination it will use once more, in Week 13 against Detroit. The red helmets stayed in the rotation despite the offseason uniform change.",
+      category: "general",
+      sourceUrl: "https://sports.yahoo.com/articles/falcons-reveal-uniforms-week-7-163452537.html",
+      sourceLabel: "Falcons Wire (Yahoo Sports)",
     },
     {
       title: "Falcons release undrafted rookie CB Malcolm DeWalt IV",
@@ -2766,20 +2804,6 @@ export const NEWS_DIGEST = {
       category: "free-agency",
       sourceUrl: "https://sports.yahoo.com/articles/falcons-release-db-j-terrells-202544414.html",
       sourceLabel: "Atlanta Falcons On SI / Falcons Wire (Yahoo Sports)",
-    },
-    {
-      title: "A.J. Terrell limited again in the second practice of his return window",
-      detail: "Official report (Thursday, Oct 22, via 49ers Webzone): the CB1 was limited (groin) for a second straight day after being designated to return from IR on Wednesday (NBC Sports / PFT), opening a 21-day activation window. Falcons Wire described him as a full participant, so accounts differ; Friday's report will carry his game status if he is activated.",
-      category: "injuries",
-      sourceUrl: "https://www.49erswebzone.com/articles/204458-falcons-injury-players-thursdays-practice/",
-      sourceLabel: "49ers Webzone / NBC Sports / PFT / Falcons Wire",
-    },
-    {
-      title: "49ers: Bosa and Evans miss again, eight out Thursday",
-      detail: "49ers Webzone (Thursday, Oct 22): DNP for DE Nick Bosa (knee, calf), WR Mike Evans (ribs, Achilles), WR Deebo Samuel (hamstring), LBs Luke Gifford and Garret Wallow, S Siran Neal, S Marques Sigle and CB Upton Stout. DE Mykel Williams returned as limited; Trent Williams and Christian Kirk were full. GM John Lynch on Evans, who is managing Achilles tendinitis: 'we'll let these next couple of days play out and make a decision when we have to.'",
-      category: "injuries",
-      sourceUrl: "https://www.49erswebzone.com/articles/204455-49ers-evans-absent-thursday-practice/",
-      sourceLabel: "49ers Webzone",
     },
     {
       title: "Raheem Morris returns to Atlanta running the 49ers' defense",
@@ -2803,13 +2827,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "Heavy.com / Stadium Rant (Yardbarker)",
     },
     {
-      title: "Line: 49ers by 2.5 in AP's preview",
-      detail: "AP (Thursday, Oct 22) lists San Francisco as a 2.5-point favorite, down from the 4.5-point opener (FOX Sports, Oct 19); BetMGM had SF -3.5, total 50.5, moneyline 49ers -200 / Falcons +160 on Tuesday (SI Betting, Oct 20). The 49ers lead the series 49-33-1 and won last year's meeting 20-10. Kickoff Sunday, 1 PM ET, FOX.",
-      category: "games",
-      sourceUrl: "https://www.foxsports.com/articles/nfl/morris-returns-to-atlanta-leading-a-49ers-defense-that-will-try-to-pressure-falcons-qb-penix",
-      sourceLabel: "AP (FOX Sports) / SI Betting",
-    },
-    {
       title: "Stefanski on Purdy: 'a very, very special quarterback'",
       detail: "KNBR / The Sports Leader and Athlon (Wednesday, Oct 21): 'It's hard to imagine someone is playing the position better than he is right now,' Stefanski said, calling Purdy 'an elite processor' with 'elite accuracy.' On the 6-0 49ers: 'They're undefeated for a reason.' Atlanta's pass defense ranks 28th at 252.0 yards per game.",
       category: "coaching",
@@ -2831,20 +2848,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com / AP (WABE) / CBS Sports",
     },
     {
-      title: "49ers hold off Washington on MNF and arrive 6-0",
-      detail: "AP and NBC Bay Area (Monday night, Oct 19): San Francisco built a 20-3 lead behind two Christian McCaffrey TD runs and won 23-17 when Malik Mustapha broke up a fourth-down pass at the goal line with 1:54 left. Brock Purdy (21 of 29, 264 yards, TD to George Kittle) became the highest-rated qualified passer in NFL history at 105.6. WR Mike Evans left with Achilles tendinitis that Kyle Shanahan said is not believed to be long-term.",
-      category: "games",
-      sourceUrl: "https://abcnews.com/Sports/wireStory/purdy-49ers-build-big-lead-hold-beat-commanders-137402248",
-      sourceLabel: "AP (ABC News) / NBC Bay Area",
-    },
-    {
-      title: "Bears 31, Falcons 23: Atlanta digs a 14-0 hole and falls to 2-4",
-      detail: "atlantafalcons.com, NFL.com and the FootballDB box score (Sunday, Oct 18): Chicago scored TDs on its first two possessions, outgained Atlanta 154-3 in the first quarter (Falcons Wire) and led 31-7 entering the fourth. Caleb Williams, back from a hamstring injury, went 30-of-36 for 305 yards and a TD, and Chicago held the ball 40:08 to 19:52. Atlanta lost three fumbles and is 0-3 at home.",
-      category: "games",
-      sourceUrl: "https://www.atlantafalcons.com/news/game-breakdown-what-happened-falcons-bears-score-takeaways",
-      sourceLabel: "atlantafalcons.com / NFL.com / FootballDB",
-    },
-    {
       title: "NFC South: Carolina pulls 1.5 games ahead; Saints climb to 2-4",
       detail: "NFL.com and Panthers Wire (Sunday, Oct 18): Carolina beat Philadelphia 25-14 behind Chuba Hubbard's 120 rushing yards to go 3-2. New Orleans beat the Giants 34-27 with four Tyler Shough TD passes and sits third behind Atlanta on the head-to-head tiebreaker. Tampa Bay blew a 13-point fourth-quarter lead and lost 26-19 in overtime at Pittsburgh to fall to 1-5.",
       category: "general",
@@ -2855,9 +2858,26 @@ export const NEWS_DIGEST = {
 };
 
 export const INTERVIEWS = {
-  generatedAt: "2026-10-22T08:40:00Z",
-  windowLabel: "Bears week → 49ers week · Oct 14 → Oct 21",
+  generatedAt: "2026-10-24T08:30:00Z",
+  windowLabel: "Bears week → 49ers week · Oct 15 → Oct 23",
   sessions: [
+    {
+      id: "stefanski-2026-10-23",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-10-23",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Week 7 vs. San Francisco · Friday Media Availability",
+      sourceUrl: "https://sports.yahoo.com/articles/falcons-hc-provides-injury-updates-172215030.html",
+      summary: "On the day of the final report, Stefanski left A.J. Terrell's return open but sounded encouraged after the CB1's first full practice since going on IR. He also confirmed the running back plan with Brian Robinson Jr. out. Quotes via Falcons Wire and Atlanta Falcons On SI.",
+      pullQuote: "He's worked very hard throughout the time he's been out, but we'll see how it goes over the next 48 hours.",
+      bullets: [
+        "On A.J. Terrell (groin, questionable, must be activated by 4 p.m. ET Saturday): 'I thought he's looked better'",
+        "Said he hopes several of his cornerbacks, Terrell among them, are healthy for Sunday (Falcons Wire)",
+        "Confirmed practice-squad RB Khalil Herbert will be elevated to back up Bijan Robinson with Brian Robinson Jr. ruled out (Falcons Wire, Atlanta Falcons On SI)",
+      ],
+      topics: ["49ers-week", "week-7", "injuries", "cornerbacks", "running-backs"],
+    },
     {
       id: "stefanski-2026-10-21",
       speaker: "Kevin Stefanski",
@@ -2948,24 +2968,6 @@ export const INTERVIEWS = {
         "Spoke the same day Za'Darius Smith cleared the concussion protocol, with Smith limited (neck) and Divine Deablo upgraded to full (atlantafalcons.com)",
       ],
       topics: ["bears-week", "week-6", "cornerbacks", "injuries"],
-    },
-    {
-      id: "penix-2026-10-14",
-      speaker: "Michael Penix Jr.",
-      role: "Quarterback",
-      date: "2026-10-14",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "Week 6 vs. Chicago · Wednesday Media Availability",
-      sourceUrl: "https://www.ajc.com/sports/2026/10/falcons-qb-penix-plans-start-vs-bears/",
-      summary: "After a full practice three days removed from the rib injury that kept him out of overtime against Baltimore, Penix left no doubt about his plans for Sunday. He said he took the first-team reps and that his scans came back positive, while admitting there is still some discomfort. Quotes via AJC.",
-      pullQuote: "It's not always comfortable, but I made every throw today.",
-      bullets: [
-        "On his ribs: 'They get better every day'",
-        "Asked whether he is confident he will play Sunday: 'Yes.' Then: 'We're good, and I feel good to play this week'",
-        "Said his MRI and scans came back positive, but declined to say whether the ribs are bruised (AJC)",
-        "On Chicago's defense, fifth in scoring at 19.2 points a game: 'they do a great job with their scheme'",
-      ],
-      topics: ["bears-week", "week-6", "penix-ribs"],
     },
   ],
 };
