@@ -181,7 +181,7 @@ Prefer Spotrac / Over The Cap as sources for cap figures.
 ## STEP 5: UPDATE PLAYER DATA (src/playerData.js)
 
 Only update PLAYERS if searches reveal:
-- Injury news → change `status` (active | ir | pup | nfi | questionable | suspended | holdout) and `injuryNote`.
+- Injury news → change `status` (active | ir | pup | nfi | questionable | suspended | holdout | practice-squad) and `injuryNote`.
 - Player returning → flip status back to `active`, clear `injuryNote`.
 - Confirmed stats from a played game (regular season only).
 - New signing / release → add or remove from PLAYERS; mirror in CAP_STATE.recentMoves.
@@ -191,8 +191,21 @@ jersey number, height/weight, age and college from the team roster page
 (`https://www.atlantafalcons.com/team/players-roster/<first>-<last>/`), draft/career history from
 Wikipedia or Pro Football Reference, and the ESPN ID from a web search (then verify per STEP 5B).
 Omit `contract` only if no real terms are published (the modal hides the contract grid without it).
-Practice-squad signings are the exception: PLAYERS tracks the 53-man roster (plus IR/suspended), so log a practice-squad
-signing in CAP_STATE.recentMoves and the digest only, and add the player to PLAYERS when he is signed to the 53.
+PLAYERS also carries the PRACTICE SQUAD (added Oct 26, 2026 at Kenny's request): those players use
+`status: "practice-squad"`, `depthRank: 9`, `acquired: "ps-2026"`, and an optional short `psNote` (e.g. "Elevated Wk 7")
+shown on their roster card. The roster page excludes them from the 53, the starting eleven and the ladder, and lists them
+in their own "Practice Squad" section. On every run:
+- Practice-squad signing → add the player with `status: "practice-squad"`; release → remove him. Log both in CAP_STATE.recentMoves.
+- Signed from the practice squad to the 53 → flip status to `active`, give him a real depthRank, drop `psNote`.
+- Released from the 53 and re-signed to the practice squad → flip status to `practice-squad`, depthRank 9.
+- Elevations: update `psNote` (and the injuryNote history); the player stays `practice-squad`.
+
+### Weekly roster reconciliation (every Monday, or any run after a roster move)
+Fetch the official roster page `https://www.atlantafalcons.com/team/players-roster/` (it groups Active, Reserve/Injured,
+PUP, NFI, Suspended and Practice Squad) and diff it against PLAYERS: names, groups and jersey numbers. The ESPN roster API
+(`https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/1/roster`, run with curl) gives ESPN IDs for headshots
+and an independent jersey check. Target: active 53 + reserves + practice squad all match the team page exactly. Remove players
+who are on neither list; add anyone missing.
 
 Do NOT change stats speculatively. Do NOT invent headshot URLs; leave `image: null` if you don't have a real one.
 

@@ -149,7 +149,8 @@ export default function MagazineCover({ setView }) {
   const bijan = playerById("bijan");
   const tua   = playerById("tua");
 
-  const rosterTotal = PLAYERS.length;
+  // Practice-squad players live in PLAYERS too but are not on the 53 or the reserve lists.
+  const rosterTotal = PLAYERS.filter((p) => p.status !== "practice-squad").length;
   const rosterActive = PLAYERS.filter((p) => p.status === "active").length;
   const rosterPUP = PLAYERS.filter((p) => ["ir", "pup", "nfi", "suspended"].includes(p.status)).length;
 

@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { PLAYERS } from "./playerData.js";
+import { PLAYERS as ALL_PLAYERS } from "./playerData.js";
 import { MagazineShell, playerById } from "./MagazineView.jsx";
 import MagazinePlayerModal from "./MagazinePlayerModal.jsx";
 
@@ -20,6 +20,13 @@ const ROOM_LADDER = [
   { code: "S",    label: "Safety",           positions: ["S"] },
   { code: "ST",   label: "Specialists",      positions: ["K", "P", "LS"] },
 ];
+
+// The practice squad shares the PLAYERS array (status "practice-squad") but sits
+// outside the 53: it never fills a starting slot, room or ladder rung, and it gets
+// its own section at the foot of the page.
+const PRACTICE_SQUAD_STATUS = "practice-squad";
+const PLAYERS = ALL_PLAYERS.filter((p) => p.status !== PRACTICE_SQUAD_STATUS);
+const PRACTICE_SQUAD = ALL_PLAYERS.filter((p) => p.status === PRACTICE_SQUAD_STATUS);
 
 function topByPosition(positions, n) {
   return PLAYERS
@@ -95,6 +102,7 @@ function slotNote(p) {
   if (!p) return null;
   if (p.status === "pup") return "PUP · ramping reps";
   if (p.status === "ir") return "IR";
+  if (p.status === PRACTICE_SQUAD_STATUS) return p.psNote || "Practice squad";
   if (p.id === "bijan") return "All-Pro · ext. queued";
   if (p.id === "drake-london") return "extension queued";
   if (p.id === "pitts") return "tagged · $14.1M";
@@ -278,44 +286,7 @@ export default function MagazineRoster({ setView }) {
                       </div>
                     );
                   }
-                  const cls = ["slot", "clickable"];
-                  // A starter is any rank-1 body on the active roster, not just
-                  // the first slot: OT, IOL, WR, DT, CB, S and LB all start 2-3.
-                  const isStarter = p.depthRank === 1 && (p.status === "active" || p.status === "questionable");
-                  if (isStarter) cls.push("starter");
-                  const flags = slotFlags(p);
-                  if (flags) cls.push(flags);
-                  const college = (p.college || "").slice(0, 4).toUpperCase();
-                  const note = slotNote(p);
-                  const tier = p.status !== "active" && p.status !== "questionable"
-                    ? (p.status || "").toUpperCase()
-                    : p.depthRank === 1 ? "STARTER"
-                    : p.depthRank === 2 ? "BACKUP"
-                    : p.depthRank === 3 ? "RESERVE"
-                    : "FRINGE";
-                  return (
-                    <div
-                      key={p.id}
-                      className={cls.join(" ")}
-                      onClick={() => open(p)}
-                      role="button"
-                      tabIndex={0}
-                      onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") open(p); }}
-                    >
-                      <div className="slot-row">
-                        <div className="ladder-photo">
-                          <div className="bg"></div>
-                          {p.image && <img src={p.image} alt="" />}
-                          <div className="halftone"></div>
-                        </div>
-                        <div className="slot-text">
-                          <div className="jn">#{p.number} · {college} <span className="rk">{tier}</span></div>
-                          <div className="snm">{shortName(p.name)}</div>
-                          {note && <div className="snote">{note}</div>}
-                        </div>
-                      </div>
-                    </div>
-                  );
+                  return <LadderSlot key={p.id} p={p} onOpen={open} />;
                 })}
               </div>
             </div>
@@ -323,9 +294,84 @@ export default function MagazineRoster({ setView }) {
         })}
       </section>
 
+      {/* THE PRACTICE SQUAD */}
+      {PRACTICE_SQUAD.length > 0 && (
+        <>
+          <div className="section-head">
+            <div className="rule"></div>
+            <div>
+              <div className="title">The Practice <span className="em">Squad</span></div>
+              <div className="meta">{PRACTICE_SQUAD.length} on the squad · Not on the 53 · Elevations and call-ups come from here</div>
+            </div>
+            <div className="rule"></div>
+          </div>
+
+          <section className="ladder">
+            {ROOM_LADDER.map((room) => {
+              const players = PRACTICE_SQUAD
+                .filter((p) => room.positions.includes(p.position))
+                .sort((a, b) => a.name.localeCompare(b.name));
+              if (!players.length) return null;
+              return (
+                <div key={room.code} className="lrow">
+                  <div className="pos">
+                    <div className="n">{room.code}</div>
+                    <div className="l">{room.label}</div>
+                  </div>
+                  <div className="slots">
+                    {players.map((p) => <LadderSlot key={p.id} p={p} onOpen={open} />)}
+                  </div>
+                </div>
+              );
+            })}
+          </section>
+        </>
+      )}
+
       <MagazinePlayerModal player={selected} onClose={() => setSelected(null)} />
 
     </MagazineShell>
+  );
+}
+
+function LadderSlot({ p, onOpen }) {
+  const cls = ["slot", "clickable"];
+  // A starter is any rank-1 body on the active roster, not just
+  // the first slot: OT, IOL, WR, DT, CB, S and LB all start 2-3.
+  const isStarter = p.depthRank === 1 && (p.status === "active" || p.status === "questionable");
+  if (isStarter) cls.push("starter");
+  const flags = slotFlags(p);
+  if (flags) cls.push(flags);
+  const college = (p.college || "").slice(0, 4).toUpperCase();
+  const note = slotNote(p);
+  const tier = p.status === PRACTICE_SQUAD_STATUS ? "PS"
+    : p.status !== "active" && p.status !== "questionable"
+    ? (p.status || "").toUpperCase()
+    : p.depthRank === 1 ? "STARTER"
+    : p.depthRank === 2 ? "BACKUP"
+    : p.depthRank === 3 ? "RESERVE"
+    : "FRINGE";
+  return (
+    <div
+      className={cls.join(" ")}
+      onClick={() => onOpen(p)}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") onOpen(p); }}
+    >
+      <div className="slot-row">
+        <div className="ladder-photo">
+          <div className="bg"></div>
+          {p.image && <img src={p.image} alt="" />}
+          <div className="halftone"></div>
+        </div>
+        <div className="slot-text">
+          <div className="jn">#{p.number} · {college} <span className="rk">{tier}</span></div>
+          <div className="snm">{shortName(p.name)}</div>
+          {note && <div className="snote">{note}</div>}
+        </div>
+      </div>
+    </div>
   );
 }
 
