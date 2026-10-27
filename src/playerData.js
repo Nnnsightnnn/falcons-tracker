@@ -1594,25 +1594,28 @@ export const PLAYERS = [
     ],
   },
   {
-    id: "jack-velling",
-    name: "Jack Velling",
+    id: "ej-jenkins",
+    name: "E.J. Jenkins",
     number: 84,
     position: "TE",
     positionGroup: "offense",
     depthRank: 9,
-    height: 77,
+    height: 78,
     weight: 245,
-    age: 22,
-    experience: 0,
-    college: "Michigan State",
+    age: 27,
+    experience: 3,
+    college: "Georgia Tech",
     acquired: "ps-2026",
     stats: {},
     form: 0,
     status: "practice-squad",
-    injuryNote: "Undrafted rookie signed May 7; on the practice squad.",
-    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4832827.png",
+    injuryNote: "Signed to the practice squad Monday (Oct 26), taking the spot of TE Jack Velling, who was released (Pro Football Rumors, Heavy). A 6-foot-6 tight end who played college ball at Saint Francis, South Carolina and Georgia Tech, he went undrafted in 2023 and spent most of the last three seasons with Philadelphia, earning a Super Bowl LIX ring; the Eagles released him on Oct 22 (Wikipedia, Heavy).",
+    psNote: "Signed Oct 26",
+    image: "https://a.espncdn.com/i/headshots/nfl/players/full/4248557.png",
     career: [
       { years: "2026–", team: "Atlanta Falcons", type: "NFL · practice squad" },
+      { years: "2023–2026", team: "Philadelphia Eagles · Jets · Raiders", type: "NFL · UDFA 2023" },
+      { years: "2017–2022", team: "Saint Francis · South Carolina · Georgia Tech", type: "College" },
     ],
   },
   {
@@ -2091,7 +2094,7 @@ export const NEXT_GAME = {
   date: "2026-11-01",
   kickoff: "1:00 PM ET",
   tv: "FOX",
-  note: "Atlanta (3-4) visits Tampa Bay (2-5) a week after handing San Francisco its first loss, 29-20. The Bucs routed Carolina 43-13 on the road in Week 7 with Baker Mayfield back from a thumb injury and have 10 sacks over their last two games (buccaneers.com). Early line (bet365, Oct 26, via FOX Sports): Bucs -1.5, total 45.5, moneyline TB -129 / ATL +109. Atlanta leads the all-time series 33-32. The Falcons sit half a game behind Carolina (3-3) in the NFC South; a win would put Atlanta at .500. First Week 8 injury report due Wednesday (Oct 28). Still out of Week 7 for Atlanta: RB Brian Robinson Jr. (hamstring), LB Divine Deablo (forearm), DB Billy Bowman Jr. (hamstring), CB Avieon Terrell (back, illness) and WR Olamide Zaccheaus (shoulder) were inactive. Next: Bengals in Madrid (Week 9, Nov 8).",
+  note: "Atlanta (3-4) visits Tampa Bay (2-5) after handing San Francisco its first loss, 29-20. The Bucs routed Carolina 43-13 on the road in Week 7 with Baker Mayfield back from a thumb injury (buccaneers.com); Todd Bowles listed WR Emeka Egbuka, RT Luke Goedeke and S Antoine Winfield Jr. as questionable on Monday (Athlon / ESPN). Line: opened Bucs -1.5 (bet365, via FOX Sports) and sits at Bucs -2.5, total 46.5, ML TB -135 / ATL +114 in Tuesday's consensus (VegasInsider, Oct 27). Atlanta leads the all-time series 33-32. The Falcons sit half a game behind Carolina (3-3) in the NFC South; a win would put Atlanta at .500. First Week 8 injury report due Wednesday (Oct 28). Inactive for Atlanta in Week 7: RB Brian Robinson Jr. (hamstring), LB Divine Deablo (forearm), DB Billy Bowman Jr. (hamstring), CB Avieon Terrell (back, illness) and WR Olamide Zaccheaus (shoulder). Next: Bengals in Madrid (Week 9, Nov 8).",
 };
 
 // =========================================
@@ -2466,17 +2469,17 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-10-26T08:45:00Z",
+  generatedAt: "2026-10-27T08:45:00Z",
   cover: {
-    kicker: "Bucs week, Monday: Atlanta hands the unbeaten 49ers their first loss, 29-20, as Penix throws three touchdowns, the defense forces four turnovers and Kendal Daniels caps a week that began in the hospital with the game-sealing interception",
-    headLine1: "The unbeaten are beaten.",
-    headEm: "Falcons 29, 49ers 20.",
-    headLine3: "Down 14-3, Atlanta scored 26 straight points and won the turnover battle 4-0 for its first home win of the season.",
-    deck: "Michael Penix Jr. went 25-of-34 for 213 yards and three touchdowns with no interceptions, finding Nick Muse, Kyle Pitts and Drake London (21 yards, his first TD of the season). Jessie Bates III picked off Brock Purdy at the Atlanta 10, and rookie LB Kendal Daniels, carted off against Chicago a week earlier, intercepted Purdy with 2:34 left and recovered a George Kittle fumble in the final minute. San Francisco outgained Atlanta 400-295 but lost for the first time in 2026 (AP, atlantafalcons.com). At 3-4, the Falcons are half a game behind Carolina, and Tampa Bay (2-5) is next, an early 1.5-point favorite at home.",
+    kicker: "Bucs week, Tuesday: Stefanski says Penix's ball security is no license to play small, Atlanta adds Super Bowl-winning TE E.J. Jenkins to the practice squad, and the line in Tampa drifts to Bucs -2.5",
+    headLine1: "One upset down.",
+    headEm: "Now, Tampa for .500.",
+    headLine3: "Atlanta (3-4) visits Tampa Bay (2-5) on Sunday with a chance to pull even and stay within half a game of Carolina.",
+    deck: "A day after the 29-20 win over San Francisco, Kevin Stefanski praised Michael Penix Jr. for taking care of the football (three TDs, no picks) but said he still wants him to 'let it rip' when the window is there (Falcons Wire). The Falcons signed TE E.J. Jenkins, released by Philadelphia last week, to the practice squad and released TE Jack Velling (Pro Football Rumors). In Tampa, Todd Bowles listed WR Emeka Egbuka, RT Luke Goedeke and S Antoine Winfield Jr. as questionable (Athlon, via ESPN). Consensus line Tuesday: Bucs -2.5, total 46.5 (VegasInsider). First injury report Wednesday.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
-    photoId: "kendal-daniels",
-    stampLabel: "Bucs week · Monday · W 29-20 vs. SF · Falcons 3-4, 0.5 GB of CAR · Penix 25/34, 213, 3 TD · ATL +4 turnovers · Next: at TB, Sun Nov 1, 1 PM ET, FOX · TB -1.5, O/U 45.5 (bet365)",
+    photoId: "penix-jr",
+    stampLabel: "Bucs week · Tuesday · Falcons 3-4, 0.5 GB of CAR · W 29-20 vs. SF · PS: +TE E.J. Jenkins, -TE Jack Velling · Next: at TB, Sun Nov 1, 1 PM ET, FOX · TB -2.5, O/U 46.5 (consensus) · First injury report Wed",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -3140,6 +3143,8 @@ export const NEWS_DIGEST = {
     // (four Falcons out, Terrell full and questionable, Herbert elevated, Bosa/Evans/Samuel out for SF); pointer unchanged.
     // STATUS (2026-10-26 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto the 29-20 win over
     // San Francisco; fallback photoId moved to kendal-daniels (game-sealing INT). coverImageUrl pointer unchanged per the run rules.
+    // STATUS (2026-10-27 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto Bucs week Tuesday (Stefanski on
+    // Penix, Jenkins signed / Velling released, Bucs injuries, line to TB -2.5); fallback photoId back to penix-jr. Pointer unchanged.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
@@ -3184,8 +3189,53 @@ export const NEWS_DIGEST = {
     "atlantafalcons.com (Oct 25)", "Atlanta News First / AP (Oct 25)", "Yahoo Sports / AP (Oct 25)", "NFL.com (Oct 25)", "Falcons Wire (Yahoo, Oct 25)",
     "Yardbarker (Oct 25)", "CBS Sports (Oct 25)", "NBC Sports / PFT (Oct 25)", "Athlon Sports (Oct 25)", "Pewter Report (Oct 25)",
     "buccaneers.com (Oct 25)", "FOX Sports odds (Oct 26)", "GetMoreSports (Oct 25)",
+    "Falcons Wire (Yahoo, Oct 26)", "Pro Football Rumors (Oct 26)", "Heavy (Yahoo, Oct 26)", "Wikipedia (E. J. Jenkins)",
+    "Athlon Sports / ESPN (Oct 26)", "VegasInsider (Oct 27)", "Dimers (Oct 26)", "FOX Sports power rankings (Oct 26-27)",
+    "ClutchPoints (Yahoo, Oct 25-26)", "atlantafalcons.com roster (Oct 27)",
   ],
   topics: [
+    {
+      title: "Stefanski on Penix: protect the ball, but keep letting it rip",
+      detail: "Falcons Wire (Monday, Oct 26): a day after Penix's three-TD, no-interception day vs. San Francisco, Stefanski said 'Taking care of the football is a great trait to have at the quarterback position,' but called interceptions 'an occupational hazard' and said what you don't want is a quarterback who plays 'small ball all the time,' adding, 'that's definitely not Mike.' He credited Penix with 'stacking these games' against a wide range of coverages and pressures.",
+      category: "coaching",
+      sourceUrl: "https://sports.yahoo.com/articles/kevin-stefanski-says-michael-penixs-195205209.html",
+      sourceLabel: "Falcons Wire (Yahoo Sports) / atlantafalcons.com",
+    },
+    {
+      title: "Falcons add Super Bowl-winning TE E.J. Jenkins to the practice squad",
+      detail: "Pro Football Rumors and Heavy (Monday, Oct 26): Atlanta signed the 6-foot-6 Jenkins, released by Philadelphia on Oct 22, and cut undrafted rookie TE Jack Velling to make room. Jenkins, 27, went undrafted in 2023 out of Georgia Tech and won Super Bowl LIX with the Eagles. He wears No. 84 on the team roster, which otherwise matches the tracker's 53, reserve and practice-squad lists as of Tuesday.",
+      category: "free-agency",
+      sourceUrl: "https://www.profootballrumors.com/2026/10/nfl-practice-squad-updates-10-26-26",
+      sourceLabel: "Pro Football Rumors / Heavy (Yahoo Sports) / atlantafalcons.com",
+    },
+    {
+      title: "Line moves toward Tampa Bay: Bucs -2.5, total 46.5",
+      detail: "VegasInsider (Tuesday, Oct 27): consensus has moved to Bucs -2.5 with a 46.5 total and moneylines around TB -135 / ATL +114, up from the 1.5-point line bet365 posted Monday (FOX Sports). Dimers' model (Oct 26) gives Tampa Bay a 56.6% win probability and projects a 22-21 Bucs win. Kickoff is 1 p.m. ET Sunday on FOX.",
+      category: "games",
+      sourceUrl: "https://www.vegasinsider.com/nfl/matchups/buccaneers-vs-falcons/",
+      sourceLabel: "VegasInsider / Dimers",
+    },
+    {
+      title: "Bowles: Egbuka, Goedeke and Winfield all questionable",
+      detail: "Athlon Sports, via ESPN's Jenna Laine (Monday, Oct 26): Todd Bowles said WR Emeka Egbuka (concussion, foot), RT Luke Goedeke and S Antoine Winfield Jr. are 'all questionable' for Sunday, adding, 'We're going to see on Wednesday and Thursday what they do.' Egbuka missed the 43-13 win at Carolina. Atlanta's first Week 8 report is due Wednesday.",
+      category: "injuries",
+      sourceUrl: "https://athlonsports.com/nfl/trending/buccaneers-todd-bowles-announces-emeka-egbuka-injury-update-falcons-game",
+      sourceLabel: "Athlon Sports / ESPN",
+    },
+    {
+      title: "Bates joins an exclusive club: sixth career game with an INT and a forced fumble",
+      detail: "ClutchPoints, citing team reporter Tori McElhaney (Sunday, Oct 25): only four players have had six games with an interception and a forced fumble in the last 30 years, and Bates has five of his since arriving in 2023. After the win he said, 'You can sleep good at night when you have Michael Penix playing quarterback for you,' and, per The Athletic, 'We know that we're not out of the fight yet.'",
+      category: "games",
+      sourceUrl: "https://sports.yahoo.com/articles/falcons-jessie-bates-iii-joins-220312140.html",
+      sourceLabel: "ClutchPoints (Yahoo Sports) / The Athletic",
+    },
+    {
+      title: "Power rankings: FOX nudges Atlanta to 19th, calls the upset 'a little fluky'",
+      detail: "FOX Sports' Ralph Vacchiano (updated Tuesday, Oct 27) moved the Falcons up one spot to 19th, writing that four turnovers 'isn't something that happens all the time' but that Atlanta is 'playing a lot better over the past five weeks.' Tampa Bay climbed from 29th to 26th after its rout of Carolina.",
+      category: "general",
+      sourceUrl: "https://www.foxsports.com/stories/nfl/2026-nfl-power-rankings-week-8",
+      sourceLabel: "FOX Sports",
+    },
     {
       title: "Falcons hand the unbeaten 49ers their first loss, 29-20",
       detail: "AP and Atlanta News First (Sunday, Oct 25): trailing 14-3 early in the second quarter, Atlanta scored 26 unanswered points and forced four turnovers, scoring 13 points off them, to beat 6-0 San Francisco at Mercedes-Benz Stadium. It snapped a two-game skid and was the Falcons' first home win of 2026. San Francisco outgained Atlanta 400-295, and Brock Purdy finished 27-of-40 for 288 yards, one TD and two interceptions.",
@@ -3222,13 +3272,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com / Athlon Sports",
     },
     {
-      title: "Bucs week: Tampa Bay opens as a 1.5-point favorite",
-      detail: "FOX Sports (Monday, Oct 26) lists bet365's early line at Bucs -1.5 with a 45.5 total for Sunday's 1 p.m. ET game at Raymond James Stadium (FOX). Tampa Bay (2-5) crushed Carolina 43-13 on the road Sunday with Baker Mayfield back from a thumb injury and has 10 sacks in its last two games; Atlanta leads the series 33-32 (buccaneers.com). It is the Falcons' last game before the Week 9 trip to Madrid.",
-      category: "games",
-      sourceUrl: "https://www.buccaneers.com/news/next-game-tampa-bay-buccaneers-vs-atlanta-falcons-nfl-season-week-8-2026",
-      sourceLabel: "FOX Sports / buccaneers.com",
-    },
-    {
       title: "NFC South: Atlanta pulls within half a game of Carolina",
       detail: "Pewter Report (Sunday, Oct 25): with the Panthers' 43-13 home loss to Tampa Bay, Carolina is 3-3, Atlanta 3-4 (1-1 in the division), Tampa Bay 2-5 (1-0) and New Orleans 2-5 (0-1) after the Saints lost to Pittsburgh. Sunday's game in Tampa opens a stretch in which the Falcons can move to .500 for the first time since Week 4.",
       category: "general",
@@ -3242,41 +3285,31 @@ export const NEWS_DIGEST = {
       sourceUrl: "https://www.atlantafalcons.com/news/game-breakdown-what-happened-in-falcons-vs-49ers",
       sourceLabel: "atlantafalcons.com / CBS Sports",
     },
-    {
-      title: "'Faithful to the A': Falcons troll the 49ers",
-      detail: "GetMoreSports and ESPN (Sunday, Oct 25): the team's postgame social post, a play on San Francisco's 'Faithful to the Bay' slogan, was rated among the top trolls of Week 7. It comes days after the team's throwback-style logo post drew backlash and was swapped out.",
-      category: "general",
-      sourceUrl: "https://www.getmoresports.com/falcons-hand-49ers-first-loss-lead-week-7-social-media-jabs/",
-      sourceLabel: "GetMoreSports / ESPN",
-    },
-    {
-      title: "A.J. Terrell activated and will play; Jerrell to IR, Drake Jackson signed",
-      detail: "atlantafalcons.com and NBC Sports / PFT (Saturday, Oct 24): Atlanta activated its CB1 from injured reserve and removed his game designation, so Terrell makes his first appearance since hurting his groin in the Sept 20 Carolina loss. OT Michael Jerrell (bicep) went to IR, and DE Drake Jackson, a 2022 second-round pick of the 49ers who had been elevated from the practice squad in each of the last two games, was signed to the 53 to face his former team.",
-      category: "injuries",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-activate-aj-terrell-announce-roster-moves-49ers-matchup",
-      sourceLabel: "atlantafalcons.com / NBC Sports / PFT / Yardbarker",
-    },
-    {
-      title: "Falcons poach edge Charles Snowden from Washington, release Bralen Trice",
-      detail: "NFL Network's Ian Rapoport (Tuesday, Oct 20): Atlanta is signing the 6-foot-6 Snowden off the Commanders' practice squad to its 53-man roster, and The Athletic's Josh Kendall reported Trice, signed to the 53 only on Saturday, is being cut (atlantafalcons.com confirmed the release). Snowden started nine games for the Raiders in each of 2024 and 2025 and has 4.5 career sacks. The team also added Louisville LB TJ Quinn, a Valdosta native, to the practice squad.",
-      category: "free-agency",
-      sourceUrl: "https://sports.yahoo.com/articles/falcons-poach-edge-rusher-off-163040934.html",
-      sourceLabel: "Falcons Wire (Yahoo Sports) / atlantafalcons.com / Pro Football Rumors",
-    },
-    {
-      title: "Falcons sign Andy Dalton, release Cooper Rush",
-      detail: "atlantafalcons.com and AP (Monday, Oct 19): a day after the Bears loss, Atlanta released Rush, who went 0-2 as the Week 1-2 starter (22 of 39, 229 yards, one TD, four INTs), and signed the 38-year-old Dalton, released by Philadelphia on Oct 9. The Athletic's Jonathan Jones reported Dalton will compete with Tua Tagovailoa for the backup job, though Tua likely stays No. 2 vs. San Francisco. Stefanski: 'I think at this point we're just trying to get Andy up to speed.'",
-      category: "free-agency",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-release-cooper-rush-sign-andy-dalton",
-      sourceLabel: "atlantafalcons.com / AP (WABE) / CBS Sports",
-    },
   ],
 };
 
 export const INTERVIEWS = {
-  generatedAt: "2026-10-26T08:45:00Z",
-  windowLabel: "49ers week · Oct 18 → Oct 25",
+  generatedAt: "2026-10-27T08:45:00Z",
+  windowLabel: "Bucs week · Oct 26 → Nov 1",
   sessions: [
+    {
+      id: "stefanski-2026-10-26",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-10-26",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Week 8 at Tampa Bay · Monday Media Availability",
+      sourceUrl: "https://sports.yahoo.com/articles/kevin-stefanski-says-michael-penixs-195205209.html",
+      summary: "The day after the 49ers upset, Stefanski spent much of his Monday session on Michael Penix Jr., framing his no-interception day as smart risk management rather than caution, and pointing to the growth that comes from facing a wide range of defenses. Quotes via Falcons Wire; full video on atlantafalcons.com.",
+      pullQuote: "Taking care of the football is a great trait to have at the quarterback position.",
+      bullets: [
+        "On interceptions: 'Now, you're going to throw interceptions. That's an occupational hazard. It's going to happen'",
+        "Said the key is 'understanding when you're going to take a chance and understanding when you're going to let it rip into a tight window'",
+        "Warned against a quarterback who 'decides that you're going to play small ball all the time,' adding 'that's definitely not Mike'",
+        "On Penix's development: credited him with 'stacking these games,' noting the offense has already seen 'a bunch of different coverages, bunch of different pressures'",
+      ],
+      topics: ["bucs-week", "week-8", "penix", "ball-security"],
+    },
     {
       id: "stefanski-2026-10-25",
       speaker: "Kevin Stefanski",
