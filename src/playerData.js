@@ -1291,7 +1291,7 @@ export const PLAYERS = [
     position: "OT",
     posSlot: "RT",
     positionGroup: "offense",
-    depthRank: 4,
+    depthRank: 2,
     height: 78, weight: 333, age: 23, experience: 0,
     college: "Ohio State",
     acquired: "draft-2026-R7-P231",
@@ -2094,7 +2094,7 @@ export const NEXT_GAME = {
   date: "2026-11-01",
   kickoff: "1:00 PM ET",
   tv: "FOX",
-  note: "Atlanta (3-4) visits Tampa Bay (2-5) after handing San Francisco its first loss, 29-20. The Bucs routed Carolina 43-13 on the road in Week 7 with Baker Mayfield back from a thumb injury (buccaneers.com); Todd Bowles listed WR Emeka Egbuka, RT Luke Goedeke and S Antoine Winfield Jr. as questionable on Monday (Athlon / ESPN). Line: opened Bucs -1.5 (bet365, via FOX Sports) and sits at Bucs -2.5, total 46.5, ML TB -135 / ATL +114 in Tuesday's consensus (VegasInsider, Oct 27). Atlanta leads the all-time series 33-32. The Falcons sit half a game behind Carolina (3-3) in the NFC South; a win would put Atlanta at .500. First Week 8 injury report due Wednesday (Oct 28). Inactive for Atlanta in Week 7: RB Brian Robinson Jr. (hamstring), LB Divine Deablo (forearm), DB Billy Bowman Jr. (hamstring), CB Avieon Terrell (back, illness) and WR Olamide Zaccheaus (shoulder). Next: Bengals in Madrid (Week 9, Nov 8).",
+  note: "Atlanta (3-4) visits Tampa Bay (2-5) after handing San Francisco its first loss, 29-20. The Bucs routed Carolina 43-13 on the road in Week 7 with Baker Mayfield back from a thumb injury (buccaneers.com); Todd Bowles listed WR Emeka Egbuka, RT Luke Goedeke and S Antoine Winfield Jr. as questionable on Monday (Athlon / ESPN). Line: opened Bucs -1.5 (bet365, via FOX Sports) and sits at Bucs -2.5, total 46.5, ML TB -135 / ATL +114 in Tuesday's consensus (VegasInsider, Oct 27). DraftKings (SI Betting, Oct 27): TB -2.5, total 46.5; the Bucs are 0-4 against the spread at home. Strength on strength in the run game (buccaneers.com, Oct 27): Tampa Bay runs for 146.4 yards a game (3rd) into an Atlanta defense allowing 88.9 (4th-fewest), while the Falcons' 139.9 meets a Bucs defense allowing 77.3. Atlanta leads the all-time series 33-32, and the last six meetings were all decided by six points or fewer. The Falcons sit half a game behind Carolina (3-3) in the NFC South; a win would put Atlanta at .500. Tuesday's depth chart: Penix QB1, Tua QB2, A.J. Terrell and Mike Hughes the starting corners, rookie Ethan Onianwa the backup tackle with Michael Jerrell on IR. First Week 8 injury report due Wednesday (Oct 28). Inactive for Atlanta in Week 7: RB Brian Robinson Jr. (hamstring), LB Divine Deablo (forearm), DB Billy Bowman Jr. (hamstring), CB Avieon Terrell (back, illness) and WR Olamide Zaccheaus (shoulder). Next: Bengals in Madrid (Week 9, Nov 8).",
 };
 
 // =========================================
@@ -2469,17 +2469,17 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-10-27T08:45:00Z",
+  generatedAt: "2026-10-28T08:45:00Z",
   cover: {
-    kicker: "Bucs week, Tuesday: Stefanski says Penix's ball security is no license to play small, Atlanta adds Super Bowl-winning TE E.J. Jenkins to the practice squad, and the line in Tampa drifts to Bucs -2.5",
+    kicker: "Bucs week, Wednesday: the depth chart puts A.J. Terrell back in the starting lineup and rookie Ethan Onianwa at swing tackle, NFL.com jumps Atlanta to 13th, and Tampa's own numbers frame Sunday as a run-game collision",
     headLine1: "One upset down.",
     headEm: "Now, Tampa for .500.",
     headLine3: "Atlanta (3-4) visits Tampa Bay (2-5) on Sunday with a chance to pull even and stay within half a game of Carolina.",
-    deck: "A day after the 29-20 win over San Francisco, Kevin Stefanski praised Michael Penix Jr. for taking care of the football (three TDs, no picks) but said he still wants him to 'let it rip' when the window is there (Falcons Wire). The Falcons signed TE E.J. Jenkins, released by Philadelphia last week, to the practice squad and released TE Jack Velling (Pro Football Rumors). In Tampa, Todd Bowles listed WR Emeka Egbuka, RT Luke Goedeke and S Antoine Winfield Jr. as questionable (Athlon, via ESPN). Consensus line Tuesday: Bucs -2.5, total 46.5 (VegasInsider). First injury report Wednesday.",
+    deck: "Tuesday's Week 8 depth chart (atlantafalcons.com) slots A.J. Terrell Jr. back next to Mike Hughes at corner and makes rookie Ethan Onianwa the backup tackle with Michael Jerrell on IR; Penix stays QB1 ahead of Tua. Buccaneers.com calls Sunday 'strength on strength': Tampa Bay's 146.4 rushing yards a game against an Atlanta defense allowing 88.9, and Atlanta's 139.9 against a Bucs defense allowing 77.3. The power rankings caught up with the 49ers upset (NFL.com 13th, four outlets at 19th). DraftKings: Bucs -2.5, total 46.5. Atlanta's first injury report lands Wednesday afternoon.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
-    stampLabel: "Bucs week · Tuesday · Falcons 3-4, 0.5 GB of CAR · W 29-20 vs. SF · PS: +TE E.J. Jenkins, -TE Jack Velling · Next: at TB, Sun Nov 1, 1 PM ET, FOX · TB -2.5, O/U 46.5 (consensus) · First injury report Wed",
+    stampLabel: "Bucs week · Wednesday · Falcons 3-4, 0.5 GB of CAR · W 29-20 vs. SF · Depth chart: Terrell back at CB1, Onianwa swing tackle · Next: at TB, Sun Nov 1, 1 PM ET, FOX · TB -2.5, O/U 46.5 (DraftKings) · First injury report today",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -3145,6 +3145,8 @@ export const NEWS_DIGEST = {
     // San Francisco; fallback photoId moved to kendal-daniels (game-sealing INT). coverImageUrl pointer unchanged per the run rules.
     // STATUS (2026-10-27 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto Bucs week Tuesday (Stefanski on
     // Penix, Jenkins signed / Velling released, Bucs injuries, line to TB -2.5); fallback photoId back to penix-jr. Pointer unchanged.
+    // STATUS (2026-10-28 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto Bucs week Wednesday (depth chart,
+    // run-game matchup, power rankings roundup); pointer and penix-jr fallback unchanged.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
@@ -3192,8 +3194,23 @@ export const NEWS_DIGEST = {
     "Falcons Wire (Yahoo, Oct 26)", "Pro Football Rumors (Oct 26)", "Heavy (Yahoo, Oct 26)", "Wikipedia (E. J. Jenkins)",
     "Athlon Sports / ESPN (Oct 26)", "VegasInsider (Oct 27)", "Dimers (Oct 26)", "FOX Sports power rankings (Oct 26-27)",
     "ClutchPoints (Yahoo, Oct 25-26)", "atlantafalcons.com roster (Oct 27)",
+    "atlantafalcons.com (Oct 27)", "buccaneers.com (Oct 27)", "SI Betting (Oct 27)", "Bucs Report (Oct 27)",
   ],
   topics: [
+    {
+      title: "Week 8 depth chart: Terrell back at corner, Onianwa the swing tackle",
+      detail: "atlantafalcons.com (Tuesday, Oct 27): the only real changes account for A.J. Terrell Jr., activated from IR before the 49ers game, who starts again alongside Mike Hughes with C.J. Henderson the top backup, and for Michael Jerrell's IR placement, which makes seventh-round rookie Ethan Onianwa the backup tackle behind Jawaan Taylor. Penix is QB1 with Tua Tagovailoa second; Brian Robinson Jr. is listed at kick returner and Zachariah Branch at punt returner.",
+      category: "general",
+      sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-week-8-depth-chart-vs-tampa-bay-buccaneers",
+      sourceLabel: "atlantafalcons.com",
+    },
+    {
+      title: "Strength on strength: two top run games, two stingy run defenses",
+      detail: "Buccaneers.com (Tuesday, Oct 27): Tampa Bay ranks third at 146.4 rushing yards a game, fresh off 258 at Carolina, but Atlanta allows only 88.9 (fourth-fewest). The other side is wider still: the Falcons' 139.9 a game against a Bucs defense allowing 77.3. Tampa Bay also has 10 sacks in its last two games after six in its first six, Atlanta ranks 23rd in sack rate allowed, and Kyle Pitts has 629 yards and six TDs in his career against the Bucs. The last six meetings were all decided by six points or fewer.",
+      category: "games",
+      sourceUrl: "https://www.buccaneers.com/news/expect-epic-battle-on-the-ground-vs-falcons-by-the-numbers-week-eight",
+      sourceLabel: "buccaneers.com",
+    },
     {
       title: "Stefanski on Penix: protect the ball, but keep letting it rip",
       detail: "Falcons Wire (Monday, Oct 26): a day after Penix's three-TD, no-interception day vs. San Francisco, Stefanski said 'Taking care of the football is a great trait to have at the quarterback position,' but called interceptions 'an occupational hazard' and said what you don't want is a quarterback who plays 'small ball all the time,' adding, 'that's definitely not Mike.' He credited Penix with 'stacking these games' against a wide range of coverages and pressures.",
@@ -3210,14 +3227,14 @@ export const NEWS_DIGEST = {
     },
     {
       title: "Line moves toward Tampa Bay: Bucs -2.5, total 46.5",
-      detail: "VegasInsider (Tuesday, Oct 27): consensus has moved to Bucs -2.5 with a 46.5 total and moneylines around TB -135 / ATL +114, up from the 1.5-point line bet365 posted Monday (FOX Sports). Dimers' model (Oct 26) gives Tampa Bay a 56.6% win probability and projects a 22-21 Bucs win. Kickoff is 1 p.m. ET Sunday on FOX.",
+      detail: "VegasInsider and DraftKings via SI Betting (Tuesday, Oct 27): Bucs -2.5 with a 46.5 total and moneylines around TB -135 / ATL +114, up from the 1.5-point line bet365 posted Monday (FOX Sports). SI Betting took Atlanta +2.5, noting Tampa Bay is 0-4 against the spread at home and 0-2 as a favorite, while the Falcons are 2-1 ATS on the road. Dimers' model (Oct 26) projects a 22-21 Bucs win. Kickoff is 1 p.m. ET Sunday on FOX.",
       category: "games",
-      sourceUrl: "https://www.vegasinsider.com/nfl/matchups/buccaneers-vs-falcons/",
-      sourceLabel: "VegasInsider / Dimers",
+      sourceUrl: "https://www.si.com/betting/falcons-vs-buccaneers-prediction-odds-spread-injuries-trends-for-nfl-week-8-2026",
+      sourceLabel: "SI Betting / VegasInsider / Dimers",
     },
     {
       title: "Bowles: Egbuka, Goedeke and Winfield all questionable",
-      detail: "Athlon Sports, via ESPN's Jenna Laine (Monday, Oct 26): Todd Bowles said WR Emeka Egbuka (concussion, foot), RT Luke Goedeke and S Antoine Winfield Jr. are 'all questionable' for Sunday, adding, 'We're going to see on Wednesday and Thursday what they do.' Egbuka missed the 43-13 win at Carolina. Atlanta's first Week 8 report is due Wednesday.",
+      detail: "Athlon Sports, via ESPN's Jenna Laine (Monday, Oct 26): Todd Bowles said WR Emeka Egbuka (concussion, foot), RT Luke Goedeke and S Antoine Winfield Jr. are 'all questionable' for Sunday, adding, 'We're going to see on Wednesday and Thursday what they do.' Egbuka missed the 43-13 win at Carolina; Bucs Report (Oct 27) confirmed all three remain questionable, and Baker Mayfield is not on the report after his Week 7 return from a thumb injury. Atlanta's first Week 8 report is due Wednesday.",
       category: "injuries",
       sourceUrl: "https://athlonsports.com/nfl/trending/buccaneers-todd-bowles-announces-emeka-egbuka-injury-update-falcons-game",
       sourceLabel: "Athlon Sports / ESPN",
@@ -3230,11 +3247,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "ClutchPoints (Yahoo Sports) / The Athletic",
     },
     {
-      title: "Power rankings: FOX nudges Atlanta to 19th, calls the upset 'a little fluky'",
-      detail: "FOX Sports' Ralph Vacchiano (updated Tuesday, Oct 27) moved the Falcons up one spot to 19th, writing that four turnovers 'isn't something that happens all the time' but that Atlanta is 'playing a lot better over the past five weeks.' Tampa Bay climbed from 29th to 26th after its rout of Carolina.",
+      title: "Power rankings: NFL.com jumps Atlanta to 13th, most others land at 19",
+      detail: "atlantafalcons.com roundup (Tuesday, Oct 27): NFL.com moved the Falcons up six spots to 13th ('I don't know who the Falcons are, either,' wrote Nick Shook), while ESPN, Bleacher Report, FOX Sports and CBS Sports all have them 19th and The Athletic 21st. FOX's Ralph Vacchiano called the upset 'a little fluky'; CBS' Pete Prisco said rallying to beat the 49ers 'is big for this team after losing two straight.' The Bucs rose too, from 28th to 19th at The Athletic.",
       category: "general",
-      sourceUrl: "https://www.foxsports.com/stories/nfl/2026-nfl-power-rankings-week-8",
-      sourceLabel: "FOX Sports",
+      sourceUrl: "https://www.atlantafalcons.com/news/week-8-nfl-power-rankings-roundup-a-new-no-1-plus-big-moves-for-falcons-buccaneers",
+      sourceLabel: "atlantafalcons.com / NFL.com / FOX Sports / CBS Sports",
     },
     {
       title: "Falcons hand the unbeaten 49ers their first loss, 29-20",
@@ -3277,13 +3294,6 @@ export const NEWS_DIGEST = {
       category: "general",
       sourceUrl: "https://www.pewterreport.com/bucs-secure-nfc-south-lifeline-week-7-win/",
       sourceLabel: "Pewter Report / NFL.com",
-    },
-    {
-      title: "Khalil Herbert's returns help flip the game",
-      detail: "atlantafalcons.com (Sunday, Oct 25): elevated from the practice squad with Brian Robinson Jr. out, Herbert returned the second-half kickoff 38 yards to set up Penix's 5-yard TD to Kyle Pitts and Atlanta's first lead, 19-14. He also had a near-20-yard catch-and-run ruled just short of the goal line. Bijan Robinson carried 20 times for 63 yards (CBS Sports).",
-      category: "games",
-      sourceUrl: "https://www.atlantafalcons.com/news/game-breakdown-what-happened-in-falcons-vs-49ers",
-      sourceLabel: "atlantafalcons.com / CBS Sports",
     },
   ],
 };
