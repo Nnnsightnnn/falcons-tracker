@@ -571,7 +571,7 @@ export const PLAYERS = [
     stats: {},
     form: 6.0,
     status: "ir",
-    injuryNote: "Claimed off waivers from Philadelphia on Sept 1, a big (6-5, 317) developmental tackle and 2025 sixth-round pick (No. 207) who started 15 games at right tackle for a College Football Playoff Texas team, adding swing depth on a line the Falcons have prioritized all summer. Friday (Oct 23), final Week 7 report (atlantafalcons.com): limited (ankle) on Thursday and Friday (Oct 22-23) and listed QUESTIONABLE vs. San Francisco. Saturday (Oct 24): downgraded to OUT (ankle) for Sunday vs. San Francisco (atlantafalcons.com, NBC Sports / PFT). Now listed on Reserve/Injured (ankle) on the team roster (atlantafalcons.com, Oct 26), so he must miss at least four games. Wednesday (Oct 28), first Week 8 report (buccaneers.com, Falcons Wire): listed as a full participant (ankle) despite his Reserve/Injured listing. Friday (Oct 30), final Week 8 report (atlantafalcons.com): full participant (ankle) for a third straight day and listed QUESTIONABLE vs. Tampa Bay; he would need to be activated from Reserve/Injured to play.",
+    injuryNote: "Claimed off waivers from Philadelphia on Sept 1, a big (6-5, 317) developmental tackle and 2025 sixth-round pick (No. 207) who started 15 games at right tackle for a College Football Playoff Texas team, adding swing depth on a line the Falcons have prioritized all summer. Friday (Oct 23), final Week 7 report (atlantafalcons.com): limited (ankle) on Thursday and Friday (Oct 22-23) and listed QUESTIONABLE vs. San Francisco. Saturday (Oct 24): downgraded to OUT (ankle) for Sunday vs. San Francisco (atlantafalcons.com, NBC Sports / PFT). Now listed on Reserve/Injured (ankle) on the team roster (atlantafalcons.com, Oct 26), so he must miss at least four games. Wednesday (Oct 28), first Week 8 report (buccaneers.com, Falcons Wire): listed as a full participant (ankle) despite his Reserve/Injured listing. Friday (Oct 30), final Week 8 report (atlantafalcons.com): full participant (ankle) for a third straight day and listed QUESTIONABLE vs. Tampa Bay; he would need to be activated from Reserve/Injured to play. Saturday (Oct 31): not activated; downgraded to OUT vs. Tampa Bay and remains on Reserve/Injured (atlantafalcons.com, CBS Sports / RotoWire). Next chance: Week 9 vs. Cincinnati in Madrid (Nov 8).",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4685590.png",
     contract: { years: 1, total: 900000, guaranteed: 0, apy: 900000, throughYear: 2026, cap2026: 900000 },
     career: [
@@ -870,7 +870,7 @@ export const PLAYERS = [
     stats: { tackles: 92, tfl: 7, sacks: 2, int_def: 1 },
     form: 8.0,
     status: "questionable",
-    injuryNote: "Arm. Injured in the first half of the 31-23 loss to Chicago (Oct 18) and ruled out late in the second quarter (atlantafalcons.com); Stefanski had no update Monday (Oct 19, AP). Had battled a hamstring issue through Weeks 4-6 practices without missing a game. MIKE · 3yr/$30M FA signing from Las Vegas. Wednesday (Oct 21), first Week 7 report: did not participate, with the injury listed as forearm (atlantafalcons.com). Did not practice Wednesday or Thursday (Oct 21-22, forearm) of 49ers week (official report via 49ers Webzone). Friday (Oct 23), final Week 7 report (atlantafalcons.com): did not practice and ruled OUT vs. San Francisco (forearm). Status kept at questionable because the tracker schema has no single-game 'out' value. Wednesday (Oct 28), first Week 8 report (buccaneers.com, Falcons Wire): did not practice (forearm). Thursday (Oct 29, atlantafalcons.com): returned to practice, limited (forearm). Friday (Oct 30), final Week 8 report (atlantafalcons.com): limited (forearm), listed QUESTIONABLE vs. Tampa Bay.",
+    injuryNote: "Arm. Injured in the first half of the 31-23 loss to Chicago (Oct 18) and ruled out late in the second quarter (atlantafalcons.com); Stefanski had no update Monday (Oct 19, AP). Had battled a hamstring issue through Weeks 4-6 practices without missing a game. MIKE · 3yr/$30M FA signing from Las Vegas. Wednesday (Oct 21), first Week 7 report: did not participate, with the injury listed as forearm (atlantafalcons.com). Did not practice Wednesday or Thursday (Oct 21-22, forearm) of 49ers week (official report via 49ers Webzone). Friday (Oct 23), final Week 7 report (atlantafalcons.com): did not practice and ruled OUT vs. San Francisco (forearm). Status kept at questionable because the tracker schema has no single-game 'out' value. Wednesday (Oct 28), first Week 8 report (buccaneers.com, Falcons Wire): did not practice (forearm). Thursday (Oct 29, atlantafalcons.com): returned to practice, limited (forearm). Friday (Oct 30), final Week 8 report (atlantafalcons.com): limited (forearm), listed QUESTIONABLE vs. Tampa Bay. Saturday (Oct 31): downgraded to OUT vs. Tampa Bay (forearm), his second straight missed game; Kendal Daniels expected to wear the green dot with Harold Perkins Jr. beside him (atlantafalcons.com).",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4037626.png",
     contract: { years: 3, total: 30000000, guaranteed: 18000000, apy: 10000000, throughYear: 2028, cap2026: 8500000 },
     career: [
@@ -1070,7 +1070,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "questionable",
-    injuryNote: "Hamstring. Strained in the fourth quarter of the 31-23 loss to Chicago (Oct 18) and listed doubtful to return (atlantafalcons.com); Stefanski had no update Monday (Oct 19, AP). Returned in Week 3 from a late-Nov 2025 Achilles rupture; in the nickel/slot mix behind Avieon Terrell. Wednesday (Oct 21), first Week 7 report: did not participate (hamstring) (atlantafalcons.com). Did not practice Wednesday or Thursday (Oct 21-22, hamstring) of 49ers week (official report via 49ers Webzone). Friday (Oct 23), final Week 7 report (atlantafalcons.com): did not practice and ruled OUT vs. San Francisco (hamstring). Status kept at questionable because the tracker schema has no single-game 'out' value. Wednesday (Oct 28), first Week 8 report (buccaneers.com, Falcons Wire): did not practice (hamstring). Thursday (Oct 29, atlantafalcons.com): returned to practice, limited (hamstring). Friday (Oct 30), final Week 8 report (atlantafalcons.com): limited (hamstring), listed QUESTIONABLE vs. Tampa Bay.",
+    injuryNote: "Hamstring. Strained in the fourth quarter of the 31-23 loss to Chicago (Oct 18) and listed doubtful to return (atlantafalcons.com); Stefanski had no update Monday (Oct 19, AP). Returned in Week 3 from a late-Nov 2025 Achilles rupture; in the nickel/slot mix behind Avieon Terrell. Wednesday (Oct 21), first Week 7 report: did not participate (hamstring) (atlantafalcons.com). Did not practice Wednesday or Thursday (Oct 21-22, hamstring) of 49ers week (official report via 49ers Webzone). Friday (Oct 23), final Week 7 report (atlantafalcons.com): did not practice and ruled OUT vs. San Francisco (hamstring). Status kept at questionable because the tracker schema has no single-game 'out' value. Wednesday (Oct 28), first Week 8 report (buccaneers.com, Falcons Wire): did not practice (hamstring). Thursday (Oct 29, atlantafalcons.com): returned to practice, limited (hamstring). Friday (Oct 30), final Week 8 report (atlantafalcons.com): limited (hamstring), listed QUESTIONABLE vs. Tampa Bay. Saturday (Oct 31): downgraded to OUT vs. Tampa Bay (hamstring), his second straight missed game; Sydney Brown, last week's primary nickel, is the likely fill-in if Avieon Terrell cannot go (atlantafalcons.com).",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4431194.png",
     contract: { years: 4, total: 5200000, guaranteed: 950000, apy: 1300000, throughYear: 2028, cap2026: 1100000 },
     career: [{ years: "2025–", team: "Atlanta Falcons", type: "NFL" }],
@@ -1436,7 +1436,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "ir",
-    injuryNote: "Hip. Signed Aug 17 after the Giants released him with an injury settlement, then placed on injured reserve with a return designation on Aug 31 (CBS Sports / RotoWire). Designated to return on Oct 22, opening his 21-day practice window, and practiced on a limited basis; downgraded to OUT for the Week 7 game vs. San Francisco (atlantafalcons.com). Listed as Reserve/Injured, designated for return, on the team roster. Wednesday (Oct 28), first Week 8 report (buccaneers.com, Falcons Wire): full participant (hip) while on IR, designated to return. Friday (Oct 30), final Week 8 report (atlantafalcons.com): full participant (hip) for a third straight day and listed QUESTIONABLE vs. Tampa Bay; he would need to be activated from Reserve/Injured to play.",
+    injuryNote: "Hip. Signed Aug 17 after the Giants released him with an injury settlement, then placed on injured reserve with a return designation on Aug 31 (CBS Sports / RotoWire). Designated to return on Oct 22, opening his 21-day practice window, and practiced on a limited basis; downgraded to OUT for the Week 7 game vs. San Francisco (atlantafalcons.com). Listed as Reserve/Injured, designated for return, on the team roster. Wednesday (Oct 28), first Week 8 report (buccaneers.com, Falcons Wire): full participant (hip) while on IR, designated to return. Friday (Oct 30), final Week 8 report (atlantafalcons.com): full participant (hip) for a third straight day and listed QUESTIONABLE vs. Tampa Bay; he would need to be activated from Reserve/Injured to play. Saturday (Oct 31): not activated; ruled OUT vs. Tampa Bay and remains on Reserve/Injured despite three full practices (atlantafalcons.com, CBS Sports / RotoWire). Next chance: Week 9 vs. Cincinnati in Madrid (Nov 8).",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4431210.png",
     career: [
       { years: "2026–", team: "Atlanta Falcons", type: "NFL" },
@@ -1489,8 +1489,8 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "practice-squad",
-    injuryNote: "On the practice squad. Elevated for Week 7 vs. San Francisco (Oct 24) with Brian Robinson Jr. out; returned the second-half kickoff 38 yards to set up the go-ahead touchdown in the 29-20 win (atlantafalcons.com). A former Bears sixth-round pick (2021) with 1,957 career rushing yards and nine TDs; spent August with the 49ers.",
-    psNote: "Elevated Wk 7 · KR",
+    injuryNote: "On the practice squad. Elevated for Week 7 vs. San Francisco (Oct 24) with Brian Robinson Jr. out; returned the second-half kickoff 38 yards to set up the go-ahead touchdown in the 29-20 win (atlantafalcons.com). A former Bears sixth-round pick (2021) with 1,957 career rushing yards and nine TDs; spent August with the 49ers. Elevated again Saturday (Oct 31) for Week 8 at Tampa Bay, the RB2 behind Bijan Robinson for a second straight week with Brian Robinson Jr. out (atlantafalcons.com, Falcons Wire).",
+    psNote: "Elevated Wk 7-8 · KR",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4035886.png",
     career: [
       { years: "2026–", team: "Atlanta Falcons", type: "NFL · practice squad" },
@@ -1514,8 +1514,8 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "practice-squad",
-    injuryNote: "Signed to the practice squad Oct 1. Elevated for Week 7 vs. San Francisco (Oct 24) for linebacker depth with Divine Deablo out. A former Vikings third-round pick (2022, No. 66) with 30 tackles and two forced fumbles in 50 games for Minnesota and Cincinnati.",
-    psNote: "Elevated Wk 7",
+    injuryNote: "Signed to the practice squad Oct 1. Elevated for Week 7 vs. San Francisco (Oct 24) for linebacker depth with Divine Deablo out. A former Vikings third-round pick (2022, No. 66) with 30 tackles and two forced fumbles in 50 games for Minnesota and Cincinnati. Elevated again Saturday (Oct 31) for Week 8 at Tampa Bay with Divine Deablo ruled out (atlantafalcons.com, Falcons Wire).",
+    psNote: "Elevated Wk 7-8",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4360255.png",
     career: [
       { years: "2026–", team: "Atlanta Falcons", type: "NFL · practice squad" },
@@ -2094,7 +2094,7 @@ export const NEXT_GAME = {
   date: "2026-11-01",
   kickoff: "1:00 PM ET",
   tv: "FOX",
-  note: "Atlanta (3-4) visits Tampa Bay (2-5) after handing San Francisco its first loss, 29-20. The Bucs routed Carolina 43-13 on the road in Week 7 with Baker Mayfield back from a thumb injury (buccaneers.com); Todd Bowles listed WR Emeka Egbuka, RT Luke Goedeke and S Antoine Winfield Jr. as questionable on Monday (Athlon / ESPN). Line: opened Bucs -1.5 (bet365, via FOX Sports) and sits at Bucs -2.5, total 46.5, ML TB -135 / ATL +114 in Tuesday's consensus (VegasInsider, Oct 27). DraftKings (SI Betting, Oct 27): TB -2.5, total 46.5; the Bucs are 0-4 against the spread at home. Strength on strength in the run game (buccaneers.com, Oct 27): Tampa Bay runs for 146.4 yards a game (3rd) into an Atlanta defense allowing 88.9 (4th-fewest), while the Falcons' 139.9 meets a Bucs defense allowing 77.3. Atlanta leads the all-time series 33-32, and the last six meetings were all decided by six points or fewer. The Falcons sit half a game behind Carolina (3-3) in the NFC South; a win would put Atlanta at .500. Tuesday's depth chart: Penix QB1, Tua QB2, A.J. Terrell and Mike Hughes the starting corners, rookie Ethan Onianwa the backup tackle with Michael Jerrell on IR. Wednesday's first reports (Oct 28, buccaneers.com / Falcons Wire): Atlanta held out Brian Robinson Jr., Divine Deablo, Billy Bowman Jr. and Za'Darius Smith (rest) and limited six to seven others, including RT Jawaan Taylor (hamstring); Tampa Bay had Antoine Winfield Jr. (rib) and Mayfield full, Egbuka limited, and Goedeke, Gainwell and Trotter out of practice. Penix was named NFC Offensive Player of the Week (Field Level Media). Inactive for Atlanta in Week 7: RB Brian Robinson Jr. (hamstring), LB Divine Deablo (forearm), DB Billy Bowman Jr. (hamstring), CB Avieon Terrell (back, illness) and WR Olamide Zaccheaus (shoulder). Thursday (Oct 29, atlantafalcons.com / buccaneers.com): Bowman and Deablo returned limited, Brian Robinson Jr. missed a second straight day, and A.J. Terrell Jr., C.J. Henderson and Cam Thomas were limited (groin); for Tampa Bay, Trotter and Diaby were full, Gainwell limited, Egbuka limited and Goedeke out again. Penix, who played high school ball in Tampa, makes his first start at Raymond James (AP, Oct 29: 'Buccaneers by 2 1/2'). FanDuel (Oct 27) had TB -2.5 with a 43.5 total. Friday's final reports (Oct 30, atlantafalcons.com / buccaneers.com): Brian Robinson Jr. (hamstring) OUT; questionable: Billy Bowman Jr., Divine Deablo, Samson Ebukam, Charles Snowden, Avieon Terrell, Olamide Zaccheaus, plus Beaux Collins and Cameron Williams (both on IR, full all week); A.J. Terrell Jr., C.J. Henderson and Cam Thomas full; Chris Lindstrom DNP (personal), no designation. Tampa Bay ruled out WR Emeka Egbuka (foot) and listed Kenny Gainwell (hip) and Luke Goedeke (calf) questionable. The buccaneers.com preview (Oct 29) listed Bucs -1.5, O/U 45.5; AP (Oct 29) has Bucs by 2 1/2. Forecast: high of 83, 88% chance of rain. Next: Bengals in Madrid (Week 9, Nov 8).",
+  note: "Atlanta (3-4) visits Tampa Bay (2-5) after handing San Francisco its first loss, 29-20. The Bucs routed Carolina 43-13 on the road in Week 7 with Baker Mayfield back from a thumb injury (buccaneers.com); Todd Bowles listed WR Emeka Egbuka, RT Luke Goedeke and S Antoine Winfield Jr. as questionable on Monday (Athlon / ESPN). Line: opened Bucs -1.5 (bet365, via FOX Sports) and sits at Bucs -2.5, total 46.5, ML TB -135 / ATL +114 in Tuesday's consensus (VegasInsider, Oct 27). DraftKings (SI Betting, Oct 27): TB -2.5, total 46.5; the Bucs are 0-4 against the spread at home. Strength on strength in the run game (buccaneers.com, Oct 27): Tampa Bay runs for 146.4 yards a game (3rd) into an Atlanta defense allowing 88.9 (4th-fewest), while the Falcons' 139.9 meets a Bucs defense allowing 77.3. Atlanta leads the all-time series 33-32, and the last six meetings were all decided by six points or fewer. The Falcons sit half a game behind Carolina (3-3) in the NFC South; a win would put Atlanta at .500. Tuesday's depth chart: Penix QB1, Tua QB2, A.J. Terrell and Mike Hughes the starting corners, rookie Ethan Onianwa the backup tackle with Michael Jerrell on IR. Wednesday's first reports (Oct 28, buccaneers.com / Falcons Wire): Atlanta held out Brian Robinson Jr., Divine Deablo, Billy Bowman Jr. and Za'Darius Smith (rest) and limited six to seven others, including RT Jawaan Taylor (hamstring); Tampa Bay had Antoine Winfield Jr. (rib) and Mayfield full, Egbuka limited, and Goedeke, Gainwell and Trotter out of practice. Penix was named NFC Offensive Player of the Week (Field Level Media). Inactive for Atlanta in Week 7: RB Brian Robinson Jr. (hamstring), LB Divine Deablo (forearm), DB Billy Bowman Jr. (hamstring), CB Avieon Terrell (back, illness) and WR Olamide Zaccheaus (shoulder). Thursday (Oct 29, atlantafalcons.com / buccaneers.com): Bowman and Deablo returned limited, Brian Robinson Jr. missed a second straight day, and A.J. Terrell Jr., C.J. Henderson and Cam Thomas were limited (groin); for Tampa Bay, Trotter and Diaby were full, Gainwell limited, Egbuka limited and Goedeke out again. Penix, who played high school ball in Tampa, makes his first start at Raymond James (AP, Oct 29: 'Buccaneers by 2 1/2'). FanDuel (Oct 27) had TB -2.5 with a 43.5 total. Friday's final reports (Oct 30, atlantafalcons.com / buccaneers.com): Brian Robinson Jr. (hamstring) OUT; questionable: Billy Bowman Jr., Divine Deablo, Samson Ebukam, Charles Snowden, Avieon Terrell, Olamide Zaccheaus, plus Beaux Collins and Cameron Williams (both on IR, full all week); A.J. Terrell Jr., C.J. Henderson and Cam Thomas full; Chris Lindstrom DNP (personal), no designation. Tampa Bay ruled out WR Emeka Egbuka (foot) and listed Kenny Gainwell (hip) and Luke Goedeke (calf) questionable. The buccaneers.com preview (Oct 29) listed Bucs -1.5, O/U 45.5; AP (Oct 29) has Bucs by 2 1/2. Forecast: high of 83, 88% chance of rain. Saturday (Oct 31, atlantafalcons.com): Divine Deablo (forearm) and Billy Bowman Jr. (hamstring) downgraded to OUT, joining Brian Robinson Jr.; Beaux Collins and Cameron Williams were not activated and stay on IR; RB Khalil Herbert and LB Brian Asamoah II elevated from the practice squad for a second straight week. Kendal Daniels expected to wear the green dot with Harold Perkins Jr. beside him; Avieon Terrell (illness) still questionable, with Sydney Brown the likely nickel if he sits. Inactives due 11:30 AM ET. Next: Bengals in Madrid (Week 9, Nov 8).",
 };
 
 // =========================================
@@ -2469,17 +2469,17 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-10-31T09:00:00Z",
+  generatedAt: "2026-11-01T09:30:00Z",
   cover: {
-    kicker: "Bucs week, Saturday: Brian Robinson Jr. is the only Falcon ruled out for Tampa, with eight questionable, including Billy Bowman Jr. and Divine Deablo; A.J. Terrell Jr., C.J. Henderson and Cam Thomas practiced fully Friday. The Bucs rule out Emeka Egbuka (foot) and list Kenny Gainwell and Luke Goedeke questionable",
-    headLine1: "One out, eight maybes.",
-    headEm: "And no Egbuka.",
-    headLine3: "Robinson misses a second straight game; Bowman and Deablo are questionable after two limited days. Tampa Bay loses its leading receiver to a foot injury. Kickoff Sunday, 1 PM ET, FOX.",
-    deck: "Friday's final report (atlantafalcons.com) ruled out RB Brian Robinson Jr. (hamstring), with Khalil Herbert again the likely No. 2 back behind Bijan Robinson. Questionable: DB Billy Bowman Jr. (hamstring), LB Divine Deablo (forearm), DE Samson Ebukam (hamstring), DE Charles Snowden (back), CB Avieon Terrell (illness), WR Olamide Zaccheaus (shoulder), and WR Beaux Collins (hip) and OT Cameron Williams (ankle), both on Reserve/Injured but full all week. CBs A.J. Terrell Jr. and C.J. Henderson and DE Cam Thomas (groin) were full; RG Chris Lindstrom missed Friday for a personal reason. For Tampa Bay (buccaneers.com), WR Emeka Egbuka (foot) is out; he cleared concussion protocol but the foot did not respond (Athlon). RB Kenny Gainwell (hip) and RT Luke Goedeke (calf) are questionable. Forecast (buccaneers.com): high of 83 with an 88% chance of rain.",
+    kicker: "Game day at Tampa: Divine Deablo and Billy Bowman Jr. were downgraded to out Saturday, joining Brian Robinson Jr.; Beaux Collins and Cameron Williams stay on IR, and Khalil Herbert and Brian Asamoah II are elevated again. The Bucs are without Emeka Egbuka. Kickoff 1 PM ET on FOX",
+    headLine1: "Three out, one maybe.",
+    headEm: "Kickoff in Tampa.",
+    headLine3: "Deablo and Bowman sit a second straight game, so Kendal Daniels takes the green dot and Sydney Brown is the nickel in waiting. Penix makes his first start at Raymond James. 1 PM ET, FOX.",
+    deck: "Saturday (Oct 31, atlantafalcons.com): ILB Divine Deablo (forearm) and nickel Billy Bowman Jr. (hamstring) were downgraded from questionable to out, joining RB Brian Robinson Jr. (hamstring). WR Beaux Collins (hip) and OT Cameron Williams (ankle) were not activated from Reserve/Injured despite full practices all week, and are now aiming for Week 9 vs. Cincinnati in Madrid. RB Khalil Herbert and LB Brian Asamoah II were elevated from the practice squad for a second straight week. Kendal Daniels is expected to wear the green dot with Harold Perkins Jr. beside him; CB Avieon Terrell (illness) is the lone remaining questionable Falcon, with Sydney Brown, last week's primary nickel, the likely fill-in. Tampa Bay is without WR Emeka Egbuka (foot); Kenny Gainwell and Luke Goedeke are questionable. Inactives at 11:30 AM ET. Forecast (buccaneers.com): high of 83, 88% chance of rain.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
-    stampLabel: "Bucs week · Saturday · Falcons 3-4, 0.5 GB of CAR · OUT: B. Robinson (hamstring) · 8 questionable incl. Bowman, Deablo, Ebukam · Bucs: Egbuka OUT, Gainwell and Goedeke questionable · Kickoff: at TB, Sun Nov 1, 1 PM ET, FOX · Bucs by 2.5 (AP), rain likely",
+    stampLabel: "Game day · Sun Nov 1 · at TB, 1 PM ET, FOX · Falcons 3-4, 0.5 GB of CAR · OUT: Deablo, Bowman, B. Robinson; Collins and Cam Williams stay on IR · Q: Avieon Terrell · Elevated: Herbert, Asamoah · Bucs: Egbuka OUT · Bucs by 2.5 (AP), rain likely",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -3153,6 +3153,8 @@ export const NEWS_DIGEST = {
     // injury reports for both teams, Penix homecoming); pointer and penix-jr fallback unchanged.
     // STATUS (2026-10-31 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto Bucs week Saturday (final
     // injury reports: B. Robinson out, Egbuka out); pointer and penix-jr fallback unchanged.
+    // STATUS (2026-11-01 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto game day (Saturday
+    // downgrades: Deablo and Bowman out, Collins and Cam Williams stay on IR, Herbert and Asamoah elevated); pointer and penix-jr fallback unchanged.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
@@ -3205,10 +3207,18 @@ export const NEWS_DIGEST = {
     "atlantafalcons.com (Oct 29)", "buccaneers.com (Oct 29)", "The Falcoholic (Yahoo, Oct 29)", "AP (iNFOnews, Oct 29)",
     "Roundtable (Yahoo, Oct 29)", "FanDuel Research (Oct 27)",
     "atlantafalcons.com (Oct 30)", "buccaneers.com (Oct 30)", "Atlanta Falcons On SI (Oct 30)", "Athlon Sports (Oct 30)", "buccaneers.com preview (Oct 29)", "AP (CBS Sports, Oct 29)",
+    "atlantafalcons.com (Oct 31)", "Falcons Wire (Yahoo, Oct 31)", "CBS Sports / RotoWire (Oct 31)", "RotoWire (Oct 31)",
   ],
   topics: [
     {
-      title: "Final report: Brian Robinson Jr. out again, eight Falcons questionable",
+      title: "Deablo and Bowman downgraded to out; Herbert and Asamoah elevated again",
+      detail: "atlantafalcons.com (Saturday, Oct 31): ILB Divine Deablo (forearm) and nickel Billy Bowman Jr. (hamstring), both limited Thursday and Friday, were downgraded from questionable to out, joining RB Brian Robinson Jr. (hamstring); all three miss a second straight game. Kendal Daniels is expected to wear the green dot with Harold Perkins Jr. starting beside him. The Falcons elevated RB Khalil Herbert and LB Brian Asamoah II from the practice squad for the second week in a row, with Herbert again the RB2 behind Bijan Robinson (RotoWire). CB Avieon Terrell (illness) remains questionable; Sydney Brown, last week's primary nickel, is the likely fill-in.",
+      category: "injuries",
+      sourceUrl: "https://www.atlantafalcons.com/news/downgrade-divine-deablo-billy-bowman-out-vs-bucs",
+      sourceLabel: "atlantafalcons.com / Falcons Wire",
+    },
+    {
+      title: "Friday's report: Brian Robinson Jr. out, eight questionable (Deablo, Bowman, Collins and Cam Williams since ruled out)",
       detail: "atlantafalcons.com (Friday, Oct 30): RB Brian Robinson Jr. (hamstring) did not practice all week and is OUT, his second straight missed game; Khalil Herbert filled the backup role in Week 7. Questionable: DB Billy Bowman Jr. (hamstring), LB Divine Deablo (forearm), DE Samson Ebukam (hamstring), DE Charles Snowden (back), CB Avieon Terrell (illness) and WR Olamide Zaccheaus (shoulder), all limited Friday, plus WR Beaux Collins (hip) and OT Cameron Williams (ankle), who were full. No Falcon is listed doubtful.",
       category: "injuries",
       sourceUrl: "https://www.atlantafalcons.com/news/falcons-injury-report-rb-brian-robinson-jr-out-buccaneers",
@@ -3222,8 +3232,8 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com / buccaneers.com",
     },
     {
-      title: "Collins and Cameron Williams questionable while still on IR",
-      detail: "atlantafalcons.com (Friday, Oct 30): WR Beaux Collins (hip) and OT Cameron Williams (ankle) practiced fully all week and were given a questionable tag, though both are still on Reserve/Injured. Either would need to be activated before Saturday's 4 PM deadline to play Sunday. Collins was designated to return on Oct 22; no activation had been announced as of Saturday morning.",
+      title: "Collins and Cameron Williams stay on IR, ruled out",
+      detail: "atlantafalcons.com and CBS Sports / RotoWire (Saturday, Oct 31): WR Beaux Collins (hip) and OT Cameron Williams (ankle) were not activated before Saturday's deadline and are out, despite three full practices each. Collins, designated to return Oct 22, 'isn't quite ready to make his 2026 regular-season debut' (RotoWire); Williams has missed the entire regular season with an ankle injury from early September. Both next target Week 9 vs. Cincinnati in Madrid (Nov 8).",
       category: "injuries",
       sourceUrl: "https://www.si.com/nfl/falcons/onsi/falcons-have-another-lengthy-injury-report-vs-buccaneers-1-player-out-already",
       sourceLabel: "atlantafalcons.com / Atlanta Falcons On SI",
@@ -3297,13 +3307,6 @@ export const NEWS_DIGEST = {
       category: "games",
       sourceUrl: "https://www.atlantanewsfirst.com/2026/10/25/michael-penix-jr-throws-3-td-falcons-force-4-turnovers-give-49ers-first-loss/",
       sourceLabel: "Atlanta News First / AP / CBS Sports",
-    },
-    {
-      title: "NFC South: Atlanta pulls within half a game of Carolina",
-      detail: "Pewter Report (Sunday, Oct 25): with the Panthers' 43-13 home loss to Tampa Bay, Carolina is 3-3, Atlanta 3-4 (1-1 in the division), Tampa Bay 2-5 (1-0) and New Orleans 2-5 (0-1) after the Saints lost to Pittsburgh. Sunday's game in Tampa opens a stretch in which the Falcons can move to .500 for the first time since Week 4.",
-      category: "general",
-      sourceUrl: "https://www.pewterreport.com/bucs-secure-nfc-south-lifeline-week-7-win/",
-      sourceLabel: "Pewter Report / NFL.com",
     },
   ],
 };
