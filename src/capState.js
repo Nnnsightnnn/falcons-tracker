@@ -40,6 +40,7 @@ export const CAP_STATE = {
     },
   ],
   recentMoves: [
+    { date: "2026-11-05", description: "Signed LB Jared Ivey (No. 51) to the final open practice-squad spot, three days after waiving him from the 53 for James Pearce Jr.'s reinstatement; no corresponding move was needed. Practice-squad minimum, no top-51 impact. Per Falcons Wire (Yahoo Sports) and the ESPN roster" },
     { date: "2026-11-03", description: "Re-signed DE Drake Jackson to the practice squad a day after waiving him for James Pearce Jr.'s reinstatement, and released OT Colby Sorsdal from the practice squad to open the spot. NFL Trade Rumors also logs LB Yasir Abdullah as designated to return from injured reserve. Practice-squad minimums, no top-51 impact. Per Falcons Wire and Atlanta Falcons On SI (Yahoo Sports) and NFL Trade Rumors" },
     { date: "2026-11-03", description: "Placed DE Samson Ebukam on injured reserve (hamstring), so he must miss at least four games. His one-year, $2.765M deal stays on the books, so no top-51 change. No corresponding signing announced. Per atlantafalcons.com" },
     { date: "2026-11-02", description: "OLB James Pearce Jr. reinstated from his eight-game suspension and added to the 53 with a one-week roster exemption. Waived DE Jared Ivey (claimed from Seattle Sept 1) and DE Drake Jackson (signed from the practice squad Oct 24) to make room; both were on minimum-level deals with no reported dead money. Per ESPN, Atlanta Falcons On SI and the atlantafalcons.com roster" },
