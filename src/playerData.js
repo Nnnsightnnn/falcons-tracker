@@ -211,8 +211,8 @@ export const PLAYERS = [
     acquired: "fa-2026",
     stats: { receptions: 39, recYds: 313, recTDs: 2 },
     form: 6.6,
-    status: "questionable",
-    injuryNote: "Slot return · drafted by ATL 2019, back from CHI Wednesday (Oct 21), first Week 7 report: limited (shoulder) (atlantafalcons.com). Friday (Oct 23), final Week 7 report (atlantafalcons.com): limited (shoulder) and QUESTIONABLE. Sunday (Oct 25): INACTIVE vs. San Francisco (atlantafalcons.com). Watch the first Week 8 report Wednesday (Oct 28). Wednesday (Oct 28), first Week 8 report (buccaneers.com, Falcons Wire): limited (shoulder). Thursday (Oct 29, atlantafalcons.com): limited (shoulder). Friday (Oct 30), final Week 8 report (atlantafalcons.com): limited (shoulder), listed QUESTIONABLE vs. Tampa Bay.",
+    status: "active",
+    injuryNote: "Slot return · drafted by ATL 2019, back from CHI Wednesday (Oct 21), first Week 7 report: limited (shoulder) (atlantafalcons.com). Friday (Oct 23), final Week 7 report (atlantafalcons.com): limited (shoulder) and QUESTIONABLE. Sunday (Oct 25): INACTIVE vs. San Francisco (atlantafalcons.com). Watch the first Week 8 report Wednesday (Oct 28). Wednesday (Oct 28), first Week 8 report (buccaneers.com, Falcons Wire): limited (shoulder). Thursday (Oct 29, atlantafalcons.com): limited (shoulder). Friday (Oct 30), final Week 8 report (atlantafalcons.com): limited (shoulder), listed QUESTIONABLE vs. Tampa Bay. Not on the inactive lists for Week 8 at Tampa Bay or Week 9 vs. Cincinnati in Madrid (Falcons Wire, Nov 8), and not on the Week 9 injury report. Status moved to active.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/3917914.png",
     contract: { years: 1, total: 2400000, guaranteed: 1000000, apy: 2400000, throughYear: 2026, cap2026: 2400000 },
     career: [
@@ -703,8 +703,8 @@ export const PLAYERS = [
     acquired: "draft-2025-R1-P26",
     stats: { tackles: 31, sacks: 4.5 },
     form: 7.6,
-    status: "questionable",
-    injuryNote: "Reinstated by the NFL on Monday, Nov 2, after serving an eight-game suspension under the Personal Conduct Policy, and added to the 53 with a one-week roster exemption (ESPN, Atlanta Falcons On SI); Jared Ivey and Drake Jackson were waived the same day. Expected to return to practice Wednesday (Nov 4) and eligible for Week 9 vs. Cincinnati in Madrid; Stefanski is not sure how much he will play in his first game back (ESPN). Led Atlanta with 10.5 sacks as a rookie in 2025 and finished third in Defensive Rookie of the Year voting. Remains in a pretrial diversion program. History: Suspended 8 games (NFL Personal Conduct Policy, announced Aug 14) · ban now in effect (began Aug 30, the cutdown deadline), eligible to return Nov 2 (week of Bengals game in Madrid) · does not count against the 53-man limit while suspended · still in Miami-Dade pretrial diversion program · Wednesday (Nov 4), estimated Week 9 report after a walkthrough on arrival in Madrid (atlantafalcons.com): full (not injury related) in his first session back. Stefanski (AP, Nov 4): 'We'll have a full-speed practice Thursday or Friday of this week and see where James is... I don't have an exact number of snaps just yet.' Moves to the top of the tracker's LEDGE ladder with Ebukam on IR; the team has not announced a starter or snap count. Thursday (Nov 5), first full practice in Madrid (atlantafalcons.com official report): full participant (not injury related) in his first full-speed practice back. Friday (Nov 6), final Week 9 report (atlantafalcons.com): limited after a back 'flare up' in practice and listed QUESTIONABLE (back). Stefanski said the team will monitor him over the weekend and expects to know more in the next 24 to 48 hours (AP). DC Jeff Ulbrich had said Thursday that Pearce would play a pure pass-rush role on a pitch count (AP). Saturday (Nov 7): officially activated from the suspended list for Sunday's game in Madrid, but still listed questionable with the back issue that flared up in Friday's practice; Stefanski said the team would monitor him through the weekend (atlantafalcons.com, NFL Trade Rumors, Atlanta Falcons On SI via Yahoo, Nov 7).",
+    status: "active",
+    injuryNote: "Reinstated by the NFL on Monday, Nov 2, after serving an eight-game suspension under the Personal Conduct Policy, and added to the 53 with a one-week roster exemption (ESPN, Atlanta Falcons On SI); Jared Ivey and Drake Jackson were waived the same day. Expected to return to practice Wednesday (Nov 4) and eligible for Week 9 vs. Cincinnati in Madrid; Stefanski is not sure how much he will play in his first game back (ESPN). Led Atlanta with 10.5 sacks as a rookie in 2025 and finished third in Defensive Rookie of the Year voting. Remains in a pretrial diversion program. History: Suspended 8 games (NFL Personal Conduct Policy, announced Aug 14) · ban now in effect (began Aug 30, the cutdown deadline), eligible to return Nov 2 (week of Bengals game in Madrid) · does not count against the 53-man limit while suspended · still in Miami-Dade pretrial diversion program · Wednesday (Nov 4), estimated Week 9 report after a walkthrough on arrival in Madrid (atlantafalcons.com): full (not injury related) in his first session back. Stefanski (AP, Nov 4): 'We'll have a full-speed practice Thursday or Friday of this week and see where James is... I don't have an exact number of snaps just yet.' Moves to the top of the tracker's LEDGE ladder with Ebukam on IR; the team has not announced a starter or snap count. Thursday (Nov 5), first full practice in Madrid (atlantafalcons.com official report): full participant (not injury related) in his first full-speed practice back. Friday (Nov 6), final Week 9 report (atlantafalcons.com): limited after a back 'flare up' in practice and listed QUESTIONABLE (back). Stefanski said the team will monitor him over the weekend and expects to know more in the next 24 to 48 hours (AP). DC Jeff Ulbrich had said Thursday that Pearce would play a pure pass-rush role on a pitch count (AP). Saturday (Nov 7): officially activated from the suspended list for Sunday's game in Madrid, but still listed questionable with the back issue that flared up in Friday's practice; Stefanski said the team would monitor him through the weekend (atlantafalcons.com, NFL Trade Rumors, Atlanta Falcons On SI via Yahoo, Nov 7). Sunday (Nov 8): active in Madrid despite the questionable tag (Falcons Wire inactives list) and made his 2026 debut, but had limited play in the 34-17 loss to Cincinnati (AP via ESPN); no stats were reported. Status moved to active after he played.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/5081394.png",
     contract: { years: 4, total: 14500000, guaranteed: 14500000, apy: 3625000, throughYear: 2028, cap2026: 3350000 },
     career: [{ years: "2025–", team: "Atlanta Falcons", type: "NFL" }],
@@ -870,8 +870,8 @@ export const PLAYERS = [
     acquired: "fa-2026",
     stats: { tackles: 92, tfl: 7, sacks: 2, int_def: 1 },
     form: 8.0,
-    status: "questionable",
-    injuryNote: "Arm. Injured in the first half of the 31-23 loss to Chicago (Oct 18) and ruled out late in the second quarter (atlantafalcons.com); Stefanski had no update Monday (Oct 19, AP). Had battled a hamstring issue through Weeks 4-6 practices without missing a game. MIKE · 3yr/$30M FA signing from Las Vegas. Wednesday (Oct 21), first Week 7 report: did not participate, with the injury listed as forearm (atlantafalcons.com). Did not practice Wednesday or Thursday (Oct 21-22, forearm) of 49ers week (official report via 49ers Webzone). Friday (Oct 23), final Week 7 report (atlantafalcons.com): did not practice and ruled OUT vs. San Francisco (forearm). Status kept at questionable because the tracker schema has no single-game 'out' value. Wednesday (Oct 28), first Week 8 report (buccaneers.com, Falcons Wire): did not practice (forearm). Thursday (Oct 29, atlantafalcons.com): returned to practice, limited (forearm). Friday (Oct 30), final Week 8 report (atlantafalcons.com): limited (forearm), listed QUESTIONABLE vs. Tampa Bay. Saturday (Oct 31): downgraded to OUT vs. Tampa Bay (forearm), his second straight missed game; Kendal Daniels expected to wear the green dot with Harold Perkins Jr. beside him (atlantafalcons.com). Wednesday (Nov 4), estimated Week 9 report after a walkthrough on arrival in Madrid (atlantafalcons.com): limited (forearm). Thursday (Nov 5), first full practice in Madrid (atlantafalcons.com official report): limited (forearm) again. Friday (Nov 6), final Week 9 report (atlantafalcons.com): upgraded to full (forearm) and listed QUESTIONABLE; the team left the door open for his return.",
+    status: "active",
+    injuryNote: "Arm. Injured in the first half of the 31-23 loss to Chicago (Oct 18) and ruled out late in the second quarter (atlantafalcons.com); Stefanski had no update Monday (Oct 19, AP). Had battled a hamstring issue through Weeks 4-6 practices without missing a game. MIKE · 3yr/$30M FA signing from Las Vegas. Wednesday (Oct 21), first Week 7 report: did not participate, with the injury listed as forearm (atlantafalcons.com). Did not practice Wednesday or Thursday (Oct 21-22, forearm) of 49ers week (official report via 49ers Webzone). Friday (Oct 23), final Week 7 report (atlantafalcons.com): did not practice and ruled OUT vs. San Francisco (forearm). Status kept at questionable because the tracker schema has no single-game 'out' value. Wednesday (Oct 28), first Week 8 report (buccaneers.com, Falcons Wire): did not practice (forearm). Thursday (Oct 29, atlantafalcons.com): returned to practice, limited (forearm). Friday (Oct 30), final Week 8 report (atlantafalcons.com): limited (forearm), listed QUESTIONABLE vs. Tampa Bay. Saturday (Oct 31): downgraded to OUT vs. Tampa Bay (forearm), his second straight missed game; Kendal Daniels expected to wear the green dot with Harold Perkins Jr. beside him (atlantafalcons.com). Wednesday (Nov 4), estimated Week 9 report after a walkthrough on arrival in Madrid (atlantafalcons.com): limited (forearm). Thursday (Nov 5), first full practice in Madrid (atlantafalcons.com official report): limited (forearm) again. Friday (Nov 6), final Week 9 report (atlantafalcons.com): upgraded to full (forearm) and listed QUESTIONABLE; the team left the door open for his return. Sunday (Nov 8): not on the inactive list for the 34-17 loss to Cincinnati in Madrid (Falcons Wire), so he was active for the first time since the Oct 18 forearm injury. Status moved to active.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4037626.png",
     contract: { years: 3, total: 30000000, guaranteed: 18000000, apy: 10000000, throughYear: 2028, cap2026: 8500000 },
     career: [
@@ -1184,8 +1184,8 @@ export const PLAYERS = [
     acquired: "draft-2026-R2-P48",
     stats: {},
     form: 0,
-    status: "questionable",
-    injuryNote: "Started at outside cornerback vs. Chicago (Oct 18) with C.J. Henderson (groin) out, his third career start and first on the outside. Was evaluated for a concussion and also suffered a stinger, was listed questionable to return, and came back in the third quarter (atlantafalcons.com). AP lists the injury as his left shoulder; Stefanski had no update Monday (Oct 19). Watch the Week 7 injury report. Wednesday (Oct 21), first Week 7 report: limited, with the injury now listed as hamstring (atlantafalcons.com). Friday (Oct 23), final Week 7 report (atlantafalcons.com): limited, injury now listed as back, and QUESTIONABLE. Saturday (Oct 24): an illness was added to his listing and he remains QUESTIONABLE for Sunday (atlantafalcons.com, NBC Sports / PFT). Sunday (Oct 25): ruled out and INACTIVE vs. San Francisco (back, illness) (atlantafalcons.com). Status kept at questionable because the tracker schema has no single-game 'out' value; watch the first Week 8 report Wednesday (Oct 28). Wednesday (Oct 28), first Week 8 report (buccaneers.com, Falcons Wire): limited (illness). Thursday (Oct 29): limited, illness per atlantafalcons.com (The Falcoholic listed hamstring). Friday (Oct 30), final Week 8 report (atlantafalcons.com): limited (illness), listed QUESTIONABLE vs. Tampa Bay.",
+    status: "active",
+    injuryNote: "Started at outside cornerback vs. Chicago (Oct 18) with C.J. Henderson (groin) out, his third career start and first on the outside. Was evaluated for a concussion and also suffered a stinger, was listed questionable to return, and came back in the third quarter (atlantafalcons.com). AP lists the injury as his left shoulder; Stefanski had no update Monday (Oct 19). Watch the Week 7 injury report. Wednesday (Oct 21), first Week 7 report: limited, with the injury now listed as hamstring (atlantafalcons.com). Friday (Oct 23), final Week 7 report (atlantafalcons.com): limited, injury now listed as back, and QUESTIONABLE. Saturday (Oct 24): an illness was added to his listing and he remains QUESTIONABLE for Sunday (atlantafalcons.com, NBC Sports / PFT). Sunday (Oct 25): ruled out and INACTIVE vs. San Francisco (back, illness) (atlantafalcons.com). Status kept at questionable because the tracker schema has no single-game 'out' value; watch the first Week 8 report Wednesday (Oct 28). Wednesday (Oct 28), first Week 8 report (buccaneers.com, Falcons Wire): limited (illness). Thursday (Oct 29): limited, illness per atlantafalcons.com (The Falcoholic listed hamstring). Friday (Oct 30), final Week 8 report (atlantafalcons.com): limited (illness), listed QUESTIONABLE vs. Tampa Bay. Not on the inactive list for Week 9 vs. Cincinnati in Madrid (Falcons Wire, Nov 8), and not on the Week 9 injury report. Status moved to active.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4870988.png",
     contract: { years: 4, total: 8500000, guaranteed: 4200000, apy: 2125000, throughYear: 2029, cap2026: 1400000 },
     career: [
@@ -1209,7 +1209,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "questionable",
-    injuryNote: "Hamstring. Left the 16-0 loss at Tampa Bay (Nov 1) with a hamstring injury and did not return (AP). Ruled out for Week 9 vs. Cincinnati in Madrid by Stefanski on Monday (Nov 2), who was 'not sure, long term, how many games' the injury will cost (AJC); not ruled out of missing Week 10 vs. Kansas City as well. Jahan Dotson takes over punt returns and Olamide Zaccheaus figures to absorb slot snaps (AJC). Status kept at questionable because the tracker schema has no single-game 'out' value. Wednesday (Nov 4), estimated Week 9 report after a walkthrough on arrival in Madrid (atlantafalcons.com): did not participate (hamstring). Thursday (Nov 5), first full practice in Madrid (atlantafalcons.com official report): did not participate (hamstring); already ruled out for Sunday. Friday (Nov 6), final Week 9 report (atlantafalcons.com): did not practice (hamstring) and officially ruled OUT vs. Cincinnati.",
+    injuryNote: "Hamstring. Left the 16-0 loss at Tampa Bay (Nov 1) with a hamstring injury and did not return (AP). Ruled out for Week 9 vs. Cincinnati in Madrid by Stefanski on Monday (Nov 2), who was 'not sure, long term, how many games' the injury will cost (AJC); not ruled out of missing Week 10 vs. Kansas City as well. Jahan Dotson takes over punt returns and Olamide Zaccheaus figures to absorb slot snaps (AJC). Status kept at questionable because the tracker schema has no single-game 'out' value. Wednesday (Nov 4), estimated Week 9 report after a walkthrough on arrival in Madrid (atlantafalcons.com): did not participate (hamstring). Thursday (Nov 5), first full practice in Madrid (atlantafalcons.com official report): did not participate (hamstring); already ruled out for Sunday. Friday (Nov 6), final Week 9 report (atlantafalcons.com): did not practice (hamstring) and officially ruled OUT vs. Cincinnati. Sunday (Nov 8): INACTIVE for the 34-17 loss to Cincinnati in Madrid (Falcons Wire). Next chance: Week 10 vs. Kansas City (Nov 15); watch Wednesday's first report.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4870612.png",
     contract: { years: 4, total: 5800000, guaranteed: 1850000, apy: 1450000, throughYear: 2029, cap2026: 1100000 },
     career: [
@@ -1490,7 +1490,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "active",
-    injuryNote: "On the practice squad. Elevated for Week 7 vs. San Francisco (Oct 24) with Brian Robinson Jr. out; returned the second-half kickoff 38 yards to set up the go-ahead touchdown in the 29-20 win (atlantafalcons.com). A former Bears sixth-round pick (2021) with 1,957 career rushing yards and nine TDs; spent August with the 49ers. Elevated again Saturday (Oct 31) for Week 8 at Tampa Bay, the RB2 behind Bijan Robinson for a second straight week with Brian Robinson Jr. out (atlantafalcons.com, Falcons Wire). Saturday (Nov 7): signed from the practice squad to the 53-man roster (he had used both standard elevations in Weeks 7 and 8) as Brian Robinson Jr. went on injured reserve, making him Bijan Robinson's backup for Madrid (atlantafalcons.com, NFL Trade Rumors, Atlanta Falcons On SI via Yahoo, Nov 7).",
+    injuryNote: "On the practice squad. Elevated for Week 7 vs. San Francisco (Oct 24) with Brian Robinson Jr. out; returned the second-half kickoff 38 yards to set up the go-ahead touchdown in the 29-20 win (atlantafalcons.com). A former Bears sixth-round pick (2021) with 1,957 career rushing yards and nine TDs; spent August with the 49ers. Elevated again Saturday (Oct 31) for Week 8 at Tampa Bay, the RB2 behind Bijan Robinson for a second straight week with Brian Robinson Jr. out (atlantafalcons.com, Falcons Wire). Saturday (Nov 7): signed from the practice squad to the 53-man roster (he had used both standard elevations in Weeks 7 and 8) as Brian Robinson Jr. went on injured reserve, making him Bijan Robinson's backup for Madrid (atlantafalcons.com, NFL Trade Rumors, Atlanta Falcons On SI via Yahoo, Nov 7). Sunday (Nov 8): active as Bijan Robinson's backup in Madrid (not on the inactive list, Falcons Wire). Note: the ESPN roster API (Nov 9) lists him at No. 40; the tracker keeps No. 25 until the team roster confirms a change.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4035886.png",
     career: [
       { years: "2026–", team: "Atlanta Falcons", type: "NFL · practice squad" },
@@ -2064,15 +2064,15 @@ export const RSS_FEEDS = [
 // NEXT GAME (null during offseason)
 // =========================================
 export const NEXT_GAME = {
-  week: 9,
-  opp: "Cincinnati Bengals",
-  oppAbbr: "CIN",
+  week: 10,
+  opp: "Kansas City Chiefs",
+  oppAbbr: "KC",
   home: true,
-  venue: "Santiago Bernabéu · Madrid, Spain",
-  date: "2026-11-08",
-  kickoff: "9:30 AM ET",
-  tv: "NFL Network",
-  note: "Atlanta (3-5) is the designated home team for the NFL's regular-season game at Real Madrid's Santiago Bernabéu, a 9:30 AM ET (3:30 PM local) kickoff on Sunday, Nov 8 (NFL Network); inactives are due about 8 AM ET. Saturday's moves (atlantafalcons.com, Nov 7): OLB James Pearce Jr. was activated from the suspended list but remains questionable (back); LB Yasir Abdullah and WR Beaux Collins were activated from injured reserve; RB Brian Robinson Jr. (hamstring) went on IR and RB Khalil Herbert was signed from the practice squad to the 53; DE Drake Jackson was elevated. OUT: WR Zachariah Branch (hamstring) and OT Cameron Williams (ankle, downgraded Saturday). ILB Divine Deablo (forearm) is questionable. DE Samson Ebukam is on injured reserve. Cincinnati (5-2, three straight wins) final report (A to Z Sports): S Kyle Dugger (quad) is OUT and DE Cedric Johnson (ankle/foot) is questionable. Line: CIN -3, total 52.5 (DraftKings via CBS Sports, Nov 7). Atlanta sits a half-game behind Carolina (3-4) and level with Tampa Bay (3-5), which holds the head-to-head edge.",
+  venue: "Mercedes-Benz Stadium · Atlanta",
+  date: "2026-11-15",
+  kickoff: "1:00 PM ET",
+  tv: "CBS",
+  note: "Back home after Madrid: Atlanta (3-6, last in the NFC South) hosts Kansas City (6-2) at 1:00 PM ET on Sunday, Nov 15 (CBS), the last game before the Week 11 bye. The Chiefs beat the Jets 35-12 in Week 9 (SI). Opening line: KC -3, total 46.5, moneylines KC -175 / ATL +145 (bet365 via FOX Sports, Nov 8); Covers lists KC -3.5. Falcons injuries to watch: WR Zachariah Branch (hamstring) was inactive in Madrid; RB Brian Robinson Jr. and DE Samson Ebukam are on injured reserve; OLB James Pearce Jr. (back) played limited snaps in his return. First injury report Wednesday (Nov 11).",
 };
 
 // =========================================
@@ -2239,7 +2239,7 @@ export const SCHEDULE_2026 = [
   },
   {
     week: 9,
-    status: "confirmed",
+    status: "final",
     opponent: "CIN",
     opponentName: "Cincinnati Bengals",
     side: "home",
@@ -2247,7 +2247,10 @@ export const SCHEDULE_2026 = [
     kickoffET: "9:30 AM ET",
     tv: "NFL Network",
     venue: "Santiago Bernabéu, Madrid",
-    note: "International · Falcons HOST Bengals at Real Madrid's Bernabéu. Bijan vs. Burrow / Chase.",
+    result: "L",
+    atlScore: 17,
+    oppScore: 34,
+    note: "Bengals 34-17 at the Bernabéu (attendance 78,660). Atlanta scored 10 points on its first two drives (Michael Penix Jr. to Charlie Woerner for the opening TD) and led 10-7 after one quarter, then Cincinnati scored on every first-half possession to lead 24-10 at the break. Joe Burrow went 24-of-29 for 271 yards and three TDs and ran for a fourth; Ja'Marr Chase had 10 catches for 155 yards and a 47-yard TD, and Tee Higgins caught two TDs. Penix: 20-of-31, 162 yards, 1 TD, 1 INT (Barrett Carter) and a career-high 50 rushing yards. Bijan Robinson: 19-100 and a 1-yard TD, plus 6-47 receiving. Drake London led the receivers with 5-68. Atlanta had 12 penalties for 88 yards and Nick Folk missed a 38-yard field goal. (AP via ESPN, Bengals.com, NFL.com, ClutchPoints)",
   },
   {
     week: 10,
@@ -2432,36 +2435,37 @@ export const RESULTS_2026 = [
   { date: "2026-10-18", opp: "CHI", home: true, atlScore: 23, oppScore: 31, result: "L" },
   { date: "2026-10-25", opp: "SF", home: true, atlScore: 29, oppScore: 20, result: "W" },
   { date: "2026-11-01", opp: "TB", home: false, atlScore: 0, oppScore: 16, result: "L" },
+  { date: "2026-11-08", opp: "CIN", home: true, atlScore: 17, oppScore: 34, result: "L" },
 ];
 
 // =========================================
-// NFC SOUTH 2026 STANDINGS — live (through Week 8 Sunday, Nov 1)
-// Tampa Bay shut out Atlanta 16-0, so the Bucs (3-5, 2-0 in the division) move into second ahead of the
-// Falcons (3-5). Carolina (3-4) lost at Green Bay on Thursday night but stays on top; New Orleans is 2-5.
-// Records and order per ESPN / Panthers Wire (Yahoo Sports, Nov 1).
+// NFC SOUTH 2026 STANDINGS — live (through Week 9 Sunday night, Nov 8)
+// Atlanta lost 34-17 to Cincinnati in Madrid and Tampa Bay lost to Chicago on Sunday night, so both are 3-6.
+// Carolina (3-5) lost 26-21 to Denver but stays on top; New Orleans (3-5) beat Cleveland 23-22.
+// Records and order per Bleacher Report (after Week 9 SNF) and SI (Nov 8-9).
 // =========================================
 export const NFC_SOUTH_STANDINGS_2026 = [
-  { team: "Carolina Panthers", code: "CAR", wins: 3, losses: 4, pct: 0.429, divisionFinish: 1 },
-  { team: "Tampa Bay Buccaneers", code: "TB", wins: 3, losses: 5, pct: 0.375, divisionFinish: 2 },
-  { team: "Atlanta Falcons", code: "ATL", wins: 3, losses: 5, pct: 0.375, divisionFinish: 3, isFalcons: true },
-  { team: "New Orleans Saints", code: "NO", wins: 2, losses: 5, pct: 0.286, divisionFinish: 4 },
+  { team: "Carolina Panthers", code: "CAR", wins: 3, losses: 5, pct: 0.375, divisionFinish: 1 },
+  { team: "New Orleans Saints", code: "NO", wins: 3, losses: 5, pct: 0.375, divisionFinish: 2 },
+  { team: "Tampa Bay Buccaneers", code: "TB", wins: 3, losses: 6, pct: 0.333, divisionFinish: 3 },
+  { team: "Atlanta Falcons", code: "ATL", wins: 3, losses: 6, pct: 0.333, divisionFinish: 4, isFalcons: true },
 ];
 
 // =========================================
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-11-08T12:30:00Z",
+  generatedAt: "2026-11-09T09:30:00Z",
   cover: {
-    kicker: "Madrid game day, Sunday: Saturday's roster moves activate James Pearce Jr. from suspension and Yasir Abdullah and Beaux Collins from injured reserve, put Brian Robinson Jr. on IR and sign Khalil Herbert to the 53; Pearce is still questionable with his back",
-    headLine1: "Game day",
-    headEm: "at the Bernabéu.",
-    headLine3: "Pearce is activated but still questionable as Atlanta (3-5) meets Cincinnati (5-2) at 9:30 AM ET; inactives land about 8 AM ET.",
-    deck: "Saturday (Nov 7, atlantafalcons.com): the Falcons activated James Pearce Jr. from the suspended list after his eight-game ban, but he remains questionable with a back injury and Stefanski said the team would monitor him through the weekend. LB Yasir Abdullah and WR Beaux Collins were activated from injured reserve; OT Cameron Williams was downgraded to out. RB Brian Robinson Jr. (hamstring) went on IR and Khalil Herbert was signed off the practice squad to back up Bijan Robinson. DE Drake Jackson was elevated for a third time. Line: CIN -3, total 52.5. Kickoff 9:30 AM ET (3:30 PM in Madrid), NFL Network.",
+    kicker: "Bengals 34, Falcons 17 in Madrid: Burrow and Chase take over after Atlanta's 10-point start, 12 penalties and a missed Folk field goal sink the Falcons, who fall to 3-6 and last in the NFC South with Kansas City up next",
+    headLine1: "Lost in",
+    headEm: "Madrid.",
+    headLine3: "Atlanta led 10-7 after one quarter, then Cincinnati scored on every first-half drive. Falcons 3-6, last in the NFC South; Chiefs at home Sunday.",
+    deck: "Sunday (Nov 8, Santiago Bernabéu, 78,660): Joe Burrow went 24-of-29 for 271 yards and accounted for four touchdowns, Ja'Marr Chase caught 10 passes for 155 yards (142 of them in the first half) and Tee Higgins scored twice. Michael Penix Jr. was 20-of-31 for 162 yards with a TD to Charlie Woerner, one interception and a career-high 50 rushing yards; Bijan Robinson ran 19 times for 100 yards and Atlanta's first rushing TD since Week 4. Twelve penalties for 88 yards and a missed 38-yarder by Nick Folk. Stefanski: 'We have to be better. And I'm talking all of us.' Next: Kansas City (6-2) at Mercedes-Benz Stadium, Sunday at 1 PM ET (CBS), opening KC -3.",
     byline: "The Tracker Desk",
     filedFrom: "Madrid",
     photoId: "bijan",
-    stampLabel: "Madrid game day · Sun Nov 8 · ATL 3-5, 3rd in NFC South vs. CIN 5-2 · Activated: Pearce (Q, back), Abdullah, Collins · B. Robinson Jr. to IR, Herbert to the 53, D. Jackson elevated · OUT: Branch, C. Williams · CIN: Dugger OUT · Line: CIN -3, O/U 52.5 · Kickoff 9:30 AM ET, NFL Network",
+    stampLabel: "Week 9 final · Sun Nov 8 · CIN 34, ATL 17 at the Bernabéu · ATL 3-6, 4th in NFC South · Penix 20-31, 162, TD, INT · Bijan 19-100, TD · Burrow 4 total TDs, Chase 10-155 · 12 ATL penalties · Next: vs. KC (6-2), Sun Nov 15, 1 PM ET, CBS · Open: KC -3, O/U 46.5",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -3146,9 +3150,13 @@ export const NEWS_DIGEST = {
     // B. Robinson Jr. and Branch out, Pearce questionable with a back flare-up, Bowman cleared, Ivey back on the PS); pointer and pearce-jr fallback unchanged.
     // STATUS (2026-11-08 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto Madrid game day (Saturday activations:
     // Pearce, Abdullah, Collins; B. Robinson Jr. to IR; Herbert to the 53); pointer and pearce-jr fallback unchanged.
+    // STATUS (2026-11-09 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto the 34-17 loss to Cincinnati in
+    // Madrid; bijan fallback photoId kept (100 yards and a TD). coverImageUrl pointer unchanged per the run rules.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
+    "AP (ESPN, Nov 8)", "Bengals.com (Nov 8)", "Yahoo Sports / dpa (Nov 8)", "NFL.com / The Athletic (Nov 8)", "Falcons Wire (Yahoo, Nov 8)", "Atlanta Falcons On SI (Yahoo, Nov 8)",
+    "ClutchPoints (Yahoo, Nov 9)", "NFL.com Week 9 What We Learned (Nov 8)", "SI playoff picture (Nov 8)", "Bleacher Report standings (Nov 8)", "FOX Sports odds (Nov 8)", "Covers (Nov 8)", "ESPN roster API (Nov 9)",
     "atlantafalcons.com (Nov 7)", "NFL Trade Rumors (Nov 7)", "Atlanta Falcons On SI (Yahoo, Nov 7)", "Falcons Wire (Yahoo, Nov 7)", "NBC Sports / PFT (Nov 7)", "CBS Sports (Nov 7)",
     "atlantafalcons.com (Nov 6)", "AP (Atlanta News First / Yahoo, Nov 6)", "ClutchPoints (Yahoo, Nov 6)", "Falcons Wire (Yahoo, Nov 5-6)", "A to Z Sports (Nov 6)", "DAZN (Nov 4)", "WKRC Local 12 (Nov 7)", "WagerTalk (Nov 5)", "ESPN roster API (Nov 7)",
     "bengals.com (Nov 5)", "Cincinnati Enquirer (Yahoo, Nov 5)", "Falcons Wire (Yahoo, Nov 3)", "NFL Trade Rumors (Nov 3)", "ESPN (Nov 5)", "AP (Yahoo, Nov 5)", "Action Network",
@@ -3209,11 +3217,81 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "Saturday moves: Pearce, Abdullah and Collins activated",
-      detail: "atlantafalcons.com (Saturday, Nov 7): Atlanta activated James Pearce Jr. from the suspended list after his eight-game ban and brought LB Yasir Abdullah and WR Beaux Collins back from injured reserve. DE Drake Jackson was elevated from the practice squad for the third time this season (Weeks 5, 6 and 9), so he would need a 53-man contract to play again after Sunday.",
+      title: "Bengals 34, Falcons 17 in Madrid",
+      detail: "AP via ESPN (Sunday, Nov 8): Atlanta scored 10 points on its first two drives, including Michael Penix Jr.'s opening-drive TD to Charlie Woerner, but Cincinnati scored on every first-half possession to lead 24-10 at the break and won its fourth straight. Joe Burrow went 24-of-29 for 271 yards with three TD passes and a TD run; Ja'Marr Chase had 10 catches for 155 yards and Tee Higgins caught two TDs. Falcons 3-6, a second straight loss, before 78,660 at the Bernabéu.",
+      category: "games",
+      sourceUrl: "https://www.espn.com/nfl/recap/_/gameId/401873038",
+      sourceLabel: "AP (ESPN)",
+    },
+    {
+      title: "Stefanski: 'I'm talking all of us'",
+      detail: "Atlanta Falcons On SI and NFL.com (Sunday, Nov 8, postgame): 'Frustrating, disappointing,' Stefanski said. 'We have to be better. And I'm talking all of us.' He added, 'We had too many self-inflicted things today that are going to make it really hard to win against anyone,' and declined to make 'any proclamations on our year right now.'",
+      category: "coaching",
+      sourceUrl: "https://www.si.com/nfl/falcons/onsi/falcons-madrid-debacle-raises-bigger-questions-about-seasons-future",
+      sourceLabel: "Atlanta Falcons On SI / NFL.com",
+    },
+    {
+      title: "Twelve penalties: 'We're just beating ourselves'",
+      detail: "NFL.com (The Athletic) and Atlanta Falcons On SI (Sunday, Nov 8): Atlanta was flagged 12 times for 88 yards, including a fourth-quarter holding call on Kyle Pitts. Penix, speaking in Real Madrid's locker room: 'We're just beating ourselves. Too many penalties.' Drake London and Jawaan Taylor declined interviews.",
+      category: "games",
+      sourceUrl: "https://www.nfl.com/news/falcons-stumble-vs-bengals-in-spain-are-still-searching-for-answers-not-good-enough",
+      sourceLabel: "NFL.com / The Athletic",
+    },
+    {
+      title: "Penix: fewer turnovers, career-high 50 rushing yards",
+      detail: "ESPN and ClutchPoints (Nov 8-9): Penix finished 20-of-31 for 162 yards, one TD and one interception (LB Barrett Carter, fourth quarter), three fewer picks than at Tampa, and ran for a career-high 50 yards. Drake London led the receivers with 5 catches for 68 yards. 'We know what happened on that field. We know that's not who we want to be this season,' Penix said (NFL.com).",
+      category: "games",
+      sourceUrl: "https://www.espn.com/nfl/recap/_/gameId/401873038",
+      sourceLabel: "ESPN / ClutchPoints",
+    },
+    {
+      title: "Folk on notice after missed 38-yarder",
+      detail: "ClutchPoints via Yahoo (Monday, Nov 9): Nick Folk went 1-for-2 on field goals in Madrid, missing from 38 yards, a week after his 53-yard miss at Tampa. Stefanski: 'I expect Nick to make his kicks. Nick expects to make his kicks. … He knows we're counting on him.' No kicker workouts have been reported.",
+      category: "general",
+      sourceUrl: "https://sports.yahoo.com/articles/falcons-kevin-stefanski-puts-nick-002043624.html",
+      sourceLabel: "ClutchPoints (Yahoo)",
+    },
+    {
+      title: "Bijan back over 100",
+      detail: "ESPN and Atlanta Falcons On SI (Sunday, Nov 8): Bijan Robinson ran 19 times for 100 yards, including 42 on three carries on the opening drive, and scored on a 1-yard run in the third quarter, Atlanta's first rushing TD since Week 4. He added 6 catches for 47 yards, 147 yards from scrimmage.",
+      category: "games",
+      sourceUrl: "https://www.espn.com/nfl/recap/_/gameId/401873038",
+      sourceLabel: "ESPN / Atlanta Falcons On SI",
+    },
+    {
+      title: "Pearce plays in his return, on limited snaps",
+      detail: "Falcons Wire and AP (Sunday, Nov 8): James Pearce Jr. was active despite the back injury that left him questionable, and made his 2026 debut after the eight-game suspension, but AP described his play as limited. No stats were reported for him.",
       category: "injuries",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-james-pearce-jr-brian-robinson-khalil-herbert",
-      sourceLabel: "atlantafalcons.com",
+      sourceUrl: "https://sports.yahoo.com/articles/falcons-list-inactives-whos-whos-130141241.html",
+      sourceLabel: "Falcons Wire / AP",
+    },
+    {
+      title: "Madrid inactives: Branch, Bowman, Drake Jackson",
+      detail: "Falcons Wire (Sunday, Nov 8): Atlanta's inactives were WR Zachariah Branch (hamstring), QB Andy Dalton (emergency third QB), QB Jack Strand, DB Billy Bowman Jr., DB Robert Longerbeam and DE Drake Jackson. Divine Deablo, Olamide Zaccheaus and Avieon Terrell were all active. No in-game injuries were reported.",
+      category: "injuries",
+      sourceUrl: "https://sports.yahoo.com/articles/falcons-list-inactives-whos-whos-130141241.html",
+      sourceLabel: "Falcons Wire",
+    },
+    {
+      title: "Watts and Bates: 'stop being on this roller coaster'",
+      detail: "NFL.com (The Athletic, Nov 8): Xavier Watts said, 'We didn't show up to play,' and 'Just got to stop being on this roller coaster.' Jessie Bates III pointed to the division: 'You look at our division, we're still a game and a half or a game behind everyone.' Atlanta has lost four of five.",
+      category: "coaching",
+      sourceUrl: "https://www.nfl.com/news/falcons-stumble-vs-bengals-in-spain-are-still-searching-for-answers-not-good-enough",
+      sourceLabel: "NFL.com / The Athletic",
+    },
+    {
+      title: "NFC South: everyone lost but New Orleans",
+      detail: "Bleacher Report and SI (Nov 8-9): Carolina lost 26-21 to Denver and Tampa Bay lost to Chicago on Sunday night, while New Orleans beat Cleveland 23-22. Order: Carolina 3-5, New Orleans 3-5, Tampa Bay 3-6, Atlanta 3-6. Bleacher Report has Atlanta 13th in the NFC.",
+      category: "games",
+      sourceUrl: "https://bleacherreport.com/articles/25530814-nfl-playoff-bracket-picture-2026-27-and-afc-nfc-standings-after-week-9-snf",
+      sourceLabel: "Bleacher Report / SI",
+    },
+    {
+      title: "Chiefs next: KC opens -3 in Atlanta",
+      detail: "FOX Sports (Nov 8): Kansas City (6-2, a 35-12 winner over the Jets) opens as a 3-point road favorite for Sunday's 1 PM ET game at Mercedes-Benz Stadium (CBS), total 46.5, moneylines KC -175 / ATL +145 at bet365. Covers lists KC -3.5. The Falcons' bye follows in Week 11.",
+      category: "games",
+      sourceUrl: "https://www.foxsports.com/stories/nfl/2026-nfl-odds-week-10-lines-spreads-results-all-14-games",
+      sourceLabel: "FOX Sports / Covers",
     },
     {
       title: "Brian Robinson Jr. to IR, Herbert signed to the 53",
@@ -3223,96 +3301,56 @@ export const NEWS_DIGEST = {
       sourceLabel: "Atlanta Falcons On SI",
     },
     {
-      title: "Pearce activated, but still questionable",
-      detail: "atlantafalcons.com and Falcons Wire (Saturday, Nov 7): Pearce is cleared to make his 2026 debut on the roster side, but he remains questionable with the back issue that flared up in Friday's practice, and Stefanski said the team would monitor him through the weekend. Falcons Wire thinks there is a good chance he sits; the inactives list is due about 8 AM ET, 90 minutes before kickoff.",
-      category: "injuries",
-      sourceUrl: "https://sports.yahoo.com/articles/falcons-downgrade-edge-james-pearce-174103806.html",
-      sourceLabel: "atlantafalcons.com / Falcons Wire",
-    },
-    {
-      title: "Cameron Williams downgraded to out",
-      detail: "atlantafalcons.com (Saturday, Nov 7): OT Cameron Williams (ankle), questionable on Friday's report, was ruled out and was not activated from injured reserve. WR Zachariah Branch (hamstring) is also out. Divine Deablo (forearm) stays questionable.",
-      category: "injuries",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-james-pearce-jr-brian-robinson-khalil-herbert",
-      sourceLabel: "atlantafalcons.com",
-    },
-    {
-      title: "Bengals rule out Kyle Dugger",
-      detail: "A to Z Sports (Friday, Nov 6): Cincinnati's final report rules out S Kyle Dugger (quad), who did not practice all week. DE Cedric Johnson (ankle/foot) went full Friday but is questionable, the Bengals' lone game-time decision. CB DJ Turner II (heel) and S Jordan Battle (hamstring) were full with no designation; DTs Jonathan Allen and B.J. Hill had rest days.",
-      category: "games",
-      sourceUrl: "https://atozsports.com/nfl/cincinnati-bengals-news/bengals-friday-injury-report-at-falcons-nfl-week-9-cedric-johnson-james-pearce-jr-questionable/",
-      sourceLabel: "A to Z Sports",
-    },
-    {
-      title: "Jared Ivey back on the practice squad",
-      detail: "Falcons Wire via Yahoo (Thursday, Nov 5): Jared Ivey, waived Monday when Pearce was reinstated, was signed to the final open practice-squad spot, listed as LB No. 51; no corresponding move was needed. It follows Tuesday's re-signing of DE Drake Jackson, when OT Colby Sorsdal was released.",
-      category: "general",
-      sourceUrl: "https://sports.yahoo.com/articles/falcons-sign-linebacker-final-practice-180951803.html",
-      sourceLabel: "Falcons Wire",
-    },
-    {
-      title: "Ulbrich on Chase and Higgins: 'Tee Higgins gets you'",
-      detail: "WKRC Local 12 (Saturday, Nov 7): DC Jeff Ulbrich on Joe Burrow: 'You have to keep him off balance.' On the receivers: 'If you hyperfocus all your attention on Ja'Marr, then Tee Higgins gets you.' Burrow said of his own offense, 'We're completing a lot of passes right now.'",
-      category: "coaching",
-      sourceUrl: "https://local12.com/sports/bengals/bengals-vs-falcons-in-madrid-3-keys-to-the-game-what-players-coaches-saying-prediction-preview-spain-international-kickoff-time-television",
-      sourceLabel: "WKRC Local 12",
-    },
-    {
-      title: "Stefanski on the Bernabéu: 'I don't take that for granted'",
-      detail: "DAZN (Nov 4): in his first Madrid press conference, Stefanski said, 'I don't take it for granted how special this place is relative to the global stage,' and that the team gets a Saturday walkthrough inside the stadium: 'I'll be taking some pictures.'",
-      category: "coaching",
-      sourceUrl: "https://dazn.com/en-GB/news/american-football/kevin-stefanski-atlanta-falcons-santiago-bernabeu-nfl-real-madrid-2026/6838seqyn0zp1vy2b54ecke2e",
-      sourceLabel: "DAZN",
-    },
-    {
-      title: "Rees and London: 'the margins are too small'",
-      detail: "atlantafalcons.com (Thursday, Nov 5): OC Tommy Rees said the staff showed players where they fell short at Tampa: 'when we fall short, the margins are too small to win football games.' Drake London on the film review: 'no hard feelings but we looked at it in an honest way.' Stefanski: 'We are excited about getting back to who we are as Falcons.'",
-      category: "coaching",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-offense-looking-to-get-back-to-who-they-are-in-spain",
-      sourceLabel: "atlantafalcons.com",
-    },
-    {
-      title: "Bijan: Madrid 'can be a culture changer'",
-      detail: "ESPN (Thursday, Nov 5, Madrid): Bijan Robinson, who has not scored since his 59-yard run against New Orleans on Oct 5, called Sunday 'something that can be a culture changer in the building' and admitted, 'I'll be honest, I don't feel like I'm playing like that right now.' Penix on the Tampa game: 'you kind of point the finger at yourself.'",
-      category: "games",
-      sourceUrl: "https://www.espn.com/nfl/story/_/id/50390044/bijan-robinson-says-win-madrid-wing-falcons-season",
-      sourceLabel: "ESPN",
-    },
-    {
-      title: "Zac Taylor goes looking for the World Cup",
-      detail: "AP (Thursday, Nov 5): the Bengals practiced at Spain's national team facility while Atlanta works at Real Madrid's complex. Taylor joked he went looking for Spain's World Cup trophy: 'It's not here. It's traveling around Spain.' Penix on the Bernabéu: 'We can't wait to go see it.' It is the seventh of a record nine international regular-season games.",
-      category: "general",
-      sourceUrl: "https://sports.yahoo.com/articles/bengals-coach-zac-taylor-goes-144312912.html",
-      sourceLabel: "AP",
-    },
-    {
       title: "Ebukam goes on injured reserve",
       detail: "atlantafalcons.com (Tuesday, Nov 3): DE Samson Ebukam was placed on IR with the hamstring injury he aggravated at Tampa, so he will miss at least four games. Branch, also ruled out for Madrid, has not been given an IR designation. Ebukam had 2.5 sacks in seven games after signing in March.",
       category: "injuries",
       sourceUrl: "https://www.atlantafalcons.com/news/falcons-place-de-samson-ebukam-on-injured-reserve",
       sourceLabel: "atlantafalcons.com",
     },
-    {
-      title: "Line holds at Bengals -3, total 52.5",
-      detail: "Action Network (Thursday, Nov 5): Cincinnati is -3 (-113) after opening -4.5, with the total at 52.5 and moneylines CIN -168 / ATL +141. FanDuel had CIN -3.5 and 51.5 on Monday (SI Betting).",
-      category: "games",
-      sourceUrl: "https://www.actionnetwork.com/nfl-game/bengals-falcons-score-odds-november-8-2026/290807",
-      sourceLabel: "Action Network / SI Betting",
-    },
-    {
-      title: "Bucs 16, Falcons 0: shut out in the Tampa rain",
-      detail: "AP and buccaneers.com (Sunday, Nov 1): in a driving rain that began just before kickoff, Tampa Bay beat Atlanta 16-0 on three Chase McLaughlin field goals (46, 34 and 42 yards) and a 4-yard Bucky Irving TD run in the third quarter. Nick Folk missed a 53-yard try on Atlanta's opening drive. The Falcons fall to 3-5; the Bucs move to 3-5 and 2-0 in the division.",
-      category: "games",
-      sourceUrl: "https://www.espn.com/nfl/recap?gameId=401873025",
-      sourceLabel: "AP (ESPN) / buccaneers.com",
-    },
   ],
 };
 
 export const INTERVIEWS = {
-  generatedAt: "2026-11-07T09:30:00Z",
-  windowLabel: "Madrid week · Nov 2 → Nov 8",
+  generatedAt: "2026-11-09T09:30:00Z",
+  windowLabel: "Game Week vs. Kansas City · Nov 9 → Nov 15",
   sessions: [
+    {
+      id: "stefanski-2026-11-08",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-11-08",
+      venue: "Santiago Bernabéu · Madrid, Spain",
+      session: "Week 9 vs. Cincinnati (Madrid) · Postgame Press Conference",
+      sourceUrl: "https://www.si.com/nfl/falcons/onsi/falcons-madrid-debacle-raises-bigger-questions-about-seasons-future",
+      summary: "After the 34-17 loss in Madrid dropped Atlanta to 3-6, Stefanski spread the blame across every phase and the coaching staff, pointed to self-inflicted mistakes, and refused to talk about the season as a whole. Quotes via Atlanta Falcons On SI, NFL.com (The Athletic), AP and ClutchPoints.",
+      pullQuote: "We have to be better. And I'm talking all of us.",
+      bullets: [
+        "On the mistakes: 'We had too many self-inflicted things today that are going to make it really hard to win against anyone' (Atlanta Falcons On SI)",
+        "On the season: 'I'm not making any proclamations on our year right now' (Atlanta Falcons On SI)",
+        "On carrying practice into games: 'You have to do it on Sundays. We didn't today' (NFL.com)",
+        "On Chase and Higgins: 'Those are two excellent players with an excellent quarterback' and 'There's not one answer to take away those guys' (NFL.com)",
+        "On Nick Folk after the missed 38-yarder: 'I expect Nick to make his kicks. Nick expects to make his kicks' (ClutchPoints)",
+      ],
+      topics: ["madrid", "week-9", "postgame", "penalties", "folk"],
+    },
+    {
+      id: "penix-2026-11-08",
+      speaker: "Michael Penix Jr.",
+      role: "Quarterback",
+      date: "2026-11-08",
+      venue: "Santiago Bernabéu · Madrid, Spain",
+      session: "Week 9 vs. Cincinnati (Madrid) · Postgame Locker Room",
+      sourceUrl: "https://www.nfl.com/news/falcons-stumble-vs-bengals-in-spain-are-still-searching-for-answers-not-good-enough",
+      summary: "Speaking in the locker room Real Madrid normally uses, Penix blamed penalties and self-inflicted errors for the loss after a 20-of-31, 162-yard day with one touchdown, one interception and a career-high 50 rushing yards. Quotes via NFL.com (The Athletic), Atlanta Falcons On SI and AP (ESPN).",
+      pullQuote: "We can't beat ourselves. We have to go out there and beat the other team.",
+      bullets: [
+        "On the penalties: 'Too many penalties. Whenever we come out here and have 12 penalties between all units, it's tough to win like that' (Atlanta Falcons On SI)",
+        "On the locker room: 'We know what happened on that field. We know that's not who we want to be this season' (NFL.com)",
+        "Said the team has to put its practice work 'on display if we want to win football games' (NFL.com)",
+        "On the self-inflicted errors: 'That's crushing. We can't do that' (NFL.com)",
+      ],
+      topics: ["madrid", "week-9", "postgame", "penix", "penalties"],
+    },
     {
       id: "ulbrich-2026-11-05",
       speaker: "Jeff Ulbrich",
@@ -3383,32 +3421,6 @@ export const INTERVIEWS = {
         "On Pearce: 'We know the type of player he is... You know he'll have fresh legs' (AP, Atlanta News First)",
       ],
       topics: ["madrid-week", "week-9", "defense", "pearce", "burrow"],
-    },
-    {
-      id: "stefanski-2026-11-02",
-      speaker: "Kevin Stefanski",
-      role: "Head Coach",
-      date: "2026-11-02",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "Week 9 vs. Cincinnati (Madrid) · Monday Media Availability",
-      sourceUrl: "https://www.ajc.com/sports/2026/11/final-thoughts-falcons-loss-bucs/",
-      summary: "The day after the shutout at Tampa, Stefanski backed Penix, stood by kicker Nick Folk, spread the blame for the 324 rushing yards across the whole team, and opened Madrid week by ruling out Branch and Ebukam and welcoming James Pearce Jr. back. Quotes via AJC, AP and ESPN.",
-      pullQuote: "Can Mike play better? Of course, and he knows that, and he will play better.",
-      bullets: ["On Branch and Ebukam (hamstrings, out vs. Cincinnati): 'Not sure, long term, how many games those type of injuries will be. We'll obviously treat those and see how it goes over the next couple weeks' (AJC)", "On Folk after a fourth miss in eight games: 'Very confident in Nick's abilities. Won't think twice about putting him out there' (AJC)", "On the run defense: 'We win as a team, we lose as a team. And as a unit, if it wasn't going our way, that's all of us' (AJC)", "On Pearce's return: 'I see it as a positive to add a good player to the mix'; on his snap count, 'I think it's too early to tell' (ESPN, AJC)"],
-      topics: ["madrid-week", "week-9", "penix", "folk", "pearce", "injuries"],
-    },
-    {
-      id: "stefanski-2026-11-01",
-      speaker: "Kevin Stefanski",
-      role: "Head Coach",
-      date: "2026-11-01",
-      venue: "Raymond James Stadium · Tampa, Fla.",
-      session: "Week 8 at Tampa Bay · Postgame Press Conference",
-      sourceUrl: "https://www.nfl.com/news/falcons-roller-coaster-season-hits-rock-bottom-in-loss-to-buccaneers-it-kind-of-sucked",
-      summary: "After the 16-0 shutout in the rain, Stefanski refused to lean on the weather, took a share of the blame alongside Penix, and said he has no concerns about his quarterback's development. Quotes via NFL.com (The Athletic), atlantafalcons.com and AP.",
-      pullQuote: "I feel really good about the guys we've got, but they outplayed us and outcoached us today.",
-      bullets: ["On the weather: 'Obviously, you have to play the game that is presented in front of you. The conditions were what they were for both teams, and we didn't do a good enough job as a team' (atlantafalcons.com)", "Asked about concerns over Penix's development: 'Obviously, we can do a better job. Mike can do a better job. I can do a better job. But, no, I do not' (NFL.com)", "On accountability: 'We have to own this, which we will as a team, offense, defense, special teams, coaches, players. We'll own it and then move on' (NFL.com)", "On the overall effort: 'We have to want it' (AP)"],
-      topics: ["bucs-week", "week-8", "postgame", "penix", "run-defense"],
     },
   ],
 };
