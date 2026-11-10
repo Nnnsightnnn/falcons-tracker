@@ -22,7 +22,6 @@ export const CAP_STATE = {
   topCapHits2026: [
     { playerId: "lindstrom", amount: 19500000 },
     { playerId: "terrell", amount: 19200000 },
-    { playerId: "bates", amount: 16800000 },
     { playerId: "drake-london", amount: 16800000 },
     { playerId: "matthews", amount: 15500000 },
   ],
@@ -33,13 +32,9 @@ export const CAP_STATE = {
       maxSavings: 9_000_000,
       note: "Already did 1 restructure; room for another simple convert",
     },
-    {
-      playerId: "bates",
-      maxSavings: 7_500_000,
-      note: "Standard conversion if more room needed",
-    },
   ],
   recentMoves: [
+    { date: "2026-11-09", description: "Traded S Jessie Bates III to the Jacksonville Jaguars for a 2027 second-round pick and a 2028 fifth-round pick, pending a physical. Atlanta restructured his contract before the deal and is paying most of the remaining salary (NFL Network's Ian Rapoport via NFL.com), roughly $6.5 million for the rest of the season (Jaguars On SI). Bates was in the final year of a four-year, $64 million contract signed in 2023 and was set for free agency. The resulting dead-money and cap-space figures were not yet published at run time, so the cap totals above are unchanged pending OTC/Spotrac. No corresponding roster move announced; DeMarcco Hellams is the next man up. Per jaguars.com, NFL.com, CBS Sports and Falcons Wire (Yahoo Sports)" },
     { date: "2026-11-07", description: "Saturday moves before Madrid: activated OLB James Pearce Jr. from the suspended list (his one-week roster exemption ends), activated LB Yasir Abdullah and WR Beaux Collins from injured reserve, placed RB Brian Robinson Jr. on injured reserve (hamstring) and signed RB Khalil Herbert from the practice squad to the 53, and elevated DE Drake Jackson for the third time this season. OT Cameron Williams was ruled out and stays on IR. Robinson Jr.'s one-year deal stays on the books; Herbert and the elevation are minimum-salary moves. Per atlantafalcons.com, NFL Trade Rumors and Atlanta Falcons On SI (Yahoo Sports)" },
     { date: "2026-11-05", description: "Signed LB Jared Ivey (No. 51) to the final open practice-squad spot, three days after waiving him from the 53 for James Pearce Jr.'s reinstatement; no corresponding move was needed. Practice-squad minimum, no top-51 impact. Per Falcons Wire (Yahoo Sports) and the ESPN roster" },
     { date: "2026-11-03", description: "Re-signed DE Drake Jackson to the practice squad a day after waiving him for James Pearce Jr.'s reinstatement, and released OT Colby Sorsdal from the practice squad to open the spot. NFL Trade Rumors also logs LB Yasir Abdullah as designated to return from injured reserve. Practice-squad minimums, no top-51 impact. Per Falcons Wire and Atlanta Falcons On SI (Yahoo Sports) and NFL Trade Rumors" },

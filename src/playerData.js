@@ -1080,28 +1080,8 @@ export const PLAYERS = [
   // =========================================
   // SAFETIES
   // =========================================
-  {
-    id: "bates",
-    name: "Jessie Bates III",
-    number: 3,
-    position: "S",
-    posSlot: "FS",
-    positionGroup: "defense",
-    depthRank: 1,
-    height: 74, weight: 200, age: 29, experience: 9,
-    college: "Wake Forest",
-    acquired: "fa-2024",
-    stats: { tackles: 98, int_def: 3, pass_def: 9, ff: 1 },
-    form: 9.1,
-    status: "active",
-    injuryNote: "On the initial 53; a summer back ailment (missed camp practices through Aug 11) is behind him with no Week 1 concern. All-Pro FS and the anchor of the nickel base.",
-    image: "https://a.espncdn.com/i/headshots/nfl/players/full/3919512.png",
-    contract: { years: 4, total: 64000000, guaranteed: 36000000, apy: 16000000, throughYear: 2027, cap2026: 16800000 },
-    career: [
-      { years: "2024–", team: "Atlanta Falcons", type: "NFL · All-Pro 2024" },
-      { years: "2018–2023", team: "Cincinnati Bengals", type: "NFL · Super Bowl LVI" },
-    ],
-  },
+  // S Jessie Bates III (No. 3) was traded to Jacksonville on Mon Nov 9, 2026 for a 2027 second-round
+  // and a 2028 fifth-round pick (NFL.com, jaguars.com); removed from PLAYERS, logged in CAP_STATE.recentMoves.
   {
     id: "xavier-watts",
     name: "Xavier Watts",
@@ -1151,18 +1131,18 @@ export const PLAYERS = [
     name: "DeMarcco Hellams",
     number: 23,
     position: "S",
-    posSlot: "SS",
+    posSlot: "FS",
         stRoles: ["PP"],
     stRank: {"PP":2},
     positionGroup: "defense",
-    depthRank: 3,
+    depthRank: 1,
     height: 72, weight: 205, age: 25, experience: 4,
     college: "Alabama",
     acquired: "draft-2023-R7",
     stats: { tackles: 36 },
     form: 6.6,
     status: "active",
-    injuryNote: "Wednesday (Oct 28), first Week 8 report: limited (shoulder) per buccaneers.com; not listed in the Falcons Wire version. Thursday (Oct 29): limited (shoulder) per The Falcoholic; not listed in the atlantafalcons.com version.",
+    injuryNote: "Named the next man up at safety by Kevin Stefanski on Monday (Nov 9) after the Jessie Bates III trade (Falcons Wire). Xavier Watts and Sydney Brown are also expected to absorb Bates' snaps. Earlier: limited (shoulder) on the Week 8 reports (Oct 28-29).",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4567111.png",
     contract: { years: 4, total: 3800000, guaranteed: 200000, apy: 950000, throughYear: 2026, cap2026: 1100000 },
     career: [{ years: "2023–", team: "Atlanta Falcons", type: "NFL" }],
@@ -2072,7 +2052,7 @@ export const NEXT_GAME = {
   date: "2026-11-15",
   kickoff: "1:00 PM ET",
   tv: "CBS",
-  note: "Back home after Madrid: Atlanta (3-6, last in the NFC South) hosts Kansas City (6-2) at 1:00 PM ET on Sunday, Nov 15 (CBS), the last game before the Week 11 bye. The Chiefs beat the Jets 35-12 in Week 9 (SI). Opening line: KC -3, total 46.5, moneylines KC -175 / ATL +145 (bet365 via FOX Sports, Nov 8); Covers lists KC -3.5. Falcons injuries to watch: WR Zachariah Branch (hamstring) was inactive in Madrid; RB Brian Robinson Jr. and DE Samson Ebukam are on injured reserve; OLB James Pearce Jr. (back) played limited snaps in his return. First injury report Wednesday (Nov 11).",
+  note: "Back home after Madrid: Atlanta (3-6, last in the NFC South) hosts Kansas City (6-2) at 1:00 PM ET on Sunday, Nov 15 (CBS), the last game before the Week 11 bye. The Chiefs beat the Jets 35-12 in Week 9 (SI). Opening line: KC -3, total 46.5, moneylines KC -175 / ATL +145 (bet365 via FOX Sports, Nov 8); Covers lists KC -3.5. Atlanta plays its first game without S Jessie Bates III, traded to Jacksonville on Monday (Nov 9); DeMarcco Hellams is the next man up. Falcons injuries to watch: WR Zachariah Branch (hamstring) was inactive in Madrid; RB Brian Robinson Jr. and DE Samson Ebukam are on injured reserve; OLB James Pearce Jr. (back) played limited snaps in his return. For KC, CB Mansoor Delane (shoulder) and DT Peter Woods (neck) are expected back (CBS's Tracy Wolfson via Heavy, Nov 9). First injury report Wednesday (Nov 11).",
 };
 
 // =========================================
@@ -2455,17 +2435,17 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-11-09T09:30:00Z",
+  generatedAt: "2026-11-10T09:45:00Z",
   cover: {
-    kicker: "Bengals 34, Falcons 17 in Madrid: Burrow and Chase take over after Atlanta's 10-point start, 12 penalties and a missed Folk field goal sink the Falcons, who fall to 3-6 and last in the NFC South with Kansas City up next",
-    headLine1: "Lost in",
-    headEm: "Madrid.",
-    headLine3: "Atlanta led 10-7 after one quarter, then Cincinnati scored on every first-half drive. Falcons 3-6, last in the NFC South; Chiefs at home Sunday.",
-    deck: "Sunday (Nov 8, Santiago Bernabéu, 78,660): Joe Burrow went 24-of-29 for 271 yards and accounted for four touchdowns, Ja'Marr Chase caught 10 passes for 155 yards (142 of them in the first half) and Tee Higgins scored twice. Michael Penix Jr. was 20-of-31 for 162 yards with a TD to Charlie Woerner, one interception and a career-high 50 rushing yards; Bijan Robinson ran 19 times for 100 yards and Atlanta's first rushing TD since Week 4. Twelve penalties for 88 yards and a missed 38-yarder by Nick Folk. Stefanski: 'We have to be better. And I'm talking all of us.' Next: Kansas City (6-2) at Mercedes-Benz Stadium, Sunday at 1 PM ET (CBS), opening KC -3.",
+    kicker: "Falcons trade Jessie Bates III to Jacksonville for a 2027 second-round pick and a 2028 fifth the day after Madrid; Stefanski: 'in no way, shape or form' are they punting on the season, and DeMarcco Hellams steps in with the deadline at 4 PM ET Tuesday",
+    headLine1: "Bates",
+    headEm: "traded.",
+    headLine3: "The All-Pro safety goes to the Jaguars for a 2027 second and a 2028 fifth. Stefanski: 'We're very much in the thick of this thing.' Chiefs at home Sunday.",
+    deck: "Monday (Nov 9): a day after the 34-17 loss in Madrid dropped Atlanta to 3-6, the Falcons sent S Jessie Bates III, in the final year of his four-year, $64 million deal, to Jacksonville for a 2027 second-round pick and a 2028 fifth (pending a physical). Atlanta restructured his contract first and is covering most of the roughly $6.5 million left on his salary (NFL.com, Rapoport; SI). Stefanski: 'Our fans are smart enough to know that in no way, shape, or form would we punt on this season' and 'Draft picks are the lifeblood of an organization.' DeMarcco Hellams is the next man up, with Xavier Watts and Sydney Brown also in line for more snaps. The trade deadline is 4 PM ET Tuesday; SI's Albert Breer had named LB Christian Harris and nickel Mike Hughes as available before Week 9. Next: Kansas City (6-2) at Mercedes-Benz Stadium, Sunday at 1 PM ET (CBS), KC -3.",
     byline: "The Tracker Desk",
-    filedFrom: "Madrid",
-    photoId: "bijan",
-    stampLabel: "Week 9 final · Sun Nov 8 · CIN 34, ATL 17 at the Bernabéu · ATL 3-6, 4th in NFC South · Penix 20-31, 162, TD, INT · Bijan 19-100, TD · Burrow 4 total TDs, Chase 10-155 · 12 ATL penalties · Next: vs. KC (6-2), Sun Nov 15, 1 PM ET, CBS · Open: KC -3, O/U 46.5",
+    filedFrom: "Flowery Branch",
+    photoId: "hellams",
+    stampLabel: "Mon Nov 9 · Bates to JAX for 2027 R2 + 2028 R5 · Hellams next man up at S · Deadline: Tue Nov 10, 4 PM ET · ATL 3-6, 4th in NFC South · Next: vs. KC (6-2), Sun Nov 15, 1 PM ET, CBS · Open: KC -3, O/U 46.5",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -3152,9 +3132,13 @@ export const NEWS_DIGEST = {
     // Pearce, Abdullah, Collins; B. Robinson Jr. to IR; Herbert to the 53); pointer and pearce-jr fallback unchanged.
     // STATUS (2026-11-09 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto the 34-17 loss to Cincinnati in
     // Madrid; bijan fallback photoId kept (100 yards and a TD). coverImageUrl pointer unchanged per the run rules.
+    // STATUS (2026-11-10 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto the Jessie Bates III trade to
+    // Jacksonville; filedFrom back to Flowery Branch; fallback photoId moved to hellams (next man up). Pointer unchanged.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
+    "atlantafalcons.com (Nov 9)", "jaguars.com (Nov 9)", "NFL.com (Nov 9)", "CBS Sports / CBS News Atlanta (Nov 9)", "Falcons Wire (Yahoo, Nov 9)", "Atlanta Falcons On SI (Nov 9)",
+    "NBC Sports / PFT (Nov 9)", "Jaguars On SI (Nov 9)", "Yahoo Sports (Nov 9)", "Lindy's Sports (Yahoo, Nov 9)", "Heavy (Nov 9)", "ESPN roster API (Nov 10)",
     "AP (ESPN, Nov 8)", "Bengals.com (Nov 8)", "Yahoo Sports / dpa (Nov 8)", "NFL.com / The Athletic (Nov 8)", "Falcons Wire (Yahoo, Nov 8)", "Atlanta Falcons On SI (Yahoo, Nov 8)",
     "ClutchPoints (Yahoo, Nov 9)", "NFL.com Week 9 What We Learned (Nov 8)", "SI playoff picture (Nov 8)", "Bleacher Report standings (Nov 8)", "FOX Sports odds (Nov 8)", "Covers (Nov 8)", "ESPN roster API (Nov 9)",
     "atlantafalcons.com (Nov 7)", "NFL Trade Rumors (Nov 7)", "Atlanta Falcons On SI (Yahoo, Nov 7)", "Falcons Wire (Yahoo, Nov 7)", "NBC Sports / PFT (Nov 7)", "CBS Sports (Nov 7)",
@@ -3217,6 +3201,34 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
+      title: "Bates traded to Jacksonville",
+      detail: "jaguars.com and NFL.com (Monday, Nov 9): Atlanta sent S Jessie Bates III to the Jaguars for a 2027 second-round pick and a 2028 fifth-round pick, pending a physical. The Falcons restructured his deal before the trade and are paying most of what is left of his salary (NFL Network's Ian Rapoport), about $6.5 million (Jaguars On SI). Bates, a captain in the final year of a four-year, $64 million contract, had 14 interceptions in Atlanta, three returned for TDs.",
+      category: "contracts",
+      sourceUrl: "https://www.nfl.com/news/jessie-bates-jaguars-falcons-trade",
+      sourceLabel: "NFL.com / jaguars.com",
+    },
+    {
+      title: "Stefanski: 'in no way, shape or form' punting",
+      detail: "atlantafalcons.com and Atlanta Falcons On SI (Monday, Nov 9): 'I think our fans are smart enough to know that in no way, shape or form would we punt on this season,' Stefanski said, adding, 'We have three wins, just like the rest of our division.' He said the call was made with GM Ian Cunningham and president of football Matt Ryan: 'We all felt like this decision is what's best for our football team.'",
+      category: "coaching",
+      sourceUrl: "https://www.atlantafalcons.com/news/kevin-stefanski-trade-of-jessie-bates-iii-in-no-way-shape-or-form-an-indication-the-falcons-are-punting-on-2026-season",
+      sourceLabel: "atlantafalcons.com / SI",
+    },
+    {
+      title: "Hellams is the next man up at safety",
+      detail: "Falcons Wire (Monday, Nov 9): Stefanski named DeMarcco Hellams, a 2023 seventh-round pick from Alabama, as Bates' replacement: 'Obviously, DeMarcco is the next man up that we feel really good about.' Xavier Watts is expected to take on some of Bates' role and Sydney Brown should see extra reps. No corresponding roster move has been announced; the ESPN roster no longer lists Bates.",
+      category: "general",
+      sourceUrl: "https://sports.yahoo.com/articles/falcons-head-coach-kevin-stefanski-203356090.html",
+      sourceLabel: "Falcons Wire (Yahoo)",
+    },
+    {
+      title: "Deadline day: 4 PM ET Tuesday",
+      detail: "Heavy and Lindy's Sports (Nov 9): the trade deadline is today, Tuesday Nov 10, at 4 PM ET. Before Week 9, SI's Albert Breer reported Atlanta would 'really only consider acquiring picks' and named LB Christian Harris and nickel Mike Hughes as available. Yahoo's Eric Edholm graded the Bates deal an A- for Atlanta: 'This felt like a no-brainer trade for the Falcons.'",
+      category: "contracts",
+      sourceUrl: "https://heavy.com/sports/nfl/atlanta-falcons/2-other-players-falcons-may-trade-after-jessie-bates/",
+      sourceLabel: "Heavy / Yahoo Sports",
+    },
+    {
       title: "Bengals 34, Falcons 17 in Madrid",
       detail: "AP via ESPN (Sunday, Nov 8): Atlanta scored 10 points on its first two drives, including Michael Penix Jr.'s opening-drive TD to Charlie Woerner, but Cincinnati scored on every first-half possession to lead 24-10 at the break and won its fourth straight. Joe Burrow went 24-of-29 for 271 yards with three TD passes and a TD run; Ja'Marr Chase had 10 catches for 155 yards and Tee Higgins caught two TDs. Falcons 3-6, a second straight loss, before 78,660 at the Bernabéu.",
       category: "games",
@@ -3266,20 +3278,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "Falcons Wire / AP",
     },
     {
-      title: "Madrid inactives: Branch, Bowman, Drake Jackson",
-      detail: "Falcons Wire (Sunday, Nov 8): Atlanta's inactives were WR Zachariah Branch (hamstring), QB Andy Dalton (emergency third QB), QB Jack Strand, DB Billy Bowman Jr., DB Robert Longerbeam and DE Drake Jackson. Divine Deablo, Olamide Zaccheaus and Avieon Terrell were all active. No in-game injuries were reported.",
-      category: "injuries",
-      sourceUrl: "https://sports.yahoo.com/articles/falcons-list-inactives-whos-whos-130141241.html",
-      sourceLabel: "Falcons Wire",
-    },
-    {
-      title: "Watts and Bates: 'stop being on this roller coaster'",
-      detail: "NFL.com (The Athletic, Nov 8): Xavier Watts said, 'We didn't show up to play,' and 'Just got to stop being on this roller coaster.' Jessie Bates III pointed to the division: 'You look at our division, we're still a game and a half or a game behind everyone.' Atlanta has lost four of five.",
-      category: "coaching",
-      sourceUrl: "https://www.nfl.com/news/falcons-stumble-vs-bengals-in-spain-are-still-searching-for-answers-not-good-enough",
-      sourceLabel: "NFL.com / The Athletic",
-    },
-    {
       title: "NFC South: everyone lost but New Orleans",
       detail: "Bleacher Report and SI (Nov 8-9): Carolina lost 26-21 to Denver and Tampa Bay lost to Chicago on Sunday night, while New Orleans beat Cleveland 23-22. Order: Carolina 3-5, New Orleans 3-5, Tampa Bay 3-6, Atlanta 3-6. Bleacher Report has Atlanta 13th in the NFC.",
       category: "games",
@@ -3288,7 +3286,7 @@ export const NEWS_DIGEST = {
     },
     {
       title: "Chiefs next: KC opens -3 in Atlanta",
-      detail: "FOX Sports (Nov 8): Kansas City (6-2, a 35-12 winner over the Jets) opens as a 3-point road favorite for Sunday's 1 PM ET game at Mercedes-Benz Stadium (CBS), total 46.5, moneylines KC -175 / ATL +145 at bet365. Covers lists KC -3.5. The Falcons' bye follows in Week 11.",
+      detail: "FOX Sports (Nov 8): Kansas City (6-2, a 35-12 winner over the Jets) opens as a 3-point road favorite for Sunday's 1 PM ET game at Mercedes-Benz Stadium (CBS), total 46.5, moneylines KC -175 / ATL +145 at bet365. Covers lists KC -3.5. The Chiefs expect CB Mansoor Delane (shoulder) and DT Peter Woods (neck) back, per CBS's Tracy Wolfson (Heavy, Nov 9). The Falcons' bye follows in Week 11.",
       category: "games",
       sourceUrl: "https://www.foxsports.com/stories/nfl/2026-nfl-odds-week-10-lines-spreads-results-all-14-games",
       sourceLabel: "FOX Sports / Covers",
@@ -3300,20 +3298,32 @@ export const NEWS_DIGEST = {
       sourceUrl: "https://sports.yahoo.com/articles/falcons-place-rb-injured-sign-220500669.html",
       sourceLabel: "Atlanta Falcons On SI",
     },
-    {
-      title: "Ebukam goes on injured reserve",
-      detail: "atlantafalcons.com (Tuesday, Nov 3): DE Samson Ebukam was placed on IR with the hamstring injury he aggravated at Tampa, so he will miss at least four games. Branch, also ruled out for Madrid, has not been given an IR designation. Ebukam had 2.5 sacks in seven games after signing in March.",
-      category: "injuries",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-place-de-samson-ebukam-on-injured-reserve",
-      sourceLabel: "atlantafalcons.com",
-    },
   ],
 };
 
 export const INTERVIEWS = {
-  generatedAt: "2026-11-09T09:30:00Z",
+  generatedAt: "2026-11-10T09:45:00Z",
   windowLabel: "Game Week vs. Kansas City · Nov 9 → Nov 15",
   sessions: [
+    {
+      id: "stefanski-2026-11-09",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-11-09",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Week 10 vs. Kansas City · Monday Press Conference",
+      sourceUrl: "https://www.atlantafalcons.com/news/kevin-stefanski-trade-of-jessie-bates-iii-in-no-way-shape-or-form-an-indication-the-falcons-are-punting-on-2026-season",
+      summary: "Back from Madrid, Stefanski explained the Jessie Bates III trade to Jacksonville, insisted the 3-6 Falcons are not giving up on 2026 in a division where nobody has more than three wins, and named DeMarcco Hellams the next man up at safety. Quotes via atlantafalcons.com, Atlanta Falcons On SI and Falcons Wire.",
+      pullQuote: "I think our fans are smart enough to know that in no way, shape or form would we punt on this season.",
+      bullets: [
+        "On the standings: 'Obviously, we're not where we want to be, we want to play better, but we're very much in the thick of this thing' (Falcons Wire)",
+        "Said the decision was made with GM Ian Cunningham and president of football Matt Ryan: 'We all felt like this decision is what's best for our football team' (atlantafalcons.com)",
+        "On the return: 'Draft picks are the lifeblood of an organization. That's something we believe in' (Atlanta Falcons On SI)",
+        "On replacing Bates: 'Obviously, DeMarcco is the next man up that we feel really good about' (Falcons Wire)",
+        "On the locker room: 'It's not just one person that has to step up. It's all of us that have to step up' (Atlanta Falcons On SI)",
+      ],
+      topics: ["bates-trade", "week-10", "trade-deadline", "hellams", "chiefs-week"],
+    },
     {
       id: "stefanski-2026-11-08",
       speaker: "Kevin Stefanski",
@@ -3403,24 +3413,6 @@ export const INTERVIEWS = {
         "On the trip: 'This is a beautiful facility for us to get some work done this week' and 'This is a huge undertaking to take your football team across the pond' (AP, FOX Sports)",
       ],
       topics: ["madrid-week", "week-9", "burrow", "pearce", "international"],
-    },
-    {
-      id: "watts-2026-11-04",
-      speaker: "Xavier Watts",
-      role: "Safety",
-      date: "2026-11-04",
-      venue: "Real Madrid training center · Madrid, Spain",
-      session: "Week 9 vs. Cincinnati (Madrid) · Wednesday Media Availability",
-      sourceUrl: "https://www.atlantanewsfirst.com/2026/11/04/stefanski-still-uncertain-how-much-pearce-will-get-play-madrid-after-return-suspension/",
-      summary: "The second-year safety framed Madrid as a chance for the defense to rebound from the loss at Tampa, with the focus on limiting Cincinnati's explosive passing game and welcoming Pearce back. Quotes via AP.",
-      pullQuote: "You just limit their explosive plays.",
-      bullets: [
-        "On the Bengals: 'Joe Burrow is a great quarterback, Tee Higgins and Ja'Marr Chase are great receivers' (AP)",
-        "On the plan: limit explosives, 'try to get takeaways and throw them off their rhythm' (AP)",
-        "Called Tampa a 'weird game' that left the defense with 'a chip on our shoulder' (AP)",
-        "On Pearce: 'We know the type of player he is... You know he'll have fresh legs' (AP, Atlanta News First)",
-      ],
-      topics: ["madrid-week", "week-9", "defense", "pearce", "burrow"],
     },
   ],
 };
