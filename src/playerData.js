@@ -428,7 +428,7 @@ export const PLAYERS = [
     stats: {},
     form: 6.2,
     status: "active",
-    injuryNote: "Projected starting center after Ryan Neuzil was traded to Baltimore at the deadline (Tuesday, Nov 10). ESPN: the Falcons 'will likely hand off their starting center job to Corey Levin,' who has played guard and center over eight NFL seasons and worked with OL coach Bill Callahan at Tennessee. Not yet confirmed by the team; watch the Week 10 depth chart.",
+    injuryNote: "Projected starting center after Ryan Neuzil was traded to Baltimore at the deadline (Tuesday, Nov 10). ESPN: the Falcons 'will likely hand off their starting center job to Corey Levin,' who has played guard and center over eight NFL seasons and worked with OL coach Bill Callahan at Tennessee. Not yet confirmed by the team; watch the Week 10 depth chart. Wednesday (Nov 11): confirmed as the starting center on the team's unofficial Week 10 depth chart (atlantafalcons.com). Stefanski: 'Comfortable and feel good about Corey Levin stepping in,' adding, 'Corey has been here with us since the spring' (atlantafalcons.com).",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/2973637.png",
     contract: { years: 2, total: 3100000, guaranteed: 500000, apy: 1550000, throughYear: 2026, cap2026: 1550000 },
     career: [{ years: "2023–", team: "Atlanta Falcons", type: "NFL" }],
@@ -447,7 +447,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "active",
-    injuryNote: "Acquired from Baltimore with a 2028 sixth-round pick for C Ryan Neuzil just before the trade deadline (Tuesday, Nov 10) (ESPN, baltimoreravens.com, Pro Football Rumors). A 2023 seventh-round Ravens pick, he started all 17 games at left guard in 2025 and was a backup guard this season (5 games, 2 starts). Jersey number per the ESPN roster; the team has not announced it.",
+    injuryNote: "Acquired from Baltimore with a 2028 sixth-round pick for C Ryan Neuzil just before the trade deadline (Tuesday, Nov 10) (ESPN, baltimoreravens.com, Pro Football Rumors). A 2023 seventh-round Ravens pick, he started all 17 games at left guard in 2025 and was a backup guard this season (5 games, 2 starts). Jersey number per the ESPN roster; the team has not announced it. Wednesday (Nov 11): listed as Chris Lindstrom's backup at right guard on the unofficial Week 10 depth chart (atlantafalcons.com). Stefanski: 'He's a good football player' (atlantafalcons.com).",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4243220.png",
     career: [
       { years: "2026–", team: "Atlanta Falcons", type: "NFL · trade from BAL (Nov 10)" },
@@ -551,8 +551,8 @@ export const PLAYERS = [
     acquired: "waivers-2026-PHI",
     stats: {},
     form: 6.0,
-    status: "ir",
-    injuryNote: "Claimed off waivers from Philadelphia on Sept 1, a big (6-5, 317) developmental tackle and 2025 sixth-round pick (No. 207) who started 15 games at right tackle for a College Football Playoff Texas team, adding swing depth on a line the Falcons have prioritized all summer. Friday (Oct 23), final Week 7 report (atlantafalcons.com): limited (ankle) on Thursday and Friday (Oct 22-23) and listed QUESTIONABLE vs. San Francisco. Saturday (Oct 24): downgraded to OUT (ankle) for Sunday vs. San Francisco (atlantafalcons.com, NBC Sports / PFT). Now listed on Reserve/Injured (ankle) on the team roster (atlantafalcons.com, Oct 26), so he must miss at least four games. Wednesday (Oct 28), first Week 8 report (buccaneers.com, Falcons Wire): listed as a full participant (ankle) despite his Reserve/Injured listing. Friday (Oct 30), final Week 8 report (atlantafalcons.com): full participant (ankle) for a third straight day and listed QUESTIONABLE vs. Tampa Bay; he would need to be activated from Reserve/Injured to play. Saturday (Oct 31): not activated; downgraded to OUT vs. Tampa Bay and remains on Reserve/Injured (atlantafalcons.com, CBS Sports / RotoWire). Next chance: Week 9 vs. Cincinnati in Madrid (Nov 8). Wednesday (Nov 4), estimated Week 9 report after a walkthrough on arrival in Madrid (atlantafalcons.com): full (ankle); still on Reserve/Injured. Thursday (Nov 5), first full practice in Madrid (atlantafalcons.com official report): full (ankle); still on Reserve/Injured. Friday (Nov 6), final Week 9 report (atlantafalcons.com): full (ankle) for a third straight day and listed QUESTIONABLE; still on Reserve/Injured, so he must be activated to play. Saturday (Nov 7): downgraded from questionable to OUT for the Madrid game and was not activated from injured reserve (atlantafalcons.com, NFL Trade Rumors, Atlanta Falcons On SI via Yahoo, Nov 7).",
+    status: "active",
+    injuryNote: "Claimed off waivers from Philadelphia on Sept 1, a big (6-5, 317) developmental tackle and 2025 sixth-round pick (No. 207) who started 15 games at right tackle for a College Football Playoff Texas team, adding swing depth on a line the Falcons have prioritized all summer. Friday (Oct 23), final Week 7 report (atlantafalcons.com): limited (ankle) on Thursday and Friday (Oct 22-23) and listed QUESTIONABLE vs. San Francisco. Saturday (Oct 24): downgraded to OUT (ankle) for Sunday vs. San Francisco (atlantafalcons.com, NBC Sports / PFT). Now listed on Reserve/Injured (ankle) on the team roster (atlantafalcons.com, Oct 26), so he must miss at least four games. Wednesday (Oct 28), first Week 8 report (buccaneers.com, Falcons Wire): listed as a full participant (ankle) despite his Reserve/Injured listing. Friday (Oct 30), final Week 8 report (atlantafalcons.com): full participant (ankle) for a third straight day and listed QUESTIONABLE vs. Tampa Bay; he would need to be activated from Reserve/Injured to play. Saturday (Oct 31): not activated; downgraded to OUT vs. Tampa Bay and remains on Reserve/Injured (atlantafalcons.com, CBS Sports / RotoWire). Next chance: Week 9 vs. Cincinnati in Madrid (Nov 8). Wednesday (Nov 4), estimated Week 9 report after a walkthrough on arrival in Madrid (atlantafalcons.com): full (ankle); still on Reserve/Injured. Thursday (Nov 5), first full practice in Madrid (atlantafalcons.com official report): full (ankle); still on Reserve/Injured. Friday (Nov 6), final Week 9 report (atlantafalcons.com): full (ankle) for a third straight day and listed QUESTIONABLE; still on Reserve/Injured, so he must be activated to play. Saturday (Nov 7): downgraded from questionable to OUT for the Madrid game and was not activated from injured reserve (atlantafalcons.com, NFL Trade Rumors, Atlanta Falcons On SI via Yahoo, Nov 7). Wednesday (Nov 11): activated from Reserve/Injured (AP via Yahoo Sports, NFL transaction wire) and listed as Jake Matthews' backup at left tackle on the unofficial Week 10 depth chart (atlantafalcons.com). Status moved to active.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4685590.png",
     contract: { years: 1, total: 900000, guaranteed: 0, apy: 900000, throughYear: 2026, cap2026: 900000 },
     career: [
@@ -596,7 +596,7 @@ export const PLAYERS = [
     stats: { tackles: 44, tfl: 5, sacks: 6 },
     form: 7.2,
     status: "active",
-    injuryNote: "Acquired Aug 30 (cutdown day) from Chicago for CB Clark Phillips III and a 2027 fifth-round pick, reuniting with GM Ian Cunningham, who was the Bears' assistant GM when they drafted him. A 2023 second-round pick and a two-year starter in Chicago, Dexter posted 44 tackles and six sacks over 17 starts in 2025 and steps into the interior rotation alongside Maason Smith and Brandon Dorlus. On Sep 30 he agreed to a four-year, $78 million extension with $46.5 million guaranteed (agents Drew and Jason Rosenhaus via ESPN's Adam Schefter; confirmed by the team), keeping him in Atlanta through 2030. Through three games he has 15 pressures, three QB hits and half a sack, ranking eighth in the NFL in pressure rate (20.5%) per the team. 'Gervon is a young, ascending talent whose power, disruption and impact along the defensive line are difficult to find,' GM Ian Cunningham said. Friday (Oct 23), final Week 7 report (atlantafalcons.com): limited (hamstring) on Thursday and Friday (Oct 22-23) and listed QUESTIONABLE vs. San Francisco. Sunday (Oct 25): played vs. San Francisco and recovered a Kaelon Black fumble at the Atlanta 29 in the second quarter, setting up a field goal in the 29-20 win (AP).",
+    injuryNote: "Acquired Aug 30 (cutdown day) from Chicago for CB Clark Phillips III and a 2027 fifth-round pick, reuniting with GM Ian Cunningham, who was the Bears' assistant GM when they drafted him. A 2023 second-round pick and a two-year starter in Chicago, Dexter posted 44 tackles and six sacks over 17 starts in 2025 and steps into the interior rotation alongside Maason Smith and Brandon Dorlus. On Sep 30 he agreed to a four-year, $78 million extension with $46.5 million guaranteed (agents Drew and Jason Rosenhaus via ESPN's Adam Schefter; confirmed by the team), keeping him in Atlanta through 2030. Through three games he has 15 pressures, three QB hits and half a sack, ranking eighth in the NFL in pressure rate (20.5%) per the team. 'Gervon is a young, ascending talent whose power, disruption and impact along the defensive line are difficult to find,' GM Ian Cunningham said. Friday (Oct 23), final Week 7 report (atlantafalcons.com): limited (hamstring) on Thursday and Friday (Oct 22-23) and listed QUESTIONABLE vs. San Francisco. Sunday (Oct 25): played vs. San Francisco and recovered a Kaelon Black fumble at the Atlanta 29 in the second quarter, setting up a field goal in the 29-20 win (AP). Wednesday (Nov 11), first Week 10 report (atlantafalcons.com): did not practice (illness).",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4429014.png",
     contract: { years: 4, total: 78000000, guaranteed: 46500000, apy: 19500000, throughYear: 2030, cap2026: 2140000 }, // 4-yr extension agreed 2026-09-30; cap2026 is the pre-extension rookie figure until the restructured 2026 number is published
     career: [
@@ -707,7 +707,7 @@ export const PLAYERS = [
     stats: { tackles: 31, sacks: 4.5 },
     form: 7.6,
     status: "active",
-    injuryNote: "Reinstated by the NFL on Monday, Nov 2, after serving an eight-game suspension under the Personal Conduct Policy, and added to the 53 with a one-week roster exemption (ESPN, Atlanta Falcons On SI); Jared Ivey and Drake Jackson were waived the same day. Expected to return to practice Wednesday (Nov 4) and eligible for Week 9 vs. Cincinnati in Madrid; Stefanski is not sure how much he will play in his first game back (ESPN). Led Atlanta with 10.5 sacks as a rookie in 2025 and finished third in Defensive Rookie of the Year voting. Remains in a pretrial diversion program. History: Suspended 8 games (NFL Personal Conduct Policy, announced Aug 14) · ban now in effect (began Aug 30, the cutdown deadline), eligible to return Nov 2 (week of Bengals game in Madrid) · does not count against the 53-man limit while suspended · still in Miami-Dade pretrial diversion program · Wednesday (Nov 4), estimated Week 9 report after a walkthrough on arrival in Madrid (atlantafalcons.com): full (not injury related) in his first session back. Stefanski (AP, Nov 4): 'We'll have a full-speed practice Thursday or Friday of this week and see where James is... I don't have an exact number of snaps just yet.' Moves to the top of the tracker's LEDGE ladder with Ebukam on IR; the team has not announced a starter or snap count. Thursday (Nov 5), first full practice in Madrid (atlantafalcons.com official report): full participant (not injury related) in his first full-speed practice back. Friday (Nov 6), final Week 9 report (atlantafalcons.com): limited after a back 'flare up' in practice and listed QUESTIONABLE (back). Stefanski said the team will monitor him over the weekend and expects to know more in the next 24 to 48 hours (AP). DC Jeff Ulbrich had said Thursday that Pearce would play a pure pass-rush role on a pitch count (AP). Saturday (Nov 7): officially activated from the suspended list for Sunday's game in Madrid, but still listed questionable with the back issue that flared up in Friday's practice; Stefanski said the team would monitor him through the weekend (atlantafalcons.com, NFL Trade Rumors, Atlanta Falcons On SI via Yahoo, Nov 7). Sunday (Nov 8): active in Madrid despite the questionable tag (Falcons Wire inactives list) and made his 2026 debut, but had limited play in the 34-17 loss to Cincinnati (AP via ESPN); no stats were reported. Status moved to active after he played.",
+    injuryNote: "Reinstated by the NFL on Monday, Nov 2, after serving an eight-game suspension under the Personal Conduct Policy, and added to the 53 with a one-week roster exemption (ESPN, Atlanta Falcons On SI); Jared Ivey and Drake Jackson were waived the same day. Expected to return to practice Wednesday (Nov 4) and eligible for Week 9 vs. Cincinnati in Madrid; Stefanski is not sure how much he will play in his first game back (ESPN). Led Atlanta with 10.5 sacks as a rookie in 2025 and finished third in Defensive Rookie of the Year voting. Remains in a pretrial diversion program. History: Suspended 8 games (NFL Personal Conduct Policy, announced Aug 14) · ban now in effect (began Aug 30, the cutdown deadline), eligible to return Nov 2 (week of Bengals game in Madrid) · does not count against the 53-man limit while suspended · still in Miami-Dade pretrial diversion program · Wednesday (Nov 4), estimated Week 9 report after a walkthrough on arrival in Madrid (atlantafalcons.com): full (not injury related) in his first session back. Stefanski (AP, Nov 4): 'We'll have a full-speed practice Thursday or Friday of this week and see where James is... I don't have an exact number of snaps just yet.' Moves to the top of the tracker's LEDGE ladder with Ebukam on IR; the team has not announced a starter or snap count. Thursday (Nov 5), first full practice in Madrid (atlantafalcons.com official report): full participant (not injury related) in his first full-speed practice back. Friday (Nov 6), final Week 9 report (atlantafalcons.com): limited after a back 'flare up' in practice and listed QUESTIONABLE (back). Stefanski said the team will monitor him over the weekend and expects to know more in the next 24 to 48 hours (AP). DC Jeff Ulbrich had said Thursday that Pearce would play a pure pass-rush role on a pitch count (AP). Saturday (Nov 7): officially activated from the suspended list for Sunday's game in Madrid, but still listed questionable with the back issue that flared up in Friday's practice; Stefanski said the team would monitor him through the weekend (atlantafalcons.com, NFL Trade Rumors, Atlanta Falcons On SI via Yahoo, Nov 7). Sunday (Nov 8): active in Madrid despite the questionable tag (Falcons Wire inactives list) and made his 2026 debut, but had limited play in the 34-17 loss to Cincinnati (AP via ESPN); no stats were reported. Status moved to active after he played. Wednesday (Nov 11), first Week 10 report (atlantafalcons.com): did not practice (back). He played 15 snaps in Madrid.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/5081394.png",
     contract: { years: 4, total: 14500000, guaranteed: 14500000, apy: 3625000, throughYear: 2028, cap2026: 3350000 },
     career: [{ years: "2025–", team: "Atlanta Falcons", type: "NFL" }],
@@ -726,7 +726,7 @@ export const PLAYERS = [
     stats: { tackles: 24, sacks: 9, ff: 1 },
     form: 7.4,
     status: "active",
-    injuryNote: "Signed Aug 18 to a one-year deal worth $6M and up to $8M with incentives, un-retiring after leaving the game in October 2025 following five games with the Eagles. Three-time Pro Bowler, reunited with HC Kevin Stefanski (his coach in Cleveland, 2023-24), and the REDGE starter with Jalon Walker (ACL) out for the year and James Pearce Jr. serving an eight-game ban. Entered Week 4 leading the team with 2.5 sacks (SI Falcons). Left the 45-24 win at New Orleans (Oct 5) in the first quarter with a concussion and neck injury and did not return; now in the concussion protocol ahead of Sunday night vs. Baltimore and listed as did not participate (concussion, neck) on Wednesday's estimated report (Oct 7) and again in Thursday's practice (Oct 8). Returned as a limited participant on Friday (Oct 9) and was listed questionable, then downgraded to OUT on Saturday (Oct 10) after not clearing the protocol (team reporter Tori McElhaney, NFL.com). Earliest possible return is Week 6 vs. Chicago (Oct 18), and he was a limited participant (concussion, neck) in Wednesday's first Week 6 practice (Oct 14). Cleared the concussion protocol on Thursday (Oct 15) and was limited again with the neck alone listed (atlantafalcons.com); Jared Ivey, Cam Thomas and elevated DEs Bralen Trice and Drake Jackson absorb his snaps. Status kept at questionable because the tracker schema has no single-game 'out' value. Limited again Friday (Oct 16) and listed QUESTIONABLE (neck) on the final Week 6 report (atlantafalcons.com). Wednesday (Oct 21), first Week 7 report: limited (neck) (atlantafalcons.com). Friday (Oct 23), final Week 7 report (atlantafalcons.com): upgraded to FULL (neck) and listed QUESTIONABLE. Sunday (Oct 25): played vs. San Francisco and sacked Brock Purdy on fourth down to end a drive in the 29-20 win (AP). Wednesday (Oct 28), first Week 8 report (buccaneers.com, Falcons Wire): did not practice, a veteran rest day (not injury related). Thursday (Oct 29, atlantafalcons.com): limited (not injury related, rest). Friday (Oct 30), final Week 8 report (atlantafalcons.com): full participant (not injury related, rest), no game designation.",
+    injuryNote: "Signed Aug 18 to a one-year deal worth $6M and up to $8M with incentives, un-retiring after leaving the game in October 2025 following five games with the Eagles. Three-time Pro Bowler, reunited with HC Kevin Stefanski (his coach in Cleveland, 2023-24), and the REDGE starter with Jalon Walker (ACL) out for the year and James Pearce Jr. serving an eight-game ban. Entered Week 4 leading the team with 2.5 sacks (SI Falcons). Left the 45-24 win at New Orleans (Oct 5) in the first quarter with a concussion and neck injury and did not return; now in the concussion protocol ahead of Sunday night vs. Baltimore and listed as did not participate (concussion, neck) on Wednesday's estimated report (Oct 7) and again in Thursday's practice (Oct 8). Returned as a limited participant on Friday (Oct 9) and was listed questionable, then downgraded to OUT on Saturday (Oct 10) after not clearing the protocol (team reporter Tori McElhaney, NFL.com). Earliest possible return is Week 6 vs. Chicago (Oct 18), and he was a limited participant (concussion, neck) in Wednesday's first Week 6 practice (Oct 14). Cleared the concussion protocol on Thursday (Oct 15) and was limited again with the neck alone listed (atlantafalcons.com); Jared Ivey, Cam Thomas and elevated DEs Bralen Trice and Drake Jackson absorb his snaps. Status kept at questionable because the tracker schema has no single-game 'out' value. Limited again Friday (Oct 16) and listed QUESTIONABLE (neck) on the final Week 6 report (atlantafalcons.com). Wednesday (Oct 21), first Week 7 report: limited (neck) (atlantafalcons.com). Friday (Oct 23), final Week 7 report (atlantafalcons.com): upgraded to FULL (neck) and listed QUESTIONABLE. Sunday (Oct 25): played vs. San Francisco and sacked Brock Purdy on fourth down to end a drive in the 29-20 win (AP). Wednesday (Oct 28), first Week 8 report (buccaneers.com, Falcons Wire): did not practice, a veteran rest day (not injury related). Thursday (Oct 29, atlantafalcons.com): limited (not injury related, rest). Friday (Oct 30), final Week 8 report (atlantafalcons.com): full participant (not injury related, rest), no game designation. Wednesday (Nov 11), first Week 10 report (atlantafalcons.com): did not practice (not injury related, rest).",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/3043168.png",
     contract: { years: 1, total: 6000000, guaranteed: 3500000, apy: 6000000, throughYear: 2026, cap2026: 6000000 },
     career: [
@@ -896,7 +896,7 @@ export const PLAYERS = [
     stats: { tackles: 92, tfl: 7, sacks: 2, int_def: 1 },
     form: 8.0,
     status: "active",
-    injuryNote: "Arm. Injured in the first half of the 31-23 loss to Chicago (Oct 18) and ruled out late in the second quarter (atlantafalcons.com); Stefanski had no update Monday (Oct 19, AP). Had battled a hamstring issue through Weeks 4-6 practices without missing a game. MIKE · 3yr/$30M FA signing from Las Vegas. Wednesday (Oct 21), first Week 7 report: did not participate, with the injury listed as forearm (atlantafalcons.com). Did not practice Wednesday or Thursday (Oct 21-22, forearm) of 49ers week (official report via 49ers Webzone). Friday (Oct 23), final Week 7 report (atlantafalcons.com): did not practice and ruled OUT vs. San Francisco (forearm). Status kept at questionable because the tracker schema has no single-game 'out' value. Wednesday (Oct 28), first Week 8 report (buccaneers.com, Falcons Wire): did not practice (forearm). Thursday (Oct 29, atlantafalcons.com): returned to practice, limited (forearm). Friday (Oct 30), final Week 8 report (atlantafalcons.com): limited (forearm), listed QUESTIONABLE vs. Tampa Bay. Saturday (Oct 31): downgraded to OUT vs. Tampa Bay (forearm), his second straight missed game; Kendal Daniels expected to wear the green dot with Harold Perkins Jr. beside him (atlantafalcons.com). Wednesday (Nov 4), estimated Week 9 report after a walkthrough on arrival in Madrid (atlantafalcons.com): limited (forearm). Thursday (Nov 5), first full practice in Madrid (atlantafalcons.com official report): limited (forearm) again. Friday (Nov 6), final Week 9 report (atlantafalcons.com): upgraded to full (forearm) and listed QUESTIONABLE; the team left the door open for his return. Sunday (Nov 8): not on the inactive list for the 34-17 loss to Cincinnati in Madrid (Falcons Wire), so he was active for the first time since the Oct 18 forearm injury. Status moved to active.",
+    injuryNote: "Arm. Injured in the first half of the 31-23 loss to Chicago (Oct 18) and ruled out late in the second quarter (atlantafalcons.com); Stefanski had no update Monday (Oct 19, AP). Had battled a hamstring issue through Weeks 4-6 practices without missing a game. MIKE · 3yr/$30M FA signing from Las Vegas. Wednesday (Oct 21), first Week 7 report: did not participate, with the injury listed as forearm (atlantafalcons.com). Did not practice Wednesday or Thursday (Oct 21-22, forearm) of 49ers week (official report via 49ers Webzone). Friday (Oct 23), final Week 7 report (atlantafalcons.com): did not practice and ruled OUT vs. San Francisco (forearm). Status kept at questionable because the tracker schema has no single-game 'out' value. Wednesday (Oct 28), first Week 8 report (buccaneers.com, Falcons Wire): did not practice (forearm). Thursday (Oct 29, atlantafalcons.com): returned to practice, limited (forearm). Friday (Oct 30), final Week 8 report (atlantafalcons.com): limited (forearm), listed QUESTIONABLE vs. Tampa Bay. Saturday (Oct 31): downgraded to OUT vs. Tampa Bay (forearm), his second straight missed game; Kendal Daniels expected to wear the green dot with Harold Perkins Jr. beside him (atlantafalcons.com). Wednesday (Nov 4), estimated Week 9 report after a walkthrough on arrival in Madrid (atlantafalcons.com): limited (forearm). Thursday (Nov 5), first full practice in Madrid (atlantafalcons.com official report): limited (forearm) again. Friday (Nov 6), final Week 9 report (atlantafalcons.com): upgraded to full (forearm) and listed QUESTIONABLE; the team left the door open for his return. Sunday (Nov 8): not on the inactive list for the 34-17 loss to Cincinnati in Madrid (Falcons Wire), so he was active for the first time since the Oct 18 forearm injury. Status moved to active. Wednesday (Nov 11), first Week 10 report (atlantafalcons.com): limited (forearm); he played with the arm wrapped in Madrid.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4037626.png",
     contract: { years: 3, total: 30000000, guaranteed: 18000000, apy: 10000000, throughYear: 2028, cap2026: 8500000 },
     career: [
@@ -963,7 +963,7 @@ export const PLAYERS = [
     stats: { tackles: 14 },
     form: 5.8,
     status: "active",
-    injuryNote: "Signed off the practice squad to the 53 on Sep 1, filling JD Bertrand's roster spot; core special-teamer",
+    injuryNote: "Signed off the practice squad to the 53 on Sep 1, filling JD Bertrand's roster spot; core special-teamer. Wednesday (Nov 11), first Week 10 report (atlantafalcons.com): did not practice (ankle).",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/3128303.png",
     contract: { years: 1, total: 1300000, guaranteed: 0, apy: 1300000, throughYear: 2026, cap2026: 1300000 },
     career: [
@@ -1029,7 +1029,7 @@ export const PLAYERS = [
     stats: { tackles: 28, pass_def: 5 },
     form: 6.6,
     status: "active",
-    injuryNote: "Groin. Hurt in the 30-23 overtime loss to Baltimore (Oct 11) and did not practice Wednesday (Oct 14), the only Falcon held out of the first Week 6 session. Stefanski said he is 'getting better' and the team is not ruling him out for Sunday vs. Chicago (atlantafalcons.com). Did not practice again on Thursday (Oct 15), his second straight DNP; DC Jeff Ulbrich, asked about the depth behind him: 'Mike Hughes is a top-end starter in this league' and 'Avieon (Terrell) is emerging.' Rookie Avieon Terrell would likely make his first career start if Henderson sits (AJC); Avieon Terrell, Billy Bowman and Sydney Brown are next in line. Started at cornerback since the Week 4 depth chart (Sep 29) in place of A.J. Terrell (IR, groin) · Reclamation · ex-#9 overall (2020 JAX) Ruled OUT for Sunday vs. Chicago on Friday's final report (Oct 16) after a third straight DNP; rookie Avieon Terrell starts outside (AJC). Status kept at questionable because the tracker schema has no single-game 'out' value. Wednesday (Oct 21), first Week 7 report: limited (groin), his first practice action since the Baltimore game (atlantafalcons.com). Friday (Oct 23), final Week 7 report (atlantafalcons.com): upgraded to FULL (groin) and listed QUESTIONABLE. Sunday (Oct 25): active and back in the lineup from the groin injury vs. San Francisco (atlantafalcons.com inactives report). Thursday (Oct 29, atlantafalcons.com): limited (groin). Friday (Oct 30), final Week 8 report (atlantafalcons.com): full participant (groin), no game designation.",
+    injuryNote: "Groin. Hurt in the 30-23 overtime loss to Baltimore (Oct 11) and did not practice Wednesday (Oct 14), the only Falcon held out of the first Week 6 session. Stefanski said he is 'getting better' and the team is not ruling him out for Sunday vs. Chicago (atlantafalcons.com). Did not practice again on Thursday (Oct 15), his second straight DNP; DC Jeff Ulbrich, asked about the depth behind him: 'Mike Hughes is a top-end starter in this league' and 'Avieon (Terrell) is emerging.' Rookie Avieon Terrell would likely make his first career start if Henderson sits (AJC); Avieon Terrell, Billy Bowman and Sydney Brown are next in line. Started at cornerback since the Week 4 depth chart (Sep 29) in place of A.J. Terrell (IR, groin) · Reclamation · ex-#9 overall (2020 JAX) Ruled OUT for Sunday vs. Chicago on Friday's final report (Oct 16) after a third straight DNP; rookie Avieon Terrell starts outside (AJC). Status kept at questionable because the tracker schema has no single-game 'out' value. Wednesday (Oct 21), first Week 7 report: limited (groin), his first practice action since the Baltimore game (atlantafalcons.com). Friday (Oct 23), final Week 7 report (atlantafalcons.com): upgraded to FULL (groin) and listed QUESTIONABLE. Sunday (Oct 25): active and back in the lineup from the groin injury vs. San Francisco (atlantafalcons.com inactives report). Thursday (Oct 29, atlantafalcons.com): limited (groin). Friday (Oct 30), final Week 8 report (atlantafalcons.com): full participant (groin), no game designation. Wednesday (Nov 11): listed as a starting boundary cornerback on the unofficial Week 10 depth chart, the first time this season per atlantafalcons.com.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4240596.png",
     contract: { years: 1, total: 2200000, guaranteed: 750000, apy: 2200000, throughYear: 2026, cap2026: 2200000 },
     career: [
@@ -1167,7 +1167,7 @@ export const PLAYERS = [
     stats: { tackles: 36 },
     form: 6.6,
     status: "active",
-    injuryNote: "Named the next man up at safety by Kevin Stefanski on Monday (Nov 9) after the Jessie Bates III trade (Falcons Wire). Xavier Watts and Sydney Brown are also expected to absorb Bates' snaps. Earlier: limited (shoulder) on the Week 8 reports (Oct 28-29).",
+    injuryNote: "Named the next man up at safety by Kevin Stefanski on Monday (Nov 9) after the Jessie Bates III trade (Falcons Wire). Xavier Watts and Sydney Brown are also expected to absorb Bates' snaps. Earlier: limited (shoulder) on the Week 8 reports (Oct 28-29). Wednesday (Nov 11): listed as the starting safety alongside Xavier Watts on the unofficial Week 10 depth chart, with Sydney Brown as the backup (atlantafalcons.com).",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4567111.png",
     contract: { years: 4, total: 3800000, guaranteed: 200000, apy: 950000, throughYear: 2026, cap2026: 1100000 },
     career: [{ years: "2023–", team: "Atlanta Falcons", type: "NFL" }],
@@ -1214,7 +1214,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "questionable",
-    injuryNote: "Hamstring. Left the 16-0 loss at Tampa Bay (Nov 1) with a hamstring injury and did not return (AP). Ruled out for Week 9 vs. Cincinnati in Madrid by Stefanski on Monday (Nov 2), who was 'not sure, long term, how many games' the injury will cost (AJC); not ruled out of missing Week 10 vs. Kansas City as well. Jahan Dotson takes over punt returns and Olamide Zaccheaus figures to absorb slot snaps (AJC). Status kept at questionable because the tracker schema has no single-game 'out' value. Wednesday (Nov 4), estimated Week 9 report after a walkthrough on arrival in Madrid (atlantafalcons.com): did not participate (hamstring). Thursday (Nov 5), first full practice in Madrid (atlantafalcons.com official report): did not participate (hamstring); already ruled out for Sunday. Friday (Nov 6), final Week 9 report (atlantafalcons.com): did not practice (hamstring) and officially ruled OUT vs. Cincinnati. Sunday (Nov 8): INACTIVE for the 34-17 loss to Cincinnati in Madrid (Falcons Wire). Next chance: Week 10 vs. Kansas City (Nov 15); watch Wednesday's first report.",
+    injuryNote: "Hamstring. Left the 16-0 loss at Tampa Bay (Nov 1) with a hamstring injury and did not return (AP). Ruled out for Week 9 vs. Cincinnati in Madrid by Stefanski on Monday (Nov 2), who was 'not sure, long term, how many games' the injury will cost (AJC); not ruled out of missing Week 10 vs. Kansas City as well. Jahan Dotson takes over punt returns and Olamide Zaccheaus figures to absorb slot snaps (AJC). Status kept at questionable because the tracker schema has no single-game 'out' value. Wednesday (Nov 4), estimated Week 9 report after a walkthrough on arrival in Madrid (atlantafalcons.com): did not participate (hamstring). Thursday (Nov 5), first full practice in Madrid (atlantafalcons.com official report): did not participate (hamstring); already ruled out for Sunday. Friday (Nov 6), final Week 9 report (atlantafalcons.com): did not practice (hamstring) and officially ruled OUT vs. Cincinnati. Sunday (Nov 8): INACTIVE for the 34-17 loss to Cincinnati in Madrid (Falcons Wire). Next chance: Week 10 vs. Kansas City (Nov 15); watch Wednesday's first report. Wednesday (Nov 11), first Week 10 report (atlantafalcons.com): did not practice (hamstring). Still listed at punt returner on the unofficial depth chart.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4870612.png",
     contract: { years: 4, total: 5800000, guaranteed: 1850000, apy: 1450000, throughYear: 2029, cap2026: 1100000 },
     career: [
@@ -1330,7 +1330,7 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "active",
-    injuryNote: "Signed to the 53 off Baltimore's practice squad on Tuesday (Nov 10), replacing the released Nick Folk (ESPN, NBC Sports / PFT, Pro Football Rumors). Kicked a 53-yard field goal in a downpour for the Ravens vs. Jacksonville on Thursday (Nov 6), his only 2026 game; per PFR he has missed one of 15 field-goal tries since leaving San Francisco. The Athletic's Jeff Zrebiec reported he chose Atlanta over a Ravens active-roster spot, and ESPN noted the draw of kicking mostly indoors. Jersey number per the ESPN roster; the team has not announced it.",
+    injuryNote: "Signed to the 53 off Baltimore's practice squad on Tuesday (Nov 10), replacing the released Nick Folk (ESPN, NBC Sports / PFT, Pro Football Rumors). Kicked a 53-yard field goal in a downpour for the Ravens vs. Jacksonville on Thursday (Nov 6), his only 2026 game; per PFR he has missed one of 15 field-goal tries since leaving San Francisco. The Athletic's Jeff Zrebiec reported he chose Atlanta over a Ravens active-roster spot, and ESPN noted the draw of kicking mostly indoors. Jersey number per the ESPN roster; the team has not announced it. Wednesday (Nov 11): listed as the starting kicker on the unofficial Week 10 depth chart (atlantafalcons.com). Stefanski on the switch: 'Nick Folk is an outstanding human being,' but releasing him was 'the best thing for our football team in this moment' (Falcons Wire).",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4372066.png",
     career: [
       { years: "2026–", team: "Atlanta Falcons", type: "NFL · signed off BAL practice squad (Nov 10)" },
@@ -2080,7 +2080,7 @@ export const NEXT_GAME = {
   date: "2026-11-15",
   kickoff: "1:00 PM ET",
   tv: "CBS",
-  note: "Back home after Madrid: Atlanta (3-6, last in the NFC South) hosts Kansas City (6-2) at 1:00 PM ET on Sunday, Nov 15 (CBS), the last game before the Week 11 bye. The Chiefs beat the Jets 35-12 in Week 9 (SI). Opening line: KC -3, total 46.5, moneylines KC -175 / ATL +145 (bet365 via FOX Sports, Nov 8); Covers lists KC -3.5. Atlanta plays its first game without S Jessie Bates III, traded to Jacksonville on Monday (Nov 9; DeMarcco Hellams is the next man up), and without C Ryan Neuzil, traded to Baltimore at Tuesday's deadline (Corey Levin is the likely starter, per ESPN). New K Jake Moody, signed off the Ravens' practice squad Tuesday, replaces the released Nick Folk. Mahomes watch: Andy Reid called Patrick Mahomes day-to-day on Monday (Nov 9) with a throwing-elbow strain/sprain from the win over the Jets; an MRI showed no significant damage (NFL Network via Field Level Media). Reid also listed WR Xavier Worthy (hamstring) as day-to-day. Justin Fields is the backup. Falcons injuries to watch: WR Zachariah Branch (hamstring) was inactive in Madrid; RB Brian Robinson Jr. and DE Samson Ebukam are on injured reserve; OLB James Pearce Jr. (back) played limited snaps in his return. For KC, CB Mansoor Delane (shoulder) and DT Peter Woods (neck) are expected back (CBS's Tracy Wolfson via Heavy, Nov 9). First injury report Wednesday (Nov 11).",
+  note: "Back home after Madrid: Atlanta (3-6, last in the NFC South) hosts Kansas City (6-2) at 1:00 PM ET on Sunday, Nov 15 (CBS), the last game before the Week 11 bye. Line has drifted to KC -3.5, total 45.5, moneylines KC -185 / ATL +154 (DraftKings via NBC Sports, Wednesday Nov 11); it opened KC -3 (FOX Sports, Nov 8). Three first starts for Atlanta per the unofficial Week 10 depth chart (atlantafalcons.com, Nov 11): C Corey Levin (for the traded Ryan Neuzil), S DeMarcco Hellams (for the traded Jessie Bates III) and K Jake Moody (for the released Nick Folk); C.J. Henderson is listed as a starting boundary corner for the first time this season. OT Cameron Williams was activated from injured reserve Wednesday. Mahomes watch: he practiced fully Wednesday (elbow/knee) and said he expects to be '100% on Sunday whenever we get to Atlanta' (Kansas City Star via Yahoo); WR Xavier Worthy, TE Travis Kelce and CB Mansoor Delane were also full. KC's OT Jaylon Moore (ankle) and DT Peter Woods (neck) did not practice (chiefs.com). Falcons Wednesday report (atlantafalcons.com): did not practice: WR Zachariah Branch (hamstring), DT Gervon Dexter Sr. (illness), OLB James Pearce Jr. (back), LB Josh Woods (ankle), DE Za'Darius Smith (rest); limited: LB Divine Deablo (forearm). RB Brian Robinson Jr. and DE Samson Ebukam remain on injured reserve.",
 };
 
 // =========================================
@@ -2463,17 +2463,17 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-11-11T09:30:00Z",
+  generatedAt: "2026-11-12T09:30:00Z",
   cover: {
-    kicker: "Deadline day reshapes the roster: Nick Folk is released and Jake Moody signed off Baltimore's practice squad, and starting C Ryan Neuzil goes to the Ravens for G Andrew Vorhees and a 2028 sixth, a day after the Bates trade; Mahomes is day-to-day with an elbow injury before Sunday",
+    kicker: "Chiefs week, Wednesday: Stefanski makes it official that Corey Levin is the new center, the depth chart lists three first-time starters (Levin, Hellams, Moody), Cameron Williams comes off IR, and Mahomes practices fully and says he will be '100%' Sunday",
     headLine1: "New",
-    headEm: "leg.",
-    headLine3: "Folk out, Moody in. Neuzil to Baltimore at the buzzer. Corey Levin likely snaps it Sunday vs. a Chiefs team waiting on Mahomes' elbow.",
-    deck: "Tuesday (Nov 10), deadline day: the Falcons released K Nick Folk, 13-of-18 on field goals in his first Atlanta season with a 38-yard miss in Madrid, and signed Jake Moody off the Ravens' practice squad (ESPN, PFT, Pro Football Rumors). Moody, a 2023 49ers third-rounder, hit a 53-yarder in a downpour for Baltimore last Thursday. Just before the 4 PM ET deadline, Atlanta sent starting C Ryan Neuzil (38 career starts) to Baltimore for G Andrew Vorhees and a 2028 sixth-round pick (ESPN, baltimoreravens.com); ESPN expects Corey Levin to take over at center. The Falcons also signed C Gus Hartwig and S Delarrin Turner-Yell to the practice squad and released DE Drake Jackson (Falcons Wire). Across town in Kansas City, Andy Reid called Patrick Mahomes day-to-day on Monday with a throwing-elbow strain/sprain; an MRI showed no significant damage (NFL Network via Field Level Media). Next: Chiefs at Mercedes-Benz Stadium, Sunday at 1 PM ET (CBS), KC -3. First injury report today.",
+    headEm: "snap.",
+    headLine3: "Levin at center, Hellams at safety, Moody at kicker. Mahomes full go. Branch, Pearce and Dexter sit out Wednesday.",
+    deck: "Wednesday (Nov 11): 'Comfortable and feel good about Corey Levin stepping in,' Kevin Stefanski said of the center job after the Ryan Neuzil trade (atlantafalcons.com). The unofficial Week 10 depth chart has Levin at C, DeMarcco Hellams at S in Jessie Bates III's spot, Jake Moody at K and C.J. Henderson starting at boundary corner for the first time this season; new G Andrew Vorhees backs up Chris Lindstrom (atlantafalcons.com). OT Cameron Williams was activated from injured reserve (AP). On the first injury report, WR Zachariah Branch (hamstring), DT Gervon Dexter Sr. (illness), OLB James Pearce Jr. (back) and LB Josh Woods (ankle) did not practice, Za'Darius Smith had a rest day and Divine Deablo was limited. In Kansas City, Patrick Mahomes practiced fully and said he expects to be '100% on Sunday' (Kansas City Star). Next: Chiefs at Mercedes-Benz Stadium, Sunday at 1 PM ET (CBS), KC -3.5 (DraftKings).",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
-    photoId: "moody",
-    stampLabel: "Tue Nov 10 · Folk released, Moody signed off BAL PS · Neuzil to BAL for Vorhees + 2028 R6 · Levin likely at C · PS: Hartwig, Turner-Yell in; D. Jackson out · ATL 3-6, 4th in NFC South · Next: vs. KC (6-2), Sun Nov 15, 1 PM ET, CBS · KC -3 · Mahomes day-to-day (elbow)",
+    photoId: "levin",
+    stampLabel: "Wed Nov 11 · Levin named starting C · First starts: Levin, Hellams, Moody · C. Williams off IR · DNP: Branch, Dexter, Pearce, Woods, Z. Smith (rest) · Ltd: Deablo · Mahomes full · ATL 3-6 · Next: vs. KC (6-2), Sun Nov 15, 1 PM ET, CBS · KC -3.5",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -3164,9 +3164,12 @@ export const NEWS_DIGEST = {
     // Jacksonville; filedFrom back to Flowery Branch; fallback photoId moved to hellams (next man up). Pointer unchanged.
     // STATUS (2026-11-11 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto deadline day (Folk released,
     // Moody signed, Neuzil traded to BAL for Vorhees + 2028 R6, Mahomes day-to-day); fallback photoId moved to moody. Pointer unchanged.
+    // STATUS (2026-11-12 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto Chiefs week Wednesday (Levin named
+    // starting C, depth chart first starts for Levin/Hellams/Moody, C. Williams off IR, first injury report, Mahomes full); fallback photoId moved to levin. Pointer unchanged.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
+    "atlantafalcons.com (Nov 11)", "Falcons Wire (Yahoo, Nov 11)", "AP (Yahoo, Nov 11)", "Kansas City Star (Yahoo, Nov 11)", "chiefs.com (Nov 11)", "NBC Sports (Nov 11)", "CBS Sports (Nov 11)", "NFL Draft Diamonds transactions (Nov 11)", "ESPN roster API (Nov 12)",
     "ESPN (Nov 10)", "NBC Sports / PFT (Nov 10)", "Pro Football Rumors (Nov 10)", "baltimoreravens.com (Nov 10)", "Falcons Wire (Yahoo, Nov 10)", "AJC (Nov 10)",
     "Bleacher Report deadline grades (Nov 9-10)", "atlantafalcons.com transactions (Nov 10)", "Field Level Media (Nov 9)", "FantasyFootballers / Chiefs.com (Nov 9)", "Heavy (Nov 8)", "Wikipedia (Jake Moody, Delarrin Turner-Yell)", "ESPN roster API (Nov 11)",
     "atlantafalcons.com (Nov 9)", "jaguars.com (Nov 9)", "NFL.com (Nov 9)", "CBS Sports / CBS News Atlanta (Nov 9)", "Falcons Wire (Yahoo, Nov 9)", "Atlanta Falcons On SI (Nov 9)",
@@ -3233,6 +3236,55 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
+      title: "Stefanski: Levin is the center",
+      detail: "atlantafalcons.com (Wednesday, Nov 11): a day after Ryan Neuzil was traded to Baltimore, Kevin Stefanski confirmed Corey Levin takes over at center. 'Love Neuz, great person. Just felt like this was an opportunity for our football team,' he said. 'Comfortable and feel good about Corey Levin stepping in.' Levin, a Georgia native and 2017 Titans sixth-rounder, worked with OL coach Bill Callahan in 2024 and 2025. 'Corey has been here with us since the spring,' Stefanski said.",
+      category: "coaching",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-feel-good-corey-levin-starting-center",
+      sourceLabel: "atlantafalcons.com",
+    },
+    {
+      title: "Depth chart: three first starts vs. KC",
+      detail: "atlantafalcons.com unofficial Week 10 depth chart (Wednesday, Nov 11): Corey Levin at C, DeMarcco Hellams at S next to Xavier Watts (Sydney Brown backup) and Jake Moody at K. C.J. Henderson is listed as a starting boundary corner for the first time this season, opposite A.J. Terrell Jr. with Avieon Terrell at nickel. New G Andrew Vorhees backs up Chris Lindstrom. Falcons Wire notes Levin, Hellams and Moody all make their first starts of the year Sunday.",
+      category: "general",
+      sourceUrl: "https://www.atlantafalcons.com/news/atlanta-falcons-week-10-depth-chart-vs-kansas-city-chiefs",
+      sourceLabel: "atlantafalcons.com / Falcons Wire",
+    },
+    {
+      title: "First report: Branch, Pearce, Dexter, Woods sit",
+      detail: "atlantafalcons.com (Wednesday, Nov 11): WR Zachariah Branch (hamstring), DT Gervon Dexter Sr. (illness), OLB James Pearce Jr. (back) and LB Josh Woods (ankle) did not practice, and DE Za'Darius Smith had a rest day. LB Divine Deablo (forearm) was limited. Branch missed the Madrid game; Pearce played 15 snaps there in his season debut.",
+      category: "injuries",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-injury-report-zachariah-branch-josh-woods-james-pearce-jr",
+      sourceLabel: "atlantafalcons.com",
+    },
+    {
+      title: "Mahomes full, expects to be '100%'",
+      detail: "Kansas City Star via Yahoo Sports and chiefs.com (Wednesday, Nov 11): Patrick Mahomes was a full participant (knee/right elbow) and said he expects to be '100% on Sunday whenever we get to Atlanta.' 'We're in a better spot than we were after the game,' he said. Xavier Worthy, Travis Kelce, Rashee Rice and CB Mansoor Delane were also full; OT Jaylon Moore (ankle) and DT Peter Woods (neck) did not practice.",
+      category: "injuries",
+      sourceUrl: "https://sports.yahoo.com/articles/chiefs-patrick-mahomes-details-elbow-194643062.html",
+      sourceLabel: "Kansas City Star (Yahoo) / chiefs.com",
+    },
+    {
+      title: "Cameron Williams activated from IR",
+      detail: "AP via Yahoo Sports and the NFL transaction wire (Wednesday, Nov 11): the Falcons activated OT Cameron Williams from Reserve/Injured after he practiced fully through the Week 8 and Week 9 reports with the ankle injury. The 2025 Eagles sixth-rounder is listed as Jake Matthews' backup at left tackle on the Week 10 depth chart.",
+      category: "injuries",
+      sourceUrl: "https://sports.yahoo.com/articles/falcons-release-veteran-kicker-nick-162429968.html",
+      sourceLabel: "AP (Yahoo) / NFL transactions",
+    },
+    {
+      title: "Stefanski on Folk: 'the best thing for our football team'",
+      detail: "Falcons Wire (Wednesday, Nov 11): Stefanski said the kicker change came after long talks with Matt Ryan and Ian Cunningham. 'Nick Folk is an outstanding human being,' he said, but releasing him was 'the best thing for our football team in this moment.' AP notes Folk had made 107 straight field goals inside 40 yards before his 38-yard miss in Madrid. On the deadline overall: 'Our focus hasn't changed one bit' (atlantafalcons.com).",
+      category: "coaching",
+      sourceUrl: "https://sports.yahoo.com/articles/kevin-stefanski-expresses-confidence-falcons-173150053.html",
+      sourceLabel: "Falcons Wire (Yahoo) / AP",
+    },
+    {
+      title: "Line drifts to KC -3.5",
+      detail: "NBC Sports (Wednesday, Nov 11): DraftKings has Kansas City -3.5 with a 45.5 total and moneylines KC -185 / ATL +154 for Sunday's 1 PM ET game at Mercedes-Benz Stadium (CBS). It opened KC -3 (FOX Sports, Nov 8). Stefanski on the Chiefs: 'They're really really well-coached and sound' (atlantafalcons.com).",
+      category: "games",
+      sourceUrl: "https://www.nbcsports.com/nfl/news/chiefs-vs-falcons-prediction-odds-expert-picks-qb-matchup-injury-update-betting-trends-and-stats",
+      sourceLabel: "NBC Sports / atlantafalcons.com",
+    },
+    {
       title: "Folk released, Jake Moody signed",
       detail: "ESPN, NBC Sports / PFT and Pro Football Rumors (Tuesday, Nov 10): Atlanta released K Nick Folk, 42, who was 13-of-18 on field goals in his first Falcons season, 1-of-4 from 50-plus, with a 38-yard miss in Madrid. In his place the Falcons signed Jake Moody off Baltimore's practice squad. Moody, a 2023 49ers third-round pick, made a 53-yarder in a downpour for the Ravens on Nov 6 and, per PFR, has missed one of 15 field-goal tries since leaving San Francisco. The Athletic's Jeff Zrebiec reported he picked Atlanta over a Ravens active-roster spot.",
       category: "contracts",
@@ -3247,25 +3299,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "ESPN / baltimoreravens.com",
     },
     {
-      title: "Corey Levin likely to start at center",
-      detail: "ESPN (Tuesday, Nov 10): with Neuzil gone, the Falcons 'will likely hand off their starting center job to Corey Levin,' an eight-year veteran who has played guard and center and worked with OL coach Bill Callahan at Tennessee. Atlanta also signed C Gus Hartwig, a 2025 Jets undrafted free agent out of Purdue, to the practice squad. The team has not confirmed the starter.",
-      category: "general",
-      sourceUrl: "https://www.espn.com/nfl/story/_/id/50446499/falcons-trade-center-neuzil-ravens-guard-vorhees-pick",
-      sourceLabel: "ESPN",
-    },
-    {
       title: "Practice squad: Turner-Yell and Hartwig in, Drake Jackson out",
       detail: "Falcons Wire via Yahoo Sports (Tuesday, Nov 10): after the deadline Atlanta signed S Delarrin Turner-Yell, a 2022 Broncos fifth-rounder it worked out on Oct 14, and C Gus Hartwig to the practice squad and released DE Drake Jackson, who had used all three standard elevations. The ESPN roster now lists Turner-Yell and Hartwig on the practice squad. No deal beyond Bates and Neuzil went through for Atlanta.",
       category: "general",
       sourceUrl: "https://sports.yahoo.com/articles/falcons-trade-starting-center-ravens-213457403.html",
       sourceLabel: "Falcons Wire (Yahoo)",
-    },
-    {
-      title: "Mahomes day-to-day with an elbow injury",
-      detail: "Field Level Media (Monday, Nov 9): Andy Reid called Patrick Mahomes day-to-day for Sunday's game in Atlanta after he hurt his throwing elbow late in the first half of the 35-12 win over the Jets; an MRI showed a strain or sprain with no significant damage (NFL Network). 'It looks like it's just a matter of (getting) some rehabbing in there and getting rid of some of the soreness,' Reid said. WR Xavier Worthy (hamstring) is also day-to-day (Chiefs.com via FantasyFootballers). Justin Fields is the backup.",
-      category: "injuries",
-      sourceUrl: "https://fieldlevelmedia.com/news/chiefs-qb-patrick-mahomes-elbow-considered-day-to-day/",
-      sourceLabel: "Field Level Media",
     },
     {
       title: "Bates traded to Jacksonville",
@@ -3282,32 +3320,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com / SI",
     },
     {
-      title: "Hellams is the next man up at safety",
-      detail: "Falcons Wire (Monday, Nov 9): Stefanski named DeMarcco Hellams, a 2023 seventh-round pick from Alabama, as Bates' replacement: 'Obviously, DeMarcco is the next man up that we feel really good about.' Xavier Watts is expected to take on some of Bates' role and Sydney Brown should see extra reps. On Tuesday (Nov 10) Atlanta added S Delarrin Turner-Yell to the practice squad for depth (Falcons Wire).",
-      category: "general",
-      sourceUrl: "https://sports.yahoo.com/articles/falcons-head-coach-kevin-stefanski-203356090.html",
-      sourceLabel: "Falcons Wire (Yahoo)",
-    },
-    {
       title: "Bengals 34, Falcons 17 in Madrid",
       detail: "AP via ESPN (Sunday, Nov 8): Atlanta scored 10 points on its first two drives, including Michael Penix Jr.'s opening-drive TD to Charlie Woerner, but Cincinnati scored on every first-half possession to lead 24-10 at the break and won its fourth straight. Joe Burrow went 24-of-29 for 271 yards with three TD passes and a TD run; Ja'Marr Chase had 10 catches for 155 yards and Tee Higgins caught two TDs. Falcons 3-6, a second straight loss, before 78,660 at the Bernabéu.",
       category: "games",
       sourceUrl: "https://www.espn.com/nfl/recap/_/gameId/401873038",
       sourceLabel: "AP (ESPN)",
-    },
-    {
-      title: "Stefanski: 'I'm talking all of us'",
-      detail: "Atlanta Falcons On SI and NFL.com (Sunday, Nov 8, postgame): 'Frustrating, disappointing,' Stefanski said. 'We have to be better. And I'm talking all of us.' He added, 'We had too many self-inflicted things today that are going to make it really hard to win against anyone,' and declined to make 'any proclamations on our year right now.'",
-      category: "coaching",
-      sourceUrl: "https://www.si.com/nfl/falcons/onsi/falcons-madrid-debacle-raises-bigger-questions-about-seasons-future",
-      sourceLabel: "Atlanta Falcons On SI / NFL.com",
-    },
-    {
-      title: "Bijan back over 100",
-      detail: "ESPN and Atlanta Falcons On SI (Sunday, Nov 8): Bijan Robinson ran 19 times for 100 yards, including 42 on three carries on the opening drive, and scored on a 1-yard run in the third quarter, Atlanta's first rushing TD since Week 4. He added 6 catches for 47 yards, 147 yards from scrimmage.",
-      category: "games",
-      sourceUrl: "https://www.espn.com/nfl/recap/_/gameId/401873038",
-      sourceLabel: "ESPN / Atlanta Falcons On SI",
     },
     {
       title: "NFC South: everyone lost but New Orleans",
@@ -3316,20 +3333,32 @@ export const NEWS_DIGEST = {
       sourceUrl: "https://bleacherreport.com/articles/25530814-nfl-playoff-bracket-picture-2026-27-and-afc-nfc-standings-after-week-9-snf",
       sourceLabel: "Bleacher Report / SI",
     },
-    {
-      title: "Chiefs next: KC opens -3 in Atlanta",
-      detail: "FOX Sports (Nov 8): Kansas City (6-2, a 35-12 winner over the Jets) opens as a 3-point road favorite for Sunday's 1 PM ET game at Mercedes-Benz Stadium (CBS), total 46.5, moneylines KC -175 / ATL +145 at bet365. Covers lists KC -3.5. The Chiefs expect CB Mansoor Delane (shoulder) and DT Peter Woods (neck) back, per CBS's Tracy Wolfson (Heavy, Nov 9). The Falcons' bye follows in Week 11.",
-      category: "games",
-      sourceUrl: "https://www.foxsports.com/stories/nfl/2026-nfl-odds-week-10-lines-spreads-results-all-14-games",
-      sourceLabel: "FOX Sports / Covers",
-    },
   ],
 };
 
 export const INTERVIEWS = {
-  generatedAt: "2026-11-10T09:45:00Z",
+  generatedAt: "2026-11-12T09:45:00Z",
   windowLabel: "Game Week vs. Kansas City · Nov 9 → Nov 15",
   sessions: [
+    {
+      id: "stefanski-2026-11-11",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-11-11",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Week 10 vs. Kansas City · Wednesday Press Conference",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-feel-good-corey-levin-starting-center",
+      summary: "The day after the deadline, Stefanski explained the Ryan Neuzil trade and the Nick Folk release, handed the center job to Corey Levin and turned to a Chiefs team he called sound and well-coached. Quotes via atlantafalcons.com and Falcons Wire.",
+      pullQuote: "Comfortable and feel good about Corey Levin stepping in.",
+      bullets: [
+        "On Neuzil: 'Love Neuz, great person. Just felt like this was an opportunity for our football team' (atlantafalcons.com)",
+        "On depth: 'It's very similar to all positions where guys have to stay ready so they don't have to get ready,' noting Levin has been with the team since the spring (atlantafalcons.com)",
+        "On the kicker change: 'Nick Folk is an outstanding human being,' but releasing him was 'the best thing for our football team in this moment' (Falcons Wire)",
+        "On the deadline: 'Decisions that are made for our football team are always in the best interest of our football team' and 'Our focus hasn't changed one bit' (atlantafalcons.com)",
+        "On Kansas City: 'Coach Reid does an outstanding job,' and 'They can play aggressive; they can play coverage' (Falcons Wire, atlantafalcons.com)",
+      ],
+      topics: ["levin", "neuzil-trade", "folk", "moody", "chiefs-week", "week-10"],
+    },
     {
       id: "stefanski-2026-11-09",
       speaker: "Kevin Stefanski",
@@ -3419,25 +3448,6 @@ export const INTERVIEWS = {
         "On seeing the Bernabéu, in Thursday comments: 'We can't wait to go see it' (AP)",
       ],
       topics: ["madrid-week", "week-9", "penix", "interceptions"],
-    },
-    {
-      id: "stefanski-2026-11-04",
-      speaker: "Kevin Stefanski",
-      role: "Head Coach",
-      date: "2026-11-04",
-      venue: "Real Madrid training center · Madrid, Spain",
-      session: "Week 9 vs. Cincinnati (Madrid) · Wednesday Press Conference",
-      sourceUrl: "https://www.clickorlando.com/sports/2026/11/04/stefanski-prepares-falcons-for-bengals-offense-in-madrid-after-struggles-in-the-rain-in-florida/",
-      summary: "In his first session after landing in Spain, Stefanski turned the page from the Tampa shutout to Joe Burrow's offense, praised the Real Madrid setup and laid out how the staff will decide James Pearce Jr.'s workload. Quotes via AP (ClickOrlando, Atlanta News First, FOX Sports) and Atlanta Falcons On SI.",
-      pullQuote: "It's just a different deal when you go up against Joe Burrow and this offense and what they're capable of doing and how they play.",
-      bullets: [
-        "On the Bernabéu, at his first Madrid press conference: 'I don't take it for granted how special this place is relative to the global stage' (DAZN)",
-        "On Pearce: 'We'll have a full-speed practice Thursday or Friday of this week and see where James is... I don't have an exact number of snaps just yet' (AP, Atlanta News First)",
-        "On Ja'Marr Chase and Tee Higgins: 'Having two wide receiver playmakers like they have, I don't know if anybody in the league has guys like that' (AP)",
-        "On the offense after Tampa: 'We're so excited about getting back being who we always are' (AP)",
-        "On the trip: 'This is a beautiful facility for us to get some work done this week' and 'This is a huge undertaking to take your football team across the pond' (AP, FOX Sports)",
-      ],
-      topics: ["madrid-week", "week-9", "burrow", "pearce", "international"],
     },
   ],
 };
