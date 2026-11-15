@@ -896,7 +896,7 @@ export const PLAYERS = [
     stats: { tackles: 92, tfl: 7, sacks: 2, int_def: 1 },
     form: 8.0,
     status: "active",
-    injuryNote: "Arm. Injured in the first half of the 31-23 loss to Chicago (Oct 18) and ruled out late in the second quarter (atlantafalcons.com); Stefanski had no update Monday (Oct 19, AP). Had battled a hamstring issue through Weeks 4-6 practices without missing a game. MIKE · 3yr/$30M FA signing from Las Vegas. Wednesday (Oct 21), first Week 7 report: did not participate, with the injury listed as forearm (atlantafalcons.com). Did not practice Wednesday or Thursday (Oct 21-22, forearm) of 49ers week (official report via 49ers Webzone). Friday (Oct 23), final Week 7 report (atlantafalcons.com): did not practice and ruled OUT vs. San Francisco (forearm). Status kept at questionable because the tracker schema has no single-game 'out' value. Wednesday (Oct 28), first Week 8 report (buccaneers.com, Falcons Wire): did not practice (forearm). Thursday (Oct 29, atlantafalcons.com): returned to practice, limited (forearm). Friday (Oct 30), final Week 8 report (atlantafalcons.com): limited (forearm), listed QUESTIONABLE vs. Tampa Bay. Saturday (Oct 31): downgraded to OUT vs. Tampa Bay (forearm), his second straight missed game; Kendal Daniels expected to wear the green dot with Harold Perkins Jr. beside him (atlantafalcons.com). Wednesday (Nov 4), estimated Week 9 report after a walkthrough on arrival in Madrid (atlantafalcons.com): limited (forearm). Thursday (Nov 5), first full practice in Madrid (atlantafalcons.com official report): limited (forearm) again. Friday (Nov 6), final Week 9 report (atlantafalcons.com): upgraded to full (forearm) and listed QUESTIONABLE; the team left the door open for his return. Sunday (Nov 8): not on the inactive list for the 34-17 loss to Cincinnati in Madrid (Falcons Wire), so he was active for the first time since the Oct 18 forearm injury. Status moved to active. Wednesday (Nov 11), first Week 10 report (atlantafalcons.com): limited (forearm); he played with the arm wrapped in Madrid. Thursday (Nov 12, atlantafalcons.com): did not practice (forearm), a step back from Wednesday's limited session. Friday (Nov 13), final Week 10 report (atlantafalcons.com): did not practice (forearm) and listed DOUBTFUL vs. Kansas City. Status set to questionable because the tracker schema has no doubtful value.",
+    injuryNote: "Arm. Injured in the first half of the 31-23 loss to Chicago (Oct 18) and ruled out late in the second quarter (atlantafalcons.com); Stefanski had no update Monday (Oct 19, AP). Had battled a hamstring issue through Weeks 4-6 practices without missing a game. MIKE · 3yr/$30M FA signing from Las Vegas. Wednesday (Oct 21), first Week 7 report: did not participate, with the injury listed as forearm (atlantafalcons.com). Did not practice Wednesday or Thursday (Oct 21-22, forearm) of 49ers week (official report via 49ers Webzone). Friday (Oct 23), final Week 7 report (atlantafalcons.com): did not practice and ruled OUT vs. San Francisco (forearm). Status kept at questionable because the tracker schema has no single-game 'out' value. Wednesday (Oct 28), first Week 8 report (buccaneers.com, Falcons Wire): did not practice (forearm). Thursday (Oct 29, atlantafalcons.com): returned to practice, limited (forearm). Friday (Oct 30), final Week 8 report (atlantafalcons.com): limited (forearm), listed QUESTIONABLE vs. Tampa Bay. Saturday (Oct 31): downgraded to OUT vs. Tampa Bay (forearm), his second straight missed game; Kendal Daniels expected to wear the green dot with Harold Perkins Jr. beside him (atlantafalcons.com). Wednesday (Nov 4), estimated Week 9 report after a walkthrough on arrival in Madrid (atlantafalcons.com): limited (forearm). Thursday (Nov 5), first full practice in Madrid (atlantafalcons.com official report): limited (forearm) again. Friday (Nov 6), final Week 9 report (atlantafalcons.com): upgraded to full (forearm) and listed QUESTIONABLE; the team left the door open for his return. Sunday (Nov 8): not on the inactive list for the 34-17 loss to Cincinnati in Madrid (Falcons Wire), so he was active for the first time since the Oct 18 forearm injury. Status moved to active. Wednesday (Nov 11), first Week 10 report (atlantafalcons.com): limited (forearm); he played with the arm wrapped in Madrid. Thursday (Nov 12, atlantafalcons.com): did not practice (forearm), a step back from Wednesday's limited session. Friday (Nov 13), final Week 10 report (atlantafalcons.com): did not practice (forearm) and listed DOUBTFUL vs. Kansas City. Saturday (Nov 14): downgraded to OUT vs. Kansas City (forearm) after one practice all week (atlantafalcons.com). Status kept at questionable because the tracker schema has no single-game 'out' value.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4037626.png",
     contract: { years: 3, total: 30000000, guaranteed: 18000000, apy: 10000000, throughYear: 2028, cap2026: 8500000 },
     career: [
@@ -1547,7 +1547,8 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "practice-squad",
-    injuryNote: "Re-signed to the practice squad after his Oct 15 release from the 53 and was elevated for Week 6 vs. Chicago. Had been signed to the 53 on Oct 10 when Yasir Abdullah went to IR. A 2023 Carolina fifth-round pick.",
+    injuryNote: "Re-signed to the practice squad after his Oct 15 release from the 53 and was elevated for Week 6 vs. Chicago. Had been signed to the 53 on Oct 10 when Yasir Abdullah went to IR. A 2023 Carolina fifth-round pick. Elevated Saturday (Nov 14) for Week 10 vs. Kansas City, his third elevation this season, the league maximum, so another game would require a 53-man contract (atlantafalcons.com).",
+    psNote: "Elevated Wk 10 (3rd, max)",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4430411.png",
     career: [
       { years: "2026–", team: "Atlanta Falcons", type: "NFL · practice squad" },
@@ -1571,7 +1572,8 @@ export const PLAYERS = [
     stats: {},
     form: 0,
     status: "practice-squad",
-    injuryNote: "Signed to the practice squad Oct 20, a Valdosta native released by Green Bay at cutdown.",
+    injuryNote: "Signed to the practice squad Oct 20, a Valdosta native released by Green Bay at cutdown. Elevated Saturday (Nov 14) for Week 10 vs. Kansas City for linebacker and special-teams depth with Divine Deablo ruled out (atlantafalcons.com).",
+    psNote: "Elevated Wk 10",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4684030.png",
     career: [
       { years: "2026–", team: "Atlanta Falcons", type: "NFL · practice squad" },
@@ -2080,7 +2082,7 @@ export const NEXT_GAME = {
   date: "2026-11-15",
   kickoff: "1:00 PM ET",
   tv: "CBS",
-  note: "Back home after Madrid: Atlanta (3-6, last in the NFC South) hosts Kansas City (6-2) at 1:00 PM ET on Sunday, Nov 15 (CBS), the last game before the Week 11 bye. Final Falcons report (atlantafalcons.com, Friday Nov 13): OUT: WR Zachariah Branch (hamstring), his second straight missed game. DOUBTFUL: LB Divine Deablo (forearm, DNP all three days after Wednesday's limited session). QUESTIONABLE: DT Gervon Dexter Sr. (illness, limited), OLB James Pearce Jr. (back, limited) and LB Josh Woods (ankle, full Friday). Kendal Daniels (Achilles) and Cameron Thomas (groin) were full with no designation; LS Liam McCullough missed Friday for a personal matter. Chiefs final report (Chiefs' X post via Athlon, Nov 13): OUT: OT Jaylon Moore, DT Peter Woods and DT Omarr Norman-Lott. QUESTIONABLE: RB Kenneth Walker III (groin), Jaydn Ott and CB Mansoor Delane. Patrick Mahomes carries no designation and is expected to start (Athlon). Walker, second in the NFL with 872 rushing yards behind Bijan Robinson's 880, missed Friday's practice after reporting tightness; rookie Emmett Johnson would start if he cannot go (ESPN). Reid: 'We're not going to put him at risk. If he can go, he can go. If he can't, he can't.' Line: KC -3.5, total 45.5, moneylines KC -185 / ATL +154 (DraftKings via NBC Sports, Wednesday Nov 11); it opened KC -3 (FOX Sports, Nov 8). SI Betting notes Atlanta is 1-4 at home and 3-6 against the spread. Three first starts for Atlanta per the unofficial Week 10 depth chart (atlantafalcons.com, Nov 11): C Corey Levin (for the traded Ryan Neuzil), S DeMarcco Hellams (for the traded Jessie Bates III) and K Jake Moody (for the released Nick Folk). C.J. Henderson, extended through 2028 on Friday, is listed as a starting boundary corner for the first time this season. RB Brian Robinson Jr. and DE Samson Ebukam remain on injured reserve.",
+  note: "Back home after Madrid: Atlanta (3-6, last in the NFC South) hosts Kansas City (6-2) at 1:00 PM ET on Sunday, Nov 15 (CBS), the last game before the Week 11 bye. Final Falcons report (atlantafalcons.com, Friday Nov 13): OUT: WR Zachariah Branch (hamstring), his second straight missed game. LB Divine Deablo (forearm) was listed DOUBTFUL Friday and downgraded to OUT on Saturday (atlantafalcons.com, Nov 14); the Falcons also elevated S Jammie Robinson (his third and final elevation) and LB TJ Quinn from the practice squad. QUESTIONABLE: DT Gervon Dexter Sr. (illness, limited), OLB James Pearce Jr. (back, limited) and LB Josh Woods (ankle, full Friday). Kendal Daniels (Achilles) and Cameron Thomas (groin) were full with no designation; LS Liam McCullough missed Friday for a personal matter. Chiefs final report (Chiefs' X post via Athlon, Nov 13): OUT: OT Jaylon Moore, DT Peter Woods and DT Omarr Norman-Lott. Patrick Mahomes carries no designation and is expected to start (Athlon). Saturday (Nov 14): RB Kenneth Walker III (groin), second in the NFL with 872 rushing yards behind Bijan Robinson's 880, was ruled OUT, with the Chiefs wanting to 'give him a week' (ESPN's Adam Schefter and NFL Network's Ian Rapoport); rookie Emmett Johnson makes his first NFL start, and Kansas City elevated RB Nate Carter (a 2025 Falcons UDFA) and WR Jacob De Jesus from the practice squad (Heavy). Jaydn Ott (hamstring) is also out per Heavy; CB Mansoor Delane was listed questionable Friday. Line: KC -3.5 at DraftKings (opened -3, SI Betting) and FanDuel (KC -172 / ATL +144, total 47.5; FanDuel Research, Nov 10). SI Betting notes Atlanta is 1-4 at home and 3-6 against the spread. Three first starts for Atlanta per the unofficial Week 10 depth chart (atlantafalcons.com, Nov 11): C Corey Levin (for the traded Ryan Neuzil), S DeMarcco Hellams (for the traded Jessie Bates III) and K Jake Moody (for the released Nick Folk). C.J. Henderson, extended through 2028 on Friday, is listed as a starting boundary corner for the first time this season. RB Brian Robinson Jr. and DE Samson Ebukam remain on injured reserve.",
 };
 
 // =========================================
@@ -2463,17 +2465,17 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-11-14T10:30:00Z",
+  generatedAt: "2026-11-15T09:45:00Z",
   cover: {
-    kicker: "Chiefs week, Friday: Atlanta extends two of its best bargains, DE Cameron Thomas (three years, up to $33 million) and CB C.J. Henderson (two years, $20 million), then rules out Zachariah Branch, lists Divine Deablo doubtful and Pearce, Dexter and Josh Woods questionable; Mahomes is clear, Kenneth Walker III is questionable",
-    headLine1: "Paid",
-    headEm: "and pending.",
-    headLine3: "Thomas and Henderson extended. Branch out, Deablo doubtful, Pearce, Dexter and Woods questionable. Mahomes clear, Walker iffy.",
-    deck: "Friday (Nov 13): the Falcons agreed to a three-year extension with DE Cameron Thomas (atlantafalcons.com) worth up to $33 million, through 2029 (ESPN's Adam Schefter via CBS Sports; AP), and announced a two-year, $20 million extension for CB C.J. Henderson through 2028 (AP). Thomas, signed to a one-year deal in the spring, has a career-high 12 QB hits and two sacks; Henderson has a career-high nine passes defensed. 'He demonstrates what we love about this game every single day,' Jeff Ulbrich said of Thomas. On the final report (atlantafalcons.com), WR Zachariah Branch (hamstring) is OUT, LB Divine Deablo (forearm) is DOUBTFUL, and James Pearce Jr. (back), Gervon Dexter Sr. (illness) and Josh Woods (ankle) are QUESTIONABLE. Kansas City: Mahomes has no designation and is expected to start (Athlon); RB Kenneth Walker III (groin) is questionable after missing Friday (ESPN), and OT Jaylon Moore, DT Peter Woods and DT Omarr Norman-Lott are out. Next: Chiefs at Mercedes-Benz Stadium, Sunday at 1 PM ET (CBS), KC -3.5 (DraftKings).",
+    kicker: "Chiefs game day: Kenneth Walker III is ruled out for Kansas City and rookie Emmett Johnson makes his first start; Atlanta downgrades Divine Deablo to out and elevates Jammie Robinson and TJ Quinn; Mahomes starts; KC -3.5, 1 PM ET on CBS",
+    headLine1: "Walker out,",
+    headEm: "Deablo out.",
+    headLine3: "Emmett Johnson starts for KC. Robinson and Quinn elevated. Mahomes in. Last game before the bye.",
+    deck: "Saturday (Nov 14): the Chiefs will sit RB Kenneth Walker III (groin), second in the NFL with 872 rushing yards behind Bijan Robinson's 880, and 'give him a week,' sources told ESPN's Adam Schefter and NFL Network's Ian Rapoport; rookie Emmett Johnson makes his first NFL start, and Kansas City elevated RB Nate Carter and WR Jacob De Jesus (Heavy). In Atlanta, LB Divine Deablo (forearm) was downgraded from doubtful to out, and S Jammie Robinson and LB TJ Quinn were elevated from the practice squad, Robinson for the third and final time this season (atlantafalcons.com). Zachariah Branch is out; Pearce, Dexter and Josh Woods are questionable. Mahomes has no designation. Kickoff: 1 PM ET at Mercedes-Benz Stadium on CBS (Nantz, Watt, Wolfson; chiefs.com), KC -3.5. Atlanta is 3-6 and has its bye next week.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
-    photoId: "cam-thomas",
-    stampLabel: "Fri Nov 13 · Extended: C. Thomas (3 yrs, up to $33M), C.J. Henderson (2 yrs, $20M) · Out: Branch · Doubtful: Deablo · Q: Pearce, Dexter, J. Woods · KC: Mahomes clear, Walker Q; J. Moore, P. Woods, Norman-Lott out · ATL 3-6 · Next: vs. KC (6-2), Sun Nov 15, 1 PM ET, CBS · KC -3.5",
+    photoId: "deablo",
+    stampLabel: "Sun Nov 15 · Game day · KC: Walker OUT, E. Johnson first start; Carter, De Jesus elevated · ATL: Deablo OUT, Branch OUT; J. Robinson (3rd), TJ Quinn elevated; Q: Pearce, Dexter, J. Woods · ATL 3-6 vs. KC (6-2), 1 PM ET, CBS · KC -3.5 · Bye Week 11",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -3170,9 +3172,12 @@ export const NEWS_DIGEST = {
     // J. Woods back limited; Branch and Deablo DNP; coordinators on the run defense, Folk/Moody, Bates); fallback photoId moved to pearce-jr. Pointer unchanged.
     // STATUS (2026-11-14 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto Chiefs week Friday (Thomas and Henderson
     // extensions, final injury report, Mahomes clear, Walker questionable); fallback photoId moved to cam-thomas. Pointer unchanged.
+    // STATUS (2026-11-15 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto Chiefs game day (Walker ruled out,
+    // Deablo downgraded to out, J. Robinson and TJ Quinn elevated); fallback photoId moved to deablo. Pointer unchanged.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
+    "atlantafalcons.com (Nov 14)", "ESPN (Nov 14)", "Heavy (Nov 14)", "Heavy (Yahoo, Nov 14)", "chiefs.com (Nov 13)", "FanDuel Research (Nov 10)", "SI Betting (Nov 9)",
     "atlantafalcons.com (Nov 13)", "AP (Atlanta News First / Yahoo, Nov 13)", "CBS Sports / RotoWire (Nov 13)", "Athlon Sports (Nov 13)", "ESPN (Nov 13)", "Heavy (Yahoo, Nov 12)",
     "atlantafalcons.com (Nov 12)", "Falcons Wire (Yahoo, Nov 12)", "AJC (Nov 12)", "Arrowhead Pride (Yahoo, Nov 12)", "Athlon Sports (Nov 12)", "A to Z Sports (Nov 12)", "SI Betting (Nov 10)",
     "atlantafalcons.com (Nov 11)", "Falcons Wire (Yahoo, Nov 11)", "AP (Yahoo, Nov 11)", "Kansas City Star (Yahoo, Nov 11)", "chiefs.com (Nov 11)", "NBC Sports (Nov 11)", "CBS Sports (Nov 11)", "NFL Draft Diamonds transactions (Nov 11)", "ESPN roster API (Nov 12)",
@@ -3242,6 +3247,34 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
+      title: "Walker out, Emmett Johnson starts for KC",
+      detail: "ESPN (Saturday, Nov 14): the Chiefs will sit RB Kenneth Walker III (groin) Sunday, sources told Adam Schefter and Ian Rapoport, with the team wanting to 'give him a week.' The injury is considered minor. Walker is second in the NFL with 872 rushing yards, eight behind Bijan Robinson's 880. Rookie Emmett Johnson (111 rushing yards, 14 catches for 237) makes his first NFL start.",
+      category: "injuries",
+      sourceUrl: "https://www.espn.com/nfl/story/_/id/50480529/chiefs-kenneth-walker-iii-groin-sit-sources-say",
+      sourceLabel: "ESPN",
+    },
+    {
+      title: "Deablo out; Robinson and Quinn elevated",
+      detail: "atlantafalcons.com (Saturday, Nov 14): LB Divine Deablo (forearm) was downgraded from doubtful to out after one practice all week. The Falcons elevated S Jammie Robinson and LB TJ Quinn from the practice squad; it is Robinson's third elevation, the league maximum, so another game would require a 53-man contract. DeMarcco Hellams starts at safety next to Xavier Watts.",
+      category: "injuries",
+      sourceUrl: "https://www.atlantafalcons.com/news/falcons-elevate-jammie-robinson-tj-quinn-chiefs-week-10",
+      sourceLabel: "atlantafalcons.com",
+    },
+    {
+      title: "Chiefs add ex-Falcon Nate Carter",
+      detail: "Heavy (Saturday, Nov 14): after ruling out Walker, Kansas City elevated RB Nate Carter and WR Jacob De Jesus from the practice squad. Carter, a 2025 Falcons undrafted free agent who played seven games in Atlanta, is the only other healthy back behind Johnson with Brashard Smith on IR and Jaydn Ott out. De Jesus could handle punt and kick returns.",
+      category: "games",
+      sourceUrl: "https://heavy.com/sports/nfl/kansas-city-chiefs/nate-carter-jacob-dejesus-kenneth-walker/",
+      sourceLabel: "Heavy",
+    },
+    {
+      title: "Penix: 'We're still in it'",
+      detail: "Heavy via Yahoo (Saturday, Nov 14): after the Bates and Neuzil trades, Michael Penix Jr. said, 'I truly believe we have the team and the guys that's going to rally and flip the script.' Atlanta is 3-6, last in the NFC South and a half game behind Carolina; ESPN's FPI gives it a 4.5% chance to make the playoffs, which likely requires winning the division.",
+      category: "general",
+      sourceUrl: "https://sports.yahoo.com/articles/falcons-reveal-goal-2026-season-191502890.html",
+      sourceLabel: "Heavy (Yahoo)",
+    },
+    {
       title: "Cameron Thomas extended three years",
       detail: "atlantafalcons.com (Friday, Nov 13): the Falcons agreed to a three-year extension with DE Cameron Thomas, worth up to $33 million and running through 2029 (ESPN's Adam Schefter via CBS Sports; AP: up to $11 million a year). Signed to a one-year deal in the spring, he has a career-high 12 QB hits, two sacks, a forced fumble and 26 pressures per Next Gen Stats, second on the team. 'He demonstrates what we love about this game every single day,' DC Jeff Ulbrich said.",
       category: "contracts",
@@ -3263,13 +3296,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com",
     },
     {
-      title: "Chiefs: Mahomes clear, Walker questionable",
-      detail: "Athlon and ESPN (Friday, Nov 13): Patrick Mahomes carries no designation and is expected to start. RB Kenneth Walker III (groin), second in the NFL with 872 rushing yards behind Bijan Robinson's 880, missed Friday's practice and is questionable; rookie Emmett Johnson would start if he sits. 'If he can go, he can go. If he can't, he can't,' Andy Reid said. Jaydn Ott and CB Mansoor Delane are also questionable; OT Jaylon Moore, DT Peter Woods and DT Omarr Norman-Lott are out.",
-      category: "injuries",
-      sourceUrl: "https://www.espn.com/nfl/story/_/id/50473948/chiefs-rb-walker-groin-misses-practice-status-uncertain",
-      sourceLabel: "ESPN / Athlon",
-    },
-    {
       title: "Stefanski: replacing Bates takes everyone",
       detail: "atlantafalcons.com (Friday, Nov 13): with DeMarcco Hellams starting in Jessie Bates III's place and Sydney Brown and Billy Bowman Jr. behind him, Stefanski said on Monday, 'Oftentimes one person doesn't step up and fill the shoes of that person.' On Corey Levin at center: a veteran 'who's played in games and can think the game,' which 'I think is important for a week like this.'",
       category: "coaching",
@@ -3282,13 +3308,6 @@ export const NEWS_DIGEST = {
       category: "coaching",
       sourceUrl: "https://www.ajc.com/sports/2026/11/falcons-coordinators-takeaways/",
       sourceLabel: "AJC",
-    },
-    {
-      title: "Chiefs: Mahomes full again, two starters still out",
-      detail: "Arrowhead Pride via Yahoo, Athlon and A to Z Sports (Thursday, Nov 12): Patrick Mahomes (right elbow) was a full participant for a second day; Athlon reports an MRI showed no significant damage. RT Jaylon Moore (ankle) and DT Peter Woods (neck) missed a second straight day, and A to Z Sports has both on track to miss Sunday, with Joshua Ezeudu expected at right tackle. DT Omarr Norman-Lott and RB Jaydn Ott were limited; Kelce, Worthy, Rice and Delane were full.",
-      category: "injuries",
-      sourceUrl: "https://sports.yahoo.com/articles/chiefs-falcons-week-10-thursday-214500153.html",
-      sourceLabel: "Arrowhead Pride (Yahoo) / Athlon",
     },
     {
       title: "Stefanski: Levin is the center",
@@ -3305,8 +3324,8 @@ export const NEWS_DIGEST = {
       sourceLabel: "atlantafalcons.com / Falcons Wire",
     },
     {
-      title: "Line drifts to KC -3.5",
-      detail: "NBC Sports (Wednesday, Nov 11): DraftKings has Kansas City -3.5 with a 45.5 total and moneylines KC -185 / ATL +154 for Sunday's 1 PM ET game at Mercedes-Benz Stadium (CBS). It opened KC -3 (FOX Sports, Nov 8). Stefanski on the Chiefs: 'They're really really well-coached and sound' (atlantafalcons.com).",
+      title: "Line holds at KC -3.5",
+      detail: "NBC Sports (Wednesday, Nov 11): DraftKings has Kansas City -3.5 with a 45.5 total and moneylines KC -185 / ATL +154; FanDuel also has KC -3.5 (KC -172 / ATL +144, total 47.5). It opened KC -3 (FOX Sports, Nov 8). Kickoff is 1 PM ET on CBS with Jim Nantz, J.J. Watt and Tracy Wolfson (chiefs.com). Stefanski on the Chiefs: 'They're really really well-coached and sound' (atlantafalcons.com).",
       category: "games",
       sourceUrl: "https://www.nbcsports.com/nfl/news/chiefs-vs-falcons-prediction-odds-expert-picks-qb-matchup-injury-update-betting-trends-and-stats",
       sourceLabel: "NBC Sports / atlantafalcons.com",
@@ -3324,13 +3343,6 @@ export const NEWS_DIGEST = {
       category: "contracts",
       sourceUrl: "https://www.espn.com/nfl/story/_/id/50446499/falcons-trade-center-neuzil-ravens-guard-vorhees-pick",
       sourceLabel: "ESPN / baltimoreravens.com",
-    },
-    {
-      title: "Bates traded to Jacksonville",
-      detail: "jaguars.com and NFL.com (Monday, Nov 9): Atlanta sent S Jessie Bates III to the Jaguars for a 2027 second-round pick and a 2028 fifth-round pick, pending a physical. The Falcons restructured his deal before the trade and are paying most of what is left of his salary (NFL Network's Ian Rapoport), about $6.5 million (Jaguars On SI). Bates, a captain in the final year of a four-year, $64 million contract, had 14 interceptions in Atlanta, three returned for TDs.",
-      category: "contracts",
-      sourceUrl: "https://www.nfl.com/news/jessie-bates-jaguars-falcons-trade",
-      sourceLabel: "NFL.com / jaguars.com",
     },
   ],
 };
