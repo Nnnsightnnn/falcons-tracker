@@ -164,8 +164,8 @@ export const PLAYERS = [
     acquired: "draft-2022-R1-P8",
     stats: { receptions: 105, recYds: 1271, recTDs: 9, targets: 145 },
     form: 9.0,
-    status: "questionable",
-    injuryNote: "Hip. Added to the Week 6 report on Friday (Oct 16) as a limited participant after not appearing earlier in the week, but carries no game designation for Chicago (atlantafalcons.com, Falcons Wire). Sunday (Oct 25): evaluated for a concussion in the third quarter vs. San Francisco, cleared and returned; finished with seven catches for 66 yards and a 21-yard TD, his first of the season (atlantafalcons.com, CBS Sports). Sunday (Nov 15): six catches for 109 yards vs. Kansas City (NBC Sports), then evaluated for a concussion late in the game and listed questionable to return; with the game decided he did not go back in (ClutchPoints via Yahoo, citing the team's Tori McElhaney). No update yet; the Week 11 bye gives him two weeks before Minnesota. Status set to questionable pending the concussion evaluation.",
+    status: "active",
+    injuryNote: "Hip. Added to the Week 6 report on Friday (Oct 16) as a limited participant after not appearing earlier in the week, but carries no game designation for Chicago (atlantafalcons.com, Falcons Wire). Sunday (Oct 25): evaluated for a concussion in the third quarter vs. San Francisco, cleared and returned; finished with seven catches for 66 yards and a 21-yard TD, his first of the season (atlantafalcons.com, CBS Sports). Sunday (Nov 15): six catches for 109 yards vs. Kansas City (NBC Sports), then evaluated for a concussion late in the game and listed questionable to return; with the game decided he did not go back in (ClutchPoints via Yahoo, citing the team's Tori McElhaney). Monday (Nov 16): Stefanski said London was cleared after the in-game concussion check (ESPN, AP via Atlanta News First). Status moved back to active; the Week 11 bye gives him two weeks before Minnesota.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4426502.png",
     contract: { years: 4, total: 141000000, guaranteed: 100000000, apy: 35250000, throughYear: 2030, cap2026: 16800000, note: "4yr/$141M extension agreed Jun 2, officially signed Jun 9, 2026 (up to $150M w/ incentives, $100M gtd); plays 2026 on $16.82M 5th-yr option, extension runs 2027–2030" },
     career: [
@@ -896,7 +896,7 @@ export const PLAYERS = [
     stats: { tackles: 92, tfl: 7, sacks: 2, int_def: 1 },
     form: 8.0,
     status: "questionable",
-    injuryNote: "Arm. Injured in the first half of the 31-23 loss to Chicago (Oct 18) and ruled out late in the second quarter (atlantafalcons.com); Stefanski had no update Monday (Oct 19, AP). Had battled a hamstring issue through Weeks 4-6 practices without missing a game. MIKE · 3yr/$30M FA signing from Las Vegas. Wednesday (Oct 21), first Week 7 report: did not participate, with the injury listed as forearm (atlantafalcons.com). Did not practice Wednesday or Thursday (Oct 21-22, forearm) of 49ers week (official report via 49ers Webzone). Friday (Oct 23), final Week 7 report (atlantafalcons.com): did not practice and ruled OUT vs. San Francisco (forearm). Status kept at questionable because the tracker schema has no single-game 'out' value. Wednesday (Oct 28), first Week 8 report (buccaneers.com, Falcons Wire): did not practice (forearm). Thursday (Oct 29, atlantafalcons.com): returned to practice, limited (forearm). Friday (Oct 30), final Week 8 report (atlantafalcons.com): limited (forearm), listed QUESTIONABLE vs. Tampa Bay. Saturday (Oct 31): downgraded to OUT vs. Tampa Bay (forearm), his second straight missed game; Kendal Daniels expected to wear the green dot with Harold Perkins Jr. beside him (atlantafalcons.com). Wednesday (Nov 4), estimated Week 9 report after a walkthrough on arrival in Madrid (atlantafalcons.com): limited (forearm). Thursday (Nov 5), first full practice in Madrid (atlantafalcons.com official report): limited (forearm) again. Friday (Nov 6), final Week 9 report (atlantafalcons.com): upgraded to full (forearm) and listed QUESTIONABLE; the team left the door open for his return. Sunday (Nov 8): not on the inactive list for the 34-17 loss to Cincinnati in Madrid (Falcons Wire), so he was active for the first time since the Oct 18 forearm injury. Status moved to active. Wednesday (Nov 11), first Week 10 report (atlantafalcons.com): limited (forearm); he played with the arm wrapped in Madrid. Thursday (Nov 12, atlantafalcons.com): did not practice (forearm), a step back from Wednesday's limited session. Friday (Nov 13), final Week 10 report (atlantafalcons.com): did not practice (forearm) and listed DOUBTFUL vs. Kansas City. Saturday (Nov 14): downgraded to OUT vs. Kansas City (forearm) after one practice all week (atlantafalcons.com). Status kept at questionable because the tracker schema has no single-game 'out' value. Sunday (Nov 15): inactive vs. Kansas City (forearm); Josh Woods started in his place (AP via WYFF). Status set to questionable to match the out designation.",
+    injuryNote: "Arm. Injured in the first half of the 31-23 loss to Chicago (Oct 18) and ruled out late in the second quarter (atlantafalcons.com); Stefanski had no update Monday (Oct 19, AP). Had battled a hamstring issue through Weeks 4-6 practices without missing a game. MIKE · 3yr/$30M FA signing from Las Vegas. Wednesday (Oct 21), first Week 7 report: did not participate, with the injury listed as forearm (atlantafalcons.com). Did not practice Wednesday or Thursday (Oct 21-22, forearm) of 49ers week (official report via 49ers Webzone). Friday (Oct 23), final Week 7 report (atlantafalcons.com): did not practice and ruled OUT vs. San Francisco (forearm). Status kept at questionable because the tracker schema has no single-game 'out' value. Wednesday (Oct 28), first Week 8 report (buccaneers.com, Falcons Wire): did not practice (forearm). Thursday (Oct 29, atlantafalcons.com): returned to practice, limited (forearm). Friday (Oct 30), final Week 8 report (atlantafalcons.com): limited (forearm), listed QUESTIONABLE vs. Tampa Bay. Saturday (Oct 31): downgraded to OUT vs. Tampa Bay (forearm), his second straight missed game; Kendal Daniels expected to wear the green dot with Harold Perkins Jr. beside him (atlantafalcons.com). Wednesday (Nov 4), estimated Week 9 report after a walkthrough on arrival in Madrid (atlantafalcons.com): limited (forearm). Thursday (Nov 5), first full practice in Madrid (atlantafalcons.com official report): limited (forearm) again. Friday (Nov 6), final Week 9 report (atlantafalcons.com): upgraded to full (forearm) and listed QUESTIONABLE; the team left the door open for his return. Sunday (Nov 8): not on the inactive list for the 34-17 loss to Cincinnati in Madrid (Falcons Wire), so he was active for the first time since the Oct 18 forearm injury. Status moved to active. Wednesday (Nov 11), first Week 10 report (atlantafalcons.com): limited (forearm); he played with the arm wrapped in Madrid. Thursday (Nov 12, atlantafalcons.com): did not practice (forearm), a step back from Wednesday's limited session. Friday (Nov 13), final Week 10 report (atlantafalcons.com): did not practice (forearm) and listed DOUBTFUL vs. Kansas City. Saturday (Nov 14): downgraded to OUT vs. Kansas City (forearm) after one practice all week (atlantafalcons.com). Status kept at questionable because the tracker schema has no single-game 'out' value. Sunday (Nov 15): inactive vs. Kansas City (forearm); Josh Woods started in his place (AP via WYFF). Status set to questionable to match the out designation. Monday (Nov 16): AP (via Atlanta News First) reported the fractured right forearm and said the bye comes at a good time for him after he played one game in a cast; no return date given.",
     image: "https://a.espncdn.com/i/headshots/nfl/players/full/4037626.png",
     contract: { years: 3, total: 30000000, guaranteed: 18000000, apy: 10000000, throughYear: 2028, cap2026: 8500000 },
     career: [
@@ -2082,7 +2082,7 @@ export const NEXT_GAME = {
   date: "2026-11-29",
   kickoff: "1:00 PM ET",
   tv: "FOX",
-  note: "Out of the Week 11 bye: Atlanta (3-7, last in the NFC South and 1.5 games behind 4-5 Carolina) visits Minnesota at 1:00 PM ET on Sunday, Nov 29 (FOX), a return to Minneapolis for Kevin Stefanski, a Vikings assistant from 2006 to 2019.The Falcons have lost three straight and five of six after Sunday's 35-13 home loss to Kansas City, scoring 30 points combined in those three games (ESPN). Health to watch through the bye: WR Drake London was evaluated for a concussion late against the Chiefs and was questionable to return (ClutchPoints, Nov 15); LB Divine Deablo (forearm) and WR Zachariah Branch (hamstring) missed the KC game. The first Week 12 injury report is due once practice resumes after the bye. Detroit (home, Dec 6) and Cleveland (away, Dec 13) follow.",
+  note: "Out of the Week 11 bye: Atlanta (3-7, last in the NFC South and 1.5 games behind 4-5 Carolina) visits Minnesota at 1:00 PM ET on Sunday, Nov 29 (FOX), a return to Minneapolis for Kevin Stefanski, a Vikings assistant from 2006 to 2019. The Falcons have lost three straight and five of six after Sunday's 35-13 home loss to Kansas City, scoring 30 points combined in those three games (ESPN). Health to watch through the bye: WR Drake London was cleared after a late concussion check against the Chiefs, Stefanski said Monday (ESPN, Nov 16); LB Divine Deablo (fractured right forearm) and WR Zachariah Branch (hamstring) missed the KC game, and AP says the bye comes at a good time for Deablo. Tommy Rees keeps offensive play-calling (ESPN, Nov 16). The first Week 12 injury report is due once practice resumes after the bye. Detroit (home, Dec 6) and Cleveland (away, Dec 13) follow.",
 };
 
 // =========================================
@@ -2466,17 +2466,17 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-11-16T09:45:00Z",
+  generatedAt: "2026-11-17T09:25:00Z",
   cover: {
-    kicker: "Chiefs 35, Falcons 13: Mahomes throws five touchdowns, Atlanta opens with four straight three-and-outs and is booed at home; Stefanski: 'All of this falls on me'; Drake London evaluated for a concussion; 3-7 into the bye",
-    headLine1: "Booed at home,",
-    headEm: "3-7 into the bye.",
-    headLine3: "Mahomes throws five. Four three-and-outs to start. London in concussion evaluation. Stefanski takes the blame.",
-    deck: "Sunday (Nov 15): Patrick Mahomes went 22-of-35 for 348 yards and five touchdowns, two of them to rookie Emmett Johnson (22 carries, 101 yards in his first start), as Kansas City (7-2) beat Atlanta 35-13 at Mercedes-Benz Stadium (AP via WYFF, NBC Sports). The Falcons went three-and-out on their first four possessions, the first time since 2000, and trailed 28-3 in the fourth quarter before Bijan Robinson's 3-yard run (ESPN, AP). Michael Penix Jr. was 23-of-43 for 286 yards, no touchdowns and an interception; Atlanta was 5-of-16 on third down, 1-for-5 in the red zone and drew 9 penalties. 'The responsibility falls on me,' Kevin Stefanski said. 'All of this falls on me' (ESPN). Bijan Robinson: 'So yeah, when they boo us, we deserve it.' Drake London was evaluated for a concussion late. Carolina's walk-off win at New Orleans leaves Atlanta 1.5 games out of first. Next: bye, then at Minnesota on Nov 29.",
+    kicker: "Bye week, Monday: Stefanski calls the off week a chance to learn 'some hard lessons' and self-scout; Tommy Rees keeps play-calling; Drake London cleared after his concussion check; Deablo's fractured forearm gets two weeks",
+    headLine1: "Hard lessons,",
+    headEm: "fresh eyes.",
+    headLine3: "Stefanski opens the bye with a self-scout. Rees keeps the call sheet. London cleared. Seven games to save a season.",
+    deck: "Monday (Nov 16): a day after the 35-13 loss to Kansas City dropped Atlanta to 3-7, Kevin Stefanski said the bye is a chance to 'learn some lessons, some hard lessons' (AP via Atlanta News First). 'I think we need to look at our process,' he said, adding that the staff will self-scout with fresh eyes and that 'we got to give the guys a plan that they can go execute' (ESPN). Tommy Rees keeps offensive play-calling after moving to the sideline Sunday. Drake London (six catches, 109 yards) was cleared after a late concussion check (ESPN). The Falcons have been outscored 85-30 in three straight losses and are minus-10 in turnover margin; Penix has six interceptions and one TD over that stretch (AP). Jahan Dotson: 'we have to look at ourselves in the mirror and fix the internal things.' Atlanta sits last in the NFC South, 1.5 games behind Carolina (AJC). Next: at Minnesota, Nov 29.",
     byline: "The Tracker Desk",
-    filedFrom: "Mercedes-Benz Stadium",
-    photoId: "bijan",
-    stampLabel: "Mon Nov 16 · Final: KC 35, ATL 13 · Mahomes 5 TD, 348 yds · Penix 23-43, 286, 0 TD, 1 INT · Bijan 16-71, TD · London concussion eval · ATL 3-7, 4th NFC South (CAR 4-5) · Bye Week 11 · Next: at MIN, Nov 29, 1 PM ET, FOX",
+    filedFrom: "Flowery Branch",
+    photoId: "drake-london",
+    stampLabel: "Tue Nov 17 · Bye Week 11 · Stefanski: 'some hard lessons' · Rees keeps play-calling · London cleared (concussion check) · Deablo forearm, no return date · ATL 3-7, 4th NFC South (CAR 4-5) · Next: at MIN, Nov 29, 1 PM ET, FOX",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -3177,9 +3177,12 @@ export const NEWS_DIGEST = {
     // Deablo downgraded to out, J. Robinson and TJ Quinn elevated); fallback photoId moved to deablo. Pointer unchanged.
     // STATUS (2026-11-16 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto the 35-13 loss to Kansas City
     // (Mahomes 5 TD, boos, Stefanski takes responsibility, London concussion eval); fallback photoId moved to bijan (TD, 'we deserve it'). Pointer unchanged.
+    // STATUS (2026-11-17 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto bye-week Monday (Stefanski 'hard lessons'
+    // self-scout, Rees keeps play-calling, London cleared); filedFrom back to Flowery Branch; fallback photoId moved to drake-london. Pointer unchanged.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
+    "AP (Atlanta News First, Nov 16)", "ESPN (Nov 16)", "NBC Sports (Nov 16)", "AJC (Nov 15-16)", "ClutchPoints (Yahoo, Nov 17)", "atlantafalcons.com transactions (Nov 17)",
     "ESPN (Nov 15)", "AP (WYFF, Nov 15-16)", "NBC Sports / PFT (Nov 15)", "Kansas City Star (Yahoo, Nov 15)", "AP (Chattanooga Times Free Press, Nov 15)", "Atlanta Falcons On SI (Nov 15)",
     "ClutchPoints (Yahoo, Nov 15-16)", "Falcons Wire (Yahoo, Nov 15)", "Heavy (Yahoo, Nov 15-16)", "neworleanssaints.com (Nov 15)", "buccaneers.com standings (Nov 16)", "ESPN roster API (Nov 16)",
     "atlantafalcons.com (Nov 14)", "ESPN (Nov 14)", "Heavy (Nov 14)", "Heavy (Yahoo, Nov 14)", "chiefs.com (Nov 13)", "FanDuel Research (Nov 10)", "SI Betting (Nov 9)",
@@ -3252,6 +3255,48 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
+      title: "Stefanski: bye is for 'some hard lessons'",
+      detail: "AP via Atlanta News First (Monday, Nov 16): Kevin Stefanski said the bye week is a chance to 'learn some lessons, some hard lessons' and to self-scout after three straight losses in which Atlanta was outscored 85-30. 'I think we need to look at our process,' he told reporters (ESPN), adding that the staff would review everything with fresh eyes. 'We will all learn from it. We're not going to hide from it. Going to own it and make corrections.'",
+      category: "coaching",
+      sourceUrl: "https://www.atlantanewsfirst.com/2026/11/17/coach-kevin-stefanski-says-falcons-bye-is-an-opportunity-learn-some-hard-lessons/",
+      sourceLabel: "AP (Atlanta News First) / ESPN",
+    },
+    {
+      title: "Rees keeps the play-calling",
+      detail: "ESPN (Monday, Nov 16): Stefanski said OC Tommy Rees will remain the offensive play-caller, a day after Rees moved from the coaches' box to the sideline for the first time. Atlanta ranks sixth-worst in EPA per play (-0.16) and 24th in scoring (20.1 points a game). 'A lot of this is we got to give the guys a plan that they can go execute,' Stefanski said. AP: six of Sunday's nine penalties were on offensive linemen, including three on Jake Matthews and two false starts on Jawaan Taylor.",
+      category: "coaching",
+      sourceUrl: "https://www.espn.com/nfl/story/_/id/50503127/falcons-drake-london-cleared-being-checked-concussion",
+      sourceLabel: "ESPN / AP",
+    },
+    {
+      title: "Drake London cleared after concussion check",
+      detail: "ESPN (Monday, Nov 16): Stefanski said Drake London was cleared after being pulled late in the fourth quarter against Kansas City for a possible concussion. London had six catches for 109 yards Sunday, his 14th career 100-yard game (fifth-most in team history, per AP), and leads the team with 801 receiving yards on 50 catches. It was his second concussion check of the season after Oct 25 vs. San Francisco.",
+      category: "injuries",
+      sourceUrl: "https://www.espn.com/nfl/story/_/id/50503127/falcons-drake-london-cleared-being-checked-concussion",
+      sourceLabel: "ESPN",
+    },
+    {
+      title: "Penix's turnover slide, by the numbers",
+      detail: "AP via Atlanta News First (Monday, Nov 16): Michael Penix Jr. has six interceptions and one touchdown pass over the three-game losing streak, including four picks in the rain at Tampa Bay, and is at 10 TDs and seven INTs on the season. Atlanta's minus-10 turnover margin is tied for second-worst in the NFL. Jahan Dotson: 'we have to look at ourselves in the mirror and fix the internal things.'",
+      category: "general",
+      sourceUrl: "https://www.atlantanewsfirst.com/2026/11/17/coach-kevin-stefanski-says-falcons-bye-is-an-opportunity-learn-some-hard-lessons/",
+      sourceLabel: "AP (Atlanta News First)",
+    },
+    {
+      title: "Locker room: 'We can make this run'",
+      detail: "AJC (after Sunday's loss): with seven games left and Carolina leading the NFC South at 4-5, players insisted the season is salvageable. 'We can make this run because the division is still wide-open,' A.J. Terrell said. Cameron Thomas: 'this locker room has stayed together.' Matthew Bergeron said the Bates and Neuzil trades were not the issue: 'until the last week, we're gonna be in the fight.'",
+      category: "general",
+      sourceUrl: "https://www.ajc.com/sports/2026/11/falcons-struggling/",
+      sourceLabel: "AJC",
+    },
+    {
+      title: "Bye-week fix: the defense",
+      detail: "ClutchPoints via Yahoo (Tuesday, Nov 17): analysis names Jeff Ulbrich's defense, now without the traded Jessie Bates III, as the biggest problem to solve over the bye after Kansas City gained 461 yards (AJC) without Kenneth Walker III. LB Kendal Daniels leads the team with 69 tackles. Minnesota, next on Nov 29, scored 30 in its Week 10 win over Green Bay. Divine Deablo (fractured right forearm) gets two weeks to heal; AP said the bye comes at a good time for him.",
+      category: "injuries",
+      sourceUrl: "https://sports.yahoo.com/articles/falcons-biggest-problem-fix-during-073859826.html",
+      sourceLabel: "ClutchPoints (Yahoo) / AP",
+    },
+    {
       title: "Chiefs 35, Falcons 13: Mahomes throws five",
       detail: "AP via WYFF and NBC Sports (Sunday, Nov 15): Patrick Mahomes went 22-of-35 for 348 yards and five touchdowns, his first five-TD game since 2022, and rookie Emmett Johnson ran 22 times for 101 yards with two TD catches in Kenneth Walker III's place. Atlanta trailed 14-3 at half and 28-3 in the fourth before Bijan Robinson's 3-yard run; Jake Moody kicked field goals of 28 and 38 yards. Michael Penix Jr.: 23-of-43, 286 yards, no TDs, an end-zone interception by Nohl Williams. Atlanta is 3-7, with three straight losses and five in six games.",
       category: "games",
@@ -3271,13 +3316,6 @@ export const NEWS_DIGEST = {
       category: "games",
       sourceUrl: "https://www.espn.com/nfl/story/_/id/50495406/bijan-robinson-says-falcons-deserved-boos-loss-chiefs",
       sourceLabel: "ESPN",
-    },
-    {
-      title: "Drake London evaluated for a concussion",
-      detail: "ClutchPoints via Yahoo (Sunday, Nov 15): Drake London was evaluated for a concussion late in the game and was listed questionable to return, per the team's Tori McElhaney; with the game decided he did not go back in. He had six catches for 109 yards (NBC Sports). It is his second concussion evaluation this season (he was cleared vs. San Francisco on Oct 25). The bye gives him two weeks before Minnesota; no update yet.",
-      category: "injuries",
-      sourceUrl: "https://sports.yahoo.com/articles/falcons-drake-london-injury-makes-224124527.html",
-      sourceLabel: "ClutchPoints (Yahoo)",
     },
     {
       title: "Panthers walk off in New Orleans",
@@ -3301,27 +3339,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "Falcons Wire (Yahoo) / AP",
     },
     {
-      title: "Walker out, Emmett Johnson starts for KC",
-      detail: "ESPN (Saturday, Nov 14): the Chiefs will sit RB Kenneth Walker III (groin) Sunday, sources told Adam Schefter and Ian Rapoport, with the team wanting to 'give him a week.' The injury is considered minor. Walker is second in the NFL with 872 rushing yards, eight behind Bijan Robinson's 880. Rookie Emmett Johnson (111 rushing yards, 14 catches for 237) makes his first NFL start.",
-      category: "injuries",
-      sourceUrl: "https://www.espn.com/nfl/story/_/id/50480529/chiefs-kenneth-walker-iii-groin-sit-sources-say",
-      sourceLabel: "ESPN",
-    },
-    {
-      title: "Deablo out; Robinson and Quinn elevated",
-      detail: "atlantafalcons.com (Saturday, Nov 14): LB Divine Deablo (forearm) was downgraded from doubtful to out after one practice all week. The Falcons elevated S Jammie Robinson and LB TJ Quinn from the practice squad; it is Robinson's third elevation, the league maximum, so another game would require a 53-man contract. DeMarcco Hellams starts at safety next to Xavier Watts.",
-      category: "injuries",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-elevate-jammie-robinson-tj-quinn-chiefs-week-10",
-      sourceLabel: "atlantafalcons.com",
-    },
-    {
-      title: "Penix: 'We're still in it'",
-      detail: "Heavy via Yahoo (Saturday, Nov 14): after the Bates and Neuzil trades, Michael Penix Jr. said, 'I truly believe we have the team and the guys that's going to rally and flip the script.' Atlanta is 3-6, last in the NFC South and a half game behind Carolina; ESPN's FPI gives it a 4.5% chance to make the playoffs, which likely requires winning the division.",
-      category: "general",
-      sourceUrl: "https://sports.yahoo.com/articles/falcons-reveal-goal-2026-season-191502890.html",
-      sourceLabel: "Heavy (Yahoo)",
-    },
-    {
       title: "Cameron Thomas extended three years",
       detail: "atlantafalcons.com (Friday, Nov 13): the Falcons agreed to a three-year extension with DE Cameron Thomas, worth up to $33 million and running through 2029 (ESPN's Adam Schefter via CBS Sports; AP: up to $11 million a year). Signed to a one-year deal in the spring, he has a career-high 12 QB hits, two sacks, a forced fumble and 26 pressures per Next Gen Stats, second on the team. 'He demonstrates what we love about this game every single day,' DC Jeff Ulbrich said.",
       category: "contracts",
@@ -3335,20 +3352,32 @@ export const NEWS_DIGEST = {
       sourceUrl: "https://www.atlantanewsfirst.com/2026/11/13/falcons-announce-contract-extensions-cornerback-cj-henderson-defensive-end-cameron-thomas/",
       sourceLabel: "AP (Atlanta News First)",
     },
-    {
-      title: "Ulbrich: run defense went from first to worst",
-      detail: "AJC (Thursday, Nov 12): Atlanta allowed 48 rushing yards a game through four weeks, best in the NFL, and 175.2 a game over the five weeks since, worst in the league. 'I've never been part of a great defense that didn't defend the run well,' DC Jeff Ulbrich said. 'Ultimately, we're just not playing well enough.' OC Tommy Rees on Kyle Pitts (25 catches, 220 yards, 4 TDs): 'We got to do a better job finding ways to have him impact the game.'",
-      category: "coaching",
-      sourceUrl: "https://www.ajc.com/sports/2026/11/falcons-coordinators-takeaways/",
-      sourceLabel: "AJC",
-    },
   ],
 };
 
 export const INTERVIEWS = {
-  generatedAt: "2026-11-16T09:45:00Z",
+  generatedAt: "2026-11-17T09:25:00Z",
   windowLabel: "Week 10 Postgame + Bye Week · Nov 15 → Nov 22",
   sessions: [
+    {
+      id: "stefanski-2026-11-16",
+      speaker: "Kevin Stefanski",
+      role: "Head Coach",
+      date: "2026-11-16",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Week 11 Bye · Monday Press Conference",
+      sourceUrl: "https://www.atlantanewsfirst.com/2026/11/17/coach-kevin-stefanski-says-falcons-bye-is-an-opportunity-learn-some-hard-lessons/",
+      summary: "Opening the bye at 3-7, Stefanski framed the off week as a self-scout, kept Tommy Rees as the offensive play-caller and said Drake London was cleared after Sunday's concussion check. Quotes via AP (Atlanta News First) and ESPN.",
+      pullQuote: "We will all learn from it. We're not going to hide from it. Going to own it and make corrections.",
+      bullets: [
+        "Called the bye a chance to 'learn some lessons, some hard lessons' (AP)",
+        "'I think we need to look at our process,' adding the staff would self-scout with fresh eyes (ESPN)",
+        "'A lot of this is we got to give the guys a plan that they can go execute' (ESPN)",
+        "On the slow starts: 'We've got to play better early' and 'Got to put a plan together that the guys can go execute early' (AP)",
+        "Confirmed Tommy Rees keeps play-calling duties and that Drake London was cleared after a late concussion check (ESPN)",
+      ],
+      topics: ["bye-week", "self-scout", "rees", "london", "week-11"],
+    },
     {
       id: "stefanski-2026-11-15",
       speaker: "Kevin Stefanski",
@@ -3442,25 +3471,6 @@ export const INTERVIEWS = {
         "On the locker room: 'It's not just one person that has to step up. It's all of us that have to step up' (Atlanta Falcons On SI)",
       ],
       topics: ["bates-trade", "week-10", "trade-deadline", "hellams", "chiefs-week"],
-    },
-    {
-      id: "stefanski-2026-11-08",
-      speaker: "Kevin Stefanski",
-      role: "Head Coach",
-      date: "2026-11-08",
-      venue: "Santiago Bernabéu · Madrid, Spain",
-      session: "Week 9 vs. Cincinnati (Madrid) · Postgame Press Conference",
-      sourceUrl: "https://www.si.com/nfl/falcons/onsi/falcons-madrid-debacle-raises-bigger-questions-about-seasons-future",
-      summary: "After the 34-17 loss in Madrid dropped Atlanta to 3-6, Stefanski spread the blame across every phase and the coaching staff, pointed to self-inflicted mistakes, and refused to talk about the season as a whole. Quotes via Atlanta Falcons On SI, NFL.com (The Athletic), AP and ClutchPoints.",
-      pullQuote: "We have to be better. And I'm talking all of us.",
-      bullets: [
-        "On the mistakes: 'We had too many self-inflicted things today that are going to make it really hard to win against anyone' (Atlanta Falcons On SI)",
-        "On the season: 'I'm not making any proclamations on our year right now' (Atlanta Falcons On SI)",
-        "On carrying practice into games: 'You have to do it on Sundays. We didn't today' (NFL.com)",
-        "On Chase and Higgins: 'Those are two excellent players with an excellent quarterback' and 'There's not one answer to take away those guys' (NFL.com)",
-        "On Nick Folk after the missed 38-yarder: 'I expect Nick to make his kicks. Nick expects to make his kicks' (ClutchPoints)",
-      ],
-      topics: ["madrid", "week-9", "postgame", "penalties", "folk"],
     },
   ],
 };
