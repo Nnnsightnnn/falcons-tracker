@@ -2082,7 +2082,7 @@ export const NEXT_GAME = {
   date: "2026-11-29",
   kickoff: "1:00 PM ET",
   tv: "FOX",
-  note: "Out of the Week 11 bye: Atlanta (3-7, last in the NFC South and 1.5 games behind 4-5 Carolina) visits Minnesota at 1:00 PM ET on Sunday, Nov 29 (FOX), a return to Minneapolis for Kevin Stefanski, a Vikings assistant from 2006 to 2019. The Falcons have lost three straight and five of six after Sunday's 35-13 home loss to Kansas City, scoring 30 points combined in those three games (ESPN). Health to watch through the bye: WR Drake London was cleared after a late concussion check against the Chiefs, Stefanski said Monday (ESPN, Nov 16); LB Divine Deablo (fractured right forearm) and WR Zachariah Branch (hamstring) missed the KC game, and AP says the bye comes at a good time for Deablo. Tommy Rees keeps offensive play-calling (ESPN, Nov 16), and Stefanski says the staff will 'pull everything apart' over the bye (The Athletic via NFL.com, Nov 17). Opponent: Minnesota rose to No. 4 in The Big Lead's NFC rankings (Nov 17) after a 30-10 win at Green Bay with eight sacks of Jordan Love; Kirk Cousins threw two TDs. The Vikings play San Francisco in Mexico City on Sunday, Nov 22, before hosting Atlanta. The first Week 12 injury report is due once practice resumes after the bye. Detroit (home, Dec 6) and Cleveland (away, Dec 13) follow.",
+  note: "Out of the Week 11 bye: Atlanta (3-7, last in the NFC South and 1.5 games behind 4-5 Carolina) visits Minnesota at 1:00 PM ET on Sunday, Nov 29 (FOX), a return to Minneapolis for Kevin Stefanski, a Vikings assistant from 2006 to 2019. The Falcons have lost three straight and five of six after Sunday's 35-13 home loss to Kansas City, scoring 30 points combined in those three games (ESPN). Health to watch through the bye: WR Drake London was cleared after a late concussion check against the Chiefs, Stefanski said Monday (ESPN, Nov 16); LB Divine Deablo (fractured right forearm) and WR Zachariah Branch (hamstring) missed the KC game, and AP says the bye comes at a good time for Deablo. Tommy Rees keeps offensive play-calling (ESPN, Nov 16), and Stefanski says the staff will 'pull everything apart' over the bye (The Athletic via NFL.com, Nov 17). Opponent: Minnesota rose to No. 4 in The Big Lead's NFC rankings (Nov 17) after a 30-10 win at Green Bay with eight sacks of Jordan Love; Kirk Cousins threw two TDs. The 7-2 Vikings play 8-1 San Francisco on Sunday Night Football in Mexico City (Nov 22, 8:20 PM ET, NBC) before hosting Atlanta. WR Jordan Addison had thumb surgery but stays off short-term IR for now, per Kevin O'Connell (Vikings.com, Nov 18); ESPN (Nov 16) had said he could miss about a month. The first Week 12 injury report is due once practice resumes after the bye. Detroit (home, Dec 6) and Cleveland (away, Dec 13) follow.",
 };
 
 // =========================================
@@ -2466,17 +2466,17 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-11-18T09:24:00Z",
+  generatedAt: "2026-11-19T09:30:00Z",
   cover: {
-    kicker: "Bye week, Tuesday: Stefanski says the staff will 'pull everything apart' and 'get under the hood' of an offense that has gone 1-5 since Week 5; ESPN's FPI gives Atlanta the NFC South's worst odds (1.9%); Falcons slide to the mid-20s in the power rankings",
-    headLine1: "Pull it apart,",
-    headEm: "get under the hood.",
-    headLine3: "Stefanski's bye-week teardown of a vanishing offense. Worst division odds in the NFC South. Minnesota is waiting.",
-    deck: "Tuesday (Nov 17): Kevin Stefanski said the bye is the time to 'pull everything apart' and 'look at it and get under the hood' (The Athletic via NFL.com). Since Week 5 Atlanta is 1-5, 30th in third-down conversions (32.9%) and 27th in the red zone (42.9%), and Michael Penix Jr. is 27th in EPA per dropback with eight TDs and six interceptions. Over the last three games Penix is 51-of-98 for 573 yards, one TD and six picks (AJC). Tommy Rees stays the play-caller; Matthew Bergeron: 'I love Tommy to death, so that's not the issue' (AJC). ESPN's FPI puts Atlanta's division odds at 1.9%, lowest in the NFC South (Falcons Wire), while The Athletic's simulator says 14%. Jahan Dotson: 'I have never been in a situation where you are one game out of the division with that record, but we are.' Next: at Minnesota (No. 4 in The Big Lead's NFC rankings), Nov 29.",
+    kicker: "Bye week, Wednesday: players are off for the rest of the week while Stefanski's staff reviews the play-calling process; Rees keeps the headset for now, the door stays open; fans vent as PFN ranks Penix 20th; Minnesota's Jordan Addison has thumb surgery but avoids IR",
+    headLine1: "Players away,",
+    headEm: "the headset stays put.",
+    headLine3: "Rees keeps the call sheet for now. Penix ranked 20th by PFN. Addison has surgery in Minnesota.",
+    deck: "Wednesday-Thursday (Nov 18-19): with meetings and lifts done Monday and Tuesday, Falcons players are off for the rest of the week (AJC). Kevin Stefanski is reviewing the play-calling process but not taking game-day duties from Tommy Rees, and said the staff will 'look at everything' (AJC); Roundtable argues a change could still come after the bye. Pro Football Network (Nov 19) ranks Michael Penix Jr. 20th in its QB Impact Score after a three-game skid of 573 yards, one TD and six interceptions. A.J. Terrell: 'We need to get this taste out of our mouth.' In Minnesota, Jordan Addison had thumb surgery and, for now, avoids short-term IR (Vikings.com, Nov 18); the 7-2 Vikings play 8-1 San Francisco in Mexico City on Sunday night before hosting Atlanta on Nov 29.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
-    photoId: "penix-jr",
-    stampLabel: "Wed Nov 18 · Bye Week 11 · Stefanski: 'pull everything apart' · 1-5 since Week 5 · FPI division odds 1.9% · Power rankings: ESPN 23, CBS 21, Athletic 25 · ATL 3-7, 4th NFC South (CAR 4-5) · Next: at MIN, Nov 29, 1 PM ET, FOX",
+    photoId: "terrell",
+    stampLabel: "Thu Nov 19 · Bye Week 11 · Players off through the weekend · Rees keeps play-calling, process under review · PFN QB Impact: Penix 20th · Addison (MIN) thumb surgery, no IR · ATL 3-7, 4th NFC South (CAR 4-5) · Next: at MIN, Nov 29, 1 PM ET, FOX",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -3181,9 +3181,13 @@ export const NEWS_DIGEST = {
     // self-scout, Rees keeps play-calling, London cleared); filedFrom back to Flowery Branch; fallback photoId moved to drake-london. Pointer unchanged.
     // STATUS (2026-11-18 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto bye-week Tuesday ('pull everything apart',
     // 1-5 since Week 5, FPI 1.9% division odds, power rankings); fallback photoId moved to penix-jr. Pointer unchanged.
+    // STATUS (2026-11-19 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto bye-week Wednesday/Thursday (players off,
+    // play-calling process review with Rees keeping duties, PFN ranks Penix 20th, Addison thumb surgery); fallback photoId moved to terrell. Pointer unchanged.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
+    "Pro Football Network (Nov 19)", "Roundtable (Nov 18)", "Athlon Sports (Yahoo, Nov 18)", "Falcons Wire (Yahoo, Nov 18)", "Vikings.com (Nov 16-18)",
+    "ESPN (TSN, Nov 16)", "NBC Chicago (Nov 16)", "AJC (Nov 16)", "atlantafalcons.com (Nov 17)", "ESPN roster API (Nov 19)",
     "NFL.com / The Athletic (Nov 17)", "AJC (Nov 16-17)", "Falcons Wire (Yahoo, Nov 17)", "atlantafalcons.com (Nov 17)", "The Big Lead (Yahoo, Nov 17)",
     "AP (Atlanta News First, Nov 16)", "ESPN (Nov 16)", "NBC Sports (Nov 16)", "AJC (Nov 15-16)", "ClutchPoints (Yahoo, Nov 17)", "atlantafalcons.com transactions (Nov 17)",
     "ESPN (Nov 15)", "AP (WYFF, Nov 15-16)", "NBC Sports / PFT (Nov 15)", "Kansas City Star (Yahoo, Nov 15)", "AP (Chattanooga Times Free Press, Nov 15)", "Atlanta Falcons On SI (Nov 15)",
@@ -3258,6 +3262,41 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
+      title: "Rees keeps the headset, but the door is open",
+      detail: "AJC (Nov 16) and Roundtable (Wednesday, Nov 18): Stefanski is reviewing the play-calling process but is not taking game-day duties from Tommy Rees, and said the staff will 'look at everything,' while deferring when asked about his confidence in Rees. Left guard Matthew Bergeron: 'I love Tommy to death, so that's not the issue.' Roundtable argues a change could still come after the bye; Stefanski handed play-calling to Rees in Cleveland last season. In the three games since Atlanta led the NFL in scoring through Penix's first five starts, the Falcons have 30 points and 304.3 yards a game (AJC).",
+      category: "coaching",
+      sourceUrl: "https://www.ajc.com/sports/2026/11/falcons-offensive-struggles-michael-penix-jr-play-calling/",
+      sourceLabel: "AJC / Roundtable",
+    },
+    {
+      title: "Fans vent; PFN ranks Penix 20th",
+      detail: "Pro Football Network (Thursday, Nov 19): fan frustration on social media centers on slow starts, heavy screen usage and inconsistent use of Bijan Robinson. Over the three-game skid Penix completed 52% of his passes for 573 yards, one TD and six interceptions; PFN's QB Impact Score has him 20th (72.7) and its Offense Impact Score puts Atlanta 24th (69.7). Atlanta returns Nov 29 at U.S. Bank Stadium.",
+      category: "general",
+      sourceUrl: "https://www.profootballnetwork.com/falcons-fans-michael-penix-jr-tommy-rees-offense/",
+      sourceLabel: "Pro Football Network",
+    },
+    {
+      title: "Vikings' Addison has thumb surgery, avoids IR",
+      detail: "Vikings.com (updated Wednesday, Nov 18): WR Jordan Addison had successful thumb surgery and will stay on the active roster for now. 'The updates following the surgery, he will not, as of right now, go on short-term IR,' Kevin O'Connell said, adding it is subject to change during rehab. No return date was given; ESPN (Nov 16) had said he could miss about a month, which would put his status for Atlanta's Nov 29 visit in doubt. He has 18 catches and one TD this season.",
+      category: "injuries",
+      sourceUrl: "https://www.vikings.com/news/wide-receiver-jordan-addison-short-term-injured-reserve-2026",
+      sourceLabel: "Vikings.com / ESPN (TSN)",
+    },
+    {
+      title: "Roster at the bye: few moves expected",
+      detail: "Falcons Wire via Yahoo (Wednesday, Nov 18): Atlanta reaches the bye with four quarterbacks on the 53 (Penix, Tagovailoa, Dalton, Strand), nine offensive linemen after the Neuzil trade, 16 on the practice squad and 10 on reserve lists. 'We don't expect many roster moves this week,' the outlet wrote. The ESPN roster feed (Nov 19) matches the tracker's 53, reserves and practice squad.",
+      category: "general",
+      sourceUrl: "https://sports.yahoo.com/articles/falcons-53-man-roster-practice-123115123.html",
+      sourceLabel: "Falcons Wire (Yahoo) / ESPN roster API",
+    },
+    {
+      title: "Athlon: fix the protection before Minnesota",
+      detail: "Athlon Sports via Yahoo (Wednesday, Nov 18): the bye-week to-do list starts with how the offense handles pressure. Kansas City's rush harassed Penix, pre-snap and holding penalties stalled drives, and Athlon says Jawaan Taylor's stance tipped run or pass. Minnesota's defense under Brian Flores blitzes on 72.3% of dropbacks, per ESPN's Ben Solak (Vikings.com, Nov 17).",
+      category: "games",
+      sourceUrl: "https://sports.yahoo.com/articles/atlanta-falcons-fix-problems-during-192245962.html",
+      sourceLabel: "Athlon Sports (Yahoo) / Vikings.com",
+    },
+    {
       title: "'Pull everything apart' over the bye",
       detail: "The Athletic via NFL.com (Tuesday, Nov 17): 'It's very important that you pull everything apart in the bye week and look at it and get under the hood,' Kevin Stefanski said. Since Week 5 Atlanta is 1-5, 24th in rushing EPA, 30th on third down (32.9%) and 27th in the red zone (42.9%); Penix is 27th in EPA per dropback with eight TDs and six INTs. Penix: 'We can't beat ourselves.' Avieon Terrell was a healthy scratch Sunday, which Stefanski called 'a numbers thing with special teams in mind.'",
       category: "coaching",
@@ -3280,7 +3319,7 @@ export const NEWS_DIGEST = {
     },
     {
       title: "Scouting Minnesota: Vikings climbing",
-      detail: "The Big Lead via Yahoo (Tuesday, Nov 17): the Vikings rose to No. 4 in its NFC rankings after a 30-10 win at Green Bay in which Kirk Cousins went 21-of-31 for 207 yards and two TDs and the defense sacked Jordan Love eight times (two for Levi Drake Rodriguez). Minnesota plays San Francisco in Mexico City on Sunday, Nov 22, before hosting Atlanta on Nov 29. Kevin O'Connell said Cousins 'ran the show incredibly clean.'",
+      detail: "The Big Lead via Yahoo (Tuesday, Nov 17): the 7-2 Vikings rose to No. 4 in its NFC rankings after a 30-10 win at Green Bay in which Kirk Cousins went 21-of-31 for 207 yards and two TDs and the defense sacked Jordan Love eight times. Before hosting Atlanta on Nov 29, Minnesota plays 8-1 San Francisco on Sunday Night Football in Mexico City (Sunday, Nov 22, 8:20 PM ET, NBC, per NBC Chicago). ESPN's Ben Solak calls it 'the coolest game of the season': Minnesota's defense ranks first in points allowed per drive (Vikings.com, Nov 17).",
       category: "games",
       sourceUrl: "https://sports.yahoo.com/articles/nfc-power-rankings-nfl-week-140210262.html",
       sourceLabel: "The Big Lead (Yahoo)",
@@ -3293,32 +3332,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "AP (Atlanta News First) / ESPN",
     },
     {
-      title: "Rees keeps the play-calling",
-      detail: "ESPN (Monday, Nov 16): Stefanski said OC Tommy Rees will remain the offensive play-caller, a day after Rees moved from the coaches' box to the sideline for the first time. Atlanta ranks sixth-worst in EPA per play (-0.16) and 24th in scoring (20.1 points a game). 'A lot of this is we got to give the guys a plan that they can go execute,' Stefanski said. AP: six of Sunday's nine penalties were on offensive linemen, including three on Jake Matthews and two false starts on Jawaan Taylor. Left guard Matthew Bergeron (AJC): 'I love Tommy to death, so that's not the issue.'",
-      category: "coaching",
-      sourceUrl: "https://www.ajc.com/sports/2026/11/falcons-rees-play-caller/",
-      sourceLabel: "ESPN / AP / AJC",
-    },
-    {
       title: "Drake London cleared after concussion check",
       detail: "ESPN (Monday, Nov 16): Stefanski said Drake London was cleared after being pulled late in the fourth quarter against Kansas City for a possible concussion. London had six catches for 109 yards Sunday, his 14th career 100-yard game (fifth-most in team history, per AP), and leads the team with 801 receiving yards on 50 catches. It was his second concussion check of the season after Oct 25 vs. San Francisco.",
       category: "injuries",
       sourceUrl: "https://www.espn.com/nfl/story/_/id/50503127/falcons-drake-london-cleared-being-checked-concussion",
       sourceLabel: "ESPN",
-    },
-    {
-      title: "Penix's turnover slide, by the numbers",
-      detail: "AP via Atlanta News First (Monday, Nov 16): Michael Penix Jr. has six interceptions and one touchdown pass over the three-game losing streak, including four picks in the rain at Tampa Bay, and is at 10 TDs and seven INTs on the season. Atlanta's minus-10 turnover margin is tied for second-worst in the NFL. Jahan Dotson: 'we have to look at ourselves in the mirror and fix the internal things.'",
-      category: "general",
-      sourceUrl: "https://www.atlantanewsfirst.com/2026/11/17/coach-kevin-stefanski-says-falcons-bye-is-an-opportunity-learn-some-hard-lessons/",
-      sourceLabel: "AP (Atlanta News First)",
-    },
-    {
-      title: "Locker room: 'We can make this run'",
-      detail: "AJC (after Sunday's loss): with seven games left and Carolina leading the NFC South at 4-5, players insisted the season is salvageable. 'We can make this run because the division is still wide-open,' A.J. Terrell said. Cameron Thomas: 'this locker room has stayed together.' Matthew Bergeron said the Bates and Neuzil trades were not the issue: 'until the last week, we're gonna be in the fight.'",
-      category: "general",
-      sourceUrl: "https://www.ajc.com/sports/2026/11/falcons-struggling/",
-      sourceLabel: "AJC",
     },
     {
       title: "Bye-week fix: the defense",
@@ -3341,25 +3359,11 @@ export const NEWS_DIGEST = {
       sourceUrl: "https://www.espn.com/nfl/story/_/id/50495406/bijan-robinson-says-falcons-deserved-boos-loss-chiefs",
       sourceLabel: "ESPN",
     },
-    {
-      title: "Panthers walk off in New Orleans",
-      detail: "neworleanssaints.com (Sunday, Nov 15): Carolina won 20-17 at New Orleans on Ryan Fitzgerald's 54-yard field goal as time expired, 41 seconds after Charlie Smyth's 55-yarder tied it. The NFC South now reads Carolina 4-5, Tampa Bay 3-6 (bye), New Orleans 3-6 and Atlanta 3-7, a game and a half out of first (buccaneers.com standings). Atlanta closes with three straight division games after Washington.",
-      category: "games",
-      sourceUrl: "https://www.neworleanssaints.com/news/carolina-panthers-new-orleans-saints-2026-nfl-week-10-game-recap",
-      sourceLabel: "neworleanssaints.com",
-    },
-    {
-      title: "Cameron Thomas extended three years",
-      detail: "atlantafalcons.com (Friday, Nov 13): the Falcons agreed to a three-year extension with DE Cameron Thomas, worth up to $33 million and running through 2029 (ESPN's Adam Schefter via CBS Sports; AP: up to $11 million a year). Signed to a one-year deal in the spring, he has a career-high 12 QB hits, two sacks, a forced fumble and 26 pressures per Next Gen Stats, second on the team. 'He demonstrates what we love about this game every single day,' DC Jeff Ulbrich said. The same day, CB C.J. Henderson got a two-year, $20 million extension through 2028 (AP via Atlanta News First).",
-      category: "contracts",
-      sourceUrl: "https://www.atlantafalcons.com/news/falcons-cameron-thomas-contract-extension",
-      sourceLabel: "atlantafalcons.com / CBS Sports",
-    },
   ],
 };
 
 export const INTERVIEWS = {
-  generatedAt: "2026-11-17T09:25:00Z",
+  generatedAt: "2026-11-19T09:30:00Z",
   windowLabel: "Week 10 Postgame + Bye Week · Nov 15 → Nov 22",
   sessions: [
     {
@@ -3380,6 +3384,24 @@ export const INTERVIEWS = {
         "Confirmed Tommy Rees keeps play-calling duties and that Drake London was cleared after a late concussion check (ESPN)",
       ],
       topics: ["bye-week", "self-scout", "rees", "london", "week-11"],
+    },
+    {
+      id: "terrell-2026-11-16",
+      speaker: "A.J. Terrell, Xavier Watts & Jahan Dotson",
+      role: "Players",
+      date: "2026-11-16",
+      venue: "IBM Performance Field · Flowery Branch",
+      session: "Week 11 Bye · Monday Locker Room",
+      sourceUrl: "https://www.ajc.com/sports/2026/11/how-the-falcons-plan-to-spend-bye-week/",
+      summary: "On the first day of a bye that is only meetings and lifts on Monday and Tuesday before players scatter for the rest of the week, three veterans talked about resetting at 3-7 and still chasing a division that Carolina leads at 4-5. Quotes via the AJC.",
+      pullQuote: "We need to get this taste out of our mouth, and get ready for what's to come.",
+      bullets: [
+        "Terrell, after three straight losses: 'We need to get this taste out of our mouth' (AJC)",
+        "Watts on balancing the off days with film work: 'It can't be all in — all football, and then all break' (AJC)",
+        "Dotson on the standings: 'We have the season right in front of us. We have the division right in front of us' (AJC)",
+        "Schedule per the AJC: meetings and lifts Monday and Tuesday, then the rest of the week off before Minnesota prep",
+      ],
+      topics: ["bye-week", "week-11", "terrell", "watts", "dotson", "nfc-south"],
     },
     {
       id: "stefanski-2026-11-15",
@@ -3455,25 +3477,6 @@ export const INTERVIEWS = {
         "On Kansas City: 'Coach Reid does an outstanding job,' and 'They can play aggressive; they can play coverage' (Falcons Wire, atlantafalcons.com)",
       ],
       topics: ["levin", "neuzil-trade", "folk", "moody", "chiefs-week", "week-10"],
-    },
-    {
-      id: "stefanski-2026-11-09",
-      speaker: "Kevin Stefanski",
-      role: "Head Coach",
-      date: "2026-11-09",
-      venue: "IBM Performance Field · Flowery Branch",
-      session: "Week 10 vs. Kansas City · Monday Press Conference",
-      sourceUrl: "https://www.atlantafalcons.com/news/kevin-stefanski-trade-of-jessie-bates-iii-in-no-way-shape-or-form-an-indication-the-falcons-are-punting-on-2026-season",
-      summary: "Back from Madrid, Stefanski explained the Jessie Bates III trade to Jacksonville, insisted the 3-6 Falcons are not giving up on 2026 in a division where nobody has more than three wins, and named DeMarcco Hellams the next man up at safety. Quotes via atlantafalcons.com, Atlanta Falcons On SI and Falcons Wire.",
-      pullQuote: "I think our fans are smart enough to know that in no way, shape or form would we punt on this season.",
-      bullets: [
-        "On the standings: 'Obviously, we're not where we want to be, we want to play better, but we're very much in the thick of this thing' (Falcons Wire)",
-        "Said the decision was made with GM Ian Cunningham and president of football Matt Ryan: 'We all felt like this decision is what's best for our football team' (atlantafalcons.com)",
-        "On the return: 'Draft picks are the lifeblood of an organization. That's something we believe in' (Atlanta Falcons On SI)",
-        "On replacing Bates: 'Obviously, DeMarcco is the next man up that we feel really good about' (Falcons Wire)",
-        "On the locker room: 'It's not just one person that has to step up. It's all of us that have to step up' (Atlanta Falcons On SI)",
-      ],
-      topics: ["bates-trade", "week-10", "trade-deadline", "hellams", "chiefs-week"],
     },
   ],
 };
