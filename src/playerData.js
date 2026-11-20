@@ -2082,7 +2082,7 @@ export const NEXT_GAME = {
   date: "2026-11-29",
   kickoff: "1:00 PM ET",
   tv: "FOX",
-  note: "Out of the Week 11 bye: Atlanta (3-7, last in the NFC South and 1.5 games behind 4-5 Carolina) visits Minnesota at 1:00 PM ET on Sunday, Nov 29 (FOX), a return to Minneapolis for Kevin Stefanski, a Vikings assistant from 2006 to 2019. The Falcons have lost three straight and five of six after Sunday's 35-13 home loss to Kansas City, scoring 30 points combined in those three games (ESPN). Health to watch through the bye: WR Drake London was cleared after a late concussion check against the Chiefs, Stefanski said Monday (ESPN, Nov 16); LB Divine Deablo (fractured right forearm) and WR Zachariah Branch (hamstring) missed the KC game, and AP says the bye comes at a good time for Deablo. Tommy Rees keeps offensive play-calling (ESPN, Nov 16), and Stefanski says the staff will 'pull everything apart' over the bye (The Athletic via NFL.com, Nov 17). Opponent: Minnesota rose to No. 4 in The Big Lead's NFC rankings (Nov 17) after a 30-10 win at Green Bay with eight sacks of Jordan Love; Kirk Cousins threw two TDs. The 7-2 Vikings play 8-1 San Francisco on Sunday Night Football in Mexico City (Nov 22, 8:20 PM ET, NBC) before hosting Atlanta. WR Jordan Addison had thumb surgery but stays off short-term IR for now, per Kevin O'Connell (Vikings.com, Nov 18); ESPN (Nov 16) had said he could miss about a month. The first Week 12 injury report is due once practice resumes after the bye. Detroit (home, Dec 6) and Cleveland (away, Dec 13) follow.",
+  note: "Out of the Week 11 bye: Atlanta (3-7, last in the NFC South and 1.5 games behind 4-5 Carolina) visits Minnesota at 1:00 PM ET on Sunday, Nov 29 (FOX), a return to Minneapolis for Kevin Stefanski, a Vikings assistant from 2006 to 2019. The Falcons have lost three straight and five of six after Sunday's 35-13 home loss to Kansas City, scoring 30 points combined in those three games (ESPN). Health to watch through the bye: WR Drake London was cleared after a late concussion check against the Chiefs, Stefanski said Monday (ESPN, Nov 16); LB Divine Deablo (fractured right forearm) and WR Zachariah Branch (hamstring) missed the KC game, and AP says the bye comes at a good time for Deablo. Tommy Rees keeps offensive play-calling (ESPN, Nov 16), and Stefanski says the staff will 'pull everything apart' over the bye (The Athletic via NFL.com, Nov 17). Opponent: Minnesota rose to No. 4 in The Big Lead's NFC rankings (Nov 17) after a 30-10 win at Green Bay with eight sacks of Jordan Love; Kirk Cousins threw two TDs. The 7-2 Vikings play 8-1 San Francisco on Sunday Night Football in Mexico City (Nov 22, 8:20 PM ET, NBC) before hosting Atlanta. WR Jordan Addison had thumb surgery but stays off short-term IR for now, per Kevin O'Connell (Vikings.com, Nov 18); ESPN (Nov 16) had said he could miss about a month. The NFL did not flex the game to Sunday night (Raiders-Browns got the slot), so it stays at 1:00 PM ET on FOX (Yahoo Sports, Nov 17); Covers still had no spread or total posted as of Nov 18. The first Week 12 injury report is due once practice resumes after the bye. Detroit (home, Dec 6) and Cleveland (away, Dec 13) follow.",
 };
 
 // =========================================
@@ -2466,17 +2466,17 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-11-19T09:30:00Z",
+  generatedAt: "2026-11-20T09:30:00Z",
   cover: {
-    kicker: "Bye week, Wednesday: players are off for the rest of the week while Stefanski's staff reviews the play-calling process; Rees keeps the headset for now, the door stays open; fans vent as PFN ranks Penix 20th; Minnesota's Jordan Addison has thumb surgery but avoids IR",
-    headLine1: "Players away,",
-    headEm: "the headset stays put.",
-    headLine3: "Rees keeps the call sheet for now. Penix ranked 20th by PFN. Addison has surgery in Minnesota.",
-    deck: "Wednesday-Thursday (Nov 18-19): with meetings and lifts done Monday and Tuesday, Falcons players are off for the rest of the week (AJC). Kevin Stefanski is reviewing the play-calling process but not taking game-day duties from Tommy Rees, and said the staff will 'look at everything' (AJC); Roundtable argues a change could still come after the bye. Pro Football Network (Nov 19) ranks Michael Penix Jr. 20th in its QB Impact Score after a three-game skid of 573 yards, one TD and six interceptions. A.J. Terrell: 'We need to get this taste out of our mouth.' In Minnesota, Jordan Addison had thumb surgery and, for now, avoids short-term IR (Vikings.com, Nov 18); the 7-2 Vikings play 8-1 San Francisco in Mexico City on Sunday night before hosting Atlanta on Nov 29.",
+    kicker: "Bye week, Friday: ESPN's first 2027 mock sends Atlanta a quarterback, Notre Dame's CJ Carr at No. 8; Locked On calls the last seven games Penix's audition, with Matt Ryan's message 'hit the layups'; Athlon maps a post-bye run of Minnesota, Detroit, Cleveland and Washington",
+    headLine1: "A mock pick,",
+    headEm: "and a seven-game audition.",
+    headLine3: "ESPN sends CJ Carr to Atlanta at No. 8. Locked On: Penix has to 'hit the layups.' The road out of the bye starts in Minneapolis.",
+    deck: "Thursday-Friday (Nov 19-20): with players away until Minnesota prep, the conversation turned to Michael Penix Jr.'s future. ESPN's Jordan Reid published a 2027 mock on Wednesday with the Falcons taking Notre Dame QB CJ Carr at No. 8, writing that Penix is 'struggling to find consistency in Year 3' (ClutchPoints, Nov 18). Locked On Falcons via Athlon (Nov 19) frames the last seven games as Penix's audition, citing Matt Ryan's assessment that he has to 'hit the layups.' Athlon (Nov 20) notes the schedule does not ease after the bye: at Minnesota, home to Detroit, then road trips to Cleveland and Washington before three straight NFC South games. The Nov 29 game was not flexed to Sunday night and stays at 1 PM ET on FOX (Yahoo, Nov 17); opening lines were still off the board on Nov 18 (Covers).",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
-    photoId: "terrell",
-    stampLabel: "Thu Nov 19 · Bye Week 11 · Players off through the weekend · Rees keeps play-calling, process under review · PFN QB Impact: Penix 20th · Addison (MIN) thumb surgery, no IR · ATL 3-7, 4th NFC South (CAR 4-5) · Next: at MIN, Nov 29, 1 PM ET, FOX",
+    photoId: "penix-jr",
+    stampLabel: "Fri Nov 20 · Bye Week 11 · Players off through the weekend · ESPN 2027 mock: ATL takes QB CJ Carr at No. 8 · Locked On: Penix's audition · Not flexed: at MIN stays 1 PM ET, FOX · ATL 3-7, 4th NFC South (CAR 4-5) · Next: at MIN, Nov 29",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -3183,9 +3183,12 @@ export const NEWS_DIGEST = {
     // 1-5 since Week 5, FPI 1.9% division odds, power rankings); fallback photoId moved to penix-jr. Pointer unchanged.
     // STATUS (2026-11-19 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto bye-week Wednesday/Thursday (players off,
     // play-calling process review with Rees keeping duties, PFN ranks Penix 20th, Addison thumb surgery); fallback photoId moved to terrell. Pointer unchanged.
+    // STATUS (2026-11-20 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto bye-week Thursday/Friday (ESPN 2027 mock
+    // sends QB CJ Carr to ATL at No. 8, Locked On 'audition' framing for Penix, post-bye schedule, game not flexed); fallback photoId moved to penix-jr. Pointer unchanged.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
+    "ClutchPoints (Nov 18)", "Athlon Sports / Locked On Falcons (Nov 19)", "Athlon Sports (Yahoo, Nov 20)", "Yahoo Sports / BringMeTheSports (Nov 17)", "Covers (Nov 18)", "AJC (Nov 16)", "ESPN roster API (Nov 20)",
     "Pro Football Network (Nov 19)", "Roundtable (Nov 18)", "Athlon Sports (Yahoo, Nov 18)", "Falcons Wire (Yahoo, Nov 18)", "Vikings.com (Nov 16-18)",
     "ESPN (TSN, Nov 16)", "NBC Chicago (Nov 16)", "AJC (Nov 16)", "atlantafalcons.com (Nov 17)", "ESPN roster API (Nov 19)",
     "NFL.com / The Athletic (Nov 17)", "AJC (Nov 16-17)", "Falcons Wire (Yahoo, Nov 17)", "atlantafalcons.com (Nov 17)", "The Big Lead (Yahoo, Nov 17)",
@@ -3262,6 +3265,34 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
+      title: "ESPN 2027 mock: Falcons take QB CJ Carr at No. 8",
+      detail: "ClutchPoints (Wednesday, Nov 18): ESPN's Jordan Reid published a 2027 first-round mock draft with 3-7 Atlanta taking Notre Dame quarterback CJ Carr at No. 8. Reid wrote that Michael Penix Jr. is 'struggling to find consistency in Year 3' and called Carr 'an instinctive passer who consistently has answers.' Penix enters the final year of his rookie deal in 2027; ClutchPoints notes Bijan Robinson, Drake London and Kyle Pitts as the skill talent a rookie QB would inherit.",
+      category: "draft",
+      sourceUrl: "https://clutchpoints.com/nfl/atlanta-falcons/falcons-news-michael-penix-jr-on-notice-espn-new-2027-mock-draft-pick",
+      sourceLabel: "ClutchPoints / ESPN",
+    },
+    {
+      title: "Locked On: the final stretch is Penix's audition",
+      detail: "Locked On Falcons via Athlon Sports (Thursday, Nov 19): host Aaron Freeman and guest Joe Patrick frame the last seven games as an audition for Penix, starting at Minnesota. They point to a missed open throw to Drake London and a fourth-down incompletion toward Kyle Pitts with London open elsewhere, cite president of football Matt Ryan's assessment that Penix has to 'hit the layups,' and say the staff wants baseline consistency before judging Tommy Rees. They also flag drifting from the run too early.",
+      category: "general",
+      sourceUrl: "https://athlonsports.com/nfl/atlanta-falcons/falcons-michael-penix-jr-audition-long-term",
+      sourceLabel: "Athlon Sports / Locked On Falcons",
+    },
+    {
+      title: "After the bye, the schedule does not ease",
+      detail: "Athlon Sports via Yahoo (Thursday night, Nov 19): Atlanta's first four games out of the bye are at Minnesota (Nov 29), home to Detroit (Dec 6), at Cleveland (Dec 13) and at Washington (Dec 20), before closing with Tampa Bay, New Orleans and Carolina. Athlon notes Detroit will be without edge rusher Aidan Hutchinson after an ACL injury and says those four weeks decide whether the Falcons are still in the NFC South race or playing out the string.",
+      category: "games",
+      sourceUrl: "https://sports.yahoo.com/articles/things-dont-easier-falcons-bye-014722821.html",
+      sourceLabel: "Athlon Sports (Yahoo)",
+    },
+    {
+      title: "Not flexed: Minnesota game stays at 1 PM",
+      detail: "Yahoo Sports via BringMeTheSports (Tuesday, Nov 17): the NFL passed on flexing Falcons at Vikings into Sunday Night Football for Week 12, picking Raiders-Browns instead, so the Nov 29 game stays at 1:00 PM ET on FOX. The outlet called it 'arguably the most appealing game to flex,' with Kirk Cousins, back with the Vikings, facing the Falcons team he once left Minnesota to join. Covers' Week 12 opening-lines board (updated Nov 18) still had the game off the board, with no spread or total posted.",
+      category: "games",
+      sourceUrl: "https://sports.yahoo.com/articles/vikings-falcons-wont-flexed-sunday-185600018.html",
+      sourceLabel: "Yahoo Sports / Covers",
+    },
+    {
       title: "Rees keeps the headset, but the door is open",
       detail: "AJC (Nov 16) and Roundtable (Wednesday, Nov 18): Stefanski is reviewing the play-calling process but is not taking game-day duties from Tommy Rees, and said the staff will 'look at everything,' while deferring when asked about his confidence in Rees. Left guard Matthew Bergeron: 'I love Tommy to death, so that's not the issue.' Roundtable argues a change could still come after the bye; Stefanski handed play-calling to Rees in Cleveland last season. In the three games since Atlanta led the NFL in scoring through Penix's first five starts, the Falcons have 30 points and 304.3 yards a game (AJC).",
       category: "coaching",
@@ -3311,25 +3342,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "Falcons Wire (Yahoo) / The Athletic",
     },
     {
-      title: "Power rankings: stuck in the 20s",
-      detail: "atlantafalcons.com roundup (Tuesday, Nov 17): Atlanta is No. 23 at ESPN (no change), No. 25 at The Athletic (down one), No. 24 at Bleacher Report (down two), No. 25 at FOX Sports (down one) and No. 21 at CBS Sports. Bright spots cited: Bijan Robinson's 951 rushing yards (third in the NFL) and 1,207 scrimmage yards, and Cameron Thomas as The Athletic's breakout player. FOX notes eight straight losses to AFC opponents.",
-      category: "general",
-      sourceUrl: "https://atlantafalcons.com/news/week-11-nfl-power-rankings-roundup-falcons-on-the-bye-commanders-on-the-move",
-      sourceLabel: "atlantafalcons.com / Falcons Wire",
-    },
-    {
       title: "Scouting Minnesota: Vikings climbing",
       detail: "The Big Lead via Yahoo (Tuesday, Nov 17): the 7-2 Vikings rose to No. 4 in its NFC rankings after a 30-10 win at Green Bay in which Kirk Cousins went 21-of-31 for 207 yards and two TDs and the defense sacked Jordan Love eight times. Before hosting Atlanta on Nov 29, Minnesota plays 8-1 San Francisco on Sunday Night Football in Mexico City (Sunday, Nov 22, 8:20 PM ET, NBC, per NBC Chicago). ESPN's Ben Solak calls it 'the coolest game of the season': Minnesota's defense ranks first in points allowed per drive (Vikings.com, Nov 17).",
       category: "games",
       sourceUrl: "https://sports.yahoo.com/articles/nfc-power-rankings-nfl-week-140210262.html",
       sourceLabel: "The Big Lead (Yahoo)",
-    },
-    {
-      title: "Stefanski: bye is for 'some hard lessons'",
-      detail: "AP via Atlanta News First (Monday, Nov 16): Kevin Stefanski said the bye week is a chance to 'learn some lessons, some hard lessons' and to self-scout after three straight losses in which Atlanta was outscored 85-30. 'I think we need to look at our process,' he told reporters (ESPN), adding that the staff would review everything with fresh eyes. 'We will all learn from it. We're not going to hide from it. Going to own it and make corrections.'",
-      category: "coaching",
-      sourceUrl: "https://www.atlantanewsfirst.com/2026/11/17/coach-kevin-stefanski-says-falcons-bye-is-an-opportunity-learn-some-hard-lessons/",
-      sourceLabel: "AP (Atlanta News First) / ESPN",
     },
     {
       title: "Drake London cleared after concussion check",
@@ -3351,13 +3368,6 @@ export const NEWS_DIGEST = {
       category: "games",
       sourceUrl: "https://www.wyff4.com/article/mahomes-throws-5-td-as-chiefs-overwhelm-falcons-35-13/74435389",
       sourceLabel: "AP (WYFF) / NBC Sports",
-    },
-    {
-      title: "Bijan: 'When they boo us, we deserve it'",
-      detail: "ESPN (Sunday, Nov 15): Mercedes-Benz Stadium booed after failed third downs, the loudest since the Week 2 loss to Carolina. 'So yeah, when they boo us, we deserve it,' Bijan Robinson said. He had 71 yards on 16 carries and the Falcons' only touchdown. Atlanta opened with four straight three-and-outs, the first time since 2000, and finished 5-of-16 on third down and 1-for-5 in the red zone. Penix: 'We're not out yet. We've got seven games left, and we got to win.'",
-      category: "games",
-      sourceUrl: "https://www.espn.com/nfl/story/_/id/50495406/bijan-robinson-says-falcons-deserved-boos-loss-chiefs",
-      sourceLabel: "ESPN",
     },
   ],
 };
