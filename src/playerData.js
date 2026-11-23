@@ -2082,7 +2082,7 @@ export const NEXT_GAME = {
   date: "2026-11-29",
   kickoff: "1:00 PM ET",
   tv: "FOX",
-  note: "Out of the Week 11 bye: Atlanta (3-7, last in the NFC South and 1.5 games behind 4-5 Carolina) visits Minnesota at 1:00 PM ET on Sunday, Nov 29 (FOX), a return to Minneapolis for Kevin Stefanski, a Vikings assistant from 2006 to 2019. The Falcons have lost three straight and five of six after Sunday's 35-13 home loss to Kansas City, scoring 30 points combined in those three games (ESPN). Health to watch through the bye: WR Drake London was cleared after a late concussion check against the Chiefs, Stefanski said Monday (ESPN, Nov 16); LB Divine Deablo (fractured right forearm) and WR Zachariah Branch (hamstring) missed the KC game, and AP says the bye comes at a good time for Deablo. Tommy Rees keeps offensive play-calling (ESPN, Nov 16), and Stefanski says the staff will 'pull everything apart' over the bye (The Athletic via NFL.com, Nov 17). Opponent: Minnesota rose to No. 4 in The Big Lead's NFC rankings (Nov 17) after a 30-10 win at Green Bay with eight sacks of Jordan Love; Kirk Cousins threw two TDs. The 7-2 Vikings play 8-1 San Francisco on Sunday Night Football in Mexico City (Nov 22, 8:20 PM ET, NBC) before hosting Atlanta. WR Jordan Addison had thumb surgery but stays off short-term IR for now, per Kevin O'Connell (Vikings.com, Nov 18); ESPN (Nov 16) had said he could miss about a month. Minnesota's final report for the 49ers game rules out both Addison and QB Kyler Murray (hamstring), with S Jay Ward and CB Isaiah Rodgers questionable (Vikings.com, Nov 20). The NFL did not flex the game to Sunday night (Raiders-Browns got the slot), so it stays at 1:00 PM ET on FOX (Yahoo Sports, Nov 17); Covers had no spread or total posted as of Nov 18; TeamRankings' matchup page (Nov 22) lists Minnesota as a 7-point favorite with a 42.5 total (implied 24.8 to 17.8). The first Week 12 injury report is due once practice resumes after the bye. Detroit (home, Dec 6) and Cleveland (away, Dec 13) follow.",
+  note: "Game week. Minnesota comes in off a 35-10 Sunday-night loss to San Francisco in Mexico City (Nov 22) that dropped the Vikings to 7-3: Kirk Cousins went 26-of-38 for 235 yards with a pick-six, Brock Purdy threw three TDs, and LT Christian Darrisaw (shoulder) left in the first half and again for good in the fourth quarter; CB Isaiah Rodgers (quad) was inactive (AP via FOX Sports and CBS San Francisco, Nov 22-23). Kevin O'Connell: 'We just got beat tonight.' The line as of Nov 22 is Minnesota -7.5 with a 42.5 total, moneyline MIN -340 / ATL +270 (bet365 via FOX Sports). Around the division, Carolina beat Baltimore 35-33 to reach 5-5 while Tampa Bay (lost 31-21 at Detroit) and New Orleans (lost 21-13 at Chicago) fell to 3-7, so Atlanta (3-7, idle) sits two games back; Pro Football Network's simulation gives the Falcons a 4.4% chance to win the NFC South (Nov 22). Earlier context: Atlanta (3-7, last in the NFC South) visits Minnesota at 1:00 PM ET on Sunday, Nov 29 (FOX), a return to Minneapolis for Kevin Stefanski, a Vikings assistant from 2006 to 2019. The Falcons have lost three straight and five of six after Sunday's 35-13 home loss to Kansas City, scoring 30 points combined in those three games (ESPN). Health to watch through the bye: WR Drake London was cleared after a late concussion check against the Chiefs, Stefanski said Monday (ESPN, Nov 16); LB Divine Deablo (fractured right forearm) and WR Zachariah Branch (hamstring) missed the KC game, and AP says the bye comes at a good time for Deablo. Tommy Rees keeps offensive play-calling (ESPN, Nov 16), and Stefanski says the staff will 'pull everything apart' over the bye (The Athletic via NFL.com, Nov 17). Opponent: Minnesota rose to No. 4 in The Big Lead's NFC rankings (Nov 17) after a 30-10 win at Green Bay with eight sacks of Jordan Love; Kirk Cousins threw two TDs. WR Jordan Addison had thumb surgery but stays off short-term IR for now, per Kevin O'Connell (Vikings.com, Nov 18); ESPN (Nov 16) had said he could miss about a month. Addison and QB Kyler Murray (hamstring) were ruled out of the 49ers game (Vikings.com, Nov 20). The NFL did not flex the game to Sunday night (Raiders-Browns got the slot), so it stays at 1:00 PM ET on FOX (Yahoo Sports, Nov 17); TeamRankings' matchup page (Nov 22) had Minnesota -7 with a 42.5 total before the line moved to -7.5. The first Week 12 injury report is due once practice resumes this week. Detroit (home, Dec 6) and Cleveland (away, Dec 13) follow.",
 };
 
 // =========================================
@@ -2450,15 +2450,15 @@ export const RESULTS_2026 = [
 ];
 
 // =========================================
-// NFC SOUTH 2026 STANDINGS — live (through Week 10 Sunday, Nov 15)
-// Carolina (4-5) won 20-17 at New Orleans on a 54-yard Ryan Fitzgerald field goal as time expired (neworleanssaints.com).
-// New Orleans falls to 3-6; Tampa Bay (3-6) was on its bye (AJC, Nov 11); Atlanta lost 35-13 to Kansas City to fall to 3-7.
-// Records and order per the buccaneers.com 2026 standings page (Nov 16).
+// NFC SOUTH 2026 STANDINGS — live (through Week 11 Sunday, Nov 22)
+// Carolina (5-5) beat Baltimore 35-33; Tampa Bay (3-7) lost 31-21 at Detroit; New Orleans (3-7) lost 21-13 at Chicago;
+// Atlanta (3-7) was on its bye. Scores and records per Pro Football Network via Yahoo (Nov 22). The three 3-7 teams keep
+// their prior order (tiebreak order not published in the source).
 // =========================================
 export const NFC_SOUTH_STANDINGS_2026 = [
-  { team: "Carolina Panthers", code: "CAR", wins: 4, losses: 5, pct: 0.444, divisionFinish: 1 },
-  { team: "Tampa Bay Buccaneers", code: "TB", wins: 3, losses: 6, pct: 0.333, divisionFinish: 2 },
-  { team: "New Orleans Saints", code: "NO", wins: 3, losses: 6, pct: 0.333, divisionFinish: 3 },
+  { team: "Carolina Panthers", code: "CAR", wins: 5, losses: 5, pct: 0.5, divisionFinish: 1 },
+  { team: "Tampa Bay Buccaneers", code: "TB", wins: 3, losses: 7, pct: 0.3, divisionFinish: 2 },
+  { team: "New Orleans Saints", code: "NO", wins: 3, losses: 7, pct: 0.3, divisionFinish: 3 },
   { team: "Atlanta Falcons", code: "ATL", wins: 3, losses: 7, pct: 0.3, divisionFinish: 4, isFalcons: true },
 ];
 
@@ -2466,17 +2466,17 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-11-22T09:30:00Z",
+  generatedAt: "2026-11-23T09:30:00Z",
   cover: {
-    kicker: "Bye week, Sunday: the league plays without Atlanta; TeamRankings has Minnesota a 7-point favorite for Nov 29; Roundtable says start faster and calls this 'not a playoff team'; Penix on Bijan: 'We've got to get him the ball more'",
-    headLine1: "A week off,",
-    headEm: "and a touchdown underdog.",
-    headLine3: "The bye ends with the Falcons watching. Minnesota opens as a 7-point favorite. The fix everyone names: start faster and feed Bijan.",
-    deck: "Sunday (Nov 22): the last day of the bye, with Atlanta (3-7) watching the rest of the NFC South play. TeamRankings' Week 12 matchup page lists Minnesota as a 7-point favorite with a 42.5 total for Nov 29, implying roughly 24.8 to 17.8. Roundtable (Nov 21) says the one thing to clean up is slow starts, and its panel was blunt: 'This is not a playoff team,' Michael Brauner wrote, while Christian Rauh is 'not ready to completely give up on Penix just yet.' AP (Nov 19): after Bijan Robinson got two carries on Atlanta's first four possessions against Kansas City, Michael Penix Jr. said, 'We've got to get him the ball more.' Minnesota plays San Francisco tonight in Mexico City (8:20 PM ET, NBC) without Kyler Murray and Jordan Addison. Players return for Minnesota prep this week; kickoff Nov 29 is 1 PM ET on FOX.",
+    kicker: "Minnesota week, Monday: the 49ers rout the Vikings 35-10 in Mexico City and Darrisaw hurts a shoulder; the line sits at MIN -7.5; Carolina beats Baltimore to go 5-5 and Atlanta is two games back; PFN puts the division odds at 4.4%",
+    headLine1: "The Vikings stumble,",
+    headEm: "and the gap grows.",
+    headLine3: "Minnesota lost big on Sunday night. Carolina won. Atlanta returns from the bye two games out with seven to play.",
+    deck: "Monday (Nov 23): the bye is over and the Falcons (3-7) start Minnesota prep. The Vikings come in off their worst night of the season, a 35-10 loss to San Francisco in Mexico City (AP, Nov 22): Kirk Cousins threw a pick-six, Brock Purdy threw three touchdowns, and left tackle Christian Darrisaw (shoulder) left for good in the fourth quarter. Kevin O'Connell: 'We just got beat tonight.' Minnesota fell to 7-3 and is still a 7.5-point favorite for Sunday (bet365 via FOX Sports, Nov 22). The division moved the wrong way: Carolina beat Baltimore 35-33 to reach 5-5 while Tampa Bay and New Orleans lost, so Atlanta is two games back, and Pro Football Network's simulation gives it a 4.4% shot at the title. Kickoff Nov 29 is 1 PM ET on FOX.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
-    stampLabel: "Sun Nov 22 · Bye Week 11 · TeamRankings: MIN -7, total 42.5 · Roundtable: start faster · Penix: 'get him the ball more' · MIN vs. SF tonight in Mexico City · ATL 3-7, 4th NFC South (CAR 4-5) · Next: at MIN, Nov 29, 1 PM ET, FOX",
+    stampLabel: "Mon Nov 23 · Week 12 · SF 35, MIN 10 (MIN 7-3) · Darrisaw shoulder · Line: MIN -7.5, total 42.5 · CAR 35, BAL 33 · ATL 3-7, two back of CAR (5-5) · PFN division odds 4.4% · Next: at MIN, Nov 29, 1 PM ET, FOX",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -3189,9 +3189,13 @@ export const NEWS_DIGEST = {
     // run game 181 to 101.8, Athlon on pressure, Vikings rule out Murray and Addison vs. SF); fallback photoId moved to bijan. Pointer unchanged.
     // STATUS (2026-11-22 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto bye-week Sunday (TeamRankings MIN -7,
     // Roundtable on slow starts and 'not a playoff team', AP Penix 'get him the ball more'); fallback photoId moved to penix-jr. Pointer unchanged.
+    // STATUS (2026-11-23 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto Minnesota week Monday (SF 35, MIN 10,
+    // Darrisaw shoulder, MIN -7.5, Carolina 5-5, PFN 4.4% division odds); fallback photoId kept at penix-jr. Pointer unchanged.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
+    "AP (FOX Sports, Nov 23)", "AP (CBS San Francisco, Nov 22)", "49ers Webzone (Nov 22)", "FOX Sports odds (Nov 22)", "Pro Football Network (Yahoo, Nov 22)",
+    "Atlanta Falcons On SI (Yahoo, Nov 22)", "Athlon Sports / Locked On Falcons (Nov 21-22)", "BloggingDirty (Nov 18)", "ESPN roster API (Nov 23)",
     "TeamRankings (Nov 22)", "Roundtable (Yahoo, Nov 21)", "AP (Yahoo, Nov 19)", "SI Betting (Nov 18)", "ESPN roster API (Nov 22)",
     "AJC (Nov 21)", "AJC Dirty Birds Dispatch (Nov 21)", "Athlon Sports (Yahoo, Nov 21)", "Vikings.com (Nov 20)", "BettorEdge (Nov 21)", "ESPN roster API (Nov 21)",
     "ClutchPoints (Nov 18)", "Athlon Sports / Locked On Falcons (Nov 19)", "Athlon Sports (Yahoo, Nov 20)", "Yahoo Sports / BringMeTheSports (Nov 17)", "Covers (Nov 18)", "AJC (Nov 16)", "ESPN roster API (Nov 20)",
@@ -3271,11 +3275,39 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
-      title: "Minnesota opens as a touchdown favorite",
-      detail: "TeamRankings' Week 12 matchup page (Sunday, Nov 22) lists the Vikings as 7-point favorites over Atlanta with a 42.5 total for Nov 29, implying a score of roughly 24.8 to 17.8. Covers had no line posted as of Nov 18. The game stays at 1:00 PM ET on FOX after the NFL passed on flexing it (Yahoo Sports, Nov 17). First, the 7-2 Vikings play 8-1 San Francisco tonight in Mexico City (8:20 PM ET, NBC) as 3-point underdogs (SI Betting, Nov 18), without Kyler Murray or Jordan Addison.",
+      title: "49ers rout the Vikings in Mexico City",
+      detail: "AP (Sunday night, Nov 22): San Francisco beat Minnesota 35-10 at Estadio Azteca, dropping the Vikings to 7-3 six days before they host Atlanta. Brock Purdy went 21-of-26 for 255 yards and three TDs; Kirk Cousins went 26-of-38 for 235 yards and threw a pick-six to Ji'Ayir Brown. LT Christian Darrisaw (shoulder) left briefly in the first half and for good in the fourth quarter, and CB Isaiah Rodgers (quad) was inactive. Kevin O'Connell: 'We just got beat tonight.'",
       category: "games",
-      sourceUrl: "https://www.teamrankings.com/nfl/matchup/falcons-vikings-week-12-2026",
-      sourceLabel: "TeamRankings / SI Betting",
+      sourceUrl: "https://www.foxsports.com/articles/nfl/brock-purdy-carves-up-the-vikings-d-with-3-td-passes-in-the-49ers-3510-win-in-mexico-city",
+      sourceLabel: "AP (FOX Sports)",
+    },
+    {
+      title: "Carolina wins; Atlanta is two games back",
+      detail: "Pro Football Network via Yahoo (Sunday, Nov 22): Carolina beat Baltimore 35-33 to reach 5-5, while Tampa Bay lost 31-21 at Detroit and New Orleans lost 21-13 at Chicago, leaving the Bucs, Saints and idle Falcons all at 3-7. PFN's simulation gives Carolina a 56% chance to win the NFC South, Tampa Bay 37%, Atlanta 4.4% and New Orleans 2.9%. Carolina visits Tampa Bay on Monday night, Nov 30; Atlanta closes the season at Carolina.",
+      category: "games",
+      sourceUrl: "https://sports.yahoo.com/articles/nfc-south-playoff-scenarios-standings-232014213.html",
+      sourceLabel: "Pro Football Network (Yahoo)",
+    },
+    {
+      title: "Vikings still 7.5-point favorites",
+      detail: "FOX Sports' Week 12 odds page (updated Sunday night, Nov 22) lists Minnesota -7.5 with a 42.5 total and a moneyline of Vikings -340, Falcons +270 (bet365). TeamRankings had the line at 7 earlier Sunday. The game stays at 1:00 PM ET on FOX at U.S. Bank Stadium after the NFL passed on flexing it (Yahoo Sports, Nov 17).",
+      category: "games",
+      sourceUrl: "https://www.foxsports.com/stories/nfl/2026-nfl-odds-week-12-lines-spreads-results-all-16-games",
+      sourceLabel: "FOX Sports",
+    },
+    {
+      title: "On SI: slow starts are the trap",
+      detail: "Atlanta Falcons On SI via Yahoo (Sunday, Nov 22): Atlanta led the NFL at 31.0 points a game in Weeks 3-7 and has averaged 10 over the three straight losses since, has been outrushed in five of six games and ranks 30th on third down since Week 5. Penix is at -0.13 EPA per dropback with six INTs in that span. Matthew Bergeron: 'It's hard to get the offense rolling when you're trying to get back.' Jahan Dotson: 'It's definitely a mentality, and it's habits.'",
+      category: "coaching",
+      sourceUrl: "https://sports.yahoo.com/articles/falcons-slow-starts-created-problem-220002354.html",
+      sourceLabel: "Atlanta Falcons On SI (Yahoo)",
+    },
+    {
+      title: "The Athletic's Kendall: the QB question is the decision",
+      detail: "Locked On Falcons via Athlon Sports (Sunday, Nov 22): with Penix at 147-of-242 (60.7%) for 1,730 yards, 10 TDs and 7 INTs since taking over in Week 3, guest Josh Kendall of The Athletic framed the offseason simply: 'Can we get a better quarterback than Michael Penix Jr.? That's the decision that's got to be made.' Kendall doubted Notre Dame's CJ Carr, ESPN's mock pick for Atlanta, would last to No. 8, and noted Carr has not said whether he will enter the 2027 draft.",
+      category: "general",
+      sourceUrl: "https://athlonsports.com/nfl/atlanta-falcons/michael-penix-replacement-draft-free-agency-search-standard-test-difficulty-options",
+      sourceLabel: "Athlon Sports / Locked On Falcons",
     },
     {
       title: "Roundtable: the fix is starting faster",
@@ -3286,7 +3318,7 @@ export const NEWS_DIGEST = {
     },
     {
       title: "Roundtable panel: 'This is not a playoff team'",
-      detail: "Roundtable via Yahoo (Saturday, Nov 21): Michael Brauner called the season 'dreadful on offense, just as bad on defense,' said 'this is not a playoff team' and argued Atlanta should draft a first-round QB in 2027 because Penix 'is not the guy.' Christian Rauh pushed back: 'I'm definitely concerned, but I'm not ready to completely give up on Penix just yet.' Brauner noted that if Carolina (4-5) loses today, Atlanta is only one game back.",
+      detail: "Roundtable via Yahoo (Saturday, Nov 21): Michael Brauner called the season 'dreadful on offense, just as bad on defense,' said 'this is not a playoff team' and argued Atlanta should draft a first-round QB in 2027 because Penix 'is not the guy.' Christian Rauh pushed back: 'I'm definitely concerned, but I'm not ready to completely give up on Penix just yet.' Brauner noted Atlanta would be one game back if Carolina lost Sunday; the Panthers beat Baltimore instead.",
       category: "general",
       sourceUrl: "https://sports.yahoo.com/articles/falcons-roundtable-michael-penix-concerns-003845768.html",
       sourceLabel: "Roundtable (Yahoo)",
@@ -3327,20 +3359,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "ClutchPoints / ESPN",
     },
     {
-      title: "Locked On: the final stretch is Penix's audition",
-      detail: "Locked On Falcons via Athlon Sports (Thursday, Nov 19): host Aaron Freeman and guest Joe Patrick frame the last seven games as an audition for Penix, starting at Minnesota. They point to a missed open throw to Drake London and a fourth-down incompletion toward Kyle Pitts with London open elsewhere, cite president of football Matt Ryan's assessment that Penix has to 'hit the layups,' and say the staff wants baseline consistency before judging Tommy Rees. They also flag drifting from the run too early.",
-      category: "general",
-      sourceUrl: "https://athlonsports.com/nfl/atlanta-falcons/falcons-michael-penix-jr-audition-long-term",
-      sourceLabel: "Athlon Sports / Locked On Falcons",
-    },
-    {
-      title: "After the bye, the schedule does not ease",
-      detail: "Athlon Sports via Yahoo (Thursday night, Nov 19): Atlanta's first four games out of the bye are at Minnesota (Nov 29), home to Detroit (Dec 6), at Cleveland (Dec 13) and at Washington (Dec 20), before closing with Tampa Bay, New Orleans and Carolina. Athlon notes Detroit will be without edge rusher Aidan Hutchinson after an ACL injury and says those four weeks decide whether the Falcons are still in the NFC South race or playing out the string.",
-      category: "games",
-      sourceUrl: "https://sports.yahoo.com/articles/things-dont-easier-falcons-bye-014722821.html",
-      sourceLabel: "Athlon Sports (Yahoo)",
-    },
-    {
       title: "Rees keeps the headset, but the door is open",
       detail: "AJC (Nov 16) and Roundtable (Wednesday, Nov 18): Stefanski is reviewing the play-calling process but is not taking game-day duties from Tommy Rees, and said the staff will 'look at everything,' while deferring when asked about his confidence in Rees. Left guard Matthew Bergeron: 'I love Tommy to death, so that's not the issue.' Roundtable argues a change could still come after the bye; Stefanski handed play-calling to Rees in Cleveland last season. In the three games since Atlanta led the NFL in scoring through Penix's first five starts, the Falcons have 30 points and 304.3 yards a game (AJC).",
       category: "coaching",
@@ -3348,25 +3366,11 @@ export const NEWS_DIGEST = {
       sourceLabel: "AJC / Roundtable",
     },
     {
-      title: "Fans vent; PFN ranks Penix 20th",
-      detail: "Pro Football Network (Thursday, Nov 19): fan frustration on social media centers on slow starts, heavy screen usage and inconsistent use of Bijan Robinson. Over the three-game skid Penix completed 52% of his passes for 573 yards, one TD and six interceptions; PFN's QB Impact Score has him 20th (72.7) and its Offense Impact Score puts Atlanta 24th (69.7). Atlanta returns Nov 29 at U.S. Bank Stadium.",
-      category: "general",
-      sourceUrl: "https://www.profootballnetwork.com/falcons-fans-michael-penix-jr-tommy-rees-offense/",
-      sourceLabel: "Pro Football Network",
-    },
-    {
-      title: "Vikings rule out Murray and Addison for Mexico City",
-      detail: "Vikings.com final injury report (Friday, Nov 20): QB Kyler Murray (hamstring) and WR Jordan Addison (thumb, surgery Monday) are out for Sunday night's game against San Francisco in Mexico City; S Jay Ward (knee) and CB Isaiah Rodgers (quad) are questionable. Addison stays off short-term IR for now, per Kevin O'Connell (Vikings.com, Nov 18), and ESPN (Nov 16) said he could miss about a month, putting his status for Atlanta's Nov 29 visit in doubt. Kirk Cousins threw two TDs in the Week 10 win at Green Bay.",
+      title: "Vikings injuries: Addison, Murray and now Darrisaw",
+      detail: "Minnesota's health heading into the Atlanta game: WR Jordan Addison (thumb surgery Nov 16) and QB Kyler Murray (hamstring) were ruled out of the 49ers game (Vikings.com, Nov 20); Addison stays off short-term IR, but ESPN (Nov 16) said he could miss about a month. LT Christian Darrisaw (shoulder) left Sunday's loss in the fourth quarter (AP, Nov 22). Minnesota's defense under Brian Flores blitzes on 72.3% of dropbacks, per ESPN's Ben Solak (Vikings.com, Nov 17).",
       category: "injuries",
-      sourceUrl: "https://www.vikings.com/news/49ers-injury-report-week-11-2026-nfl-season",
-      sourceLabel: "Vikings.com",
-    },
-    {
-      title: "Athlon: fix the protection before Minnesota",
-      detail: "Athlon Sports via Yahoo (Wednesday, Nov 18): the bye-week to-do list starts with how the offense handles pressure. Kansas City's rush harassed Penix, pre-snap and holding penalties stalled drives, and Athlon says Jawaan Taylor's stance tipped run or pass. Minnesota's defense under Brian Flores blitzes on 72.3% of dropbacks, per ESPN's Ben Solak (Vikings.com, Nov 17).",
-      category: "games",
-      sourceUrl: "https://sports.yahoo.com/articles/atlanta-falcons-fix-problems-during-192245962.html",
-      sourceLabel: "Athlon Sports (Yahoo) / Vikings.com",
+      sourceUrl: "https://www.cbsnews.com/sanfrancisco/news/brock-purdy-carves-up-the-vikings-d-with-3-td-passes-in-the-49ers-35-10-win-in-mexico-city-2/",
+      sourceLabel: "AP (CBS San Francisco) / Vikings.com",
     },
   ],
 };
