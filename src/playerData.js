@@ -2086,7 +2086,7 @@ export const NEXT_GAME = {
   date: "2026-11-29",
   kickoff: "1:00 PM ET",
   tv: "FOX",
-  note: "Game week, Tuesday (Nov 24). Monday's moves: LB Christian Harris waived, S Jammie Robinson signed from the practice squad to the 53, CB Terell Smith signed to the practice squad (NBC Sports / PFT via Yahoo, Nov 23). Stefanski on the plan against Brian Flores' pressure: 'Staying on schedule, I think, is the number one thing that you're thinking about'; he would not say whether Tommy Rees calls plays from the box or the sideline (Falcons Wire, Nov 23). Vikings health: LT Christian Darrisaw hurt his right shoulder (the other shoulder from his earlier issue) and his status is unclear; O'Connell does not expect WR Jordan Addison (thumb) back this week (Athlon, Heavy, RotoWire, Nov 23). TeamRankings (Nov 24) has Minnesota -6.5 with a 42.5 total. The first official injury reports come Wednesday. Earlier: Minnesota comes in off a 35-10 Sunday-night loss to San Francisco in Mexico City (Nov 22) that dropped the Vikings to 7-3: Kirk Cousins went 26-of-38 for 235 yards with a pick-six, Brock Purdy threw three TDs, and LT Christian Darrisaw (shoulder) left in the first half and again for good in the fourth quarter; CB Isaiah Rodgers (quad) was inactive (AP via FOX Sports and CBS San Francisco, Nov 22-23). Kevin O'Connell: 'We just got beat tonight.' The line as of Nov 22 is Minnesota -7.5 with a 42.5 total, moneyline MIN -340 / ATL +270 (bet365 via FOX Sports). Around the division, Carolina beat Baltimore 35-33 to reach 5-5 while Tampa Bay (lost 31-21 at Detroit) and New Orleans (lost 21-13 at Chicago) fell to 3-7, so Atlanta (3-7, idle) sits two games back; Pro Football Network's simulation gives the Falcons a 4.4% chance to win the NFC South (Nov 22). Earlier context: Atlanta (3-7, last in the NFC South) visits Minnesota at 1:00 PM ET on Sunday, Nov 29 (FOX), a return to Minneapolis for Kevin Stefanski, a Vikings assistant from 2006 to 2019. The Falcons have lost three straight and five of six after Sunday's 35-13 home loss to Kansas City, scoring 30 points combined in those three games (ESPN). Health to watch through the bye: WR Drake London was cleared after a late concussion check against the Chiefs, Stefanski said Monday (ESPN, Nov 16); LB Divine Deablo (fractured right forearm) and WR Zachariah Branch (hamstring) missed the KC game, and AP says the bye comes at a good time for Deablo. Tommy Rees keeps offensive play-calling (ESPN, Nov 16), and Stefanski says the staff will 'pull everything apart' over the bye (The Athletic via NFL.com, Nov 17). Opponent: Minnesota rose to No. 4 in The Big Lead's NFC rankings (Nov 17) after a 30-10 win at Green Bay with eight sacks of Jordan Love; Kirk Cousins threw two TDs. WR Jordan Addison had thumb surgery but stays off short-term IR for now, per Kevin O'Connell (Vikings.com, Nov 18); ESPN (Nov 16) had said he could miss about a month. Addison and QB Kyler Murray (hamstring) were ruled out of the 49ers game (Vikings.com, Nov 20). The NFL did not flex the game to Sunday night (Raiders-Browns got the slot), so it stays at 1:00 PM ET on FOX (Yahoo Sports, Nov 17); TeamRankings' matchup page (Nov 22) had Minnesota -7 with a 42.5 total before the line moved to -7.5. The first Week 12 injury report is due once practice resumes this week. Detroit (home, Dec 6) and Cleveland (away, Dec 13) follow.",
+  note: "Game week, Wednesday (Nov 25). Stefanski has not decided whether Tommy Rees calls plays from the box or the sideline: 'Going to work through it, yeah. Still something I want to think through' and 'No, not yet' (Atlanta Falcons On SI via Yahoo, Nov 24). WR Zachariah Branch (hamstring) and LB Divine Deablo (forearm) are TBD before the first official injury report; Branch went through warmups at Monday's unofficial practice (DraftKings Network, Nov 24). The Week 12 depth chart keeps Penix at QB1 ahead of Tua (Falcons Wire, Nov 24). For Minnesota, DK says QB Kyler Murray (Grade 2 hamstring) is targeting Sunday with Kirk Cousins starting meanwhile, and Addison (thumb) is not expected. SI Betting (Nov 24): DraftKings has MIN -6.5, total 41.5, Vikings -330 / Falcons +266. Earlier, Tuesday (Nov 24). Monday's moves: LB Christian Harris waived, S Jammie Robinson signed from the practice squad to the 53, CB Terell Smith signed to the practice squad (NBC Sports / PFT via Yahoo, Nov 23). Stefanski on the plan against Brian Flores' pressure: 'Staying on schedule, I think, is the number one thing that you're thinking about'; he would not say whether Tommy Rees calls plays from the box or the sideline (Falcons Wire, Nov 23). Vikings health: LT Christian Darrisaw hurt his right shoulder (the other shoulder from his earlier issue) and his status is unclear; O'Connell does not expect WR Jordan Addison (thumb) back this week (Athlon, Heavy, RotoWire, Nov 23). TeamRankings (Nov 24) has Minnesota -6.5 with a 42.5 total. The first official injury reports come Wednesday. Earlier: Minnesota comes in off a 35-10 Sunday-night loss to San Francisco in Mexico City (Nov 22) that dropped the Vikings to 7-3: Kirk Cousins went 26-of-38 for 235 yards with a pick-six, Brock Purdy threw three TDs, and LT Christian Darrisaw (shoulder) left in the first half and again for good in the fourth quarter; CB Isaiah Rodgers (quad) was inactive (AP via FOX Sports and CBS San Francisco, Nov 22-23). Kevin O'Connell: 'We just got beat tonight.' The line as of Nov 22 is Minnesota -7.5 with a 42.5 total, moneyline MIN -340 / ATL +270 (bet365 via FOX Sports). Around the division, Carolina beat Baltimore 35-33 to reach 5-5 while Tampa Bay (lost 31-21 at Detroit) and New Orleans (lost 21-13 at Chicago) fell to 3-7, so Atlanta (3-7, idle) sits two games back; Pro Football Network's simulation gives the Falcons a 4.4% chance to win the NFC South (Nov 22). Earlier context: Atlanta (3-7, last in the NFC South) visits Minnesota at 1:00 PM ET on Sunday, Nov 29 (FOX), a return to Minneapolis for Kevin Stefanski, a Vikings assistant from 2006 to 2019. The Falcons have lost three straight and five of six after Sunday's 35-13 home loss to Kansas City, scoring 30 points combined in those three games (ESPN). Health to watch through the bye: WR Drake London was cleared after a late concussion check against the Chiefs, Stefanski said Monday (ESPN, Nov 16); LB Divine Deablo (fractured right forearm) and WR Zachariah Branch (hamstring) missed the KC game, and AP says the bye comes at a good time for Deablo. Tommy Rees keeps offensive play-calling (ESPN, Nov 16), and Stefanski says the staff will 'pull everything apart' over the bye (The Athletic via NFL.com, Nov 17). Opponent: Minnesota rose to No. 4 in The Big Lead's NFC rankings (Nov 17) after a 30-10 win at Green Bay with eight sacks of Jordan Love; Kirk Cousins threw two TDs. WR Jordan Addison had thumb surgery but stays off short-term IR for now, per Kevin O'Connell (Vikings.com, Nov 18); ESPN (Nov 16) had said he could miss about a month. Addison and QB Kyler Murray (hamstring) were ruled out of the 49ers game (Vikings.com, Nov 20). The NFL did not flex the game to Sunday night (Raiders-Browns got the slot), so it stays at 1:00 PM ET on FOX (Yahoo Sports, Nov 17); TeamRankings' matchup page (Nov 22) had Minnesota -7 with a 42.5 total before the line moved to -7.5. The first Week 12 injury report is due once practice resumes this week. Detroit (home, Dec 6) and Cleveland (away, Dec 13) follow.",
 };
 
 // =========================================
@@ -2470,17 +2470,17 @@ export const NFC_SOUTH_STANDINGS_2026 = [
 // NEWS DIGEST — refreshed daily by scheduled task
 // =========================================
 export const NEWS_DIGEST = {
-  generatedAt: "2026-11-24T09:30:00Z",
+  generatedAt: "2026-11-25T09:30:00Z",
   cover: {
-    kicker: "Minnesota week, Tuesday: Stefanski says 'staying on schedule' is the No. 1 thing against Flores' pressure; Christian Harris waived, Jammie Robinson to the 53, CB Terell Smith to the practice squad; Darrisaw's right shoulder and Addison's thumb thin out Minnesota",
-    headLine1: "Stay on schedule,",
-    headEm: "beat the blitz.",
-    headLine3: "Stefanski's post-bye plan for Minneapolis starts with early downs and answers for the quarterback.",
-    deck: "Tuesday (Nov 24): the Falcons (3-7) opened Minnesota week with roster moves and a plan. Monday, Atlanta waived LB Christian Harris, signed S Jammie Robinson from the practice squad to the 53 and added CB Terell Smith to the practice squad (NBC Sports / PFT via Yahoo). Stefanski said the staff self-scouted area by area over the bye and named the priority against Brian Flores' blitz: 'Staying on schedule, I think, is the number one thing that you're thinking about' (Falcons Wire). He would not say where Tommy Rees calls plays from. Minnesota (7-3) is banged up on offense: LT Christian Darrisaw hurt his right shoulder in Mexico City ('No, it's the other shoulder,' Kevin O'Connell said) and WR Jordan Addison is not expected back (Athlon, RotoWire, Nov 23). TeamRankings has the Vikings by 6.5. Kickoff Sunday is 1 PM ET on FOX.",
+    kicker: "Minnesota week, Wednesday: Rees' booth-or-sideline call is 'not yet' decided; Branch and Deablo still TBD before the first injury report; SI calls Flores' blitz 'a nightmare matchup' for Penix as DraftKings sets MIN -6.5",
+    headLine1: "Booth or sideline?",
+    headEm: "Not yet.",
+    headLine3: "Stefanski is still thinking through where Tommy Rees calls Sunday's game, and the first quarter is the problem either way.",
+    deck: "Wednesday (Nov 25): the Falcons (3-7) start their first full practice week since the bye with the play-calling question still open. 'Going to work through it, yeah. Still something I want to think through,' Stefanski said of Tommy Rees' spot, then 'No, not yet' (Atlanta Falcons On SI via Yahoo, Nov 24). The numbers explain the urgency: 2.2 first-quarter points a game since Week 5 and 21 penalties in the last two games (Athlon, Nov 24). The depth chart is unchanged at the top, Penix ahead of Tua (Falcons Wire), and WR Zachariah Branch and LB Divine Deablo remain TBD before Wednesday's first official report (DraftKings Network). SI Betting has Minnesota -6.5 with a 41.5 total and calls Brian Flores' pressure 'a nightmare matchup' for Penix. Kickoff Sunday is 1 PM ET on FOX.",
     byline: "The Tracker Desk",
     filedFrom: "Flowery Branch",
     photoId: "penix-jr",
-    stampLabel: "Tue Nov 24 · Week 12 · Harris waived, J. Robinson to the 53, T. Smith to the PS · Stefanski: 'staying on schedule' · Darrisaw (R shoulder) TBD · Addison not expected · Line: MIN -6.5 (TeamRankings), total 42.5 · ATL 3-7, two back of CAR · Next: at MIN, Nov 29, 1 PM ET, FOX",
+    stampLabel: "Wed Nov 25 · Week 12 · Rees' spot: 'not yet' · Branch (hamstring), Deablo (forearm) TBD · Penix QB1 on the depth chart · Addison not expected · Line: MIN -6.5 (DraftKings), total 41.5 · ATL 3-7, two back of CAR · Next: at MIN, Nov 29, 1 PM ET, FOX",
     // Custom cover photo. If the file at coverImageUrl 404s, the MagazineView
     // CoverImage component gracefully falls back to the photoId headshot.
     // STATUS (2026-07-20 scheduled run): cover request QUEUED, ending the two-cycle skip streak.
@@ -3197,9 +3197,13 @@ export const NEWS_DIGEST = {
     // Darrisaw shoulder, MIN -7.5, Carolina 5-5, PFN 4.4% division odds); fallback photoId kept at penix-jr. Pointer unchanged.
     // STATUS (2026-11-24 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto Minnesota week Tuesday (Harris waived,
     // J. Robinson to the 53, T. Smith to the PS, Stefanski 'staying on schedule', Darrisaw right shoulder, Addison out); fallback photoId kept at penix-jr. Pointer unchanged.
+    // STATUS (2026-11-25 cloud run): image request SKIPPED (cloud run). Kicker and deck rotated onto Minnesota week Wednesday (Rees' spot
+    // 'not yet' decided, Athlon first-quarter numbers, depth chart, Branch/Deablo TBD, SI MIN -6.5); fallback photoId kept at penix-jr. Pointer unchanged.
     coverImageUrl: "/falcons-tracker/assets/cover/2026-09-25-penix-lambeau-return.jpg",
   },
   sources: [
+    "Atlanta Falcons On SI (Yahoo, Nov 24)", "DraftKings Network (Nov 24)", "Falcons Wire (Yahoo, Nov 24)", "SI Betting (Nov 24)", "Athlon Sports (Yahoo, Nov 24)",
+    "NBC Sports / Rotoworld (Yahoo, Nov 24)", "ESPN roster API (Nov 25)",
     "NBC Sports / PFT (Yahoo, Nov 23)", "Falcons Wire (Yahoo, Nov 23)", "Saturday Down South (Nov 23)", "Steelers Now (Yahoo, Nov 23)", "Athlon Sports (Nov 23)",
     "Heavy (Yahoo, Nov 23)", "Heavy (Nov 23)", "RotoWire (Nov 23)", "NBC Sports (Nov 23)", "SB Nation (Yahoo, Nov 21)", "TeamRankings (Nov 24)", "ESPN roster API (Nov 24)",
     "AP (FOX Sports, Nov 23)", "AP (CBS San Francisco, Nov 22)", "49ers Webzone (Nov 22)", "FOX Sports odds (Nov 22)", "Pro Football Network (Yahoo, Nov 22)",
@@ -3283,6 +3287,48 @@ export const NEWS_DIGEST = {
   ],
   topics: [
     {
+      title: "Rees' play-calling spot: 'not yet' decided",
+      detail: "Atlanta Falcons On SI via Yahoo (Tuesday, Nov 24): Stefanski still has not decided whether OC Tommy Rees calls plays from the coaching box or the sideline in Minnesota. 'Going to work through it, yeah. Still something I want to think through,' he said Monday, then 'No, not yet.' With Rees in the box through nine games, Atlanta averaged 20.9 points and 322.7 yards; on the sideline against Kansas City it scored 13 and opened with four straight three-and-outs, a first for the franchise since 2000.",
+      category: "coaching",
+      sourceUrl: "https://sports.yahoo.com/nfl/articles/falcons-undecided-tommy-rees-playcalling-170004576.html",
+      sourceLabel: "Atlanta Falcons On SI (Yahoo)",
+    },
+    {
+      title: "Branch and Deablo carry into Minnesota week",
+      detail: "DraftKings Network (Tuesday, Nov 24): WR Zachariah Branch (hamstring) and LB Divine Deablo (fractured forearm) are both still TBD before Wednesday's first official report; Branch, inactive in Weeks 9 and 10, went through warmups at Monday's unofficial practice. SI's betting preview lists both as questionable. On Minnesota's side, DK says QB Kyler Murray (Grade 2 hamstring) is targeting a Sunday return with Kirk Cousins starting in the meantime, though NBC Sports had projected three to four weeks; WR Jordan Addison (thumb) is not expected to play.",
+      category: "injuries",
+      sourceUrl: "https://dknetwork.draftkings.com/2026/11/24/nfl-injury-report-week-12/",
+      sourceLabel: "DraftKings Network / NBC Sports",
+    },
+    {
+      title: "Week 12 depth chart: no change at the top",
+      detail: "Falcons Wire via Yahoo (Tuesday, Nov 24): Atlanta's depth chart for Minnesota keeps Michael Penix Jr. at QB1 ahead of Tua Tagovailoa, Andy Dalton and Jack Strand, with Bijan Robinson at RB1 and Drake London at WR1. Deablo is still listed as the starting inside linebacker, Jake Moody kicks, Olamide Zaccheaus returns kicks and Branch returns punts. Falcons Wire notes the chart 'does not reflect playing time,' which is why rookie CB Avieon Terrell, listed at nickel, was a healthy scratch against Kansas City.",
+      category: "general",
+      sourceUrl: "https://sports.yahoo.com/nfl/articles/falcons-release-depth-chart-week-212543830.html",
+      sourceLabel: "Falcons Wire (Yahoo)",
+    },
+    {
+      title: "SI: 'a nightmare matchup' for Penix",
+      detail: "SI Betting (Tuesday, Nov 24): DraftKings has Minnesota -6.5 with a 41.5 total and moneylines of Vikings -330, Falcons +266. Iain MacMillan picks the Vikings to cover, citing Penix's 40.5% catchable-throw rate under pressure (worst in the NFL by his numbers) against Brian Flores' blitz, and Atlanta's 1-5 record against the spread over its last six. TeamRankings also had MIN -6.5 on Tuesday; FOX Sports listed -7.5 after Minnesota's Mexico City loss.",
+      category: "games",
+      sourceUrl: "https://www.si.com/betting/falcons-vs-vikings-prediction-odds-spread-injuries-trends-for-nfl-week-12-2026",
+      sourceLabel: "SI Betting",
+    },
+    {
+      title: "Athlon: 2.2 first-quarter points a game since Week 5",
+      detail: "Athlon Sports via Yahoo (Tuesday, Nov 24): asking whether a bye week was enough, A. Noel White notes Atlanta has scored 2.2 first-quarter points a game since Week 5, ranks 29th in opening-drive success rate and averaged 10 points during the three-game skid. Penalties are the other drag: 21 for 153 yards over the last two games. 'The inability to get running back Bijan Robinson going in the backfield has affected their ability to start fast,' White writes.",
+      category: "coaching",
+      sourceUrl: "https://sports.yahoo.com/nfl/articles/week-enough-fix-atlanta-falcons-234148206.html",
+      sourceLabel: "Athlon Sports (Yahoo)",
+    },
+    {
+      title: "ESPN names LaCale London the extension candidate",
+      detail: "Falcons Wire via Yahoo (Tuesday, Nov 24): ESPN's power rankings picked DT LaCale London as Atlanta's player most in line for a new deal. London, on a $1.75 million contract this season, leads interior linemen in run-stop win rate (46%) and has two sacks; ESPN's Marc Raimondi: 'He has surely earned a significant new contract.' The same recap notes John Abraham, Tommy Nobis and Billy 'White Shoes' Johnson are still in the running for the Hall of Fame's 2027 class.",
+      category: "contracts",
+      sourceUrl: "https://sports.yahoo.com/nfl/articles/falcons-recap-contract-extensions-mock-223059859.html",
+      sourceLabel: "Falcons Wire (Yahoo)",
+    },
+    {
       title: "Post-bye roster moves: Harris out, Robinson up",
       detail: "NBC Sports / PFT via Yahoo (Monday, Nov 23): coming out of the bye, Atlanta waived LB Christian Harris, signed S Jammie Robinson from the practice squad to the 53-man roster and signed CB Terell Smith to the practice squad. Harris played seven games, mostly on special teams, with four tackles. Robinson had used all three of his elevations. Smith, 27, a 2023 Bears fifth-rounder out of Minnesota, was released by Pittsburgh on Nov 14 (Steelers Now via Yahoo).",
       category: "general",
@@ -3318,13 +3364,6 @@ export const NEWS_DIGEST = {
       sourceLabel: "Heavy",
     },
     {
-      title: "Dorlus, Hellams and Perkins fined for the Chiefs game",
-      detail: "SB Nation via Yahoo (Saturday, Nov 21): the league fined Brandon Dorlus twice ($7,114 for taunting, $7,114 for a late hit on a quarterback), DeMarcco Hellams $6,509 for a hit on a defenseless player and Harold Perkins $5,203 for use of the helmet, all from the Week 10 loss to Kansas City.",
-      category: "general",
-      sourceUrl: "https://sports.yahoo.com/articles/3-falcons-defenders-hit-4-224608943.html",
-      sourceLabel: "SB Nation (Yahoo)",
-    },
-    {
       title: "49ers rout the Vikings in Mexico City",
       detail: "AP (Sunday night, Nov 22): San Francisco beat Minnesota 35-10 at Estadio Azteca, dropping the Vikings to 7-3 six days before they host Atlanta. Brock Purdy went 21-of-26 for 255 yards and three TDs; Kirk Cousins went 26-of-38 for 235 yards and threw a pick-six to Ji'Ayir Brown. LT Christian Darrisaw (shoulder) left briefly in the first half and for good in the fourth quarter, and CB Isaiah Rodgers (quad) was inactive. Kevin O'Connell: 'We just got beat tonight.'",
       category: "games",
@@ -3339,52 +3378,17 @@ export const NEWS_DIGEST = {
       sourceLabel: "Pro Football Network (Yahoo)",
     },
     {
-      title: "Vikings favored by 6.5 to 7.5",
-      detail: "TeamRankings' matchup page (checked Tuesday, Nov 24) has Minnesota by 6.5 with a 42.5 total; FOX Sports listed the Vikings at -7.5 Sunday night after their loss in Mexico City (bet365: Vikings -340, Falcons +270, Nov 22). The game stays at 1:00 PM ET on FOX at U.S. Bank Stadium after the NFL passed on flexing it (Yahoo Sports, Nov 17).",
-      category: "games",
-      sourceUrl: "https://www.teamrankings.com/nfl/matchup/falcons-vikings-week-12-2026",
-      sourceLabel: "TeamRankings / FOX Sports",
-    },
-    {
       title: "On SI: slow starts are the trap",
       detail: "Atlanta Falcons On SI via Yahoo (Sunday, Nov 22): Atlanta led the NFL at 31.0 points a game in Weeks 3-7 and has averaged 10 over the three straight losses since, has been outrushed in five of six games and ranks 30th on third down since Week 5. Penix is at -0.13 EPA per dropback with six INTs in that span. Matthew Bergeron: 'It's hard to get the offense rolling when you're trying to get back.' Jahan Dotson: 'It's definitely a mentality, and it's habits.'",
       category: "coaching",
       sourceUrl: "https://sports.yahoo.com/articles/falcons-slow-starts-created-problem-220002354.html",
       sourceLabel: "Atlanta Falcons On SI (Yahoo)",
     },
-    {
-      title: "The Athletic's Kendall: the QB question is the decision",
-      detail: "Locked On Falcons via Athlon Sports (Sunday, Nov 22): with Penix at 147-of-242 (60.7%) for 1,730 yards, 10 TDs and 7 INTs since taking over in Week 3, guest Josh Kendall of The Athletic framed the offseason simply: 'Can we get a better quarterback than Michael Penix Jr.? That's the decision that's got to be made.' Kendall doubted Notre Dame's CJ Carr, ESPN's mock pick for Atlanta, would last to No. 8, and noted Carr has not said whether he will enter the 2027 draft.",
-      category: "general",
-      sourceUrl: "https://athlonsports.com/nfl/atlanta-falcons/michael-penix-replacement-draft-free-agency-search-standard-test-difficulty-options",
-      sourceLabel: "Athlon Sports / Locked On Falcons",
-    },
-    {
-      title: "Roundtable: the fix is starting faster",
-      detail: "Roundtable via Yahoo (Saturday, Nov 21): Michael Brauner's one must-fix item after the bye is slow starts. Falling behind early is the common thread in the losses and takes Bijan Robinson out of the game, and he puts it on the opening scripts as much as the players. In a companion piece he lists two bright spots: a rushing attack he ranks top 10 for the season (over 130 yards a game) and edge Cameron Thomas, extended this month for three years and up to $33 million.",
-      category: "coaching",
-      sourceUrl: "https://sports.yahoo.com/articles/one-thing-falcons-must-clean-180037978.html",
-      sourceLabel: "Roundtable (Yahoo)",
-    },
-    {
-      title: "Roundtable panel: 'This is not a playoff team'",
-      detail: "Roundtable via Yahoo (Saturday, Nov 21): Michael Brauner called the season 'dreadful on offense, just as bad on defense,' said 'this is not a playoff team' and argued Atlanta should draft a first-round QB in 2027 because Penix 'is not the guy.' Christian Rauh pushed back: 'I'm definitely concerned, but I'm not ready to completely give up on Penix just yet.' Brauner noted Atlanta would be one game back if Carolina lost Sunday; the Panthers beat Baltimore instead.",
-      category: "general",
-      sourceUrl: "https://sports.yahoo.com/articles/falcons-roundtable-michael-penix-concerns-003845768.html",
-      sourceLabel: "Roundtable (Yahoo)",
-    },
-    {
-      title: "Bijan's fix for the run game: 'street ball'",
-      detail: "AJC (Saturday, Nov 21): Bijan Robinson wants the offense to play with a street-ball edge. 'It's like street ball out there,' he said; Jahan Dotson added, 'You're trying to dominate whoever's in front of you.' Atlanta ran for 181 yards a game through Week 4 and 101.8 in the six games since, and was outrushed in five of them. Stefanski: 'Want to be better in all areas.' The AJC also notes opponents blitz Penix on 37.4% of dropbacks (sixth-most, Next Gen Stats) and Atlanta's screen rate (12.2%) is third-highest.",
-      category: "coaching",
-      sourceUrl: "https://www.ajc.com/sports/2026/11/falcons-hope-street-ball-mentality-elevates-offense/",
-      sourceLabel: "AJC",
-    },
   ],
 };
 
 export const INTERVIEWS = {
-  generatedAt: "2026-11-24T09:30:00Z",
+  generatedAt: "2026-11-25T09:30:00Z",
   windowLabel: "Bye Week + Game Week at Minnesota · Nov 15 → Nov 29",
   sessions: [
     {
@@ -3402,7 +3406,7 @@ export const INTERVIEWS = {
         "'So they do their self-scout in that area and then, in our own ways, you go back and you just watch games,' adding 'you also go back and watch the run game'",
         "On the film process: 'So you end up watching plays over and over in different settings'",
         "Against the blitz: 'When teams pressure, it's our ability to have good answers for the quarterback'",
-        "Declined to say whether OC Tommy Rees calls plays from the booth or the sideline on Sunday (Falcons Wire)",
+        "Declined to say whether OC Tommy Rees calls plays from the booth or the sideline on Sunday: 'Going to work through it, yeah. Still something I want to think through,' and, asked if he had decided, 'No, not yet' (Atlanta Falcons On SI)",
       ],
       topics: ["vikings-week", "week-12", "self-scout", "rees", "pressure", "post-bye"],
     },
